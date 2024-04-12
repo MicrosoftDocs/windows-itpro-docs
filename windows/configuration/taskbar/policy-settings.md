@@ -126,7 +126,7 @@ Select one of the tabs to see the list of available settings:
 
 [!INCLUDE [turn-off-windows-copilot](includes/turn-off-windows-copilot.md)]
 
-#### [:::image type="icon" source="../images/icons/notification.svg"::: **Notifications & actions**](#tab/allapps)
+#### [:::image type="icon" source="../images/icons/touch.svg"::: **User actions**](#tab/actions)
 
 ::: zone pivot="windows-11"
 
@@ -138,7 +138,6 @@ Select one of the tabs to see the list of available settings:
 |[Do not allow pinning Store app to the Taskbar](#do-not-allow-pinning-store-app-to-the-taskbar)|❌|✅|
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
 |[Remove access to the context menus for the taskbar](#remove-access-to-the-context-menus-for-the-taskbar)|❌|✅|
-|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
 ::: zone-end
 
 ::: zone pivot="windows-10"
@@ -184,6 +183,31 @@ Select one of the tabs to see the list of available settings:
 ::: zone-end
 
 [!INCLUDE [remove-access-to-the-context-menus-for-the-taskbar](includes/remove-access-to-the-context-menus-for-the-taskbar.md)]
+[!INCLUDE [turn-off-automatic-promotion-of-notification-icons-to-the-taskbar](includes/turn-off-automatic-promotion-of-notification-icons-to-the-taskbar.md)]
+
+::: zone pivot="windows-10"
+[!INCLUDE [turn-off-notification-area-cleanup](includes/turn-off-notification-area-cleanup.md)]
+::: zone-end
+
+#### [:::image type="icon" source="../images/icons/notification.svg"::: **Notifications**](#tab/allapps)
+
+::: zone pivot="windows-11"
+
+|Setting Name|CSP|GPO|
+|-|-|-|
+|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+|Setting Name|CSP|GPO|
+|-|-|-|
+|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
+|[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
+
+::: zone-end
+
 [!INCLUDE [turn-off-automatic-promotion-of-notification-icons-to-the-taskbar](includes/turn-off-automatic-promotion-of-notification-icons-to-the-taskbar.md)]
 
 ::: zone pivot="windows-10"
