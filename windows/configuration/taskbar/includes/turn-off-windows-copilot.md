@@ -14,5 +14,5 @@ This policy setting allows you to turn off Windows Copilot.
 
 |  | Path |
 |--|--|
-| **CSP** | `./User/Vendor/MSFT/Policy/Config/WindowsAI/`[TurnOffWindowsCopilot](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot) |
+| **CSP** | `./User/Vendor/MSFT/Policy/Config/WindowsAI/`[TurnOffWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot) |
 | **GPO** | **User Configuration** > **Administrative Templates** > **Windows Components** > **Windows Copilot** |
