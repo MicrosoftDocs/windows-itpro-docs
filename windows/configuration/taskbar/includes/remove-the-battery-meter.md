@@ -7,7 +7,10 @@ ms.topic: include
 
 ### Remove the battery meter
 
-This policy setting allows you to remove the battery meter from the system control area. If you enable this policy setting, the battery meter is not displayed in the system notification area. If you disable or don't configure this policy setting, the battery meter is displayed in the system notification area.
+With this policy setting you can remove the battery meter from the system control area.
+
+- If you enable this policy setting, the battery meter isn't displayed in the system notification area
+- If you disable or don't configure this policy setting, the battery meter is displayed in the system notification area
 
 |  | Path |
 |--|--|

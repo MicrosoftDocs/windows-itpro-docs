@@ -7,7 +7,10 @@ ms.topic: include
 
 ### Prevent users from rearranging toolbars
 
-This policy setting allows you to prevent users from rearranging toolbars. If you enable this policy setting, users aren't able to drag or drop toolbars to the taskbar. If you disable or don't configure this policy setting, users are able to rearrange the toolbars on the taskbar.
+With this policy setting you prevent users from rearranging toolbars.
+
+- If you enable this policy setting, users can't drag or drop toolbars to the taskbar
+- If you disable or don't configure this policy setting, users can rearrange the toolbars on the taskbar
 
 |  | Path |
 |--|--|

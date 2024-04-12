@@ -7,7 +7,10 @@ ms.topic: include
 
 ### Prevent users from resizing the taskbar
 
-This policy setting allows you to prevent users from resizing the taskbar. If you enable this policy setting, users aren't be able to resize their taskbar. If you disable or don't configure this policy setting, users are able to resize their taskbar unless prevented by another setting.
+With this policy setting you prevent users from resizing the taskbar.
+
+- If you enable this policy setting, users can't resize their taskbar
+- If you disable or don't configure this policy setting, users can resize their taskbar, unless prevented by another setting
 
 |  | Path |
 |--|--|

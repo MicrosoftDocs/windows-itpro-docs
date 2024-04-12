@@ -7,7 +7,10 @@ ms.topic: include
 
 ### Remove the networking icon
 
-This policy setting allows you to remove the networking icon from the system control area. If you enable this policy setting, the networking icon is not displayed in the system notification area. If you disable or don't configure this policy setting, the networking icon is displayed in the system notification area.
+With this policy setting you can remove the networking icon from the system control area.
+
+- If you enable this policy setting, the networking icon isn't displayed in the system notification area
+- If you disable or don't configure this policy setting, the networking icon is displayed in the system notification area
 
 |  | Path |
 |--|--|

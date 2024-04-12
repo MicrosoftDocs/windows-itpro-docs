@@ -5,7 +5,7 @@ ms.date: 04/11/2024
 ms.topic: include
 ---
 
-### Don't display or track items in Jump Lists from remote locations
+### Do not display or track items in Jump Lists from remote locations
 
 This policy setting allows you to control displaying or tracking items in Jump Lists from remote locations. The Start Menu and Taskbar display Jump Lists off of programs. These menus include files, folders, websites, and other relevant items for that program. This helps users more easily reopen their most important documents and other tasks.
 

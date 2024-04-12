@@ -14,7 +14,7 @@ This reference article outlines the policy settings available for customizing th
 The settings are categorized and presented in alphabetical order to facilitate navigation and configuration.
 
 1. **Taskbar layout**: settings to control the taskbar appearance and its behavior
-1. **Quick Settings**: settings to control the Quick Settings area
+1. **User actions**: settings to control users' allowed actions on the taskbar
 
 ::: zone pivot="windows-11"
 

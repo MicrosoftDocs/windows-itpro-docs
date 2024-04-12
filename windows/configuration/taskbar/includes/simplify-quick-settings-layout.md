@@ -7,7 +7,8 @@ ms.topic: include
 
 ### Simplify Quick Settings Layout
 
-If you enable this policy, Quick Settings is reduced to only having the WiFi, Bluetooth, Accessibility, and VPN buttons. The brightness slider, volume slider, and battery indicator and link to the Settings app. If you disable or don't configure this policy setting, the regular Quick Settings layout will appear whenever Quick Settings is invoked.
+- If you enable this policy, Quick Settings is reduced to only having the Wi-Fi, Bluetooth, Accessibility, and VPN buttons. The brightness slider, volume slider, and battery indicator and link to the Settings app
+- If you disable or don't configure this policy setting, the regular Quick Settings layout appears whenever Quick Settings is invoked
 
 |  | Path |
 |--|--|

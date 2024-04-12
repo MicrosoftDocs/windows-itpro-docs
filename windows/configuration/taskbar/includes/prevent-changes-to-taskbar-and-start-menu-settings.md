@@ -7,7 +7,10 @@ ms.topic: include
 
 ### Prevent changes to Taskbar and Start Menu Settings
 
-HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer!NoSetTaskbar
+With this policy setting you prevent changes to taskbar and Start settings.
+
+- If you enable this policy setting, the user can't open the Taskbar properties dialog box. If the user right-clicks the taskbar and then selects Properties, a message appears explaining that a setting prevents the action
+- If you disable or don't configure this policy setting, the Taskbar and Start menu items are available from Settings on the Start menu
 
 |  | Path |
 |--|--|

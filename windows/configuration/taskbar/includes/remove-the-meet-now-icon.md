@@ -7,7 +7,10 @@ ms.topic: include
 
 ### Remove the Meet Now icon
 
-This policy setting allows you to remove the Meet Now icon from the system control area. If you enable this policy setting, the Meet Now icon is not displayed in the system notification area. If you disable or don't configure this policy setting, the Meet Now icon is displayed in the system notification area.
+With this policy setting allows you can remove the Meet Now icon from the system control area.
+
+- If you enable this policy setting, the Meet Now icon isn't displayed in the system notification area
+- If you disable or don't configure this policy setting, the Meet Now icon is displayed in the system notification area
 
 |  | Path |
 |--|--|

@@ -7,7 +7,10 @@ ms.topic: include
 
 ### Turn off automatic promotion of notification icons to the taskbar
 
-This policy setting allows you to turn off automatic promotion of notification icons to the taskbar. If you enable this policy setting, newly added notification icons aren't temporarily promoted to the Taskbar. Users can still configure icons to be shown or hidden in the Notification Control Panel. If you disable or don't configure this policy setting, newly added notification icons are temporarily promoted to the Taskbar.
+With this policy setting you can turn off automatic promotion of notification icons to the taskbar.
+
+- If you enable this policy setting, newly added notification icons aren't temporarily promoted to the Taskbar. Users can still configure icons to be shown or hidden in the Notification Control Panel.
+- If you disable or don't configure this policy setting, newly added notification icons are temporarily promoted to the Taskbar
 
 |  | Path |
 |--|--|

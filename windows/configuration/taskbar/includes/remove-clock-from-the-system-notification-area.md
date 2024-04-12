@@ -7,7 +7,8 @@ ms.topic: include
 
 ### Remove Clock from the system notification area
 
-Prevents the clock in the system notification area from being displayed. If you enable this setting, the clock will not be displayed in the system notification area. If you disable or don't configure this setting, the default behavior of the clock appearing in the notification area will occur.
+- If you enable this policy setting, the clock isn't displayed in the system notification area
+- If you disable or don't configure this policy setting, the default behavior accur, and the clock appears in the notification area
 
 |  | Path |
 |--|--|
