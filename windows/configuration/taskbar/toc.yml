@@ -1,7 +1,7 @@
 items:
 - name: Customize the Taskbar
   href: index.md
-- name: Supported Taskbar CSPs
+- name: Policy settings
   href: policy-settings.md
 - name: XML schema definition (XSD)
   href: xsd.md
