@@ -1,6 +1,6 @@
 ---
 title: Log files and resolving upgrade errors
-description: Learn how to interpret and analyze the log files that are generated during the Windows upgrade process.
+description: Learn how to interpret and analyze the log files generated during the Windows upgrade process.
 ms.service: windows-client
 author: frankroj
 manager: aaroncz
@@ -23,7 +23,7 @@ appliesto:
 >
 > The following is a level 400 (advanced) topic. See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
 
-Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that the phase can be determined from the extended code.
+Each phase of the upgrade process creates several log files, which are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure File Explorer to view hidden items, or use a tool to gather these logs. The most useful log is **setupact.log**. The log files are in a different folder depending on the Windows Setup phase, which can be determined from the extended code.
 
 > [!NOTE]
 >
@@ -61,7 +61,7 @@ See the following example:
 
 | Date/Time | Log level | Component | Message |
 |------|------------|------------|------------|
-|2023-09-08 09:23:50,|  Warning |         MIG  |   Couldn't replace object C:\Users\name\Cookies. The target Object can't be removed.|
+|2023-09-08 09:23:50,|  Warning |         MIG  |   Couldn't replace object C:\Users\name\Cookies. Target Object can't be removed.|
 
 ## Analyze log files
 
@@ -73,7 +73,7 @@ To analyze Windows Setup log files:
 
 1. Based on the [extend code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes) portion of the error code, determine the type and location of a log file to investigate.
 
-1. Open the log file in a text editor, such as Notepad.
+1. Open the log file in a text editor such as Notepad.
 
 1. Using the [result code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively, search for the "abort" and abandoning" text strings described in step 7 below.
 
@@ -103,7 +103,7 @@ For example, assume that the error code for an error is **0x8007042B - 0x2000D**
 
 > [!NOTE]
 >
-> Some lines in the following text are shortened to enhance readability. For example
+> Some lines in the following text are shortened to enhance readability. For example:
 >
 > - The date and time at the start of each line (ex: 2023-10-05 15:27:08) is shortened to minutes and seconds
 > - The certificate file name, which is a long text string, is shortened to just "CN."
@@ -129,7 +129,7 @@ The first line indicates there was an error **0x00000570** with the file **C:\Pr
 
 The error **0x00000570** is a [Win32 error code](/openspecs/windows_protocols/ms-erref/18d8fbe8-a967-4f1c-ae50-99ca8e491d2d) corresponding to: **ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable**.
 
-Therefore, Windows Setup failed because it wasn't able to migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. After the `setupact.log` file is searched for more details, the phrase **Shell application requested abort** is found in a location with the same timestamp as the lines in `setuperr.log`. This analysis confirms the suspicion that this file is the cause of the upgrade failure:
+Therefore, Windows Setup failed because it couldn't migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. After the `setupact.log` file is searched for more details, the phrase **Shell application requested abort** is found in a location with the same timestamp as the lines in `setuperr.log`. This analysis confirms the suspicion that this file is the cause of the upgrade failure:
 
 **setupact.log** content:
 
