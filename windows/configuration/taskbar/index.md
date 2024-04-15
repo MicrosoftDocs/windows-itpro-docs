@@ -49,23 +49,26 @@ The Windows taskbar consists of several key components that can be customized to
 
 ::: zone pivot="windows-11"
 
-:::image type="content" source="images/taskbar-sections-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-sections-11.png":::
-
-::: zone-end
-
-::: zone pivot="windows-10"
-
-:::image type="content" source="images/taskbar-sections-10.png" alt-text="Sample Windows 10 taskbar." border="false" lightbox="./images/taskbar-sections-10.png":::
-
-::: zone-end
-
 1. **Taskbar items**: the icons in this area include Widgets, Start, Search, Task view, and Copilot
 1. **Taskbar layout**: the configuration of the taskbar layout requires the use of an XML file that specifies the order of the pinned elements. To learn more about how to create and apply an XML file to configure the taskbar layout, see [Customize the taskbar layout](layout.md).
 1. **System tray** icons: these icons include the pen menu, touch keyboard, Virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
 1. Quick Actions
 1. Calendar and Action Center
 
+:::image type="content" source="images/taskbar-sections-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-sections-11.png":::
 
+::: zone-end
+
+::: zone pivot="windows-10"
+
+1. **Taskbar items**: the icons in this area include Widgets, Start, Search, Task view, and Copilot
+1. **Taskbar layout**: the configuration of the taskbar layout requires the use of an XML file that specifies the order of the pinned elements. To learn more about how to create and apply an XML file to configure the taskbar layout, see [Customize the taskbar layout](layout.md).
+1. **System tray**: the icons in this area include the pen menu, touch keyboard, Virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
+1. **Notification System area**:
+
+:::image type="content" source="images/taskbar-sections-10.png" alt-text="Sample Windows 10 taskbar." border="false" lightbox="./images/taskbar-sections-10.png":::
+
+::: zone-end
 
 ## Next steps
 
@@ -77,7 +80,6 @@ In the next sections, you can learn more about the options available to configur
 <!--links-->
 
 [WIN-1]: /windows/client-management/mdm/policy-csp-start
-
 
 <!-- form Start article to move
 

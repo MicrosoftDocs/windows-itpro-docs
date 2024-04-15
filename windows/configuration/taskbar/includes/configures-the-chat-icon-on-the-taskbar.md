@@ -17,4 +17,4 @@ Wih this policy setting you configure the Chat icon on the taskbar.
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Experience/`[ConfigureChatIcon](/windows/client-management/mdm/policy-csp-experience#configurechaticon) |
-| **GPO** | **Computer Configuration**  > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | **Computer Configuration**  > **Administrative Templates** > **Windows Components** > **Chat** |
