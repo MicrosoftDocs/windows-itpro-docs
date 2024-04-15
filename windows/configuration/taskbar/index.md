@@ -17,18 +17,6 @@ Kiosks, which are designed for public use, can also take advantage of taskbar cu
 
 Overall, the ability to customize the Windows taskbar using policy settings enables organizations to create a more controlled, efficient, and user-friendly computing environment tailored to the specific needs of different user groups.
 
-::: zone pivot="windows-11"
-
-:::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
-
-::: zone-end
-
-::: zone pivot="windows-10"
-
-:::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 10 taskbar." border="false" lightbox="./images/taskbar-10.png":::
-
-::: zone-end
-
 ## Configuration options
 
 There are several options to configure the Windows taskbar.
@@ -45,15 +33,24 @@ For advanced customizations and when you need to configure multiple devices, you
 
 ## Taskbar components
 
-The Windows taskbar consists of several key components that can be customized to meet the needs of different scenarios. These components include:
+The Windows taskbar consists of several key components that can be customized to meet the needs of different scenarios.
 
 ::: zone pivot="windows-11"
 
-1. **Taskbar items**: the icons in this area include Widgets, Start, Search, Task view, and Copilot
-1. **Taskbar layout**: the configuration of the taskbar layout requires the use of an XML file that specifies the order of the pinned elements. To learn more about how to create and apply an XML file to configure the taskbar layout, see [Customize the taskbar layout](layout.md).
-1. **System tray** icons: these icons include the pen menu, touch keyboard, Virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
-1. Quick Actions
-1. Calendar and Action Center
+Let's review the components of the Windows taskbar by dividing it into three areas:
+
+1. The *left area* contains Widgets, which users can personalize to quickly access feed and information that they deem most relevant
+1. The *center area* include:
+    1. Start
+    1. Search
+    1. Task view
+    1. Pinned and running apps. The configuration of pinned elements to the taskbar requires the use of an XML file that specifies their pinning order. To learn more about how to create and apply an XML file to configure the taskbar layout, see [Customize the taskbar layout](layout.md)
+1. The *right area* include:
+    1. The system tray, which displays icons like the pen menu, touch keyboard, Virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
+    1. Quick Actions
+    1. Calendar
+    1. Action Center
+    1. Copilot
 
 :::image type="content" source="images/taskbar-sections-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-sections-11.png":::
 
@@ -61,7 +58,7 @@ The Windows taskbar consists of several key components that can be customized to
 
 ::: zone pivot="windows-10"
 
-1. **Taskbar items**: the icons in this area include Widgets, Start, Search, Task view, and Copilot
+1. **Taskbar items**: the icons in this area include Start, Search, Cortana, and Task view
 1. **Taskbar layout**: the configuration of the taskbar layout requires the use of an XML file that specifies the order of the pinned elements. To learn more about how to create and apply an XML file to configure the taskbar layout, see [Customize the taskbar layout](layout.md).
 1. **System tray**: the icons in this area include the pen menu, touch keyboard, Virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
 1. **Notification System area**:
