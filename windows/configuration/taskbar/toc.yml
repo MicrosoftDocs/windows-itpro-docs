@@ -1,6 +1,9 @@
 items:
-- name: Customize the Taskbar
+- name: Overview
   href: index.md
+  displayName: Configure the Windows taskbar
+- name: Customize the taskbar
+  href: layout.md
 - name: Policy settings
   href: policy-settings.md
 - name: XML schema definition (XSD)
