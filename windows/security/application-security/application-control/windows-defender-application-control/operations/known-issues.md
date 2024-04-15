@@ -2,7 +2,7 @@
 title: WDAC Admin Tips & Known Issues
 description: WDAC Known Issues
 ms.manager: jsuther
-ms.date: 03/13/2024
+ms.date: 04/15/2024
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -49,7 +49,7 @@ When the WDAC engine evaluates files against the active set of policies on the d
 
 ### Boot stop failure (blue screen) occurs if more than 32 policies are active
 
-Until you apply the Windows security update released on or after March 12, 2024, your device is limited to 32 active policies. If the maximum number of policies is exceeded, the device bluescreens referencing ci.dll with a bug check value of 0x0000003b. Consider this maximum policy count limit when planning your WDAC policies. Any [Windows inbox policies](/windows/security/threat-protection/windows-defender-application-control/operations/inbox-wdac-policies) that are active on the device also count towards this limit. To remove the maximum policy limit, install the Windows security update released on, or after, March 12, 2024 and then restart the device. Otherwise, reduce the number of policies on the device to remain below 32 policies.
+Until you apply the Windows security update released on or after April 9, 2024, your device is limited to 32 active policies. If the maximum number of policies is exceeded, the device bluescreens referencing ci.dll with a bug check value of 0x0000003b. Consider this maximum policy count limit when planning your WDAC policies. Any [Windows inbox policies](/windows/security/threat-protection/windows-defender-application-control/operations/inbox-wdac-policies) that are active on the device also count towards this limit. To remove the maximum policy limit, install the Windows security update released on, or after, April 9, 2024 and then restart the device. Otherwise, reduce the number of policies on the device to remain below 32 policies.
 
 ### Audit mode policies can change the behavior for some apps or cause app crashes
 

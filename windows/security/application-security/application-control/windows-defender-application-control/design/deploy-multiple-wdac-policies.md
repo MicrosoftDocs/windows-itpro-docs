@@ -2,7 +2,7 @@
 title: Use multiple Windows Defender Application Control Policies
 description: Windows Defender Application Control supports multiple code integrity policies for one device.
 ms.localizationpriority: medium
-ms.date: 03/13/2024
+ms.date: 04/15/2024
 ms.topic: article
 ---
 
@@ -11,7 +11,7 @@ ms.topic: article
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-Beginning with Windows 10 version 1903 and Windows Server 2022, you can deploy multiple Windows Defender Application Control (WDAC) policies side-by-side on a device. To allow more than 32 active policies, install the Windows security update released on, or after, March 12, 2024 and then restart the device. With these updates, there's no limit for the number of policies you can deploy at once to a given device. Until you install the Windows security update released on or after March 12, 2024, your device is limited to 32 active policies and you must not exceed that number.
+Beginning with Windows 10 version 1903 and Windows Server 2022, you can deploy multiple Windows Defender Application Control (WDAC) policies side-by-side on a device. To allow more than 32 active policies, install the Windows security update released on, or after, April 9, 2024 and then restart the device. With these updates, there's no limit for the number of policies you can deploy at once to a given device. Until you install the Windows security update released on or after April 9, 2024, your device is limited to 32 active policies and you must not exceed that number.
 
 Here are some common scenarios where multiple side-by-side policies are useful:
 
