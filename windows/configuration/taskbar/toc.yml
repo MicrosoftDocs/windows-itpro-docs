@@ -2,7 +2,7 @@ items:
 - name: Overview
   href: index.md
   displayName: Configure the Windows taskbar
-- name: Customize the taskbar
+- name: Customize the taskbar layout
   href: layout.md
 - name: Policy settings
   href: policy-settings.md

@@ -40,11 +40,9 @@ Select one of the tabs to see the list of available settings:
 |[Configure Start layout](#configure-start-layout)|✅|✅|
 |[Configures search on the taskbar](#configures-search-on-the-taskbar)|✅|✅|
 |[Configures the Chat icon on the taskbar](#configures-the-chat-icon-on-the-taskbar)|✅|✅|
-|[Do not allow taskbars on more than one display](#do-not-allow-taskbars-on-more-than-one-display)|❌|✅|
 |[Do not display or track items in Jump Lists from remote locations](#do-not-display-or-track-items-in-jump-lists-from-remote-locations)|❌|✅|
 |[Hide recent jumplists](#hide-recent-jumplists)|✅|✅|
 |[Hide the TaskView button](#hide-the-taskview-button)|✅|✅|
-|[Prevent grouping of taskbar items](#prevent-grouping-of-taskbar-items)|❌|✅|
 |[Remove Clock from the system notification area](#remove-clock-from-the-system-notification-area)|❌|✅|
 |[Remove Notifications and Action Center](#remove-notifications-and-action-center)|❌|✅|
 |[Remove pinned programs from the Taskbar](#remove-pinned-programs-from-the-taskbar)|❌|✅|
@@ -63,11 +61,9 @@ Select one of the tabs to see the list of available settings:
 |[Allow widgets](#allow-widgets)|✅|✅|
 |[Configure Start layout](#configure-start-layout)|✅|✅|
 |[Configures search on the taskbar](#configures-search-on-the-taskbar)|✅|✅|
-|[Do not allow taskbars on more than one display](#do-not-allow-taskbars-on-more-than-one-display)|❌|✅|
 |[Do not display or track items in Jump Lists from remote locations](#do-not-display-or-track-items-in-jump-lists-from-remote-locations)|❌|✅|
 |[Hide recent jumplists](#hide-recent-jumplists)|✅|✅|
 |[Hide the notification area](#hide-the-notification-area)|❌|✅|
-|[Prevent grouping of taskbar items](#prevent-grouping-of-taskbar-items)|❌|✅|
 |[Remove Clock from the system notification area](#remove-clock-from-the-system-notification-area)|❌|✅|
 |[Remove Notifications and Action Center](#remove-notifications-and-action-center)|❌|✅|
 |[Remove pinned programs from the Taskbar](#remove-pinned-programs-from-the-taskbar)|❌|✅|
@@ -91,7 +87,6 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [configures-the-chat-icon-on-the-taskbar](includes/configures-the-chat-icon-on-the-taskbar.md)]
 ::: zone-end
 
-[!INCLUDE [do-not-allow-taskbars-on-more-than-one-display](includes/do-not-allow-taskbars-on-more-than-one-display.md)]
 [!INCLUDE [do-not-display-or-track-items-in-jump-lists-from-remote-locations](includes/do-not-display-or-track-items-in-jump-lists-from-remote-locations.md)]
 
 ::: zone pivot="windows-10"
@@ -104,7 +99,6 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [hide-the-taskview-button](includes/hide-the-taskview-button.md)]
 ::: zone-end
 
-[!INCLUDE [prevent-grouping-of-taskbar-items](includes/prevent-grouping-of-taskbar-items.md)]
 [!INCLUDE [remove-clock-from-the-system-notification-area](includes/remove-clock-from-the-system-notification-area.md)]
 [!INCLUDE [remove-notifications-and-action-center](includes/remove-notifications-and-action-center.md)]
 [!INCLUDE [remove-pinned-programs-from-the-taskbar](includes/remove-pinned-programs-from-the-taskbar.md)]
@@ -135,7 +129,7 @@ Select one of the tabs to see the list of available settings:
 
 [!INCLUDE [turn-off-windows-copilot](includes/turn-off-windows-copilot.md)]
 
-#### [:::image type="icon" source="../images/icons/touch.svg"::: **User actions**](#tab/actions)
+#### [:::image type="icon" source="../images/icons/touch.svg"::: **Taskbar behaviors**](#tab/actions)
 
 ::: zone pivot="windows-11"
 
@@ -145,7 +139,9 @@ Select one of the tabs to see the list of available settings:
 |[Do not allow pinning items in Jump Lists](#do-not-allow-pinning-items-in-jump-lists)|❌|✅|
 |[Do not allow pinning programs to the Taskbar](#do-not-allow-pinning-programs-to-the-taskbar)|✅|✅|
 |[Do not allow pinning Store app to the Taskbar](#do-not-allow-pinning-store-app-to-the-taskbar)|❌|✅|
+|[Do not allow taskbars on more than one display](#do-not-allow-taskbars-on-more-than-one-display)|❌|✅|
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
+|[Prevent grouping of taskbar items](#prevent-grouping-of-taskbar-items)|❌|✅|
 |[Remove access to the context menus for the taskbar](#remove-access-to-the-context-menus-for-the-taskbar)|❌|✅|
 
 ::: zone-end
@@ -160,6 +156,7 @@ Select one of the tabs to see the list of available settings:
 |[Lock all taskbar settings](#lock-all-taskbar-settings)|❌|✅|
 |[Lock the Taskbar](#lock-the-taskbar)|❌|✅|
 |[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
+|[Prevent grouping of taskbar items](#prevent-grouping-of-taskbar-items)|❌|✅|
 |[Prevent users from adding or removing toolbars](#prevent-users-from-adding-or-removing-toolbars)|❌|✅|
 |[Prevent users from moving taskbar to another screen dock location](#prevent-users-from-moving-taskbar-to-another-screen-dock-location)|❌|✅|
 |[Prevent users from rearranging toolbars](#prevent-users-from-rearranging-toolbars)|❌|✅|
@@ -177,6 +174,7 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [do-not-allow-pinning-items-in-jump-lists](includes/do-not-allow-pinning-items-in-jump-lists.md)]
 [!INCLUDE [do-not-allow-pinning-programs-to-the-taskbar](includes/do-not-allow-pinning-programs-to-the-taskbar.md)]
 [!INCLUDE [do-not-allow-pinning-store-app-to-the-taskbar](includes/do-not-allow-pinning-store-app-to-the-taskbar.md)]
+[!INCLUDE [do-not-allow-taskbars-on-more-than-one-display](includes/do-not-allow-taskbars-on-more-than-one-display.md)]
 
 ::: zone pivot="windows-10"
 [!INCLUDE [lock-all-taskbar-settings](includes/lock-all-taskbar-settings.md)]
@@ -184,6 +182,7 @@ Select one of the tabs to see the list of available settings:
 ::: zone-end
 
 [!INCLUDE [prevent-changes-to-taskbar-and-start-menu-settings](includes/prevent-changes-to-taskbar-and-start-menu-settings.md)]
+[!INCLUDE [prevent-grouping-of-taskbar-items](includes/prevent-grouping-of-taskbar-items.md)]
 
 ::: zone pivot="windows-10"
 [!INCLUDE [prevent-users-from-adding-or-removing-toolbars](includes/prevent-users-from-adding-or-removing-toolbars.md)]

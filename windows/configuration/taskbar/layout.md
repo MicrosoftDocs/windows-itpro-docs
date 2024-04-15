@@ -1,5 +1,5 @@
 ---
-title: Customize the Windows taskbar
+title: Customize the Windows taskbar layout
 description: Learn how to customize the Windows taskbar, export its configuration, and deploy the customization to other devices.
 ms.topic: how-to
 ms.date: 08/18/2023
@@ -7,7 +7,7 @@ appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
 
-# Customize the Windows taskbar
+# Customize the Windows taskbar layout
 
 ::: zone pivot="windows-10"
 

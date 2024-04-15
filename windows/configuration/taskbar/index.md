@@ -9,6 +9,13 @@ zone_pivot_groups: windows-versions-11-10
 
 # Configure the Windows taskbar
 
+Customizing the Windows taskbar using policy settings offers a range of benefits for various user scenarios. For specialized devices, it allows for a tailored user experience that can be locked down to prevent unauthorized changes, ensuring that the device serves its specific purpose efficiently. For students, a customized taskbar can provide quick access to educational tools and resources, minimizing distractions and optimizing the learning environment.
+
+Frontline workers, who often operate in fast-paced and dynamic settings, can benefit from a taskbar that is configured to provide immediate access to the most critical applications and functions they need. This customization can streamline workflows and enhance productivity by reducing the time spent navigating through unnecessary applications or menus.
+
+Kiosks, which are designed for public use, can also take advantage of taskbar customization to offer a simplified and focused interface. This can help users quickly find the information or services they are looking for, which is particularly useful in environments like retail, information centers, or public service areas.
+
+Overall, the ability to customize the Windows taskbar using policy settings enables organizations to create a more controlled, efficient, and user-friendly computing environment tailored to the specific needs of different user groups.
 
 ::: zone pivot="windows-11"
 
@@ -36,7 +43,28 @@ For advanced customizations and when you need to configure multiple devices, you
 > [!NOTE]
 > While many of the taskbar policy settings can be configured using both CSP and GPO, there are some settings that are exclusive to one or the other. To learn about the available policy settings to configure the Start menu via CSP and GPO, see [Taskbar policy settings](policy-settings.md).
 
-The configuration of the Start layout requires the use of an XML file that specifies the layout. To learn more about how to create and apply an XML file to configure the taskbar layout, see [Customize the taskbar layout](layout.md).
+## Taskbar components
+
+The Windows taskbar consists of several key components that can be customized to meet the needs of different scenarios. These components include:
+
+::: zone pivot="windows-11"
+
+:::image type="content" source="images/taskbar-sections-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-sections-11.png":::
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+:::image type="content" source="images/taskbar-sections-10.png" alt-text="Sample Windows 10 taskbar." border="false" lightbox="./images/taskbar-sections-10.png":::
+
+::: zone-end
+
+1. **Taskbar items**: the icons in this area include Widgets, Start, Search, Task view, and Copilot
+1. **Taskbar layout**: the configuration of the taskbar layout requires the use of an XML file that specifies the order of the pinned elements. To learn more about how to create and apply an XML file to configure the taskbar layout, see [Customize the taskbar layout](layout.md).
+1. **System tray** icons: these icons include the pen menu, touch keyboard, Virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
+1. Quick Actions
+1. Calendar and Action Center
+
 
 
 ## Next steps
