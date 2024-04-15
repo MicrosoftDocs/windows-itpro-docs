@@ -46,7 +46,7 @@ The Reliability report relies on device policies being configured properly. It's
 | No | - | - | No report available.<p>In this state, a ribbon appears on the landing page alerting the user that the diagnostic data needed to generate a report appears to be turned off. The report is available 24 and 48 hours after the following conditions are met:<ul><li>[Diagnostic data device configuration policies enabled](../references/windows-autopatch-changes-to-tenant.md#device-configuration-policies)</li><li>At least 100 devices registered in Autopatch</li><li>At least 100 of these registered devices completed a quality update in the current update cycle (second Tuesday of the month)</li></ul></p> |
 | Yes | 0 | - | The report includes only the historical comparison baseline and service-level score. The tenant and module impact scores are unavailable until 100 devices are updated. |
 | Yes | 0 < n < 100 | 0 < n < 100 | The report includes module failure details, historical comparison baseline, and service-level score. The tenant score is unavailable until 100 devices are updated. |
-| Yes | n >= 100 | n >= 100 | The report includes module failure details, historical comparison baseline score, and service-level score. The tenant and module impact scores are unavailable until 100 devices are updated. |
+| Yes | n >= 100 | 0 < n < 100 | The report includes module failure details, historical comparison baseline score, and service-level score. The tenant and module impact scores are unavailable until 100 devices are updated. |
 | Yes | n >= 100 | n >= 100 | Full reporting available |
 
 ## View the Reliability report
