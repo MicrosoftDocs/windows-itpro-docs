@@ -177,22 +177,63 @@ If you only want to remove some of the default pinned apps, you remove all defau
   <CustomTaskbarLayoutCollection PinListPlacement="Replace">
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Accessories\Internet Explorer.lnk"/>
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk" />
-        <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
+        <taskbar:UWA AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer"/>
+        <taskbar:UWA AppUserModelID="Microsoft.MicrosoftLoop_8wekyb3d8bbwe!App" />
+        <taskbar:UWA AppUserModelID="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe!App" />
       </taskbar:TaskbarPinList>
     </defaultlayout:TaskbarLayout>
   </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
 ```
 
-**Before:**
+::: zone pivot="windows-11"
 
-![Taskbar with default apps.](images/taskbar-default.png)
+:::row:::
+  :::column span="1":::
+        **Before**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
 
-**After:**
+    :::column-end:::
+:::row-end:::
 
-![Taskbar with default apps removed.](images/taskbar-default-removed.png)
+:::row:::
+  :::column span="1":::
+        **After**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
+
+    :::column-end:::
+:::row-end:::
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+:::row:::
+  :::column span="1":::
+        **Before**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
+
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+  :::column span="1":::
+        **After**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
+
+    :::column-end:::
+:::row-end:::
+
+::: zone-end
 
 ### Configuration by country or region
 
@@ -260,6 +301,8 @@ The GPO applies the Start and taskbar layout at the next user sign-in. Each time
 ## User experience
 
 After the taskbar layout is applied, users can pin more apps, change the order, and unpin apps.
+
+:::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
 
 ## OS install and upgrade
 
