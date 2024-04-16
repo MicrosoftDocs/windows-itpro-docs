@@ -19,7 +19,7 @@ ms.date: 12/31/2017
 ---
 
 # Deploy Windows client updates using Windows Server Update Services (WSUS)
-
+ 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 
