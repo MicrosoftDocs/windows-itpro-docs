@@ -13,6 +13,8 @@ ms.topic: article
 
 Beginning with Windows 10 version 1903 and Windows Server 2022, you can deploy multiple Windows Defender Application Control (WDAC) policies side-by-side on a device. To allow more than 32 active policies, install the Windows security update released on, or after, April 9, 2024 and then restart the device. With these updates, there's no limit for the number of policies you can deploy at once to a given device. Until you install the Windows security update released on or after April 9, 2024, your device is limited to 32 active policies and you must not exceed that number.
 
+**Note:** The policy limit was not removed on Windows 11 21H2, and will remain limited to 32 policies.
+
 Here are some common scenarios where multiple side-by-side policies are useful:
 
 1. Enforce and Audit Side-by-Side

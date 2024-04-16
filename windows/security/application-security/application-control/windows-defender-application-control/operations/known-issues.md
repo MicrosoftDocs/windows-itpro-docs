@@ -51,6 +51,8 @@ When the WDAC engine evaluates files against the active set of policies on the d
 
 Until you apply the Windows security update released on or after April 9, 2024, your device is limited to 32 active policies. If the maximum number of policies is exceeded, the device bluescreens referencing ci.dll with a bug check value of 0x0000003b. Consider this maximum policy count limit when planning your WDAC policies. Any [Windows inbox policies](/windows/security/threat-protection/windows-defender-application-control/operations/inbox-wdac-policies) that are active on the device also count towards this limit. To remove the maximum policy limit, install the Windows security update released on, or after, April 9, 2024 and then restart the device. Otherwise, reduce the number of policies on the device to remain below 32 policies.
 
+**Note:** The policy limit was not removed on Windows 11 21H2, and will remain limited to 32 policies.
+
 ### Audit mode policies can change the behavior for some apps or cause app crashes
 
 Although WDAC audit mode is designed to avoid impact to apps, some features are always on/always enforced with any WDAC policy that turns on user mode code integrity (UMCI) with the option **0 Enabled:UMCI**. Here's a list of known system changes in audit mode:
