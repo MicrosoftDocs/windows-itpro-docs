@@ -122,7 +122,7 @@ Apps are pinned in the following order:
 > [!NOTE]
 > If the OS is configured to use a right-to-left language, then the taskbar order is reversed.
 
-### Keep default apps and add your own
+### Add pins
 
 The `<CustomTaskbarLayoutCollection>` section will append listed apps to the taskbar by default. The following sample keeps the default apps pinned and adds pins for Paint, Microsoft Reader, and a command prompt.
 
@@ -137,34 +137,121 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
   <CustomTaskbarLayoutCollection>
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk" />
-        <taskbar:UWA AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
-        <taskbar:DesktopApp DesktopApplicationLinkPath="%appdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk" />
+        <taskbar:UWA AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer"/>
+        <taskbar:UWA AppUserModelID="Microsoft.MicrosoftLoop_8wekyb3d8bbwe!App" />
+        <taskbar:UWA AppUserModelID="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe!App" />
       </taskbar:TaskbarPinList>
     </defaultlayout:TaskbarLayout>
   </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
 ```
 
-**Before:**
+::: zone pivot="windows-11"
 
-![default apps pinned to taskbar.](images/taskbar-default.png)
+:::row:::
+  :::column span="1":::
+        **Before:**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
 
-**After:**
+    :::column-end:::
+:::row-end:::
 
- ![additional apps pinned to taskbar.](images/taskbar-default-plus.png)
+:::row:::
+  :::column span="1":::
+        **After:**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
 
-### Remove default apps
+    :::column-end:::
+:::row-end:::
 
-By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you remove all default pinned apps.
+::: zone-end
+
+::: zone pivot="windows-10"
+
+:::row:::
+  :::column span="1":::
+        **Before**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-10.png":::
+
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+  :::column span="1":::
+        **After**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/pin-add-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-10.png":::
+
+    :::column-end:::
+:::row-end:::
+
+::: zone-end
+
+### Remove default pins
+
+To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`.
 
 [!INCLUDE [example-remove-default-apps](includes/example-remove-default-apps.md)]
 
-### Remove default apps and add your own
+::: zone pivot="windows-11"
 
-By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you remove all default pinned apps. Only the elements that you specify are pinned to the taskbar.
+:::row:::
+  :::column span="1":::
+        **Before:**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
 
-If you only want to remove some of the default pinned apps, you remove all default pinned apps and then include the apps that you want to keep in the list of pins.
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+  :::column span="1":::
+        **After:**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
+
+    :::column-end:::
+:::row-end:::
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+:::row:::
+  :::column span="1":::
+        **Before**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-10.png":::
+
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+  :::column span="1":::
+        **After**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/pin-replace-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-replace-10.png":::
+
+    :::column-end:::
+:::row-end:::
+
+::: zone-end
+
+### Replace pins
+
+To replace all default pins and add your own pins, add `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`. Then, add the pins that you want to `TaskbarPinList`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -191,7 +278,7 @@ If you only want to remove some of the default pinned apps, you remove all defau
 
 :::row:::
   :::column span="1":::
-        **Before**
+        **Before:**
     :::column-end:::
   :::column span="3":::
         :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
@@ -201,7 +288,7 @@ If you only want to remove some of the default pinned apps, you remove all defau
 
 :::row:::
   :::column span="1":::
-        **After**
+        **After:**
     :::column-end:::
   :::column span="3":::
         :::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
@@ -218,7 +305,7 @@ If you only want to remove some of the default pinned apps, you remove all defau
         **Before**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
+        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-10.png":::
 
     :::column-end:::
 :::row-end:::
@@ -228,7 +315,7 @@ If you only want to remove some of the default pinned apps, you remove all defau
         **After**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
+        :::image type="content" source="images/pin-replace-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-replace-10.png":::
 
     :::column-end:::
 :::row-end:::
