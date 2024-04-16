@@ -326,7 +326,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 
 In the following XML example, two regions are added: `US|UK` and `DE|FR|IT`:
 
-[!INCLUDE [example](includes/example-localized.md)]
+[!INCLUDE [example](includes/example-region.md)]
 
 - If the `<TaskbarPinList>` node has region matching the one configured on the device, then the configuration applies
 - If the `<TaskbarPinList>` node doesn't have a region matching the one configured on the device, then the first `<TaskbarPinList>` node without region applies
