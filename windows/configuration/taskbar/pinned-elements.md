@@ -105,19 +105,11 @@ The following example shows how apps will be pinned: Windows default apps to the
 
 ## Pin order for all apps
 
-On a taskbar, the following apps are typically pinned:
+Apps are pinned to the taskbar in the following order:
 
-- Apps pinned by the user
-- Default Windows apps pinned during the OS installation, such as Microsoft Edge, File Explorer, and Microsoft Store.
-- Apps pinned by your organization, such as in an unattended Windows setup.
-
-  In an unattended Windows setup file, use the XML file you created in this article. It's not recommended to use [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks).
-
-Apps are pinned in the following order:
-
-1. Windows default apps are pinned first.
-1. User-pinned apps are pinned after the Windows default apps.
-1. XML-pinned apps are pinned after the user-pinned apps.
+1. Windows default apps are pinned first
+1. User-pinned apps are pinned after the Windows default apps
+1. XML-pinned apps are pinned after the user-pinned apps
 
 > [!NOTE]
 > If the OS is configured to use a right-to-left language, then the taskbar order is reversed.
@@ -126,26 +118,7 @@ Apps are pinned in the following order:
 
 The `<CustomTaskbarLayoutCollection>` section will append listed apps to the taskbar by default. The following sample keeps the default apps pinned and adds pins for Paint, Microsoft Reader, and a command prompt.
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
-    Version="1">
-  <CustomTaskbarLayoutCollection>
-    <defaultlayout:TaskbarLayout>
-      <taskbar:TaskbarPinList>
-        <taskbar:UWA AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
-        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer"/>
-        <taskbar:UWA AppUserModelID="Microsoft.MicrosoftLoop_8wekyb3d8bbwe!App" />
-        <taskbar:UWA AppUserModelID="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe!App" />
-      </taskbar:TaskbarPinList>
-    </defaultlayout:TaskbarLayout>
-  </CustomTaskbarLayoutCollection>
-</LayoutModificationTemplate>
-```
+[!INCLUDE [example-add-pins](includes/example-add-pins.md)]
 
 ::: zone pivot="windows-11"
 
@@ -199,7 +172,7 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 
 To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`.
 
-[!INCLUDE [example-remove-default-apps](includes/example-remove-default-apps.md)]
+[!INCLUDE [example-remove-pins](includes/example-remove-pins.md)]
 
 ::: zone pivot="windows-11"
 
@@ -253,26 +226,7 @@ To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarL
 
 To replace all default pins and add your own pins, add `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`. Then, add the pins that you want to `TaskbarPinList`.
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<LayoutModificationTemplate
-    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
-    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
-    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
-    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
-    Version="1">
-  <CustomTaskbarLayoutCollection PinListPlacement="Replace">
-    <defaultlayout:TaskbarLayout>
-      <taskbar:TaskbarPinList>
-        <taskbar:UWA AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
-        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer"/>
-        <taskbar:UWA AppUserModelID="Microsoft.MicrosoftLoop_8wekyb3d8bbwe!App" />
-        <taskbar:UWA AppUserModelID="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe!App" />
-      </taskbar:TaskbarPinList>
-    </defaultlayout:TaskbarLayout>
-  </CustomTaskbarLayoutCollection>
-</LayoutModificationTemplate>
-```
+[!INCLUDE [example-replace-pins](includes/example-replace-pins.md)]
 
 ::: zone pivot="windows-11"
 
