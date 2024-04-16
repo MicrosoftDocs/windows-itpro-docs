@@ -7,8 +7,6 @@ ms.topic: include
 
 ## Create the XML file
 
-1. In a text editor, such as Visual Studio Code, create a new XML file. To help you get started, you can copy and paste the following XML sample. The sample pins 2 apps to the taskbar - File Explorer and the Command Prompt:
-
 ::: zone pivot="windows-10"
 
 ### Sample taskbar configuration XML file

@@ -40,12 +40,12 @@ The Windows taskbar consists of several key components that can be customized to
 Let's review the components of the Windows taskbar by dividing it into three areas:
 
 1. The *left area* contains Widgets, which users can personalize to quickly access feed and information that they deem most relevant
-1. The *center area* include:
-    1. Start
+1. The *center area* cantains:
+    1. Start menu
     1. Search
     1. Task view
-    1. Pinned and running apps. The configuration of pinned elements to the taskbar requires the use of an XML file that specifies their pinning order. To learn more about how to create and apply an XML file to configure the taskbar layout, see [Customize the taskbar layout](layout.md)
-1. The *right area* include:
+    1. Pinned and running apps. The configuration of pinned applications to the taskbar requires the use of an XML file that specifies their pinning order. To learn more about how to create and apply an XML file to configure pinned applications, see [Configure the taskbar pinned applications](pinned-apps.md)
+1. The *right area* cantains:
     1. The system tray, which displays icons like the pen menu, touch keyboard, Virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
     1. Quick Actions
     1. Calendar

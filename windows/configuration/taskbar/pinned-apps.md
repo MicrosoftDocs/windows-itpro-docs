@@ -1,13 +1,13 @@
 ---
-title: Customize the taskbar pinned elements
-description: Learn how to customize the Windows taskbar pinned elemnents, export its configuration, and deploy the customization to other devices.
+title: Configure the taskbar pinned applications
+description: Learn how to configure the Windows taskbar pinned applications.
 ms.topic: how-to
 ms.date: 08/18/2023
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
 
-# Customize the taskbar pinned elements
+# Customize the taskbar pinned applications
 
 This article describes how to customize the Windows taskbar pinned elemnents, export its configuration, and deploy the customization to other devices.
 
@@ -48,14 +48,11 @@ To configure the taskbar:
 
 ## XML example
 
+In a text editor, such as Visual Studio Code, create a new XML file. To help you get started, you can copy and paste the following XML sample. The sample pins 2 apps to the taskbar - File Explorer and the Command Prompt:
+
 [!INCLUDE [example](includes/example.md)]
 
-## XML configuration
-
 You can pin apps to the taskbar and remove default pinned apps by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
-
-> [!NOTE]
-> The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout.
 
 You can specify different taskbar configurations based on device locale and region. There's no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the application).
 
@@ -81,7 +78,6 @@ The following example shows how apps will be pinned: Windows default apps to the
 ::: zone-end
 
 ---
-
 
 1. In the `<taskbar:TaskbarPinList>` node, add (or remove) the apps you want pinned. You can pin Universal Windows Platform (UWP) apps and desktop apps:
 
@@ -341,20 +337,18 @@ The GPO applies the Start and taskbar layout at the next user sign-in. Each time
 
 ## User experience
 
-After the taskbar layout is applied, users can pin more apps, change the order, and unpin apps.
+After the taskbar layout is applied, the users must sign out and sign in again to see the new layout. Unless prohibited via policy settings, users can pin more apps, change the order, and unpin apps from the taskbar.
 
-:::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
+### OS install and upgrade experience
 
-## OS install and upgrade
+On a clean install of Windows, if you apply a taskbar layout, the following apps are pinned to the taskbar:
 
-- On a clean install of Windows, if you apply a taskbar layout, the following apps are pinned to the taskbar:
+- Any default apps you don't remove
+- Apps that you specifically pin in the XML file
 
-  - Apps you specifically add
-  - Any default apps you don't remove
+On a Windows OS upgrade, apps are already pinned to the taskbar. The apps may have been pinned by a user, by an image, or by using Windows unattended setup. For upgrades, the taskbar layout applies the following behavior:
 
-- On a Windows client upgrade, apps are already pinned to the taskbar. These apps may have been pinned by a user, by an image, or by using Windows unattended setup. For upgrades, the taskbar layout applies the following behavior:
-
-  - If users pinned apps to the taskbar, then those pinned apps remain. New apps are pinned after the existing user-pinned apps.
-  - If the apps are pinned during the install or by a policy (not by a user), and the apps aren't pinned in an updated layout file, then the apps are unpinned.
-  - If a user didn't pin an app, and the same app is pinned in the updated layout file, then the app is pinned after any existing pinned apps.
-  - New apps in updated layout file are pinned after the user's pinned apps.
+- If users pinned apps to the taskbar, then those pinned apps remain. New apps are pinned after the existing user-pinned apps
+- If the apps are pinned during the install or by a policy (not by a user), and the apps aren't pinned in an updated layout file, then the apps are unpinned
+- If a user didn't pin an app, and the same app is pinned in the updated layout file, then the app is pinned after any existing pinned apps
+- New apps in updated layout file are pinned after the user's pinned apps
