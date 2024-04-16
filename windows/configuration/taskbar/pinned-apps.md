@@ -123,7 +123,7 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
         **Before:**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
+        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-11.png":::
 
     :::column-end:::
 :::row-end:::
@@ -133,7 +133,7 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
         **After:**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
+        :::image type="content" source="images/pin-add-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-11.png":::
 
     :::column-end:::
 :::row-end:::
@@ -147,7 +147,7 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
         **Before**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-10.png":::
+        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-10.png":::
 
     :::column-end:::
 :::row-end:::
@@ -177,7 +177,7 @@ To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarL
         **Before:**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
+        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-11.png":::
 
     :::column-end:::
 :::row-end:::
@@ -187,7 +187,7 @@ To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarL
         **After:**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
+        :::image type="content" source="images/pin-remove-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-remove-11.png":::
 
     :::column-end:::
 :::row-end:::
@@ -201,7 +201,7 @@ To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarL
         **Before**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-10.png":::
+        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-10.png":::
 
     :::column-end:::
 :::row-end:::
@@ -211,7 +211,7 @@ To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarL
         **After**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/pin-replace-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-replace-10.png":::
+        :::image type="content" source="images/pin-remove-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-remove-10.png":::
 
     :::column-end:::
 :::row-end:::
@@ -231,7 +231,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
         **Before:**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
+        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-11.png":::
 
     :::column-end:::
 :::row-end:::
@@ -241,7 +241,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
         **After:**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/pinned-elements-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pinned-elements-11.png":::
+        :::image type="content" source="images/pin-replace-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-replace-11.png":::
 
     :::column-end:::
 :::row-end:::
@@ -255,7 +255,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
         **Before**
     :::column-end:::
   :::column span="3":::
-        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-10.png":::
+        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-10.png":::
 
     :::column-end:::
 :::row-end:::
