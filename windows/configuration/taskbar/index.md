@@ -11,6 +11,18 @@ zone_pivot_groups: windows-versions-11-10
 
 The Windows taskbar is an essential component of the Windows operating system, acting as a versatile platform for multitasking and quick access to applications and system notifications. For organizations, the ability to customize the taskbar's layout and features through policy settings is invaluable, especially in scenarios where specific roles or functions require streamlined access to certain tools and programs.
 
+::: zone pivot="windows-11"
+
+:::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+:::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 10 taskbar." border="false" lightbox="./images/taskbar-10.png":::
+
+::: zone-end
+
 For example, students can benefit from a customized taskbar that can provide access to educational tools and resources, minimizing distractions and optimizing the learning environment.
 
 Frontline workers, who often operate in fast-paced and dynamic settings, can benefit from a taskbar that is configured to provide immediate access to the most critical applications and functions they need. This customization can streamline workflows and enhance productivity by reducing the time spent navigating through unnecessary applications or menus.

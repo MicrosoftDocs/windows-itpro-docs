@@ -16,18 +16,6 @@ The settings are categorized and presented in alphabetical order to facilitate n
 1. **Taskbar layout**: settings to control the taskbar appearance and its behavior
 1. **User actions**: settings to control users' allowed actions on the taskbar
 
-::: zone pivot="windows-11"
-
-:::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
-
-::: zone-end
-
-::: zone pivot="windows-10"
-
-:::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 10 taskbar." border="false" lightbox="./images/taskbar-10.png":::
-
-::: zone-end
-
 Select one of the tabs to see the list of available settings:
 
 #### [:::image type="icon" source="../images/icons/taskbar.svg"::: **Taskbar layout**](#tab/taskbar)
