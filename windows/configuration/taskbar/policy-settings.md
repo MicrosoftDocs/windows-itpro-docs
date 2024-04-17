@@ -39,7 +39,6 @@ Select one of the tabs to see the list of available settings:
 |[Allow widgets](#allow-widgets)|✅|✅|
 |[Configure Start layout](#configure-start-layout)|✅|✅|
 |[Configures search on the taskbar](#configures-search-on-the-taskbar)|✅|✅|
-|[Configures the Chat icon on the taskbar](#configures-the-chat-icon-on-the-taskbar)|✅|✅|
 |[Do not display or track items in Jump Lists from remote locations](#do-not-display-or-track-items-in-jump-lists-from-remote-locations)|❌|✅|
 |[Hide recent jumplists](#hide-recent-jumplists)|✅|✅|
 |[Hide the TaskView button](#hide-the-taskview-button)|✅|✅|
@@ -82,11 +81,6 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [allow-widgets](includes/allow-widgets.md)]
 [!INCLUDE [configure-start-layout](includes/configure-start-layout.md)]
 [!INCLUDE [configures-search-on-the-taskbar](includes/configures-search-on-the-taskbar.md)]
-
-::: zone pivot="windows-11"
-[!INCLUDE [configures-the-chat-icon-on-the-taskbar](includes/configures-the-chat-icon-on-the-taskbar.md)]
-::: zone-end
-
 [!INCLUDE [do-not-display-or-track-items-in-jump-lists-from-remote-locations](includes/do-not-display-or-track-items-in-jump-lists-from-remote-locations.md)]
 
 ::: zone pivot="windows-10"

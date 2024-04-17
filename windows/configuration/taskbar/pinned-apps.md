@@ -131,32 +131,14 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 
 [!INCLUDE [example-add-pins](includes/example-add-pins.md)]
 
+**Before and after:**
+
 ::: zone pivot="windows-11"
-
-:::row:::
-  :::column span="1":::
-        **Before and after:**
-    :::column-end:::
-  :::column span="3":::
-        :::image type="content" source="images/pin-add-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-11.png":::
-
-    :::column-end:::
-:::row-end:::
-
+:::image type="content" source="images/pin-add-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-11.png":::
 ::: zone-end
 
-::: zone pivot="windows-10"
-
-:::row:::
-  :::column span="1":::
-        **Before and after**
-    :::column-end:::
-  :::column span="3":::
-        :::image type="content" source="images/pin-add-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-10.png":::
-
-    :::column-end:::
-:::row-end:::
-
+::: zone pivot="windows-10
+:::image type="content" source="images/pin-add-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-10.png":::
 ::: zone-end
 
 ### Remove default pins
@@ -165,30 +147,14 @@ To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarL
 
 [!INCLUDE [example-remove-pins](includes/example-remove-pins.md)]
 
+**Before and after:**
+
 ::: zone pivot="windows-11"
-
-:::row:::
-  :::column span="1":::
-        **Before and after:**
-  :::column span="3":::
-        :::image type="content" source="images/pin-remove-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-remove-11.png":::
-
-    :::column-end:::
-:::row-end:::
-
+:::image type="content" source="images/pin-remove-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-remove-11.png":::
 ::: zone-end
 
-::: zone pivot="windows-10"
-
-:::row:::
-  :::column span="1":::
-        **Before and after:**
-  :::column span="3":::
-        :::image type="content" source="images/pin-remove-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-remove-10.png":::
-
-    :::column-end:::
-:::row-end:::
-
+::: zone pivot="windows-10
+:::image type="content" source="images/pin-remove-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-remove-10.png":::
 ::: zone-end
 
 ### Replace pins
@@ -197,32 +163,14 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 
 [!INCLUDE [example-replace-pins](includes/example-replace-pins.md)]
 
+**Before and after:**
+
 ::: zone pivot="windows-11"
-
-:::row:::
-  :::column span="1":::
-        **Before and after:**
-    :::column-end:::
-  :::column span="3":::
-        :::image type="content" source="images/pin-replace-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-replace-11.png":::
-
-    :::column-end:::
-:::row-end:::
-
+:::image type="content" source="images/pin-replace-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-replace-11.png":::
 ::: zone-end
 
-::: zone pivot="windows-10"
-
-:::row:::
-  :::column span="1":::
-        **Before and after**
-    :::column-end:::
-  :::column span="3":::
-        :::image type="content" source="images/pin-replace-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-replace-10.png":::
-
-    :::column-end:::
-:::row-end:::
-
+::: zone pivot="windows-10
+:::image type="content" source="images/pin-replace-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-replace-10.png":::
 ::: zone-end
 
 ### Configuration by country or region
@@ -305,8 +253,6 @@ On a Windows OS upgrade, apps are already pinned to the taskbar. The apps may ha
 - If the apps are pinned during the install or by a policy (not by a user), and the apps aren't pinned in an updated layout file, then the apps are unpinned
 - If a user didn't pin an app, and the same app is pinned in the updated layout file, then the app is pinned after any existing pinned apps
 - New apps in updated layout file are pinned after the user's pinned apps
-
-
 
 If you apply the taskbar configuration to a clean install or an update, users can still:
 

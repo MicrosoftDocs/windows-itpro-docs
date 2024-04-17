@@ -9,7 +9,7 @@ zone_pivot_groups: windows-versions-11-10
 
 # Configure the Windows taskbar
 
-Customizing the Windows taskbar using policy settings offers a range of benefits for various user scenarios. For specialized devices, it allows for a tailored user experience that can be locked down to prevent unauthorized changes, ensuring that the device serves its specific purpose efficiently. For students, a customized taskbar can provide quick access to educational tools and resources, minimizing distractions and optimizing the learning environment.
+The Windows taskbar configuration using policy settings offers a range of benefits for various user scenarios. For specialized devices, it allows for a tailored user experience that can be locked down to prevent unauthorized changes, ensuring that the device serves its specific purpose efficiently. For students, a customized taskbar can provide quick access to educational tools and resources, minimizing distractions and optimizing the learning environment.
 
 Frontline workers, who often operate in fast-paced and dynamic settings, can benefit from a taskbar that is configured to provide immediate access to the most critical applications and functions they need. This customization can streamline workflows and enhance productivity by reducing the time spent navigating through unnecessary applications or menus.
 
@@ -17,9 +17,10 @@ Kiosks, which are designed for public use, can also take advantage of taskbar cu
 
 Overall, the ability to customize the Windows taskbar using policy settings enables organizations to create a more controlled, efficient, and user-friendly computing environment tailored to the specific needs of different user groups.
 
-> **Looking for consumer information?** [See what's on the Start menu](https://support.microsoft.com/help/17195/windows-10-see-whats-on-the-menu)
+> [!TIP]
+> **Looking for consumer information?** [See what's on the Start menu](https://support.microsoft.com/help/17195/windows-10-see-whats-on-the-menu).
 >
-> **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
+> **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar).
 
 ## Configuration options
 
@@ -50,7 +51,7 @@ Let's review the components of the Windows taskbar by dividing it into three are
     1. Task view
     1. Pinned and running apps. The configuration of pinned applications to the taskbar requires the use of an XML file that specifies their pinning order. To learn more about how to create and apply an XML file to configure pinned applications, see [Configure the taskbar pinned applications](pinned-apps.md)
 1. The *right area* cantains:
-    1. The system tray, which displays icons like the pen menu, touch keyboard, Virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
+    1. The system tray, which displays icons like the pen menu, touch keyboard, virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
     1. Quick Actions
     1. Calendar
     1. Action Center
@@ -62,10 +63,22 @@ Let's review the components of the Windows taskbar by dividing it into three are
 
 ::: zone pivot="windows-10"
 
-1. **Taskbar items**: the icons in this area include Start, Search, Cortana, and Task view
-1. **Taskbar layout**: the configuration of the taskbar layout requires the use of an XML file that specifies the order of the pinned elements. To learn more about how to create and apply an XML file to configure the taskbar layout, see [Customize the taskbar layout](layout.md).
-1. **System tray**: the icons in this area include the pen menu, touch keyboard, Virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
-1. **Notification System area**:
+Let's review the components of the Windows taskbar by dividing it into two areas:
+
+1. The *left area* cantains:
+    - Start menu
+    - Search
+    - Cortana
+    - Task view
+    - Pinned and running apps. The configuration of pinned applications to the taskbar requires the use of an XML file that specifies their pinning order. To learn more about how to create and apply an XML file to configure pinned applications, see [Configure the taskbar pinned applications](pinned-apps.md)
+
+1. The *right area* cantains:
+    - People
+    - News and interests, which users can personalize to quickly access feeds and information that they deem most relevant
+    - The system tray, which displays icons like the pen menu, touch keyboard, virtual touchpad, power, network, volume, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
+    - Calendar
+    - Action center
+    - Copilot
 
 :::image type="content" source="images/taskbar-sections-10.png" alt-text="Sample Windows 10 taskbar." border="false" lightbox="./images/taskbar-sections-10.png":::
 
