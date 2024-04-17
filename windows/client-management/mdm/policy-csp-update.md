@@ -1557,7 +1557,7 @@ Configure this policy to specify whether to receive **Windows Feature Updates** 
 
 > [!NOTE]
 > - If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect.
-> - If you're also using the **Specify settings for optional component installation and component repair** ([ADMX_Servicing](policy-csp-admx-servicing.md))policy to enable content for FoDs and language packs, see [How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager](/windows/deployment/update/fod-and-lang-packs) to verify your policy configuration.
+> - If you're also using the **Specify settings for optional component installation and component repair** ([ADMX_Servicing](policy-csp-admx-servicing.md)) policy to enable content for FoDs and language packs, see [How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager](/windows/deployment/update/fod-and-lang-packs) to verify your policy configuration.
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Editable-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-DFProperties-Begin -->
@@ -1696,7 +1696,7 @@ Configure this policy to specify whether to receive **Windows Quality Updates** 
 
 > [!NOTE]
 > - If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect.
-> - If you're also using the **Specify settings for optional component installation and component repair** ([ADMX_Servicing](policy-csp-admx-servicing.md))policy to enable content for FoDs and language packs, see [How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager](/windows/deployment/update/fod-and-lang-packs) to verify your policy configuration.
+> - If you're also using the **Specify settings for optional component installation and component repair** ([ADMX_Servicing](policy-csp-admx-servicing.md)) policy to enable content for FoDs and language packs, see [How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager](/windows/deployment/update/fod-and-lang-packs) to verify your policy configuration.
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Editable-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-DFProperties-Begin -->
