@@ -138,7 +138,7 @@ Several of the options address ways to address optional content migration issues
 - If this setting isn't configured or disabled, files are downloaded from the default Windows Update location, for example Windows Update for Business or WSUS.
 
 
-For more information, see [Configure a Windows Repair Source](/windows-hardware/manufacture/desktop/configure-a-windows-repair-source) and [How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager](fod-and-language-packs.md).
+For more information, see [Configure a Windows Repair Source](/windows-hardware/manufacture/desktop/configure-a-windows-repair-source) and [How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager](fod-and-lang-packs.md).
 
 
 ## More resources
