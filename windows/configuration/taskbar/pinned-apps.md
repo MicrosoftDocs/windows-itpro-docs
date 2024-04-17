@@ -67,13 +67,13 @@ The following example shows how apps will be pinned: Windows default apps to the
 
 ::: zone pivot="windows-10"
 
-:::image type="content" source="images/taskbar-10-layout.png" border="false" lightbox="images/taskbar-10-layout.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
+:::image type="content" source="images/pin-layout-10.png" border="false" lightbox="images/pin-layout-10.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
 
 ::: zone-end
 
 ::: zone pivot="windows-11"
 
-:::image type="content" source="images/taskbar-11-layout.png" border="false" lightbox="images/taskbar-11-layout.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
+:::image type="content" source="images/pin-layout-11.png" border="false" lightbox="images/pin-layout-11.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
 
 ::: zone-end
 
@@ -120,17 +120,7 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 
 :::row:::
   :::column span="1":::
-        **Before:**
-    :::column-end:::
-  :::column span="3":::
-        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-11.png":::
-
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-  :::column span="1":::
-        **After:**
+        **Before and after:**
     :::column-end:::
   :::column span="3":::
         :::image type="content" source="images/pin-add-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-11.png":::
@@ -144,17 +134,7 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 
 :::row:::
   :::column span="1":::
-        **Before**
-    :::column-end:::
-  :::column span="3":::
-        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-10.png":::
-
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-  :::column span="1":::
-        **After**
+        **Before and after**
     :::column-end:::
   :::column span="3":::
         :::image type="content" source="images/pin-add-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-10.png":::
@@ -206,17 +186,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 
 :::row:::
   :::column span="1":::
-        **Before:**
-    :::column-end:::
-  :::column span="3":::
-        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-11.png":::
-
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-  :::column span="1":::
-        **After:**
+        **Before and after:**
     :::column-end:::
   :::column span="3":::
         :::image type="content" source="images/pin-replace-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-replace-11.png":::
@@ -230,17 +200,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 
 :::row:::
   :::column span="1":::
-        **Before**
-    :::column-end:::
-  :::column span="3":::
-        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-10.png":::
-
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-  :::column span="1":::
-        **After**
+        **Before and after**
     :::column-end:::
   :::column span="3":::
         :::image type="content" source="images/pin-replace-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-replace-10.png":::
