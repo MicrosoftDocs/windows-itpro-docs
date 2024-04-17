@@ -20,7 +20,7 @@ Here are some considerations before you start configuring the taskbar pinned app
 - There is no limit to the number of apps that you can pin
 - In the XML file, add apps using the Application User Model ID (AUMID) , the Desktop Application ID, or the Desktop Application Link Path. To learn more, see [Find the Application User Model ID of an installed app](../store/find-aumid.md)
 - The order of apps in the XML file dictates the order of pinned apps on the taskbar, from left to right, and to the right of any existing apps pinned by the user. If the OS is configured to use a right-to-left language, then the taskbar order is reversed
-- Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Be sure to enter the correct AppID. For more information, see [Application User Model ID (AUMID)](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) and [Get the AUMID and Desktop app link path](#get-the-aumid-and-desktop-app-link-path) (in this article).
+- Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Be sure to enter the correct AppID. For more information, see [Application User Model ID (AUMID)](../kiosk/find-the-application-user-model-id-of-an-installed-app.md)
 
 ## Taskbar options
 

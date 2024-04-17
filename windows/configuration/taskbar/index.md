@@ -13,13 +13,13 @@ The Windows taskbar is an essential component of the Windows operating system. T
 
 ::: zone pivot="windows-11"
 
-:::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
+:::image type="content" source="images/taskbar-11.png" alt-text="Screenshot of the Windows 11 taskbar." border="false" lightbox="./images/taskbar-11.png":::
 
 ::: zone-end
 
 ::: zone pivot="windows-10"
 
-:::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 10 taskbar." border="false" lightbox="./images/taskbar-10.png":::
+:::image type="content" source="images/taskbar-10.png" alt-text="Screenshot of the Windows 10 taskbar." border="false" lightbox="./images/taskbar-10.png":::
 
 ::: zone-end
 
@@ -44,7 +44,7 @@ The Windows taskbar consists of several key components that can be customized to
 
 Let's review the components of the Windows taskbar by dividing it into three areas:
 
-1. The *left area* contains Widgets, which users can personalize to quickly access feeds and information that they deem most relevant
+1. The *left area* contains Widgets, which provide personalized news, weather, and other information
 1. The *center area* contains:
     1. Start menu
     1. Search
@@ -57,7 +57,7 @@ Let's review the components of the Windows taskbar by dividing it into three are
     1. Action Center
     1. Copilot
 
-:::image type="content" source="images/taskbar-sections-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/taskbar-sections-11.png":::
+:::image type="content" source="images/taskbar-sections-11.png" alt-text="Screenshot of the Windows 11 taskbar with the three areas highlighted." border="false" lightbox="./images/taskbar-sections-11.png":::
 
 ::: zone-end
 
@@ -74,13 +74,13 @@ Let's review the components of the Windows taskbar by dividing it into two areas
 
 1. The *right area* contains:
     - People
-    - News and interests, which users can personalize to quickly access feeds and information that they deem most relevant
+    - News and interests
     - The system tray, which displays icons like the pen menu, touch keyboard, virtual touchpad, power, network, volume, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
     - Calendar
     - Action center
     - Copilot
 
-:::image type="content" source="images/taskbar-sections-10.png" alt-text="Sample Windows 10 taskbar." border="false" lightbox="./images/taskbar-sections-10.png":::
+:::image type="content" source="images/taskbar-sections-10.png" alt-text="Screenshot of the Windows 11 taskbar with the two areas highlighted." border="false" lightbox="./images/taskbar-sections-10.png":::
 
 ::: zone-end
 
