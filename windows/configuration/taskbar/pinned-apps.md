@@ -28,6 +28,42 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 - The order of apps in the XML file dictates the order of pinned apps on the taskbar, from left to right, and to the right of any existing apps pinned by the user. If the OS is configured to use a right-to-left language, then the taskbar order is reversed.
 - Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Be sure to enter the correct AppID. For more information, see [Application User Model ID (AUMID)](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) and [Get the AUMID and Desktop app link path](#get-the-aumid-and-desktop-app-link-path) (in this article).
 
+## Taskbar options
+
+There are three app categories that could be pinned to a taskbar:
+
+- Apps pinned by the user
+- Default Windows apps pinned during the OS installation, such as Microsoft Edge, File Explorer, and Store
+- Apps pinned by your organization, such as in an unattended Windows setup
+
+  In an unattended Windows setup file, it's recommended to use the [layoutmodification.xml method](../taskbar/configure.md) to configure the taskbar options. It's not recommended to use [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks).
+
+The following example shows how apps are pinned.
+
+- Windows default apps to the left (blue square)
+- Apps pinned by the user in the center (red circle)
+- Apps that you pin using XML to the right (green triangle)
+
+> [!NOTE]
+> In OS configured to use a right-to-left language, the taskbar order is reversed.
+
+::: zone pivot="windows-10"
+
+:::image type="content" source="images/pin-layout-10.png" border="false" lightbox="images/pin-layout-10.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
+
+::: zone-end
+
+::: zone pivot="windows-11"
+
+:::image type="content" source="images/pin-layout-11.png" border="false" lightbox="images/pin-layout-11.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
+
+::: zone-end
+
+The order of apps in the XML file dictates the order of pinned apps on the taskbar from left to right, starting to the right of any existing apps pinned by the user.
+
+> [!NOTE]
+> In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
+
 ## Configuration steps
 
 To configure the taskbar:
@@ -57,27 +93,6 @@ You can pin apps to the taskbar and remove default pinned apps by adding a `<Tas
 You can specify different taskbar configurations based on device locale and region. There's no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the application).
 
 If you specify an app to be pinned that isn't provisioned for the user on the computer, the pinned icon won't appear on the taskbar.
-
-The order of apps in the XML file dictates the order of pinned apps on the taskbar from left to right, starting to the right of any existing apps pinned by the user.
-
-> [!NOTE]
-> In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
-
-The following example shows how apps will be pinned: Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using the XML file to the right (green square).
-
-::: zone pivot="windows-10"
-
-:::image type="content" source="images/pin-layout-10.png" border="false" lightbox="images/pin-layout-10.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
-
-::: zone-end
-
-::: zone pivot="windows-11"
-
-:::image type="content" source="images/pin-layout-11.png" border="false" lightbox="images/pin-layout-11.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
-
-::: zone-end
-
----
 
 1. In the `<taskbar:TaskbarPinList>` node, add (or remove) the apps you want pinned. You can pin Universal Windows Platform (UWP) apps and desktop apps:
 
@@ -290,3 +305,11 @@ On a Windows OS upgrade, apps are already pinned to the taskbar. The apps may ha
 - If the apps are pinned during the install or by a policy (not by a user), and the apps aren't pinned in an updated layout file, then the apps are unpinned
 - If a user didn't pin an app, and the same app is pinned in the updated layout file, then the app is pinned after any existing pinned apps
 - New apps in updated layout file are pinned after the user's pinned apps
+
+
+
+If you apply the taskbar configuration to a clean install or an update, users can still:
+
+- Pin more apps
+- Change the order of pinned apps
+- Unpin any app

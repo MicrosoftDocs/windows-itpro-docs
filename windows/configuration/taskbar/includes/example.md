@@ -9,6 +9,8 @@ ms.topic: include
 
 ### Sample taskbar configuration XML file
 
+Here's an example:
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LayoutModificationTemplate
@@ -29,6 +31,8 @@ ms.topic: include
 ::: zone pivot="windows-10"
 
 ### Sample taskbar configuration added to Start layout XML file
+
+If you configure the Start layout using policy settings, you can modify the existing XML file by adding the taskbar customizations to it. Here's an example of a Start layout XML file that includes the `CustomTaskbarLayoutCollection` node.
 
 ```xml
 <LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
