@@ -88,8 +88,8 @@ Let's review the components of the Windows taskbar by dividing it into two areas
 
 In the next sections, you can learn more about the options available to configure Start menu settings using the Configuration Service Provider (CSP) and Group Policy (GPO):
 
-- [Customize the taskbar layout](layout.md)
 - [Taskbar policy settings](policy-settings.md)
+- [Configure the taskbar pinned applications](pinned-apps.md)
 
 <!--links-->
 

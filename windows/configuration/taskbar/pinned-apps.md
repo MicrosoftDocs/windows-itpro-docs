@@ -101,8 +101,6 @@ If you specify an app to be pinned that isn't provisioned for the user on the co
 
     You can pin as many apps as you want.  Just keep adding them to the list. Remember, the app order in the list is the same order the apps are shown on the taskbar.
 
-    For more information, see []().
-
 1. In the `<CustomTaskbarLayoutCollection>` node, the apps you add are pinned after the default apps. If you want to remove the default apps, and only show the apps you add in the XML file, then add `PinListPlacement="Replace"`:
 
     - `<CustomTaskbarLayoutCollection>`: Keeps the default pinned apps. After the default apps, the apps you add are pinned.
@@ -134,11 +132,11 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 **Before and after:**
 
 ::: zone pivot="windows-11"
-:::image type="content" source="images/pin-add-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-11.png":::
+:::image type="content" source="images/pin-add-11.png" alt-text="Screenshot of the Windows 11 taskbar, before and after adding pins." border="false" lightbox="./images/pin-add-11.png":::
 ::: zone-end
 
-::: zone pivot="windows-10
-:::image type="content" source="images/pin-add-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-10.png":::
+::: zone pivot="windows-10"
+:::image type="content" source="images/pin-add-10.png" alt-text="Screenshot of the Windows 10 taskbar, before and after adding pinsr." border="false" lightbox="./images/pin-add-10.png":::
 ::: zone-end
 
 ### Remove default pins
@@ -150,11 +148,11 @@ To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarL
 **Before and after:**
 
 ::: zone pivot="windows-11"
-:::image type="content" source="images/pin-remove-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-remove-11.png":::
+:::image type="content" source="images/pin-remove-11.png" alt-text="Screenshot of the Windows 11 taskbar, before and after removing pins." border="false" lightbox="images/pin-remove-11.png":::
 ::: zone-end
 
-::: zone pivot="windows-10
-:::image type="content" source="images/pin-remove-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-remove-10.png":::
+::: zone pivot="windows-10"
+:::image type="content" source="images/pin-remove-10.png" alt-text="Screenshot of the Windows 10 taskbar, before and after removing pins." border="false" lightbox="images/pin-remove-10.png":::
 ::: zone-end
 
 ### Replace pins
@@ -166,11 +164,11 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 **Before and after:**
 
 ::: zone pivot="windows-11"
-:::image type="content" source="images/pin-replace-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-replace-11.png":::
+:::image type="content" source="images/pin-replace-11.png" alt-text="Screenshot of the Windows 11 taskbar, before and after replacing pins." border="false" lightbox="images/pin-replace-11.png":::
 ::: zone-end
 
-::: zone pivot="windows-10
-:::image type="content" source="images/pin-replace-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-replace-10.png":::
+::: zone pivot="windows-10"
+:::image type="content" source="images/pin-replace-10.png" alt-text="Screenshot of the Windows 10 taskbar, before and after replacing pins." border="false" lightbox="images/pin-replace-10.png":::
 ::: zone-end
 
 ### Configuration by country or region
