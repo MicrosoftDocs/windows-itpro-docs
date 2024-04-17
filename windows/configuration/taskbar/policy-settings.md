@@ -193,3 +193,7 @@ Select one of the tabs to see the list of available settings:
 ::: zone-end
 
 ---
+
+## Next steps
+
+The configuration of pinned applications to the taskbar requires the use of an XML file that specifies their pinning order. To learn more about how to create and apply an XML file to configure pinned applications, see [Configure the taskbar pinned applications](pinned-apps.md).
