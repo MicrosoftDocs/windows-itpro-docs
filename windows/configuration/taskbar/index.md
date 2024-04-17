@@ -31,11 +31,6 @@ Kiosks, which are designed for public use, can also take advantage of taskbar cu
 
 Overall, the ability to customize the Windows taskbar using policy settings enables organizations to create a more controlled, efficient, and user-friendly computing environment tailored to the specific needs of different user groups.
 
-> [!TIP]
-> **Looking for consumer information?** [See what's on the Start menu](https://support.microsoft.com/help/17195/windows-10-see-whats-on-the-menu).
->
-> **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar).
-
 ## Taskbar structure
 
 The Windows taskbar consists of several key components that can be customized to meet the needs of different scenarios.

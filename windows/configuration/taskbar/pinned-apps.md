@@ -11,6 +11,9 @@ zone_pivot_groups: windows-versions-11-10
 
 The configuration of the applications pinned to the taskbar is done with the use of an XML file. This article describes how to create and deploy the XML file.
 
+> [!NOTE]
+> If you are looking for OEM information, see the article [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar).
+
 To learn about all the policy settings to customize the taskbar layout and configure the taskbar behaviors, see [Taskbar policy settings](policy-settings.md).
 
 ## Before you begin
