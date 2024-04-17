@@ -22,7 +22,7 @@ Here's an example:
   <CustomTaskbarLayoutCollection>
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
-        <!-- pin list goes here -->
+        <!-- pins list goes here -->
     </defaultlayout:TaskbarLayout>
  </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
@@ -59,7 +59,7 @@ If you configure the Start layout using policy settings, you can modify the exis
     <CustomTaskbarLayoutCollection>
       <defaultlayout:TaskbarLayout>
         <taskbar:TaskbarPinList>
-          <!-- pin list goes here -->
+          <!-- pins list goes here -->
         </taskbar:TaskbarPinList>
       </defaultlayout:TaskbarLayout>
     </CustomTaskbarLayoutCollection>

@@ -2,14 +2,14 @@
 title: Configure the Windows taskbar
 description: Administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a section to a layout modification XML file.
 ms.topic: how-to
-ms.date: 08/18/2023
+ms.date: 04/17/2024
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
 
 # Configure the Windows taskbar
 
-The Windows taskbar is an essential component of the Windows operating system, acting as a versatile platform for multitasking and quick access to applications and system notifications. For organizations, the ability to customize the taskbar's layout and features through policy settings is invaluable, especially in scenarios where specific roles or functions require streamlined access to certain tools and programs.
+The Windows taskbar is an essential component of the Windows operating system. The taskbar acts as a versatile platform for multitasking and quick access to applications and system notifications. For organizations, the ability to customize the taskbar's layout and features through policy settings is invaluable, especially in scenarios where specific roles or functions require streamlined access to certain tools and programs.
 
 ::: zone pivot="windows-11"
 
@@ -25,9 +25,9 @@ The Windows taskbar is an essential component of the Windows operating system, a
 
 For example, students can benefit from a customized taskbar that can provide access to educational tools and resources, minimizing distractions and optimizing the learning environment.
 
-Frontline workers, who often operate in fast-paced and dynamic settings, can benefit from a taskbar that is configured to provide immediate access to the most critical applications and functions they need. This customization can streamline workflows and enhance productivity by reducing the time spent navigating through unnecessary applications or menus.
+Frontline workers, who often operate in fast-paced and dynamic settings, can benefit from a taskbar that is configured to provide immediate access to the most critical applications and functions they need. The taskbar customization can streamline workflows and enhance productivity by reducing the time spent navigating through unnecessary applications or menus.
 
-Kiosks, which are designed for public use, can also take advantage of taskbar customization to offer a simplified and focused interface. This can help users quickly find the information or services they are looking for, which is particularly useful in environments like retail, information centers, or public service areas.
+Kiosks, which are designed for public use, can also take advantage of taskbar customization to offer a simplified and focused interface. This can help users quickly find the information or services they're looking for, which is useful in environments like retail, information centers, or public service areas.
 
 Overall, the ability to customize the Windows taskbar using policy settings enables organizations to create a more controlled, efficient, and user-friendly computing environment tailored to the specific needs of different user groups.
 
@@ -45,12 +45,12 @@ The Windows taskbar consists of several key components that can be customized to
 Let's review the components of the Windows taskbar by dividing it into three areas:
 
 1. The *left area* contains Widgets, which users can personalize to quickly access feeds and information that they deem most relevant
-1. The *center area* cantains:
+1. The *center area* contains:
     1. Start menu
     1. Search
     1. Task view
     1. Pinned and running apps
-1. The *right area* cantains:
+1. The *right area* contains:
     1. The system tray, which displays icons like the pen menu, touch keyboard, virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
     1. Quick Actions
     1. Calendar
@@ -65,14 +65,14 @@ Let's review the components of the Windows taskbar by dividing it into three are
 
 Let's review the components of the Windows taskbar by dividing it into two areas:
 
-1. The *left area* cantains:
+1. The *left area* contains:
     - Start menu
     - Search
     - Cortana
     - Task view
     - Pinned and running apps
 
-1. The *right area* cantains:
+1. The *right area* contains:
     - People
     - News and interests, which users can personalize to quickly access feeds and information that they deem most relevant
     - The system tray, which displays icons like the pen menu, touch keyboard, virtual touchpad, power, network, volume, and any application icons that are running in the background like OneDrive, Teams, or antivirus software

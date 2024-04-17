@@ -2,30 +2,24 @@
 title: Configure the taskbar pinned applications
 description: Learn how to configure the Windows taskbar pinned applications.
 ms.topic: how-to
-ms.date: 08/18/2023
+ms.date: 04/17/2024
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
 
 # Customize the taskbar pinned applications
 
-This article describes how to customize the Windows taskbar pinned elemnents, export its configuration, and deploy the customization to other devices.
+The configuration of the applications pinned to the taskbar is done with the use of an XML file. This article describes how to create and deploy the XML file.
 
-> **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
-
-Your organization can deploy a customized taskbar to your Windows devices. Customizing the taskbar is common when your organization uses a common set of apps, or wants to bring attention to specific apps. You can also remove the default pinned apps.
-
-For example, you can override the default set of apps with your own a set of pinned apps, and in the order you choose. As an administrator, use this feature to pin apps, remove default pinned apps, order the apps, and more on the taskbar.
-
-To add apps you want pinned to the taskbar, you use an XML file. You can use an existing XML file, or create a new file. If you have an XML file that's used on Windows 10 devices, you can also use it on Windows 11 devices. You may have to update the App IDs.
-
-This article shows you how to create the XML file, add apps to the XML, and deploy the XML file. To learn how to customize the taskbar buttons, see [CSP policies to customize Windows 11 taskbar buttons](supported-csp-taskbar-windows.md#csp-policies-to-customize-windows-11-taskbar-buttons).
+To learn about all the policy settings to customize the taskbar layout and configure the taskbar behaviors, see [Taskbar policy settings](policy-settings.md).
 
 ## Before you begin
 
-- There isn't a limit on the number of apps that you can pin. In the XML file, add apps using the [Application User Model ID (AUMID)](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the app).
-- There are some situations that an app pinned in your XML file won't be pinned in the taskbar. For example, if an app isn't approved or installed for a user, then the pinned icon won't show on the taskbar.
-- The order of apps in the XML file dictates the order of pinned apps on the taskbar, from left to right, and to the right of any existing apps pinned by the user. If the OS is configured to use a right-to-left language, then the taskbar order is reversed.
+Here are some considerations before you start configuring the taskbar pinned applications:
+
+- There is no limit to the number of apps that you can pin
+- In the XML file, add apps using the Application User Model ID (AUMID) , the Desktop Application ID, or the Desktop Application Link Path. To learn more, see [Find the Application User Model ID of an installed app](../store/find-aumid.md)
+- The order of apps in the XML file dictates the order of pinned apps on the taskbar, from left to right, and to the right of any existing apps pinned by the user. If the OS is configured to use a right-to-left language, then the taskbar order is reversed
 - Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Be sure to enter the correct AppID. For more information, see [Application User Model ID (AUMID)](../kiosk/find-the-application-user-model-id-of-an-installed-app.md) and [Get the AUMID and Desktop app link path](#get-the-aumid-and-desktop-app-link-path) (in this article).
 
 ## Taskbar options
@@ -44,8 +38,6 @@ The following example shows how apps are pinned.
 - Apps pinned by the user in the center (red circle)
 - Apps that you pin using XML to the right (green triangle)
 
-> [!NOTE]
-> In OS configured to use a right-to-left language, the taskbar order is reversed.
 
 ::: zone pivot="windows-10"
 
