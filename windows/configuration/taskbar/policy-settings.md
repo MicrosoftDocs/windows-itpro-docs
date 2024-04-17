@@ -14,7 +14,7 @@ This reference article outlines the policy settings available for customizing th
 The settings are categorized and presented in alphabetical order to facilitate navigation and configuration.
 
 1. **Taskbar layout**: settings to control the taskbar appearance and its behavior
-1. **User actions**: settings to control users' allowed actions on the taskbar
+1. **Taskbar behaviors**: settings to control users' allowed actions on the taskbar
 
 Select one of the tabs to see the list of available settings:
 
@@ -144,7 +144,6 @@ Select one of the tabs to see the list of available settings:
 |[Prevent users from rearranging toolbars](#prevent-users-from-rearranging-toolbars)|❌|✅|
 |[Prevent users from resizing the taskbar](#prevent-users-from-resizing-the-taskbar)|❌|✅|
 |[Remove access to the context menus for the taskbar](#remove-access-to-the-context-menus-for-the-taskbar)|❌|✅|
-|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
 |[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
 
 ::: zone-end
