@@ -119,20 +119,23 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 ::: zone pivot="windows-11"
 
 :::row:::
-:::column span="2":::
-**Before:**
-:::column-end:::
-  :::column span="2":::
-**After:**
-:::column-end:::
+  :::column span="1":::
+        **Before:**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-11.png":::
+
+    :::column-end:::
 :::row-end:::
+
 :::row:::
-:::column span="2":::
-:::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-11.png":::
-:::column-end:::
-:::column span="2":::
-:::image type="content" source="images/pin-add-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-11.png":::
-:::column-end:::
+  :::column span="1":::
+        **After:**
+    :::column-end:::
+  :::column span="3":::
+        :::image type="content" source="images/pin-add-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-add-11.png":::
+
+    :::column-end:::
 :::row-end:::
 
 ::: zone-end
@@ -171,18 +174,7 @@ To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarL
 
 :::row:::
   :::column span="1":::
-        **Before:**
-    :::column-end:::
-  :::column span="3":::
-        :::image type="content" source="images/taskbar-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-11.png":::
-
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-  :::column span="1":::
-        **After:**
-    :::column-end:::
+        **Before and after:**
   :::column span="3":::
         :::image type="content" source="images/pin-remove-11.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-remove-11.png":::
 
@@ -195,20 +187,9 @@ To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarL
 
 :::row:::
   :::column span="1":::
-        **Before**
-    :::column-end:::
+        **Before and after:**
   :::column span="3":::
-        :::image type="content" source="images/taskbar-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/taskbar-10.png":::
-
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-  :::column span="1":::
-        **After**
-    :::column-end:::
-  :::column span="3":::
-        :::image type="content" source="images/pin-remove-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="./images/pin-remove-10.png":::
+        :::image type="content" source="images/pin-remove-10.png" alt-text="Sample Windows 11 taskbar." border="false" lightbox="images/pin-remove-10.png":::
 
     :::column-end:::
 :::row-end:::
