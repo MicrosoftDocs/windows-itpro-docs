@@ -16,7 +16,7 @@ ms.topic: include
   <CustomTaskbarLayoutCollection>
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
-        <!-- pins list goes here -->
+        <!-- your pins list goes here -->
     </defaultlayout:TaskbarLayout>
  </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
@@ -35,17 +35,7 @@ If you configure the Start layout using policy settings, you can modify the exis
     <StartLayoutCollection>
       <defaultlayout:StartLayout GroupCellWidth="6">
         <start:Group Name="">
-          <start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk" />
-          <start:DesktopApplicationTile Size="2x2" Column="2" Row="4" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Quick Assist.lnk" />
-          <start:DesktopApplicationTile Size="2x2" Column="4" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk" />
-          <start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
-          <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk" />
-          <start:Tile Size="2x2" Column="4" Row="4" AppUserModelID="Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App" />
-          <start:Tile Size="2x2" Column="2" Row="2" AppUserModelID="Microsoft.WindowsTerminal_8wekyb3d8bbwe!App" />
-          <start:Tile Size="2x2" Column="0" Row="4" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
-          <start:Tile Size="2x2" Column="0" Row="6" AppUserModelID="Microsoft.Windows.SecHealthUI_cw5n1h2txyewy!SecHealthUI" />
-          <start:Tile Size="2x2" Column="2" Row="6" AppUserModelID="Microsoft.OutlookforWindows_8wekyb3d8bbwe!Microsoft.OutlookforWindows" />
-          <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+          <!-- your Start layout goes here -->
         </start:Group>
       </defaultlayout:StartLayout>
     </StartLayoutCollection>
@@ -53,7 +43,7 @@ If you configure the Start layout using policy settings, you can modify the exis
     <CustomTaskbarLayoutCollection>
       <defaultlayout:TaskbarLayout>
         <taskbar:TaskbarPinList>
-          <!-- pins list goes here -->
+          <!-- your pins list goes here -->
         </taskbar:TaskbarPinList>
       </defaultlayout:TaskbarLayout>
     </CustomTaskbarLayoutCollection>
