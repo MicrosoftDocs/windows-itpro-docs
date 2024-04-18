@@ -391,7 +391,7 @@ Microsoft Defender Antivirus includes real-time, behavior-based, and heuristic a
 
 Microsoft Defender Antivirus always-on protection is integrated with cloud-delivered protection, which helps ensure near-instant detection and blocking of new and emerging threats. This combination of local and cloud-delivered technologies provides award-winning protection at home and at work.
 
-:::image type="content" source="images/defender-antivirus.png" alt-text="Diagram of the Microsoft Defender Antivirus components.":::
+:::image type="content" source="images/defender-antivirus.png" alt-text="Diagram of the Microsoft Defender Antivirus components." border="false":::
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
