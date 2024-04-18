@@ -13,8 +13,8 @@ This reference article outlines the policy settings available for customizing th
 
 The settings are categorized and presented in alphabetical order to facilitate navigation and configuration.
 
-1. **Taskbar layout**: settings to control the taskbar appearance and its behavior
-1. **Taskbar behaviors**: settings to control users' allowed actions on the taskbar
+1. **Taskbar layout**: settings to control the taskbar layout and appearance
+1. **Taskbar behaviors**: settings to control the taskbar behaviors and the users' allowed actions
 
 Select one of the tabs to see the list of available settings:
 

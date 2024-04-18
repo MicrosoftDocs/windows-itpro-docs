@@ -20,15 +20,15 @@ To learn about all the policy settings to customize the taskbar layout and confi
 
 Here are some considerations before you start configuring the taskbar pinned applications:
 
-- There is no limit to the number of apps that you can pin
+- There's no limit to the number of apps that you can pin
 - In the XML file, add apps using the Application User Model ID (AUMID), the Desktop Application ID, or the Desktop Application Link Path
 - Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Make sure to enter the correct Application ID. To learn more, see [Find the Application User Model ID of an installed app](../store/find-aumid.md)
-- If you specify an app to be pinned that isn't provisioned for the user on the device, the pinned icon won't appear on the taskbar
-- The order of applicationss in the XML file dictates the order of pinned apps on the taskbar, from left to right. If the OS is configured to use a right-to-left language, then the taskbar order is reversed
+- If you specify an app to be pinned that isn't provisioned for the user on the device, the pinned icon doesn't appear on the taskbar
+- The order of applications in the XML file dictates the order of pinned apps on the taskbar, from left to right. If the OS is configured to use a right-to-left language, then the taskbar order is reversed
 - Applications can be pinned using the following methods:
-  - Default Windows apps, pinned during the OS installation. For example: Microsoft Edge, File Explorer, and Store. These applcations are pinned on the left (blue square)
-  - Pinned manually by the user. These applications are pinned in the center (red circle)
-  - Pinned via policy settings. These applicaitons are pinned on the right (green triangle)
+  - Default Windows apps, pinned during the OS installation. For example: Microsoft Edge, File Explorer, and Store. These applications are pinned first (blue square)
+  - Pinned manually by the user. These applications are usually pinned next to the default pinned apps (red circle)
+  - Pinned via policy settings. These applications are pinned after the apps pinned manually by the user (green triangle)
 
 ::: zone pivot="windows-10"
 
@@ -44,7 +44,7 @@ Here are some considerations before you start configuring the taskbar pinned app
 
 ## Configuration steps
 
-The following steps describe how to confire the taskbar pinned applications using policy settings:
+The following steps describe how to configure the taskbar pinned applications using policy settings:
 
 1. Create the XML file. You can start with the [XML example](#taskbar-layout-example)
 1. Edit the XML file to meet your requirements and save it
@@ -68,25 +68,32 @@ Here you can find an example of taskbar layout that you can use as a reference:
 
 [!INCLUDE [example](includes/example.md)]
 
-### Change the configuration file
+### Modify the configuration file
 
 > [!CAUTION]
 > When you make changes to the XML file, be aware that the XML format must adhere to an [XML schema definition (XSD)](xsd.md).
 
-You can change the apps pinned to the taskbar by modifying the `<TaskbarLayout>` section.
+You can change the apps pinned to the taskbar by modifying the `<TaskbarLayout>` node.
 
 1. In the `<taskbar:TaskbarPinList>` node, add (or remove) the apps you want pinned. You can pin Universal Windows Platform (UWP) apps and desktop apps:
-  - `<taskbar:UWA>`: Select this option for UWP apps. Add the *AUMID* of the UWP app
-  - `<taskbar:DesktopApp>`: Select this option for desktop apps. Add the *Desktop Application ID* or the *Desktop Application Link Path* of the desktop app
+    - `<taskbar:UWA>`: Select this option for UWP apps. Add the *AUMID* of the UWP app
+    - `<taskbar:DesktopApp>`: Select this option for desktop apps. Add the *Desktop Application ID* or the *Desktop Application Link Path* of the desktop app
 1. In the `<CustomTaskbarLayoutCollection>` node, the apps you add are pinned after the default apps. If you want to remove the default apps, and only show the apps you add in the XML file, then add `PinListPlacement="Replace"`:
-  - `<CustomTaskbarLayoutCollection>`: Keeps the default pinned apps. After the default apps, the apps you add are pinned
-  - `<CustomTaskbarLayoutCollection PinListPlacement="Replace">`: Unpins the default apps. Only the apps you add are pinned. If you want to remove some of the default pinned apps, then add `PinListPlacement="Replace"`. When you add your apps to `<taskbar:TaskbarPinList>`, include the default apps you still want pinned
+    - `<CustomTaskbarLayoutCollection>`: Keeps the default pinned apps. After the default apps, the apps you add are pinned
+    - `<CustomTaskbarLayoutCollection PinListPlacement="Replace">`: Unpins the default apps. Only the apps you add are pinned. If you want to remove some of the default pinned apps, then add `PinListPlacement="Replace"`. When you add your apps to `<taskbar:TaskbarPinList>`, include the default apps you still want pinned
 1. In the `<defaultlayout:TaskbarLayout>` node, use `region=" | "` to use different taskbar configurations based on the device locale and region
 1. Save the file
 
-### Add pins
+For practical examples of how to add, remove, or replace pinned apps, see the following sections:
 
-The `<CustomTaskbarLayoutCollection>` section will append listed apps to the taskbar by default. The following sample keeps the default apps pinned and adds pins for Paint, Microsoft Reader, and a command prompt.
+- [Add pins](#example-add-pins)
+- [Remove default pins](#example-remove-pins)
+- [Replace default pins](#example-replace-pins)
+- [Configuration by country or region](#example-configuration-by-country-or-region)
+
+#### Example: add pins
+
+The `<CustomTaskbarLayoutCollection>` section appends the listed apps to the taskbar by default. The following sample keeps the default apps pinned and adds pins for Paint, Microsoft Reader, and a command prompt.
 
 [!INCLUDE [example-add-pins](includes/example-add-pins.md)]
 
@@ -97,10 +104,10 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 ::: zone-end
 
 ::: zone pivot="windows-10"
-:::image type="content" source="images/pin-add-10.png" alt-text="Screenshot of the Windows 10 taskbar, before and after adding pinsr." border="false" lightbox="./images/pin-add-10.png":::
+:::image type="content" source="images/pin-add-10.png" alt-text="Screenshot of the Windows 10 taskbar, before and after adding pins." border="false" lightbox="./images/pin-add-10.png":::
 ::: zone-end
 
-### Remove default pins
+#### Example: remove default pins
 
 To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`.
 
@@ -116,7 +123,7 @@ To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarL
 :::image type="content" source="images/pin-remove-10.png" alt-text="Screenshot of the Windows 10 taskbar, before and after removing pins." border="false" lightbox="images/pin-remove-10.png":::
 ::: zone-end
 
-### Replace pins
+#### Example: replace pins
 
 To replace all default pins and add your own pins, add `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`. Then, add the pins that you want to `TaskbarPinList`.
 
@@ -132,7 +139,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 :::image type="content" source="images/pin-replace-10.png" alt-text="Screenshot of the Windows 10 taskbar, before and after replacing pins." border="false" lightbox="images/pin-replace-10.png":::
 ::: zone-end
 
-### Configuration by country or region
+#### Example: configuration by country or region
 
 In the following XML example, two regions are added: `US|UK` and `DE|FR|IT`:
 
@@ -206,7 +213,7 @@ On a clean install of Windows, if you apply a taskbar layout, the following apps
 - Any default apps you don't remove
 - Apps that you specifically pin in the XML file
 
-On a Windows OS upgrade, apps are already pinned to the taskbar. The apps may have been pinned by a user, by an image, or by using Windows unattended setup. For upgrades, the taskbar layout applies the following behavior:
+On a Windows OS upgrade, apps are already pinned to the taskbar. The taskbar layout applies the following logic:
 
 - If users pinned apps to the taskbar, then those pinned apps remain. New apps are pinned after the existing user-pinned apps
 - If the apps are pinned during the install or by a policy (not by a user), and the apps aren't pinned in an updated layout file, then the apps are unpinned

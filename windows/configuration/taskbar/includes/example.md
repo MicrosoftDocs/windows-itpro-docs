@@ -5,12 +5,6 @@ ms.date: 03/13/2024
 ms.topic: include
 ---
 
-## Create the XML file
-
-### Sample taskbar configuration XML file
-
-Here's an example:
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LayoutModificationTemplate
