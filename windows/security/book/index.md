@@ -7,6 +7,8 @@ ms.date: 04/09/2024
 
 # Windows 11 Security Book
 
+:::image type="content" source="images/cover.png" alt-text="Cover of the Windows 11 security book.":::
+
 ## Introduction
 
 Emerging technologies and evolving business trends bring new opportunities and challenges for organizations of all sizes. As technology and workstyles transform, so does the threat landscape with growing numbers of increasingly sophisticated attacks on organizations and employees.
