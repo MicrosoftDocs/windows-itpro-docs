@@ -1,13 +1,13 @@
 ---
-title: Configure the taskbar pinned applications
-description: Learn how to configure the Windows taskbar pinned applications.
+title: Configure the applications pinned to the taskbar
+description: Learn how to configure the applications pinned to the Windows taskbar.
 ms.topic: how-to
 ms.date: 04/17/2024
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
 
-# Configure the taskbar pinned applications
+# Configure the applications pinned to the taskbar
 
 The configuration of the applications pinned to the taskbar is done with the use of an XML file. This article describes how to create and deploy the XML configuration file.
 
