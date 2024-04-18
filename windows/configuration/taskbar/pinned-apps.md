@@ -107,9 +107,9 @@ The `<CustomTaskbarLayoutCollection>` section appends the listed apps to the tas
 :::image type="content" source="images/pin-add-10.png" alt-text="Screenshot of the Windows 10 taskbar, before and after adding pins." border="false" lightbox="./images/pin-add-10.png":::
 ::: zone-end
 
-#### Example: remove default pins
+#### Example: remove pins
 
-To remove all default pins, add `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`.
+To remove all pins, add `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`.
 
 [!INCLUDE [example-remove-pins](includes/example-remove-pins.md)]
 
