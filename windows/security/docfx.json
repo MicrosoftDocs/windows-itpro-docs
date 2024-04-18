@@ -85,6 +85,8 @@
         "application-security//**/*.yml": "vinaypamnani-msft",
         "application-security/application-control/windows-defender-application-control/**/*.md": "jsuther1974",
         "application-security/application-control/windows-defender-application-control/**/*.yml": "jsuther1974",
+        "book//**/*.md": "paolomatarazzo",
+        "book//**/*.yml": "paolomatarazzo",
         "hardware-security/**/*.md": "vinaypamnani-msft",
         "hardware-security/**/*.yml": "vinaypamnani-msft",
         "identity-protection/**/*.md": "paolomatarazzo",
@@ -103,6 +105,8 @@
         "application-security//**/*.yml": "vinpa",
         "application-security/application-control/windows-defender-application-control/**/*.md": "jsuther",
         "application-security/application-control/windows-defender-application-control/**/*.yml": "jsuther",
+        "book//**/*.md": "paoloma",
+        "book//**/*.yml": "paoloma",
         "hardware-security//**/*.md": "vinpa",
         "hardware-security//**/*.yml": "vinpa",
         "identity-protection/**/*.md": "paoloma",
@@ -134,6 +138,9 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
+        "book/**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
         ],
         "hardware-security/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
@@ -216,6 +223,7 @@
       "ms.reviewer": {
         "application-security/application-control/windows-defender-application-control/**/*.md": "vinpa",
         "application-security/application-isolation/microsoft-defender-application-guard/*.md": "sazankha",
+        "book/*.md": "paoloma",
         "identity-protection/access-control/*.md": "sulahiri",
         "identity-protection/credential-guard/*.md": "zwhittington",
         "identity-protection/hello-for-business/*.md": "erikdau",
@@ -227,6 +235,7 @@
         "operating-system-security/network-security/windows-firewall/*.md": "nganguly"
       },
       "ms.collection": {
+        "book/*.md": "tier3",
         "identity-protection/hello-for-business/*.md": "tier1",
         "information-protection/pluton/*.md": "tier1",
         "information-protection/tpm/*.md": "tier1",
