@@ -80,13 +80,13 @@ The digital signature is evaluated across the Windows environment on Windows boo
 ### Device health attestation
 
 The Windows device health attestation process supports a Zero Trust paradigm that shifts the focus from static, network-based perimeters to users, assets, and resources. The attestation process confirms the device, firmware, and boot process are in a good state and have not been tampered with before they can access corporate resources. These
-determinations are made with data stored in the TPM, which provides a secure root-of-trust. The information is sent to an attestation service such as Azure Attestation to verify that the device is in a trusted state. Then a modern device management (MDM) tool like Microsoft Intune<sup>[\[1\]](#footnote1)</sup> reviews device health and connects this information with Microsoft Entra ID<sup>[\[1\]](#footnote1)</sup> for conditional access.
+determinations are made with data stored in the TPM, which provides a secure root-of-trust. The information is sent to an attestation service such as Azure Attestation to verify that the device is in a trusted state. Then a modern device management (MDM) tool like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> reviews device health and connects this information with Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> for conditional access.
 
 Windows includes many security features to help protect users from malware and attacks. However, security components are trustworthy only if the platform boots as expected and is not tampered with. As noted above, Windows relies on Unified Extensible Firmware Interface (UEFI) Secure Boot, ELAM, DRTM, Trusted Boot, and other low-level hardware and firmware security features to protect your PC from attacks. From the moment you power on your PC until your antimalware starts, Windows is backed with the appropriate hardware configurations that help keep you safe. Measured Boot, implemented by bootloaders and BIOS, verifies and cryptographically records each step of the boot in a chained manner. These events are bound to the TPM, that functions as a hardware root-of-trust. Remote attestation is the mechanism by which these events are read and verified by a service to provide a verifiable, unbiased, and tamper-resilient report. Remote attestation is the trusted auditor of your system's boot, allowing reliant parties to bind trust to the device and its security.
 
 A summary of the steps involved in attestation and Zero-Trust on a Windows device are as follows:
 
-- During each step of the boot process—such as a file load, update of special variables, and more—information such as file hashes and signature(s) are measured in the TPM Platform Configuration Register (PCRs). The measurements are bound by a Trusted Computing Group specification that dictates which events can be recorded and the format of each event. The data provides important information about device security from the moment it powers on
+- During each step of the boot process - such as a file load, update of special variables, and more - information such as file hashes and signature(s) are measured in the TPM Platform Configuration Register (PCRs). The measurements are bound by a Trusted Computing Group specification that dictates which events can be recorded and the format of each event. The data provides important information about device security from the moment it powers on
 - Once Windows has booted, the attestor (or verifier) requests the TPM get the measurements stored in its PCRs alongside the Measured Boot log. Together, these form the attestation evidence that's sent to the Microsoft Azure Attestation Service
 - The TPM is verified by using the keys or cryptographic material available on the chipset with an Azure Certificate Service
 - The above information is sent to the Azure Attestation Service to verify that the device is in a trusted state.
@@ -112,8 +112,9 @@ All auditing categories are disabled when Windows is first installed. Before ena
 1. Test these settings to validate your choices.
 1. Develop plans for deploying and managing your audit policy.
 
-Learn more:
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
+-
 - Security policy settings
 - Security auditing
 
@@ -129,7 +130,7 @@ With Assigned Access, Windows devices restrict functionality to pre-selected app
 
 With traditional Group Policy, policies were refreshed on a PC when a user signed in and every 90 minutes by default. Administrators could adjust that timing to be shorter to ensure that the PC's policies were compliant with the management settings set by IT.
 
-By contrast, with an MDM solution like Microsoft Intune<sup>[\[1\]](#footnote1)</sup>, policies are refreshed when a user signs in and then at eight-hour intervals by default. But as more available group policies were implemented through MDM, one remaining gap was the longer period between the reapplication of a changed policy.
+By contrast, with an MDM solution like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, policies are refreshed when a user signs in and then at eight-hour intervals by default. But as more available group policies were implemented through MDM, one remaining gap was the longer period between the reapplication of a changed policy.
 
 Config Refresh allows settings in the Policy configuration service provider (CSP) that drift due to misconfiguration, registry edits, or malicious software on a PC to be reset to the value the administrator intended every 90 minutes by default. It is configurable to refresh every 30 minutes if desired. The Policy CSP covers hundreds of settings that were traditionally set with Group Policy and are now set through MDM.
 
@@ -139,7 +140,7 @@ Config Refresh can also be *paused* for a configurable period of time, after whi
 
 Visibility and awareness of device security and health are key to any action taken. The Windows built-in security settings provide an at-a-glance view of the security status and health of your device. These insights help you identify issues and act to make sure you're protected. You can quickly see the status of your virus and threat protection, firewall and network security, device security controls, and more.
 
-Learn more:
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows security settings](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
 - [Windows Security](../operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center.md)
@@ -159,7 +160,7 @@ When people travel with their PCs, their confidential information travels with t
 
 ### BitLocker
 
-BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers. BitLocker uses the AES algorithm in XTS or CBC mode of operation with 128-bit or 256-bit key length to encrypt data on the volume. Cloud storage on Microsoft OneDrive or Azure<sup>[\[1\]](#footnote1)</sup> can be used to save recovery key content. BitLocker can be managed by any MDM solution such as Microsoft Intune<sup>[\[2\]](#footnote2)</sup>> using a configuration service provider (CSP)<sup>[\[1\]](#footnote1)</sup>. BitLocker provides encryption for the OS, fixed data, and removable data drives (BitLocker To Go), leveraging technologies like Hardware Security Test Interface (HSTI), Modern Standby, UEFI Secure Boot, and TPM. Windows consistently improves data protection by expanding existing options and providing new strategies.
+BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers. BitLocker uses the AES algorithm in XTS or CBC mode of operation with 128-bit or 256-bit key length to encrypt data on the volume. Cloud storage on Microsoft OneDrive or Azure<sup>[\[9\]](conclusion.md#footnote9)</sup> can be used to save recovery key content. BitLocker can be managed by any MDM solution such as Microsoft Intune<sup>[\[6\]](conclusion.md#footnote6)</sup>> using a configuration service provider (CSP)<sup>[\[9\]](conclusion.md#footnote9)</sup>. BitLocker provides encryption for the OS, fixed data, and removable data drives (BitLocker To Go), leveraging technologies like Hardware Security Test Interface (HSTI), Modern Standby, UEFI Secure Boot, and TPM. Windows consistently improves data protection by expanding existing options and providing new strategies.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -213,7 +214,7 @@ PDE requires Microsoft Entra ID.
 
 ### Email encryption
 
-Email encryption enables users to encrypt outgoing email messages and attachments so that only intended recipients with a digital identification (ID)—also called a certificate—can read them.10 Users can digitally sign a message, which verifies the identity of the sender and ensures the message has not been tampered with.
+Email encryption enables users to encrypt outgoing email messages and attachments so that only intended recipients with a digital identification (ID) - also called a certificate - can read them.10 Users can digitally sign a message, which verifies the identity of the sender and ensures the message has not been tampered with.
 
 These encrypted messages can be sent by a user to people within their organization as well as external contacts who have proper encryption certificates.
 
@@ -253,7 +254,7 @@ Customers using TLS 1.3 (or Windows components that support it, including HTTP.S
 
 Legacy protocol versions TLS 1.0 and 1.1 are officially deprecated and will be disabled by default in future OS versions only. This change will come to Windows Insider Preview in September 2023. Organizations and application developers are strongly encouraged to begin to identify and remove code dependencies on TLS 1.0/1.1 if they have not done so already.
 
-Learn more:
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [TLS/SSL overview (Schannel SSP)](/windows-server/security/tls/tls-ssl-schannel-ssp-overview)
 - [TLS 1.0 and TLS 1.1 soon to be disabled in Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tls-1-0-and-tls-1-1-soon-to-be-disabled-in-windows/bc-p/3894928/emcs_t/S2h8ZW1haWx8dG9waWNfc3Vic2NyaXB0aW9ufExMM0hCN0VURDk3OU9OfDM4OTQ5Mjh8U1VCU0NSSVBUSU9OU3xoSw#M6180)
@@ -272,13 +273,13 @@ Support for DNS encryption integrates with existing Windows DNS configurations s
 
 The number of Bluetooth devices connected to Windows 11 continues to increase. Windows users connect their Bluetooth headsets, mice, keyboards, and other accessories and improve their day-to-day PC experience by enjoying streaming, productivity, and gaming. Windows supports all standard Bluetooth pairing protocols, including classic and LE Secure connections, secure simple pairing, and classic and LE legacy pairing. Windows also implements host-based LE privacy. Windows updates help users stay current with OS and driver security features in accordance with the Bluetooth Special Interest Group (SIG) and Standard Vulnerability Reports, as well as issues beyond those required by the Bluetooth core industry standards. Microsoft strongly recommends that Bluetooth accessories' firmware and software are kept up to date.
 
-IT-managed environments have a number of [Bluetooth policies](/windows/client-management/mdm/policy-csp-bluetooth) (MDM, Group Policy, and PowerShell) that can be managed through MDM tools such as Microsoft Intune<sup>[\[1\]](#footnote1)</sup>. You can configure Windows to use Bluetooth technology while supporting the security needs of your organization. For example, you can allow input and audio while blocking file transfer, force encryption standards, limit Windows discoverability, or even disable Bluetooth entirely for the most sensitive environments.
+IT-managed environments have a number of [Bluetooth policies](/windows/client-management/mdm/policy-csp-bluetooth) (MDM, Group Policy, and PowerShell) that can be managed through MDM tools such as Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>. You can configure Windows to use Bluetooth technology while supporting the security needs of your organization. For example, you can allow input and audio while blocking file transfer, force encryption standards, limit Windows discoverability, or even disable Bluetooth entirely for the most sensitive environments.
 
 ### Securing Wi-Fi connections
 
 Windows Wi-Fi supports industry-standard authentication and encryption methods when connecting to Wi-Fi networks. WPA (Wi-Fi Protected Access) is a security standard defined by the Wi-Fi Alliance (WFA) to provide sophisticated data encryption and better user authentication.
 
-The current security standard for Wi-Fi authentication is WPA3, which provides a more secure and reliable connection method as compared to WPA2 and older security protocols. Windows supports three WPA3 modes—WPA3 Personal, WPA3 Enterprise, and WPA3 Enterprise 192-bit Suite B.
+The current security standard for Wi-Fi authentication is WPA3, which provides a more secure and reliable connection method as compared to WPA2 and older security protocols. Windows supports three WPA3 modes - WPA3 Personal, WPA3 Enterprise, and WPA3 Enterprise 192-bit Suite B.
 
 Windows 11 includes WPA3 Personal with the new H2E protocol and WPA3 Enterprise 192-bit Suite B. Windows 11 also supports WPA3 Enterprise, which includes enhanced server certificate validation and TLS 1.3 for authentication using EAP-TLS authentication.
 
@@ -306,7 +307,7 @@ ports, or program paths. This functionality increases manageability and decrease
 
 Windows 11 makes the Windows Firewall easier to analyze and debug. IPSec behavior has been integrated with Packet Monitor (pktmon), an in-box, cross-component network diagnostic tool for Windows. Additionally, the Windows Firewall event logs have been enhanced to ensure an audit can identify the specific filter that was responsible for any given event. This enables analysis of firewall behavior and rich packet capture without relying on third-party tools.
 
-Admins can now configure additional settings through the Firewall and Firewall Rule policy templates in the Endpoint Security node in Microsoft Intune<sup>[\[1\]](#footnote1)</sup>, leveraging the platform
+Admins can now configure additional settings through the Firewall and Firewall Rule policy templates in the Endpoint Security node in Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, leveraging the platform
 support from the Firewall configuration service provider (CSP) and applying these settings to Windows endpoints.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
@@ -321,7 +322,7 @@ consumer VPNs, including apps for the most popular enterprise VPN gateways.
 
 In Windows 11, we've integrated the most commonly used VPN controls right into the Windows 11 Quick Actions pane. From the Quick Actions pane, users can see the status of their VPN, start and stop the VPN tunnels, and with one click, go to the modern Settings app for more control.
 
-The Windows VPN platform connects to Microsoft Entra ID<sup>[\[1\]](#footnote1)</sup> and Conditional Access for single sign-on, including multifactor authentication (MFA) through Microsoft Entra ID. The VPN platform also supports classic domain-joined authentication. It's supported by Microsoft Intune and other modern device management (MDM) providers. The flexible VPN profile supports both built-in protocols and custom protocols. It can configure multiple authentication methods and can be automatically started as needed or manually started by the end user. It also supports split-tunnel VPN and exclusive VPN with exceptions for trusted external sites.
+The Windows VPN platform connects to Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> and Conditional Access for single sign-on, including multifactor authentication (MFA) through Microsoft Entra ID. The VPN platform also supports classic domain-joined authentication. It's supported by Microsoft Intune and other modern device management (MDM) providers. The flexible VPN profile supports both built-in protocols and custom protocols. It can configure multiple authentication methods and can be automatically started as needed or manually started by the end user. It also supports split-tunnel VPN and exclusive VPN with exceptions for trusted external sites.
 
 With Universal Windows Platform (UWP) VPN apps, end users never get stuck on an old version of their VPN client. VPN apps from the store will be automatically updated as needed. Naturally, the updates are in the control of your IT admins.
 
@@ -377,7 +378,7 @@ SmartScreen also determines whether a downloaded app or app installer is potenti
 - Checking downloaded files against a list of reported malicious software sites and programs known to be unsafe. If it finds a match, SmartScreen warns that the file might be malicious
 - Checking downloaded files against a list of well-known files. If the file is of a dangerous type and not well-known, SmartScreen displays a caution alert
 
-With enhanced phishing protection in Windows 11, SmartScreen also alerts people when they are entering their Microsoft credentials into a potentially risky location, regardless of which application or browser is used. IT can customize which notifications appear through Microsoft Intune<sup>[\[1\]](#footnote1)</sup>. This protection runs in audit mode by default, giving IT admins full control to make decisions around policy creation and enforcement.
+With enhanced phishing protection in Windows 11, SmartScreen also alerts people when they are entering their Microsoft credentials into a potentially risky location, regardless of which application or browser is used. IT can customize which notifications appear through Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>. This protection runs in audit mode by default, giving IT admins full control to make decisions around policy creation and enforcement.
 
 Because Windows 11 comes with these enhancements already built in and enabled, users have extra security from the moment they turn on their device.
 
@@ -412,107 +413,70 @@ network, and firewall.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- Attack surface reduction
+- [Attack surface reduction](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-worldwide)
 
 ### Tamper protection
 
-Attacks like ransomware attempt to disable security features, such as anti-virus protection.
-Bad actors like to disable security features to get easier access to user's data, to install
-malware, or otherwise exploit user's data, identity, and devices without fear of being blocked.
-Tamper protection helps prevent these kinds of activities.
+Attacks like ransomware attempt to disable security features, such as anti-virus protection. Bad actors like to disable security features to get easier access to user's data, to install malware, or otherwise exploit user's data, identity, and devices without fear of being blocked. Tamper protection helps prevent these kinds of activities.
+
 With tamper protection, malware is prevented from taking actions such as:
-* Disabling real-time protection.
-* Turning off behavior monitoring.
-* Disabling antivirus (such as IOfficeAntivirus (IOAV)).
-* Disabling cloud-delivered protection.
-* Removing security intelligence updates.
+
+- Disabling real-time protection
+- Turning off behavior monitoring
+- Disabling antivirus, such as IOfficeAntivirus (IOAV)
+- Disabling cloud-delivered protection
+- Removing security intelligence updates
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- Tamper protection
+- [Tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
 ### Exploit protection
 
-Exploit protection automatically applies several exploit mitigation techniques to operating
-system processes and apps. Exploit protection works best with Microsoft Defender for
-Endpoint<sup>[\[1\]](#footnote1)</sup>, which gives organizations detailed reporting into exploit protection events and
-blocks as part of typical alert investigation scenarios. You can enable exploit protection on
-an individual device and then use Group Policy in Active Directory or Microsoft Intune<sup>[\[1\]](#footnote1)</sup> to
-distribute the configuration XML file to multiple devices simultaneously.
-When a mitigation is encountered on the device, a notification will be displayed from the
-Action Center. You can customize the notification with your company details and contact
-information. You can also enable the rules individually to customize which techniques the
-feature monitors.
-You can use audit mode to evaluate how exploit protection would impact your organization if
-it were enabled.
-Windows 11 provides configuration options for exploit protection. You can prevent users
-from modifying these specific options with Group Policy.
+Exploit protection automatically applies several exploit mitigation techniques to operating system processes and apps. Exploit protection works best with Microsoft Defender for Endpoint<sup>[\[9\]](conclusion.md#footnote9)</sup>, which gives organizations detailed reporting into exploit protection events and blocks as part of typical alert investigation scenarios. You can enable exploit protection on an individual device and then use Group Policy in Active Directory or Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> to distribute the configuration XML file to multiple devices simultaneously.
+
+When a mitigation is encountered on the device, a notification will be displayed from the Action Center. You can customize the notification with your company details and contact information. You can also enable the rules individually to customize which techniques the feature monitors.
+
+You can use audit mode to evaluate how exploit protection would impact your organization if it were enabled.
+
+Windows 11 provides configuration options for exploit protection. You can prevent users from modifying these specific options with Group Policy.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- Protecting devices from exploits
+- [Protecting devices from exploits](/microsoft-365/security/defender-endpoint/enable-exploit-protection)
 
 ### Controlled folder access
 
-You can protect your valuable information in specific folders by managing app access to
-them. Only trusted apps can access protected folders, which are specified when controlled
-folder access is configured. Typically, commonly used folders, such as those used for
-documents, pictures, and downloads, are included in the list of controlled folders.
-Controlled folder access works with a list of trusted apps. Apps that are included in the
-list of trusted software work as expected. Apps that are not included in the trusted list are
-prevented from making any changes to files inside protected folders.
-Controlled folder access helps protect user's valuable data from malicious apps and threats
-such as ransomware.
+You can protect your valuable information in specific folders by managing app access tob them. Only trusted apps can access protected folders, which are specified when controlled folder access is configured. Typically, commonly used folders, such as those used for documents, pictures, and downloads, are included in the list of controlled folders.
+
+Controlled folder access works with a list of trusted apps. Apps that are included in the list of trusted software work as expected. Apps that are not included in the trusted list are prevented from making any changes to files inside protected folders.
+
+Controlled folder access helps protect user's valuable data from malicious apps and threats such as ransomware.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- Controlled folder access
+- [Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders)
 
 ### Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint<sup>[\[1\]](#footnote1)</sup> is an enterprise endpoint detection and response solution
-that helps security teams detect, investigate, and respond to advanced threats.
-Organizations can use the rich event data and attack insights Defender for Endpoint provides
-to investigate incidents. Defender for Endpoint brings together the following elements to
-provide a more complete picture of security incidents:
-* Endpoint behavioral sensors: Embedded in Windows, these sensors collect and process
-behavioral signals from the operating system and send this sensor data to your private,
-isolated cloud instance of Microsoft Defender for Endpoint.
-* Cloud security analytics: Behavioral signals are translated into insights, detections, and
-recommended responses to advanced threats. These analytics leverage big data, device
-learning, and unique Microsoft optics across the Windows ecosystem, enterprise cloud
-products such as Microsoft 365<sup>[\[1\]](#footnote1)</sup>, and online assets.
-* Threat intelligence: Microsoft processes over 43 trillion security signals every 24 hours,
-yielding a deep and broad view into the evolving threat landscape. Combined with our
-global team of security experts and cutting-edge artificial intelligence and machine learning,
-we can see threats that others miss. This threat intelligence helps provide unparalleled
-protection for our customers. The protections built into our platforms and products blocked
-attacks that include 31 billion identity threats and 32 billion email threats.
-* Rich response capabilities: Defender for Endpoint empowers SecOps teams to isolate,
-remediate, and remote into machines to further investigate and stop active threats in their
-environment, as well as block files, network destinations, and create alerts for them. In
-addition, Automated Investigation and Remediation can help reduce the load on the SOC
-by automatically performing otherwise manual steps towards remediation and providing
-detailed investigation outcomes.
-Defender for Endpoint is also part of Microsoft 365 Defender, our end-to-end, cloud-native
-extended detection and response (XDR) solution that combines best-of-breed endpoint,
-email, and identity security products. It enables organizations to prevent, detect, investigate,
-and remediate attacks by delivering deep visibility, granular context, and actionable insights
-generated from raw signals harnessed across the Microsoft 365 environment and other
-platforms, all synthesized into a single dashboard. This solution offers tremendous value to
-organizations of any size, especially those that are looking to break away from the added
-complexity of multiple point solutions, keeping them protected from sophisticated attacks
-and saving IT and security teams' time and resources.
+Microsoft Defender for Endpoint<sup>[\[9\]](conclusion.md#footnote9)</sup> is an enterprise endpoint detection and response solution that helps security teams detect, investigate, and respond to advanced threats.
+
+Organizations can use the rich event data and attack insights Defender for Endpoint provides to investigate incidents. Defender for Endpoint brings together the following elements to provide a more complete picture of security incidents:
+
+- Endpoint behavioral sensors: Embedded in Windows, these sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated cloud instance of Microsoft Defender for Endpoint
+- Cloud security analytics: Behavioral signals are translated into insights, detections, and recommended responses to advanced threats. These analytics leverage big data, device learning, and unique Microsoft optics across the Windows ecosystem, enterprise cloud products such as Microsoft 365<sup>[\[9\]](conclusion.md#footnote9)</sup>, and online assets
+- Threat intelligence: Microsoft processes over 43 trillion security signals every 24 hours, yielding a deep and broad view into the evolving threat landscape. Combined with our global team of security experts and cutting-edge artificial intelligence and machine learning, we can see threats that others miss. This threat intelligence helps provide unparalleled protection for our customers. The protections built into our platforms and products blocked
+attacks that include 31 billion identity threats and 32 billion email threats
+- Rich response capabilities: Defender for Endpoint empowers SecOps teams to isolate, remediate, and remote into machines to further investigate and stop active threats in their environment, as well as block files, network destinations, and create alerts for them. In addition, Automated Investigation and Remediation can help reduce the load on the SOC by automatically performing otherwise manual steps towards remediation and providing
+detailed investigation outcomes
+
+Defender for Endpoint is also part of Microsoft 365 Defender, our end-to-end, cloud-native extended detection and response (XDR) solution that combines best-of-breed endpoint, email, and identity security products. It enables organizations to prevent, detect, investigate, and remediate attacks by delivering deep visibility, granular context, and actionable insights generated from raw signals harnessed across the Microsoft 365 environment and other
+platforms, all synthesized into a single dashboard. This solution offers tremendous value to organizations of any size, especially those that are looking to break away from the added complexity of multiple point solutions, keeping them protected from sophisticated attacks and saving IT and security teams' time and resources.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- Microsoft Defender for Endpoint
-- Microsoft 365 Defender
+- [Microsoft Defender for Endpoint](/security/defender-endpoint/microsoft-defender-endpoint)
+- [Microsoft 365 Defender])(/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide)
 
 > [!div class="nextstepaction"]
 > [Chapter 3: Application security >](application-security.md)
-
----
-
-<sup><a name="footnote1"></a>1</sup> Sold separately.\
-<sup><a name="footnote2"></a>2</sup> Requires developer enablement.
