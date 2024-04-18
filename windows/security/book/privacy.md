@@ -11,3 +11,9 @@ ms.date: 04/09/2024
 
 > [!div class="nextstepaction"]
 > [Chapter 6: Cloud security >](cloud-security.md)
+
+---
+
+:::image type="icon" source="images/go-to-section.svg" border="false"::: **Go to section:**
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**

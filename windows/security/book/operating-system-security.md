@@ -80,7 +80,7 @@ The digital signature is evaluated across the Windows environment on Windows boo
 ### Device health attestation
 
 The Windows device health attestation process supports a Zero Trust paradigm that shifts the focus from static, network-based perimeters to users, assets, and resources. The attestation process confirms the device, firmware, and boot process are in a good state and have not been tampered with before they can access corporate resources. These
-determinations are made with data stored in the TPM, which provides a secure root-of-trust. The information is sent to an attestation service such as Azure Attestation to verify that the device is in a trusted state. Then a modern device management (MDM) tool like Microsoft Intune<sup>9</sup> reviews device health and connects this information with Microsoft Entra ID<sup>9</sup> for conditional access.
+determinations are made with data stored in the TPM, which provides a secure root-of-trust. The information is sent to an attestation service such as Azure Attestation to verify that the device is in a trusted state. Then a modern device management (MDM) tool like Microsoft Intune<sup>[\[1\]](#footnote1)</sup> reviews device health and connects this information with Microsoft Entra ID<sup>[\[1\]](#footnote1)</sup> for conditional access.
 
 Windows includes many security features to help protect users from malware and attacks. However, security components are trustworthy only if the platform boots as expected and is not tampered with. As noted above, Windows relies on Unified Extensible Firmware Interface (UEFI) Secure Boot, ELAM, DRTM, Trusted Boot, and other low-level hardware and firmware security features to protect your PC from attacks. From the moment you power on your PC until your antimalware starts, Windows is backed with the appropriate hardware configurations that help keep you safe. Measured Boot, implemented by bootloaders and BIOS, verifies and cryptographically records each step of the boot in a chained manner. These events are bound to the TPM, that functions as a hardware root-of-trust. Remote attestation is the mechanism by which these events are read and verified by a service to provide a verifiable, unbiased, and tamper-resilient report. Remote attestation is the trusted auditor of your system's boot, allowing reliant parties to bind trust to the device and its security.
 
@@ -129,7 +129,7 @@ With Assigned Access, Windows devices restrict functionality to pre-selected app
 
 With traditional Group Policy, policies were refreshed on a PC when a user signed in and every 90 minutes by default. Administrators could adjust that timing to be shorter to ensure that the PC's policies were compliant with the management settings set by IT.
 
-By contrast, with an MDM solution like Microsoft Intune<sup>9</sup>, policies are refreshed when a user signs in and then at eight-hour intervals by default. But as more available group policies were implemented through MDM, one remaining gap was the longer period between the reapplication of a changed policy.
+By contrast, with an MDM solution like Microsoft Intune<sup>[\[1\]](#footnote1)</sup>, policies are refreshed when a user signs in and then at eight-hour intervals by default. But as more available group policies were implemented through MDM, one remaining gap was the longer period between the reapplication of a changed policy.
 
 Config Refresh allows settings in the Policy configuration service provider (CSP) that drift due to misconfiguration, registry edits, or malicious software on a PC to be reset to the value the administrator intended every 90 minutes by default. It is configurable to refresh every 30 minutes if desired. The Policy CSP covers hundreds of settings that were traditionally set with Group Policy and are now set through MDM.
 
@@ -159,7 +159,7 @@ When people travel with their PCs, their confidential information travels with t
 
 ### BitLocker
 
-BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers. BitLocker uses the AES algorithm in XTS or CBC mode of operation with 128-bit or 256-bit key length to encrypt data on the volume. Cloud storage on Microsoft OneDrive or Azure<sup>9</sup> can be used to save recovery key content. BitLocker can be managed by any MDM solution such as Microsoft Intune<sup>6</sup> using a configuration service provider (CSP).<sup>9</sup> BitLocker provides encryption for the OS, fixed data, and removable data drives (BitLocker To Go), leveraging technologies like Hardware Security Test Interface (HSTI), Modern Standby, UEFI Secure Boot, and TPM. Windows consistently improves data protection by expanding existing options and providing new strategies.
+BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers. BitLocker uses the AES algorithm in XTS or CBC mode of operation with 128-bit or 256-bit key length to encrypt data on the volume. Cloud storage on Microsoft OneDrive or Azure<sup>[\[1\]](#footnote1)</sup> can be used to save recovery key content. BitLocker can be managed by any MDM solution such as Microsoft Intune<sup>[\[2\]](#footnote2)</sup>> using a configuration service provider (CSP)<sup>[\[1\]](#footnote1)</sup>. BitLocker provides encryption for the OS, fixed data, and removable data drives (BitLocker To Go), leveraging technologies like Hardware Security Test Interface (HSTI), Modern Standby, UEFI Secure Boot, and TPM. Windows consistently improves data protection by expanding existing options and providing new strategies.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -223,6 +223,14 @@ However, recipients using Windows 11 Mail app can only read encrypted messages i
 
 :::image type="icon" source="images/go-to-section.svg" border="false"::: **Go to section:**
 
+- [Transport layer security (TLS)](#transport-layer-security-tls)
+- [DNS security](#dns-security)
+- [Bluetooth protection](#bluetooth-protection)
+- [Securing Wi-Fi connections](#securing-wi-fi-connections)
+- [5G and eSIM](#5g-and-esim)[Windows Firewall](#windows-firewall)
+- [Virtual private networks (VPN)](#virtual-private-networks-vpn)
+- [Server Message Block file services](#server-message-block-file-services)
+
 Windows 11 raises the bar for network security, offering comprehensive protection to help people work with confidence from almost anywhere. To help reduce an organization's attack
 surface, network protection in Windows prevents people from accessing dangerous IP addresses and domains that may host phishing scams, exploits, and other malicious content.
 Using reputation-based services, network protection blocks access to potentially harmful, low-reputation domains and IP addresses.
@@ -260,85 +268,46 @@ Windows 11 provides Group Policy as well as programmatic controls to configure D
 
 Support for DNS encryption integrates with existing Windows DNS configurations such as the Name Resolution Policy Table (NRPT) and the system Hosts file, as well as resolvers specified per network adapter or network profile. The integration helps Windows 11 ensure that the benefits of greater DNS security do not regress existing DNS control mechanisms.
 
-
 ### Bluetooth protection
 
-The number of Bluetooth devices connected to Windows 11 continues to increase.
-Windows users connect their Bluetooth headsets, mice, keyboards, and other accessories
-and improve their day-to-day PC experience by enjoying streaming, productivity, and
-gaming. Windows supports all standard Bluetooth pairing protocols, including classic and LE
-Secure connections, secure simple pairing, and classic and LE legacy pairing. Windows also
-implements host-based LE privacy. Windows updates help users stay current with OS and
-driver security features in accordance with the Bluetooth Special Interest Group (SIG) and
-Standard Vulnerability Reports, as well as issues beyond those required by the Bluetooth core
-industry standards. Microsoft strongly recommends that Bluetooth accessories' firmware and
-software are kept up to date.
+The number of Bluetooth devices connected to Windows 11 continues to increase. Windows users connect their Bluetooth headsets, mice, keyboards, and other accessories and improve their day-to-day PC experience by enjoying streaming, productivity, and gaming. Windows supports all standard Bluetooth pairing protocols, including classic and LE Secure connections, secure simple pairing, and classic and LE legacy pairing. Windows also implements host-based LE privacy. Windows updates help users stay current with OS and driver security features in accordance with the Bluetooth Special Interest Group (SIG) and Standard Vulnerability Reports, as well as issues beyond those required by the Bluetooth core industry standards. Microsoft strongly recommends that Bluetooth accessories' firmware and software are kept up to date.
 
-IT-managed environments have a number of Bluetooth policies (MDM, Group Policy, and
-PowerShell) that can be managed through MDM tools such as Microsoft Intune<sup>9</sup>. You can
-configure Windows to use Bluetooth technology while supporting the security needs of your
-organization. For example, you can allow input and audio while blocking file transfer, force
-encryption standards, limit Windows discoverability, or even disable Bluetooth entirely for the
-most sensitive environments.
+IT-managed environments have a number of [Bluetooth policies](/windows/client-management/mdm/policy-csp-bluetooth) (MDM, Group Policy, and PowerShell) that can be managed through MDM tools such as Microsoft Intune<sup>[\[1\]](#footnote1)</sup>. You can configure Windows to use Bluetooth technology while supporting the security needs of your organization. For example, you can allow input and audio while blocking file transfer, force encryption standards, limit Windows discoverability, or even disable Bluetooth entirely for the most sensitive environments.
 
 ### Securing Wi-Fi connections
 
-Windows Wi-Fi supports industry-standard authentication and encryption methods when
-connecting to Wi-Fi networks. WPA (Wi-Fi Protected Access) is a security standard defined by the
-Wi-Fi Alliance (WFA) to provide sophisticated data encryption and better user authentication.
+Windows Wi-Fi supports industry-standard authentication and encryption methods when connecting to Wi-Fi networks. WPA (Wi-Fi Protected Access) is a security standard defined by the Wi-Fi Alliance (WFA) to provide sophisticated data encryption and better user authentication.
 
-The current security standard for Wi-Fi authentication is WPA3, which provides a more
-secure and reliable connection method as compared to WPA2 and older security protocols.
-Windows supports three WPA3 modes—WPA3 Personal, WPA3 Enterprise, and WPA3
-Enterprise 192-bit Suite B.
+The current security standard for Wi-Fi authentication is WPA3, which provides a more secure and reliable connection method as compared to WPA2 and older security protocols. Windows supports three WPA3 modes—WPA3 Personal, WPA3 Enterprise, and WPA3 Enterprise 192-bit Suite B.
 
-Windows 11 includes WPA3 Personal with the new H2E protocol and WPA3 Enterprise 192-
-bit Suite B. Windows 11 also supports WPA3 Enterprise, which includes enhanced server
-certificate validation and TLS 1.3 for authentication using EAP-TLS authentication.
+Windows 11 includes WPA3 Personal with the new H2E protocol and WPA3 Enterprise 192-bit Suite B. Windows 11 also supports WPA3 Enterprise, which includes enhanced server certificate validation and TLS 1.3 for authentication using EAP-TLS authentication.
 
-Opportunistic Wireless Encryption (OWE), a technology that allows wireless devices to
-establish encrypted connections to public Wi-Fi hotspots, is also included
+Opportunistic Wireless Encryption (OWE), a technology that allows wireless devices to establish encrypted connections to public Wi-Fi hotspots, is also included.
 
 ### 5G and eSIM
 
-5G networks use stronger encryption and better network segmentation compared to
-previous generations of cellular protocols. Unlike Wi-Fi, 5G access is always mutually
-authenticated. Access credentials are stored in an EAL4-certified eSIM that is physically
-embedded in the device, making it much harder for attackers to tamper with. Together, 5G
-and eSIM provide a strong foundation for security.
+5G networks use stronger encryption and better network segmentation compared to previous generations of cellular protocols. Unlike Wi-Fi, 5G access is always mutually authenticated. Access credentials are stored in an EAL4-certified eSIM that is physically embedded in the device, making it much harder for attackers to tamper with. Together, 5G and eSIM provide a strong foundation for security.
 
-Learn more: eSIM configuration of a download serve
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [eSIM configuration of a download server](/mem/intune/configuration/esim-device-configuration-download-server)
 
 ### Windows Firewall
 
-Windows Firewall with Advanced Security (previously called Windows Defender Firewall) is an
-important part of a layered security model. It provides host-based, two-way network traffic
-filtering, blocking unauthorized traffic flowing into or out of the local device based on the
-types of networks the device is connected to.
+Windows Firewall with Advanced Security (previously called Windows Defender Firewall) is an important part of a layered security model. It provides host-based, two-way network traffic
+filtering, blocking unauthorized traffic flowing into or out of the local device based on the types of networks the device is connected to.
 
 Windows Firewall in Windows 11 offers the following benefits:
-* Reduces the risk of network security threats: Windows Firewall reduces the attack surface
-of a device with rules that restrict or allow traffic by many properties, such as IP addresses,
-ports, or program paths. This functionality increases manageability and decreases the
-likelihood of a successful attack.
-* Safeguards sensitive data and intellectual property: By integrating with Internet Protocol
-Security (IPSec), Windows Firewall provides a simple way to enforce authenticated, endto-end network communications. It provides scalable, tiered access to trusted network
-resources, helping to enforce integrity of the data, and optionally helping to protect the
-confidentiality of the data.
-* Extends the value of existing investments: Because Windows Firewall is a host-based
-firewall that is included with the operating system, there is no additional hardware or
-software required. Windows Firewall is also designed to complement existing nonMicrosoft network security solutions through a documented application programming
-interface (API).
-Windows 11 makes the Windows Firewall easier to analyze and debug. IPSec behavior
-has been integrated with Packet Monitor (pktmon), an in-box, cross-component network
-diagnostic tool for Windows. Additionally, the Windows Firewall event logs have been
-enhanced to ensure an audit can identify the specific filter that was responsible for any given
-event. This enables analysis of firewall behavior and rich packet capture without relying on
-third-party tools.
-Admins can now configure additional settings through the Firewall and Firewall Rule policy
-templates in the Endpoint Security node in Microsoft Intune<sup>9</sup>, leveraging the platform
-support from the Firewall configuration service provider (CSP) and applying these settings to
-Windows endpoints.
+
+- Reduces the risk of network security threats: Windows Firewall reduces the attack surface of a device with rules that restrict or allow traffic by many properties, such as IP addresses,
+ports, or program paths. This functionality increases manageability and decreases the likelihood of a successful attack
+- Safeguards sensitive data and intellectual property: By integrating with Internet Protocol Security (IPSec), Windows Firewall provides a simple way to enforce authenticated, end-to-end network communications. It provides scalable, tiered access to trusted network resources, helping to enforce integrity of the data, and optionally helping to protect the confidentiality of the data
+- Extends the value of existing investments: Because Windows Firewall is a host-based firewall that is included with the operating system, there is no additional hardware or software required. Windows Firewall is also designed to complement existing non-Microsoft network security solutions through a documented application programming interface (API)
+
+Windows 11 makes the Windows Firewall easier to analyze and debug. IPSec behavior has been integrated with Packet Monitor (pktmon), an in-box, cross-component network diagnostic tool for Windows. Additionally, the Windows Firewall event logs have been enhanced to ensure an audit can identify the specific filter that was responsible for any given event. This enables analysis of firewall behavior and rich packet capture without relying on third-party tools.
+
+Admins can now configure additional settings through the Firewall and Firewall Rule policy templates in the Endpoint Security node in Microsoft Intune<sup>[\[1\]](#footnote1)</sup>, leveraging the platform
+support from the Firewall configuration service provider (CSP) and applying these settings to Windows endpoints.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -346,83 +315,204 @@ Windows endpoints.
 
 ### Virtual private networks (VPN)
 
-Organizations have long relied on Windows to provide reliable, secured, and manageable
-virtual private network (VPN) solutions. The Windows VPN client platform includes built- in VPN
-protocols, configuration support, a common VPN user interface, and programming support for
-custom VPN protocols. VPN apps are available in the Microsoft Store for both enterprise and
+Organizations have long relied on Windows to provide reliable, secured, and manageable virtual private network (VPN) solutions. The Windows VPN client platform includes built-in VPN
+protocols, configuration support, a common VPN user interface, and programming support for custom VPN protocols. VPN apps are available in the Microsoft Store for both enterprise and
 consumer VPNs, including apps for the most popular enterprise VPN gateways.
-In Windows 11, we've integrated the most commonly used VPN controls right into the
-Windows 11 Quick Actions pane. From the Quick Actions pane, users can see the status of
-their VPN, start and stop the VPN tunnels, and with one click, go to the modern Settings app
-for more control.
 
-The Windows VPN platform connects to Microsoft Entra ID<sup>9</sup> and Conditional Access for
-single sign-on, including multifactor authentication (MFA) through Microsoft Entra ID.
-The VPN platform also supports classic domain-joined authentication. It's supported by
-Microsoft Intune and other modern device management (MDM) providers. The flexible VPN
-profile supports both built-in protocols and custom protocols. It can configure multiple
-authentication methods and can be automatically started as needed or manually started by
-the end user. It also supports split-tunnel VPN and exclusive VPN with exceptions for trusted
-external sites.
-With Universal Windows Platform (UWP) VPN apps, end users never get stuck on an old
-version of their VPN client. VPN apps from the store will be automatically updated as needed.
-Naturally, the updates are in the control of your IT admins.
-The Windows VPN platform has been tuned and hardened for cloud-based VPN providers
-like Azure VPN. Features like Microsoft Entra ID authentication, Windows user interface
-integration, plumbing IKE traffic selectors, and server support are all built into the Windows
-VPN platform. The integration into the Windows VPN platform leads to a simpler IT admin
-experience. User authentication is more consistent, and users can easily find and control
-their VPN.
+In Windows 11, we've integrated the most commonly used VPN controls right into the Windows 11 Quick Actions pane. From the Quick Actions pane, users can see the status of their VPN, start and stop the VPN tunnels, and with one click, go to the modern Settings app for more control.
+
+The Windows VPN platform connects to Microsoft Entra ID<sup>[\[1\]](#footnote1)</sup> and Conditional Access for single sign-on, including multifactor authentication (MFA) through Microsoft Entra ID. The VPN platform also supports classic domain-joined authentication. It's supported by Microsoft Intune and other modern device management (MDM) providers. The flexible VPN profile supports both built-in protocols and custom protocols. It can configure multiple authentication methods and can be automatically started as needed or manually started by the end user. It also supports split-tunnel VPN and exclusive VPN with exceptions for trusted external sites.
+
+With Universal Windows Platform (UWP) VPN apps, end users never get stuck on an old version of their VPN client. VPN apps from the store will be automatically updated as needed. Naturally, the updates are in the control of your IT admins.
+
+The Windows VPN platform has been tuned and hardened for cloud-based VPN providers like Azure VPN. Features like Microsoft Entra ID authentication, Windows user interface integration, plumbing IKE traffic selectors, and server support are all built into the Windows VPN platform. The integration into the Windows VPN platform leads to a simpler IT admin experience. User authentication is more consistent, and users can easily find and control their VPN.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- Windows VPN technical guide
+- [Windows VPN technical guide](../operating-system-security/network-security/vpn/vpn-guide.md)
 
 ### Server Message Block file services
-Server Message Block (SMB) and file services are the most common Windows workloads in
-the commercial and public sector ecosystem. Users and applications rely on SMB to access
-the files that run organizations of all sizes. In Windows 11, the SMB protocol has significant
-security updates to meet today's threats, including AES-256 encryption, accelerated SMB
-signing, Remote Directory Memory Access (RDMA) network encryption, and an entirely new
-scenario, SMB over QUIC for untrusted networks.
-SMB encryption provides end-to-end encryption of SMB data and protects data from
-eavesdropping occurrences on internal networks. Windows 11 introduces AES-256-GCM and
-AES-256-CCM cryptographic suites for SMB 3.1.1 encryption. Windows administrators can
-mandate the use of this more advanced security or continue to use the more compatible and
-still-safe AES-128 encryption.
-In Windows 11 Enterprise, Education, Pro, and Pro Workstation, SMB Direct now supports
-encryption. For demanding workloads like video rendering, data science, or extremely large
-files, you can now operate with the same safety as traditional Transmission Control Protocol
-(TCP) and the performance of RDMA. Previously, enabling SMB encryption disabled direct
-data placement, making RDMA as slow as TCP. Now, data is encrypted before placement,
-leading to relatively minor performance degradation while adding packet privacy with AES-128 and AES-256 protection.
 
-Windows 11 also introduces AES-128-GMAC for SMB signing. Windows will automatically
-negotiate this better-performing cipher method when connecting to another computer that
-supports it. Signing prevents common attacks like relay and spoofing, and it is required by
-default when clients communicate with Active Directory domain controllers.
-Finally, Windows 11 introduces SMB over QUIC, an alternative to the TCP network transport
-that provides secure, reliable connectivity to edge file servers over untrusted networks like the
-internet, as well as highly secure communications on internal networks. QUIC is an Internet
-Engineering Task Force (IETF)-standardized protocol with many benefits when compared with
-TCP, but most importantly, it always requires TLS 1.3 and encryption. SMB over QUIC offers
-an SMB VPN for telecommuters, mobile device users, and high-security organizations. All
-SMB traffic, including authentication and authorization within the tunnel, is never exposed
-to the underlying network. SMB behaves normally within the QUIC tunnel, meaning the user
-experience doesn't change. SMB over QUIC will be a game-changing feature for Windows 11
-accessing Windows file servers and eventually Azure Files and third parties.
-Newly installed Windows 11 Home editions that contain the February 2023 cumulative
-update no longer install the SMB 1.0 client by default, meaning the Home edition now
-operates like all other editions of Windows 11. SMB 1.0 is an unsafe and deprecated protocol
-that Microsoft superseded by later versions of SMB starting with Windows Vista. Microsoft
-began uninstalling SMB 1.0 by default in certain Windows 10 editions in 2017. No versions of
-Windows 11 now install SMB 1.0 by default.
+Server Message Block (SMB) and file services are the most common Windows workloads in the commercial and public sector ecosystem. Users and applications rely on SMB to access the files that run organizations of all sizes. In Windows 11, the SMB protocol has significant security updates to meet today's threats, including AES-256 encryption, accelerated SMB signing, Remote Directory Memory Access (RDMA) network encryption, and an entirely new scenario, SMB over QUIC for untrusted networks.
+
+SMB encryption provides end-to-end encryption of SMB data and protects data from eavesdropping occurrences on internal networks. Windows 11 introduces AES-256-GCM and AES-256-CCM cryptographic suites for SMB 3.1.1 encryption. Windows administrators can mandate the use of this more advanced security or continue to use the more compatible and still-safe AES-128 encryption.
+
+In Windows 11 Enterprise, Education, Pro, and Pro Workstation, SMB Direct now supports encryption. For demanding workloads like video rendering, data science, or extremely large files, you can now operate with the same safety as traditional Transmission Control Protocol (TCP) and the performance of RDMA. Previously, enabling SMB encryption disabled direct data placement, making RDMA as slow as TCP. Now, data is encrypted before placement, leading to relatively minor performance degradation while adding packet privacy with AES-128 and AES-256 protection.
+
+Windows 11 also introduces AES-128-GMAC for SMB signing. Windows will automatically negotiate this better-performing cipher method when connecting to another computer that supports it. Signing prevents common attacks like relay and spoofing, and it is required by default when clients communicate with Active Directory domain controllers.
+
+Finally, Windows 11 introduces SMB over QUIC, an alternative to the TCP network transport that provides secure, reliable connectivity to edge file servers over untrusted networks like the internet, as well as highly secure communications on internal networks. QUIC is an Internet Engineering Task Force (IETF)-standardized protocol with many benefits when compared with TCP, but most importantly, it always requires TLS 1.3 and encryption. SMB over QUIC offers an SMB VPN for telecommuters, mobile device users, and high-security organizations. All SMB traffic, including authentication and authorization within the tunnel, is never exposed to the underlying network. SMB behaves normally within the QUIC tunnel, meaning the user experience doesn't change. SMB over QUIC will be a game-changing feature for Windows 11 accessing Windows file servers and eventually Azure Files and third parties.
+
+Newly installed Windows 11 Home editions that contain the February 2023 cumulative update no longer install the SMB 1.0 client by default, meaning the Home edition now operates like all other editions of Windows 11. SMB 1.0 is an unsafe and deprecated protocol that Microsoft superseded by later versions of SMB starting with Windows Vista. Microsoft began uninstalling SMB 1.0 by  default in certain Windows 10 editions in 2017. No versions of Windows 11 now install SMB 1.0 by default.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- File sharing using the SMB 3 protocol
+- [File sharing using the SMB 3 protocol](/windows-server/storage/file-server/file-server-smb-overview)
 
 ## Virus and threat protection
 
+:::image type="icon" source="images/go-to-section.svg" border="false"::: **Go to section:**
+
+- [Microsoft Defender SmartScreen](#microsoft-defender-smartscreen)
+- [Microsoft Defender Antivirus](#microsoft-defender-antivirus)
+- [Attack surface reduction](#attack-surface-reduction)
+- [Tamper protection](#tamper-protection)
+- [Exploit protection](#exploit-protection)
+- [Controlled folder access](#controlled-folder-access)
+- [Microsoft Defender for Endpoint](#microsoft-defender-for-endpoint)
+
+Today's threat landscape is more complex than ever. This new world requires a new approach vto threat prevention, detection, and response. Microsoft Defender Antivirus, along with many other features that are built into Windows 11, is at the frontlines, protecting customers against current and emerging threats.
+
+### Microsoft Defender SmartScreen
+
+Microsoft Defender SmartScreen protects against phishing, malware websites and napplications, and the downloading of potentially malicious files.
+
+SmartScreen determines whether a site is potentially malicious by:
+
+- Analyzing visited webpages to find indications of suspicious behavior. If it determines a page is suspicious, it will show a warning page advising caution
+- Checking the visited sites against a dynamic list of reported phishing sites and malicious software sites. If it finds a match, SmartScreen warns that the site might be malicious
+
+SmartScreen also determines whether a downloaded app or app installer is potentially malicious by:
+
+- Checking downloaded files against a list of reported malicious software sites and programs known to be unsafe. If it finds a match, SmartScreen warns that the file might be malicious
+- Checking downloaded files against a list of well-known files. If the file is of a dangerous type and not well-known, SmartScreen displays a caution alert
+
+With enhanced phishing protection in Windows 11, SmartScreen also alerts people when they are entering their Microsoft credentials into a potentially risky location, regardless of which application or browser is used. IT can customize which notifications appear through Microsoft Intune<sup>[\[1\]](#footnote1)</sup>. This protection runs in audit mode by default, giving IT admins full control to make decisions around policy creation and enforcement.
+
+Because Windows 11 comes with these enhancements already built in and enabled, users have extra security from the moment they turn on their device.
+
+The app and browser control section contains information and settings for Microsoft Defender SmartScreen. IT administrators and IT pros can get configuration guidance in the [Microsoft Defender SmartScreen documentation library](/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
+
+### Microsoft Defender Antivirus
+
+Microsoft Defender Antivirus is a next-generation protection solution included in all versions of Windows 10 and Windows 11. From the moment you turn on Windows, Microsoft Defender Antivirus continually monitors for malware, viruses, and security threats. In addition to real-time protection, updates are downloaded automatically to help keep your device safe and protect it from threats. If you have another antivirus app installed and turned on, Microsoft Defender Antivirus will turn off automatically. If you uninstall the other app, Microsoft Defender Antivirus will turn back on.
+
+Microsoft Defender Antivirus includes real-time, behavior-based, and heuristic antivirus protection. This combination of always-on content scanning, file and process behavior monitoring, and other heuristics effectively prevents security threats. Microsoft Defender Antivirus continually scans for malware and threats and also detects and blocks potentially unwanted applications (PUA), applications deemed to negatively impact your device but are not considered malware.
+
+Microsoft Defender Antivirus always-on protection is integrated with cloud-delivered protection, which helps ensure near-instant detection and blocking of new and emerging threats. This combination of local and cloud-delivered technologies provides award-winning protection at home and at work.
+
+:::image type="content" source="images/defender-antivirus.png" alt-text="Diagram of the Microsoft Defender Antivirus components.":::
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Next-generation protection with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide).
+
+### Attack surface reduction
+
+Attack surface reduction rules help prevent software behaviors that are often abused to compromise devices and networks. By reducing the attack surface, you can reduce the overall vulnerability of your organization. Administrators can configure specific attack surface reduction rules to help block certain behaviors, such as:
+
+- Launching executable files and scripts that attempt to download or run files
+- Running obfuscated or otherwise suspicious scripts
+- Performing behaviors that apps don't usually initiate during normal day-to-day work
+
+For example, an attacker might try to run an unsigned script from a USB drive or have a macro in an Office document make calls directly to the Win32 API. Attack surface reduction rules can constrain these kinds of risky behaviors and improve the defensive posture of the device. For comprehensive protection, follow steps for enabling hardware-based isolation
+
+for Microsoft Edge and reducing the attack surface across applications, folders, device,
+network, and firewall.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- Attack surface reduction
+
+### Tamper protection
+
+Attacks like ransomware attempt to disable security features, such as anti-virus protection.
+Bad actors like to disable security features to get easier access to user's data, to install
+malware, or otherwise exploit user's data, identity, and devices without fear of being blocked.
+Tamper protection helps prevent these kinds of activities.
+With tamper protection, malware is prevented from taking actions such as:
+* Disabling real-time protection.
+* Turning off behavior monitoring.
+* Disabling antivirus (such as IOfficeAntivirus (IOAV)).
+* Disabling cloud-delivered protection.
+* Removing security intelligence updates.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- Tamper protection
+
+### Exploit protection
+
+Exploit protection automatically applies several exploit mitigation techniques to operating
+system processes and apps. Exploit protection works best with Microsoft Defender for
+Endpoint<sup>[\[1\]](#footnote1)</sup>, which gives organizations detailed reporting into exploit protection events and
+blocks as part of typical alert investigation scenarios. You can enable exploit protection on
+an individual device and then use Group Policy in Active Directory or Microsoft Intune<sup>[\[1\]](#footnote1)</sup> to
+distribute the configuration XML file to multiple devices simultaneously.
+When a mitigation is encountered on the device, a notification will be displayed from the
+Action Center. You can customize the notification with your company details and contact
+information. You can also enable the rules individually to customize which techniques the
+feature monitors.
+You can use audit mode to evaluate how exploit protection would impact your organization if
+it were enabled.
+Windows 11 provides configuration options for exploit protection. You can prevent users
+from modifying these specific options with Group Policy.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- Protecting devices from exploits
+
+### Controlled folder access
+
+You can protect your valuable information in specific folders by managing app access to
+them. Only trusted apps can access protected folders, which are specified when controlled
+folder access is configured. Typically, commonly used folders, such as those used for
+documents, pictures, and downloads, are included in the list of controlled folders.
+Controlled folder access works with a list of trusted apps. Apps that are included in the
+list of trusted software work as expected. Apps that are not included in the trusted list are
+prevented from making any changes to files inside protected folders.
+Controlled folder access helps protect user's valuable data from malicious apps and threats
+such as ransomware.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- Controlled folder access
+
+### Microsoft Defender for Endpoint
+
+Microsoft Defender for Endpoint<sup>[\[1\]](#footnote1)</sup> is an enterprise endpoint detection and response solution
+that helps security teams detect, investigate, and respond to advanced threats.
+Organizations can use the rich event data and attack insights Defender for Endpoint provides
+to investigate incidents. Defender for Endpoint brings together the following elements to
+provide a more complete picture of security incidents:
+* Endpoint behavioral sensors: Embedded in Windows, these sensors collect and process
+behavioral signals from the operating system and send this sensor data to your private,
+isolated cloud instance of Microsoft Defender for Endpoint.
+* Cloud security analytics: Behavioral signals are translated into insights, detections, and
+recommended responses to advanced threats. These analytics leverage big data, device
+learning, and unique Microsoft optics across the Windows ecosystem, enterprise cloud
+products such as Microsoft 365<sup>[\[1\]](#footnote1)</sup>, and online assets.
+* Threat intelligence: Microsoft processes over 43 trillion security signals every 24 hours,
+yielding a deep and broad view into the evolving threat landscape. Combined with our
+global team of security experts and cutting-edge artificial intelligence and machine learning,
+we can see threats that others miss. This threat intelligence helps provide unparalleled
+protection for our customers. The protections built into our platforms and products blocked
+attacks that include 31 billion identity threats and 32 billion email threats.
+* Rich response capabilities: Defender for Endpoint empowers SecOps teams to isolate,
+remediate, and remote into machines to further investigate and stop active threats in their
+environment, as well as block files, network destinations, and create alerts for them. In
+addition, Automated Investigation and Remediation can help reduce the load on the SOC
+by automatically performing otherwise manual steps towards remediation and providing
+detailed investigation outcomes.
+Defender for Endpoint is also part of Microsoft 365 Defender, our end-to-end, cloud-native
+extended detection and response (XDR) solution that combines best-of-breed endpoint,
+email, and identity security products. It enables organizations to prevent, detect, investigate,
+and remediate attacks by delivering deep visibility, granular context, and actionable insights
+generated from raw signals harnessed across the Microsoft 365 environment and other
+platforms, all synthesized into a single dashboard. This solution offers tremendous value to
+organizations of any size, especially those that are looking to break away from the added
+complexity of multiple point solutions, keeping them protected from sophisticated attacks
+and saving IT and security teams' time and resources.
+
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- Microsoft Defender for Endpoint
+- Microsoft 365 Defender
+
 > [!div class="nextstepaction"]
 > [Chapter 3: Application security >](application-security.md)
+
+---
+
+<sup><a name="footnote1"></a>1</sup> Sold separately.\
+<sup><a name="footnote2"></a>2</sup> Requires developer enablement.
