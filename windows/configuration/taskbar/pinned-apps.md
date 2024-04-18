@@ -89,7 +89,7 @@ For practical examples of how to add, remove, or replace pinned apps, see the fo
 - [Add pins](#example-add-pins)
 - [Remove default pins](#example-remove-pins)
 - [Replace default pins](#example-replace-pins)
-- [Configuration by country or region](#example-configuration-by-country-or-region)
+- [Configure the taskbar by country or region](#example-configure-the-taskbar-by-country-or-region)
 
 #### Example: add pins
 
@@ -139,7 +139,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 :::image type="content" source="images/pin-replace-10.png" alt-text="Screenshot of the Windows 10 taskbar, before and after replacing pins." border="false" lightbox="images/pin-replace-10.png":::
 ::: zone-end
 
-#### Example: configuration by country or region
+#### Example: configure the taskbar by country or region
 
 In the following XML example, two regions are added: `US|UK` and `DE|FR|IT`:
 
