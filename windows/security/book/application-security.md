@@ -66,7 +66,7 @@ Users with standard accounts, or those using administrative accounts with UAC en
 
 Some apps require additional permissions and will not work properly (or at all) when running with limited permissions. When an app needs to run with more than standard user rights, UAC allows users to run apps with a "full" administrator token (with administrative groups and privileges) instead of their default user access token. Users continue to operate in the standard user security context while enabling certain executables to run with elevated privileges if needed.
 
-:::image type="content" source="images/uac-settings.png" alt-text="Screenshot of the UAC settings.":::
+:::image type="content" source="images/uac-settings.png" alt-text="Screenshot of the UAC settings." border="false":::
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
