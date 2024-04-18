@@ -37,7 +37,7 @@ Tampering or malware attacks on the Windows boot sequence are blocked by the sig
 
 For more information about these features and how they help prevent rootkits and bootkits from loading during the startup process, see [Secure the Windows boot process](../operating-system-security/system-security/secure-the-windows-10-boot-process.md)
 
-Learn more: [Secure Boot and Trusted Boot](../operating-system-security/system-security/trusted-boot.md)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [Secure Boot and Trusted Boot](../operating-system-security/system-security/trusted-boot.md)
 
 ### Cryptography
 
@@ -117,7 +117,7 @@ Learn more:
 
 With Assigned Access, Windows devices restrict functionality to pre-selected applications depending on the user and keep individual identities separate, which is ideal for public-facing or shared devices. Configuring a device in Kiosk Mode is a straightforward process. You can do this locally on the device or remotely using modern device management.
 
-Learn more: [Windows kiosks and restricted user experiences](/windows/configuration/assigned-access)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [Windows kiosks and restricted user experiences](/windows/configuration/assigned-access)
 
 ### Config Refresh
 
@@ -153,19 +153,19 @@ When people travel with their PCs, their confidential information travels with t
 
 BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers. BitLocker uses the AES algorithm in XTS or CBC mode of operation with 128-bit or 256-bit key length to encrypt data on the volume. Cloud storage on Microsoft OneDrive or Azure<sup>9</sup> can be used to save recovery key content. BitLocker can be managed by any MDM solution such as Microsoft Intune<sup>6</sup> using a configuration service provider (CSP).<sup>9</sup> BitLocker provides encryption for the OS, fixed data, and removable data drives (BitLocker To Go), leveraging technologies like Hardware Security Test Interface (HSTI), Modern Standby, UEFI Secure Boot, and TPM. Windows consistently improves data protection by expanding existing options and providing new strategies.
 
-Learn more: [BitLocker overview](../operating-system-security/data-protection/bitlocker/index.md)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [BitLocker overview](../operating-system-security/data-protection/bitlocker/index.md)
 
 ### BitLocker To Go
 
 BitLocker To Go refers to BitLocker Drive Encryption on removable data drives. BitLocker To Go includes the encryption of USB flash drives, SD cards, and external hard disk drives. Drives can be unlocked using a password, certificate on a smart card, or recovery password.
 
-Learn more: [BitLocker FAQ](../operating-system-security/data-protection/bitlocker/faq.yml)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [BitLocker FAQ](../operating-system-security/data-protection/bitlocker/faq.yml)
 
 ### Device Encryption
 
 Device Encryption is consumer-level device encryption that cannot be managed. Device Encryption is turned on by default for devices with the right hardware components (for example, TPM 2.0, UEFI Secure Boot, Hardware Security Test Interface, and Modern Standby). However, for a commercial scenario, it is possible for commercial customers to disable Device Encryption in favor of BitLocker Drive Encryption. BitLocker Drive Encryption is manageable through MDM.
 
-Learn more: [Device encryption](../operating-system-security/data-protection/bitlocker/index.md#device-encryption)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [Device encryption](../operating-system-security/data-protection/bitlocker/index.md#device-encryption)
 
 ### Encrypted hard drive
 
@@ -181,7 +181,7 @@ Encrypted hard drives enable:
 to re-encrypt data on the drive
 - Lower cost of ownership: There is no need for new infrastructure to manage encryption keys since BitLocker leverages your existing infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process
 
-Learn more: [Encrypted hard drive](../operating-system-security/data-protection/encrypted-hard-drive.md)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [Encrypted hard drive](../operating-system-security/data-protection/encrypted-hard-drive.md)
 
 ### Personal data encryption
 
@@ -191,7 +191,7 @@ With the first release of PDE (Windows 11 22H2), the PDE API was available, whic
 
 PDE requires Microsoft Entra ID.
 
-Learn more: [Personal Data Encryption (PDE)](../operating-system-security/data-protection/personal-data-encryption/index.md)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [Personal Data Encryption (PDE)](../operating-system-security/data-protection/personal-data-encryption/index.md)
 
 ### Email encryption
 
@@ -211,7 +211,7 @@ New DNS and TLS protocol versions strengthen the end-to-end protections needed f
 
 In enterprise environments, network protection works best with Microsoft Defender for Endpoint, which provides detailed reporting on protection events as part of larger investigation scenarios.
 
-Learn more: [How to protect your network](/security/defender-endpoint/network-protection)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [How to protect your network](/security/defender-endpoint/network-protection)
 
 ### Transport layer security (TLS)
 
@@ -318,7 +318,7 @@ templates in the Endpoint Security node in Microsoft Intune<sup>9</sup>, leverag
 support from the Firewall configuration service provider (CSP) and applying these settings to
 Windows endpoints.
 
-Learn more: [Windows Firewall overview](../operating-system-security/network-security/windows-firewall/index.md)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [Windows Firewall overview](../operating-system-security/network-security/windows-firewall/index.md)
 
 ### Virtual private networks (VPN)
 
@@ -350,15 +350,7 @@ VPN platform. The integration into the Windows VPN platform leads to a simpler I
 experience. User authentication is more consistent, and users can easily find and control
 their VPN.
 
-:::row:::
-    :::column:::
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-    :::column-end:::
-    :::column:::
-- Windows VPN technical guide
-- something else
-    :::column-end:::
-:::row-end:::
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** Windows VPN technical guide
 
 ### Server Message Block file services
 Server Message Block (SMB) and file services are the most common Windows workloads in
@@ -400,67 +392,7 @@ that Microsoft superseded by later versions of SMB starting with Windows Vista. 
 began uninstalling SMB 1.0 by default in certain Windows 10 editions in 2017. No versions of
 Windows 11 now install SMB 1.0 by default.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: Learn more: File sharing using the SMB 3 protocol
-
-### ssss
-
-:::row:::
-    :::column span="1":::
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-    :::column-end:::
-    :::column:::
-- Windows VPN technical guide
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column span="1":::
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-    :::column-end:::
-    :::column:::
-- Windows VPN technical guide
-- Windows VPN technical guide
-- Windows VPN technical guide
-- Windows VPN technical guide
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column span="1":::
-:::image type="icon" source="images/learn-more.svg" border="false"::: #### Learn more:
-    :::column-end:::
-    :::column span="3":::
-- Windows VPN technical guide
-- Windows VPN technical guide
-- Windows VPN technical guide
-- Windows VPN technical guide
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column span="1":::
-#### :::image type="icon" source="images/learn-more.svg" border="false"::: #### Learn more:
-    :::column-end:::
-    :::column span="3":::
-- Windows VPN technical guide
-- Windows VPN technical guide
-- Windows VPN technical guide
-- Windows VPN technical guide
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column span="1":::
-#### :::image type="icon" source="images/learn-more.svg" border="false"::: Learn more:
-    :::column-end:::
-    :::column span="3":::
-- Windows VPN technical guide
-- Windows VPN technical guide
-- Windows VPN technical guide
-- Windows VPN technical guide
-    :::column-end:::
-:::row-end:::
-
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** File sharing using the SMB 3 protocol
 
 ## Virus and threat protection
 
