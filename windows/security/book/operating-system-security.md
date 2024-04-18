@@ -405,13 +405,62 @@ Windows 11 now install SMB 1.0 by default.
 ### ssss
 
 :::row:::
-    :::column:::
+    :::column span="1":::
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
     :::column-end:::
     :::column:::
 - Windows VPN technical guide
     :::column-end:::
 :::row-end:::
+
+:::row:::
+    :::column span="1":::
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+    :::column-end:::
+    :::column:::
+- Windows VPN technical guide
+- Windows VPN technical guide
+- Windows VPN technical guide
+- Windows VPN technical guide
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column span="1":::
+:::image type="icon" source="images/learn-more.svg" border="false"::: #### Learn more:
+    :::column-end:::
+    :::column:::
+- Windows VPN technical guide
+- Windows VPN technical guide
+- Windows VPN technical guide
+- Windows VPN technical guide
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column span="1":::
+:::image type="icon" source="images/learn-more.svg" border="false"::: #### Learn more:
+    :::column-end:::
+    :::column:::
+- Windows VPN technical guide
+- Windows VPN technical guide
+- Windows VPN technical guide
+- Windows VPN technical guide
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column span="1":::
+:::image type="icon" source="images/learn-more.svg" border="false"::: #### Learn more:
+    :::column-end:::
+    :::column:::
+- Windows VPN technical guide
+- Windows VPN technical guide
+- Windows VPN technical guide
+- Windows VPN technical guide
+    :::column-end:::
+:::row-end:::
+
 
 ## Virus and threat protection
 
