@@ -476,7 +476,7 @@ platforms, all synthesized into a single dashboard. This solution offers tremend
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Microsoft Defender for Endpoint](/security/defender-endpoint/microsoft-defender-endpoint)
-- [Microsoft 365 Defender])(/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide)
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide)
 
 > [!div class="nextstepaction"]
 > [Chapter 3: Application security >](application-security.md)
