@@ -6,7 +6,17 @@ items:
   - name: 1. Hardware security
     href: hardware-security.md
   - name: 2. Operating system security
-    href: operating-system-security.md
+    items:
+    - name: Introduction
+      href: operating-system-security-root.md
+    - name: System security
+      href: operating-system-security-system-security.md
+    - name: Encryption and data protection
+      href: operating-system-security-encryption-and-data-protection.md
+    - name: Network security
+      href: operating-system-security-network-security.md
+    - name: Virus and threat protection
+      href: operating-system-security-virus-and-threat-protection.md
   - name: 3. Application security
     href: application-security.md
   - name: 4. Identity protection
