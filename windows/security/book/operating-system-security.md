@@ -429,7 +429,7 @@ Windows 11 now install SMB 1.0 by default.
     :::column span="1":::
 :::image type="icon" source="images/learn-more.svg" border="false"::: #### Learn more:
     :::column-end:::
-    :::column:::
+    :::column span="3":::
 - Windows VPN technical guide
 - Windows VPN technical guide
 - Windows VPN technical guide
@@ -439,9 +439,9 @@ Windows 11 now install SMB 1.0 by default.
 
 :::row:::
     :::column span="1":::
-:::image type="icon" source="images/learn-more.svg" border="false"::: #### Learn more:
+#### :::image type="icon" source="images/learn-more.svg" border="false"::: #### Learn more:
     :::column-end:::
-    :::column:::
+    :::column span="3":::
 - Windows VPN technical guide
 - Windows VPN technical guide
 - Windows VPN technical guide
@@ -451,9 +451,9 @@ Windows 11 now install SMB 1.0 by default.
 
 :::row:::
     :::column span="1":::
-:::image type="icon" source="images/learn-more.svg" border="false"::: #### Learn more:
+#### :::image type="icon" source="images/learn-more.svg" border="false"::: Learn more:
     :::column-end:::
-    :::column:::
+    :::column span="3":::
 - Windows VPN technical guide
 - Windows VPN technical guide
 - Windows VPN technical guide
