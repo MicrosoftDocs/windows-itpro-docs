@@ -47,7 +47,9 @@ In Windows 11, hardware and software work together to protect sensitive data fro
 
 :::image type="content" source="images\chip-to-cloud.png" alt-text="Diagram of chip-to-cloud containng a list of security features." lightbox="images\chip-to-cloud.png" border="false":::
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [Windows security features licensing and edition requirements](https://learn.microsoft.com/en-us/windows/security/licensing-and-edition-requirements?tabs=edition)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows security features licensing and edition requirements](https://learn.microsoft.com/en-us/windows/security/licensing-and-edition-requirements?tabs=edition)
 
 > [!div class="nextstepaction"]
 > [Chapter 1: Hardware security >](hardware-security.md)

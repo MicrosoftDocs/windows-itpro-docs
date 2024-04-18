@@ -15,6 +15,8 @@ With Windows 11, Microsoft has raised the hardware security bar to design the mo
 
 ## Hardware root-of-trust
 
+:::image type="icon" source="images/go-to-section.svg" border="false"::: **Go to section:**
+
 - [Trusted Platform Module (TPM)](#trusted-platform-module-tpm)
 - [Microsoft Pluton security processor](#microsoft-pluton-security-processor)
 
@@ -47,6 +49,8 @@ Pluton also solves the major security challenge of keeping its own security proc
 
 In addition to a modern hardware root-of-trust, there are numerous other capabilities in the latest chips that harden the operating system against threats by protecting the boot process, safeguarding the integrity of memory, isolating security-sensitive compute logic, and more.
 
+:::image type="icon" source="images/go-to-section.svg" border="false"::: **Go to section:**
+
 - [Secured kernel](#secured-kernel)
 - [Hardware-enforced stack protection](#hardware-enforced-stack-protection)
 - [Kernel Direct Memory Access (DMA) protection](#kernel-direct-memory-access-dma-protection)
@@ -62,7 +66,9 @@ implements virtual trust level 1 (VTL1), which has higher privilege than the vir
 
 Since more privileged VTLs can enforce their own memory protections, higher VTLs can effectively protect areas of memory from lower VTLs. In practice, this allows a lower VTL to protect isolated memory regions by securing them with a higher VTL. For example, VTL0 could store a secret in VTL1, at which point only VTL1 could access it. Even if VTL0 is compromised, the secret would be safe.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)
 
 Hypervisor-protected code integrity (HVCI), also called memory integrity, uses VBS to run Kernel Mode Code Integrity (KMCI) inside the secure VBS environment instead of the main Windows kernel. This helps prevent attacks that attempt to modify kernel-mode code for things like drivers. The KMCI checks that all kernel code is properly signed and hasn't been tampered with before it is allowed to run. HVCI ensures that only validated code can be executed in kernel mode. The hypervisor leverages processor virtualization extensions to enforce memory protections that prevent kernel-mode software from executing code that has not been first validated by the code integrity subsystem. HVCI protects against common attacks like WannaCry that rely on the ability to inject malicious code into the kernel. HVCI can prevent injection of malicious kernel-mode code even when drivers and other kernel-mode software have bugs.
 
@@ -88,7 +94,9 @@ Application code includes a program processing stack that hackers seek to corrup
 
 Windows 11 protects against physical threats such as drive-by Direct Memory Access (DMA) attacks. Peripheral Component Interconnect Express (PCIe) hot-pluggable devices such as Thunderbolt, USB4, and CFexpress allow users to attach new classes of external peripherals, including graphics cards or other PCI devices, to their PCs with the plug-and-play ease of USB. Because PCI hot-plug ports are external and easily accessible, PCs are susceptible to drive-by DMA attacks. Memory access protection (also known as Kernel DMA Protection) protects against these attacks by preventing external peripherals from gaining unauthorized access to memory. Drive-by DMA attacks typically happen quickly while the system owner isn't present. The attacks are performed using simple to moderate attacking tools created with affordable, off-the-shelf hardware and software that do not require the disassembly of the PC. For example, a PC owner might leave a device for a quick coffee break. Meanwhile, an attacker plugs an external tool into a port to steal information or inject code that gives the attacker remote control over the PCs, including the ability to bypass the lock screen. With memory access protection built in and enabled, Windows 11 is protected against physical attack wherever people work.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [Kernel Direct Memory Access (DMA) protection](/windows/security/hardware-security/kernel-dma-protection-for-thunderbolt)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Kernel Direct Memory Access (DMA) protection](/windows/security/hardware-security/kernel-dma-protection-for-thunderbolt)
 
 ### Secured-core PC
 
@@ -115,7 +123,9 @@ System Management Mode (SMM) isolation is an execution mode in x86-based process
 
 In many organizations, IT administrators enforce policies on their corporate devices to protect the OS and keep devices in a compliant state by preventing users from changing configurations and creating configuration drift. Configuration drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a non-compliant state can be vulnerable until the next sync, when configuration is reset with the mobile device management (MDM) solution. Secured-core configuration lock (config lock) is a Secured-core PC (SCPC) feature that prevents users from making unwanted changes to security settings. With config lock, the OS monitors the registry keys that are supported and reverts to the IT-desired SCPC state in seconds after detecting a drift.
 
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:** [Windows 11 with config lock](/windows/client-management/mdm/config-lock)
+:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
+
+- [Windows 11 with config lock](/windows/client-management/mdm/config-lock)
 
 > [!div class="nextstepaction"]
 > [Chapter 2: Operating System security >](operating-system-security.md)
