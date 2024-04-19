@@ -11,7 +11,7 @@ ms.collection:
 
 # Use Quick Assist to help users
 
-Quick Assist is a Microsoft Store application that enables a person to share their device with another person over a remote connection. Your support staff can use it to remotely connect to a user's device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
+Quick Assist is an application that enables a person to share their [Windows](#install-quick-assist-on-windows) or [macOS](#install-quick-assist-on-macos) device with another person over a remote connection. Your support staff can use it to remotely connect to a user's device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
 
 ## Before you begin
 
