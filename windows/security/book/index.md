@@ -53,49 +53,28 @@ In Windows 11, hardware and software work together to protect sensitive data fro
 
 - [Windows security features licensing and edition requirements](https://learn.microsoft.com/en-us/windows/security/licensing-and-edition-requirements?tabs=edition)
 
+---
+
 :::row:::
     :::column span="1":::
-    **Hardware security**
+    [:::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the hardware security chapter.":::](hardware-security-root.md "Hardware security chapter")
     :::column-end:::
     :::column span="1":::
-    **Operating System security**
+    [:::image type="content" source="images/operating-system-security-cover.png" alt-text="Cover of the operating system security chapter.":::](operating-system-security-root.md "Operating System security chapter")
     :::column-end:::
     :::column span="1":::
-    **Application security**
+    [:::image type="content" source="images/application-security-cover.png" alt-text="Cover of the application security chapter.":::](application-security-root.md "Application security chapter")
     :::column-end:::
     :::column span="1":::
-    **security**
+    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
     :::column-end:::
     :::column span="1":::
-    **security**
+    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
     :::column-end:::
     :::column span="1":::
-    **security**
+    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
     :::column-end:::
     :::column span="1":::
-    **security**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-    :::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the application security chapter." border="false":::
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/operating-system-security-cover.png" alt-text="Cover of the application security chapter." border="false":::
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/application-security-cover.png" alt-text="Cover of the application security chapter." border="false":::
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter." border="false":::
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter." border="false":::
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter." border="false":::
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/-cover.png" alt-text="Cover of the chapter." border="false":::
+    :::image type="content" source="images/-cover.png" alt-text="Cover of the chapter.":::
     :::column-end:::
 :::row-end:::
