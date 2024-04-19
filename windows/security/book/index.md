@@ -57,6 +57,9 @@ In Windows 11, hardware and software work together to protect sensitive data fro
 
 :::row:::
     :::column span="1":::
+    [:::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the security book.":::](index.md "Introduction")
+    :::column-end:::
+    :::column span="1":::
     [:::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the hardware security chapter.":::](hardware-security-root.md "Hardware security chapter")
     :::column-end:::
     :::column span="1":::
@@ -64,6 +67,9 @@ In Windows 11, hardware and software work together to protect sensitive data fro
     :::column-end:::
     :::column span="1":::
     [:::image type="content" source="images/application-security-cover.png" alt-text="Cover of the application security chapter.":::](application-security-root.md "Application security chapter")
+    :::column-end:::
+    :::column span="1":::
+    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
     :::column-end:::
     :::column span="1":::
     :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
