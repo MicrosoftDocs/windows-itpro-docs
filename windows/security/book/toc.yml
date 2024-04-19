@@ -6,9 +6,8 @@ items:
   - name: 1. Hardware security
     href: hardware-security.md
   - name: 2. Operating system security
+    href: operating-system-security-root.md
     items:
-    - name: Introduction
-      href: operating-system-security-root.md
     - name: System security
       href: operating-system-security-system-security.md
     - name: Encryption and data protection
@@ -17,6 +16,26 @@ items:
       href: operating-system-security-network-security.md
     - name: Virus and threat protection
       href: operating-system-security-virus-and-threat-protection.md
+  - name: 3. Application security
+    href: application-security.md
+  - name: 4. Identity protection
+    href: identity-protection.md
+  - name: 5. Privacy
+    href: privacy.md
+  - name: 6. Cloud security
+    href: cloud-security.md
+  - name: 7. Security foundations
+    href: security-foundations.md
+  - name: Conclusion
+    href: conclusion.md
+- name: "Windows 11 Security Book: Powerful security by design - option 2"
+  items:
+  - name: Introduction
+    href: index.md
+  - name: 1. Hardware security
+    href: hardware-security.md
+  - name: 2. Operating system security
+    href: operating-system-security.md
   - name: 3. Application security
     href: application-security.md
   - name: 4. Identity protection
