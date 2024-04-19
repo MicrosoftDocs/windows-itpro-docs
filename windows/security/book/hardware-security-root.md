@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Hardware security
 
-:::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the hardware security chapter.":::
+:::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the hardware security chapter." border="false":::
 
 :::image type="content" source="images/hardware-on.png" alt-text="Diagram of containng a list of security features." lightbox="images/hardware.png" border="false":::
 
