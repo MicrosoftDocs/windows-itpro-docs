@@ -1,13 +1,20 @@
 items:
-- name: "Windows 11 Security Book: Powerful security by design"
+- name: "📘 Windows 11 Security Book: Powerful security by design"
   items:
   - name: Introduction
     href: index.md
   - name: 1. Hardware security
-    href: hardware-security.md
-  - name: 2. Operating system security
-    href: operating-system-security-root.md
     items:
+    - name: Overview
+      href: hardware-security-root.md
+    - name: Hardware root-of-trust
+      href: hardware-security-hardware-root-of-trust.md
+    - name: Silicon assisted security
+      href: hardware-security-hardware-silicon-assisted-security,md
+  - name: 2. Operating system security
+    items:
+    - name: Overview
+      href: operating-system-security-root.md
     - name: System security
       href: operating-system-security-system-security.md
     - name: Encryption and data protection
@@ -17,7 +24,13 @@ items:
     - name: Virus and threat protection
       href: operating-system-security-virus-and-threat-protection.md
   - name: 3. Application security
-    href: application-security.md
+    items:
+    - name: Overview
+      href: application-security-root.md
+    - name: Application and driver control
+      href: application-security-application-and-driver-control.md
+    - name: Application isolation
+      href: application-security-application-isolation.md
   - name: 4. Identity protection
     href: identity-protection.md
   - name: 5. Privacy
@@ -28,7 +41,7 @@ items:
     href: security-foundations.md
   - name: Conclusion
     href: conclusion.md
-- name: "Windows 11 Security Book: Powerful security by design - option 2"
+- name: "📘 Windows 11 Security Book - option 2"
   items:
   - name: Introduction
     href: index.md
