@@ -75,6 +75,6 @@ In Windows 11, hardware and software work together to protect sensitive data fro
     :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
     :::column-end:::
     :::column span="1":::
-    :::image type="content" source="images/-cover.png" alt-text="Cover of the chapter.":::
+    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
     :::column-end:::
 :::row-end:::
