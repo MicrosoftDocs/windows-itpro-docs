@@ -75,7 +75,8 @@ In Windows 11, hardware and software work together to protect sensitive data fro
     :::column span="1":::
     **security**
     :::column-end:::
-:::row-end::::::row:::
+:::row-end:::
+:::row:::
     :::column span="1":::
     :::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the application security chapter." border="false":::
     :::column-end:::
@@ -86,15 +87,15 @@ In Windows 11, hardware and software work together to protect sensitive data fro
     :::image type="content" source="images/application-security-cover.png" alt-text="Cover of the application security chapter." border="false":::
     :::column-end:::
     :::column span="1":::
-    :::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the application security chapter." border="false":::
+    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter." border="false":::
     :::column-end:::
     :::column span="1":::
-    :::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the application security chapter." border="false":::
+    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter." border="false":::
     :::column-end:::
     :::column span="1":::
-    :::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the application security chapter." border="false":::
+    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter." border="false":::
     :::column-end:::
     :::column span="1":::
-    :::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the application security chapter." border="false":::
+    :::image type="content" source="images/-cover.png" alt-text="Cover of the chapter." border="false":::
     :::column-end:::
 :::row-end:::

@@ -96,9 +96,8 @@ All auditing categories are disabled when Windows is first installed. Before ena
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
--
-- Security policy settings
-- Security auditing
+- [Security policy settings](/windows/security/threat-protection/security-policy-settings/security-policy-settings)
+- [Security auditing](/windows/security/threat-protection/auditing/security-auditing-overview)
 
 ## Assigned Access
 
