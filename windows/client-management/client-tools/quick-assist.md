@@ -89,7 +89,7 @@ Microsoft logs a small amount of session data to monitor the health of the Quick
 
 In some scenarios, the helper does require the sharer to respond to application permission prompts (User Account Control), but otherwise the helper has the same permissions as the sharer on the device.
 
-## Install Quick Assist
+## Install Quick Assist on Windows
 
 ### Install Quick Assist from the Microsoft Store
 
@@ -126,6 +126,13 @@ To install Quick Assist offline, you need to download your APPXBUNDLE and unenco
 1. In PowerShell, change the directory to the location you've saved the file to in step 1: `cd <location of package file>`
 1. Run the following command to install Quick Assist: `Add-AppxProvisionedPackage -Online -PackagePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe.AppxBundle" -LicensePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe_4bc27046-84c5-8679-dcc7-d44c77a47dd0.xml"`
 1. After Quick Assist has installed, run this command to confirm that Quick Assist is installed for the user: `Get-AppxPackage *QuickAssist* -AllUsers`
+
+## Install Quick Assist on macOS
+
+Quick Assist for macOS is available for interactions with Microsoft Support. If Microsoft products on your macOS device are not working as expected, contact [Microsoft Support](https://support.microsoft.com/contactus) for assistance. Your Microsoft Support agent will guide you through the process of downloading and installing it on your device.
+
+> [!NOTE]
+> Quick Assist for macOS is not available outside of Microsoft Support interactions.
 
 ## Microsoft Edge WebView2
 
