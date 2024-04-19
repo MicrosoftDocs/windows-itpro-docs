@@ -10,7 +10,7 @@ items:
     - name: Hardware root-of-trust
       href: hardware-security-hardware-root-of-trust.md
     - name: Silicon assisted security
-      href: hardware-security-hardware-silicon-assisted-security,md
+      href: hardware-security-silicon-assisted-security.md
   - name: 2. Operating system security
     items:
     - name: Overview
