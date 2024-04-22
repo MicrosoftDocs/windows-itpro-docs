@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 04/17/2024
+ms.date: 04/22/2024
 ---
 
 # Migrating and acquiring optional Windows content during updates
@@ -28,7 +28,8 @@ Optional content includes the following items:
 
 - General Features on Demand also referred to as FODs (for example, Windows Mixed Reality)
 - Language-based and regional FODs (for example, Language.Basic~~~ja-jp~0.0.1.0)
-- Local Experience Packs 
+- Local Experience Packs
+- Language packs 
 
 Optional content isn't included by default in the Windows image file that is part of the operating system media available in the Volume Licensing Service Center (VLSC). Instead, it's released as an additional ISO file on VLSC. Shipping these features out of the operating system media and shipping them separately reduces the disk footprint of Windows. This approach provides more space for user's data. It also reduces the time needed to service the operating system, whether installing a monthly quality update or upgrading to a newer version. A smaller default Windows image also means less data to transmit over the network.
 

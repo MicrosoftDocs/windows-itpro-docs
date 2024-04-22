@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/mem/configmgr/ > Microsoft Configuration Manager</a>
 - ✅ <a href=https://learn.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus > WSUS </a>
-ms.date: 04/17/2024
+ms.date: 04/22/2024
 ---
 
 # How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager
@@ -37,7 +37,7 @@ Starting in Windows 11, version 22H2, on-premises Unified Update Platform (UUP) 
 
 Windows 11, version 22H2, and later clients use on-premises Unified Update Platform (UUP) updates with WSUS and Microsoft Configuration Manager. These clients don't need to use **Specify settings for optional component installation and component repair** for FoDs and language packs since the content is available in WSUS due to on-premises UUP.
 
-For Windows 10, version 2004 through Windows 11, version 21H2, clients can't download FoDs or language packs when **Specify settings for optional component installation and component repair** is set to Windows Update and **Specify source service for specific classes of Windows Updates** ([SetPolicyDrivenUpdateSourceFor<FeatureUpdates/QualityUpdates>](/windows/client-management/mdm/policy-csp-update#setpolicydrivenupdatesourceforfeatureupdates)) for either feature or quality updates set to WSUS. If you need this content, you can set **Specify settings for optional component installation and component repair** to Windows Update and then either:
+For Windows 10, version 2004 through Windows 11, version 21H2, clients can't download FoDs or language packs when **Specify settings for optional component installation and component repair** is set to Windows Update and **Specify source service for specific classes of Windows Updates** ([SetPolicyDrivenUpdateSourceFor<FeatureUpdates/QualityUpdates>](/windows/client-management/mdm/policy-csp-update#setpolicydrivenupdatesourceforfeatureupdates)) for either feature or quality updates is set to WSUS. If you need this content, you can set **Specify settings for optional component installation and component repair** to Windows Update and then either:
 - Change the source selection for feature and quality updates to Windows Update 
 - Allow all classes of updates to come from WSUS by not configuring any source selections <!--8907933-->
 
