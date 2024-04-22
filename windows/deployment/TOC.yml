@@ -372,6 +372,8 @@
           href: update/update-other-microsoft-products.md
         - name: Delivery Optimization reference
           href: do/waas-delivery-optimization-reference.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+        - name: FoD and language packs for WSUS and Configuration Manager
+          href: update/fod-and-lang-packs.md         
         - name: Windows client in S mode
           href: s-mode.md
         - name: Switch to Windows client Pro or Enterprise from S mode
