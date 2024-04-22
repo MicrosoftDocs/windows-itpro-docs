@@ -1,7 +1,7 @@
 ---
 title: SurfaceHub CSP
 description: Learn more about the SurfaceHub CSP.
-ms.date: 04/19/2024
+ms.date: 04/22/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -2021,7 +2021,7 @@ Primary key for authenticating with workspace. Will always return an empty strin
 <!-- Device-MOMAgentGovtCloud-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4921] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
 <!-- Device-MOMAgentGovtCloud-Applicability-End -->
 
 <!-- Device-MOMAgentGovtCloud-OmaUri-Begin -->
@@ -2059,7 +2059,7 @@ Primary key for authenticating with workspace. Will always return an empty strin
 <!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4921] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
 <!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Applicability-End -->
 
 <!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-OmaUri-Begin -->
@@ -2099,7 +2099,7 @@ Enum value for Azure Clouds supported for OMS tracking in SurfaceHub.
 <!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4921] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
 <!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Applicability-End -->
 
 <!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-OmaUri-Begin -->
@@ -2138,7 +2138,7 @@ GUID identifying the Microsoft Operations Management Suite workspace ID to colle
 <!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4921] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
 <!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Applicability-End -->
 
 <!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-OmaUri-Begin -->
