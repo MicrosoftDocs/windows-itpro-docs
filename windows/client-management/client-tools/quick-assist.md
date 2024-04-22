@@ -127,14 +127,7 @@ To install Quick Assist offline, you need to download your APPXBUNDLE and unenco
 1. Run the following command to install Quick Assist: `Add-AppxProvisionedPackage -Online -PackagePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe.AppxBundle" -LicensePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe_4bc27046-84c5-8679-dcc7-d44c77a47dd0.xml"`
 1. After Quick Assist has installed, run this command to confirm that Quick Assist is installed for the user: `Get-AppxPackage *QuickAssist* -AllUsers`
 
-## Install Quick Assist on macOS
-
-Quick Assist for macOS is available for interactions with Microsoft Support. If Microsoft products on your macOS device are not working as expected, contact [Microsoft Support](https://support.microsoft.com/contactus) for assistance. Your Microsoft Support agent will guide you through the process of downloading and installing it on your device.
-
-> [!NOTE]
-> Quick Assist for macOS is not available outside of Microsoft Support interactions.
-
-## Microsoft Edge WebView2
+### Microsoft Edge WebView2
 
 The Microsoft Edge WebView2 is a development control that uses Microsoft Edge as the rendering engine to display web content in native apps. The new Quick Assist application has been developed using this control, making it a necessary component for the app to function.
 
@@ -142,6 +135,13 @@ The Microsoft Edge WebView2 is a development control that uses Microsoft Edg
 - For Windows 10 users, the Quick Assist Store app detects if WebView2 is present on launch and if necessary, installs it automatically. If an error message or prompt is shown indicating WebView2 isn't present, it needs to be installed separately.
 
 For more information on distributing and installing Microsoft Edge WebView2, visit [Distribute your app and the WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution)
+
+## Install Quick Assist on macOS
+
+Quick Assist for macOS is available for interactions with Microsoft Support. If Microsoft products on your macOS device are not working as expected, contact [Microsoft Support](https://support.microsoft.com/contactus) for assistance. Your Microsoft Support agent will guide you through the process of downloading and installing it on your device.
+
+> [!NOTE]
+> Quick Assist for macOS is not available outside of Microsoft Support interactions.
 
 ## Next steps
 
