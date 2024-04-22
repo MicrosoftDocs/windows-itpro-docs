@@ -291,19 +291,18 @@ To pin a legacy `.url` shortcut to Start, you must create a `.url` file (right-c
 The following example shows how to create a tile of the Web site's URL, which you can treat similarly to a Windows desktop application tile:
 
 ```XML
-<start:DesktopApplicationTile
-          DesktopApplicationID="http://www.contoso.com/"
-          Size="2x2"
-          Row="0"
-          Column="2"/>
+<start:DesktopApplicationTile DesktopApplicationID="http://www.contoso.com/"
+Size="2x2"
+Row="0"
+Column="2"/>
 ```
 
 >[!NOTE]
->In Windows 10, version 1703, `Export-StartLayout` will use `DesktopApplicationLinkPath` for the .url shortcut. You must change `DesktopApplicationLinkPath` to `DesktopApplicationID` and provide the URL.
+>`Export-StartLayout` uses `DesktopApplicationLinkPath` for the .url shortcut. You must change `DesktopApplicationLinkPath` to `DesktopApplicationID` and provide the URL.
 
 #### start:SecondaryTile
 
-You can use the **start:SecondaryTile** tag to pin a Web link through a Microsoft Edge secondary tile. This method doesn't require more actions compared to the method of using legacy `.url` shortcuts (through the start:DesktopApplicationTile tag).
+You can use the `start:SecondaryTile` tag to pin a web link through a Microsoft Edge secondary tile. This method doesn't require more actions compared to the method of using legacy `.url` shortcuts (through the `start:DesktopApplicationTile` tag).
 
 The following example shows how to create a tile of the Web site's URL using the Microsoft Edge secondary tile:
 
