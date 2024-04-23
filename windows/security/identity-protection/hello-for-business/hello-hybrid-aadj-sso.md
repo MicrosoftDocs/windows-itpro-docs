@@ -217,6 +217,7 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 1. In the navigation pane, expand **Personal**. Select **Certificates**. In the details pane, double-click the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**
 1. Select the **Details** tab. Scroll down the list until **CRL Distribution Points** is visible in the **Field** column of the list. Select **CRL Distribution Point**
 1. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate. Select **OK**
+
     ![New Certificate with updated CDP.](images/aadj/dc-cert-with-new-cdp.png)
 
 ## Deploy the root CA certificate to Microsoft Entra joined devices

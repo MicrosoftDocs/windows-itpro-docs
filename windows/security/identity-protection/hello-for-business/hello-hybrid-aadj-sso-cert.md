@@ -437,7 +437,7 @@ Sign-in to the certificate authority or management workstations with an *Enterpr
 
    ![NDES Confirmation.](images/aadjcert/ndesconfig05.png)
 
-1. Select **Close** after the configuration completes.
+1. Select **Close** after the configuration completes
 
 #### Configure Certificate Templates on NDES
 
