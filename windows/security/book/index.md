@@ -3,6 +3,7 @@ title: Windows security book introduction
 description: Windows security book introduction
 ms.topic: overview
 ms.date: 04/09/2024
+ROBOTS: NOINDEX
 ---
 
 # Windows 11 Security Book
@@ -53,34 +54,3 @@ In Windows 11, hardware and software work together to protect sensitive data fro
 
 - [Windows security features licensing and edition requirements](https://learn.microsoft.com/en-us/windows/security/licensing-and-edition-requirements?tabs=edition)
 
----
-
-:::row:::
-    :::column span="1":::
-    [:::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the security book.":::](index.md "Introduction")
-    :::column-end:::
-    :::column span="1":::
-    [:::image type="content" source="images/hardware-security-cover.png" alt-text="Cover of the hardware security chapter.":::](hardware-security-root.md "Hardware security chapter")
-    :::column-end:::
-    :::column span="1":::
-    [:::image type="content" source="images/operating-system-security-cover.png" alt-text="Cover of the operating system security chapter.":::](operating-system-security-root.md "Operating System security chapter")
-    :::column-end:::
-    :::column span="1":::
-    [:::image type="content" source="images/application-security-cover.png" alt-text="Cover of the application security chapter.":::](application-security-root.md "Application security chapter")
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
-    :::column-end:::
-    :::column span="1":::
-    :::image type="content" source="images/cover.png" alt-text="Cover of the chapter.":::
-    :::column-end:::
-:::row-end:::
