@@ -35,10 +35,10 @@ items:
     href: identity-protection.md
   - name: 5. Privacy
     href: privacy.md
-  - name: 6. Cloud security
-    href: cloud-security.md
-  - name: 7. Security foundations
-    href: security-foundations.md
+  - name: 6. Cloud services
+    href: cloud-services.md
+  - name: 7. Security foundation
+    href: security-foundation.md
   - name: Conclusion
     href: conclusion.md
 - name: "📙 Windows 11 Security Book - option 2"
