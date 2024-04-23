@@ -7,7 +7,7 @@ ms.date: 04/30/2018
 
 # Configure Windows Spotlight
 
-Windows Spotlight is a Windows feature that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10.
+Windows Spotlight is a Windows feature that displays different background images and occasionally offers suggestions on the lock screen.
 
 For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows Spotlight background. For managed devices running Windows 10 Pro, version 1607, administrators can disable suggestions for third party apps.
 

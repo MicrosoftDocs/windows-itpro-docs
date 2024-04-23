@@ -462,7 +462,12 @@
     },
     {
       "source_path": "windows/configuration/windows-spotlight.md",
-      "redirect_url": "/windows/configuration/lock-screen/windows-spotlight",
+      "redirect_url": "/windows/configuration/windows-spotlight",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/lock-screen/windows-spotlight.md",
+      "redirect_url": "/windows/configuration/windows-spotlight",
       "redirect_document_id": false
     },
     {
