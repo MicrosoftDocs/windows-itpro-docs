@@ -29,7 +29,7 @@ Microsoft is dedicated to working with the community and our customers to contin
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Project OneFuzz framework, an open source developer tool to find and fix bugs](https://www.microsoft.com/en-us/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/) [at scale](https://www.microsoft.com/en-us/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
+- [Project OneFuzz framework, an open source developer tool to find and fix bugs](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/) [at scale](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
 - [OneFuzz on GitHub](https://github.com/microsoft/onefuzz)
 
 ## Microsoft Offensive Research and Security Engineering
@@ -46,8 +46,8 @@ Through this collaboration with researchers across the globe, our teams identify
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows Insider Program](https://learn.microsoft.com/en-us/windows-insider/get-started)
-- [Microsoft bounty programs](https://www.microsoft.com/en-us/msrc/bounty)
+- [Windows Insider Program](/windows-insider/get-started)
+- [Microsoft bounty programs](https://www.microsoft.com/msrc/bounty)
 
 # Certification
 
@@ -63,7 +63,7 @@ Common Criteria (CC) is an international standard currently maintained by nation
 
 Microsoft ensures that products incorporate the features and functions required by relevant Common Criteria Protection Profiles and completes Common Criteria certifications of Microsoft Windows products.
 
-Microsoft publishes the list of FIPS 140 and Common Criteria certified products at [Federal](https://learn.microsoft.com/en-us/windows/security/security-foundations/certification/fips-140-validation) [Information Processing Standard (FIPS)](https://learn.microsoft.com/en-us/windows/security/security-foundations/certification/fips-140-validation) 140 Validation and [Common Criteria Certifications.](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-platform-common-criteria)
+Microsoft publishes the list of FIPS 140 and Common Criteria certified products at [Federal](/windows/security/security-foundations/certification/fips-140-validation) [Information Processing Standard (FIPS)](/windows/security/security-foundations/certification/fips-140-validation) 140 Validation and [Common Criteria Certifications.](/windows/security/threat-protection/windows-platform-common-criteria)
 
 # Secure supply chain
 
@@ -121,4 +121,4 @@ Traditionally, code signing has been a difficult undertaking due to the complexi
 
 Developers can design highly secure applications that benefit from the latest Windows 11 safeguards using the Windows App SDK. The SDK provides a unified set of APIs and tools for developing secure desktop apps for Windows 11 and Windows 10. To help create apps that are up to date and protected, the SDK follows the same security standards, protocols, and compliance as the core Windows operating system.
 
-If you are a developer, you can find security best practices and information at [Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-platform-common-criteria#security-and-privacy) [application development—best practices](https://docs.microsoft.com/windows/security/threat-protection/windows-platform-common-criteria#security-and-privacy). You can get started with [Windows App SDK](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation#windows-app-sdk-samples) [](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation#windows-app-sdk-samples)[Samples on GitHub](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation#windows-app-sdk-samples)[.](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation#windows-app-sdk-samples) For an example of the continuous security process in action with the Windows App SDK, see the [most recent release](https://insider.windows.com/#version-11).
+If you are a developer, you can find security best practices and information at [Windows](/windows/security/threat-protection/windows-platform-common-criteria#security-and-privacy) [application development—best practices](/windows/security/threat-protection/windows-platform-common-criteria#security-and-privacy). You can get started with [Windows App SDK](/windows/security/threat-protection/fips-140-validation#windows-app-sdk-samples) [](/windows/security/threat-protection/fips-140-validation#windows-app-sdk-samples)[Samples on GitHub](/windows/security/threat-protection/fips-140-validation#windows-app-sdk-samples)[.](/windows/security/threat-protection/fips-140-validation#windows-app-sdk-samples) For an example of the continuous security process in action with the Windows App SDK, see the [most recent release](https://insider.windows.com/#version-11).

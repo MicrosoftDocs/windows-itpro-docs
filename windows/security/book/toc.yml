@@ -32,7 +32,13 @@ items:
     - name: Application isolation
       href: application-security-application-isolation.md
   - name: 4. Identity protection
-    href: identity-protection.md
+    items:
+    - name: Overview
+      href: identity-protection-root.md
+    - name: Passwordless sign-in
+      href: identity-protection-passwordless-sign-in.md
+    - name: Advanced credential protection
+      href: identity-protection-advanced-credential-protection.md
   - name: 5. Privacy
     href: privacy.md
   - name: 6. Cloud services
@@ -55,9 +61,9 @@ items:
     href: identity-protection.md
   - name: 5. Privacy
     href: privacy.md
-  - name: 6. Cloud security
-    href: cloud-security.md
+  - name: 6. Cloud services
+    href: cloud-services.md
   - name: 7. Security foundations
-    href: security-foundations.md
+    href: security-foundation.md
   - name: Conclusion
     href: conclusion.md

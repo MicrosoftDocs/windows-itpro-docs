@@ -29,7 +29,7 @@ Your organization is only as secure as the applications that run on your devices
 
 Windows 10 and above include App Control for Business (previously called Windows Defender Application Control) as well as AppLocker. App Control for Business is the next-generation app control solution for Windows and provides powerful control over what runs in your environment. Customers who were using AppLocker on previous versions of Windows can continue to use the feature as they consider whether to switch to App Control for Business for stronger protection.
 
-Customers using Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>> to manage their devices are now able to configure App Control for Business in the admin console, including setting up Intune as a managed installer.
+Customers using Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> to manage their devices are now able to configure App Control for Business in the admin console, including setting up Intune as a managed installer.
 
 Customers can use some built-in options for App Control for Business or upload their own policy as an XML file for Intune to package and deploy.
 
@@ -41,7 +41,7 @@ Customers can use some built-in options for App Control for Business or upload t
 
 User Account Control (UAC) helps prevent malware from damaging a PC and enables organizations to deploy a better-managed desktop. With UAC, apps and tasks always run in the security context of a non-administrator account unless an administrator specifically authorizes administrator-level access to the system. UAC can block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings.
 
-Organizations can use a modern device management (MDM) solution like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>> to remotely configure UAC settings. Organizations without MDM can change settings directly
+Organizations can use a modern device management (MDM) solution like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> to remotely configure UAC settings. Organizations without MDM can change settings directly
 on the device.
 
 Enabling UAC helps prevent malware from altering PC settings and potentially gaining access to networks and sensitive data. UAC can also block the automatic installation of unauthorized
