@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 12/15/2023
+ms.date: 04/25/2024
 ---
 
 # Windows Update for Business reports prerequisites
@@ -35,8 +35,8 @@ Before you begin the process of adding Windows Update for Business reports to yo
 
 ## Operating systems and editions
 
-- Windows 11 Professional, Education, Enterprise, and [Enterprise multi-session](/azure/virtual-desktop/windows-10-multisession-faq) editions
-- Windows 10 Professional, Education, Enterprise, and [Enterprise multi-session](/azure/virtual-desktop/windows-10-multisession-faq) editions
+- Windows 11 Professional, Education, and Enterprise editions <!--8928451-->
+- Windows 10 Professional, Education, and Enterprise editions 
 
 Windows Update for Business reports only provides data for the standard desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
 
