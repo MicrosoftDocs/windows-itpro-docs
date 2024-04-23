@@ -1,7 +1,7 @@
 ---
 title: SurfaceHub CSP
 description: Learn more about the SurfaceHub CSP.
-ms.date: 01/18/2024
+ms.date: 04/22/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -65,6 +65,10 @@ The following list shows the SurfaceHub configuration service provider nodes:
   - [MOMAgent](#momagent)
     - [WorkspaceID](#momagentworkspaceid)
     - [WorkspaceKey](#momagentworkspacekey)
+  - [MOMAgentGovtCloud](#momagentgovtcloud)
+    - [AzureCloudIndexGovtCloud](#momagentgovtcloudazurecloudindexgovtcloud)
+    - [WorkspaceIDGovtCloud](#momagentgovtcloudworkspaceidgovtcloud)
+    - [WorkspaceKeyGovtCloud](#momagentgovtcloudworkspacekeygovtcloud)
   - [Properties](#properties)
     - [AllowAutoProxyAuth](#propertiesallowautoproxyauth)
     - [AllowSessionResume](#propertiesallowsessionresume)
@@ -2010,6 +2014,162 @@ Primary key for authenticating with workspace. Will always return an empty strin
 <!-- Device-MOMAgent-WorkspaceKey-Examples-End -->
 
 <!-- Device-MOMAgent-WorkspaceKey-End -->
+
+<!-- Device-MOMAgentGovtCloud-Begin -->
+## MOMAgentGovtCloud
+
+<!-- Device-MOMAgentGovtCloud-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
+<!-- Device-MOMAgentGovtCloud-Applicability-End -->
+
+<!-- Device-MOMAgentGovtCloud-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SurfaceHub/MOMAgentGovtCloud
+```
+<!-- Device-MOMAgentGovtCloud-OmaUri-End -->
+
+<!-- Device-MOMAgentGovtCloud-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-MOMAgentGovtCloud-Description-End -->
+
+<!-- Device-MOMAgentGovtCloud-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MOMAgentGovtCloud-Editable-End -->
+
+<!-- Device-MOMAgentGovtCloud-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-MOMAgentGovtCloud-DFProperties-End -->
+
+<!-- Device-MOMAgentGovtCloud-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MOMAgentGovtCloud-Examples-End -->
+
+<!-- Device-MOMAgentGovtCloud-End -->
+
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Begin -->
+### MOMAgentGovtCloud/AzureCloudIndexGovtCloud
+
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Applicability-End -->
+
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SurfaceHub/MOMAgentGovtCloud/AzureCloudIndexGovtCloud
+```
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-OmaUri-End -->
+
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Description-Begin -->
+<!-- Description-Source-DDF -->
+Enum value for Azure Clouds supported for OMS tracking in SurfaceHub.
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Description-End -->
+
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Editable-End -->
+
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+| Default Value  | 0 |
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-DFProperties-End -->
+
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Examples-End -->
+
+<!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Begin -->
+### MOMAgentGovtCloud/WorkspaceIDGovtCloud
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Applicability-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SurfaceHub/MOMAgentGovtCloud/WorkspaceIDGovtCloud
+```
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-OmaUri-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Description-Begin -->
+<!-- Description-Source-DDF -->
+GUID identifying the Microsoft Operations Management Suite workspace ID to collect the data for Govt Clouds. Set this to an empty string to disable the MOM agent.
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Description-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Editable-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-DFProperties-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Examples-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Begin -->
+### MOMAgentGovtCloud/WorkspaceKeyGovtCloud
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Applicability-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SurfaceHub/MOMAgentGovtCloud/WorkspaceKeyGovtCloud
+```
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-OmaUri-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Description-Begin -->
+<!-- Description-Source-DDF -->
+Primary key for authenticating with workspace for Govt Clouds. Will always return an empty string.
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Description-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Editable-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-DFProperties-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Examples-End -->
+
+<!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-End -->
 
 <!-- Device-Properties-Begin -->
 ## Properties
