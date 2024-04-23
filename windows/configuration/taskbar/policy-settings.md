@@ -1,73 +1,186 @@
 ---
-title: Supported CSP policies to customize the Taskbar on Windows 11
-description: See a list of the Policy CSP - Start items that are supported on Windows 11 to customize the Taskbar.
-ms.date: 12/31/2017
-ms.topic: article
+title: Taskbar policy settings
+description: Learn about the policy settings to configure the Windows taskbar.
+ms.topic: reference
+ms.date: 04/17/2024
 appliesto:
-- ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
---- 
+zone_pivot_groups: windows-versions-11-10
+---
 
-# Supported configuration service provider (CSP) policies for Windows 11 taskbar 
+# Taskbar policy settings
 
-The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). In an MDM policy, these CSPs are settings that you configure. When the policy is ready, you deploy the policy to your devices. This article lists the CSPs that are available to customize the Taskbar for Windows 11 devices. 
+This reference article outlines the policy settings available for customizing the Windows taskbar, using Configuration Service Provider (CSP) or group policy (GPO). For information about how to configure these settings, see [Configure the Windows taskbar](index.md).
 
-For more general information, see [Configuration service provider (CSP) reference](/windows/client-management/mdm/configuration-service-provider-reference). 
+The settings are categorized and presented in alphabetical order to facilitate navigation and configuration.
 
-## CSP policies to customize Windows 11 taskbar buttons 
+1. **Taskbar layout**: settings to control the taskbar layout and appearance
+1. **Taskbar behaviors**: settings to control the taskbar behaviors and the users' allowed actions
 
-- [Search/ConfigureSearchOnTaskbarMode](/windows/client-management/mdm/policy-csp-search#configuresearchontaskbarmode)
-  - Group policy: `Computer Configuration\Administrative Templates\Windows Components\Search\Configures search on the taskbar`
-  - Local setting: Settings > Personalization > Taskbar > Search 
+Select one of the tabs to see the list of available settings:
 
-- [Start/HideTaskViewButton](/windows/client-management/mdm/policy-csp-start#hidetaskviewbutton)
-  - Group policy: `Computer and User Configuration\Administrative Templates\Start Menu and Taskbar\Hide the TaskView button`
-  - Local setting: Settings > Personalization > Taskbar > Task view 
+#### [:::image type="icon" source="../images/icons/taskbar.svg"::: **Taskbar layout**](#tab/taskbar)
 
-- [NewsAndInterests/AllowNewsAndInterests](/windows/client-management/mdm/policy-csp-newsandinterests#allownewsandinterests)
-  - Group policy: `Computer Configuration\Administrative Templates\Windows Components\Widgets\Allow widgets`
-  - Local setting: Settings > Personalization > Taskbar > Widgets 
+::: zone pivot="windows-11"
 
-- [Experience/ConfigureChatIcon](/windows/client-management/mdm/policy-csp-experience#configurechaticonvisibilityonthetaskbar)
-  - Group policy: `Computer Configuration\Administrative Templates\Windows Components\Chat\Configure the Chat icon setting`
-  - Local setting: Settings > Personalization > Taskbar > Chat 
+|Setting Name|CSP|GPO|
+|-|-|-|
+|[Allow widgets](#allow-widgets)|✅|✅|
+|[Configure Start layout](#configure-start-layout)|✅|✅|
+|[Configures search on the taskbar](#configures-search-on-the-taskbar)|✅|✅|
+|[Do not display or track items in Jump Lists from remote locations](#do-not-display-or-track-items-in-jump-lists-from-remote-locations)|❌|✅|
+|[Hide recent jumplists](#hide-recent-jumplists)|✅|✅|
+|[Hide the TaskView button](#hide-the-taskview-button)|✅|✅|
+|[Remove Clock from the system notification area](#remove-clock-from-the-system-notification-area)|❌|✅|
+|[Remove Notifications and Action Center](#remove-notifications-and-action-center)|❌|✅|
+|[Remove pinned programs from the Taskbar](#remove-pinned-programs-from-the-taskbar)|❌|✅|
+|[Remove Quick Settings](#remove-quick-settings)|✅|✅|
+|[Show additional calendar](#show-additional-calendar)|❌|✅|
+|[Simplify Quick Settings Layout](#simplify-quick-settings-layout)|✅|✅|
+|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
+|[Turn off Windows Copilot](#turn-off-windows-copilot)|✅|✅|
 
-## Existing CSP policies that Windows 11 taskbar supports 
+::: zone-end
 
-- [Start/HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Do not keep history of recently opened documents`
-  - Local setting: Settings > Personalization > Start > Show recently opened items in Jump Lists on Start or the taskbar 
+::: zone pivot="windows-10"
 
-- [Start/NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#nopinningtotaskbar)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Do not allow pinning programs to the Taskbar`
-  - Local setting: None 
+|Setting Name|CSP|GPO|
+|-|-|-|
+|[Allow widgets](#allow-widgets)|✅|✅|
+|[Configure Start layout](#configure-start-layout)|✅|✅|
+|[Configures search on the taskbar](#configures-search-on-the-taskbar)|✅|✅|
+|[Do not display or track items in Jump Lists from remote locations](#do-not-display-or-track-items-in-jump-lists-from-remote-locations)|❌|✅|
+|[Hide recent jumplists](#hide-recent-jumplists)|✅|✅|
+|[Hide the notification area](#hide-the-notification-area)|❌|✅|
+|[Remove Clock from the system notification area](#remove-clock-from-the-system-notification-area)|❌|✅|
+|[Remove Notifications and Action Center](#remove-notifications-and-action-center)|❌|✅|
+|[Remove pinned programs from the Taskbar](#remove-pinned-programs-from-the-taskbar)|❌|✅|
+|[Remove the battery meter](#remove-the-battery-meter)|❌|✅|
+|[Remove the Meet Now icon](#remove-the-meet-now-icon)|❌|✅|
+|[Remove the networking icon](#remove-the-networking-icon)|❌|✅|
+|[Remove the People Bar from the taskbar](#remove-the-people-bar-from-the-taskbar)|✅|✅|
+|[Remove the volume control icon](#remove-the-volume-control-icon)|❌|✅|
+|[Show additional calendar](#show-additional-calendar)|❌|✅|
+|[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
+|[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
+|[Turn off Windows Copilot](#turn-off-windows-copilot)|✅|✅|
 
-## Existing CSP policies that Windows 11 doesn't support 
+::: zone-end
 
-The following list includes some of the CSP policies that aren't supported on Windows 11: 
+[!INCLUDE [allow-widgets](includes/allow-widgets.md)]
+[!INCLUDE [configure-start-layout](includes/configure-start-layout.md)]
+[!INCLUDE [configures-search-on-the-taskbar](includes/configures-search-on-the-taskbar.md)]
+[!INCLUDE [do-not-display-or-track-items-in-jump-lists-from-remote-locations](includes/do-not-display-or-track-items-in-jump-lists-from-remote-locations.md)]
 
-- [ADMX_Taskbar/TaskbarLockAll](/windows/client-management/mdm/policy-csp-admx-taskbar#taskbarlockall)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Lock all taskbar settings` 
+::: zone pivot="windows-10"
+[!INCLUDE [hide-the-notification-area](includes/hide-the-notification-area.md)]
+::: zone-end
 
-- [ADMX_Taskbar/TaskbarNoAddRemoveToolbar](/windows/client-management/mdm/policy-csp-admx-taskbar#taskbarnoaddremovetoolbar)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Prevent users from adding or removing toolbars` 
+[!INCLUDE [hide-recent-jumplists](includes/hide-recent-jumplists.md)]
 
-- [ADMX_Taskbar/TaskbarNoDragToolbar](/windows/client-management/mdm/policy-csp-admx-taskbar#taskbarnodragtoolbar)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Prevent users from rearranging toolbars` 
+::: zone pivot="windows-11"
+[!INCLUDE [hide-the-taskview-button](includes/hide-the-taskview-button.md)]
+::: zone-end
 
-- [ADMX_Taskbar/TaskbarNoRedock](/windows/client-management/mdm/policy-csp-admx-taskbar#taskbarnoredock)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Prevent users from moving taskbar to another screen dock location` 
+[!INCLUDE [remove-clock-from-the-system-notification-area](includes/remove-clock-from-the-system-notification-area.md)]
+[!INCLUDE [remove-notifications-and-action-center](includes/remove-notifications-and-action-center.md)]
+[!INCLUDE [remove-pinned-programs-from-the-taskbar](includes/remove-pinned-programs-from-the-taskbar.md)]
 
-- [ADMX_Taskbar/TaskbarNoResize](/windows/client-management/mdm/policy-csp-admx-taskbar#taskbarnoresize)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Prevent users from resizing the taskbar` 
+::: zone pivot="windows-11"
+[!INCLUDE [remove-quick-settings](includes/remove-quick-settings.md)]
+::: zone-end
 
-- [ADMX_StartMenu/NoToolbarsOnTaskbar](/windows/client-management/mdm/policy-csp-admx-startmenu#notoolbarsontaskbar)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Do not display any custom toolbars in the taskbar` 
+::: zone pivot="windows-10"
+[!INCLUDE [remove-the-battery-meter](includes/remove-the-battery-meter.md)]
+[!INCLUDE [remove-the-meet-now-icon](includes/remove-the-meet-now-icon.md)]
+[!INCLUDE [remove-the-networking-icon](includes/remove-the-networking-icon.md)]
+[!INCLUDE [remove-the-people-bar-from-the-taskbar](includes/remove-the-people-bar-from-the-taskbar.md)]
+[!INCLUDE [remove-the-volume-control-icon](includes/remove-the-volume-control-icon.md)]
+::: zone-end
 
-- [ADMX_StartMenu/NoTaskGrouping](/windows/client-management/mdm/policy-csp-admx-startmenu#notaskgrouping)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Prevent grouping of taskbar items` 
+[!INCLUDE [show-additional-calendar](includes/show-additional-calendar.md)]
 
-- [ADMX_StartMenu/QuickLaunchEnabled](/windows/client-management/mdm/policy-csp-admx-startmenu#quicklaunchenabled)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Show QuickLaunch on Taskbar` 
+::: zone pivot="windows-11"
+[!INCLUDE [simplify-quick-settings-layout](includes/simplify-quick-settings-layout.md)]
+::: zone-end
 
-- [Start/HidePeopleBar](/windows/client-management/mdm/policy-csp-start#hidepeoplebar)
-  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Remove the People Bar from the taskbar`
+[!INCLUDE [turn-off-automatic-promotion-of-notification-icons-to-the-taskbar](includes/turn-off-automatic-promotion-of-notification-icons-to-the-taskbar.md)]
+
+::: zone pivot="windows-10"
+[!INCLUDE [turn-off-notification-area-cleanup](includes/turn-off-notification-area-cleanup.md)]
+::: zone-end
+
+[!INCLUDE [turn-off-windows-copilot](includes/turn-off-windows-copilot.md)]
+
+#### [:::image type="icon" source="../images/icons/touch.svg"::: **Taskbar behaviors**](#tab/actions)
+
+::: zone pivot="windows-11"
+
+|Setting Name|CSP|GPO|
+|-|-|-|
+|[Disable editing Quick Settings](#disable-editing-quick-settings)|✅|✅|
+|[Do not allow pinning items in Jump Lists](#do-not-allow-pinning-items-in-jump-lists)|❌|✅|
+|[Do not allow pinning programs to the Taskbar](#do-not-allow-pinning-programs-to-the-taskbar)|✅|✅|
+|[Do not allow pinning Store app to the Taskbar](#do-not-allow-pinning-store-app-to-the-taskbar)|❌|✅|
+|[Do not allow taskbars on more than one display](#do-not-allow-taskbars-on-more-than-one-display)|❌|✅|
+|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
+|[Prevent grouping of taskbar items](#prevent-grouping-of-taskbar-items)|❌|✅|
+|[Remove access to the context menus for the taskbar](#remove-access-to-the-context-menus-for-the-taskbar)|❌|✅|
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
+|Setting Name|CSP|GPO|
+|-|-|-|
+|[Do not allow pinning items in Jump Lists](#do-not-allow-pinning-items-in-jump-lists)|❌|✅|
+|[Do not allow pinning programs to the Taskbar](#do-not-allow-pinning-programs-to-the-taskbar)|✅|✅|
+|[Do not allow pinning Store app to the Taskbar](#do-not-allow-pinning-store-app-to-the-taskbar)|❌|✅|
+|[Lock all taskbar settings](#lock-all-taskbar-settings)|❌|✅|
+|[Lock the Taskbar](#lock-the-taskbar)|❌|✅|
+|[Prevent changes to Taskbar and Start Menu Settings](#prevent-changes-to-taskbar-and-start-menu-settings)|❌|✅|
+|[Prevent grouping of taskbar items](#prevent-grouping-of-taskbar-items)|❌|✅|
+|[Prevent users from adding or removing toolbars](#prevent-users-from-adding-or-removing-toolbars)|❌|✅|
+|[Prevent users from moving taskbar to another screen dock location](#prevent-users-from-moving-taskbar-to-another-screen-dock-location)|❌|✅|
+|[Prevent users from rearranging toolbars](#prevent-users-from-rearranging-toolbars)|❌|✅|
+|[Prevent users from resizing the taskbar](#prevent-users-from-resizing-the-taskbar)|❌|✅|
+|[Remove access to the context menus for the taskbar](#remove-access-to-the-context-menus-for-the-taskbar)|❌|✅|
+|[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
+
+::: zone-end
+
+::: zone pivot="windows-11"
+[!INCLUDE [disable-editing-quick-settings](includes/disable-editing-quick-settings.md)]
+::: zone-end
+
+[!INCLUDE [do-not-allow-pinning-items-in-jump-lists](includes/do-not-allow-pinning-items-in-jump-lists.md)]
+[!INCLUDE [do-not-allow-pinning-programs-to-the-taskbar](includes/do-not-allow-pinning-programs-to-the-taskbar.md)]
+[!INCLUDE [do-not-allow-pinning-store-app-to-the-taskbar](includes/do-not-allow-pinning-store-app-to-the-taskbar.md)]
+[!INCLUDE [do-not-allow-taskbars-on-more-than-one-display](includes/do-not-allow-taskbars-on-more-than-one-display.md)]
+
+::: zone pivot="windows-10"
+[!INCLUDE [lock-all-taskbar-settings](includes/lock-all-taskbar-settings.md)]
+[!INCLUDE [lock-the-taskbar](includes/lock-the-taskbar.md)]
+::: zone-end
+
+[!INCLUDE [prevent-changes-to-taskbar-and-start-menu-settings](includes/prevent-changes-to-taskbar-and-start-menu-settings.md)]
+[!INCLUDE [prevent-grouping-of-taskbar-items](includes/prevent-grouping-of-taskbar-items.md)]
+
+::: zone pivot="windows-10"
+[!INCLUDE [prevent-users-from-adding-or-removing-toolbars](includes/prevent-users-from-adding-or-removing-toolbars.md)]
+[!INCLUDE [prevent-users-from-moving-taskbar-to-another-screen-dock-location](includes/prevent-users-from-moving-taskbar-to-another-screen-dock-location.md)]
+[!INCLUDE [prevent-users-from-rearranging-toolbars](includes/prevent-users-from-rearranging-toolbars.md)]
+[!INCLUDE [prevent-users-from-resizing-the-taskbar](includes/prevent-users-from-resizing-the-taskbar.md)]
+::: zone-end
+
+[!INCLUDE [remove-access-to-the-context-menus-for-the-taskbar](includes/remove-access-to-the-context-menus-for-the-taskbar.md)]
+[!INCLUDE [turn-off-automatic-promotion-of-notification-icons-to-the-taskbar](includes/turn-off-automatic-promotion-of-notification-icons-to-the-taskbar.md)]
+
+::: zone pivot="windows-10"
+[!INCLUDE [turn-off-notification-area-cleanup](includes/turn-off-notification-area-cleanup.md)]
+::: zone-end
+
+---
+
+## Next steps
+
+The configuration of pinned applications to the taskbar requires the use of an XML file that specifies their pinning order. To learn more about how to create and apply an XML file to configure pinned applications, see [Configure the taskbar pinned applications](pinned-apps.md).

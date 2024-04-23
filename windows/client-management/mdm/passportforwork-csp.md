@@ -1,7 +1,7 @@
 ---
 title: PassportForWork CSP
 description: Learn more about the PassportForWork CSP.
-ms.date: 01/18/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -197,8 +197,8 @@ Disable caching of the Windows Hello for Business credential after sign-in.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Disabled. |
-| true | Enabled. |
+| false (Default) | Credential Caching Enabled. |
+| true | Credential Caching Disabled. |
 <!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-AllowedValues-End -->
 
 <!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Examples-Begin -->
@@ -246,8 +246,8 @@ Don't start Windows Hello provisioning after sign-in.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Post Logon Provisioning Enabled. |
-| true | Post Logon Provisioning Disabled. |
+| false (Default) | Provisioning Enabled. |
+| true | Provisioning Disabled. |
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-AllowedValues-End -->
 
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Examples-Begin -->

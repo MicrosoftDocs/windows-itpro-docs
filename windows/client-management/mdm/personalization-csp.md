@@ -1,13 +1,15 @@
 ---
 title: Personalization CSP
 description: Learn more about the Personalization CSP.
-ms.date: 03/05/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Personalization-Begin -->
 # Personalization CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Personalization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -36,7 +38,7 @@ The following list shows the Personalization configuration service provider node
 <!-- Device-CompanyLogoStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.3235] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-CompanyLogoStatus-Applicability-End -->
 
 <!-- Device-CompanyLogoStatus-OmaUri-Begin -->
@@ -75,7 +77,7 @@ This represents the status of the Company Logo. 1 - Successfully downloaded or c
 <!-- Device-CompanyLogoUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.3235] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-CompanyLogoUrl-Applicability-End -->
 
 <!-- Device-CompanyLogoUrl-OmaUri-Begin -->
@@ -114,7 +116,7 @@ An http or https Url to a jpg, jpeg or png image that needs to be downloaded and
 <!-- Device-CompanyName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.3235] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-CompanyName-Applicability-End -->
 
 <!-- Device-CompanyName-OmaUri-Begin -->
@@ -125,7 +127,7 @@ An http or https Url to a jpg, jpeg or png image that needs to be downloaded and
 
 <!-- Device-CompanyName-Description-Begin -->
 <!-- Description-Source-DDF -->
-The name of the company to be displayed on the sign-in screen. This setting is currently available for boot to cloud shared pc mode only.
+This represents the name of the company. It can be at most 30 characters long. This setting is currently available only for boot to cloud shared pc mode to display the company name on sign-in screen.
 <!-- Device-CompanyName-Description-End -->
 
 <!-- Device-CompanyName-Editable-Begin -->
