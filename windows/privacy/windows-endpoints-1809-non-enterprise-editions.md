@@ -32,7 +32,7 @@ We used the following methodology to derive these network endpoints:
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
 
-## Windows 10 Family
+## Windows 10 Home
 
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
