@@ -1,7 +1,7 @@
 ---
 title: Multi-factor unlock
 description: Learn how to configure Windows Hello for Business multi-factor unlock by extending Windows Hello with trusted signals.
-ms.date: 01/03/2024
+ms.date: 04/23/2024
 ms.topic: how-to
 ---
 
