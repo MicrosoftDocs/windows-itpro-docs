@@ -81,7 +81,7 @@ Select one of the tabs to see the list of available settings:
 |[Prevent users from customizing their Start](#prevent-users-from-customizing-their-start)|❌|✅|
 |[Prevent users from uninstalling applications from Start](#prevent-users-from-uninstalling-applications-from-start)|❌|✅|
 |[Remove common program groups](#remove-common-program-groups)|❌|✅|
-|[Show "Run as different user" command](#show-run-as-different-user-command)|❌|✅|
+|[Show **Run as different user** command](#show-run-as-different-user-command)|❌|✅|
 ::: zone-end
 
 [!INCLUDE [clear-history-of-recently-opened-documents-on-exit](includes/clear-history-of-recently-opened-documents-on-exit.md)]
@@ -115,7 +115,6 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [prevent-users-from-uninstalling-applications-from-start](includes/prevent-users-from-uninstalling-applications-from-start.md)]
 [!INCLUDE [remove-common-program-groups](includes/remove-common-program-groups.md)]
 [!INCLUDE [show-run-as-different-user-command](includes/show-run-as-different-user-command.md)]
-
 
 #### [:::image type="icon" source="../images/icons/allapps.svg"::: **All apps**](#tab/allapps)
 
