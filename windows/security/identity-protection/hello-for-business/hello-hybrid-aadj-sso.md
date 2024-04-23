@@ -32,7 +32,7 @@ During certificate validation, Windows compares the current certificate with inf
 
 In the screenshot, the CDP property of the domain controller certificate shows an LDAP path. Using Active Directory for domain joined devices provides a highly available CRL distribution point. However, Microsoft Entra joined devices can't read data from Active Directory, and certificate validation doesn't provide an opportunity to authenticate prior to reading the CRL. The authentication becomes a circular problem: the user is attempting to authenticate, but must read Active Directory to complete the authentication, but the user can't read Active Directory because they haven't authenticated.
 
-To resolve this issue, the CRL distribution point must be a location accessible by Microsoft Entra joined devices that doesn't require authentication. The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
+To resolve this issue, the CRL distribution point must be a location accessible by Microsoft Entra joined devices that don't require authentication. The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
 
 If your CRL distribution point doesn't list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first, in the list of distribution points.
 
