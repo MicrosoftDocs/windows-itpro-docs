@@ -6,7 +6,7 @@ ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
 author: mestew
-ms.author: mstewart
+ms.author: mstewart 
 manager: aaroncz
 ms.topic: conceptual
 ms.collection:
