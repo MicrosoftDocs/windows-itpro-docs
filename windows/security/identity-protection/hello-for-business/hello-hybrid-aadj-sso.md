@@ -1,7 +1,7 @@
 ---
 title: Configure single sign-on (SSO) for Microsoft Entra joined devices
 description: Learn how to configure single sign-on to on-premises resources for Microsoft Entra joined devices, using Windows Hello for Business.
-ms.date: 12/30/2022
+ms.date: 04/23/2024
 ms.topic: how-to
 ---
 
@@ -9,7 +9,7 @@ ms.topic: how-to
 
 [!INCLUDE [apply-to-hybrid-key-and-cert-trust](deploy/includes/apply-to-hybrid-key-and-cert-trust.md)]
 
-Windows Hello for Business combined with Microsoft Entra joined devices makes it easy for users to securely access cloud-based resources using a strong, two-factor credential. Some resources may remain on-premises as enterprises transition resources to the cloud and Microsoft Entra joined devices may need to access these resources. With additional configurations to the hybrid deployment, you can provide single sign-on to on-premises resources for Microsoft Entra joined devices using Windows Hello for Business, using a key or a certificate.
+Windows Hello for Business combined with Microsoft Entra joined devices makes it easy for users to securely access cloud-based resources using a strong, two-factor credential. As organizations transition resources to the cloud, some resources might remain on-premises, and Microsoft Entra joined devices might need to access them. With additional configurations to the hybrid deployment, you can provide single sign-on to on-premises resources for Microsoft Entra joined devices using Windows Hello for Business, using a key or a certificate.
 
 > [!NOTE]
 > These steps are not needed when using the cloud Kerberos trust model.
@@ -25,12 +25,12 @@ Unlike Microsoft Entra hybrid joined devices, Microsoft Entra joined devices don
 
 ### CRL Distribution Point (CDP)
 
-Certificates issued by a certificate authority can be revoked. When a certificate authority revokes as certificate, it writes information about the certificate into a *certificate revocation list* (CRL).\
+Certificates issued by a certificate authority can be revoked. When a certificate authority revokes a certificate, it writes information about the certificate into a *certificate revocation list* (CRL).\
 During certificate validation, Windows compares the current certificate with information in the CRL to determine if the certificate is valid.
 
-![Domain Controller Certificate with LDAP CDP.](images/aadj/Certificate-CDP.png)
+:::image type="content" source="images/aadj/Certificate-CDP.png" alt-text="Screenshot of a certificate's CDP property.":::
 
-The preceding domain controller certificate shows a *CRL distribution point* (CDP) in Active Directory. The value in the URL begins with *ldap*. Using Active Directory for domain joined devices provides a highly available CRL distribution point. However, Microsoft Entra joined devices can't read data from Active Directory, and certificate validation doesn't provide an opportunity to authenticate prior to reading the CRL. The authentication becomes a circular problem: the user is attempting to authenticate, but must read Active Directory to complete the authentication, but the user can't read Active Directory because they haven't authenticated.
+In the screenshot, the CDP property of the domain controller certificate shows an LDAP path. Using Active Directory for domain joined devices provides a highly available CRL distribution point. However, Microsoft Entra joined devices can't read data from Active Directory, and certificate validation doesn't provide an opportunity to authenticate prior to reading the CRL. The authentication becomes a circular problem: the user is attempting to authenticate, but must read Active Directory to complete the authentication, but the user can't read Active Directory because they haven't authenticated.
 
 To resolve this issue, the CRL distribution point must be a location accessible by Microsoft Entra joined devices that doesn't require authentication. The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
 
@@ -45,17 +45,18 @@ Certificate authorities write CDP information in certificates as they're issued.
 
 #### Why does Windows need to validate the domain controller certificate?
 
-Windows Hello for Business enforces the strict KDC validation security feature when authenticating from a Microsoft Entra joined device to a domain. This enforcement imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business on a Microsoft Entra joined device, the Windows client validates the reply from the domain controller by ensuring all of the following are met:
+Windows Hello for Business enforces the *strict KDC validation* security feature when authenticating from a Microsoft Entra joined device to a domain. This enforcement imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business on a Microsoft Entra joined device, the Windows client validates the reply from the domain controller by ensuring all of the following are met:
 
 - The domain controller has the private key for the certificate provided
 - The root CA that issued the domain controller's certificate is in the device's *Trusted Root Certificate Authorities*
 - Use the *Kerberos Authentication certificate template* instead of any other older template
 - The domain controller's certificate has the *KDC Authentication* extended key usage (EKU)
 - The domain controller's certificate's subject alternate name has a DNS Name that matches the name of the domain
-- The domain controller's certificate's signature hash algorithm is **sha256**
-- The domain controller's certificate's public key is **RSA (2048 Bits)**
+- The domain controller's certificate's signature hash algorithm is *sha256*
+- The domain controller's certificate's public key is *RSA (2048 Bits)*
 
-Authenticating from a Microsoft Entra hybrid joined device to a domain using Windows Hello for Business doesn't enforce that the domain controller certificate includes the *KDC Authentication* EKU. If you're adding Microsoft Entra joined devices to an existing domain environment, make sure to verify that your domain controller certificate has been updated to include the *KDC Authentication* EKU.
+> [!IMPORTANT]
+> Authenticating from a Microsoft Entra hybrid joined device to a domain using Windows Hello for Business doesn't enforce that the domain controller certificate includes the *KDC Authentication* EKU. If you're adding Microsoft Entra joined devices to an existing domain environment, make sure to verify that your domain controller certificate has been updated to include the *KDC Authentication* EKU.
 
 ## Configure a CRL distribution point for an issuing CA
 
@@ -118,7 +119,7 @@ These procedures configure NTFS and share permissions on the web server to allow
 1. In the **Advanced Sharing** dialog box, select **OK**
 
 > [!Tip]
-> Make sure that users can access **\\\Server FQDN\sharename**.
+> Make sure that users can access `\\Server FQDN\sharename`.
 
 ### Disable Caching
 1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server)

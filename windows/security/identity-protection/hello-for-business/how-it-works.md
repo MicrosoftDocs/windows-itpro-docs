@@ -1,7 +1,7 @@
 ---
 title: How Windows Hello for Business works
 description: Learn how Windows Hello for Business works, and how it can help you protect your organization.
-ms.date: 01/09/2024
+ms.date: 04/23/2024
 ms.topic: concept-article
 ---
 
