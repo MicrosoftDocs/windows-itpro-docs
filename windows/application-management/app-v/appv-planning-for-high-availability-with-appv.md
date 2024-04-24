@@ -32,7 +32,7 @@ You can use Internet Information Services' (IIS) network load balancing (NLB) to
 
 Review the following articles to learn more about configuring IIS and NLB for computers running Windows Server operating systems:
 
-* [Achieving High Availability and Scalability - ARR and NLB](https://www.iis.net/learn/extensions/configuring-application-request-routing-arr/achieving-high-availability-and-scalability-arr-and-nlb) describes how to configure IIS 7.0.
+* [Achieving High Availability and Scalability - ARR and NLB](/iis/extensions/configuring-application-request-routing-arr/achieving-high-availability-and-scalability-arr-and-nlb) describes how to configure IIS 7.0.
 
 * [Network load balancing overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831698(v=ws.11)) will tell you more about how to configure Microsoft Windows Server.
 
@@ -88,13 +88,13 @@ Use the following steps to modify the connection string to include ```failover p
 3. Modify the **MANAGEMENT\_SQL\_CONNECTION\_STRING** value with the ```failover partner = <server2>``` value.
 4. Restart management service using the IIS console.
   > [!NOTE]
-   >Database Mirroring is on the list of [deprecated database engine features in SQL Server 2012](<https://msdn.microsoft.com/library/ms143729(v=sql.110).aspx>) due to the **AlwaysOn** feature available starting with Microsoft SQL Server 2012.
+   >Database Mirroring is on the list of [deprecated database engine features in SQL Server 2012](/previous-versions/sql/sql-server-2012/ms143729(v=sql.110)) due to the **AlwaysOn** feature available starting with Microsoft SQL Server 2012.
 
-Click any of the following links for more information:
+For more information, see the following articles:
 
 * [Prepare a mirror database for mirroring (SQL Server)](/sql/database-engine/database-mirroring/prepare-a-mirror-database-for-mirroring-sql-server).
 * [Establish a database mirroring session using Windows Authentication (SQL Server Management Studio)](/sql/database-engine/database-mirroring/establish-database-mirroring-session-windows-authentication).
-* [Deprecated database engine features in SQL Server 2012](<https://msdn.microsoft.com/library/ms143729(v=sql.110).aspx>).
+* [Deprecated database engine features in SQL Server 2012](/previous-versions/sql/sql-server-2012/ms143729(v=sql.110)).
 
 ## Support for Microsoft SQL Server Always On configuration
 
