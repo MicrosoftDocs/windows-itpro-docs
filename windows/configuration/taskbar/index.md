@@ -50,7 +50,6 @@ Let's review the components of the Windows taskbar by dividing it into three are
     1. Quick Actions
     1. Calendar
     1. Action Center
-    1. Copilot
 
 :::image type="content" source="images/taskbar-sections-11.png" alt-text="Screenshot of the Windows 11 taskbar with the three areas highlighted." border="false" lightbox="./images/taskbar-sections-11.png":::
 
@@ -73,7 +72,6 @@ Let's review the components of the Windows taskbar by dividing it into two areas
     - The system tray, which displays icons like the pen menu, touch keyboard, virtual touchpad, power, network, volume, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
     - Calendar
     - Action center
-    - Copilot
 
 :::image type="content" source="images/taskbar-sections-10.png" alt-text="Screenshot of the Windows 11 taskbar with the two areas highlighted." border="false" lightbox="./images/taskbar-sections-10.png":::
 
