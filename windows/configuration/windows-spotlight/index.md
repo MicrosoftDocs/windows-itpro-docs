@@ -14,7 +14,7 @@ Windows spotlight is a feature that displays different wallpapers and offers sug
 ::: zone pivot="windows-11"
 
 - **Wallpapers**: Windows spotlight displays a new image on the lock screen and in the background every day
-- **Suggestions, fun facts, tips**: recommendations on how to enhance the user's productivity of Microsoft products. They are displayed in different locations, such as the lock screen, the background, the taskbar, or the Get Started app
+- **Suggestions, fun facts, tips**: recommendations on how to enhance the user's productivity of Microsoft products. They're displayed in different locations, such as the lock screen, the background, the taskbar, or the Get Started app
 - **Organizational messages**: messages from your organization, which can be displayed in the taskbar, the notification area, or the Get Started app
 
 :::image type="content" source="images/lockscreen-11.png" alt-text="Screenshot of the Windows 11 lock screen with Windows Spotlight enabled." border="false":::
@@ -24,7 +24,7 @@ Windows spotlight is a feature that displays different wallpapers and offers sug
 ::: zone pivot="windows-10"
 
 - **Wallpapers**: Windows spotlight displays a new image on the lock screen every day
-- **Suggestions, fun facts, tips**: recommendations on how to enhance the user's productivity of Microsoft products. They are displayed in different locations, such as the lock screen, the background, the taskbar, or the Get Started app
+- **Suggestions, fun facts, tips**: recommendations on how to enhance the user's productivity of Microsoft products. They're displayed in different locations, such as the lock screen, the background, the taskbar, or the Get Started app
 - **Organizational messages**: messages from your organization, which can be displayed in the taskbar, the notification area, or the Get Started app
 
 :::image type="content" source="images/lockscreen-10.png" alt-text="Screenshot of the Windows 10 lock screen with Windows Spotlight enabled." border="false":::
@@ -82,7 +82,7 @@ Here's a sorted list of the policy settings to configure Windows spotlight:
 
 ## Custom lock screen and background images
 
-You can replace the Windows spotlight lock screen and background images with a custom image. When you do so, users can still see suggestions, fun facts, tips, or organizational messages on the lock screen, but the background image will be replaced with the custom image.
+You can replace the Windows spotlight lock screen and background images with a custom image. When you do so, users can still see suggestions, fun facts, tips, or organizational messages on the lock screen, but the background image is replaced with the custom image.
 
 To configure the lock screen and background images, use the [Personalization CSP][CSP-2].
 
@@ -91,8 +91,6 @@ To configure the lock screen and background images, use the [Personalization CSP
 |[DesktopImageUrl](/windows/client-management/mdm/personalization-csp#desktopimageurl)|✅|✅|
 |[LockScreenImageUrl](/windows/client-management/mdm/personalization-csp#lockscreenimageurl)|✅|✅|
 
-selected image using the Group Policy setting **Computer Configuration** > **Administrative Templates** > **Control Panel** > **Personalization** > **Force a specific default lock screen image** (Windows 10 Enterprise and Education).
-
 >[!NOTE]
 > A concern with custom images is how they'll appear on different screen sizes and resolutions. A custom image created in `16:9` aspect ratio (for example, `1600x900`) scales properly on devices using a `16:9` resolution, such as `1280x720` or `1920x1080`. On devices using other aspect ratios, such as `4:3` (`1024x768`) or `16:10` (`1280x800`), height scales correctly and width is cropped to a size equal to the aspect ratio. The image remains centered on the screen.
 >
@@ -100,7 +98,7 @@ selected image using the Group Policy setting **Computer Configuration** > **Adm
 
 ## User experience
 
-When Windows spotlight is enabled, users sees a new image on the lock screen and in the background every day. The image is displayed in the background when the user logs in, and on the lock screen when the user locks the device. Users will also see suggestions, fun facts, tips, or organizational messages in different locations, such as the lock screen, the background, the taskbar, or the Get Started app. If you deploy a custom lock screen or background image, users see the custom image instead of the Windows spotlight image:
+When Windows spotlight is enabled, devices apply a new image on the lock screen and in the background every day. The image is displayed in the background when the user signs in, and on the lock screen when the user locks the device. Users can still receive suggestions, fun facts, tips, or organizational messages. If you deploy a custom lock screen or background image, devices apply the custom image instead of the Windows spotlight image:
 
 ::: zone pivot="windows-11"
 
