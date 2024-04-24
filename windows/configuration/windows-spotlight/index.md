@@ -17,13 +17,13 @@ Windows spotlight is a Windows feature that displays different wallpapers and of
 
 ::: zone pivot="windows-11"
 
-:::image type="content" source="images/lockscreen-11.png" alt-text="Screenshot of the Windows 11 lock screen with Windows Spotlight enabled.":::
+:::image type="content" source="images/lockscreen-11.png" alt-text="Screenshot of the Windows 11 lock screen with Windows Spotlight enabled." border="false":::
 
 ::: zone-end
 
 ::: zone pivot="windows-10"
 
-:::image type="content" source="images/lockscreen-10.png" alt-text="Screenshot of the Windows 10 lock screen with Windows Spotlight enabled.":::
+:::image type="content" source="images/lockscreen-10.png" alt-text="Screenshot of the Windows 10 lock screen with Windows Spotlight enabled." border="false":::
 
 ::: zone-end
 
@@ -95,13 +95,13 @@ The recommendation for custom lock screen images that include text (such as a le
 
 ::: zone pivot="windows-11"
 
-:::image type="content" source="images/contoso-lockscreen-11.png" alt-text="Screenshot of the Windows 11 lock screen with Windows spotlight enabled over an organization wallpaper.":::
+:::image type="content" source="images/contoso-lockscreen-11.png" alt-text="Screenshot of the Windows 11 lock screen with Windows spotlight enabled over an organization wallpaper." border="false":::
 
 ::: zone-end
 
 ::: zone pivot="windows-10"
 
-:::image type="content" source="images/contoso-lockscreen-10.png" alt-text="Screenshot of the Windows 10 lock screen with Windows spotlight enabled over an organization wallpaper.":::
+:::image type="content" source="images/contoso-lockscreen-10.png" alt-text="Screenshot of the Windows 10 lock screen with Windows spotlight enabled over an organization wallpaper." border="false":::
 
 ::: zone-end
 
