@@ -31,6 +31,10 @@ Windows spotlight is a feature that displays different wallpapers and offers sug
 
 ::: zone-end
 
+## Windows edition and licensing requirements
+
+Windows spotlight is available on Windows Enterprise and Education editions only.
+
 ## Configuration options
 
 Windows spotlight is enabled by default, but you can customize it to meet your organization's needs. There are several options to configure Windows spotlight.
