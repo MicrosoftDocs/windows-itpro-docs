@@ -1,6 +1,6 @@
 ---
 title: Configure the Windows taskbar
-description: Administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a section to a layout modification XML file.
+description: Learn how to configure the Windows taskbar to provide quick access to the tools and applications that users need most.
 ms.topic: how-to
 ms.date: 04/17/2024
 appliesto:
@@ -47,11 +47,9 @@ Let's review the components of the Windows taskbar by dividing it into three are
     1. Pinned and running apps
 1. The *right area* contains:
     1. The system tray, which displays icons like the pen menu, touch keyboard, virtual touchpad, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
-    1. Quick Actions
+    1. Quick actions
     1. Calendar
-    1. Action Center
-    1. Action center
-    1. Copilot
+    1. Notifications
 
 :::image type="content" source="images/taskbar-sections-11.png" alt-text="Screenshot of the Windows 11 taskbar with the three areas highlighted." border="false" lightbox="./images/taskbar-sections-11.png":::
 
@@ -73,7 +71,7 @@ Let's review the components of the Windows taskbar by dividing it into two areas
     - News and interests
     - The system tray, which displays icons like the pen menu, touch keyboard, virtual touchpad, power, network, volume, and any application icons that are running in the background like OneDrive, Teams, or antivirus software
     - Calendar
-    - Action center
+    - Notifications and actions
 
 :::image type="content" source="images/taskbar-sections-10.png" alt-text="Screenshot of the Windows 11 taskbar with the two areas highlighted." border="false" lightbox="./images/taskbar-sections-10.png":::
 
