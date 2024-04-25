@@ -127,7 +127,7 @@ productDirectory:
           text: Customize the Start menu layout
         - url: /windows/configuration/set-up-shared-or-guest-pc
           text: Set up a shared or guest PC
-        - url: /windows/configuration/assigned-access/index.md
+        - url: /windows/configuration/assigned-access
           text: Configure kiosks and restricted user experiences
         - url: /windows/configuration
           text: Learn more about Windows configuration >
