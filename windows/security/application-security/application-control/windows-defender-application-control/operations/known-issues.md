@@ -59,6 +59,7 @@ Although WDAC audit mode is designed to avoid impact to apps, some features are 
 
 - Some script hosts might block code or run code with fewer privileges even in audit mode. See [Script enforcement with WDAC](/windows/security/application-security/application-control/windows-defender-application-control/design/script-enforcement) for information about individual script host behaviors.
 - Option **19 Enabled:Dynamic Code Security** is always enforced if any UMCI policy includes that option. See [WDAC and .NET](/windows/security/application-security/application-control/windows-defender-application-control/design/wdac-and-dotnet#wdac-and-net-hardening).
+- Option **8 Required:EV Signers** is always enforced regardless of whether the policy is deployed in enforced mode or in audit mode. This requirement also persists whether the policy utilizes the UMCI option or is exclusively applicable to kernel-mode drivers.
 
 ### .NET native images may generate false positive block events
 
