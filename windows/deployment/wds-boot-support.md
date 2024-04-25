@@ -23,7 +23,9 @@ The operating system deployment functionality of [Windows Deployment Services](/
 
 When you PXE-boot from a WDS server that uses the **boot.wim** file from installation media as its boot image, Windows Setup automatically launches in WDS mode. This workflow is deprecated for Windows 11 and newer boot images. The following deprecation message is displayed:
 
-  ![WDS deprecation notice](images/wds-deprecation.png)
+> Windows Setup
+>
+> Windows Deployment Services client functionality is being partly deprecated. Please visit https://aka.ms/WDSSupport for more details on what is deprecated and what will continue to be supported.
 
 ## Deployment scenarios affected
 
