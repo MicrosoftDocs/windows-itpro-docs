@@ -7,6 +7,8 @@ ms.date: 04/09/2024
 
 # Encryption and data protection
 
+:::image type="content" source="images/operating-system.png" alt-text="Diagram of containing a list of security features." lightbox="images/operating-system.png" border="false":::
+
 When people travel with their PCs, their confidential information travels with them. Wherever confidential data is stored, it must be protected against unauthorized access, whether through physical device theft or from malicious applications.
 
 ## BitLocker

@@ -7,6 +7,8 @@ ms.date: 04/09/2024
 
 # Virus and threat protection
 
+:::image type="content" source="images/operating-system.png" alt-text="Diagram of containing a list of security features." lightbox="images/operating-system.png" border="false":::
+
 Today's threat landscape is more complex than ever. This new world requires a new approach vto threat prevention, detection, and response. Microsoft Defender Antivirus, along with many other features that are built into Windows 11, is at the frontlines, protecting customers against current and emerging threats.
 
 ## Microsoft Defender SmartScreen
