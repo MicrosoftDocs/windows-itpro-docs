@@ -1,5 +1,5 @@
 items:
-- name: 📘Windows 11 Security Book
+- name: Windows 11 Security Book
   href: index.md
 - name: 1. Hardware security
   items:
@@ -38,9 +38,19 @@ items:
   - name: Advanced credential protection
     href: identity-protection-advanced-credential-protection.md
 - name: 5. Privacy
-  href: privacy.md
+  items:
+  - name: Overview
+    href: privacy.md
+  - name: Privacy controls
+    href: privacy-controls.md
 - name: 6. Cloud services
-  href: cloud-services.md
+  items:
+  - name: Overview
+    href: cloud-services.md
+  - name: Protect your work information
+    href: cloud-services-protect-your-work-information.md
+  - name: Protect your personal information
+    href: cloud-services-protect-your-personal-information.md
 - name: 7. Security foundation
   href: security-foundation.md
 - name: Conclusion

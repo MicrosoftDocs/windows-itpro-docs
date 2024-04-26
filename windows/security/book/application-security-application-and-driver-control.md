@@ -7,6 +7,8 @@ ms.date: 04/09/2024
 
 # Application and driver control
 
+:::image type="content" source="images/application-security.png" alt-text="Diagram of containing a list of application security features." lightbox="images/application-security.png" border="false":::
+
 Windows 11 offers a rich application platform with layers of security like isolation and code integrity that help protect your valuable data. Developers can also take advantage of these
 capabilities to build in security from the ground up to protect against breaches and malware.
 

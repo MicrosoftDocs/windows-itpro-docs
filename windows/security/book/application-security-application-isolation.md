@@ -7,6 +7,8 @@ ms.date: 04/09/2024
 
 # Application isolation
 
+:::image type="content" source="images/application-security.png" alt-text="Diagram of containing a list of application security features." lightbox="images/application-security.png" border="false":::
+
 ## Win32 app isolation
 
 Win32 app isolation is a new security feature in public preview designed to be the default isolation standard on Windows clients. It is built on [AppContainer](/windows/win32/secauthz/implementing-an-appcontainer), and offers several added security features to help the Windows platform defend against attacks that leverage vulnerabilities in applications or third-party libraries. To isolate their apps, developers can update their applications using the tools provided by Microsoft.
