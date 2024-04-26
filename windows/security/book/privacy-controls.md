@@ -11,7 +11,7 @@ ms.date: 04/09/2024
 
 ## Privacy dashboard and report
 
-Customers can use the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy) to view, export, and delete their information, giving them further transparency and control. They can also use the [Microsoft](https://privacy.microsoft.com/privacy-report) [Privacy Report](https://privacy.microsoft.com/privacy-report) to learn more about Windows data collection and how to manage it. For enterprises we provide a guide for Windows Privacy Compliance that includes additional details on the available controls and transparency.
+Customers can use the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy) to view, export, and delete their information, giving them further transparency and control. They can also use the [Microsoft Privacy Report](https://privacy.microsoft.com/privacy-report) to learn more about Windows data collection and how to manage it. For enterprises we provide a guide for Windows Privacy Compliance that includes additional details on the available controls and transparency.
 
 ## Privacy transparency and controls
 

@@ -21,7 +21,7 @@ Microsoft is dedicated to working with the community and our customers to contin
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Project OneFuzz framework, an open source developer tool to find and fix bugs](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/) [at scale](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
+- [Project OneFuzz framework, an open source developer tool to find and fix bugs at scale](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
 - [OneFuzz on GitHub](https://github.com/microsoft/onefuzz)
 
 ## Microsoft Offensive Research and Security Engineering

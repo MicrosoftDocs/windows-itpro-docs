@@ -19,6 +19,8 @@ To provide more security and control for IT and a seamless experience for end us
 
 Windows 11 works with Microsoft Entra ID to provide secure access, identity management, and single sign-on to apps and services from anywhere. Windows has built-in settings to add work or school accounts by syncing the device configuration to an Active Directory domain or Microsoft Entra ID tenant.
 
+:::image type="content" source="images/access-work-or-school.png" alt-text="Screenshot of the add work or school account in Settings." border="false":::
+
 When a device is Microsoft Entra ID joined and managed with Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, it receives the following security benefits:
 
 - Default managed user and device settings and policies
@@ -36,8 +38,6 @@ Every Windows device has a built-in local administrator account that must be sec
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Windows Local Administrator Password Solution with Microsoft Entra (Azure AD)](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/introducing-windows-local-administrator-password-solution-with/ba-p/1942487)
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
-
 - [Microsoft Entra plans and pricing](https://www.microsoft.com/security/business/microsoft-entra-pricing?rtc=1)
 
 ## Modern device management through (MDM)
@@ -51,13 +51,11 @@ Windows 11 built-in management features include:
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Mobile device management overview](/windows/client-management/mdm-overview)[](/windows/client-management/mdm-overview)
+- [Mobile device management overview](/windows/client-management/mdm-overview)
 
 ## Microsoft security baselines
 
 Every organization faces security threats. However, different organizations can be concerned with different types of security threats. For example, an e-commerce company may focus on protecting its internet-facing web apps, while a hospital may focus on protecting confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
-
-## Microsoft Security baseline
 
 A security baseline is a group of Microsoft-recommended configuration settings that explains their security implications. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers.
 
@@ -90,13 +88,17 @@ Organizations can cut costs while securing and managing remote PCs through the c
 
 Windows 11 enables IT professionals to move to the cloud while consistently enforcing security policies. Windows 11 provides expanded support for Group Policy administrative templates (ADMX-backed policies) in MDM solutions like Microsoft Intune, enabling IT professionals to easily apply the same security policies to both on-premises and remote devices.
 
-**Endpoint Privilege Management (EPM):** Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run tasks allowed by the organization to remain productive.
+### Endpoint Privilege Management (EPM)
 
-**Local Administrator Password (LAPs):** Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS (available in preview), organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or hybrid Microsoft Entra ID joined devices.
+Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run tasks allowed by the organization to remain productive.
 
-**Mobile Application Management (MAM):** With Intune, organizations can also extend MAM
+### Local Administrator Password (LAPs)
 
-App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
+Local Administrator Password solution was a key consideration for many customers when deciding to make the transition from on-premises to cloud-managed devices using Intune. With LAPS (available in preview), organizations can automatically manage and back up the password of a local administrator account on Microsoft Entra ID joined or hybrid Microsoft Entra ID joined devices.
+
+### Mobile Application Management (MAM)
+
+With Intune, organizations can also extend MAM App Config, MAM App Protection, and App Protection Conditional Access capabilities to Windows. This enables people to access protected organizational content without having the device managed by IT. The first application to support MAM for Windows is Microsoft Edge.
 
 Customers have asked for App Control for Business (previously called Windows Defender Application Control) to manage Installer support for a long time. Now customers will be able to enable allowlisting of Win32 apps within their enterprise to proactively reduce the number of malware infections.
 
@@ -152,7 +154,9 @@ For an in-depth understanding of this service, including its benefits and prereq
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows Update for Business - Windows Deployment](/windows/deployment/update/waas-manage-updates-wufb) **Windows Autopatch**
+- [Windows Update for Business - Windows Deployment](/windows/deployment/update/waas-manage-updates-wufb)
+
+## Windows Autopatch
 
 Cybercriminals often target outdated or unpatched software to gain access to networks. Keeping endpoints up to date is critical in closing existing vulnerabilities, but planning, monitoring, and reporting on update compliance can take IT resources away from other important tasks.
 
@@ -190,9 +194,7 @@ Existing devices can also be quickly prepared for a new user with [Windows Autop
 
 ## Enterprise State Roaming with Azure
 
-Available to any organization with a Microsoft Entra ID Premium<sup>[\[9\]](conclusion.md#footnote9)</sup> or Enterprise Mobility +
-
-Security (EMS)<sup>[\[9\]](conclusion.md#footnote9)</sup> license, Enterprise State Roaming provides users with a unified Windows Settings experience across their Windows devices and reduces the time needed for configuring a new device.
+Available to any organization with a Microsoft Entra ID Premium<sup>[\[9\]](conclusion.md#footnote9)</sup> or Enterprise Mobility + Security (EMS)<sup>[\[9\]](conclusion.md#footnote9)</sup> license, Enterprise State Roaming provides users with a unified Windows Settings experience across their Windows devices and reduces the time needed for configuring a new device.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -206,23 +208,18 @@ Unlike traditional print solutions that rely on Windows print servers, Universal
 
 Universal Print supports Zero Trust security by requiring that:
 
-- Each connection and API call to Universal Print cloud service requires authentication validated by Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup>. A hacker would have to have knowledge of the right credentials to successfully connect to the Universal Print service.
-
-- Every connection established by the user's device (client), the printer, or another cloud service to the Universal Print cloud service uses SSL with TLS 1.2 protection. This protects network snooping of traffic to gain access to sensitive data.
-
-- Each printer registered with Universal Print is created as a device object in the customer's Microsoft Entra ID tenant and issued its own device certificate. Every connection from the printer is authenticated using this certificate. The printer can access only its own data and no other device's data.
-
-- Applications can connect to Universal Print using either user, device, or application authentication. To ensure data security, it is highly recommended that only cloud applications use application authentication.
-
-- Each acting application must register with Microsoft Entra ID and specify the set of permission scopes it requires. Microsoft's own acting applications - for example, the Universal Print connector - are registered with the Microsoft Entra ID service. Customer administrators need to provide their consent to the required permission scopes as part of onboarding the application to their tenant.
-
-- Each authentication with Microsoft Entra ID from an acting application cannot extend the permission scope as defined by the acting client app. This prevents the app from requesting additional permissions if the app is breached.
+- Each connection and API call to Universal Print cloud service requires authentication validated by Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup>. A hacker would have to have knowledge of the right credentials to successfully connect to the Universal Print service
+- Every connection established by the user's device (client), the printer, or another cloud service to the Universal Print cloud service uses SSL with TLS 1.2 protection. This protects network snooping of traffic to gain access to sensitive data
+- Each printer registered with Universal Print is created as a device object in the customer's Microsoft Entra ID tenant and issued its own device certificate. Every connection from the printer is authenticated using this certificate. The printer can access only its own data and no other device's data
+- Applications can connect to Universal Print using either user, device, or application authentication. To ensure data security, it is highly recommended that only cloud applications use application authentication
+- Each acting application must register with Microsoft Entra ID and specify the set of permission scopes it requires. Microsoft's own acting applications - for example, the Universal Print connector - are registered with the Microsoft Entra ID service. Customer administrators need to provide their consent to the required permission scopes as part of onboarding the application to their tenant
+- Each authentication with Microsoft Entra ID from an acting application cannot extend the permission scope as defined by the acting client app. This prevents the app from requesting additional permissions if the app is breached
 
 Additionally, Windows 11 and Windows 10 include MDM support to simplify printer setup for users. With initial support from Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, admins can now configure policies to provision specific printers onto the user's Windows devices.
 
 Universal Print stores the print data in cloud securely in Office Storage, the same storage used by other Microsoft Office products.
 
-More information about handling of Microsoft 365 data (this includes Universal Print data) can be found [here](/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide).
+More information about handling of Microsoft 365 data (this includes Universal Print data) can be found [here](/microsoft-365/enterprise/m365-dr-overview).
 
 The Universal Print secure release platform ensures user privacy, secures organizational data, and reduces print wastage. It eliminates the need for people to rush to a shared printer as soon as they send a print job to ensure that no one sees the private or confidential content. Sometimes, printed documents are picked up by another person or not picked up at all and discarded. Detailed support and configuration information can be found [here](/universal-print/fundamentals/universal-print-qrcode).
 
@@ -250,13 +247,10 @@ Authenticated connections are not allowed over HTTP and instead redirect to HTTP
 
 There are several ways that OneDrive for work or school is protected at rest:
 
-- Physical protection: Microsoft understands the importance of protecting customer data and is committed to securing the datacenters that contain it. Microsoft datacenters are designed, built, and operated to strictly limit physical access to the areas where customer data is stored. Physical security at datacenters is in alignment with the defense-in-depth principle. Multiple security measures are implemented to reduce the risk of unauthorized users accessing data and other datacenter resources. Learn more [here](/compliance/assurance/assurance-datacenter-physical-access-security).
-
-- Network protection: The networks and identities are isolated from the corporate network. Firewalls limit traffic into the environment from unauthorized locations.
-
-- Application security: Engineers who build features follow the security development lifecycle. Automated and manual analyses help identify possible vulnerabilities. The [Microsoft Security Response Center](https://technet.microsoft.com/security/dn440717.aspx) helps triage incoming vulnerability reports and evaluate mitigations. Through the [Microsoft Cloud Bug Bounty Terms](https://technet.microsoft.com/dn800983), people across the world can earn money by reporting vulnerabilities.
-
-- Content protection: Each file is encrypted at rest with a unique AES-256 key. These unique keys are encrypted with a set of master keys that are stored in Azure Key Vault.
+- Physical protection: Microsoft understands the importance of protecting customer data and is committed to securing the datacenters that contain it. Microsoft datacenters are designed, built, and operated to strictly limit physical access to the areas where customer data is stored. Physical security at datacenters is in alignment with the defense-in-depth principle. Multiple security measures are implemented to reduce the risk of unauthorized users accessing data and other datacenter resources. Learn more [here](/compliance/assurance/assurance-datacenter-physical-access-security)
+- Network protection: The networks and identities are isolated from the corporate network. Firewalls limit traffic into the environment from unauthorized locations
+- Application security: Engineers who build features follow the security development lifecycle. Automated and manual analyses help identify possible vulnerabilities. The [Microsoft Security Response Center](https://technet.microsoft.com/security/dn440717.aspx) helps triage incoming vulnerability reports and evaluate mitigations. Through the [Microsoft Cloud Bug Bounty Terms](https://technet.microsoft.com/dn800983), people across the world can earn money by reporting vulnerabilities
+- Content protection: Each file is encrypted at rest with a unique AES-256 key. These unique keys are encrypted with a set of master keys that are stored in Azure Key Vault
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

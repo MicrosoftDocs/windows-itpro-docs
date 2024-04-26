@@ -9,7 +9,9 @@ ms.date: 04/09/2024
 
 :::image type="content" source="images/identity-protection.png" alt-text="Diagram of containing a list of security features." lightbox="images/identity-protection.png" border="false":::
 
-In addition to adopting passwordless sign-in, organizations can strengthen security for user and domain credentials in Windows 11 with Credential Guard and Remote Credential Guard. **Enhanced phishing protection with Microsoft Defender SmartScreen**
+In addition to adopting passwordless sign-in, organizations can strengthen security for user and domain credentials in Windows 11 with Credential Guard and Remote Credential Guard.
+
+## Enhanced phishing protection with Microsoft Defender SmartScreen
 
 As malware protection and other safeguards evolve, cybercriminals look for new ways to circumvent security measures. Phishing has emerged as a leading threat, with apps and websites designed to steal credentials by tricking people into voluntarily entering passwords. As a result, many organizations are transitioning to the ease and security of passwordless sign-in with Windows Hello or Windows Hello for Business.
 
@@ -21,7 +23,7 @@ However, people who are still using passwords can also benefit from powerful cre
 
 ## Local Security Authority (LSA) protection
 
-Windows has several critical processes to verify a user's identity. Verification processes include Local Security Authority (LSA), which is responsible for authenticating users and verifying Windows sign-ins. LSA handles tokens and credentials that are used for single signon to a Microsoft account and Azure services.<sup>[\[9\]](conclusion.md#footnote9)</sup>
+Windows has several critical processes to verify a user's identity. Verification processes include Local Security Authority (LSA), which is responsible for authenticating users and verifying Windows sign-ins. LSA handles tokens and credentials that are used for single signon to a Microsoft account and Azure services.
 
 To help keep these credentials safe, additional LSA protection will be enabled by default on new, enterprise-joined Windows 11 devices. By loading only trusted, signed code, LSA provides significant protection against credential theft. LSA protection also now supports configuration using Group Policy and modern device management.
 
@@ -49,11 +51,9 @@ Administrator credentials are highly privileged and must be protected. When Remo
 
 - [Remote Credential Guard - Windows Security | Microsoft Learn](/windows/security/identity-protection/remote-credential-guard?tabs=intune)
 
-The following diagram shows how a standard Remote Desktop session to a server without Remote Credential Guard works:
+## Token protectio
 
-The following diagrams help demonstrate how Windows Defender Remote Credential Guard works, what it helps to protect against, and compares it with the [Restricted Admin](https://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx) [mode option](https://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx):
-
-Token protection attempts to reduce attacks using Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> token theft. Token protection makes tokens usable only from their intended device by cryptographically binding a token with a device secret. When using the token, both the token and proof of the device secret must be provided. Conditional Access policy can be configured to require token protection when using sign-in tokens for specific services.
+Token protection attempts to reduce attacks using Microsoft Entra ID token theft. Token protection makes tokens usable only from their intended device by cryptographically binding a token with a device secret. When using the token, both the token and proof of the device secret must be provided. Conditional Access policies<sup>[\[9\]](conclusion.md#footnote9)</sup> can be configured to require token protection when using sign-in tokens for specific services.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

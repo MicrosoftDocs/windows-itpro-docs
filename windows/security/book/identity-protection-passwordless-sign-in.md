@@ -27,26 +27,26 @@ Windows Hello can authenticate users to a Microsoft account (MSA), identity prov
 
 ## Windows Hello for Business
 
-Windows Hello for Business extends Windows Hello to work with an organization's Active Directory<sup>[\[9\]](conclusion.md#footnote9)</sup> and Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> accounts. It provides single sign-on access to work or school resources such as OneDrive for Business, work email, and other business apps. Windows Hello for Business also give IT admins the ability to manage PIN and other sign-in requirements for devices connecting to work or school resources.
+Windows Hello for Business extends Windows Hello to work with an organization's Active Directory and Microsoft Entra ID accounts. It provides single sign-on access to work or school resources such as OneDrive for Business, work email, and other business apps. Windows Hello for Business also give IT admins the ability to manage PIN and other sign-in requirements for devices connecting to work or school resources.
 
 ## Windows Hello for Business Passwordless
 
 Windows 11 devices with Windows Hello for Business can protect user identities by removing the need to use passwords from day one.
 
-IT can now set a policy for Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> joined machines so users no longer see the option to enter a password when accessing company resources.12 Once the policy is set, passwords are removed from the Windows user experience, both for device unlock as well as in-session authentication scenarios via CredUI. However, passwords are not eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can leverage passwordless recovery mechanisms such as Windows Hello for Business PIN reset or Web Sign-in.
+IT can now set a policy for Microsoft Entra ID<sup> joined machines so users no longer see the option to enter a password when accessing company resources.12 Once the policy is set, passwords are removed from the Windows user experience, both for device unlock as well as in-session authentication scenarios via CredUI. However, passwords are not eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can leverage passwordless recovery mechanisms such as Windows Hello for Business PIN reset or Web Sign-in.
 
 During a device's lifecycle, a password may only need to be used once during the provisioning process. After that, people can use a PIN, face, or fingerprint to unlock credentials and sign into the device.
 
 Provisioning methods include:
 
-- Temporary Access Pass (TAP), a time-limited passcode with strong authentication requirements issued through Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup>
+- Temporary Access Pass (TAP), a time-limited passcode with strong authentication requirements issued through Microsoft Entra ID
 - Existing multifactor authentication with Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup>, including authentication methods like the Microsoft Authenticator app
 
 Windows Hello for Business replaces the username and password by combining a security key or certificate with a PIN or biometric data and then mapping the credentials to a user account during setup. There are multiple ways to deploy Windows Hello for Business depending on an organization's needs. Organizations that rely on certificates typically use on-premises public key infrastructure (PKI) to support authentication through Certificate Trust. Organizations using key trust deployment require root-of-trust provided by certificates on domain controllers.
 
 Organizations with hybrid scenarios can eliminate the need for on-premises domain controllers and simplify passwordless adoption by using Windows Hello for Business cloud Kerberos trust.13 This solution uses security keys and replaces on-premises domain controllers with a cloud-based root-of-trust. As a result, organizations can take advantage of Windows Hello for Business and deploy passwordless security keys with minimal additional setup or infrastructure.
 
-Users will authenticate directly with Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup>, helping speed access to on- premises applications and other resources.
+Users will authenticate directly with Microsoft Entra ID, helping speed access to on- premises applications and other resources.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -105,7 +105,7 @@ Users can also take advantage of more granular settings to easily enable and dis
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Presence sensing](/windows-hardware/design/device-experiences/sensors-presence-sensing)
-- [Managing presence sensing settings in Windows 11](https://support.microsoft.com/windows/managing-presence-sensing-settings-in-windows-11-82285c93-440c-4e15-9081-c9e38c1290bb)
+- [Manage presence sensing settings in Windows 11](https://support.microsoft.com/windows/managing-presence-sensing-settings-in-windows-11-82285c93-440c-4e15-9081-c9e38c1290bb)
 
 ## FIDO support
 
@@ -121,15 +121,9 @@ Windows 11 can also use passkeys from external FIDO2 security keys for authentic
 
 Windows 11 makes it much harder for hackers who exploit stolen passwords via phishing attacks by empowering users to replace passwords with passkeys. Passkeys are the crossplatform future of secure sign-in. Microsoft and other technology leaders are supporting passkeys across their platforms and services.
 
-A passkey is a unique, unguessable cryptographic secret that is securely stored on the device.
+A passkey is a unique, unguessable cryptographic secret that is securely stored on the device. Instead of using a username and password to sign in to a website or application, Windows 11 users can create and use a passkey from Windows Hello, an external security provider, or their mobile device.
 
-Instead of using a username and password to sign in to a website or application, Windows
-
-11 users will be able to create and use a passkey from Windows Hello, an external security provider, or their mobile device.
-
-Passkeys on Windows 11 will be protected by Windows Hello or Windows Hello for Business.
-
-This enables users to sign in to the site or app using their face, fingerprint, or device PIN. Passkeys on Windows work in any browser or app that supports them for sign in. Users will be able to manage passkeys on their device on Windows 11 account settings.
+Passkeys on Windows 11 are protected by Windows Hello or Windows Hello for Business. This enables users to sign in to the site or app using their face, fingerprint, or device PIN. Passkeys on Windows work in any browser or app that supports them for sign in. Users can manage passkeys on their device on Windows 11 account settings.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

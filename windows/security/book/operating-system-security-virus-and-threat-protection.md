@@ -43,7 +43,7 @@ Microsoft Defender Antivirus always-on protection is integrated with cloud-deliv
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Next-generation protection with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide).
+- [Next-generation protection with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows).
 
 ## Attack surface reduction
 
@@ -60,7 +60,7 @@ network, and firewall.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Attack surface reduction](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-worldwide)
+- [Attack surface reduction](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
 
 ## Tamper protection
 
@@ -123,4 +123,4 @@ platforms, all synthesized into a single dashboard. This solution offers tremend
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Microsoft Defender for Endpoint](/security/defender-endpoint/microsoft-defender-endpoint)
-- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide)
+- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
