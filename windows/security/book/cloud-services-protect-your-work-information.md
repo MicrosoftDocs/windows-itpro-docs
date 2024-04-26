@@ -11,9 +11,9 @@ ms.date: 04/09/2024
 
 ## Microsoft Entra ID
 
-[Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access/azure-active-directory?rtc=1)[<sup>[\[9\]](conclusion.md#footnote9)</sup>](https://www.microsoft.com/security/business/identity-access/azure-active-directory?rtc=1) [(formerly Azure Active Directory)](https://www.microsoft.com/security/business/identity-access/azure-active-directory?rtc=1) is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
+Microsoft Entra ID, formerly Azure Active Directory is a comprehensive cloud-based identity management solution that helps enable secure access to applications, networks, and other resources and guard against threats. Microsoft Entra ID can also be used with Windows Autopilot for zero-touch provisioning of devices preconfigured with corporate security policies.
 
-Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. By registering devices with Microsoft Entra ID—also called Workplace joined—IT admins can support users in bring your own device (BYOD) or mobile device scenarios. Credentials are authenticated and bound to the joined device and cannot be copied to another device without explicit reverification.
+Organizations can deploy Microsoft Entra ID joined devices to enable access to both cloud and on-premises apps and resources. Access to resources can be controlled based on the Microsoft Entra ID account and Conditional Access policies applied to the device. By registering devices with Microsoft Entra ID - also called Workplace joined - IT admins can support users in bring your own device (BYOD) or mobile device scenarios. Credentials are authenticated and bound to the joined device and cannot be copied to another device without explicit reverification.
 
 To provide more security and control for IT and a seamless experience for end users, Microsoft Entra ID works with apps and services, including on-premises software and thousands of software-as-a-service (SaaS) applications. Microsoft Entra ID protections include single sign-on, multifactor authentication, conditional access policies, identity protection, identity governance, and privileged identity management.
 
@@ -35,8 +35,7 @@ Every Windows device has a built-in local administrator account that must be sec
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows Local Administrator Password Solution with Microsoft Entra (Azure AD)](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/introducing-windows-local-administrator-password-solution-with/ba-p/1942487)[](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/introducing-windows-local-administrator-password-solution-with/ba-p/1942487)
-
+- [Windows Local Administrator Password Solution with Microsoft Entra (Azure AD)](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/introducing-windows-local-administrator-password-solution-with/ba-p/1942487)
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Microsoft Entra plans and pricing](https://www.microsoft.com/security/business/microsoft-entra-pricing?rtc=1)
@@ -47,8 +46,8 @@ Windows 11 supports modern device management through mobile device management (M
 
 Windows 11 built-in management features include:
 
-- The enrollment client, which enrolls and configures the device to securely communicate with the enterprise device management server.
-- The management client, which periodically synchronizes with the management server to check for updates and apply the latest policies set by IT.
+- The enrollment client, which enrolls and configures the device to securely communicate with the enterprise device management server
+- The management client, which periodically synchronizes with the management server to check for updates and apply the latest policies set by IT
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -72,13 +71,10 @@ Windows 11 can be configured with Microsoft's MDM security baseline backed by AD
 
 The security baseline includes policies for:
 
-- Microsoft inbox security technology such as BitLocker, Microsoft Defender SmartScreen, virtualization-based security, Exploit Guard, Microsoft Defender Antivirus, and Windows Firewall.
-
-- Restricting remote access to devices.
-
-- Setting credential requirements for passwords and PINs.
-
-- Restricting use of legacy technology.
+- Microsoft inbox security technology such as BitLocker, Microsoft Defender SmartScreen, virtualization-based security, Exploit Guard, Microsoft Defender Antivirus, and Windows Firewall
+- Restricting remote access to devices
+- Setting credential requirements for passwords and PINs
+- Restricting use of legacy technology
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -124,11 +120,9 @@ When a device is lost or stolen, IT administrators might want to remotely wipe d
 
 Windows 11 supports the Remote Wipe configuration service provider (CSP) so that MDM Solutions<sup>[\[9\]](conclusion.md#footnote9)</sup> can remotely initiate any of the following operations:
 
-- Reset the device and remove user accounts and data.
-
-- Reset the device and clean the drive.
-
-- Reset the device but persist user accounts and data.
+- Reset the device and remove user accounts and data
+- Reset the device and clean the drive
+- Reset the device but persist user accounts and data
 
 Learn More: [Remote Wipe CSP](/windows/client-management/mdm/remotewipe-csp)
 
@@ -138,13 +132,11 @@ Remote attestation helps ensure that devices are compliant with security policie
 
 **Attestation policies are configured in the Microsoft Azure Attestation Service which can then:**
 
-- Verify the integrity of evidence provided by the Windows Attestation component by validating the signature and ensuring the Platform Configuration Registers (PCRs) match the values recomputed by replaying the measured boot log.
+- Verify the integrity of evidence provided by the Windows Attestation component by validating the signature and ensuring the Platform Configuration Registers (PCRs) match the values recomputed by replaying the measured boot log
+- Verify that the TPM has a valid Attestation Identity Key issued by the authenticated TPM
+- Verify that security features are in the expected states
 
-- Verify that the TPM has a valid Attestation Identity Key issued by the authenticated TPM.
-
-- Verify that security features are in the expected states.
-
-Once this verification is complete, the attestation service returns a signed report with the security features state to the relying party—such as Microsoft Intune—to assess the trustworthiness of the platform relative to the admin-configured device compliance specifications. Conditional access is then granted or denied based on the device's compliance.
+Once this verification is complete, the attestation service returns a signed report with the security features state to the relying party - such as Microsoft Intune - to assess the trustworthiness of the platform relative to the admin-configured device compliance specifications. Conditional access is then granted or denied based on the device's compliance.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -152,9 +144,9 @@ Once this verification is complete, the attestation service returns a signed rep
 
 ## Windows Update for Business deployment service
 
-The Windows Update for Business deployment service, a core component of the Windows Update for Business product family, is a cloud-based solution that transforms the way update management is handled. Complementing existing [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) policies and [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)[,](/windows/deployment/update/wufb-reports-overview) the service provides control over the approval, scheduling, and safeguarding of updates—delivered straight from Windows Update to managed devices.
+The Windows Update for Business deployment service, a core component of the Windows Update for Business product family, is a cloud-based solution that transforms the way update management is handled. Complementing existing [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) policies and [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), the service provides control over the approval, scheduling, and safeguarding of updates - delivered straight from Windows Update to managed devices.
 
-The Windows Update for Business deployment service powers Windows Update management via Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> and Autopatch. The deployment services currently allows the management of [drivers and firmware](/graph/windowsupdates-manage-driver-update)[,](/graph/windowsupdates-manage-driver-update) expedited [quality updates](/graph/windowsupdates-deploy-expedited-update) [](/graph/windowsupdates-deploy-expedited-update)and [feature updates](/graph/windowsupdates-deploy-update)[.](/graph/windowsupdates-deploy-update)
+The Windows Update for Business deployment service powers Windows Update management via Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> and Autopatch. The deployment services currently allows the management of [drivers and firmware](/graph/windowsupdates-manage-driver-update), expedited [quality updates](/graph/windowsupdates-deploy-expedited-update) and [feature updates](/graph/windowsupdates-deploy-update).
 
 For an in-depth understanding of this service, including its benefits and prerequisites for use, practical guides on specific capabilities, Microsoft Graph training, and a behind-the-scenes look at how the deployment service functions, read [here](/windows/deployment/update/waas-manage-updates-wufb)[.](/windows/deployment/update/waas-manage-updates-wufb)
 
@@ -168,7 +160,7 @@ Available as part of Windows Enterprise E3 and E5, Windows Autopatch automates u
 
 From a technical standpoint, Windows Autopatch configures the policies and deployment service of Windows Update for Business to deliver updates, all within Microsoft Intune.<sup>[\[9\]](conclusion.md#footnote9)</sup> The results for IT admins: up-to-date endpoints and detailed reports to demonstrate compliance or help identify issues. The goal is to help IT teams be more secure and update more efficiently with less effort.
 
-There's a lot more to learn about Windows Autopatch: this [Forrester study commissioned by](https://aka.ms/AutopatchProductivity) [Microsoft](https://aka.ms/AutopatchProductivity) analyzes the impact of Windows Autopatch on real customers, [regular IT pro blogs](https://aka.ms/MoreAboutAutopatch) provide updates and background on Autopatch features and the future of the service, and the [community](https://aka.ms/AutopatchCommunity) allows IT professionals to get answers to questions from their peers and the Autopatch team.
+There's a lot more to learn about Windows Autopatch: this [Forrester study commissioned by](https://aka.ms/AutopatchProductivity) Microsoft analyzes the impact of Windows Autopatch on real customers, [regular IT pro blogs](https://aka.ms/MoreAboutAutopatch) provide updates and background on Autopatch features and the future of the service, and the [community](https://aka.ms/AutopatchCommunity) allows IT professionals to get answers to questions from their peers and the Autopatch team.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -178,25 +170,19 @@ There's a lot more to learn about Windows Autopatch: this [Forrester study commi
 
 Traditionally, IT professionals spend significant time building and customizing images that will later be deployed to devices. Windows Autopilot introduces a new approach with a collection of technologies used to set up and preconfigure new devices, getting them ready for productive use and ensuring they are delivered locked down and compliant with corporate security policies.
 
-- From a user perspective, it only takes a few simple operations to get their device ready for use.
-
-- From an IT professional perspective, the only interaction required from the end user is to connect to a network and verify their credentials. Setup is automated after that point.
+- From a user perspective, it only takes a few simple operations to get their device ready for use
+- From an IT professional perspective, the only interaction required from the end user is to connect to a network and verify their credentials. Setup is automated after that point
 
 Windows Autopilot enables you to:
 
-- Automatically join devices to Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> or Active Directory<sup>[\[9\]](conclusion.md#footnote9)</sup> via hybrid Microsoft Entra ID Join. For more information about the differences between these two join options, see [Introduction to device management in Microsoft Entra ID](/azure/active-directory/device-management-introduction)[.](/azure/active-directory/device-management-introduction)
+- Automatically join devices to Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup> or Active Directory via hybrid Microsoft Entra ID Join. For more information about the differences between these two join options, see [Introduction to device management in Microsoft Entra ID](/azure/active-directory/device-management-introduction).
+- Auto-enroll devices into MDM services such as Microsoft Intune (requires an Microsoft Entra ID Premium subscription for configuration)
+- Automatic upgrade to Enterprise Edition if required
+- Restrict administrator account creation
+- Create and auto-assign devices to configuration groups based on a device's profile
+- Customize Out of Box Experience (OOBE) content specific to the organization
 
-- Auto-enroll devices into MDM services such as Microsoft Intune (requires an Microsoft Entra ID Premium subscription for configuration).
-
-- Automatic upgrade to Enterprise Edition if required.
-
-- Restrict administrator account creation.
-
-- Create and auto-assign devices to configuration groups based on a device's profile.
-
-- Customize Out of Box Experience (OOBE) content specific to the organization.
-
-Existing devices can also be quickly prepared for a new user with [Windows Autopilot Reset](/mem/autopilot/windows-autopilot-reset)[.](/mem/autopilot/windows-autopilot-reset) The reset capability is also useful in break/fix scenarios to quickly bring a device back to a business-ready state.
+Existing devices can also be quickly prepared for a new user with [Windows Autopilot Reset](/mem/autopilot/windows-autopilot-reset). The reset capability is also useful in break/fix scenarios to quickly bring a device back to a business-ready state.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -228,23 +214,25 @@ Universal Print supports Zero Trust security by requiring that:
 
 - Applications can connect to Universal Print using either user, device, or application authentication. To ensure data security, it is highly recommended that only cloud applications use application authentication.
 
-- Each acting application must register with Microsoft Entra ID and specify the set of permission scopes it requires. Microsoft's own acting applications—for example, the Universal Print connector—are registered with the Microsoft Entra ID service. Customer administrators need to provide their consent to the required permission scopes as part of onboarding the application to their tenant.
+- Each acting application must register with Microsoft Entra ID and specify the set of permission scopes it requires. Microsoft's own acting applications - for example, the Universal Print connector - are registered with the Microsoft Entra ID service. Customer administrators need to provide their consent to the required permission scopes as part of onboarding the application to their tenant.
 
 - Each authentication with Microsoft Entra ID from an acting application cannot extend the permission scope as defined by the acting client app. This prevents the app from requesting additional permissions if the app is breached.
 
 Additionally, Windows 11 and Windows 10 include MDM support to simplify printer setup for users. With initial support from Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, admins can now configure policies to provision specific printers onto the user's Windows devices.
 
-Universal Print stores the print data in cloud securely in Office Storage, the same storage used by other Microsoft Office products. More information about Universal Print data residency and encryption can be found [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Funiversal-print%2Ffundamentals%2Funiversal-print-encryption&data=05%7C01%7Cnganguly%40microsoft.com%7C4cf654ec95f14b9b4bd408db558104cd%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638197784866029671%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=NHB%2FCEOs%2B%2F3kamLH631Too9zlItJBcLlAKVAtRkDnGc%3D&reserved=0)[.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Funiversal-print%2Ffundamentals%2Funiversal-print-encryption&data=05%7C01%7Cnganguly%40microsoft.com%7C4cf654ec95f14b9b4bd408db558104cd%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638197784866029671%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=NHB%2FCEOs%2B%2F3kamLH631Too9zlItJBcLlAKVAtRkDnGc%3D&reserved=0)
+Universal Print stores the print data in cloud securely in Office Storage, the same storage used by other Microsoft Office products.
 
-More information about handling of Microsoft 365 data (this includes Universal Print data) can be found [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fmicrosoft-365%2Fenterprise%2Fm365-dr-overview%3Fview%3Do365-worldwide&data=05%7C01%7Cnganguly%40microsoft.com%7C4cf654ec95f14b9b4bd408db558104cd%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638197784866029671%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=1iz%2BPywZ6mynk5ywld7sUdgeRFhWArmis9JYuMOZSNQ%3D&reserved=0)[.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fmicrosoft-365%2Fenterprise%2Fm365-dr-overview%3Fview%3Do365-worldwide&data=05%7C01%7Cnganguly%40microsoft.com%7C4cf654ec95f14b9b4bd408db558104cd%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638197784866029671%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=1iz%2BPywZ6mynk5ywld7sUdgeRFhWArmis9JYuMOZSNQ%3D&reserved=0)
+More information about handling of Microsoft 365 data (this includes Universal Print data) can be found [here](/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide).
 
-The Universal Print secure release platform ensures user privacy, secures organizational data, and reduces print wastage. It eliminates the need for people to rush to a shared printer as soon as they send a print job to ensure that no one sees the private or confidential content. Sometimes, printed documents are picked up by another person or not picked up at all and discarded. Detailed support and configuration information can be found [here](/universal-print/fundamentals/universal-print-qrcode)[.](/universal-print/fundamentals/universal-print-qrcode)
+The Universal Print secure release platform ensures user privacy, secures organizational data, and reduces print wastage. It eliminates the need for people to rush to a shared printer as soon as they send a print job to ensure that no one sees the private or confidential content. Sometimes, printed documents are picked up by another person or not picked up at all and discarded. Detailed support and configuration information can be found [here](/universal-print/fundamentals/universal-print-qrcode).
 
-Universal Print has integrated with Administrative Units in Microsoft Entra ID to enable customers to assign a Printer Administrator role to their local IT team in the same way customers assign User Administrator or Groups Administrator roles. The local IT team can configure only the printers that are part of the same Administrative Unit. Detailed configuration information can be found [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Funiversal-print%2Fportal%2Fdelegated-admin&data=05%7C01%7Cnganguly%40microsoft.com%7C4cf654ec95f14b9b4bd408db558104cd%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638197784866029671%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=9wg1Ju2YMKS1IwkZr8ms2X6%2B7mPC4%2FFpZBEzAumJCvs%3D&reserved=0)[.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Funiversal-print%2Fportal%2Fdelegated-admin&data=05%7C01%7Cnganguly%40microsoft.com%7C4cf654ec95f14b9b4bd408db558104cd%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638197784866029671%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=9wg1Ju2YMKS1IwkZr8ms2X6%2B7mPC4%2FFpZBEzAumJCvs%3D&reserved=0)
+Universal Print has integrated with Administrative Units in Microsoft Entra ID to enable customers to assign a Printer Administrator role to their local IT team in the same way customers assign User Administrator or Groups Administrator roles. The local IT team can configure only the printers that are part of the same Administrative Unit.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Universal Print](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fmicrosoft-365%2Fwindows%2Funiversal-print&data=05%7C01%7Cnganguly%40microsoft.com%7C4cf654ec95f14b9b4bd408db558104cd%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638197784866029671%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=KDsmUMf2QpFYrYIZ6A8jXo6KP4LsdYM5FYfEXfzfpBc%3D&reserved=0)
+- [Universal Print](https://www.microsoft.com/microsoft-365/windows/universal-print)
+- [Data storage in Universal Print](/universal-print/fundamentals/universal-print-encryption)
+- [Delegate Printer Administration with Administrative Units](/universal-print/portal/delegated-admin)
 
 For customers who want to stay on Print Servers, we recommend using the Microsoft IPP Print driver. For features beyond what's covered in the standard IPP driver, use Print Support Applications (PSA) for Windows from the respective printer OEM.
 
@@ -262,17 +250,17 @@ Authenticated connections are not allowed over HTTP and instead redirect to HTTP
 
 There are several ways that OneDrive for work or school is protected at rest:
 
-- Physical protection: Microsoft understands the importance of protecting customer data and is committed to securing the datacenters that contain it. Microsoft datacenters are designed, built, and operated to strictly limit physical access to the areas where customer data is stored. Physical security at datacenters is in alignment with the defense-in-depth principle. Multiple security measures are implemented to reduce the risk of unauthorized users accessing data and other datacenter resources. Learn more [here](/compliance/assurance/assurance-datacenter-physical-access-security)[.](/compliance/assurance/assurance-datacenter-physical-access-security)
+- Physical protection: Microsoft understands the importance of protecting customer data and is committed to securing the datacenters that contain it. Microsoft datacenters are designed, built, and operated to strictly limit physical access to the areas where customer data is stored. Physical security at datacenters is in alignment with the defense-in-depth principle. Multiple security measures are implemented to reduce the risk of unauthorized users accessing data and other datacenter resources. Learn more [here](/compliance/assurance/assurance-datacenter-physical-access-security).
 
 - Network protection: The networks and identities are isolated from the corporate network. Firewalls limit traffic into the environment from unauthorized locations.
 
-- Application security: Engineers who build features follow the security development lifecycle. Automated and manual analyses help identify possible vulnerabilities. [The](https://technet.microsoft.com/security/dn440717.aspx) [Microsoft Security Response Center](https://technet.microsoft.com/security/dn440717.aspx) helps triage incoming vulnerability reports and evaluate mitigations. Through the [Microsoft Cloud Bug Bounty Terms](https://technet.microsoft.com/dn800983)[,](https://technet.microsoft.com/dn800983) people across the world can earn money by reporting vulnerabilities.
+- Application security: Engineers who build features follow the security development lifecycle. Automated and manual analyses help identify possible vulnerabilities. The [Microsoft Security Response Center](https://technet.microsoft.com/security/dn440717.aspx) helps triage incoming vulnerability reports and evaluate mitigations. Through the [Microsoft Cloud Bug Bounty Terms](https://technet.microsoft.com/dn800983), people across the world can earn money by reporting vulnerabilities.
 
 - Content protection: Each file is encrypted at rest with a unique AES-256 key. These unique keys are encrypted with a set of master keys that are stored in Azure Key Vault.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [How OneDrive safeguards data in the cloud](https://support.microsoft.com/office/how-onedrive-safeguards-your-data-in-the-cloud-23c6ea94-3608-48d7-8bf0-80e142edd1e1)[](https://support.microsoft.com/office/how-onedrive-safeguards-your-data-in-the-cloud-23c6ea94-3608-48d7-8bf0-80e142edd1e1)
+- [How OneDrive safeguards data in the cloud](https://support.microsoft.com/office/how-onedrive-safeguards-your-data-in-the-cloud-23c6ea94-3608-48d7-8bf0-80e142edd1e1)
 
 ## MDM enrollment certificate attestation
 

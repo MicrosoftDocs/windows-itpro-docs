@@ -9,7 +9,7 @@ ms.date: 04/09/2024
 
 :::image type="content" source="images/identity-protection.png" alt-text="Diagram of containing a list of security features." lightbox="images/identity-protection.png" border="false":::
 
-Passwords are inconvenient to use and prime targets for cybercriminals—and they've been an important part of digital security for years. That changes with the passwordless protection available with Windows 11. After a secure authorization process, credentials are protected behind layers of hardware and software security, giving users secure, passwordless access to their apps and cloud services.
+Passwords are inconvenient to use and prime targets for cybercriminals - and they've been an important part of digital security for years. That changes with the passwordless protection available with Windows 11. After a secure authorization process, credentials are protected behind layers of hardware and software security, giving users secure, passwordless access to their apps and cloud services.
 
 ## Windows Hello
 
@@ -74,7 +74,7 @@ Enhanced Sign-in Security biometrics uses virtualization-based security (VBS) an
 
 These specialized components protect against a class of attacks that includes biometric sample injection, replay, and tampering. For example, fingerprint readers must implement Secure Device Connection Protocol, which uses key negotiation and a Microsoft-issued certificate to protect and securely store user authentication data. For facial recognition, components such as the Secure Devices (SDEV) table and process isolation with trustlets help prevent additional attack classes.
 
-Enhanced Sign-in Security is configured by device manufacturers during the manufacturing process and is most typically supported in Secured-core PCs. For facial recognition, Enhanced Sign-in Security is supported by specific silicon and camera combinations—please check with the specific device manufacturer. Fingerprint authentication is available across all processor types. Please reach out to specific OEMs for support details.
+Enhanced Sign-in Security is configured by device manufacturers during the manufacturing process and is most typically supported in Secured-core PCs. For facial recognition, Enhanced Sign-in Security is supported by specific silicon and camera combinations - please check with the specific device manufacturer. Fingerprint authentication is available across all processor types. Please reach out to specific OEMs for support details.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

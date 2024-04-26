@@ -45,7 +45,7 @@ In the event of a ransomware attack, OneDrive can enable recovery. And if backup
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [How to recover from a ransomware attack using Microsoft 365](/microsoft-365/security/office-365-security/recover-from-ransomware?view=o365-worldwide)
+- [How to recover from a ransomware attack using Microsoft 365](/microsoft-365/security/office-365-security/recover-from-ransomware)
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -56,9 +56,3 @@ In the event of a ransomware attack, OneDrive can enable recovery. And if backup
 OneDrive Personal Vault<sup>[\[9\]](conclusion.md#footnote9)</sup> also provides protection for the most important or sensitive files and photos without sacrificing the convenience of anywhere access. Protect digital copies of important documents in OneDrive Personal Vault. Files will be secured by identity verification yet are still easily accessible across devices.
 
 Learn how to [set up a Personal Vault](https://support.microsoft.com/office/protect-your-onedrive-files-in-personal-vault-6540ef37-e9bf-4121-a773-56f98dce78c4) with a strong authentication method or a second step of identity verification, such as fingerprint, face, PIN, or a code sent via email or SMS.
-
----
-
-:::image type="icon" source="images/go-to-section.svg" border="false"::: **Go to section:**
-
-:::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
