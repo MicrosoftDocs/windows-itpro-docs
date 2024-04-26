@@ -1,49 +1,47 @@
 items:
-- name: "📘 Windows 11 Security Book: Powerful security by design"
+- name: 📘Windows 11 Security Book
+  href: index.md
+- name: 1. Hardware security
   items:
-  - name: Introduction
-    href: index.md
-  - name: 1. Hardware security
-    items:
-    - name: Overview
-      href: hardware-security.md
-    - name: Hardware root-of-trust
-      href: hardware-security-hardware-root-of-trust.md
-    - name: Silicon assisted security
-      href: hardware-security-silicon-assisted-security.md
-  - name: 2. Operating system security
-    items:
-    - name: Overview
-      href: operating-system-security.md
-    - name: System security
-      href: operating-system-security-system-security.md
-    - name: Encryption and data protection
-      href: operating-system-security-encryption-and-data-protection.md
-    - name: Network security
-      href: operating-system-security-network-security.md
-    - name: Virus and threat protection
-      href: operating-system-security-virus-and-threat-protection.md
-  - name: 3. Application security
-    items:
-    - name: Overview
-      href: application-security.md
-    - name: Application and driver control
-      href: application-security-application-and-driver-control.md
-    - name: Application isolation
-      href: application-security-application-isolation.md
-  - name: 4. Identity protection
-    items:
-    - name: Overview
-      href: identity-protection.md
-    - name: Passwordless sign-in
-      href: identity-protection-passwordless-sign-in.md
-    - name: Advanced credential protection
-      href: identity-protection-advanced-credential-protection.md
-  - name: 5. Privacy
-    href: privacy.md
-  - name: 6. Cloud services
-    href: cloud-services.md
-  - name: 7. Security foundation
-    href: security-foundation.md
-  - name: Conclusion
-    href: conclusion.md
+  - name: Overview
+    href: hardware-security.md
+  - name: Hardware root-of-trust
+    href: hardware-security-hardware-root-of-trust.md
+  - name: Silicon assisted security
+    href: hardware-security-silicon-assisted-security.md
+- name: 2. Operating system security
+  items:
+  - name: Overview
+    href: operating-system-security.md
+  - name: System security
+    href: operating-system-security-system-security.md
+  - name: Encryption and data protection
+    href: operating-system-security-encryption-and-data-protection.md
+  - name: Network security
+    href: operating-system-security-network-security.md
+  - name: Virus and threat protection
+    href: operating-system-security-virus-and-threat-protection.md
+- name: 3. Application security
+  items:
+  - name: Overview
+    href: application-security.md
+  - name: Application and driver control
+    href: application-security-application-and-driver-control.md
+  - name: Application isolation
+    href: application-security-application-isolation.md
+- name: 4. Identity protection
+  items:
+  - name: Overview
+    href: identity-protection.md
+  - name: Passwordless sign-in
+    href: identity-protection-passwordless-sign-in.md
+  - name: Advanced credential protection
+    href: identity-protection-advanced-credential-protection.md
+- name: 5. Privacy
+  href: privacy.md
+- name: 6. Cloud services
+  href: cloud-services.md
+- name: 7. Security foundation
+  href: security-foundation.md
+- name: Conclusion
+  href: conclusion.md
