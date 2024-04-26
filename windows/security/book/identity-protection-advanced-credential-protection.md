@@ -7,6 +7,8 @@ ms.date: 04/09/2024
 
 # Advanced credential protection
 
+:::image type="content" source="images/identity-protection.png" alt-text="Diagram of containing a list of security features." lightbox="images/identity-protection.png" border="false":::
+
 In addition to adopting passwordless sign-in, organizations can strengthen security for user and domain credentials in Windows 11 with Credential Guard and Remote Credential Guard. **Enhanced phishing protection with Microsoft Defender SmartScreen**
 
 As malware protection and other safeguards evolve, cybercriminals look for new ways to circumvent security measures. Phishing has emerged as a leading threat, with apps and websites designed to steal credentials by tricking people into voluntarily entering passwords. As a result, many organizations are transitioning to the ease and security of passwordless sign-in with Windows Hello or Windows Hello for Business.

@@ -7,6 +7,8 @@ ms.date: 04/09/2024
 
 # Passwordless sign-in
 
+:::image type="content" source="images/identity-protection.png" alt-text="Diagram of containing a list of security features." lightbox="images/identity-protection.png" border="false":::
+
 Passwords are inconvenient to use and prime targets for cybercriminals—and they've been an important part of digital security for years. That changes with the passwordless protection available with Windows 11. After a secure authorization process, credentials are protected behind layers of hardware and software security, giving users secure, passwordless access to their apps and cloud services.
 
 ## Windows Hello
