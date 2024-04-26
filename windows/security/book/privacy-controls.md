@@ -7,7 +7,7 @@ ms.date: 04/09/2024
 
 # Privacy controls
 
-:::image type="content" source="images/privacy.png" alt-text="Diagram of containing a list of security features." lightbox="images/privacy.png" border="false"::
+:::image type="content" source="images/privacy.png" alt-text="Diagram of containing a list of security features." lightbox="images/privacy.png" border="false":::
 
 ## Privacy dashboard and report
 
