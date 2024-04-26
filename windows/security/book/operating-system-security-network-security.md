@@ -19,7 +19,7 @@ In enterprise environments, network protection works best with Microsoft Defende
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [How to protect your network](/security/defender-endpoint/network-protection)
+- [How to protect your network](/defender-endpoint/network-protection)
 
 ## Transport layer security (TLS)
 
