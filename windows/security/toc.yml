@@ -19,5 +19,3 @@ items:
   href: cloud-security/toc.yml
 - name: Windows Privacy 🔗
   href: /windows/privacy
-- name: Developer resources
-  href: dev-resources.md

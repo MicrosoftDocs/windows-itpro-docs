@@ -1,0 +1,21 @@
+items:
+- name: "📙 Windows 11 Security Book - option 2"
+  items:
+  - name: Introduction
+    href: index.md
+  - name: 1. Hardware security
+    href: hardware-security.md
+  - name: 2. Operating system security
+    href: operating-system-security.md
+  - name: 3. Application security
+    href: application-security.md
+  - name: 4. Identity protection
+    href: identity-protection.md
+  - name: 5. Privacy
+    href: privacy.md
+  - name: 6. Cloud services
+    href: cloud-services.md
+  - name: 7. Security foundation
+    href: security-foundation.md
+  - name: Conclusion
+    href: conclusion.md
