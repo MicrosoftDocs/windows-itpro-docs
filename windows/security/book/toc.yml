@@ -52,6 +52,14 @@ items:
   - name: Protect your personal information
     href: cloud-services-protect-your-personal-information.md
 - name: 7. Security foundation
-  href: security-foundation.md
+  items:
+  - name: Overview
+    href: security-foundation.md
+  - name: Offensive research
+    href: security-foundation-offensive-research.md
+  - name: Certification
+    href: security-foundation-certification.md
+  - name: Secure supply chain
+    href: security-foundation-secure-supply-chain.md
 - name: Conclusion
   href: conclusion.md

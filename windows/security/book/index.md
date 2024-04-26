@@ -3,7 +3,6 @@ title: Windows security book introduction
 description: Windows security book introduction
 ms.topic: overview
 ms.date: 04/09/2024
-ROBOTS: NOINDEX
 ---
 
 # Windows 11 Security Book

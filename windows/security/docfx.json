@@ -242,6 +242,9 @@
         "operating-system-security/data-protection/bitlocker/*.md": "tier1",
         "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
         "threat-protection/auditing/*.md": "tier3"
+      },
+      "ROBOTS": {
+        "book/*.md": "NOINDEX"
       }
     },
     "template": [],
