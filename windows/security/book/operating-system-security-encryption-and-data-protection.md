@@ -29,7 +29,7 @@ BitLocker To Go refers to BitLocker Drive Encryption on removable data drives. B
 
 ## Device Encryption
 
-Device Encryption is consumer-level device encryption that cannot be managed. Device Encryption is turned on by default for devices with the right hardware components (for example, TPM 2.0, UEFI Secure Boot, Hardware Security Test Interface, and Modern Standby). However, for a commercial scenario, it is possible for commercial customers to disable Device Encryption in favor of BitLocker Drive Encryption. BitLocker Drive Encryption is manageable through MDM.
+Device Encryption is consumer-level device encryption that can't be managed. Device Encryption is turned on by default for devices with the right hardware components (for example, TPM 2.0, UEFI Secure Boot, Hardware Security Test Interface, and Modern Standby). However, for a commercial scenario, it's possible for commercial customers to disable Device Encryption in favor of BitLocker Drive Encryption. BitLocker Drive Encryption is manageable through MDM.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -45,9 +45,9 @@ Encrypted hard drives enable:
 
 - Smooth performance: Encryption hardware integrated into the drive controller allows the drive to operate at full data rate without performance degradation
 - Strong security based in hardware: Encryption is always "on," and the keys for encryption never leave the hard drive. The drive authenticates the user independently from the operating system before it unlocks
-- Ease of use: Encryption is transparent to the user, and the user does not need to enable it. Encrypted hard drives are easily erased using an onboard encryption key. There is no need
+- Ease of use: Encryption is transparent to the user, and the user doesn't need to enable it. Encrypted hard drives are easily erased using an onboard encryption key. There's no need
 to re-encrypt data on the drive
-- Lower cost of ownership: There is no need for new infrastructure to manage encryption keys since BitLocker leverages your existing infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process
+- Lower cost of ownership: There's no need for new infrastructure to manage encryption keys since BitLocker leverages your existing infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
@@ -55,9 +55,9 @@ to re-encrypt data on the drive
 
 ## Personal data encryption
 
-Personal Data Encryption refers to a new user authenticated encryption mechanism used to protect user content. Windows Hello for Business is the modern user authentication mechanism which is used with PDE. Windows Hello for Business, either with PIN or biometrics (face or fingerprint), is used to protect the container which houses the encryption keys used by Personal Data Encryption (PDE). When the user logs in (either after bootup or unlocking after a lock screen), the container gets authenticated to release the keys in the container to decrypt user content.
+Personal Data Encryption refers to a new user authenticated encryption mechanism used to protect user content. Windows Hello for Business is the modern user authentication mechanism, which is used with PDE. Windows Hello for Business, either with PIN or biometrics (face or fingerprint), is used to protect the container, which houses the encryption keys used by Personal Data Encryption (PDE). When the user logs in (either after bootup or unlocking after a lock screen), the container gets authenticated to release the keys in the container to decrypt user content.
 
-With the first release of PDE (Windows 11 22H2), the PDE API was available, which when adopted by applications can protect data under the purview of the applications. With the platform release of the next Windows version, PDE for Folders will be released, this feature would require no updates to any applications and protects the contents in the Known Windows Folders from bootup till first login. This reduces the barrier for entry for customers and they will be able to get PDE security as part of the OS.
+With the first release of PDE (Windows 11 22H2), the PDE API was available, which when adopted by applications can protect data under the purview of the applications. With the platform release of the next Windows version, PDE for Folders will be released, this feature would require no updates to any applications and protects the contents in the Known Windows Folders from bootup till first login. This reduces the barrier for entry for customers and they'll be able to get PDE security as part of the OS.
 
 PDE requires Microsoft Entra ID.
 

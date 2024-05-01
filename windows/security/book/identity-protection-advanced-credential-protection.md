@@ -23,7 +23,7 @@ However, people who are still using passwords can also benefit from powerful cre
 
 ## Local Security Authority (LSA) protection
 
-Windows has several critical processes to verify a user's identity. Verification processes include Local Security Authority (LSA), which is responsible for authenticating users and verifying Windows sign-ins. LSA handles tokens and credentials that are used for single signon to a Microsoft account and Azure services.
+Windows has several critical processes to verify a user's identity. Verification processes include Local Security Authority (LSA), which is responsible for authenticating users and verifying Windows sign-ins. LSA handles tokens and credentials that are used for single sign-on to a Microsoft account and Azure services.
 
 To help keep these credentials safe, additional LSA protection will be enabled by default on new, enterprise-joined Windows 11 devices. By loading only trusted, signed code, LSA provides significant protection against credential theft. LSA protection also now supports configuration using Group Policy and modern device management.
 
@@ -33,7 +33,7 @@ To help keep these credentials safe, additional LSA protection will be enabled b
 
 ## Credential Guard
 
-Enabled by default in Windows 11 Enterprise, Credential Guard uses hardware-backed, virtualization-based security (VBS) to protect against credential theft. With Credential Guard, the Local Security Authority (LSA) stores and protects Active Directory (AD) secrets in an isolated environment that is not accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
+Enabled by default in Windows 11 Enterprise, Credential Guard uses hardware-backed, virtualization-based security (VBS) to protect against credential theft. With Credential Guard, the Local Security Authority (LSA) stores and protects Active Directory (AD) secrets in an isolated environment that isn't accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 
 By protecting the LSA process with virtualization-based security, Credential Guard shields systems from credential theft attack techniques like Pass-the-Hash or Pass-the-Ticket. It also helps prevent malware from accessing system secrets even if the process is running with admin privileges.
 
@@ -45,13 +45,13 @@ By protecting the LSA process with virtualization-based security, Credential Gua
 
 Remote Credential Guard helps organizations protect credentials over a Remote Desktop connection by redirecting the Kerberos requests back to the device that is requesting the connection. It also provides single sign-on experiences for Remote Desktop sessions.
 
-Administrator credentials are highly privileged and must be protected. When Remote Credential Guard is configured and enabled to connect during Remote Desktop sessions, the credential and credential derivatives are never passed over the network to the target device. If the target device is compromised, the credentials are not exposed.
+Administrator credentials are highly privileged and must be protected. When Remote Credential Guard is configured and enabled to connect during Remote Desktop sessions, the credential and credential derivatives are never passed over the network to the target device. If the target device is compromised, the credentials aren't exposed.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Remote Credential Guard - Windows Security | Microsoft Learn](/windows/security/identity-protection/remote-credential-guard?tabs=intune)
 
-## Token protectio
+## Token protection
 
 Token protection attempts to reduce attacks using Microsoft Entra ID token theft. Token protection makes tokens usable only from their intended device by cryptographically binding a token with a device secret. When using the token, both the token and proof of the device secret must be provided. Conditional Access policies<sup>[\[9\]](conclusion.md#footnote9)</sup> can be configured to require token protection when using sign-in tokens for specific services.
 
