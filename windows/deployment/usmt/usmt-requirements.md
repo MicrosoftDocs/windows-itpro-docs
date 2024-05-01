@@ -6,7 +6,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/18/2024
+ms.date: 04/30/2024
 ms.topic: article
 ms.subservice: itpro-deploy
 appliesto:
@@ -24,10 +24,10 @@ The following table lists the operating systems supported in USMT.
 
 | Operating<br>Systems | ScanState<br>(Source<br>Device)| LoadState<br>(Destination<br>Device)|
 |--- |--- |--- |
-|Windows 7|✔️|❌|
-|Windows 8|✔️|❌|
-|Windows 10|✔️|✔️|
-|Windows 11|✔️|✔️|
+|Windows 7|✅|❌|
+|Windows 8|✅|❌|
+|Windows 10|✅|✅|
+|Windows 11|✅|✅|
 
 > [!NOTE]
 >
