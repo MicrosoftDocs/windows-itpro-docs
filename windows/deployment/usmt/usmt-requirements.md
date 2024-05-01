@@ -79,7 +79,7 @@ To open an elevated command prompt:
 
 ### Specify the `/c` option and \<ErrorControl\> settings in the `Config.xml` file
 
-USMT fails if it can't migrate a file or setting, unless the `/c` option is specified. When the `/c` option is specified, USMT logs an error each time it encounters a file that is in use that didn't migrate, but the migration isn't be interrupted. In USMT, which types of errors should allow the migration to continue and which should cause the migration to fail can be specified in the `Config.xml` file. For more information about error reporting, and the **\<ErrorControl\>** element, see [Config.xml file](usmt-configxml-file.md#errorcontrol), [Log files](usmt-log-files.md), and [XML elements library](usmt-xml-elements-library.md).
+USMT fails if it can't migrate a file or setting, unless the `/c` option is specified. When the `/c` option is specified, USMT logs an error each time it encounters a file that is in use that didn't migrate, but the migration isn't to be interrupted. In USMT, which types of errors should allow the migration to continue and which should cause the migration to fail can be specified in the `Config.xml` file. For more information about error reporting, and the **\<ErrorControl\>** element, see [Config.xml file](usmt-configxml-file.md#errorcontrol), [Log files](usmt-log-files.md), and [XML elements library](usmt-xml-elements-library.md).
 
 ## LoadState
 
