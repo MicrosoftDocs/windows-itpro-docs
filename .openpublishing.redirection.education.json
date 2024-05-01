@@ -229,6 +229,11 @@
       "source_path": "education/windows/windows-editions-for-education-customers.md",
       "redirect_url": "/education/windows",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/configure-windows-for-education.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
     }
   ]
 }
