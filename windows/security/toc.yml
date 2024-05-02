@@ -1,6 +1,8 @@
 items:
 - name: Introduction to Windows security
   href: introduction.md
+- name: Windows 11 security book 🔗
+  href: book/index.md
 - name: Security features licensing and edition requirements
   href: licensing-and-edition-requirements.md
 - name: Security foundations
