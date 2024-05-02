@@ -66,7 +66,7 @@ In Secured-core PCs, [System Guard Secure Launch](/windows/security/hardware-sec
 
 System Management Mode (SMM) isolation is an execution mode in x86-based processors that runs at a higher effective privilege than the hypervisor. SMM complements the protections provided by DRTM by helping to reduce the attack surface. Relying on capabilities provided by silicon providers like Intel and AMD, SMM isolation enforces policies that implement restrictions such as preventing SMM code from accessing OS memory. The SMM isolation policy is included as part of the DRTM measurements that can be sent to a verifier like Microsoft Azure Remote Attestation.
 
-:::image type="content" source="images/architecture.png" alt-text="aas" lightbox="images/architecture.png" border="false":::
+:::image type="content" source="images/secure-launch.png" alt-text="Diagram of secure launch components." lightbox="images/secure-launch.png" border="false":::
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 

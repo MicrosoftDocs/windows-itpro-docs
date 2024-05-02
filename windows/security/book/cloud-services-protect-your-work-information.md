@@ -164,7 +164,11 @@ Available as part of Windows Enterprise E3 and E5, Windows Autopatch automates u
 
 From a technical standpoint, Windows Autopatch configures the policies and deployment service of Windows Update for Business to deliver updates, all within Microsoft Intune.<sup>[\[9\]](conclusion.md#footnote9)</sup> The results for IT admins: up-to-date endpoints and detailed reports to demonstrate compliance or help identify issues. The goal is to help IT teams be more secure and update more efficiently with less effort.
 
-There's a lot more to learn about Windows Autopatch: this [Forrester study commissioned by](https://aka.ms/AutopatchProductivity) Microsoft analyzes the impact of Windows Autopatch on real customers, [regular IT pro blogs](https://aka.ms/MoreAboutAutopatch) provide updates and background on Autopatch features and the future of the service, and the [community](https://aka.ms/AutopatchCommunity) allows IT professionals to get answers to questions from their peers and the Autopatch team.
+There's a lot more to learn about Windows Autopatch:
+
+- This [Forrester study](https://aka.ms/AutopatchProductivity) commissioned by Microsoft, analyzes the impact of Windows Autopatch on real customers
+- [IT pro blogs](https://aka.ms/MoreAboutAutopatch) provide updates and background on Autopatch features and the future of the service
+- The [Windows Autopatch community](https://aka.ms/AutopatchCommunity) allows IT professionals to get answers to questions from their peers and the Autopatch team
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
