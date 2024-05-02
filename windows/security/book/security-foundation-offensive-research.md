@@ -34,7 +34,7 @@ As part of our secure development process, the Microsoft Windows Insider Preview
 
 The goal of the Windows Insider Preview bounty program is to uncover significant vulnerabilities that have a direct and demonstrable impact on the security of customers using the latest version of Windows.
 
-Through this collaboration with researchers across the globe, our teams identify critical vulnerabilities that were not previously found during development and quicky fix the issues before releasing our final Windows.
+Through this collaboration with researchers across the globe, our teams identify critical vulnerabilities that were not previously found during development and quick fix the issues before releasing our final Windows.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
