@@ -9,11 +9,11 @@ ms.date: 04/09/2024
 
 :::image type="content" source="images/operating-system.png" alt-text="Diagram of containing a list of security features." lightbox="images/operating-system.png" border="false":::
 
-Today's threat landscape is more complex than ever. This new world requires a new approach vto threat prevention, detection, and response. Microsoft Defender Antivirus, along with many other features that are built into Windows 11, is at the frontlines, protecting customers against current and emerging threats.
+Today's threat landscape is more complex than ever. This new world requires a new approach to threat prevention, detection, and response. Microsoft Defender Antivirus, along with many other features that are built into Windows 11, is at the frontlines, protecting customers against current and emerging threats.
 
 ## Microsoft Defender SmartScreen
 
-Microsoft Defender SmartScreen protects against phishing, malware websites and napplications, and the downloading of potentially malicious files.
+Microsoft Defender SmartScreen protects against phishing, malware websites and applications, and the downloading of potentially malicious files.
 
 SmartScreen determines whether a site is potentially malicious by:
 
@@ -55,7 +55,7 @@ Attack surface reduction rules help prevent software behaviors that are often ab
 
 For example, an attacker might try to run an unsigned script from a USB drive or have a macro in an Office document make calls directly to the Win32 API. Attack surface reduction rules can constrain these kinds of risky behaviors and improve the defensive posture of the device. For comprehensive protection, follow steps for enabling hardware-based isolation
 
-for Microsoft Edge and reducing the attack surface across applications, folders, device,
+For Microsoft Edge and reducing the attack surface across applications, folders, device,
 network, and firewall.
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
@@ -94,7 +94,7 @@ Windows 11 provides configuration options for exploit protection. You can preven
 
 ## Controlled folder access
 
-You can protect your valuable information in specific folders by managing app access tob them. Only trusted apps can access protected folders, which are specified when controlled folder access is configured. Typically, commonly used folders, such as those used for documents, pictures, and downloads, are included in the list of controlled folders.
+You can protect your valuable information in specific folders by managing app access to them. Only trusted apps can access protected folders, which are specified when controlled folder access is configured. Typically, commonly used folders, such as those used for documents, pictures, and downloads, are included in the list of controlled folders.
 
 Controlled folder access works with a list of trusted apps. Apps that are included in the list of trusted software work as expected. Apps that are not included in the trusted list are prevented from making any changes to files inside protected folders.
 
