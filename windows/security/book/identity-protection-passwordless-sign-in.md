@@ -135,7 +135,7 @@ The Microsoft Authenticator app, which runs on iOS and Android devices, helps ke
 
 Windows 11 users secure and productive. Microsoft Authenticator can be used to bootstrap Windows Hello for Business, which removes the need for a password to get started on Windows 11.
 
-Microsoft Authenticator also enables easy, secure sign-in for all online accounts using multifactor authentication, passwordless phone sign-in, or password autofill. The accounts in the Authenticator app are secured with a public/private key pair in hardware-backed storage such as the Keychain in iOS and Keystore on Android. IT admins can leverage different tools to nudge their users to setup the Authenticator app, provide them with extra context about where the authentication is coming from, and ensure that they are actively using it.
+Microsoft Authenticator also enables easy, secure sign-in for all online accounts using multifactor authentication, passwordless phone sign-in, or password autofill. The accounts in the Authenticator app are secured with a public/private key pair in hardware-backed storage such as the Keychain in iOS and Keystore on Android. IT admins can leverage different tools to nudge their users to set up the Authenticator app, provide them with extra context about where the authentication is coming from, and ensure that they are actively using it.
 
 Individual users can back up their credentials to the cloud by enabling the encrypted backup option in settings. They can also see their sign-in history and security settings for Microsoft personal, work, or school accounts.
 
