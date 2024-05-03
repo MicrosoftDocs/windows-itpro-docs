@@ -33,14 +33,14 @@ Windows Hello for Business extends Windows Hello to work with an organization's 
 
 Windows 11 devices with Windows Hello for Business can protect user identities by removing the need to use passwords from day one.
 
-IT can now set a policy for Microsoft Entra ID<sup> joined machines so users no longer see the option to enter a password when accessing company resources.12 Once the policy is set, passwords are removed from the Windows user experience, both for device unlock as well as in-session authentication scenarios via CredUI. However, passwords are not eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can leverage passwordless recovery mechanisms such as Windows Hello for Business PIN reset or Web Sign-in.
+IT can now set a policy for Microsoft Entra ID joined machines so users no longer see the option to enter a password when accessing company resources.12 Once the policy is set, passwords are removed from the Windows user experience, both for device unlock as well as in-session authentication scenarios via CredUI. However, passwords are not eliminated from the identity directory yet. Users are expected to navigate through their core authentication scenarios using strong, phish-resistant, possession-based credentials like Windows Hello for Business and FIDO2 security keys. If necessary, users can leverage passwordless recovery mechanisms such as Windows Hello for Business PIN reset or Web Sign-in.
 
 During a device's lifecycle, a password may only need to be used once during the provisioning process. After that, people can use a PIN, face, or fingerprint to unlock credentials and sign into the device.
 
 Provisioning methods include:
 
 - Temporary Access Pass (TAP), a time-limited passcode with strong authentication requirements issued through Microsoft Entra ID
-- Existing multifactor authentication with Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup>, including authentication methods like the Microsoft Authenticator app
+- Existing multifactor authentication with Microsoft Entra ID, including authentication methods like the Microsoft Authenticator app
 
 Windows Hello for Business replaces the username and password by combining a security key or certificate with a PIN or biometric data and then mapping the credentials to a user account during setup. There are multiple ways to deploy Windows Hello for Business depending on an organization's needs. Organizations that rely on certificates typically use on-premises public key infrastructure (PKI) to support authentication through Certificate Trust. Organizations using key trust deployment require root-of-trust provided by certificates on domain controllers.
 
@@ -135,7 +135,7 @@ The Microsoft Authenticator app, which runs on iOS and Android devices, helps ke
 
 Windows 11 users secure and productive. Microsoft Authenticator can be used to bootstrap Windows Hello for Business, which removes the need for a password to get started on Windows 11.
 
-Microsoft Authenticator also enables easy, secure sign-in for all online accounts using multifactor authentication, passwordless phone sign-in, or password autofill. The accounts in the Authenticator app are secured with a public/private key pair in hardware-backed storage such as the Keychain in iOS and Keystore on Android. IT admins can leverage different tools to nudge their users to setup the Authenticator app, provide them with extra context about where the authentication is coming from, and ensure that they are actively using it.
+Microsoft Authenticator also enables easy, secure sign-in for all online accounts using multifactor authentication, passwordless phone sign-in, or password autofill. The accounts in the Authenticator app are secured with a public/private key pair in hardware-backed storage such as the Keychain in iOS and Keystore on Android. IT admins can leverage different tools to nudge their users to set up the Authenticator app, provide them with extra context about where the authentication is coming from, and ensure that they are actively using it.
 
 Individual users can back up their credentials to the cloud by enabling the encrypted backup option in settings. They can also see their sign-in history and security settings for Microsoft personal, work, or school accounts.
 
