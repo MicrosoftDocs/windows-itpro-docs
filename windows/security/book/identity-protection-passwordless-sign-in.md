@@ -40,7 +40,7 @@ During a device's lifecycle, a password may only need to be used once during the
 Provisioning methods include:
 
 - Temporary Access Pass (TAP), a time-limited passcode with strong authentication requirements issued through Microsoft Entra ID
-- Existing multifactor authentication with Microsoft Entra ID<sup>[\[9\]](conclusion.md#footnote9)</sup>, including authentication methods like the Microsoft Authenticator app
+- Existing multifactor authentication with Microsoft Entra ID, including authentication methods like the Microsoft Authenticator app
 
 Windows Hello for Business replaces the username and password by combining a security key or certificate with a PIN or biometric data and then mapping the credentials to a user account during setup. There are multiple ways to deploy Windows Hello for Business depending on an organization's needs. Organizations that rely on certificates typically use on-premises public key infrastructure (PKI) to support authentication through Certificate Trust. Organizations using key trust deployment require root-of-trust provided by certificates on domain controllers.
 
