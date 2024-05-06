@@ -29,6 +29,10 @@ The following list provides examples of common events that cause a device to ent
 - Modifying the Platform Configuration Registers (PCRs) used by the TPM validation profile
 - Moving a BitLocker-protected drive into a new computer
 - On devices with TPM 1.2, changing the BIOS or firmware boot device order
+- Exceeding the maximum allowed number of failed sign-in attempts
+
+    > [!NOTE]
+    > To take advantage of this functionality, you must configure the policy setting **Interactive logon: Machine account lockout threshold** located in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options**. Alternatively, use the [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync) **MaxFailedPasswordAttempts** policy setting, or the [DeviceLock Configuration Service Provider (CSP)](/windows/client-management/mdm/policy-csp-devicelock#accountlockoutpolicy).
 
 As part of the [BitLocker recovery process](recovery-process.md), it's recommended to determine what caused a device to enter in recovery mode. Root cause analysis might help to prevent the problem from occurring again in the future. For instance, if you determine that an attacker modified a device by obtaining physical access, you can implement new security policies for tracking who has physical presence.
 
@@ -39,6 +43,21 @@ For planned scenarios, such as a known hardware or firmware upgrades, initiating
 
 > [!TIP]
 > Recovery is described within the context of unplanned or undesired behavior. However, recovery can also be caused as an intended production scenario, for example in order to manage access control. When devices are redeployed to other departments or employees in the organization, BitLocker can be forced into recovery before the device is delivered to a new user.
+
+## Windows RE and BitLocker recovery
+
+Windows Recovery Environment (Windows RE) can be used to recover access to a drive protected by BitLocker. If a device is unable to boot after two failures, *Startup Repair* starts automatically.
+
+When Startup Repair is launched automatically due to boot failures, it only executes operating system and driver file repairs, provided that the boot logs or any available crash dump point to a specific corrupted file. On devices that support specific TPM measurements for PCR[7], the TPM validates that Windows RE is a trusted operating environment and unlocks any BitLocker-protected drives if Windows RE has not been modified. If the Windows RE environment has been modified, for example the TPM is disabled, the drives stay locked until the BitLocker recovery key is provided. If Startup Repair can't run automatically, and instead Windows RE is manually started from a repair disk, then the BitLocker recovery key must be provided to unlock the BitLocker-protected drives.
+
+Windows RE will also ask for your BitLocker recovery key when you start a *Remove everything* reset from Windows RE on a device that uses the **TPM + PIN** or **Password for OS drive** protector. If you start BitLocker recovery on a keyboardless device with TPM-only protection, Windows RE, not the boot manager, will ask for the BitLocker recovery key. After you enter the key, you can access Windows RE troubleshooting tools or start Windows normally.
+
+The BitLocker recovery screen that's shown by Windows RE has the accessibility tools like narrator and on-screen keyboard to help you enter your BitLocker recovery key:
+
+- To activate the narrator during BitLocker recovery in Windows RE, press <kbd>Windows</kbd> + <kbd>CTRL</kbd> + <kbd>Enter</kbd>
+- To activate the on-screen keyboard, tap on a text input control
+
+If the BitLocker recovery key is requested by the Windows boot manager, those tools might not be available.
 
 ## BitLocker recovery options
 
