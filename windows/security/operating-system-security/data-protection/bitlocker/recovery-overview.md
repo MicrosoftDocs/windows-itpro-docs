@@ -54,8 +54,10 @@ Windows RE will also ask for your BitLocker recovery key when you start a *Remov
 
 The BitLocker recovery screen that's shown by Windows RE has the accessibility tools like narrator and on-screen keyboard to help you enter your BitLocker recovery key:
 
-- To activate the narrator during BitLocker recovery in Windows RE, press <kbd>Windows</kbd> + <kbd>CTRL</kbd> + <kbd>Enter</kbd>
+- To activate the narrator during BitLocker recovery in Windows RE, press <kbd>WIN</kbd> + <kbd>CTRL</kbd> + <kbd>Enter</kbd>
 - To activate the on-screen keyboard, tap on a text input control
+
+:::image type="content" source="images/bl-narrator.png" alt-text="Screenshot of Windows RE and narrator.":::
 
 If the BitLocker recovery key is requested by the Windows boot manager, those tools might not be available.
 
