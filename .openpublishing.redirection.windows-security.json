@@ -9169,6 +9169,11 @@
       "source_path": "windows/security/threat-protection/security-policy-settings/user-rights-assignment.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/user-rights-assignment",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/cloud-security/index.md",
+      "redirect_url": "/windows/security/cloud-services",
+      "redirect_document_id": false
     }
   ]
 }

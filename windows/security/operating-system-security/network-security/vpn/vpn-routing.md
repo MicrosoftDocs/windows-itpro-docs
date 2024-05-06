@@ -1,5 +1,5 @@
 ---
-ms.date: 08/03/2023
+ms.date: 05/06/2024
 title: VPN routing decisions
 description: Learn about approaches that either send all data through a VPN or only selected data. The one you choose impacts capacity planning and security expectations.
 ms.topic: concept-article
@@ -23,7 +23,7 @@ For each route item in the list, you can configure the following options:
 
 With Windows VPN, you can specify exclusion routes that shouldn't go over the physical interface.
 
-Routes can also be added at connect time through the server for UWP VPN apps.  
+Routes can also be added at connect time through the server for UWP VPN apps.
 
 ## Force tunnel configuration
 

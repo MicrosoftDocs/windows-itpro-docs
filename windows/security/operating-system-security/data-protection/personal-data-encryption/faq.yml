@@ -4,7 +4,7 @@ metadata:
   title: Frequently asked questions for Personal Data Encryption (PDE)
   description: Answers to common questions regarding Personal Data Encryption (PDE).
   ms.topic: faq
-  ms.date: 08/11/2023
+  ms.date: 05/06/2024
 
 title: Frequently asked questions for Personal Data Encryption (PDE)
 summary: |
@@ -21,7 +21,7 @@ sections:
           [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager) are used to select which files and content are protected using PDE.
       - question: Can users manually encrypt and decrypt files with PDE?
         answer: |
-          Currently users can decrypt files manually but they can't encrypt files manually. For information on how a user can manually decrypt a file, see the section [Decrypt PDE-encrypted content](configure.md#decrypt-pde-encrypted-content). 
+          Currently users can decrypt files manually but they can't encrypt files manually. For information on how a user can manually decrypt a file, see the section [Decrypt PDE-encrypted content](configure.md#decrypt-pde-encrypted-content).
       - question: Can PDE protected content be accessed after signing on via a Remote Desktop connection (RDP)?
         answer: |
           No. Accessing PDE protected content over RDP isn't currently supported.
