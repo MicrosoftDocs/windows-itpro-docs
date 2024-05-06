@@ -32,7 +32,7 @@ The following list provides examples of common events that cause a device to ent
 - Exceeding the maximum allowed number of failed sign-in attempts
 
     > [!NOTE]
-    > To take advantage of this functionality, you must configure the policy setting **Interactive logon: Machine account lockout threshold** located in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options**. Alternatively, use the [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync) **MaxFailedPasswordAttempts** policy setting, or the [DeviceLock Configuration Service Provider (CSP)](/windows/client-management/mdm/policy-csp-devicelock#accountlockoutpolicy)).
+    > To take advantage of this functionality, you must configure the policy setting **Interactive logon: Machine account lockout threshold** located in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options**. Alternatively, use the [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync) **MaxFailedPasswordAttempts** policy setting, or the [DeviceLock Configuration Service Provider (CSP)](/windows/client-management/mdm/policy-csp-devicelock#accountlockoutpolicy).
 
 As part of the [BitLocker recovery process](recovery-process.md), it's recommended to determine what caused a device to enter in recovery mode. Root cause analysis might help to prevent the problem from occurring again in the future. For instance, if you determine that an attacker modified a device by obtaining physical access, you can implement new security policies for tracking who has physical presence.
 
