@@ -22,12 +22,14 @@ When enabled, Credential Guard provides the following benefits:
 
 ## Default Enablement
 
-Starting in **Windows 11, 22H2** and **Windows Server 2025**, VBS and Credential Guard are enabled by default on devices that meet the requirements below. This means that going forward, domain credentials will automatically be protected by Credential Guard on most relevant Windows devices.
+Starting in **Windows 11, 22H2** and **Windows Server 2025 (preview)**, VBS and Credential Guard are enabled by default on devices that meet the requirements below. This means that going forward, domain credentials will automatically be protected by Credential Guard on most relevant Windows devices.
 
-The default enablement is **without UEFI Lock**, which allows administrators to disable Credential Guard remotely, if needed.
+The default enablement is **without UEFI Lock**, thus allowing administrators to disable Credential Guard remotely if needed.
+
+If the preconditions for default enablement of Credential Guard listed below are met, and neither Credential Guard nor VBS have been explicitly disabled beforehand, the default enablement of Credential Guard will also automatically enable [VBS](#system-requirements).
 
 > [!NOTE]
-> If Credential Guard or VBS is explicitly [disabled](configure.md#disable-credential-guard) *before* a device is updated to Windows 11, version 22H2 / Windows Server 2025 or later, default enablement does not overwrite the existing settings. That device will continue to have Credential Guard disabled even after updating to a version of Windows that enables Credential Guard by default.
+> If Credential Guard or VBS is explicitly [disabled](configure.md#disable-credential-guard) *before* a device is updated to Windows 11, version 22H2 / Windows Server 2025 (preview) or later, default enablement does not overwrite the existing settings. That device will continue to have Credential Guard disabled even after updating to a version of Windows that enables Credential Guard by default.
 
 ### Default Enablement on Windows client
 
@@ -35,11 +37,11 @@ Devices running Windows 11, 22H2 or later will have Credential Guard enabled by 
 
 - Meet the [license requirements](#windows-edition-and-licensing-requirements)
 - Meet the [hardware and sofware requirements](#system-requirements)
-- Has not been [explicitly configured to disable Credential Guard](configure.md#default-enablement)
+- Have not been [explicitly configured to disable Credential Guard](configure.md#default-enablement)
 
 ### Default Enablement on Windows Server
 
-Devices running Windows Server 2025 or later will have Credential Guard enabled by default if they meet the above requirements for client and additionally:
+Devices running Windows Server 2025 (preview) or later will have Credential Guard enabled by default if they meet the above requirements for client and additionally:
 
 - Are joined to a domain
 - Are not a Domain Controller
@@ -54,16 +56,16 @@ Devices running Windows Server 2025 or later will have Credential Guard enabled 
 
 ## System requirements
 
-For Credential Guard to provide protection, the devices must meet certain hardware, firmware, and software requirements.
+For Credential Guard to provide protection, the device must meet certain hardware, firmware, and software requirements.
 
-Devices that meet more hardware and firmware qualifications than the minimum requirements, receive additional protections and are more hardened against certain threats.
+Devices that meet more hardware and firmware qualifications than the minimum requirements receive additional protections and are more hardened against certain threats.
 
 ### Hardware and software requirements
 
 Credential Guard requires the features:
 
 - Virtualization-based security (VBS)
-  >[!NOTE]
+  > [!NOTE]
   > VBS has different requirements to enable it on different hardware platforms. For more information, see [Virtualization-based Security requirements](/windows-hardware/design/device-experiences/oem-vbs)
 - [Secure Boot](../../operating-system-security/system-security/secure-the-windows-10-boot-process.md#secure-boot)
 
@@ -113,10 +115,14 @@ Applications prompt and expose credentials to risk if they require:
 - Digest authentication
 - Credential delegation
 - MS-CHAPv2
+- CredSSP
 
 Applications may cause performance issues when they attempt to hook the isolated Credential Guard process `LSAIso.exe`.
 
 Services or protocols that rely on Kerberos, such as file shares or remote desktop, continue to work and aren't affected by Credential Guard.
+
+> [!IMPORTANT]
+> Windows Server 2025 is in PREVIEW. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 ## Next steps
 
