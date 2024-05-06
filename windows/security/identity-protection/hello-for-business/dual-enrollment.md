@@ -1,11 +1,11 @@
 ---
-title: Dual Enrollment
+title: Dual enrollment
 description: Learn how to configure Windows Hello for Business dual enrollment and how to configure Active Directory to support Domain Administrator enrollment.
 ms.date: 05/06/2024
 ms.topic: how-to
 ---
 
-# Dual Enrollment
+# Dual enrollment
 
 [!INCLUDE [intro](deploy/includes/intro.md)]
 - **Deployment type:** [!INCLUDE [tooltip-deployment-onpremises](deploy/includes/tooltip-deployment-onpremises.md)], [!INCLUDE [tooltip-deployment-hybrid](deploy/includes/tooltip-deployment-hybrid.md)]
@@ -25,12 +25,12 @@ With this setting, administrative users can sign in to Windows using their nonpr
 > [!IMPORTANT]
 > You must configure a Windows computer for Windows Hello for Business dual enrollment before either user (privileged or non-privileged) provisions Windows Hello for Business. Dual enrollment is a special setting that is configured on the Windows Hello container during creation.
 
-## Configure Windows Hello for Business Dual Enrollment
+## Configure Windows Hello for Business dual enrollment
 
-Here are the steps to enable Dual Enrollment:
+Here are the steps to enable dual enrollment:
 
 - Configure Active Directory to support Domain Administrator enrollment
-- Configure Dual Enrollment using Group Policy
+- Configure dual enrollment using Group Policy
 
 ### Configure Active Directory to support Domain Administrator enrollment
 
@@ -59,7 +59,7 @@ Sign in to a domain controller or management workstation with access equivalent 
 1. Select **Run** to start the task
 1. Close LDP
 
-### Configuring Dual Enrollment using Group Policy
+### Configure dual enrollment with group policy
 
 You configure Windows to support dual enrollment using the computer configuration portion of a Group Policy object:
 
