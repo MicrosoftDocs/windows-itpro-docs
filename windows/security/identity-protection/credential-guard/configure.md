@@ -11,9 +11,9 @@ This article describes how to configure Credential Guard using Microsoft Intune,
 
 ## Default Enablement
 
-Starting in Windows 11, 22H2 and Windows Server 2025, Credential Guard is [enabled by default on devices which meet the requirements](index.md#default-enablement).
+Starting in Windows 11, 22H2 and Windows Server 2025 (preview), Credential Guard is [enabled by default on devices which meet the requirements](index.md#default-enablement).
 
-System administrators can still [enable](#enable-credential-guard) or [disable](#disable-credential-guard) Credential Guard using one of the methods described in this article. Explicitly configured values will overwrite default enablement state, typically after reboot.
+System administrators can still explicitly [enable](#enable-credential-guard) or [disable](#disable-credential-guard) Credential Guard using one of the methods described in this article. Explicitly configured values will overwrite default enablement state, typically after reboot.
 
 ### How to Prevent Default Enablement
 
@@ -393,6 +393,9 @@ If Credential Guard is enabled with UEFI Lock, the EFI variables stored in firmw
 bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
 bcdedit /set vsmlaunchtype off
 ```
+
+> [!IMPORTANT]
+> Windows Server 2025 is in PREVIEW. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 ## Next steps
 
