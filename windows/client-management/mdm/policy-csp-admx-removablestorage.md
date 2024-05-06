@@ -1263,6 +1263,19 @@ This policy setting denies write access to removable disks.
 
 <!-- RemovableDisks_DenyWrite_Access_1-End -->
 
+<!-- RemovableDisks_DenyWrite_Access_2-Begin -->
+## RemovableDisks_DenyWrite_Access_2
+
+> [!NOTE]
+> This policy setting does not exist in "Templates" > "Administrative Templates".
+> This policy setting is in "Settings catalog" > "Storage" > "RemovableDiskDenyWriteAccess".
+> Please see [RemovableDiskDenyWriteAccess](./policy-csp-storage.md).
+>
+> How to creat "settings catalog" : [Use the settings catalog to configure settings on Windows, iOS/iPadOS, and macOS devices](https://learn.microsoft.com/en-us/mem/intune/configuration/settings-catalog?tabs=sc-search-filter%2Csc-reporting#create-the-policy).
+
+<!-- RemovableDisks_DenyWrite_Access_2-End -->
+
+
 <!-- RemovableStorageClasses_DenyAll_Access_1-Begin -->
 ## RemovableStorageClasses_DenyAll_Access_1
 
