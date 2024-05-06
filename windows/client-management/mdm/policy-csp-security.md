@@ -1,7 +1,7 @@
 ---
 title: Security Policy CSP
 description: Learn more about the Security Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -71,7 +71,7 @@ Specifies whether to allow the runtime configuration agent to install provisioni
 <!-- AllowManualRootCertificateInstallation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowManualRootCertificateInstallation-Applicability-End -->
 
 <!-- AllowManualRootCertificateInstallation-OmaUri-Begin -->
@@ -172,7 +172,7 @@ Specifies whether to allow the runtime configuration agent to remove provisionin
 <!-- AntiTheftMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AntiTheftMode-Applicability-End -->
 
 <!-- AntiTheftMode-OmaUri-Begin -->

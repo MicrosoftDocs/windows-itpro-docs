@@ -155,7 +155,7 @@ Write-Output "Successfully applied Shell Launcher configuration"
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
-#### [:::image type="icon" source="../images/icons/settings.svg"::: **Settings**](#tab/settings)
+#### [:::image type="icon" source="../images/icons/settings-app.svg"::: **Settings**](#tab/settings)
 
 Here are the steps to configure a kiosk using the Settings app:
 
@@ -260,7 +260,7 @@ Write-Output "Successfully applied Assigned Access configuration"
 
 [!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
-#### [:::image type="icon" source="../images/icons/settings.svg"::: **Settings**](#tab/settings)
+#### [:::image type="icon" source="../images/icons/settings-app.svg"::: **Settings**](#tab/settings)
 
 This option isn't available using Settings.
 

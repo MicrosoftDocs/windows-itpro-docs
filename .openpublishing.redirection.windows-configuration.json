@@ -162,7 +162,7 @@
     },
     {
       "source_path": "windows/configuration/start-taskbar-lockscreen.md",
-      "redirect_url": "/windows/configuration/windows-10-start-layout-options-and-policies",
+      "redirect_url": "/windows/configuration/start/policy-settings",
       "redirect_document_id": false
     },
     {
@@ -287,7 +287,7 @@
     },
     {
       "source_path": "windows/configuration/customize-and-export-start-layout.md",
-      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
@@ -422,12 +422,12 @@
     },
     {
       "source_path": "windows/configuration/start-layout-xml-desktop.md",
-      "redirect_url": "/windows/configuration/start/start-layout-xml-desktop",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/start-secondary-tiles.md",
-      "redirect_url": "/windows/configuration/start/start-secondary-tiles",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
@@ -442,7 +442,7 @@
     },
     {
       "source_path": "windows/configuration/supported-csp-start-menu-layout-windows.md",
-      "redirect_url": "/windows/configuration/start/supported-csp-start-menu-layout-windows",
+      "redirect_url": "/windows/configuration/start/policy-settings",
       "redirect_document_id": false
     },
     {
@@ -452,7 +452,7 @@
     },
     {
       "source_path": "windows/configuration/windows-10-start-layout-options-and-policies.md",
-      "redirect_url": "/windows/configuration/start/windows-10-start-layout-options-and-policies",
+      "redirect_url": "/windows/configuration/start/policy-settings",
       "redirect_document_id": false
     },
     {
@@ -462,7 +462,12 @@
     },
     {
       "source_path": "windows/configuration/windows-spotlight.md",
-      "redirect_url": "/windows/configuration/lock-screen/windows-spotlight",
+      "redirect_url": "/windows/configuration/windows-spotlight/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/lock-screen/windows-spotlight.md",
+      "redirect_url": "/windows/configuration/windows-spotlight",
       "redirect_document_id": false
     },
     {
@@ -822,22 +827,22 @@
     },
     {
       "source_path": "windows/configuration/start/customize-start-menu-layout-windows-11.md",
-      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-group-policy.md",
-      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-mobile-device-management.md",
-      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/start/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md",
-      "redirect_url": "/windows/configuration/start/customize-and-export-start-layout",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     },
     {
@@ -848,6 +853,11 @@
     {
       "source_path": "windows/configuration/taskbar/customize-taskbar-windows-11.md",
       "redirect_url": "/windows/configuration/taskbar/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/supported-csp-start-menu-layout-windows.md",
+      "redirect_url": "/windows/configuration/start/policy-settings",
       "redirect_document_id": false
     },
     {
@@ -863,6 +873,26 @@
     {
       "source_path": "windows/configuration/taskbar/supported-csp-taskbar-windows.md",
       "redirect_url": "/windows/configuration/taskbar/policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/start-layout-xml-desktop.md",
+      "redirect_url": "/windows/configuration/start/layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/customize-and-export-start-layout.md",
+      "redirect_url": "/windows/configuration/start/layout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/windows-10-start-layout-options-and-policies.md",
+      "redirect_url": "/windows/configuration/start/policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start/start-secondary-tiles.md",
+      "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
     }
   ]

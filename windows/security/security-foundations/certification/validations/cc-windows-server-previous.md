@@ -83,7 +83,7 @@ The following tables list the completed Common Criteria certifications for Windo
 [admin-guide-january-2014]: https://download.microsoft.com/download/a/9/f/a9fd7e2d-023b-4925-a62f-58a7f1a6bd47/microsoft%20windows%208%20windows%20server%202012%20supplemental%20admin%20guidance%20ipsec%20vpn%20client.docx
 [admin-guide-march-2011]: https://www.microsoft.com/downloads/en/details.aspx?familyid=ee05b6d0-9939-4765-9217-63083bb94a00
 [admin-guide-july-2009]: https://www.microsoft.com/download/en/details.aspx?id=29308
-[admin-guide-july-2009-hyperv]: https://www.microsoft.com/downloads/en/details.aspx?familyid=cb19538d-9e13-4ab6-af38-8f48abfdad08
+[admin-guide-july-2009-hyperv]: https://www.microsoft.com/en-us/download/details.aspx?id=14252
 [admin-guide-august-2009]: https://www.microsoft.com/downloads/en/details.aspx?familyid=06166288-24c4-4c42-9daa-2b2473ddf567
 [admin-guide-september-2008]: https://www.microsoft.com/downloads/en/details.aspx?familyid=06166288-24c4-4c42-9daa-2b2473ddf567
 

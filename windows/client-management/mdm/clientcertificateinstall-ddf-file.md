@@ -1,7 +1,7 @@
 ---
 title: ClientCertificateInstall DDF file
 description: View the XML file containing the device description framework (DDF) for the ClientCertificateInstall configuration service provider.
-ms.date: 01/31/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -72,8 +72,8 @@ The following XML file contains the device description framework (DDF) for the C
             <Get />
             <Replace />
           </AccessType>
-          <Description>Required for PFX certificate installation. A unique ID to differentiate different certificate install requests.
-Format is node.
+          <Description>Required for PFX certificate installation. A unique ID to differentiate different certificate install requests. 
+Format is node. 
 Calling Delete on the this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
 </Description>
           <DFFormat>
@@ -143,7 +143,7 @@ Calling Delete on the this node, should delete the certificates and the keys tha
               <Get />
               <Replace />
             </AccessType>
-            <Description>Optional.
+            <Description>Optional. 
 Specifies the NGC container name (if NGC KSP is chosen for above node). If this node is not specified when NGC KSP is chosen, enrollment will fail.</Description>
             <DFFormat>
               <chr />
@@ -169,7 +169,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
               <Get />
               <Replace />
             </AccessType>
-            <Description>Required.
+            <Description>Required. 
 CRYPT_DATA_BLOB structure that contains a PFX packet with the exported and encrypted certificates and keys. Add on this node will trigger the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, fKeyExportable) are present before this is called. This will also set the Status node to the current Status of the operation.
 If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
 If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it does not exist, this will fail.
@@ -227,7 +227,7 @@ CRYPT_DATA_BLOB on MSDN can be found at http://msdn.microsoft.com/en-us/library/
             </AccessType>
             <DefaultValue>0</DefaultValue>
             <Description>Optional. Used to specify if the PFX certificate password is encrypted with a certificate.
-If the value is
+If the value is 
 0 - Password is not encrypted
 1- Password is encrypted using the MDM certificate by the MDM server
 2 - Password is encrypted by a Custom Certificate by the MDM server. When this value is used here, also specify the custom store name in the PFXCertPasswordEncryptionStore node.</Description>
@@ -353,7 +353,7 @@ If the value is
               <Get />
               <Replace />
             </AccessType>
-            <Description>Optional.
+            <Description>Optional. 
 When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored. </Description>
             <DFFormat>
               <chr />
@@ -413,7 +413,7 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
             <Get />
             <Replace />
           </AccessType>
-          <Description>Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests.
+          <Description>Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests. 
 Calling Delete on the this node, should delete the corresponding SCEP certificate</Description>
           <DFFormat>
             <node />
@@ -561,6 +561,46 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
             </DFProperties>
           </Node>
           <Node>
+            <NodeName>AttestPrivateKey</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Get />
+              </AccessType>
+              <Description>Defines the attest SCEP private key behavior 0 - normal, 1 - best effort, 2 - on error, fail the installation</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>9.9</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription> Do not attest private key</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription> Attest key, but in case attestation failed, best effort approach - CSR is sent to the server </MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription> Attest key, but in case attestation failed, fail fast (i.e release the key and not issue a CSR to the server) </MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
             <NodeName>SubjectName</NodeName>
             <DFProperties>
               <AccessType>
@@ -596,7 +636,7 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
                 <Replace />
               </AccessType>
               <DefaultValue>3</DefaultValue>
-              <Description>Optional. Specify where to keep the private key. Note that even it is protected by TPM, it is not guarded with TPM PIN.
+              <Description>Optional. Specify where to keep the private key. Note that even it is protected by TPM, it is not guarded with TPM PIN. 
 SCEP enrolled cert doesn’t support TPM PIN protection. </Description>
               <DFFormat>
                 <int />
@@ -640,7 +680,7 @@ SCEP enrolled cert doesn’t support TPM PIN protection. </Description>
                 <Replace />
               </AccessType>
               <DefaultValue>5</DefaultValue>
-              <Description>Optional. When the SCEP server sends pending status, specify device retry waiting time in minutes.
+              <Description>Optional. When the SCEP server sends pending status, specify device retry waiting time in minutes. 
 
 Default value is: 5
 The min value is 1. </Description>
@@ -725,7 +765,7 @@ The min value is 0 which means no retry. </Description>
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Required for enrollment. Specify private key length (RSA).
+              <Description>Required for enrollment. Specify private key length (RSA). 
 Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.</Description>
               <DFFormat>
                 <int />
@@ -764,7 +804,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.</D
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Required for enrollment. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated via +.
+              <Description>Required for enrollment. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated via +. 
 
 For NGC, only SHA256 is supported as the supported algorithm</Description>
               <DFFormat>
@@ -845,7 +885,7 @@ For NGC, only SHA256 is supported as the supported algorithm</Description>
                 <Replace />
               </AccessType>
               <DefaultValue>Days</DefaultValue>
-              <Description>Optional. Specify the units for valid period. Valid values are: Days(Default), Months, Years.
+              <Description>Optional. Specify the units for valid period. Valid values are: Days(Default), Months, Years. 
 MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio) the SCEP server as part of certificate enrollment request. It is the server’s decision on how to use this valid period to create the certificate.</Description>
               <DFFormat>
                 <chr />
@@ -885,7 +925,7 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
                 <Replace />
               </AccessType>
               <DefaultValue>0</DefaultValue>
-              <Description>Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
+              <Description>Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days. 
 NOTE: The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio) the SCEP server as part of certificate enrollment request. It is the server’s decision on how to use this valid period to create the certificate.</Description>
               <DFFormat>
                 <int />
@@ -912,7 +952,7 @@ NOTE: The device only sends the MDM server expected certificate validation perio
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Optional.
+              <Description>Optional. 
 Specifies the NGC container name (if NGC KSP is chosen for above node). If this node is not specified when NGC KSP is chosen, enrollment will fail.</Description>
               <DFFormat>
                 <chr />
@@ -1155,8 +1195,8 @@ Valid values are:
             <Get />
             <Replace />
           </AccessType>
-          <Description>Required for PFX certificate installation. A unique ID to differentiate different certificate install requests.
-Format is node.
+          <Description>Required for PFX certificate installation. A unique ID to differentiate different certificate install requests. 
+Format is node. 
 Calling Delete on the this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
 </Description>
           <DFFormat>
@@ -1226,7 +1266,7 @@ Calling Delete on the this node, should delete the certificates and the keys tha
               <Get />
               <Replace />
             </AccessType>
-            <Description>Optional.
+            <Description>Optional. 
 Specifies the NGC container name (if NGC KSP is chosen for above node). If this node is not specified when NGC KSP is chosen, enrollment will fail.</Description>
             <DFFormat>
               <chr />
@@ -1252,7 +1292,7 @@ Specifies the NGC container name (if NGC KSP is chosen for above node). If this 
               <Get />
               <Replace />
             </AccessType>
-            <Description>Required.
+            <Description>Required. 
 CRYPT_DATA_BLOB structure that contains a PFX packet with the exported and encrypted certificates and keys. Add on this node will trigger the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, fKeyExportable) are present before this is called. This will also set the Status node to the current Status of the operation.
 If Add is called on this node and a blob already exists, it will fail. If Replace is called on this node, the certificates will be overwritten.
 If Add is called on this node for a new PFX, the certificate will be added. If Replace is called on this node when it does not exist, this will fail.
@@ -1310,7 +1350,7 @@ CRYPT_DATA_BLOB on MSDN can be found at http://msdn.microsoft.com/en-us/library/
             </AccessType>
             <DefaultValue>0</DefaultValue>
             <Description>Optional. Used to specify if the PFX certificate password is encrypted with a certificate.
-If the value is
+If the value is 
 0 - Password is not encrypted
 1- Password is encrypted using the MDM certificate by the MDM server
 2 - Password is encrypted by a Custom Certificate by the MDM server. When this value is used here, also specify the custom store name in the PFXCertPasswordEncryptionStore node.</Description>
@@ -1436,7 +1476,7 @@ If the value is
               <Get />
               <Replace />
             </AccessType>
-            <Description>Optional.
+            <Description>Optional. 
 When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored. </Description>
             <DFFormat>
               <chr />
@@ -1496,7 +1536,7 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
             <Get />
             <Replace />
           </AccessType>
-          <Description>Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests.
+          <Description>Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests. 
 Calling Delete on the this node, should delete the corresponding SCEP certificate</Description>
           <DFFormat>
             <node />
@@ -1644,6 +1684,34 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
             </DFProperties>
           </Node>
           <Node>
+            <NodeName>AttestPrivateKey</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Get />
+              </AccessType>
+              <Description>Defines the attest SCEP private key behavior 0 - normal, 1 - best effort, 2 - on error, fail the installation</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>9.9</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="None">
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
             <NodeName>SubjectName</NodeName>
             <DFProperties>
               <AccessType>
@@ -1679,7 +1747,7 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
                 <Replace />
               </AccessType>
               <DefaultValue>3</DefaultValue>
-              <Description>Optional. Specify where to keep the private key. Note that even it is protected by TPM, it is not guarded with TPM PIN.
+              <Description>Optional. Specify where to keep the private key. Note that even it is protected by TPM, it is not guarded with TPM PIN. 
 SCEP enrolled cert doesn’t support TPM PIN protection. </Description>
               <DFFormat>
                 <int />
@@ -1723,7 +1791,7 @@ SCEP enrolled cert doesn’t support TPM PIN protection. </Description>
                 <Replace />
               </AccessType>
               <DefaultValue>5</DefaultValue>
-              <Description>Optional. When the SCEP server sends pending status, specify device retry waiting time in minutes.
+              <Description>Optional. When the SCEP server sends pending status, specify device retry waiting time in minutes. 
 
 Default value is: 5
 The min value is 1. </Description>
@@ -1808,7 +1876,7 @@ The min value is 0 which means no retry. </Description>
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Required for enrollment. Specify private key length (RSA).
+              <Description>Required for enrollment. Specify private key length (RSA). 
 Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.</Description>
               <DFFormat>
                 <int />
@@ -1847,7 +1915,7 @@ Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.</D
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Required for enrollment. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated via +.
+              <Description>Required for enrollment. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated via +. 
 
 For NGC, only SHA256 is supported as the supported algorithm</Description>
               <DFFormat>
@@ -1928,7 +1996,7 @@ For NGC, only SHA256 is supported as the supported algorithm</Description>
                 <Replace />
               </AccessType>
               <DefaultValue>Days</DefaultValue>
-              <Description>Optional. Specify the units for valid period. Valid values are: Days(Default), Months, Years.
+              <Description>Optional. Specify the units for valid period. Valid values are: Days(Default), Months, Years. 
 MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio) the SCEP server as part of certificate enrollment request. It is the server’s decision on how to use this valid period to create the certificate.</Description>
               <DFFormat>
                 <chr />
@@ -1968,7 +2036,7 @@ MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio
                 <Replace />
               </AccessType>
               <DefaultValue>0</DefaultValue>
-              <Description>Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
+              <Description>Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days. 
 NOTE: The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio) the SCEP server as part of certificate enrollment request. It is the server’s decision on how to use this valid period to create the certificate.</Description>
               <DFFormat>
                 <int />
@@ -1995,7 +2063,7 @@ NOTE: The device only sends the MDM server expected certificate validation perio
                 <Get />
                 <Replace />
               </AccessType>
-              <Description>Optional.
+              <Description>Optional. 
 Specifies the NGC container name (if NGC KSP is chosen for above node). If this node is not specified when NGC KSP is chosen, enrollment will fail.</Description>
               <DFFormat>
                 <chr />

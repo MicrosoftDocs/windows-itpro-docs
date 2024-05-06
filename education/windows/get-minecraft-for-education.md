@@ -2,7 +2,7 @@
 title: Get and deploy Minecraft Education
 description: Learn how to obtain and distribute Minecraft Education to Windows devices.
 ms.topic: how-to
-ms.date: 09/11/2023
+ms.date: 04/10/2024
 ms.collection:
   - education
   - tier2
@@ -16,15 +16,15 @@ Minecraft Education is a game-based platform that inspires creative and inclusiv
 
 **Prepare students for the future**: learners develop key skills like problem solving, collaboration, digital citizenship, and critical thinking to help them thrive now and in the future workplace. Spark a passion for STEM.
 
-**Game based learning**: unlock creativity and deep learning with immersive content created with partners including BBC Earth, NASA, and the Nobel Peace Center. Inspire students to engage in real-world topics, with culturally relevant lessons and build challenges.  
+**Game based learning**: unlock creativity and deep learning with immersive content created with partners including BBC Earth, NASA, and the Nobel Peace Center. Inspire students to engage in real-world topics, with culturally relevant lessons and build challenges. 
 
 ## Minecraft Education key features
 
-- Multiplayer mode enables collaboration in-game across platforms, devices, and hybrid environments  
-- Code Builder supports block-based coding, JavaScript, and Python with intuitive interface and in-game execution  
-- Immersive Reader helps players read and translate text  
-- Camera and Book & Quill items allow documentation and export of in-game creations  
-- Integration with Microsoft Teams and Flipgrid supports assessment and teacher controls  
+- Multiplayer mode enables collaboration in-game across platforms, devices, and hybrid environments 
+- Code Builder supports block-based coding, JavaScript, and Python with intuitive interface and in-game execution 
+- Immersive Reader helps players read and translate text 
+- Camera and Book & Quill items allow documentation and export of in-game creations 
+- Integration with Microsoft Teams and Flipgrid supports assessment and teacher controls 
 
 ## Try or purchase Minecraft Education
 
@@ -34,7 +34,7 @@ Organizations can [purchase subscriptions][EDU-2] directly in the *Microsoft 3
 
 When you sign up for a Minecraft Education trial, or purchase a subscription, Minecraft Education licenses are linked to your Microsoft Entra tenant. If you don't have a Microsoft Entra tenant:
 
-- Microsoft-verified academic organizations can set up a free [Office 365 Education subscription][EDU-3], which includes a Microsoft Entra tenant  
+- Microsoft-verified academic organizations can set up a free [Office 365 Education subscription][EDU-3], which includes a Microsoft Entra tenant
 - Non-Microsoft-verified academic organizations can set up a free Microsoft Entra tenant when they [purchase Minecraft Education commercial licenses][EDU-4]
 
 ### Direct purchase
@@ -78,7 +78,7 @@ To pay with an invoice:
 1. During the purchase, select **Add a new payment method.**
 2. Select the **Invoice** option, and provide the information needed for an invoice. The **PO number** item allows you to add a tracking number or info that is meaningful to your organization.
 
-For more information about invoices and how to pay by invoice, see [Payment options for your Microsoft subscription][M365-1].  
+For more information about invoices and how to pay by invoice, see [Payment options for your Microsoft subscription][M365-1].
 
 ## Assign Minecraft Education licenses
 

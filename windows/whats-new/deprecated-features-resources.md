@@ -27,7 +27,7 @@ WordPad will be removed from all editions of Windows starting in Windows 11, ver
 
 - wordpad.exe
 - wordpadfilter.dll
-- write.exe
+- write.exe 
 
 Avoid taking a direct dependency on these binaries and Wordpad in your product. Instead, for trying to open a text file, rely on Microsoft Word or Notepad.
 

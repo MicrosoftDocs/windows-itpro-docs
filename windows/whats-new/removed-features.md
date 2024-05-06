@@ -6,10 +6,10 @@ ms.localizationpriority: medium
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: conceptual
+ms.topic: reference
 ms.subservice: itpro-fundamentals
 ms.date: 03/11/2024
-ms.collection:
+ms.collection: 
   - highpri
   - tier1
 appliesto:

@@ -1,7 +1,7 @@
 ---
 title: PIN reset
 description: Learn how Microsoft PIN reset service enables your users to recover a forgotten Windows Hello for Business PIN, and how to configure it.
-ms.date: 01/03/2024
+ms.date: 04/23/2024
 ms.topic: how-to
 ---
 
@@ -121,7 +121,6 @@ GET https://graph.microsoft.com/v1.0/organization?$select=id
 
 #### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
-[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 [!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 
 | Group policy path | Group policy setting | Value |

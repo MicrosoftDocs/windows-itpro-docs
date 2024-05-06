@@ -1,7 +1,7 @@
 ---
 title: Windows quality and feature update reports overview
-description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch groups.
-ms.date: 01/22/2024
+description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch.
+ms.date: 04/09/2024 
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -33,6 +33,7 @@ The Windows quality report types are organized into the following focus areas:
 | ----- | ----- |
 | Organizational | The [Summary dashboard](../operate/windows-autopatch-groups-windows-quality-update-summary-dashboard.md) provide the current update status summary for all devices.<p>The [Quality update status report](../operate/windows-autopatch-groups-windows-quality-update-status-report.md) provides the current update status of all devices at the device level. |
 | Device trends | The [Quality update trending report](../operate/windows-autopatch-groups-windows-quality-update-trending-report.md) provides the update status trend of all devices over the last 90 days. |
+| [Reliability report](../operate/windows-autopatch-reliability-report.md) | The Reliability report provides a reliability score for each Windows quality update cycle based on stop error codes detected on managed devices. |
 
 ## Windows feature update reports
 
@@ -79,7 +80,7 @@ Up to date devices are devices that meet all of the following prerequisites:
 - [Prerequisites for device registration](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration)
 - [Windows quality and feature update device readiness](../deploy/windows-autopatch-post-reg-readiness-checks.md)
 - [Post-device readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md)
-- Have applied the current monthly cumulative updates
+- Applied the current monthly cumulative updates
 
 > [!NOTE]
 > Device that are [Up to Date](#up-to-date-devices) will remain with the **In Progress** status until either the current monthly cumulative update is applied, or an [alert](../operate/windows-autopatch-device-alerts.md) is received. If the device receives an alert, the device's status will change to [Not up to Date](#not-up-to-date-devices).

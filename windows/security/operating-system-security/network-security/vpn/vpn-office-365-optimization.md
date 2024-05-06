@@ -2,7 +2,7 @@
 title: Optimize Microsoft 365 traffic for remote workers with the Windows VPN client
 description: Learn how to optimize Microsoft 365 traffic for remote workers with the Windows VPN client
 ms.topic: how-to
-ms.date: 08/03/2023
+ms.date: 05/06/2024
 ---
 # Optimize Microsoft 365 traffic for remote workers with the Windows VPN client
 
@@ -70,7 +70,7 @@ An example of a PowerShell script that can be used to update a force tunnel VPN 
 
 ```powershell
 # Copyright (c) Microsoft Corporation.  All rights reserved.
-#  
+#
 # THIS SAMPLE CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND,
 # WHETHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
 # WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
@@ -113,7 +113,7 @@ To check a VPN profile XML file:
 Update-VPN-Profile-Office365-Exclusion-Routes.ps1 -VPNprofilefile [FULLPATH AND NAME OF XML FILE]
 
 "@
-  
+
 # Check if filename has been provided #
 if ($VPNprofilefile -eq "")
 {
@@ -335,7 +335,7 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
     # Clear variables to allow re-run testing #
     $ARRVPN=$null              # Array to hold VPN addresses from the XML file #
     $In_Opt_Only=$null         # Variable to hold IP Addresses that only appear in optimize list #
-    $In_VPN_Only=$null         # Variable to hold IP Addresses that only appear in the VPN profile XML file #  
+    $In_VPN_Only=$null         # Variable to hold IP Addresses that only appear in the VPN profile XML file #
 
     # Extract the Profile XML from the XML file #
     $regex = '(?sm).*^*.<VPNProfile>\r?\n(.*?)\r?\n</VPNProfile>.*'
@@ -542,12 +542,12 @@ $ProfileXML = '<VPNProfile>
       <Address>104.146.128.0</Address>
       <PrefixSize>17</PrefixSize>
       <ExclusionRoute>true</ExclusionRoute>
-    </Route>  
+    </Route>
     <Route>
       <Address>150.171.40.0</Address>
       <PrefixSize>22</PrefixSize>
       <ExclusionRoute>true</ExclusionRoute>
-    </Route>  
+    </Route>
     <Route>
       <Address>13.107.60.1</Address>
       <PrefixSize>32</PrefixSize>
@@ -568,9 +568,9 @@ $ProfileXML = '<VPNProfile>
       <PrefixSize>14</PrefixSize>
     <ExclusionRoute>true</ExclusionRoute>
     </Route>
-    <Proxy>  
-            <AutoConfigUrl>http://webproxy.corp.contoso.com/proxy.pac</AutoConfigUrl>  
-      </Proxy>  
+    <Proxy>
+            <AutoConfigUrl>http://webproxy.corp.contoso.com/proxy.pac</AutoConfigUrl>
+      </Proxy>
 </VPNProfile>'
 
 <#-- Convert ProfileXML to Escaped Format --#>
@@ -625,7 +625,7 @@ try
     $session.CreateInstance($namespaceName, $newInstance, $options)
     $Message = "Created $ProfileName profile."
     Write-Host "$Message"
-    Write-Host "$ProfileName profile summary:"  
+    Write-Host "$ProfileName profile summary:"
     $session.EnumerateInstances($namespaceName, $className, $options)
 }
 catch [Exception]

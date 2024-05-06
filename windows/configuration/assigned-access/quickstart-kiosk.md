@@ -64,7 +64,7 @@ Assign the policy to a group that contains as members the devices that you want 
 
 
 
-#### [:::image type="icon" source="../images/icons/settings.svg"::: **Settings**](#tab/settings)
+#### [:::image type="icon" source="../images/icons/settings-app.svg"::: **Settings**](#tab/settings)
 
 Here are the steps to configure a kiosk using the Settings app:
 
