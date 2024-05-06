@@ -16,18 +16,18 @@ ms.topic: how-to
 > [!IMPORTANT]
 > Dual enrollment does not replace or provide the same security as Privileged Access Workstations feature. Microsoft encourages organizations to use the Privileged Access Workstations for their privileged credential users. Organizations can consider Windows Hello for Business dual enrollment in situations where the Privileged Access feature can't be used. To learn more, see [Privileged Access Workstations](/windows-server/identity/securing-privileged-access/privileged-access-workstations).
 
-Dual enrollment enables administrators to perform elevated, administrative functions by enrolling both their non-privileged and privileged credentials on their device.
+Dual enrollment enables administrators to perform elevated, administrative functions by enrolling both their nonprivileged and privileged credentials on their device.
 
 By design, Windows doesn't enumerate all Windows Hello for Business users from within a user's session. Using the group policy setting, **Allow enumeration of emulated smart card for all users**, you can configure a device to enumerate all enrolled Windows Hello for Business credentials on selected devices.
 
-With this setting, administrative users can sign in to Windows using their non-privileged Windows Hello credentials for normal work flow such as email, but can launch Microsoft Management Consoles (MMCs), Remote Desktop Services clients, and other applications by selecting **Run as different user** or **Run as administrator**, selecting the privileged user account, and providing their PIN. Administrators can also take advantage of this feature with command-line applications by using `runas.exe` combined with the `/smartcard` argument. This enables administrators to perform their day-to-day operations without needing to sign in and out, or use fast user switching when alternating between privileged and non-privileged workloads.
+With this setting, administrative users can sign in to Windows using their nonprivileged Windows Hello credentials for normal work flow such as email, but can launch Microsoft Management Consoles (MMCs), Remote Desktop Services clients, and other applications by selecting **Run as different user** or **Run as administrator**, selecting the privileged user account, and providing their PIN. Administrators can also take advantage of this feature with command-line applications by using `runas.exe` combined with the `/smartcard` argument. This enables administrators to perform their day-to-day operations without needing to sign in and out, or use fast user switching when alternating between privileged and nonprivileged workloads.
 
 > [!IMPORTANT]
 > You must configure a Windows computer for Windows Hello for Business dual enrollment before either user (privileged or non-privileged) provisions Windows Hello for Business. Dual enrollment is a special setting that is configured on the Windows Hello container during creation.
 
 ## Configure Windows Hello for Business Dual Enrollment
 
-In this task, you will
+Here are the steps to enable Dual Enrollment:
 
 - Configure Active Directory to support Domain Administrator enrollment
 - Configure Dual Enrollment using Group Policy
@@ -36,9 +36,9 @@ In this task, you will
 
 The designed Windows Hello for Business configuration gives the `Key Admins` group read and write permissions to the `msDS-KeyCredentialsLink` attribute. You provided these permissions at root of the domain and use object inheritance to ensure the permissions apply to all users in the domain regardless of their location within the domain hierarchy.
 
-Active Directory Domain Services uses `AdminSDHolder` to secure privileged users and groups from unintentional modification by comparing and replacing the security on privileged users and groups to match those defined on the AdminSDHolder object on an hourly cycle. For Windows Hello for Business, your domain administrator account may receive the permissions but they will disappear from the user object unless you give the `AdminSDHolder` read and write permissions to the `msDS-KeyCredential` attribute.
+Active Directory Domain Services uses `AdminSDHolder` to secure privileged users and groups from unintentional modification by comparing and replacing the security on privileged users and groups to match those defined on the AdminSDHolder object on an hourly cycle. For Windows Hello for Business, your domain administrator account might receive the permissions but they disappear from the user object unless you give the `AdminSDHolder` read and write permissions to the `msDS-KeyCredential` attribute.
 
-Sign in to a domain controller or management workstation with access equivalent to *domain administrator*
+Sign in to a domain controller or management workstation with access equivalent to *domain administrator*.
 
 1. Type the following command to add the **allow** read and write property permissions for msDS-KeyCredentialLink attribute for the `Key Admins` group on the `AdminSDHolder` object
 
@@ -69,4 +69,4 @@ You configure Windows to support dual enrollment using the computer configuratio
 1. Close the Group Policy Management Editor to save the Group Policy object. Close the GPMC
 1. Restart computers targeted by this Group Policy object
 
-The computer is ready for dual enrollment. Sign in as the privileged user first and enroll for Windows Hello for Business. Once completed, sign out and sign in as the non-privileged user and enroll for Windows Hello for Business. You can now use your privileged credential to perform privileged tasks without using your password and without needing to switch users.
+The computer is ready for dual enrollment. Sign in as the privileged user first and enroll for Windows Hello for Business. Once completed, sign out and sign in as the nonprivileged user and enroll for Windows Hello for Business. You can now use your privileged credential to perform privileged tasks without using your password and without needing to switch users.

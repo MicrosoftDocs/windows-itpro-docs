@@ -9176,11 +9176,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/security/cloud-security/index.md",
-      "redirect_url": "/windows/security/cloud-services",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "windows/security/identity-protection/hello-for-business/hello-feature-dual-enrollment.md",
       "redirect_url": "/windows/security/identity-protection/hello-for-business/dual-enrollment",
       "redirect_document_id": false
