@@ -9,7 +9,7 @@ metadata:
   manager: aaroncz
   author: mestew
   ms.author: mstewart
-  ms.date: 01/26/2024
+  ms.date: 05/07/2024
 title: Frequently Asked Questions about Windows Update for Business reports
 summary: |
   This article answers frequently asked questions about Windows Update for Business reports. <!--7760853-->
@@ -20,7 +20,7 @@ summary: |
   - [Is Windows Update for Business reports free?](#is-windows-update-for-business-reports-free)
   - [What Windows versions are supported?](#what-windows-versions-are-supported)
 
-  **Setup questions**:
+  **Set up questions**:
 
   - [How do you set up Windows Update for Business reports?](#how-do-you-set-up-windows-update-for-business-reports)
   - [Why is "Waiting for Windows Update for Business reports data" displayed on the page](#why-is--waiting-for-windows-update-for-business-reports-data--displayed-on-the-page)
@@ -63,7 +63,7 @@ sections:
           Data retained beyond these no-charge periods are charged for each GB of data retained for a month, pro-rated daily. For more information, see **Log Data Retention** in [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
       - question: What Windows versions are supported?
         answer: |
-          Windows Update for Business reports supports clients running a [supported version of Windows 10 or Windows 11](/windows/release-health/supported-versions-windows-client) Professional, Education, Enterprise, and Enterprise multi-session editions. Windows Update for Business reports only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
+          Windows Update for Business reports supports clients running a [supported version of Windows 10 or Windows 11](/windows/release-health/supported-versions-windows-client) Professional, Education, and Enterprise editions. Windows Update for Business reports only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
 
   - name: Setup questions
     questions:
@@ -103,7 +103,7 @@ sections:
         answer: |
           Here are some reasons why you may not be seeing devices in reports:
 
-          - **The device isn't enrolled with Azure Active Directory**: A [prerequisite](wufb-reports-prerequisites.md#azure-and-azure-active-directory) for devices is that they're either [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+          - **The device isn't enrolled with Microsoft Entra**: A [prerequisite](wufb-reports-prerequisites.md#azure-and-azure-active-directory) for devices is that they're either [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
           - **The device isn't sending data**: It's possible devices aren't sharing data due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script](wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
           - **The device isn't active enough**: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
           - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 1000. This limit is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
@@ -115,13 +115,13 @@ sections:
           An unknown client state is displayed if there isn't an update record for the device. This state can happen for many reasons, like the device not being active, not being able to scan Windows Update, or it doesn't currently have any update related activity occurring.                 
       - question: What is the difference between OS version and target version?
         answer: |
-          The word *target* in data labels refers to the update version, build or KB the client intends to update to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
+          The word *target* in data labels refers to the update version, build, or KB the client intends to update to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
       - question: When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?
         answer: |
           These tables can be used for the following information:
 
           - **UCClient**: Represents an individual device's record. It contains data such as the device's name, currently installed build, and the OS Edition. Each device has one record in this table. Use this table to get the overall compliance status of your devices.
-            - To display information for a specific device by Azure AD device ID: </br>
+            - To display information for a specific device by Microsoft Entra device ID: </br>
               `UCClient where AzureADDeviceId contains "01234567-89ab-cdef-0123-456789abcdef"`
             - To display all device records for devices running any Windows 11 OS version:</br>
               `UCClient | where OSVersion contains "Windows 11"`
@@ -132,7 +132,7 @@ sections:
             - To display devices that are in the restart required substate:</br>
               `UCClientUpdateStatus |where ClientSubstate =="RestartRequired"`
           
-          - **UCUpdateAlert**: Use this table to understand update failures and act on devices through alert recommendations. This table contains information that needs attention, relative to one device, one update and one deployment (if relevant).  
+          - **UCUpdateAlert**: Use this table to understand update failures and act on devices through alert recommendations. This table contains information that needs attention, relative to one device, one update, and one deployment (if relevant).  
             - To display information about an error code: 
               `UCUpdateAlert|where ErrorCode =="0X8024000b"`
             - To display a count of devices with active alerts by subtype:
