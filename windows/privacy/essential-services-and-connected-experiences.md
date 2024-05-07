@@ -117,3 +117,6 @@ To view endpoints for non-Enterprise Windows editions, see:
 - [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
 - [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
 - [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
+
+> [!IMPORTANT]
+> To inquire about Windows data access or interoperability related to the Digital Markets Act (DMA), submit this form.
