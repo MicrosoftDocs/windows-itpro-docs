@@ -5,6 +5,9 @@ description: Considerations, recommendations and known issues when using Credent
 ms.topic: troubleshooting
 ---
 
+> [!IMPORTANT]
+> Windows Server 2025 is in PREVIEW. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+
 # Considerations and known issues when using Credential Guard
 
 It's recommended that in addition to deploying Credential Guard, organizations move away from passwords to other authentication methods, such as Windows Hello for Business, FIDO 2 security keys or smart cards.
@@ -17,18 +20,20 @@ If you're using WiFi and VPN endpoints that are based on MS-CHAPv2, they're subj
 
 For WiFi and VPN connections, it's recommended to move from MSCHAPv2-based connections (such as PEAP-MSCHAPv2 and EAP-MSCHAPv2), to certificate-based authentication (such as PEAP-TLS or EAP-TLS).
 
-## Kerberos considerations
+## Delegation considerations
 
-When Credential Guard is enabled, you can no longer use Kerberos unconstrained delegation or DES encryption. Unconstrained delegation could allow attackers to extract Kerberos keys from the isolated LSA process.\
-Use constrained or resource-based Kerberos delegation instead.
+When Credential Guard is enabled, certain types of identity delegation will be unusable, as their underlying authentication schemes are incompatible with Credential Guard or require supplied credentials.
 
-## CredSSP considerations
+When Credential Guard is enabled, [Credential Security Support Provider ("CredSSP")](/windows/win32/secauthn/credential-security-support-provider) is no longer able to use saved or sign-on (SSO) credentials, though cleartext credentials can still be supplied. CredSSP-based Delegation requires cleartext credentials to be supplied on the destination machine and will not work with SSO once Credential Guard is enabled. Usage of [CredSSP for delegation](/windows/win32/secauthn/credential-security-support-provider), and in general, is not recommended due to the risk of credential theft. 
 
-When Credential Guard is enabled, [Credential Security Support Provider ("CredSSP")](/windows/win32/secauthn/credential-security-support-provider) can no longer rely on the signed-in credentials. Thus, applications which choose to use CredSSP cannot rely on single sign-on and instead must prompt the user for credentials.
+Kerberos Unconstrained delegation, as well as DES, are blocked by Credential Guard. [Unconstrained delegation](/defender-for-identity/security-assessment-unconstrained-kerberos#what-risk-does-unsecure-kerberos-delegation-pose-to-an-organization) is not a recommended practice.
+
+Instead [Kerberos](/windows-server/security/kerberos/kerberos-authentication-overview) or [Negotiate SSP](/windows/win32/secauthn/microsoft-negotiate) are recommended for authentication generally, and for delegation, [Kerberos Constrained Delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) and [Resource-Based Kerberos Constrained Delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview#resource-based-constrained-delegation-across-domains) are recommended. These methods provide greater credential security overall, and are also compatible with Credential Guard.
 
 ## Non-Microsoft Security Support Providers considerations
 
-Some non-Microsoft Security Support Providers (SSPs and APs) might not be compatible with Credential Guard because it doesn't allow non-Microsoft SSPs to ask for password hashes from LSA. However, SSPs and APs still get notified of the password when a user logs on and/or changes their password. Any use of undocumented APIs within custom SSPs and APs aren't supported.\
+Some non-Microsoft Security Support Providers (SSPs and APs) might not be compatible with Credential Guard because it doesn't allow non-Microsoft SSPs to ask for password hashes from LSA. However, SSPs and APs still get notified of the password when a user logs on and/or changes their password. Any use of undocumented APIs within custom SSPs and APs aren't supported.
+
 It's recommended that custom implementations of SSPs/APs are tested with Credential Guard. SSPs and APs that depend on any undocumented or unsupported behaviors fail. For example, using the KerbQuerySupplementalCredentialsMessage API isn't supported. Replacing the NTLM or Kerberos SSPs with custom SSPs and APs.
 
 For more information, see [Restrictions around Registering and Installing a Security Package](/windows/win32/secauthn/restrictions-around-registering-and-installing-a-security-package).
@@ -37,7 +42,9 @@ For more information, see [Restrictions around Registering and Installing a Secu
 
 As the depth and breadth of protections provided by Credential Guard are increased, new releases of Windows with Credential Guard running may affect scenarios that were working in the past. For example, Credential Guard may block the use of a particular type of credential or a particular component to prevent malware from taking advantage of vulnerabilities.
 
-Test scenarios required for operations in an organization before upgrading a device using Credential Guard.
+We recommend testing scenarios required for operations in an organization before upgrading a device that uses Credential Guard.
+
+Upgrades to Windows 11, 22H2 and Windows Server 2025 (preview) will have Credential Guard [enabled by default](index.md#default-enablement) if it has not been explicitly disabled.
 
 ## Saved Windows credentials considerations
 
@@ -114,8 +121,22 @@ Credential Guard blocks certain authentication capabilities. Applications that r
 
 This article describes known issues when Credential Guard is enabled.
 
-### Live migration breaks on Server after upgrading to Windows Server 2025
-TODO
+### Live Migration with Hyper-V breaks when upgrading to Windows Server 2025 (preview)
+
+Devices which use CredSSP-based Delegation may no longer be able to use [Live Migration with Hyper-V](/windows-server/virtualization/hyper-v/manage/live-migration-overview) after upgrading to Windows Server 2025 (preview). Applications and services which rely on Live Migration (such as [SCVMM](/system-center/vmm/overview)) may also be affected.
+
+#### Affected devices
+Any Server with Credential Guard enabled may encounter this issue. Starting in Windows Server 2025, [Credential Guard is enabled by default](index.md#default-enablement-on-windows-server) on all domain-joined servers that are not Domain Controllers. Default enablement of Credential Guard can be [pre-emptively blocked](configure.md#how-to-prevent-default-enablement) before upgrade.
+
+#### Cause of the issue
+Live Migration with Hyper-V, and applications and services which rely on it, are affected by the issue if one or both ends of a given connection try to use CredSSP with Credential Guard enabled. With Credential Guard enabled, CredSSP can only utilize supplied credentials, not saved or SSO credentials.
+
+If the source machine of a Live Migration uses CredSSP for delegation with Credential Guard enabled, the Live Migration will fail. In most cases, Credential Guard's enablement state on the destination machine will not impact Live Migration. Live Migration will also fail in cluster scenarios (eg, SCVMM), since any device may at one point act as a source machine.
+
+#### How to fix the issue
+Instead of CredSSP Delegation, [Kerberos Constrained Delegation and Resource-Based Kerberos Constrained Delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) are recommended. These forms of delegation provide greater credential protections, in addition to being compatible with Credential Guard. Administrators of Hyper-V can configure these types of delegation manually or with the help of automated scripts.
+
+For a more immediate but less secure fix, [Credential Guard can be disabled](configure.md#disable-credential-guard). Credential Guard doesn't have per-protocol or per-application policies, and it can either be turned on or off. If you disable Credential Guard, you leave stored domain credentials vulnerable to theft.
 
 ### Single sign-on for Network services breaks after upgrading to Windows 11, version 22H2 or Windows Server 2025
 
