@@ -347,7 +347,12 @@
     },
     {
       "source_path": "windows/configuration/kiosk-prepare.md",
-      "redirect_url": "/windows/configuration/kiosk/recommendations",
+      "redirect_url": "/windows/configuration/assigned-access/recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk/recommendations.md",
+      "redirect_url": "/windows/configuration/assigned-access/recommendations",
       "redirect_document_id": false
     },
     {
