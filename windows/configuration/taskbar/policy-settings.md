@@ -37,7 +37,6 @@ Select one of the tabs to see the list of available settings:
 |[Show additional calendar](#show-additional-calendar)|❌|✅|
 |[Simplify Quick Settings Layout](#simplify-quick-settings-layout)|✅|✅|
 |[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
-|[Turn off Windows Copilot](#turn-off-windows-copilot)|✅|✅|
 
 ::: zone-end
 
@@ -62,7 +61,6 @@ Select one of the tabs to see the list of available settings:
 |[Show additional calendar](#show-additional-calendar)|❌|✅|
 |[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
 |[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
-|[Turn off Windows Copilot](#turn-off-windows-copilot)|✅|✅|
 
 ::: zone-end
 
@@ -108,8 +106,6 @@ Select one of the tabs to see the list of available settings:
 ::: zone pivot="windows-10"
 [!INCLUDE [turn-off-notification-area-cleanup](includes/turn-off-notification-area-cleanup.md)]
 ::: zone-end
-
-[!INCLUDE [turn-off-windows-copilot](includes/turn-off-windows-copilot.md)]
 
 #### [:::image type="icon" source="../images/icons/touch.svg"::: **Taskbar behaviors**](#tab/actions)
 

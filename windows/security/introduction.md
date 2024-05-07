@@ -4,10 +4,10 @@ description: System security book.
 ms.date: 09/01/2023
 ms.topic: tutorial
 ms.author: paoloma
-ms.collection: 
+ms.collection:
   - essentials-security
   - essentials-overview
-content_well_notification: 
+content_well_notification:
   - AI-contribution
 author: paolomatarazzo
 appliesto:
@@ -57,4 +57,6 @@ Microsoft offers comprehensive cloud services for identity, storage, and access 
 
 ## Next steps
 
-To learn more about the security features included in Windows 11, download the [Windows 11 Security Book: Powerful security from chip to cloud](https://aka.ms/Windows11SecurityBook).
+To learn more about the security features included in Windows 11, read the [Windows 11 Security Book](book/index.md).
+
+<!--(https://aka.ms/Windows11SecurityBook).-->
