@@ -41,7 +41,7 @@ Before you begin the process of adding Windows Update for Business reports to yo
 Windows Update for Business reports only provides data for the standard desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
 
 > [!Important]
-> Currently there is a known issue where Windows Update for Business reports doesn't display data for Enterprise multi-session edition devices. <!--8928451-->
+> Currently there is a known issue where Windows Update for Business reports doesn't display data for Enterprise multi-session edition devices. <!--8928451, also listed in FAQ-->
 
 ## Windows client servicing channels
 
