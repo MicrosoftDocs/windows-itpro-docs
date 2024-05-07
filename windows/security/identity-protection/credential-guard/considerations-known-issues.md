@@ -5,10 +5,10 @@ description: Considerations, recommendations and known issues when using Credent
 ms.topic: troubleshooting
 ---
 
+# Considerations and known issues when using Credential Guard
+
 > [!IMPORTANT]
 > Windows Server 2025 is in PREVIEW. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
-
-# Considerations and known issues when using Credential Guard
 
 It's recommended that in addition to deploying Credential Guard, organizations move away from passwords to other authentication methods, such as Windows Hello for Business, FIDO 2 security keys or smart cards.
 
