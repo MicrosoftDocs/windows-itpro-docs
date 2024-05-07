@@ -63,7 +63,9 @@ sections:
           Data retained beyond these no-charge periods are charged for each GB of data retained for a month, pro-rated daily. For more information, see **Log Data Retention** in [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
       - question: What Windows versions are supported?
         answer: |
-          Windows Update for Business reports supports clients running a [supported version of Windows 10 or Windows 11](/windows/release-health/supported-versions-windows-client) Professional, Education, and Enterprise editions. Windows Update for Business reports only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
+          Windows Update for Business reports supports clients running a [supported version of Windows 10 or Windows 11](/windows/release-health/supported-versions-windows-client) Professional, Education, Enterprise, and Enterprise multi-session editions. Windows Update for Business reports only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
+          > [!Important]
+          > Currently there is a known issue where Windows Update for Business reports doesn't display data for Enterprise multi-session edition devices. <!--8928451-->
 
   - name: Setup questions
     questions:
