@@ -1,7 +1,7 @@
 ---
 title: Use Quick Assist to help users
 description: Learn how IT Pros can use Quick Assist to help users.
-ms.date: 08/10/2023
+ms.date: 05/09/2024
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
@@ -12,6 +12,11 @@ ms.collection:
 # Use Quick Assist to help users
 
 Quick Assist is an application that enables a person to share their [Windows](#install-quick-assist-on-windows) or [macOS](#install-quick-assist-on-macos) device with another person over a remote connection. Your support staff can use it to remotely connect to a user's device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
+
+> [!IMPORTANT]
+> Learn how to [protect yourself from tech support scams](https://support.microsoft.com/help/4013405). Tech support scams are an industry-wide issue where scammers use scare tactics to trick you into unnecessary technical support services. Only allow a Helper to connect to your device if you initiated the interaction by contacting Microsoft Support or your IT support staff directly.
+>
+> If you or someone you know has been affected by a tech support scam, use the [technical support scam form](https://support.microsoft.com/windows/cfa4609a-92cc-4808-95e8-392b4ffd0753) to report it.
 
 ## Before you begin
 
@@ -142,6 +147,43 @@ Quick Assist for macOS is available for interactions with Microsoft Support. If 
 
 > [!NOTE]
 > Quick Assist for macOS is not available outside of Microsoft Support interactions.
+
+## Disable Quick Assist within your organization
+
+If your organization utilizes another remote support tool such as [Remote Help](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune-remote-help), remove or disable Quick Assist as a best practice, if it is not used within your environment. This prevents external users from using Quick Assist to gain access to devices within your organization.
+
+### Disable Quick Assist
+
+To disable Quick Assist, block traffic to the `https://remoteassistance.support.services.microsoft.com` endpoint. This is the primary endpoint used by Quick Assist to establish a session, and once blocked, Quick Assist cannot be used to get help or help someone.
+
+### Uninstall Quick Assist
+
+#### Uninstall via Powershell
+
+Run the following Powershell command as Administrator:
+
+`Remove-AppxPackage -Package MicrosoftCorporationII.QuickAssist_2.0.30.0_x64__8wekyb3d8bbwe -AllUsers`
+
+#### Uninstall via Windows Settings
+
+Navigate to **Settings** > **Apps** > Quick Assist > select the ellipsis (…). then select **Uninstall**.
+
+## Report Abuse
+
+Prior to joining a session, it is important for you to know who you are connecting to. Anyone that has control over your device can perform actions on your device, and potentially install malicious applications or take other actions that will damage your device.
+
+Follow these best practices for using Quick Assist or any remote desktop software:
+
+- Never allow a connection to your device by someone claiming to be "IT Support" unless you initiated the interaction with them.
+- Don't provide access to anyone claiming to have an urgent need to access your device.
+- Don't share credentials to any websites or applications.
+
+> [!NOTE]
+> Microsoft will never contact you through unsolicited emails, phone calls, or other methods to request access to your device. Microsoft will only request access to your device if you have contacted us and directly requested help with solving an issue you are experiencing. If you need customer service support from Microsoft, please visit [Microsoft Support](https://support.microsoft.com/).
+
+If you suspect that the person connecting to your device is being malicious, disconnect from the session immediately and report the concern to your local authorities and/or any relevant IT members within your organization.
+
+If you or someone you know has been affected by a tech support scam, use the [technical support scam form](https://support.microsoft.com/windows/cfa4609a-92cc-4808-95e8-392b4ffd0753) to report it.
 
 ## Next steps
 
