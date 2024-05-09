@@ -166,7 +166,7 @@ Run the following PowerShell command as Administrator:
 
 #### Uninstall via Windows Settings
 
-Navigate to **Settings** > **Apps** > Quick Assist > select the ellipsis (…), then select **Uninstall**.
+Navigate to **Settings** > **Apps** > **Installed apps** > Quick Assist > select the ellipsis (…), then select **Uninstall**.
 
 ## Report Abuse
 
