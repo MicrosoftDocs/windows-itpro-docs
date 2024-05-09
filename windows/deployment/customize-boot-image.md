@@ -7,7 +7,7 @@ author: frankroj
 manager: aaroncz
 ms.author: frankroj
 ms.topic: article
-ms.date: 09/05/2023
+ms.date: 05/09/2024
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
