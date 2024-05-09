@@ -1,6 +1,6 @@
 ---
 title: Customize Windows PE boot images
-description: This article describes how to customize a Windows PE (WinPE) boot image including updating with the latest cumulative update, adding drivers, and adding optional components.
+description: This article describes how to customize a Windows PE (WinPE) boot image including updating it with the latest cumulative update, adding drivers, and adding optional components.
 ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
