@@ -176,4 +176,4 @@ The **Review problem reports** tool opens, showing you your Windows Error Report
 **Background:** Some of the diagnostic data collected from the new Microsoft Edge is sent using a Protocol Buffers (protobuf) to reduce network bandwidth and to improve data transfer efficiency. Diagnostic Data Viewer has a decoding capability to translate this protobuf format into human readable text. Due to a bug, sometimes the decoder fails to translate these protobuf messages and hence some of the New Microsoft Edge diagnostic data will appear as a blob of encoded text.
 
 > [!IMPORTANT]
-> To inquire about Windows data access or interoperability related to the Digital Markets Act (DMA), [submit this form](https://go.microsoft.com/fwlink/p/?linkid=2271128&clcid=0x409).
+> To inquire about Windows data access or interoperability related to the Digital Markets Act (DMA), [submit this form](https://go.microsoft.com/fwlink/p/?linkid=2271128).
