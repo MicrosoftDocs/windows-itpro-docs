@@ -20,7 +20,7 @@ items:
   - name: Configure PIN reset
     href: pin-reset.md
   - name: Configure dual enrollment
-    href: hello-feature-dual-enrollment.md
+    href: dual-enrollment.md
   - name: Configure dynamic lock
     href: hello-feature-dynamic-lock.md
   - name: Configure multi-factor unlock

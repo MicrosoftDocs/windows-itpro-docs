@@ -1,7 +1,7 @@
 ---
 title: VPN connection types
 description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
-ms.date: 08/03/2023
+ms.date: 05/06/2024
 ms.topic: concept-article
 ---
 
@@ -30,7 +30,7 @@ Tunneling protocols:
 
 Using the UWP platform, non-Microsoft VPN providers can create app-containerized plug-ins using WinRT APIs, eliminating the complexity and problems often associated with writing to system-level drivers.
 
-There are many Universal Windows Platform VPN applications, such as Pulse Secure, Cisco AnyConnect, F5 Access, Sonicwall Mobile Connect, and Check Point Capsule. If you want to use a UWP VPN plug-in, work with your vendor for any custom settings needed to configure your VPN solution.
+There are many Universal Windows Platform VPN applications, such as Pulse Secure, Cisco AnyConnect, F5 Access, SonicWall Mobile Connect, and Check Point Capsule. If you want to use a UWP VPN plug-in, work with your vendor for any custom settings needed to configure your VPN solution.
 
 ## Configure connection type
 

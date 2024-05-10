@@ -2,7 +2,7 @@
 title: Assigned Access XML Schema Definition (XSD)
 description: Assigned Access XSD reference article.
 ms.topic: reference
-ms.date: 02/15/2024
+ms.date: 04/08/2024
 ---
 
 # Assigned Access XML Schema Definition (XSD)
@@ -232,7 +232,7 @@ Here's the Assigned Access XSD for the features added in Windows 11:
 
 ## Windows 11, version 21H2 additions
 
-Here's the Assigned Access XSD for the features added in Windows 10, version 21H2:
+Here's the Assigned Access XSD for the features added in Windows 11, version 21H2:
 
 ```xml
 <xs:schema

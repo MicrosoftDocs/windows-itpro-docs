@@ -215,14 +215,6 @@ A multiple activation key activates either individual computers or a group of co
 
 | Scenario | Ownership | MAK | KMS | AD based activation | Subscription Activation |
 |-|-|:-:|:-:|:-:|:-:|
-| **Workplace join (add work or school account)** | Personal (or student-owned) | X | | | |
-| **Microsoft Entra join** | Organization | X | X | | X |
-| **Microsoft Entra hybrid join** | Organization | X | X | X | X |
-
-## Related links
-
-- [Windows 10 edition upgrade (Windows 10)](/windows/deployment/upgrade/windows-10-edition-upgrades)
-- [Windows 10/11 Subscription Activation](/windows/deployment/windows-10-subscription-activation)
-- [Equip Your Students with Windows 11 Education - Kivuto](https://kivuto.com/windows-11-student-use-benefit/)
-- [Upgrade Windows Home to Windows Pro (microsoft.com)](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
-- [Partner Center: Upgrade Education customers from Windows 10 Home to Windows 10 Education](/partner-center/upgrade-windows-to-education)
+| **Workplace join (add work or school account)** | Personal (or student-owned) | ✅ | | | |
+| **Microsoft Entra join** | Organization | ✅ | ✅ | | ✅ |
+| **Microsoft Entra hybrid join** | Organization | ✅ | ✅ | ✅ | ✅ |
