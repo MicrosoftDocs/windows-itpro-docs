@@ -168,6 +168,27 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
 
      ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
 
+#### User settings for notifications
+<!--8936877-->
+*Applies to:*
+- Windows 11, version 23H2 with [KB999999](https://support.microsoft.com/help/999999) or later
+- Windows 11, version 22H2 with [KB999999](https://support.microsoft.com/help/999999) or later
+
+Users can set a preference for notifications about pending restarts for updates under **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating**.
+
+Users have the following options for the **Notify me when a restart is required to finish updating** setting:
+
+- **Off** (default): Once the device enters a pending reboot state after installing updates, restart notifications are suppressed for 24 hours. Typically, users will receive fewer notifications about upcoming restarts while the deadline is approaching.
+- **On**: Users are immediately notified when the device enters a reboot pending state after installing updates. Automatic reboots for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. This setting is recommended for users who want to be notified about upcoming restarts. 
+
+The user preference for notifications apply when the following policies for [compliance deadlines](wufb-compliancedeadlines.md) are used:
+
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineGracePeriodForFeatureUpdates (Windows 11, version 22H2 or later)](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot) 
+
 #### I want to manage the notifications a user sees
 
 There are additional settings that affect the notifications.
@@ -191,6 +212,8 @@ Users with access to update pause settings can prevent both feature and quality 
 When you disable this setting, users see **Some settings are managed by your organization** and the update pause settings are greyed out.
 
 If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use [Update/SetDisableUXWUAccess](/windows/client-management/mdm/policy-csp-update#setdisableuxwuaccess).
+
+
 
 #### I want to enable features introduced via servicing that are off by default
 <!--6544872-->
