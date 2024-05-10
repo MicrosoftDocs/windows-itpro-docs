@@ -39,9 +39,9 @@ You can control when updates are applied, for example by deferring when an updat
 
 Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
 
-To enable Microsoft Updates, use [Update/AllowMUUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice).
+To enable Microsoft Updates, use [Update/AllowMUUpdateService](/windows/client-management/mdm/policy-csp-update#allowmuupdateservice).
 
-Drivers are automatically enabled because they're beneficial to device systems. We recommend that you allow the driver policy to allow drivers to be updated on devices (the default), but you can turn off this setting if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use Update/[ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-csp-update#update-excludewudriversinqualityupdate).
+Drivers are automatically enabled because they're beneficial to device systems. We recommend that you allow the driver policy to allow drivers to be updated on devices (the default), but you can turn off this setting if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use Update/[ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-csp-update#excludewudriversinqualityupdate).
 
  We also recommend that you allow Microsoft product updates as discussed previously.
 
@@ -51,20 +51,20 @@ Drivers are automatically enabled because they're beneficial to device systems. 
 
 1. Ensure that you're enrolled in the Windows Insider Program for Business. Windows Insider is a free program available to commercial customers to aid them in their validation of feature updates before they're released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates. 
 
-1. For any of test devices you want to install prerelease builds, use [Update/ManagePreviewBuilds](/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds). Set the option to **Enable preview builds**.
+1. For any of test devices you want to install prerelease builds, use [Update/ManagePreviewBuilds](/windows/client-management/mdm/policy-csp-update#managepreviewbuilds). Set the option to **Enable preview builds**.
 
-1. Use [Update/BranchReadinessLevel](/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel) and select one of the preview Builds. Windows Insider Program Slow is the recommended channel for commercial customers who are using prerelease builds for validation.
+1. Use [Update/BranchReadinessLevel](/windows/client-management/mdm/policy-csp-update#branchreadinesslevel) and select one of the preview Builds. Windows Insider Program Slow is the recommended channel for commercial customers who are using prerelease builds for validation.
 
-1. Additionally, you can defer prerelease feature updates the same way as released updates, by setting a deferral period up to 14 days by using [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays). If you're testing with Windows Insider Program Slow builds, we recommend that you receive the preview updates to your IT department on day 0, when the update is released, and then have a 7-10 day deferral before rolling out to your group of testers. This schedule helps ensure that if a problem is discovered, you can pause the rollout of the preview update before it reaches your tests.
+1. Additionally, you can defer prerelease feature updates the same way as released updates, by setting a deferral period up to 14 days by using [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#deferfeatureupdatesperiodindays). If you're testing with Windows Insider Program Slow builds, we recommend that you receive the preview updates to your IT department on day 0, when the update is released, and then have a 7-10 day deferral before rolling out to your group of testers. This schedule helps ensure that if a problem is discovered, you can pause the rollout of the preview update before it reaches your tests.
 
 #### I want to manage which released feature update my devices receive
 
 A Windows Update for Business administrator can defer or pause updates. You can defer feature updates for up to 365 days and defer quality updates for up to 30 days. Deferring simply means that you don't receive the update until it has been released for at least the number of deferral days you specified (offer date = release date + deferral date). You can pause feature or quality updates for up to 35 days from a given start date that you specify.
 
-- To defer a feature update: [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays)
-- To pause a feature update: [Update/PauseFeatureUpdatesStartTime](/windows/client-management/mdm/policy-csp-update#update-pausefeatureupdatesstarttime)
-- To defer a quality update: [Update/DeferQualityUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays)
-- To pause a quality update: [Update/PauseQualityUpdatesStartTime](/windows/client-management/mdm/policy-csp-update#update-pausequalityupdatesstarttime)
+- To defer a feature update: [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#deferfeatureupdatesperiodindays)
+- To pause a feature update: [Update/PauseFeatureUpdatesStartTime](/windows/client-management/mdm/policy-csp-update#pausefeatureupdatesstarttime)
+- To defer a quality update: [Update/DeferQualityUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#deferqualityupdatesperiodindays)
+- To pause a quality update: [Update/PauseQualityUpdatesStartTime](/windows/client-management/mdm/policy-csp-update#pausequalityupdatesstarttime)
 
 #### Example
 
@@ -103,7 +103,7 @@ Now all devices are paused from updating for 35 days. When the pause is removed,
 
 #### I want to stay on a specific version
 
-If you need a device to stay on a version beyond the point when deferrals on the next version would elapse or if you need to skip a version (for example, update fall release to fall release) use the [Update/TargetReleaseVersion](/windows/client-management/mdm/policy-csp-update#update-targetreleaseversion) (or Deploy Feature Updates Preview in Intune) instead of using feature update deferrals. When you use this policy, specify the version that you want your device(s) to move to or stay on (for example, "1909"). You can find version information at the [Windows 10 Release Information Page](/windows/release-health/release-information).
+If you need a device to stay on a version beyond the point when deferrals on the next version would elapse or if you need to skip a version (for example, update fall release to fall release) use the [Update/TargetReleaseVersion](/windows/client-management/mdm/policy-csp-update#targetreleaseversion) (or Deploy Feature Updates Preview in Intune) instead of using feature update deferrals. When you use this policy, specify the version that you want your device(s) to move to or stay on (for example, "1909"). You can find version information at the [Windows 10 Release Information Page](/windows/release-health/release-information).
 
 ### Manage how users experience updates
 
@@ -111,34 +111,34 @@ If you need a device to stay on a version beyond the point when deferrals on the
 
 We recommended that you allow to update automatically, which is the default behavior. If you don't set an automatic update policy, the device attempts to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours and smart busy check.
 
-For more granular control, you can set the maximum period of active hours the user can set with [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange). You could also set specific start and end times for active ours with [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) and [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart).
+For more granular control, you can set the maximum period of active hours the user can set with [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#activehoursmaxrange). You could also set specific start and end times for active ours with [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#activehoursend) and [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#activehoursstart).
 
 It's best to refrain from setting the active hours policy because it's enabled by default when automatic updates aren't disabled and provides a better experience when users can set their own active hours.
 
-To update outside of the active hours, use [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) with Option 2 (which is the default setting). For even more granular control, consider using automatic updates to schedule the install time, day, or week. To use a schedule, use Option 3, and then set the following policies as appropriate for your plan:
+To update outside of the active hours, use [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#allowautoupdate) with Option 2 (which is the default setting). For even more granular control, consider using automatic updates to schedule the install time, day, or week. To use a schedule, use Option 3, and then set the following policies as appropriate for your plan:
 
-- [Update/ScheduledInstallDay](/windows/client-management/mdm/policy-csp-update#update-scheduledinstallday) 
-- [Update/ScheduledInstallEveryWeek](/windows/client-management/mdm/policy-csp-update#update-scheduledinstalleveryweek) 
-- [Update/ScheduledInstallFirstWeek](/windows/client-management/mdm/policy-csp-update#update-scheduledinstallfirstweek) 
-- [Update/ScheduledInstallFourthWeek](/windows/client-management/mdm/policy-csp-update#update-scheduledinstallfourthweek) 
-- [Update/ScheduledInstallSecondWeek](/windows/client-management/mdm/policy-csp-update#update-scheduledinstallsecondweek) 
-- [Update/ScheduledInstallThirdWeek](/windows/client-management/mdm/policy-csp-update#update-scheduledinstallthirdweek) 
-- [Update/ScheduledInstallTime](/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
+- [Update/ScheduledInstallDay](/windows/client-management/mdm/policy-csp-update#scheduledinstallday) 
+- [Update/ScheduledInstallEveryWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstalleveryweek) 
+- [Update/ScheduledInstallFirstWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallfirstweek) 
+- [Update/ScheduledInstallFourthWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallfourthweek) 
+- [Update/ScheduledInstallSecondWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallsecondweek) 
+- [Update/ScheduledInstallThirdWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallthirdweek) 
+- [Update/ScheduledInstallTime](/windows/client-management/mdm/policy-csp-update#scheduledinstalltime)
 
 
 When you set these policies, installation happens automatically at the specified time and the device will restart 15 minutes after installation is complete (unless it's interrupted by the user).
 
-If you don't want to allow any automatic updates prior to the deadline, set [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate) to Option 5, which turns off automatic updates.
+If you don't want to allow any automatic updates prior to the deadline, set [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#allowautoupdate) to Option 5, which turns off automatic updates.
 
 #### I want to keep devices secure and compliant with update deadlines
 
 We recommend that you use set specific deadlines for feature and quality updates to ensure that devices stay secure on Windows 10, version 1709 and later. Deadlines work by enabling you to specify the number of days that can elapse after an update is offered to a device before it must be installed. Also you can set the number of days that can elapse after a pending restart before the user is forced to restart. Use these settings:
 
-- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
-- [Update/ConfigureDeadlineForQualityUpdates ](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlineforfeatureupdates) 
+- [Update/ConfigureDeadlineForQualityUpdates ](/windows/client-management/mdm/policy-csp-update#configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiod)
 - [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates)
-- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot)
 
 These policies also offer an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline has actually expired. At that point, the device automatically schedules a restart regardless of active hours.
 
@@ -172,7 +172,7 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
 
 There are additional settings that affect the notifications.
 
-We recommend that you use the default notifications as they aim to provide the best user experience while adjusting for the compliance policies that you set. If you do have further needs that aren't met by the default notification settings, you can use the [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) policy with these values:
+We recommend that you use the default notifications as they aim to provide the best user experience while adjusting for the compliance policies that you set. If you do have further needs that aren't met by the default notification settings, you can use the [Update/NoUpdateNotificationsDuringActiveHours](/windows/client-management/mdm/policy-csp-update#NoUpdateNotificationsDuringActiveHours) policy with these values:
 
 **0** (default) - Use the default Windows Update notifications<br/>
 **1** - Turn off all notifications, excluding restart warnings<br/>
@@ -181,16 +181,16 @@ We recommend that you use the default notifications as they aim to provide the b
 > [!NOTE]
 > Option **2** creates a poor experience for personal devices; it's only recommended for kiosk devices where automatic restarts have been disabled.
 
-Still more options are available in [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning). This setting allows you to specify the period for auto restart warning reminder notifications (from 2-24 hours; 4 hours is the default) before the update. You can also specify the period for auto restart imminent warning notifications with [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning) (15-60 minutes is the default). We recommend using the default notifications.
+Still more options are available in [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#schedulerestartwarning). This setting allows you to specify the period for auto restart warning reminder notifications (from 2-24 hours; 4 hours is the default) before the update. You can also specify the period for auto restart imminent warning notifications with [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#scheduleimminentrestartwarning) (15-60 minutes is the default). We recommend using the default notifications.
 
 #### I want to manage the update settings a user can access
 
 Every Windows device provides users with various controls they can use to manage Windows Updates. They can access these controls by Search to find Windows Updates or by going selecting **Updates and Security** in **Settings**. We provide the ability to disable a variety of these controls that are accessible to users.
  
-Users with access to update pause settings can prevent both feature and quality updates for 7 days. You can prevent users from pausing updates through the Windows Update settings page by using [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
+Users with access to update pause settings can prevent both feature and quality updates for 7 days. You can prevent users from pausing updates through the Windows Update settings page by using [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#setdisablepauseuxaccess).
 When you disable this setting, users see **Some settings are managed by your organization** and the update pause settings are greyed out.
 
-If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use [Update/SetDisableUXWUAccess](/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess).
+If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use [Update/SetDisableUXWUAccess](/windows/client-management/mdm/policy-csp-update#setdisableuxwuaccess).
 
 #### I want to enable features introduced via servicing that are off by default
 <!--6544872-->
