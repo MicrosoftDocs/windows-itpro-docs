@@ -125,7 +125,7 @@ When Windows spotlight is enabled, devices apply a new image on the lock screen 
 
 To learn more about organizational messages, see:
 
-- [Organizational messages in the Microsoft 365 admin center]
+- [Organizational messages in the Microsoft 365 admin center][M365-1]
 - [Organizational messages in Microsoft Intune][INT-1]
 
 <!--links-->
