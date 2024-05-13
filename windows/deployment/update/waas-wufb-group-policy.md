@@ -175,7 +175,7 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
      ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
 
 
-#### User settings for notifications
+#### <a name="user-settings-for-notifications"></a> User settings for notifications
 <!--8936877-->
 *Applies to:*
 - Windows 11, version 23H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
