@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 01/18/2024
+ms.date: 05/14/2024
 ---
 
 # Walkthrough: Use CSPs and MDMs to configure Windows Update for Business
@@ -171,15 +171,20 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
 #### User settings for notifications
 <!--8936877-->
 *Applies to:*
-- Windows 11, version 23H2 with [KB999999](https://support.microsoft.com/help/999999) or later
-- Windows 11, version 22H2 with [KB999999](https://support.microsoft.com/help/999999) or later
+- Windows 11, version 23H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
+- Windows 11, version 22H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
 
 Users can set a preference for notifications about pending restarts for updates under **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating**.
 
 Users have the following options for the **Notify me when a restart is required to finish updating** setting:
 
-- **Off** (default): Once the device enters a pending reboot state after installing updates, restart notifications are suppressed for 24 hours. Typically, users will receive fewer notifications about upcoming restarts while the deadline is approaching.
+- **Off** (default): Once the device enters a pending reboot state after installing updates, restart notifications are suppressed for 24 hours. Typically, users will receive fewer notifications about upcoming restarts while the deadline is approaching. Users will still receive a prompt 4 hours before the deadline and a final nondismissable prompt 15 minutes before a forced restart. 
+    - When the deadline is set for 1 day, users will only receive a prompt 4 hours before the deadline and a final nondismissable prompt 15 minutes before a forced restart.
+
 - **On**: Users are immediately notified when the device enters a reboot pending state after installing updates. Automatic reboots for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. This setting is recommended for users who want to be notified about upcoming restarts. 
+   - When the deadline is set for 1 day, an initial notification occurs, automatic restart is blocked for 24 hours, and users will receive a prompt 4 hours before the deadline and a final nondismissable prompt 15 minutes before a forced restart.
+
+When a deadline is set for 0 days, no matter which option is selected, the only prompt users will receive is a final nondismissable prompt 15 minutes before a forced restart.
 
 The user preference for notifications apply when the following policies for [compliance deadlines](wufb-compliancedeadlines.md) are used:
 
