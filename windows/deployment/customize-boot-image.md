@@ -1,13 +1,13 @@
 ---
 title: Customize Windows PE boot images
-description: This article describes how to customize a Windows PE (WinPE) boot image including updating with the latest cumulative update, adding drivers, and adding optional components.
+description: This article describes how to customize a Windows PE (WinPE) boot image including updating it with the latest cumulative update, adding drivers, and adding optional components.
 ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
 ms.topic: article
-ms.date: 09/05/2023
+ms.date: 05/09/2024
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -88,7 +88,8 @@ This walkthrough describes how to customize a Windows PE boot image including up
 
 > [!NOTE]
 >
-> When updating the boot image in the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads), download the cumulative update for Windows 10 Version 22H2.
+> - When updating the boot image in the [ADK 10.1.25398.1 (September 2023)](/windows-hardware/get-started/adk-install#download-the-adk-101253981-september-2023), download the **Cumulative Update for Microsoft server operating system version 23H2 for x64-based Systems**.
+> - When updating the boot image in the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads), download the **Cumulative Update for Windows 10 Version 22H2**.
 
 ## Step 3: Backup existing boot image
 
@@ -141,7 +142,7 @@ For more information, see [copy](/windows-server/administration/windows-commands
 
 > [!IMPORTANT]
 >
-> When using the default `winpe.wim` boot image from the **Windows PE add-on for the Windows ADK**, it's recommended to always have a backed copy of the original unmodified boot image. This allows reverting back to the pristine untouched original boot image in case any issues occur with any iteration of an updated boot image. Additionally, whenever a new cumulative update needs to be applied to a boot image, it's recommended to always start fresh and update from the original boot image with no updates instead of updating a previously updated boot image.
+> When using the default `winpe.wim` boot image from the **Windows PE add-on for the Windows ADK**, it's recommended to always have a backed up copy of the original unmodified boot image. This allows reverting back to the pristine untouched original boot image in case any issues occur with any iteration of an updated boot image. Additionally, whenever a new cumulative update needs to be applied to a boot image, it's recommended to always start fresh and update from the original boot image with no updates instead of updating a previously updated boot image.
 
 ## Step 4: Mount boot image to mount folder
 
