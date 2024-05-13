@@ -17,7 +17,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.date: 02/27/2024
+ms.date: 05/14/2024
 ---
 
 # Walkthrough: Use Group Policy to configure Windows Update for Business
@@ -173,6 +173,28 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
    - Once the deadline has passed, the user is forced to restart to keep their devices in compliance and receives this notification:
 
      ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
+
+
+#### User settings for notifications
+<!--8936877-->
+*Applies to:*
+- Windows 11, version 23H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
+- Windows 11, version 22H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
+
+Users can set a preference for notifications about pending restarts for updates under **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating**.
+
+Users have the following options for the **Notify me when a restart is required to finish updating** setting:
+
+- **Off** (default): Once the device enters a pending reboot state after installing updates, restart notifications are suppressed for 24 hours. Typically, users receive fewer notifications about upcoming restarts while the deadline is approaching. 
+    - When the deadline is set for 1 day, users only receive a notification 4 hours before the deadline and a final nondismissable notification 15 minutes before a forced restart.
+
+- **On**: Users are immediately notified when the device enters a reboot pending state after installing updates. Automatic reboots for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. This setting is recommended for users who want to be notified about upcoming restarts. 
+   - When the deadline is set for 1 day, an initial notification occurs, automatic restart is blocked for 24 hours, and users receive a notification 4 hours before the deadline and a final nondismissable notification 15 minutes before a forced restart.
+
+When a deadline is set for 0 days, no matter which option is selected, the only notification users receive is a final nondismissable notification 15 minutes before a forced restart.
+
+The user preference for notifications applies when [compliance deadlines](wufb-compliancedeadlines.md) are used. The policy for compliance deadlines is under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify deadlines for automatic updates and restarts**.
+
 
 #### I want to manage the notifications a user sees
 
