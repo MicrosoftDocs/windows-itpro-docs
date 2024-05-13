@@ -178,15 +178,15 @@ Users can set a preference for notifications about pending restarts for updates 
 
 Users have the following options for the **Notify me when a restart is required to finish updating** setting:
 
-- **Off** (default): Once the device enters a pending reboot state after installing updates, restart notifications are suppressed for 24 hours. Typically, users will receive fewer notifications about upcoming restarts while the deadline is approaching. Users will still receive a prompt 4 hours before the deadline and a final nondismissable prompt 15 minutes before a forced restart. 
-    - When the deadline is set for 1 day, users will only receive a prompt 4 hours before the deadline and a final nondismissable prompt 15 minutes before a forced restart.
+- **Off** (default): Once the device enters a pending reboot state after installing updates, restart notifications are suppressed for 24 hours. Typically, users receive fewer notifications about upcoming restarts while the deadline is approaching. 
+    - When the deadline is set for 1 day, users only receive a notification 4 hours before the deadline and a final nondismissable notification 15 minutes before a forced restart.
 
 - **On**: Users are immediately notified when the device enters a reboot pending state after installing updates. Automatic reboots for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. This setting is recommended for users who want to be notified about upcoming restarts. 
-   - When the deadline is set for 1 day, an initial notification occurs, automatic restart is blocked for 24 hours, and users will receive a prompt 4 hours before the deadline and a final nondismissable prompt 15 minutes before a forced restart.
+   - When the deadline is set for 1 day, an initial notification occurs, automatic restart is blocked for 24 hours, and users receive a notification 4 hours before the deadline and a final nondismissable notification 15 minutes before a forced restart.
 
-When a deadline is set for 0 days, no matter which option is selected, the only prompt users will receive is a final nondismissable prompt 15 minutes before a forced restart.
+When a deadline is set for 0 days, no matter which option is selected, the only notification users receive is a final nondismissable notification 15 minutes before a forced restart.
 
-The user preference for notifications apply when the following policies for [compliance deadlines](wufb-compliancedeadlines.md) are used:
+The user preference for notifications applies when the following policies for [compliance deadlines](wufb-compliancedeadlines.md) are used:
 
 - [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
 - [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
