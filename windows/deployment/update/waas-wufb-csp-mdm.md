@@ -109,7 +109,7 @@ If you need a device to stay on a version beyond the point when deferrals on the
 
 #### I want to manage when devices download, install, and restart after updates
 
-We recommended that you allow to update automatically, which is the default behavior. If you don't set an automatic update policy, the device attempts to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours and smart busy check.
+We recommended that you allow to update automatically, which is the default behavior. If you don't set an automatic update policy, the device attempts to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours.
 
 For more granular control, you can set the maximum period of active hours the user can set with [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#activehoursmaxrange). You could also set specific start and end times for active ours with [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#activehoursend) and [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#activehoursstart).
 
@@ -168,20 +168,20 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
 
      ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
 
-#### <a name="user-settings-for-notifications"></a> User settings for notifications
+#### <a name="user-settings-for-notifications"></a> End user settings for notifications
 <!--8936877-->
 *Applies to:*
 - Windows 11, version 23H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
 - Windows 11, version 22H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
 
-Users can set a preference for notifications about pending restarts for updates under **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating**.
+Users can set a preference for notifications about pending restarts for updates under **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating**. This setting is end-user controlled and not controlled or configurable by IT administrators.
 
 Users have the following options for the **Notify me when a restart is required to finish updating** setting:
 
-- **Off** (default): Once the device enters a pending reboot state after installing updates, restart notifications are suppressed for 24 hours. Typically, users receive fewer notifications about upcoming restarts while the deadline is approaching. 
+- **Off** (default): Once the device enters a pending reboot state for updates, restart notifications are suppressed for 24 hours. Typically, users receive fewer notifications about upcoming restarts while the deadline is approaching. 
     - When the deadline is set for 1 day, users only receive a notification 4 hours before the deadline and a final nondismissable notification 15 minutes before a forced restart.
 
-- **On**: Users are immediately notified when the device enters a reboot pending state after installing updates. Automatic reboots for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. This setting is recommended for users who want to be notified about upcoming restarts. 
+- **On**: Users are immediately notified when the device enters a reboot pending state for updates. Automatic reboots for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. This setting is recommended for users who want to be notified about upcoming restarts. 
    - When the deadline is set for 1 day, an initial notification occurs, automatic restart is blocked for 24 hours, and users receive a notification 4 hours before the deadline and a final nondismissable notification 15 minutes before a forced restart.
 
 When a deadline is set for 0 days, no matter which option is selected, the only notification users receive is a final nondismissable notification 15 minutes before a forced restart.

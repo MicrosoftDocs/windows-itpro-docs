@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 11/07/2023
+ms.date: 05/14/2024
 ---
 
 # What is Windows Update for Business?
@@ -112,7 +112,7 @@ Windows Update for Business provides controls to help meet your organization's s
 
 #### Recommended experience settings
 
-Features like the smart busy check (which ensure updates don't happen when a user is signed in) and active hours help provide the best experience for end users while keeping devices more secure and up to date. Follow these steps to take advantage of these features:
+Features like active hours help provide the best experience for end users while keeping devices more secure and up to date. Follow these steps to take advantage of these features:
 
 1. Automatically download, install, and restart (default if no restart policies are set up or enabled).
 1. Use the default notifications.
