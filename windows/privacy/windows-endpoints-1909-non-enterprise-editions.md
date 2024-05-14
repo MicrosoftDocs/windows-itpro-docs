@@ -55,7 +55,6 @@ The following methodology was used to derive the network endpoints:
 |go.microsoft.com|HTTP|Windows Defender and/or Microsoft forward link redirection service (FWLink)
 |g.live.com|HTTP|OneDrive
 |checkappexec.microsoft.com|HTTPS|Used for Windows Defender Smartscreen reporting and notifications
-|emdl.ws.microsoft.com|HTTP|Windows Update
 |*.prod.do.dsp.mp.microsoft.com|HTTP/TLS v1.2|Windows Update
 |*.au.download.windowsupdate.com|HTTP|Windows Update
 |download.windowsupdate.com|HTTP|Windows Update
@@ -117,7 +116,6 @@ The following methodology was used to derive the network endpoints:
 |config.teams.microsoft.com|HTTPS|Used for Microsoft Teams application
 |ctldl.windowsupdate.com|HTTP|Used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available
 |displaycatalog.mp.microsoft.com*|HTTP/TLS v1.2|Microsoft Store
-|emdl.ws.microsoft.com|HTTP|Windows Update
 |fe2cr.update.microsoft.com|HTTPS/TLS v1.2|Windows Update
 |fe3cr.delivery.mp.microsoft.com|HTTPS/TLS v1.2|Windows Update
 |slscr.update.microsoft.com|HTTPS/TLS v1.2|Windows Update
@@ -187,7 +185,6 @@ The following methodology was used to derive the network endpoints:
 |iecvlist.microsoft.com|HTTP|Microsoft Edge
 |download.windowsupdate.com|HTTP|Windows Update
 |checkappexec.microsoft.com|HTTPS|Windows Defender
-|emdl.ws.microsoft.com|HTTP|Windows Update
 |evoke-windowsservices-tas.msedge.net|HTTPS/TLS v1.2|Photos app
 |g.live.com|TLS v1.2|OneDrive
 |go.microsoft.com|HTTP|Windows Defender
