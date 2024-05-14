@@ -162,7 +162,7 @@ To disable Quick Assist, block traffic to the `https://remoteassistance.support.
 
 Run the following PowerShell command as Administrator:
 
-`Remove-AppxPackage -Package MicrosoftCorporationII.QuickAssist_2.0.30.0_x64__8wekyb3d8bbwe -AllUsers`
+`Get-AppxPackage -Name MicrosoftCorporationII.QuickAssist | Remove-AppxPackage -AllUsers`
 
 #### Uninstall via Windows Settings
 
