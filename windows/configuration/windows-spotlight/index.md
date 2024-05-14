@@ -17,7 +17,7 @@ Windows spotlight is a feature that displays different wallpapers and offers sug
 
 - **Wallpapers**: Windows spotlight displays a new image on the lock screen and in the background every day
 - **Suggestions, fun facts, tips**: recommendations on how to enhance the user's productivity of Microsoft products. They're displayed in different locations, such as the lock screen, the background, the taskbar, or the Get Started app
-- **Organizational messages**: messages from your organization, which can be displayed in the taskbar, the notification area, or the Get Started app
+- **Organizational messages**: messages from your organization, which can be displayed in the lock screen, taskbar, the notification area, or the Get Started app
 
 :::image type="content" source="images/lockscreen-11.png" alt-text="Screenshot of the Windows 11 lock screen with Windows Spotlight enabled." border="false":::
 
@@ -27,7 +27,7 @@ Windows spotlight is a feature that displays different wallpapers and offers sug
 
 - **Wallpapers**: Windows spotlight displays a new image on the lock screen every day
 - **Suggestions, fun facts, tips**: recommendations on how to enhance the user's productivity of Microsoft products. They're displayed in different locations, such as the lock screen, the background, the taskbar, or the Get Started app
-- **Organizational messages**: messages from your organization, which can be displayed in the taskbar, the notification area, or the Get Started app
+- **Organizational messages**: messages from your organization, which can be displayed in the lock screen, taskbar, the notification area, or the Get Started app
 
 :::image type="content" source="images/lockscreen-10.png" alt-text="Screenshot of the Windows 10 lock screen with Windows Spotlight enabled." border="false":::
 
@@ -102,6 +102,9 @@ To configure the lock screen and background images, use the [Personalization CSP
 >
 > Lock screen images created at other aspect ratios might scale and center unpredictably on your device when changing aspect ratios. The recommendation for custom images that include text (such as a legal statement), is to create the lock screen image in `16:9` resolution with text contained in the `4:3` region, allowing the text to remain visible at any aspect ratio.
 
+> [!TIP]
+> You also have the option to configure a custom lock screen image using [organizational messages in the Microsoft 365 admin center][M365-1].
+
 ## User experience
 
 When Windows spotlight is enabled, devices apply a new image on the lock screen and in the background every day. The image is displayed in the background when the user signs in, and on the lock screen when the user locks the device. Users can still receive suggestions, fun facts, tips, or organizational messages. If you deploy a custom lock screen or background image, devices apply the custom image instead of the Windows spotlight image:
@@ -120,10 +123,14 @@ When Windows spotlight is enabled, devices apply a new image on the lock screen 
 
 ## Next steps
 
-To learn more about organizational messages, see [Organizational messages in Microsoft Intune][INT-1].
+To learn more about organizational messages, see:
+
+- [Organizational messages in the Microsoft 365 admin center][M365-1]
+- [Organizational messages in Microsoft Intune][INT-1]
 
 <!--links-->
 
 [CSP-1]: /windows/client-management/mdm/policy-csp-experience
 [CSP-2]: /windows/client-management/mdm/personalization-csp
 [INT-1]: /mem/intune/remote-actions/organizational-messages-overview
+[M365-1]: /microsoft-365/admin/misc/organizational-messages-microsoft-365?view=o365-worldwide
