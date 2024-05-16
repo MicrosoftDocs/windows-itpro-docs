@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 05/14/2024
+ms.date: 05/16/2024
 ---
 
 # Walkthrough: Use CSPs and MDMs to configure Windows Update for Business
@@ -179,10 +179,10 @@ Users can set a preference for notifications about pending restarts for updates 
 Users have the following options for the **Notify me when a restart is required to finish updating** setting:
 
 - **Off** (default): Once the device enters a pending reboot state for updates, restart notifications are suppressed for 24 hours. During the first 24 hours, automatic restarts can still occur outside of active hours. Typically, users receive fewer notifications about upcoming restarts while the deadline is approaching. 
-    - When the deadline is set for 1 day, users only receive a notification 4 hours before the deadline and a final nondismissable notification 15 minutes before a forced restart.
+    - When the deadline is set for 1 day, users only receive a notification about the deadline and a final nondismissable notification 15 minutes before a forced restart.
 
 - **On**: Users immediately receive a toast notification when the device enters a reboot pending state for updates. Automatic restarts for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. After 24 hours have passed, automatic restarts can occur. This setting is recommended for users who want to be notified about upcoming restarts. 
-   - When the deadline is set for 1 day, an initial notification occurs, automatic restart is blocked for 24 hours, and users receive a notification 4 hours before the deadline and a final nondismissable notification 15 minutes before a forced restart.
+   - When the deadline is set for 1 day, an initial notification occurs, automatic restart is blocked for 24 hours, and users receive another notification before the deadline and a final nondismissable notification 15 minutes before a forced restart.
 
 When a deadline is set for 0 days, no matter which option is selected, the only notification users receive is a final nondismissable notification 15 minutes before a forced restart.
 
