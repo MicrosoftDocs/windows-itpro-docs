@@ -12,7 +12,7 @@ appliesto:
 ---
 
 # Manage Recall
-
+<!--8908044-->
 >**Looking for consumer information?** See [Retrace your steps with Recall](https://support.microsoft.com/topic/aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c).
 
 Recall allows you to search across time to find the content you need. Just describe how you remember it, and Recall retrieves the moment you saw it. Recall takes snapshots of your screen and stores them in a timeline. Snapshots are taken every five seconds while content on the screen is different from the previous snapshot. Snapshots are locally stored and locally analyzed on your PC. Recall's analysis allows you to search for content, including both images and text, using natural language.
