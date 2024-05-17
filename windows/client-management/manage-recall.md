@@ -8,7 +8,7 @@ ms.author: mstewart
 author: mestew
 ms.collection: windows-copilot
 appliesto:
-- ✅ <a href="https://aka.ms/nextgenaipcs" target="_blank">Copilot+ PCs</a>
+- ✅ Copilot+ PCs
 ---
 
 # Manage Recall
@@ -19,11 +19,12 @@ Recall allows you to search across time to find the content you need. Just descr
 
 When Recall opens the snapshot a user selected, it enables screenray, which runs on top of the saved snapshot. Screenray analyzes what's in the snapshot and allows users to interact with individual elements in the snapshot. For instance, users can copy text from the snapshot or send pictures from the snapshot to an app that supports `jpeg` files.
 
-## System requirements
+:::image type="content" source="images/8908044-recall.png" alt-text="Screenshot of Recall with search results displayed for a query about a restaurant that the user's friend sent them." lightbox="images/8908044-recall.png":::
 
+## System requirements
 Recall has the following minimum system requirements:
 
-- A [Copilot+ PC](https://aka.ms/nextgenaipcs)
+- A Copilot+ PC
 - 16 GB RAM
 - 8 logical processors
 - 256 GB storage capacity
