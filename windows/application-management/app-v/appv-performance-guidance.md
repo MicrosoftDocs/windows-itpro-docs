@@ -168,9 +168,9 @@ We recommend using User Experience Virtualization (UE-V) to capture and centrali
 
 For more information, see:
 
-- [User Experience Virtualization (UE-V) for Windows client overview](/windows/configuration/ue-v/uev-for-windows)
+- [User Experience Virtualization (UE-V) for Windows client overview](/microsoft-desktop-optimization-pack/ue-v/uev-for-windows)
 
-- [Get Started with UE-V](/windows/configuration/ue-v/uev-getting-started)
+- [Get Started with UE-V](/microsoft-desktop-optimization-pack/ue-v/uev-getting-started)
 
 > [!Note]
 > Without performing an additional configuration step, User Environment Virtualization (UE-V) won't be able to synchronize the Start menu shortcuts (.lnk files) on the target computer. The .lnk file type is excluded by default.
