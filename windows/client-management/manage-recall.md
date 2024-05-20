@@ -8,7 +8,8 @@ ms.author: mstewart
 author: mestew
 ms.collection: windows-copilot
 appliesto:
-- ✅ Copilot+ PCs
+- ✅ <a href="https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs" target="_blank">Copilot+ PCs</a>
+---
 ---
 
 # Manage Recall
@@ -24,7 +25,7 @@ When Recall opens the snapshot a user selected, it enables screenray, which runs
 ## System requirements
 Recall has the following minimum system requirements:
 
-- A Copilot+ PC
+- A [Copilot+ PC](https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs)
 - 16 GB RAM
 - 8 logical processors
 - 256 GB storage capacity
