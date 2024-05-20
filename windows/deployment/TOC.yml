@@ -112,6 +112,8 @@
               href: update/waas-manage-updates-wsus.md
             - name: Deploy updates with Group Policy
               href: update/waas-wufb-group-policy.md
+            - name: Deploy updates using CSPs and MDM
+              href: update/waas-wufb-csp-mdm.md              
             - name: Update Windows client media with Dynamic Update
               href: update/media-dynamic-update.md
             - name: Migrating and acquiring optional Windows content
@@ -138,6 +140,8 @@
               href: update/waas-integrate-wufb.md
             - name: 'Walkthrough: use Group Policy to configure Windows Update for Business'
               href: update/waas-wufb-group-policy.md
+            - name: Deploy updates using CSPs and MDM
+              href: update/waas-wufb-csp-mdm.md
         - name: Windows Update for Business deployment service
           items:
           - name: Windows Update for Business deployment service overview

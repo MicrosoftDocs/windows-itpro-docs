@@ -42,7 +42,7 @@ Every Windows device has a built-in local administrator account that must be sec
 
 ## Modern device management through (MDM)
 
-Windows 11 supports modern device management through mobile device management (MDM) protocols so that IT professionals can manage company security policies and business applications without compromising user privacy on corporate or employee-owned devices. With MDM solutions like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, IT can manage Windows 11 using industrystandard protocols. To simplify setup for users, management features are built directly into Windows, eliminating the need for a separate MDM client.
+Windows 11 supports modern device management through mobile device management (MDM) protocols so that IT professionals can manage company security policies and business applications without compromising user privacy on corporate or employee-owned devices. With MDM solutions like Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup>, IT can manage Windows 11 using industry standard protocols. To simplify setup for users, management features are built directly into Windows, eliminating the need for a separate MDM client.
 
 Windows 11 built-in management features include:
 
