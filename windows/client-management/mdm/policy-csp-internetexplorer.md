@@ -1,7 +1,7 @@
 ---
 title: InternetExplorer Policy CSP
 description: Learn more about the InternetExplorer Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 05/20/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -7718,7 +7718,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- IntranetZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2792] and later <br> ✅ Windows Insider Preview [10.0.25398.643] |
 <!-- IntranetZoneLogonOptions-Applicability-End -->
 
 <!-- IntranetZoneLogonOptions-OmaUri-Begin -->
@@ -8793,7 +8793,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LocalMachineZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2792] and later <br> ✅ Windows Insider Preview [10.0.25398.643] |
 <!-- LocalMachineZoneLogonOptions-Applicability-End -->
 
 <!-- LocalMachineZoneLogonOptions-OmaUri-Begin -->
@@ -17364,7 +17364,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- TrustedSitesZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2792] and later <br> ✅ Windows Insider Preview [10.0.25398.643] |
 <!-- TrustedSitesZoneLogonOptions-Applicability-End -->
 
 <!-- TrustedSitesZoneLogonOptions-OmaUri-Begin -->
