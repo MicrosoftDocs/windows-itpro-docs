@@ -1,7 +1,7 @@
 ---
 title: EnterpriseDesktopAppManagement DDF file
 description: View the XML file containing the device description framework (DDF) for the EnterpriseDesktopAppManagement configuration service provider.
-ms.date: 04/10/2024
+ms.date: 05/20/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -225,6 +225,7 @@ The following XML file contains the device description framework (DDF) for the E
               <Delete />
               <Exec />
               <Get />
+              <Replace />
             </AccessType>
             <Description><![CDATA[Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag <DownloadFromAad> was added to the <Enforcement> section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.]]></Description>
             <DFFormat>
@@ -585,6 +586,7 @@ The following XML file contains the device description framework (DDF) for the E
               <Delete />
               <Exec />
               <Get />
+              <Replace />
             </AccessType>
             <Description><![CDATA[Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag <DownloadFromAad> was added to the <Enforcement> section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.]]></Description>
             <DFFormat>

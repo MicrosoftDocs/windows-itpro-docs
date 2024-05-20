@@ -1,7 +1,7 @@
 ---
 title: Settings Policy CSP
 description: Learn more about the Settings Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 05/20/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -169,10 +169,13 @@ Allows the user to change date and time settings.
 <!-- AllowEditDeviceName-Begin -->
 ## AllowEditDeviceName
 
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
+
 <!-- AllowEditDeviceName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEditDeviceName-Applicability-End -->
 
 <!-- AllowEditDeviceName-OmaUri-Begin -->
@@ -183,7 +186,7 @@ Allows the user to change date and time settings.
 
 <!-- AllowEditDeviceName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the user to edit the device name.
+This policy is deprecated.
 <!-- AllowEditDeviceName-Description-End -->
 
 <!-- AllowEditDeviceName-Editable-Begin -->
