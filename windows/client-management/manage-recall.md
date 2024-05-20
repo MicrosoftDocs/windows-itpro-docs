@@ -8,12 +8,13 @@ ms.author: mstewart
 author: mestew
 ms.collection: windows-copilot
 appliesto:
-- ✅ Copilot+ PCs
+- ✅ <a href="https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs" target="_blank">Copilot+ PCs</a>
+---
 ---
 
 # Manage Recall
 <!--8908044-->
->**Looking for consumer information?** See [Retrace your steps with Recall](https://support.microsoft.com/topic/aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c).
+>**Looking for consumer information?** See [Retrace your steps with Recall](https://support.microsoft.com/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c).
 
 Recall allows you to search across time to find the content you need. Just describe how you remember it, and Recall retrieves the moment you saw it. Recall takes snapshots of your screen and stores them in a timeline. Snapshots are taken every five seconds while content on the screen is different from the previous snapshot. Snapshots are locally stored and locally analyzed on your PC. Recall's analysis allows you to search for content, including both images and text, using natural language.
 
@@ -24,7 +25,7 @@ When Recall opens the snapshot a user selected, it enables screenray, which runs
 ## System requirements
 Recall has the following minimum system requirements:
 
-- A Copilot+ PC
+- A [Copilot+ PC](https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs)
 - 16 GB RAM
 - 8 logical processors
 - 256 GB storage capacity
@@ -79,4 +80,4 @@ The amount of disk space users can allocate to Recall varies depending on how mu
 
 Microsoft has been on a responsible AI journey since 2017, when we defined our principles and approach to ensuring this technology is used in a way that is driven by ethical principles that put people first. For more about our responsible AI journey, the ethical principles that guide us, and the tooling and capabilities we've created to assure that we develop AI technology responsibly, see [Responsible AI](https://www.microsoft.com/ai/responsible-ai).
 
-Recall uses optical character recognition (OCR), local to the PC, to analyze snapshots and facilitate search. For more information about OCR, see [Transparency note and use cases for OCR](/legal/cognitive-services/computer-vision/ocr-transparency-note). For more information about privacy and security, see [Privacy and security for Recall & screenray](https://support.microsoft.com/topic/d404f672-7647-41e5-886c-a3c59680af15).
+Recall uses optical character recognition (OCR), local to the PC, to analyze snapshots and facilitate search. For more information about OCR, see [Transparency note and use cases for OCR](/legal/cognitive-services/computer-vision/ocr-transparency-note). For more information about privacy and security, see [Privacy and security for Recall & screenray](https://support.microsoft.com/windows/recall-and-your-data-d404f672-7647-41e5-886c-a3c59680af15).
