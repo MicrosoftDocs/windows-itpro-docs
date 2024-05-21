@@ -58,7 +58,7 @@ File rule levels allow administrators to specify the level at which they want to
 Each file rule level has advantages and disadvantages. Use Table 2 to select the appropriate protection level for your available administrative resources and WDAC deployment scenario.
 
 > [!NOTE]
-> WDAC signer-based rules only work with RSA cryptography. ECC algorithms, such as ECDSA, aren't supported. If you try to allow files by signature based on ECC signatures, you'll see VerificationError = 23 on the corresponding 3089 signature information events. Files can be allowed instead by hash or file attribute rules, or using other signer rules if the file is also signed with signatures using RSA.
+> WDAC signer-based rules only work with RSA cryptography with a maximum key length of 4096 bits. ECC algorithms, such as ECDSA, aren't supported. If you try to allow files by signature based on ECC signatures, you'll see VerificationError = 23 on the corresponding 3089 signature information events. Files can be allowed instead by hash or file attribute rules, or using other signer rules if the file is also signed with signatures using RSA.
 
 ### Table 2. Windows Defender Application Control policy - file rule levels
 
@@ -79,11 +79,6 @@ Each file rule level has advantages and disadvantages. Use Table 2 to select the
 
 > [!NOTE]
 > When you create WDAC policies with [New-CIPolicy](/powershell/module/configci/new-cipolicy), you can specify a primary file rule level, by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate, but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
-
-> [!NOTE]
->
-> - WDAC only supports signer rules for RSA certificate signing keys with a maximum of 4096 bits.
-> - The code uses CN for the CertSubject and CertIssuer fields in the policy. You can use the inbox certutil to look at the underlying format to ensure UTF-8 is not being used for the CN. For example, you can use printable string, IA5, or BMP.
 
 > [!NOTE]
 > When applicable, minimum and maximum version numbers in a file rule are referenced as MinimumFileVersion and MaximumFileVersion respectively in the policy XML.
