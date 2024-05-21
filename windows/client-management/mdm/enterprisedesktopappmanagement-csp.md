@@ -1,7 +1,7 @@
 ---
 title: EnterpriseDesktopAppManagement CSP
 description: Learn more about the EnterpriseDesktopAppManagement CSP.
-ms.date: 01/18/2024
+ms.date: 05/20/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -172,7 +172,7 @@ For more information, see [DownloadInstall XSD Schema](#downloadinstall-xsd-sche
 | Property name | Property value |
 |:--|:--|
 | Format | `xml` |
-| Access Type | Add, Delete, Exec, Get |
+| Access Type | Add, Delete, Exec, Get, Replace |
 <!-- Device-MSI-{ProductID}-DownloadInstall-DFProperties-End -->
 
 <!-- Device-MSI-{ProductID}-DownloadInstall-Examples-Begin -->
@@ -695,7 +695,7 @@ For more information, see [DownloadInstall XSD Schema](#downloadinstall-xsd-sche
 | Property name | Property value |
 |:--|:--|
 | Format | `xml` |
-| Access Type | Add, Delete, Exec, Get |
+| Access Type | Add, Delete, Exec, Get, Replace |
 <!-- User-MSI-{ProductID}-DownloadInstall-DFProperties-End -->
 
 <!-- User-MSI-{ProductID}-DownloadInstall-Examples-Begin -->
