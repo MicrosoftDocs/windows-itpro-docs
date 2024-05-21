@@ -46,16 +46,16 @@ landingContent:
       - linkListType: overview
         links:
           - text: App-V overview
-            url: app-v/appv-for-windows.md
+            url: /microsoft-desktop-optimization-pack/app-v/appv-for-windows
           - text: Getting started with App-V
-            url: app-v/appv-getting-started.md
+            url: /microsoft-desktop-optimization-pack/app-v/appv-getting-started
           - text: Planning for App-V
-            url: app-v/appv-planning-for-appv.md
+            url: /microsoft-desktop-optimization-pack/app-v/appv-planning-for-appv
           - text: Deploying App-V
-            url: app-v/appv-deploying-appv.md
+            url: /microsoft-desktop-optimization-pack/app-v/appv-deploying-appv
           - text: Operations for App-V
-            url: app-v/appv-operations.md
+            url: /microsoft-desktop-optimization-pack/app-v/appv-operations
           - text: Troubleshooting App-V
-            url: app-v/appv-troubleshooting.md
+            url: /microsoft-desktop-optimization-pack/app-v/appv-troubleshooting
           - text: Technical Reference for App-V
-            url: app-v/appv-technical-reference.md
+            url: /microsoft-desktop-optimization-pack/app-v/appv-technical-reference
