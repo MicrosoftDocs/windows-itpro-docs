@@ -105,7 +105,6 @@ Ensure that devices can reach necessary Windows Update endpoints through the fir
 |Protocol  |Endpoint URL  |
 |---------|---------|
 |TLS 1.2         |  `*.prod.do.dsp.mp.microsoft.com`      |
-|HTTP     | `emdl.ws.microsoft.com`        |
 |HTTP     | `*.dl.delivery.mp.microsoft.com`        |
 |HTTP     |  `*.windowsupdate.com`       |
 |HTTPS     |  `*.delivery.mp.microsoft.com`       |

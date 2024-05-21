@@ -111,7 +111,6 @@ The following methodology was used to derive the network endpoints:
 |||TLSv1.2/HTTPS/HTTP|ris.api.iris.microsoft.com|
 |||HTTPS|mucp.api.account.microsoft.com|
 |Windows Update|The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
-|||TLSv1.2/HTTP|emdl.ws.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|*.dl.delivery.mp.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store.|TLSv1.2/HTTP|*.windowsupdate.com|
 |||TLSv1.2/HTTPS/HTTP|*.delivery.mp.microsoft.com|
@@ -182,7 +181,6 @@ The following methodology was used to derive the network endpoints:
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips.|TLSv1.2/HTTPS/HTTP|arc.msn.com*|
 |||TLSv1.2/HTTPS/HTTP|ris.api.iris.microsoft.com|
 |Windows Update|The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
-|||TLSv1.2/HTTP|emdl.ws.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|*.dl.delivery.mp.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store.|TLSv1.2/HTTP|*.windowsupdate.com|
 |||TLSv1.2/HTTPS/HTTP|*.delivery.mp.microsoft.com|
@@ -247,7 +245,6 @@ The following methodology was used to derive the network endpoints:
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips.|TLSv1.2/HTTPS/HTTP|arc.msn.com*|
 |||TLSv1.2/HTTPS/HTTP|ris.api.iris.microsoft.com|
 |Windows Update|The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
-|||TLSv1.2/HTTP|emdl.ws.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|*.dl.delivery.mp.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store.|TLSv1.2/HTTP|*.windowsupdate.com|
 |||TLSv1.2/HTTPS/HTTP|*.delivery.mp.microsoft.com|

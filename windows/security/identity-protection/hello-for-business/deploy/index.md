@@ -1,7 +1,7 @@
 ---
 title: Plan a Windows Hello for Business Deployment
 description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
-ms.date: 03/12/2024
+ms.date: 05/16/2024
 ms.topic: concept-article
 ---
 
@@ -151,14 +151,16 @@ The goal of Windows Hello for Business is to move organizations away from passwo
 || Deployment model | MFA options |
 |--|--|--|
 | **🔲** | **Cloud-only** | Microsoft Entra MFA |
-| **🔲** | **Cloud-only** | Non-Microsoft MFA via Microsoft Entra ID custom controls or federation |
+| **🔲** | **Cloud-only** | Non-Microsoft MFA, via external authentication method in Microsoft Entra ID or federation |
 | **🔲** | **Hybrid** | Microsoft Entra MFA |
-| **🔲** | **Hybrid** | Non-Microsoft MFA via Microsoft Entra ID custom controls or federation|
+| **🔲** | **Hybrid** | Non-Microsoft MFA, via external authentication method in Microsoft Entra ID or federation|
 | **🔲** | **On-premises** | AD FS MFA adapter |
 
-For more information how to configure Microsoft Entra multifactor authentication, see [Configure Microsoft Entra multifactor authentication settings][ENTRA-4].
+For more information:
 
-For more information how to configure AD FS to provide multifactor authentication, see [Configure Azure MFA as authentication provider with AD FS][SER-1].
+- [Configure Microsoft Entra multifactor authentication settings][ENTRA-4]
+- [Configure Azure MFA as authentication provider with AD FS][SER-1]
+- [Manage an external authentication method in Microsoft Entra ID][ENTRA-11]
 
 #### MFA and federated authentication
 
@@ -298,6 +300,7 @@ Now that you've read about the different deployment options and requirements, yo
 [ENTRA-8]: /entra/identity/conditional-access/overview
 [ENTRA-9]: /entra/identity/authentication/concept-mfa-licensing
 [ENTRA-10]: /entra/identity/hybrid/connect/whatis-fed
+[ENTRA-11]: /entra/identity/authentication/how-to-authentication-external-method-manage
 
 [SER-1]: /windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa
 [SER-2]: /windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods
