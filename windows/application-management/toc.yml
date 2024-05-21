@@ -20,236 +20,236 @@ items:
 - name: Application Virtualization (App-V)
   items:
     - name: App-V for Windows overview
-      href: app-v/appv-for-windows.md
+      href: /microsoft-desktop-optimization-pack/app-v/appv-for-windows
     - name: Getting Started
       items:
         - name: Getting Started with App-V
-          href: app-v/appv-getting-started.md
+          href: /microsoft-desktop-optimization-pack/app-v/appv-getting-started
         - name: What's new
           items:
             - name: What's new in App-V for Windows 10, version 1703 and earlier
-              href: app-v/appv-about-appv.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-about-appv
             - name: Release Notes for App-V for Windows 10, version 1607
-              href: app-v/appv-release-notes-for-appv-for-windows.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-release-notes-for-appv-for-windows
             - name: Release Notes for App-V for Windows 10, version 1703
-              href: app-v/appv-release-notes-for-appv-for-windows-1703.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-release-notes-for-appv-for-windows-1703
         - name: Evaluating App-V
-          href: app-v/appv-evaluating-appv.md
+          href: /microsoft-desktop-optimization-pack/app-v/appv-evaluating-appv
         - name: High Level Architecture for App-V
-          href: app-v/appv-high-level-architecture.md
+          href: /microsoft-desktop-optimization-pack/app-v/appv-high-level-architecture
     - name: Planning
       items:
         - name: Planning for App-V
-          href: app-v/appv-planning-for-appv.md
+          href: /microsoft-desktop-optimization-pack/app-v/appv-planning-for-appv
         - name: Preparing your environment
           items:
             - name: Preparing your environment for App-V
-              href: app-v/appv-preparing-your-environment.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-preparing-your-environment
             - name: App-V Prerequisites
-              href: app-v/appv-prerequisites.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-prerequisites
             - name: App-V security considerations
-              href: app-v/appv-security-considerations.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-security-considerations
         - name: Planning to deploy
           items:
             - name: Planning to Deploy App-V
-              href: app-v/appv-planning-to-deploy-appv.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-planning-to-deploy-appv
             - name: App-V Supported Configurations
-              href: app-v/appv-supported-configurations.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-supported-configurations
             - name: App-V Capacity Planning
-              href: app-v/appv-capacity-planning.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-capacity-planning
             - name: Planning for High Availability with App-V
-              href: app-v/appv-planning-for-high-availability-with-appv.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-planning-for-high-availability-with-appv
             - name: Planning to Deploy App-V with an Electronic Software Distribution System
-              href: app-v/appv-planning-to-deploy-appv-with-electronic-software-distribution-solutions.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-planning-to-deploy-appv-with-electronic-software-distribution-solutions
             - name: Planning for the App-V Server Deployment
-              href: app-v/appv-planning-for-appv-server-deployment.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-planning-for-appv-server-deployment
             - name: Planning for the App-V Sequencer and Client Deployment
-              href: app-v/appv-planning-for-sequencer-and-client-deployment.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-planning-for-sequencer-and-client-deployment
             - name: Planning for Using App-V with Office
-              href: app-v/appv-planning-for-using-appv-with-office.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-planning-for-using-appv-with-office
             - name: Planning to Use Folder Redirection with App-V
-              href: app-v/appv-planning-folder-redirection-with-appv.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-planning-folder-redirection-with-appv
             - name: App-V Planning Checklist
-              href: app-v/appv-planning-checklist.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-planning-checklist
     - name: Deploying
       items:
         - name: Deploying App-V
-          href: app-v/appv-deploying-appv.md
+          href: /microsoft-desktop-optimization-pack/app-v/appv-deploying-appv
         - name: App-V sequencer and client configuration
           items:
             - name: Deploying the App-V Sequencer and Configuring the Client
-              href: app-v/appv-deploying-the-appv-sequencer-and-client.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-deploying-the-appv-sequencer-and-client
             - name: About Client Configuration Settings
-              href: app-v/appv-client-configuration-settings.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-client-configuration-settings
             - name: Enable the App-V desktop client
-              href: app-v/appv-enable-the-app-v-desktop-client.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-enable-the-app-v-desktop-client
             - name: How to Install the Sequencer
-              href: app-v/appv-install-the-sequencer.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-install-the-sequencer
         - name: App-V server deployment
           items:
             - name: Deploying the App-V Server
-              href: app-v/appv-deploying-the-appv-server.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-deploying-the-appv-server
             - name: How to Deploy the App-V Server
-              href: app-v/appv-deploy-the-appv-server.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-deploy-the-appv-server
             - name: How to Deploy the App-V Server Using a Script
-              href: app-v/appv-deploy-the-appv-server-with-a-script.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-deploy-the-appv-server-with-a-script
             - name: How to Deploy the App-V Databases by Using SQL Scripts
-              href: app-v/appv-deploy-appv-databases-with-sql-scripts.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-deploy-appv-databases-with-sql-scripts
             - name: How to Install the Publishing Server on a Remote Computer
-              href: app-v/appv-install-the-publishing-server-on-a-remote-computer.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-install-the-publishing-server-on-a-remote-computer
             - name: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
-              href: app-v/appv-install-the-management-and-reporting-databases-on-separate-computers.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-install-the-management-and-reporting-databases-on-separate-computers
             - name: How to install the Management Server on a Standalone Computer and Connect it to the Database
-              href: app-v/appv-install-the-management-server-on-a-standalone-computer.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-install-the-management-server-on-a-standalone-computer
             - name: About App-V Reporting
-              href: app-v/appv-reporting.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-reporting
             - name: How to install the Reporting Server on a Standalone Computer and Connect it to the Database
-              href: app-v/appv-install-the-reporting-server-on-a-standalone-computer.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-install-the-reporting-server-on-a-standalone-computer
         - name: App-V Deployment Checklist
-          href: app-v/appv-deployment-checklist.md
+          href: /microsoft-desktop-optimization-pack/app-v/appv-deployment-checklist
         - name: Deploying Microsoft Office 2016 by Using App-V
-          href: app-v/appv-deploying-microsoft-office-2016-with-appv.md
+          href: /microsoft-desktop-optimization-pack/app-v/appv-deploying-microsoft-office-2016-with-appv
         - name: Deploying Microsoft Office 2013 by Using App-V
-          href: app-v/appv-deploying-microsoft-office-2013-with-appv.md
+          href: /microsoft-desktop-optimization-pack/app-v/appv-deploying-microsoft-office-2013-with-appv
         - name: Deploying Microsoft Office 2010 by Using App-V
-          href: app-v/appv-deploying-microsoft-office-2010-wth-appv.md
+          href: /microsoft-desktop-optimization-pack/app-v/appv-deploying-microsoft-office-2010-wth-appv
         - name: Operations
           items:
             - name: Operations for App-V
-              href: app-v/appv-operations.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-operations
             - name: Creating and managing virtualized applications
               items:
                 - name: Creating and Managing App-V Virtualized Applications
-                  href: app-v/appv-creating-and-managing-virtualized-applications.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-creating-and-managing-virtualized-applications
                 - name: Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)
-                  href: app-v/appv-auto-provision-a-vm.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-auto-provision-a-vm
                 - name: Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
-                  href: app-v/appv-auto-batch-sequencing.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-auto-batch-sequencing
                 - name: Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
-                  href: app-v/appv-auto-batch-updating.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-auto-batch-updating
                 - name: Manually sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)
-                  href: app-v/appv-sequence-a-new-application.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-sequence-a-new-application
                 - name: How to Modify an Existing Virtual Application Package
-                  href: app-v/appv-modify-an-existing-virtual-application-package.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-modify-an-existing-virtual-application-package
                 - name: How to Create and Use a Project Template
-                  href: app-v/appv-create-and-use-a-project-template.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-create-and-use-a-project-template
                 - name: How to Create a Package Accelerator
-                  href: app-v/appv-create-a-package-accelerator.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-create-a-package-accelerator
                 - name: How to Create a Virtual Application Package Using an App-V Package Accelerator
-                  href: app-v/appv-create-a-virtual-application-package-package-accelerator.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-create-a-virtual-application-package-package-accelerator
             - name: Administering App-V
               items:
                 - name: Administering App-V Virtual Applications by Using the Management Console
-                  href: app-v/appv-administering-virtual-applications-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-administering-virtual-applications-with-the-management-console
                 - name: About App-V Dynamic Configuration
-                  href: app-v/appv-dynamic-configuration.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-dynamic-configuration
                 - name: How to Connect to the Management Console
-                  href: app-v/appv-connect-to-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-connect-to-the-management-console
                 - name: How to Add or Upgrade Packages by Using the Management Console
-                  href: app-v/appv-add-or-upgrade-packages-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-add-or-upgrade-packages-with-the-management-console
                 - name: How to Configure Access to Packages by Using the Management Console
-                  href: app-v/appv-configure-access-to-packages-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-configure-access-to-packages-with-the-management-console
                 - name: How to Publish a Package by Using the Management Console
-                  href: app-v/appv-publish-a-packages-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-publish-a-packages-with-the-management-console
                 - name: How to Delete a Package in the Management Console
-                  href: app-v/appv-delete-a-package-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-delete-a-package-with-the-management-console
                 - name: How to Add or Remove an Administrator by Using the Management Console
-                  href: app-v/appv-add-or-remove-an-administrator-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-add-or-remove-an-administrator-with-the-management-console
                 - name: How to Register and Unregister a Publishing Server by Using the Management Console
-                  href: app-v/appv-register-and-unregister-a-publishing-server-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-register-and-unregister-a-publishing-server-with-the-management-console
                 - name: How to Create a Custom Configuration File by Using the App-V Management Console
-                  href: app-v/appv-create-a-custom-configuration-file-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-create-a-custom-configuration-file-with-the-management-console
                 - name: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
-                  href: app-v/appv-transfer-access-and-configurations-to-another-version-of-a-package-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-transfer-access-and-configurations-to-another-version-of-a-package-with-the-management-console
                 - name: How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
-                  href: app-v/appv-customize-virtual-application-extensions-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-customize-virtual-application-extensions-with-the-management-console
                 - name: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
-                  href: app-v/appv-view-and-configure-applications-and-default-virtual-application-extensions-with-the-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-view-and-configure-applications-and-default-virtual-application-extensions-with-the-management-console
             - name: Connection groups
               items:
                 - name: Managing Connection Groups
-                  href: app-v/appv-managing-connection-groups.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-managing-connection-groups
                 - name: About the Connection Group Virtual Environment
-                  href: app-v/appv-connection-group-virtual-environment.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-connection-group-virtual-environment
                 - name: About the Connection Group File
-                  href: app-v/appv-connection-group-file.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-connection-group-file
                 - name: How to Create a Connection Group
-                  href: app-v/appv-create-a-connection-group.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-create-a-connection-group
                 - name: How to Create a Connection Group with User-Published and Globally Published Packages
-                  href: app-v/appv-create-a-connection-group-with-user-published-and-globally-published-packages.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-create-a-connection-group-with-user-published-and-globally-published-packages
                 - name: How to Delete a Connection Group
-                  href: app-v/appv-delete-a-connection-group.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-delete-a-connection-group
                 - name: How to Publish a Connection Group
-                  href: app-v/appv-publish-a-connection-group.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-publish-a-connection-group
                 - name: How to Make a Connection Group Ignore the Package Version
-                  href: app-v/appv-configure-connection-groups-to-ignore-the-package-version.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-configure-connection-groups-to-ignore-the-package-version
                 - name: How to Allow Only Administrators to Enable Connection Groups
-                  href: app-v/appv-allow-administrators-to-enable-connection-groups.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-allow-administrators-to-enable-connection-groups
             - name: Deploying App-V packages with ESD
               items:
                 - name: Deploying App-V Packages by Using Electronic Software Distribution (ESD)
-                  href: app-v/appv-deploying-packages-with-electronic-software-distribution-solutions.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-deploying-packages-with-electronic-software-distribution-solutions
                 - name: How to deploy App-V Packages Using Electronic Software Distribution
-                  href: app-v/appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-deploy-appv-packages-with-electronic-software-distribution-solutions
                 - name: How to Enable Only Administrators to Publish Packages by Using an ESD
-                  href: app-v/appv-enable-administrators-to-publish-packages-with-electronic-software-distribution-solutions.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-enable-administrators-to-publish-packages-with-electronic-software-distribution-solutions
             - name: Using the management console
               items:
                 - name: Using the App-V client management console
-                  href: app-v/appv-using-the-client-management-console.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-using-the-client-management-console
                 - name: Automatically clean up unpublished packages on the App-V client
-                  href: app-v/appv-auto-clean-unpublished-packages.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-auto-clean-unpublished-packages
             - name: Migrating
               items:
                 - name: Migrating to App-V from a previous version
-                  href: app-v/appv-migrating-to-appv-from-a-previous-version.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-migrating-to-appv-from-a-previous-version
                 - name: How to convert a package created in a previous version of App-V
-                  href: app-v/appv-convert-a-package-created-in-a-previous-version-of-appv.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-convert-a-package-created-in-a-previous-version-of-appv
             - name: Maintenance
               items:
                 - name: Maintaining App-V
-                  href: app-v/appv-maintaining-appv.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-maintaining-appv
                 - name: How to Move the App-V Server to Another Computer
-                  href: app-v/appv-move-the-appv-server-to-another-computer.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-move-the-appv-server-to-another-computer
             - name: Administering App-V with Windows PowerShell
               items:
                 - name: Administering App-V by using Windows PowerShell
-                  href: app-v/appv-administering-appv-with-powershell.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-administering-appv-with-powershell
                 - name: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
-                  href: app-v/appv-load-the-powershell-cmdlets-and-get-cmdlet-help.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-load-the-powershell-cmdlets-and-get-cmdlet-help
                 - name: How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell
-                  href: app-v/appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell
                 - name: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell
-                  href: app-v/appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell
                 - name: How to Modify Client Configuration by Using Windows PowerShell
-                  href: app-v/appv-modify-client-configuration-with-powershell.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-modify-client-configuration-with-powershell
                 - name: How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
-                  href: app-v/appv-configure-the-client-to-receive-updates-from-the-publishing-server.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-configure-the-client-to-receive-updates-from-the-publishing-server
                 - name: How to Apply the User Configuration File by Using Windows PowerShell
-                  href: app-v/appv-apply-the-user-configuration-file-with-powershell.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-apply-the-user-configuration-file-with-powershell
                 - name: How to Apply the Deployment Configuration File by Using Windows PowerShell
-                  href: app-v/appv-apply-the-deployment-configuration-file-with-powershell.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-apply-the-deployment-configuration-file-with-powershell
                 - name: How to Sequence a Package  by Using Windows PowerShell
-                  href: app-v/appv-sequence-a-package-with-powershell.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-sequence-a-package-with-powershell
                 - name: How to Create a Package Accelerator by Using Windows PowerShell
-                  href: app-v/appv-create-a-package-accelerator-with-powershell.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-create-a-package-accelerator-with-powershell
                 - name: How to Enable Reporting on the App-V Client by Using Windows PowerShell
-                  href: app-v/appv-enable-reporting-on-the-appv-client-with-powershell.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-enable-reporting-on-the-appv-client-with-powershell
                 - name: How to Install the App-V Databases and Convert the Associated Security Identifiers  by Using Windows PowerShell
-                  href: app-v/appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md
+                  href: /microsoft-desktop-optimization-pack/app-v/appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell
         - name: Troubleshooting App-V
-          href: app-v/appv-troubleshooting.md
+          href: /microsoft-desktop-optimization-pack/app-v/appv-troubleshooting
         - name: Technical Reference
           items:
             - name: Technical Reference for App-V
-              href: app-v/appv-technical-reference.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-technical-reference
             - name: Available Mobile Device Management (MDM) settings for App-V
-              href: app-v/appv-available-mdm-settings.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-available-mdm-settings
             - name: Performance Guidance for Application Virtualization
-              href: app-v/appv-performance-guidance.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-performance-guidance
             - name: Application Publishing and Client Interaction
-              href: app-v/appv-application-publishing-and-client-interaction.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-application-publishing-and-client-interaction
             - name: Viewing App-V Server Publishing Metadata
-              href: app-v/appv-viewing-appv-server-publishing-metadata.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-viewing-appv-server-publishing-metadata
             - name: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
-              href: app-v/appv-running-locally-installed-applications-inside-a-virtual-environment.md
+              href: /microsoft-desktop-optimization-pack/app-v/appv-running-locally-installed-applications-inside-a-virtual-environment
