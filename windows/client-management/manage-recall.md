@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments using MDM and group policy. Learn about Recall features.
 ms.topic: conceptual
 ms.subservice: windows-copilot
-ms.date: 05/20/2024
+ms.date: 05/22/2024
 ms.author: mstewart
 author: mestew
 ms.collection: windows-copilot
@@ -41,7 +41,7 @@ Users need a supported browser for Recall to [filter websites](#user-controlled-
 
 ## Configure policies for Recall
 
-By default, Recall assists users by considering their historical behaviors and data. Organizations that aren't ready to use AI for historical analysis can disable it until they're ready with the **Turn off saving snapshots for Windows** policy. The following policy allows you to disable user data analysis:
+Organizations that aren't ready to use AI for historical analysis can disable it until they're ready with the **Turn off saving snapshots for Windows** policy. If snapshots were previously saved on a device, they will be deleted when this policy is enabled. The following policy allows you to disable analysis of user content:
 
 | &nbsp; | Setting  |
 |---|---|
@@ -80,4 +80,4 @@ The amount of disk space users can allocate to Recall varies depending on how mu
 
 Microsoft has been on a responsible AI journey since 2017, when we defined our principles and approach to ensuring this technology is used in a way that is driven by ethical principles that put people first. For more about our responsible AI journey, the ethical principles that guide us, and the tooling and capabilities we've created to assure that we develop AI technology responsibly, see [Responsible AI](https://www.microsoft.com/ai/responsible-ai).
 
-Recall uses optical character recognition (OCR), local to the PC, to analyze snapshots and facilitate search. For more information about OCR, see [Transparency note and use cases for OCR](/legal/cognitive-services/computer-vision/ocr-transparency-note). For more information about privacy and security, see [Privacy and security for Recall & screenray](https://support.microsoft.com/windows/recall-and-your-data-d404f672-7647-41e5-886c-a3c59680af15).
+Recall uses optical character recognition (OCR), local to the PC, to analyze snapshots and facilitate search. For more information about OCR, see [Transparency note and use cases for OCR](/legal/cognitive-services/computer-vision/ocr-transparency-note). For more information about privacy and security, see [Privacy and control over your Recall experience](https://support.microsoft.com/windows/privacy-and-control-over-your-recall-experience-d404f672-7647-41e5-886c-a3c59680af15).
