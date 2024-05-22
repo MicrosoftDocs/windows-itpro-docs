@@ -41,7 +41,7 @@ Users need a supported browser for Recall to [filter websites](#user-controlled-
 
 ## Configure policies for Recall
 
-Organizations that aren't ready to use AI for historical analysis can disable it until they're ready with the **Turn off saving snapshots for Windows** policy. If snapshots were previously saved on a device, they will be deleted when this policy is enabled. The following policy allows you to disable analysis of user content:
+Organizations that aren't ready to use AI for historical analysis can disable it until they're ready with the **Turn off saving snapshots for Windows** policy. If snapshots were previously saved on a device, they'll be deleted when this policy is enabled. The following policy allows you to disable analysis of user content:
 
 | &nbsp; | Setting  |
 |---|---|
