@@ -46,7 +46,7 @@ Organizations that aren't ready to use AI for historical analysis can disable it
 | &nbsp; | Setting  |
 |---|---|
 | **CSP** | ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis) |
-| **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows Copilot > **Turn off saving snapshots for Windows** |
+| **Group policy** | User Configuration > Administrative Templates > Windows Components > WindowsAI > **Turn off saving snapshots for Windows** |
 
 ## Limitations
 
