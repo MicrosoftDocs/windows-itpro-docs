@@ -899,6 +899,141 @@
       "source_path": "windows/configuration/start/start-secondary-tiles.md",
       "redirect_url": "/windows/configuration/start/layout",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-administering-uev-with-windows-powershell-and-wmi.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-administering-uev-with-windows-powershell-and-wmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-administering-uev.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-administering-uev",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-application-template-schema-reference.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-application-template-schema-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-changing-the-frequency-of-scheduled-tasks.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-changing-the-frequency-of-scheduled-tasks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-configuring-uev-with-group-policy-objects.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-configuring-uev-with-group-policy-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-configuring-uev-with-system-center-configuration-manager.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-configuring-uev-with-system-center-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-deploy-required-features.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-deploy-required-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-deploy-uev-for-custom-applications.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-deploy-uev-for-custom-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-for-windows.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-for-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-getting-started.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-manage-administrative-backup-and-restore.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-manage-administrative-backup-and-restore",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-manage-configurations.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-manage-configurations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-managing-settings-location-templates-using-windows-powershell-and-wmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-managing-uev-agent-and-packages-with-windows-powershell-and-wmi.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-managing-uev-agent-and-packages-with-windows-powershell-and-wmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-migrating-settings-packages.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-migrating-settings-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-prepare-for-deployment.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-prepare-for-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-release-notes-1607.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-release-notes-1607",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-security-considerations.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-security-considerations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-sync-methods.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-sync-methods",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-sync-trigger-events.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-sync-trigger-events",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-synchronizing-microsoft-office-with-uev.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-synchronizing-microsoft-office-with-uev",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-technical-reference.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-troubleshooting.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-upgrade-uev-from-previous-releases.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-upgrade-uev-from-previous-releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-using-uev-with-application-virtualization-applications.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-using-uev-with-application-virtualization-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-whats-new-in-uev-for-windows.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-whats-new-in-uev-for-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/ue-v/uev-working-with-custom-templates-and-the-uev-generator.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/ue-v/uev-working-with-custom-templates-and-the-uev-generator",
+      "redirect_document_id": false
     }
   ]
 }
