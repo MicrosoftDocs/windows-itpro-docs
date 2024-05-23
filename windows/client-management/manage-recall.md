@@ -37,7 +37,7 @@ Recall has the following minimum system requirements:
 Users need a supported browser for Recall to [filter websites](#user-controlled-settings-for-recall) and to automatically filter private browsing activity. Supported browsers, and their capabilities include:
 
 - **Microsoft Edge**: blocks websites and filters private browsing activity
-- **Chrome**: blocks websites and filters private browsing activity
+- **Google Chrome**: blocks websites and filters private browsing activity
 - **Firefox**: blocks websites and filters private browsing activity
 - **Opera**: blocks websites and filters private browsing activity
 - **Chromium based browsers** (124 or later): For Chromium-based browsers not listed above, filters private browsing activity only, doesn't block specific websites
