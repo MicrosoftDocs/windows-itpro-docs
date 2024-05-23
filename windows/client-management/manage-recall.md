@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments using MDM and group policy. Learn about Recall features.
 ms.topic: conceptual
 ms.subservice: windows-copilot
-ms.date: 05/22/2024
+ms.date: 05/23/2024
 ms.author: mstewart
 author: mestew
 ms.collection: windows-copilot
@@ -37,7 +37,8 @@ Recall has the following minimum system requirements:
 Users need a supported browser for Recall to [filter websites](#user-controlled-settings-for-recall) and to automatically filter InPrivate browsing activity. Supported browsers, and their capabilities include:
 
 - **Microsoft Edge**: blocks websites and filters private browsing activity
-- **Chromium based browsers**: filters private browsing activity only, doesn't block specific websites
+- **Chromium based browsers** (124 or later): filters private browsing activity only, doesn't block specific websites
+- **Firefox**: filters private browsing activity only, doesn't block specific websites
 
 ## Configure policies for Recall
 
