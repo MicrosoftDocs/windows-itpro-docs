@@ -111,8 +111,9 @@ certutil.exe -asn <path to signed policy file>
 
 ```powershell
 $CIPolicyBin = 'path to signed policy file'
+Add-Type -AssemblyName 'System.Security'
 $SignedCryptoMsgSyntax = New-Object -TypeName System.Security.Cryptography.Pkcs.SignedCms
-$SignedCryptoMsgSyntax.Decode((Get-Content -LiteralPath $CIPolicyBin -AsByteStream -Raw))
+$SignedCryptoMsgSyntax.Decode([System.IO.File]::ReadAllBytes($CIPolicyBin))
 $SignedCryptoMsgSyntax.Certificates | Format-List -Property *
 ```
 
