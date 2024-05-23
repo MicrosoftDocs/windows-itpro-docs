@@ -39,6 +39,7 @@ Users need a supported browser for Recall to [filter websites](#user-controlled-
 - **Microsoft Edge**: blocks websites and filters private browsing activity
 - **Chromium based browsers** (124 or later): filters private browsing activity only, doesn't block specific websites
 - **Firefox**: filters private browsing activity only, doesn't block specific websites
+- **Opera**: filters private browsing activity only, doesn't block specific websites
 
 ## Configure policies for Recall
 
