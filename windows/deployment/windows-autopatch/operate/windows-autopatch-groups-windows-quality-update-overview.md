@@ -63,10 +63,7 @@ The service level objective for each of these states is calculated as:
 > [!IMPORTANT]
 > Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
 
-## Import Update rings for Windows 10 and later (public preview)
-
-> [!IMPORTANT]
-> This feature is in **public preview**. It's being actively developed, and might not be complete.
+## Import Update rings for Windows 10 and later
 
 You can import your organization's existing Intune Update rings for Windows 10 and later into Windows Autopatch. Importing your organization's Update rings provides the benefits of the Windows Autopatch's reporting and device readiness without the need to redeploy, or change your organization's existing update rings. 
 
