@@ -103,10 +103,18 @@ When complete, the commands should output a signed policy file with a `.p7` exte
 
 ## Verify and deploy the signed policy
 
-You can use certutil.exe to verify the signed file. Review the output to confirm the signature algorithm and encoding for certificate fields, like 'subject common name' and 'issuer common name' as described in the Warning at the top of this article.
+You can use certutil.exe or PowerShell to verify the signed file. Review the output to confirm the signature algorithm as described in the Warning at the top of this article.
 
 ```powershell
 certutil.exe -asn <path to signed policy file>
+```
+
+```powershell
+$CIPolicyBin = 'path to signed policy file'
+Add-Type -AssemblyName 'System.Security'
+$SignedCryptoMsgSyntax = New-Object -TypeName System.Security.Cryptography.Pkcs.SignedCms
+$SignedCryptoMsgSyntax.Decode([System.IO.File]::ReadAllBytes($CIPolicyBin))
+$SignedCryptoMsgSyntax.Certificates | Format-List -Property *
 ```
 
 Thoroughly test the signed policy on a representative set of computers before proceeding with deployment. Be sure to reboot the test computers at least twice after applying the signed WDAC policy to ensure you don't encounter a boot failure.
