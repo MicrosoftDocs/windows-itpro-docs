@@ -2,7 +2,7 @@
 title: Personal Data Encryption (PDE)
 description: Personal Data Encryption unlocks user encrypted files at user sign-in instead of at boot.
 ms.topic: how-to
-ms.date: 08/11/2023
+ms.date: 05/06/2024
 ---
 
 # Personal Data Encryption (PDE)

@@ -2,7 +2,7 @@
 title: PDE settings and configuration
 description: Learn about the available options to configure Personal Data Encryption (PDE) and how to configure them via Microsoft Intune or Configuration Service Providers (CSP).
 ms.topic: how-to
-ms.date: 08/11/2023
+ms.date: 05/06/2024
 ---
 
 # PDE settings and configuration
