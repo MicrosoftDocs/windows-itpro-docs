@@ -1,7 +1,7 @@
 ---
 title: Use Quick Assist to help users
 description: Learn how IT Pros can use Quick Assist to help users.
-ms.date: 08/10/2023
+ms.date: 05/09/2024
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
@@ -12,6 +12,11 @@ ms.collection:
 # Use Quick Assist to help users
 
 Quick Assist is an application that enables a person to share their [Windows](#install-quick-assist-on-windows) or [macOS](#install-quick-assist-on-macos) device with another person over a remote connection. Your support staff can use it to remotely connect to a user's device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
+
+> [!IMPORTANT]
+> Learn how to [protect yourself from tech support scams](https://support.microsoft.com/help/4013405). Tech support scams are an industry-wide issue where scammers use scare tactics to trick you into unnecessary technical support services. Only allow a Helper to connect to your device if you initiated the interaction by contacting Microsoft Support or your IT support staff directly.
+>
+> If you or someone you know has been affected by a tech support scam, use the [technical support scam form](https://support.microsoft.com/windows/cfa4609a-92cc-4808-95e8-392b4ffd0753) to report it.
 
 ## Before you begin
 
@@ -38,7 +43,7 @@ Quick Assist communicates over port 443 (https) and connects to the Remote Assis
 | `*.trouter.skype.com` | Used for Azure Communication Service for chat and connection between parties. |
 | `aadcdn.msauth.net` | Required for logging in to the application (Microsoft Entra ID). |
 | `edge.skype.com` | Used for Azure Communication Service for chat and connection between parties. |
-| `login.microsoftonline.com` | Required for Microsoft login service. |
+| `login.microsoftonline.com` | Required for Microsoft sign-in service. |
 | `remoteassistanceprodacs.communication.azure.com` | Used for Azure Communication Service for chat and connection between parties. |
 | `turn.azure.com` | Required for Azure Communication Service. |
 
@@ -105,7 +110,7 @@ Before installing Quick Assist, you need to set up synchronization between Intun
 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant administration** / **Connectors and tokens** / **Microsoft Store for Business** and verify that **Microsoft Store for Business sync** is set to **Enable**.
 1. Using your Global Admin account, log into [Microsoft Store for Business](https://businessstore.microsoft.com).
 1. Select **Manage** / **Settings** and enable **Show offline apps**.
-1. Choose the **Distribute** tab and verify that **Microsoft Intune** is **Active**. You may need to use the **+Add management tool** link if it's not.
+1. Choose the **Distribute** tab and verify that **Microsoft Intune** is **Active**. You might need to use the **+Add management tool** link if it's not.
 1. Search for **Quick Assist** and select it from the Search results.
 1. Choose the **Offline** license and select **Get the app**
 1. In the Intune admin center, choose **Sync**.
@@ -122,26 +127,63 @@ Visit [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps
 
 To install Quick Assist offline, you need to download your APPXBUNDLE and unencoded XML file from [Microsoft Store for Business](https://businessstore.microsoft.com). Visit [Download an offline-licensed app](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) for more information.
 
-1. Start **Windows PowerShell** with Administrative privileges.
-1. In PowerShell, change the directory to the location you've saved the file to in step 1: `cd <location of package file>`
+1. Start **Windows PowerShell** with Administrative privileges
+1. In PowerShell, change the directory to the location where you saved the file in step 1: `cd <location of package file>`
 1. Run the following command to install Quick Assist: `Add-AppxProvisionedPackage -Online -PackagePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe.AppxBundle" -LicensePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe_4bc27046-84c5-8679-dcc7-d44c77a47dd0.xml"`
-1. After Quick Assist has installed, run this command to confirm that Quick Assist is installed for the user: `Get-AppxPackage *QuickAssist* -AllUsers`
+1. After Quick Assist is installed, run this command to confirm that Quick Assist is installed for the user: `Get-AppxPackage *QuickAssist* -AllUsers`
 
 ### Microsoft Edge WebView2
 
-The Microsoft Edge WebView2 is a development control that uses Microsoft Edge as the rendering engine to display web content in native apps. The new Quick Assist application has been developed using this control, making it a necessary component for the app to function.
+The Microsoft Edge WebView2 is a development control that uses Microsoft Edge as the rendering engine to display web content in native apps. The new Quick Assist application is developed using this control, making it a necessary component for the app to function.
 
 - For Windows 11 users, this runtime control is built in.
 - For Windows 10 users, the Quick Assist Store app detects if WebView2 is present on launch and if necessary, installs it automatically. If an error message or prompt is shown indicating WebView2 isn't present, it needs to be installed separately.
 
-For more information on distributing and installing Microsoft Edge WebView2, visit [Distribute your app and the WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution)
+For more information on distributing and installing Microsoft Edge WebView2, visit [Distribute your app and the WebView2 Runtime.](/microsoft-edge/webview2/concepts/distribution)
 
 ## Install Quick Assist on macOS
 
-Quick Assist for macOS is available for interactions with Microsoft Support. If Microsoft products on your macOS device are not working as expected, contact [Microsoft Support](https://support.microsoft.com/contactus) for assistance. Your Microsoft Support agent will guide you through the process of downloading and installing it on your device.
+Quick Assist for macOS is available for interactions with Microsoft Support. If Microsoft products on your macOS device aren't working as expected, contact [Microsoft Support](https://support.microsoft.com/contactus) for assistance. Your Microsoft Support agent will guide you through the process of downloading and installing it on your device.
 
 > [!NOTE]
 > Quick Assist for macOS is not available outside of Microsoft Support interactions.
+
+## Disable Quick Assist within your organization
+
+If your organization utilizes another remote support tool such as [Remote Help](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune-remote-help), disable or remove Quick Assist as a best practice, if it isn't used within your environment. This prevents external users from using Quick Assist to gain access to devices within your organization.
+
+### Disable Quick Assist
+
+To disable Quick Assist, block traffic to the `https://remoteassistance.support.services.microsoft.com` endpoint. This is the primary endpoint used by Quick Assist to establish a session, and once blocked, Quick Assist can't be used to get help or help someone.
+
+### Uninstall Quick Assist
+
+#### Uninstall via PowerShell
+
+Run the following PowerShell command as Administrator:
+
+`Get-AppxPackage -Name MicrosoftCorporationII.QuickAssist | Remove-AppxPackage -AllUsers`
+
+#### Uninstall via Windows Settings
+
+Navigate to **Settings** > **Apps** > **Installed apps** > Quick Assist > select the ellipsis (…), then select **Uninstall**.
+
+## Report Abuse
+
+Before joining a session, it's important for you to know who you are connecting to. Anyone that has control over your device can perform actions on your device, and potentially install malicious applications or take other actions that can damage your device.
+
+Follow these best practices for using Quick Assist or any remote desktop software:
+
+- Never allow a connection to your device by someone claiming to be "IT Support" unless you initiated the interaction with them.
+- Don't provide access to anyone claiming to have an urgent need to access your device.
+- Don't share credentials to any websites or applications.
+
+> [!NOTE]
+> Microsoft will never contact you through unsolicited emails, phone calls, or other methods to request access to your device. Microsoft will only request access to your device if you have contacted us and directly requested help with solving an issue you are experiencing. If you need customer service support from Microsoft, please visit [Microsoft Support](https://support.microsoft.com/).
+
+If you suspect that the person connecting to your device is being malicious, disconnect from the session immediately and report the concern to your local authorities and/or any relevant IT members within your organization.
+
+If you or someone you know has been affected by a tech support scam, use the [technical support scam form](https://support.microsoft.com/windows/cfa4609a-92cc-4808-95e8-392b4ffd0753) to report it.
 
 ## Next steps
 

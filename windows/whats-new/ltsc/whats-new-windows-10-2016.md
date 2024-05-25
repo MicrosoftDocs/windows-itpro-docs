@@ -168,7 +168,7 @@ With User Experience Virtualization (UE-V), you can capture user-customized Wind
 
 With the release of this version of Windows 10, UE-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you'll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
 
-[Learn how to synchronize user-customized settings with UE-V.](/windows/configuration/ue-v/uev-for-windows)
+[Learn how to synchronize user-customized settings with UE-V.](/microsoft-desktop-optimization-pack/ue-v/uev-for-windows)
 
 ## Microsoft Edge
 
