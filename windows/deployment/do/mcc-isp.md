@@ -10,7 +10,7 @@ ms.reviewer: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
 ms.collection: tier3
-ms.date: 03/07/2023
+ms.date: 05/23/2024
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -113,7 +113,6 @@ To deploy MCC:
 5. [Install MCC on a physical server or VM](#install-mcc)
 6. [Verify properly functioning MCC server](#verify-properly-functioning-mcc-server)
 7. [Review common issues if needed](#common-issues)
-
 
 ## Provide Microsoft with your Azure subscription ID
 
@@ -388,7 +387,6 @@ Before you start, make sure that you have a data drive configured on your server
 
     :::image type="content" source="./images/mcc-isp-use-bgp.png" alt-text="Screenshot of the Cache Node Configuration page with the Prefix Source set to Use BGP.":::
 
-
 1. If there are no errors, go to the next section to verify the MCC server.
 
     If there are errors:
@@ -567,7 +565,6 @@ To migrate, use the following steps:
    :::image type="content" source="images/mcc-isp-migrate.png" alt-text="A screenshot of Azure portal showing the migration instructions for migrating a cache node from the early preview to the public preview." lightbox="images/mcc-isp-migrate.png":::
 1. Go to https://portal.azure.com and navigate to your resource to check your migrated cache nodes.
 
-
 ## Uninstalling MCC
 
 In the installer zip file, you'll find the file **uninstallmcc.sh**. This script uninstalls MCC and all the related components. Before you run this script, contact the MCC team. Only run it if you're facing issues with MCC installation.
@@ -592,12 +589,11 @@ sudo ./uninstallmcc.sh
 ```
 
 ## Appendix
- 
+
 ### Steps to obtain an Azure subscription ID
 
 <!--Using include file, get-azure-subscription.md, for shared content-->
 [!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
-
 
 ### Performance of MCC in virtual environments
 

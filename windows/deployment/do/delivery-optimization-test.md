@@ -21,7 +21,7 @@ ms.date: 11/08/2022
 
 ## Overview
 
-Delivery Optimization is a powerful and useful tool to help enterprises manage bandwidth usage for downloading Microsoft content. It's a solution designed to be used in large-scale environments with large numbers of devices, various content sizes, etc. Delivery Optimization is native to currently supported versions of Windows and provides default configuration to get the most out of the typical customer environment. Delivery Optimization is used to deliver many different types of content, so Microsoft customers enjoy the best possible download experience for their environment. There are three components to Delivery Optimization:
+Delivery Optimization is a powerful and useful tool to help enterprises manage bandwidth usage for downloading Microsoft content. It's a solution designed to be used in large-scal05/23/2024e environments with large numbers of devices, various content sizes, etc. Delivery Optimization is native to currently supported versions of Windows and provides default configuration to get the most out of the typical customer environment. Delivery Optimization is used to deliver many different types of content, so Microsoft customers enjoy the best possible download experience for their environment. There are three components to Delivery Optimization:
 
 1. HTTP downloader.
 1. Peer-to-peer (P2P) cloud technology.
@@ -29,7 +29,7 @@ Delivery Optimization is a powerful and useful tool to help enterprises manage b
 
 One of the most powerful advantages of using Delivery Optimization is the ability to fine-tune settings that empower users to dial in Microsoft content delivery to meet the needs of specific environments.
 
-## Monitoring The Results
+## Monitoring the Results
 
 Since Delivery Optimization is on by default, you're able to monitor the value either through the Windows Settings for 'Delivery Optimization' using Delivery Optimization PowerShell [cmdlets.](waas-delivery-optimization-setup.md), and/or via the [Windows Update for Business Report](../update/wufb-reports-workbook.md) experience in Azure.
 
@@ -70,18 +70,18 @@ Machine 1 will download zero bytes from peers and Machine 2 will download 50-99%
 #### Test Machine Setup
 
 |Setup Checklist| Value/Explanation
-|--------|-------------------------------|
-|Number of machines used| 2 |
-|Virtual Machines/physical devices| 2 |
-|Windows OS version | Windows 10 (21H2) and Windows 11 (21H2) |
-|RAM | 8 GB |
-|Disk size | 127 GB |
-|Network | Connected to same network, one that is representative of the corporate network. |
-|Pause Windows Updates | This controls the test environment so no other content is made available during the test, and potentially altering the outcome of the test. If there are problems and no peering happens, use 'Get-DeliveryOptimizationStatus' on the first machine to return a real-time list of the connected peers. |
-|Ensure all Store apps are up to date | This helps prevent any new, unexpected updates to download during testing. |
-|Delivery Optimization 'Download Mode' Policy | 2 (Group)(set on each machine) |
-|Delivery Optimization 'GroupID' Policy | Set the *same* 'GUID' on each test machine. A GUID is a required value, which can be generated using PowerShell, '[[guid]::NewGuid().](https://devblogs.microsoft.com/scripting/powertip-create-a-new-guid-by-using-powershell/)'. |
-|**Required on Windows 11 devices only** set Delivery Optimization 'Restrict Peer Selection' policy | 0-NAT (set on each machine). The default behavior in Windows 11 is set to '2-Local Peer Discovery'. For testing purposes, this needs to be scoped to the NAT. |
+|--------|-------------------------------
+|Number of machines used| 2
+|Virtual Machines/physical devices| 2
+|Windows OS version | Windows 10 (21H2) and Windows 11 (21H2)
+|RAM | 8 GB
+|Disk size | 127 GB
+|Network | Connected to same network, one that is representative of the corporate network.
+|Pause Windows Updates | This controls the test environment so no other content is made available during the test, and potentially altering the outcome of the test. If there are problems and no peering happens, use 'Get-DeliveryOptimizationStatus' on the first machine to return a real-time list of the connected peers.
+|Ensure all Store apps are up to date | This helps prevent any new, unexpected updates to download during testing.
+|Delivery Optimization 'Download Mode' Policy | 2 (Group)(set on each machine)
+|Delivery Optimization 'GroupID' Policy | Set the *same* 'GUID' on each test machine. A GUID is a required value, which can be generated using PowerShell, '[[guid]::NewGuid().](https://devblogs.microsoft.com/scripting/powertip-create-a-new-guid-by-using-powershell/)'.
+|**Required on Windows 11 devices only** set Delivery Optimization 'Restrict Peer Selection' policy | 0-NAT (set on each machine). The default behavior in Windows 11 is set to '2-Local Peer Discovery'. For testing purposes, this needs to be scoped to the NAT.
 
 #### Test Instructions
 
@@ -97,10 +97,10 @@ The following set of instructions will be used for each machine:
 * Run 'Test Instructions'
 
 |Windows 10 | Windows 11
-|--------|-------------------------------|
-| :::image type="content" source="images/test-scenarios/win10/m1-basic-complete.png" alt-text="Windows 10 21H2 - Machine 1 - Basic Test." lightbox="images/test-scenarios/win10/m1-basic-complete.png"::: | :::image type="content" source="images/test-scenarios/win11/m1-basic-complete.png" alt-text="Windows 11 21H2 - Machine 1 - Basic Test." lightbox="images/test-scenarios/win11/m1-basic-complete.png"::: |
-| **Observations** | |
-| *No peers were found on the first machine downloading the content.<br>* 'TotalBytesDownloaded' is equal to the file size.<br>*Status is set to 'Caching' the content so future peers can use it.<br>* Download was happening in the foreground.<br>*DownloadMode is set to 'Group' and no peers were found.<br>* No distinct observations seen between Window 10 and Windows 11 devices. |
+|--------|-------------------------------
+| :::image type="content" source="images/test-scenarios/win10/m1-basic-complete.png" alt-text="Windows 10 21H2 - Machine 1 - Basic Test." lightbox="images/test-scenarios/win10/m1-basic-complete.png"::: | :::image type="content" source="images/test-scenarios/win11/m1-basic-complete.png" alt-text="Windows 11 21H2 - Machine 1 - Basic Test." lightbox="images/test-scenarios/win11/m1-basic-complete.png":::
+| **Observations**
+| - No peers were found on the first machine downloading the content.<br>- 'TotalBytesDownloaded' is equal to the file size.<br>- Status is set to 'Caching' the content so future peers can use it.<br>- Download was happening in the foreground.<br>- DownloadMode is set to 'Group' and no peers were found.<br>- No distinct observations seen between Window 10 and Windows 11 devices.
 
 *Wait 5 minutes*.
 
@@ -108,11 +108,11 @@ The following set of instructions will be used for each machine:
 
 * Run 'Test Instructions'
 
-|Windows 10 | Windows 11 |
-|--------|--------------------------------|
+|Windows 10 | Windows 11
+|--------|--------------------------------
 | :::image type="content" source="images/test-scenarios/win10/m2-basic-complete.png" alt-text="Windows 10 21H2 - Machine 2 - Basic Test." lightbox="images/test-scenarios/win10/m2-basic-complete.png"::: | :::image type="content" source="images/test-scenarios/win11/m2-basic-complete.png" alt-text="Windows 11 21H2 - Machine 2 - Basic Test." lightbox="images/test-scenarios/win11/m2-basic-complete.png":::|
-| **Observations** | **Observations**|
-| *A peer was found for the content and 87% of total bytes came from the peer. <br>* One peer was found for the piece of content, which is expected as there are only two devices in the peering group. <br> *Download mode was set to 'Group', but since group mode includes both LAN and Group devices, Delivery Optimization prioritizes LAN peers, if found. Therefore, 'BytesFromLanPeers' shows bytes where 'BytesFromGroupPeers' doesn't. <br>* 'DownloadDuration' is roughly the same between machines.|*A peer was found for the content and 90% of total bytes came from the peer. <br>* All other points are the same as Windows 10 results. |
+| **Observations** | **Observations**
+| - A peer was found for the content and 87% of total bytes came from the peer. <br>- One peer was found for the piece of content, which is expected as there are only two devices in the peering group. <br>- Download mode was set to 'Group', but since group mode includes both LAN and Group devices, Delivery Optimization prioritizes LAN peers, if found. Therefore, 'BytesFromLanPeers' shows bytes where 'BytesFromGroupPeers' doesn't. <br>- 'DownloadDuration' is roughly the same between machines.<br>- A peer was found for the content and 90% of total bytes came from the peer. <br>-  All other points are the same as Windows 10 results.
 
 ### Scenario 2: Advance Setup
 
@@ -123,18 +123,18 @@ Machine 1 will download zero bytes from peers and Machine 2 will find peers and 
 
 #### Test Machine Setup
 
-|Setup Checklist| Value/Explanation |
-|--------|-------------------------------|
-|Number of machines used| 3 |
-|Virtual Machines| 3 |
-|Windows OS version | Windows 10 (21H2) |
-|RAM | 8 GB |
-|Disk size | 127 GB |
-|Network | Connected to same network, one that is representative of the corporate network. |
-|Delivery Optimization 'Download Mode' Policy| 2 (Group)(set on each machine) |
+|Setup Checklist| Value/Explanation
+|--------|-------------------------------
+|Number of machines used| 3
+|Virtual Machines| 3
+|Windows OS version | Windows 10 (21H2)
+|RAM | 8 GB
+|Disk size | 127 GB
+|Network | Connected to same network, one that is representative of the corporate network.
+|Delivery Optimization 'Download Mode' Policy| 2 (Group)(set on each machine).
 |Delivery Optimization 'Group ID' Policy| Set the *same* 'GUID' on each test machine. A GUID is required value, which can be generated using PowerShell, '[guid]::NewGuid().](https://devblogs.microsoft.com/scripting/powertip-create-a-new-guid-by-using-powershell/)'. |
-|Delivery Optimization 'Delay background download from http' Policy | 60 (set on each machine) |
-|Delivery Optimization 'Delay foreground download from http Policy |60 (set on each machine) |
+|Delivery Optimization 'Delay background download from http' Policy | 60 (set on each machine).
+|Delivery Optimization 'Delay foreground download from http Policy |60 (set on each machine).
 
 #### Testing Instructions
 

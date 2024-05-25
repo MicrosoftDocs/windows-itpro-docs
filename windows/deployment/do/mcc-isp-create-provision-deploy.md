@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a> 	
-ms.date: 05/09/2023
+ms.date: 05/23/2024
 ---
 
 # Create, configure, provision, and deploy the cache node in Azure portal
@@ -54,12 +54,14 @@ You can manually upload a list of your CIDR blocks in Azure portal to enable man
 BGP (Border Gateway Protocol) routing is another method offered for client routing. BGP dynamically retrieves CIDR ranges by exchanging information with routers to understand reachable networks. For an automatic method of routing traffic, you can choose to configure BGP routing in Azure portal.
 
 Microsoft Connected Cache includes Bird BGP, which enables the cache node to:
- - Establish iBGP peering sessions with routers, route servers, or route collectors within operator networks 
- - Act as a route collector 
+
+- Establish iBGP peering sessions with routers, route servers, or route collectors within operator networks
+- Act as a route collector
 
 The operator starts the iBGP peering session from the Microsoft Connected Cache side using the Azure management portal and then starts the session with the Microsoft Connected Cache node from the router.
 
 In the example configuration below:
+
 - The operator ASN is 65100
 - The ASN of the Microsoft Connected Cache cache node is 65100 and the IP address is 192.168.8.99
 - iBGP peering sessions are established from the portal for ASNs 65100, 65200, and 65300.
@@ -125,7 +127,7 @@ There are five IDs that the device provisioning script takes as input in order t
 
 1. After completing cache node provisioning, navigate to the **Server provisioning** tab. Select **Download provisioning package** to download the installation package to your server.  
 
-1. Open a terminal window in the directory where you would like to deploy your cache node and run the following command to change the access permission to the Bash script: 
+1. Open a terminal window in the directory where you would like to deploy your cache node and run the following command to change the access permission to the Bash script:
 
     ```bash
     sudo chmod +x provisionmcc.sh

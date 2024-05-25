@@ -14,7 +14,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 02/14/2024
+ms.date: 05/23/2024
 ---
 
 # Delivery Optimization reference
@@ -42,27 +42,27 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Minimum disk size allowed to use peer caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 | Default value is 32 GB. |
 | [Max cache age](#max-cache-age) | DOMaxCacheAge | 1511 | Default value is 259,200 seconds (three days). |
 | [Max cache size](#max-cache-size)  | DOMaxCacheSize | 1511 | Default value is 20%. |
-| [Absolute max cache size (in GBs)](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 | Default value is 10 GB.|
+| [Absolute max cache size (in GBs)](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 | Default is not configured.|
 | [Modify cache drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 | Default to the operating system drive through the %SYSTEMDRIVE% environment variable. |
 | [Minimum peer caching content file size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 | Default file size is 50 MB. |
 | [Monthly upload data cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 | Default value is 20 GB. |
 | [Minimum background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 | Recommend setting this to 500 KB/s. Default value is 2500 KB/s. |
 | [Enable peer caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1709 | Default is to not allow peering while on VPN. |
-| [VPN Keywords](#vpn-keywords) | DOVpnKeywords | 22H2 September Moment | Allows you to set one or more keywords used to recognize VPN connections. |
-| [Disallow Cache Server Downloads from VPN](#disallow-cache-server-downloads-on-vpn) | DODisallowCacheServerDownloadsOnVPN | 22H2 September Moment | Disallow downloads from Microsoft Connected Cache servers when the device connects via VPN. By default, the device is allowed to download from Microsoft Connected Cache when connected via VPN. |
+| [VPN keywords](#vpn-keywords) | DOVpnKeywords | 22H2 September Moment | Allows you to set one or more keywords used to recognize VPN connections. |
+| [Disallow cache server downloads from VPN](#disallow-cache-server-downloads-on-vpn) | DODisallowCacheServerDownloadsOnVPN | 22H2 September Moment | Disallow downloads from Microsoft Connected Cache servers when the device connects via VPN. By default, the device is allowed to download from Microsoft Connected Cache when connected via VPN. |
 | [Allow uploads while the device is on battery while under set battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1709 | Default is to not allow peering while on battery.  |
 | [Maximum foreground download bandwidth (percentage)](#maximum-foreground-download-bandwidth) | DOPercentageMaxForegroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
 | [Maximum background download bandwidth (percentage)](#maximum-background-download-bandwidth) | DOPercentageMaxBackgroundBandwidth | 1803 | Default is '0' which will dynamically adjust. |
 | [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) | DOMaxForegroundDownloadBandwidth | 2004 | Default is '0' which will dynamically adjust. |
 | [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) | DOMaxBackgroundDownloadBandwidth | 2004 | Default is '0' which will dynamically adjust. |
-| [Set hours to limit background download bandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 | Default isn't set. |
-| [Set hours to limit foreground download bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth) |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 | Default isn't set. |
-| [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 | Default isn't set. For peering, use this policy to delay the fallback to the HTTP source. [Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options. |
-| [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 | Default isn't set. For peering, use this policy to delay the fallback to the HTTP source. [Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options.|
-| [Delay background download Cache Server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 | Default isn't set. For Microsoft Connected Cache content, use this policy to delay the fallback to the HTTP source. [Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options.|
-| [Delay foreground download Cache Server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 | Default isn't set. For Microsoft Connected Cache content, use this policy to delay the fallback to the HTTP source. [Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options. |
-| [Cache Server Hostname](#cache-server-hostname) | DOCacheHost | 1809  | No value is set as default. |
-| [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 2004 | No value is set as default. |
+| [Set hours to limit foreground download bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth) |DOSetHoursToLimitForegroundDownloadBandwidth | 1803 | Default isn't configured. |
+| [Set hours to limit background download bandwidth](#set-business-hours-to-limit-background-download-bandwidth) | DOSetHoursToLimitBackgroundDownloadBandwidth | 1803 | Default isn't configured. |
+| [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 | Default isn't configured. For peering, use this policy to delay the fallback to the HTTP source. [Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options.|
+| [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) | DODelayBackgroundDownloadFromHttp | 1803 | Default isn't configured. For peering, use this policy to delay the fallback to the HTTP source. [Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options. |
+| [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 | Default isn't configured. For Microsoft Connected Cache content, use this policy to delay the fallback to the HTTP source. [Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options. |
+| [Delay background download cache server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 | Default isn't configured. For Microsoft Connected Cache content, use this policy to delay the fallback to the HTTP source. [Learn more](#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources) about the different delay options.|
+| [Cache server hostname](#cache-server-hostname) | DOCacheHost | 1809  | No value is set as default. |
+| [Cache server hostname source](#cache-server-hostname-source) | DOCacheHostSource | 2004 | No value is set as default. |
 | [Maximum download bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 (deprecated in Windows 10, version 2004); use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
 | [Percentage of maximum download bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 (deprecated in Windows 10, version 2004); use [Maximum background download bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)  or [Maximum foreground download bandwidth (in KB/s)](#maximum-foreground-download-bandwidth-in-kbs) instead)| Default is '0' which will dynamically adjust. |
 | [Maximum upload bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 (deprecated in Windows 10, version 2004) | Default is '0' (unlimited). |
@@ -73,14 +73,14 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 
 Delivery Optimization uses locally cached updates to deliver contact via peers. The more content available in the cache, the more likely that peering can be used. In cases where devices have enough local storage and you'd like to cache more content. Likewise, if you have limited storage and would prefer to cache less, use the following settings to adjust the Delivery Optimization cache to suit your scenario:
 
-- [Max Cache Size](#max-cache-size) and [Absolute Max Cache Size](#absolute-max-cache-size) control the amount of space the Delivery Optimization cache can use.
-- [Max Cache Age](#max-cache-age) controls the retention period for each update in the cache.
-- The system drive is the default location for the Delivery Optimization cache. [Modify Cache Drive](#modify-cache-drive) allows administrators to change that location.
+- [DOMaxCacheSize](#max-cache-size) and [DOAbsoluteMaxCacheSize](#absolute-max-cache-size) control the amount of space the Delivery Optimization cache can use.
+- [DOMaxCacheAge](#max-cache-age) controls the retention period for each update in the cache.
+- The system drive is the default location for the Delivery Optimization cache. [DOModifyCacheDrive](#modify-cache-drive) allows administrators to change that location.
 
 >[!NOTE]
->It is possible to configure preferred cache devices. For more information, see [Group ID](#group-id).
+>It is possible to configure preferred cache devices. For more information, see [DOGroupID](#group-id).
 
-All cached files have to be above a set minimum size. This size is automatically set by the Delivery Optimization cloud services, but when local storage is sufficient and the network isn't strained or congested, administrators might choose to change it to obtain increased performance. You can set the minimum size of files to cache by adjusting [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size).
+All cached files have to be above a set minimum size. This size is automatically set by the Delivery Optimization cloud services, but when local storage is sufficient and the network isn't strained or congested, administrators might choose to change it to obtain increased performance. You can set the minimum size of files to cache by adjusting [DOMinFileSizeToCache](#minimum-peer-caching-content-file-size).
 
 #### Impact to network
 
@@ -94,7 +94,7 @@ More options available that control the impact Delivery Optimization has on your
 - [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) restricts peer selection by the options you select.
 - [Select the source of Group IDs](#select-the-source-of-group-ids) restricts peer selection to a specific source.
 
-#### Policies to prioritize the use of Peer-to-Peer and Cache Server sources
+#### Policies to prioritize the use of peer-to-peer and cache server sources
 
 When Delivery Optimization client is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client connects to both MCC and peers in parallel. If the desired content can't be obtained from MCC or peers, Delivery Optimization will automatically fallback to the HTTP source to get the requested content. There are four settings that allow you to prioritize peer-to-peer or MCC sources by delaying the immediate fallback to HTTP source, which is the default behavior.
 
@@ -105,7 +105,7 @@ When Delivery Optimization client is configured to use peers and Microsoft Conne
 
 ##### Microsoft Connected Cache (MCC) delay fallback settings
 
-- [Delay foreground download Cache Server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use a cache server.
+- [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use a cache server.
 - [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background  download that is allowed to use a cache server.
 
 **If both peer-to-peer and MCC are configured, the peer-to-peer delay settings will take precedence over the cache server delay settings.** This setting allows Delivery Optimization to discover peers first then recognize the fallback setting for the MCC cache server.
@@ -161,15 +161,15 @@ Starting in Windows 10, version 1803, set this policy to restrict peer selection
 - 4 = DNS Suffix
 - 5 = Starting with Windows 10, version 1903, you can use the Microsoft Entra tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
-When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.
+When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The default behavior, when the GroupID or GroupIDSource policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. If GroupIDSource is set to either DHCP Option ID (3) or DNS Suffix (4) and those methods fail, the default behavior is used instead. The option set in this policy only applies to Group (2) download mode. If Group (2) isn't configured as Download mode, this policy will be ignored. If you set the value to anything other than 0-5, the policy is ignored.
 
-### Minimum RAM (inclusive) allowed to use Peer Caching
+### Minimum RAM (inclusive) allowed to use peer caching
 
 MDM Setting: **DOMinRAMAllowedToPeer**
 
 This setting specifies the minimum RAM size in GB required to use Peer Caching. For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. The recommended values are 1 to 4, and **the default value is 4 GB**.
 
-### Minimum disk size allowed to use Peer Caching
+### Minimum disk size allowed to use peer caching
 
 MDM Setting: **DOMinDiskSizeAllowedToPeer**
 
@@ -178,45 +178,37 @@ This setting specifies the required minimum disk size (capacity in GB) for the d
 >[!NOTE]
 >If the [Modify Cache Drive](#modify-cache-drive) policy is set, the disk size check applies to the new working directory specified by this policy.
 
-### Max Cache Age
+### Max cache age
 
 MDM Setting: **DOMaxCacheAge**
 
 In environments configured for Delivery Optimization, you might want to set an expiration on cached updates and Windows application installation files. If so, this setting defines the maximum number of seconds each file can be held in the Delivery Optimization cache on each Windows 10 client device. Alternatively, organizations might choose to set this value to "0" which means "unlimited" to avoid peers redownloading content. When "Unlimited" value is set, Delivery Optimization holds the files in the cache longer and cleans up the cache as needed (for example when the cache size exceeded the maximum space allowed). **The default value is 259,200 seconds (three days)**.
 
-### Max Cache Size
+### Max cache size
 
 MDM Setting: **DOMaxCacheSize**
 
 This setting limits the maximum amount of space the Delivery Optimization cache can use as a percentage of the available drive space, from 1 to 100. For example, if you set this value to 10 on a Windows client device that has 100 GB of available drive space, then Delivery Optimization uses up to 10 GB of that space. Delivery Optimization constantly assesses the available drive space and automatically clear the cache to keep the maximum cache size under the set percentage. **The default value is 20%**.
 
-### Absolute Max Cache Size
+### Absolute max cache size
 
 MDM Setting: **DOAbsoluteMaxCacheSize**
 
-This setting specifies the maximum number of gigabytes the Delivery Optimization cache can use. This is different from the [**Max Cache Size**](#max-cache-size) setting, which is a percentage of available disk space. Also, if you configure this policy, it overrides the [**Max Cache Size**](#max-cache-size) setting. **The default value is 10 GB**.
+This setting specifies the maximum number of gigabytes the Delivery Optimization cache can use. This is different from the [**Max Cache Size**](#max-cache-size) setting, which is a percentage of available disk space. Also, if you configure this policy, it overrides the [**Max Cache Size**](#max-cache-size) setting. **The default value is not set**.
 
-### Minimum Peer Caching Content File Size
+### Minimum peer caching content file size
 
 MDM Setting: **DOMinFileSizeToCache**
 
 This setting specifies the minimum content file size in MB enabled to use Peer Caching. The recommended values are from 1 to 100000. **The default file size is 50 MB** to participate in peering.
 
-### Maximum Download Bandwidth
-
-MDM Setting: **DOMaxDownloadBandwidth**
-
-Deprecated in Windows 10, version 2004.
-This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). **A default value of "0"** means that Delivery Optimization dynamically adjusts and optimizes the maximum bandwidth used.
-
-
-### Maximum Foreground Download Bandwidth
+### Maximum foreground download bandwidth
 
 MDM Setting: **DOPercentageMaxForegroundBandwidth**
 
 Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. **The default value of "0"** means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers aren't throttled even when this policy is set.
 
-### Maximum Background Download Bandwidth
+### Maximum background download bandwidth
 
 MDM Setting: **DOPercentageMaxBackgroundBandwidth**
 
@@ -225,31 +217,17 @@ Starting in Windows 10, version 1803, specifies the maximum background download 
 > [!NOTE]
 > It is recommended to use the absolute value download options 'DOMaxBackgroundDownloadBandwidth' and 'DOMaxForegroundDownloadBandwidth', rather than percentage-based options, for low bandwidth environments.
 
-### Percentage of Maximum Download Bandwidth
-
-MDM Setting: **DOPercentageMaxDownloadBandwidth**
-
-Deprecated in Windows 10, version 2004.
-This setting specifies the maximum download bandwidth that Delivery Optimization can use across all concurrent download activities as a percentage of available download bandwidth. **The default value of "0"** means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
-
-### Max Upload Bandwidth
-
-MDM Setting: **DOMaxUploadBandwidth**
-
-Deprecated in Windows 10, version 2004.
-This setting allows you to limit the number of upload bandwidth individual clients can use for Delivery Optimization. Consider this setting when clients are providing content to requesting peers on the network. This option is set in kilobytes per second (KB/s). **The default value is "0" or "unlimited"** which means Delivery Optimization dynamically optimizes for minimal usage of upload bandwidth; however it doesn't cap the upload bandwidth rate at a set rate.
-
-### Set Business Hours to Limit Background Download Bandwidth
-
-MDM Setting: **DOSetHoursToLimitBackgroundDownloadBandwidth**
-
-Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. **By default, this policy isn't set.**
-
-### Set Business Hours to Limit Foreground Download Bandwidth
+### Set business hours to limit foreground download bandwidth
 
 MDM Setting: **DOSetHoursToLimitForegroundDownloadBandwidth**
 
-Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. **By default, this policy isn't set.**
+Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. **By default, this policy isn't configured.**
+
+### Set business hours to limit background download bandwidth
+
+MDM Setting: **DOSetHoursToLimitBackgroundDownloadBandwidth**
+
+Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth. **By default, this policy isn't configured.**
 
 ### Select a method to restrict peer selection
 
@@ -261,43 +239,43 @@ If Group mode is set, Delivery Optimization connects to locally discovered peers
 
 In Windows 11, the Local Peer Discovery (DNS-SD) option can be set via MDM or Group Policy. However, in Windows 10, this feature can be enabled by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**.
 
-### Delay background download from HTTP (in secs)
-
-MDM Setting: **DODelayBackgroundDownloadFromHttp**
-
-Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy isn't set.**
-
 ### Delay foreground download from HTTP (in secs)
 
 MDM Setting: **DODelayForegroundDownloadFromHttp**
 
-Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy isn't set.**
+Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy isn't configured.**
 
-### Delay Foreground Download Cache Server Fallback (in secs)
+### Delay background download from HTTP (in secs)
+
+MDM Setting: **DODelayBackgroundDownloadFromHttp**
+
+Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy isn't configured.**
+
+### Delay foreground download cache server fallback (in secs)
 
 MDM Setting: **DelayCacheServerFallbackForeground**
 
-Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't set.**
+Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP policy is set, it will apply first (to allow download from peers). **By default, this policy isn't configured.**
 
-### Delay Background Download Cache Server Fallback (in secs)
+### Delay background download cache server fallback (in secs)
 
 MDM Setting: **DelayCacheServerFallbackBackground**
 
-Starting in Windows 10, version 1903, set this policy to delay the fallback from cache server to the HTTP source for a background content download by X seconds. If the 'Delay background download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't set.**
+Starting in Windows 10, version 1903, set this policy to delay the fallback from cache server to the HTTP source for a background content download by X seconds. If the 'Delay background download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't configured.**
 
-### Minimum Background QoS
+### Minimum background QoS
 
 MDM Setting: **DOMinBackgroundQoS**
 
 This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more kilobytes from HTTP sources. The lower this value is, the more content is sourced using peers on the network rather than HTTP sources. The higher this value, the more content is received from HTTP sources, versus peers on the local network. **The default value is 2500 KB/s.**
 
-### Modify Cache Drive
+### Modify cache drive
 
 MDM Setting: **DOModifyCacheDrive**
 
 This setting allows for an alternate Delivery Optimization cache location on the clients. **By default, the cache is stored on the operating system drive through the %SYSTEMDRIVE% environment variable.** You can set the value to an environment variable (for example, %SYSTEMDRIVE%), a drive letter (for example, D:), or a folder path (for example, D:\DOCache).
 
-### Monthly Upload Data Cap
+### Monthly upload data cap
 
 MDM Setting: **DOMonthlyUploadDataCap**
 
@@ -309,7 +287,7 @@ MDM Setting: **DOAllowVPNPeerCaching**
 
 This setting determines whether a device will be allowed to participate in Peer Caching while connected to VPN. **By default, if a VPN connection is detected, peering isn't allowed, except when the 'Local Discovery' (DNS-SD) option is chosen.** Specify "true" to allow the device to participate in Peer Caching while connected via VPN to the domain network. The device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
 
-### VPN Keywords
+### VPN keywords
 
 MDM Setting: **DOVpnKeywords**
 
@@ -321,7 +299,7 @@ MDM Setting: **DODisallowCacheServerDownloadsOnVPN**
 
 This policy disallows downloads from Connected Cache servers when the device connects via VPN. **By default, the device is allowed to download from Connected Cache when connected via VPN.** Set this policy if you prefer devices to download directly from the Internet when connected remotely (via VPN) instead of pulling from a Microsoft Connected Cache server deployed on your corporate network.
 
-### Allow uploads while the device is on battery while under set Battery level
+### Allow uploads while the device is on battery while under set battery level
 
 MDM Setting: **DOMinBatteryPercentageAllowedToUpload**
 
@@ -331,7 +309,7 @@ The device can download from peers while on battery regardless of this policy.
 >[!IMPORTANT]
 > **By default, devices will not upload while on battery**. To enable uploads while on battery, you need to enable this policy and set the battery value under which uploads pause.
 
-### Cache Server Hostname
+### Cache server hostname
 
 MDM Setting: **DOCacheHost**
 
@@ -340,7 +318,7 @@ Set this policy to designate one or more Microsoft Connected Cache servers to be
 >[!IMPORTANT]
 > Any value will signify that the policy is set. For example, an empty string ("") isn't considered empty.
 
-### Cache Server Hostname Source
+### Cache server hostname source
 
 MDM Setting: **DOCacheHostSource**
 
@@ -356,7 +334,7 @@ Set this policy to designate Delivery Optimization in Network Cache servers thro
 > [!NOTE]
 > If you format the DHCP Option ID incorrectly, the client will fall back to the Cache Server Hostname policy value if that value has been set.
 
-### Maximum Foreground Download Bandwidth (in KB/s)
+### Maximum foreground download bandwidth (in KB/s)
 
 MDM Setting: **DOMaxForegroundDownloadBandwidth**
 
@@ -364,10 +342,33 @@ Specifies the maximum foreground download bandwidth in kilobytes/second that the
 
 **The default value of "0" means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.**
 
-### Maximum Background Download Bandwidth (in KB/s)
+### Maximum background download bandwidth (in KB/s)
 
 MDM Setting: **DOMaxBackgroundDownloadBandwidth**
 
 Specifies the maximum background download bandwidth in kilobytes/second that the device can use across all concurrent download activities using Delivery Optimization.
 
 **The default value "0" means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.**
+
+## Deprecated policies
+
+### Maximum download bandwidth
+
+MDM Setting: **DOMaxDownloadBandwidth**
+
+Deprecated in Windows 10, version 2004.
+This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). **A default value of "0"** means that Delivery Optimization dynamically adjusts and optimizes the maximum bandwidth used.
+
+### Percentage of maximum download bandwidth
+
+MDM Setting: **DOPercentageMaxDownloadBandwidth**
+
+Deprecated in Windows 10, version 2004.
+This setting specifies the maximum download bandwidth that Delivery Optimization can use across all concurrent download activities as a percentage of available download bandwidth. **The default value of "0"** means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
+
+### Max upload bandwidth
+
+MDM Setting: **DOMaxUploadBandwidth**
+
+Deprecated in Windows 10, version 2004.
+This setting allows you to limit the number of upload bandwidth individual clients can use for Delivery Optimization. Consider this setting when clients are providing content to requesting peers on the network. This option is set in kilobytes per second (KB/s). **The default value is "0" or "unlimited"** which means Delivery Optimization dynamically optimizes for minimal usage of upload bandwidth; however it doesn't cap the upload bandwidth rate at a set rate.
