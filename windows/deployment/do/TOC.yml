@@ -28,7 +28,7 @@
     - name: Testing Delivery Optimization
       href: delivery-optimization-test.md
     - name: Delivery Optimization Troubleshooter
-      href: http://aka.ms/do-fix
+      href: https://aka.ms/do-fix
 - name: Microsoft Connected Cache
   items:
     - name: What is Microsoft Connected Cache?
