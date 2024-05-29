@@ -1,12 +1,14 @@
 ---
 title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments using MDM and group policy. Learn about Recall features.
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: windows-copilot
 ms.date: 05/23/2024
 ms.author: mstewart
 author: mestew
-ms.collection: windows-copilot
+ms.collection:
+  - windows-copilot
+  - magic-ai-copilot
 appliesto:
 - ✅ <a href="https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs" target="_blank">Copilot+ PCs</a>
 ---
@@ -50,7 +52,7 @@ Organizations that aren't ready to use AI for historical analysis can disable it
 | &nbsp; | Setting  |
 |---|---|
 | **CSP** | ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis) |
-| **Group policy** | User Configuration > Administrative Templates > Windows Components > WindowsAI > **Turn off saving snapshots for Windows** |
+| **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** |
 
 ## Limitations
 
