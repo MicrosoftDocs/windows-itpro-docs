@@ -8,7 +8,7 @@ ms.collection:
 - essentials-navigation
 - essentials-overview
 ms.date: 08/30/2023
-ms.topic: article
+ms.topic: overview
 ---
 
 # Application Control for Windows
