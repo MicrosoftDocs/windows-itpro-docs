@@ -1,7 +1,7 @@
 ---
 title: Policies in Policy CSP supported by Group Policy
 description: Learn about the policies in Policy CSP supported by Group Policy.
-ms.date: 04/10/2024
+ms.date: 05/20/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -872,6 +872,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 - [TurnOffWindowsCopilot](policy-csp-windowsai.md)
 - [DisableAIDataAnalysis](policy-csp-windowsai.md)
+- [AllowImageCreator](policy-csp-windowsai.md)
 
 ## WindowsDefenderSecurityCenter
 

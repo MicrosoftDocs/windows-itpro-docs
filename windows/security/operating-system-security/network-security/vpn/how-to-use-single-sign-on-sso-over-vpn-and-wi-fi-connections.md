@@ -1,7 +1,7 @@
 ---
 title: How to use single sign-on (SSO) over VPN and Wi-Fi connections
 description: Explains requirements to enable single sign-on (SSO) to on-premises domain resources over WiFi or VPN connections.
-ms.date: 12/12/2023
+ms.date: 05/06/2024
 ms.topic: how-to
 ---
 

@@ -50,6 +50,8 @@ items:
                 href: device-update-management.md
               - name: Manage Copilot in Windows
                 href: manage-windows-copilot.md
+              - name: Manage Recall
+                href: manage-recall.md                
               - name: Secured-Core PC Configuration Lock
                 href: config-lock.md
               - name: Certificate renewal

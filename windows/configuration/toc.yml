@@ -7,8 +7,8 @@ items:
   href: start/toc.yml
 - name: Taskbar
   href: taskbar/toc.yml
-- name: Spotlight
-  href: lock-screen/windows-spotlight.md
+- name: Windows spotlight
+  href: windows-spotlight/index.md
 - name: Microsoft Store
   href: store/toc.yml
 - name: Cellular settings
@@ -22,4 +22,4 @@ items:
 - name: Windows Configuration Designer
   href: wcd/toc.yml
 - name: User Experience Virtualization (UE-V)
-  href: ue-v/toc.yml
+  href: /microsoft-desktop-optimization-pack/ue-v/uev-for-windows

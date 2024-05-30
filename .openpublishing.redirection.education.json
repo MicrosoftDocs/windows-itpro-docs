@@ -234,6 +234,78 @@
       "source_path": "education/windows/configure-windows-for-education.md",
       "redirect_url": "/education/windows",
       "redirect_document_id": false
+    },
+
+
+    {
+      "source_path": "education/windows/tutorial-school-deployment/configure-device-apps.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/configure-device-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/configure-device-settings.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/configure-device-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/configure-devices-overview.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/configure-devices-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/enroll-autopilot.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/enroll-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/enroll-entra-join.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/enroll-entra-join",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/enroll-overview.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/enroll-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/enroll-package.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/enroll-package",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/index.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/manage-overview.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/manage-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/manage-surface-devices.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/manage-surface-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/reset-wipe.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/reset-wipe",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/set-up-microsoft-entra-id.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/set-up-microsoft-entra-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/set-up-microsoft-intune.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/set-up-microsoft-intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/tutorial-school-deployment/troubleshoot-overview.md",
+      "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/troubleshoot-overview",
+      "redirect_document_id": false
     }
   ]
 }
