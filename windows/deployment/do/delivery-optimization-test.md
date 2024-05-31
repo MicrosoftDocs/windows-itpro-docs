@@ -123,18 +123,18 @@ Machine 1 will download zero bytes from peers and Machine 2 will find peers and 
 
 #### Test Machine Setup
 
-|Setup Checklist| Value/Explanation
-|--------|-------------------------------
-|Number of machines used| 3
-|Virtual Machines| 3
-|Windows OS version | Windows 10 (21H2)
-|RAM | 8 GB
-|Disk size | 127 GB
-|Network | Connected to same network, one that is representative of the corporate network.
-|Delivery Optimization 'Download Mode' Policy| 2 (Group)(set on each machine).
+|Setup Checklist| Value/Explanation |
+|--------|-------------------------------|
+|Number of machines used| 3 |
+|Virtual Machines| 3 |
+|Windows OS version | Windows 10 (21H2) |
+|RAM | 8 GB |
+|Disk size | 127 GB |
+|Network | Connected to same network, one that is representative of the corporate network. |
+|Delivery Optimization 'Download Mode' Policy| 2 (Group)(set on each machine). |
 |Delivery Optimization 'Group ID' Policy| Set the *same* 'GUID' on each test machine. A GUID is required value, which can be generated using PowerShell, '[guid]::NewGuid().](https://devblogs.microsoft.com/scripting/powertip-create-a-new-guid-by-using-powershell/)'. |
-|Delivery Optimization 'Delay background download from http' Policy | 60 (set on each machine).
-|Delivery Optimization 'Delay foreground download from http Policy |60 (set on each machine).
+|Delivery Optimization 'Delay background download from http' Policy | 60 (set on each machine). |
+|Delivery Optimization 'Delay foreground download from http Policy |60 (set on each machine). |
 
 #### Testing Instructions
 
