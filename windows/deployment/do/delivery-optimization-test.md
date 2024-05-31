@@ -99,7 +99,7 @@ The following set of instructions will be used for each machine:
 |Windows 10 | Windows 11 |
 |--------|-------------------------------|
 | :::image type="content" source="images/test-scenarios/win10/m1-basic-complete.png" alt-text="Windows 10 21H2 - Machine 1 - Basic Test." lightbox="images/test-scenarios/win10/m1-basic-complete.png"::: | :::image type="content" source="images/test-scenarios/win11/m1-basic-complete.png" alt-text="Windows 11 21H2 - Machine 1 - Basic Test." lightbox="images/test-scenarios/win11/m1-basic-complete.png":::|
-| **Observations** |
+| **Observations** | |
 | - No peers were found on the first machine downloading the content.<br>- 'TotalBytesDownloaded' is equal to the file size.<br>- Status is set to 'Caching' the content so future peers can use it.<br>- Download was happening in the foreground.<br>- DownloadMode is set to 'Group' and no peers were found.<br>- No distinct observations seen between Window 10 and Windows 11 devices. |
 
 *Wait 5 minutes*.

@@ -39,10 +39,10 @@ For information about setting up Delivery Optimization, including tips for the b
 The following table lists the minimum Windows 10 version that supports Delivery Optimization:
 
 | Device type | Minimum Windows version
-|------------------|---------------
-| Computers running Windows 10 | Windows 10 1511
-| Computers running Server Core installations of Windows Server | Windows Server 2019
-| Windows IoT devices | Windows 10 1803
+|------------------|---------------|
+| Computers running Windows 10 | Windows 10 1511 |
+| Computers running Server Core installations of Windows Server | Windows Server 2019 |
+| Windows IoT devices | Windows 10 1803 |
 
 ### Types of download content supported by Delivery Optimization
 
@@ -52,7 +52,7 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 |------------------|---------------|----------------|----------|----------------|
 | Windows Update ([feature updates quality updates, language packs, drivers](../update/get-started-updates-channels-tools.md#types-of-updates)) | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Windows 10/11 UWP Store apps | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Windows 11 Win32 Store apps | Windows 11 | :heavy_check_mark: |
+| Windows 11 Win32 Store apps | Windows 11 | :heavy_check_mark: | |
 | Windows 10 Store for Business apps | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Windows Defender definition updates | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Intune Win32 apps| Windows 10 1709, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
@@ -60,11 +60,11 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Edge Browser Updates | Windows 10 1809, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Configuration Manager Express updates| Windows 10 1709 + Configuration Manager version 1711, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
 | Dynamic updates| Windows 10 1903, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
-| MDM Agent | Windows 11 | :heavy_check_mark: |  |
+| MDM Agent | Windows 11 | :heavy_check_mark: | | |
 | Xbox Game Pass (PC) | Windows 10 1809, Windows 11 | :heavy_check_mark: |  | :heavy_check_mark: |
-| Windows Package Manager| Windows 10 1809, Windows 11 | :heavy_check_mark: |  |
-| MSIX Installer| Windows 10 2004, Windows 11 | :heavy_check_mark: |  |
-| Teams (via MSIX Installer) | Windows 10 2004, Windows 11 | :heavy_check_mark: |  |
+| Windows Package Manager| Windows 10 1809, Windows 11 | :heavy_check_mark: | | |
+| MSIX Installer| Windows 10 2004, Windows 11 | :heavy_check_mark: |  | |
+| Teams (via MSIX Installer) | Windows 10 2004, Windows 11 | :heavy_check_mark: | | |
 
 #### Windows Server
 
