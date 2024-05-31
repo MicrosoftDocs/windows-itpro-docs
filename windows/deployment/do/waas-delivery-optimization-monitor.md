@@ -90,10 +90,10 @@ For details, see [Windows Update for Business Delivery Optimization Report](/win
 | NumberOfPeers | Total number of peers found across all files currently in the cache |
 | CacheHostConnections | Number of cache host server connections |
 | CdnConnections | Number of CDN server connections |
-| LanConnections | Number of LAN peer connections |
-| LinkLocalConnections | Number of Link Local peer connections |
-| GroupConnections | Number of Group peer connections |
-| InternetConnections | Number of Internet peer connections |
+| LanConnections | Number of peer connections over LAN |
+| LinkLocalConnections | Number of peer connections over Link Local |
+| GroupConnections | Number of peer connections over Group |
+| InternetConnections | Number of peer connections over Internet |
 | DownlinkBps | Average download bandwidth usage currently seen across all network adapters |
 | DownlinkUsageBps | Average bandwidth currently used by Delivery Optimization for downloads |
 | UplinkBps | Average upload bandwidth usage currently seen across all network adapters |
