@@ -50,7 +50,7 @@ For details, see [Windows Update for Business Delivery Optimization Report](/win
 | BytesFromHTTP | Total number of bytes received over HTTP. This metric represents all HTTP sources, **which includes BytesFromCacheServer** |
 | Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but isn't uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
 | Priority | Priority of the download; values are **foreground** or **background** |
-| BytesFromCacheServer | Total number of bytes received from cache Bserver (MCC) |
+| BytesFromCacheServer | Total number of bytes received from cache server (MCC) |
 | BytesFromLanPeers | Total number of bytes received from peers found on the LAN |
 | BytesFromGroupPeers | Total number of bytes received from peers found in the group. (Note: Group mode is LAN + Group. If peers are found on the LAN, those bytes are registered in 'BytesFromLANPeers'.)  |
 | BytesFromInternetPeers | Total number of bytes received from internet peers |
