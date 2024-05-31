@@ -21,7 +21,7 @@ ms.date: 11/08/2022
 
 ## Overview
 
-Delivery Optimization is a powerful and useful tool to help enterprises manage bandwidth usage for downloading Microsoft content. It's a solution designed to be used in large-scal05/23/2024e environments with large numbers of devices, various content sizes, etc. Delivery Optimization is native to currently supported versions of Windows and provides default configuration to get the most out of the typical customer environment. Delivery Optimization is used to deliver many different types of content, so Microsoft customers enjoy the best possible download experience for their environment. There are three components to Delivery Optimization:
+Delivery Optimization is a powerful and useful tool to help enterprises manage bandwidth usage for downloading Microsoft content. It's a solution designed to be used in large-scale environments with large numbers of devices, various content sizes, etc. Delivery Optimization is native to currently supported versions of Windows and provides default configuration to get the most out of the typical customer environment. Delivery Optimization is used to deliver many different types of content, so Microsoft customers enjoy the best possible download experience for their environment. There are three components to Delivery Optimization:
 
 1. HTTP downloader.
 1. Peer-to-peer (P2P) cloud technology.
