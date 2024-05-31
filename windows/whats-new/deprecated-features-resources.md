@@ -23,10 +23,10 @@ This article provides additional resources about [deprecated features for Window
 
 ## Paint 3D
 
-Paint 3D will be removed from the Microsoft Store on September 3, 2024. 
+Paint 3D is deprecated and will be removed from the Microsoft Store on September 3, 2024. Existing installations of Paint 3D will continue to work, but the app will no longer be available for download from the Microsoft Store. If you remove the app, you can reinstall it from the Microsoft Store until September 3, 2024. After that date, Paint 3D will no longer be available for download. Paint 3D was preinstalled on some Windows 10 devices, but wasn't preinstalled on Windows 11 devices. Some alternatives to Paint 3D include:
 
-
-To view and edit 2D images, you can use [Paint](https://www.microsoft.com/windows/paint) or [Photos](https://support.microsoft.com/topic/c0c6422f-d4cb-2e3d-eb65-7069071b2f9b). For viewing 3D content, you can use [3D Viewer](https://apps.microsoft.com/detail/9nblggh42ths).
+- View and edit 2D images: [Paint](https://www.microsoft.com/windows/paint) or [Photos](https://support.microsoft.com/topic/c0c6422f-d4cb-2e3d-eb65-7069071b2f9b)
+- View 3D content: [3D Viewer](https://apps.microsoft.com/detail/9nblggh42ths).
 
 ## WordPad
 
