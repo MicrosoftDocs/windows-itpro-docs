@@ -409,7 +409,7 @@ To configure the device to work with your DNS, use the following steps:
 Follow these steps if you see a DNS error when trying to resolve hostnames during the provisioning or download of container:
 Run ``` Get-EflowVmEndpoint ``` to get interface name
 
-Once you get the name
+Once you get the name:
 
 ```bash
 Set-EflowVmDNSServers -vendpointName "interface name from above" -dnsServers @("DNS_IP_ADDRESS")
