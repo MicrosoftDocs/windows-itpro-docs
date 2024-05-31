@@ -59,16 +59,16 @@ For details, see [Windows Update for Business Delivery Optimization Report](/win
 | BytesToInternetPeers | Total number of bytes delivered from peers found on the LAN  |
 | DownloadDuration | Total download time in seconds |
 | HttpConnectionCount | Number of connections to HTTP source |
-| LanConnectionCount | Number of connections to LAN peer connections |
-| GroupConnectionCount | Number of connections to Group peer connections |
-| InternetConnectionCount | Number of connections to Internet peer connections |
+| LanConnectionCount | Number of connections to LAN peers |
+| GroupConnectionCount | Number of connections to Group peers |
+| InternetConnectionCount | Number of connections to Internet peers |
 | DownloadMode | Delivery Optimization DownloadMode value |
 | SourceURL | Http source for the file |
 | CacheHost | IP address for the cache server |
 | NumPeers | Indicates the total number of peers returned from the service. |
 | PredefinedCallerApplication | Indicates the last caller that initiated a request for the file. |
 | ExpireOn | The target expiration date and time for the file. |
-| IsPinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptimizationStatus`). |
+| IsPinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `Set-DeliveryOptimizationStatus`). |
 
 `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
@@ -96,13 +96,10 @@ For details, see [Windows Update for Business Delivery Optimization Report](/win
 | InternetConnections | Number of Internet connections |
 | DownlinkBps | Average download bandwidth usage currently seen across all network adapters |
 | DownlinkUsageBps | Average bandwidth currently used by Delivery Optimization for downloads |
-| UplinkBps | Average bytes per second for upload events |
+| UplinkBps | Average upload bandwidth usage currently seen across all network adapters |
 | UplinkUsageBps | Average bandwidth currently used by Delivery Optimization for uploads |
-| ForegroundDownloadRatePct | Average foreground download percentage rate |
-| BackgroundDownloadRatePct | Average background download percentage rate |
-| UploadRatePct | Percentage of upload bandwidth to be used for uploads  |
-| ForegroundDownloadRatePct | Average foreground download from start of the month  |
-| BackgroundDownloadRatePct | Average background download from start of the month  |
+| ForegroundDownloadRatePct | Percentage of bandwidth to be used for foreground downloads |
+| BackgroundDownloadRatePct | Percentage of bandwidth to be used for background downloads |
 | UploadCount | Number of files in Delivery Optimization cache currently eligible for uploading  |
 | ForegroundDownloadCount | Number of foreground downloads that are running  |
 | ForegroundDownloadsPending | Number of foreground downloads that are waiting in queue |
@@ -133,17 +130,17 @@ Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth
 
 **Starting in Windows 10, version 1903:**
 
-`set-DeliveryOptimizationStatus -ExpireOn [date time]` extends the expiration of all files in the cache. You can set the expiration immediately for all files that are in the "caching" state. For files in progress ("downloading"), the expiration is applied once the download is complete. You can set the expiration up to one year from the current date and time.
+`Set-DeliveryOptimizationStatus -ExpireOn [date time]` extends the expiration of all files in the cache. You can set the expiration immediately for all files that are in the "caching" state. For files in progress ("downloading"), the expiration is applied once the download is complete. You can set the expiration up to one year from the current date and time.
 
-`set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]` extends expiration for a single specific file in the cache.
+`Set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]` extends expiration for a single specific file in the cache.
 
 You can now "pin" files to keep them persistent in the cache, only with files that are downloaded in modes 1, 2, or 3.
 
-`set-DeliveryOptimizationStatus -Pin [True] -File ID [FileID]` keeps a specific file in the cache such that it won't be deleted until the expiration date and time (which you set with `set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]`). The file is also excluded from the cache quota calculation.
+`Set-DeliveryOptimizationStatus -Pin [True] -File ID [FileID]` keeps a specific file in the cache such that it won't be deleted until the expiration date and time (which you set with `Set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]`). The file is also excluded from the cache quota calculation.
 
-`set-DeliveryOptimizationStatus -Pin [False] -File ID [FileID]` "unpins" a file, so that it will be deleted when the expiration date and time are reached. The file is included in the cache quota calculation.
+`Set-DeliveryOptimizationStatus -Pin [False] -File ID [FileID]` "unpins" a file, so that it will be deleted when the expiration date and time are reached. The file is included in the cache quota calculation.
 
-`delete-DeliveryOptimizationCache` lets you clear files from the cache and remove all persisted data related to them. You can use these options with this cmdlet:
+`Delete-DeliveryOptimizationCache` lets you clear files from the cache and remove all persisted data related to them. You can use these options with this cmdlet:
 
 - `-FileID` specifies a particular file to delete.
 - `-IncludePinnedFiles` deletes all files that are pinned.
