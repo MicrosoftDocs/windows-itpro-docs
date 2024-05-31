@@ -23,7 +23,6 @@ This article describes how to deploy a Microsoft Connected Cache (MCC) for Enter
 ## Steps to deploy MCC
 
 To deploy MCC to your server:
-
 - [Deploy your cache node](#deploy-your-cache-node)
   - [Steps to deploy MCC](#steps-to-deploy-mcc)
     - [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
