@@ -23,24 +23,14 @@ This article describes how to deploy a Microsoft Connected Cache (MCC) for Enter
 ## Steps to deploy MCC
 
 To deploy MCC to your server:
-- [Deploy your cache node](#deploy-your-cache-node)
-  - [Steps to deploy MCC](#steps-to-deploy-mcc)
-    - [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
-    - [Create the MCC resource in Azure](#create-the-mcc-resource-in-azure)
-      - [Error: Validation failed](#error-validation-failed)
-    - [Create an MCC node in Azure](#create-an-mcc-node-in-azure)
-      - [Edit cache node information](#edit-cache-node-information)
-    - [Install MCC on Windows](#install-mcc-on-windows)
-      - [Run the installer](#run-the-installer)
-  - [Verify MCC server functionality](#verify-mcc-server-functionality)
-      - [Verify client side](#verify-client-side)
-      - [Verify server side](#verify-server-side)
-    - [Intune (or other management software) configuration for MCC](#intune-or-other-management-software-configuration-for-mcc)
-  - [Common Issues](#common-issues)
-      - [PowerShell issues](#powershell-issues)
-      - [Verify Running MCC Container](#verify-running-mcc-container)
-    - [DNS needs to be configured](#dns-needs-to-be-configured)
-    - [Resolve DNS issues](#resolve-dns-issues)
+
+1. [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
+1. [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
+1. [Create an MCC Node](#create-an-mcc-node-in-azure)
+1. [Edit Cache Node Information](#edit-cache-node-information)
+1. [Install MCC on a physical server or VM](#install-mcc-on-windows)
+1. [Verify MCC functionality](#verify-mcc-server-functionality)
+1. [Review common Issues](#common-issues) if needed.
 
 ### Provide Microsoft with the Azure subscription ID
 
