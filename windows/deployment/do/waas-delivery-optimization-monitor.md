@@ -87,19 +87,20 @@ For details, see [Windows Update for Business Delivery Optimization Report](/win
 | AvailableDiskBytes | Free space of the disk volume on which Delivery Optimization cache is currently located  |
 | CpuUsagePct | Average CPU usage by the Delivery Optimization process |
 | MemUsageKB | Amount of committed memory currently used by the Delivery Optimization process |
-| NumberOfPeers | Total number of peers used found across all files currently in the cache |
+| NumberOfPeers | Total number of peers found across all files currently in the cache |
 | CacheHostConnections | Number of cache host server connections |
 | CdnConnections | Number of CDN server connections |
-| LanConnections | Number of LAN connections |
-| LinkLocalConnections | Number of Link Local connections |
-| GroupConnections | Number of Group connections |
-| InternetConnections | Number of Internet connections |
+| LanConnections | Number of LAN peer connections |
+| LinkLocalConnections | Number of Link Local peer connections |
+| GroupConnections | Number of Group peer connections |
+| InternetConnections | Number of Internet peer connections |
 | DownlinkBps | Average download bandwidth usage currently seen across all network adapters |
 | DownlinkUsageBps | Average bandwidth currently used by Delivery Optimization for downloads |
 | UplinkBps | Average upload bandwidth usage currently seen across all network adapters |
 | UplinkUsageBps | Average bandwidth currently used by Delivery Optimization for uploads |
 | ForegroundDownloadRatePct | Percentage of bandwidth to be used for foreground downloads |
 | BackgroundDownloadRatePct | Percentage of bandwidth to be used for background downloads |
+| UploadRatePct | Percentage of upload bandwidth to be used for uploads |
 | UploadCount | Number of files in Delivery Optimization cache currently eligible for uploading  |
 | ForegroundDownloadCount | Number of foreground downloads that are running  |
 | ForegroundDownloadsPending | Number of foreground downloads that are waiting in queue |
