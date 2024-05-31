@@ -1,7 +1,7 @@
 ---
 title: Resources for deprecated features in the Windows client
 description: Resources and details for deprecated features in the Windows client.
-ms.date: 03/25/2024
+ms.date: 06/17/2024
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -20,6 +20,13 @@ appliesto:
 # Resources for deprecated features
 
 This article provides additional resources about [deprecated features for Windows client](deprecated-features.md) that may be needed by IT professionals. The following information is provided to help IT professionals plan for the removal of deprecated features:
+
+## Paint 3D
+
+Paint 3D will be removed from the Microsoft Store on September 3, 2024. 
+
+
+To view and edit 2D images, you can use [Paint](https://www.microsoft.com/windows/paint) or [Photos](https://support.microsoft.com/topic/c0c6422f-d4cb-2e3d-eb65-7069071b2f9b). For viewing 3D content, you can use [3D Viewer](https://apps.microsoft.com/detail/9nblggh42ths).
 
 ## WordPad
 
