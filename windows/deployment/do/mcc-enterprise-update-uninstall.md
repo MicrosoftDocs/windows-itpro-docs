@@ -39,9 +39,9 @@ For example:
 -->
 # Uninstall MCC
 
-Please contact the MCC Team before uninstalling to let us know if you're facing issues.
+Contact the MCC Team before uninstalling to let us know if you're facing issues.
 
-This script will remove the following items:
+This script removes the following items:
 
 1. EFLOW + Linux VM
 1. IoT Edge
