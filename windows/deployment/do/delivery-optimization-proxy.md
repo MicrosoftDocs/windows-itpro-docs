@@ -14,7 +14,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 06/02/2023
+ms.date: 05/23/2024
 ---
 
 # Using a proxy with Delivery Optimization
@@ -36,7 +36,7 @@ If no user is signed in, even if both the Internet Explorer proxy and netsh conf
 
 You can still use netsh to import the proxy setting from Internet Explorer (`netsh winhttp import proxy source=ie`) if your proxy configuration is a static *proxyServerName:Port*. However, the same limitations mentioned previously apply.
 
-### Summary of settings behavior
+## Summary of settings behavior
 
 These tables summarize the behavior for various combinations of settings:
 

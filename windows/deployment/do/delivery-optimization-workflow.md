@@ -17,7 +17,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>	
-ms.date: 01/18/2024
+ms.date: 05/23/2024
 ---
 
 # Delivery Optimization workflow, privacy, security, and endpoints
@@ -40,7 +40,6 @@ This workflow allows Delivery Optimization to securely and efficiently deliver r
 4. If a peer provides an invalid piece, that piece is discarded. When a peer sends multiple bad pieces, it's banned and will no longer be used as a source by the Delivery Optimization client performing the download.
 5. If Delivery Optimization is unable to obtain the content metadata file, or if the verification of the hash file itself fails, the download will fall back to simple mode. Simple mode will only pull content from the HTTP source and peer-to-peer won't be allowed.
 6. Once downloading is complete, Delivery Optimization uses all retrieved pieces of the content to put the file together. At that point, the Delivery Optimization caller (for example, Windows Update) checks the entire file to verify the signature prior to installing it.
-
 
 ## Delivery Optimization service endpoint and data information
 
