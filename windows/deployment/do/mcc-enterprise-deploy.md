@@ -228,7 +228,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 1. Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and how many cores you would like to allocate for the VM. For this example, we chose the default values for download path, install path, and virtual hard disk path.
    <!-- Insert Image 4 -->
    :::image type="content" source="./images/installation-info-4.png" alt-text="Screenshot of multiple installer questions about memory and storage for EFLOW." lightbox="./images/installation-info-4.png":::
-   For more information, see [Sizing Recommendations](mcc-enterprise-prerequisites.md#sizing-recommendations) for memory, virtual storage, and CPU cores. For this example we chose the recommend values for a Branch Office/Small Enterprise deployment.
+   For more information, see [Sizing Recommendations](mcc-enterprise-prerequisites.md#sizing-recommendations) for memory, virtual storage, and CPU cores. For this example we chose the recommended values for a Branch Office/Small Enterprise deployment.
    <!-- Insert Image 5 -->
    :::image type="content" source="./images/memory-storage-5.png" alt-text="Screenshot of multiple installer questions about memory and storage." lightbox="./images/memory-storage-5.png":::
    <!-- Remove: If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
