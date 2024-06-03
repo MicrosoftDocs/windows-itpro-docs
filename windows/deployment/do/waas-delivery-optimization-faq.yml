@@ -17,7 +17,7 @@ metadata:
     - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
     - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019, and later</a>
     - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>	
-  ms.date: 02/16/2024
+  ms.date: 05/23/2024
 title: Frequently Asked Questions about Delivery Optimization
 summary: |
   This article answers frequently asked questions about Delivery Optimization.
@@ -38,7 +38,7 @@ summary: |
   - [My firewall requires IP addresses and can't process FQDNs. How do I configure it to download content with Delivery Optimization?How do I configure it to download content with Delivery Optimization?](#my-firewall-requires-ip-addresses-and-can-t-process-fqdns--how-do-i-configure-it-to-download-content-with-delivery-optimization)
   - [What is the recommended configuration for Delivery Optimization used with cloud proxies?](#what-is-the-recommended-configuration-for-delivery-optimization-used-with-cloud-proxies)
  
-   **Peer-to-Peer related questions**: 
+   **Peer-to-peer related questions**: 
 
   - [How does Delivery Optimization determine which content is available for peering?](#how-does-delivery-optimization-determine-which-content-is-available-for-peering)
   - [Does Delivery Optimization use multicast?](#does-delivery-optimization-use-multicast)

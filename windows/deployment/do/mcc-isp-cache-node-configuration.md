@@ -15,12 +15,12 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>
-ms.date: 08/16/2023
+ms.date: 05/23/2024
 ---
 
 # Cache node configuration
 
-All cache node configuration takes place within Azure portal. This article outlines all of the settings that you're able to configure. 
+All cache node configuration takes place within Azure portal. This article outlines all of the settings that you're able to configure.
 
 ## Settings
 
@@ -45,4 +45,3 @@ All cache node configuration takes place within Azure portal. This article outli
 | **Manual routing - Address range/CIDR blocks** | IPv4 CIDR notation | The IP address range (CIDR blocks) that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24, 3.22.235.0/24, 4.23.236.0/24 |
 | **BGP - Neighbor ASN** | ASN | When configuring BGP, enter the ASN(s) of your neighbors that you want to establish. |
 | **BGP - Neighbor IP address** | IPv4 address | When configuring BGP, enter the IP address(es) of neighbors that you want to establish. |
-

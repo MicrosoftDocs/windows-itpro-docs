@@ -13,12 +13,13 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 06/02/2023
+ms.date: 05/23/2024
 ---
 
 # What's new in Delivery Optimization
 
 This article contains information about what's new in Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
+
 ## Microsoft Connected Cache (early preview)
 
 Microsoft Connected Cache (MCC) is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many bare-metal servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune.
@@ -31,6 +32,13 @@ There are two different versions:
 - [Microsoft Connected Cache for ISPs](mcc-isp-overview.md).
 
 ## New in Delivery Optimization for Windows
+
+### General
+
+[Check out](https://aka.ms/do-fix) the new Delivery Optimization Troubleshooter. This tool provides a device health check to verify the device is set up properly to use Delivery Optimization. To scope the output more specifically, use one of the two switches:
+
+- -p2p: Provides output specific to P2P settings, efficiency, and errors.
+- -mcc: Provides output specific to MCC settings and verifies the client can access the cache server.
 
 ### Windows 11 22H2
 
