@@ -1,7 +1,7 @@
 ---
 title: Configure federated sign-in for Windows devices
 description: Learn how federated sign-in in Windows works and how to configure it.
-ms.date: 04/10/2024
+ms.date: 06/03/2024
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -87,7 +87,7 @@ Review the following instructions to configure your devices using either Microso
 |--|--|--|
 | Education | Is Education Environment | Enabled |
 | Federated Authentication | Enable Web Sign In For Primary User | Enabled |
-| Authentication | Configure Web Sign In Allowed Urls | Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com` |
+| Authentication | Configure Web Sign In Allowed Urls | Enter the list of domains, with each URL in a separate row. For example:<br>- `samlidp.clever.com`<br>- `clever.com`<br>- `mobile-redirector.clever.com` |
 | Authentication | Configure Webcam Access Domain Names | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com` |
 
 [!INCLUDE [intune-settings-catalog-2](../../includes/configure/intune-settings-catalog-2.md)]
@@ -134,7 +134,7 @@ Review the following instructions to configure your shared devices using either 
 | Education | Is Education Environment | Enabled |
 | SharedPC | Enable Shared PC Mode With OneDrive Sync | True |
 | Authentication | Enable Web Sign In | Enabled |
-| Authentication | Configure Web Sign In Allowed Urls | Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com` |
+| Authentication | Configure Web Sign In Allowed Urls | Enter the list of domains, with each URL in a separate row. For example:<br>- `samlidp.clever.com`<br>- `clever.com`<br>- `mobile-redirector.clever.com` |
 | Authentication | Configure Webcam Access Domain Names | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com` |
 
 [!INCLUDE [intune-settings-catalog-2](../../includes/configure/intune-settings-catalog-2.md)]
