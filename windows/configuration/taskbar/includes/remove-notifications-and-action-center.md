@@ -17,4 +17,4 @@ The notification area is located at the far right end of the taskbar, and includ
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |

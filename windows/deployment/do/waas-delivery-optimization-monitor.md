@@ -88,12 +88,12 @@ For details, see [Windows Update for Business Delivery Optimization Report](/win
 | CpuUsagePct | Average CPU usage by the Delivery Optimization process |
 | MemUsageKB | Amount of committed memory currently used by the Delivery Optimization process |
 | NumberOfPeers | Total number of peers found across all files currently in the cache |
-| CacheHostConnections | Number of cache host server connections |
-| CdnConnections | Number of CDN server connections |
-| LanConnections | Number of peer connections over LAN |
-| LinkLocalConnections | Number of peer connections over Link Local |
-| GroupConnections | Number of peer connections over Group |
-| InternetConnections | Number of peer connections over Internet |
+| CacheHostConnections | Number of connections to Microsoft Connected Cache servers |
+| CdnConnections | Number of connections to CDN servers |
+| LanConnections | Number of connections to LAN peers |
+| LinkLocalConnections | Number of connections to Link Local peers |
+| GroupConnections | Number of connections to Group peers|
+| InternetConnections | Number of connections to Internet peers |
 | DownlinkBps | Average download bandwidth usage currently seen across all network adapters |
 | DownlinkUsageBps | Average bandwidth currently used by Delivery Optimization for downloads |
 | UplinkBps | Average upload bandwidth usage currently seen across all network adapters |

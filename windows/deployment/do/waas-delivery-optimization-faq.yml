@@ -77,11 +77,12 @@ sections:
     questions:
       - question: Which ports does Delivery Optimization use?
         answer: | 
-          Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service registers and opens this port on the device. The port must be set to accept inbound traffic through your firewall. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
+          Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service registers and opens this port on the device. The port must be set to accept inbound and outbound TCP traffic through your firewall. If you don't allow traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download updates by using HTTP over port 80 (or HTTPS over port 443 where applicable).
 
-          Delivery Optimization uses Teredo to create peer groups, which include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets). To enable this scenario, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
+          If you set the "Download Mode" policy to "Group (2)" or "Internet (3)", Teredo will be used by Delivery Optimization to connect to peer devices across NATs. You must allow inbound and outbound UDP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
 
-          Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
+          Delivery Optimization also communicates with its cloud service by using HTTPS over port 443.
+          
       - question: What are the requirements if I use a proxy?
         answer: |
           For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](../do/delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](/windows/deployment/update/windows-update-troubleshooting).
