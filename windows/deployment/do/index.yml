@@ -103,4 +103,5 @@ landingContent:
             url: delivery-optimization-endpoints.md
           - text: Testing Delivery Optimization
             url: delivery-optimization-test.md
-
+          - text: Delivery Optimization Troubleshooter
+            url: http://aka.ms/do-fix
