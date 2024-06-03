@@ -13,4 +13,4 @@ ms.topic: include
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[SimplifyQuickSettings](/windows/client-management/mdm/policy-csp-start#simplifyquicksettings) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
