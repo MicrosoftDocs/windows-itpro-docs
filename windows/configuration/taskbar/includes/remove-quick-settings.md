@@ -17,4 +17,4 @@ If this setting is enabled, Quick Settings isn't displayed in the Quick Settings
 |  | Path |
 |--|--|
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/`[DisableControlCenter](/windows/client-management/mdm/policy-csp-start#disablecontrolcenter) |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |

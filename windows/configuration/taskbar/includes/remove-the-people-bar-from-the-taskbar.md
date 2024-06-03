@@ -12,4 +12,4 @@ With this policy allows you can remove the People Bar from the taskbar and disab
 |  | Path |
 |--|--|
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/`[HidePeopleBar](/windows/client-management/mdm/policy-csp-start#hidepeoplebar) |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |

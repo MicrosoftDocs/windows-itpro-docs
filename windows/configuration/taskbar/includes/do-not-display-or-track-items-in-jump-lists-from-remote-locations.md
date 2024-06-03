@@ -18,4 +18,4 @@ This policy setting allows you to control displaying or tracking items in Jump L
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |

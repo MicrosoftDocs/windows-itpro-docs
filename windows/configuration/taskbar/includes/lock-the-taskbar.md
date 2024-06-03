@@ -12,4 +12,4 @@ This setting affects the taskbar, which is used to switch between running applic
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
