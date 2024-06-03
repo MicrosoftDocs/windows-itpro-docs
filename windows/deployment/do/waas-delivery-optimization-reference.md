@@ -42,7 +42,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Minimum disk size allowed to use peer caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 | Default value is 32 GB. |
 | [Max cache age](#max-cache-age) | DOMaxCacheAge | 1511 | Default value is 259,200 seconds (three days). |
 | [Max cache size](#max-cache-size)  | DOMaxCacheSize | 1511 | Default value is 20%. |
-| [Absolute max cache size (in GBs)](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 | Default is not configured.|
+| [Absolute max cache size (in GBs)](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 | Default isn't configured.|
 | [Modify cache drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 | Default to the operating system drive through the %SYSTEMDRIVE% environment variable. |
 | [Minimum peer caching content file size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 | Default file size is 50 MB. |
 | [Monthly upload data cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 | Default value is 20 GB. |
