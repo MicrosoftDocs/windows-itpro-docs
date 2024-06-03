@@ -35,7 +35,7 @@ There are two different versions:
 
 ### General
 
-[Check out](https://aka.ms/do-fix) the new Delivery Optimization Troubleshooter. This tool provides a device health check to verify the device is set up properly to use Delivery Optimization. To scope the output more specifically, use one of the two switches:
+[Check out](https://aka.ms/do-fix) the new Delivery Optimization Troubleshooter. This tool provides a device health check to verify the device is set up properly to use Delivery Optimization. To scope the output more specifically, use one of the available switches:
 
 - -HealthCheck: Provides an overall check of the device setup to ensure Delivery Optimization communication is possible on the device.
 - -P2P: Provides output specific to P2P settings, efficiency, and errors.
