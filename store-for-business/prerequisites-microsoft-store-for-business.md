@@ -65,11 +65,10 @@ If your organization restricts computers on your network from connecting to the 
 - `account.live.com`
 - `clientconfig.passport.net`
 - `windowsphone.com`
-- `\*.wns.windows.com`
-- `\*.microsoft.com`
-- `\*.s-microsoft.com`
+- `*.wns.windows.com`
+- `*.microsoft.com`
+- `*.s-microsoft.com`
 - `www.msftncsi.com` (prior to Windows 10, version 1607)
-- `www.msftconnecttest.com/connecttest.txt` (replaces `www.msftncsi.com`
-  starting with Windows 10, version 1607)
+- `www.msftconnecttest.com/connecttest.txt` (replaces `www.msftncsi.com` starting with Windows 10, version 1607)
  
 Store for Business requires Microsoft Windows HTTP Services (WinHTTP) to install, or update apps.
