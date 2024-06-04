@@ -208,7 +208,7 @@ The following config file can be used to easily test the downloaded files inside
 
 ```xml
 <Configuration>
-  <VGpu>Disable</VGpu>
+  <vGpu>Disable</vGpu>
   <Networking>Disable</Networking>
   <MappedFolders>
     <MappedFolder>
