@@ -56,7 +56,7 @@ To test federation, the following prerequisites must be met:
     |Basic Information: Primary Email|App attributes: IDPEmail|
 
     > [!IMPORTANT]
-    > You must ensure that your the Microsoft Entra user accounts email match those in your Google Workspace.
+    > You must ensure that your Microsoft Entra user account's email match that in your Google Workspace.
 
 1. Select **Finish**
 
