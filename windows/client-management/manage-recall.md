@@ -90,4 +90,4 @@ Recall uses optical character recognition (OCR), local to the PC, to analyze sna
 
 ## Information for developers
 
-If you're a developer and want to launch Recall, you can call the `ms-recall` protocol URI. When you call this, Recall opens and takes a snapshot of the screen, which is the default behavior for when Recall is launched. For more information about using Recall in your Windows app, see the [Recall overview](https://developer.microsoft.com/windows/recall-api) article in the Windows AI API documentation.
+If you're a developer and want to launch Recall, you can call the `ms-recall` protocol URI. When you call this, Recall opens and takes a snapshot of the screen, which is the default behavior for when Recall is launched. For more information about using Recall in your Windows app, see [Recall overview](/windows/ai/apis/recall) in the Windows AI API documentation.
