@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 05/07/2024
+ms.date: 06/04/2024
 ---
 
 # Windows Update for Business reports prerequisites
@@ -50,9 +50,11 @@ Windows Update for Business reports supports Windows client devices on the follo
 - General Availability Channel
 - Windows Update for Business reports *counts* Windows Insider Preview devices, but doesn't currently provide detailed deployment insights for them.
 
-### Windows operating system updates
+## Windows operating system updates for client devices
 
-For [changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), installing the January 2023 release preview cumulative update, or a later equivalent update, is recommended.
+Installing the February 2023 cumulative update, or a later equivalent update, is required for clients to enroll into Windows Update for Business reports. This update helped enable [changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), which Windows Update for Business reports relies on. 
+
+For more information about available updates, see [Windows 11 release information](/windows/release-health/windows11-release-information) and [Windows 10 release information](/windows/release-health/release-information). 
 
 ## Diagnostic data requirements
 
