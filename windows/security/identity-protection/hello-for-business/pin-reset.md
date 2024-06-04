@@ -49,7 +49,7 @@ To register the applications, follow these steps:
 
 :::row:::
   :::column span="3":::
-  1. Go to the [Microsoft PIN Reset Service Production website][APP-1], and sign in using a *Global Administrator* account you use to manage your Microsoft Entra tenant. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to the application to access your organization
+  1. Go to the [Microsoft PIN Reset Service Production website][APP-1], and sign in as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator). Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to the application to access your organization
   :::column-end:::
   :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset service permissions page." source="images/pin-reset/pin-reset-service-prompt.png" lightbox="images/pin-reset/pin-reset-service-prompt.png" border="true":::
@@ -57,7 +57,7 @@ To register the applications, follow these steps:
 :::row-end:::
 :::row:::
   :::column span="3":::
-  2. Go to the [Microsoft PIN Reset Client Production website][APP-2], and sign in using a *Global Administrator* account you use to manage your Microsoft Entra tenant. Review the permissions requested by the *Microsoft Pin Reset Client Production* application, and select **Next**.
+  2. Go to the [Microsoft PIN Reset Client Production website][APP-2], and sign as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator). Review the permissions requested by the *Microsoft Pin Reset Client Production* application, and select **Next**.
   :::column-end:::
   :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset client permissions page." source="images/pin-reset/pin-reset-client-prompt.png" lightbox="images/pin-reset/pin-reset-client-prompt.png" border="true":::
