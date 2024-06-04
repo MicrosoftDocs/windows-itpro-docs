@@ -18,7 +18,7 @@ To configure Google Workspace as an IdP for Microsoft Entra ID, the following pr
 1. A Microsoft Entra tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format \**.onmicrosoft.com*)
     - If the federated domain hasn't yet been added to Microsoft Entra ID, you must have access to the DNS domain to create a DNS record. This is required to verify the ownership of the DNS namespace
     - Learn how to [Add your custom domain name using the Microsoft Entra admin center](/azure/active-directory/fundamentals/add-custom-domain)
-1. Access to Microsoft Entra ID with an account with the *Global Administrator* role
+1. Access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [External Identity Provider Administrator](/entra/identity/role-based-access-control/permissions-reference#external-identity-provider-administrator)
 1. Access to Google Workspace with an account with *super admin* privileges
 
 To test federation, the following prerequisites must be met:
@@ -56,7 +56,7 @@ To test federation, the following prerequisites must be met:
     |Basic Information: Primary Email|App attributes: IDPEmail|
 
     > [!IMPORTANT]
-    > You must ensure that your the Microsoft Entra user accounts email match those in your Google Workspace.
+    > You must ensure that your Microsoft Entra user account's email matches that in your Google Workspace.
 
 1. Select **Finish**
 
@@ -73,7 +73,7 @@ Now that the app is configured, you must enable it for the users in Google Works
 ## Configure Microsoft Entra ID as a Service Provider (SP) for Google Workspace
 
 The configuration of Microsoft Entra ID consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\
-Using the **IdP metadata** XML file downloaded from Google Workspace, modify the *$DomainName* variable of the following script to match your environment, and then run it in a PowerShell session. When prompted to authenticate to Microsoft Entra ID, use the credentials of an account with the *Global Administrator* role.
+Using the **IdP metadata** XML file downloaded from Google Workspace, modify the *$DomainName* variable of the following script to match your environment, and then run it in a PowerShell session. When prompted to authenticate to Microsoft Entra ID, sign in as at least a [External Identity Provider Administrator](/entra/identity/role-based-access-control/permissions-reference#external-identity-provider-administrator)
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
