@@ -293,7 +293,6 @@ Here are the Assigned Access XSDs for the features added in Windows 10, version 
 ```
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
