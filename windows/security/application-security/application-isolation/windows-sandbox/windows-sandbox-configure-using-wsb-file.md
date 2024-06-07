@@ -1,7 +1,7 @@
 ---
 title: Windows Sandbox configuration
 description: Windows Sandbox configuration
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/26/2024
 ---
 

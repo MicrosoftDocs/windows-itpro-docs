@@ -3,7 +3,7 @@ title: Create WDAC Deny Policy
 description: Explains how to create WDAC deny policies
 ms.localizationpriority: medium
 ms.date: 12/31/2017
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Guidance on Creating WDAC Deny Policies

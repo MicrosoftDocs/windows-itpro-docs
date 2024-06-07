@@ -6,7 +6,7 @@ author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
 ms.date: 12/31/2017
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Mitigate threats by using Windows 10 security features
