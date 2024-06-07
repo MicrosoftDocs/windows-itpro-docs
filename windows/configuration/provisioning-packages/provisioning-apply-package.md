@@ -1,7 +1,7 @@
 ---
 title: Apply a provisioning package
 description: Provisioning packages can be applied to a device during initial setup (OOBE) and after (runtime).
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/31/2017
 ---
 

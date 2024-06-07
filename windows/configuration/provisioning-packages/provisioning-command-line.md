@@ -1,7 +1,7 @@
 ---
 title: Windows Configuration Designer command-line interface
 description: Learn more about the ICD syntax, switches, and arguments that you can use in the Windows Configuration Designer command-line interface for Windows10/11 client devices.
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/31/2017
 ---
 

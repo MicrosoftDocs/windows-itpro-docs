@@ -2,7 +2,7 @@
 title: Account protection in Windows Security
 description: Use the Account protection section to manage security for your account and sign in to Microsoft.
 ms.date: 08/11/2023
-ms.topic: article
+ms.topic: how-to
 ---
 
 
