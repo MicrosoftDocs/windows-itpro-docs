@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 03/14/2024
+ms.date: 06/07/2024
 ---
 
 # Update other Microsoft products
@@ -44,6 +44,7 @@ The following is a list of other Microsoft products that might be updated:
 - Microsoft Advanced Threat Analytics
 - Microsoft Application Virtualization
 - Microsoft Azure StorSimple
+- Microsoft Configuration Manager
 - Microsoft Dynamics CRM
 - Microsoft Information Protection
 - Microsoft Lync Server and Microsoft Lync
@@ -59,7 +60,6 @@ The following is a list of other Microsoft products that might be updated:
 - Skype for Business
 - SQL
 - System Center Application Controller
-- System Center Configuration Manager
 - System Center Data Protection Manager
 - System Center Operations Manager
 - System Center Orchestrator
