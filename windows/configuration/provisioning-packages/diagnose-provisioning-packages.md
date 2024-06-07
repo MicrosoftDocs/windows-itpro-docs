@@ -1,7 +1,7 @@
 ---
 title: Diagnose Provisioning Packages
 description: Diagnose general failures in provisioning.
-ms.topic: article
+ms.topic: troubleshooting
 ms.date: 01/18/2023
 ---
 

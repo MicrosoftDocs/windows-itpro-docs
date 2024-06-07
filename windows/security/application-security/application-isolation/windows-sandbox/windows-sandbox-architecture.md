@@ -1,7 +1,7 @@
 ---
 title: Windows Sandbox architecture
 description: Windows Sandbox architecture
-ms.topic: article
+ms.topic: conceptual
 ms.date: 03/26/2024
 ---
 

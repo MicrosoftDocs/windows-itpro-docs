@@ -2,7 +2,7 @@
 title: Family options in Windows Security
 description: Learn how to hide the Family options section of Windows Security for enterprise environments. Family options aren't intended for business environments.
 ms.date: 08/11/2023
-ms.topic: article
+ms.topic: how-to
 ---
 
 
