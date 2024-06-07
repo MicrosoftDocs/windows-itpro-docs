@@ -495,7 +495,7 @@ Connector group automatically round-robin, load balance the Microsoft Entra appl
 
 Sign-in a workstation with access equivalent to a *domain user*.
 
-1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**
+1. Access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator)
 1. Select **All Services**. Type **Microsoft Entra ID** to filter the list of services. Under **SERVICES**, select **Microsoft Entra ID**
 1. Under **MANAGE**, select **Application proxy**
 1. Select **Download connector service**. Select **Accept terms & Download**. Save the file (AADApplicationProxyConnectorInstaller.exe) in a location accessible by others on the domain
@@ -506,7 +506,7 @@ Sign-in a workstation with access equivalent to a *domain user*.
 1. Start **AADApplicationProxyConnectorInstaller.exe**
 1. Read the license terms and then select **I agree to the license terms and conditions**. Select **Install**
    ![Azure Application Proxy Connector: license terms](images/aadjcert/azureappproxyconnectorinstall-01.png)
-1. Sign-in to Microsoft Azure with access equivalent to **Global Administrator**
+1. Sign-in as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator)
    ![Azure Application Proxy Connector: sign-in](images/aadjcert/azureappproxyconnectorinstall-02.png)
 1. When the installation completes. Read the information regarding outbound proxy servers. Select **Close**
    ![Azure Application Proxy Connector: read](images/aadjcert/azureappproxyconnectorinstall-03.png)
@@ -516,7 +516,7 @@ Sign-in a workstation with access equivalent to a *domain user*.
 
 Sign-in a workstation with access equivalent to a *domain user*.
 
-1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**
+1. Access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator)
 1. Select **All Services**. Type **Microsoft Entra ID** to filter the list of services. Under **SERVICES**, select **Microsoft Entra ID**
 1. Under **MANAGE**, select **Application proxy**.
 
@@ -533,7 +533,7 @@ Sign-in a workstation with access equivalent to a *domain user*.
 
 Sign-in a workstation with access equivalent to a *domain user*.
 
-1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**
+1. Access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator)
 1. Select **All Services**. Type **Microsoft Entra ID** to filter the list of services. Under **SERVICES**, select **Microsoft Entra ID**
 1. Under **MANAGE**, select **Application proxy**
 1. Select **Configure an app**
@@ -692,7 +692,7 @@ Optionally (not required), you can configure the Intune connector for certificat
 
 Sign-in a workstation with access equivalent to a *domain user*.
 
-1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**
+1. Access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator)
 1. Select **All Services**. Type **Microsoft Entra ID** to filter the list of services. Under **SERVICES**, select **Microsoft Entra ID**
 1. Select **Groups**. Select **New group**
 1. Select **Security** from the **Group type** list

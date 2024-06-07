@@ -3,7 +3,7 @@ title: Plan for WDAC policy management
 description: Learn about the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control policies.
 ms.localizationpriority: medium
 ms.date: 11/22/2023
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Plan for Windows Defender Application Control lifecycle policy management
@@ -25,7 +25,7 @@ Most Windows Defender Application Control policies will evolve over time and pro
 4. Repeat steps 2-3 until the remaining block events meet expectations.
 5. [Generate the enforced mode version](/windows/security/threat-protection/windows-defender-application-control/enforce-windows-defender-application-control-policies) of the policy. In enforced mode, files that the policy doesn't allow are prevented from running and corresponding block events are generated.
 6. [Deploy the enforced mode policy](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide) to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
-7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
+7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.
 
 ![Recommended WDAC policy deployment process.](../images/policyflow.png)
 

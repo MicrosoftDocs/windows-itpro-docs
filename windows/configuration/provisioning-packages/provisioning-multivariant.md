@@ -1,7 +1,7 @@
 ---
 title: Create a provisioning package with multivariant settings
 description: Create a provisioning package with multivariant settings to customize the provisioned settings for defined conditions.
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/31/2017
 ---
 

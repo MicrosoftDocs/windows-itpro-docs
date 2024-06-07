@@ -20,7 +20,7 @@ Quick Assist is an application that enables a person to share their [Windows](#i
 
 ## Before you begin
 
-All that's required to use Quick Assist is suitable network and internet connectivity. No roles, permissions, or policies are involved. Neither party needs to be in a domain. The helper must have a Microsoft account. The sharer doesn't have to authenticate.
+All you need to use Quick Assist is suitable network and internet connectivity. No roles, permissions, or policies are involved. Neither party needs to be in a domain. The helper must have a Microsoft account. The sharer doesn't have to authenticate.
 
 ### Authentication
 
@@ -99,29 +99,13 @@ In some scenarios, the helper does require the sharer to respond to application 
 ### Install Quick Assist from the Microsoft Store
 
 1. Download the new version of Quick Assist by visiting the [Microsoft Store](https://apps.microsoft.com/store/detail/quick-assist/9P7BP5VNWKX5).
-1. In the Microsoft Store, select **Get in Store app**. Then, give permission to install Quick Assist. When the installation is complete, **Get** changes to **Open**.</br> :::image type="content" source="images/quick-assist-get.png" lightbox="images/quick-assist-get.png" alt-text="Microsoft Store window showing the Quick Assist app with a button labeled get in the bottom right corner.":::
+1. In the Microsoft Store, select **View in store**, then install Quick Assist. When the installation is complete, **Install** changes to **Open**.
 
 For more information, visit [Install Quick Assist](https://support.microsoft.com/windows/install-quick-assist-c17479b7-a49d-4d12-938c-dbfb97c88bca).
 
 ### Install Quick Assist with Intune
 
-Before installing Quick Assist, you need to set up synchronization between Intune and Microsoft Store for Business. If you've already set up sync, log into [Microsoft Store for Business](https://businessstore.microsoft.com) and skip to step 5.
-
-1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant administration** / **Connectors and tokens** / **Microsoft Store for Business** and verify that **Microsoft Store for Business sync** is set to **Enable**.
-1. Using your Global Admin account, log into [Microsoft Store for Business](https://businessstore.microsoft.com).
-1. Select **Manage** / **Settings** and enable **Show offline apps**.
-1. Choose the **Distribute** tab and verify that **Microsoft Intune** is **Active**. You might need to use the **+Add management tool** link if it's not.
-1. Search for **Quick Assist** and select it from the Search results.
-1. Choose the **Offline** license and select **Get the app**
-1. In the Intune admin center, choose **Sync**.
-1. Navigate to **Apps** / **Windows** and you should see **Quick Assist (Offline)** in the list.
-1. Select it to view its properties.
-1. By default, the app isn't assigned to any user or device, select the **Edit** link. Assign the app to the required group of devices and choose **Review + save** to complete the application install.
-
-> [!NOTE]
-> Assigning the app to a device or group of devices instead of a user is important because it's the only way to install a store app in device context.
-
-Visit [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-windows) for more information.
+To deploy Quick Assist with Intune, see [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft).
 
 ### Install Quick Assist Offline
 
@@ -129,7 +113,7 @@ To install Quick Assist offline, you need to download your APPXBUNDLE and unenco
 
 1. Start **Windows PowerShell** with Administrative privileges
 1. In PowerShell, change the directory to the location where you saved the file in step 1: `cd <location of package file>`
-1. Run the following command to install Quick Assist: `Add-AppxProvisionedPackage -Online -PackagePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe.AppxBundle" -LicensePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe_4bc27046-84c5-8679-dcc7-d44c77a47dd0.xml"`
+1. To install Quick Assist, run the following command: `Add-AppxProvisionedPackage -Online -PackagePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe.AppxBundle" -LicensePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe_4bc27046-84c5-8679-dcc7-d44c77a47dd0.xml"`
 1. After Quick Assist is installed, run this command to confirm that Quick Assist is installed for the user: `Get-AppxPackage *QuickAssist* -AllUsers`
 
 ### Microsoft Edge WebView2

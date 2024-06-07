@@ -1,7 +1,7 @@
 ---
 title: Windows Sandbox configuration
 description: Windows Sandbox configuration
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/26/2024
 ---
 
@@ -208,7 +208,7 @@ The following config file can be used to easily test the downloaded files inside
 
 ```xml
 <Configuration>
-  <VGpu>Disable</VGpu>
+  <vGpu>Disable</vGpu>
   <Networking>Disable</Networking>
   <MappedFolders>
     <MappedFolder>

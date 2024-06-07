@@ -2,7 +2,7 @@
 title: Device security in Windows Security
 description: Use the Device security section to manage security built into your device, including Virtualization-based security.
 ms.date: 08/11/2023
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Device security

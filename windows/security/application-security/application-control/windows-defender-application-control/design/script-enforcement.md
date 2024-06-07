@@ -3,7 +3,7 @@ title: Understand WDAC script enforcement
 description: WDAC script enforcement
 ms.manager: jsuther
 ms.date: 05/26/2023
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 ---
 
