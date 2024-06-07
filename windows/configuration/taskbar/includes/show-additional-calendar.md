@@ -19,4 +19,4 @@ By default, the calendar is set according to the locale of the operating system,
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |

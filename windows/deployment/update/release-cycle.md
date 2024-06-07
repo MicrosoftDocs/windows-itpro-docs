@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 05/19/2023
+ms.date: 06/04/2024
 ---
 
 # Update release cycle for Windows clients
@@ -56,17 +56,14 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 
 ## Optional nonsecurity preview release
 
-**Optional nonsecurity preview releases** provide IT admins an opportunity for early validation of that content prior to the **monthly security update release**. Admins can test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, nonsecurity preview releases. New features might initially be deployed in the prior month's **optional nonsecurity preview release**, then ship in the following **monthly security update release**. These releases are only offered to the most recent, supported versions of Windows.
+**Optional nonsecurity preview releases** provide IT admins an opportunity for early validation of that content prior to the **monthly security update release**. Admins can test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, nonsecurity preview releases. New features might initially be deployed in the prior month's **optional nonsecurity preview release**, then ship in the following **monthly security update release**. **Optional nonsecurity preview releases** are typically released on the fourth Tuesday of the month at 10:00 AM Pacific Time (PST/PDT). These releases are only offered to the most recent, supported versions of Windows.
 
 **Optional nonsecurity preview releases** might commonly be referred to as:
 
-- C or D week releases (meaning the third or fourth week of the month)
+- D week releases (meaning the fourth week of the month)
 - Preview updates
 - Preview CU
 - LCU preview
-
-> [!Important]
-> Starting in April 2023, all **optional nonsecurity preview releases** will be released on the fourth Tuesday of the month. This change in release cadence gives admins a consistent time cycle for testing and validating fixes and features.
 
 To access the optional nonsecurity preview release:
 - Navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. 
@@ -77,7 +74,7 @@ To access the optional nonsecurity preview release:
 
 **Out-of-band (OOB) releases** might be provided to fix a recently identified issue or vulnerability. They're used in atypical cases when an issue is detected and can't wait for the next monthly release, because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. **Out-of-band (OOB) releases** are provided outside of the monthly schedule when there's an exceptional need.
 
-Some key considerations about OOB releases include: 
+Some key considerations about OOB releases include:
 
 - OOB releases are always cumulative. 
   - OOB releases supersede any prior monthly security update and optional nonsecurity preview release. 

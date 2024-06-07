@@ -1,7 +1,11 @@
 ---
 title: Resources for deprecated features in the Windows client
 description: Resources and details for deprecated features in the Windows client.
+<<<<<<< HEAD
 ms.date: 06/17/2024
+=======
+ms.date: 06/03/2024
+>>>>>>> 31265cfecbcd5148d609eedc50e016cdc9ac82ca
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -21,12 +25,22 @@ appliesto:
 
 This article provides additional resources about [deprecated features for Windows client](deprecated-features.md) that may be needed by IT professionals. The following information is provided to help IT professionals plan for the removal of deprecated features:
 
+<<<<<<< HEAD
 ## Paint 3D
 
 Paint 3D is deprecated and will be removed from the Microsoft Store on September 3, 2024. Existing installations of Paint 3D will continue to work, but the app will no longer be available for download from the Microsoft Store. If you remove the app, you can reinstall it from the Microsoft Store until September 3, 2024. After that date, Paint 3D will no longer be available for download. Paint 3D was preinstalled on some Windows 10 devices, but wasn't preinstalled on Windows 11 devices. Some alternatives to Paint 3D include:
 
 - View and edit 2D images: [Paint](https://www.microsoft.com/windows/paint) or [Photos](https://support.microsoft.com/topic/c0c6422f-d4cb-2e3d-eb65-7069071b2f9b)
 - View 3D content: [3D Viewer](https://apps.microsoft.com/detail/9nblggh42ths).
+=======
+## NTLM
+
+Customers concerned about NTLM usage in their environments are encouraged to utilize [NTLM auditing](/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-audit-ntlm-authentication-in-this-domain) to [investigate how NTLM is being used](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/ntlm-blocking-and-you-application-analysis-and-auditing/ba-p/397191).  
+
+In many cases, applications should be able to replace NTLM with Negotiate using a one-line change in their `AcquireCredentialsHandle` request to the SSPI. One known exception is for applications that have made hard assumptions about the maximum number of round trips needed to complete authentication. In most cases, Negotiate will add at least one additional round trip. Some scenarios may require additional configuration. For more information, see [Kerberos authentication troubleshooting guidance](/troubleshoot/windows-server/windows-security/kerberos-authentication-troubleshooting-guidance).
+
+Negotiate's built-in fallback to NTLM is preserved to mitigate compatibility issues during this transition. For updates on NTLM deprecation, see [https://aka.ms/ntlm](https://aka.ms/ntlm).
+>>>>>>> 31265cfecbcd5148d609eedc50e016cdc9ac82ca
 
 ## WordPad
 

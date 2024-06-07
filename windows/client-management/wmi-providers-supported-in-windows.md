@@ -76,7 +76,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 | [**MDM_WirelesssProfileXML**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-wirelessprofilexml)        | Yes                          |
 | [**MDM_WNSChannel**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-wnschannel)                         | Yes                          |
 | [**MDM_WNSConfiguration**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-wnsconfiguration)             | Yes                          |
-| [**MSFT_NetFirewallProfile**](/previous-versions/windows/desktop/wfascimprov/msft-netfirewallprofile)           | Yes                          |
+| [**MSFT_NetFirewallProfile**](/windows/win32/fwp/wmi/wfascimprov/msft-netfirewallprofile)                       | Yes                          |
 | [**MSFT_VpnConnection**](/previous-versions/windows/desktop/vpnclientpsprov/msft-vpnconnection)                 | Yes                          |
 | [**SoftwareLicensingProduct**](/previous-versions/windows/desktop/sppwmi/softwarelicensingproduct)              |                              |
 | [**SoftwareLicensingService**](/previous-versions/windows/desktop/sppwmi/softwarelicensingservice)              |                              |

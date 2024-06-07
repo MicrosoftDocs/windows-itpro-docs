@@ -15,4 +15,4 @@ With this policy setting you can remove the battery meter from the system contro
 |  | Path |
 |--|--|
 | **CSP** | Not available. |
-| **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
