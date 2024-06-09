@@ -21,7 +21,7 @@ Some ways to store credentials aren't protected by Credential Guard, including:
 
 - When Credential Guard is enabled, NTLMv1, MS-CHAPv2, Digest, and CredSSP can't use the signed-in credentials. Thus, single sign-on doesn't work with these protocols. However, applications can prompt for credentials or use credentials stored in the Windows Vault, which aren't protected by Credential Guard with any of these protocols
     > [!CAUTION]
-    > It's recommended that valuable credentials, such as the sign-in credentials, aren't used with NTLMv1, MS-CHAPv2, Digest, or CredSSP protocols. If these protocols must be used by domain or Microsoft Entra users, secondary credentials should be provisioned for these use cases.
+    > It's recommended that valuable credentials, such as the sign-in credentials, aren't used with NTLMv1, MS-CHAPv2, Digest, or CredSSP protocols.
 - Software that manages credentials outside of Windows feature protection
 - Local accounts and Microsoft Accounts
 - Credential Guard doesn't protect the Active Directory database running on Windows Server domain controllers. It also doesn't protect credential input pipelines, such as Windows Server running Remote Desktop Gateway. If you're using a Windows Server OS as a client PC, it will get the same protection as it would when running a Windows client OS
