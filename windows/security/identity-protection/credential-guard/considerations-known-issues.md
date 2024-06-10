@@ -129,7 +129,7 @@ This article describes known issues when Credential Guard is enabled.
 Devices which use CredSSP-based Delegation may no longer be able to use [Live Migration with Hyper-V](/windows-server/virtualization/hyper-v/manage/live-migration-overview) after upgrading to Windows Server 2025 (preview). Applications and services which rely on live migration (such as [SCVMM](/system-center/vmm/overview)) may also be affected. CredSSP-based delegation is the default for Windows Server 2022 and earlier for live migration.
 
 #### Affected devices
-Any server with Credential Guard enabled may encounter this issue. Starting in Windows Server 2025 (preview), [Credential Guard is enabled by default](index.md#default-enablement-on-windows-server) on all domain-joined servers that are not Domain Controllers. Default enablement of Credential Guard can be [pre-emptively blocked](configure.md#how-to-prevent-default-enablement) before upgrade.
+Any server with Credential Guard enabled may encounter this issue. Starting in Windows Server 2025 (preview), [Credential Guard is enabled by default](index.md#default-enablement-on-windows-server) on all domain-joined servers that are not Domain Controllers. Default enablement of Credential Guard can be [pre-emptively blocked](configure.md#default-enablement) before upgrade.
 
 #### Cause of the issue
 Live Migration with Hyper-V, and applications and services which rely on it, are affected by the issue if one or both ends of a given connection try to use CredSSP with Credential Guard enabled. With Credential Guard enabled, CredSSP can only utilize supplied credentials, not saved or SSO credentials.
