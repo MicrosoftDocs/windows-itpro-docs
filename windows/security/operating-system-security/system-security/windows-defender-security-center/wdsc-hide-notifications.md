@@ -2,7 +2,7 @@
 title: Hide notifications from Windows Security
 description: Prevent Windows Security notifications from appearing on user endpoints
 ms.date: 07/31/2023
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Hide Windows Security notifications

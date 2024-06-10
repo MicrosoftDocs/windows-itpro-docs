@@ -2,7 +2,7 @@
 title: Device & performance health in Windows Security
 description: Use the Device & performance health section to see the status of the machine and note any storage, update, battery, driver, or hardware configuration issues
 ms.date: 07/31/2023
-ms.topic: article
+ms.topic: how-to
 ---
 
 

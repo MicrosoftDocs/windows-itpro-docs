@@ -6,7 +6,7 @@ ms.collection:
 - tier3
 - must-keep
 ms.date: 01/24/2024
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Microsoft recommended driver block rules
