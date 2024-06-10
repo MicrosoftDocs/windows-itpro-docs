@@ -3,7 +3,7 @@ title: Windows Defender Application Control and .NET
 description: Understand how WDAC and .NET work together and use Dynamic Code Security to verify code loaded by .NET at runtime.
 ms.localizationpriority: medium
 ms.date: 11/22/2023
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Windows Defender Application Control (WDAC) and .NET
@@ -41,7 +41,7 @@ Additionally, customers can precompile for deployment only to prevent an allowed
 To enable Dynamic Code Security, add the following option to the `<Rules>` section of your WDAC policy:
 
 ```xml
-<Rule> 
-    <Option>Enabled:Dynamic Code Security</Option> 
+<Rule>
+    <Option>Enabled:Dynamic Code Security</Option>
 </Rule>
 ```

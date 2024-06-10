@@ -3,7 +3,7 @@ title: Understand Windows Defender Application Control (WDAC) policy rules and f
 description: Learn how WDAC policy rules and file rules can control your Windows 10 and Windows 11 computers.
 ms.localizationpriority: medium
 ms.date: 11/22/2023
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Understand Windows Defender Application Control (WDAC) policy rules and file rules

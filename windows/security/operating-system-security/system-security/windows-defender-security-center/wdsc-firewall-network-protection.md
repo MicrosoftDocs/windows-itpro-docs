@@ -2,7 +2,7 @@
 title: Firewall and network protection in Windows Security
 description: Use the Firewall & network protection section to see the status of and make changes to firewalls and network connections for the machine.
 ms.date: 08/11/2023
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Firewall and network protection

@@ -19,21 +19,7 @@ To learn more about the TPM related scenarios that benefit from Pluton, see [TPM
 
 Microsoft Pluton can be used as a TPM, or in conjunction with a TPM. Although Pluton builds security directly into the CPU, device manufacturers may choose to use discrete TPM as the default TPM, while having Pluton available to the system as a security processor for use cases beyond the TPM.
 
-Pluton is integrated within the SoC subsystem, and provides a flexible, updatable platform for running firmware that implements end-to-end security functionality authored, maintained, and updated by Microsoft. We encourage users owning devices that are Pluton capable, to enable Microsoft Pluton as the default TPM.
-
-## Enable Microsoft Pluton as TPM
-
-Devices with Ryzen 6000 and Qualcomm Snapdragon&reg; 8cx Gen 3 series processors are Pluton Capable, however enabling and providing an option to enable Pluton is at the discretion of the device manufacturer. Pluton is supported on these devices and can be enabled from the Unified Extensible Firmware Interface (UEFI) setup options for the device.
-
-UEFI setup options differ from product to product. Visit the product website and check for guidance to enable Pluton as TPM.
-
-> [!WARNING]
-> If BitLocker is enabled, We recommend disabling BitLocker before changing the TPM configuration to prevent lockouts. After changing TPM configuration, re-enable BitLocker which will then bind the BitLocker keys with the Pluton TPM. Alternatively, save the BitLocker recovery key onto a USB drive.
->
-> Windows Hello must be re-configured after switching the TPM. Setup alternate login methods before changing the TPM configuration to prevent any login issues.
-
-> [!TIP]
-> On most Lenovo devices, entering the UEFI options requires pressing Enter key at startup followed by pressing F1. In the UEFI Setup menu, select Security option, then on the Security page, select Security Chip option, to see the TPM configuration options. Under the drop-down list for Security Chip selection, select **MSFT Pluton** and click F10 to Save and Exit.
+Pluton is integrated within the SoC subsystem, and provides a flexible, updatable platform for running firmware that implements end-to-end security functionality authored, maintained, and updated by Microsoft.
 
 ## Related articles
 

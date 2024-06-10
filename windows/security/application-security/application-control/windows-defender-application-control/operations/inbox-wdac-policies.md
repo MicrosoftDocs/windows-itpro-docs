@@ -3,7 +3,7 @@ title: Inbox WDAC policies
 description: This article describes the inbox WDAC policies that may be active on a device.
 ms.manager: jsuther
 ms.date: 03/10/2023
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 ---
 

@@ -231,3 +231,7 @@ If you apply the taskbar configuration to a clean install or an update, users ca
 Learn more about the options available to configure Start menu settings using the Configuration Service Provider (CSP) and Group Policy (GPO):
 
 - [Taskbar policy settings](policy-settings.md)
+
+---
+[WIN-1]: /windows/client-management/mdm/policy-csp-start
+[MEM-1]: /mem/intune/configuration/custom-settings-windows-10
