@@ -20,18 +20,21 @@ When enabled, Credential Guard provides the following benefits:
 > [!NOTE]
 > While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques, and you should also incorporate other security strategies and architectures.
 
-## Default Enablement
+## Default enablement
+
+> [!IMPORTANT]
+> Windows Server 2025 is in PREVIEW. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 Starting in **Windows 11, 22H2** and **Windows Server 2025 (preview)**, VBS and Credential Guard are enabled by default on devices that meet the requirements below. This means that going forward, domain credentials will automatically be protected by Credential Guard on most relevant Windows devices.
 
 The default enablement is **without UEFI Lock**, thus allowing administrators to disable Credential Guard remotely if needed.
 
-If the preconditions for default enablement of Credential Guard listed below are met, and neither Credential Guard nor VBS have been explicitly disabled beforehand, the default enablement of Credential Guard will also automatically enable [VBS](#system-requirements).
+If the preconditions for default enablement of Credential Guard listed below are met, and Credential Guard has not been [explicitly disabled](configure.md#disable-credential-guard) beforehand, the default enablement of Credential Guard will also automatically enable [VBS](#system-requirements).
 
 > [!NOTE]
-> If Credential Guard or VBS is explicitly [disabled](configure.md#disable-credential-guard) *before* a device is updated to Windows 11, version 22H2 / Windows Server 2025 (preview) or later, default enablement does not overwrite the existing settings. That device will continue to have Credential Guard disabled even after updating to a version of Windows that enables Credential Guard by default.
+> If Credential Guard is explicitly [disabled](configure.md#disable-credential-guard) *before* a device is updated to Windows 11, version 22H2 / Windows Server 2025 (preview) or later, default enablement does not overwrite the existing settings. That device will continue to have Credential Guard disabled even after updating to a version of Windows that enables Credential Guard by default.
 
-### Default Enablement on Windows client
+### Default enablement on Windows
 
 Devices running Windows 11, 22H2 or later will have Credential Guard enabled by default if they:
 
@@ -39,20 +42,20 @@ Devices running Windows 11, 22H2 or later will have Credential Guard enabled by 
 - Meet the [hardware and sofware requirements](#system-requirements)
 - Have not been [explicitly configured to disable Credential Guard](configure.md#default-enablement)
 
-### Default Enablement on Windows Server
+> [!NOTE]
+> Devices running Windows 11 Pro/Pro Edu 22H2 or later may have Virtualization-based Security (VBS) and/or Credential Guard automatically enabled if they meet the other requirements for default enablement, and have previously run Credential Guard. For example if Credential Guard was enabled on an Enterprise device that later downgraded to Pro.
+>
+> To determine whether the Pro device is in this state, check if the following registry key exists: `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0\IsolatedCredentialsRootSecret`. In this scenario, if you wish to disable VBS and Credential Guard, follow the instructions to [disable Virtualization-based Security](configure.md#disable-virtualization-based-security). If you wish to disable Credential Guard only, without disabling VBS, use the procedures to [disable Credential Guard](configure.md#disable-credential-guard).
 
-Devices running Windows Server 2025 (preview) or later will have Credential Guard enabled by default if they meet the above requirements for client and additionally:
+### Default enablement on Windows Server
+
+Devices running Windows Server 2025 (preview) or later will have Credential Guard enabled by default if they meet the above requirements for Windows and additionally:
 
 - Are joined to a domain
 - Are not a Domain Controller
 
 > [!IMPORTANT]
 > For information about known issues related to default enablement, see [Credential Guard: known issues](considerations-known-issues.md#known-issues).
-
-> [!NOTE]
-> Devices running Windows 11 Pro/Pro Edu 22H2 or later may have Virtualization-based Security (VBS) and/or Credential Guard automatically enabled if they meet the other requirements for default enablement, and have previously run Credential Guard. For example if Credential Guard was enabled on an Enterprise device that later downgraded to Pro.
->
-> To determine whether the Pro device is in this state, check if the following registry key exists: `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0\IsolatedCredentialsRootSecret`. In this scenario, if you wish to disable VBS and Credential Guard, follow the instructions to [disable Virtualization-based Security](configure.md#disable-virtualization-based-security). If you wish to disable Credential Guard only, without disabling VBS, use the procedures to [disable Credential Guard](configure.md#disable-credential-guard).
 
 ## System requirements
 
@@ -120,9 +123,6 @@ Applications prompt and expose credentials to risk if they require:
 Applications may cause performance issues when they attempt to hook the isolated Credential Guard process `LSAIso.exe`.
 
 Services or protocols that rely on Kerberos, such as file shares or remote desktop, continue to work and aren't affected by Credential Guard.
-
-> [!IMPORTANT]
-> Windows Server 2025 is in PREVIEW. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 ## Next steps
 
