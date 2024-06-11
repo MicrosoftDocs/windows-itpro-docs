@@ -36,7 +36,7 @@ The following methodology was used to derive the network endpoints:
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
 
-## Windows 10 Family
+## Windows 10 Home
 
 | Destination | Protocol | Description |
 | ----------- | -------- | ----------- |
@@ -53,7 +53,6 @@ The following methodology was used to derive the network endpoints:
 | \*.telecommand.telemetry.microsoft.com\* | HTTPS | Used by Windows Error Reporting
 | \*cdn.onenote.net\* | HTTP | OneNote
 | \*displaycatalog.\*mp.microsoft.com\* | HTTPS | Used to communicate with Microsoft Store
-| \*emdl.ws.microsoft.com\* | HTTP | Windows Update
 | \*geo-prod.do.dsp.mp.microsoft.com\* | TLSv1.2/HTTPS | Enables connections to Windows Update
 | \*hwcdn.net\* | HTTP | Highwinds Content Delivery Network / Windows updates
 | \*img-prod-cms-rt-microsoft-com\* | HTTPS | Microsoft Store or Inbox MSN Apps image download
@@ -230,7 +229,6 @@ The following methodology was used to derive the network endpoints:
 | displaycatalog.mp.microsoft.com/\* | HTTPS | Microsoft Store
 | dmd.metaservices.microsoft.com\* | HTTP | Device Authentication
 | download.windowsupdate.com\* | HTTPS | Windows Update
-| emdl.ws.microsoft.com/\* | HTTP | Used to download apps from the Microsoft Store
 | evoke-windowsservices-tas.msedge.net | HTTPS | Photo app
 | fe2.update.microsoft.com\* | HTTPS | Windows Update, Microsoft Update, Microsoft Store services
 | fe3.delivery.dsp.mp.microsoft.com.nsatc.net | HTTPS | Windows Update, Microsoft Update, Microsoft Store services

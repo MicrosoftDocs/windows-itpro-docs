@@ -2,7 +2,7 @@
 title: Assigned Access XML Schema Definition (XSD)
 description: Assigned Access XSD reference article.
 ms.topic: reference
-ms.date: 02/15/2024
+ms.date: 04/08/2024
 ---
 
 # Assigned Access XML Schema Definition (XSD)
@@ -232,7 +232,7 @@ Here's the Assigned Access XSD for the features added in Windows 11:
 
 ## Windows 11, version 21H2 additions
 
-Here's the Assigned Access XSD for the features added in Windows 10, version 21H2:
+Here's the Assigned Access XSD for the features added in Windows 11, version 21H2:
 
 ```xml
 <xs:schema
@@ -259,7 +259,7 @@ Here's the Assigned Access XSD for the features added in Windows 10, version 21H
 
 ## Windows 10, version 1909 additions
 
-Here's the Assigned Access XSD for the features added in Windows 10, version 1909:
+Here are the Assigned Access XSDs for the features added in Windows 10, version 1909:
 
 ```xml
 <xs:schema
@@ -289,6 +289,33 @@ Here's the Assigned Access XSD for the features added in Windows 10, version 190
     <xs:element name="NoRestriction" />
     <xs:element name="GlobalProfile" type="globalProfile_t" />
 
+</xs:schema>
+```
+
+```xml
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    vc:minVersion="1.1"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/202010/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/202010/config"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/202010/config"
+    >
+
+    <xs:complexType name="deviceOwnerGroup_t">
+        <xs:attribute name="Name" type="xs:string" fixed="DeviceOwner" />
+    </xs:complexType>
+
+    <xs:complexType name="exclusion_t">
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:choice>
+                   <xs:element name="SpecialGroup" type="deviceOwnerGroup_t" minOccurs="1" maxOccurs="1" />
+                </xs:choice>
+            </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="Exclusions" type="exclusion_t" />
 </xs:schema>
 ```
 

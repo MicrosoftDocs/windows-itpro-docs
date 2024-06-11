@@ -3,10 +3,10 @@ title: Query Application Control events with Advanced Hunting
 description: Learn how to query Windows Defender Application Control events across your entire organization by using Advanced Hunting.
 ms.localizationpriority: medium
 ms.date: 03/01/2022
-ms.topic: article
+ms.topic: troubleshooting
 ---
 
-# Querying Application Control events centrally using Advanced hunting  
+# Querying Application Control events centrally using Advanced hunting
 
 A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode.
 While Event Viewer helps to see the impact on a single system, IT Pros want to gauge it across many systems.
@@ -65,7 +65,7 @@ The query results can be used for several important functions related to managin
 Query Example #2: Query to determine audit blocks in the past seven days
 
 ```
-DeviceEvents 
+DeviceEvents
 | where ActionType startswith "AppControlExecutableAudited"
 | where Timestamp > ago(7d)
 |project DeviceId,                               // the device ID where the audit block happened

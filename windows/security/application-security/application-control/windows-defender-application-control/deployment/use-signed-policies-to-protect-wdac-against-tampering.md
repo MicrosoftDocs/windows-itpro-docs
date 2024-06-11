@@ -21,7 +21,6 @@ If you don't currently have a code signing certificate you can use to sign your 
 > - All policies, including base and supplemental, must be signed according to the [PKCS 7 Standard](https://datatracker.ietf.org/doc/html/rfc5652).
 > - Use RSA keys with 2K, 3K, or 4K key size only. ECDSA isn't supported.
 > - You can use SHA-256, SHA-384, or SHA-512 as the digest algorithm on Windows 11, as well as Windows 10 and Windows Server 2019 and above after applying the November 2022 cumulative security update. All other devices only support SHA-256.
-> - Don't use UTF-8 encoding for certificate fields, like 'subject common name' and 'issuer common name'. These strings must be encoded as PRINTABLE_STRING, IA5STRING or BMPSTRING.
 
 Before you attempt to deploy a signed policy, you should first deploy an unsigned version of the policy to uncover any issues with the policy rules. We also recommend you enable rule options **9 - Enabled:Advanced Boot Options Menu** and **10 - Enabled:Boot Audit on Failure** to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9`, even if you're not sure whether the option is already enabled. If so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Windows Defender Application Control policy rules](../design/select-types-of-rules-to-create.md).
 
@@ -104,10 +103,18 @@ When complete, the commands should output a signed policy file with a `.p7` exte
 
 ## Verify and deploy the signed policy
 
-You can use certutil.exe to verify the signed file. Review the output to confirm the signature algorithm and encoding for certificate fields, like 'subject common name' and 'issuer common name' as described in the Warning at the top of this article.
+You can use certutil.exe or PowerShell to verify the signed file. Review the output to confirm the signature algorithm as described in the Warning at the top of this article.
 
 ```powershell
 certutil.exe -asn <path to signed policy file>
+```
+
+```powershell
+$CIPolicyBin = 'path to signed policy file'
+Add-Type -AssemblyName 'System.Security'
+$SignedCryptoMsgSyntax = New-Object -TypeName System.Security.Cryptography.Pkcs.SignedCms
+$SignedCryptoMsgSyntax.Decode([System.IO.File]::ReadAllBytes($CIPolicyBin))
+$SignedCryptoMsgSyntax.Certificates | Format-List -Property *
 ```
 
 Thoroughly test the signed policy on a representative set of computers before proceeding with deployment. Be sure to reboot the test computers at least twice after applying the signed WDAC policy to ensure you don't encounter a boot failure.

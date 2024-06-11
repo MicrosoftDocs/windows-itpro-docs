@@ -2,7 +2,7 @@
 title: Virus and threat protection in Windows Security
 description: Use the Virus & threat protection section to see and configure Microsoft Defender Antivirus, Controlled folder access, and 3rd-party AV products.
 ms.date: 08/11/2023
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Virus and threat protection

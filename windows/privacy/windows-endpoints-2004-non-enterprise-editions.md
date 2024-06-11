@@ -35,7 +35,7 @@ The following methodology was used to derive the network endpoints:
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
 
-## Windows 10 Family
+## Windows 10 Home
 
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
@@ -112,7 +112,6 @@ The following methodology was used to derive the network endpoints:
 |displaycatalog.mp.microsoft.com|HTTPS|Microsoft Store 
 |dlassets-ssl.xboxlive.com|HTTPS|Xbox Live 
 |dmd.metaservices.microsoft.com|HTTP|Device Authentication 
-|emdl.ws.microsoft.com|HTTP|Windows Update 
 |evoke-windowsservices-tas.msedge.net|TLSv1.2|Photos app 
 |fp.msedge.net|HTTPS|Cortana and Live Tiles
 |fs.microsoft.com|TLSv1.2|Maps application
@@ -169,7 +168,6 @@ The following methodology was used to derive the network endpoints:
 |ctldl.windowsupdate.com|HTTP|Certificate Trust List 
 |da.xboxservices.com|HTTPS|Microsoft Edge  
 |dmd.metaservices.microsoft.com|HTTP|Device Authentication 
-|emdl.ws.microsoft.com|HTTP|Windows Update 
 |evoke-windowsservices-tas.msedge.net|TLSv1.2|Photos app 
 |fp.msedge.net|HTTPS|Cortana and Live Tiles
 |fs.microsoft.com|TLSv1.2|Maps application

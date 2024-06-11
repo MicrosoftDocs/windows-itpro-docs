@@ -1,11 +1,14 @@
 ---
 title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: windows-copilot
 ms.date: 03/21/2024
 ms.author: mstewart
 author: mestew
+ms.collection:
+  - windows-copilot
+  - magic-ai-copilot
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2 or later</a>
 ---

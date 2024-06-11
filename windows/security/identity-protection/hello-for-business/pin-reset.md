@@ -1,7 +1,7 @@
 ---
 title: PIN reset
 description: Learn how Microsoft PIN reset service enables your users to recover a forgotten Windows Hello for Business PIN, and how to configure it.
-ms.date: 01/03/2024
+ms.date: 04/23/2024
 ms.topic: how-to
 ---
 
@@ -49,7 +49,7 @@ To register the applications, follow these steps:
 
 :::row:::
   :::column span="3":::
-  1. Go to the [Microsoft PIN Reset Service Production website][APP-1], and sign in using a *Global Administrator* account you use to manage your Microsoft Entra tenant. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to the application to access your organization
+  1. Go to the [Microsoft PIN Reset Service Production website][APP-1], and sign in as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator). Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to the application to access your organization
   :::column-end:::
   :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset service permissions page." source="images/pin-reset/pin-reset-service-prompt.png" lightbox="images/pin-reset/pin-reset-service-prompt.png" border="true":::
@@ -57,7 +57,7 @@ To register the applications, follow these steps:
 :::row-end:::
 :::row:::
   :::column span="3":::
-  2. Go to the [Microsoft PIN Reset Client Production website][APP-2], and sign in using a *Global Administrator* account you use to manage your Microsoft Entra tenant. Review the permissions requested by the *Microsoft Pin Reset Client Production* application, and select **Next**.
+  2. Go to the [Microsoft PIN Reset Client Production website][APP-2], and sign as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator). Review the permissions requested by the *Microsoft Pin Reset Client Production* application, and select **Next**.
   :::column-end:::
   :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset client permissions page." source="images/pin-reset/pin-reset-client-prompt.png" lightbox="images/pin-reset/pin-reset-client-prompt.png" border="true":::
@@ -121,7 +121,6 @@ GET https://graph.microsoft.com/v1.0/organization?$select=id
 
 #### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
-[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 [!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 
 | Group policy path | Group policy setting | Value |

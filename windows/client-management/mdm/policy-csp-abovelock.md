@@ -1,7 +1,7 @@
 ---
 title: AboveLock Policy CSP
 description: Learn more about the AboveLock Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -22,7 +22,7 @@ ms.date: 01/18/2024
 <!-- AllowActionCenterNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowActionCenterNotifications-Applicability-End -->
 
 <!-- AllowActionCenterNotifications-OmaUri-Begin -->
