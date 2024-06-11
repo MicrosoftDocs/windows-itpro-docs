@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 06/03/2024
+ms.date: 06/11/2024
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -47,6 +47,7 @@ The features in this article are no longer being actively developed, and might b
 
 | Feature | Details and mitigation  | Deprecation announced |
 |---|---|---|
+| DirectAccess <!--8713507-->| DirectAccess is deprecated and will be removed in a future release of Windows. We recommend [migrating from DirectAccess to Always On VPN](/windows-server/remote/remote-access/da-always-on-vpn-migration/da-always-on-migration-overview). | June 2024 | 
 | NTLM <!--8396018-->| All versions of [NTLM](/windows/win32/secauthn/microsoft-ntlm), including LANMAN, NTLMv1, and NTLMv2, are no longer under active feature development and are deprecated. Use of NTLM will continue to work in the next release of Windows Server and the next annual release of Windows. Calls to NTLM should be replaced by calls to Negotiate, which will try to authenticate with Kerberos and only fall back to NTLM when necessary. For more information, see [Resources for deprecated features](deprecated-features-resources.md). | June 2024 |
 | Driver Verifier GUI (verifiergui.exe) <!--8995057--> | Driver Verifier GUI, verifiergui.exe, is deprecated and will be removed in a future version of Windows. You can use the [Verifier Command Line](/windows-hardware/drivers/devtest/verifier-command-line) (verifier.exe) instead of the Driver Verifier GUI.| May 2024 | 
 | NPLogonNotify and NPPasswordChangeNotify APIs <!--8787264--> | Starting in Windows 11, version 24H2, the inclusion of password payload in MPR notifications is set to disabled by default through group policy in [NPLogonNotify](/windows/win32/api/npapi/nf-npapi-nplogonnotify) and [NPPasswordChangeNotify](/windows/win32/api/npapi/nf-npapi-nppasswordchangenotify) APIs. The APIs may be removed in a future release. The primary reason for disabling this feature is to enhance security. When enabled, these APIs allow the caller to retrieve a user's password, presenting potential risks for password exposure and harvesting by malicious users. To include password payload in MPR notifications, set the [EnableMPRNotifications](/windows/client-management/mdm/policy-csp-windowslogon#enablemprnotifications) policy to `enabled`.| March 2024 |
