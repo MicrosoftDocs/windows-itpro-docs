@@ -233,7 +233,7 @@ Starting in Windows 10, version 1803, specifies the maximum background download 
 
 MDM Setting: **DORestrictPeerSelectionBy**
 
-Starting in Windows 10, version 1803, configure this policy to restrict peer selection via selected option. In Windows 11, the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery (DNS-SD). These options apply to both Download Modes LAN (1) and Group (2) and therefore means there's no peering between subnets.
+Starting in Windows 10, version 1803, configure this policy to further restrict peer selection in Download Modes LAN (1) and Group (2). In Windows 11, the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = None, 1 = Subnet mask, and 2 = Local Peer Discovery (DNS-SD). Choosing either Subnet mask (1) or Local Peer Discovery (2) will avoid peering between subnets.
 
 If Group mode is configured, Delivery Optimization connects to locally discovered peers that are also part of the same Group (have the same Group ID) and prevents devices that aren't using the same Group ID from participating.
 
