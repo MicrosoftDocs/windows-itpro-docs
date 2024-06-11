@@ -227,6 +227,11 @@ For more information, see [What is a Primary Refresh Token][ENTRA-2].
 
 Changing a user account password doesn't affect sign-in or unlock, since Windows Hello for Business uses a key or certificate.
 
+> [!NOTE]
+> If you change the user's password from a Microsoft Entra hybrid joined device, the Windows Hello for Business cache is invalidated. To update the cache, the user must log off and then log back on.
+>
+> To change a user's password, the device must be able to communicate with a domain controller.
+
 ## Next steps
 
 > [!div class="nextstepaction"]
