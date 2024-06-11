@@ -1,16 +1,16 @@
 ---
-title: Update other Microsoft products 
+title: Update other Microsoft products
 titleSuffix: Windows Update for Business
-description: List of other Microsoft products that are updated when install updates for other Microsoft products (allowmuupdateservice) is used. 
+description: List of other Microsoft products that are updated when install updates for other Microsoft products (allowmuupdateservice) is used.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 06/07/2024
 ---
 
@@ -53,9 +53,9 @@ The following is a list of other Microsoft products that might be updated:
 - Microsoft StreamInsight
 - Mobile and IoT
 - MSRC
-- Office 2016 (MSI versions of Office) 
+- Office 2016 (MSI versions of Office)
 - PlayReady
-- Windows Admin Center
+- Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware
 - Silverlight
 - Skype for Business
 - SQL
@@ -65,6 +65,7 @@ The following is a list of other Microsoft products that might be updated:
 - System Center Orchestrator
 - System Center Virtual Machine Manager
 - Visual Studio
+- Windows Admin Center
 - Windows Azure Hyper-V Recovery Manager
 - Windows Azure Pack - Web Sites
 - Windows Azure Pack

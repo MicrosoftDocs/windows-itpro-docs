@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.collection:
   - highpri
   - tier1
+  - essentials-get-started
 ms.subservice: itpro-fundamentals
 ms.date: 02/06/2024
 appliesto:
