@@ -275,7 +275,7 @@ For more information, see [Use Windows Hello for Business certificates as smart 
 
 ## Known issues
 
-There's a known issue when attempting to perform TLS 1.3 client authentication with a Hello certificate via RDP. The authentication fails with the error: ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED. Microsoft is aware of this issue and investigating possible solutions.
+There's a known issue when attempting to perform TLS 1.3 client authentication with a Hello certificate via RDP. The authentication fails with the error: `ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED`. Microsoft is investigating possible solutions.
 
 <!-- links -->
 
