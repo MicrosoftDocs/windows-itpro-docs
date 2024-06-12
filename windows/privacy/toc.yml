@@ -45,5 +45,3 @@
           href: manage-windows-1809-endpoints.md
         - name: Connection endpoints for non-Enterprise editions of Windows 11
           href: windows-11-endpoints-non-enterprise-editions.md
-        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 1809
-          href: windows-endpoints-1809-non-enterprise-editions.md

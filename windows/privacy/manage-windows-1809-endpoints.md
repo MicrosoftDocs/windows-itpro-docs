@@ -486,11 +486,6 @@ To view endpoints for other versions of Windows 10 Enterprise, see:
 
 - [Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md)
 
-To view endpoints for non-Enterprise Windows 10 editions, see:
-
-- [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
-- [Windows 10, version 21H1, connection endpoints for non-Enterprise editions](windows-endpoints-21H1-non-enterprise-editions.md)
-
 
 ## Related links
 
