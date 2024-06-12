@@ -230,7 +230,7 @@ Changing a user account password doesn't affect sign-in or unlock, since Windows
 However, when users are required to change their password (for example, due to password expiration policies), then they won't be notified of the password change requirement when signing in with Windows Hello. This might cause failures to authenticate to Active Directory-protected resources. To mitigate the issue consider one of the following options:
 
 - Disable password expiration for the user accounts
-- As an alternative to password expiration policies, consider adopting [PIN expiration policies](policy-settings?tabs=pin#expiration)
+- As an alternative to password expiration policies, consider adopting [PIN expiration policies](policy-settings.md?tabs=pin#expiration)
 - If password expiration is an organization's requirement, instruct the users to change their passwords regularly or when they receive authentication failure messages. Users can reset their password by:
   - Using the <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> > **Change a password** option
   - Sign in with their password. If the password must be changed, Windows prompts the user to update it
