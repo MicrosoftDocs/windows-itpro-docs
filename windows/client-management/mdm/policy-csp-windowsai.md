@@ -164,6 +164,9 @@ This policy setting allows you to turn off Windows Copilot.
 <!-- TurnOffWindowsCopilot-Description-End -->
 
 <!-- TurnOffWindowsCopilot-Editable-Begin -->
+
+> [!Note]
+> - The TurnOffWindowsCopilot policy listed isn't for the [new Copilot experience](https://blogs.windows.com/windows-insider/2024/05/31/announcing-windows-11-insider-preview-build-26120-751-dev-channel/) that is currently in some Windows Insider builds such as [Windows 11, version 24H2 in the Release Preview channel](https://blogs.windows.com/windows-insider/2024/05/22/releasing-windows-11-version-24h2-to-the-release-preview-channel/). <!--9048085-->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- TurnOffWindowsCopilot-Editable-End -->
 
