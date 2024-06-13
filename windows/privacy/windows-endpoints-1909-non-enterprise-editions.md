@@ -115,7 +115,7 @@ The following methodology was used to derive the network endpoints:
 |config.edge.skype.com|HTTP/TLS v1.2|Used to retrieve Skype configuration values
 |config.teams.microsoft.com|HTTPS|Used for Microsoft Teams application
 |ctldl.windowsupdate.com|HTTP|Used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available
-|\*displaycatalog.mp.microsoft.com*|HTTP/TLS v1.2|Microsoft Store
+|*displaycatalog.mp.microsoft.com|HTTP/TLS v1.2|Microsoft Store
 |fe2cr.update.microsoft.com|HTTPS/TLS v1.2|Windows Update
 |fe3cr.delivery.mp.microsoft.com|HTTPS/TLS v1.2|Windows Update
 |slscr.update.microsoft.com|HTTPS/TLS v1.2|Windows Update
