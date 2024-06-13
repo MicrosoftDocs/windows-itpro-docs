@@ -13,6 +13,8 @@
           href: update/release-cycle.md
         - name: Basics of Windows updates, channels, and tools
           href: update/get-started-updates-channels-tools.md
+        - name: Defining Windows Update managed and Windows Update unmanaged devices
+          href: ./update/updatemanagedvsupdateunmanageddevices.md
         - name: Prepare servicing strategy for Windows client updates
           href: update/waas-servicing-strategy-windows-10-updates.md
         - name: Deployment proof of concept
