@@ -8,7 +8,7 @@ author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
 ms.date: 05/15/2019
-ms.topic: conceptual
+ms.topic: reference
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services using Microsoft Intune MDM Server
@@ -19,7 +19,7 @@ ms.topic: conceptual
 - Windows 10 Enterprise 1903 version and newer
 
 
-This article describes the network connections that Windows 10 and Windows 11 components make to Microsoft and the Mobile Device Management/Configuration Service Provider (MDM/CSP) and custom Open Mobile Alliance Uniform Resource Identifier ([OMA URI](/intune/custom-settings-windows-10)) policies available to IT Professionals using Microsoft Intune to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article.  While it is possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
+This article describes the network connections that Windows 10 and Windows 11 components make to Microsoft and the Mobile Device Management/Configuration Service Provider (MDM/CSP) and custom Open Mobile Alliance Uniform Resource Identifier ([OMA URI](/intune/custom-settings-windows-10)) policies available to IT Professionals using Microsoft Intune to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article.  While it's possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
 
 >[!IMPORTANT]
 >- The Allowed Traffic endpoints for an MDM configuration are here: [Allowed Traffic](#bkmk-mdm-allowedtraffic)
@@ -32,11 +32,11 @@ This article describes the network connections that Windows 10 and Windows 11 co
 >[!Warning]
 >If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Remove Everything" option the >Windows Restricted Traffic Limited Functionality settings will need to be re-applied in order re-restrict the device's egress traffic. >To do this the client must be re-enrolled to the Microsoft Intune service. Egress traffic may occur during the period prior to the re->application of the Restricted Traffic Limited Functionality settings.  If the user executes a "Reset this PC" with the "Keep my files" >option the Restricted Traffic Limited Functionality settings are retained on the device, and therefore the client will remain in a >Restricted Traffic configuration during and after the "Keep my files" reset, and no re-enrollment is required. 
 
-For more information on Microsoft Intune please see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](/intune/).
+For more information on Microsoft Intune, see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](/intune/).
 
 For detailed information about managing network connections to Microsoft services using Windows Settings, Group Policies and Registry settings see [Manage connections from Windows operating system components to Microsoft services](./manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
-We are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to **telmhelp**@**microsoft.com**. 
+We're always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to **telmhelp**@**microsoft.com**. 
 
 
 ## Settings for Windows 10 Enterprise edition 1903 and later and Windows 11
@@ -46,7 +46,7 @@ The following table lists management options for each setting.
 For Windows 10 and Windows 11, the following MDM policies are available in the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).
 
 1. **Automatic Root Certificates Update**
-   1. MDM Policy: There is intentionally no MDM available for Automatic Root Certificate Update. This MDM does not exist since it would prevent the operation and management of MDM management of devices.
+   1. MDM Policy: There's intentionally no MDM available for Automatic Root Certificate Update. This MDM doesn't exist since it would prevent the operation and management of MDM management of devices.
 
 1. **Cortana and Search**
    1. MDM Policy: [Experience/AllowCortana](/windows/client-management/mdm/policy-csp-experience#experience-allowcortana). Choose whether to let Cortana install and run on the device. **Set to 0 (zero)**
@@ -77,10 +77,10 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
       1. **\<enabled/>\<data id=”FirstRunOptions” value=”1”/>** 
 
 1. **Live Tiles**
-   1. MDM Policy: [Notifications/DisallowTileNotification](/windows/client-management/mdm/policy-csp-notifications). This policy setting turns off tile notifications. If you enable this policy setting applications and system features will not be able to update their tiles and tile badges in the Start screen.  **Integer value 1**
+   1. MDM Policy: [Notifications/DisallowTileNotification](/windows/client-management/mdm/policy-csp-notifications). This policy setting turns off tile notifications. If you enable this policy setting applications and system features won't be able to update their tiles and tile badges in the Start screen.  **Integer value 1**
 
 1. **Mail synchronization**
-   1. MDM Policy: [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Specifies whether the user is allowed to use an Microsoft account for non-email related connection authentication and services. **Set to 0 (zero)**
+   1. MDM Policy: [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Specifies whether the user is allowed to use a Microsoft account for non-email related connection authentication and services. **Set to 0 (zero)**
 
 1. **Microsoft Account**
    1. MDM Policy: [Accounts/AllowMicrosoftAccountSignInAssistant](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountsigninassistant). Disable the Microsoft Account Sign-In Assistant. **Set to 0 (zero)**
@@ -94,7 +94,7 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
    1. MDM Policy: [Browser/AllowSmartScreen](/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Choose whether Windows Defender SmartScreen is turned on or off.  **Set to 0  (zero)**
 
 1. **Network Connection Status Indicator**
-   1. [Connectivity/DisallowNetworkConnectivityActiveTests](/windows/client-management/mdm/policy-csp-connectivity#connectivity-disallownetworkconnectivityactivetests).  Note: After you apply this policy you must restart the device for the policy setting to take effect. **Set to 1 (one)**
+   1. [Connectivity/DisallowNetworkConnectivityActiveTests](/windows/client-management/mdm/policy-csp-connectivity#connectivity-disallownetworkconnectivityactivetests).  Note: After you apply this policy, you must restart the device for the policy setting to take effect. **Set to 1 (one)**
 
 1. **Offline maps**
    1. MDM Policy: [AllowOfflineMapsDownloadOverMeteredConnection](/windows/client-management/mdm/policy-csp-maps). Allows the download and update of map data over metered connections. <br /> **Set to 0 (zero)**
@@ -102,7 +102,7 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
 
 1. **OneDrive**
    1. MDM Policy: [DisableOneDriveFileSync](/windows/client-management/mdm/policy-csp-system#system-disableonedrivefilesync). Allows IT Admins to prevent apps and features from working with files on OneDrive. **Set to 1 (one)** 
-   1. Ingest the ADMX - To get the latest OneDrive ADMX file you need an up-to-date Windows 10 or Windows 11 client. The ADMX files are located under the following path: %LocalAppData%\Microsoft\OneDrive\ there's a folder with the current OneDrive build (e.g. "18.162.0812.0001"). There is a folder named "adm" which contains the admx and adml policy definition files. 
+   1. Ingest the ADMX - To get the latest OneDrive ADMX file you need an up-to-date Windows 10 or Windows 11 client. The ADMX files are located under the following path: %LocalAppData%\Microsoft\OneDrive\ there's a folder with the current OneDrive build (for example "18.162.0812.0001"). There's a folder named "adm" which contains the admx and adml policy definition files. 
    1. MDM Policy: Prevent Network Traffic before User SignIn. **PreventNetworkTrafficPreUserSignIn**. The OMA-URI value is:  **./Device/Vendor/MSFT/Policy/Config/OneDriveNGSC\~Policy\~OneDriveNGSC/PreventNetworkTrafficPreUserSignIn**, Data type: **String**, Value: **\<enabled/>**
 
 

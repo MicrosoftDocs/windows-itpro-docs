@@ -8,8 +8,7 @@ author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
 ms.date: 03/07/2016
-ms.collection: highpri
-ms.topic: conceptual
+ms.topic: reference
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services
@@ -21,9 +20,9 @@ ms.topic: conceptual
 - Windows Server 2016
 - Windows Server 2019
 
-This article describes the network connections that Windows 10 and Windows 11 components make to Microsoft and the Windows Settings, Group Policies and registry settings available to IT Professionals to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article. While it is possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
+This article describes the network connections that Windows 10 and Windows 11 components make to Microsoft and the Windows Settings, Group Policies and registry settings available to IT Professionals to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article. While it's possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
 
-Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline](https://download.microsoft.com/download/D/9/0/D905766D-FEDA-43E5-86ED-8987CEBD8D89/WindowsRTLFB.zip) package that will allow your organization to quickly configure the settings covered in this document to restrict connections from Windows 10 and Windows 11 to Microsoft. The Windows Restricted Traffic Limited Baseline is based on [Group Policy Administrative Template](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) functionality and the package you download contains further instructions on how to deploy to devices in your organization. Since some of the settings can reduce the functionality and security configuration of your device, **before deploying Windows Restricted Traffic Limited Functionality Baseline** make sure you **choose the right settings configuration for your environment** and **ensure that Windows and Microsoft Defender Antivirus are fully up to date**. Failure to do so may result in errors or unexpected behavior. You should not extract this package to the windows\system32 folder because it will not apply correctly.
+Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline](https://download.microsoft.com/download/D/9/0/D905766D-FEDA-43E5-86ED-8987CEBD8D89/WindowsRTLFB.zip) package that will allow your organization to quickly configure the settings covered in this document to restrict connections from Windows 10 and Windows 11 to Microsoft. The Windows Restricted Traffic Limited Baseline is based on [Group Policy Administrative Template](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) functionality and the package you download contains further instructions on how to deploy to devices in your organization. Since some of the settings can reduce the functionality and security configuration of your device, **before deploying Windows Restricted Traffic Limited Functionality Baseline** make sure you **choose the right settings configuration for your environment** and **ensure that Windows and Microsoft Defender Antivirus are fully up to date**. Failure to do so may result in errors or unexpected behavior. You shouldn't extract this package to the windows\system32 folder because it will not apply correctly.
 
 > [!IMPORTANT]
 > - The downloadable Windows 10, version 1903 scripts/settings can be used on Windows 10, version 1909 devices.
@@ -38,9 +37,9 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 > - To restrict a device effectively (first time or subsequently), it is recommended to apply the Restricted Traffic Limited Functionality Baseline settings package in offline mode.
 > - During update or upgrade of Windows, egress traffic may occur.
 
-To use Microsoft Intune cloud-based device management for restricting traffic please refer to the [Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services using Microsoft Intune MDM Server](manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm.md).
+To use Microsoft Intune cloud-based device management for restricting traffic, refer to the [Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services using Microsoft Intune MDM Server](manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm.md).
 
-We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting **telmhelp**@**microsoft.com**.
+We're always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting **telmhelp**@**microsoft.com**.
 
 ## Management options for each setting
 
@@ -397,7 +396,7 @@ If you're running Windows 10, version 1607, Windows Server 2016, or later:
 ### <a href="" id="bkmk-previewbuilds"></a>7. Insider Preview builds
 
 The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10 and Windows 11. This setting stops communication with the Windows Insider Preview service that checks for new builds.
-Windows Insider Preview builds only apply to Windows 10 and Windows 11 and are not available for Windows Server 2016.
+Windows Insider Preview builds only apply to Windows 10 and Windows 11 and aren't available for Windows Server 2016.
 
 
 > [!NOTE]
@@ -689,7 +688,7 @@ To turn off OneDrive in your organization:
 
 ### <a href="" id="bkmk-preinstalledapps"></a>17. Preinstalled apps
 
-Some preinstalled apps get content before they are opened to ensure a great experience. You can remove these using the steps in this section.
+Some preinstalled apps get content before they're opened to ensure a great experience. You can remove these using the steps in this section.
 
 To remove the News app:
 
@@ -1766,7 +1765,7 @@ If you're running Windows 10, version 1607 or later, or Windows 11, you need to:
 
 You can turn off the ability to launch apps from the Microsoft Store that were preinstalled or downloaded.
 This will also turn off automatic app updates, and the Microsoft Store will be disabled.
-In addition, new email accounts cannot be created by clicking **Settings** > **Accounts** > **Email & app accounts** > **Add an account**.
+In addition, new email accounts can't be created by clicking **Settings** > **Accounts** > **Email & app accounts** > **Add an account**.
 On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
 
 - **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Store** > **Disable all apps from Microsoft Store**.
@@ -1795,7 +1794,7 @@ You can turn off apps for websites, preventing customers who visit websites that
 
 ### <a href="" id="bkmk-updates"></a>28. Delivery Optimization
 
-Delivery Optimization is the downloader of Windows updates, Microsoft Store apps, Office and other content from Microsoft. Delivery Optimization can also download from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization Peer-to-Peer option turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
+Delivery Optimization is the downloader of Windows updates, Microsoft Store apps, Office, and other content from Microsoft. Delivery Optimization can also download from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization Peer-to-Peer option turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
 
 By default, PCs running Windows 10 or Windows 11 will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
 
@@ -1848,15 +1847,15 @@ You can turn off Windows Update by setting the following registry entries:
 
   -and-
 
-- Add a REG_SZ value named **WUServer** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it is blank with a space character **" "**.
+- Add a REG_SZ value named **WUServer** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it's blank with a space character **" "**.
 
   -and-
 
-- Add a REG_SZ value named **WUStatusServer** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it is blank with a space character **" "**.
+- Add a REG_SZ value named **WUStatusServer** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it's blank with a space character **" "**.
 
   -and-
 
-- Add a REG_SZ value named **UpdateServiceUrlAlternate** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it is blank with a space character **" "**.
+- Add a REG_SZ value named **UpdateServiceUrlAlternate** to **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate** and ensure it's blank with a space character **" "**.
 
   -and-
 
@@ -1879,12 +1878,12 @@ You can turn off Windows Update by setting the following registry entries:
 - Set the Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Remove access to use all Windows Update features** to **Enabled** and then set **Computer Configurations** to **0 (zero)**.
 
 
-You can turn off automatic updates by doing the following. This is not recommended.
+You can turn off automatic updates by doing the following. This isn't recommended.
 
 - Add a REG_DWORD value named **AutoDownload** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\WindowsStore\\WindowsUpdate** and set the value to 5.
 
 
-For China releases of Windows 10 there is one additional Regkey to be set to prevent traffic:
+For China releases of Windows 10 there's one additional Regkey to be set to prevent traffic:
 
 - Add a REG_DWORD value named **HapDownloadEnabled** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\LexiconUpdate\\loc_0804** and set the **value to 0 (zero)**.
 
