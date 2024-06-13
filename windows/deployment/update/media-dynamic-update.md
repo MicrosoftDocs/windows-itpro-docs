@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server</a>
-ms.date: 12/05/2023
+ms.date: 06/20/2024
 ---
 
 # Update Windows installation media with Dynamic Update
@@ -38,10 +38,10 @@ Devices must be able to connect to the internet to obtain Dynamic Updates. In so
 
 ## Acquire Dynamic Update packages
 
-You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://catalog.update.microsoft.com). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. Check various parts of the results to be sure you've identified the needed files. The following tables show the key values to search for or look for in the results. 
+You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://catalog.update.microsoft.com). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. Check various parts of the results to be sure you've identified the files needed. The following tables show the key values to search for or look for in the results. 
 
 ### Windows 11, version 22H2 Dynamic Update packages
-**Title** can distinguish each Dynamic Package. Cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update.
+**Title** can distinguish each Dynamic Package. Latest cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update.
 
 | Update packages                   |Title                                                          |
 |-----------------------------------|---------------------------------------------------------------|
@@ -75,7 +75,7 @@ If you want to customize the image with additional languages or Features on Dema
 
 ## Update Windows installation media
 
-Properly updating the installation media involves a large number of actions operating on several different targets (image files). Some actions are repeated on different targets. The target images files include:
+Properly updating the installation media involves many actions operating on several different targets (image files). Some actions are repeated on different targets. The target images files include:
 
 - Windows Preinstallation Environment (WinPE): a small operating system used to install, deploy, and repair Windows operating systems
 - Windows Recovery Environment (WinRE): repairs common causes of unbootable operating systems. WinRE is based on WinPE and can be customized with additional drivers, languages, optional packages, and other troubleshooting or diagnostic tools.
@@ -118,6 +118,13 @@ The main operating system file (install.wim) might contain multiple editions of 
 You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what's in your starting image. When you add more languages and features, it's important to make these changes in the correct order: first apply servicing stack updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image.
 
 Optional Components, along with the .NET feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid the cleanup failure. One option is to skip the image cleanup step, though that results in a larger install.wim. Another option is to install the .NET and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you'll have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
+
+
+### Checkpoint cumulative updates
+Starting with Windows 11, version 24H2, the latest cumulative update may have a prerequisite cumulative update that is required to be installed first. These are known as checkpoint cumulative updates. In these cases, the cumulative update file level differentials are based on a previous cumulative update instead of the Windows RTM release. The benefit is a smaller update package and faster installation.
+
+To install the checkpoint(s) when servicing the Windows OS (steps 9 & 12) and WinPE (steps 17 & 23), call Add-WindowsPackage with the target cumulative update. The folder from PackagePath will be used to discover and install one or more checkpoints as needed. Only .MSU packages with a revision <= the target cumulative update will be processed. If you are not customizing the image with additional languages and/or optional features, then separate calls to Add-WindowsPackage (checkpoint cumulative updates first) can be used for steps 9 & 17 above. Separate calls cannot be used for steps 12 and 23.
+
 
 ## Windows PowerShell scripts to apply Dynamic Updates to an existing image
 
