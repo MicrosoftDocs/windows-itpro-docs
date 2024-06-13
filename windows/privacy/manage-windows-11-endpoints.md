@@ -101,7 +101,7 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 ||The following endpoint is used for Microsoft accounts to sign in. If you turn off traffic for these endpoints, users can't sign in with Microsoft accounts. |TLSv1.2/HTTPS/HTTP|login.live.com|
 |Microsoft Defender Antivirus|||[Learn how to turn off traffic to all of the following endpoint(s) for Microsoft Defender Antivirus.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender)|
 ||The following endpoint is used for Windows Defender when Cloud-based Protection is enabled. If you turn off traffic for this endpoint, the device won't use Cloud-based Protection.|TLSv1.2/HTTPS|wdcp.microsoft.com|
-||The following endpoints are used for Windows Defender SmartScreen reporting and notifications. If you turn off traffic for these endpoints, SmartScreen notifications won't appear.|HTTPS|*smartscreen-prod.microsoft.com|
+||The following endpoints are used for Windows Defender SmartScreen reporting and notifications. If you turn off traffic for these endpoints, SmartScreen notifications won't appear.|HTTPS|*.smartscreen-prod.microsoft.com|
 |||HTTPS/HTTP|checkappexec.microsoft.com|
 |||TLSv1.2/HTTP|ping-edge.smartscreen.microsoft.com|
 |||HTTP|data-edge.smartscreen.microsoft.com|
