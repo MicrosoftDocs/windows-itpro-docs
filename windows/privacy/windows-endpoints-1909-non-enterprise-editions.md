@@ -48,7 +48,7 @@ The following methodology was used to derive the network endpoints:
 |config.teams.microsoft.com|HTTPS|Used for Microsoft Teams application
 |*dl.delivery.mp.microsoft.com|HTTP|Used to download operating system patches, updates, and apps from Microsoft Store
 |*.tlu.dl.delivery.mp.microsoft.com|HTTP|Used to download operating system patches, updates, and apps from Microsoft Store
-|displaycatalog.mp.microsoft.com/*|HTTP/TLS v1.2|Used to communicate with Microsoft Store
+|\*displaycatalog.mp.microsoft.com|HTTP/TLS v1.2|Used to communicate with Microsoft Store
 |evoke-windowsservices-tas.msedge.net|HTTP/TLS v1.2|Used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office in a browser
 |fe2cr.update.microsoft.com|HTTPS/TLS v1.2|Enables connections to Windows Update, Microsoft Update, and the online services of the Store
 |fe3cr.delivery.mp.microsoft.com|HTTPS/TLS v1.2|Used to download operating system patches, updates, and apps from Microsoft Store
@@ -115,7 +115,7 @@ The following methodology was used to derive the network endpoints:
 |config.edge.skype.com|HTTP/TLS v1.2|Used to retrieve Skype configuration values
 |config.teams.microsoft.com|HTTPS|Used for Microsoft Teams application
 |ctldl.windowsupdate.com|HTTP|Used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available
-|displaycatalog.mp.microsoft.com*|HTTP/TLS v1.2|Microsoft Store
+|*displaycatalog.mp.microsoft.com|HTTP/TLS v1.2|Microsoft Store
 |fe2cr.update.microsoft.com|HTTPS/TLS v1.2|Windows Update
 |fe3cr.delivery.mp.microsoft.com|HTTPS/TLS v1.2|Windows Update
 |slscr.update.microsoft.com|HTTPS/TLS v1.2|Windows Update
@@ -176,7 +176,7 @@ The following methodology was used to derive the network endpoints:
 |fe3cr.delivery.mp.microsoft.com|HTTPS/TLS v1.2|Windows Update
 |tsfe.trafficshaping.dsp.mp.microsoft.com|HTTP/TLS v1.2|Windows Update
 |officehomeblobs.blob.core.windows.net|HTTP|Windows Telemetry
-|displaycatalog.mp.microsoft.com/*|HTTP/TLS v1.2|Microsoft Store
+|\*displaycatalog.mp.microsoft.com|HTTP/TLS v1.2|Microsoft Store
 |img-prod-cms-rt-microsoft-com.akamaized.net|HTTP|Used to communicate with Microsoft Store
 |config.teams.microsoft.com|HTTPS|Teams
 |api.asm.skype.com|TLS v1.2|Used to retrieve Skype configuration values
