@@ -86,7 +86,7 @@ This table shows the correct sequence for applying the various tasks to the file
 
 |Task                               |WinRE (winre.wim)  |Operating system (install.wim)  | WinPE (boot.wim) | New media |
 |-----------------------------------|-------------------|--------------------------------|------------------|-----------|
-|Add servicing stack Dynamic Update | 1                 | 9                              | 17               |           | 
+|Add servicing stack Dynamic Update | 1                 | 9                              | 17               |           |
 |Add language pack                  | 2                 | 10                             | 18               |           |
 |Add localized optional packages    | 3                 |                                | 19               |           |
 |Add font support                   | 4                 |                                | 20               |           |
