@@ -16,16 +16,6 @@ Select the option *Don't start Windows Hello provisioning after sign-in* when yo
 - If you select *Don't start Windows Hello provisioning after sign-in*, Windows Hello for Business doesn't automatically start provisioning after the user has signed in
 - If you don't select *Don't start Windows Hello provisioning after sign-in*, Windows Hello for Business automatically starts provisioning after the user has signed in
 
-:::row:::
-:::column span="1":::
-:::image type="content" source="../../../images/insider.png" alt-text="Logo of Windows Insider." border="false":::
-:::column-end:::
-:::column span="3":::
-> [!IMPORTANT]
->This policy setting is available via CSP only for [Windows Insider Preview builds](/windows-insider/).
-:::column-end:::
-:::row-end:::
-
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/`[UsePassportForWork](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesusepassportforwork) <br><br> `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/`[DisablePostLogonProvisioning](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciesdisablepostlogonprovisioning)|

@@ -101,7 +101,7 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 ||The following endpoint is used for Microsoft accounts to sign in. If you turn off traffic for these endpoints, users can't sign in with Microsoft accounts. |TLSv1.2/HTTPS/HTTP|login.live.com|
 |Microsoft Defender Antivirus|||[Learn how to turn off traffic to all of the following endpoint(s) for Microsoft Defender Antivirus.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender)|
 ||The following endpoint is used for Windows Defender when Cloud-based Protection is enabled. If you turn off traffic for this endpoint, the device won't use Cloud-based Protection.|TLSv1.2/HTTPS|wdcp.microsoft.com|
-||The following endpoints are used for Windows Defender SmartScreen reporting and notifications. If you turn off traffic for these endpoints, SmartScreen notifications won't appear.|HTTPS|*smartscreen-prod.microsoft.com|
+||The following endpoints are used for Windows Defender SmartScreen reporting and notifications. If you turn off traffic for these endpoints, SmartScreen notifications won't appear.|HTTPS|*.smartscreen-prod.microsoft.com|
 |||HTTPS/HTTP|checkappexec.microsoft.com|
 |||TLSv1.2/HTTP|ping-edge.smartscreen.microsoft.com|
 |||HTTP|data-edge.smartscreen.microsoft.com|
@@ -119,7 +119,7 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 ||The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way. If you turn off traffic for this endpoint, push notifications will no longer work, including MDM device management, mail synchronization, settings synchronization.|TLSv1.2/HTTPS|*.wns.windows.com|
 ||The following endpoints are used to revoke licenses for malicious apps in the Microsoft Store. To turn off traffic for this endpoint, either uninstall the app or disable the Microsoft Store. If you disable the Microsoft Store, other Microsoft Store apps can't be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|HTTPS|manage.devcenter.microsoft.com|
-||The following endpoints are used to communicate with Microsoft Store. If you turn off traffic for these endpoints, apps can't be installed or updated from the Microsoft Store.|TLSv1.2/HTTPS/HTTP|displaycatalog.mp.microsoft.com|
+||The following endpoints are used to communicate with Microsoft Store. If you turn off traffic for these endpoints, apps can't be installed or updated from the Microsoft Store.|TLSv1.2/HTTPS/HTTP|*displaycatalog.mp.microsoft.com|
 |||HTTP|share.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|TLSv1.2/HTTPS/HTTP|manage.devcenter.microsoft.com|
 |Microsoft To Do|||[Learn how to turn off traffic to all of the following endpoint(s) for Microsoft To Do.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
