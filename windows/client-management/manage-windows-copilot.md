@@ -3,7 +3,7 @@ title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 06/12/2024
+ms.date: 06/13/2024
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -19,7 +19,7 @@ appliesto:
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
 > [!Note]
-> - This article along with the [TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) policy listed isn't for the [new Copilot experience](https://blogs.windows.com/windows-insider/2024/05/31/announcing-windows-11-insider-preview-build-26120-751-dev-channel/) that is currently in some Windows Insider builds such as [Windows 11, version 24H2 in the Release Preview channel](https://blogs.windows.com/windows-insider/2024/05/22/releasing-windows-11-version-24h2-to-the-release-preview-channel/). <!--9048085-->
+> - This article and the [TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) policy isn't for the [new Copilot experience](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-copilot-in-windows-for-your-workforce/ba-p/4141999) that's in some [Windows Insider builds](https://blogs.windows.com/windows-insider/2024/05/22/releasing-windows-11-version-24h2-to-the-release-preview-channel/) and that will be gradually rolling out to Windows 11 and Windows 10 devices. <!--9048085-->
 
 Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop and is designed to help users get things done in Windows. Copilot in Windows can perform common tasks in Windows like changing Windows settings, which makes it different from the browser-based [Copilot in Edge](/copilot/edge). However, both user experiences, Copilot in Windows and Copilot in Edge, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since it's possible for users to copy and paste sensitive information into the chat.
 
