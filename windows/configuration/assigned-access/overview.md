@@ -325,7 +325,7 @@ The following keyboard shortcuts are blocked for the user accounts with Assigned
 | <kbd>LaunchApp2</kbd>                                | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
 | <kbd>LaunchMail</kbd>                                | Open the default mail client                                                                  |
 
-For information how to customize keyboard shortcuts, see [Assigned Access recommendations](recommendations.md#assigned-access-recommendations#keyboard-shortcuts).
+For information how to customize keyboard shortcuts, see [Assigned Access recommendations](recommendations.md#keyboard-shortcuts).
 
 ## Remove Assigned Access
 
