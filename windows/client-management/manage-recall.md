@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments using MDM and group policy. Learn about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 05/23/2024
+ms.date: 06/13/2024
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -19,6 +19,9 @@ appliesto:
 >**Looking for consumer information?** See [Retrace your steps with Recall](https://support.microsoft.com/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c).
 
 Recall allows you to search across time to find the content you need. Just describe how you remember it, and Recall retrieves the moment you saw it. Recall takes snapshots of your screen and stores them in a timeline. Snapshots are taken every five seconds while content on the screen is different from the previous snapshot. Snapshots are locally stored and locally analyzed on your PC. Recall's analysis allows you to search for content, including both images and text, using natural language.
+
+> [!NOTE]
+> Recall is coming soon through a post-launch Windows update. See [aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs). 
 
 When Recall opens the snapshot a user selected, it enables screenray, which runs on top of the saved snapshot. Screenray analyzes what's in the snapshot and allows users to interact with individual elements in the snapshot. For instance, users can copy text from the snapshot or send pictures from the snapshot to an app that supports `jpeg` files.
 
