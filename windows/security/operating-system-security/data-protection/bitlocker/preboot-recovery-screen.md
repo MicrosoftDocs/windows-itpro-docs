@@ -2,7 +2,7 @@
 title: BitLocker preboot recovery screen
 description: Learn about the information displayed in the BitLocker preboot recovery screen, depending on configured policy settings and recovery keys status.
 ms.topic: concept-article
-ms.date: 10/30/2023
+ms.date: 06/18/2024
 ---
 
 # BitLocker preboot recovery screen
@@ -72,10 +72,10 @@ There are rules governing which hint is shown during the recovery (in the order 
 :::row:::
   :::column span="2":::
     In this scenario, the recovery password is saved to a file
-    
+
     > [!IMPORTANT]
     > It's not recommend to print recovery keys or saving them to a file. Instead, use Microsoft account, Microsoft Entra ID or Active Directory backup.
-  
+
 :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/preboot-recovery-hint.png" alt-text="Screenshot of the BitLocker recovery screen showing a hint where the BitLocker recovery key was saved." lightbox="images/preboot-recovery-hint.png" border="false":::
@@ -92,7 +92,7 @@ There are rules governing which hint is shown during the recovery (in the order 
       - saved to Microsoft account
       - not printed
       - not saved to a file
-    
+
     **Result:** the hints for the custom URL and the Microsoft account (**https://aka.ms/myrecoverykey**) are displayed.
   :::column-end:::
   :::column span="2":::
@@ -110,7 +110,7 @@ There are rules governing which hint is shown during the recovery (in the order 
     - saved to Active Directory
     - not printed
     - not saved to a file
-    
+
     **Result:** only the custom URL is displayed.
   :::column-end:::
   :::column span="2":::
@@ -129,7 +129,7 @@ There are rules governing which hint is shown during the recovery (in the order 
     - saved to Microsoft Entra ID
     - printed
     - saved to file
-    
+
     **Result:** only the Microsoft account hint (**https://aka.ms/myrecoverykey**) is displayed.
   :::column-end:::
   :::column span="2":::
@@ -149,12 +149,12 @@ There are rules governing which hint is shown during the recovery (in the order 
     - saved to file
     - creation time: **1PM**
     - key ID: **4290B6C0-B17A-497A-8552-272CC30E80D4**
-    
+
     The recovery password #2 is:
     - not backed up
     - creation time: **3PM**
     - key ID: **045219EC-A53B-41AE-B310-08EC883AAEDD**
-    
+
     **Result:** only the hint for the successfully backed up key is displayed, even if it isn't the most recent key.
   :::column-end:::
   :::column span="2":::
@@ -175,12 +175,12 @@ There are rules governing which hint is shown during the recovery (in the order 
      - Saved to Microsoft Entra ID
      - creation time: **1PM**
      - key ID: **4290B6C0-B17A-497A-8552-272CC30E80D4**
-    
+
     The recovery password #2 is:
       - Saved to Microsoft Entra ID
       - creation time: **3PM**
       - key ID: **045219EC-A53B-41AE-B310-08EC883AAEDD**
-    
+
     **Result:** the Microsoft Entra ID hint (**https://aka.ms/aadrecoverykey**), which is the most recent key saved, is displayed.
   :::column-end:::
   :::column span="2":::

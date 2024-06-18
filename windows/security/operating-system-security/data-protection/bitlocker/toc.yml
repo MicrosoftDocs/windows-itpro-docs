@@ -17,6 +17,8 @@ items:
       href: recovery-process.md
     - name: Preboot recovery screen
       href: preboot-recovery-screen.md
+    - name: Preboot recovery screen refresh
+      href: recovery-screen.md
 - name: How-to guides
   items:
     - name: Install BitLocker on Windows Server

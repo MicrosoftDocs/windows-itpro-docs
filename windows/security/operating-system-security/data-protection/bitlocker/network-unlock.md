@@ -1,8 +1,8 @@
 ---
-title: Network Unlock 
+title: Network Unlock
 description: Learn how BitLocker Network Unlock works and how to configure it.
 ms.topic: how-to
-ms.date: 10/30/2023
+ms.date: 06/18/2024
 ---
 
 # Network Unlock
@@ -255,7 +255,7 @@ The subnet policy configuration file must use a `[SUBNETS]` section to identify 
 ```ini
 [SUBNETS]
 SUBNET1=10.185.250.0/24 ; a comment about this subrange could be here, after the semicolon
-SUBNET2=10.185.252.200/28 
+SUBNET2=10.185.252.200/28
 SUBNET3= 2001:4898:a:2::/64 ; an IPv6 subnet
 SUBNET4=2001:4898:a:3::/64; in production, the admin would likely give more useful names, like BUILDING9-EXCEPT-RECEP.
 ```
