@@ -188,11 +188,13 @@ There are rules governing which hint is shown during the recovery (in the order 
   :::column-end:::
 :::row-end:::
 
-Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen improves the information about the recovery error. Instead of displaying specialized messages, the recovery error contains an *error category* and *code*. The error category and code map to a webpage with detailed scenario-specific content.
+## Additional recovery information
+
+Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen improves the information about the recovery error.
 
 :::row:::
   :::column span="2":::
-    For example, the recovery screen is showing the error cause, an error code and the option to review additional information
+    Instead of displaying specialized messages, a user has the option to review additional information by pressing the <Kbd>Alt</kbd> key.
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/bitlocker-recovery-screen-24h2.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-screen-24h2.png" border="false":::
@@ -200,7 +202,7 @@ Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen impr
 :::row-end:::
 :::row:::
   :::column span="2":::
-    If you press <Kbd>Alt</kbd>, the **additional recovery information** screen is displayed. This screen contains the **error category and code** that you can use to retrieve more details by visiting [https://aka.ms/unlockissues](), which maps to the next section of this document.
+    The **Additional recovery information** page contains an *error category* and a *code*, which you can use to retrieve more details from the next section of this article.
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/bitlocker-recovery-screen-24h2-additional-info.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-screen-24h2-additional-info.png" border="false":::
