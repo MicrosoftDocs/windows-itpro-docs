@@ -13,13 +13,13 @@ The following table lists the Windows editions that support Assigned Access:
 
 |Edition|Assigned Access support|
 |:---|:---:|
-|Education|Yes|
-|Enterprise |Yes|
-|Enterprise LTSC|Yes|
-|IoT Enterprise | Yes|
-|IoT Enterprise LTSC|Yes|
-|Pro Education|Yes|
-|Pro|Yes|
+|Education|✅|
+|Enterprise |✅|
+|Enterprise LTSC|✅|
+|IoT Enterprise | ✅|
+|IoT Enterprise LTSC|✅|
+|Pro Education|✅|
+|Pro|✅|
 
 <!--
 Assigned Access license entitlements are granted by the following licenses:

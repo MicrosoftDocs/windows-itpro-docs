@@ -13,13 +13,13 @@ The following table lists the Windows editions that support Shell Launcher:
 
 |Edition|Shell Launcher support|
 |:---|:---:|
-|Education|Yes|
-|Enterprise |Yes|
-|Enterprise LTSC|Yes|
-|IoT Enterprise | Yes|
-|IoT Enterprise LTSC|Yes|
-|Pro Education|No|
-|Pro|No|
+|Education|✅|
+|Enterprise |✅|
+|Enterprise LTSC|✅|
+|IoT Enterprise | ✅|
+|IoT Enterprise LTSC|✅|
+|Pro Education|❌|
+|Pro|❌|
 
 <!--
 Shell Launcher license entitlements are granted by the following licenses:
