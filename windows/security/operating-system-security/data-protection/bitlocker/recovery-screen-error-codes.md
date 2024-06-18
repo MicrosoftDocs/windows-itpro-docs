@@ -9,7 +9,24 @@ ms.date: 06/18/2024
 
 Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen improves the information about the recovery error. Instead of displaying specialized messages, the recovery error contains an *error category* and *code*. The error category and code map to a webpage with detailed scenario-specific content.
 
+:::row:::
+  :::column span="2":::
+    For example, the recovery screen is showing the error cause, an error code and the option to review additional information
+  :::column-end:::
+  :::column span="2":::
+  :::image type="content" source="images/bitlocker-recovery-screen-24h2.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-screen-24h2.png" border="false":::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="2":::
+    If you press <Kbd>Alt</kbd>, the **additional recovery information** screen is displayed. This screen contains the **error category and code** that you can use to retrieve more details by visiting https://aka.ms/unlockissues, which maps to the next section of this document.
+  :::column-end:::
+  :::column span="2":::
+  :::image type="content" source="images/bitlocker-recovery-screen-24h2-additional-info.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-screen-24h2-additional-info.png" border="false":::
+  :::column-end:::
+:::row-end:::
 
+<!--
 ## Recovery error details and their causes 2
 
 [!INCLUDE [insider-note](../../../../../includes/insider/insider-note.md)]
@@ -20,22 +37,24 @@ Prompting for the recovery password or other recovery method defends against sus
 
 For more information about BitLocker recovery, see [BitLocker recovery overview](recovery-overview.md).
 
-This article is divided in different sections, each section represents a BitLocker error category. Within each section there's a table with the error message displayed on the recovery screen and the cause of the error.
+This article is divided in different sections, each section represents a BitLocker error category. Within each section there's a table with the error message displayed on the recovery screen and the cause of the error. -->
+
+The next sections describe each BitLocker error category. Within each section there's a table with the error message displayed on the recovery screen, and the cause of the error. Some tables include possible resolution.
 
 ### Originated by user
 
-| Error code | Error cause | Resolution|
-|-|-|-|
-|`E_FVE_USER_REQUESTED_RECOVERY`|The user explicitly entered recovery mode from a screen with the option to `ESC` to recovery mode.||
+| Error code | Error cause |
+|-|-|
+|`E_FVE_USER_REQUESTED_RECOVERY`|The user explicitly entered recovery mode from a screen with the option to `ESC` to recovery mode.|
 |`E_FVE_BOOT_DEBUG_ENABLED`|Boot debugging mode is enabled. |Remove the boot debugging option from the boot configuration database.|
 
 ### Code integrity
 
 Driver signature enforcement is used to ensure code integrity of the operating system.
 
-| Error code | Error cause | Resolution|
-|-|-|-|
-|`E_FVE_CI_DISABLED`|Driver signature enforcement is disabled.||
+| Error code | Error cause |
+|-|-|
+|`E_FVE_CI_DISABLED`|Driver signature enforcement is disabled.|
 
 ### Device lockout threshold
 
