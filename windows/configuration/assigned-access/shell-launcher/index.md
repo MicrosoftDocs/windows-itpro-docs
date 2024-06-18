@@ -1,7 +1,7 @@
 ---
 title: What is Shell Launcher?
 description: Learn how to configure devices with Shell Launcher.
-ms.date: 02/29/2024
+ms.date: 06/18/2024
 ms.topic: overview
 ---
 
@@ -54,6 +54,9 @@ You can configure devices using a [custom policy][MEM-1] with the [AssignedAcces
 - **Value:** content of the XML configuration file
 
 Assign the policy to a group that contains as members the devices that you want to configure.
+
+> [!TIP]
+> Microsoft Intune offers device licenses, which are suitable for kiosk scenarios. To learn more, see [Device-only licenses][MEM-2].
 
 #### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -127,3 +130,5 @@ Depending on your configuration, you can have a user to automatically sign in to
 <!--links-->
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
+[MEM-2]: /mem/intune/fundamentals/licenses#device-only-licenses
+[WIN-3]: /windows/client-management/mdm/assignedaccess-csp
