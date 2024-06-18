@@ -9,11 +9,6 @@ ms.date: 06/18/2024
 
 Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen improves the information about the recovery error. Instead of displaying specialized messages, the recovery error contains an *error category* and *code*. The error category and code map to a webpage with detailed scenario-specific content.
 
-
-## Recovery error details and their causes 2
-
-[!INCLUDE [insider-note](../../../../../includes/insider/insider-note.md)]
-
 BitLocker recovery is the process by which access to a BitLocker-protected drive can be restored if the drive doesn't unlock using its default unlock mechanism.
 
 Prompting for the recovery password or other recovery method defends against suspected unauthorized access to user data by an attacker. Providing the recovery password allows BitLocker to confirm that the owner of the device is in possession of the device in recovery, and that the device and stored data should become accessible.
