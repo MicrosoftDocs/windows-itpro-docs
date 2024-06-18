@@ -1,55 +1,47 @@
 ---
-title: BitLocker recovery screen
+title: BitLocker recovery errors and their causes
 description:
 ms.topic: how-to
 ms.date: 06/18/2024
 ---
 
-# BitLocker recovery screen
+# BitLocker recovery errors and their causes
 
 [!INCLUDE [insider-note](../../../../../includes/insider/insider-note.md)]
 
-BitLocker recovery errors and their causes
-
 BitLocker recovery is the process by which access to a BitLocker-protected drive can be restored if the drive doesn't unlock using its default unlock mechanism.
 
-Prompting for the recovery password or other recovery method defends against suspected unauthorized access to user data by an attacker. Providing the recovery password allows BitLocker to confirm that the owner of the device is in posession of the device in recovery and that the device and stored data should become accessible.
+Prompting for the recovery password or other recovery method defends against suspected unauthorized access to user data by an attacker. Providing the recovery password allows BitLocker to confirm that the owner of the device is in possession of the device in recovery, and that the device and stored data should become accessible.
 
-For mroe information about BitLocker recovery, see this page.
+For more information about BitLocker recovery, see [BitLocker recovery overview](recovery-overview.md).
 
-## Initiated by user
+This article is divided in different sections, each section represents a BitLocker error category. Within each section there's a table with the error message displayed on the recovery screen and the cause of the error.
 
-E_FVE_USER_REQUESTED_RECOVERY
+## Originated by user
 
-BitLocker entered recovery mode because of a transition from a screen with the option to ESC to recovery mode.
-
-E_FVE_BOOT_DEBUG_ENABLED
-
-BitLocker entered recovery mode because boot debugging mode has been enabled. To remediate this issue, remove the boot debugging option from the boot configuration database.
+| Error code | Error cause | Resolution|
+|-|-|-|
+|`E_FVE_USER_REQUESTED_RECOVERY`|The user explicitly entered recovery mode from a screen with the option to `ESC` to recovery mode.||
+|`E_FVE_BOOT_DEBUG_ENABLED`|Boot debugging mode is enabled. |Remove the boot debugging option from the boot configuration database.|
 
 ## Code integrity
 
 Driver signature enforcement is used to ensure code integrity of the operating system.
 
-E_FVE_CI_DISABLED
+| Error code | Error cause | Resolution|
+|-|-|-|
+|`E_FVE_CI_DISABLED`|Driver signature enforcement is disabled.||
 
-BitLocker entered recovery mode because driver signature enforcement has been disabled.
+## Device lockout threshold
 
-## Device lockout
+Device lockout threshold functionality allows an administrator to configure Windows logon with BitLocker protection. After the configured number of failed Windows logon attempts, the device reboots and can only be recovered by providing a BitLocker recovery method.
 
-Device lockout threshold functionality allows an administrator to configure Windows logon with BitLocker protection. After the configured number of failed Windows logon attempts, the device will be rebooted and can only be recovered by providing a BitLocker recovery method.
+To take advantage of this functionality, you must configure the policy setting **Interactive logon: Machine account lockout threshold** located in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options**. Alternatively, use the [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync) **MaxFailedPasswordAttempts** policy setting, or the [DeviceLock Configuration Service Provider (CSP)](/windows/client-management/mdm/policy-csp-devicelock#accountlockoutpolicy).
 
-This feature is configurable with the "Interactive logon: Machine account lockout threshold" policy.
-
-E_FVE_DEVICE_LOCKEDOUT
-
-BitLocker entered recovery mode because device lockout has been triggered due to too many incorrect sign in attempts. A BitLocker recovery method is required to return to the logon screen.
-
-E_FVE_DEVICE_LOCKOUT_MISMATCH
-
-BitLocker entered recovery mode because the device lockout counter is out of sync. A BitLocker recovery method is required to return to the logon screen.
-
-
+| Error code | Error cause | Resolution|
+|-|-|-|
+|`E_FVE_DEVICE_LOCKEDOUT`|Device lockout triggered due to too many incorrect sign in attempts.|A BitLocker recovery method is required to return to the logon screen.|
+|`E_FVE_DEVICE_LOCKOUT_MISMATCH`|The device lockout counter is out of sync. |A BitLocker recovery method is required to return to the logon screen.|
 
 ## Boot configuration
 
@@ -65,31 +57,22 @@ BitLocker tracks the data inside the BCD. BitLocker recovery can occur when this
 
 To remediate this issue, restore the BCD configuration. A BitLocker recovery method is required to unlock the device if the BCD configuration cannot be restored before booting.
 
-
-
 ## TPM
 
-The Trusted Platform Module (TPM) is cryptographic hardware or firmware used to secure a computer. More information about the TPM is available at Trusted Platform Module Technology Overview - Windows Security | Microsoft Learn.
+The Trusted Platform Module (TPM) is cryptographic hardware or firmware used to secure a device. More information about the TPM is available at Trusted Platform Module Technology Overview - Windows Security | Microsoft Learn.
 
 BitLocker creates a TPM protector to manage protection of the encryption keys used to encrypt your data. At boot, BitLocker attempts to communicate with the TPM to unlock the device and access your data. More information about how BitLocker uses the TPM is available at BitLocker overview - Windows Security | Microsoft Learn.
 
+BitLocker entered recovery mode because of a failure with the TPM.
 
-
-E_FVE_TPM_FAILURE, E_FVE_TPM_DISABLED, E_FVE_TPM_INVALIDATED, E_FVE_BAD_SRK, E_FVE_TPM_NOT_DETECTED, E_MATCHING_PCRS_TPM_FAILURE
-
-BitLocker entered recovery mode because of a failure with the Trusted Platform Module.
-
-E_FVE_TPM_FAILURE is a catch-all for other TPM errors not detailed below.
-
-E_FVE_TPM_DISABLED is displayed when the TPM is present but has been disabled for use before or during boot.
-
-E_FVE_TPM_INVALIDATED is displayed when a present TPM has been invalidated.
-
-E_FVE_BAD_SRK indicates that the TPM's internal Storage Root Key has been corrupted.
-
-E_FVE_TPM_NOT_DETECTED is displayed when the booting system does not have a TPM or does not recognize a TPM that may exist
-
-E_MATCHING_PCRS_TPM_FAILURE means that the TPM unexpectedly failed when unsealing the encryption key.
+| Error code | Error cause |
+|-|-|
+|`E_FVE_TPM_DISABLED` | A TPM is present but has been disabled for use before or during boot|
+|`E_FVE_TPM_INVALIDATED` | A TPM is present but invalidated|
+|`E_FVE_BAD_SRK` | The TPM's internal Storage Root Key is corrupted|
+|`E_FVE_TPM_NOT_DETECTED` | The booting system doesn't have or doesn't detect a TPM|
+|`E_MATCHING_PCRS_TPM_FAILURE`| The TPM unexpectedly failed when unsealing the encryption key|
+|`E_FVE_TPM_FAILURE` | Catch-all for other TPM errors.|
 
 ## Protector
 
@@ -136,6 +119,6 @@ A recovery method is required to unlock the device.
 
 ## Unknown
 
-### `E_FVE_RECOVERY_ERROR_UNKNOWN`
-
-BitLocker entered recovery mode because of an unknown error. A recovery method is required to unlock the device.
+| Error code | Error cause | Resolution|
+|-|-|-|
+|`E_FVE_RECOVERY_ERROR_UNKNOWN`| BitLocker entered recovery mode because of an unknown error. | A recovery method is required to unlock the device.|
