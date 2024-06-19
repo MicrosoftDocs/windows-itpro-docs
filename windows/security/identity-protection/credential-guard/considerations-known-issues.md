@@ -14,11 +14,11 @@ It's recommended that in addition to deploying Credential Guard, organizations m
 > [!IMPORTANT]
 > Windows Server 2025 is in preview. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-As the depth and breadth of protections provided by Credential Guard are increased, new releases of Windows with Credential Guard running may affect scenarios that were working in the past. For example, Credential Guard may block the use of a particular type of credential or a particular component to prevent malware from taking advantage of vulnerabilities.
+As Credential Guard evolves and enhances its security features, newer versions of Windows running Credential Guard may impact previously functional scenarios. For instance, Credential Guard could restrict the use of certain credentials or components to thwart malware exploiting vulnerabilities.
 
-We recommend testing scenarios required for operations in an organization before upgrading a device that uses Credential Guard.
+It’s advisable to thoroughly test operational scenarios within an organization before updating devices that utilize Credential Guard.
 
-Upgrades to Windows 11, 22H2 and Windows Server 2025 (preview) will have Credential Guard [enabled by default](index.md#default-enablement) if it has not been explicitly disabled.
+Upgrades to Windows 11, 22H2 and Windows Server 2025 (preview) will have Credential Guard [enabled by default](index.md#default-enablement) unless explicitly disabled.
 
 ## Wi-fi and VPN considerations
 
