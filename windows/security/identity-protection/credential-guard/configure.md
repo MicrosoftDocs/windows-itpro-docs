@@ -16,7 +16,7 @@ This article describes how to configure Credential Guard using Microsoft Intune,
 
 Starting in Windows 11, 22H2 and Windows Server 2025 (preview), Credential Guard is [enabled by default on devices which meet the requirements](index.md#default-enablement).
 
-System administrators can explicitly [enable](#enable-credential-guard) or [disable](#disable-credential-guard) Credential Guard using one of the methods described in this article. Explicitly configured values will overwrite default enablement state after reboot.
+System administrators can explicitly [enable](#enable-credential-guard) or [disable](#disable-credential-guard) Credential Guard using one of the methods described in this article. Explicitly configured values overwrite the default enablement state after a reboot.
 
 Devices that have had Credential Guard explicitly disabled *prior* to updating to a version of Windows that comes with default enablement will NOT have Credential Guard enabled upon update. In this case Credential Guard will continue to be disabled even after updating to a version of Windows that enables Credential Guard by default.
 
