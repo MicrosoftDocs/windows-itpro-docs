@@ -7,7 +7,7 @@ ms.topic: overview
 
 # Credential Guard overview
 
-Credential Guard, now [enabled by default on most Windows machines](#default-enablement), prevents credential theft attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets (TGTs), and credentials stored by applications as domain credentials.
+Credential Guard prevents credential theft attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets (TGTs), and credentials stored by applications as domain credentials.
 
 Credential Guard uses [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs) to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks like *pass the hash* and *pass the ticket*.
 
