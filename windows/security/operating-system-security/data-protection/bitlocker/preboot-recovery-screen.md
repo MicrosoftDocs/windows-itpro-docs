@@ -291,14 +291,12 @@ For more examples, see [BitLocker recovery scenarios](recovery-overview.md#bitlo
 
 #### Special cases for PCR 7
 
-If the TPM protector uses PCR 7 in the validation profile, BitLocker expects PCR 7 to measure a specific set of events for Secure Boot. These measurements are defined in the UEFI spec. More information is also available at Trusted Execution Environment EFI Protocol - Windows 8.1 HCK | Microsoft Learn.
+If the TPM protector uses PCR 7 in the validation profile, BitLocker expects PCR 7 to measure a specific set of events for Secure Boot. These measurements are defined in the UEFI spec. For more information, see [Static Root of Trust Measurements](/previous-versions/windows/hardware/hck/jj923068(v=vs.85)#appendix-a-static-root-of-trust-measurements)
 
 | Error code | Error cause |Resolution|
 |-|-|-|
 |`E_FVE_SECUREBOOT_DISABLED`|Secure Boot has been disabled. To access the encryption key and unlock your device, BitLocker expects Secure Boot to be on. | Re-enabling Secure Boot and rebooting the system might fix the recovery issue. Otherwise, a recovery method is required to access the device.|
 |`E_FVE_SECUREBOOT_CHANGED`|The Secure Boot configuration unexpectedly changed. The boot configuration measured in PCR 7 changed. <br>This may be either because of:<br>- An additional measurement currently present that wasn't present when BitLocker updated the TPM protector<br>- A missing measurement that was present when BitLocker last updated the TPM protector but now isn't present<br>- An expected event has a different measurement | A recovery method is required to unlock the device.|
-
-For more information, see [Static Root of Trust Measurements](/previous-versions/windows/hardware/hck/jj923068(v=vs.85)#appendix-a-static-root-of-trust-measurements)
 
 ### Unknown
 
