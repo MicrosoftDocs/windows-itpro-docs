@@ -124,7 +124,7 @@ This article describes known issues when Credential Guard is enabled.
 ### Live migration with Hyper-V breaks when upgrading to Windows Server 2025 (preview)
 
 > [!IMPORTANT]
-> Windows Server 2025 is in PREVIEW. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Windows Server 2025 is in previeww. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 Devices which use CredSSP-based Delegation may no longer be able to use [Live Migration with Hyper-V](/windows-server/virtualization/hyper-v/manage/live-migration-overview) after upgrading to Windows Server 2025 (preview). Applications and services which rely on live migration (such as [SCVMM](/system-center/vmm/overview)) may also be affected. CredSSP-based delegation is the default for Windows Server 2022 and earlier for live migration.
 
