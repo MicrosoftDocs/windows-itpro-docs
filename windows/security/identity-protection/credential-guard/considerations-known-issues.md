@@ -12,7 +12,7 @@ It's recommended that in addition to deploying Credential Guard, organizations m
 ## Upgrade considerations
 
 > [!IMPORTANT]
-> Windows Server 2025 is in PREVIEW. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+> Windows Server 2025 is in preview. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 As the depth and breadth of protections provided by Credential Guard are increased, new releases of Windows with Credential Guard running may affect scenarios that were working in the past. For example, Credential Guard may block the use of a particular type of credential or a particular component to prevent malware from taking advantage of vulnerabilities.
 
