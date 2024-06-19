@@ -29,7 +29,7 @@ Starting in **Windows 11, 22H2** and **Windows Server 2025 (preview)**, VBS and 
 
 The default enablement is **without UEFI Lock**, thus allowing administrators to disable Credential Guard remotely if needed.
 
-If the preconditions for default enablement of Credential Guard listed below are met, and Credential Guard has not been [explicitly disabled](configure.md#disable-credential-guard) beforehand, the default enablement of Credential Guard will also automatically enable [VBS](#system-requirements).
+When Credential Guard is enabled, [VBS](#system-requirements) is automatically enabled too.
 
 > [!NOTE]
 > If Credential Guard is explicitly [disabled](configure.md#disable-credential-guard) *before* a device is updated to Windows 11, version 22H2 / Windows Server 2025 (preview) or later, default enablement does not overwrite the existing settings. That device will continue to have Credential Guard disabled even after updating to a version of Windows that enables Credential Guard by default.
