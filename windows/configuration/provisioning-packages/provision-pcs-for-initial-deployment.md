@@ -1,7 +1,7 @@
 ---
 title: Provision PCs with common settings
 description: Create a provisioning package to apply common settings to a PC running Windows 10.
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/31/2017
 ---
 

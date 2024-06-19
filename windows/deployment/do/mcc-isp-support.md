@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
-ms.date: 02/07/2024
+ms.date: 05/23/2024
 ---
 
 # Support and troubleshooting
@@ -38,51 +38,49 @@ During sign-up, a verification code is sent to your NOC email address present in
 
 Delete any MCC resource that you're using before you resign up for the service. Deleting any existing MCC resource unlocks your ASN, which allows you to successfully sign up.
 
-
 ### Cache Node Errors  
 
 #### Network connectivity issues
 
  Updating Docker's DNS can help resolve some connectivity issues.
- Try the following Docker DNS updates until one solves your connectivity problem. 
+ Try the following Docker DNS updates until one solves your connectivity problem.
  Once connectivity is established, there's no need to continue updating Docker's DNS.
 
 ##### Update Docker's DNS to use the Google DNS resolver
 
-```
+```bash
 nano /etc/docker/daemon.json
 ```
 
 Update the contents of this file to match the following example, which includes the public Google DNS resolver:
 
-```
+```bash
 "log-driver": "json-file", "log-opts": {"max-size": "10m","max-file": "3"},"dns":["8.8.8.8", "8.8.4.4"]
-``` 
+```
 
 Save and close using the command CTRL-X and then Y(es) to save
-		 
+
 Restart Docker for this change to take effect:
 
-```
+```bash
 systemctl restart docker
 ```
 
 Rerun the IoT Edge Check command to validate proper connectivity:
 
-```
+```bash
 iotedge check -verbose
 ```
 
-
 ##### Update Docker's DNS to use your company's DNS resolver
 
-```
+```bash
 nano /etc/docker/daemon.json
 ```
 
-Update the contents of this file to match the following example, which includes the public Google DNS resolver: 
+Update the contents of this file to match the following example, which includes the public Google DNS resolver:
 
-```
+```bash
 "log-driver": "json-file", "log-opts": {"max-size": "10m","max-file": "3"},"dns":["<Your companies DNS Resolver IP Address>"]
 ```
 
@@ -90,13 +88,13 @@ Save and close using the command CTRL-X and then Y(es) to save.
 
 Restart Docker for this change to take effect:
 
-```
+```bash
 systemctl restart docker
 ```
 
 Rerun the IoT Edge Check command to validate proper connectivity:
 
-```
+```bash
 iotedge check -verbose
 ```
 
@@ -122,4 +120,3 @@ To onboard onto Microsoft Connected Cache, you'll need an Azure subscription ID.
 
 - [Pay-as-you-go-subscription](https://azure.microsoft.com/offers/ms-azr-0003p/)
 - [Azure free account FAQs](https://azure.microsoft.com/free/free-account-faq/)
-

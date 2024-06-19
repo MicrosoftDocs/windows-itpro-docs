@@ -1,7 +1,7 @@
 ---
 title: Defender CSP
 description: Learn more about the Defender CSP.
-ms.date: 01/31/2024
+ms.date: 05/20/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -53,6 +53,8 @@ The following list shows the Defender configuration service provider nodes:
           - [RuleData](#configurationdevicecontrolpolicyrulesruleidruledata)
     - [DeviceControlEnabled](#configurationdevicecontrolenabled)
     - [DisableCacheMaintenance](#configurationdisablecachemaintenance)
+    - [DisableCoreServiceECSIntegration](#configurationdisablecoreserviceecsintegration)
+    - [DisableCoreServiceTelemetry](#configurationdisablecoreservicetelemetry)
     - [DisableCpuThrottleOnIdleScans](#configurationdisablecputhrottleonidlescans)
     - [DisableDatagramProcessing](#configurationdisabledatagramprocessing)
     - [DisableDnsOverTcpParsing](#configurationdisablednsovertcpparsing)
@@ -71,6 +73,8 @@ The following list shows the Defender configuration service provider nodes:
     - [EnableConvertWarnToBlock](#configurationenableconvertwarntoblock)
     - [EnableDnsSinkhole](#configurationenablednssinkhole)
     - [EnableFileHashComputation](#configurationenablefilehashcomputation)
+    - [EnableUdpReceiveOffload](#configurationenableudpreceiveoffload)
+    - [EnableUdpSegmentationOffload](#configurationenableudpsegmentationoffload)
     - [EngineUpdatesChannel](#configurationengineupdateschannel)
     - [ExcludedIpAddresses](#configurationexcludedipaddresses)
     - [HideExclusionsFromLocalAdmins](#configurationhideexclusionsfromlocaladmins)
@@ -1585,6 +1589,104 @@ Defines whether the cache maintenance idle task will perform the cache maintenan
 
 <!-- Device-Configuration-DisableCacheMaintenance-End -->
 
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-Begin -->
+### Configuration/DisableCoreServiceECSIntegration
+
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-Applicability-End -->
+
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DisableCoreServiceECSIntegration
+```
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-OmaUri-End -->
+
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-Description-Begin -->
+<!-- Description-Source-DDF -->
+Turn off ECS integration for Defender core service.
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-Description-End -->
+
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-Editable-End -->
+
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0x0 |
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-DFProperties-End -->
+
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-AllowedValues-Begin -->
+**Allowed values**:
+
+| Flag | Description |
+|:--|:--|
+| 0x0 (Default) | The Defender core service will use the Experimentation and Configuration Service (ECS) to rapidly deliver critical, org-specific fixes. |
+| 0x1 | The Defender core service stops using the Experimentation and Configuration Service (ECS). Fixes will continue to be delivered through security intelligence updates. |
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-AllowedValues-End -->
+
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-Examples-End -->
+
+<!-- Device-Configuration-DisableCoreServiceECSIntegration-End -->
+
+<!-- Device-Configuration-DisableCoreServiceTelemetry-Begin -->
+### Configuration/DisableCoreServiceTelemetry
+
+<!-- Device-Configuration-DisableCoreServiceTelemetry-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-DisableCoreServiceTelemetry-Applicability-End -->
+
+<!-- Device-Configuration-DisableCoreServiceTelemetry-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DisableCoreServiceTelemetry
+```
+<!-- Device-Configuration-DisableCoreServiceTelemetry-OmaUri-End -->
+
+<!-- Device-Configuration-DisableCoreServiceTelemetry-Description-Begin -->
+<!-- Description-Source-DDF -->
+Turn off OneDsCollector telemetry for Defender core service.
+<!-- Device-Configuration-DisableCoreServiceTelemetry-Description-End -->
+
+<!-- Device-Configuration-DisableCoreServiceTelemetry-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableCoreServiceTelemetry-Editable-End -->
+
+<!-- Device-Configuration-DisableCoreServiceTelemetry-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0x0 |
+<!-- Device-Configuration-DisableCoreServiceTelemetry-DFProperties-End -->
+
+<!-- Device-Configuration-DisableCoreServiceTelemetry-AllowedValues-Begin -->
+**Allowed values**:
+
+| Flag | Description |
+|:--|:--|
+| 0x0 (Default) | The Defender core service will use the OneDsCollector framework to rapidly collect telemetry. |
+| 0x1 | The Defender core service stops using the OneDsCollector framework to rapidly collect telemetry, impacting Microsoft's ability to quickly recognize and address poor performance, false positives, and other problems. |
+<!-- Device-Configuration-DisableCoreServiceTelemetry-AllowedValues-End -->
+
+<!-- Device-Configuration-DisableCoreServiceTelemetry-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableCoreServiceTelemetry-Examples-End -->
+
+<!-- Device-Configuration-DisableCoreServiceTelemetry-End -->
+
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Begin -->
 ### Configuration/DisableCpuThrottleOnIdleScans
 
@@ -2372,6 +2474,9 @@ This setting controls whether network protection blocks network traffic instead 
 <!-- Device-Configuration-EnableDnsSinkhole-Begin -->
 ### Configuration/EnableDnsSinkhole
 
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
+
 <!-- Device-Configuration-EnableDnsSinkhole-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
@@ -2466,6 +2571,104 @@ Enables or disables file hash computation feature. When this feature is enabled 
 <!-- Device-Configuration-EnableFileHashComputation-Examples-End -->
 
 <!-- Device-Configuration-EnableFileHashComputation-End -->
+
+<!-- Device-Configuration-EnableUdpReceiveOffload-Begin -->
+### Configuration/EnableUdpReceiveOffload
+
+<!-- Device-Configuration-EnableUdpReceiveOffload-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-EnableUdpReceiveOffload-Applicability-End -->
+
+<!-- Device-Configuration-EnableUdpReceiveOffload-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/EnableUdpReceiveOffload
+```
+<!-- Device-Configuration-EnableUdpReceiveOffload-OmaUri-End -->
+
+<!-- Device-Configuration-EnableUdpReceiveOffload-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting enables Udp Receive Offload Network Protection.
+<!-- Device-Configuration-EnableUdpReceiveOffload-Description-End -->
+
+<!-- Device-Configuration-EnableUdpReceiveOffload-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-EnableUdpReceiveOffload-Editable-End -->
+
+<!-- Device-Configuration-EnableUdpReceiveOffload-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-EnableUdpReceiveOffload-DFProperties-End -->
+
+<!-- Device-Configuration-EnableUdpReceiveOffload-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Udp Receive Offload is disabled. |
+| 1 | Udp Receive Offload is enabled. |
+<!-- Device-Configuration-EnableUdpReceiveOffload-AllowedValues-End -->
+
+<!-- Device-Configuration-EnableUdpReceiveOffload-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-EnableUdpReceiveOffload-Examples-End -->
+
+<!-- Device-Configuration-EnableUdpReceiveOffload-End -->
+
+<!-- Device-Configuration-EnableUdpSegmentationOffload-Begin -->
+### Configuration/EnableUdpSegmentationOffload
+
+<!-- Device-Configuration-EnableUdpSegmentationOffload-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-EnableUdpSegmentationOffload-Applicability-End -->
+
+<!-- Device-Configuration-EnableUdpSegmentationOffload-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/EnableUdpSegmentationOffload
+```
+<!-- Device-Configuration-EnableUdpSegmentationOffload-OmaUri-End -->
+
+<!-- Device-Configuration-EnableUdpSegmentationOffload-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting enables Udp Segmentation Offload Network Protection.
+<!-- Device-Configuration-EnableUdpSegmentationOffload-Description-End -->
+
+<!-- Device-Configuration-EnableUdpSegmentationOffload-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-EnableUdpSegmentationOffload-Editable-End -->
+
+<!-- Device-Configuration-EnableUdpSegmentationOffload-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-EnableUdpSegmentationOffload-DFProperties-End -->
+
+<!-- Device-Configuration-EnableUdpSegmentationOffload-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Udp Segmentation Offload is disabled. |
+| 1 | Udp Segmentation Offload is enabled. |
+<!-- Device-Configuration-EnableUdpSegmentationOffload-AllowedValues-End -->
+
+<!-- Device-Configuration-EnableUdpSegmentationOffload-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-EnableUdpSegmentationOffload-Examples-End -->
+
+<!-- Device-Configuration-EnableUdpSegmentationOffload-End -->
 
 <!-- Device-Configuration-EngineUpdatesChannel-Begin -->
 ### Configuration/EngineUpdatesChannel

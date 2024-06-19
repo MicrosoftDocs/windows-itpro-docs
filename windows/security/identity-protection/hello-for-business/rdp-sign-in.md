@@ -1,7 +1,7 @@
 ---
 title: Remote Desktop sign-in with Windows Hello for Business
 description: Learn how to configure Remote Desktop (RDP) sign-in with Windows Hello for Business.
-ms.date: 04/23/2024
+ms.date: 06/11/2024
 ms.topic: how-to
 ---
 
@@ -272,6 +272,10 @@ Here's a brief video showing the user experience from a Microsoft Entra joined d
 While users appreciate the convenience of biometrics, and administrators value the security, you might experience compatibility issues with applications and Windows Hello for Business certificates. In such scenarios, you can deploy a policy setting to revert to the previous behavior for the users needing it.
 
 For more information, see [Use Windows Hello for Business certificates as smart card certificate](policy-settings.md#use-windows-hello-for-business-certificates-as-smart-card-certificates)
+
+## Known issues
+
+There's a known issue when attempting to perform TLS 1.3 client authentication with a Hello certificate via RDP. The authentication fails with the error: `ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED`. Microsoft is investigating possible solutions.
 
 <!-- links -->
 

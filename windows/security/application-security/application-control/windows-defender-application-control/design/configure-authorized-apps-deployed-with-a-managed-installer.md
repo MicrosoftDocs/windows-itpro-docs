@@ -3,7 +3,7 @@ title: Allow apps deployed with a WDAC managed installer
 description: Explains how to configure a custom Managed Installer.
 ms.localizationpriority: medium
 ms.date: 02/02/2023
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Automatically allow apps deployed by a managed installer with Windows Defender Application Control
@@ -78,7 +78,7 @@ The AppLocker policy creation UI in GPO Editor and the AppLocker PowerShell cmdl
     ```
 
 3. Manually edit your AppLocker policy and add the EXE and DLL rule collections with at least one rule for each. To ensure your policy can be safely applied on systems that may already have an active AppLocker policy, we recommend using a benign DENY rule to block a fake binary and set the rule collection's EnforcementMode to AuditOnly. Additionally, since many installation processes rely on services, you need to enable services tracking for each of those rule collections. The following example shows a partial AppLocker policy with the EXE and DLL rule collection configured as recommended.
-  
+
     ```xml
     <RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
       <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Benign DENY Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
@@ -147,7 +147,7 @@ The AppLocker policy creation UI in GPO Editor and the AppLocker PowerShell cmdl
         </RuleCollectionExtensions>
       </RuleCollection>
       <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
-        <FilePublisherRule Id="55932f09-04b8-44ec-8e2d-3fc736500c56" Name="MICROSOFT.MANAGEMENT.SERVICES.INTUNEWINDOWSAGENT.EXE version 1.39.200.2 or greater in MICROSOFT® INTUNE™ from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+        <FilePublisherRule Id="55932f09-04b8-44ec-8e2d-3fc736500c56" Name="MICROSOFT.MANAGEMENT.SERVICES.INTUNEWINDOWSAGENT.EXE version 1.39.200.2 or greater in MICROSOFT&reg; INTUNE&trade; from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
           <Conditions>
               <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="MICROSOFT.MANAGEMENT.SERVICES.INTUNEWINDOWSAGENT.EXE">
                 <BinaryVersionRange LowSection="1.39.200.2" HighSection="*" />
@@ -183,7 +183,7 @@ The AppLocker policy creation UI in GPO Editor and the AppLocker PowerShell cmdl
     ```console
     appidtel.exe start [-mionly]
     ```
-  
+
     Specify "-mionly" if you don't plan to use the Intelligent Security Graph (ISG).
 
 > [!NOTE]

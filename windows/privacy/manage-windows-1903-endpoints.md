@@ -147,7 +147,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTPS|wdcp.microsoft.com|
 |||HTTPS|definitionupdates.microsoft.com|
 |||HTTPS|go.microsoft.com|
-||The following endpoints are used for Windows Defender Smartscreen reporting and notifications. If you turn off traffic for these endpoints, Smartscreen notifications won't appear.|HTTPS|*smartscreen.microsoft.com|
+||The following endpoints are used for Windows Defender Smartscreen reporting and notifications. If you turn off traffic for these endpoints, Smartscreen notifications won't appear.|HTTPS|*.smartscreen.microsoft.com|
 |||HTTPS|smartscreen-sn3p.smartscreen.microsoft.com|
 |||HTTPS|unitedstates.smartscreen-prod.microsoft.com|
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips. If you turn off traffic for these endpoints, Windows Spotlight will still try to deliver new lock screen images and updated content but it will fail; suggested apps, Microsoft account notifications, and Windows tips won't be downloaded. For more information, see Windows Spotlight.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-spotlight)|
@@ -158,7 +158,6 @@ The following methodology was used to derive these network endpoints:
 |||HTTPS|ris.api.iris.microsoft.com|
 |Windows Update|The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers. If you turn off traffic for this endpoint, Windows Update downloads won't be managed, as critical metadata that is used to make downloads more resilient is blocked. Downloads may be impacted by corruption (resulting in re-downloads of full files). Additionally, downloads of the same update by multiple devices on the same local network won't use peer devices for bandwidth reduction.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-updates)|
 |||HTTPS|*.prod.do.dsp.mp.microsoft.com|
-|||HTTP|emdl.ws.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store. If you turn off traffic for these endpoints, the device won't be able to download updates for the operating system.|HTTP|*.dl.delivery.mp.microsoft.com|
 |||HTTP|*.windowsupdate.com|
 ||The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store. If you turn off traffic for these endpoints, the device won't be able to connect to Windows Update and Microsoft Update to help keep the device secure. Also, the device won't be able to acquire and update apps from the Store. These are dependent on also enabling "Device authentication" and "Microsoft Account" endpoints.|HTTPS|*.delivery.mp.microsoft.com|

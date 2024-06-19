@@ -791,8 +791,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-overview.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-feature-update-overview",
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-feature-update-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-overview",
       "redirect_document_id": true
     },
     {
@@ -806,8 +806,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-communications.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-communications",
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-communications.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-communications",
       "redirect_document_id": true
     },
     {
@@ -816,8 +816,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-end-user-exp.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-end-user-exp",
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-end-user-exp",
       "redirect_document_id": true
     },
     {
@@ -826,8 +826,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-overview",
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview",
       "redirect_document_id": true
     },
     {
@@ -836,13 +836,13 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-signals.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-signals",
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-signals.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-signals",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-summary-dashboard.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-summary-dashboard",
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-summary-dashboard.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-summary-dashboard",
       "redirect_document_id": true
     },
     {
@@ -1139,6 +1139,46 @@
       "source_path": "windows/deployment/volume-activation/activate-windows-10-clients-vamt.md",
       "redirect_url": "/windows/deployment/volume-activation/activate-windows-clients-vamt",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-manage-windows-feature-update-release.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-manage-windows-feature-update-releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-trending-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-trending-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-status-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-status-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-update.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-customize-windows-update-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-feature-update-status-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-status-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-feature-update-summary-dashboard.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-summary-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-feature-update-trending-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-trending-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": true
     }
   ]
 }

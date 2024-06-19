@@ -11,5 +11,5 @@ This policy setting allows you to hide the TaskView button. If you enable this p
 
 |  | Path |
 |--|--|
-| **CSP** |- `./Device/Vendor/MSFT/Policy/Config/Start/`[HideTaskViewButton](/windows/client-management/mdm/policy-csp-start#hidetaskviewbutton) <br><br>- `./User/Vendor/MSFT/Policy/Config/Start/`[HideTaskViewButton](/windows/client-management/mdm/policy-csp-start#hidetaskviewbutton) |
-| **GPO** |- **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br><br>- **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
+| **CSP** |- `./Device/Vendor/MSFT/Policy/Config/Start/`[HideTaskViewButton](/windows/client-management/mdm/policy-csp-start#hidetaskviewbutton) <br>- `./User/Vendor/MSFT/Policy/Config/Start/`[HideTaskViewButton](/windows/client-management/mdm/policy-csp-start#hidetaskviewbutton) |
+| **GPO** |- **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br>- **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
