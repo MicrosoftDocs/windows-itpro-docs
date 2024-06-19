@@ -213,26 +213,22 @@ The next sections describe the codes for each BitLocker error category. Within e
 
 The error categories are:
 
-:::no-loc
+- [`Initiated by user`](#initiated-by-user)
+- [`Code integrity`](#code-integrity)
+- [`Device lockout`](#device-lockout)
+- [`Boot configuration`](#boot-configuration)
+- [`TPM`](#tpm)
+- [`Protector`](#protector)
+- [`Unknown`](#unknown)
 
-- [Initiated by user](#initiated-by-user)
-- [Code integrity](#code-integrity)
-- [Device lockout](#device-lockout)
-- [Boot configuration](#boot-configuration)
-- [TPM](#tpm)
-- [Protector](#protector)
-- [Unknown](#unknown)
-
-:::
-
-### :::no-loc Initiated by user:::
+### `Initiated by user`
 
 | Error code | Error cause | Resolution|
 |-|-|-|
 |`E_FVE_USER_REQUESTED_RECOVERY`|The user explicitly entered recovery mode from a screen with the option to `ESC` to recovery mode.||
 |`E_FVE_BOOT_DEBUG_ENABLED`|Boot debugging mode is enabled. |Remove the boot debugging option from the boot configuration database.|
 
-### Code integrity
+### `Code integrity`
 
 Driver signature enforcement is used to ensure code integrity of the operating system.
 
@@ -240,7 +236,7 @@ Driver signature enforcement is used to ensure code integrity of the operating s
 |-|-|
 |`E_FVE_CI_DISABLED`|Driver signature enforcement is disabled.|
 
-### Device lockout
+### `Device lockout`
 
 Device lockout threshold functionality allows an administrator to configure Windows sign in with BitLocker protection. After the configured number of failed Windows sign in attempts, the device reboots and can only be recovered by providing a BitLocker recovery method.
 
@@ -251,7 +247,7 @@ To take advantage of this functionality, you must configure the policy setting *
 |`E_FVE_DEVICE_LOCKEDOUT`|Device lockout triggered due to too many incorrect sign in attempts.|A BitLocker recovery method is required to return to the sign in screen.|
 |`E_FVE_DEVICE_LOCKOUT_MISMATCH`|The device lockout counter is out of sync. |A BitLocker recovery method is required to return to the sign in screen.|
 
-### Boot configuration
+### `Boot configuration`
 
 The *Boot Configuration Database (BCD)* contains critical information for the Windows boot environment.
 
@@ -261,7 +257,7 @@ The *Boot Configuration Database (BCD)* contains critical information for the Wi
 
 For more information, see [Boot Configuration Data settings and BitLocker](bcd-settings-and-bitlocker.md).
 
-### TPM
+### `TPM`
 
 The Trusted Platform Module (TPM) is cryptographic hardware or firmware used to secure a device. BitLocker creates a *TPM protector* to manage protection of the encryption keys used to encrypt your data.
 
@@ -278,7 +274,7 @@ At boot, BitLocker attempts to communicate with the TPM to unlock the device and
 
 For more information, see [Trusted Platform Module Technology Overview](../../../hardware-security/tpm/trusted-platform-module-overview.md) and [BitLocker and TPM](index.md#bitlocker-and-tpm).
 
-### Protector
+### `Protector`
 
 #### TPM protectors
 
@@ -301,7 +297,7 @@ If the TPM protector uses PCR 7 in the validation profile, BitLocker expects PCR
 |`E_FVE_SECUREBOOT_DISABLED`|Secure Boot has been disabled. To access the encryption key and unlock your device, BitLocker expects Secure Boot to be on. | Re-enabling Secure Boot and rebooting the system might fix the recovery issue. Otherwise, a recovery method is required to access the device.|
 |`E_FVE_SECUREBOOT_CHANGED`|The Secure Boot configuration unexpectedly changed. The boot configuration measured in PCR 7 changed. <br>This may be either because of:<br>- An additional measurement currently present that wasn't present when BitLocker updated the TPM protector<br>- A missing measurement that was present when BitLocker last updated the TPM protector but now isn't present<br>- An expected event has a different measurement | A recovery method is required to unlock the device.|
 
-### Unknown
+### `Unknown`
 
 | Error code | Error cause | Resolution|
 |-|-|-|
