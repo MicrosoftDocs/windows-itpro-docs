@@ -55,9 +55,6 @@ You can configure devices using a [custom policy][MEM-1] with the [AssignedAcces
 
 Assign the policy to a group that contains as members the devices that you want to configure.
 
-> [!TIP]
-> Microsoft Intune offers device licenses, which are suitable for kiosk scenarios. To learn more, see [Device-only licenses][MEM-2].
-
 #### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 [!INCLUDE [provisioning-package-1](../../../../includes/configure/provisioning-package-1.md)]
