@@ -61,7 +61,7 @@ Devices running Windows Server 2025 (preview) or later will have Credential Guar
 
 For Credential Guard to provide protection, the device must meet certain hardware, firmware, and software requirements.
 
-Devices that meet more hardware and firmware qualifications than the minimum requirements receive additional protections and are more hardened against certain threats.
+Devices that exceed the minimum hardware and firmware qualifications receive additional protections and are more hardened against certain threats.
 
 ### Hardware and software requirements
 
