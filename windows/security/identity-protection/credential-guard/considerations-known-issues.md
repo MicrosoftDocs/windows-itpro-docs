@@ -22,7 +22,7 @@ Upgrades to Windows 11, 22H2 and Windows Server 2025 (preview) will have Credent
 
 ## Wi-fi and VPN considerations
 
-When Credential Guard is enabled, you can no longer use NTLM classic authentication for single sign-on. You'll be forced to enter your credentials to use these protocols and can't save the credentials for future use.
+When Credential Guard is enabled, you can no longer use NTLM classic authentication (NTLMv1) for single sign-on. You'll be forced to enter your credentials to use these protocols and can't save the credentials for future use.
 
 If you're using WiFi and VPN endpoints that are based on MS-CHAPv2, they're subject to similar attacks as for NTLMv1.
 
