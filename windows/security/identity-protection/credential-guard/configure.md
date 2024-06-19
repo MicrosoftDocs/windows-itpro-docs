@@ -18,7 +18,7 @@ Starting in Windows 11, 22H2 and Windows Server 2025 (preview), Credential Guard
 
 System administrators can explicitly [enable](#enable-credential-guard) or [disable](#disable-credential-guard) Credential Guard using one of the methods described in this article. Explicitly configured values overwrite the default enablement state after a reboot.
 
-Devices that have had Credential Guard explicitly disabled *prior* to updating to a version of Windows that comes with default enablement will NOT have Credential Guard enabled upon update. In this case Credential Guard will continue to be disabled even after updating to a version of Windows that enables Credential Guard by default.
+If a device has Credential Guard explicitly turned off before updating to a newer version of Windows where Credential Guard is enabled by default, it will remain disabled even after the update.
 
 > [!IMPORTANT]
 > For information about known issues related to default enablement, see [Credential Guard: known issues](considerations-known-issues.md).
