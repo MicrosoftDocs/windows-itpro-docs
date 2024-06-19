@@ -3,7 +3,7 @@ title: Use audit events to create WDAC policy rules
 description: Audits allow admins to discover apps, binaries, and scripts that should be added to the WDAC policy.
 ms.localizationpriority: medium
 ms.date: 05/03/2018
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Use audit events to create WDAC policy rules

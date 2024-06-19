@@ -104,6 +104,10 @@ You can also disable the accessibility features and other options on the lock sc
 |--|--|--|--|
 | `HKLM\Software\Microsoft\Windows Embedded\EmbeddedLogon\BrandingNeutral` | `BrandingNeutral` | REG_DWORD | 8 |
 
+### Microsoft Edge shortcuts
+
+To disable certain [Microsoft Edge default shortcuts](/deployedge/edge-learnmore-configurable-edge-commands), you can use the [ConfigureKeyboardShortcuts](/deployedge/microsoft-edge-policies#configurekeyboardshortcuts) policy.
+
 ## Choose an app for a kiosk experience
 
 To create a kiosk experience with Assigned Access, you can choose UWP apps or Microsoft Edge. However, some applications might not provide a good user experience when used as a kiosk.

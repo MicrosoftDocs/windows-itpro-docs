@@ -3,7 +3,7 @@ title: Enforce Windows Defender Application Control (WDAC) policies
 description: Learn how to switch a WDAC policy from audit to enforced mode.
 ms.manager: jsuther
 ms.date: 04/22/2021
-ms.topic: article
+ms.topic: how-to
 ms.localizationpriority: medium
 ---
 

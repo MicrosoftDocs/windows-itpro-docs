@@ -3,7 +3,7 @@ title: WDAC Admin Tips & Known Issues
 description: WDAC Known Issues
 ms.manager: jsuther
 ms.date: 04/15/2024
-ms.topic: article
+ms.topic: troubleshooting
 ms.localizationpriority: medium
 ---
 
@@ -84,7 +84,7 @@ msiexec -i https://download.microsoft.com/download/2/E/3/2E3A1E42-8F50-4396-9E7E
 As a workaround, download the MSI file and run it locally:
 
 ```console
-msiexec -i c:\temp\Windows10_Version_1511_ADMX.msi  
+msiexec -i c:\temp\Windows10_Version_1511_ADMX.msi
 ```
 
 ### Slow boot and performance with custom policies
@@ -93,7 +93,7 @@ WDAC evaluates all processes that run, including inbox Windows processes. You ca
 
 #### AppId Tagging policy considerations
 
-AppId Tagging policies that aren't built upon the WDAC base templates or don't allow the Windows in-box signers might cause a significant increase in boot times (~2 minutes). 
+AppId Tagging policies that aren't built upon the WDAC base templates or don't allow the Windows in-box signers might cause a significant increase in boot times (~2 minutes).
 
 If you can't allowlist the Windows signers or build off the WDAC base templates, add the following rule to your policies to improve the performance:
 
