@@ -213,6 +213,8 @@ The next sections describe the codes for each BitLocker error category. Within e
 
 The error categories are:
 
+:::no-loc
+
 - [Initiated by user](#initiated-by-user)
 - [Code integrity](#code-integrity)
 - [Device lockout](#device-lockout)
@@ -221,8 +223,9 @@ The error categories are:
 - [Protector](#protector)
 - [Unknown](#unknown)
 
+:::
 
-### Initiated by user
+### :::no-loc Initiated by user:::
 
 | Error code | Error cause | Resolution|
 |-|-|-|
