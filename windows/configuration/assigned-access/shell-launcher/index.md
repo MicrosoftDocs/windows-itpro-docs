@@ -1,7 +1,7 @@
 ---
 title: What is Shell Launcher?
 description: Learn how to configure devices with Shell Launcher.
-ms.date: 02/29/2024
+ms.date: 06/18/2024
 ms.topic: overview
 ---
 
@@ -127,3 +127,5 @@ Depending on your configuration, you can have a user to automatically sign in to
 <!--links-->
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
+[MEM-2]: /mem/intune/fundamentals/licenses#device-only-licenses
+[WIN-3]: /windows/client-management/mdm/assignedaccess-csp
