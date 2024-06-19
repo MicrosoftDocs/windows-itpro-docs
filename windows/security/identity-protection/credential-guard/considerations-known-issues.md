@@ -224,7 +224,7 @@ For a more immediate, but less secure fix, [disable Credential Guard](configure.
 > [!TIP]
 > To prevent default enablement, configure your devices [to disable Credential Guard](configure.md#disable-credential-guard) before updating to a version which [received default enablement](index.md#default-enablement). If the setting is not configured (which is the default state) and if the device is eligible, the device automatically enable Credential Guard after the update.
 >
-> If Credential Guard is explicitly disabled, the device will not automatically enable Credential Guard after the update.
+> If Credential Guard is explicitly disabled, the device won't automatically enable Credential Guard after the update.
 
 ### Issues with non-Microsoft applications
 
