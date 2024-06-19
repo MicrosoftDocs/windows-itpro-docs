@@ -197,7 +197,7 @@ Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen impr
     A user has the option to review additional information about the recovery error by pressing the <Kbd>Alt</kbd> key.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-screen-24h2.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-screen-24h2.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-additional.png" alt-text="Screenshot of the BitLocker recovery screen highlighting the Alt keyboard button to access the recovery information screen." lightbox="imagespreboot-recovery-additional.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -205,7 +205,7 @@ Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen impr
     The **Additional recovery information** screen contains an *error category* and a *code*, which you can use to retrieve more details from the next section of this article.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/bitlocker-recovery-screen-24h2-additional-info.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-screen-24h2-additional-info.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-additional-recovery-information.png" alt-text="Screenshot of the BitLocker recovery information screen." lightbox="images/preboot-recovery-additional-recovery-information.png" border="false":::
   :::column-end:::
 :::row-end:::
 
