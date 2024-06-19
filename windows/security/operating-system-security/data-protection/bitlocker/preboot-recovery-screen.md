@@ -188,13 +188,13 @@ There are rules governing which hint is shown during the recovery (in the order 
   :::column-end:::
 :::row-end:::
 
-## Additional recovery information
+## Additional recovery information screen
 
 Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen improves the information about the recovery error.
 
 :::row:::
   :::column span="2":::
-    Instead of displaying specialized messages, a user has the option to review additional information by pressing the <Kbd>Alt</kbd> key.
+    A user has the option to review additional information about the recovery error by pressing the <Kbd>Alt</kbd> key.
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/bitlocker-recovery-screen-24h2.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-screen-24h2.png" border="false":::
@@ -202,7 +202,7 @@ Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen impr
 :::row-end:::
 :::row:::
   :::column span="2":::
-    The **Additional recovery information** page contains an *error category* and a *code*, which you can use to retrieve more details from the next section of this article.
+    The **Additional recovery information** screen contains an *error category* and a *code*, which you can use to retrieve more details from the next section of this article.
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/bitlocker-recovery-screen-24h2-additional-info.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom message." lightbox="images/bitlocker-recovery-screen-24h2-additional-info.png" border="false":::
@@ -270,17 +270,9 @@ The TPM contains multiple Platform Configuration Registers (PCRs) that can be us
 
 BitLocker recovery can be the result of unexpected changes in the PCRs used in the TPM protector validation profile. Changes to PCRs not used in the TPM protector profile do not influence BitLocker.
 
-| Error code | Error cause |
+| Error code | Error cause |Resolution|
 |-|-|
-|`E_FVE_PCR_MISMATCH`|BitLocker entered recovery mode because your device's configuration has changed.|
-
-This may have happened because:
-
-- A disc or USB device was inserted. Removing it and restarting your device may fix this problem
-- A firmware update was applied without updating the TPM protector
-- Any example at https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview#bitlocker-recovery-scenarios
-
-A recovery method is required to unlock the device.
+|`E_FVE_PCR_MISMATCH`|BitLocker entered recovery mode because your device's configuration has changed. <br><br>This may have happened because:<br>- A bootable disc or USB device is inserted. Removing it and restarting your device may fix this problem<br>- A firmware update was applied without updating the TPM protector<br><br>For more examples, see [BitLocker recovery scenarios](recovery-overview.md#bitlocker-recovery-scenarios)| recovery method is required to unlock the device.|
 
 #### Special cases for PCR 7
 
