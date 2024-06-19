@@ -30,7 +30,7 @@ For WiFi and VPN connections, it's recommended to move from MSCHAPv2-based conne
 
 ## Delegation considerations
 
-When Credential Guard is enabled, certain types of identity delegation will be unusable, as their underlying authentication schemes are incompatible with Credential Guard or require supplied credentials.
+When Credential Guard is enabled, certain types of identity delegation are unusable, as their underlying authentication schemes are incompatible with Credential Guard or require supplied credentials.
 
 When Credential Guard is enabled, [Credential Security Support Provider ("CredSSP")](/windows/win32/secauthn/credential-security-support-provider) is no longer able to use saved or sign-on (SSO) credentials, though cleartext credentials can still be supplied. CredSSP-based Delegation requires cleartext credentials to be supplied on the destination machine and will not work with SSO once Credential Guard is enabled and blocks cleartext credential disclosure. Usage of [CredSSP for delegation](/windows/win32/secauthn/credential-security-support-provider), and in general, is not recommended due to the risk of credential theft. 
 
