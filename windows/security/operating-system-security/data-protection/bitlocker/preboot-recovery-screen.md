@@ -2,7 +2,7 @@
 title: BitLocker preboot recovery screen
 description: Learn about the information displayed in the BitLocker preboot recovery screen, depending on configured policy settings and recovery keys status.
 ms.topic: concept-article
-ms.date: 06/18/2024
+ms.date: 06/19/2024
 ---
 
 # BitLocker preboot recovery screen
@@ -197,7 +197,7 @@ Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen enha
     Users have the option to review additional information about the recovery error by pressing the <Kbd>Alt</kbd> key.
   :::column-end:::
   :::column span="2":::
-  :::image type="content" source="images/preboot-recovery-additional.png" alt-text="Screenshot of the BitLocker recovery screen highlighting the Alt keyboard button to access the recovery information screen." lightbox="imagespreboot-recovery-additional.png" border="false":::
+  :::image type="content" source="images/preboot-recovery-additional.png" alt-text="Screenshot of the BitLocker recovery screen highlighting the Alt keyboard button to access the recovery information screen." lightbox="images/preboot-recovery-additional.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
