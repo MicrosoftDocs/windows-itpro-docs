@@ -190,11 +190,11 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 ## Additional recovery information screen
 
-Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen improves the information about the recovery error.
+Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen enhances the recovery error information. The recovery screen provides more detailed information about the nature of the recovery error, empowering users to better understand and address the issue.
 
 :::row:::
   :::column span="2":::
-    A user has the option to review additional information about the recovery error by pressing the <Kbd>Alt</kbd> key.
+    Users have the option to review additional information about the recovery error by pressing the <Kbd>Alt</kbd> key.
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/preboot-recovery-additional.png" alt-text="Screenshot of the BitLocker recovery screen highlighting the Alt keyboard button to access the recovery information screen." lightbox="imagespreboot-recovery-additional.png" border="false":::
@@ -209,16 +209,27 @@ Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen impr
   :::column-end:::
 :::row-end:::
 
-The next sections describe each BitLocker error category. Within each section there's a table with the error message displayed on the recovery screen, and the cause of the error. Some tables include possible resolution.
+The next sections describe the codes for each BitLocker error category. Within each section there's a table with the error message displayed on the recovery screen, and the cause of the error. Some tables include possible resolution.
 
-### Error category: Originated by user
+The error categories are:
 
-| Error code | Error cause |
-|-|-|
-|`E_FVE_USER_REQUESTED_RECOVERY`|The user explicitly entered recovery mode from a screen with the option to `ESC` to recovery mode.|
+- [Initiated by user](#initiated-by-user)
+- [Code integrity](#code-integrity)
+- [Device lockout](#device-lockout)
+- [Boot configuration](#boot-configuration)
+- [TPM](#tpm)
+- [Protector](#protector)
+- [Unknown](#unknown)
+
+
+### Initiated by user
+
+| Error code | Error cause | Resolution|
+|-|-|-|
+|`E_FVE_USER_REQUESTED_RECOVERY`|The user explicitly entered recovery mode from a screen with the option to `ESC` to recovery mode.||
 |`E_FVE_BOOT_DEBUG_ENABLED`|Boot debugging mode is enabled. |Remove the boot debugging option from the boot configuration database.|
 
-### Error category: Code integrity
+### Code integrity
 
 Driver signature enforcement is used to ensure code integrity of the operating system.
 
@@ -226,7 +237,7 @@ Driver signature enforcement is used to ensure code integrity of the operating s
 |-|-|
 |`E_FVE_CI_DISABLED`|Driver signature enforcement is disabled.|
 
-### Error category: Device lockout threshold
+### Device lockout
 
 Device lockout threshold functionality allows an administrator to configure Windows logon with BitLocker protection. After the configured number of failed Windows logon attempts, the device reboots and can only be recovered by providing a BitLocker recovery method.
 
@@ -237,42 +248,44 @@ To take advantage of this functionality, you must configure the policy setting *
 |`E_FVE_DEVICE_LOCKEDOUT`|Device lockout triggered due to too many incorrect sign in attempts.|A BitLocker recovery method is required to return to the logon screen.|
 |`E_FVE_DEVICE_LOCKOUT_MISMATCH`|The device lockout counter is out of sync. |A BitLocker recovery method is required to return to the logon screen.|
 
-### Error category: Boot configuration
+### Boot configuration
 
-The *Boot Configuration Database (BCD)* contains critical information for the Windows boot environment. More information about how BitLocker uses the BCD is available here.
+The *Boot Configuration Database (BCD)* contains critical information for the Windows boot environment.
 
 | Error code | Error cause | Resolution|
 |-|-|-|
-|`E_FVE_BAD_CODE_ID, E_FVE_BAD_CODE_OPTION`|BitLocker entered recovery mode because a boot application has changed.|BitLocker tracks the data inside the BCD. BitLocker recovery can occur when this data changes without warning. Refer to the recovery screen to find the boot application that changed.<br>To remediate this issue, restore the BCD configuration. A BitLocker recovery method is required to unlock the device if the BCD configuration cannot be restored before booting.|
+|`E_FVE_BAD_CODE_ID`<br><br>`E_FVE_BAD_CODE_OPTION`|BitLocker entered recovery mode because a boot application changed.<br>BitLocker tracks the data inside the BCD and BitLocker recovery can occur when this data changes without warning. <br><br>Refer to the recovery screen to find the boot application that changed.|To remediate this issue, restore the BCD configuration. A BitLocker recovery method is required to unlock the device if the BCD configuration cannot be restored before booting.|
 
-### Error category: TPM
+For more information, see [Boot Configuration Data settings and BitLocker](bcd-settings-and-bitlocker.md).
 
-The Trusted Platform Module (TPM) is cryptographic hardware or firmware used to secure a device. More information about the TPM is available at Trusted Platform Module Technology Overview - Windows Security | Microsoft Learn.
+### TPM
 
-BitLocker creates a TPM protector to manage protection of the encryption keys used to encrypt your data. At boot, BitLocker attempts to communicate with the TPM to unlock the device and access your data. More information about how BitLocker uses the TPM is available at BitLocker overview - Windows Security | Microsoft Learn.
+The Trusted Platform Module (TPM) is cryptographic hardware or firmware used to secure a device. BitLocker creates a *TPM protector* to manage protection of the encryption keys used to encrypt your data.
 
-BitLocker entered recovery mode because of a failure with the TPM.
+At boot, BitLocker attempts to communicate with the TPM to unlock the device and access your data.
 
 | Error code | Error cause |
 |-|-|
-|`E_FVE_TPM_DISABLED` | A TPM is present but has been disabled for use before or during boot|
-|`E_FVE_TPM_INVALIDATED` | A TPM is present but invalidated|
-|`E_FVE_BAD_SRK` | The TPM's internal Storage Root Key is corrupted|
-|`E_FVE_TPM_NOT_DETECTED` | The booting system doesn't have or doesn't detect a TPM|
-|`E_MATCHING_PCRS_TPM_FAILURE`| The TPM unexpectedly failed when unsealing the encryption key|
+|`E_FVE_TPM_DISABLED` | A TPM is present but has been disabled for use before or during boot.|
+|`E_FVE_TPM_INVALIDATED` | A TPM is present but invalidated.|
+|`E_FVE_BAD_SRK` | The TPM's internal Storage Root Key is corrupted.|
+|`E_FVE_TPM_NOT_DETECTED` | The booting system doesn't have or doesn't detect a TPM.|
+|`E_MATCHING_PCRS_TPM_FAILURE`| The TPM unexpectedly failed when unsealing the encryption key.|
 |`E_FVE_TPM_FAILURE` | Catch-all for other TPM errors.|
 
-### Error category: Protector
+For more information, see [Trusted Platform Module Technology Overview](../../../hardware-security/tpm/trusted-platform-module-overview.md) and [BitLocker and TPM](index.md#bitlocker-and-tpm).
+
+### Protector
 
 #### TPM protectors
 
 The TPM contains multiple Platform Configuration Registers (PCRs) that can be used in the validation profile of the BitLocker TPM protector. The PCRs are used to validate the integrity of the boot process, that is, that the boot configuration and boot flow hasn't been tampered with.
 
-BitLocker recovery can be the result of unexpected changes in the PCRs used in the TPM protector validation profile. Changes to PCRs not used in the TPM protector profile do not influence BitLocker.
+BitLocker recovery can be the result of unexpected changes in the PCRs used in the TPM protector validation profile. Changes to PCRs not used in the TPM protector profile don't influence BitLocker.
 
 | Error code | Error cause |Resolution|
 |-|-|
-|`E_FVE_PCR_MISMATCH`|BitLocker entered recovery mode because your device's configuration has changed. <br><br>This may have happened because:<br>- A bootable disc or USB device is inserted. Removing it and restarting your device may fix this problem<br>- A firmware update was applied without updating the TPM protector<br><br>For more examples, see [BitLocker recovery scenarios](recovery-overview.md#bitlocker-recovery-scenarios)| recovery method is required to unlock the device.|
+|`E_FVE_PCR_MISMATCH`|The device's configuration has changed. <br><br>This may have happened because:<br>- A bootable disc or USB device is inserted. Removing it and restarting your device might fix this problem<br>- A firmware update was applied without updating the TPM protector<br><br>For more examples, see [BitLocker recovery scenarios](recovery-overview.md#bitlocker-recovery-scenarios)| A recovery method is required to unlock the device.|
 
 #### Special cases for PCR 7
 
@@ -280,10 +293,12 @@ If the TPM protector uses PCR 7 in the validation profile, BitLocker expects PCR
 
 | Error code | Error cause |Resolution|
 |-|-|-|
-|`E_FVE_SECUREBOOT_DISABLED`|BitLocker entered recovery mode because Secure Boot has been disabled.|To access the encryption key and unlock your device, BitLocker expects Secure Boot to be on. Re-enabling Secure Boot and rebooting the system may fix the recovery issue. Otherwise, a recovery method is required to access the device.|
-|`E_FVE_SECUREBOOT_CHANGED`|BitLocker entered recovery mode because the Secure Boot configuration unexpectedly changed.|The boot configuration measured in PCR 7 changed. This may be either because of:<br>- An additional measurement currently present that was not present when BitLocker updated the TPM protector<br>- A missing measurement that was present when BitLocker last updated the TPM protector but now is not present<br>- An expected event has a different measurement - A recovery method is required to unlock the device.|
+|`E_FVE_SECUREBOOT_DISABLED`|Secure Boot has been disabled. To access the encryption key and unlock your device, BitLocker expects Secure Boot to be on. | Re-enabling Secure Boot and rebooting the system might fix the recovery issue. Otherwise, a recovery method is required to access the device.|
+|`E_FVE_SECUREBOOT_CHANGED`|The Secure Boot configuration unexpectedly changed. The boot configuration measured in PCR 7 changed. <br>This may be either because of:<br>- An additional measurement currently present that was not present when BitLocker updated the TPM protector<br>- A missing measurement that was present when BitLocker last updated the TPM protector but now is not present<br>- An expected event has a different measurement | A recovery method is required to unlock the device.|
 
-### Error category: Unknown
+For more information, see [Static Root of Trust Measurements](/previous-versions/windows/hardware/hck/jj923068(v=vs.85)#appendix-a-static-root-of-trust-measurements)
+
+### Unknown
 
 | Error code | Error cause | Resolution|
 |-|-|-|
