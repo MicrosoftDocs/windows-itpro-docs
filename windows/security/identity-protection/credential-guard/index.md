@@ -25,7 +25,7 @@ When enabled, Credential Guard provides the following benefits:
 > [!IMPORTANT]
 > Windows Server 2025 is in PREVIEW. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-Starting in **Windows 11, 22H2** and **Windows Server 2025 (preview)**, VBS and Credential Guard are enabled by default on devices that meet the requirements below. This means that going forward, domain credentials will automatically be protected by Credential Guard on most relevant Windows devices.
+Starting in **Windows 11, 22H2** and **Windows Server 2025 (preview)**, VBS and Credential Guard are enabled by default on devices that meet the requirements.
 
 The default enablement is **without UEFI Lock**, thus allowing administrators to disable Credential Guard remotely if needed.
 
