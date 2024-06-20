@@ -13,7 +13,7 @@ For security reasons, the isolated LSA process doesn't host any device drivers. 
 
 Here's a high-level overview on how the LSA is isolated by using Virtualization-based security:
 
-:::image type="content" source="images/credguard.png" alt-text="Diagram of the Credential Guard architecture.":::
+:::image type="content" source="images/credential-guard-architecture.png" alt-text="Diagram of the Credential Guard architecture.":::
 
 ## Credential Guard protection limits
 
