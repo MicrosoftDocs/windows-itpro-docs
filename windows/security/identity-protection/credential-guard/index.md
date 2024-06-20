@@ -55,7 +55,7 @@ Devices running Windows Server 2025 (preview) or later have Credential Guard ena
 - Meet the [hardware and software requirements](#system-requirements)
 - Aren't [explicitly configured to disable Credential Guard](configure.md#default-enablement)
 - Are joined to a domain
-- Aren't a Domain Controller
+- Aren't a domain controller
 
 > [!IMPORTANT]
 > For information about known issues related to default enablement, see [Credential Guard: known issues](considerations-known-issues.md#known-issues).
