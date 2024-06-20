@@ -27,8 +27,6 @@
       items:
         - name: Windows 10, version 1709 and later and Windows 11 optional diagnostic data
           href: windows-diagnostic-data.md
-    - name: Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy
-      href: enhanced-diagnostic-data-windows-analytics-events-and-fields.md
     - name: Manage Windows connected experiences
       items: 
         - name: Manage connections from Windows operating system components to Microsoft services
