@@ -1,39 +1,50 @@
 ---
-ms.date: 08/31/2023
+ms.date: 06/20/2024
 title: Considerations and known issues when using Credential Guard
-description: Considerations, recommendations and known issues when using Credential Guard.
+description: Considerations, recommendations, and known issues when using Credential Guard.
 ms.topic: troubleshooting
 ---
 
 # Considerations and known issues when using Credential Guard
 
-It's recommended that in addition to deploying Credential Guard, organizations move away from passwords to other authentication methods, such as Windows Hello for Business, FIDO 2 security keys or smart cards.
+Microsoft recommends that in addition to deploying Credential Guard, organizations move away from passwords to other authentication methods, such as Windows Hello for Business, FIDO 2 security keys, or smart cards.
+
+## Upgrade considerations
+
+> [!IMPORTANT]
+> Windows Server 2025 is in preview. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+
+As Credential Guard evolves and enhances its security features, newer versions of Windows running Credential Guard might affect previously functional scenarios. For instance, Credential Guard could restrict the use of certain credentials or components to thwart malware exploiting vulnerabilities.
+
+It's advisable to thoroughly test operational scenarios within an organization before updating devices that utilize Credential Guard.
+
+Upgrades to Windows 11, version 22H2, and Windows Server 2025 (preview) have Credential Guard [enabled by default](index.md#default-enablement) unless explicitly disabled.
 
 ## Wi-fi and VPN considerations
 
-When you enable Credential Guard, you can no longer use NTLM classic authentication for single sign-on. You'll be forced to enter your credentials to use these protocols and can't save the credentials for future use.
+When Credential Guard is enabled, you can no longer use NTLM classic authentication (NTLMv1) for single-sign-on (SSO). You'll be forced to enter your credentials to use these protocols and can't save the credentials for future use.
 
 If you're using WiFi and VPN endpoints that are based on MS-CHAPv2, they're subject to similar attacks as for NTLMv1.
 
 For WiFi and VPN connections, it's recommended to move from MSCHAPv2-based connections (such as PEAP-MSCHAPv2 and EAP-MSCHAPv2), to certificate-based authentication (such as PEAP-TLS or EAP-TLS).
 
-## Kerberos considerations
+## Delegation considerations
 
-When you enable Credential Guard, you can no longer use Kerberos unconstrained delegation or DES encryption. Unconstrained delegation could allow attackers to extract Kerberos keys from the isolated LSA process.\
-Use constrained or resource-based Kerberos delegation instead.
+When Credential Guard is enabled, certain types of identity delegation are unusable, as their underlying authentication schemes are incompatible with Credential Guard or require supplied credentials.
+
+When Credential Guard is enabled, [Credential Security Support Provider ("CredSSP")](/windows/win32/secauthn/credential-security-support-provider) is no longer able to use saved or SSO credentials, though cleartext credentials can still be supplied. CredSSP-based Delegation requires cleartext credentials to be supplied on the destination machine, and doesn't work with SSO once Credential Guard is enabled and blocks cleartext credential disclosure. Usage of [CredSSP for delegation](/windows/win32/secauthn/credential-security-support-provider), and in general, isn't recommended due to the risk of credential theft.
+
+Kerberos Unconstrained delegation and DES are blocked by Credential Guard. [Unconstrained delegation](/defender-for-identity/security-assessment-unconstrained-kerberos#what-risk-does-unsecure-kerberos-delegation-pose-to-an-organization) isn't a recommended practice.
+
+Instead [Kerberos](/windows-server/security/kerberos/kerberos-authentication-overview) or [Negotiate SSP](/windows/win32/secauthn/microsoft-negotiate) are recommended for authentication generally, and for delegation, [Kerberos Constrained Delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) and [Resource-Based Kerberos Constrained Delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview#resource-based-constrained-delegation-across-domains) are recommended. These methods provide greater credential security overall, and are also compatible with Credential Guard.
 
 ## Non-Microsoft Security Support Providers considerations
 
-Some non-Microsoft Security Support Providers (SSPs and APs) might not be compatible with Credential Guard because it doesn't allow non-Microsoft SSPs to ask for password hashes from LSA. However, SSPs and APs still get notified of the password when a user logs on and/or changes their password. Any use of undocumented APIs within custom SSPs and APs aren't supported.\
+Some non-Microsoft Security Support Providers (SSPs and APs) might not be compatible with Credential Guard because it doesn't allow non-Microsoft SSPs to ask for password hashes from LSA. However, SSPs and APs still get notified of the password when a user logs on and/or changes their password. Any use of undocumented APIs within custom SSPs and APs aren't supported.
+
 It's recommended that custom implementations of SSPs/APs are tested with Credential Guard. SSPs and APs that depend on any undocumented or unsupported behaviors fail. For example, using the KerbQuerySupplementalCredentialsMessage API isn't supported. Replacing the NTLM or Kerberos SSPs with custom SSPs and APs.
 
 For more information, see [Restrictions around Registering and Installing a Security Package](/windows/win32/secauthn/restrictions-around-registering-and-installing-a-security-package).
-
-## Upgrade considerations
-
-As the depth and breadth of protections provided by Credential Guard are increased, new releases of Windows with Credential Guard running may affect scenarios that were working in the past. For example, Credential Guard may block the use of a particular type of credential or a particular component to prevent malware from taking advantage of vulnerabilities.
-
-Test scenarios required for operations in an organization before upgrading a device using Credential Guard.
 
 ## Saved Windows credentials considerations
 
@@ -86,7 +97,7 @@ On domain-joined devices, DPAPI can recover user keys using a domain controller 
 >[!IMPORTANT]
 > Best practice when clearing a TPM on a domain-joined device is to be on a network with connectivity to domain controllers. This ensures DPAPI functions and the user does not experience strange behavior.
 
-Auto VPN configuration is protected with user DPAPI. User may not be able to use VPN to connect to domain controllers since the VPN configurations are lost.
+Auto VPN configuration is protected with user DPAPI. User might not be able to use VPN to connect to domain controllers since the VPN configurations are lost.
 If you must clear the TPM on a domain-joined device without connectivity to domain controllers, then you should consider the following.
 
 Domain user sign-in on a domain-joined device after clearing a TPM for as long as there's no connectivity to a domain controller:
@@ -110,34 +121,39 @@ Credential Guard blocks certain authentication capabilities. Applications that r
 
 This article describes known issues when Credential Guard is enabled.
 
-### Single sign-on for Network services breaks after upgrading to Windows 11, version 22H2
+### Live migration with Hyper-V breaks when upgrading to Windows Server 2025 (preview)
 
-Devices that use 802.1x wireless or wired network, RDP, or VPN connections that rely on insecure protocols with password-based authentication are unable to use SSO to sign in and are forced to manually re-authenticate in every new Windows session when Credential Guard is running.
+> [!IMPORTANT]
+> Windows Server 2025 is in previeww. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-#### Affected devices
+Devices that use CredSSP-based Delegation might no longer be able to use [Live Migration with Hyper-V](/windows-server/virtualization/hyper-v/manage/live-migration-overview) after upgrading to Windows Server 2025 (preview). Applications and services that rely on live migration (such as [SCVMM](/system-center/vmm/overview)) might also be affected. CredSSP-based delegation is the default for Windows Server 2022 and earlier for live migration.
 
-Any device with Credential Guard enabled may encounter the issue. As part of the Windows 11, version 22H2 update, eligible devices that didn't disable Credential Guard, have it enabled by default. This affected all devices on Enterprise (E3 and E5) and Education licenses, as well as some Pro licenses, as long as they met the [minimum hardware requirements](index.md#hardware-and-software-requirements).
+||Description|
+|-|-|
+|    **Affected devices**|Any server with Credential Guard enabled might encounter this issue. Starting in Windows Server 2025 (preview), [Credential Guard is enabled by default](index.md#default-enablement-on-windows-server) on all domain-joined servers that aren't domain controllers. Default enablement of Credential Guard can be [preemptively blocked](configure.md#default-enablement) before upgrade.|
+|    **Cause of the issue**|Live Migration with Hyper-V, and applications and services that rely on it, are affected by the issue if one or both ends of a given connection try to use CredSSP with Credential Guard enabled. With Credential Guard enabled, CredSSP can only utilize supplied credentials, not saved or SSO credentials. <br><br>If the source machine of a Live Migration uses CredSSP for delegation with Credential Guard enabled, the Live Migration fails. In most cases, Credential Guard's enablement state on the destination machine won't impact Live Migration. Live Migration also fails in cluster scenarios (for example, SCVMM), since any device might act as a source machine.|
+|    **Resolution**|Instead of CredSSP Delegation, [Kerberos Constrained Delegation and Resource-Based Kerberos Constrained Delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) are recommended. These forms of delegation provide greater credential protections, in addition to being compatible with Credential Guard. Administrators of Hyper-V can [configure these types of delegation](/windows-server/virtualization/hyper-v/deploy/set-up-hosts-for-live-migration-without-failover-clustering#BKMK_Step1) manually or with the help of automated scripts.|
 
-All Windows Pro devices that previously ran Credential Guard on an eligible license and later downgraded to Pro, and which still meet the [minimum hardware requirements](index.md#hardware-and-software-requirements), will receive default enablement.
+### Single sign-on for Network services breaks after upgrading to Windows 11, version 22H2 or Windows Server 2025 (preview)
+
+Devices that use 802.1x wireless or wired network, RDP, or VPN connections that rely on insecure protocols with password-based authentication are unable to use SSO to sign in and are forced to manually reauthenticate in every new Windows session when Credential Guard is running.
+
+||Description|
+|-|-|
+|    **Affected devices**|Any device with Credential Guard enabled might encounter the issue. Starting in Windows 11, version 22H2, and Windows Server 2025 (preview), eligible devices that didn't disable Credential Guard, have it [enabled by default](index.md#default-enablement). This affects all devices on Enterprise (E3 and E5) and Education licenses, and some Pro licenses, as long as they meet the [minimum hardware requirements](index.md#hardware-and-software-requirements).<br><br>All Windows Pro devices that previously ran Credential Guard on an eligible license and later downgraded to Pro, and which still meet the [minimum hardware requirements](index.md#hardware-and-software-requirements), receive default enablement.|
+|    **Cause of the issue**|Applications and services are affected by the issue when they rely on insecure protocols that use password-based authentication. Such protocols are considered insecure because they can lead to password disclosure on the client or the server, and Credential Guard blocks them. Affected protocols include:<br><br>- Kerberos unconstrained delegation (both SSO and supplied credentials are blocked)<br>- Kerberos when PKINIT uses RSA encryption instead of Diffie-Hellman (both SSO and supplied credentials are blocked)<br>- MS-CHAP (only SSO is blocked)<br>- WDigest (only SSO is blocked)<br>- NTLM v1 (only SSO is blocked) <br><br>**Note**: Since only SSO is blocked for MS-CHAP, WDigest, and NTLM v1, these protocols can still be used by prompting the user to supply credentials.|
+|    **Resolution**|Microsoft recommends moving away from MSCHAPv2-based connections (for example, PEAP-MSCHAPv2 and EAP-MSCHAPv2), to certificate-based authentication (for example, PEAP-TLS or EAP-TLS). Credential Guard doesn't block certificate-based authentication.<br><br>For a more immediate, but less secure fix, [disable Credential Guard](configure.md#disable-credential-guard). Credential Guard doesn't have per-protocol or per-application policies, and it can either be turned on or off. If you disable Credential Guard, you leave stored domain credentials vulnerable to theft.|
 
 > [!TIP]
-> To determine if a Windows Pro device receives default enablement when upgraded to **Windows 11, version 22H2**, check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`.
-> If it's present, the device enables Credential Guard after the update.
+> To prevent default enablement, configure your devices [to disable Credential Guard](configure.md#disable-credential-guard) before updating to a version which [received default enablement](index.md#default-enablement). If the setting is not configured (which is the default state) and if the device is eligible, the device automatically enable Credential Guard after the update.
 >
-> You can Credential Guard can be disabled after upgrade by following the [disablement instructions](configure.md#disable-credential-guard).
-
-#### Cause of the issue
-
-Applications and services are affected by the issue when they rely on insecure protocols that use password-based authentication. Such protocols are considered insecure because they can lead to password disclosure on the client or the server, and Credential Guard blocks them. Affected protocols include:
-
-- Kerberos unconstrained delegation (both SSO and supplied credentials are blocked)
-- Kerberos when PKINIT uses RSA encryption instead of Diffie-Hellman (both SSO and supplied credentials are blocked)
-- MS-CHAP (only SSO is blocked)
-- WDigest (only SSO is blocked)
-- NTLM v1 (only SSO is blocked)
+> If Credential Guard is explicitly disabled, the device won't automatically enable Credential Guard after the update.
 
 > [!NOTE]
-> Since only SSO is blocked for MS-CHAP, WDigest, and NTLM v1, these protocols can still be used by prompting the user to supply credentials.
+> To determine if a Windows Pro device receives default enablement when upgraded to **Windows 11, version 22H2** or **Windows Server 2025 (preview)**, check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`.
+> If it's present, the device enables Credential Guard after the update.
+>
+> Credential Guard can be disabled after upgrade by following the [disablement instructions](configure.md#disable-credential-guard).
 
 #### How to confirm the issue
 
@@ -186,22 +202,11 @@ MS-CHAP and NTLMv1 are relevant to the SSO breakage after the Windows 11, versio
   :::column-end:::
 :::row-end:::
 
-#### How to fix the issue
-
-We recommend moving away from MSCHAPv2-based connections, such as PEAP-MSCHAPv2 and EAP-MSCHAPv2, to certificate-based authentication, like PEAP-TLS or EAP-TLS. Credential Guard doesn't block certificate-based authentication.
-
-For a more immediate, but less secure fix, [disable Credential Guard](configure.md#disable-credential-guard). Credential Guard doesn't have per-protocol or per-application policies, and it can either be turned on or off. If you disable Credential Guard, you leave stored domain credentials vulnerable to theft.
-
-> [!TIP]
-> To prevent default enablement, configure your devices [to disable Credential Guard](configure.md#disable-credential-guard) before updating to Windows 11, version 22H2. If the setting is not configured (which is the default state) and if the device is eligible, the device automatically enable Credential Guard after the update.
->
-> If Credential Guard is explicitly disabled, the device won't automatically enable Credential Guard after the update.
-
 ### Issues with non-Microsoft applications
 
 The following issue affects MSCHAPv2:
 
-- [Credential guard doesn't work with MSCHAPv2 configurations, of which Cisco ISE is a common enterprise implementation](https://quickview.cloudapps.cisco.com/quickview/bug/CSCul55352).
+- [Credential Guard doesn't work with MSCHAPv2 configurations, of which Cisco ISE is a common enterprise implementation](https://quickview.cloudapps.cisco.com/quickview/bug/CSCul55352).
 
 The following issue affects the Java GSS API. See the following Oracle bug database article:
 
