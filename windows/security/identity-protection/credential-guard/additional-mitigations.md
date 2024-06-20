@@ -1,5 +1,5 @@
 ---
-ms.date: 08/31/2023
+ms.date: 06/20/2024
 title: Additional mitigations
 description: Learn how to improve the security of your domain environment with additional mitigations for Credential Guard and sample code.
 ms.topic: reference
@@ -46,8 +46,8 @@ Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring,
 To enable Kerberos armoring for restricting domain users to specific domain-joined devices:
 
 - Users need to be in domains that are running Windows Server 2012 R2 or higher
-- All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
-- All the devices with Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
+- All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**
+- All the devices with Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** > **Administrative Templates** > **System** > **Kerberos**.
 
 ### Protect domain-joined device secrets
 
@@ -56,7 +56,7 @@ Since domain-joined devices also use shared secrets for authentication, attacker
 Domain-joined device certificate authentication has the following requirements:
 
 - Devices' accounts are in Windows Server 2012 domain functional level or higher.
-- All domain controllers in those domains have KDC certificates which satisfy strict KDC validation certificate requirements:
+- All domain controllers in those domains have KDC certificates that satisfy strict KDC validation certificate requirements:
   - KDC EKU present
   - DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
 - Windows devices have the CA issuing the domain controller certificates in the enterprise store.
@@ -70,19 +70,19 @@ For example, let's say you wanted to use the High Assurance policy only on these
 
 **Create a new certificate template**
 
-1.  From the Certificate Manager console, right-click **Certificate Templates > Manage**
-1.  Right-click **Workstation Authentication > Duplicate Template**
-1.  Right-click the new template, and then select **Properties**
-1.  On the **Extensions** tab, select **Application Policies > Edit**
-1.  Select **Client Authentication**, and then select **Remove**
-1.  Add the ID-PKInit-KPClientAuth EKU. Select **Add > New**, and then specify the following values:
-    -   Name: Kerberos Client Auth
-    -   Object Identifier: 1.3.6.1.5.2.3.4
-1.  On the **Extensions** tab, select **Issuance Policies > Edit**
-1.  Under **Issuance Policies**, select **High Assurance**
-1.  On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box
+1. From the Certificate Manager console, right-click **Certificate Templates > Manage**
+1. Right-click **Workstation Authentication > Duplicate Template**
+1. Right-click the new template, and then select **Properties**
+1. On the **Extensions** tab, select **Application Policies > Edit**
+1. Select **Client Authentication**, and then select **Remove**
+1. Add the ID-PKInit-KPClientAuth EKU. Select **Add > New**, and then specify the following values:
+   - Name: Kerberos Client Auth
+   - Object Identifier: 1.3.6.1.5.2.3.4
+1. On the **Extensions** tab, select **Issuance Policies > Edit**
+1. Under **Issuance Policies**, select **High Assurance**
+1. On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box
 
-Then on the devices that are running Credential Guard, enroll the devices using the certificate you just created.
+Then on the devices that are running Credential Guard, enroll the devices using the certificate you created.
 
 **Enroll devices in a certificate**
 
@@ -123,12 +123,13 @@ So we now have completed the following:
 
 - Created a special certificate issuance policy to identify devices that meet the deployment criteria required for the user to be able to sign on
 - Mapped that policy to a universal security group or claim
-- Provided a way for domain controllers to get the device authorization data during user sign-on using Kerberos armoring. Now what is left to do is to configure the access check on the domain controllers. This is done using authentication policies.
+- Provided a way for domain controllers to get the device authorization data during user sign-on using Kerberos armoring. Now what is left to do is to configure the access check on the domain controllers. This is done using authentication policies
 
 Authentication policies have the following requirements:
-- User accounts are in a Windows Server 2012 domain functional level or higher domain.
 
-**Creating an authentication policy restricting users to the specific universal security group**
+- User accounts are in a Windows Server 2012 domain functional level or higher domain
+
+#### Create an authentication policy restricting users to the specific universal security group
 
 1. Open Active Directory Administrative Center
 1. Select **Authentication > New > Authentication Policy**
@@ -154,7 +155,7 @@ To learn more about authentication policy events, see [Authentication Policies a
 
 ## Appendix: Scripts
 
-Here is a list of scripts mentioned in this topic.
+Here's a list of scripts mentioned in this article.
 
 ### <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
 
@@ -195,7 +196,7 @@ displayName = displayName : {0}
 Name = Name : {0}
 dn = distinguishedName : {0}
         InfoName = Linked Group Name: {0}
-        InfoDN = Linked Group DN: {0}   
+        InfoDN = Linked Group DN: {0}
 NonLinkedIPs = The following Issuance Policies are NOT linked to groups:
 '@
 }
@@ -221,7 +222,7 @@ $getIP_strings.help8
     ""
     $getIP_strings.help10
 ""
-""    
+""
 $getIP_strings.help11
     "     " + '$' + "myIPs = .\get-IssuancePolicy.ps1 -LinkedToGroup:All"
     "     " + '$' + "myLinkedIPs = .\get-IssuancePolicy.ps1 -LinkedToGroup:yes"
@@ -272,7 +273,7 @@ write-host $errormsg -ForegroundColor Red
 if (($LinkedToGroup -eq "yes") -or ($LinkedToGroup -eq "all")) {
     $LDAPFilter = "(&(objectClass=msPKI-Enterprise-Oid)(msDS-OIDToGroupLink=*)(flags=2))"
     $LinkedOIDs = get-adobject -searchBase $configNCDN -LDAPFilter $LDAPFilter -properties *
-    write-host ""    
+    write-host ""
     write-host "*****************************************************"
     write-host $getIP_strings.LinkedIPs
     write-host "*****************************************************"
@@ -317,11 +318,11 @@ write-host "There are no issuance policies that are mapped to a group"
         return $LinkedOIDs
         break
     }
-}    
-if (($LinkedToGroup -eq "no") -or ($LinkedToGroup -eq "all")) {  
+}
+if (($LinkedToGroup -eq "no") -or ($LinkedToGroup -eq "all")) {
     $LDAPFilter = "(&(objectClass=msPKI-Enterprise-Oid)(!(msDS-OIDToGroupLink=*))(flags=2))"
     $NonLinkedOIDs = get-adobject -searchBase $configNCDN -LDAPFilter $LDAPFilter -properties *
-    write-host ""    
+    write-host ""
     write-host "*********************************************************"
     write-host $getIP_strings.NonLinkedIPs
     write-host "*********************************************************"
@@ -385,7 +386,7 @@ confirmOUcreation = Warning: The Organizational Unit that you specified does not
 OUCreationSuccess = Organizational Unit "{0}" successfully created.
 OUcreationError = Error: Organizational Unit "{0}" could not be created.
 OUFoundSuccess = Organizational Unit "{0}" was successfully found.
-multipleGroups = Error: More than one group with name "{0}" was found in Organizational Unit "{1}".  
+multipleGroups = Error: More than one group with name "{0}" was found in Organizational Unit "{1}".
 confirmGroupCreation = Warning: The group that you specified does not exist. Do you want to create it?
 groupCreationSuccess = Univeral Security group "{0}" successfully created.
 groupCreationError = Error: Univeral Security group "{0}" could not be created.
@@ -445,12 +446,12 @@ break
 $searchBase = [String]$root.configurationnamingcontext
 $OID = get-adobject -searchBase $searchBase -Filter { ((displayname -eq $IssuancePolicyName) -or (name -eq $IssuancePolicyName)) -and (objectClass -eq "msPKI-Enterprise-Oid")} -properties *
 if ($OID -eq $null) {
-$tmp = $ErrorMsg.NoIP -f $IssuancePolicyName, $searchBase  
+$tmp = $ErrorMsg.NoIP -f $IssuancePolicyName, $searchBase
 write-host $tmp -ForeGroundColor Red
 break;
 }
 elseif ($OID.GetType().IsArray) {
-$tmp = $ErrorMsg.MultipleIPs -f $IssuancePolicyName, $searchBase  
+$tmp = $ErrorMsg.MultipleIPs -f $IssuancePolicyName, $searchBase
 write-host $tmp -ForeGroundColor Red
 break;
 }
