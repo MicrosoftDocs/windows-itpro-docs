@@ -7,13 +7,18 @@ ms.topic: concept-article
 
 # How Credential Guard works
 
-Kerberos, NTLM, and Credential Manager isolate secrets by using Virtualization-based security (VBS). Previous versions of Windows stored secrets in its process memory, in the Local Security Authority (LSA) process `lsass.exe`. With Credential Guard enabled, the LSA process in the operating system talks to a component called the *isolated LSA process* that stores and protects those secrets, `LSAIso.exe`. Data stored by the isolated LSA process is protected using VBS and isn't accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
+Kerberos, NTLM, and Credential Manager isolate secrets by using Virtualization-based security (VBS). Previous versions of Windows stored secrets in its process memory, in the Local Security Authority (LSA) process `lsass.exe`.
 
-For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All the binaries are signed with a certificate that VBS trusts, and the signatures are validated before launching the file in the protected environment.
+:::row:::
+  :::column span="2":::
+    With Credential Guard enabled, the LSA process in the operating system talks to a component called the *isolated LSA process* that stores and protects those secrets, `LSAIso.exe`. Data stored by the isolated LSA process is protected using VBS and isn't accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 
-Here's a high-level overview on how the LSA is isolated by using Virtualization-based security:
-
-:::image type="content" source="images/credguard.png" alt-text="Diagram of the Credential Guard architecture.":::
+    For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All the binaries are signed with a certificate that VBS trusts, and the signatures are validated before launching the file in the protected environment.
+  :::column-end:::
+  :::column span="2":::
+  :::image type="content" source="images/credential-guard-architecture.png" alt-text="Diagram of the Credential Guard architecture." lightbox="images/credential-guard-architecture.png" border="false":::
+  :::column-end:::
+:::row-end:::
 
 ## Credential Guard protection limits
 
