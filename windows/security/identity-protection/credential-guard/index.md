@@ -1,7 +1,7 @@
 ---
+ms.date: 06/20/2024
 title: Credential Guard overview
 description: Learn about Credential Guard and how it isolates secrets so that only privileged system software can access them.
-ms.date: 08/31/2023
 ms.topic: overview
 ---
 
@@ -14,7 +14,7 @@ Credential Guard uses [Virtualization-based security (VBS)](/windows-hardware/de
 When enabled, Credential Guard provides the following benefits:
 
 - **Hardware security**: NTLM, Kerberos, and Credential Manager take advantage of platform security features, including Secure Boot and virtualization, to protect credentials
-- **Virtualization-based security**: NTLM, Kerberos derived credentials and other secrets run in a protected environment that is isolated from the running operating system
+- **Virtualization-based security**: NTLM, Kerberos derived credentials, and other secrets run in a protected environment that is isolated from the running operating system
 - **Protection against advanced persistent threats**: when credentials are protected using VBS, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges can't extract secrets that are protected by VBS
 
 > [!NOTE]
@@ -36,11 +36,11 @@ When Credential Guard is enabled, [VBS](#system-requirements) is automatically e
 
 ### Default enablement on Windows
 
-Devices running Windows 11, 22H2 or later will have Credential Guard enabled by default if they:
+Devices running Windows 11, 22H2 or later have Credential Guard enabled by default if they:
 
 - Meet the [license requirements](#windows-edition-and-licensing-requirements)
-- Meet the [hardware and sofware requirements](#system-requirements)
-- Have not been [explicitly configured to disable Credential Guard](configure.md#default-enablement)
+- Meet the [hardware and software requirements](#system-requirements)
+- Aren't [explicitly configured to disable Credential Guard](configure.md#default-enablement)
 
 > [!NOTE]
 > Devices running Windows 11 Pro/Pro Edu 22H2 or later may have Virtualization-based Security (VBS) and/or Credential Guard automatically enabled if they meet the other requirements for default enablement, and have previously run Credential Guard. For example if Credential Guard was enabled on an Enterprise device that later downgraded to Pro.
@@ -49,10 +49,13 @@ Devices running Windows 11, 22H2 or later will have Credential Guard enabled by 
 
 ### Default enablement on Windows Server
 
-Devices running Windows Server 2025 (preview) or later will have Credential Guard enabled by default if they meet the above requirements for Windows and additionally:
+Devices running Windows Server 2025 (preview) or later have Credential Guard enabled by default if they:
 
+- Meet the [license requirements](#windows-edition-and-licensing-requirements)
+- Meet the [hardware and software requirements](#system-requirements)
+- Aren't [explicitly configured to disable Credential Guard](configure.md#default-enablement)
 - Are joined to a domain
-- Are not a Domain Controller
+- Aren't a Domain Controller
 
 > [!IMPORTANT]
 > For information about known issues related to default enablement, see [Credential Guard: known issues](considerations-known-issues.md#known-issues).
@@ -97,7 +100,7 @@ The requirements to run Credential Guard in Hyper-V virtual machines are:
 
 When Credential Guard is enabled, certain authentication capabilities are blocked. Applications that require such capabilities break. We refer to these requirements as *application requirements*.
 
-Applications should be tested prior to deployment to ensure compatibility with the reduced functionality.
+Applications should be tested before deployment to ensure compatibility with the reduced functionality.
 
 > [!WARNING]
 > Enabling Credential Guard on domain controllers isn't recommended.
@@ -110,17 +113,17 @@ Applications break if they require:
 
 - Kerberos DES encryption support
 - Kerberos unconstrained delegation
-- Extracting the Kerberos TGT
+- Kerberos TGT extraction
 - NTLMv1
 
-Applications prompt and expose credentials to risk if they require:
+Applications ask and expose credentials to risk if they require:
 
 - Digest authentication
 - Credential delegation
 - MS-CHAPv2
 - CredSSP
 
-Applications may cause performance issues when they attempt to hook the isolated Credential Guard process `LSAIso.exe`.
+Applications might cause performance issues when they attempt to hook the isolated Credential Guard process `LSAIso.exe`.
 
 Services or protocols that rely on Kerberos, such as file shares or remote desktop, continue to work and aren't affected by Credential Guard.
 

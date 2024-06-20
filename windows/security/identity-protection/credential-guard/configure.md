@@ -1,7 +1,7 @@
 ---
-title: Configure Credential Guard 
+ms.date: 06/20/2024
+title: Configure Credential Guard
 description: Learn how to configure Credential Guard using MDM, Group Policy, or the registry.
-ms.date: 08/31/2023
 ms.topic: how-to
 ---
 
@@ -122,7 +122,7 @@ You can use PowerShell to determine whether Credential Guard is running on a dev
 (Get-CimInstance -ClassName Win32_DeviceGuard -Namespace root\Microsoft\Windows\DeviceGuard).SecurityServicesRunning
 ```
 
-The command generates the following output:  
+The command generates the following output:
 
 - **0**: Credential Guard is disabled (not running)
 - **1**: Credential Guard is enabled (running)
