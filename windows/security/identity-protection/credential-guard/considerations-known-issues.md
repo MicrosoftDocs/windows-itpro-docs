@@ -11,8 +11,7 @@ Microsoft recommends that in addition to deploying Credential Guard, organizatio
 
 ## Upgrade considerations
 
-> [!IMPORTANT]
-> Windows Server 2025 is in preview. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+[!INCLUDE [windows-server-2025-preview](../../includes/windows-server-2025-preview.md)]
 
 As Credential Guard evolves and enhances its security features, newer versions of Windows running Credential Guard might affect previously functional scenarios. For instance, Credential Guard could restrict the use of certain credentials or components to thwart malware exploiting vulnerabilities.
 
@@ -123,8 +122,7 @@ This article describes known issues when Credential Guard is enabled.
 
 ### Live migration with Hyper-V breaks when upgrading to Windows Server 2025 (preview)
 
-> [!IMPORTANT]
-> Windows Server 2025 is in previeww. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+[!INCLUDE [windows-server-2025-preview](../../includes/windows-server-2025-preview.md)]
 
 Devices that use CredSSP-based Delegation might no longer be able to use [Live Migration with Hyper-V](/windows-server/virtualization/hyper-v/manage/live-migration-overview) after upgrading to Windows Server 2025 (preview). Applications and services that rely on live migration (such as [SCVMM](/system-center/vmm/overview)) might also be affected. CredSSP-based delegation is the default for Windows Server 2022 and earlier for live migration.
 

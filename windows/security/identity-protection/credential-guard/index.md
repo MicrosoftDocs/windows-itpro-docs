@@ -22,8 +22,7 @@ When enabled, Credential Guard provides the following benefits:
 
 ## Default enablement
 
-> [!IMPORTANT]
-> Windows Server 2025 is in preview. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+[!INCLUDE [windows-server-2025-preview](../../includes/windows-server-2025-preview.md)]
 
 Starting in **Windows 11, 22H2** and **Windows Server 2025 (preview)**, VBS and Credential Guard are enabled by default on devices that meet the requirements.
 
