@@ -1,15 +1,13 @@
 ---
 title: Personalization CSP
 description: Learn more about the Personalization CSP.
-ms.date: 04/10/2024
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Personalization-Begin -->
 # Personalization CSP
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Personalization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -38,7 +36,7 @@ The following list shows the Personalization configuration service provider node
 <!-- Device-CompanyLogoStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.3235] and later |
 <!-- Device-CompanyLogoStatus-Applicability-End -->
 
 <!-- Device-CompanyLogoStatus-OmaUri-Begin -->
@@ -77,7 +75,7 @@ This represents the status of the Company Logo. 1 - Successfully downloaded or c
 <!-- Device-CompanyLogoUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.3235] and later |
 <!-- Device-CompanyLogoUrl-Applicability-End -->
 
 <!-- Device-CompanyLogoUrl-OmaUri-Begin -->
@@ -116,7 +114,7 @@ An http or https Url to a jpg, jpeg or png image that needs to be downloaded and
 <!-- Device-CompanyName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.3235] and later |
 <!-- Device-CompanyName-Applicability-End -->
 
 <!-- Device-CompanyName-OmaUri-Begin -->

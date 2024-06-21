@@ -1,7 +1,7 @@
 ---
 title: InternetExplorer Policy CSP
 description: Learn more about the InternetExplorer Area in Policy CSP.
-ms.date: 05/20/2024
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -984,6 +984,60 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowIntranetZoneTemplate-Examples-End -->
 
 <!-- AllowIntranetZoneTemplate-End -->
+
+<!-- AllowLegacyURLFields-Begin -->
+## AllowLegacyURLFields
+
+<!-- AllowLegacyURLFields-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowLegacyURLFields-Applicability-End -->
+
+<!-- AllowLegacyURLFields-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/AllowLegacyURLFields
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/AllowLegacyURLFields
+```
+<!-- AllowLegacyURLFields-OmaUri-End -->
+
+<!-- AllowLegacyURLFields-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- AllowLegacyURLFields-Description-End -->
+
+<!-- AllowLegacyURLFields-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowLegacyURLFields-Editable-End -->
+
+<!-- AllowLegacyURLFields-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowLegacyURLFields-DFProperties-End -->
+
+<!-- AllowLegacyURLFields-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowLegacyURLFields |
+| ADMX File Name | inetres.admx |
+<!-- AllowLegacyURLFields-AdmxBacked-End -->
+
+<!-- AllowLegacyURLFields-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowLegacyURLFields-Examples-End -->
+
+<!-- AllowLegacyURLFields-End -->
 
 <!-- AllowLocalMachineZoneTemplate-Begin -->
 ## AllowLocalMachineZoneTemplate
