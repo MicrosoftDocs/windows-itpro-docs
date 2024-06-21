@@ -1,7 +1,7 @@
 ---
 title: PassportForWork DDF file
 description: View the XML file containing the device description framework (DDF) for the PassportForWork configuration service provider.
-ms.date: 06/19/2024
+ms.date: 06/21/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -870,7 +870,7 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
               <MIME />
             </DFType>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>99.9.99999, 10.0.22621.3374, 10.0.22000.2899, 10.0.20348.2402, 10.0.19041.4239</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.6</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">
@@ -895,7 +895,7 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
               <Replace />
             </AccessType>
             <DefaultValue>False</DefaultValue>
-            <Description>Windows Hello for Business can use certificates to authenticate to on-premise resources. 
+            <Description>Windows Hello for Business can use certificates to authenticate to on-premise resources.
 
 If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the mobile device management server before provisioning a PIN.
 
