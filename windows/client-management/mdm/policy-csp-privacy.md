@@ -1,15 +1,13 @@
 ---
 title: Privacy Policy CSP
 description: Learn more about the Privacy Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 06/21/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Privacy-Begin -->
 # Policy CSP - Privacy
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Privacy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -2929,7 +2927,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence-OmaUri-Begin -->
@@ -3005,7 +3003,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3070,7 +3068,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3135,7 +3133,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-OmaUri-Begin -->

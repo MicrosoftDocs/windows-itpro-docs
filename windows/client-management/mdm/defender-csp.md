@@ -1,7 +1,7 @@
 ---
 title: Defender CSP
 description: Learn more about the Defender CSP.
-ms.date: 06/19/2024
+ms.date: 06/21/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -367,7 +367,7 @@ Control whether network protection can improve performance by switching from rea
 | Value | Description |
 |:--|:--|
 | 1 | Allow switching to asynchronous inspection. |
-| 0 (Default) | Don't allow asynchronous inspection. |
+| 0 (Default) | Don’t allow asynchronous inspection. |
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-AllowedValues-End -->
 
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-Examples-Begin -->
