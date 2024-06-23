@@ -7,7 +7,6 @@ ms.topic: tutorial
 
 # On-premises certificate trust deployment guide
 
-
 [!INCLUDE [apply-to-on-premises-cert-trust](includes/apply-to-on-premises-cert-trust.md)]
 
 [!INCLUDE [requirements](includes/requirements.md)]
@@ -83,7 +82,6 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 > - Configure domain controller and web server certificate templates
 > - Supersede existing domain controller certificates
 > - Unpublish superseded certificate templates
-> - Configure an enrollment agent certificate template
 > - Publish the certificate templates to the CA
 > - Deploy certificates to the domain controllers
 > - Validate the domain controllers configuration

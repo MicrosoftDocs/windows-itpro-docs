@@ -76,6 +76,7 @@ For detailed information about the certificate, use `Certutil -q -v <certificate
 > [!div class="checklist"]
 > Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 >
+> - Configure an enrollment agent certificate template
 > - Confirm only the AD FS service account has the allow enroll permission for the enrollment agent certificate template
 > - Consider using an HSM to protect the enrollment agent certificate; however, understand the frequency and quantity of signature operations the enrollment agent server makes and understand the impact it has on overall performance
 > - Confirm you properly configured the Windows Hello for Business authentication certificate template
