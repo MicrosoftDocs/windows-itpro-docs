@@ -8,7 +8,7 @@ items:
   - name: Cloud Kerberos trust deployment
     href: hybrid-cloud-kerberos-trust.md
   - name: Key trust deployment
-    items: 
+    items:
     - name: Requirements and validation
       href: hybrid-key-trust.md
       displayName: key trust
@@ -19,7 +19,7 @@ items:
       href: ../hello-hybrid-aadj-sso.md
       displayName: key trust
   - name: Certificate trust deployment
-    items: 
+    items:
     - name: Requirements and validation
       href: hybrid-cert-trust.md
       displayName: certificate trust
@@ -41,7 +41,7 @@ items:
 - name: On-premises deployments
   items:
   - name: Key trust deployment
-    items: 
+    items:
     - name: Requirements and validation
       href: on-premises-key-trust.md
     - name: Prepare and deploy Active Directory Federation Services (AD FS)
@@ -49,10 +49,10 @@ items:
     - name: Configure and enroll in Windows Hello for Business
       href: on-premises-key-trust-enroll.md
   - name: Certificate trust deployment
-    items: 
+    items:
     - name: Requirements and validation
       href: on-premises-cert-trust.md
-    - name: Prepare and Deploy Active Directory Federation Services (AD FS)
+    - name: Prepare and deploy Active Directory Federation Services (AD FS)
       href: on-premises-cert-trust-adfs.md
     - name: Configure and enroll in Windows Hello for Business
       href: on-premises-cert-trust-enroll.md

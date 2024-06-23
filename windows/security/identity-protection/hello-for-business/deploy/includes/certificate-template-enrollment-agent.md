@@ -3,7 +3,7 @@ ms.date: 01/03/2024
 ms.topic: include
 ---
 
-### Configure an enrollment agent certificate template
+## Configure an enrollment agent certificate template
 
 A certificate registration authority (CRA) is a trusted authority that validates certificate request. Once it validates the request, it presents the request to the certification authority (CA) for issuance. The CA issues the certificate, returns it to the CRA, which returns the certificate to the requesting user. Windows Hello for Business certificate trust deployments use AD FS as the CRA.
 

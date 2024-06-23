@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business on-premises certificate trust deployment guide
 description: Learn how to deploy Windows Hello for Business in an on-premises, certificate trust scenario.
-ms.date: 03/12/2024
+ms.date: 06/23/2024
 ms.topic: tutorial
 ---
 
@@ -47,8 +47,6 @@ Windows Hello for Business must have a Public Key Infrastructure (PKI) when usin
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
 
 [!INCLUDE [web-server-certificate-template](includes/certificate-template-web-server.md)]
-
-[!INCLUDE [enrollment-agent-certificate-template](includes/certificate-template-enrollment-agent.md)]
 
 [!INCLUDE [auth-certificate-template](includes/certificate-template-auth.md)]
 
