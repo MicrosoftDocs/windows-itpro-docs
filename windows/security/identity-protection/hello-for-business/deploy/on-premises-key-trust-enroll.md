@@ -52,6 +52,8 @@ This information is also available using the `dsregcmd.exe /status` command from
 
 [!INCLUDE [user-experience](includes/user-experience.md)]
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=771165c0-e37f-4f9d-9e21-4f383cc6590d]
+
 ### Sequence diagram
 
 To better understand the provisioning flows, review the following sequence diagram:
