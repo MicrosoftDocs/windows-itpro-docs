@@ -1,7 +1,7 @@
 ---
 title: Policies in Policy CSP supported by Group Policy
 description: Learn about the policies in Policy CSP supported by Group Policy.
-ms.date: 05/20/2024
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -805,6 +805,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](policy-csp-update.md)
 - [ConfigureDeadlineNoAutoRebootForQualityUpdates](policy-csp-update.md)
 - [AllowOptionalContent](policy-csp-update.md)
+- [AlwaysAutoRebootAtScheduledTimeMinutes](policy-csp-update.md)
 
 ## UserRights
 
