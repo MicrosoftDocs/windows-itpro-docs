@@ -1,49 +1,51 @@
 
 
-# Managing Windows Updates: IT Managed vs. Unmanaged Devices
+# Managing Windows updates: IT managed vs. unmanaged devices
 
-For IT administrators, understanding the differences between managed and unmanaged devices is crucial for effective Windows update management. This article provides clarity on the terminology and practices involved in managing Windows updates for both types of devices.
+As an IT administrator, understanding the differences between managed and unmanaged devices is crucial for effective Windows update management. This article provides clarity on the terminology and practices involved in managing Windows updates for both types of devices.
 
-## What are Update-Managed Windows Devices?
+## What are update-managed Windows devices?
 
-Update-managed devices are those where an IT administrator or organization controls Windows updates through a management tool (such as Microsoft Intune) or by directly setting policies (for example, Group Policy (GPO), Configuration Service Provider (CSP) policy, or Graph).
+Update-managed devices are those where an IT administrator or organization controls Windows updates through a management tool (such as Microsoft Intune) or by directly setting policies. This includes group policy (GPO), Configuration Service Provider (CSP) policy, or Microsoft Graph.
 
-**Note:** This is true even if you directly set registry keys, although this is not recommended as registry keys can be easily overwritten.
+> [!NOTE]
+> This is true even if you directly set registry keys. However, we don't recommended doing this because registry keys can be easily overwritten.
 
 Managed devices can include desktops, laptops, tablets, servers, and manufacturing equipment. These devices are secured and configured according to your organization's standards and policies.
 
-### IT-Managed: Windows Update Offering
+### IT-managed: Windows update offering
 
 Devices are considered Windows update-managed if you manage the update offering in the following ways:
 
-- Configuring policies to manage which updates are offered to the specific device.
-- Setting when your organization should receive feature, quality, and driver updates, among others.
-- Using Group Policy (GP), Cloud Solution Provider (CSP), or Graph to configure these offerings.
+- You configure policies to manage which updates are offered to the specific device.
+- You set when your organization should receive feature, quality, and driver updates, among others.
+- You use [Group Policy (GPO)](https://learn.microsoft.com/windows/deployment/update/waas-wufb-group-policy), [Cloud Solution Provider (CSP)](https://learn.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice), or [Microsoft Graph](https://learn.microsoft.com/windows/deployment/update/deployment-service-overview) to configure these offerings.
 
-### IT-Managed: Windows Update Experience
+### IT-managed: Windows update experience
 
-Devices are considered Windows update-managed if you use policies (GP, CSP, or Graph) to manage device behavior when taking Windows updates.
+Devices are considered Windows update-managed if you use policies (GP, CSP, or Microsoft Graph) to manage device behavior when taking Windows updates.
 
 Examples of controllable device behavior include active hours, update grace periods and deadlines, update notifications, update scheduling, and more. Consult the complete list at [Update Policy CSP - Windows Client Management](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update).
 
-## Examples of Update-Managed Windows Devices
+## Examples of update-managed Windows devices
 
 Here are a few examples of update-managed devices:
 
 - **Company-owned devices:** Devices provisioned by your IT department with corporate credentials, configurations, and policies.
-- **Employee-owned devices in BYOD programs:** Personally owned devices enrolled in the company's device management system to securely access corporate resources.
-- **Devices managed through Windows Autopilot:** Devices set up and preconfigured to be business-ready right out of the box.
+- **Employee-owned devices in BYOD programs:** Personally owned devices that are enrolled in the company's device management system to securely access corporate resources.
+- **Devices provisioned through Windows Autopilot:** Devices that are set up and preconfigured to be business-ready right out of the box.
 - **Mandated security settings:** Devices with health requirements such as device encryption, PIN or strong password, specific inactivity timeout periods, and up-to-date operating systems.
 - **Intune-enrolled devices:** Devices enrolled in Microsoft Intune for network access and enforced security policies.
 - **Third-party managed devices:** Devices enrolled in third-party management tools with configured Windows update policies via GPO, CSP, or registry key.
 
-## What are Update-Unmanaged Windows Devices?
+## What are update-unmanaged Windows devices?
 
 Unlike update-managed devices, unmanaged devices are not controlled through policies, management tools, or software. These devices aren't enrolled in tools like Microsoft Intune or Configuration Manager. If you only configure the Settings page to control overall device behavior when taking updates, it is considered an unmanaged device.
 
-**Note:** The term "Microsoft managed devices" used to refer to what we now call "update unmanaged Windows devices." Based on feedback, we have updated our terminology for clarity.
+> [!Note]
+> The term "Microsoft managed devices" used to refer to what we now call "update unmanaged Windows devices." Based on feedback, we have updated our terminology for clarity.
 
-## Examples of Update-Unmanaged Windows Devices
+## Examples of update-unmanaged Windows devices
 
 Examples of update-unmanaged devices include:
 
