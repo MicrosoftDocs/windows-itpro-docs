@@ -77,6 +77,8 @@ The CA validates that the certificate is signed by the registration authority. O
 
 > [!VIDEO 387edee6-45a2-421d-9ea7-0f5aa0f02289]
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=771165c0-e37f-4f9d-9e21-4f383cc6590d]
+
 ### Sequence diagram
 
 To better understand the provisioning flows, review the following sequence diagram:
