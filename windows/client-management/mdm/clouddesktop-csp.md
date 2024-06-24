@@ -1,7 +1,7 @@
 ---
 title: CloudDesktop CSP
 description: Learn more about the CloudDesktop CSP.
-ms.date: 03/05/2024
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,12 +19,14 @@ ms.date: 03/05/2024
 The following list shows the CloudDesktop configuration service provider nodes:
 
 - ./Device/Vendor/MSFT/CloudDesktop
-  - [BootToCloudPCEnhanced](#boottocloudpcenhanced)
-  - [EnableBootToCloudSharedPCMode](#enableboottocloudsharedpcmode)
+  - [BootToCloudPCEnhanced](#deviceboottocloudpcenhanced)
+  - [EnableBootToCloudSharedPCMode](#deviceenableboottocloudsharedpcmode)
+- ./User/Vendor/MSFT/CloudDesktop
+  - [EnablePhysicalDeviceAccess](#userenablephysicaldeviceaccess)
 <!-- CloudDesktop-Tree-End -->
 
 <!-- Device-BootToCloudPCEnhanced-Begin -->
-## BootToCloudPCEnhanced
+## Device/BootToCloudPCEnhanced
 
 <!-- Device-BootToCloudPCEnhanced-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -76,7 +78,7 @@ This node allows to configure different kinds of Boot to Cloud mode. Boot to clo
 <!-- Device-BootToCloudPCEnhanced-End -->
 
 <!-- Device-EnableBootToCloudSharedPCMode-Begin -->
-## EnableBootToCloudSharedPCMode
+## Device/EnableBootToCloudSharedPCMode
 
 > [!NOTE]
 > This policy is deprecated and may be removed in a future release.
@@ -128,6 +130,55 @@ Setting this node to "true" configures boot to cloud for Shared PC mode. Boot to
 <!-- Device-EnableBootToCloudSharedPCMode-Examples-End -->
 
 <!-- Device-EnableBootToCloudSharedPCMode-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-Begin -->
+## User/EnablePhysicalDeviceAccess
+
+<!-- User-EnablePhysicalDeviceAccess-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- User-EnablePhysicalDeviceAccess-Applicability-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/CloudDesktop/EnablePhysicalDeviceAccess
+```
+<!-- User-EnablePhysicalDeviceAccess-OmaUri-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-Description-Begin -->
+<!-- Description-Source-DDF -->
+Configuring this node gives access to the physical devices used to boot to Cloud PCs from the Ctrl+Alt+Del page for specified users. This node supports these options: 0. Not enabled 1. Enabled.
+<!-- User-EnablePhysicalDeviceAccess-Description-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-EnablePhysicalDeviceAccess-Editable-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | false |
+<!-- User-EnablePhysicalDeviceAccess-DFProperties-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Access to physical device disabled. |
+| true | Access to physical device enabled. |
+<!-- User-EnablePhysicalDeviceAccess-AllowedValues-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-EnablePhysicalDeviceAccess-Examples-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-End -->
 
 <!-- CloudDesktop-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
