@@ -75,8 +75,6 @@ The AD FS registration authority verifies the key used in the certificate reques
 
 The CA validates that the certificate is signed by the registration authority. On successful validation, it issues a certificate based on the request and returns the certificate to the AD FS registration authority. The registration authority returns the certificate to Windows where it then installs the certificate in the current user's certificate store. Once this process completes, the Windows Hello for Business provisioning workflow informs the user that they can use their PIN to sign-in through the Action Center.
 
-> [!VIDEO 387edee6-45a2-421d-9ea7-0f5aa0f02289]
-
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=771165c0-e37f-4f9d-9e21-4f383cc6590d]
 
 ### Sequence diagram
