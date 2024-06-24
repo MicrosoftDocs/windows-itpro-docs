@@ -29,6 +29,19 @@ Windows Hello for Business works exclusively with the Active Directory Federatio
 
 [!INCLUDE [enrollment-agent-certificate-template](includes/certificate-template-enrollment-agent.md)]
 
+### Publish the certificate template to the CA
+
+Sign in to the CA or management workstations with **Enterprise Admin** equivalent credentials.
+
+1. Open the **Certification Authority** management console
+1. Expand the parent node from the navigation pane
+1. Select **Certificate Templates** in the navigation pane
+1. Right-click the **Certificate Templates** node. Select **New > Certificate Template** to issue
+1. In the **Enable Certificates Templates** window, select the *WHFB Enrollment Agent* template you created in the previous step. Select **OK** to publish the selected certificate templates to the certification authority
+1. If you published the *Domain Controller Authentication (Kerberos)* certificate template, then unpublish the certificate templates you included in the superseded templates list
+   - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
+1. Close the console
+
 ## Configure the certificate registration authority
 
 The Windows Hello for Business on-premises certificate-based deployment uses AD FS as the certificate registration authority (CRA). The registration authority is responsible for issuing certificates to users and devices. The registration authority is also responsible for revoking certificates when users or devices are removed from the environment.

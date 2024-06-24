@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business on-premises key trust deployment guide
 description: Learn how to deploy Windows Hello for Business in an on-premises, key trust scenario.
-ms.date: 03/12/2024
+ms.date: 06/24/2024
 ms.topic: tutorial
 ---
 
@@ -57,7 +57,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Expand the parent node from the navigation pane
 1. Select **Certificate Templates** in the navigation pane
 1. Right-click the **Certificate Templates** node. Select **New > Certificate Template** to issue
-1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)*, and *Internal Web Server* templates you created in the previous steps. Select **OK** to publish the selected certificate templates to the certification authority
+1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)* and *Internal Web Server* templates you created in the previous steps. Select **OK** to publish the selected certificate templates to the certification authority
 1. If you published the *Domain Controller Authentication (Kerberos)* certificate template, then unpublish the certificate templates you included in the superseded templates list
    - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
 1. Close the console
