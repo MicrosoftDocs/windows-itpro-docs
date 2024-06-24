@@ -1,7 +1,7 @@
 ---
 title: RemoteDesktopServices Policy CSP
 description: Learn more about the RemoteDesktopServices Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 06/21/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -439,7 +439,7 @@ By default, Remote Desktop allows redirection of WebAuthn requests.
 <!-- LimitClientToServerClipboardRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2400] and later <br> ✅ [10.0.25398.827] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.2898] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3374] and later <br> ✅ Windows 11, version 23H2 [10.0.22631.3374] and later <br> ✅ Windows Insider Preview |
 <!-- LimitClientToServerClipboardRedirection-Applicability-End -->
 
 <!-- LimitClientToServerClipboardRedirection-OmaUri-Begin -->
@@ -493,7 +493,7 @@ By default, Remote Desktop allows redirection of WebAuthn requests.
 <!-- LimitServerToClientClipboardRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2400] and later <br> ✅ [10.0.25398.827] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.2898] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3374] and later <br> ✅ Windows 11, version 23H2 [10.0.22631.3374] and later <br> ✅ Windows Insider Preview |
 <!-- LimitServerToClientClipboardRedirection-Applicability-End -->
 
 <!-- LimitServerToClientClipboardRedirection-OmaUri-Begin -->

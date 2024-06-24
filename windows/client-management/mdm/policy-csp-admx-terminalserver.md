@@ -1,7 +1,7 @@
 ---
 title: ADMX_TerminalServer Policy CSP
 description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -4108,6 +4108,56 @@ This policy setting allows the administrator to configure the RemoteFX experienc
 <!-- TS_SERVER_PROFILE-Examples-End -->
 
 <!-- TS_SERVER_PROFILE-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Begin -->
+## TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Applicability-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME
+```
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-OmaUri-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Description-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Editable-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-DFProperties-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-AdmxBacked-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Examples-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-End -->
 
 <!-- TS_SERVER_VISEXP-Begin -->
 ## TS_SERVER_VISEXP
