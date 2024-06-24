@@ -1,7 +1,7 @@
 ---
 title: DeliveryOptimization Policy CSP
 description: Learn more about the DeliveryOptimization Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1500,20 +1500,8 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!-- DORestrictPeerSelectionBy-OmaUri-End -->
 
 <!-- DORestrictPeerSelectionBy-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Set this policy to restrict peer selection via selected option.
-
-Options available are:
-
-0 = NAT.
-
-1 = Subnet mask.
-
-2 = Local discovery (DNS-SD).
-
-The default value has changed from 0 (no restriction) to 1 (restrict to the subnet).
-
-These options apply to both Download Mode LAN (1) and Group (2).
+<!-- Description-Source-DDF-Forced -->
+Set this policy to restrict peer selection via selected option. Options available are: 1=Subnet mask, 2 = Local discovery (DNS-SD). These options apply to both Download Mode LAN (1) and Group (2).
 <!-- DORestrictPeerSelectionBy-Description-End -->
 
 <!-- DORestrictPeerSelectionBy-Editable-Begin -->
