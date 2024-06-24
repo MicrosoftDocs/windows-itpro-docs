@@ -57,7 +57,7 @@ Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplat
 >[!NOTE]
 > If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace *WHFBEnrollmentAgent* and *WHFBAuthentication* in the above command with the name of your certificate templates. It's important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template by using the **Certificate Template** management console (certtmpl.msc). Or, you can view the template name by using the `Get-CATemplate` PowerShell cmdlet on a CA.
 
-### Enrollment agent certificate enrollment
+### Enrollment agent certificate lifecycle management
 
 AD FS performs its own certificate lifecycle management. Once the registration authority is configured with the proper certificate template, the AD FS server attempts to enroll the certificate on the first certificate request or when the service first starts.
 
