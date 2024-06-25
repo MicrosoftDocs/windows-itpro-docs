@@ -2,7 +2,7 @@
 title: BitLocker operations guide
 description: Learn how to use different tools to manage and operate BitLocker.
 ms.topic: how-to
-ms.date: 10/30/2023
+ms.date: 06/18/2024
 ---
 
 # BitLocker operations guide
@@ -239,7 +239,7 @@ Add-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 **Example**: Use PowerShell to enable BitLocker with a TPM protector
 
 ```powershell
-Enable-BitLocker D: -EncryptionMethod XtsAes256 -UsedSpaceOnly -TpmProtector 
+Enable-BitLocker D: -EncryptionMethod XtsAes256 -UsedSpaceOnly -TpmProtector
 ```
 
 **Example**: Use PowerShell to enable BitLocker with a TPM+PIN protector, in this case with a PIN set to *123456*:

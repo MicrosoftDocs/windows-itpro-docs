@@ -2,7 +2,7 @@
 title: BitLocker recovery process
 description: Learn how to obtain BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices, and how to restore access to a locked drive.
 ms.topic: how-to
-ms.date: 10/30/2023
+ms.date: 06/18/2024
 ---
 
 # BitLocker recovery process
@@ -83,7 +83,7 @@ function Get-EntraBitLockerKeys{
         foreach ($keyId in $keyIds) {
           $recoveryKey = (Get-MgInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $keyId -Select "key").key
           Write-Host -ForegroundColor White " Key id: $keyid"
-          Write-Host -ForegroundColor Cyan " BitLocker recovery key: $recoveryKey" 
+          Write-Host -ForegroundColor Cyan " BitLocker recovery key: $recoveryKey"
         }
         } else {
         Write-Host -ForegroundColor Red "No BitLocker recovery keys found for device $DeviceName"

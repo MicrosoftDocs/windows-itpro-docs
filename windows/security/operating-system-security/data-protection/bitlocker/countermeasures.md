@@ -1,8 +1,8 @@
 ---
 title: BitLocker countermeasures
-description: Learn about technologies and features to protect against attacks on the BitLocker encryption key. 
+description: Learn about technologies and features to protect against attacks on the BitLocker encryption key.
 ms.topic: concept-article
-ms.date: 10/30/2023
+ms.date: 06/18/2024
 ---
 
 # BitLocker countermeasures
