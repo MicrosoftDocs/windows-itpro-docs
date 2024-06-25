@@ -35,8 +35,8 @@ Windows Sandbox has the following properties:
 - At least two CPU cores (four cores with hyper-threading recommended)
 
 > [!NOTE]
-> Windows Sandbox is currently not supported on Windows Home edition
-
+> Windows Sandbox is currently not supported on Windows Home edition.
+> Beginning in Windows 11 24H2, or build version 26100, all inbox store apps like calculator, photos, notepad and terminal will not be available inside Windows Sandbox. Ability to use the apps will be added soon.
 ## Installation
 
 1. Ensure that your machine is using Windows 10 Pro or Enterprise, build version 18305 or Windows 11.
