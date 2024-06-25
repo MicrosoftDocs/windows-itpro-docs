@@ -95,7 +95,6 @@ There are rules governing which hint is shown during the recovery (in the order 
 
     **Result:** the hints for the custom URL and the Microsoft account (**https://aka.ms/myrecoverykey**) are displayed.
 
-    Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen includes the Microsoft account hint if the recovery password is saved to a Microsoft account.
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/preboot-recovery-custom-url-single-backup.png" alt-text="Screenshot of the BitLocker recovery screen showing a custom URL and the hint where the BitLocker recovery key was saved." lightbox="images/preboot-recovery-custom-url-single-backup.png" border="false":::
