@@ -123,7 +123,7 @@ Optional Components, along with the .NET feature, can be installed offline, howe
 ### Checkpoint cumulative updates
 Starting with Windows 11, version 24H2, the latest cumulative update may have a prerequisite cumulative update that is required to be installed first. These are known as checkpoint cumulative updates. In these cases, the cumulative update file level differentials are based on a previous cumulative update instead of the Windows RTM release. The benefit is a smaller update package and faster installation.
 
-To install the checkpoint(s) when servicing the Windows OS (steps 9 & 12) and WinPE (steps 17 & 23), call Add-WindowsPackage with the target cumulative update. The folder from PackagePath will be used to discover and install one or more checkpoints as needed. Only .MSU packages with a revision <= the target cumulative update will be processed. If you are not customizing the image with additional languages and/or optional features, then separate calls to Add-WindowsPackage (checkpoint cumulative updates first) can be used for steps 9 & 17 above. Separate calls cannot be used for steps 12 and 23.
+To install the checkpoint(s) when servicing the Windows OS (steps 9 & 12) and WinPE (steps 17 & 23), call Add-WindowsPackage with the target cumulative update. The folder from PackagePath will be used to discover and install one or more checkpoints as needed. Only the target cumulative update and checkpoint cumulative updates should be in the PackagePath folder. Cumulative update packages with a revision <= the target cumulative update will be processed. If you are not customizing the image with additional languages and/or optional features, then separate calls to Add-WindowsPackage (checkpoint cumulative updates first) can be used for steps 9 & 17 above. Separate calls cannot be used for steps 12 and 23.
 
 
 ## Windows PowerShell scripts to apply Dynamic Updates to an existing image
@@ -557,7 +557,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
         # Save setuphost.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
         # This is only required starting with Windows 11 version 24H2
         $TEMP = Get-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex
-        if ($TEMP.Version -ge "10.0.26100.0000") {
+        if ($TEMP.Version -ge "10.0.26100") {
             
             Copy-Item -Path $WINPE_MOUNT"\sources\setuphost.exe" -Destination $WORKING_PATH"\setuphost.exe" -Force -ErrorAction stop | Out-Null
         }
