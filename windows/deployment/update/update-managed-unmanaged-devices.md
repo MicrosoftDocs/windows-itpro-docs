@@ -1,9 +1,10 @@
 ---
-title: Defining Windows update managed devices
+title: Defining Windows update-managed devices
 description: This article provides clarity on the terminology and practices involved in managing Windows updates for both managed and unmanaged devices.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: overview
+ms.date: 06/25/2024
 author: mikolding
 ms.author: v-mikolding
 ms.reviewer: mstewart,thtrombl,v-fvalentyna,arcarley
@@ -12,10 +13,9 @@ ms.localizationpriority: medium
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ms.date: 06/25/2024
 ---
 
-# Defining Windows update managed devices
+# Defining Windows update-managed devices
 
 As an IT administrator, understanding the differences between managed and unmanaged devices is crucial for effective Windows update management. This article provides clarity on the terminology and practices involved in managing Windows updates for both types of devices.
 
