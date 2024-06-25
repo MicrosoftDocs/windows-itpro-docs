@@ -85,10 +85,11 @@ BitLocker has the following requirements:
 
 ## Device encryption
 
-*Device encryption* is a Windows feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device encryption is available on all Windows versions, and it requires a device to meet either [Modern Standby][WIN-3] or HSTI security requirements. Device encryption can't have externally accessible ports that allow DMA access.
+*Device encryption* is a Windows feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device encryption is available on all Windows versions, and it requires a device to meet either [Modern Standby][WIN-3] or HSTI security requirements. Device encryption can't have externally accessible ports that allow DMA access. Device encryption encrypts only the OS drive and fixed drives, it doesn't encrypt external/USB drives.
 
 > [!IMPORTANT]
-> Device encryption encrypts only the OS drive and fixed drives, it doesn't encrypt external/USB drives.
+> Starting in Windows 11, version 24H2, the prerequisites of DMA and HSTI/Modern Standby are removed. As a result, more devices are eligible for automatic and manual device encryption.
+> For more information, see [BitLocker drive encryption in Windows 11 for OEMs](/windows-hardware/design/device-experiences/oem-bitlocker).
 
 Unlike a standard BitLocker implementation, device encryption is enabled automatically so that the device is always protected. When a clean installation of Windows is completed and the out-of-box experience is finished, the device is prepared for first use. As part of this preparation, device encryption is initialized on the OS drive and fixed data drives on the computer with a clear key that is the equivalent of standard BitLocker suspended state. In this state, the drive is shown with a warning icon in Windows Explorer. The yellow warning icon is removed after the TPM protector is created and the recovery key is backed up.
 
