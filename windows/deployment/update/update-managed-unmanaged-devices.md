@@ -1,5 +1,5 @@
 ---
-title: IT managed versus unmanaged devices
+title: Defining Windows update managed devices
 description: This article provides clarity on the terminology and practices involved in managing Windows updates for both managed and unmanaged devices.
 ms.service: windows-client
 ms.subservice: itpro-updates
@@ -15,7 +15,7 @@ appliesto:
 - ms.date: 06/25/2024
 ---
 
-# Managing Windows updates: IT managed vs. unmanaged devices
+# Defining Windows update managed devices
 
 As an IT administrator, understanding the differences between managed and unmanaged devices is crucial for effective Windows update management. This article provides clarity on the terminology and practices involved in managing Windows updates for both types of devices.
 
@@ -34,13 +34,13 @@ Devices are considered Windows update-managed if you manage the update offering 
 
 - You configure policies to manage which updates are offered to the specific device.
 - You set when your organization should receive feature, quality, and driver updates, among others.
-- You use [Group Policy (GPO)](https://learn.microsoft.com/windows/deployment/update/waas-wufb-group-policy), [Cloud Solution Provider (CSP)](https://learn.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice), or [Microsoft Graph](https://learn.microsoft.com/windows/deployment/update/deployment-service-overview) to configure these offerings.
+- You use [Group Policy (GPO)](/windows/deployment/update/waas-wufb-group-policy), [Cloud Solution Provider (CSP)](/windows/client-management/mdm/policy-csp-update#update-allowupdateservice), or [Microsoft Graph](/windows/deployment/update/deployment-service-overview) to configure these offerings.
 
 ### IT-managed: Windows update experience
 
 Devices are considered Windows update-managed if you use policies (GP, CSP, or Microsoft Graph) to manage device behavior when taking Windows updates.
 
-Examples of controllable device behavior include active hours, update grace periods and deadlines, update notifications, update scheduling, and more. Consult the complete list at [Update Policy CSP - Windows Client Management](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update).
+Examples of controllable device behavior include active hours, update grace periods and deadlines, update notifications, update scheduling, and more. Consult the complete list at [Update Policy CSP - Windows Client Management](/windows/client-management/mdm/policy-csp-update).
 
 ## Examples of update-managed Windows devices
 
@@ -68,10 +68,4 @@ Examples of update-unmanaged devices include:
 - **BYOD devices not enrolled in management programs:** Devices used for work but not part of an organizational BYOD program.
 - **Peripheral devices:** Devices like printers, IP phones, and uninterruptible power supplies (UPS) that cannot accept centrally managed administrative credentials.
 
-For more information on managed and unmanaged devices, check out [Secure managed and unmanaged devices](https://docs.microsoft.com/mem/intune/protect/protect-devices).
-
-## Recommendations
-
-| SEO Keywords                                                                                              | Suggested Additions                                                                  | Links to Update                                                                                                                                                                                                                    | Issues/Concerns                                                    |
-|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| Windows update management, IT managed devices, unmanaged devices, Windows updates, Intune managed devices | Add detailed steps for configuring GPO, CSP, and Graph policies for managing updates | [Update Policy CSP - Windows Client Management](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update), [Secure managed and unmanaged devices](https://docs.microsoft.com/mem/intune/protect/protect-devices) | Ensure all links are up to date and point to the correct resources |
+For more information on managed and unmanaged devices, see [Secure managed and unmanaged devices](/microsoft-365/business-premium/m365bp-managed-unmanaged-devices).
