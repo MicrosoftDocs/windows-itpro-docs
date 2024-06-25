@@ -103,7 +103,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 :::row-end:::
 :::row:::
   :::column span="2":::
-    Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen includes the Microsoft account hint if the recovery password is saved to a Microsoft account.
+    Starting in Windows 11, version 24H2, the BitLocker preboot recovery screen includes the Microsoft account (MSA) hint, if the recovery password is saved to a MSA. This hint helps the user to understand which MSA account was used to store recovery key information.
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/bitlocker-recovery-screen-msa-backup-24h2.png" alt-text="Screenshot of the BitLocker recovery screen showing a Microsoft account hint where the BitLocker recovery key was saved." lightbox="images/bitlocker-recovery-screen-msa-backup-24h2.png" border="false":::
