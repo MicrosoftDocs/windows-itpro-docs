@@ -1,5 +1,5 @@
 ---
-title: Configure and validate the PKI in an hybrid certificate trust model
+title: Configure and validate the PKI in a hybrid certificate trust model
 description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a hybrid certificate trust model.
 ms.date: 06/23/2024
 ms.topic: tutorial
