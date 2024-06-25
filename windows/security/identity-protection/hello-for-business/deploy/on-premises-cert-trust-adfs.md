@@ -1,7 +1,7 @@
 ---
 title: Configure Active Directory Federation Services in an on-premises certificate trust model
 description: Learn how to configure Active Directory Federation Services (AD FS) to support the Windows Hello for Business on-premises certificate trust model.
-ms.date: 03/12/2024
+ms.date: 06/23/2024
 ms.topic: tutorial
 ---
 
@@ -16,20 +16,7 @@ Windows Hello for Business works exclusively with the Active Directory Federatio
 [!INCLUDE [adfs-deploy](includes/adfs-deploy.md)]
 
 > [!NOTE]
-> For AD FS 2019 and later in a certificate trust model, a known PRT issue exists. You may encounter this error in AD FS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. To remediate this error:
->
-> 1. Launch AD FS management console. Browse to ***Services > Scope Descriptions**
-> 1. Right-click **Scope Descriptions** and select **Add Scope Description**
-> 1. Under name type *ugs* and select **Apply > OK**
-> 1. Launch PowerShell as an administrator and execute the following commands:
->
->     ```PowerShell
->     $id = (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
->     Set-AdfsApplicationPermission -TargetIdentifier $id -AddScope 'ugs'
->     ```
->
-> 1. Restart the AD FS service
-> 1. Restart the client. User should be prompted to provision Windows Hello for Business
+> For AD FS 2019 and later in a certificate trust model, a known PRT issue exists. You may encounter this error in AD FS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. For more information about the isse and its resolution, see [Certificate trust provisioning with AD FS broken on windows server 2019](../hello-deployment-issues.md#certificate-trust-provisioning-with-ad-fs-broken-on-windows-server-2019).
 
 ## Review to validate the AD FS and Active Directory configuration
 
@@ -39,6 +26,21 @@ Windows Hello for Business works exclusively with the Active Directory Federatio
 > - Record the information about the AD FS certificate, and set a renewal reminder at least six weeks before it expires. Relevant information includes: certificate serial number, thumbprint, common name, subject alternate name, name of the physical host server, the issued date, the expiration date, and issuing CA vendor (if a non-Microsoft certificate)
 > - Confirm you added the AD FS service account to the KeyAdmins group
 > - Confirm you enabled the Device Registration service
+
+[!INCLUDE [enrollment-agent-certificate-template](includes/certificate-template-enrollment-agent.md)]
+
+### Publish the certificate template to the CA
+
+Sign in to the CA or management workstations with **Enterprise Admin** equivalent credentials.
+
+1. Open the **Certification Authority** management console
+1. Expand the parent node from the navigation pane
+1. Select **Certificate Templates** in the navigation pane
+1. Right-click the **Certificate Templates** node. Select **New > Certificate Template** to issue
+1. In the **Enable Certificates Templates** window, select the *WHFB Enrollment Agent* template you created in the previous step. Select **OK** to publish the selected certificate templates to the certification authority
+1. If you published the *Domain Controller Authentication (Kerberos)* certificate template, then unpublish the certificate templates you included in the superseded templates list
+   - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
+1. Close the console
 
 ## Configure the certificate registration authority
 
@@ -55,7 +57,7 @@ Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplat
 >[!NOTE]
 > If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace *WHFBEnrollmentAgent* and *WHFBAuthentication* in the above command with the name of your certificate templates. It's important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template by using the **Certificate Template** management console (certtmpl.msc). Or, you can view the template name by using the `Get-CATemplate` PowerShell cmdlet on a CA.
 
-### Enrollment agent certificate enrollment
+### Enrollment agent certificate lifecycle management
 
 AD FS performs its own certificate lifecycle management. Once the registration authority is configured with the proper certificate template, the AD FS server attempts to enroll the certificate on the first certificate request or when the service first starts.
 
@@ -87,6 +89,7 @@ For detailed information about the certificate, use `Certutil -q -v <certificate
 > [!div class="checklist"]
 > Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 >
+> - Configure an enrollment agent certificate template
 > - Confirm only the AD FS service account has the allow enroll permission for the enrollment agent certificate template
 > - Consider using an HSM to protect the enrollment agent certificate; however, understand the frequency and quantity of signature operations the enrollment agent server makes and understand the impact it has on overall performance
 > - Confirm you properly configured the Windows Hello for Business authentication certificate template

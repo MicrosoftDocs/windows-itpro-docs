@@ -1,5 +1,5 @@
 ---
-ms.date: 01/03/2024
+ms.date: 06/23/2024
 ms.topic: include
 ---
 
@@ -8,6 +8,8 @@ ms.topic: include
 Windows Hello for Business requires users perform multifactor authentication (MFA) prior to enroll in the service. On-premises deployments can use, as MFA option:
 
 - certificates
+    > [!NOTE]
+    > When using this option, the certificates must be deployed to the users. For example, users can use their smart card or virtual smart card as a certificate authentication option.
 - non-Microsoft authentication providers for AD FS
 - custom authentication provider for AD FS
 
