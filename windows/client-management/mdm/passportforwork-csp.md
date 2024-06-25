@@ -1,7 +1,7 @@
 ---
 title: PassportForWork CSP
 description: Learn more about the PassportForWork CSP.
-ms.date: 04/10/2024
+ms.date: 06/21/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -25,7 +25,6 @@ The following list shows the PassportForWork configuration service provider node
 - ./Device/Vendor/MSFT/PassportForWork
   - [{TenantId}](#devicetenantid)
     - [Policies](#devicetenantidpolicies)
-      - [DisablePostLogonCredentialCaching](#devicetenantidpoliciesdisablepostlogoncredentialcaching)
       - [DisablePostLogonProvisioning](#devicetenantidpoliciesdisablepostlogonprovisioning)
       - [EnablePinRecovery](#devicetenantidpoliciesenablepinrecovery)
       - [EnableWindowsHelloProvisioningForSecurityKeys](#devicetenantidpoliciesenablewindowshelloprovisioningforsecuritykeys)
@@ -158,62 +157,13 @@ Root node for policies.
 
 <!-- Device-{TenantId}-Policies-End -->
 
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Begin -->
-#### Device/{TenantId}/Policies/DisablePostLogonCredentialCaching
-
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Applicability-End -->
-
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/DisablePostLogonCredentialCaching
-```
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-OmaUri-End -->
-
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Description-Begin -->
-<!-- Description-Source-DDF -->
-Disable caching of the Windows Hello for Business credential after sign-in.
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Description-End -->
-
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Editable-End -->
-
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `bool` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | False |
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-DFProperties-End -->
-
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| false (Default) | Credential Caching Enabled. |
-| true | Credential Caching Disabled. |
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-AllowedValues-End -->
-
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-Examples-End -->
-
-<!-- Device-{TenantId}-Policies-DisablePostLogonCredentialCaching-End -->
-
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Begin -->
 #### Device/{TenantId}/Policies/DisablePostLogonProvisioning
 
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2402] and later <br> ✅ Windows 10, version 2004 [10.0.19041.4239] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.2899] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3374] and later <br> ✅ Windows Insider Preview |
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-OmaUri-Begin -->

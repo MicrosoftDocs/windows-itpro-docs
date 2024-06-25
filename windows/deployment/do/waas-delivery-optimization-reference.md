@@ -37,7 +37,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Download mode](#download-mode) | DODownloadMode | 1511 | Default is configured to LAN(1). The Group [Download mode](#download-mode) (2) combined with [Group ID](#group-id), enables administrators to create custom device groups that share content between devices in the group.|
 | [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not configured, check [GroupIDSource](#select-the-source-of-group-ids). When GroupID or GroupIDSource policies aren't configured, the GroupID is defined as the AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order.  |
 | [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not configured, check [Group ID](#group-id). When the GroupID or GroupIDSource policies aren't configured, the Group is defined as the AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. |
-| [Select a method to restrict peer selection](#select-a-method-to-restrict-peer-selection) | DORestrictPeerSelectionBy | 1803 | Windows 10 - default isn't configured. Windows 11 - default peer selection is restricted to the Subnet only in LAN [Download mode](#download-mode) (1). |
+| [Select a method to restrict peer selection](#select-a-method-to-restrict-peer-selection) | DORestrictPeerSelectionBy | 1803 | Default isn't configured.|
 | [Minimum RAM (inclusive) allowed to use peer caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 | Default value is 4 GB. |
 | [Minimum disk size allowed to use peer caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 | Default value is 32 GB. |
 | [Max cache age](#max-cache-age) | DOMaxCacheAge | 1511 | Default value is 259,200 seconds (three days). |
@@ -233,7 +233,7 @@ Starting in Windows 10, version 1803, specifies the maximum background download 
 
 MDM Setting: **DORestrictPeerSelectionBy**
 
-Starting in Windows 10, version 1803, configure this policy to restrict peer selection via selected option. In Windows 11, the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. These options apply to both Download Modes LAN (1) and Group (2) and therefore means there's no peering between subnets.
+Starting in Windows 10, version 1803, configure this policy to further restrict peer selection in Download Modes LAN (1) and Group (2). In Windows 11, the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = None, 1 = Subnet mask, and 2 = Local Peer Discovery (DNS-SD). Choosing either Subnet mask (1) or Local Peer Discovery (2) will avoid peering between subnets.
 
 If Group mode is configured, Delivery Optimization connects to locally discovered peers that are also part of the same Group (have the same Group ID) and prevents devices that aren't using the same Group ID from participating.
 

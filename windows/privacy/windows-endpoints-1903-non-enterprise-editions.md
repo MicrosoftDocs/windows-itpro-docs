@@ -49,7 +49,7 @@ The following methodology was used to derive the network endpoints:
 | \*.login.msa.\*.net | HTTPS | Microsoft Account related
 | \*.msn.com\* | TLSv1.2/HTTPS | Windows Spotlight
 | \*.skype.com | HTTP/HTTPS | Skype
-| \*.smartscreen.microsoft.com\* | HTTPS | Windows Defender Smartscreen
+| \*.smartscreen.microsoft.com | HTTPS | Windows Defender Smartscreen
 | \*.telecommand.telemetry.microsoft.com\* | HTTPS | Used by Windows Error Reporting
 | \*cdn.onenote.net\* | HTTP | OneNote
 | \*displaycatalog.\*mp.microsoft.com\* | HTTPS | Used to communicate with Microsoft Store

@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 05/20/2024
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -142,6 +142,9 @@ This policy setting allows you to control whether Windows saves snapshots of the
 <!-- TurnOffWindowsCopilot-Begin -->
 ## TurnOffWindowsCopilot
 
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
+
 <!-- TurnOffWindowsCopilot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
@@ -164,6 +167,9 @@ This policy setting allows you to turn off Windows Copilot.
 <!-- TurnOffWindowsCopilot-Description-End -->
 
 <!-- TurnOffWindowsCopilot-Editable-Begin -->
+
+> [!Note]
+> - The TurnOffWindowsCopilot policy isn't for the [new Copilot experience](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-copilot-in-windows-for-your-workforce/ba-p/4141999) that's in some [Windows Insider builds](https://blogs.windows.com/windows-insider/2024/05/22/releasing-windows-11-version-24h2-to-the-release-preview-channel/) and that will be gradually rolling out to Windows 11 and Windows 10 devices. <!--9048085-->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- TurnOffWindowsCopilot-Editable-End -->
 

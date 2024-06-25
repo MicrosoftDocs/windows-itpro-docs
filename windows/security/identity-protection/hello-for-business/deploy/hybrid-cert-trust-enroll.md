@@ -1,7 +1,7 @@
 ---
 title: Configure and enroll in Windows Hello for Business in hybrid certificate trust model
 description: Learn how to configure devices and enroll them in Windows Hello for Business in a hybrid certificate trust scenario.
-ms.date: 03/12/2024
+ms.date: 06/23/2024
 ms.topic: tutorial
 ---
 
