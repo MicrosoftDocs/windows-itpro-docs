@@ -43,7 +43,7 @@ Some school institutions want to streamline student onboarding for student-owned
 - [EnterpriseDesktopAppManagement](/windows/client-management/mdm/enterprisemodernappmanagement-csp) - which enables deployment of Windows installer or Win32 applications.
 - [DeliveryOptimization](/windows/client-management/mdm/policy-csp-deliveryoptimization) - which enables configuration of Delivery Optimization.
 
-A full list of CSPs are available at [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference). For more information about enrolling devices into Microsoft Intune, see [Deployment guide: Enroll Windows devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows).
+A full list of CSPs is available at [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference). For more information about enrolling devices into Microsoft Intune, see [Deployment guide: Enroll Windows devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows).
 
 ## Requirements for using a MAK to upgrade from Windows Home to Windows Education
 
