@@ -53,6 +53,7 @@ The following is a list of other Microsoft products that might be updated:
 - Microsoft StreamInsight
 - Mobile and IoT
 - MSRC
+- .NET (also known as .NET Core)
 - Office 2016 (MSI versions of Office)
 - PlayReady
 - Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware
