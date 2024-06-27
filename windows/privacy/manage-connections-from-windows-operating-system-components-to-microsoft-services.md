@@ -1607,7 +1607,7 @@ You can disable Teredo by using Group Policy or by using the netsh.exe command. 
 
   -or-
 
-- Create a new REG_SZ registry setting named **Teredo_State** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition** with a value of **Disabled**.
+- Create a new REG_SZ registry setting named **Teredo_State** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition** with a value of `Disabled`.
 
 
 ### <a href="" id="bkmk-wifisense"></a>23. Wi-Fi Sense

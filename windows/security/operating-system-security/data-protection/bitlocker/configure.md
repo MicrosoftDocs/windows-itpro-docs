@@ -2,7 +2,7 @@
 title: Configure BitLocker
 description: Learn about the available options to configure BitLocker and how to configure them via Configuration Service Providers (CSP) or group policy (GPO).
 ms.topic: how-to
-ms.date: 10/30/2023
+ms.date: 06/18/2024
 ---
 
 # Configure BitLocker

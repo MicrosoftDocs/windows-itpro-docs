@@ -1,5 +1,5 @@
 ---
-ms.date: 03/12/2024
+ms.date: 06/23/2024
 ms.topic: tutorial
 title: Configure Windows Hello for Business Policy settings in an on-premises certificate trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises certificate trust scenario
@@ -73,7 +73,11 @@ After a successful key registration, Windows creates a certificate request using
 
 The AD FS registration authority verifies the key used in the certificate request matches the key that was previously registered. On a successful match, the AD FS registration authority signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.
 
-The CA validates that the certificate is signed by the registration authority. On successful validation, it issues a certificate based on the request and returns the certificate to the AD FS registration authority. The registration authority returns the certificate to Windows where it then installs the certificate in the current user's certificate store. Once this process completes, the Windows Hello for Business provisioning workflow informs the user that they can use their PIN to sign-in through the Action Center.
+The CA validates that the certificate is signed by the registration authority. On successful validation, it issues a certificate based on the request and returns the certificate to the AD FS registration authority. The registration authority returns the certificate to Windows where it then installs the certificate in the current user's certificate store.
+
+The following video shows the Windows Hello for Business enrollment steps after signing in with a password, using a custom MFA adapter for AD FS.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=771165c0-e37f-4f9d-9e21-4f383cc6590d alt-text="Video showing the Windows Hello for Business enrollment steps after signing in with a password."]
 
 ### Sequence diagram
 

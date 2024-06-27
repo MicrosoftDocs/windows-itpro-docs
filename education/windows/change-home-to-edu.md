@@ -21,12 +21,11 @@ Customers with qualifying subscriptions can upgrade student-owned and institutio
 > [!NOTE]
 > To be qualified for this process, customers must have a Windows Education subscription that includes the student use benefit and must have access to the Volume Licensing Service Center (VLSC) or the Microsoft 365 Admin Center.
 
-IT admins can upgrade student devices using a multiple activation key (MAK) manually or through Mobile Device Management (MDM). Alternatively, IT admins can set up a portal through [Kivuto OnTheHub](http://onthehub.com) where students can request a *Windows Pro Education* product key. The following table provides the recommended method depending on the scenario.
+IT admins can upgrade student devices using a multiple activation key (MAK) manually or through Mobile Device Management (MDM). The following table provides the recommended method depending on the scenario.
 
 | Method | Product key source | Device ownership | Best for |
 |-|-|-|-|
 | MDM | VLSC | Personal (student-owned) | IT admin initiated via MDM |
-| Kivuto | Kivuto | Personal (student-owned) | Initiated on device by student, parent, or guardian |
 | Provisioning package | VLSC | Personal (student-owned) or Corporate (institution-owned) | IT admin initiated at first boot |
 
 These methods apply to devices with *Windows Home* installed; institution-owned devices can be upgraded from *Windows Professional* or *Windows Pro Edu* to *Windows Education* or *Windows Enterprise* using [Windows 10/11 Subscription Activation](/windows/deployment/windows-10-subscription-activation).
@@ -44,7 +43,7 @@ Some school institutions want to streamline student onboarding for student-owned
 - [EnterpriseDesktopAppManagement](/windows/client-management/mdm/enterprisemodernappmanagement-csp) - which enables deployment of Windows installer or Win32 applications.
 - [DeliveryOptimization](/windows/client-management/mdm/policy-csp-deliveryoptimization) - which enables configuration of Delivery Optimization.
 
-A full list of CSPs are available at [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference). For more information about enrolling devices into Microsoft Intune, see [Deployment guide: Enroll Windows devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows).
+A full list of CSPs is available at [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference). For more information about enrolling devices into Microsoft Intune, see [Deployment guide: Enroll Windows devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows).
 
 ## Requirements for using a MAK to upgrade from Windows Home to Windows Education
 
@@ -80,13 +79,6 @@ For a full list of methods to perform a Windows edition upgrade and more details
 
 After upgrading from *Windows Home* to *Windows Education* there are some considerations for what happens during downgrade, reset or reinstall of the operating system.
 
-The following table highlights the differences by upgrade product key type:
-
-| Product Key Type | Downgrade (in-place) | Reset | Student reinstall |
-|-|-|-|-|
-| VLSC | No | Yes | No |
-| Kivuto OnTheHub | No | Yes | Yes |
-
 ### Downgrade
 
 It isn't possible to downgrade to *Windows Home* from *Windows Education* without reinstalling Windows.
@@ -98,8 +90,6 @@ If the computer is reset, Windows Education is retained.
 ### Reinstall
 
 The Education upgrade doesn't apply to reinstalling Windows. Use the original Windows edition when reinstalling Windows. The original product key or [firmware-embedded product key](#what-is-a-firmware-embedded-activation-key) is used to activate Windows.
-
-If students require a *Windows Pro Education* key that can work on a new install of Windows, they should use [Kivuto OnTheHub](http://onthehub.com) to request a key before graduation.
 
 For details on product keys and reinstalling Windows, see [Find your Windows product key](https://support.microsoft.com/windows/find-your-windows-product-key-aaa2bf69-7b2b-9f13-f581-a806abf0a886).
 
