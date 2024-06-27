@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 06/04/2020
+ms.date: 06/27/2024
 ms.topic: conceptual
 ms.collection: privacy-windows
 ---
@@ -65,11 +65,11 @@ A final set of changes includes two new policies that can help you fine-tune dia
   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Diagnostic Log Collection**
   - MDM policy: System/LimitDiagnosticLogCollection
 
-For more info, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
+For more information, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
 ## Services that rely on Enhanced diagnostic data
 
-Customers who use services that depend on Windows diagnostic data, such as [Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/device-policies#windows-diagnostic-data), may be impacted by the behavioral changes when they're released. These services will be updated to address these changes and guidance will be published on how to configure them properly.
+Customers who use services that depend on Windows diagnostic data, such as [Microsoft Managed Desktop](/managed-desktop/operate/device-policies#windows-diagnostic-data), may be impacted by the behavioral changes when they're released. These services will be updated to address these changes and guidance will be published on how to configure them properly.
 
 ## Significant change to the Windows diagnostic data processor configuration
 
