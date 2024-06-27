@@ -11,7 +11,7 @@ The **Family options** section contains links to settings and further informatio
 
 Home users can learn more at the [Help protection your family online in Windows Security article at support.microsoft.com](https://support.microsoft.com/help/4013209/windows-10-protect-your-family-online-in-windows-defender)
 
-This section can be hidden from users of the machine. This option can be useful if you don't want employees in your organization to see or have access to this section.
+This section can be hidden from users of the machine. This option can be useful if you don't want users in your organization to see or have access to this section.
 
 ## Hide the Family options section
 
@@ -22,7 +22,7 @@ This section can be hidden only by using Group Policy.
 > [!IMPORTANT]
 > You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)). Right-click the Group Policy Object (GPO) you want to configure and select **Edit**.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Family options**.
 1. Open the **Hide the Family options area** setting and set it to **Enabled**. Select **OK**.

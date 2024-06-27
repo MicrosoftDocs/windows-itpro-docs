@@ -9,7 +9,7 @@ ms.topic: how-to
 
 The **Device security** section contains information and settings for built-in device security.
 
-You can choose to hide the section from users of the machine. This option can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
+You can choose to hide the section from users of the machine. This option can be useful if you don't want users in your organization to see or have access to user-configured options for the features shown in the section.
 
 ## Hide the Device security section
 
@@ -18,7 +18,7 @@ You can choose to hide the entire section by using Group Policy. The section won
 > [!IMPORTANT]
 > You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)). Right-click the Group Policy Object (GPO) you want to configure and select **Edit**.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and then select **Administrative templates**.
 1. Expand the tree to **Windows components** > **Windows Security** > **Device security**.
 1. Open the **Hide the Device security area** setting and set it to **Enabled**. Select **OK**.
@@ -36,7 +36,7 @@ If you don't want users to be able to select the **Clear TPM** button in **Windo
 > [!IMPORTANT]
 > You must have Windows 10, version 1809 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)). Right-click the Group Policy Object you want to configure and select **Edit**.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and then select **Administrative templates**.
 1. Expand the tree to **Windows components** > **Windows Security** > **Device security**.
 1. Open the **Disable the Clear TPM button** setting and set it to **Enabled**. Select **OK**.
@@ -46,7 +46,7 @@ If you don't want users to be able to select the **Clear TPM** button in **Windo
 
 If you don't want users to see the recommendation to update TPM firmware, you can disable it.
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)). Right-click the Group Policy Object you want to configure and select **Edit**.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and then select **Administrative templates**.
 1. Expand the tree to **Windows components** > **Windows Security** > **Device security**.
 1. Open the **Hide the TPM Firmware Update recommendation** setting and set it to **Enabled**. Select **OK**.
