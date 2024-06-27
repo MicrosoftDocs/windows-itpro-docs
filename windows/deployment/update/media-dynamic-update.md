@@ -40,8 +40,8 @@ Devices must be able to connect to the internet to obtain Dynamic Updates. In so
 
 You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://catalog.update.microsoft.com). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. Check various parts of the results to be sure you've identified the files needed. The following tables show the key values to search for or look for in the results. 
 
-### Windows 11, version 22H2 Dynamic Update packages
-**Title** can distinguish each Dynamic Package. Latest cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update.
+### Windows 11, version 22H2 and later Dynamic Update packages
+**Title** can distinguish each Dynamic Package. Latest cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update.Titles below are for Windows 11, version 22H2. Windows 11, version 23H2 and 24H2 have a similar format.
 
 | Update packages                   |Title                                                          |
 |-----------------------------------|---------------------------------------------------------------|
