@@ -60,7 +60,7 @@ A final set of changes includes two new policies that can help you fine-tune dia
 
 - The **Limit dump collection** policy is a new policy that can be used to limit the types of [crash dumps](/windows/win32/dxtecharts/crash-dump-analysis) that can be sent back to Microsoft. If this policy is enabled, Windows Error Reporting will send only kernel mini dumps and user mode triage dumps.
   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Dump Collection**
-  - MDM policy: System/LimitDumpCollection 
+  - MDM policy: System/LimitDumpCollection
 - The **Limit diagnostic log collection** policy is another new policy that limits the number of diagnostic logs that are sent back to Microsoft. If this policy is enabled, diagnostic logs aren't sent back to Microsoft.
   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Diagnostic Log Collection**
   - MDM policy: System/LimitDiagnosticLogCollection
@@ -78,7 +78,7 @@ Customers who use services that depend on Windows diagnostic data, such as [Micr
 > - Windows 10, versions 20H2, 21H2, 22H2, and newer
 > - Windows 11, versions 21H2, 22H2, 23H2, and newer
 
-Previously, IT admins could use policies (for example, the “Allow commercial data pipeline” policy) at the individual device level to enroll devices in the Windows diagnostic data processor configuration.
+Previously, IT admins could use policies (for example, the "Allow commercial data pipeline" policy) at the individual device level to enroll devices in the Windows diagnostic data processor configuration.
 
 Starting with the January 2023 preview cumulative update, how you enable the processor configuration option depends on the billing address of the Azure AD tenant to which your devices are joined.
 
