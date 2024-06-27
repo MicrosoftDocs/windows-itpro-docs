@@ -13,6 +13,8 @@
           href: update/release-cycle.md
         - name: Basics of Windows updates, channels, and tools
           href: update/get-started-updates-channels-tools.md
+        - name: Defining Windows update-managed devices
+          href: update/update-managed-unmanaged-devices.md
         - name: Prepare servicing strategy for Windows client updates
           href: update/waas-servicing-strategy-windows-10-updates.md
         - name: Deployment proof of concept
@@ -113,7 +115,7 @@
             - name: Deploy updates with Group Policy
               href: update/waas-wufb-group-policy.md
             - name: Deploy updates using CSPs and MDM
-              href: update/waas-wufb-csp-mdm.md              
+              href: update/waas-wufb-csp-mdm.md
             - name: Update Windows client media with Dynamic Update
               href: update/media-dynamic-update.md
             - name: Migrating and acquiring optional Windows content
@@ -377,7 +379,7 @@
         - name: Delivery Optimization reference
           href: do/waas-delivery-optimization-reference.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - name: FoD and language packs for WSUS and Configuration Manager
-          href: update/fod-and-lang-packs.md         
+          href: update/fod-and-lang-packs.md
         - name: Windows client in S mode
           href: s-mode.md
         - name: Switch to Windows client Pro or Enterprise from S mode

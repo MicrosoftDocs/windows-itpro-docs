@@ -1167,7 +1167,7 @@
     },
     {
       "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-feature-update-summary-dashboard.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-status-report",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-summary-dashboard",
       "redirect_document_id": true
     },
     {

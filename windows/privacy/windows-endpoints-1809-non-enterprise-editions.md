@@ -42,7 +42,7 @@ We used the following methodology to derive these network endpoints:
 |\*.g.akamai.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use.
 |\*.msn.com\*	|TLSv1.2/HTTPS |	Windows Spotlight related traffic
 |\*.Skype.com	| HTTP/HTTPS |	Skype related traffic
-|\*.smartscreen.microsoft.com\*	| HTTPS |	Windows Defender Smartscreen related traffic
+|\*.smartscreen.microsoft.com	| HTTPS |	Windows Defender Smartscreen related traffic
 |\*.telecommand.telemetry.microsoft.com\*	| HTTPS |	Used by Windows Error Reporting.
 |\*cdn.onenote.net*	| HTTP |	OneNote related traffic
 |\*displaycatalog.mp.microsoft.com\*	| HTTPS |	Used to communicate with Microsoft Store.
