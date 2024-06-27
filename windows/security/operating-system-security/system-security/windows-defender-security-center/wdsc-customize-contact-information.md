@@ -1,7 +1,7 @@
 ---
 title: Customize Windows Security contact information in Windows Security
 description: Provide information to your employees on how to contact your IT department when a security issue occurs
-ms.date: 08/11/2023
+ms.date: 06/27/2024
 ms.topic: how-to
 ---
 

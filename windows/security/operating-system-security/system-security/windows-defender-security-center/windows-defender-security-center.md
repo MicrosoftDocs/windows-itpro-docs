@@ -1,20 +1,16 @@
 ---
 title: Windows Security
 description: Windows Security brings together common Windows security features into one place.
-ms.date: 08/11/2023
+ms.date: 06/27/2024
 ms.topic: conceptual
 ---
 
 # Windows Security
 
-This library describes **Windows Security** settings, and provides information on configuring certain features, including:
+This topic describes **Windows Security** settings, and provides information on configuring certain features, including:
 
 - [Showing and customizing contact information](wdsc-customize-contact-information.md)
 - [Hiding notifications](wdsc-hide-notifications.md)
-
-In Windows 10, version 1709 and later, the settings also show information from third-party antivirus and firewall apps.
-
-In Windows 10, version 1803, the settings have two new areas: **Account protection** and **Device security**.
 
 ![Screenshot of the Windows Security showing that the device is protected and five icons for each of the features.](images/security-center-home.png)
 
@@ -52,7 +48,7 @@ For more information about each section, options for configuring the sections, a
 
     ![Screenshot of the Start menu showing the results of a search for the Windows Security, the first option with a large shield symbol is selected.](images/security-center-start-menu.png)
 
-- Open an area from Windows **Settings**.
+- Open an area from Windows **Settings** > **Privacy & security** > **Windows Security**.
 
     ![Screenshot of Windows Settings showing the different areas available in the Windows Security.](images/settings-windows-defender-security-center-areas.png)
 

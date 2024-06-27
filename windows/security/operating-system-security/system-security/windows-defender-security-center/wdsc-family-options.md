@@ -1,10 +1,9 @@
 ---
 title: Family options in Windows Security
 description: Learn how to hide the Family options section of Windows Security for enterprise environments. Family options aren't intended for business environments.
-ms.date: 08/11/2023
+ms.date: 06/27/2024
 ms.topic: how-to
 ---
-
 
 # Family options
 
@@ -27,7 +26,7 @@ This section can be hidden only by using Group Policy.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Family options**.
 1. Open the **Hide the Family options area** setting and set it to **Enabled**. Select **OK**.
-1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
+1. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 > [!NOTE]
 > If you hide all sections then **Windows Security** will show a restricted interface, as in the following screenshot:

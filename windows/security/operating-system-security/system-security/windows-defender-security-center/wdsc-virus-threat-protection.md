@@ -1,15 +1,13 @@
 ---
 title: Virus and threat protection in Windows Security
 description: Use the Virus & threat protection section to see and configure Microsoft Defender Antivirus, Controlled folder access, and 3rd-party AV products.
-ms.date: 08/11/2023
-ms.topic: conceptual
+ms.date: 06/27/2024
+ms.topic: how-to
 ---
 
 # Virus and threat protection
 
-The **Virus & threat protection** section contains information and settings for antivirus protection from Microsoft Defender Antivirus and third-party AV products.
-
-In Windows 10, version 1803, this section also contains information and settings for ransomware protection and recovery. These settings include Controlled folder access settings to prevent unknown apps from changing files in protected folders, plus Microsoft OneDrive configuration to help you recover from a ransomware attack. This area also notifies users and provides recovery instructions if there's a ransomware attack.
+The **Virus & threat protection** section contains information and settings for antivirus protection from Microsoft Defender Antivirus and third-party AV products. These settings include Controlled folder access settings to prevent unknown apps from changing files in protected folders, plus Microsoft OneDrive configuration to help you recover from a ransomware attack. This area also notifies users and provides recovery instructions if there's a ransomware attack.
 
 IT administrators and IT pros can get more configuration information from these articles:
 
@@ -35,7 +33,7 @@ This section can be hidden only by using Group Policy.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Virus and threat protection**.
 1. Open the **Hide the Virus and threat protection area** setting and set it to **Enabled**. Select **OK**.
-1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
+1. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 > [!NOTE]
 > If you hide all sections then **Windows Security** will show a restricted interface, as in the following screenshot:
@@ -55,4 +53,4 @@ This area can be hidden only by using Group Policy.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Virus and threat protection**.
 1. Open the **Hide the Ransomware data recovery area** setting and set it to **Enabled**. Select **OK**.
-1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
+1. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.

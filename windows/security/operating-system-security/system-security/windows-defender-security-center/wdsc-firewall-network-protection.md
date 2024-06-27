@@ -1,7 +1,7 @@
 ---
 title: Firewall and network protection in Windows Security
 description: Use the Firewall & network protection section to see the status of and make changes to firewalls and network connections for the machine.
-ms.date: 08/11/2023
+ms.date: 06/27/2024
 ms.topic: how-to
 ---
 
@@ -24,7 +24,7 @@ This section can be hidden only by using Group Policy.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Firewall and network protection**.
 1. Open the **Hide the Firewall and network protection area** setting and set it to **Enabled**. Select **OK**.
-1. Deploy the updated GPO as you normally do.
+1. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 > [!NOTE]
 > If you hide all sections then **Windows Security** will show a restricted interface, as in the following screenshot:

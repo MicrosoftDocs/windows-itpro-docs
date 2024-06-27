@@ -1,7 +1,7 @@
 ---
 title: Hide notifications from Windows Security
 description: Prevent Windows Security notifications from appearing on user endpoints
-ms.date: 07/31/2023
+ms.date: 06/27/2024
 ms.topic: how-to
 ---
 
@@ -34,7 +34,7 @@ These notifications can be hidden only by using Group Policy.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below, the path would be **Windows components > Windows Defender Security Center > Notifications**
 1. Open the **Hide non-critical notifications** setting and set it to **Enabled**. Select **OK**.
-1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
+1. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 ## Use Group Policy to hide all notifications
 
@@ -53,7 +53,7 @@ These notifications can be hidden only by using Group Policy.
     > For Windows 10 version 2004 and above the path would be **Windows components > Windows Security > Notifications**.
 
 1. Open the **Hide all notifications** setting and set it to **Enabled**. Select **OK**.
-1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
+1. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 > [!NOTE]
 > You can use the following registry key and DWORD value to **Hide all notifications**.

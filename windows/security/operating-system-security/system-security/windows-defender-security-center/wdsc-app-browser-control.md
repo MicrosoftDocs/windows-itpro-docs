@@ -1,7 +1,7 @@
 ---
 title: App & browser control in Windows Security
 description: Use the App & browser control section to see and configure Windows Defender SmartScreen and Exploit protection settings.
-ms.date: 08/11/2023
+ms.date: 06/27/2024
 ms.topic: how-to
 ---
 
@@ -26,7 +26,7 @@ You can only prevent users from modifying Exploit protection settings by using G
 2. In the **Group Policy Management Editor**, go to **Computer configuration**, select **Policies** and then **Administrative templates**.
 3. Expand the tree to **Windows components > Windows Security > App and browser protection**.
 4. Open the **Prevent users from modifying settings** setting and set it to **Enabled**. Select **OK**.
-5. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
+5. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 ## Hide the App & browser control section
 
@@ -41,7 +41,7 @@ This section can be hidden only by using Group Policy.
 2. In the **Group Policy Management Editor** go to **Computer configuration**, select **Policies** and then **Administrative templates**.
 3. Expand the tree to **Windows components > Windows Security > App and browser protection**.
 4. Open the **Hide the App and browser protection area** setting and set it to **Enabled**. Select **OK**.
-5. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
+5. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 > [!NOTE]
 > If you hide all sections then **Windows Security** will show a restricted interface, as in the following screenshot:
