@@ -61,7 +61,7 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 |Latest cumulative update           | YYYY-MM Cumulative Update for Windows 11                      |                                              |                  |
 |Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 21H2    |                                              |                  |
 
-### For Windows 10, version 22H2 Dynamic Update packages
+### Windows 10, version 22H2 Dynamic Update packages
 **Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
 
 | Update packages                   |Title                                                          |Product                                       |Description       |
@@ -123,7 +123,7 @@ Optional Components, along with the .NET feature, can be installed offline, howe
 ### Checkpoint cumulative updates
 Starting with Windows 11, version 24H2, the latest cumulative update may have a prerequisite cumulative update that is required to be installed first. These are known as checkpoint cumulative updates. In these cases, the cumulative update file level differentials are based on a previous cumulative update instead of the Windows RTM release. The benefit is a smaller update package and faster installation.
 
-To install the checkpoint(s) when servicing the Windows OS (steps 9 & 12) and WinPE (steps 17 & 23), call Add-WindowsPackage with the target cumulative update. The folder from PackagePath will be used to discover and install one or more checkpoints as needed. Only the target cumulative update and checkpoint cumulative updates should be in the PackagePath folder. Cumulative update packages with a revision <= the target cumulative update will be processed. If you are not customizing the image with additional languages and/or optional features, then separate calls to Add-WindowsPackage (checkpoint cumulative updates first) can be used for steps 9 & 17 above. Separate calls cannot be used for steps 12 and 23.
+To install the checkpoint(s) when servicing the Windows OS (steps 9 & 12) and WinPE (steps 17 & 23), call `Add-WindowsPackage` with the target cumulative update. The folder from `-PackagePath` will be used to discover and install one or more checkpoints as needed. Only the target cumulative update and checkpoint cumulative updates should be in the `-PackagePath` folder. Cumulative update packages with a revision <= the target cumulative update will be processed. If you are not customizing the image with additional languages and/or optional features, then separate calls to `Add-WindowsPackage` (checkpoint cumulative updates first) can be used for steps 9 & 17 above. Separate calls cannot be used for steps 12 and 23.
 
 
 ## Windows PowerShell scripts to apply Dynamic Updates to an existing image
