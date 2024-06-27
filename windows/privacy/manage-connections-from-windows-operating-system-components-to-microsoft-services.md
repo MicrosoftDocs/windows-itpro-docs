@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 03/07/2016
+ms.date: 06/27/2024
 ms.topic: reference
 ---
 
@@ -536,6 +536,9 @@ To turn off Live Tiles:
 - Create a REG_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a **value of 1 (one)**
 
 ### <a href="" id="bkmk-mailsync"></a>11. Mail synchronization
+
+> [!NOTE]
+> The Mail app and mail synchronization aren't available on Windows Server.
 
 To turn off mail synchronization for Microsoft Accounts that are configured on a device:
 
