@@ -53,7 +53,7 @@ If you are using a cloud proxy, you should configure it to allow Delivery Optimi
 
 ### Ports
 
-Delivery Optimization requires the use of certain ports to deliver content. Make sure you have opened all the [required ports](/waas-delivery-optimization-faq.yml#which-ports-does-delivery-optimization-use) to make Delivery Optimization work seamlessly.
+Delivery Optimization requires the use of certain ports to deliver content. Make sure you have opened all the [required ports](waas-delivery-optimization-faq.yml#which-ports-does-delivery-optimization-use) to make Delivery Optimization work seamlessly.
 
 ## DO presence
 
@@ -66,9 +66,9 @@ Use Group Policy or MDM Policies to locate Delivery Optimization settings.
 
 Delivery Optimization is increasingly found throughout Microsoft products. Learn more about the areas where there is integration to see how you can optimize the results in your environment.
 
-* [Microsoft Endpoint Manager (MEM)](https://learn.microsoft.com/en-us/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery)
-* [Microsoft Endpoint Configuration Manager (MECM)](https://learn.microsoft.com/en-us/mem/intune/configuration/delivery-optimization-windows)
-* [Autopilot](https://learn.microsoft.com/en-us/windows/deployment/windows-deployment-scenarios#modern-deployment-methods)/[Autopatch](https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) – there are no specific settings that should be configured for Autopilot or Autopatch devices. However, it’s important to remember that once the device is connected to the corporate network, Delivery Optimization policies will be applied.
+* [Microsoft Endpoint Manager (MEM)](https://learn.microsoft.com/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery)
+* [Microsoft Endpoint Configuration Manager (MECM)](https://learn.microsoft.com/mem/intune/configuration/delivery-optimization-windows)
+* [Autopilot](https://learn.microsoft.com/windows/deployment/windows-deployment-scenarios#modern-deployment-methods)/[Autopatch](https://learn.microsoft.com/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) – there are no specific settings that should be configured for Autopilot or Autopatch devices. However, it’s important to remember that once the device is connected to the corporate network, Delivery Optimization policies will be applied.
 
 ## Network topology
 
@@ -167,7 +167,7 @@ Looking to improve efficiency? Some of the most powerful settings you can change
 
 # Monitor Delivery Optimization and Troubleshooting
 
-Whether you opt for the default Delivery Optimization configurations or tailor them to suit your environment, you'll want to track the outcomes to see how they improve your efficiency. [Learn more](hwaas-delivery-optimization-monitor.md) about the monitoring options for Delivery Optimization.
+Whether you opt for the default Delivery Optimization configurations or tailor them to suit your environment, you'll want to track the outcomes to see how they improve your efficiency. [Learn more](waas-delivery-optimization-monitor.md) about the monitoring options for Delivery Optimization.
 
 ## Troubleshooting
 
