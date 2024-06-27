@@ -165,7 +165,7 @@ Looking to improve efficiency? Some of the most powerful settings you can change
 * [‘DelayCacheServerFallbackBackground’](waas-delivery-optimization-reference.md#delay-background-download-cache-server-fallback-in-secs) and [‘DelayCacheServerFallbackForeground’](waas-delivery-optimization-reference.md#delay-foreground-download-cache-server-fallback-in-secs) are the delay policies to help improve chances of pulling content from the network cachehost servers. (See recommended values in ‘Improving Efficiencies’ section).
 * [‘DODisallowCacheServerDownloadsOnVPN’](waas-delivery-optimization-reference.md#disallow-cache-server-downloads-on-vpn) allows control of the cachehost server to supply content, when device is on a VPN connection.
 
-# Monitor Delivery Optimization and Troubleshooting
+## Monitor Delivery Optimization and Troubleshooting
 
 Whether you opt for the default Delivery Optimization configurations or tailor them to suit your environment, you'll want to track the outcomes to see how they improve your efficiency. [Learn more](waas-delivery-optimization-monitor.md) about the monitoring options for Delivery Optimization.
 
