@@ -1,7 +1,7 @@
 ---
 title: ADMX-backed policies in Policy CSP
 description: Learn about the ADMX-backed policies in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1663,6 +1663,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [TS_NoSecurityMenu](policy-csp-admx-terminalserver.md)
 - [TS_START_PROGRAM_2](policy-csp-admx-terminalserver.md)
 - [TS_SERVER_ADVANCED_REMOTEFX_REMOTEAPP](policy-csp-admx-terminalserver.md)
+- [TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME](policy-csp-admx-terminalserver.md)
 - [TS_DX_USE_FULL_HWGPU](policy-csp-admx-terminalserver.md)
 - [TS_SERVER_WDDM_GRAPHICS_DRIVER](policy-csp-admx-terminalserver.md)
 - [TS_TSCC_PERMISSIONS_POLICY](policy-csp-admx-terminalserver.md)
@@ -2210,6 +2211,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [AllowSaveTargetAsInIEMode](policy-csp-internetexplorer.md)
 - [DisableInternetExplorerApp](policy-csp-internetexplorer.md)
 - [EnableExtendedIEModeHotkeys](policy-csp-internetexplorer.md)
+- [AllowLegacyURLFields](policy-csp-internetexplorer.md)
 - [ResetZoomForDialogInIEMode](policy-csp-internetexplorer.md)
 - [EnableGlobalWindowListInIEMode](policy-csp-internetexplorer.md)
 - [JScriptReplacement](policy-csp-internetexplorer.md)
