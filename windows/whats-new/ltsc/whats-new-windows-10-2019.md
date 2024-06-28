@@ -484,10 +484,10 @@ Previous versions of the Microsoft Application Virtualization Sequencer (App-V S
 
 For more information, see the following articles:
 
-- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-provision-a-vm)
-- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-batch-sequencing)
-- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-batch-updating)
-- [Automatically cleanup unpublished packages on the App-V client](/windows/application-management/app-v/appv-auto-clean-unpublished-packages)
+- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/microsoft-desktop-optimization-pack/app-v/appv-auto-provision-a-vm)
+- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/microsoft-desktop-optimization-pack/app-v/appv-auto-batch-sequencing)
+- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/microsoft-desktop-optimization-pack/app-v/appv-auto-batch-updating)
+- [Automatically cleanup unpublished packages on the App-V client](/microsoft-desktop-optimization-pack/app-v/appv-auto-clean-unpublished-packages)
 
 ### Windows diagnostic data
 

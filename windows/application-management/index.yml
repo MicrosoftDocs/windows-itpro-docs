@@ -9,7 +9,7 @@ metadata:
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
-  ms.date: 08/18/2023
+  ms.date: 06/28/2024
   ms.topic: landing-page
   ms.service: windows-client
   ms.subservice: itpro-apps
@@ -40,22 +40,3 @@ landingContent:
             url: per-user-services-in-windows.md
           - text: Changes to Service Host grouping in Windows 10
             url: svchost-service-refactoring.md
-
-  - title: Application Virtualization (App-V)
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: App-V overview
-            url: /microsoft-desktop-optimization-pack/app-v/appv-for-windows
-          - text: Getting started with App-V
-            url: /microsoft-desktop-optimization-pack/app-v/appv-getting-started
-          - text: Planning for App-V
-            url: /microsoft-desktop-optimization-pack/app-v/appv-planning-for-appv
-          - text: Deploying App-V
-            url: /microsoft-desktop-optimization-pack/app-v/appv-deploying-appv
-          - text: Operations for App-V
-            url: /microsoft-desktop-optimization-pack/app-v/appv-operations
-          - text: Troubleshooting App-V
-            url: /microsoft-desktop-optimization-pack/app-v/appv-troubleshooting
-          - text: Technical Reference for App-V
-            url: /microsoft-desktop-optimization-pack/app-v/appv-technical-reference
