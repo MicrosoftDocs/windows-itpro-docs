@@ -1,7 +1,7 @@
 ---
 title: DMClient CSP
 description: Learn more about the DMClient CSP.
-ms.date: 04/10/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -745,8 +745,8 @@ This node determines whether or not a periodic settings refresh for MDM policies
 
 | Value | Description |
 |:--|:--|
-| true | ConfigRefresh is enabled. |
-| false (Default) | ConfigRefresh is disabled. |
+| true | Enabled. |
+| false (Default) | Disabled. |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-AllowedValues-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Examples-Begin -->
