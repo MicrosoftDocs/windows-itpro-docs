@@ -169,7 +169,7 @@ Whether you opt for the default Delivery Optimization configurations or tailor t
 
 ## Troubleshoot Delivery Optimization
 
-There could be many different reasons why Delivery Optimization is not working in your environment. [Learn more](elivery-optimization-troubleshoot.md) about the DO Troubleshooter and common problems and solutions to help improve the experience of using Delivery Optimization.
+There could be many different reasons why Delivery Optimization is not working in your environment. [Learn more](delivery-optimization-troubleshoot.md) about the DO Troubleshooter and common problems and solutions to help improve the experience of using Delivery Optimization.
 
 ## Test Delivery Optimization
 
