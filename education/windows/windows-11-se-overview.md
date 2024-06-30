@@ -103,7 +103,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `DigiExam`                                | 14.1.0            | `Win32`    | `Digiexam`                                |
 | `Digital Secure testing browser`          | 15.0.0            | `Win32`    | `Digiexam`                                |
 | `Dolphin Guide Connect`                   | 1.27              | `Win32`    | `Dolphin Guide Connect`                   |
-| `Dragon Professional Individual`          | 15.00.100         | `Win32`    | `Nuance Communications`                   |
+| `Dragon Professional Individual`          | 16.00.200.121       | `Win32`    | `Nuance Communications`                   |
 | `DRC INSIGHT Online Assessments`          | 14.0.0.0          | `Store`  | `Data recognition Corporation`              |
 | `Duo from Cisco`                          | 6.3.0            | `Win32`    | `Cisco`                                   |
 | `Dyknow`                                  | 7.9.13.7          | `Win32`    | `Dyknow`                                  |
@@ -114,7 +114,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `ESET Endpoint Security`                  | 10.1.2046.0       | `Win32`    | `ESET`                                    |
 | `ESET Remote Administrator Agent`         | 10.0.1126.0       | `Win32`    | `ESET`                                    |
 | `eTests`                                  | 4.0.25            | `Win32`    | `CASAS`                                   |
-| `Exam Writepad`                           | 23.12.10.1200      | `Win32`    | `Sheldnet`                                |
+| `Exam Writepad`                           | 24.4.1.1200      | `Win32`    | `Sheldnet`                                |
 | `FirstVoices Keyboard`                    | 15.0.270          | `Win32`    | `SIL International`                       |
 | `FortiClient`                             | 7.2.0.4034+       | `Win32`    | `Fortinet`                                |
 | `Free NaturalReader`                      | 16.1.2            | `Win32`    | `Natural Soft`                            |
@@ -170,7 +170,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Remote Help`                             | 5.0.1311.0        | `Win32`    | `Microsoft`                               |
 | `Respondus Lockdown Browser`              | 2.1.1.05          | `Win32`    | `Respondus`                               |
 | `Safe Exam Browser`                       | 3.5.0.544         | `Win32`    | `Safe Exam Browser`                       |
-|`SchoolYear`                               | 3.5.4             | `Win32`    |`SchoolYear`                               |
+|`SchoolYear`                               | 3.7.10            | `Win32`    |`SchoolYear`                               |
 |`School Manager`                           | 3.6.10-1149       | `Win32`    |`Linewize`                                 |
 |`Schoolnet Secure Tester`                  |  2.1.0            | `Win32`    |`School Net`                               |
 |`Scratch`                                  | 3.0               | `Win32`    |`MIT`                                      |
@@ -188,8 +188,8 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Windows SEB`                             | 3.4.0             | `Win32`    | `Illinois Stateboard of Education`        |
 | `Windows Notepad`                         | 12.0.78           | `Store`    | `Microsoft Corporation`                   |
 | `Zoom`                                    | 5.12.8 (10232)    | `Win32`    | `Zoom`                                    |
-| `ZoomText Fusion`                         | 2024.2310.13.400  | `Win32`    | `Freedom Scientific`                      |
-| `ZoomText Magnifier/Reader`               | 2024.2312.26.400  | `Win32`    | `Freedom Scientific`                      |
+| `ZoomText Fusion`                         | 2024.2403.1.400  | `Win32`    | `Freedom Scientific`                      |
+| `ZoomText Magnifier/Reader`               | 2024.2402.66.400  | `Win32`    | `Freedom Scientific`                      |
 
 ## Add your own applications
 
