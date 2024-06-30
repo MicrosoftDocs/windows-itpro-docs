@@ -1,6 +1,6 @@
 ---
 title: Configure Delivery Optimization for Windows
-description: In this article, learn how to set up Delivery Optimization for use by Windows clients in your organization.
+description: In this article, learn about the different configuration considerations to optimize Delivery Optimization in your environment.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -23,17 +23,15 @@ ms.date: 07/01/2024
 
 ## Delivery Optimization set up considerations checklist
 
-* Allow Delivery Optimization communication
-* Find Delivery Optimization
-* Network topology
-* Device count
-* System resources
-* Improve efficiencies
-* Connected Cache
+1. Allow Delivery Optimization communication
+1. Find Delivery Optimization
+1. Network topology
+1. Device count
+1. System resources
+1. Improve efficiencies
+1. Connected Cache
 
-:::image type="content" source="images/do-setup-full.png" alt-text="Screenshot of the various Delivery Optimization configurations that should be considered to maximize efficiency." lightbox="images/do-setup-full.png":::
-
-## Allow DO communication
+## 1. Allow DO communication
 
 :::image type="content" source="images/do-setup-allow-communication.png" alt-text="Screenshot of the considerations to allow Delivery Optimization communication." lightbox="images/do-setup-allow-communication.png":::
 
@@ -55,7 +53,7 @@ If you're using a cloud proxy, you should configure it to allow Delivery Optimiz
 
 Delivery Optimization requires the use of certain ports to deliver content. Make sure all the [required ports](waas-delivery-optimization-faq.yml#which-ports-does-delivery-optimization-use) are open to make Delivery Optimization work seamlessly.
 
-## DO presence
+## 2. DO presence
 
 :::image type="content" source="images/do-setup-presence.png" alt-text="Screenshot of different product areas where you find Delivery Optimization." lightbox="images/do-setup-presence.png":::
 
@@ -70,7 +68,7 @@ Delivery Optimization is increasingly found throughout Microsoft products. Learn
 * [Microsoft Endpoint Configuration Manager (MECM)](https://learn.microsoft.com/mem/intune/configuration/delivery-optimization-windows)
 * [Autopilot](https://learn.microsoft.com/windows/deployment/windows-deployment-scenarios#modern-deployment-methods)/[Autopatch](https://learn.microsoft.com/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) – there are no specific settings that should be configured for Autopilot or Autopatch devices. However, it’s important to remember that once the device is connected to the corporate network, Delivery Optimization policies are applied.
 
-## Network topology
+## 3. Network topology
 
 :::image type="content" source="images/do-setup-network-topology.png" alt-text="Screenshot of Delivery Optimization network topology considerations." lightbox="images/do-setup-network-topology.png":::
 
@@ -107,7 +105,7 @@ There are two valid Download Modes that don't use the peer-to-peer functionality
 
 By default, if Delivery Optimization detects a VPN, peering is not used. To enable this behavior, use the [DOAllowVPNPeerCaching](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy. The Delivery Optimization Client looks in the network adapter’s ‘Description’ and ‘FriendlyName’ strings to determine VPN usage. To allow greater flexibility for VPN identification, use the [DOVpnKeywords](waas-delivery-optimization-reference.md#vpn-keywords) to add descriptors for a particular VPN. Also related, there's a [DODisallowCacheServerDownloadsOnVPN*](waas-delivery-optimization-reference.md#disallow-cache-server-downloads-on-vpn) policy to prevent downloads from a cache server while on a VPN connection.
 
-## Device counts
+## 4. Device counts
 
 :::image type="content" source="images/do-setup-device-counts.png" alt-text="Screenshot of Delivery Optimization device count considerations." lightbox="images/do-setup-device-counts.png":::
 
@@ -121,7 +119,7 @@ Content peering has a limited number of slots available at any given time. By de
 
 By default, peer-to-peer capabilities aren't enabled for devices using a battery. If there are many mobile devices in your environment, consider enabling the [DOMinBatteryPercentageAllowedToUpload](waas-delivery-optimization-reference.md#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) policy to 60%, to use peering while on battery.
 
-## System resources
+## 5. System resources
 
 :::image type="content" source="images/do-setup-system-resources.png" alt-text="Screenshot of Delivery Optimization system resources considerations." lightbox="images/do-setup-system-resources.png":::
 
@@ -139,7 +137,7 @@ Control the minimum amount of RAM (inclusive) allowed to use peer caching, [DOMi
 
 In a lab situation, there's typically a set number of devices that are plugged in and have ample free disk space. By increasing the content expiration interval of [DOMaxCacheAge](waas-delivery-optimization-reference.md#max-cache-age) to 7 or more (up to 30 days), you can take advantage of these devices, using them as excellent upload sources to upload more content over a longer period.
 
-## Improve efficiencies
+## 6. Improve efficiencies
 
 :::image type="content" source="images/do-setup-improve-efficiencies.png" alt-text="Screenshot of Delivery Optimization improve efficiency considerations." lightbox="images/do-setup-improve-efficiencies.png":::
 
@@ -153,7 +151,7 @@ Looking to improve efficiency? Some of the most powerful settings you can change
 > [!NOTE]
 > Not all content types aren't eligible for P2P. Refer the [complete list](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) to learn more.
 
-## Connected cache
+## 7. Connected cache
 
 :::image type="content" source="images/do-setup-connected-cache.png" alt-text="Screenshot of Delivery Optimization options when using Connected Cache." lightbox="images/do-setup-connected-cache.png":::
 
@@ -165,73 +163,14 @@ Looking to improve efficiency? Some of the most powerful settings you can change
 * [DelayCacheServerFallbackBackground](waas-delivery-optimization-reference.md#delay-background-download-cache-server-fallback-in-secs) and [DelayCacheServerFallbackForeground](waas-delivery-optimization-reference.md#delay-foreground-download-cache-server-fallback-in-secs) are the delay policies to help improve chances of pulling content from the network cache host servers. (See recommended values in ‘Improving Efficiencies’ section).
 * [DODisallowCacheServerDownloadsOnVPN](waas-delivery-optimization-reference.md#disallow-cache-server-downloads-on-vpn) allows control of the cache host server to supply content, when device is on a VPN connection.
 
-## Monitor Delivery Optimization and Troubleshooting
+## Monitor Delivery Optimization
 
 Whether you opt for the default Delivery Optimization configurations or tailor them to suit your environment, you will want to track the outcomes to see how they improve your efficiency. [Learn more](waas-delivery-optimization-monitor.md) about the monitoring options for Delivery Optimization.
 
-### Troubleshooting
+## Troubleshoot Delivery Optimization
 
-#### DO Troubleshooter
+There could be many different reasons why Delivery Optimization is not working in your environment. [Learn more](elivery-optimization-troubleshoot.md) about the DO Troubleshooter and common problems and solutions to help improve the experience of using Delivery Optimization.
 
-[Check out](https://aka.ms/do-fix) the new Delivery Optimization Troubleshooter. This tool provides a device health check to verify the device is set up properly to use Delivery Optimization. To scope the output more specifically, use one of the available switches:
-
-* -HealthCheck: Provides an overall check of the device setup to ensure Delivery Optimization communication is possible on the device.
-* -P2P: Provides output specific to P2P settings, efficiency, and errors.
-* -MCC: Provides output specific to MCC settings and verifies the client can access the cache server.
-
-### Testing Delivery Optimization
+## Test Delivery Optimization
 
 [Learn more](delivery-optimization-test.md) for guidance on basic testing scenarios to see how Delivery Optimization works.
-
-### Common problems and solutions
-
-This section summarizes common problems and some solutions to try.
-
-#### If you don't see any bytes from peers
-
-If you don't see any bytes coming from peers the cause might be one of the following issues:
-
-* Clients aren't able to reach the Delivery Optimization cloud services.
-* The cloud service doesn't see other peers on the network.
-* Clients aren't able to connect to peers that are offered back from the cloud service.
-* None of the computers on the network are getting updates from peers.
-
-#### Clients aren't able to reach the Delivery Optimization cloud services
-
-Try these steps:
-
-1. Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
-2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and observe the [DODownloadMode](waas-delivery-optimization-reference.md#download-mode) setting. For peering to work, download mode should be 1, 2, or 3.
-3. If the download mode is 99, it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization host names are allowed access: most importantly **\*.prod.do.dsp.mp.microsoft.com**.
-
-#### The cloud service doesn't see other peers on the network
-
-Try these steps:
-
-1. Download the same app on two different devices on the same network, waiting 10 - 15 minutes between downloads.
-2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and ensure that **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1 or 2 on both devices.
-3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated PowerShell window on the second device. The **NumberOfPeers** field should be nonzero.
-4. If the number of peers is zero and **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for "what is my IP"). In the case where devices aren't reporting the same public IP address, configure **[DODownloadMode](waas-delivery-optimization-reference.md#download-mode)** to 2 (Group) and use a custom **[DOGroupID (Guid)](waas-delivery-optimization-reference.md#group-id)**.
-
-> [!NOTE]
-> Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of potential peers per file, including which peers are successfully connected and the total bytes sent or received from each peer.
-
-#### Clients aren't able to connect to peers offered by the cloud service
-
-Try a Telnet test between two devices on the network to ensure they can connect using port 7680. Follow these steps:
-
-1. Install Telnet by running `dism /online /Enable-Feature /FeatureName:TelnetClient` from an elevated command prompt.
-2. Run the test. For example, if you're on device with IP 192.168.8.12 and you're trying to test the connection to 192.168.9.17 run `telnet 192.168.9.17 7680` (the syntax is *telnet [destination IP] [port]*. When you see a connection error or a blinking cursor like this /_. The blinking cursor means success.
-
-> [!NOTE]
-> You can also use [Test-NetConnection](/powershell/module/nettcpip/test-netconnection) instead of Telnet to run the test.
-> **Test-NetConnection -ComputerName 192.168.9.17 -Port 7680**
-
-#### None of the computers on the network are getting updates from peers
-
-Check Delivery Optimization settings that could limit participation in peer caching. Check whether the following settings in assigned group policies, local group policies, or MDM policies are too restrictive:
-
-* Minimum RAM (inclusive) allowed to use peer caching
-* Minimum disk size allowed to use peer caching
-* Enable peer caching while the device connects using VPN.
-* Allow uploads when the device is on battery while under the set battery level
