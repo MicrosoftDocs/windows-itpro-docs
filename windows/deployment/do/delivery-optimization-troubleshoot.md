@@ -29,10 +29,6 @@ ms.date: 07/01/2024
 - -P2P: Provides output specific to P2P settings, efficiency, and errors.
 - -MCC: Provides output specific to MCC settings and verifies the client can access the cache server.
 
-### Testing Delivery Optimization
-
-[Learn more](delivery-optimization-test.md) for guidance on basic testing scenarios to see how Delivery Optimization works.
-
 ### Common problems and solutions
 
 This section summarizes common problems and some solutions to try.
