@@ -1,7 +1,7 @@
 ---
 title: ADMX_WindowsExplorer Policy CSP
 description: Learn more about the ADMX_WindowsExplorer Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -455,6 +455,56 @@ You can specify a known folder using its known folder id or using its canonical 
 <!-- DisableKnownFolders-Examples-End -->
 
 <!-- DisableKnownFolders-End -->
+
+<!-- DisableMotWOnInsecurePathCopy-Begin -->
+## DisableMotWOnInsecurePathCopy
+
+<!-- DisableMotWOnInsecurePathCopy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableMotWOnInsecurePathCopy-Applicability-End -->
+
+<!-- DisableMotWOnInsecurePathCopy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/DisableMotWOnInsecurePathCopy
+```
+<!-- DisableMotWOnInsecurePathCopy-OmaUri-End -->
+
+<!-- DisableMotWOnInsecurePathCopy-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- DisableMotWOnInsecurePathCopy-Description-End -->
+
+<!-- DisableMotWOnInsecurePathCopy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableMotWOnInsecurePathCopy-Editable-End -->
+
+<!-- DisableMotWOnInsecurePathCopy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableMotWOnInsecurePathCopy-DFProperties-End -->
+
+<!-- DisableMotWOnInsecurePathCopy-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableMotWOnInsecurePathCopy |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- DisableMotWOnInsecurePathCopy-AdmxBacked-End -->
+
+<!-- DisableMotWOnInsecurePathCopy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableMotWOnInsecurePathCopy-Examples-End -->
+
+<!-- DisableMotWOnInsecurePathCopy-End -->
 
 <!-- DisableSearchBoxSuggestions-Begin -->
 ## DisableSearchBoxSuggestions
