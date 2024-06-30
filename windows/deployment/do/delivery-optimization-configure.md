@@ -64,9 +64,11 @@ Use Group Policy or MDM Policies to locate Delivery Optimization settings.
 
 Delivery Optimization is increasingly found throughout Microsoft products. Learn more about the areas where there's integration to see how you can optimize the results in your environment.
 
-* [Microsoft Endpoint Manager (MEM)](https://learn.microsoft.com/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery)
-* [Microsoft Endpoint Configuration Manager (MECM)](https://learn.microsoft.com/mem/intune/configuration/delivery-optimization-windows)
-* [Autopilot](https://learn.microsoft.com/windows/deployment/windows-deployment-scenarios#modern-deployment-methods)/[Autopatch](https://learn.microsoft.com/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) – there are no specific settings that should be configured for Autopilot or Autopatch devices. However, it’s important to remember that once the device is connected to the corporate network, Delivery Optimization policies are applied.
+* [Microsoft Endpoint Manager (MEM)](/mem/intune/configuration/delivery-optimization-windows)
+* [Microsoft Endpoint Configuration Manager (MECM)](/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery)
+* [Autopilot](/windows-deployment-scenarios.md#modern-deployment-methods)/[Autopatch](/windows-autopatch/overview/windows-autopatch-overview) – there are no specific settings that should be configured for Autopilot or Autopatch devices. However, it’s important to remember that once the device is connected to the corporate network, Delivery Optimization policies are applied.
+
+
 
 ## 3. Network topology
 

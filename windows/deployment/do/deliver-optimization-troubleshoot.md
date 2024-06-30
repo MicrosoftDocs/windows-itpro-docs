@@ -25,9 +25,9 @@ ms.date: 07/01/2024
 
 [Check out](https://aka.ms/do-fix) the new Delivery Optimization Troubleshooter. This tool provides a device health check to verify the device is set up properly to use Delivery Optimization. To scope the output more specifically, use one of the available switches:
 
-* -HealthCheck: Provides an overall check of the device setup to ensure Delivery Optimization communication is possible on the device.
-* -P2P: Provides output specific to P2P settings, efficiency, and errors.
-* -MCC: Provides output specific to MCC settings and verifies the client can access the cache server.
+- -HealthCheck: Provides an overall check of the device setup to ensure Delivery Optimization communication is possible on the device.
+- -P2P: Provides output specific to P2P settings, efficiency, and errors.
+- -MCC: Provides output specific to MCC settings and verifies the client can access the cache server.
 
 ### Testing Delivery Optimization
 
