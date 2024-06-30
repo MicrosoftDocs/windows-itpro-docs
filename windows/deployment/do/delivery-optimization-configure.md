@@ -66,7 +66,7 @@ Delivery Optimization is increasingly found throughout Microsoft products. Learn
 
 * [Microsoft Endpoint Manager (MEM)](/mem/intune/configuration/delivery-optimization-windows)
 * [Microsoft Endpoint Configuration Manager (MECM)](/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery)
-* [Autopilot](/windows-deployment-scenarios.md#modern-deployment-methods)/[Autopatch](/windows-autopatch/overview/windows-autopatch-overview) – there are no specific settings that should be configured for Autopilot or Autopatch devices. However, it’s important to remember that once the device is connected to the corporate network, Delivery Optimization policies are applied.
+* [Autopilot](../windows-deployment-scenarios#modern-deployment-methods)/[Autopatch](../windows-autopatch/overview/windows-autopatch-overview) – there are no specific settings that should be configured for Autopilot or Autopatch devices. However, it’s important to remember that once the device is connected to the corporate network, Delivery Optimization policies are applied.
 
 
 
