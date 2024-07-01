@@ -557,7 +557,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
         # Save setuphost.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
         # This is only required starting with Windows 11 version 24H2
         $TEMP = Get-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex
-        if ($TEMP.Version -ge "10.0.26100") {
+        if ([System.Version]$TEMP.Version -ge [System.Version]"10.0.26100") {
             
             Copy-Item -Path $WINPE_MOUNT"\sources\setuphost.exe" -Destination $WORKING_PATH"\setuphost.exe" -Force -ErrorAction stop | Out-Null
         }
