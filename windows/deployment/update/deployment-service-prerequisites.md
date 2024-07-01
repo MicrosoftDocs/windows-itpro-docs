@@ -85,7 +85,7 @@ When you use [Windows Update for Business reports](wufb-reports-overview.md) in 
 - Windows Update for Business deployment service endpoints 
 
     - devicelistenerprod.microsoft.com
-       - devicelistenerprod.eudb.microsoft.com if in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn) <!--9131668-->
+       - devicelistenerprod.eudb.microsoft.com for the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn) <!--9131668-->
     - login.windows.net
     - payloadprod*.blob.core.windows.net
 
