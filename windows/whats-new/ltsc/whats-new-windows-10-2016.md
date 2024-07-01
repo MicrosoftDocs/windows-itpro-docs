@@ -39,7 +39,7 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 >[!IMPORTANT]
 >Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a General Availability Channel release.
 
-Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for more direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft's experience upgrading millions of devices to Windows 10. 
+Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for more direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft's experience upgrading millions of devices to Windows 10.
 
 With Windows diagnostic data enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they're known to Microsoft.
 
@@ -71,7 +71,7 @@ Other changes for Windows Hello in Windows 10 Enterprise LTSC 2016:
 
 - Personal (Microsoft account) and corporate (Active Directory or Entra ID) accounts use a single container for keys.
 - Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.
-- Beginning in this version of Windows 10, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
+- Beginning in this version of Windows 10, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN, enable the Group Policy setting **Turn on convenience PIN sign-in**.
 
 [Learn more about Windows Hello for Business.](/windows/security/identity-protection/hello-for-business/deploy/requirements)
 
@@ -156,17 +156,17 @@ This version of Windows 10, introduces shared PC mode, which optimizes Windows 1
 
 Application Virtualization (App-V) enables organizations to deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service - in real time and on as as-needed basis. Users launch virtual applications from familiar access points, including the Microsoft Store, and interact with them as if they were installed locally.
 
-With the release of this version of Windows 10, App-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and App-V or if you're upgrading from a previous version of App-V, you'll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. 
+With the release of this version of Windows 10, App-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and App-V or if you're upgrading from a previous version of App-V, you'll need to download, activate, and install server- and client-side components to start delivering virtual applications to users.
 
-[Learn how to deliver virtual applications with App-V.](/windows/application-management/app-v/appv-getting-started)
+[Learn how to deliver virtual applications with App-V.](/microsoft-desktop-optimization-pack/app-v/appv-getting-started)
 
 ### User Experience Virtualization (UE-V) for Windows 10
 
-Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Microsoft Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options. 
+Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Microsoft Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options.
 
 With User Experience Virtualization (UE-V), you can capture user-customized Windows and application settings and store them on a centrally managed network file share. When users sign in, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they sign in to.
 
-With the release of this version of Windows 10, UE-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you'll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
+With the release of this version of Windows 10, UE-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you'll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices.
 
 [Learn how to synchronize user-customized settings with UE-V.](/microsoft-desktop-optimization-pack/ue-v/uev-for-windows)
 
