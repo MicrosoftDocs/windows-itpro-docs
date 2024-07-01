@@ -69,11 +69,6 @@
         "Windows 10"
       ]
     },
-    "fileMetadata": {
-      "feedback_system": {
-        "app-v/**/*.*": "None"
-      }
-    },
     "template": [],
     "dest": "win-app-management",
     "markdownEngineName": "markdig"

@@ -1,19 +1,9 @@
 ---
 title: Add, remove, or hide Windows features
 description: Learn how to add or remove Windows optional features using the Optional features page in the Settings app. Also see the group policy objects (GPO) and MDM policies that show or hide Windows Features in the Settings app. Use Windows PowerShell to show or hide specific features in Windows Features.
-author: aczechowski
-ms.author: aaroncz
-manager: aaroncz
-ms.date: 03/28/2024
+ms.date: 07/01/2024
 ms.topic: how-to
-ms.service: windows-client
-ms.subservice: itpro-apps
-ms.localizationpriority: medium
-ms.collection: tier2
 zone_pivot_groups: windows-versions-11-10
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Add, remove, or hide Windows features
@@ -29,7 +19,7 @@ Open the **Optional features** pane in the **Settings** app by selecting the fol
 > [!div class="nextstepaction"]
 > [Optional features](ms-settings:optionalfeatures)
 
-or
+Or
 
 1. Right-click on the **Start** menu and select **Run**.
 
@@ -41,7 +31,7 @@ or
 
    and then select **OK**.
 
-or
+Or
 
 ::: zone pivot="windows-11"
 
