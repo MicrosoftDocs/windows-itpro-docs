@@ -19,13 +19,13 @@
           href: required-diagnostic-events-fields-windows-11-22H2.md
         - name: Windows 11, version 21H2
           href: required-windows-11-diagnostic-events-and-fields.md
-        - name: Windows 10, versions 22H2, 21H2, 21H1, 20H2, and 2004
+        - name: Windows 10, versions 22H2 and 21H2
           href: required-windows-diagnostic-data-events-and-fields-2004.md
         - name: Windows 10, version 1809
           href: basic-level-windows-diagnostic-events-and-fields-1809.md
-    - name: Optional Windows diagnostic data events and fields
+    - name: Optional Windows diagnostic data
       items:
-        - name: Windows 10, version 1709 and later and Windows 11 optional diagnostic data
+        - name: Optional diagnostic data for Windows 11 and Windows 10
           href: windows-diagnostic-data.md
     - name: Manage Windows connected experiences
       items: 
