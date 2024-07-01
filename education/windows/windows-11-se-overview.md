@@ -128,7 +128,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `IMT Lazarus`                             | 2.86.0            | `Win32`    | `IMTLazarus`                              |
 | `Inprint`                                 | 3.7.6             | `Win32`    | `Inprint`                                 |
 | `Inspiration 10`                          | 10.11             | `Win32`    | `TechEdology Ltd`                         |
-| `Instashare`                              | 1.3.13.0            | `Win32`    | `Instashare`                            |
+| `Instashare 2`                              | 1.3.13.0         | `Win32`  | `BenQ`                                    |
 | `JAWS for Windows`                        | 2024.2312.53      | `Win32`    | `Freedom Scientific`                      |
 | `Kite Student Portal`                     | 9.0.0.0           | `Win32`    | `Dynamic Learning Maps`                   |
 | `Keyman`                                  | 16.0.142          | `Win32`    | `SIL International`                       |
