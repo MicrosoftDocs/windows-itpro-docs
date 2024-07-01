@@ -21,5 +21,3 @@ items:
   href: provisioning-packages/toc.yml
 - name: Windows Configuration Designer
   href: wcd/toc.yml
-- name: User Experience Virtualization (UE-V)
-  href: /microsoft-desktop-optimization-pack/ue-v/uev-for-windows
