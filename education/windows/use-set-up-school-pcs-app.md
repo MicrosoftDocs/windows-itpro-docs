@@ -137,7 +137,7 @@ To change an existing package's name, right-click the package folder on your dev
 
 :::row:::
   :::column span="1":::
-### Wireless network
+#### Wireless network
 
 
     :::column-end:::
@@ -152,7 +152,7 @@ Select your organization's Wi-Fi network from the list of available wireless net
 
 :::row:::
   :::column span="1":::
-### Device names
+#### Device names
     :::column-end:::
   :::column span="3":::
 Create a name to add as a prefix to each device. This name helps you recognize and manage this group of devices in Intune.
@@ -165,7 +165,7 @@ To keep the default name for your devices, select **Continue with existing names
 
 :::row:::
   :::column span="1":::
-### Settings
+#### Settings
     :::column-end:::
   :::column span="3":::
 Select more settings to include in the provisioning package. To begin, select the operating system on your student PCs.
@@ -192,7 +192,7 @@ After you've made your selections, select **Next**.
 
 :::row:::
   :::column span="1":::
-### Time zone
+#### Time zone
     :::column-end:::
   :::column span="3":::
 > [!WARNING]
@@ -207,7 +207,7 @@ Choose the time zone where your school's devices are used. This setting ensures 
 
 :::row:::
   :::column span="1":::
-### Product key
+#### Product key
     :::column-end:::
   :::column span="3":::
 Optionally, type in a 25-digit product key to upgrade or change the edition of Windows on your student devices. If you don't have a product key, select **Continue without change**.
@@ -217,11 +217,11 @@ Optionally, type in a 25-digit product key to upgrade or change the edition of W
 
 :::row:::
   :::column span="1":::
-### Take a Test
+#### Take a Test
     :::column-end:::
   :::column span="3":::
 
-    :::Set up the Take a Test app to give online quizzes and high-stakes assessments. During assessments, Windows locks down the student devices so that students can't access anything else on the device.
+   Set up the Take a Test app to give online quizzes and high-stakes assessments. During assessments, Windows locks down the student devices so that students can't access anything else on the device.
 
 1. Select **Yes** to create a Take a Test button on the sign-in screens of your students' devices
 
@@ -238,7 +238,7 @@ column-end:::
 
 :::row:::
   :::column span="1":::
-### Personalization
+#### Personalization
     :::column-end:::
   :::column span="3":::
 
@@ -251,7 +251,7 @@ If you don't want to upload custom images or use the images that appear in the a
 
 :::row:::
   :::column span="1":::
-### Summary
+#### Summary
     :::column-end:::
   :::column span="3":::
 Review all of the settings for accuracy and completeness
@@ -266,7 +266,7 @@ Review all of the settings for accuracy and completeness
 
 :::row:::
   :::column span="1":::
-### Insert USB
+#### Insert USB
     :::column-end:::
   :::column span="3":::
 1. Insert a USB drive. The **Save** button lights up when your computer detects the USB
