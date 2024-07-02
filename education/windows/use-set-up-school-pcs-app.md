@@ -20,6 +20,8 @@ With Set up School PCs you can:
 
 This article describes how to use the Set up School PCs app. To learn more about the app's functionality, review the [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).
 
+:::image type="content" source="images/suspcs/splash-screen.png" alt-text="Screenshot of the SUSPCs splash screen." border="false":::
+
 ## Requirements
 
 Before you begin, make sure that your devices and your school's network are configured with the following requirements:
@@ -94,6 +96,8 @@ We strongly recommend that you avoid changing preset policies. Changes can slow 
 ## Create the provisioning package
 
 The **Set up School PCs** app guides you through the configuration choices for the student PCs.  To begin, open the app on your device and select **Get started**.
+
+:::image type="content" source="images/suspcs/landing-page.png" alt-text="Screenshot of the SUSPCs landing page." border="false":::
 
 :::row:::
   :::column span="1":::
