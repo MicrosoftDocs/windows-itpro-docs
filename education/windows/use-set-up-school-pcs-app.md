@@ -9,7 +9,7 @@ appliesto:
 
 # Use the Set up School PCs app
 
-IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up Windows devices for students. The app configures devices with the apps and features students need, and it removes the ones they don't need. During setup, if licensed in your tenant, the app enrolls each student device in Microsoft Intune. You can then manage all the settings the app configures through Intune.
+IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up Windows devices for students. During setup, student devices can be enrolled in Microsoft Intune, so that you can manage all the settings the app configures through Intune.
 
 With Set up School PCs you can:
 
@@ -95,8 +95,11 @@ We strongly recommend that you avoid changing preset policies. Changes can slow 
 
 The **Set up School PCs** app guides you through the configuration choices for the student PCs.  To begin, open the app on your device and select **Get started**.
 
-### Package name
-
+:::row:::
+    :::column:::
+        ### Package name
+    :::column-end:::
+    :::column:::
 Type a unique name to help distinguish your school's provisioning packages. The name appears:
 
 - On the local package folder
@@ -107,9 +110,18 @@ A package expiration date is also attached to the end of each package. For examp
 After you select **Next**, you can no longer change the name in the app. To create a package with a different name, reopen the Set up School PCs app.
 
 To change an existing package's name, right-click the package folder on your device and select **Rename**. This action doesn't change the name in Microsoft Entra ID. You can access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator), and rename the package there.
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+
 
 ### Sign in
+    :::column-end:::
+    :::column:::
 
+    :::column-end:::
+:::row-end:::
 1. Select how you want to sign in
     1. (Recommended) To enable student device to automatically connect and authenticate to Microsoft Entra ID, and management services like Microsoft Intune, select **Sign-in**. Then go to step 3
     1. To complete setup without signing in, select **Continue without account**. Student devices won't connect to your school's cloud services and their management will be more difficult later. Continue to [Wireless network](#wireless-network)
@@ -123,19 +135,46 @@ To change an existing package's name, right-click the package folder on your dev
 1. Select **Accept** to allow Set up School PCs to access your account throughout setup
 1. When your account name appears on the page, select **Next**
 
+:::row:::
+    :::column:::
 ### Wireless network
 
+
+    :::column-end:::
+    :::column:::
 Add and save the wireless network profile that you want student devices to connect to. Only skip Wi-Fi setup if you have an Ethernet connection.
 
 Select your organization's Wi-Fi network from the list of available wireless networks, or select **Add a wireless network** to manually configure it. Then select **Next**
+    :::column-end:::
+:::row-end:::
 
+
+
+:::row:::
+    :::column:::
 ### Device names
-
+    :::column-end:::
+    :::column:::
 Create a name to add as a prefix to each device. This name helps you recognize and manage this group of devices in Intune.
 
 To make sure all device names are unique, Set up School PCs automatically appends `_%SERIAL%` to the name. For example, if you add *MATH4* as the prefix, the device names appear as *MATH4* followed by the device serial number.
 
 To keep the default name for your devices, select **Continue with existing names**.
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+
+    :::column-end:::
+    :::column:::
+
+    :::column-end:::
+:::row-end:::
+
+
+
+
 
 ### Settings
 
