@@ -96,10 +96,10 @@ We strongly recommend that you avoid changing preset policies. Changes can slow 
 The **Set up School PCs** app guides you through the configuration choices for the student PCs.  To begin, open the app on your device and select **Get started**.
 
 :::row:::
-    :::column:::
+  :::column span="1":::
         ### Package name
     :::column-end:::
-    :::column:::
+  :::column span="3":::
 Type a unique name to help distinguish your school's provisioning packages. The name appears:
 
 - On the local package folder
@@ -113,15 +113,12 @@ To change an existing package's name, right-click the package folder on your dev
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column:::
+  :::column span="1":::
 
 
 ### Sign in
     :::column-end:::
-    :::column:::
-
-    :::column-end:::
-:::row-end:::
+  :::column span="3":::
 1. Select how you want to sign in
     1. (Recommended) To enable student device to automatically connect and authenticate to Microsoft Entra ID, and management services like Microsoft Intune, select **Sign-in**. Then go to step 3
     1. To complete setup without signing in, select **Continue without account**. Student devices won't connect to your school's cloud services and their management will be more difficult later. Continue to [Wireless network](#wireless-network)
@@ -134,14 +131,17 @@ To change an existing package's name, right-click the package folder on your dev
 
 1. Select **Accept** to allow Set up School PCs to access your account throughout setup
 1. When your account name appears on the page, select **Next**
+    :::column-end:::
+:::row-end:::
+
 
 :::row:::
-    :::column:::
+  :::column span="1":::
 ### Wireless network
 
 
     :::column-end:::
-    :::column:::
+  :::column span="3":::
 Add and save the wireless network profile that you want student devices to connect to. Only skip Wi-Fi setup if you have an Ethernet connection.
 
 Select your organization's Wi-Fi network from the list of available wireless networks, or select **Add a wireless network** to manually configure it. Then select **Next**
@@ -151,10 +151,10 @@ Select your organization's Wi-Fi network from the list of available wireless net
 
 
 :::row:::
-    :::column:::
+  :::column span="1":::
 ### Device names
     :::column-end:::
-    :::column:::
+  :::column span="3":::
 Create a name to add as a prefix to each device. This name helps you recognize and manage this group of devices in Intune.
 
 To make sure all device names are unique, Set up School PCs automatically appends `_%SERIAL%` to the name. For example, if you add *MATH4* as the prefix, the device names appear as *MATH4* followed by the device serial number.
@@ -164,20 +164,10 @@ To keep the default name for your devices, select **Continue with existing names
 :::row-end:::
 
 :::row:::
-    :::column:::
-
-    :::column-end:::
-    :::column:::
-
-    :::column-end:::
-:::row-end:::
-
-
-
-
-
+  :::column span="1":::
 ### Settings
-
+    :::column-end:::
+  :::column span="3":::
 Select more settings to include in the provisioning package. To begin, select the operating system on your student PCs.
 
 Setting selections vary based on the OS version you select.
@@ -194,21 +184,44 @@ The following table describes each setting and lists the applicable Windows 10 v
 | Lock screen background | Change the default screen lock background to a custom image. | Select **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png. |
 
 After you've made your selections, select **Next**.
+    :::column-end:::
+:::row-end:::
 
+
+
+
+:::row:::
+  :::column span="1":::
 ### Time zone
-
+    :::column-end:::
+  :::column span="3":::
 > [!WARNING]
 > If you are using the Autounattend.xml file to reimage your school PCs, do not specify a time zone in the file. If you set the time zone in the file *and* in this app, you will encounter an error.
 
 Choose the time zone where your school's devices are used. This setting ensures that all PCs are provisioned in the same time zone. When you're done, select **Next**.
+    :::column-end:::
+:::row-end:::
 
+
+
+
+:::row:::
+  :::column span="1":::
 ### Product key
-
+    :::column-end:::
+  :::column span="3":::
 Optionally, type in a 25-digit product key to upgrade or change the edition of Windows on your student devices. If you don't have a product key, select **Continue without change**.
+    :::column-end:::
+:::row-end:::
 
+
+:::row:::
+  :::column span="1":::
 ### Take a Test
+    :::column-end:::
+  :::column span="3":::
 
-Set up the Take a Test app to give online quizzes and high-stakes assessments. During assessments, Windows locks down the student devices so that students can't access anything else on the device.
+    :::Set up the Take a Test app to give online quizzes and high-stakes assessments. During assessments, Windows locks down the student devices so that students can't access anything else on the device.
 
 1. Select **Yes** to create a Take a Test button on the sign-in screens of your students' devices
 
@@ -217,15 +230,30 @@ Set up the Take a Test app to give online quizzes and high-stakes assessments. D
     - Allow teachers to monitor online tests: Enables screen capture in the Take a Test app
 1. Enter the URL where the test is hosted. When students log in to the Take a Test account, they'll be able to select or enter the link to view the assessment
 1. Select **Next**
+column-end:::
+:::row-end:::
 
+
+
+
+:::row:::
+  :::column span="1":::
 ### Personalization
+    :::column-end:::
+  :::column span="3":::
 
 Upload custom images to replace the student devices' default desktop and lock screen backgrounds. Select **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.
 
 If you don't want to upload custom images or use the images that appear in the app, select **Continue without personalization**. This option doesn't apply any customizations, and instead uses the devices' default or preset images.
+    :::column-end:::
+:::row-end:::
 
+
+:::row:::
+  :::column span="1":::
 ### Summary
-
+    :::column-end:::
+  :::column span="3":::
 Review all of the settings for accuracy and completeness
 
 1. To make changes now, select any page along the left side of the window
@@ -233,12 +261,20 @@ Review all of the settings for accuracy and completeness
 
 > [!NOTE]
 > To make changes to a saved package, you have to start over.
+    :::column-end:::
+:::row-end:::
 
+:::row:::
+  :::column span="1":::
 ### Insert USB
-
+    :::column-end:::
+  :::column span="3":::
 1. Insert a USB drive. The **Save** button lights up when your computer detects the USB
 1. Choose your USB drive from the list and select **Save**
 1. When the package is ready, you see the filename and package expiration date. You can also select **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and select **Next**
+    :::column-end:::
+:::row-end:::
+
 
 ## Run package - Get PCs ready
 
