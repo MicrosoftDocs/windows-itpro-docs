@@ -64,6 +64,9 @@ The following list can be used as a template for creating a recovery process for
 
 There are a few Microsoft Entra ID roles that allow a delegated administrator to read BitLocker recovery passwords from the devices in the tenant. While it's common for organizations to use the existing Microsoft Entra ID *[Cloud Device Administrator][ENTRA-2]* or *[Helpdesk Administrator][ENTRA-3]* built-in roles, you can also [create a custom role][ENTRA-5], delegating access to BitLocker keys using the `microsoft.directory/bitlockerKeys/key/read` permission. Roles can be delegated to access BitLocker recovery passwords for devices in specific Administrative Units.
 
+> [!NOTE]
+> When devices including [Windows Autopilot](/mem/autopilot/windows-autopilot) are reused to join to Entra, **and there is a new device owner**, that new device owner must contact an administrator to acquire the BitLocker recovery key for that device. Administrative unit scoped administrators will lose access to BitLocker recovery keys after device ownership changes. These scoped administrators will need to contact a non-scoped administrator for the recovery keys. For more information, see the article [Find the primary user of an Intune device](/mem/intune/remote-actions/find-primary-user#change-a-devices-primary-user).
+
 The [Microsoft Entra admin center][ENTRA] allows administrators to retrieve BitLocker recovery passwords. To learn more about the process, see [View or copy BitLocker keys][ENTRA-4]. Another option to access BitLocker recovery passwords is to use the Microsoft Graph API, which might be useful for integrated or scripted solutions. For more information about this option, see [Get bitlockerRecoveryKey][GRAPH-1].
 
 In the following example, we use Microsoft Graph PowerShell cmdlet [`Get-MgInformationProtectionBitlockerRecoveryKey`][PS-1] to build a PowerShell function that retrieves recovery passwords from Microsoft Entra ID:
