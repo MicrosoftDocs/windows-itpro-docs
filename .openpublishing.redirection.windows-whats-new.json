@@ -159,11 +159,21 @@
          "source_path":"windows/whats-new/whats-new-windows-10-version-20H2.md",
          "redirect_url":"/previous-versions/windows/it-pro/windows-10/whats-new/whats-new-windows-10-version-20H2",
          "redirect_document_id":false
-       },
-       {
-        "source_path":"windows/whats-new/whats-new-windows-10-version-21H1.md",
-        "redirect_url":"/previous-versions/windows/it-pro/windows-10/whats-new/whats-new-windows-10-version-21H1",
-        "redirect_document_id":false
-         }
-      ]
-   }
+      },
+      {
+         "source_path":"windows/whats-new/whats-new-windows-10-version-21H1.md",
+         "redirect_url":"/previous-versions/windows/it-pro/windows-10/whats-new/whats-new-windows-10-version-21H1",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/whats-new-windows-10-version-21H2.md",
+         "redirect_url":"/previous-versions/windows/it-pro/windows-10/whats-new/whats-new-windows-10-version-21H2",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"windows/whats-new/ltsc/index.yml",
+         "redirect_url":"/windows/whats-new/",
+         "redirect_document_id":false
+      }
+   ]
+}
