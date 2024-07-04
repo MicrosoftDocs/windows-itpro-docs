@@ -1,9 +1,8 @@
 ---
 title: Use Quick Assist to help users
 description: Learn how IT Pros can use Quick Assist to help users.
-ms.date: 05/09/2024
+ms.date: 07/01/2024
 ms.topic: conceptual
-ms.localizationpriority: medium
 ms.collection:
 - highpri
 - tier1
@@ -134,7 +133,7 @@ Quick Assist for macOS is available for interactions with Microsoft Support. If 
 
 ## Disable Quick Assist within your organization
 
-If your organization utilizes another remote support tool such as [Remote Help](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune-remote-help), disable or remove Quick Assist as a best practice, if it isn't used within your environment. This prevents external users from using Quick Assist to gain access to devices within your organization.
+If your organization utilizes another remote support tool such as [Remote Help](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune-remote-help), disable or remove Quick Assist as a best practice, if it isn't used within your environment. This prevents guests from using Quick Assist to gain access to devices within your organization.
 
 ### Disable Quick Assist
 
