@@ -184,9 +184,6 @@ Looking to improve efficiency? Some of the most powerful settings you can change
 
 :::image type="content" source="images/do-setup-connected-cache.png" alt-text="Screenshot of Delivery Optimization options when using Connected Cache." lightbox="images/do-setup-connected-cache.png":::
 
-> [!NOTE]
-> When using the Connected Cache dedicated cache solution for your environment there are a handful of policies you should be aware of, some of which have been mentioned throughout this page (denoted with *).
-
 * [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname) is the list of cache host server names, separated with commas. Delivery Optimization client connects to the listed Microsoft Connected Cache servers in the order as they're listed.
 * [DOCacheHostSource](waas-delivery-optimization-reference.md#cache-server-hostname-source) can be used to dynamically discover cache host servers on the network, using DHCP.
 * [DelayCacheServerFallbackBackground](waas-delivery-optimization-reference.md#delay-background-download-cache-server-fallback-in-secs) and [DelayCacheServerFallbackForeground](waas-delivery-optimization-reference.md#delay-foreground-download-cache-server-fallback-in-secs) are the delay policies to help improve chances of pulling content from the network cache host servers. (See recommended values in ‘Improving Efficiencies’ section).
