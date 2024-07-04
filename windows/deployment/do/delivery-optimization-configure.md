@@ -91,7 +91,7 @@ Delivery Optimization can be used with other Microsoft products. Learn more abou
 
 Peer groups can be defined in Delivery Optimization using a combination of settings such as [DODownloadMode](waas-delivery-optimization-reference.md#download-mode), [DOGroupID](waas-delivery-optimization-reference.md#group-id), [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids), and [DORestrictPeerSelection](waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection). *The combination of settings in use will depend on your desired peer group(s) and your network topology.*
 
-### P2P setup
+### Peering setup
 
 #### Define peer groups
 
