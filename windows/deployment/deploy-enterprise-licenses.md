@@ -28,7 +28,8 @@ These activation features require a supported and licensed version of Windows Pr
 - Enterprise E3 in CSP.
 - Automatic, non-KMS activation also requires a device with a firmware-embedded activation key.
 - Subscription activation requires Enterprise _per user_ licensing. It doesn't work with _per device_ licensing.
-
+- Device-based licensing doesn't work with Enterprise license, for example: E3 &E5, on the Windows Operating System.
+- For example: upgrade From Windows 10 Pro to Windows 10/11 Enterprise using device-based licensing will not work, Enterprise _per user_ licensing is required for the Windows Operating System.
 ## Enable subscription activation with an existing EA
 
 EA customers with an existing Microsoft 365 tenant can use the following steps to enable Windows subscription licenses on the existing tenant:
