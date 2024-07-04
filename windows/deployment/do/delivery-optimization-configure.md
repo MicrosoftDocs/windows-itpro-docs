@@ -113,7 +113,7 @@ There are several options for identifying your Group ID using the [DOGroupIDSour
 > [!NOTE]
 > If your peer group spans across NATs, the Teredo service will be used on port 3544.
 >
-> For Configuration Manager users, we recommend to leverage existing [MECM boundary groups](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management.md##delivery-optimization) to define the peer groups.
+> For Configuration Manager users, we recommend to leverage existing [boundary groups](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization) to define the peer groups.
 
 ##### Restrict peer selection
 
