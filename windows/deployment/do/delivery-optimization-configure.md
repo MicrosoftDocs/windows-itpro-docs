@@ -71,13 +71,13 @@ Delivery Optimization requires the use of certain ports to deliver content. Make
 
 To use Group Policy to manage Delivery Optimization settings you can find them here,
 
-```Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization.  or MDM Policies to locate Delivery Optimization settings.```
+  `Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization`
 
 ### MDM Policies
 
 Similarly, in MDM, the Delivery Optimization settings are under,
 
-```.Vendor/MSFT/Policy/Config/DeliveryOptimization/.```
+  `.Vendor/MSFT/Policy/Config/DeliveryOptimization/`
 
 Delivery Optimization can be used with other Microsoft products. Learn more about the areas where there's integration to see how you can optimize the results in your environment.
 
@@ -100,7 +100,7 @@ Peer groups can be defined in Delivery Optimization using a combination of setti
 To limit a peer group to your LAN, choose [DODownloadMode](waas-delivery-optimization-reference.md#download-mode) (1), LAN-mode. This Download Mode setting includes any devices that share the same public IP address when they connect to the Internet (behind the same NAT) in a single peer group.
 
 > [!NOTE]
-> If your network topology is a hub and spoke - consider using Group download mode mode and/or restrict peer selection to the subnet.
+> If your network topology is a hub and spoke - consider using Group download mode and/or restrict peer selection to the subnet.
 
 ##### Wide area network (WAN)
 
@@ -113,8 +113,7 @@ There are several options for identifying your Group ID using the [DOGroupIDSour
 > [!NOTE]
 > If your peer group spans across NATs, the Teredo service will be used on port 3544.
 >
-> > [!NOTE]
-> For Configuration Manager users, we recommend to leverage existing [MECM boundary groups](/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery) to define the peer groups.
+> For Configuration Manager users, we recommend to leverage existing [MECM boundary groups](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management.md##delivery-optimization) to define the peer groups.
 
 ##### Restrict peer selection
 
@@ -179,7 +178,7 @@ Looking to improve efficiency? Some of the most powerful settings you can change
 * Manage network usage as a percentage or absolute value (Note: The absolute policies are recommended in low bandwidth environments). These policies include: [DOPercentageMaxForegroundBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth)/[DOPercentageMaxBackgroundBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth), [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs), and [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs).
 
 > [!NOTE]
-> Not all content types are eligible for P2P. Refer the [complete list](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) to learn more.
+> Not all content types are eligible for P2P. Refer to the [complete list](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) to learn more.
 
 ## 7. Connected cache
 
