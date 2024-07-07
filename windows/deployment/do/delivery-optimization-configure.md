@@ -103,7 +103,7 @@ Peer groups can be defined in Delivery Optimization using a combination of setti
 To define a peer group limited to your LAN, choose [DODownloadMode](waas-delivery-optimization-reference.md#download-mode) (1), LAN-mode. This download mode setting includes any devices that share the same public IP address when they connect to the Internet (behind the same NAT) in a single peer group.
 
 > [!NOTE]
-> If your network topology is a hub and spoke - consider using Group download mode and/or restrict peer selection to the subnet.
+> Consider using Group download mode and/or limiting peer selection to the subnet if your network topology is a hub and spoke.
 
 ##### Wide area network (WAN)
 
