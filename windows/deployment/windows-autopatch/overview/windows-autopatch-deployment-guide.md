@@ -1,7 +1,7 @@
 ---
 title: Windows Autopatch deployment guide
 description: This guide explains how to successfully deploy Windows Autopatch in your environment
-ms.date: 08/24/2023
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to

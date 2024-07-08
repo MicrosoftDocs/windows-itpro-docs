@@ -1,7 +1,7 @@
 ---
 title: Windows Autopatch groups overview
 description: This article explains what Autopatch groups are
-ms.date: 07/20/2023
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
