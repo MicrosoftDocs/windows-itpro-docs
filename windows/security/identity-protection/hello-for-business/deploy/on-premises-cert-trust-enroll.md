@@ -86,4 +86,4 @@ To better understand the provisioning flows, review the following sequence diagr
 - [Provisioning in an on-premises certificate trust deployment model](../how-it-works-provisioning.md#provisioning-in-an-on-premises-certificate-trust-deployment-model)
 
 <!--links-->
-[AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
+[AZ-4]: /entra/identity/devices/troubleshoot-device-dsregcmd

@@ -135,6 +135,6 @@ To better understand the authentication flows, review the following sequence dia
 
 <!--links-->
 
-[AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
+[AZ-4]: /entra/identity/devices/troubleshoot-device-dsregcmd
 [CSP-1]: /windows/client-management/mdm/passportforwork-csp
 [MEM-1]: /mem/intune/configuration/custom-settings-configure
