@@ -213,7 +213,7 @@ sections:
       - question: Do I need line of sight to a domain controller to use Windows Hello for Business cloud Kerberos trust?
         answer: |
           Windows Hello for Business cloud Kerberos trust requires line of sight to a domain controller when:
-          - a user signs-in for the first time or unlocks with Windows Hello for Business after provisioning
+          - a user signs in for the first time or unlocks with Windows Hello for Business after provisioning
           - attempting to access on-premises resources secured by Active Directory
       - question: Can I use RDP/VDI with Windows Hello for Business cloud Kerberos trust?
         answer: |
