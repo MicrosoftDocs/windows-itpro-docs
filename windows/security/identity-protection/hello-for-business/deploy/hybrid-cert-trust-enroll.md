@@ -37,7 +37,7 @@ Use the following instructions to configure your devices using either Microsoft 
 
 Windows Hello for Business provisioning performs the initial enrollment of the Windows Hello for Business authentication certificate. This certificate expires based on the duration configured in the Windows Hello for Business *authentication certificate* template.
 
-The process requires no user interaction, provided the user signs-in using Windows Hello for Business. The certificate is renewed in the background before it expires.
+The process requires no user interaction, provided the user signs in using Windows Hello for Business. The certificate is renewed in the background before it expires.
 
 [!INCLUDE [gpo-settings-1](../../../../../includes/configure/gpo-settings-1.md)]
 
