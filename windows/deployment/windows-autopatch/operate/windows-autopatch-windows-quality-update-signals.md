@@ -1,7 +1,7 @@
 ---
-title: Windows quality update release signals with Autopatch groups
-description: This article explains the Windows quality update release signals with Autopatch groups
-ms.date: 07/25/2023
+title: Windows quality update release signals
+description: This article explains the Windows quality update release signals
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
