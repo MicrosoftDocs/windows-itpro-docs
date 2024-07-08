@@ -1,13 +1,13 @@
 ---
 title: Bulk enrollment
-description: Bulk enrollment is an efficient way to set up a large number of devices to manage by an MDM server without the need to reimage the devices.
+description: Bulk enrollment is an efficient way to set up an MDM server to manage a large number of devices without the need to reimage the devices.
 ms.topic: conceptual
 ms.date: 07/08/2024
 ---
 
 # Bulk enrollment using Windows Configuration Designer
 
-Bulk enrollment is an efficient way to set up a large number of devices to manage by an MDM server without the need to reimage the devices. You can use the [Provisioning CSP](mdm/provisioning-csp.md) for bulk enrollment, except for the Microsoft Entra join enrollment scenario.
+Bulk enrollment is an efficient way to set up an MDM server to manage a large number of devices without the need to reimage the devices. You can use the [Provisioning CSP](mdm/provisioning-csp.md) for bulk enrollment, except for the Microsoft Entra join enrollment scenario.
 
 ## Typical use cases
 
