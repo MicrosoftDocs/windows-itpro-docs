@@ -2,7 +2,7 @@
 title: Enroll a Windows device automatically using Group Policy
 description: Learn how to use a Group Policy to trigger autoenrollment to MDM for Active Directory (AD) domain-joined devices.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ms.collection:
 - highpri
 - tier2
@@ -12,7 +12,7 @@ ms.collection:
 
 You can use a Group Policy to trigger autoenrollment to Mobile Device Management (MDM) for Active Directory (AD) domain-joined devices.
 
-The enrollment into Intune is triggered by a group policy created on your local AD and happens without any user interaction. This cause-and-effect mechanism means you can automatically mass-enroll a large number of domain-joined corporate devices into Microsoft Intune. The enrollment process starts in the background once you sign in to the device with your Microsoft Entra account.
+The group policy created on your local AD triggers enrollment into Intune without any user interaction. This cause-and-effect mechanism means you can automatically mass-enroll a large number of domain-joined corporate devices into Microsoft Intune. The enrollment process starts in the background once you sign in to the device with your Microsoft Entra account.
 
 **Requirements**:
 
