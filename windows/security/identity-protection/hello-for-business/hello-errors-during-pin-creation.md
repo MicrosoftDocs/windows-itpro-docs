@@ -40,7 +40,7 @@ If the error occurs again, check the error code against the following table to s
 | 0x80090035 | Policy requires TPM and the device doesn't have TPM. | Change the Windows Hello for Business policy to not require a TPM. |
 | 0x80090036 | User canceled an interactive dialog. | User is asked to try again. |
 | 0x801C0003 | User isn't authorized to enroll. | Check if the user has permission to perform the operation​. |
-| 0x801C000E | Registration quota reached. | Unjoin some other device that is currently joined using the same account or [increase the maximum number of devices per user](/azure/active-directory/devices/device-management-azure-portal). |
+| 0x801C000E | Registration quota reached. | Unjoin some other device that is currently joined using the same account or [increase the maximum number of devices per user](/entra/identity/devices/manage-device-identities). |
 | 0x801C000F | Operation successful, but the device requires a reboot. | Reboot the device. |
 | 0x801C0010 | The AIK certificate isn't valid or trusted. | Sign out and then sign in again. |
 | 0x801C0011 | The attestation statement of the transport key is invalid. | Sign out and then sign in again. |
@@ -53,7 +53,7 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C03EA | Server failed to authorize user or device. | Check if the token is valid and user has permission to register Windows Hello for Business keys. |
 | 0x801C03EB | Server response http status isn't valid | Sign out and then sign in again. |
 | 0x801C03EC | Unhandled exception from server. | sign out and then sign in again. |
-| 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but wasn't performed. <br><br> -or- <br><br> Token wasn't found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. <br><br> -or- <br><br> User doesn't have permissions to join to Microsoft Entra ID. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure  AD and rejoin. <br> Allow user(s) to join to Microsoft Entra ID under Microsoft Entra Device settings. |
+| 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but wasn't performed. <br><br> -or- <br><br> Token wasn't found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. <br><br> -or- <br><br> User doesn't have permissions to join to Microsoft Entra ID. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Microsoft Entra ID and rejoin. <br> Allow user(s) to join to Microsoft Entra ID under Microsoft Entra Device settings. |
 | 0x801C03EE | Attestation failed. | Sign out and then sign in again. |
 | 0x801C03EF | The AIK certificate is no longer valid. | Sign out and then sign in again. |
 | 0x801C03F2 | Windows Hello key registration failed. | ERROR_BAD_DIRECTORY_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue, refer to [Duplicate Attributes Prevent Dirsync](/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync). Also, if no sync conflict exists, please verify that the "Mail/Email address" in Microsoft Entra ID and the Primary SMTP address are the same in the proxy address. |
