@@ -642,5 +642,5 @@ You can unlock the drive from the Control Panel or from Explorer. After opening 
 
 [PREV-1]: /previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11)
 [PS-1]: /powershell/module/bitlocker
-[PS-2]: /powershell/module/bitlocker/unlock-bitlocker?view=windowsserver2022-ps
+[PS-2]: /powershell/module/bitlocker/unlock-bitlocker
 [WINS-1]: /windows-server/administration/windows-commands/manage-bde-unlock
