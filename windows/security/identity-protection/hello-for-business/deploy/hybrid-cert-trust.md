@@ -34,7 +34,7 @@ ms.topic: tutorial
 
 ## Federated authentication to Microsoft Entra ID
 
-Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Microsoft Entra ID using AD FS. You must also configure the AD FS farm to support Azure registered devices.
+Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Microsoft Entra ID using AD FS. You must also configure the AD FS farm to support Microsoft Entra registered devices.
 
 If you're new to AD FS and federation services:
 
@@ -82,9 +82,9 @@ During Windows Hello for Business provisioning, users receive a sign-in certific
 > [Next: configure and validate the Public Key Infrastructure >](hybrid-cert-trust-pki.md)
 
 <!--links-->
-[AZ-8]: /azure/active-directory/devices/hybrid-azuread-join-plan
-[AZ-10]: /azure/active-directory/devices/howto-hybrid-azure-ad-join#federated-domains
-[AZ-11]: /azure/active-directory/devices/hybrid-azuread-join-manual
+[AZ-8]: /entra/identity/devices/hybrid-join-plan
+[AZ-10]: /entra/identity/devices/how-to-hybrid-join#federated-domains
+[AZ-11]: /entra/identity/devices/hybrid-join-manual
 
 [SER-2]: /windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm
 [SER-3]: /windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts
