@@ -2,7 +2,7 @@
 title: BitLocker recovery process
 description: Learn how to obtain BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices, and how to restore access to a locked drive.
 ms.topic: how-to
-ms.date: 06/18/2024
+ms.date: 07/08/2024
 ---
 
 # BitLocker recovery process
@@ -25,6 +25,13 @@ A recovery key can't be stored in any of the following locations:
 - The drive being encrypted
 - The root directory of a nonremovable drive
 - An encrypted volume
+
+### Self-recovery with recovery password
+
+If you have access to the recovery key, enter the 48-digits in the preboot recovery screen.
+
+- If you are having issues entering the recovery password in the preboot recovery screen, or you can no longer boot your device, you can connect the drive to another device as a secondary drive. For more information about the unlock process, see [Unlock a drive](operations-guide.md#unlock-a-drive)
+- If unlocking with recovery password doesn't work you can use the [BitLocker Repair tool](#bitlocker-repair-tool) to regain access yo your drive
 
 ### Self-recovery in Microsoft Entra ID
 
