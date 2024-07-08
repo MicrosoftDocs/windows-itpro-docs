@@ -1,7 +1,7 @@
 ---
 title: Windows update policies
 description: This article explains Windows update policies in Windows Autopatch
-ms.date: 09/02/2023
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
