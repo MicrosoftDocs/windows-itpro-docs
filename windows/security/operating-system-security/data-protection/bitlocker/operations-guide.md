@@ -612,7 +612,7 @@ Once decryption is complete, the drive updates its status in the Control Panel a
 
 ## Unlock a drive
 
-If connect a drive as a secondary drive to a device, and you have your BitLocker recovery key, you can unlock a BitLocker-enabled drive by using the following instructions.
+If you connect a drive as a secondary drive to a device, and you have your BitLocker recovery key, you can unlock a BitLocker-enabled drive by using the following instructions.
 
 In the next example, the `D` drive is the one to unlock. Select the option that best suits your needs.
 

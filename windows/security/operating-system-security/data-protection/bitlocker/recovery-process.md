@@ -30,7 +30,7 @@ A recovery key can't be stored in any of the following locations:
 
 If you have access to the recovery key, enter the 48-digits in the preboot recovery screen.
 
-- If you are having issues entering the recovery password in the preboot recovery screen, or you can no longer boot your device, you can connect the drive to another device as a secondary drive. For more information, see [Unlock a drive](operations-guide.md#unlock-a-drive)
+- If you are having issues entering the recovery password in the preboot recovery screen, or you can no longer boot your device, you can connect the drive to another device as a secondary drive. For more information about the unlock process, see [Unlock a drive](operations-guide.md#unlock-a-drive)
 - If unlocking with recovery password doesn't work you can use the [BitLocker Repair tool](#bitlocker-repair-tool) to regain access yo your drive
 
 ### Self-recovery in Microsoft Entra ID
