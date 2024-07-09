@@ -8,7 +8,7 @@ manager: aaroncz
 ms.localizationpriority: low
 ms.topic: overview
 ms.subservice: itpro-fundamentals
-ms.date: 12/18/2023
+ms.date: 07/09/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 Enterprise LTSC</a>
 ---
