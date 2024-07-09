@@ -610,7 +610,37 @@ Once decryption is complete, the drive updates its status in the Control Panel a
 
 ---
 
+## Unlock a drive
+
+If you connect a drive as a secondary drive to a device, and you have your BitLocker recovery key, you can unlock a BitLocker-enabled drive by using the following instructions.
+
+In the next example, the `D` drive is the one to unlock. Select the option that best suits your needs.
+
+#### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+```powershell
+Unlock-BitLocker -MountPoint D -RecoveryPassword xxxxxx-xxxxxx-xxxxxx-xxxxxx-xxxxxx-xxxxxx-xxxxxx-xxxxxx
+```
+
+For more information, see [Unlock-BitLocker][PS-2]
+
+#### [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
+
+```cmd
+manage-bde.exe -unlock D: -recoverypassword xxxxxx-xxxxxx-xxxxxx-xxxxxx-xxxxxx-xxxxxx-xxxxxx-xxxxxx
+```
+
+For more information, see [manage-bde unlock][WINS-1]
+
+#### [:::image type="icon" source="images/controlpanel.svg"::: **Control Panel**](#tab/controlpanel)
+
+You can unlock the drive from the Control Panel or from Explorer. After opening the BitLocker Control Panel applet, select the **Unlock drive** option to begin the process. When prompted, enter the 48-digit recovery key.
+
+---
+
 <!--links-->
 
 [PREV-1]: /previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829849(v=ws.11)
 [PS-1]: /powershell/module/bitlocker
+[PS-2]: /powershell/module/bitlocker/unlock-bitlocker
+[WINS-1]: /windows-server/administration/windows-commands/manage-bde-unlock

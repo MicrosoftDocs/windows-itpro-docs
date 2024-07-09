@@ -150,7 +150,7 @@ sections:
 
           It's possible to Microsoft Entra register a domain joined device. If the domain joined device has a convenience PIN, sign in with the convenience PIN will no longer work. This configuration isn't supported by Windows Hello for Business.
 
-          For more information, see [Microsoft Entra registered devices](/azure/active-directory/devices/concept-azure-ad-register).
+          For more information, see [Microsoft Entra registered devices](/entra/identity/devices/concept-device-registration).
       - question: Does Windows Hello for Business work with non-Windows operating systems?
         answer: |
           Windows Hello for Business is a feature of the Windows platform.
@@ -162,7 +162,7 @@ sections:
           Windows Hello for Business is two-factor authentication based on the observed authentication factors of: *something you have*, *something you know*, and *something that's part of you*. Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. By using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
 
           > [!NOTE]
-          > The Windows Hello for Business key meets Microsoft Entra multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. For more information, see [What is a Primary Refresh Token](/azure/active-directory/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
+          > The Windows Hello for Business key meets Microsoft Entra multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. For more information, see [What is a Primary Refresh Token](/entra/identity/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
       - question: Which is a better or more secure for of authentication, key or certificate?
         answer: |
           Both types of authentication provide the same security; one is not more secure than the other.
@@ -203,7 +203,7 @@ sections:
     questions:
       - question: What is Windows Hello for Business cloud Kerberos trust?
         answer: |
-          Windows Hello for Business *cloud Kerberos trust* is a *trust model* that enables Windows Hello for Business deployment using the infrastructure introduced for supporting [security key sign-in on Microsoft Entra hybrid joined devices and on-premises resource access on Microsoft Entra joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). Cloud Kerberos trust is the preferred deployment model if you do not need to support certificate authentication scenarios. For more information, see [cloud Kerberos trust deployment](/windows/security/identity-protection/hello-for-business/deploy).
+          Windows Hello for Business *cloud Kerberos trust* is a *trust model* that enables Windows Hello for Business deployment using the infrastructure introduced for supporting [security key sign-in on Microsoft Entra hybrid joined devices and on-premises resource access on Microsoft Entra joined devices](/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises). Cloud Kerberos trust is the preferred deployment model if you do not need to support certificate authentication scenarios. For more information, see [cloud Kerberos trust deployment](/windows/security/identity-protection/hello-for-business/deploy).
       - question: Does Windows Hello for Business cloud Kerberos trust work in my on-premises environment?
         answer: |
           This feature doesn't work in a pure on-premises AD domain services environment.
@@ -213,7 +213,7 @@ sections:
       - question: Do I need line of sight to a domain controller to use Windows Hello for Business cloud Kerberos trust?
         answer: |
           Windows Hello for Business cloud Kerberos trust requires line of sight to a domain controller when:
-          - a user signs-in for the first time or unlocks with Windows Hello for Business after provisioning
+          - a user signs in for the first time or unlocks with Windows Hello for Business after provisioning
           - attempting to access on-premises resources secured by Active Directory
       - question: Can I use RDP/VDI with Windows Hello for Business cloud Kerberos trust?
         answer: |
