@@ -1,13 +1,13 @@
 ---
-title: How provisioning works in Windows 10/11
+title: How provisioning works in Windows
 description: Learn more about how provisioning package work on Windows client devices. A provisioning package (.ppkg) is a container for a collection of configuration settings.
 ms.topic: conceptual
-ms.date: 12/31/2017
+ms.date: 07/09/2024
 ---
 
 # How provisioning works in Windows
 
-Provisioning packages in Windows client provide IT administrators with a simplified way to apply configuration settings to Windows client devices. Windows Configuration Designer is a tool that makes it easy to create a provisioning package. Windows Configuration Designer can be installed from <!-- the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) or through the --> Microsoft Store.
+Provisioning packages in Windows client provide IT administrators with a simplified way to apply configuration settings to Windows client devices. Windows Configuration Designer is a tool that makes it easy to create a provisioning package. Windows Configuration Designer can be installed from the Microsoft Store.
 
 ## Provisioning packages
 
@@ -30,15 +30,10 @@ You can  use provisioning packages for runtime device provisioning by accessing 
 When multiple provisioning packages are available for device provisioning, the combination of package owner type and package rank level defined in the package manifest is used to resolve setting conflicts. The pre-defined package owner types are listed below in the order of lowest to highest owner type precedence:
 
 1. Microsoft
-
 1. Silicon Vendor
-
 1. OEM
-
 1. System Integrator
-
 1. Mobile Operator
-
 1. IT Admin
 
 The valid value range of package rank level is 0 to 99.
@@ -130,16 +125,3 @@ When applying provisioning packages from a removable media attached to the devic
 When applying multiple provisioning packages to a device, the provisioning engine resolves settings with conflicting configuration values from different packages by evaluating the package ranking using the combination of package owner type and package rank level defined in the package metadata. A configuration setting applied from a provisioning package with the highest package ranking will be the final value applied to the device.
 
 After a stand-alone provisioning package is applied to the device, the package is persisted in the `%ProgramData%\Microsoft\Provisioning` folder on the device. Provisioning packages can be removed by an administrator by using the **Add or remove a provisioning package** available under **Settings** > **Accounts** > **Access work or school**.
-
-## Related articles
-
-- [Provisioning packages for Windows client](provisioning-packages.md)
-- [Install Windows Configuration Designer](provisioning-install-icd.md)
-- [Create a provisioning package](provisioning-create-package.md)
-- [Apply a provisioning package](provisioning-apply-package.md)
-- [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
-- [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
-- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
-- [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
