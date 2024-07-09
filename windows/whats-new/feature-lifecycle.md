@@ -6,9 +6,9 @@ ms.localizationpriority: medium
 author: mestew
 manager: aaroncz
 ms.author: mstewart
-ms.topic: conceptual
+ms.topic: reference
 ms.subservice: itpro-fundamentals
-ms.date: 12/15/2023
+ms.date: 07/09/2024
 ms.collection:
   - highpri
   - tier2
