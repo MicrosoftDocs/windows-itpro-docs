@@ -18,9 +18,9 @@ With Set up School PCs you can:
 - Use Windows Update and maintenance hours to keep student devices up-to-date, without interfering with class time
 - Lock down student devices to prevent activity that aren't beneficial to their education
 
-This article describes how to use the Set up School PCs app. To learn more about the app's functionality, review the [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).
+This article describes how to use the Set up School PCs app. To learn more about the app's functionality, review the [Technical reference for the Set up School PCs app](reference.md).
 
-:::image type="content" source="images/suspcs/splash-screen.png" alt-text="Screenshot of the SUSPCs splash screen." border="false":::
+:::image type="content" source="images/splash-screen.png" alt-text="Screenshot of the SUSPCs splash screen." border="false":::
 
 ## Requirements
 
@@ -97,7 +97,7 @@ We strongly recommend that you avoid changing preset policies. Changes can slow 
 
 The **Set up School PCs** app guides you through the configuration choices for the student PCs.  To begin, open the app on your device and select **Get started**.
 
-:::image type="content" source="images/suspcs/landing-page.png" alt-text="Screenshot of the SUSPCs landing page." border="false":::
+:::image type="content" source="images/landing-page.png" alt-text="Screenshot of the SUSPCs landing page." border="false":::
 
 :::row:::
   :::column span="1":::
@@ -125,7 +125,7 @@ To change an existing package's name, right-click the package folder on your dev
   :::column span="3":::
 1. Select how you want to sign in
     1. (Recommended) To enable student device to automatically connect and authenticate to Microsoft Entra ID, and management services like Microsoft Intune, select **Sign-in**. Then go to step 3
-    1. To complete setup without signing in, select **Continue without account**. Student devices won't connect to your school's cloud services and their management will be more difficult later. Continue to [Wireless network](#wireless-network)
+    1. To complete setup without signing in, select **Continue without account**. Student devices won't connect to your school's cloud services and their management will be more difficult later. Continue to [Select a wireless network](#select-a-wireless-network)
 1. In the new window, select the account you want to use throughout setup.
 
     To add an account not listed:
@@ -287,7 +287,7 @@ The provisioning package on your USB drive is named SetupSchoolPCs_<*devicename*
 When used in context of the Set up School PCs app, the word *package* refers to your provisioning package. The word *provisioning* refers to the act of installing the package on the student device. This section describes how to apply the settings to a device in your school.
 
 > [!IMPORTANT]
-> The devices must have a new or reset Windows image and must not already have been through first-run setup experience (which is referred to as *OOBE*). For instructions about how to reset a devices's image, see [Prepare existing PC account for new setup](use-set-up-school-pcs-app.md#prepare-existing-pc-account-for-new-setup).
+> The devices must have a new or reset Windows image and must not already have been through first-run setup experience (which is referred to as *OOBE*). For instructions about how to reset a devices's image, see [Prepare existing PC account for new setup](#prepare-existing-pc-account-for-new-setup).
 
 1. Start with the student device turned off or with the device on the first-run setup screen. If the device is past the account setup screen, reset the device to start over. To reset the it, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**
 1. Insert the USB drive. Windows automatically recognizes and installs the package
