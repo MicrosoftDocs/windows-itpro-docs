@@ -2,7 +2,7 @@
 title: Mobile device enrollment
 description: Learn how mobile device enrollment verifies that only authenticated and authorized devices are managed by the enterprise.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ms.collection:
 - highpri
 - tier2
@@ -43,13 +43,13 @@ The certificate enrollment is an implementation of the MS-WSTEP protocol.
 
 ### Management configuration
 
-The server sends provisioning XML that contains a server certificate (for TLS/SSL server authentication), a client certificate issued by enterprise CA, DM client bootstrap information (for the client to communicate with the management server), an enterprise application token (for the user to install enterprise applications), and the link to download the Company Hub application.
+The server sends provisioning XML that contains a server certificate (for TLS/SSL server authentication), a client certificate issued by enterprise CA, DMClient bootstrap information (for the client to communicate with the management server), an enterprise application token (for the user to install enterprise applications), and the link to download the Company Hub application.
 
 The following articles describe the end-to-end enrollment process using various authentication methods:
 
 - [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
 - [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
-- [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
+- [On-premises authentication device enrollment](on-premise-authentication-device-enrollment.md)
 
 > [!NOTE]
 > As a best practice, don't use hardcoded server-side checks on values such as:
@@ -168,4 +168,4 @@ TraceID is a freeform text node that is logged. It should identify the server si
 - [MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)
 - [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
 - [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
-- [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
+- [On-premises authentication device enrollment](on-premise-authentication-device-enrollment.md)
