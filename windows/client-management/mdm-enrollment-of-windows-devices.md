@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.collection:
 - highpri
 - tier2
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # MDM enrollment of Windows devices
 
-In today's cloud-first world, enterprise IT departments increasingly want to let employees use their own devices, or even choose and purchase corporate-owned devices. Connecting your devices to work makes it easy for you to access your organization's resources, such as apps, the corporate network, and email.
+In today's cloud-first world, enterprise IT departments increasingly want to let users use their own devices, or even choose and purchase corporate-owned devices. Connecting your devices to work makes it easy for you to access your organization's resources, such as apps, the corporate network, and email.
 
 > [!NOTE]
 > When you connect your device using mobile device management (MDM) enrollment, your organization may enforce certain policies on your device.
@@ -23,8 +23,6 @@ You can connect corporate-owned devices to work by either joining the device to 
 
 > [!NOTE]
 > For devices joined to on-premises Active Directory, see [Group policy enrollment](enroll-a-windows-10-device-automatically-using-group-policy.md).
-
-<a name='connect-your-device-to-an-azure-ad-domain-join-azure-ad'></a>
 
 ### Connect your device to a Microsoft Entra domain (join Microsoft Entra ID)
 

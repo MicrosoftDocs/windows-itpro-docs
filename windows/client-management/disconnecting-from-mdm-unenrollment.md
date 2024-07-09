@@ -2,7 +2,7 @@
 title: Disconnecting from the management infrastructure (unenrollment)
 description: Disconnecting is initiated either locally by the user using a phone or remotely by the IT admin using management server.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # Disconnecting from the management infrastructure (unenrollment)
@@ -22,14 +22,14 @@ During disconnection, the client executes the following tasks:
 
 In Windows, after the user confirms the account deletion command and before the account is deleted, the MDM client will notify to the MDM server that the account will be removed. This notification is a best-effort action as no retry is built in to ensure the notification is successfully sent to the device.
 
-This action utilizes the OMA DM generic alert 1226 function to send a user an MDM unenrollment user alert to the MDM server after the device accepts the user unenrollment request, but before it deletes any enterprise data. The server should set the expectation that unenrollment may succeed or fail, and the server can check whether the device is unenrolled by either checking whether the device calls back at scheduled time or by sending a push notification to the device to see whether it responds back. If the server plans to send a push notification, it should allow for some delay to give the device the time to complete the unenrollment work.
+This action utilizes the OMA DM generic alert 1226 function to send a user an MDM unenrollment user alert to the MDM server after the device accepts the user unenrollment request, but before it deletes any enterprise data. The server should set the expectation that unenrollment can succeed or fail, and the server can check whether the device is unenrolled by either checking whether the device calls back at scheduled time or by sending a push notification to the device to see whether it responds back. If the server plans to send a push notification, it should allow for some delay to give the device the time to complete the unenrollment work.
 
 > [!NOTE]
 > The user unenrollment is an OMA DM standard. For more information about the 1226 generic alert, see the OMA Device Management Protocol specification (OMA-TS-DM\_Protocol-V1\_2\_1-20080617-A), available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/).
 
 The vendor uses the Type attribute to specify what type of generic alert it is. For device initiated MDM unenrollment, the alert type is **com.microsoft:mdm.unenrollment.userrequest**.
 
-After the user elects to unenroll, any active MDM OMA DM sessions are terminated. After that, the DM client starts a DM session, including a user unenroll generic alert in the first package that it sends to the server.
+After the user elects to unenroll, any active MDM OMA DM sessions are terminated. After that, the DMClient starts a DM session, including a user unenroll generic alert in the first package that it sends to the server.
 
 The following sample shows an OMA DM first package that contains a generic alert message. For more information on WP OMA DM support, see the [OMA DM protocol support](oma-dm-protocol-support.md) article.
 
@@ -107,15 +107,13 @@ You can only use the Work Access page to unenroll under the following conditions
 - Enrollment was done using bulk enrollment.
 - Enrollment was created using the Work Access page.
 
-<a name='unenrollment-from-azure-active-directory-join'></a>
-
 ## Unenrollment from Microsoft Entra join
 
 When a user is enrolled into MDM through Microsoft Entra join and later, the enrollment disconnects, there's no warning that the user will lose Windows Information Protection (WIP) data. The disconnection message doesn't indicate the loss of WIP data.
 
 ![aadj unenerollment.](images/azure-ad-unenrollment.png)
 
-During the process in which a device is enrolled into MDM through Microsoft Entra join and then remotely unenrolled, the device may get into a state where it must be reimaged. When devices are remotely unenrolled from MDM, the Microsoft Entra association is also removed. This safeguard is in place to avoid leaving the corporate devices in unmanaged state.
+During the process in which a device is enrolled into MDM through Microsoft Entra join and then remotely unenrolled, the device can get into a state where it must be reimaged. When devices are remotely unenrolled from MDM, the Microsoft Entra association is also removed. This safeguard is in place to avoid leaving the corporate devices in unmanaged state.
 
 Before remotely unenrolling corporate devices, you must ensure that there is at least one admin user on the device that isn't part of Microsoft Entra ID, otherwise the device won't have any admin user after the operation.
 

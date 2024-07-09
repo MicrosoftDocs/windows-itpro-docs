@@ -1,7 +1,7 @@
 ---
 title: Quality update status report
-description: Provides a per device view of the current update status for all Windows Autopatch enrolled devices with Autopatch groups.
-ms.date: 07/25/2023
+description: Provides a per device view of the current update status for all Windows Autopatch enrolled devices.
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to

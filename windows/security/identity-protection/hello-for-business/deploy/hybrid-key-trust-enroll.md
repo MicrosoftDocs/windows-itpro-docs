@@ -108,7 +108,7 @@ To better understand the authentication flows, review the following sequence dia
 - [Microsoft Entra join authentication to Active Directory using a key](../how-it-works-authentication.md#microsoft-entra-join-authentication-to-active-directory-using-a-key)
 
 <!--links-->
-[AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
-[AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
+[AZ-4]: /entra/identity/devices/troubleshoot-device-dsregcmd
+[AZ-5]: /entra/identity/hybrid/connect/how-to-connect-sync-feature-scheduler
 [CSP-1]: /windows/client-management/mdm/passportforwork-csp
 [MEM-1]: /mem/intune/configuration/custom-settings-configure

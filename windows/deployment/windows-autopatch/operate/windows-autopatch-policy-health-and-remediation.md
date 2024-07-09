@@ -1,7 +1,7 @@
 ---
 title: policy health and remediation
 description: Describes what Autopatch does it detects policies in the tenant are either missing or modified to states that affect the service
-ms.date: 07/25/2023
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to

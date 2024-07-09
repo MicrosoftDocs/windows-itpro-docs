@@ -15,10 +15,12 @@ metadata:
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
-  ms.date: 10/31/2023
+  ms.date: 07/01/2024
   localization_priority: medium
 
 landingContent:
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
   - title: Windows 11 planning
     linkLists:
@@ -49,12 +51,35 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: Extended Security Updates (ESU) program for Windows 10
-            url: extended-security-updates.md        
+            url: extended-security-updates.md
           - text: What's new in Windows 10, version 22H2
             url: whats-new-windows-10-version-22h2.md
-          - text: What's new in Windows 10, version 21H2
-            url: whats-new-windows-10-version-21h2.md
 
+  - title: Windows 10 Enterprise LTSC
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Windows 10 Enterprise LTSC overview
+            url: ltsc/overview.md
+          - text: What's new in Windows 10 Enterprise LTSC 2021
+            url: ltsc/whats-new-windows-10-2021.md
+          - text: What's new in Windows 10 Enterprise LTSC 2019
+            url: ltsc/whats-new-windows-10-2019.md
+          - text: What's new in Windows 10 Enterprise LTSC 2016
+            url: ltsc/whats-new-windows-10-2016.md
+          - text: What's new in Windows 10 Enterprise LTSC 2015
+            url: ltsc/whats-new-windows-10-2015.md
+
+  - title: Deprecated features
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Windows features we're no longer developing
+            url: deprecated-features.md
+          - text: Features and functionality removed in Windows
+            url: removed-features.md
+          - text: Lifecycle terminology
+            url: feature-lifecycle.md#terminology
 
   - title: Learn more
     linkLists:
@@ -64,15 +89,5 @@ landingContent:
             url: /windows/release-health/windows11-release-information
           - text: Windows release health dashboard
             url: /windows/release-health/
-          - text: Windows 11 update history
-            url: https://support.microsoft.com/topic/windows-11-version-22h2-update-history-ec4229c3-9c5f-4e75-9d6d-9025ab70fcce
-          - text: Windows 10 update history
-            url: https://support.microsoft.com/topic/windows-10-update-history-857b8ccb-71e4-49e5-b3f6-7073197d98fb
-          - text: Windows features we're no longer developing
-            url: deprecated-features.md
-          - text: Features and functionality removed in Windows
-            url: removed-features.md
           - text: Compare Windows 11 Editions
             url: https://www.microsoft.com/windows/business/compare-windows-11
-          - text: Windows 10 Enterprise LTSC
-            url: ltsc/overview.md
