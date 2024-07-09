@@ -4,6 +4,7 @@ description: Learn about the settings that are configured in the provisioning pa
 ms.date: 04/10/2024
 ms.topic: reference
 appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
