@@ -47,4 +47,4 @@ The following table describes the Set up School PCs app features and lists each 
 >[!NOTE]
 >You can only use the Set up School PCs app to set up PCs that are connected to Microsoft Entra ID.
 
-When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
+When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](index.md).
