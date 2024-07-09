@@ -2,7 +2,7 @@
 title: Use Set up School PCs app
 description: Learn how to use the Set up School PCs app and apply the provisioning package.
 ms.topic: how-to
-ms.date: 11/09/2023
+ms.date: 07/09/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
@@ -113,14 +113,14 @@ A package expiration date is also attached to the end of each package. For examp
 
 After you select **Next**, you can no longer change the name in the app. To create a package with a different name, reopen the Set up School PCs app.
 
-To change an existing package's name, right-click the package folder on your device and select **Rename**. This action doesn't change the name in Microsoft Entra ID. You can access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator), and rename the package there.
+To change an existing package's name, right-click the package folder on your device and select **Rename**. This action doesn't change the name in Microsoft Entra ID. You can access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator), and rename the package there.<br><br>
     :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="1":::
 
 
-### Sign in
+### Connect your school's account
     :::column-end:::
   :::column span="3":::
 1. Select how you want to sign in
@@ -134,42 +134,28 @@ To change an existing package's name, right-click the package folder on your dev
     1. Verify the user account and password, if prompted.
 
 1. Select **Accept** to allow Set up School PCs to access your account throughout setup
-1. When your account name appears on the page, select **Next**
+1. When your account name appears on the page, select **Next** <br><br>
     :::column-end:::
 :::row-end:::
 
 
 :::row:::
   :::column span="1":::
-#### Wireless network
+#### Select a wireless network
 
 
     :::column-end:::
   :::column span="3":::
 Add and save the wireless network profile that you want student devices to connect to. Only skip Wi-Fi setup if you have an Ethernet connection.
 
-Select your organization's Wi-Fi network from the list of available wireless networks, or select **Add a wireless network** to manually configure it. Then select **Next**
+Select your organization's Wi-Fi network from the list of available wireless networks, or select **Add a wireless network** to manually configure it. Then select **Next**.<br><br>
     :::column-end:::
 :::row-end:::
 
 
-
 :::row:::
   :::column span="1":::
-#### Device names
-    :::column-end:::
-  :::column span="3":::
-Create a name to add as a prefix to each device. This name helps you recognize and manage this group of devices in Intune.
-
-To make sure all device names are unique, Set up School PCs automatically appends `_%SERIAL%` to the name. For example, if you add *MATH4* as the prefix, the device names appear as *MATH4* followed by the device serial number.
-
-To keep the default name for your devices, select **Continue with existing names**.
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-  :::column span="1":::
-#### Settings
+#### Configure device settings
     :::column-end:::
   :::column span="3":::
 Select more settings to include in the provisioning package. To begin, select the operating system on your student PCs.
@@ -187,41 +173,51 @@ The following table describes each setting and lists the applicable Windows 10 v
 | Enable Autopilot Reset | Lets you remotely reset a student's PC from the lock screen, apply the device's original settings, and enroll it in device management (Microsoft Entra ID and MDM). | WinRE must be enabled on the device. |
 | Lock screen background | Change the default screen lock background to a custom image. | Select **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png. |
 
-After you've made your selections, select **Next**.
+After you've made your selections, select **Next**.<br><br>
     :::column-end:::
 :::row-end:::
 
 
+:::row:::
+  :::column span="1":::
+#### Name devices
+    :::column-end:::
+  :::column span="3":::
+Create a name to add as a prefix to each device. This name helps you recognize and manage this group of devices in Intune.
+
+To make sure all device names are unique, Set up School PCs automatically appends `_%SERIAL%` to the name. For example, if you add *MATH4* as the prefix, the device names appear as *MATH4* followed by the device serial number.
+
+To keep the default name for your devices, select **Continue with existing names**.<br><br>
+    :::column-end:::
+:::row-end:::
 
 
 :::row:::
   :::column span="1":::
-#### Time zone
+#### Select time zone
     :::column-end:::
   :::column span="3":::
 > [!WARNING]
 > If you are using the Autounattend.xml file to reimage your school PCs, do not specify a time zone in the file. If you set the time zone in the file *and* in this app, you will encounter an error.
 
-Choose the time zone where your school's devices are used. This setting ensures that all PCs are provisioned in the same time zone. When you're done, select **Next**.
+Choose the time zone where your school's devices are used. This setting ensures that all PCs are provisioned in the same time zone. When you're done, select **Next**.<br><br>
     :::column-end:::
 :::row-end:::
 
 
-
-
 :::row:::
   :::column span="1":::
-#### Product key
+#### Change product key
     :::column-end:::
   :::column span="3":::
-Optionally, type in a 25-digit product key to upgrade or change the edition of Windows on your student devices. If you don't have a product key, select **Continue without change**.
+Optionally, type in a 25-digit product key to upgrade or change the edition of Windows on your student devices. If you don't have a product key, select **Continue without change**.<br><br>
     :::column-end:::
 :::row-end:::
 
 
 :::row:::
   :::column span="1":::
-#### Take a Test
+#### Set up the Take a Test app
     :::column-end:::
   :::column span="3":::
 
@@ -233,22 +229,20 @@ Optionally, type in a 25-digit product key to upgrade or change the edition of W
     - Allow keyboard auto-suggestions: Allows app to suggest words as the student types on the device's keyboard
     - Allow teachers to monitor online tests: Enables screen capture in the Take a Test app
 1. Enter the URL where the test is hosted. When students log in to the Take a Test account, they'll be able to select or enter the link to view the assessment
-1. Select **Next**
+1. Select **Next**<br><br>
 column-end:::
 :::row-end:::
 
 
-
-
 :::row:::
   :::column span="1":::
-#### Personalization
+#### Choose backgrounds
     :::column-end:::
   :::column span="3":::
 
 Upload custom images to replace the student devices' default desktop and lock screen backgrounds. Select **Browse** to search for an image file on your computer. Accepted image formats are jpg, jpeg, and png.
 
-If you don't want to upload custom images or use the images that appear in the app, select **Continue without personalization**. This option doesn't apply any customizations, and instead uses the devices' default or preset images.
+If you don't want to upload custom images or use the images that appear in the app, select **Continue without personalization**. This option doesn't apply any customizations, and instead uses the devices' default or preset images.<br><br>
     :::column-end:::
 :::row-end:::
 
@@ -265,20 +259,22 @@ Review all of the settings for accuracy and completeness
 
 > [!NOTE]
 > To make changes to a saved package, you have to start over.
+
+<br><br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
   :::column span="1":::
-#### Insert USB
+
+#### Save the package
     :::column-end:::
   :::column span="3":::
 1. Insert a USB drive. The **Save** button lights up when your computer detects the USB
 1. Choose your USB drive from the list and select **Save**
-1. When the package is ready, you see the filename and package expiration date. You can also select **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and select **Next**
+1. When the package is ready, you see the filename and package expiration date. You can also select **Add a USB** to save the same provisioning package to another USB drive. When you're done, remove the USB drive and select **Next**<br><br>
     :::column-end:::
 :::row-end:::
-
 
 ## Run package - Get PCs ready
 
