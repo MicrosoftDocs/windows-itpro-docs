@@ -2,7 +2,7 @@
 title: Diagnose MDM enrollment failures
 description: Learn how to diagnose enrollment failures for Windows devices
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # Diagnose MDM enrollment

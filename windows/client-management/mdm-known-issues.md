@@ -2,7 +2,7 @@
 title: Known issues in MDM
 description: Learn about known issues for Windows devices in MDM
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # Known issues
@@ -11,11 +11,11 @@ ms.date: 08/10/2023
 
 A Get command inside an atomic command isn't supported.
 
-## Apps installed using WMI classes are not removed
+## Apps installed using WMI classes aren't removed
 
 Applications installed using WMI classes aren't removed when the MDM account is removed from device.
 
-## Passing CDATA in SyncML does not work
+## Passing CDATA in SyncML doesn't work
 
 Passing CDATA in data in SyncML to ConfigManager and CSPs doesn't work.
 
@@ -222,8 +222,6 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
 After the MDM client automatically renews the WNS channel URI, the MDM client will immediately check in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-<a name='user-provisioning-failure-in-azure-active-directory-joined-devices'></a>
-
 ## User provisioning failure in Microsoft Entra joined devices
 
 For Microsoft Entra joined devices, provisioning `.\User` resources fails when the user isn't logged in as a Microsoft Entra user. If you attempt to join Microsoft Entra ID from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Microsoft Entra credentials to get your organizational configuration from your MDM server. This behavior is by design.
@@ -232,6 +230,6 @@ For Microsoft Entra joined devices, provisioning `.\User` resources fails when t
 
 If you want to use the certificate used for VPN authentication also for Kerberos authentication (required if you need access to on-premises resources using NTLM or Kerberos), the user's certificate must meet the requirements for smart card certificate, the Subject field should contain the DNS domain name in the DN or the SAN should contain a fully qualified UPN so that the DC can be located from the DNS registrations. If certificates that don't meet these requirements are used for VPN, users may fail to access resources that require Kerberos authentication.
 
-## Device management agent for the push-button reset is not working
+## Device management agent for the push-button reset isn't working
 
 The DM agent for [push-button reset](/windows-hardware/manufacture/desktop/push-button-reset-overview) keeps the registry settings for OMA DM sessions, but deletes the task schedules. The client enrollment is retained, but it never syncs with the MDM service.
