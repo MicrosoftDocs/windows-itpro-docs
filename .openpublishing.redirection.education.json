@@ -306,6 +306,21 @@
       "source_path": "education/windows/tutorial-school-deployment/troubleshoot-overview.md",
       "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/troubleshoot-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-1.md",
+      "redirect_url": "/education/windows/suspcs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-2.md",
+      "redirect_url": "/education/windows/suspcs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-3.md",
+      "redirect_url": "/education/windows/suspcs",
+      "redirect_document_id": false
     }
   ]
 }
