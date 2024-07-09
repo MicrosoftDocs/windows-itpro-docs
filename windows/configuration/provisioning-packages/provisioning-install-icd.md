@@ -65,5 +65,5 @@ Windows Configuration Designer can create provisioning packages for Windows clie
 > [!div class="nextstepaction"]
 > Learn more about creating a provisioning package:
 >
-> [Create a provisioning package (simple)](provision-pcs-for-initial-deployment.md)
+> [Create a provisioning package (desktop wizard)](provision-pcs-for-initial-deployment.md)
 > [Create a provisioning package (advanced)](provisioning-create-package.md)

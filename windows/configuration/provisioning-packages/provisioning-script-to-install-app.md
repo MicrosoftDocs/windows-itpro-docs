@@ -105,8 +105,6 @@ PsExec.exe -accepteula -i -s cmd.exe /c 'powershell.exe my_powershell_script.ps1
 echo result: %ERRORLEVEL% >> %LOGFILE%
 ```
 
-<span id="cab-extract" />
-
 ### Extract from a .CAB example
 
 This example script shows expansion of a .cab from the provisioning commands script, and installation of the expanded setup.exe

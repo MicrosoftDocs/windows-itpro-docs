@@ -27,7 +27,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 - **Command line arguments**: Optionally, append more command arguments. The silent flag is appended for you. Example: PROPERTY=VALUE
 - **Continue installations after failure**: Optionally, specify if you want to continue installing more apps if this app fails to install
 - **Restart required**: Optionally, specify if you want to reboot after a successful install of this app
-- **Required win32 app dependencies**: Optionally, specify more files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab-the-application-assets). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#cab-extract).
+- **Required win32 app dependencies**: Optionally, specify more files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab-the-application-assets). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#extract-from-a-cab-example).
 
 > [!NOTE]
 > You can find more information about command-line options for Msiexec.exe [here](/windows/win32/msi/command-line-options).
@@ -38,7 +38,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 - **Return Codes**: Specify the return codes for success and success with restart (0 and 3010 by default respectively) Any return code that isn't listed is interpreted as failure. The text boxes are space delimited.
 - **Continue installations after failure**: Optionally, specify if you want to continue installing more apps if this app fails to install
 - **Restart required**: Optionally, specify if you want to reboot after a successful install of this app
-- **Required win32 app dependencies**: Optionally, specify more files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab-the-application-assets). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#cab-extract).
+- **Required win32 app dependencies**: Optionally, specify more files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab-the-application-assets). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#extract-from-a-cab-example).
 
 ## Add a Windows desktop application using advanced editor
 
@@ -109,13 +109,11 @@ For details about the settings you can customize in provisioning packages, see [
     > [!TIP]
     > We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store. Any package signed with that certificate can be applied silently.
 
-1. Select **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.<p>
-   Optionally, you can select **Browse** to change the default output location.
+1. Select **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location. Optionally, you can select **Browse** to change the default output location.
 
 1. Select **Next**.
 
-1. Select **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.<p>
-   If you need to cancel the build, select **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
+1. Select **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status. If you need to cancel the build, select **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
 
 1. If your build fails, an error message shows up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again. If your build is successful, the name of the provisioning package, output directory, and project directory is shown.
 
