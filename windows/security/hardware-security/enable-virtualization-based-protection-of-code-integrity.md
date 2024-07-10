@@ -2,7 +2,7 @@
 title: Enable memory integrity
 description: This article explains the steps to opt in to using memory integrity on Windows devices.
 ms.topic: conceptual
-ms.date: 03/26/2024
+ms.date: 07/10/2024
 appliesto:
   - "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
   - "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
