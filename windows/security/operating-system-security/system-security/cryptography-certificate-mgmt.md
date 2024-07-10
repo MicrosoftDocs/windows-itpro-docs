@@ -2,7 +2,7 @@
 title: Cryptography and Certificate Management
 description: Get an overview of cryptography and certificate management in Windows
 ms.topic: conceptual
-ms.date: 08/11/2023
+ms.date: 07/10/2024
 ms.reviewer: skhadeer, raverma
 ---
 
@@ -12,7 +12,7 @@ ms.reviewer: skhadeer, raverma
 
 Cryptography uses code to convert data so that only a specific recipient can read it by using a key. Cryptography enforces privacy to prevent anyone except the intended recipient from reading data, integrity to ensure data is free of tampering, and authentication that verifies identity to ensure that communication is secure. The cryptography stack in Windows extends from the chip to the cloud enabling Windows, applications, and services protect system and user secrets.
 
-Cryptography in Windows is Federal Information Processing Standards (FIPS) 140 certified. FIPS 140 certification ensures that US government approved algorithms are being used (RSA for signing, ECDH with NIST curves for key agreement, AES for symmetric encryption, and SHA2 for hashing), tests module integrity to prove that no tampering has occurred and proves the randomness for entropy sources.
+Cryptography in Windows is Federal Information Processing Standards (FIPS) 140 certified. FIPS 140 certification ensures that US government approved algorithms are being used (RSA for signing, ECDH with NIST curves for key agreement, AES for symmetric encryption, and SHA2 for hashing), tests module integrity to prove that no tampering occurred and proves the randomness for entropy sources.
 
 Windows cryptographic modules provide low-level primitives such as:
 

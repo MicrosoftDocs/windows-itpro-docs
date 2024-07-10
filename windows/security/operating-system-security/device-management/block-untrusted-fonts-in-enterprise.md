@@ -3,12 +3,12 @@ title: Block untrusted fonts in an enterprise
 description: To help protect your company from attacks that may originate from untrusted or attacker controlled font files, we've created the Blocking Untrusted Fonts feature.
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.date: 12/22/2023
+ms.date: 07/10/2024
 ---
 
 # Block untrusted fonts in an enterprise
 
-To help protect your company from attacks that may originate from untrusted or attacker-controlled font files, we've created the Blocking Untrusted Fonts feature. Using this feature, you can turn on a global setting that stops your employees from loading untrusted fonts processed using the Graphics Device Interface (GDI) onto your network. Untrusted fonts are any font installed outside of the `%windir%\Fonts` directory. Blocking untrusted fonts helps prevent both remote (web-based or email-based) and local EOP attacks that can happen during the font file-parsing process.
+To help protect your company from attacks that may originate from untrusted or attacker-controlled font files, you can block untrusted fonts. Using this feature, you can turn on a global setting that stops your employees from loading untrusted fonts processed using the Graphics Device Interface (GDI) onto your network. Untrusted fonts are any font installed outside of the `%windir%\Fonts` directory. Blocking untrusted fonts helps prevent both remote (web-based or email-based) and local EOP attacks that can happen during the font file-parsing process.
 
 ## What does this mean for me?
 
@@ -44,11 +44,11 @@ Use Group Policy or the registry to turn this feature on, off, or to use audit m
 **To turn on and use the Blocking Untrusted Fonts feature through Group Policy**
 
 1. Open the Group Policy editor (gpedit.msc) and go to `Computer Configuration\Administrative Templates\System\Mitigation Options\Untrusted Font Blocking`.
-2. Click **Enabled** to turn on the feature, and then click one of the following **Mitigation Options**:
+2. Select **Enabled** to turn on the feature, and then select one of the following **Mitigation Options**:
     - **Block untrusted fonts and log events.** Turns on the feature, blocking untrusted fonts and logging installation attempts to the event log.
     - **Do not block untrusted fonts.** Turns on the feature, but doesn't block untrusted fonts nor does it log installation attempts to the event log.
     - **Log events without blocking untrusted fonts**. Turns on the feature, logging installation attempts to the event log, but not blocking untrusted fonts.
-3. Click **OK**.
+3. Select **OK**.
 
 **To turn on and use the Blocking Untrusted Fonts feature through the registry**
 
@@ -56,7 +56,7 @@ To turn this feature on, off, or to use audit mode:
 
 1. Open the registry editor (regedit.exe) and go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel\`.
 2. If the **MitigationOptions** key isn't there, right-click and add a new **QWORD (64-bit) Value**, renaming it to **MitigationOptions**.
-3. Right click on the **MitigationOptions** key, and then click **Modify**. The **Edit QWORD (64-bit) Value** box opens.
+3. Right select on the **MitigationOptions** key, and then select **Modify**. The **Edit QWORD (64-bit) Value** box opens.
 4. Make sure the **Base** option is **Hexadecimal**, and then update the **Value data**, making sure you keep your existing value, like in the important note below:
    - **To turn this feature on.** Type **1000000000000**.
    - **To turn this feature off.** Type **2000000000000**.
@@ -114,7 +114,7 @@ After you figure out the problematic fonts, you can try to fix your apps in two 
 
 **To fix your apps by installing the problematic fonts (recommended)**
 
-On each computer with the app installed, right-click on the font name and click **Install**. The font should automatically install into your `%windir%\Fonts` directory. If it doesn't, you'll need to manually copy the font files into the **Fonts** directory and run the installation from there.
+On each computer with the app installed, right-click on the font name and select **Install**. The font should automatically install into your `%windir%\Fonts` directory. If it doesn't, you need to manually copy the font files into the **Fonts** directory and run the installation from there.
 
 **To fix your apps by excluding processes**
 
