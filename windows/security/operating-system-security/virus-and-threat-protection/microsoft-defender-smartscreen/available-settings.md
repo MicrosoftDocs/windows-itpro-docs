@@ -29,11 +29,11 @@ SmartScreen uses registry-based Administrative Template policy settings.
 If you manage your policies using Microsoft Intune, use these MDM policy settings. All settings support desktop computers running Windows 10/11 Pro or Windows 10/11 Enterprise, enrolled with Microsoft Intune.
 
 - [AllowSmartScreen](/windows/client-management/mdm/policy-csp-browser#allowsmartscreen)
-- [EnableAppInstallControl](/windows/client-management/mdm/policy-csp-smartscreen.md#enableappinstallcontrol)
-- [EnableSmartScreenInShell](/windows/client-management/mdm/policy-csp-smartscreen.md#enablesmartscreeninshell)
-- [PreventOverrideForFilesInShell](/windows/client-management/mdm/policy-csp-smartscreen.md#preventoverrideforfilesinshell)
-- [PreventSmartScreenPromptOverride](/windows/client-management/mdm/policy-csp-browser.md#preventsmartscreenpromptoverride)
-- [PreventSmartScreenPromptOverrideForFiles](/windows/client-management/mdm/policy-csp-browser.md#preventsmartscreenpromptoverrideforfiles)
+- [EnableAppInstallControl](/windows/client-management/mdm/policy-csp-smartscreen#enableappinstallcontrol)
+- [EnableSmartScreenInShell](/windows/client-management/mdm/policy-csp-smartscreen#enablesmartscreeninshell)
+- [PreventOverrideForFilesInShell](/windows/client-management/mdm/policy-csp-smartscreen#preventoverrideforfilesinshell)
+- [PreventSmartScreenPromptOverride](/windows/client-management/mdm/policy-csp-browser#preventsmartscreenpromptoverride)
+- [PreventSmartScreenPromptOverrideForFiles](/windows/client-management/mdm/policy-csp-browser#preventsmartscreenpromptoverrideforfiles)
 
 ## Recommended Group Policy and MDM settings for your organization
 
