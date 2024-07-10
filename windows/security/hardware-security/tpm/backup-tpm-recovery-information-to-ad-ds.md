@@ -2,7 +2,7 @@
 title: Back up TPM recovery information to Active Directory
 description: Learn how to back up the Trusted Platform Module (TPM) recovery information to Active Directory.
 ms.topic: conceptual
-ms.date: 11/17/2023
+ms.date: 07/10/2024
 ---
 
 # Back up the TPM recovery information to AD DS
