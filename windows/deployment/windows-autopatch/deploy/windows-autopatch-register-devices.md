@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description: This article details how to register devices in Autopatch.
-ms.date: 02/15/2024
+ms.date: 07/10/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -112,10 +112,7 @@ The following are the possible device readiness statuses in Windows Autopatch:
 
 ## Built-in roles required for device registration
 
-A role defines the set of permissions granted to users assigned to that role. You can use one of the following built-in roles in Windows Autopatch to register devices:
-
-- Microsoft Entra Global Administrator
-- Intune Service Administrator
+A role defines the set of permissions granted to users assigned to that role. You can use the **Intune Service Administrator** role to register devices.
 
 For more information, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
