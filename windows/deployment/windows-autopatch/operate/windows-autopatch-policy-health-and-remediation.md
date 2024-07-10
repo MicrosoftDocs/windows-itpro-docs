@@ -1,7 +1,7 @@
 ---
 title: policy health and remediation
 description: Describes what Autopatch does it detects policies in the tenant are either missing or modified to states that affect the service
-ms.date: 07/08/2024
+ms.date: 07/10/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -44,7 +44,7 @@ Alerts are raised when deployment rings don't have the required policies and the
 
 ## Built-in roles required for remediation actions
 
-The minimum role required to restore configurations is **Intune Service Administrator**. You can also perform these actions in the Global administrator role.
+The minimum role required to restore configurations is **Intune Service Administrator**.
 
 ## Restore device configuration policy
 
