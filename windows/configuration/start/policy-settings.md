@@ -132,6 +132,16 @@ Select one of the tabs to see the list of available settings:
 
 #### [:::image type="icon" source="../images/icons/user.svg"::: **Account options**](#tab/user)
 
+::: zone pivot="windows-11"
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
+|[Hide **Sign out**](#hide-sign-out)|✅|✅|
+|[Hide **Switch account**](#hide-switch-account)|✅|❌|
+|[Hide user tile](#hide-user-tile)|✅|❌|
+::: zone-end
+
+::: zone pivot="windows-10"
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
@@ -139,9 +149,14 @@ Select one of the tabs to see the list of available settings:
 |[Hide **Sign out**](#hide-sign-out)|✅|✅|
 |[Hide **Switch account**](#hide-switch-account)|✅|❌|
 |[Hide user tile](#hide-user-tile)|✅|❌|
+::: zone-end
 
 [!INCLUDE [hide-change-account-settings](includes/hide-change-account-settings.md)]
+
+::: zone pivot="windows-10"
 [!INCLUDE [hide-lock](includes/hide-lock.md)]
+::: zone-end
+
 [!INCLUDE [hide-signout](includes/hide-signout.md)]
 [!INCLUDE [hide-switch-user](includes/hide-switch-account.md)]
 [!INCLUDE [hide-switch-user](includes/hide-user-tile.md)]
@@ -174,6 +189,21 @@ Select one of the tabs to see the list of available settings:
 
 #### [:::image type="icon" source="../images/icons/power.svg"::: **Power options**](#tab/power)
 
+
+::: zone pivot="windows-11"
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Hide **Hibernate** ](#hide-hibernate)|✅|❌|
+|[Hide **Lock**](#hide-lock)|✅|❌|
+|[Hide **Power** button](#hide-power-button)|✅|❌|
+|[Hide **Restart**](#hide-restart)|✅|❌|
+|[Hide **Shut down**](#hide-shut-down)|✅|❌|
+|[Hide **Sleep**](#hide-sleep)|✅|❌|
+|[Remove and prevent access to the shut down restart sleep and hibernate commands](#remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands)|❌|✅|
+::: zone-end
+
+::: zone pivot="windows-10"
+
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Hide **Hibernate** ](#hide-hibernate)|✅|❌|
@@ -183,7 +213,12 @@ Select one of the tabs to see the list of available settings:
 |[Hide **Sleep**](#hide-sleep)|✅|❌|
 |[Remove and prevent access to the shut down restart sleep and hibernate commands](#remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands)|❌|✅|
 
+::: zone-end
+
 [!INCLUDE [hide-hibernate](includes/hide-hibernate.md)]
+::: zone pivot="windows-11"
+[!INCLUDE [hide-lock](includes/hide-lock.md)]
+::: zone-end
 [!INCLUDE [hide-power-button](includes/hide-power-button.md)]
 [!INCLUDE [hide-restart](includes/hide-restart.md)]
 [!INCLUDE [hide-shut-down](includes/hide-shut-down.md)]
