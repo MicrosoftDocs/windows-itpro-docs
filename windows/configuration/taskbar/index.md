@@ -3,6 +3,8 @@ title: Configure the Windows taskbar
 description: Learn how to configure the Windows taskbar to provide quick access to the tools and applications that users need most.
 ms.topic: how-to
 ms.date: 04/17/2024
+ms.collection:
+- essentials-manage
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---

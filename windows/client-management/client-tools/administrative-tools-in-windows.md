@@ -4,6 +4,8 @@ description: The folders for Windows Tools and Administrative Tools are folders 
 ms.date: 07/01/2024
 ms.topic: conceptual
 zone_pivot_groups: windows-versions-11-10
+ms.collection:
+- essentials-manage
 ---
 
 # Windows Tools
