@@ -7,10 +7,10 @@ ms.topic: include
 
 ### Hide entry points for Fast User Switching
 
-With this policy setting you can hide the **Switch User** interface in the Logon UI, the Start menu and the Task Manager:
+With this policy setting you can hide the **Switch User** interface from the sign in screen, the Start menu, and the Task Manager:
 
-- If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied
-- If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations
+- If enabled, the **Switch User** option is hidden
+- If disabled or not configured, the **Switch User** option is available to the user in the three locations
 
 |  | Path |
 |--|--|
