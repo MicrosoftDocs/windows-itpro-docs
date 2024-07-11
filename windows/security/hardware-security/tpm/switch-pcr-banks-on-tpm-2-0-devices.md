@@ -1,8 +1,8 @@
 ---
-title: UnderstandPCR banks on TPM 2.0 devices
+title: Understand PCR banks on TPM 2.0 devices
 description: Learn about what happens when you switch PCR banks on TPM 2.0 devices.
 ms.topic: conceptual
-ms.date: 11/17/2023
+ms.date: 07/10/2024
 ---
 
 # PCR banks on TPM 2.0 devices
@@ -27,9 +27,9 @@ It's important to note that this binding to PCR values also includes the hashing
 
 ## What happens when PCR banks are switched?
 
-When the PCR banks are switched, the algorithm used to compute the hashed values stored in the PCRs during extend operations is changed. Each hash algorithm will return a different cryptographic signature for the same inputs.
+When the PCR banks are switched, the algorithm used to compute the hashed values stored in the PCRs during extend operations is changed. Each hash algorithm returns a different cryptographic signature for the same inputs.
 
-As a result, if the currently used PCR bank is switched all keys that have been bound to the previous PCR values will no longer work. For example, if you had a key bound to the SHA-1 value of PCR[12] and subsequently changed the PCR bank to SHA-256, the banks wouldn't match, and you would be unable to use that key. The BitLocker key is secured using the PCR banks and Windows won't be able to unseal it if the PCR banks are switched while BitLocker is enabled.
+As a result, if the currently used PCR bank is switched, all keys that are bound to the previous PCR values no longer work. For example, if you had a key bound to the SHA-1 value of PCR[12] and later changed the PCR bank to SHA-256, the banks wouldn't match, and you would be unable to use that key. The BitLocker key is secured using the PCR banks and Windows can't unseal it if the PCR banks are switched while BitLocker is enabled.
 
 ## What can I do to switch PCRs when BitLocker is already active?
 
@@ -43,7 +43,7 @@ You can configure a TPM to have multiple PCR banks active. When BIOS performs me
 - DWORD: `TPMActivePCRBanks`
 - Defines which PCR banks are currently active. This value should be interpreted as a bitmap for which the bits are defined in the [TCG Algorithm Registry](https://trustedcomputinggroup.org/resource/tcg-algorithm-registry/) Table 21 of Revision 1.27.
 
-Windows checks which PCR banks are active and supported by the BIOS. Windows also checks if the measured boot log supports measurements for all active PCR banks. Windows will prefer the use of the SHA-256 bank for measurements and will fall back to SHA1 PCR bank if one of the pre-conditions isn't met.
+Windows checks which PCR banks are active and supported by the BIOS. Windows also checks if the measured boot log supports measurements for all active PCR banks. Windows prefers the use of the SHA-256 bank for measurements and falls back to SHA1 PCR bank if one of the preconditions isn't met.
 
 You can identify which PCR bank is currently used by Windows by looking at the registry:
 
@@ -51,4 +51,4 @@ You can identify which PCR bank is currently used by Windows by looking at the r
 - DWORD: `TPMDigestAlgID`
 - Algorithm ID of the PCR bank that Windows is currently using. This value represents an algorithm identifier as defined in the [TCG Algorithm Registry](https://trustedcomputinggroup.org/resource/tcg-algorithm-registry/) Table 3 of Revision 1.27.
 
-Windows only uses one PCR bank to continue boot measurements. All other active PCR banks will be extended with a separator to indicate that they aren't used by Windows and measurements that appear to be from Windows shouldn't be trusted.
+Windows only uses one PCR bank to continue boot measurements. All other active PCR banks are extended with a separator to indicate that they aren't used by Windows and measurements that appear to be from Windows shouldn't be trusted.

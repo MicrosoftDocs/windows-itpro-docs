@@ -1,7 +1,7 @@
 ---
 title: Windows hardware security
 description: Learn more about hardware security features support in Windows.
-ms.date: 07/28/2023
+ms.date: 07/10/2024
 ms.topic: overview
 appliesto:
 ---
