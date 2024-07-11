@@ -2,7 +2,7 @@
 title: Security baselines guide
 description: Learn how to use security baselines in your organization.
 ms.topic: conceptual
-ms.date: 07/11/2023
+ms.date: 07/10/2024
 ---
 
 # Security baselines
@@ -19,7 +19,7 @@ For more information, see the following blog post: [Sticking with well-known and
 
 ## What are security baselines?
 
-Every organization faces security threats. However, the types of security threats that are of most concern to one organization can be different from another organization. For example, an e-commerce company may focus on protecting its internet-facing web apps, while a hospital may focus on protecting confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
+Every organization faces security threats. However, the types of security threats that are of most concern to one organization can be different from another organization. For example, an e-commerce company might focus on protecting its internet-facing web apps, while a hospital might focus on protecting confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization.
 
 A security baseline is a group of Microsoft-recommended configuration settings that explains their security implication. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers.
 
