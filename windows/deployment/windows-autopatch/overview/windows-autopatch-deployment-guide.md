@@ -12,7 +12,6 @@ manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - tier2
-  - essentials-get-started
 ---
 
 # Windows Autopatch deployment guide

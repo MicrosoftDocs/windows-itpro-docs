@@ -4,7 +4,6 @@ description: Gather information about how your deployed Windows Defender Applica
 ms.localizationpriority: medium
 ms.date: 03/30/2023
 ms.topic: how-to
-ms.collection: essentials-manage
 ---
 
 # Windows Defender Application Control operational guide

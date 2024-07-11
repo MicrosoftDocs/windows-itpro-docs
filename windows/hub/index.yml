@@ -15,7 +15,7 @@ metadata:
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 04/25/2024
+  ms.date: 07/11/2024
 
 highlightedContent:
   items:
@@ -34,9 +34,9 @@ highlightedContent:
   - title: Windows commercial licensing
     itemType: overview
     url: /windows/whats-new/windows-licensing
-  - title: Copilot in Windows
+  - title: Manage Recall
     itemType: how-to-guide
-    url: /windows/client-management/manage-windows-copilot
+    url: /windows/client-management/manage-recall
   - title: Windows 365 documentation
     itemType: overview
     url: /windows-365
@@ -55,10 +55,10 @@ productDirectory:
     - title: Learn how to deploy Windows
       imageSrc: /media/common/i_deploy.svg
       links:
-        - url: /mem/autopilot/
-          text: Windows Autopilot overview
-        - url: /mem/autopilot/tutorial/autopilot-scenarios
-          text: "Tutorial: Windows Autopilot scenarios"
+        - url: /autopilot/
+          text: Windows Autopilot
+        - url: /autopilot/device-preparation/compare
+          text: Compare Windows Autopilot solutions
         - url: /windows/deployment/do/
           text: Delivery optimization
         - url: /windows/deployment/update/deployment-service-overview
@@ -109,8 +109,8 @@ productDirectory:
           text: Configuration Service Provider (CSP)
         - url: /windows/client-management/administrative-tools-in-windows-10
           text: Windows administrative tools
-        - url: /windows/client-management/manage-windows-copilot
-          text: Manage Copilot in Windows
+        - url: /windows/client-management/manage-recall
+          text: Manage Recall
         - url: /windows/application-management/index
           text: Learn more about application management >
         - url: /windows/client-management
