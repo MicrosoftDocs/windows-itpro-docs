@@ -4,7 +4,8 @@ description: A list of all available settings for Microsoft Defender SmartScreen
 ms.date: 07/10/2024
 ms.topic: reference
 ---
-# Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings
+
+# Available Microsoft Defender SmartScreen settings
 
 Microsoft Defender SmartScreen works with Intune, Group Policy, and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Microsoft Defender SmartScreen, you can show users a warning page and let them continue to the site, or you can block the site entirely.
 
@@ -54,7 +55,3 @@ To better help you protect your organization, we recommend turning on and using 
 |Browser/PreventSmartScreenPromptOverrideForFiles|**1.**  Stops users from ignoring warning messages and continuing to download potentially malicious files.|
 |SmartScreen/EnableSmartScreenInShell|**1.**  Turns on Microsoft Defender SmartScreen in Windows.<br/><br/>Requires at least Windows 10, version 1703.|
 |SmartScreen/PreventOverrideForFilesInShell|**1.**  Stops users from ignoring warning messages about malicious files downloaded from the Internet.<br/><br/>Requires at least Windows 10, version 1703.|
-
-## Related articles
-
-- [Available Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies)
