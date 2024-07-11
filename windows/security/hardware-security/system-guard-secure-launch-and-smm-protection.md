@@ -1,14 +1,13 @@
 ---
 title: System Guard Secure Launch and SMM protection
-description: Explains how to configure System Guard Secure Launch and System Management Mode (SMM protection) to improve the startup security of Windows 10 devices.
-ms.localizationpriority: medium
-ms.date: 07/31/2023
+description: Explains how to configure System Guard Secure Launch and System Management Mode (SMM protection) to improve the startup security of Windows devices.
+ms.date: 07/10/2024
 ms.topic: conceptual
 ---
 
 # System Guard Secure Launch and SMM protection
 
-This topic explains how to configure [System Guard Secure Launch and System Management Mode (SMM) protection](how-hardware-based-root-of-trust-helps-protect-windows.md) to improve the startup security of Windows 10 and Windows 11 devices. The information below is presented from a client perspective.
+This article explains how to configure [System Guard Secure Launch and System Management Mode (SMM) protection](how-hardware-based-root-of-trust-helps-protect-windows.md) to improve the startup security of Windows 10 and Windows 11 devices. The information below is presented from a client perspective.
 
 > [!NOTE]
 > System Guard Secure Launch feature requires a supported processor. For more information, see [System requirements for System Guard](how-hardware-based-root-of-trust-helps-protect-windows.md#system-requirements-for-system-guard).
@@ -28,35 +27,30 @@ System Guard Secure Launch can be configured for Mobile Device Management (MDM) 
 
 ### Group Policy
 
-1. Click **Start** > type and then click **Edit group policy**.
-
-2. Click **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn On Virtualization Based Security** > **Secure Launch Configuration**.
+1. Select **Start** > type and then select **Edit group policy**.
+1. Select **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn On Virtualization Based Security** > **Secure Launch Configuration**.
 
     ![Secure Launch Configuration.](images/secure-launch-group-policy.png)
 
 ### Windows Security
 
-Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation** > **Firmware protection**.
+Select **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation** > **Firmware protection**.
 
   ![Windows Security settings.](images/secure-launch-security-app.png)
 
 ### Registry
 
 1. Open Registry editor.
-
-2. Click **HKEY_LOCAL_MACHINE** > **SYSTEM** > **CurrentControlSet** > **Control** > **DeviceGuard** > **Scenarios**.
-
-3. Right-click **Scenarios** > **New** > **Key** and name the new key **SystemGuard**.
-
-4. Right-click **SystemGuard** > **New** > **DWORD (32-bit) Value** and name the new DWORD **Enabled**.
-
-5. Double-click **Enabled**, change the value to **1**, and click **OK**.
+1. Select **HKEY_LOCAL_MACHINE** > **SYSTEM** > **CurrentControlSet** > **Control** > **DeviceGuard** > **Scenarios**.
+1. Right-click **Scenarios** > **New** > **Key** and name the new key **SystemGuard**.
+1. Right-click **SystemGuard** > **New** > **DWORD (32-bit) Value** and name the new DWORD **Enabled**.
+1. Double-click **Enabled**, change the value to **1**, and click **OK**.
 
     ![Secure Launch Registry.](images/secure-launch-registry.png)
 
 ## How to verify System Guard Secure Launch is configured and running
 
-To verify that Secure Launch is running, use System Information (MSInfo32). Click **Start**, search for **System Information**, and look under **Virtualization-based Security Services Running** and **Virtualization-based Security Services Configured**.
+To verify that Secure Launch is running, use System Information (MSInfo32). Select **Start**, search for **System Information**, and look under **Virtualization-based Security Services Running** and **Virtualization-based Security Services Configured**.
 
 ![Verifying Secure Launch is running in the Windows Security settings.](images/secure-launch-msinfo.png)
 

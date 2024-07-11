@@ -2,7 +2,7 @@
 title: Support for Windows Information Protection (WIP) on Windows
 description: Learn about implementing the Windows version of Windows Information Protection (WIP), which is a lightweight solution for managing company data access and security on personal devices.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # Support for Windows Information Protection (WIP) on Windows
@@ -10,8 +10,6 @@ ms.date: 08/10/2023
 Windows Information Protection (WIP) is a lightweight solution for managing company data access and security on personal devices. WIP support is built into Windows.
 
 [!INCLUDE [Deprecate Windows Information Protection](../security/information-protection/windows-information-protection/includes/wip-deprecation.md)]
-
-<a name='integration-with-azure-ad'></a>
 
 ## Integration with Microsoft Entra ID
 
@@ -78,7 +76,7 @@ Since the [Poll](mdm/dmclient-csp.md#deviceproviderprovideridpoll) node isn't pr
 
 ## Supported CSPs
 
-WIP supports the following configuration service providers (CSPs). All other CSPs are blocked. Note the list may change later based on customer feedback:
+WIP supports the following configuration service providers (CSPs). All other CSPs are blocked. Note the list can change later based on customer feedback:
 
 - [AppLocker CSP](mdm/applocker-csp.md) for configuration of Windows Information Protection enterprise allowed apps.
 - [ClientCertificateInstall CSP](mdm/clientcertificateinstall-csp.md) for installing VPN and Wi-Fi certs.

@@ -5,18 +5,18 @@ ms.topic: conceptual
 ms.collection:
 - highpri
 - tier2
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # Microsoft Entra integration with MDM
 
-Microsoft Entra ID is the world's largest enterprise cloud identity management service. It's used by organizations to access Microsoft 365 and business applications from Microsoft and third-party software as a service (SaaS) vendors. Many of the rich Windows experiences for organizational users (such as store access or OS state roaming) use Microsoft Entra ID as the underlying identity infrastructure. Windows integrates with Microsoft Entra ID, allowing devices to be registered in Microsoft Entra ID and enrolled into MDM in an integrated flow.
+Microsoft Entra ID is the world's largest enterprise cloud identity management service. It's used by organizations to access Microsoft 365 and business applications from Microsoft and third-party software as a service (SaaS) vendors. Many of the rich Windows experiences for organizational users (such as store access or OS state roaming) use Microsoft Entra ID as the underlying identity infrastructure. Windows integrates with Microsoft Entra ID, allowing devices to be registered in Microsoft Entra ID and enrolled into Mobile Device Management (MDM) in an integrated flow.
 
 Once a device is enrolled in MDM, the MDM:
 
 - Can enforce compliance with organization policies, add or remove apps, and more.
 - Can report a device's compliance in Microsoft Entra ID.
-- Microsoft Entra ID can allow access to organization resources or applications secured by Microsoft Entra ID to devices that comply with policies.
+- Can allow access to organization resources or applications secured by Microsoft Entra ID to devices that comply with policies.
 
 To support these rich experiences with their MDM product, MDM vendors can integrate with Microsoft Entra ID.
 
@@ -24,22 +24,20 @@ To support these rich experiences with their MDM product, MDM vendors can integr
 
 There are several ways to connect your devices to Microsoft Entra ID:
 
-- [Join device to Microsoft Entra ID](/azure/active-directory/devices/concept-azure-ad-join)
-- [Join device to on-premises AD and Microsoft Entra ID](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-- [Add a Microsoft work account to Windows](/azure/active-directory/devices/concept-azure-ad-register)
+- [Join device to Microsoft Entra ID](/entra/identity/devices/concept-directory-join)
+- [Join device to on-premises AD and Microsoft Entra ID](/entra/identity/devices/concept-hybrid-join)
+- [Add a Microsoft work account to Windows](/entra/identity/devices/concept-device-registration)
 
 In each scenario, Microsoft Entra authenticates the user and the device. It provides a verified unique device identifier that can be used for MDM enrollment. The enrollment flow provides an opportunity for the MDM service to render its own UI, using a web view. MDM vendors should use the UI to render the Terms of Use (TOU), which can be different for company-owned and bring-your-own-device (BYOD) devices. MDM vendors can also use the web view to render more UI elements, such as asking for a one-time PIN.
 
 In Windows 10, the web view during the out-of-the-box scenario is displayed as full-screen by default, providing MDM vendors with the capability to create a seamless edge-to-edge user experience. However, in Windows 11 the web view is rendered within an iframe. It's important that MDM vendors who integrate with Microsoft Entra ID respect the Windows design guidelines. This step includes using a responsive web design and respecting the Windows accessibility guidelines. For example, include the forward and back buttons that are properly wired to the navigation logic. More details are provided later in this article.
 
-For Microsoft Entra enrollment to work for an Active Directory Federated Services (AD FS) backed Microsoft Entra account, you must enable password authentication for the intranet on the ADFS service. For more information, see [Configure Azure MFA as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
+For Microsoft Entra enrollment to work for an Active Directory Federated Services (AD FS) backed Microsoft Entra account, you must enable password authentication for the intranet on the ADFS service. For more information, see [Configure Microsoft Entra multifactor authentication as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
 Once a user has a Microsoft Entra account added to Windows and enrolled in MDM, the enrollment can be managed through **Settings** > **Accounts** > **Access work or school**. Device management of either Microsoft Entra join for organization scenarios or BYOD scenarios is similar.
 
 > [!NOTE]
 > Users can't remove the device enrollment through the **Access work or school** user interface because management is tied to the Microsoft Entra ID or work account.
-
-<a name='mdm-endpoints-involved-in-azure-ad-integrated-enrollment'></a>
 
 ### MDM endpoints involved in Microsoft Entra integrated enrollment
 
@@ -64,17 +62,15 @@ To support Microsoft Entra enrollment, MDM vendors must host and expose a **Term
 
     The MDM is expected to use this information about the device (Device ID) when reporting device compliance back to Microsoft Entra ID using the [Microsoft Graph API](/azure/active-directory/develop/active-directory-graph-api). A sample for reporting device compliance is provided later in this article.
 
-<a name='make-mdm-a-reliable-party-of-azure-ad'></a>
-
 ## Make MDM a reliable party of Microsoft Entra ID
 
 To participate in the integrated enrollment flow outlined in the previous section, the MDM must consume access tokens issued by Microsoft Entra ID. To report compliance with Microsoft Entra ID, the MDM must authenticate itself to Microsoft Entra ID and obtain authorization in the form of an access token that allows it to invoke the [Microsoft Graph API](/azure/active-directory/develop/active-directory-graph-api).
 
 ### Cloud-based MDM
 
-A cloud-based MDM is a SaaS application that provides device management capabilities in the cloud. It's a multi-tenant application. This application is registered with Microsoft Entra ID in the home tenant of the MDM vendor. When an IT admin decides to use this MDM solution, an instance of this application is made visible in the tenant of the customer.
+A cloud-based MDM is a SaaS application that provides device management capabilities in the cloud. It's a multitenant application. This application is registered with Microsoft Entra ID in the home tenant of the MDM vendor. When an IT admin decides to use this MDM solution, an instance of this application is made visible in the tenant of the customer.
 
-The MDM vendor must first register the application in their home tenant and mark it as a multi-tenant application. For more information about how to add multi-tenant applications to Microsoft Entra ID, see the [Integrate an app that authenticates users and calls Microsoft Graph using the multi-tenant integration pattern (SaaS)](https://go.microsoft.com/fwlink/p/?LinkId=613661) code sample on GitHub.
+The MDM vendor must first register the application in their home tenant and mark it as a multitenant application. For more information about how to add multitenant applications to Microsoft Entra ID, see the [Integrate an app that authenticates users and calls Microsoft Graph using the multitenant integration pattern (SaaS)](https://go.microsoft.com/fwlink/p/?LinkId=613661) code sample on GitHub.
 
 > [!NOTE]
 > For the MDM provider, if you don't have an existing Microsoft Entra tenant with a Microsoft Entra subscription that you manage, follow these step-by-step guides:
@@ -82,7 +78,7 @@ The MDM vendor must first register the application in their home tenant and mark
 > - [Quickstart: Create a new tenant in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) to set up a tenant.
 > - [Associate or add an Azure subscription to your Microsoft Entra tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) to add a subscription, and manage it via the Azure Portal.
 
-The MDM application uses keys to request access tokens from Microsoft Entra ID. These keys are managed within the tenant of the MDM provider and not visible to individual customers. The same key is used by the multi-tenant MDM application to authenticate itself with Microsoft Entra ID, in the customer tenant where the managed device belongs.
+The MDM application uses keys to request access tokens from Microsoft Entra ID. These keys are managed within the tenant of the MDM provider and not visible to individual customers. The same key is used by the multitenant MDM application to authenticate itself with Microsoft Entra ID, in the customer tenant where the managed device belongs.
 
 > [!NOTE]
 > All MDM apps must implement Microsoft Entra v2 tokens before we certify that integration works. Due to changes in the Microsoft Entra app platform, using Microsoft Entra v2 tokens is a hard requirement. For more information, see [Microsoft identity platform access tokens](/azure/active-directory/develop/access-tokens#token-formats).
@@ -107,8 +103,6 @@ For cloud-based MDM, you can roll over the application keys without requiring a 
 
 For the on-premises MDM, the Microsoft Entra authentication keys are within the customer tenant and the customer's administrator must roll over the keys. To improve security, provide guidance to customers about rolling over and protecting the keys.
 
-<a name='publish-your-mdm-app-to-azure-ad-app-gallery'></a>
-
 ## Publish your MDM app to Microsoft Entra app gallery
 
 IT administrators use the Microsoft Entra app gallery to add an MDM for their organization to use. The app gallery is a rich store with over 2400 SaaS applications that are integrated with Microsoft Entra ID.
@@ -124,7 +118,7 @@ The following table shows the required information to create an entry in the Mic
 
 | Item                | Description                                                                                                                                                                                                    |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Application ID**  | The client ID of your MDM app that is configured within your tenant. This ID is the unique identifier for your multi-tenant app.                                                                               |
+| **Application ID**  | The client ID of your MDM app that is configured within your tenant. This ID is the unique identifier for your multitenant app.                                                                               |
 | **Publisher**       | A string that identifies the publisher of the app.                                                                                                                                                             |
 | **Application URL** | A URL to the landing page of your app where your administrators can get more information about the MDM app and contains a link to the landing page of your app. This URL isn't used for the actual enrollment. |
 | **Description**     | A brief description of your MDM app, which must be under 255 characters.                                                                                                                                       |
@@ -191,7 +185,7 @@ The following claims are expected in the access token passed by Windows to the T
 |-----------|----------------------------------------------------------------------------------------------|
 | Object ID | Identifier of the user object corresponding to the authenticated user.                       |
 | UPN       | A claim containing the user principal name (UPN) of the authenticated user.                  |
-| TID       | A claim representing the tenant ID of the tenant. In the example above, it's Fabrikam.       |
+| TID       | A claim representing the tenant ID of the tenant. In the previous example, it's Fabrikam.       |
 | Resource  | A sanitized URL representing the MDM application. Example: `https://fabrikam.contosomdm.com` |
 
 > [!NOTE]
@@ -206,7 +200,7 @@ https://fabrikam.contosomdm.com/TermsOfUse?redirect_uri=ms-appx-web://ContosoMdm
 Authorization: Bearer eyJ0eXAiOi
 ```
 
-The MDM is expected to validate the signature of the access token to ensure it is issued by Microsoft Entra ID and that the recipient is appropriate.
+The MDM is expected to validate the signature of the access token to ensure it's issued by Microsoft Entra ID and that the recipient is appropriate.
 
 ### Terms of Use content
 
@@ -260,8 +254,6 @@ The following table shows the error codes.
 | Microsoft Entra token validation failed                                                                 | 302         | unauthorized_client | unauthorized_client         |
 | internal service error                                                                           | 302         | server_error        | internal service error      |
 
-<a name='enrollment-protocol-with-azure-ad'></a>
-
 ## Enrollment protocol with Microsoft Entra ID
 
 With Azure integrated MDM enrollment, there's no discovery phase and the discovery URL is directly passed down to the system from Azure. The following table shows the comparison between the traditional and Azure enrollments.
@@ -283,8 +275,6 @@ With Azure integrated MDM enrollment, there's no discovery phase and the discove
 |CSR subject name|User Principal Name|Device ID|User Principal Name|
 |EnrollmentData Terms of Use binary blob as AdditionalContext for EnrollmentServiceURL|Not supported|Supported|Supported|
 |CSPs accessible during enrollment|Windows 10 support: <br/>- DMClient <br/>- CertificateStore <br/>- RootCATrustedCertificates <br/> - ClientCertificateInstall <br/>- EnterpriseModernAppManagement <br/> - PassportForWork <br/> - Policy <br/> - w7 APPLICATION|||
-
-<a name='management-protocol-with-azure-ad'></a>
 
 ## Management protocol with Microsoft Entra ID
 
@@ -317,8 +307,6 @@ There are two different MDM enrollment types that integrate with Microsoft Entra
 
   - Use the JWT Token Handler extension for WIF to validate the contents of the access token and extract claims required for use. For more information, see [JwtSecurityTokenHandler Class](/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytokenhandler).
   - Refer to the Microsoft Entra authentication code samples to get a sample for working with access tokens. For an example, see [NativeClient-DotNet](https://go.microsoft.com/fwlink/p/?LinkId=613667).
-
-<a name='device-alert-1224-for-azure-ad-user-token'></a>
 
 ## Device Alert 1224 for Microsoft Entra user token
 
@@ -372,15 +360,13 @@ Here's an example.
 </SyncBody>
 ```
 
-<a name='report-device-compliance-to-azure-ad'></a>
-
 ## Report device compliance to Microsoft Entra ID
 
 Once a device is enrolled with the MDM for management, organization policies configured by the IT administrator are enforced on the device. MDM evaluates the device compliance with configured policies and then reports it to Microsoft Entra ID. This section covers the Graph API call you can use to report a device compliance status to Microsoft Entra ID.
 
 For a sample that illustrates how an MDM can obtain an access token using OAuth 2.0 client\_credentials grant type, see [Daemon\_CertificateCredential-DotNet](https://go.microsoft.com/fwlink/p/?LinkId=613822).
 
-- **Cloud-based MDM** - If your product is a cloud-based multi-tenant MDM service, you have a single key configured for your service within your tenant. To obtain authorization, use this key to authenticate the MDM service with Microsoft Entra ID.
+- **Cloud-based MDM** - If your product is a cloud-based multitenant MDM service, you have a single key configured for your service within your tenant. To obtain authorization, use this key to authenticate the MDM service with Microsoft Entra ID.
 - **On-premises MDM** - If your product is an on-premises MDM, customers must configure your product with the key used to authenticate with Microsoft Entra ID. This key configuration is because each on-premises instance of your MDM product has a different tenant-specific key. So, you may need to expose a configuration experience in your MDM product that enables administrators to specify the key to be used to authenticate with Microsoft Entra ID.
 
 ### Use Microsoft Graph API
@@ -414,8 +400,6 @@ Response:
 
 - Success - HTTP 204 with No Content.
 - Failure/Error - HTTP 404 Not Found. This error may be returned if the specified device or tenant can't be found.
-
-<a name='data-loss-during-unenrollment-from-azure-active-directory-join'></a>
 
 ## Data loss during unenrollment from Microsoft Entra join
 

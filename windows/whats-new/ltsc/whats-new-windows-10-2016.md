@@ -6,9 +6,9 @@ description: New and updated IT pro content about new features in Windows 10 Ent
 ms.service: windows-client
 author: mestew
 ms.localizationpriority: low
-ms.topic: conceptual
+ms.topic: reference
 ms.subservice: itpro-fundamentals
-ms.date: 12/18/2023
+ms.date: 07/09/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2016</a>
 ---

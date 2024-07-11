@@ -3,7 +3,7 @@ title: eSIM Enterprise Management
 description: Learn how Mobile Device Management (MDM) Providers support the eSIM Profile Management Solution on Windows.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # How Mobile Device Management Providers support eSIM Management on Windows
@@ -28,7 +28,7 @@ If you're a Mobile Device Management (MDM) Provider and want to support eSIM Man
 - Assess solution type that you would like to provide your customers
 - Batch/offline solution
 - IT Admin can manually import a flat file containing list of eSIM activation codes, and provision eSIM on LTE enabled devices.
-- Operator doesn't have visibility over status of the eSIM profiles and device eSIM has been downloaded and installed to
+- Operator doesn't have visibility over status of the eSIM profiles
 - Real-time solution
 - MDM automatically syncs with the Operator backend system for subscription pool and eSIM management, via SIM vendor solution component. IT Admin can view subscription pool and provision eSIM in real time.
 - Operator is notified of the status of each eSIM profile and has visibility on which devices are being used
