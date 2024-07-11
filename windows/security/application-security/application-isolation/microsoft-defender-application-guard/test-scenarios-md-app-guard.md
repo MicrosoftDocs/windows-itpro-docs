@@ -2,7 +2,7 @@
 title: Testing scenarios with Microsoft Defender Application Guard
 description: Suggested testing scenarios for Microsoft Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
 ms.localizationpriority: medium
-ms.date: 12/12/2023
+ms.date: 07/11/2024
 ms.topic: conceptual
 ---
 
@@ -39,7 +39,7 @@ How to install, set up, turn on, and configure Application Guard for Enterprise-
 
 ### Install, set up, and turn on Application Guard
 
-Before you can use Application Guard in managed mode, you must install Windows 10 Enterprise edition, version 1709, and Windows 11 which includes the functionality. Then, you must use Group Policy to set up the required settings.
+Before you can use Application Guard in managed mode, you must install Windows 10 Enterprise edition, version 1709, and Windows 11, which includes the functionality. Then, you must use Group Policy to set up the required settings.
 
 1. [Install Application Guard](install-md-app-guard.md#install-application-guard).
 
@@ -207,7 +207,7 @@ You have the option to change each of these settings to work with your enterpris
 
 3. Sign out and back in to your device, opening Microsoft Edge in Application Guard again.
 
-4. Open an application with video or audio capability in Edge.
+4. Open an application with video or audio capability in Microsoft Edge.
 
 5. Check that the camera and microphone work as expected.
 
@@ -223,7 +223,7 @@ You have the option to change each of these settings to work with your enterpris
 
 ## Application Guard Extension for third-party web browsers
 
-The [Application Guard Extension](md-app-guard-browser-extension.md) available for Chrome and Firefox allows Application Guard to protect users even when they are running a web browser other than Microsoft Edge or Internet Explorer.
+The [Application Guard Extension](md-app-guard-browser-extension.md) available for Chrome and Firefox allows Application Guard to protect users even when they're running a web browser other than Microsoft Edge or Internet Explorer.
 
 Once a user has the extension and its companion app installed on their enterprise device, you can run through the following scenarios.
 
@@ -232,7 +232,7 @@ Once a user has the extension and its companion app installed on their enterpris
 2. Navigate to an organizational website. In other words, an internal website maintained by your organization. You might see this evaluation page for an instant before the site is fully loaded.
    ![The evaluation page displayed while the page is being loaded, explaining that the user must wait.](images/app-guard-chrome-extension-evaluation-page.png)
 
-3. Navigate to a non-enterprise, external website site, such as [www.bing.com](https://www.bing.com). The site should be redirected to Microsoft Defender Application Guard Edge.
+3. Navigate to a nonenterprise, external website site, such as [www.bing.com](https://www.bing.com). The site should be redirected to Microsoft Defender Application Guard Edge.
    ![A non-enterprise website being redirected to an Application Guard container -- the text displayed explains that the page is being opened in Application Guard for Microsoft Edge.](images/app-guard-chrome-extension-launchIng-edge.png)
 
 4. Open a new Application Guard window, by selecting the Microsoft Defender Application Guard icon, then **New Application Guard Window**
