@@ -138,6 +138,7 @@ Select one of the tabs to see the list of available settings:
 |[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
 |[Hide **Sign out**](#hide-sign-out)|✅|✅|
 |[Hide **Switch user**](#hide-switch-user)|✅|❌|
+|[Hide entry points for Fast User Switching](#hide-entry-points-for-fast-user-switching)|✅|✅|
 |[Hide user tile](#hide-user-tile)|✅|❌|
 ::: zone-end
 
@@ -160,9 +161,7 @@ Select one of the tabs to see the list of available settings:
 
 [!INCLUDE [hide-signout](includes/hide-signout.md)]
 [!INCLUDE [hide-switch-user](includes/hide-switch-user.md)]
-::: zone pivot="windows-10"
 [!INCLUDE [hide-lock](includes/hide-entry-points-for-fast-user-switching.md)]
-::: zone-end
 [!INCLUDE [hide-user-tile](includes/hide-user-tile.md)]
 
 #### [:::image type="icon" source="../images/icons/folder.svg"::: **Pinned folders**](#tab/folders)
