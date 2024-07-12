@@ -137,7 +137,7 @@ Select one of the tabs to see the list of available settings:
 |-|-|-|
 |[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
 |[Hide **Sign out**](#hide-sign-out)|✅|✅|
-|[Hide **Switch account**](#hide-switch-account)|✅|❌|
+|[Hide **Switch user**](#hide-switch-user)|✅|❌|
 |[Hide user tile](#hide-user-tile)|✅|❌|
 ::: zone-end
 
@@ -147,7 +147,7 @@ Select one of the tabs to see the list of available settings:
 |[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
 |[Hide **Lock**](#hide-lock)|✅|❌|
 |[Hide **Sign out**](#hide-sign-out)|✅|✅|
-|[Hide **Switch account**](#hide-switch-account)|✅|❌|
+|[Hide **Switch user**](#hide-switch-user)|✅|❌|
 |[Hide entry points for Fast User Switching](#hide-entry-points-for-fast-user-switching)|✅|✅|
 |[Hide user tile](#hide-user-tile)|✅|❌|
 ::: zone-end
@@ -159,7 +159,7 @@ Select one of the tabs to see the list of available settings:
 ::: zone-end
 
 [!INCLUDE [hide-signout](includes/hide-signout.md)]
-[!INCLUDE [hide-switch-user](includes/hide-switch-account.md)]
+[!INCLUDE [hide-switch-user](includes/hide-switch-user.md)]
 ::: zone pivot="windows-10"
 [!INCLUDE [hide-lock](includes/hide-entry-points-for-fast-user-switching.md)]
 ::: zone-end
