@@ -1183,12 +1183,12 @@
     {
       "source_path": "windows/deployment/planning/windows-10-compatibility.md",
       "redirect_url": "/windows/compatibility/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/plan-determine-app-readiness.md",
       "redirect_url": "/windows/compatibility/windows-11/testing-guidelines",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
