@@ -36,8 +36,6 @@
           href: update/plan-define-readiness.md
         - name: Evaluate infrastructure and tools
           href: update/eval-infra-tools.md
-        - name: Determine application readiness
-          href: update/plan-determine-app-readiness.md
         - name: Define your servicing strategy
           href: update/plan-define-strategy.md
         - name: Delivery Optimization for Windows client updates
@@ -53,6 +51,8 @@
           href: planning/windows-10-infrastructure-requirements.md
         - name: Plan for volume activation
           href: volume-activation/plan-for-volume-activation-client.md
+        - name: Windows compatibility cookbook
+          href: /windows/compatibility/
         - name: Features removed or planned for replacement
           items:
             - name: Windows client features lifecycle
