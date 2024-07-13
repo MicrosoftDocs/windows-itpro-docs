@@ -1,9 +1,9 @@
 ---
 title: Prepare to deploy Windows
-description: Final steps to get ready to deploy Windows, including preparing infrastructure, environment, applications, devices, network, capability, and users
+description: Final steps to get ready to deploy Windows, including preparing infrastructure, environment, applications, devices, network, capability, and users.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: concept-article
 author: mestew
 ms.author: mstewart
 manager: aaroncz
