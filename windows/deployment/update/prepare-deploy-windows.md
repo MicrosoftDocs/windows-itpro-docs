@@ -1,14 +1,14 @@
 ---
 title: Prepare to deploy Windows
-description: Final steps to get ready to deploy Windows, including preparing infrastructure, environment, applications, devices, network, capability, and users
+description: Final steps to get ready to deploy Windows, including preparing infrastructure, environment, applications, devices, network, capability, and users.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: concept-article
 author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 12/31/2017
@@ -19,7 +19,7 @@ ms.date: 12/31/2017
 Having worked through the activities in the planning phase, you should be in a good position to prepare your environment and process to deploy Windows client. The planning phase left you with these useful items:
 
 - A clear understanding of necessary personnel and their roles and criteria for [rating app readiness](plan-define-readiness.md)
-- A plan for [testing and validating](plan-determine-app-readiness.md) apps
+- A plan for [testing and validating](/windows/compatibility/windows-11/testing-guidelines) apps
 - An assessment of your [deployment infrastructure](eval-infra-tools.md) and definitions for operational readiness
 - A [deployment plan](create-deployment-plan.md) that defines the rings you want to use
 
@@ -35,7 +35,7 @@ Your infrastructure probably includes many different components and tools. You n
 
 1.	Review all of the infrastructure changes that you've identified in your plan. It's important to understand the changes that need to be made and to detail how to implement them.  This process prevents problems later on.
 
-2.	Validate your changes. You validate the changes for your infrastructure's components and tools, to help you understand how your changes could affect your production environment. 
+2.	Validate your changes. You validate the changes for your infrastructure's components and tools, to help you understand how your changes could affect your production environment.
 
 3.	Implement the changes. Once the changes have been validated, you can implement the changes across the wider infrastructure.
 
@@ -166,11 +166,11 @@ You can also create and run scripts to perform additional cleanup actions on dev
 
 In the plan phase, you determined the specific infrastructure and configuration changes that needed to be implemented to add new capabilities to the environment. Now you can move on to implementing those changes defined in the plan phase. You need to complete these higher-level tasks to gain those new capabilities:
 
-- Enable capabilities across the environment by implementing the changes. For example, implement updates to relevant ADMX templates in Active Directory. New Windows versions come with new policies that you use to update ADMX templates. 
+- Enable capabilities across the environment by implementing the changes. For example, implement updates to relevant ADMX templates in Active Directory. New Windows versions come with new policies that you use to update ADMX templates.
 
 - Validate new changes to understand how they affect the wider environment.
 
-- Remediate any potential problems that have been identified through validation. 
+- Remediate any potential problems that have been identified through validation.
 
 ## Prepare users
 
