@@ -1,14 +1,7 @@
 ---
 title: DMClient CSP
 description: Learn more about the DMClient CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 11/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,6 +14,9 @@ ms.topic: reference
 <!-- DMClient-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The DMClient configuration service provider (CSP) has more enterprise-specific mobile device management (MDM) configuration settings. These settings identify the device in the enterprise domain, include security mitigation for certificate renewal, and are used for server-triggered enterprise unenrollment.
+
+> [!NOTE]
+> The DMClient CSP nodes are intended to be configured by the MDM server to manage device configuration and security features. Custom URI settings for this CSP are not supported for IT admin management scenarios due to the complexity of the settings.
 <!-- DMClient-Editable-End -->
 
 <!-- DMClient-Tree-Begin -->
@@ -636,7 +632,7 @@ This node, when it's set, tells the client to set how many minutes the device sh
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-OmaUri-Begin -->
@@ -675,7 +671,7 @@ Parent node for ConfigRefresh nodes.
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-OmaUri-Begin -->
@@ -716,7 +712,7 @@ This node determines the number of minutes between refreshes.
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-OmaUri-Begin -->
@@ -749,8 +745,8 @@ This node determines whether or not a periodic settings refresh for MDM policies
 
 | Value | Description |
 |:--|:--|
-| true | ConfigRefresh is enabled. |
-| false (Default) | ConfigRefresh is disabled. |
+| true | Enabled. |
+| false (Default) | Disabled. |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-AllowedValues-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Examples-Begin -->
@@ -765,7 +761,7 @@ This node determines whether or not a periodic settings refresh for MDM policies
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-OmaUri-Begin -->

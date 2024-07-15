@@ -90,6 +90,8 @@
                   href: operate/windows-autopatch-groups-windows-quality-update-status-report.md
                 - name: Quality update trending report
                   href: operate/windows-autopatch-groups-windows-quality-update-trending-report.md
+                - name: Reliability report
+                  href: operate/windows-autopatch-reliability-report.md
             - name: Windows feature update reports
               href:
               items:
@@ -101,8 +103,13 @@
                   href: operate/windows-autopatch-groups-windows-feature-update-trending-report.md
             - name: Windows quality and feature update device alerts
               href: operate/windows-autopatch-device-alerts.md
-        - name: Policy health and remediation
-          href: operate/windows-autopatch-policy-health-and-remediation.md
+        - name: Policy health
+          href:
+          items:
+            - name: Policy health and remediation
+              href: operate/windows-autopatch-policy-health-and-remediation.md
+            - name: Resolve policy conflicts
+              href: operate/windows-autopatch-resolve-policy-conflicts.md
         - name: Maintain the Windows Autopatch environment
           href: operate/windows-autopatch-maintain-environment.md
         - name: Manage driver and firmware updates
@@ -130,6 +137,8 @@
     - name: What's new
       href:
       items: 
+        - name: What's new 2024
+          href: whats-new/windows-autopatch-whats-new-2024.md
         - name: What's new 2023
           href: whats-new/windows-autopatch-whats-new-2023.md
         - name: What's new 2022

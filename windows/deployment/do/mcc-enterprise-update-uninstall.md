@@ -1,8 +1,8 @@
 ---
 title: Uninstall MCC for Enterprise and Education
 description: Details on how to uninstall Microsoft Connected Cache (MCC) for Enterprise and Education for your environment.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.author: carmenf
 author: cmknox
@@ -15,7 +15,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a> 
-ms.date: 10/12/2022
+ms.date: 05/23/2024
 ---
 
 <!-- Customers will no longer update the private preview and instead install public preview
@@ -39,9 +39,9 @@ For example:
 -->
 # Uninstall MCC
 
-Please contact the MCC Team before uninstalling to let us know if you're facing issues.
+Contact the MCC Team before uninstalling to let us know if you're facing issues.
 
-This script will remove the following items:
+This script removes the following items:
 
 1. EFLOW + Linux VM
 1. IoT Edge

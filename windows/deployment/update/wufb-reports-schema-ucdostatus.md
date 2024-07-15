@@ -2,16 +2,17 @@
 title: UCDOStatus data schema
 titleSuffix: Windows Update for Business reports
 description: UCDOStatus schema for Windows Update for Business reports. UCDOStatus provides information, for a single device, on its DO and MCC bandwidth utilization.
-ms.prod: windows-client
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
 author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.reviewer: carmenf
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 11/17/2022
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 12/06/2023
 ---
 
 # UCDOStatus

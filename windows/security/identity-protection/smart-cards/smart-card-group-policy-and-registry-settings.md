@@ -2,7 +2,7 @@
 title: Smart Card Group Policy and Registry Settings 
 description: Discover the Group Policy, registry key, local security policy, and credential delegation policy settings that are available for configuring smart cards.
 ms.topic: reference
-ms.date: 11/22/2023
+ms.date: 01/16/2024
 ---
 
 # Smart Card Group Policy and Registry Settings
@@ -373,7 +373,7 @@ The following smart card-related Group Policy settings are in **Computer Configu
 
 | Group Policy setting and registry key | Default | Description |
 |--|--|--|
-| Interactive logon: Require smart card<br><br>**scforceoption** | Disabled | This security policy setting requires users to sign in to a computer by using a smart card.<br><br>**Enabled**  Users can sign in to the computer only by using a smart card.<br>**Disabled**  Users can sign in to the computer by using any method.<br><br>NOTE: the Windows LAPS-managed local account is exempted from this policy when Enabled. For more information see [Windows LAPS integration with smart card policy](/windows-server/identity/laps/laps-concepts#windows-laps-integration-with-smart-card-policy).<br> |
+| Interactive logon: Require smart card<br><br>**scforceoption** | Disabled | This security policy setting requires users to sign in to a computer by using a smart card.<br><br>**Enabled**  Users can sign in to the computer only by using a smart card.<br>**Disabled**  Users can sign in to the computer by using any method.<br><br>NOTE: the Windows LAPS-managed local account is exempted from this policy when Enabled. |
 | Interactive logon: Smart card removal behavior<br><br>**scremoveoption** | This policy setting isn't defined, which means that the system treats it as **No Action**. | This setting determines what happens when the smart card for a signed-in user is removed from the smart card reader. The options are:<br>**No Action**<br>**Lock Workstation**: The workstation is locked when the smart card is removed, so users can leave the area, take their smart card with them, and still maintain a protected session.<br>**Force Logoff**: The user is automatically signed out when the smart card is removed.<br>**Disconnect if a Remote Desktop Services session**: Removal of the smart card disconnects the session without signing out the user. The user can reinsert the smart card and resume the session later, or at another computer that's equipped with a smart card reader, without having to sign in again. If the session is local, this policy setting functions identically to the **Lock Workstation** option. |
 
 From the Local Security Policy Editor (secpol.msc), you can edit and apply system policies to manage credential delegation for local or domain computers.

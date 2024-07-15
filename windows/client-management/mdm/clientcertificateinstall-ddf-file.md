@@ -1,14 +1,7 @@
 ---
 title: ClientCertificateInstall DDF file
 description: View the XML file containing the device description framework (DDF) for the ClientCertificateInstall configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 06/02/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -46,7 +39,7 @@ The following XML file contains the device description framework (DDF) for the C
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -301,7 +294,7 @@ If the value is
             <MSFT:DependencyBehavior>
               <MSFT:DependencyGroup FriendlyId="KeyLocationDependency">
                 <MSFT:Dependency Type="DependsOn">
-                  <MSFT:DependencyUri>Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/KeyLocation</MSFT:DependencyUri>
+                  <MSFT:DependencyUri>User/Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/KeyLocation</MSFT:DependencyUri>
                   <MSFT:DependencyAllowedValue ValueType="Range">
                     <MSFT:Value>[3]</MSFT:Value>
                   </MSFT:DependencyAllowedValue>
@@ -379,7 +372,7 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
             <MSFT:DependencyBehavior>
               <MSFT:DependencyGroup FriendlyId="EncryptionTypeDependency">
                 <MSFT:Dependency Type="DependsOn">
-                  <MSFT:DependencyUri>Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/PFXCertPasswordEncryptionType</MSFT:DependencyUri>
+                  <MSFT:DependencyUri>User/Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/PFXCertPasswordEncryptionType</MSFT:DependencyUri>
                   <MSFT:DependencyAllowedValue ValueType="Range">
                     <MSFT:Value>[2]</MSFT:Value>
                   </MSFT:DependencyAllowedValue>
@@ -564,6 +557,46 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
                 <MIME />
               </DFType>
               <MSFT:AllowedValues ValueType="None">
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>AttestPrivateKey</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Get />
+              </AccessType>
+              <Description>Defines the attest SCEP private key behavior 0 - normal, 1 - best effort, 2 - on error, fail the installation</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>9.9</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription> Do not attest private key</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription> Attest key, but in case attestation failed, best effort approach - CSR is sent to the server </MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription> Attest key, but in case attestation failed, fail fast (i.e release the key and not issue a CSR to the server) </MSFT:ValueDescription>
+                </MSFT:Enum>
               </MSFT:AllowedValues>
             </DFProperties>
           </Node>
@@ -1129,7 +1162,7 @@ Valid values are:
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -1384,7 +1417,7 @@ If the value is
             <MSFT:DependencyBehavior>
               <MSFT:DependencyGroup FriendlyId="KeyLocationDependency">
                 <MSFT:Dependency Type="DependsOn">
-                  <MSFT:DependencyUri>Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/KeyLocation</MSFT:DependencyUri>
+                  <MSFT:DependencyUri>Device/Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/KeyLocation</MSFT:DependencyUri>
                   <MSFT:DependencyAllowedValue ValueType="Range">
                     <MSFT:Value>[3]</MSFT:Value>
                   </MSFT:DependencyAllowedValue>
@@ -1462,7 +1495,7 @@ When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the 
             <MSFT:DependencyBehavior>
               <MSFT:DependencyGroup FriendlyId="EncryptionTypeDependency">
                 <MSFT:Dependency Type="DependsOn">
-                  <MSFT:DependencyUri>Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/PFXCertPasswordEncryptionType</MSFT:DependencyUri>
+                  <MSFT:DependencyUri>Device/Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/[UniqueID]/PFXCertPasswordEncryptionType</MSFT:DependencyUri>
                   <MSFT:DependencyAllowedValue ValueType="Range">
                     <MSFT:Value>[2]</MSFT:Value>
                   </MSFT:DependencyAllowedValue>
@@ -1646,6 +1679,34 @@ Calling Delete on the this node, should delete the corresponding SCEP certificat
               <DFType>
                 <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>AttestPrivateKey</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Get />
+              </AccessType>
+              <Description>Defines the attest SCEP private key behavior 0 - normal, 1 - best effort, 2 - on error, fail the installation</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>9.9</MSFT:CspVersion>
+              </MSFT:Applicability>
               <MSFT:AllowedValues ValueType="None">
               </MSFT:AllowedValues>
             </DFProperties>

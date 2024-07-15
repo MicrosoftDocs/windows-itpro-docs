@@ -3,7 +3,7 @@ title: Understand Windows Defender Application Control (WDAC) policy rules and f
 description: Learn how WDAC policy rules and file rules can control your Windows 10 and Windows 11 computers.
 ms.localizationpriority: medium
 ms.date: 11/22/2023
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Understand Windows Defender Application Control (WDAC) policy rules and file rules
@@ -34,7 +34,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **3 Enabled:Audit Mode (Default)** | Instructs WDAC to log information about applications, binaries, and scripts that would have been blocked, if the policy was enforced. You can use this option to identify the potential impact of your WDAC policy, and use the audit events to refine the policy before enforcement. To enforce a WDAC policy, delete this option. | No |
 | **4 Disabled:Flight Signing** | If enabled, binaries from Windows Insider builds aren't trusted. This option is useful for organizations that only want to run released binaries, not prerelease Windows builds. | No |
 | **5 Enabled:Inherit Default Policy** | This option is reserved for future use and currently has no effect. | Yes |
-| **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and any supplemental policies must also be signed. The certificates that are trusted for future policy updates must be identified in the UpdatePolicySigners section. Certificates that are trusted for supplemental policies must be identified in the SupplementalPolicySigners section. | No |
+| **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and any supplemental policies must also be signed. The certificates that are trusted for future policy updates must be identified in the UpdatePolicySigners section. Certificates that are trusted for supplemental policies must be identified in the SupplementalPolicySigners section. | Yes |
 | **7 Allowed:Debug Policy Augmented** | This option isn't currently supported. | Yes |
 | **8 Required:EV Signers** | This option isn't currently supported. | No |
 | **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. | No |
@@ -58,7 +58,7 @@ File rule levels allow administrators to specify the level at which they want to
 Each file rule level has advantages and disadvantages. Use Table 2 to select the appropriate protection level for your available administrative resources and WDAC deployment scenario.
 
 > [!NOTE]
-> WDAC signer-based rules only work with RSA cryptography. ECC algorithms, such as ECDSA, aren't supported. If you try to allow files by signature based on ECC signatures, you'll see VerificationError = 23 on the corresponding 3089 signature information events. Files can be allowed instead by hash or file attribute rules, or using other signer rules if the file is also signed with signatures using RSA.
+> WDAC signer-based rules only work with RSA cryptography with a maximum key length of 4096 bits. ECC algorithms, such as ECDSA, aren't supported. If you try to allow files by signature based on ECC signatures, you'll see VerificationError = 23 on the corresponding 3089 signature information events. Files can be allowed instead by hash or file attribute rules, or using other signer rules if the file is also signed with signatures using RSA.
 
 ### Table 2. Windows Defender Application Control policy - file rule levels
 
@@ -79,11 +79,6 @@ Each file rule level has advantages and disadvantages. Use Table 2 to select the
 
 > [!NOTE]
 > When you create WDAC policies with [New-CIPolicy](/powershell/module/configci/new-cipolicy), you can specify a primary file rule level, by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate, but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
-
-> [!NOTE]
->
-> - WDAC only supports signer rules for RSA certificate signing keys with a maximum of 4096 bits.
-> - The code uses CN for the CertSubject and CertIssuer fields in the policy. You can use the inbox certutil to look at the underlying format to ensure UTF-8 is not being used for the CN. For example, you can use printable string, IA5, or BMP.
 
 > [!NOTE]
 > When applicable, minimum and maximum version numbers in a file rule are referenced as MinimumFileVersion and MaximumFileVersion respectively in the policy XML.

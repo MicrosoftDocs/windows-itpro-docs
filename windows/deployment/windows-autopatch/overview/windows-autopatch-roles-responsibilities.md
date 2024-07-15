@@ -1,14 +1,14 @@
 ---
 title: Roles and responsibilities
 description: This article describes the roles and responsibilities provided by Windows Autopatch and what the customer must do
-ms.date: 08/31/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 07/08/2024
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri
@@ -99,4 +99,4 @@ For more information and assistance with preparing for your Windows Autopatch de
 | Review and respond to Windows Autopatch management alerts<ul><li>[Tenant management alerts](../operate/windows-autopatch-maintain-environment.md#windows-autopatch-tenant-actions)</li><li>[Policy health and remediation](../operate/windows-autopatch-policy-health-and-remediation.md)</li></ul> | :heavy_check_mark: | :x: |
 | [Raise and respond to support requests](../operate/windows-autopatch-support-request.md) | :heavy_check_mark: | :x: |
 | [Manage and respond to support requests](../operate/windows-autopatch-support-request.md#manage-an-active-support-request) | :x: | :heavy_check_mark: |
-| Review the [What’s new](../whats-new/windows-autopatch-whats-new-2022.md) section to stay up to date with updated feature and service releases | :heavy_check_mark: | :x: |
+| Review the [What's new](../whats-new/windows-autopatch-whats-new-2022.md) section to stay up to date with updated feature and service releases | :heavy_check_mark: | :x: |

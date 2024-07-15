@@ -6,8 +6,6 @@ brand: windows
 
 metadata:
   ms.topic: hub-page
-  ms.prod: windows-client
-  ms.technology: itpro-edu
   ms.collection:
     - education
     - tier1
@@ -64,10 +62,8 @@ productDirectory:
     - title: Learn how to manage Windows devices
       imageSrc: /media/common/i_management.svg
       links:
-        - url: tutorial-school-deployment/manage-overview.md
+        - url: /mem/intune/industry/education/tutorial-school-deployment/manage-overview
           text: Manage devices with Microsoft Intune
-        - url: tutorial-school-deployment/manage-surface-devices.md
-          text: Management functionalities for Surface devices
         - url: /education/windows/get-minecraft-for-education
           text: Get and deploy Minecraft Education
         - url: /windows/client-management
@@ -140,4 +136,4 @@ additionalContent:
             - text: Microsoft Intune community
               url: https://techcommunity.microsoft.com/t5/microsoft-intune/bd-p/Microsoft-Intune
             - text: Microsoft Support community
-              url: https://answers.microsoft.com/windows/forum
+              url: https://answers.microsoft.com/

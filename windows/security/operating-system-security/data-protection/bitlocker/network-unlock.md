@@ -1,8 +1,8 @@
 ---
-title: Network Unlock 
+title: Network Unlock
 description: Learn how BitLocker Network Unlock works and how to configure it.
 ms.topic: how-to
-ms.date: 10/30/2023
+ms.date: 06/18/2024
 ---
 
 # Network Unlock
@@ -46,7 +46,7 @@ The server side configuration to enable Network Unlock also requires provisionin
 The Network Unlock process follows these phases:
 
 :::row:::
-  :::column span="3":::
+  :::column span="2":::
     1. The Windows boot manager detects a Network Unlock protector in the BitLocker configuration
     2. The client computer uses its DHCP driver in the UEFI to get a valid IPv4 IP address
     3. The client computer broadcasts a vendor-specific DHCP request that contains a network key (a 256-bit intermediate key) and an AES-256 session key for the reply. The network key is encrypted by using the 2048-bit RSA Public Key of the Network Unlock certificate from the WDS server
@@ -57,8 +57,8 @@ The Network Unlock process follows these phases:
     8. This combined key is used to create an AES-256 key that unlocks the volume
     9. Windows continues the boot sequence
   :::column-end:::
-  :::column span="1":::
-    :::image type="content" source="images/network-unlock-diagram.png" alt-text="Diagram of the Network Unlock sequence." lightbox="images/network-unlock-diagram.png" border="false":::
+  :::column span="2":::
+    :::image type="content" source="images/network-unlock-diagram.svg" alt-text="Diagram of the Network Unlock sequence." lightbox="images/network-unlock-diagram.svg" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -255,7 +255,7 @@ The subnet policy configuration file must use a `[SUBNETS]` section to identify 
 ```ini
 [SUBNETS]
 SUBNET1=10.185.250.0/24 ; a comment about this subrange could be here, after the semicolon
-SUBNET2=10.185.252.200/28 
+SUBNET2=10.185.252.200/28
 SUBNET3= 2001:4898:a:2::/64 ; an IPv6 subnet
 SUBNET4=2001:4898:a:3::/64; in production, the admin would likely give more useful names, like BUILDING9-EXCEPT-RECEP.
 ```

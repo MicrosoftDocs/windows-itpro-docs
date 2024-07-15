@@ -1,14 +1,14 @@
 ---
 title: Configure a PXE server to load Windows PE (Windows 10)
 description: This article describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network.
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
 ms.topic: article
 ms.date: 11/23/2022
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Configure a PXE server to load Windows PE

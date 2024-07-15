@@ -2,13 +2,13 @@
 title: Activate using Key Management Service
 description: Learn how to use Key Management Service (KMS) to activate Windows.
 ms.reviewer: nganguly
-ms.prod: windows-client
-ms.technology: itpro-fundamentals
+ms.service: windows-client
+ms.subservice: itpro-fundamentals
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
 ms.localizationpriority: medium
-ms.date: 10/16/2023
+ms.date: 03/29/2024
 ms.topic: how-to
 ms.collection:
   - highpri
@@ -55,7 +55,7 @@ KMS can be activated on client versions of Windows by using the `slmgr.vbs`. To 
    cscript.exe slmgr.vbs /ipk <KMS_Key>
    ```
 
-1. Once the KMS key has been installed, it needs to be activated using one of the following methods:
+1. Once the KMS key is installed, it needs to be activated using one of the following methods:
 
    - To activate online, in the elevated Command Prompt window, run the following command:
 
@@ -85,11 +85,11 @@ KMS can be activated on client versions of Windows by using the `slmgr.vbs`. To 
 
 ## Key Management Service in Windows Server
 
-Installing a KMS host key on a computer running Windows Server allows you to activate computers running the same or earlier versions of Windows Server. Additionally, it also allows activation of client versions of Windows.
+Installing a KMS host key on a computer running Windows Server allows activation of computers running the same or earlier versions of Windows Server. Additionally, it also allows activation of client versions of Windows.
 
 > [!IMPORTANT]
 >
-> You can't install a client KMS key into the KMS in Windows Server.
+> A client KMS key can't be installed into the KMS in Windows Server.
 
 ### Configure KMS in Windows Server
 
@@ -125,7 +125,7 @@ Installing a KMS host key on a computer running Windows Server allows you to act
 
    1. In the **Introduction to Volume Activation Tools**/**Introduction** page, select the **Next >** button.
 
-   1. In the **Select Volume Activation Method**/**Activation Type** page, select the **Key Management Service (KMS)** option, and specify the computer that acts as the KMS host. This computer can be the server on which the KMS role was installed, or another server/client computer. After the server/computer has been specified, select the **Next >** button.
+   1. In the **Select Volume Activation Method**/**Activation Type** page, select the **Key Management Service (KMS)** option, and specify the computer that acts as the KMS host. This computer can be the server on which the KMS role was installed, or another server/client computer. After the server/computer is specified, select the **Next >** button.
 
    1. In the **Manage KMS Host**/**Product Key Management** page, enter in the KMS host key in the text box under **Install your KMS host key**, and then select the **Commit** button.
 
@@ -165,27 +165,27 @@ KMS volume activation can be verified from the KMS host server or from the clien
 
 > [!NOTE]
 >
-> If you configured Active Directory-based activation before configuring KMS activation, you must use a client computer that doesn't first try to activate itself by using Active Directory-based activation. For example, a client computer that is a workgroup computer that isn't joined to a domain.
+> If Active Directory-based activation was configured before configuring KMS activation, a client computer must be used that doesn't first try to activate itself by using Active Directory-based activation. For example, a client computer that is a workgroup computer that isn't joined to a domain.
 
 To verify that KMS volume activation works, complete the following steps:
 
 1. On the KMS host, open the event log and confirm that DNS publishing is successful.
 
-2. On a client computer, open an elevated Command Prompt window and run the command:
+1. On a client computer, open an elevated Command Prompt window and run the command:
 
    ```cmd
    cscript.exe slmgr.vbs /ato
    ```
 
-   The `/ato` command causes the operating system to attempt activation by using whichever key has been installed in the operating system. The response should show the license state and detailed Windows version information.
+   The `/ato` command causes the operating system to attempt activation by using whichever key is installed in the operating system. The response should show the license state and detailed Windows version information.
 
-3. On a client computer or the KMS host, open an elevated Command Prompt window and run the command
+1. On a client computer or the KMS host, open an elevated Command Prompt window and run the command
 
    ```cmd
    cscript.exe slmgr.vbs /dlv
    ```
 
-   The `/dlv` command displays the detailed licensing information. The response should return an error that states that the KMS activation count is too low. This test confirms that KMS is functioning correctly, even though the client hasn't been activated.
+   The `/dlv` command displays the detailed licensing information. The response should return an error that states that the KMS activation count is too low. This test confirms that KMS is functioning correctly, even though the client isn't activated.
 
 For more information about the use and syntax of the script `slmgr.vbs`, see [Slmgr.vbs Options](/windows-server/get-started/activation-slmgr-vbs-options).
 
@@ -193,6 +193,6 @@ For more information about the use and syntax of the script `slmgr.vbs`, see [Sl
 >
 > Clients require RPC over TCP/IP connectivity to the KMS host to successfully activate. For more information, see [Key Management Services (KMS) activation planning: Network requirements](/windows-server/get-started/kms-activation-planning#network-requirements) and [Remote Procedure Call (RPC) errors troubleshooting guidance](/troubleshoot/windows-client/networking/rpc-errors-troubleshooting).
 
-## Related articles
+## Related content
 
 - [Key Management Services (KMS) activation planning](/windows-server/get-started/kms-activation-planning).

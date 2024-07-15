@@ -4,8 +4,8 @@ description: Learn about concepts and procedures for deploying Windows 10 in a p
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
-ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.service: windows-client
+ms.subservice: itpro-deploy
 ms.localizationpriority: medium
 ms.topic: tutorial
 ms.date: 11/23/2022
@@ -22,10 +22,7 @@ This guide contains instructions to configure a proof of concept (PoC) environme
 > [!NOTE]
 > Microsoft also offers a pre-configured lab using an evaluation version of Configuration Manager. For more information, see [Windows and Office deployment and management lab kit](/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab).
 
-This lab guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following Windows 10 PoC deployment guides:
-
-- [Step by step: Deploy Windows 10 in a test lab using Microsoft Configuration Manager](windows-10-poc-sc-config-mgr.md)
-- [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)
+This lab guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see [Step by step: Deploy Windows 10 in a test lab using Microsoft Configuration Manager](windows-10-poc-sc-config-mgr.md).
 
 The proof of concept (PoC) deployment guides are intended to provide a demonstration of Windows 10 deployment tools and processes for IT professionals that aren't familiar with these tools, and you want to set up a PoC environment. Don't use the instructions in this guide in a production setting. They aren't meant to replace the instructions found in production deployment guidance.
 
@@ -117,8 +114,6 @@ The two Windows Server VMs can be combined into a single VM to conserve RAM and 
 - [Configure VMs](#configure-vms)
 
 ### Verify support and install Hyper-V
-
-Starting with Windows 8, the host computer's microprocessor must support second level address translation (SLAT) to install Hyper-V. See [Hyper-V: List of SLAT-Capable CPUs for Hosts](https://social.technet.microsoft.com/wiki/contents/articles/1401.hyper-v-list-of-slat-capable-cpus-for-hosts.aspx) for more information.
 
 1. To verify your computer supports SLAT, open an administrator command prompt,  type **systeminfo**, press ENTER, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. See the following example:
 
@@ -1046,4 +1041,5 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 ## Next steps
 
-[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
+- [Windows 10 deployment scenarios](windows-deployment-scenarios.md)
+- [Step by step: Deploy Windows 10 in a test lab using Microsoft Configuration Manager](windows-10-poc-sc-config-mgr.md)

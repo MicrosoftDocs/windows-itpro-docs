@@ -1,16 +1,8 @@
 ---
-title: DeviceManagement (Windows 10)
+title: DeviceManagement
 description: This section describes the DeviceManagement setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.date: 04/30/2018
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.date: 01/25/2024
 ---
 
 # DeviceManagement (Windows Configuration Designer reference)
@@ -21,22 +13,22 @@ Use to configure device management settings.
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| [Accounts](#accounts) | ✔️  | ✔️ |  |  |
-| [PGList](#pglist) | ✔️  | ✔️ |  |  |
-| [Policies](#policies) | ✔️  | ✔️ |  |  |
-| [TrustedProvisioningSource](#trustedprovisioningsource) | ✔️  | ✔️ |  |  |
+| [Accounts](#accounts) | ✅  | ✅ |  |  |
+| [PGList](#pglist) | ✅  | ✅ |  |  |
+| [Policies](#policies) | ✅  | ✅ |  |  |
+| [TrustedProvisioningSource](#trustedprovisioningsource) | ✅  | ✅ |  |  |
 
 ## Accounts
 
 1. In **Available customizations**, select **Accounts**, enter a friendly name for the account, and then click **Add**.
-2. In **Available customizations**, select the account that you created. The following table describes the settings you can configure. Settings in **bold** are required.
+1. In **Available customizations**, select the account that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
-| Setting | Description | 
+| Setting | Description |
 | --- | --- |
 | **Address** | Enter the OMA DM server address  |
 | **AddressType** | Choose between **IPv4** and **URI** for the type of OMA DM server address. The default value of **URI** specifies that the OMA DM account address is a URI address. A value of **IPv4** specifies that the OMA DM account address is an IP address. |
 | **AppID** | Select **w7** |
-| Authentication > Credentials | 1. Select a credentials level (CLCRED or SRVCRED). A value of **CLCRED** indicates that the credentials client will authenticate itself to the OMA DM server at the OMA DM protocol level. A value of **SRVCRED** indicates that the credentials server will authenticate itself to the OMA DM Client at the OMA DM protocol level. </br>2. In **Available customizations**, select the level.</br>3. For **Data**, enter the authentication nonce as a Base64 encoded string.</br>4. For **Level**, select **CLCRED** or **SRVCRED**.</br>5. For **Name**, enter the authentication name.</br>6. For **Secret**, enter the password or secret used for authentication.</br>7. For **Type**, select between **Basic**, **Digest**, and **HMAC**. For **CLCRED**, the supported values are **BASIC** and **DIGEST**. For **SRVCRED**, the supported value is **DIGEST**.  |
+| Authentication > Credentials | 1. Select a credentials level (CLCRED or SRVCRED). A value of **CLCRED** indicates that the credentials client will authenticate itself to the OMA DM server at the OMA DM protocol level. A value of **SRVCRED** indicates that the credentials server will authenticate itself to the OMA DM Client at the OMA DM protocol level. </br>1. In **Available customizations**, select the level.</br>1. For **Data**, enter the authentication nonce as a Base64 encoded string.</br>1. For **Level**, select **CLCRED** or **SRVCRED**.</br>1. For **Name**, enter the authentication name.</br>1. For **Secret**, enter the password or secret used for authentication.</br>1. For **Type**, select between **Basic**, **Digest**, and **HMAC**. For **CLCRED**, the supported values are **BASIC** and **DIGEST**. For **SRVCRED**, the supported value is **DIGEST**.  |
 | AuthenticationPreference | Select between **Basic**, **Digest**, and **HMAC** |
 | BackCompatRetryDisabled | Specify whether to retry resending a package with an older protocol version (for example, 1.1) in the SyncHdr on subsequent attempts (not including the first time). The default value of "FALSE" indicates that backward-compatible retries are enabled. A value of "TRUE" indicates that backward-compatible retries are disabled.  |
 | ConnectionRetries | Enter a number to specify how many retries the DM client performs when there are Connection Manager-level or wininet-level errors. The default value is `3`. |
@@ -56,21 +48,19 @@ Use to configure device management settings.
 | UseHardwareDeviceID | Specify whether to use the hardware ID for the ./DevInfo/DevID parameter in the DM account to identify the device |
 | UseNonceResync | Specify whether the OMA DM client should use the nonce resynchronization procedure if the server trigger notification fails authentication |
 
-
 ## PGList
 
 1. In **Available customizations**, select **PGList**, enter a LogicalProxyName, and then click **Add**.
-2. In **Available customizations**, select the LogicalProxyName that you created, and then select **PhysicalProxies**.
-3. Enter a PhysicalProxyName, and then click **Add**. The following table describes the settings you can configure for the physical proxy and for **Trust**. 
+1. In **Available customizations**, select the LogicalProxyName that you created, and then select **PhysicalProxies**.
+1. Enter a PhysicalProxyName, and then click **Add**. The following table describes the settings you can configure for the physical proxy and for **Trust**.
 
-| Setting | Description | 
+| Setting | Description |
 | --- | --- |
 | Address | Enter the address of the physical proxy |
 | AddressType | Select between **E164**, **IPV4**, and **IPV^** for the format and protocol of the PXADDR element for a physical proxy |
 | MatchedNapID | Enter a string that defines the SMS bearer. This string must match the NAPID exactly. The value must contain MVID macro if it's an IPv4 PXADDRTYPE.  |
 | PushEnabled | Select whether push operations are enabled  |
 | Trust | Specify whether or not the physical proxies in this logical proxy are privileged  |
-
 
 ## Policies
 

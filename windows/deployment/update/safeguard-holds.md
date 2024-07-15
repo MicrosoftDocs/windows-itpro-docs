@@ -1,8 +1,8 @@
 ---
 title: Safeguard holds for Windows
 description: What are safeguard holds? How to can you tell if a safeguard hold is in effect, and what to do about it.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

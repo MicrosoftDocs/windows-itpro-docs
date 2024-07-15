@@ -7,13 +7,8 @@ metadata:
   title: Configuration Service Provider # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn more about the configuration service provider (CSP) policies available on Windows devices. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page
-  ms.technology: itpro-manage
-  ms.prod: windows-client
   ms.collection:
     - tier1
-  author: vinaypamnani-msft
-  ms.author: vinpa
-  manager: aaroncz
   ms.date: 10/25/2023
   localization_priority: medium
 

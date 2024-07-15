@@ -1,8 +1,8 @@
 ---
 title: Windows Sandbox configuration
 description: Windows Sandbox configuration
-ms.topic: article
-ms.date: 05/25/2023
+ms.topic: how-to
+ms.date: 03/26/2024
 ---
 
 # Windows Sandbox configuration
@@ -11,13 +11,13 @@ Windows Sandbox supports simple configuration files, which provide a minimal set
 
 A configuration file enables the user to control the following aspects of Windows Sandbox:
 
-- **vGPU (virtualized GPU)**: Enable or disable the virtualized GPU. If vGPU is disabled, the sandbox will use Windows Advanced Rasterization Platform (WARP).
+- **vGPU (virtualized GPU)**: Enable or disable the virtualized GPU. If vGPU is disabled, the sandbox uses Windows Advanced Rasterization Platform (WARP).
 - **Networking**: Enable or disable network access within the sandbox.
-- **Mapped folders**: Share folders from the host with *read* or *write* permissions. Exposing host directories may allow malicious software to affect the system or steal data.
+- **Mapped folders**: Share folders from the host with *read* or *write* permissions. Exposing host directories might allow malicious software to affect the system or steal data.
 - **Logon command**: A command that's executed when Windows Sandbox starts.
 - **Audio input**: Shares the host's microphone input into the sandbox.
 - **Video input**: Shares the host's webcam input into the sandbox.
-- **Protected client**: Places increased security settings on the RDP session to the sandbox.
+- **Protected client**: Places increased security settings on the Remote Desktop Protocol (RDP) session to the sandbox.
 - **Printer redirection**: Shares printers from the host into the sandbox.
 - **Clipboard redirection**: Shares the host clipboard with the sandbox so that text and files can be pasted back and forth.
 - **Memory in MB**: The amount of memory, in megabytes, to assign to the sandbox.
@@ -37,7 +37,7 @@ To create a configuration file:
     </Configuration>
     ```
 
-3. Add appropriate configuration text between the two lines. For details, see the correct syntax and the examples below.
+3. Add appropriate configuration text between the two lines. For details, see [examples](#examples).
 4. Save the file with the desired name, but make sure its filename extension is `.wsb`. In Notepad, you should enclose the filename and the extension inside double quotation marks, for example, `"My config file.wsb"`.
 
 ## Using a configuration file
@@ -59,7 +59,7 @@ Enables or disables GPU sharing.
 Supported values:
 
 - *Enable*: Enables vGPU support in the sandbox.
-- *Disable*: Disables vGPU support in the sandbox. If this value is set, the sandbox will use software rendering, which may be slower than virtualized GPU.
+- *Disable*: Disables vGPU support in the sandbox. If this value is set, the sandbox uses software rendering, which might be slower than virtualized GPU.
 - *Default* This value is the default value for vGPU support. Currently, this default value denotes that vGPU is disabled.
 
 > [!NOTE]
@@ -82,7 +82,7 @@ Supported values:
 
 ### Mapped folders
 
-An array of folders, each representing a location on the host machine that will be shared into the sandbox at the specified path. At this time, relative paths aren't supported. If no path is specified, the folder will be mapped to the container user's desktop.
+An array of folders, each representing a location on the host machine that is shared with the sandbox at the specified path. At this time, relative paths aren't supported. If no path is specified, the folder is mapped to the container user's desktop.
 
 ```xml
 <MappedFolders>
@@ -97,11 +97,9 @@ An array of folders, each representing a location on the host machine that will 
 </MappedFolders>
 ```
 
-*HostFolder*: Specifies the folder on the host machine to share into the sandbox. The folder must already exist on the host, or the container will fail to start.
-
-*SandboxFolder*: Specifies the destination in the sandbox to map the folder to. If the folder doesn't exist, it will be created. If no sandbox folder is specified, the folder will be mapped to the container desktop.
-
-*ReadOnly*: If *true*, enforces read-only access to the shared folder from within the container. Supported values: *true*/*false*. Defaults to *false*.
+- *HostFolder*: Specifies the folder on the host machine to share into the sandbox. The folder must already exist on the host, or the container fails to start.
+- *SandboxFolder*: Specifies the destination in the sandbox to map the folder to. If the folder doesn't exist, it is created. If no sandbox folder is specified, the folder is mapped to the container desktop.
+- *ReadOnly*: If *true*, enforces read-only access to the shared folder from within the container. Supported values: *true*/*false*. Defaults to *false*.
 
 > [!NOTE]
 > Files and folders mapped in from the host can be compromised by apps in the sandbox or potentially affect the host.
@@ -129,7 +127,7 @@ Enables or disables audio input to the sandbox.
 
 Supported values:
 
-- *Enable*: Enables audio input in the sandbox. If this value is set, the sandbox will be able to receive audio input from the user. Applications that use a microphone may require this capability.
+- *Enable*: Enables audio input in the sandbox. If this value is set, the sandbox can receive audio input from the user. Applications that use a microphone may require this capability.
 - *Disable*: Disables audio input in the sandbox. If this value is set, the sandbox can't receive audio input from the user. Applications that use a microphone may not function properly with this setting.
 - *Default*: This value is the default value for audio input support. Currently, this default value denotes that audio input is enabled.
 
@@ -189,7 +187,7 @@ Enables or disables sharing of the host clipboard with the sandbox.
 Supported values:
 
 - *Enable*: Enables sharing of the host clipboard with the sandbox.
-- *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted.
+- *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox is restricted.
 - *Default*: This value is the default value for clipboard redirection. Currently, copy/paste between the host and sandbox are permitted under *Default*.
 
 ### Memory in MB
@@ -198,17 +196,19 @@ Specifies the amount of memory that the sandbox can use in megabytes (MB).
 
 `<MemoryInMB>value</MemoryInMB>`
 
-If the memory value specified is insufficient to boot a sandbox, it will be automatically increased to the required minimum amount.
+If the memory value specified is insufficient to boot a sandbox, it is automatically increased to the required minimum amount.
 
-## Example 1
+## Examples
+
+### Example 1
 
 The following config file can be used to easily test the downloaded files inside the sandbox. To achieve this testing, networking and vGPU are disabled, and the sandbox is allowed read-only access to the shared downloads folder. For convenience, the logon command opens the downloads folder inside the sandbox when it's started.
 
-### Downloads.wsb
+#### Downloads.wsb
 
 ```xml
 <Configuration>
-  <VGpu>Disable</VGpu>
+  <vGpu>Disable</vGpu>
   <Networking>Disable</Networking>
   <MappedFolders>
     <MappedFolder>
@@ -223,17 +223,17 @@ The following config file can be used to easily test the downloaded files inside
 </Configuration>
 ```
 
-## Example 2
+### Example 2
 
 The following config file installs Visual Studio Code in the sandbox, which requires a slightly more complicated LogonCommand setup.
 
-Two folders are mapped into the sandbox; the first (SandboxScripts) contains VSCodeInstall.cmd, which will install and run Visual Studio Code. The second folder (CodingProjects) is assumed to contain project files that the developer wants to modify using Visual Studio Code.
+Two folders are mapped into the sandbox; the first (SandboxScripts) contains VSCodeInstall.cmd, which installs and runs Visual Studio Code. The second folder (CodingProjects) is assumed to contain project files that the developer wants to modify using Visual Studio Code.
 
 With the Visual Studio Code installer script already mapped into the sandbox, the LogonCommand can reference it.
 
-### VSCodeInstall.cmd
+#### VSCodeInstall.cmd
 
-Download vscode to `downloads` folder and run from `downloads` folder.
+Downloads VS Code to `downloads` folder and runs installation from `downloads` folder.
 
 ```batch
 REM Download Visual Studio Code
@@ -243,7 +243,7 @@ REM Install and run Visual Studio Code
 C:\users\WDAGUtilityAccount\Downloads\vscode.exe /verysilent /suppressmsgboxes
 ```
 
-### VSCode.wsb
+#### VSCode.wsb
 
 ```xml
 <Configuration>
@@ -265,15 +265,15 @@ C:\users\WDAGUtilityAccount\Downloads\vscode.exe /verysilent /suppressmsgboxes
 </Configuration>
 ```
 
-## Example 3
+### Example 3
 
 The following config file runs a PowerShell script as a logon command to swap the primary mouse button for left-handed users.
 
 `C:\sandbox` folder on the host is mapped to the `C:\sandbox` folder in the sandbox, so the `SwapMouse.ps1` script can be referenced in the sandbox configuration file.
 
-### SwapMouse.ps1
+#### SwapMouse.ps1
 
-Create a powershell script using the following code, and save it in the `C:\sandbox` directory as `SwapMouse.ps1`.
+Create a PowerShell script using the following code, and save it in the `C:\sandbox` directory as `SwapMouse.ps1`.
 
 ```powershell
 [Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null

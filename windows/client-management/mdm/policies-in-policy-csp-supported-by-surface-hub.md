@@ -1,14 +1,7 @@
 ---
 title: Policies in Policy CSP supported by Windows 10 Team
 description: Learn about the policies in Policy CSP supported by Windows 10 Team.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 09/25/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -322,6 +315,7 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [AllowOptionalContent](policy-csp-update.md#allowoptionalcontent)
 - [AllowTemporaryEnterpriseFeatureControl](policy-csp-update.md#allowtemporaryenterprisefeaturecontrol)
 - [AllowUpdateService](policy-csp-update.md#allowupdateservice)
+- [AlwaysAutoRebootAtScheduledTimeMinutes](policy-csp-update.md#alwaysautorebootatscheduledtimeminutes)
 - [BranchReadinessLevel](policy-csp-update.md#branchreadinesslevel)
 - [ConfigureFeatureUpdateUninstallPeriod](policy-csp-update.md#configurefeatureupdateuninstallperiod)
 - [DeferFeatureUpdatesPeriodInDays](policy-csp-update.md#deferfeatureupdatesperiodindays)

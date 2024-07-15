@@ -1,14 +1,7 @@
 ---
 title: InternetExplorer Policy CSP
 description: Learn more about the InternetExplorer Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 10/03/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/21/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -991,6 +984,60 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowIntranetZoneTemplate-Examples-End -->
 
 <!-- AllowIntranetZoneTemplate-End -->
+
+<!-- AllowLegacyURLFields-Begin -->
+## AllowLegacyURLFields
+
+<!-- AllowLegacyURLFields-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowLegacyURLFields-Applicability-End -->
+
+<!-- AllowLegacyURLFields-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/InternetExplorer/AllowLegacyURLFields
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/InternetExplorer/AllowLegacyURLFields
+```
+<!-- AllowLegacyURLFields-OmaUri-End -->
+
+<!-- AllowLegacyURLFields-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- AllowLegacyURLFields-Description-End -->
+
+<!-- AllowLegacyURLFields-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowLegacyURLFields-Editable-End -->
+
+<!-- AllowLegacyURLFields-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowLegacyURLFields-DFProperties-End -->
+
+<!-- AllowLegacyURLFields-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowLegacyURLFields |
+| ADMX File Name | inetres.admx |
+<!-- AllowLegacyURLFields-AdmxBacked-End -->
+
+<!-- AllowLegacyURLFields-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowLegacyURLFields-Examples-End -->
+
+<!-- AllowLegacyURLFields-End -->
 
 <!-- AllowLocalMachineZoneTemplate-Begin -->
 ## AllowLocalMachineZoneTemplate
@@ -3666,17 +3713,7 @@ If you disable, or don't configure this policy, all sites are opened using the c
 <!-- DisableProcessesInEnhancedProtectedMode-OmaUri-End -->
 
 <!-- DisableProcessesInEnhancedProtectedMode-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting determines whether Internet Explorer 11 uses 64-bit processes (for greater security) or 32-bit processes (for greater compatibility) when running in Enhanced Protected Mode on 64-bit versions of Windows.
-
-> [!IMPORTANT]
-> Some ActiveX controls and toolbars may not be available when 64-bit processes are used.
-
-- If you enable this policy setting, Internet Explorer 11 will use 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows.
-
-- If you disable this policy setting, Internet Explorer 11 will use 32-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows.
-
-- If you don't configure this policy setting, users can turn this feature on or off using Internet Explorer settings. This feature is turned off by default.
+<!-- Description-Source-Not-Found -->
 <!-- DisableProcessesInEnhancedProtectedMode-Description-End -->
 
 <!-- DisableProcessesInEnhancedProtectedMode-Editable-Begin -->
@@ -7735,7 +7772,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- IntranetZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ [10.0.25398.643] and later <br> ✅ [10.0.25965] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2792] and later |
 <!-- IntranetZoneLogonOptions-Applicability-End -->
 
 <!-- IntranetZoneLogonOptions-OmaUri-Begin -->
@@ -8810,7 +8847,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LocalMachineZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ [10.0.25398.643] and later <br> ✅ [10.0.25965] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2792] and later |
 <!-- LocalMachineZoneLogonOptions-Applicability-End -->
 
 <!-- LocalMachineZoneLogonOptions-OmaUri-Begin -->
@@ -17381,7 +17418,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- TrustedSitesZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ [10.0.25398.643] and later <br> ✅ [10.0.25965] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2792] and later |
 <!-- TrustedSitesZoneLogonOptions-Applicability-End -->
 
 <!-- TrustedSitesZoneLogonOptions-OmaUri-Begin -->

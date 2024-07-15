@@ -1,13 +1,6 @@
 ---
 title: UnifiedWriteFilter CSP
 description: The UnifiedWriteFilter (UWF) configuration service provider allows you to remotely manage the UWF. Understand how it helps protect physical storage media.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -26,7 +19,7 @@ The table below shows the applicability of Windows:
 
 The UnifiedWriteFilter (UWF) configuration service provider enables the IT administrator to remotely manage the UWF to help protect physical storage media including any writable storage type.
 
-> **Note**  The UnifiedWriteFilter CSP is only supported in Windows 10 Enterprise and Windows 10 Education.
+> **Note**  The UnifiedWriteFilter CSP is only supported in Windows 10/11 Enterprise and Windows 10/11 Education.
 
 The following example shows the UWF configuration service provider in tree format.
 ```

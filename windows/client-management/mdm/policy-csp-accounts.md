@@ -1,14 +1,7 @@
 ---
 title: Accounts Policy CSP
 description: Learn more about the Accounts Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -230,7 +223,7 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-OmaUri-End -->
 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This setting determines whether to only allow enterprise device authentication for the Microsoft Account Sign-in Assistant service (wlidsvc). By default, this setting is disabled and allows both user and device authentication. When the value is set to 1, only allow device authentication, and block user authentication.
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Description-End -->
 
@@ -263,8 +256,13 @@ Most restricted value is 1.
 
 | Name | Value |
 |:--|:--|
-| Name | MicrosoftAccount_RestrictToDeviceAuthenticationOnly |
-| Path | MSAPolicy > AT > WindowsComponents > MicrosoftAccountCategory |
+| Name | MicrosoftAccount_RestrictToEnterpriseDeviceAuthenticationOnly |
+| Friendly Name | Only allow device authentication for the Microsoft Account Sign-In Assistant |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft account |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | EnterpriseDeviceAuthOnly |
+| ADMX File Name | MSAPolicy.admx |
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-GpMapping-End -->
 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Examples-Begin -->

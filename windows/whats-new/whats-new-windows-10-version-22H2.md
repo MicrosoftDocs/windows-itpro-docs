@@ -1,14 +1,14 @@
 ---
 title: What's new in Windows 10, version 22H2 for IT pros
 description: Learn more about what's new in Windows 10, version 22H2, including how to get it.
-ms.prod: windows-client
-ms.technology: itpro-fundamentals
+ms.service: windows-client
+ms.subservice: itpro-fundamentals
 ms.author: mstewart
 author: mestew
 manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: conceptual
-ms.date: 10/18/2022
+ms.topic: reference
+ms.date: 07/09/2024
 ms.collection:
   - highpri
   - tier2

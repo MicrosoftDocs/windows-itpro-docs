@@ -146,8 +146,6 @@
           href: applocker\deploy-applocker-policies-by-using-the-enforce-rules-setting.md
         - name: Use the AppLocker Windows PowerShell cmdlets
           href: applocker\use-the-applocker-windows-powershell-cmdlets.md
-        - name: Use AppLocker and Software Restriction Policies in the same domain
-          href: applocker\use-applocker-and-software-restriction-policies-in-the-same-domain.md
         - name: Optimize AppLocker performance
           href: applocker\optimize-applocker-performance.md
         - name: Monitor app usage with AppLocker
@@ -213,8 +211,6 @@
       items:
         - name: Understand AppLocker policy design decisions
           href: applocker\understand-applocker-policy-design-decisions.md
-        - name: Determine your application control objectives
-          href: applocker\determine-your-application-control-objectives.md
         - name: Create a list of apps deployed to each business group
           href: applocker\create-list-of-applications-deployed-to-each-business-group.md
           items:
@@ -228,8 +224,6 @@
         - name: Determine the Group Policy structure and rule enforcement
           href: applocker\determine-group-policy-structure-and-rule-enforcement.md
           items:
-            - name: Understand AppLocker enforcement settings
-              href: applocker\understand-applocker-enforcement-settings.md
             - name: Understand AppLocker rules and enforcement setting inheritance in Group Policy
               href: applocker\understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md
             - name: Document the Group Policy structure and AppLocker rule enforcement
@@ -243,8 +237,6 @@
           href: applocker\understand-the-applocker-policy-deployment-process.md
         - name: Requirements for Deploying AppLocker Policies
           href: applocker\requirements-for-deploying-applocker-policies.md
-        - name: Use Software Restriction Policies and AppLocker policies
-          href: applocker\using-software-restriction-policies-and-applocker-policies.md
         - name: Create Your AppLocker policies
           href: applocker\create-your-applocker-policies.md
           items:
@@ -278,6 +270,8 @@
               href: applocker\understanding-applocker-rule-exceptions.md
             - name: Understanding AppLocker rule collections
               href: applocker\understanding-applocker-rule-collections.md
+            - name: Understand AppLocker rule collection extensions
+              href: applocker\rule-collection-extensions.md
             - name: Understanding AppLocker allow and deny actions on rules
               href: applocker\understanding-applocker-allow-and-deny-actions-on-rules.md
             - name: Understanding AppLocker rule condition types
@@ -315,5 +309,3 @@
           items:
             - name: Using Event Viewer with AppLocker
               href: applocker\using-event-viewer-with-applocker.md
-        - name: AppLocker Settings
-          href: applocker\applocker-settings.md

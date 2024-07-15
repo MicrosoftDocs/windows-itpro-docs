@@ -1,8 +1,8 @@
 ---
 title: Configure Windows Update for Business via Group Policy
 description: Walk through of how to configure Windows Update for Business settings using Group Policy to update devices.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 manager: aaroncz
 ms.topic: conceptual
 author: mestew
@@ -17,7 +17,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.date: 11/30/2023
+ms.date: 05/16/2024
 ---
 
 # Walkthrough: Use Group Policy to configure Windows Update for Business
@@ -65,7 +65,7 @@ You can control when updates are applied, for example by deferring when an updat
 
 Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
 
-To enable Microsoft Updates, use the Group Policy Management Console go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates**  and select **Install updates for other Microsoft products**.
+To enable Microsoft Updates, use the Group Policy Management Console go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates**  and select **Install updates for other Microsoft products**. For a list of other Microsoft products that might be updated, see [Update other Microsoft products](update-other-microsoft-products.md).
 
 Drivers are automatically enabled because they're beneficial to device systems. We recommend that you allow the driver policy to allow drivers to update on devices (the default), but you can turn off this setting if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use the Group Policy Management Console to go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not include drivers with Windows Updates** and enable the policy.
 
@@ -132,7 +132,7 @@ When you set the target version policy, if you specify a feature update version 
 
 #### I want to manage when devices download, install, and restart after updates
 
-We recommend that you allow to update automatically--this is the default behavior. If you don't set an automatic update policy, the device will attempt to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours and smart busy check.
+We recommend that you allow to update automatically--this is the default behavior. If you don't set an automatic update policy, the device will attempt to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours.
 
 For more granular control, you can set the maximum period of active hours the user can set with **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify active hours range for auto restart**.
 
@@ -173,6 +173,28 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
    - Once the deadline has passed, the user is forced to restart to keep their devices in compliance and receives this notification:
 
      ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
+
+
+#### <a name="user-settings-for-notifications"></a> End user settings for notifications
+<!--8936877-->
+*Applies to:*
+- Windows 11, version 23H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
+- Windows 11, version 22H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
+
+Users can set a preference for notifications about pending restarts for updates under **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating**. This setting is end-user controlled and not controlled or configurable by IT administrators.
+
+Users have the following options for the **Notify me when a restart is required to finish updating** setting:
+
+- **Off** (default): Once the device enters a pending reboot state for updates, restart notifications are suppressed for 24 hours. During the first 24 hours, automatic restarts can still occur outside of active hours. Typically, users receive fewer notifications about upcoming restarts while the deadline is approaching. 
+    - When the deadline is set for 1 day, users only receive a notification about the deadline and a final nondismissable notification 15 minutes before a forced restart.
+
+- **On**: Users immediately receive a toast notification when the device enters a reboot pending state for updates. Automatic restarts for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. After 24 hours have passed, automatic restarts can occur. This setting is recommended for users who want to be notified about upcoming restarts. 
+   - When the deadline is set for 1 day, an initial notification occurs, automatic restart is blocked for 24 hours, and users receive another notification before the deadline and a final nondismissable notification 15 minutes before a forced restart.
+
+When a deadline is set for 0 days, no matter which option is selected, the only notification users receive is a final nondismissable notification 15 minutes before a forced restart.
+
+The user preference for notifications applies when [compliance deadlines](wufb-compliancedeadlines.md) are used. The policy for compliance deadlines is under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify deadlines for automatic updates and restarts**.
+
 
 #### I want to manage the notifications a user sees
 

@@ -2,7 +2,7 @@
 title: Smart card events 
 description: Learn about smart card deployment and development events.
 ms.topic: troubleshooting
-ms.date: 11/22/2023
+ms.date: 01/16/2024
 ---
 
 # Smart card events

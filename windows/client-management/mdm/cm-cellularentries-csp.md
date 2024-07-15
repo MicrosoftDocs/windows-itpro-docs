@@ -1,13 +1,6 @@
 ---
 title: CM\_CellularEntries CSP
 description: Learn how to configure the General Packet Radio Service (GPRS) entries using the CM\_CellularEntries CSP.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 08/02/2017
 ---
 

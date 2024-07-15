@@ -1,14 +1,7 @@
 ---
 title: Printers Policy CSP
 description: Learn more about the Printers Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/31/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -675,6 +668,56 @@ If you disable or don't configure this policy setting, dynamic TCP ports are use
 <!-- ConfigureRpcTcpPort-Examples-End -->
 
 <!-- ConfigureRpcTcpPort-End -->
+
+<!-- ConfigureWindowsProtectedPrint-Begin -->
+## ConfigureWindowsProtectedPrint
+
+<!-- ConfigureWindowsProtectedPrint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- ConfigureWindowsProtectedPrint-Applicability-End -->
+
+<!-- ConfigureWindowsProtectedPrint-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Printers/ConfigureWindowsProtectedPrint
+```
+<!-- ConfigureWindowsProtectedPrint-OmaUri-End -->
+
+<!-- ConfigureWindowsProtectedPrint-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- ConfigureWindowsProtectedPrint-Description-End -->
+
+<!-- ConfigureWindowsProtectedPrint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureWindowsProtectedPrint-Editable-End -->
+
+<!-- ConfigureWindowsProtectedPrint-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureWindowsProtectedPrint-DFProperties-End -->
+
+<!-- ConfigureWindowsProtectedPrint-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureWindowsProtectedPrint |
+| ADMX File Name | Printing.admx |
+<!-- ConfigureWindowsProtectedPrint-AdmxBacked-End -->
+
+<!-- ConfigureWindowsProtectedPrint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureWindowsProtectedPrint-Examples-End -->
+
+<!-- ConfigureWindowsProtectedPrint-End -->
 
 <!-- EnableDeviceControl-Begin -->
 ## EnableDeviceControl

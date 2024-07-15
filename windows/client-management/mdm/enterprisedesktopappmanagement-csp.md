@@ -1,14 +1,7 @@
 ---
 title: EnterpriseDesktopAppManagement CSP
 description: Learn more about the EnterpriseDesktopAppManagement CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 05/20/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -179,7 +172,7 @@ For more information, see [DownloadInstall XSD Schema](#downloadinstall-xsd-sche
 | Property name | Property value |
 |:--|:--|
 | Format | `xml` |
-| Access Type | Add, Delete, Exec, Get |
+| Access Type | Add, Delete, Exec, Get, Replace |
 <!-- Device-MSI-{ProductID}-DownloadInstall-DFProperties-End -->
 
 <!-- Device-MSI-{ProductID}-DownloadInstall-Examples-Begin -->
@@ -702,7 +695,7 @@ For more information, see [DownloadInstall XSD Schema](#downloadinstall-xsd-sche
 | Property name | Property value |
 |:--|:--|
 | Format | `xml` |
-| Access Type | Add, Delete, Exec, Get |
+| Access Type | Add, Delete, Exec, Get, Replace |
 <!-- User-MSI-{ProductID}-DownloadInstall-DFProperties-End -->
 
 <!-- User-MSI-{ProductID}-DownloadInstall-Examples-Begin -->

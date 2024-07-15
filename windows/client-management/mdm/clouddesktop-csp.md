@@ -1,14 +1,7 @@
 ---
 title: CloudDesktop CSP
 description: Learn more about the CloudDesktop CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 10/25/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -26,17 +19,19 @@ ms.topic: reference
 The following list shows the CloudDesktop configuration service provider nodes:
 
 - ./Device/Vendor/MSFT/CloudDesktop
-  - [BootToCloudPCEnhanced](#boottocloudpcenhanced)
-  - [EnableBootToCloudSharedPCMode](#enableboottocloudsharedpcmode)
+  - [BootToCloudPCEnhanced](#deviceboottocloudpcenhanced)
+  - [EnableBootToCloudSharedPCMode](#deviceenableboottocloudsharedpcmode)
+- ./User/Vendor/MSFT/CloudDesktop
+  - [EnablePhysicalDeviceAccess](#userenablephysicaldeviceaccess)
 <!-- CloudDesktop-Tree-End -->
 
 <!-- Device-BootToCloudPCEnhanced-Begin -->
-## BootToCloudPCEnhanced
+## Device/BootToCloudPCEnhanced
 
 <!-- Device-BootToCloudPCEnhanced-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.3235] and later |
 <!-- Device-BootToCloudPCEnhanced-Applicability-End -->
 
 <!-- Device-BootToCloudPCEnhanced-OmaUri-Begin -->
@@ -47,7 +42,7 @@ The following list shows the CloudDesktop configuration service provider nodes:
 
 <!-- Device-BootToCloudPCEnhanced-Description-Begin -->
 <!-- Description-Source-DDF -->
-This node allows to configure different kinds of Boot to Cloud mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. For using this feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned. This node supports the below options: 0. Not Configured. 1. Enable Boot to Cloud Shared PC Mode: Boot to Cloud Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. 2. Enable Boot to Cloud Personal Mode (Cloud only): Personal mode allows user to sign-in on the device using various authentication mechanism configured by their organization (For ex. PIN, Biometrics etc). This mode preserves user personalization, including their profile picture and username in local machine, and facilitates fast account switching.
+This node allows to configure different kinds of Boot to Cloud mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. For using this feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned. This node supports the below options: 0. Not Configured. 1. Enable Boot to Cloud Shared PC Mode: Boot to Cloud Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. 2. Enable Boot to Cloud Dedicated Mode (Cloud only): Dedicated mode allows user to sign-in on the device using various authentication mechanism configured by their organization (For ex. PIN, Biometrics etc). This mode preserves user personalization, including their profile picture and username in local machine, and facilitates fast account switching.
 <!-- Device-BootToCloudPCEnhanced-Description-End -->
 
 <!-- Device-BootToCloudPCEnhanced-Editable-Begin -->
@@ -73,7 +68,7 @@ This node allows to configure different kinds of Boot to Cloud mode. Boot to clo
 |:--|:--|
 | 0 (Default) | Not Configured. |
 | 1 | Enable Boot to Cloud Shared PC Mode. |
-| 2 | Enable Boot to Cloud Personal Mode (Cloud only). |
+| 2 | Enable Boot to Cloud Dedicated Mode (Cloud only). |
 <!-- Device-BootToCloudPCEnhanced-AllowedValues-End -->
 
 <!-- Device-BootToCloudPCEnhanced-Examples-Begin -->
@@ -83,7 +78,7 @@ This node allows to configure different kinds of Boot to Cloud mode. Boot to clo
 <!-- Device-BootToCloudPCEnhanced-End -->
 
 <!-- Device-EnableBootToCloudSharedPCMode-Begin -->
-## EnableBootToCloudSharedPCMode
+## Device/EnableBootToCloudSharedPCMode
 
 > [!NOTE]
 > This policy is deprecated and may be removed in a future release.
@@ -136,14 +131,63 @@ Setting this node to "true" configures boot to cloud for Shared PC mode. Boot to
 
 <!-- Device-EnableBootToCloudSharedPCMode-End -->
 
+<!-- User-EnablePhysicalDeviceAccess-Begin -->
+## User/EnablePhysicalDeviceAccess
+
+<!-- User-EnablePhysicalDeviceAccess-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- User-EnablePhysicalDeviceAccess-Applicability-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/CloudDesktop/EnablePhysicalDeviceAccess
+```
+<!-- User-EnablePhysicalDeviceAccess-OmaUri-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-Description-Begin -->
+<!-- Description-Source-DDF -->
+Configuring this node gives access to the physical devices used to boot to Cloud PCs from the Ctrl+Alt+Del page for specified users. This node supports these options: 0. Not enabled 1. Enabled.
+<!-- User-EnablePhysicalDeviceAccess-Description-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-EnablePhysicalDeviceAccess-Editable-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | false |
+<!-- User-EnablePhysicalDeviceAccess-DFProperties-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Access to physical device disabled. |
+| true | Access to physical device enabled. |
+<!-- User-EnablePhysicalDeviceAccess-AllowedValues-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-EnablePhysicalDeviceAccess-Examples-End -->
+
+<!-- User-EnablePhysicalDeviceAccess-End -->
+
 <!-- CloudDesktop-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 ## BootToCloudPCEnhanced technical reference
 
-BootToCloudPCEnhanced is the setting used to configure **Boot to Cloud** feature either for shared mode or personal mode. When you enable this setting, multiple policies are applied to achieve the intended behavior. If you wish to customize the **Boot to Cloud** experience, you can utilize the [BootToCloudMode](policy-csp-clouddesktop.md#boottocloudmode) policy, which provides the flexibility to tailor the experience according to your requirements.
+BootToCloudPCEnhanced is the setting used to configure **Boot to Cloud** feature either for shared mode or dedicated mode. When you enable this setting, multiple policies are applied to achieve the intended behavior. If you wish to customize the **Boot to Cloud** experience, you can utilize the [BootToCloudMode](policy-csp-clouddesktop.md#boottocloudmode) policy, which provides the flexibility to tailor the experience according to your requirements.
 
 > [!NOTE]
-> It is recommended not to set any of the policies enforced by this setting to different values, as these policies help provide a smooth UX experience for the **Boot to Cloud** feature for shared and personal mode.
+> It is recommended not to set any of the policies enforced by this setting to different values, as these policies help provide a smooth UX experience for the **Boot to Cloud** feature for shared and dedicated mode.
 
 ### Boot to Cloud Shared PC Mode
 
@@ -189,6 +233,7 @@ When the Shared PC mode is enabled by setting BootToCloudPCEnhanced value to 1:
     | Start Menu and Taskbar/Notifications/Turn off toast notifications                                                      | Enabled                               |
     | Start Menu and Taskbar/Notifications/Remove Notifications and Action Center                                            | Enabled                               |
     | System/Logon/Do not process the legacy run list                                                                        | Enabled                               |
+    | Windows Components/Windows Copilot/Turn off Windows Copilot                                                            | Enabled                               |
 
 - Following registry changes are performed:
 
@@ -197,9 +242,9 @@ When the Shared PC mode is enabled by setting BootToCloudPCEnhanced value to 1:
     | Software\Policies\Microsoft\PassportForWork\Remote\Enabled (Phone sign-in/Use phone sign-in) | 0      |
     | Software\Policies\Microsoft\PassportForWork\Enabled (Use Microsoft Passport for Work)        | 0      |
 
-### Boot to Cloud Personal Mode
+### Boot to Cloud Dedicated Mode
 
-When the Personal mode is enabled by setting BootToCloudPCEnhanced value to 2:
+When the Dedicated mode is enabled by setting BootToCloudPCEnhanced value to 2:
 
 - Following MDM policies are applied for the Device scope (all users):
 
@@ -218,6 +263,7 @@ When the Personal mode is enabled by setting BootToCloudPCEnhanced value to 2:
     | Start Menu and Taskbar/Notifications/Turn off toast notifications                                                      | Enabled                               |
     | Start Menu and Taskbar/Notifications/Remove Notifications and Action Center                                            | Enabled                               |
     | System/Logon/Do not process the legacy run list                                                                        | Enabled                               |
+    | Windows Components/Windows Copilot/Turn off Windows Copilot                                                            | Enabled                               |
 <!-- CloudDesktop-CspMoreInfo-End -->
 
 <!-- CloudDesktop-End -->

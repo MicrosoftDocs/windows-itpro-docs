@@ -1,14 +1,7 @@
 ---
 title: RemoteDesktopServices Policy CSP
 description: Learn more about the RemoteDesktopServices Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 11/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -156,6 +149,106 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 <!-- ClientConnectionEncryptionLevel-Examples-End -->
 
 <!-- ClientConnectionEncryptionLevel-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-Begin -->
+## DisconnectOnLockLegacyAuthn
+
+<!-- DisconnectOnLockLegacyAuthn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisconnectOnLockLegacyAuthn-Applicability-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockLegacyAuthn
+```
+<!-- DisconnectOnLockLegacyAuthn-OmaUri-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- DisconnectOnLockLegacyAuthn-Description-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisconnectOnLockLegacyAuthn-Editable-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisconnectOnLockLegacyAuthn-DFProperties-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_DISCONNECT_ON_LOCK_POLICY |
+| ADMX File Name | terminalserver.admx |
+<!-- DisconnectOnLockLegacyAuthn-AdmxBacked-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisconnectOnLockLegacyAuthn-Examples-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Begin -->
+## DisconnectOnLockMicrosoftIdentityAuthn
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Applicability-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockMicrosoftIdentityAuthn
+```
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-OmaUri-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Description-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Editable-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-DFProperties-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_DISCONNECT_ON_LOCK_AAD_POLICY |
+| ADMX File Name | terminalserver.admx |
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-AdmxBacked-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Examples-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-End -->
 
 <!-- DoNotAllowDriveRedirection-Begin -->
 ## DoNotAllowDriveRedirection
@@ -346,7 +439,7 @@ By default, Remote Desktop allows redirection of WebAuthn requests.
 <!-- LimitClientToServerClipboardRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2523] and later <br> ✅ [10.0.25398.946] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.3014] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3672] and later <br> ✅ Windows 11, version 23H2 [10.0.22631.3672] and later <br> ✅ Windows Insider Preview |
 <!-- LimitClientToServerClipboardRedirection-Applicability-End -->
 
 <!-- LimitClientToServerClipboardRedirection-OmaUri-Begin -->
@@ -400,7 +493,7 @@ By default, Remote Desktop allows redirection of WebAuthn requests.
 <!-- LimitServerToClientClipboardRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2523] and later <br> ✅ [10.0.25398.946] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.3014] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3672] and later <br> ✅ Windows 11, version 23H2 [10.0.22631.3672] and later <br> ✅ Windows Insider Preview |
 <!-- LimitServerToClientClipboardRedirection-Applicability-End -->
 
 <!-- LimitServerToClientClipboardRedirection-OmaUri-Begin -->
@@ -578,6 +671,56 @@ If the status is set to Not Configured, unsecured communication is allowed.
 <!-- RequireSecureRPCCommunication-Examples-End -->
 
 <!-- RequireSecureRPCCommunication-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Begin -->
+## TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2400] and later <br> ✅ [10.0.25398.827] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.2898] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3374] and later <br> ✅ Windows 11, version 23H2 [10.0.22631.3374] and later <br> ✅ Windows Insider Preview |
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Applicability-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME
+```
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-OmaUri-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Description-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Editable-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-DFProperties-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-AdmxBacked-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Examples-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-End -->
 
 <!-- RemoteDesktopServices-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

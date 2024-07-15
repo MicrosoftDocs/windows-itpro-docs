@@ -1,16 +1,8 @@
 ---
-title: SurfaceHubManagement (Windows 10)
+title: SurfaceHubManagement
 description: This section describes the SurfaceHubManagement settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.date: 09/06/2017
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.date: 01/25/2024
 ---
 
 # SurfaceHubManagement (Windows Configuration Designer reference)
@@ -20,14 +12,11 @@ Use SurfaceHubManagement settings to set the administrator group that will manag
 >[!IMPORTANT]
 >These settings should be used only in provisioning packages that are applied during OOBE.
 
-
-
 ## Applies to
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | 
-| All settings |   | ✔️ |  |   |
-
+| --- | :---: | :---: | :---: | :---: |
+| All settings |   | ✅ |  |   |
 
 ## GroupName
 

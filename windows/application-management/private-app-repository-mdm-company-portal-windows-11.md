@@ -6,8 +6,8 @@ ms.author: aaroncz
 manager: aaroncz
 ms.date: 04/04/2023
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-apps
+ms.service: windows-client
+ms.subservice: itpro-apps
 ms.localizationpriority: medium
 ms.collection: tier2
 ms.reviewer: amanh

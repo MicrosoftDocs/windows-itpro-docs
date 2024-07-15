@@ -2,8 +2,8 @@
 title: Feedback, support, and troubleshooting
 titleSuffix: Windows Update for Business reports
 description: Windows Update for Business reports support, feedback, and troubleshooting information.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: article
 author: mestew
 ms.author: mstewart
@@ -11,7 +11,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 02/10/2023
+ms.date: 07/09/2024
 ---
 
 # Windows Update for Business reports feedback, support, and troubleshooting
@@ -52,7 +52,7 @@ You can open support requests directly from the Azure portal. If  the **Help + S
    - **Service type** - Select ***Windows Update for Business reports*** under ***Monitoring and Management***
 
 
-1. Based on the information you provided, you'll be shown some **Recommended solutions** you can use to try to resolve the problem.
+1. Based on the information you provided, you are shown some **Recommended solutions** you can use to try to resolve the problem.
 1. Complete the **Additional details** tab and then create the request on the **Review + create** tab.
 
 ## Documentation feedback

@@ -1,8 +1,8 @@
 ---
 title: Enterprise feature control in Windows 11
 description: Learn about the Windows 11 features behind temporary enterprise feature control and permanent feature control.
-ms.prod: windows-client
-ms.technology: itpro-fundamentals
+ms.service: windows-client
+ms.subservice: itpro-fundamentals
 ms.author: mstewart
 author: mestew
 manager: aaroncz
@@ -35,11 +35,11 @@ Features that are behind temporary enterprise control will be enabled when one o
 
 - The device installs the annual feature update that enables the new features by default
 - The device receives a policy that enables features behind temporary enterprise control
-  - When the policy is enabled, all features on the device behind temporary control are turned on when the device next restarts.
+  - When the policy is enabled, all features on the device behind temporary control are turned on when the device restarts.
 
 ### Policy settings for temporary enterprise feature control
 
-You can use a policy to enable features that are behind temporary enterprise feature control. When this policy is enabled, all features that were disabled behind temporary enterprise feature control are turned on when the device next reboots. The following polices apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/kb/5022845) and later:
+You can use a policy to enable features that are behind temporary enterprise feature control. When this policy is enabled, all features that were disabled behind temporary enterprise feature control are turned on when the device reboots. The following policies apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/kb/5022845) and later:
 
 - **Group Policy:** Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage end user experience\\**Enable features introduced via servicing that are off by default**
 
@@ -74,4 +74,4 @@ The following features introduced through the monthly cumulative updates allow p
 | **Recommended** section added to File Explorer Home for users signed into Windows with an Azure AD account. <!--8092554, DisableGraphRecentItems, WIP.23475, WIP.23403-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310) | Yes | **CSP**:./Device/Vendor/MSFT/Policy/Config/FileExplorer/[DisableGraphRecentItems](/windows/client-management/mdm/policy-csp-fileexplorer#disablegraphrecentitems) </br> </br> **Group Policy**: Computer Configuration\Administrative Templates\Windows Components\File Explorer\\**Turn off files from Office.com in Quick Access View** </br> </br> **Note**: This control disables additional items beyond the **Recommended** items. Review the policy before implementing this control. |
 | Transfer files to another PC using WiFi direct<!--8092554, WIP.23506-->|[September 2023 - KB5030310](https://support.microsoft.com/kb/5030310)|Yes|**CSP**: ./Device/Vendor/MSFT/Policy/Config/Wifi/[AllowWiFiDirect](/windows/client-management/mdm/policy-csp-wifi#allowwifidirect)|
 | Copilot in Windows <!--8092554, WIP.23493 --> | [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310) | Yes |**CSP**: ./User/Vendor/MSFT/Policy/Config/WindowsAI/[TurnOffWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot) </br> </br> **Group Policy**: User Configuration\Administrative Templates\Windows Components\Windows Copilot\\**Turn off Windows Copilot**|
-|Dev Drive <!--8092554, WIP.23466-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310) | Yes |**CSPs**: </br> - ./Device/Vendor/MSFT/Policy/Config/FileSystem/[EnableDevDrive](/windows/client-management/mdm/policy-csp-filesystem#enableeeverive) </br> - ./Device/Vendor/MSFT/Policy/Config/FileSystem/[DevDriveAttachPolicy](/windows/client-management/mdm/policy-csp-filesystem#devdriveattachpolicy) </br> </br> **Group Policies**:  </br> - Computer Configuration\Administrative Templates\System\FileSystem\\**Enable dev drive** </br> - Computer Configuration\Administrative Templates\System\FileSystem\\**Dev drive filter attach policy**|
+|Dev Drive <!--8092554, WIP.23466-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310) | Yes |**CSPs**: </br> - ./Device/Vendor/MSFT/Policy/Config/FileSystem/[EnableDevDrive](/windows/client-management/mdm/policy-csp-filesystem#enabledevdrive) </br> - ./Device/Vendor/MSFT/Policy/Config/FileSystem/[DevDriveAttachPolicy](/windows/client-management/mdm/policy-csp-filesystem#devdriveattachpolicy) </br> </br> **Group Policies**:  </br> - Computer Configuration\Administrative Templates\System\FileSystem\\**Enable dev drive** </br> - Computer Configuration\Administrative Templates\System\FileSystem\\**Dev drive filter attach policy**|

@@ -30,7 +30,7 @@ Before you deploy your WDAC policies, you must first convert the XML to its bina
     {
         $PolicyBinary = "SiPolicy.p7b"
     }
-    
+
     ## Binary file will be written to your desktop
     ConvertFrom-CIPolicy -XmlFilePath $WDACPolicyXMLFile -BinaryFilePath $env:USERPROFILE\Desktop\$PolicyBinary
    ```

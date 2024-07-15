@@ -1,14 +1,14 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 12/04/2023 
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 12/14/2023
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: whats-new
 ms.localizationpriority: medium
-author: tiaraquan 
+author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby 
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - highpri
@@ -28,6 +28,13 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | Article | Description |
 | ----- | ----- |
 | [Prerequisites](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) | Added F SKU licenses to the [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) section. Also see [FAQ](../overview/windows-autopatch-faq.yml)<ul><li>[MC690609](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+
+## December service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC697414](https://admin.microsoft.com/adminportal/home#/MessageCenter) | New Feature: Alerts for Windows Autopatch policy conflicts Public Preview announcement |
+| [MC695483](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Planned Maintenance: Windows Autopatch configuration update - December 2023 |
 
 ## November service release
 
@@ -204,8 +211,8 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | Article | Description |
 | ----- | ----- |
 | [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | Added [Allow or block Microsoft 365 App updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#allow-or-block-microsoft-365-app-updates) section |
-| [Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md#) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../operate/windows-autopatch-windows-feature-update-overview.md#enforcing-a-minimum-windows-os-version) |
-| [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../operate/windows-autopatch-windows-quality-update-overview.md#device-eligibility) |
+| [Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md#) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../operate/windows-autopatch-windows-feature-update-overview.md) |
+| [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../operate/windows-autopatch-windows-quality-update-overview.md) |
 | [Register your devices](../deploy/windows-autopatch-register-devices.md) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration) |
 | [Prerequisites](../prepare/windows-autopatch-prerequisites.md) | Added note about [Windows 10 Long-Term Servicing Channel (LTSC) support](../prepare/windows-autopatch-prerequisites.md#more-about-licenses) |
 | [Privacy](../overview/windows-autopatch-privacy.md) | Added additional resources to the [Microsoft Windows 10/11 diagnostic data](../overview/windows-autopatch-privacy.md#microsoft-windows-1011-diagnostic-data) section |

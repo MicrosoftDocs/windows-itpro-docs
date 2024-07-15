@@ -537,6 +537,8 @@ items:
           href: policy-csp-stickers.md
         - name: Storage
           href: policy-csp-storage.md
+        - name: Sudo
+          href: policy-csp-sudo.md
         - name: System
           href: policy-csp-system.md
         - name: SystemServices

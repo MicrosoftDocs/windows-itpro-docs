@@ -1,0 +1,23 @@
+items:
+- name: Configure Windows client
+  href: index.yml
+- name: Accessibility information for IT Pros
+  href: accessibility/index.md
+- name: Start
+  href: start/toc.yml
+- name: Taskbar
+  href: taskbar/toc.yml
+- name: Windows spotlight
+  href: windows-spotlight/index.md
+- name: Microsoft Store
+  href: store/toc.yml
+- name: Cellular settings
+  href: cellular/provisioning-apn.md
+- name: Kiosks and restricted user experiences
+  href: assigned-access/toc.yml
+- name: Multi-user and guest devices
+  href: shared-pc/toc.yml
+- name: Provisioning packages
+  href: provisioning-packages/toc.yml
+- name: Windows Configuration Designer
+  href: wcd/toc.yml

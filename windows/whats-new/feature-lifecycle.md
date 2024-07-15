@@ -1,14 +1,14 @@
 ---
 title: Windows client features lifecycle
 description: Learn about the lifecycle of Windows features, as well as features that are no longer developed, removed features, and terminology assigned to a feature.
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: mestew
 manager: aaroncz
 ms.author: mstewart
-ms.topic: conceptual
-ms.technology: itpro-fundamentals
-ms.date: 12/05/2023
+ms.topic: reference
+ms.subservice: itpro-fundamentals
+ms.date: 07/09/2024
 ms.collection:
   - highpri
   - tier2
@@ -38,12 +38,12 @@ The following article has details about features that have been removed from Win
 
 ## Terminology
 
-The following terms can be used to describe the status that might be assigned to a feature during its lifecycle: 
+The following terms can be used to describe the status that might be assigned to a feature during its lifecycle:
 
 - **Deprecation**: The stage of the product lifecycle when a feature or functionality is no longer in active development and may be removed in future releases of a product or online service.
 - **End of support**: The stage of the product lifecycle when support and servicing are no longer available for a product.
 - **Retirement**: The stage of the product lifecycle when a service is shut down so that it's no longer available for use.
-- **Remove or retire a feature**: The stage of the product lifecycle when a feature or functionality is removed from a service after it has been deprecated.
+- **Remove or retire a feature**: The stage of the product lifecycle when a feature or functionality is taken out of a service after it has been marked as deprecated. The feature is removed from newer versions of Windows, but still exists in older versions and is supported until those versions reach **end of support** stage.
 - **Replace a feature**: The stage of the product lifecycle when a feature or functionality in a service is replaced with a different feature or functionality.
 
 ## Also see

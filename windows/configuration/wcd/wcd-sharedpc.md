@@ -1,16 +1,8 @@
 ---
 title: SharedPC
 description: This section describes the SharedPC settings that you can configure in provisioning packages for Windows using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.date: 10/16/2017
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.date: 01/25/2024
 ---
 
 # SharedPC (Windows Configuration Designer reference)
@@ -20,8 +12,8 @@ Use SharedPC settings to optimize Windows devices for shared use scenarios, such
 ## Applies to
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | 
-| All settings | ✔️  |  |  |  |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✅  |  |  |  |
 
 ## AccountManagement
 
@@ -45,7 +37,6 @@ Set as **True** to enable **Shared PC Mode**. This setting controls this API: [I
 ## EnableSharedPCModeWithOneDriveSync
 
 Set as **True** to enable **Shared PC Mode**. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings).
-
 
 ## PolicyCustomization
 

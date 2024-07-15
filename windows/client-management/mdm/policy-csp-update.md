@@ -1,14 +1,7 @@
 ---
 title: Update Policy CSP
 description: Learn more about the Update Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 11/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -25,6 +18,7 @@ ms.topic: reference
 Update CSP policies are listed below based on the group policy area:
 
 - [Windows Insider Preview](#windows-insider-preview)
+  - [AlwaysAutoRebootAtScheduledTimeMinutes](#alwaysautorebootatscheduledtimeminutes)
   - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
   - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
 - [Manage updates offered from Windows Update](#manage-updates-offered-from-windows-update)
@@ -106,6 +100,68 @@ Update CSP policies are listed below based on the group policy area:
   - [SetAutoRestartNotificationDisable](#setautorestartnotificationdisable)
 
 ## Windows Insider Preview
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Begin -->
+### AlwaysAutoRebootAtScheduledTimeMinutes
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AlwaysAutoRebootAtScheduledTimeMinutes
+```
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-Begin -->
+<!-- Description-Source-ADMX -->
+
+- If you enable this policy, a restart timer will always begin immediately after Windows Update installs important updates, instead of first notifying users on the login screen for at least two days.
+
+The restart timer can be configured to start with any value from 15 to 180 minutes. When the timer runs out, the restart will proceed even if the PC has signed-in users.
+
+- If you disable or don't configure this policy, Windows Update won't alter its restart behavior.
+
+If the "No auto-restart with logged-on users for scheduled automatic updates installations" policy is enabled, then this policy has no effect.
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[15-180]` |
+| Default Value  | 15 |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AlwaysAutoRebootAtScheduledTime |
+| Friendly Name | Always automatically restart at the scheduled time |
+| Element Name | work (minutes) |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Manage end user experience |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
 ### ConfigureDeadlineNoAutoRebootForFeatureUpdates
@@ -282,7 +338,7 @@ Allows the IT admin to manage whether Automatic Updates accepts updates signed b
 <!-- AllowOptionalContent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 21H2 [10.0.19044.3757] and later |
 <!-- AllowOptionalContent-Applicability-End -->
 
 <!-- AllowOptionalContent-OmaUri-Begin -->
@@ -1563,7 +1619,8 @@ Configure this policy to specify whether to receive **Windows Feature Updates** 
 - SetPolicyDrivenUpdateSourceForOtherUpdates
 
 > [!NOTE]
-> If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect.
+> - If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect.
+> - If you're also using the **Specify settings for optional component installation and component repair** ([ADMX_Servicing](policy-csp-admx-servicing.md)) policy to enable content for FoDs and language packs, see [How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager](/windows/deployment/update/fod-and-lang-packs) to verify your policy configuration.
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Editable-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-DFProperties-Begin -->
@@ -1701,7 +1758,8 @@ Configure this policy to specify whether to receive **Windows Quality Updates** 
 - SetPolicyDrivenUpdateSourceForOtherUpdates
 
 > [!NOTE]
-> If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect.
+> - If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect.
+> - If you're also using the **Specify settings for optional component installation and component repair** ([ADMX_Servicing](policy-csp-admx-servicing.md)) policy to enable content for FoDs and language packs, see [How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager](/windows/deployment/update/fod-and-lang-packs) to verify your policy configuration.
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Editable-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-DFProperties-Begin -->
@@ -2294,7 +2352,8 @@ Allows the IT admin to manage whether to scan for app updates from Microsoft Upd
 <!-- AllowMUUpdateService-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Setting this policy back to 0 or Not configured doesn't revert the configuration to receive updates from Microsoft Update automatically. In order to revert the configuration, you can run the PowerShell commands that are listed below to remove the Microsoft Update service:
+> - For a list of other Microsoft products that might be updated, see [Update other Microsoft products](/windows/deployment/update/update-other-microsoft-products).
+> - Setting this policy back to 0 or Not configured doesn't revert the configuration to receive updates from Microsoft Update automatically. In order to revert the configuration, you can run the PowerShell commands that are listed below to remove the Microsoft Update service:
 >
 > ```powershell
 > $MUSM = New-Object -ComObject "Microsoft.Update.ServiceManager"
@@ -2435,7 +2494,7 @@ Number of days before feature updates are installed on devices automatically reg
 <!-- ConfigureDeadlineForFeatureUpdates-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> 
+>
 > - After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
 > - When this policy is used, the download, installation, and reboot settings from [Update/AllowAutoUpdate](#allowautoupdate) are ignored.
 <!-- ConfigureDeadlineForFeatureUpdates-Editable-End -->
@@ -2494,7 +2553,7 @@ Number of days before quality updates are installed on devices automatically reg
 <!-- ConfigureDeadlineForQualityUpdates-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> 
+>
 > - After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
 > - When this policy is used, the download, installation, and reboot settings from [Update/AllowAutoUpdate](#allowautoupdate) are ignored.
 <!-- ConfigureDeadlineForQualityUpdates-Editable-End -->

@@ -1,7 +1,7 @@
 ---
 title: Use Virtual Smart Cards
 description: Learn about the requirements for virtual smart cards, how to use and manage them.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/06/2023
 ---
 

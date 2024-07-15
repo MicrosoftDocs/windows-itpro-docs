@@ -3,11 +3,11 @@ title: Available Data Types and Operators in Compatibility Administrator (Window
 description: The Compatibility Administrator tool provides a way to query your custom-compatibility databases.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.date: 10/28/2022
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Available Data Types and Operators in Compatibility Administrator

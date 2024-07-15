@@ -2,8 +2,8 @@
 title: WDAC Admin Tips & Known Issues
 description: WDAC Known Issues
 ms.manager: jsuther
-ms.date: 11/22/2023
-ms.topic: article
+ms.date: 04/15/2024
+ms.topic: troubleshooting
 ms.localizationpriority: medium
 ---
 
@@ -43,24 +43,22 @@ When the WDAC engine evaluates files against the active set of policies on the d
 
 4. Lastly, WDAC makes a cloud call to the ISG to get reputation about the file, if the policy enables the ISG option.
 
-5. If no explicit rule exists for the file and it's not allowed based on ISG or MI, then the file is blocked implicitly.
+5. Any file not allowed by an explicit rule or based on ISG or MI is blocked implicitly.
 
 ## Known issues
 
 ### Boot stop failure (blue screen) occurs if more than 32 policies are active
 
-If the maximum number of policies is exceeded, the device will bluescreen referencing ci.dll with a bug check value of 0x0000003b. Consider this maximum policy count limit when planning your WDAC policies. Any [Windows inbox policies](/windows/security/threat-protection/windows-defender-application-control/operations/inbox-wdac-policies) that are active on the device also count towards this limit.
+Until you apply the Windows security update released on or after April 9, 2024, your device is limited to 32 active policies. If the maximum number of policies is exceeded, the device bluescreens referencing ci.dll with a bug check value of 0x0000003b. Consider this maximum policy count limit when planning your WDAC policies. Any [Windows inbox policies](/windows/security/threat-protection/windows-defender-application-control/operations/inbox-wdac-policies) that are active on the device also count towards this limit. To remove the maximum policy limit, install the Windows security update released on, or after, April 9, 2024 and then restart the device. Otherwise, reduce the number of policies on the device to remain below 32 policies.
+
+**Note:** The policy limit was not removed on Windows 11 21H2, and will remain limited to 32 policies.
 
 ### Audit mode policies can change the behavior for some apps or cause app crashes
 
-Although WDAC audit mode is designed to avoid impact to apps, some features are always on/always enforced with any WDAC policy that includes the option **0 Enabled:UMCI**. Here's a list of known system changes in audit mode:
+Although WDAC audit mode is designed to avoid impact to apps, some features are always on/always enforced with any WDAC policy that turns on user mode code integrity (UMCI) with the option **0 Enabled:UMCI**. Here's a list of known system changes in audit mode:
 
 - Some script hosts might block code or run code with fewer privileges even in audit mode. See [Script enforcement with WDAC](/windows/security/application-security/application-control/windows-defender-application-control/design/script-enforcement) for information about individual script host behaviors.
 - Option **19 Enabled:Dynamic Code Security** is always enforced if any UMCI policy includes that option. See [WDAC and .NET](/windows/security/application-security/application-control/windows-defender-application-control/design/wdac-and-dotnet#wdac-and-net-hardening).
-
-### Managed Installer and ISG may cause excessive events
-
-When Managed Installer and ISG are enabled, 3091 and 3092 events are logged when a file didn't have Managed Installer or ISG authorization, regardless of whether the file was allowed. These events were moved to the verbose channel beginning with the September 2022 Update Preview since the events don't indicate an issue with the policy.
 
 ### .NET native images may generate false positive block events
 
@@ -68,7 +66,7 @@ In some cases, the code integrity logs where Windows Defender Application Contro
 
 ### Signatures using elliptical curve cryptography (ECC) aren't supported
 
-WDAC signer-based rules only work with RSA cryptography. ECC algorithms, such as ECDSA, aren't supported. If you try to allow files by signature based on ECC signatures, you'll see VerificationError = 23 on the corresponding 3089 signature information events. You can authorize the files instead by hash or file attribute rules, or using other signer rules if the file is also signed with signatures using RSA.
+WDAC signer-based rules only work with RSA cryptography. ECC algorithms, such as ECDSA, aren't supported. If WDAC blocks a file based on ECC signatures, the corresponding 3089 signature information events show VerificationError = 23. You can authorize the files instead by hash or file attribute rules, or using other signer rules if the file is also signed with signatures using RSA.
 
 ### MSI installers are treated as user writeable on Windows 10 when allowed by FilePath rule
 
@@ -86,20 +84,21 @@ msiexec -i https://download.microsoft.com/download/2/E/3/2E3A1E42-8F50-4396-9E7E
 As a workaround, download the MSI file and run it locally:
 
 ```console
-msiexec -i c:\temp\Windows10_Version_1511_ADMX.msi  
+msiexec -i c:\temp\Windows10_Version_1511_ADMX.msi
 ```
+
 ### Slow boot and performance with custom policies
 
-WDAC evaluates all processes that run, including inbox Windows processes. If policies don't build off the WDAC templates or don't trust the Windows signers, you'll see slower boot times, degraded performance and possibly boot issues. For these reasons, you should use the [WDAC base templates](../design/example-wdac-base-policies.md) whenever possible to create your policies.
+WDAC evaluates all processes that run, including inbox Windows processes. You can cause slower boot times, degraded performance, and possibly boot issues if your policies don't build upon the WDAC templates or don't trust the Windows signers. For these reasons, you should use the [WDAC base templates](../design/example-wdac-base-policies.md) whenever possible to create your policies.
 
 #### AppId Tagging policy considerations
 
-If the AppId Tagging Policy wasn't built off the WDAC base templates or doesn't allow the Windows in-box signers, you'll notice a significant increase in boot times (~2 minutes). 
+AppId Tagging policies that aren't built upon the WDAC base templates or don't allow the Windows in-box signers might cause a significant increase in boot times (~2 minutes).
 
-If you can't allowlist the Windows signers, or build off the WDAC base templates, it's recommended to add the following rule to your policies to improve the performance:
+If you can't allowlist the Windows signers or build off the WDAC base templates, add the following rule to your policies to improve the performance:
 
 :::image type="content" source="../images/known-issue-appid-dll-rule.png" alt-text="Allow all dlls in the policy.":::
 
 :::image type="content" source="../images/known-issue-appid-dll-rule-xml.png" alt-text="Allow all dll files in the xml policy.":::
 
-Since AppId Tagging policies evaluate but can't tag dll files, this rule will short circuit dll evaluation and improve evaluation performance.
+Since AppId Tagging policies evaluate but can't tag dll files, this rule short circuits dll evaluation and improve evaluation performance.

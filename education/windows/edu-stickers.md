@@ -1,7 +1,7 @@
 ---
 title: Configure Stickers for Windows 11 SE
 description: Learn about the Stickers feature and how to configure it via Intune and provisioning package.
-ms.date: 11/09/2023
+ms.date: 04/10/2024
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
@@ -25,7 +25,7 @@ With Stickers, students feel more attached to the device as they feel as if it's
 
 ## Enable Stickers
 
-Stickers aren't enabled by default. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+Stickers aren't enabled by default. The following instructions describe how to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -36,7 +36,6 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
    | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 
 [!INCLUDE [intune-custom-settings-2](../../includes/configure/intune-custom-settings-2.md)]
-[!INCLUDE [intune-custom-settings-info](../../includes/configure/intune-custom-settings-info.md)]
 
 > [!TIP]
 > Use the following Graph call to automatically create the custom policy in your tenant without assignments nor scope tags. <sup>[1](#footnote1)</sup>
@@ -52,32 +51,26 @@ Content-Type: application/json
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-To configure devices using a provisioning package, [create a provisioning package][WIN-1] using Windows Configuration Designer (WCD) with the following settings:
+[!INCLUDE [provisioning-package-1](../../includes/configure/provisioning-package-1.md)]
 
 | Setting |
 |--------|
 | <li> Path: **`Education/AllowStickers`** </li><li>Value: **True**</li>|
 
-Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
-
+[!INCLUDE [provisioning-package-2](../../includes/configure/provisioning-package-2.md)]
 ---
 
 ## How to use Stickers
 
-Once the Stickers feature is enabled, the sticker editor can be opened by either:
+Once the Stickers feature is enabled, open sticker editor by either:
 
 - using the contextual menu on the desktop and selecting the option **Add or edit stickers**
 - opening the Settings app > **Personalization** > **Background** > **Add stickers**
 
 :::image type="content" source="./images/win-11-se-stickers-menu.png" alt-text="Windows 11 SE desktop contextual menu to open the sticker editor" border="true":::
 
-Multiple stickers can be added from the picker by selecting them. The stickers can be resized, positioned or deleted from the desktop by using the mouse, keyboard, or touch.
+Multiple stickers can be added from the picker by selecting them. The stickers can be resized, positioned, or deleted from the desktop by using the mouse, keyboard, or touch.
 
 :::image type="content" source="./images/win-11-se-stickers-animation.gif" alt-text="animation showing Windows 11 SE desktop with 4 pirate stickers being resized and moved" border="true":::
 
 Select the *X button* at the top of the screen to save your progress and close the sticker editor.
-
-[MEM-1]: /mem/intune/configuration/custom-settings-windows-10
-
-[WIN-1]: /windows/configuration/provisioning-packages/provisioning-create-package
-[WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package

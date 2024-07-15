@@ -29,21 +29,19 @@
     "globalMetadata": {
       "recommendations": true,
       "adobe-target": true,
-      "ms.topic": "article",
       "ms.collection": [
         "education",
         "tier2"
       ],
-      "ms.prod": "windows-client",
-      "ms.technology": "itpro-edu",
+      "ms.subservice": "itpro-edu",
+      "ms.service": "windows-client",
       "author": "paolomatarazzo",
       "ms.author": "paoloma",
       "manager": "aaroncz",
       "ms.localizationpriority": "medium",
       "breadcrumb_path": "/education/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_system": "Standard",
       "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
@@ -52,30 +50,25 @@
         }
       },
       "titleSuffix": "Windows Education",
-      "contributors_to_exclude": [ 
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
-        "claydetels19",
-        "Kellylorenebaker",
+      "contributors_to_exclude": [
+        "dstrome2",
+        "rjagiewich",  
+        "American-Dipper",
+        "claydetels19", 
         "jborsecnik",
-        "tiburd",
-        "AngelaMotherofDragons",
-        "dstrome",
-        "v-dihans",
-        "garycentric",
-        "v-stsavell",
-        "beccarobins",
+        "v-stchambers",
+        "shdyas",
         "Stacyrch140",
-        "American-Dipper"
+        "garycentric",
+        "dstrome"
       ]
     },
     "fileMetadata": {
-      "appliesto":{
+      "appliesto": {
         "windows/**/*.md": [
-        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
-        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11 SE</a>",
-        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11 SE</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
         ]
       }
     },
@@ -83,5 +76,5 @@
     "template": "op.html",
     "dest": "education",
     "markdownEngineName": "markdig"
-}
+  }
 }

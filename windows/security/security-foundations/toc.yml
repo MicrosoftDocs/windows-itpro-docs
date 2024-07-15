@@ -5,11 +5,11 @@ items:
   href: zero-trust-windows-device-health.md
 - name: Offensive research
   items:
-  - name: Microsoft Security Development Lifecycle
-    href: msft-security-dev-lifecycle.md
+  - name: Microsoft Security Development Lifecycle 🔗
+    href: /compliance/assurance/assurance-microsoft-security-development-lifecycle
   - name: OneFuzz service
     href: https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/
-  - name: Microsoft Windows Insider Preview bounty program 🔗
+  - name: Microsoft Windows Insider Preview bounty program
     href: https://www.microsoft.com/msrc/bounty-windows-insider-preview
 - name: Certification
   href: certification/toc.yml

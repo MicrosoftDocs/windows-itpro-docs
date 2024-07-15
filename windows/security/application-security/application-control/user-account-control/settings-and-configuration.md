@@ -1,7 +1,7 @@
 ---
 title: User Account Control settings and configuration
-description: Learn about the User Account Control settings and how to configure them via Intune, CSP, group policy and registry.
-ms.date: 07/31/2023
+description: Learn about the User Account Control settings and how to configure them via Intune, CSP, group policy, and registry.
+ms.date: 03/26/2024
 ms.topic: how-to
 ---
 
@@ -20,7 +20,7 @@ The following table lists the available settings to configure the UAC behavior, 
 |Detect application installations and prompt for elevation|Controls the behavior of application installation detection for the computer.<br><br>**Enabled (default)**: When an app installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.<br>**Disabled**: App installation packages aren't detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies, such as Microsoft Intune, should disable this policy setting. In this case, installer detection is unnecessary. |
 |Only elevate executables that are signed and validated|Enforces signature checks for any interactive applications that request elevation of privilege. IT admins can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local devices.<br><br>**Enabled**: Enforces the certificate certification path validation for a given executable file before it's permitted to run.<br>**Disabled (default)**: Doesn't enforce the certificate certification path validation before a given executable file is permitted to run.|
 |Only elevate UIAccess applications that are installed in secure locations|Controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following folders:<br>- `%ProgramFiles%`, including subfolders<br>- `%SystemRoot%\system32\`<br>- `%ProgramFiles(x86)%`, including subfolders<br><br><br>**Enabled (default)**: If an app resides in a secure location in the file system, it runs only with UIAccess integrity.<br>**Disabled**: An app runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.<br><br>**Note:** Windows enforces a digital signature check on any interactive apps that requests to run with a UIAccess integrity level regardless of the state of this setting.|
-|Run all administrators in Admin Approval Mode|Controls the behavior of all UAC policy settings.<br><br>**Enabled (default)**: Admin Approval Mode is enabled. This policy must be enabled and related UAC settings configured. The policy allows the built-in Administrator account and members of the Administrators group to run in Admin Approval Mode.<br>**Disabled**: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, **Windows Security** notifies you that the overall security of the operating system has been reduced.|
+|Run all administrators in Admin Approval Mode|Controls the behavior of all UAC policy settings.<br><br>**Enabled (default)**: Admin Approval Mode is enabled. This policy must be enabled and related UAC settings configured. The policy allows the built-in Administrator account and members of the Administrators group to run in Admin Approval Mode.<br>**Disabled**: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, **Windows Security** notifies you that the overall security of the operating system is reduced.|
 |Switch to the secure desktop when prompting for elevation|This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop.<br><br>**Enabled (default)**: All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.<br>**Disabled**: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.|
 |Virtualize File And Registry Write Failures To Per User Locations|Controls whether application write failures are redirected to defined registry and file system locations. This setting mitigates applications that run as administrator and write run-time application data to `%ProgramFiles%`, `%Windir%`, `%Windir%\system32`, or `HKLM\Software`.<br><br>**Enabled (default)**: App write failures are redirected at run time to defined user locations for both the file system and registry.<br>**Disabled**: Apps that write data to protected locations fail.|
 
@@ -35,7 +35,7 @@ To configure UAC, you can use:
 The following instructions provide details how to configure your devices. Select the option that best suits your needs.
 
 
-#### [:::image type="icon" source="../../../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+#### [:::image type="icon" source="../../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
 ### Configure UAC with a Settings catalog policy
 
@@ -61,26 +61,26 @@ The policy settings are located under: `./Device/Vendor/MSFT/Policy/Config/Local
 | **Setting name**: Switch to the secure desktop when prompting for elevation<br>**Policy CSP name**: `UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation`|
 | **Setting name**: Virtualize file and registry write failures to per-user locations<br>**Policy CSP name**: `UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations`|
 
-#### [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+#### [:::image type="icon" source="../../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
 You can use security policies to configure how User Account Control works in your organization. The policies can be configured locally by using the Local Security Policy snap-in (`secpol.msc`) or configured for the domain, OU, or specific groups by group policy.
 
 The policy settings are located under: `Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options`.
 
-| Group Policy setting |Default value|
-| - | - |
-|User Account Control: Admin Approval Mode for the built-in Administrator account|  Disabled |
-|User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop| Disabled |
-|User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode| Prompt for consent for non-Windows binaries |
-|User Account Control: Behavior of the elevation prompt for standard users | Prompt for credentials |
-|User Account Control: Detect application installations and prompt for elevation| Enabled (default for home edition only)<br />Disabled (default) |
-|User Account Control: Only elevate executables that are signed and validated| Disabled |
-|User Account Control: Only elevate UIAccess applications that are installed in secure locations | Enabled |
-|User Account Control: Run all administrators in Admin Approval Mode| Enabled |
-|User Account Control: Switch to the secure desktop when prompting for elevation |  Enabled |
-|User Account Control: Virtualize file and registry write failures to per-user locations | Enabled |
+| Group Policy setting                                                                                       | Default value                                                   |
+|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
+| User Account Control: Admin Approval Mode for the built-in Administrator account                           | Disabled                                                        |
+| User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop | Disabled                                                        |
+| User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode           | Prompt for consent for non-Windows binaries                     |
+| User Account Control: Behavior of the elevation prompt for standard users                                  | Prompt for credentials                                          |
+| User Account Control: Detect application installations and prompt for elevation                            | Enabled (default for home edition only)<br />Disabled (default) |
+| User Account Control: Only elevate executables that are signed and validated                               | Disabled                                                        |
+| User Account Control: Only elevate UIAccess applications that are installed in secure locations            | Enabled                                                         |
+| User Account Control: Run all administrators in Admin Approval Mode                                        | Enabled                                                         |
+| User Account Control: Switch to the secure desktop when prompting for elevation                            | Enabled                                                         |
+| User Account Control: Virtualize file and registry write failures to per-user locations                    | Enabled                                                         |
 
-#### [:::image type="icon" source="../../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="../../../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
 
 The registry keys are found under the key: `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`.
 

@@ -1,9 +1,10 @@
 ---
-ms.date: 08/03/2023
+ms.date: 05/06/2024
 title: VPN routing decisions
 description: Learn about approaches that either send all data through a VPN or only selected data. The one you choose impacts capacity planning and security expectations.
-ms.topic: conceptual
+ms.topic: concept-article
 ---
+
 # VPN routing decisions
 
 Network routes are required for the stack to understand which interface to use for outbound traffic. One of the most important decision points for VPN configuration is whether you want to send all the data through VPN (*force tunnel*) or only some data through the VPN (*split tunnel*). The decision impacts the configuration, capacity planning, and security expectations from the connection.
@@ -22,7 +23,7 @@ For each route item in the list, you can configure the following options:
 
 With Windows VPN, you can specify exclusion routes that shouldn't go over the physical interface.
 
-Routes can also be added at connect time through the server for UWP VPN apps.  
+Routes can also be added at connect time through the server for UWP VPN apps.
 
 ## Force tunnel configuration
 

@@ -3,11 +3,11 @@ title: Windows 10 infrastructure requirements (Windows 10)
 description: Review the infrastructure requirements for deployment and management of Windows 10,  prior to significant Windows 10 deployments within your organization.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/28/2022
 ---
 
@@ -97,4 +97,3 @@ Windows 10 Enterprise and Windows 10 Enterprise LTSC installations use different
 
 [Windows 10 servicing options](../update/waas-servicing-strategy-windows-10-updates.md)<br>
 [Windows 10 deployment considerations](windows-10-deployment-considerations.md)<br>
-[Windows 10 compatibility](windows-10-compatibility.md)<br>

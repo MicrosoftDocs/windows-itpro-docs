@@ -2,7 +2,7 @@
 title: Trusted Platform Module (TPM) fundamentals
 description: Learn about the components of the Trusted Platform Module and how they're used to mitigate dictionary attacks.
 ms.topic: conceptual
-ms.date: 11/17/2023
+ms.date: 07/10/2024
 ---
 
 # TPM fundamentals
@@ -98,7 +98,7 @@ TPM 2.0 allows some keys to be created without an authorization value associated
 
 Originally, BitLocker allowed from 4 to 20 characters for a PIN. Windows Hello has its own PIN for sign-in, which can be 4 to 127 characters. Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks.
 
-Windows 10, version 1607 and earlier used Dictionary Attack Prevention parameters. The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability. For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time. A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours. This totals a maximum of about 4415 guesses per year. If the PIN is four digits, all 9999 possible PIN combinations could be attempted in a little over two years.
+Windows 10, version 1607 and earlier used Dictionary Attack Prevention parameters. The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability. For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time. A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours. This totals a maximum of about 4,415 guesses per year. If the PIN is four digits, all 9999 possible PIN combinations could be attempted in a little over two years.
 
 Starting in Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to six characters, to better align with other Windows features that use TPM 2.0, including Windows Hello. Increasing the PIN length requires a greater number of guesses for an attacker. Therefore, the lockout duration between each guess was shortened to allow legitimate users to retry a failed attempt sooner while maintaining a similar level of protection. In case the legacy parameters for lockout threshold and recovery time need to be used, make sure that GPO is enabled and [configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0](/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings#configure-the-system-to-use-legacy-dictionary-attack-prevention-parameters-setting-for-tpm-20).
 

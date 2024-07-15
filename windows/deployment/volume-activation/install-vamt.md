@@ -4,12 +4,12 @@ description: Learn how to install Volume Activation Management Tool (VAMT) as pa
 ms.reviewer: nganguly
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
-ms.date: 10/13/2023
+ms.date: 03/29/2024
 ms.topic: article
-ms.technology: itpro-fundamentals
+ms.subservice: itpro-fundamentals
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -22,11 +22,11 @@ appliesto:
 
 This article describes how to install the Volume Activation Management Tool (VAMT). VAMT is installed as part of the Windows Assessment and Deployment Kit (ADK) for Windows.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
-> VAMT requires local administrator privileges on all managed computers in order to deposit confirmation IDs (CIDs), get the client products' license status, and install product keys. If VAMT is being used to manage products and product keys on the local host computer and you don't have administrator privileges, start VAMT with elevated privileges. For best results when using Active Directory-based activation, we recommend running VAMT while logged on as a domain administrator.
+> VAMT requires local administrator privileges on all managed computers in order to deposit confirmation IDs (CIDs), get the client products' license status, and install product keys. If VAMT is being used to manage products and product keys on the local host computer but administrator privileges aren't available, start VAMT with elevated privileges. For best results when using Active Directory-based activation, we recommend running VAMT while logged on as a domain administrator.
 
->[!NOTE]
+> [!NOTE]
 >
 > The VAMT Microsoft Management Console snap-in ships as an x86 package.
 
@@ -50,9 +50,9 @@ This article describes how to install the Volume Activation Management Tool (VAM
 
 1. In the **Specify SQL Server install location** screen under **INSTALL LOCATION \*:**, specify an install location or use the default path, and then select the **Install** button.
 
-1. Once the installation is complete, in the **Installation Has completed successfully!** page, under **INSTANCE NAME**, note the instance name for the installation. The instance name will be used later in the [Configure VAMT to connect to SQL Server Express or full SQL Server](#configure-vamt-to-connect-to-sql-server-express-or-full-sql-server) section.
+1. Once the installation is complete, in the **Installation Has completed successfully!** page, under **INSTANCE NAME**, note the instance name for the installation. The instance name is used later in the [Configure VAMT to connect to SQL Server Express or full SQL Server](#configure-vamt-to-connect-to-sql-server-express-or-full-sql-server) section.
 
-1. Once the instance name has been noted, select the **Close** button, and then select the **Yes** button to confirm exiting the installer.
+1. Once the instance name is noted, select the **Close** button, and then select the **Yes** button to confirm exiting the installer.
 
 ## Install VAMT using the ADK
 
@@ -84,7 +84,7 @@ This article describes how to install the Volume Activation Management Tool (VAM
 
    1. Next to **Database:**, add a name for the database.
 
-   1. Once the database server and database names have been entered, select the **Connect** button.
+   1. Once the database server and database names are entered, select the **Connect** button.
 
    1. Select the **Yes** button to create the database.
 

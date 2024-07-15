@@ -1,8 +1,8 @@
 ---
 title: Windows 10, version 1903, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1903.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
@@ -36,7 +36,7 @@ The following methodology was used to derive the network endpoints:
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
 
-## Windows 10 Family
+## Windows 10 Home
 
 | Destination | Protocol | Description |
 | ----------- | -------- | ----------- |
@@ -49,11 +49,10 @@ The following methodology was used to derive the network endpoints:
 | \*.login.msa.\*.net | HTTPS | Microsoft Account related
 | \*.msn.com\* | TLSv1.2/HTTPS | Windows Spotlight
 | \*.skype.com | HTTP/HTTPS | Skype
-| \*.smartscreen.microsoft.com\* | HTTPS | Windows Defender Smartscreen
+| \*.smartscreen.microsoft.com | HTTPS | Windows Defender Smartscreen
 | \*.telecommand.telemetry.microsoft.com\* | HTTPS | Used by Windows Error Reporting
 | \*cdn.onenote.net\* | HTTP | OneNote
 | \*displaycatalog.\*mp.microsoft.com\* | HTTPS | Used to communicate with Microsoft Store
-| \*emdl.ws.microsoft.com\* | HTTP | Windows Update
 | \*geo-prod.do.dsp.mp.microsoft.com\* | TLSv1.2/HTTPS | Enables connections to Windows Update
 | \*hwcdn.net\* | HTTP | Highwinds Content Delivery Network / Windows updates
 | \*img-prod-cms-rt-microsoft-com\* | HTTPS | Microsoft Store or Inbox MSN Apps image download
@@ -88,7 +87,6 @@ The following methodology was used to derive the network endpoints:
 | oneclient.sfx.ms\* | HTTPS | Used by OneDrive for Business to download and verify app updates
 | onecollector.cloudapp.aria.akadns.net | HTTPS | Microsoft Office
 | ow1.res.office365.com | HTTP | Microsoft Office
-| pti.store.microsoft.com | HTTPS | Microsoft Store
 | purchase.mp.microsoft.com\* | HTTPS | Used to communicate with Microsoft Store
 | query.prod.cms.rt.microsoft.com\* | HTTPS | Used to retrieve Windows Spotlight metadata
 | ris.api.iris.microsoft.com\* | TLSv1.2/HTTPS | Used to retrieve Windows Spotlight metadata
@@ -172,7 +170,6 @@ The following methodology was used to derive the network endpoints:
 | nav.smartscreen.microsoft.com | HTTPS | Windows Defender
 | ocsp.digicert.com\* | HTTP | CRL and OCSP checks to the issuing certificate authorities
 | oneclient.sfx.ms | HTTP | OneDrive
-| pti.store.microsoft.com | HTTPS | Microsoft Store
 | ris.api.iris.microsoft.com.akadns.net | HTTPS | Used to retrieve Windows Spotlight metadata
 | ris-prod-atm.trafficmanager.net | HTTPS | Azure
 | s2s.config.skype.com | HTTP | Microsoft Skype
@@ -232,7 +229,6 @@ The following methodology was used to derive the network endpoints:
 | displaycatalog.mp.microsoft.com/\* | HTTPS | Microsoft Store
 | dmd.metaservices.microsoft.com\* | HTTP | Device Authentication
 | download.windowsupdate.com\* | HTTPS | Windows Update
-| emdl.ws.microsoft.com/\* | HTTP | Used to download apps from the Microsoft Store
 | evoke-windowsservices-tas.msedge.net | HTTPS | Photo app
 | fe2.update.microsoft.com\* | HTTPS | Windows Update, Microsoft Update, Microsoft Store services
 | fe3.delivery.dsp.mp.microsoft.com.nsatc.net | HTTPS | Windows Update, Microsoft Update, Microsoft Store services
@@ -251,7 +247,6 @@ The following methodology was used to derive the network endpoints:
 | ocsp.digicert.com\* | HTTP | CRL and OCSP checks to the issuing certificate authorities
 | oneclient.sfx.ms/\* | HTTPS | Used by OneDrive for Business to download and verify app updates
 | onecollector.cloudapp.aria.akadns.net | HTTPS | Microsoft Office
-| pti.store.microsoft.com | HTTPS | Microsoft Store
 | settings-win.data.microsoft.com/settings/\* | HTTPS | Used as a way for apps to dynamically update their configuration
 | share.microsoft.com | HTTPS | Microsoft Store
 | skypeecs-prod-usw-0.cloudapp.net | HTTPS | Skype

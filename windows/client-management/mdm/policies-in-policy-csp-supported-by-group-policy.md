@@ -1,14 +1,7 @@
 ---
 title: Policies in Policy CSP supported by Group Policy
 description: Learn about the policies in Policy CSP supported by Group Policy.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 11/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -288,6 +281,9 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [PasswordComplexity](policy-csp-devicelock.md)
 - [PasswordHistorySize](policy-csp-devicelock.md)
 - [AllowAdministratorLockout](policy-csp-devicelock.md)
+- [MinimumPasswordLength](policy-csp-devicelock.md)
+- [MinimumPasswordLengthAudit](policy-csp-devicelock.md)
+- [RelaxMinimumPasswordLengthLimits](policy-csp-devicelock.md)
 
 ## Display
 
@@ -394,7 +390,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [InteractiveLogon_DoNotRequireCTRLALTDEL](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DoNotDisplayLastSignedIn](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DoNotDisplayUsernameAtSignIn](policy-csp-localpoliciessecurityoptions.md)
-- [InteractiveLogon_MachineAccountThreshold](policy-csp-localpoliciessecurityoptions.md)
+- [InteractiveLogon_MachineAccountLockoutThreshold](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_MachineInactivityLimit](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_MessageTextForUsersAttemptingToLogOn](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_MessageTitleForUsersAttemptingToLogOn](policy-csp-localpoliciessecurityoptions.md)
@@ -429,10 +425,12 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [UserAccountControl_UseAdminApprovalMode](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_AllowUIAccessApplicationsToPromptForElevation](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_BehaviorOfTheElevationPromptForAdministrators](policy-csp-localpoliciessecurityoptions.md)
+- [UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_RunAllAdministratorsInAdminApprovalMode](policy-csp-localpoliciessecurityoptions.md)
+- [UserAccountControl_TypeOfAdminApprovalMode](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_DetectApplicationInstallationsAndPromptForElevation](policy-csp-localpoliciessecurityoptions.md)
@@ -532,6 +530,10 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [LetAppsAccessEmail_ForceAllowTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessEmail_ForceDenyTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessEmail_UserInControlOfTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI_ForceAllowTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI_ForceDenyTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI_UserInControlOfTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureProgrammatic](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps](policy-csp-privacy.md)
@@ -660,6 +662,10 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ConfigStorageSenseRecycleBinCleanupThreshold](policy-csp-storage.md)
 - [ConfigStorageSenseDownloadsCleanupThreshold](policy-csp-storage.md)
 - [ConfigStorageSenseCloudContentDehydrationThreshold](policy-csp-storage.md)
+
+## Sudo
+
+- [EnableSudo](policy-csp-sudo.md)
 
 ## System
 
@@ -803,6 +809,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](policy-csp-update.md)
 - [ConfigureDeadlineNoAutoRebootForQualityUpdates](policy-csp-update.md)
 - [AllowOptionalContent](policy-csp-update.md)
+- [AlwaysAutoRebootAtScheduledTimeMinutes](policy-csp-update.md)
 
 ## UserRights
 
@@ -869,6 +876,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 ## WindowsAI
 
 - [TurnOffWindowsCopilot](policy-csp-windowsai.md)
+- [DisableAIDataAnalysis](policy-csp-windowsai.md)
 
 ## WindowsDefenderSecurityCenter
 

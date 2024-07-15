@@ -1,8 +1,8 @@
 ---
 title: Windows 10, version 2004, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 2004.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
@@ -35,7 +35,7 @@ The following methodology was used to derive the network endpoints:
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
 
-## Windows 10 Family
+## Windows 10 Home
 
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ The following methodology was used to derive the network endpoints:
 |crl.microsoft.com|HTTPS|Skype 
 |ctldl.windowsupdate.com|HTTP|Certificate Trust List 
 |da.xboxservices.com|HTTPS|Microsoft Edge  
-|displaycatalog.mp.microsoft.com|HTTPS|Microsoft Store 
+|*displaycatalog.mp.microsoft.com|HTTPS|Microsoft Store 
 |dmd.metaservices.microsoft.com|HTTP|Device Authentication 
 |evoke-windowsservices-tas.msedge.net|TLSv1.2|Photos app 
 |fs.microsoft.com|TLSv1.2|Maps application
@@ -109,10 +109,9 @@ The following methodology was used to derive the network endpoints:
 |ctldl.windowsupdate.com|HTTP|Certificate Trust List 
 |d2i2wahzwrm1n5.cloudfront.net|HTTPS|Microsoft Edge
 |da.xboxservices.com|HTTPS|Microsoft Edge  
-|displaycatalog.mp.microsoft.com|HTTPS|Microsoft Store 
+|*displaycatalog.mp.microsoft.com|HTTPS|Microsoft Store 
 |dlassets-ssl.xboxlive.com|HTTPS|Xbox Live 
 |dmd.metaservices.microsoft.com|HTTP|Device Authentication 
-|emdl.ws.microsoft.com|HTTP|Windows Update 
 |evoke-windowsservices-tas.msedge.net|TLSv1.2|Photos app 
 |fp.msedge.net|HTTPS|Cortana and Live Tiles
 |fs.microsoft.com|TLSv1.2|Maps application
@@ -169,7 +168,6 @@ The following methodology was used to derive the network endpoints:
 |ctldl.windowsupdate.com|HTTP|Certificate Trust List 
 |da.xboxservices.com|HTTPS|Microsoft Edge  
 |dmd.metaservices.microsoft.com|HTTP|Device Authentication 
-|emdl.ws.microsoft.com|HTTP|Windows Update 
 |evoke-windowsservices-tas.msedge.net|TLSv1.2|Photos app 
 |fp.msedge.net|HTTPS|Cortana and Live Tiles
 |fs.microsoft.com|TLSv1.2|Maps application

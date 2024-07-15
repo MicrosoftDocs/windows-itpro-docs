@@ -1,0 +1,12 @@
+items:
+- name: Overview
+  href: index.md
+  displayName: Configure the Start menu
+- name: Customize the Start layout
+  href: layout.md
+- name: Policy settings
+  href: policy-settings.md
+- name: XML schema definition (XSD)
+  href: xsd.md
+- name: Troubleshoot Start menu errors 🔗
+  href: /troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors

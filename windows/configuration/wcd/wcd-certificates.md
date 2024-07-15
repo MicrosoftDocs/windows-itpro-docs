@@ -1,16 +1,8 @@
 ---
-title: Certificates (Windows 10)
+title: Certificates
 description: This section describes the Certificates settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.date: 09/06/2017
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
+ms.date: 01/25/2024
 ---
 
 # Certificates (Windows Configuration Designer reference)
@@ -27,23 +19,22 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 
 | Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All setting groups | ✔️ |  ✔️ | ✔️ | ✔️ |
-
+| All setting groups | ✅ |  ✅ | ✅ | ✅ |
 
 ## CACertificates
 
 1. In **Available customizations**, select **CACertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you created. 
-3. In **CertificatePath**, browse to or enter the path to the certificate.
+1. In **Available customizations**, select the name that you created.
 
+1. In **CertificatePath**, browse to or enter the path to the certificate.
 
 ## ClientCertificates
 
 1. In **Available customizations**, select **ClientCertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you created. The following table describes the settings you can configure. Settings in **bold** are required.
+1. In **Available customizations**, select the name that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
-| Setting | Value | Description | 
-| --- | --- | ---- | 
+| Setting | Value | Description |
+| --- | --- | ---- |
 | **CertificatePassword** | |  |
 | **CertificatePath** |  | Adds the selected certificate to the Personal store on the target device. |
 | ExportCertificate | True or false | Set to **True** to allow certificate export.  |
@@ -52,23 +43,22 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 ## RootCertificates
 
 1. In **Available customizations**, select **RootCertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you created. 
-3. In **CertificatePath**, browse to or enter the path to the certificate.
+1. In **Available customizations**, select the name that you created.
+1. In **CertificatePath**, browse to or enter the path to the certificate.
 
 ## TrustedPeopleCertificates
 
 1. In **Available customizations**, select **TrustedPeopleCertificates**, enter a friendly name for the certificate, and then click **Add**.
-2. In **Available customizations**, select the name that you created. 
-3. In **TrustedCertificate**, browse to or enter the path to the certificate.
-
+1. In **Available customizations**, select the name that you created.
+1. In **TrustedCertificate**, browse to or enter the path to the certificate.
 
 ## TrustedProvisioners
 
 1. In **Available customizations**, select **TrustedPprovisioners**, enter a CertificateHash, and then click **Add**.
-2. In **Available customizations**, select the name that you created. 
-3. In **TrustedProvisioner**, browse to or enter the path to the certificate.
+1. In **Available customizations**, select the name that you created.
+
+1. In **TrustedProvisioner**, browse to or enter the path to the certificate.
 
 ## Related topics
-
 
 - [RootCATrustedCertficates configuration service provider (CSP)](/windows/client-management/mdm/rootcacertificates-csp)

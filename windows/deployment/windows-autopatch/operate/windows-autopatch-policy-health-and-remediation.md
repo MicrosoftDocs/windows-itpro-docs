@@ -1,14 +1,14 @@
 ---
 title: policy health and remediation
 description: Describes what Autopatch does it detects policies in the tenant are either missing or modified to states that affect the service
-ms.date: 07/25/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 07/10/2024
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: rekhanr
 ms.collection:
   - highpri
@@ -26,7 +26,7 @@ When Windows Autopatch detects policies in the tenant are either missing or modi
 
 IT admins must respond to the service-generated alerts to ensure that Autopatch services can be delivered, and devices remain eligible for the service.
 
-With this feature, IT admins can:  
+With this feature, IT admins can:
 
 - View alerts, in line with the features you commonly use:
     - Windows Update related alerts in the Release management blade.
@@ -35,7 +35,7 @@ With this feature, IT admins can:
 - Initiate action for the Autopatch service to restore the deployment rings without having to raise an incident.
 
 > [!NOTE]
-> You can rename your policies to meet your organization’s requirements. Do **not** rename the underlying Autopatch deployment groups.
+> You can rename your policies to meet your organization's requirements. Do **not** rename the underlying Autopatch deployment groups.
 
 ## Check policy health
 
@@ -43,9 +43,9 @@ Alerts are raised when deployment rings don't have the required policies and the
 
 ## Built-in roles required for remediation actions
 
-The minimum role required to restore configurations is **Intune Service Administrator**. You can also perform these actions in the Global administrator role.
+The minimum role required to restore configurations is **Intune Service Administrator**.
 
-## Restore device configuration policy  
+## Restore device configuration policy
 
 **To initiate remediation action for device configuration alerts:**
 
@@ -58,7 +58,7 @@ The minimum role required to restore configurations is **Intune Service Administ
 
 There will be an alert for each policy that is missing or has deviated from the service defined values.
 
-## Restore Windows Update policies  
+## Restore Windows Update policies
 
 **To initiate remediation actions for Windows quality update policies:**
 
@@ -71,14 +71,14 @@ There will be an alert for each policy that is missing or has deviated from the 
 
 **To initiate remediation actions for Windows feature update policies:**
 
-1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).  
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Navigate to **Devices** > **Windows Autopatch** > **Release management** > **Release schedule** > **Windows feature updates** > **Status**.
 1. Select **Policy Error** to launch the Policy error workflow.
 1. Review the message.
     1. If this is a missing policy error, select **Restore policy** to complete the workflow.
     2. If this is a modified policy, select **Submit changes** to restore to service required values.
 
-## Restore deployment groups  
+## Restore deployment groups
 
 Windows Autopatch will automatically restore any missing groups that are required by the service. When a missing deployment group is restored, and the policies are also missing, the policies be restored to the deployment groups.
 

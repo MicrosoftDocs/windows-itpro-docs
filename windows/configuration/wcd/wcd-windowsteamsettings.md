@@ -1,36 +1,26 @@
 ---
-title: WindowsTeamSettings (Windows 10)
+title: WindowsTeamSettings
 description: This section describes the WindowsTeamSettings settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: windows-client
-author: aczechowski
-ms.localizationpriority: medium
-ms.author: aaroncz
 ms.topic: reference
-ms.collection: must-keep
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.date: 01/25/2024
 ---
 
 # WindowsTeamSettings (reference)
 
-
 Use WindowsTeamSettings settings to configure Surface Hub.
-
 
 ## Applies to
 
-| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | 
-| All settings |  | ✔️ |  |   |
+| Setting | Windows client | Surface Hub | HoloLens | IoT Core |
+|--|:-:|:-:|:-:|:-:|
+| All settings |  | ✅ |  |  |
 
 ## Connect
 
 | Setting | Value | Description |
 | --- | --- | --- |
 | AutoLaunch  | True or false  | Open the Connect app automatically when someone projects.  |
-| Channel | - 1, 3, 4, 5, 6, 7, 8, 9, 10, 11 (works with all Miracast senders in all regions)</br>- 36, 40, 44, 48 (works with all 5ghz band Miracast senders in all regions)</br>- 149, 153, 157, 161, 165 (works with all 5ghz band Miracast senders in all regions except Japan) | Wireless channel to use for Miracast operation. The supported channels are defined by the Wi-Fi Alliance Wi-Fi Direct specification. Integer specifying the channel. The default value is 255. Outside of regulatory concerns, if the channel is configured incorrectly, the driver won't boot. Or, it will broadcast on the wrong channel, which senders won't be looking for. |
+| Channel | - 1, 3, 4, 5, 6, 7, 8, 9, 10, 11 (works with all Miracast senders in all regions)</br>- 36, 40, 44, 48 (works with all 5ghz band Miracast senders in all regions)</br>- 149, 153, 157, 161, 165 (works with all 5ghz band Miracast senders in all regions except Japan) | Wireless channel to use for Miracast operation. The supported channels are defined by the Wi-Fi Alliance Wi-Fi Direct specification. Integer specifying the channel. The default value is 251. Outside of regulatory concerns, if the channel is configured incorrectly, the driver won't boot. Or, it will broadcast on the wrong channel, which senders won't be looking for. |
 | Enabled | True or false  | Enables wireless projection to the device. |
 | PINRequired | True or false | Requires presenters to enter a PIN to connect wirelessly to the device. |
 
@@ -55,8 +45,6 @@ A device account is a Microsoft Exchange account that's connected with Skype for
 
 Use these settings to configure 802.1x wired authentication. For details, see [Enable 802.1x wired authentication](/surface-hub/enable-8021x-wired-authentication).
 
-
-
 ## FriendlyName
 
 Enter the name that users will see when they want to project wirelessly to the device.
@@ -72,7 +60,7 @@ Maintenance hours are the period of time when automatic maintenance tasks are ru
 
 ## OMSAgent
 
-Configures the Operations Management Suite workspace. 
+Configures the Operations Management Suite workspace.
 
 | Setting | Value | Description |
 | --- | --- | --- |

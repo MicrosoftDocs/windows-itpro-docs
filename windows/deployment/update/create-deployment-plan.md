@@ -1,8 +1,8 @@
 ---
 title: Create a deployment plan
 description: Devise the number of deployment rings you need and how you want to populate each of the deployment rings.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart

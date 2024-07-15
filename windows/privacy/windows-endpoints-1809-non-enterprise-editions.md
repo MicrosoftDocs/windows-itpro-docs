@@ -1,8 +1,8 @@
 ---
 title: Windows 10, version 1809, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1809.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
@@ -32,7 +32,7 @@ We used the following methodology to derive these network endpoints:
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
 
-## Windows 10 Family
+## Windows 10 Home
 
 | **Destination** | **Protocol** | **Description** |
 | --- | --- | --- |
@@ -42,11 +42,10 @@ We used the following methodology to derive these network endpoints:
 |\*.g.akamai.net	| HTTPS |	Used to check for updates to maps that have been downloaded for offline use.
 |\*.msn.com\*	|TLSv1.2/HTTPS |	Windows Spotlight related traffic
 |\*.Skype.com	| HTTP/HTTPS |	Skype related traffic
-|\*.smartscreen.microsoft.com\*	| HTTPS |	Windows Defender Smartscreen related traffic
+|\*.smartscreen.microsoft.com	| HTTPS |	Windows Defender Smartscreen related traffic
 |\*.telecommand.telemetry.microsoft.com\*	| HTTPS |	Used by Windows Error Reporting.
 |\*cdn.onenote.net*	| HTTP |	OneNote related traffic
 |\*displaycatalog.mp.microsoft.com\*	| HTTPS |	Used to communicate with Microsoft Store.
-|\*emdl.ws.microsoft.com\*	| HTTP |	Windows Update related traffic
 |\*geo-prod.do.dsp.mp.microsoft.com\*	|TLSv1.2/HTTPS |	Enables connections to Windows Update.
 |\*hwcdn.net*	| HTTP |	Used by the Highwinds Content Delivery Network to perform Windows updates.
 |\*img-prod-cms-rt-microsoft-com.akamaized.net*	| HTTPS |	Used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps).
@@ -136,7 +135,6 @@ We used the following methodology to derive these network endpoints:
 | cy2.settings.data.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
 | displaycatalog.mp.microsoft.com/*	| HTTPS |	Used to communicate with Microsoft Store. | 
 | download.windowsupdate.com/*	| HTTPS |	Enables connections to Windows Update. |
-| emdl.ws.microsoft.com/* | HTTP | Used to download apps from the Microsoft Store. |
 | fe2.update.microsoft.com/*	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fe3.delivery.dsp.mp.microsoft.com.nsatc.net	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |
 | fe3.delivery.mp.microsoft.com/*	| HTTPS |	Enables connections to Windows Update, Microsoft Update, and the online services of Microsoft Store. |

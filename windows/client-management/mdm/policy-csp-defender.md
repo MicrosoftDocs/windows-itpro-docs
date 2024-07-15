@@ -1,14 +1,7 @@
 ---
 title: Defender Policy CSP
 description: Learn more about the Defender Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 11/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -409,7 +402,7 @@ This policy setting allows you to manage whether or not to scan for malicious so
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1 |
+| Default Value  | 0 |
 <!-- AllowFullScanRemovableDriveScanning-DFProperties-End -->
 
 <!-- AllowFullScanRemovableDriveScanning-AllowedValues-Begin -->
@@ -417,8 +410,8 @@ This policy setting allows you to manage whether or not to scan for malicious so
 
 | Value | Description |
 |:--|:--|
-| 0 | Not allowed. Turns off scanning on removable drives. |
-| 1 (Default) | Allowed. Scans removable drives. |
+| 0 (Default) | Not allowed. Turns off scanning on removable drives. |
+| 1 | Allowed. Scans removable drives. |
 <!-- AllowFullScanRemovableDriveScanning-AllowedValues-End -->
 
 <!-- AllowFullScanRemovableDriveScanning-GpMapping-Begin -->
@@ -719,7 +712,9 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 
 <!-- AllowScanningNetworkFiles-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-This policy setting allows you to configure real-time scanning for files that are accessed over the network. It is recommended to enable this setting.
+This policy setting allows you to configure scheduled scans and on-demand (manually initiated) scans for files that are accessed over the network. It is recommended to enable this setting.
+>[!NOTE]
+> Real-time protection (on-access) scanning is not impacted by this policy.  
 
 - If you enable this setting or do not configure this setting, network files will be scanned.
 - If you disable this setting, network files will not be scanned.
@@ -1081,7 +1076,7 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 
 > [!NOTE]
 > If you enable both of the following policies, then Windows ignores the value of **AvgCPULoadFactor**:
-> 
+>
 > - [ScanOnlyIfIdle](defender-csp.md#configurationscanonlyifidleenabled): Instructs the product to scan only when the computer isn't in use.
 > - [DisableCpuThrottleOnIdleScans](defender-csp.md#configurationdisablecputhrottleonidlescans): Instructs the product to disable CPU throttling on idle scans.
 <!-- AvgCPULoadFactor-Editable-End -->
@@ -1550,12 +1545,12 @@ This policy setting defines the number of days items should be kept in the Quara
 <!-- DisableCatchupFullScan-OmaUri-End -->
 
 <!-- DisableCatchupFullScan-Description-Begin -->
-<!-- Description-Source-ADMX -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that's initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
-- If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
+- If you disable or don't configure this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
-- If you disable or don't configure this setting, catch-up scans for scheduled full scans will be turned off.
+- If you enable this setting, catch-up scans for scheduled full scans will be disabled.
 <!-- DisableCatchupFullScan-Description-End -->
 
 <!-- DisableCatchupFullScan-Editable-Begin -->
@@ -1616,16 +1611,16 @@ This policy setting allows you to configure catch-up scans for scheduled full sc
 <!-- DisableCatchupQuickScan-OmaUri-End -->
 
 <!-- DisableCatchupQuickScan-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that's initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
-
-- If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
-
-- If you disable or don't configure this setting, catch-up scans for scheduled quick scans will be turned off.
+<!-- Description-Source-Manual-Forced -->
 <!-- DisableCatchupQuickScan-Description-End -->
 
 <!-- DisableCatchupQuickScan-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that's initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
+
+- If you disable or don't configure this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
+
+- If you enable this setting, catch-up scans for scheduled quick scans will be disabled.
 <!-- DisableCatchupQuickScan-Editable-End -->
 
 <!-- DisableCatchupQuickScan-DFProperties-Begin -->

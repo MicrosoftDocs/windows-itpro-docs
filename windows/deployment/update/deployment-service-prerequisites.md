@@ -2,8 +2,8 @@
 title: Prerequisites for the deployment service
 titleSuffix: Windows Update for Business deployment service
 description: Prerequisites for using the Windows Update for Business deployment service for updating devices in your organization. 
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.author: mstewart
 author: mestew
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 02/14/2023
+ms.date: 07/01/2024
 ---
 
 # Windows Update for Business deployment service prerequisites
@@ -26,7 +26,7 @@ Before you begin the process of deploying updates with Windows Update for Busine
 ## Azure and Microsoft Entra ID
 
 - An Azure subscription with [Microsoft Entra ID](/azure/active-directory/)
-- Devices must be Microsoft Entra joined and meet the below OSrequirements.
+- Devices must be Microsoft Entra joined and meet the below OS requirements.
   - Devices can be [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
   - Devices that are [Microsoft Entra registered](/azure/active-directory/devices/concept-azure-ad-register) only (Workplace joined) aren't supported with Windows Update for Business
 
@@ -48,9 +48,9 @@ Windows Update for Business deployment service supports Windows client devices o
 
 ### Windows operating system updates
 
-- Expediting updates requires the *Update Health Tools* on the clients. The tools are installed starting with [KB 4023057](https://support.microsoft.com/topic/kb4023057-update-for-windows-10-update-service-components-fccad0ca-dc10-2e46-9ed1-7e392450fb3a). To confirm the presence of the Update Health Tools on a device:
+- Expediting updates requires the *Update Health Tools* on the clients. The tools are installed starting with [KB4023057](https://support.microsoft.com/kb/4023057). To confirm the presence of the Update Health Tools on a device:
   - Look for the folder **C:\Program Files\Microsoft Update Health Tools** or review *Add Remove Programs* for **Microsoft Update Health Tools**.
-  - As an Admin, run the following PowerShell script:  `Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match "Microsoft Update Health Tools"}`
+  - As an Admin, run the following PowerShell script:  `Get-CimInstance -ClassName Win32_Product | Where-Object {$_.Name -match "Microsoft Update Health Tools"}`
 
 - For [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data), installing the January 2023 release preview cumulative update, or a later equivalent update, is recommended
 
@@ -85,8 +85,10 @@ When you use [Windows Update for Business reports](wufb-reports-overview.md) in 
 - Windows Update for Business deployment service endpoints 
 
     - devicelistenerprod.microsoft.com
+       - devicelistenerprod.eudb.microsoft.com for the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn) <!--9131668-->
     - login.windows.net
     - payloadprod*.blob.core.windows.net
+
 
 - [Windows Push Notification Services](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config): *(Recommended, but not required. Without this access, devices might not expedite updates until their next daily check for updates.)*
     - *.notify.windows.com

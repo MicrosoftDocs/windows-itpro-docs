@@ -54,27 +54,23 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "contributors_to_exclude": [ 
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
+      "contributors_to_exclude": [
+        "dstrome2",
+        "rjagiewich",  
+        "American-Dipper",
         "claydetels19", 
-        "Kellylorenebaker",
         "jborsecnik",
-        "tiburd",
-        "AngelaMotherofDragons",
-        "dstrome",
-        "v-dihans",        
-        "garycentric",
-        "v-stsavell",
-        "beccarobins",
+        "v-stchambers",
+        "shdyas",
         "Stacyrch140",
-        "American-Dipper"
+        "garycentric",
+        "dstrome",
+        "alekyaj" 
       ]
     },
     "fileMetadata": {},
     "template": [],
     "dest": "store-for-business",
     "markdownEngineName": "markdig"
-    }
+  }
 }

@@ -2,8 +2,8 @@
 title: Windows Update for Business reports overview
 titleSuffix: Windows Update for Business reports
 description: Overview of Windows Update for Business reports to explain what it's used for and the cloud services it relies on.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: overview
 author: mestew
 ms.author: mstewart

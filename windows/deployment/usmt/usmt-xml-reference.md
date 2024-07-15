@@ -1,24 +1,28 @@
 ---
-title: USMT XML Reference (Windows 10)
-description: Learn about working with and customizing the migration XML files using User State Migration Tool (USMT) XML Reference for Windows 10.
+title: USMT XML Reference
+description: Learn about working with and customizing the migration XML files using User State Migration Tool (USMT) XML Reference for Windows.
+ms.reviewer: kevinmi,warrenw
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 01/09/2024
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # USMT XML reference
 
-This section contains articles that you can use to work with and to customize the migration XML files.
+This section contains articles that can be used to work with and to customize the migration XML files.
 
 ## In this section
 
 | Link | Description |
 |--- |--- |
-|[Understanding migration XML files](understanding-migration-xml-files.md)|Provides an overview of the default and custom migration XML files and includes guidelines for creating and editing a customized version of the MigDocs.xml file.|
+|[Understanding migration XML files](understanding-migration-xml-files.md)|Provides an overview of the default and custom migration XML files and includes guidelines for creating and editing a customized version of the `MigDocs.xml` file.|
 |[Config.xml file](usmt-configxml-file.md)|Describes the `Config.xml` file and policies concerning its configuration.|
 |[Customize USMT XML files](usmt-customize-xml-files.md)|Describes how to customize USMT XML files.|
 |[Custom XML examples](usmt-custom-xml-examples.md)|Gives examples of XML files for various migration scenarios.|

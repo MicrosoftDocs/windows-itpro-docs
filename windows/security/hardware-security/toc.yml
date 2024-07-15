@@ -3,7 +3,7 @@ items:
     href: index.md
   - name: Hardware root of trust
     items:
-      - name: Windows Defender System Guard
+      - name: System Guard
         href: how-hardware-based-root-of-trust-helps-protect-windows.md
       - name: Trusted Platform Module
         href: tpm/trusted-platform-module-overview.md

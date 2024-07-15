@@ -3,11 +3,11 @@ title: Managing Application-Compatibility Fixes and Custom Fix Databases (Window
 description: Learn why you should use compatibility fixes, and how to deploy and manage custom-compatibility fix databases.
 manager: aaroncz
 ms.author: frankroj
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.date: 10/28/2022
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ---
 
 # Managing Application-Compatibility Fixes and Custom Fix Databases

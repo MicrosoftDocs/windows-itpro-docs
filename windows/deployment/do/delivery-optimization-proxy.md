@@ -1,8 +1,8 @@
 ---
 title: Using a proxy with Delivery Optimization
 description: Settings to use with various proxy configurations to allow Delivery Optimization to work in your environment.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: cmknox
 ms.author: carmenf
@@ -10,22 +10,22 @@ manager: aaroncz
 ms.reviewer: mstewart
 ms.collection: tier3
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 06/02/2023
+ms.date: 05/23/2024
 ---
 
 # Using a proxy with Delivery Optimization
 
 When Delivery Optimization downloads content from HTTP sources, it uses the automatic proxy discovery capability of WinHttp to streamline and maximize the support for complex proxy configurations as it makes range requests from the content server. It does this by setting the **WINHTTP_ACCESS_TYPE_AUTOMATIC_PROXY** flag in all HTTP calls.
 
-Delivery Optimization provides a token to WinHttp that corresponds to the user that is signed in currently. In turn, WinHttp automatically authenticates the user against the proxy server set either in Internet Explorer or in the **Proxy Settings** menu in Windows.  
+Delivery Optimization provides a token to WinHttp that corresponds to the user that is signed in currently. In turn, WinHttp automatically authenticates the user against the proxy server set either in Internet Explorer or in the **Proxy Settings** menu in Windows.
 
 For downloads that use Delivery Optimization to successfully use the proxy, you should set the proxy via Windows **Proxy Settings** or the Internet Explorer proxy settings.
 
-Setting the Internet Explorer proxy to apply device-wide will ensure that the device can access the proxy server even when no user is signed in. In this case, the proxy is accessed with the “NetworkService” context if proxy authentication is required.
+Setting the Internet Explorer proxy to apply device-wide will ensure that the device can access the proxy server even when no user is signed in. In this case, the proxy is accessed with the "NetworkService" context if proxy authentication is required.
 
 > [!NOTE]
 > We don't recommend that you use `netsh winhttp set proxy ProxyServerName:PortNumber`. Using this offers no auto-detection of the proxy, no support for an explicit PAC URL, and no authentication to the proxy. This setting is ignored by WinHTTP for requests that use auto-discovery (if an interactive user token is used).
@@ -36,7 +36,7 @@ If no user is signed in, even if both the Internet Explorer proxy and netsh conf
 
 You can still use netsh to import the proxy setting from Internet Explorer (`netsh winhttp import proxy source=ie`) if your proxy configuration is a static *proxyServerName:Port*. However, the same limitations mentioned previously apply.
 
-### Summary of settings behavior
+## Summary of settings behavior
 
 These tables summarize the behavior for various combinations of settings:
 

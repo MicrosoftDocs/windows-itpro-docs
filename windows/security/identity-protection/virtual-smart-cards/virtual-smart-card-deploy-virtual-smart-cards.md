@@ -1,7 +1,7 @@
 ---
 title: Deploy Virtual Smart Cards
 description: Learn about what to consider when deploying a virtual smart card authentication solution
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/06/2023
 ---
 

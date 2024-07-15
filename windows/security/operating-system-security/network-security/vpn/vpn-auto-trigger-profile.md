@@ -1,8 +1,8 @@
 ---
 title: VPN auto-triggered profile options
 description: With auto-triggered VPN profile options, Windows can automatically establish a VPN connection based on IT admin-defined rules. Learn about the types of auto-trigger rules that you can create for VPN connections.
-ms.date: 08/03/2023
-ms.topic: conceptual
+ms.date: 05/06/2024
+ms.topic: how-to
 ---
 
 # VPN auto-triggered profile options
@@ -32,7 +32,7 @@ For more information, see [Traffic filters](vpn-security-features.md#traffic-fil
 
 ## Name-based trigger
 
-You can configure a domain name-based rule so that a specific domain name triggers the VPN connection.\ 
+You can configure a domain name-based rule so that a specific domain name triggers the VPN connection.\
 Name-based auto-trigger can be configured using the `VPNv2/<ProfileName>/DomainNameInformationList/dniRowId/AutoTrigger` setting in the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp).
 
 There are four types of name-based triggers:
@@ -56,7 +56,7 @@ When a device has multiple profiles with Always On triggers, the user can specif
 
 ## Preserving user Always On preference
 
-Another Windows feature is to preserve a user's Always On preference. If a user manually unchecks the **Connect automatically** checkbox, Windows remembers the user preference for the profile name by adding the profile name to the registry value *AutoTriggerDisabledProfilesList*.  
+Another Windows feature is to preserve a user's Always On preference. If a user manually unchecks the **Connect automatically** checkbox, Windows remembers the user preference for the profile name by adding the profile name to the registry value *AutoTriggerDisabledProfilesList*.
 
 If a management tool removes or adds the same profile name back and set **AlwaysOn** to **true**, Windows doesn't check the box if the profile name exists in the following registry value, in order to preserve user preference.
 

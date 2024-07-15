@@ -1,8 +1,8 @@
 ---
 title: Windows 10, version 20H2, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 20H2.
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
@@ -34,7 +34,7 @@ The following methodology was used to derive the network endpoints:
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
 
-## Windows 10 Family
+## Windows 10 Home
 
 | **Area** | **Description** | **Protocol** | **Destination** |
 |-----------|--------------- |------------- |-----------------|
@@ -75,7 +75,6 @@ The following methodology was used to derive the network endpoints:
 ||The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way.|TLSv1.2/HTTPS|*.wns.windows.com|
 ||The following endpoint is used to revoke licenses for malicious apps in the Microsoft Store.|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
 ||The following endpoints are used to communicate with Microsoft Store.|TLSv1.2/HTTPS/HTTP|*displaycatalog.mp.microsoft.com|
-|||HTTPS|pti.store.microsoft.com|
 |||HTTPS|storesdk.dsx.mp.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|TLSv1.2/HTTPS/HTTP|manage.devcenter.microsoft.com|
 ||The following endpoints are used get images that are used for Microsoft Store suggestions|TLSv1.2|store-images.s-microsoft.com|
@@ -112,7 +111,6 @@ The following methodology was used to derive the network endpoints:
 |||TLSv1.2/HTTPS/HTTP|ris.api.iris.microsoft.com|
 |||HTTPS|mucp.api.account.microsoft.com|
 |Windows Update|The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
-|||TLSv1.2/HTTP|emdl.ws.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|*.dl.delivery.mp.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store.|TLSv1.2/HTTP|*.windowsupdate.com|
 |||TLSv1.2/HTTPS/HTTP|*.delivery.mp.microsoft.com|
@@ -152,7 +150,6 @@ The following methodology was used to derive the network endpoints:
 ||The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way.|TLSv1.2/HTTPS|*.wns.windows.com|
 ||The following endpoint is used to revoke licenses for malicious apps in the Microsoft Store.|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
 ||The following endpoints are used to communicate with Microsoft Store.|TLSv1.2/HTTPS/HTTP|*displaycatalog.mp.microsoft.com|
-|||HTTPS|pti.store.microsoft.com|
 |||HTTPS|storesdk.dsx.mp.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|TLSv1.2/HTTPS/HTTP|manage.devcenter.microsoft.com|
 |Network Connection Status Indicator (NCSI)|Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to this endpoint to determine if the device can communicate with the Internet.|TLSv1.2/HTTP|www.msftconnecttest.com*|
@@ -184,7 +181,6 @@ The following methodology was used to derive the network endpoints:
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips.|TLSv1.2/HTTPS/HTTP|arc.msn.com*|
 |||TLSv1.2/HTTPS/HTTP|ris.api.iris.microsoft.com|
 |Windows Update|The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
-|||TLSv1.2/HTTP|emdl.ws.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|*.dl.delivery.mp.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store.|TLSv1.2/HTTP|*.windowsupdate.com|
 |||TLSv1.2/HTTPS/HTTP|*.delivery.mp.microsoft.com|
@@ -227,7 +223,6 @@ The following methodology was used to derive the network endpoints:
 ||The following endpoint is used to revoke licenses for malicious apps in the Microsoft Store.|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|1storecatalogrevocation.storequality.microsoft.com|
 ||The following endpoints are used to communicate with Microsoft Store.|TLSv1.2/HTTPS/HTTP|*displaycatalog.mp.microsoft.com|
-|||HTTPS|pti.store.microsoft.com|
 |||HTTPS|storesdk.dsx.mp.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|TLSv1.2/HTTPS/HTTP|manage.devcenter.microsoft.com|
 |Network Connection Status Indicator (NCSI)|Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to this endpoint to determine if the device can communicate with the Internet.|TLSv1.2/HTTP|www.msftconnecttest.com*|
@@ -250,7 +245,6 @@ The following methodology was used to derive the network endpoints:
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips.|TLSv1.2/HTTPS/HTTP|arc.msn.com*|
 |||TLSv1.2/HTTPS/HTTP|ris.api.iris.microsoft.com|
 |Windows Update|The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.|TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
-|||TLSv1.2/HTTP|emdl.ws.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|*.dl.delivery.mp.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store.|TLSv1.2/HTTP|*.windowsupdate.com|
 |||TLSv1.2/HTTPS/HTTP|*.delivery.mp.microsoft.com|

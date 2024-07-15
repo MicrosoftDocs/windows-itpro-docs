@@ -1,14 +1,14 @@
 ---
 title: Microsoft 365 Apps for enterprise update policies
 description: This article explains the Microsoft 365 Apps for enterprise policies in Windows Autopatch
-ms.date: 06/23/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 07/08/2024
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - tier2

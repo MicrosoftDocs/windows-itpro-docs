@@ -1,14 +1,14 @@
 ---
 title: Windows update policies
 description: This article explains Windows update policies in Windows Autopatch
-ms.date: 09/02/2023
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.date: 07/08/2024
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
-manager: dougeby
+manager: aaroncz
 ms.reviewer: adnich
 ms.collection:
   - tier2
@@ -20,7 +20,7 @@ ms.collection:
 
 The following policies contain settings that apply to both Windows quality and feature updates. After onboarding there will be four of these policies in your tenant with the following naming convention:
 
-**Modern Workplace Update Policy [ring name] – [Windows Autopatch]**
+**Modern Workplace Update Policy [ring name] - [Windows Autopatch]**
 
 ### Windows 10 and later update settings
 
@@ -52,12 +52,12 @@ The following policies contain settings that apply to both Windows quality and f
 
 | Setting name | Test | First | Fast | Broad |
 | ----- | ----- | ----- | ----- | ----- |
-| Included groups | Modern Workplace Devices–Windows Autopatch-Test | Modern Workplace Devices–Windows Autopatch-First | Modern Workplace Devices–Windows Autopatch-Fast | Modern Workplace Devices–Windows Autopatch-Broad |
+| Included groups | Modern Workplace Devices-Windows Autopatch-Test | Modern Workplace Devices-Windows Autopatch-First | Modern Workplace Devices-Windows Autopatch-Fast | Modern Workplace Devices-Windows Autopatch-Broad |
 | Excluded groups | None | None | None | None |
 
 ## Windows feature update policies
 
-The service deploys policies using Microsoft Intune to control how Windows feature updates are deployed to devices.  
+The service deploys policies using Microsoft Intune to control how Windows feature updates are deployed to devices.
 
 ### Windows feature updates for Windows 10 and later
 
@@ -76,26 +76,8 @@ These policies control the minimum target version of Windows that a device is me
 
 | Setting name | Test | First | Fast | Broad |
 | ----- | ----- | ----- | ----- | ----- |
-| Included groups | Modern Workplace Devices–Windows Autopatch-Test  | Modern Workplace Devices–Windows Autopatch-First | Modern Workplace Devices–Windows Autopatch-Fast | Modern Workplace Devices–Windows Autopatch-Broad |
-| Excluded groups | Modern Workplace – Windows 11 Pre-Release Test Devices | Modern Workplace – Windows 11 Pre-Release Test Devices | Modern Workplace – Windows 11 Pre-Release Test Devices | Modern Workplace – Windows 11 Pre-Release Test Devices |
-
-#### Windows 11 testing
-
-To allow customers to test Windows 11 in their environment, there's a separate DSS policy that enables you to test Windows 11 before broadly adopting within your environment.
-
-##### Windows 11 deployment setting
-
-| Setting name | Test |
-| ----- | ----- |
-| Name | Windows 11 |
-| Rollout options | Immediate start |
-
-##### Windows 11 assignments
-
-| Setting name | Test |
-| ----- | ----- |
-| Included groups | Modern Workplace – Windows 11 Pre-Release Test Devices |
-| Excluded groups | None |
+| Included groups | Modern Workplace Devices-Windows Autopatch-Test  | Modern Workplace Devices-Windows Autopatch-First | Modern Workplace Devices-Windows Autopatch-Fast | Modern Workplace Devices-Windows Autopatch-Broad |
+| Excluded groups | Modern Workplace - Windows 11 Pre-Release Test Devices | Modern Workplace - Windows 11 Pre-Release Test Devices | Modern Workplace - Windows 11 Pre-Release Test Devices | Modern Workplace - Windows 11 Pre-Release Test Devices |
 
 ## Conflicting and unsupported policies
 

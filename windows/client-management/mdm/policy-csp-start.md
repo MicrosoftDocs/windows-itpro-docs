@@ -1,14 +1,7 @@
 ---
 title: Start Policy CSP
 description: Learn more about the Start Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 09/25/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -549,7 +542,7 @@ Allows admin to override the default items pinned to Start.
 
 With this policy you can push a new list of pinned apps to override the default/current list of pinned apps in the Windows Start menu.
 
-For more information on how to configure the Start menu, see [Customize the Start menu layout on Windows 11](/windows/configuration/customize-start-menu-layout-windows-11).
+For more information on how to configure the Start menu, see [Customize the Start layout](/windows/configuration/start/layout).
 
 This string policy takes a JSON file named `LayoutModification.json`. The file enumerates the items to pin and their relative order.
 <!-- ConfigureStartPins-Editable-End -->

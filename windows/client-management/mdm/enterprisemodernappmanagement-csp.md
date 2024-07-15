@@ -1,14 +1,7 @@
 ---
 title: EnterpriseModernAppManagement CSP
 description: Learn more about the EnterpriseModernAppManagement CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 08/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -4609,7 +4602,7 @@ Specifies HoursBetweenUpdateChecks for a specific package.
 
 | Property name | Property value |
 |:--|:--|
-| Format | `bool` |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[8-10000]` |
 | Default Value  | 8 |

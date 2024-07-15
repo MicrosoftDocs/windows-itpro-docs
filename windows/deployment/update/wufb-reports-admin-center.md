@@ -3,8 +3,8 @@ title: Microsoft 365 admin center software updates page
 titleSuffix: Windows Update for Business reports
 manager: aaroncz
 description: Microsoft admin center populates Windows Update for Business reports data into the software updates page.
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: conceptual
 author: mestew
 ms.author: mstewart
@@ -14,7 +14,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows Update for Business reports</a>	
 - ✅ <a href=https://learn.microsoft.com/microsoft-365/admin/admin-overview/admin-center-overview >Microsoft 365 admin center</a>	
-ms.date: 04/26/2023
+ms.date: 05/08/2024
 ---
 
 # Microsoft 365 admin center software updates page

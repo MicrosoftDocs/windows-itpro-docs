@@ -1,20 +1,15 @@
 ---
 title: SystemServices Policy CSP
 description: Learn more about the SystemServices Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 11/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- SystemServices-Begin -->
 # Policy CSP - SystemServices
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- SystemServices-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -26,7 +21,7 @@ ms.topic: reference
 <!-- ConfigureComputerBrowserServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureComputerBrowserServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureComputerBrowserServiceStartupMode-OmaUri-Begin -->
@@ -176,7 +171,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureIISAdminServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureIISAdminServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureIISAdminServiceStartupMode-OmaUri-Begin -->
@@ -226,7 +221,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureInfraredMonitorServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureInfraredMonitorServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureInfraredMonitorServiceStartupMode-OmaUri-Begin -->
@@ -276,7 +271,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureInternetConnectionSharingServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureInternetConnectionSharingServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureInternetConnectionSharingServiceStartupMode-OmaUri-Begin -->
@@ -326,7 +321,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureLxssManagerServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureLxssManagerServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureLxssManagerServiceStartupMode-OmaUri-Begin -->
@@ -376,7 +371,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureMicrosoftFTPServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureMicrosoftFTPServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureMicrosoftFTPServiceStartupMode-OmaUri-Begin -->
@@ -426,7 +421,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureRemoteProcedureCallLocatorServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureRemoteProcedureCallLocatorServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureRemoteProcedureCallLocatorServiceStartupMode-OmaUri-Begin -->
@@ -476,7 +471,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureRoutingAndRemoteAccessServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureRoutingAndRemoteAccessServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureRoutingAndRemoteAccessServiceStartupMode-OmaUri-Begin -->
@@ -526,7 +521,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureSimpleTCPIPServicesStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureSimpleTCPIPServicesStartupMode-Applicability-End -->
 
 <!-- ConfigureSimpleTCPIPServicesStartupMode-OmaUri-Begin -->
@@ -576,7 +571,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureSpecialAdministrationConsoleHelperServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureSpecialAdministrationConsoleHelperServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureSpecialAdministrationConsoleHelperServiceStartupMode-OmaUri-Begin -->
@@ -626,7 +621,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureSSDPDiscoveryServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureSSDPDiscoveryServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureSSDPDiscoveryServiceStartupMode-OmaUri-Begin -->
@@ -676,7 +671,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureUPnPDeviceHostServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureUPnPDeviceHostServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureUPnPDeviceHostServiceStartupMode-OmaUri-Begin -->
@@ -726,7 +721,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureWebManagementServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureWebManagementServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureWebManagementServiceStartupMode-OmaUri-Begin -->
@@ -776,7 +771,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureWindowsMediaPlayerNetworkSharingServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureWindowsMediaPlayerNetworkSharingServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureWindowsMediaPlayerNetworkSharingServiceStartupMode-OmaUri-Begin -->
@@ -826,7 +821,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureWindowsMobileHotspotServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureWindowsMobileHotspotServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureWindowsMobileHotspotServiceStartupMode-OmaUri-Begin -->
@@ -876,7 +871,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureWorldWideWebPublishingServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureWorldWideWebPublishingServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureWorldWideWebPublishingServiceStartupMode-OmaUri-Begin -->

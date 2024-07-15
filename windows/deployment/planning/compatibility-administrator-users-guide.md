@@ -3,10 +3,10 @@ title: Compatibility Administrator User's Guide (Windows 10)
 manager: aaroncz
 ms.author: frankroj
 description: The Compatibility Administrator tool helps you resolve potential application-compatibility issues before deploying a new version of Windows.
-ms.prod: windows-client
+ms.service: windows-client
 author: frankroj
 ms.topic: article
-ms.technology: itpro-deploy
+ms.subservice: itpro-deploy
 ms.date: 10/28/2022
 ---
 
