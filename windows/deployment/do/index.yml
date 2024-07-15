@@ -12,13 +12,12 @@ metadata:
   ms.collection:
     - highpri
     - tier3
-    - essentials-navigation
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
   ms.date: 12/22/2023 #Required; mm/dd/yyyy format.
   localization_priority: medium
-    
+
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
@@ -61,8 +60,8 @@ landingContent:
           - text: Optimize Windows 10 or later update delivery with Configuration Manager
             url: /mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#windows-delivery-optimization
           - text: Delivery Optimization settings in Microsoft Intune
-            url: /mem/intune/configuration/delivery-optimization-windows           
- 
+            url: /mem/intune/configuration/delivery-optimization-windows
+
   # Card
   - title: Microsoft Connected Cache (MCC) for Enterprise and Education
     linkLists:
@@ -71,7 +70,7 @@ landingContent:
           - text: MCC for Enterprise and Education (early preview)
             url: waas-microsoft-connected-cache.md
           - text: Sign up
-            url: https://aka.ms/MSConnectedCacheSignup 
+            url: https://aka.ms/MSConnectedCacheSignup
 
   # Card
   - title: Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs)
@@ -84,7 +83,7 @@ landingContent:
             url: https://aka.ms/MCCForISPSurvey
           - text: MCC for ISPs (early preview)
             url: mcc-isp.md
-          
+
 
   # Card (optional)
   - title: Resources
