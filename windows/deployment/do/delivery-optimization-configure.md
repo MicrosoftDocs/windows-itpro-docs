@@ -21,23 +21,23 @@ ms.date: 07/01/2024
 
 # Configure Delivery Optimization (DO) for Windows
 
-## Delivery Optimization set up considerations checklist
+## Delivery Optimization set up considerations
 
 Use this checklist to guide you through different aspects when modifying Delivery Optimization configurations for your environment.
 
 1. Allow Delivery Optimization communication
-2. Options to apply Delivery Optimization settings
+2. Choose where to set Delivery Optimization policies
 3. Network topology
 4. Optimize P2P usage for your organization size
 5. System resources
 6. Improve efficiencies
 7. Connected Cache
 
-## 1. Allow DO communication
+## 1. Allow Delivery Optimization communication
 
 :::image type="content" source="images/do-setup-allow-communication.png" alt-text="Screenshot of the considerations to allow Delivery Optimization communication." lightbox="images/do-setup-allow-communication.png":::
 
-Delivery Optimization is used to download Microsoft content from different sources (HTTP source, peers, and/or dedicated cache solution). It requires communication between the DO client and the service to find the best and most reliable source of content. For this technology to work, the DO client running on the Windows device must be able to reach the DO cloud service.
+Delivery Optimization (DO) is used to download Microsoft content from different sources (HTTP source, peers, and/or dedicated cache solution). It requires communication between the DO client and services to find the best and most reliable sources of content. For this technology to work, the DO client running on the Windows device must be able to reach the DO cloud service.
 
 Find out more about the requirements for Firewall, Proxy, and Port settings to enable Delivery Optimization communication.
 
@@ -47,7 +47,7 @@ There are service endpoints that you need to permit through your Firewall to com
 
 ### Proxy
 
-To allow peer-to-peer (P2P) to work properly you need to allow direct calls to the Delivery Optimization service from your devices. When using a proxy, you want to bypass calls from the Delivery Optimization service (*.prod.do.dsp.mp.microsoft.com). If the calls to the DO service are funneled through your proxy, it will alter the public IP address of the devices, preventing P2P from working properly.
+To allow peer-to-peer (P2P) to work properly you need to allow direct calls to the Delivery Optimization service from your devices. When using a proxy, you want to bypass calls from the Delivery Optimization service (*.prod.do.dsp.mp.microsoft.com).
 
 #### Local proxy
 
@@ -55,17 +55,17 @@ For downloads from HTTP sources, Delivery Optimization can use the automatic pro
 
 #### Cloud proxy
 
- If you're using a cloud proxy, you should configure it to allow Delivery Optimization traffic to [bypass the proxy](waas-delivery-optimization-faq.yml#what-is-the-recommended-configuration-for-delivery-optimization-used-with-cloud-proxies). Otherwise, you may experience reduced performance and increased bandwidth consumption.
+ If you're using a cloud proxy, the calls to the DO service are funneled through your cloud proxy and the public IP address of the devices is altered, preventing P2P from working properly. To avoid any issues, you should configure it to allow Delivery Optimization traffic to [bypass the proxy](waas-delivery-optimization-faq.yml#what-is-the-recommended-configuration-for-delivery-optimization-used-with-cloud-proxies). Otherwise, you may experience reduced performance and increased bandwidth consumption.
 
 ### Ports
 
 Delivery Optimization requires the use of certain ports to deliver content. Make sure all the [required ports](waas-delivery-optimization-faq.yml#which-ports-does-delivery-optimization-use) are open to make Delivery Optimization work seamlessly.
 
-| Port    | Function          |
-|---------|-------------------|
-| 7680    | Listen for P2P using TCP/IP |
-| 3544    | Use Teredo to discover and connect to peers across NATs |
-| 443     | Use to communicate Delivery Optimization client and service |
+| Port    | Protocol | Function          |
+|---------|-------------------|----------|
+| 7680    | TCP/IP | Listen for P2P using TCP/IP |
+| 3544    | TCP/IP | Use Teredo to discover and connect to peers across NATs |
+| 443     | HTTPS / TLS 1.2 | Use to communicate Delivery Optimization client and service |
 
 ## 2. DO presence
 
@@ -103,7 +103,7 @@ Peer groups can be defined in Delivery Optimization using a combination of setti
 To define a peer group limited to your LAN, choose [DODownloadMode](waas-delivery-optimization-reference.md#download-mode) (1), LAN-mode. This download mode setting includes any devices that share the same public IP address when they connect to the Internet (behind the same NAT) in a single peer group.
 
 > [!NOTE]
-> Consider using Group download mode and/or limiting peer selection to the subnet if your network topology is a hub and spoke.
+> Consider using Group download mode and/or limiting peer selection to the subnet if your network topology is a Hub and Spoke.
 
 ##### Wide area network (WAN)
 
@@ -128,7 +128,10 @@ There are two valid download modes that don't use P2P functionality to deliver c
 
 ### Peering with VPN
 
-By default, if Delivery Optimization detects a VPN, peering is not used. To enable this behavior, use the [DOAllowVPNPeerCaching](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy. The Delivery Optimization client looks in the network adapter’s ‘Description’ and ‘FriendlyName’ strings to determine VPN usage. To allow greater flexibility for VPN identification, use the [DOVpnKeywords](waas-delivery-optimization-reference.md#vpn-keywords) to add descriptors for a particular VPN.
+By default, if Delivery Optimization detects a VPN, peering is not used. To change this behavior, use the [DOAllowVPNPeerCaching](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy. The Delivery Optimization client looks in the network adapter’s ‘Description’ and ‘FriendlyName’ strings to determine VPN usage. To allow greater flexibility for VPN identification, use the [DOVpnKeywords](waas-delivery-optimization-reference.md#vpn-keywords) to add descriptors for a particular VPN you use in your organization.
+
+> [!NOTE]
+> The default keyword list is “VPN”, “Secure”, and “Virtual Private Network”. For example, “MYVPN” matches the “VPN” keyword and would be detected as a VPN connection.
 
 ## 4. Optimize P2P usage for your organization size
 
@@ -166,24 +169,27 @@ Control the minimum amount of RAM (inclusive) allowed to use peer caching (defau
 
 In an environment with devices that are plugged in and have ample free disk space try increasing the content expiration interval of [DOMaxCacheAge](waas-delivery-optimization-reference.md#max-cache-age) to seven or more (up to 30 days). You can take advantage of these devices, using them as excellent upload sources to upload more content over a longer period.
 
-## 6. Improve efficiencies
+## 6. Improve P2P efficiency
 
-:::image type="content" source="images/do-setup-improve-efficiencies.png" alt-text="Screenshot of Delivery Optimization improve efficiency considerations." lightbox="images/do-setup-improve-efficiencies.png":::
+:::image type="content" source="images/do-setup-improve-efficiency.png" alt-text="Screenshot of Delivery Optimization improve efficiency considerations." lightbox="images/do-setup-improve-efficiency.png":::
 
-Looking to improve efficiency? Some of the most powerful settings you can change that could have a significant impact within your environment include:
+Looking to improve P2P efficiency? Some of the most powerful settings you can change that could have a significant impact within your environment include:
 
 * Help optimize peer connection over HTTP connections using the [DOMinBackgroundQoS](waas-delivery-optimization-reference.md#minimum-background-qos) policy. A good value for the [DOMinBackgroundQoS](waas-delivery-optimization-reference.md#minimum-background-qos) policy is something lower than the average download speed seen in your network. For example, if your average speed is 1000 KB/s, set this policy to 500 KB/s.
 * Improve chances of downloading from peers and/or cache server by delaying the time DO attempts to make connections before falling back to the HTTP source. The set of delay-related policies include: [DODelayBackgroundDownloadFromHttp](waas-delivery-optimization-reference.md#delay-background-download-from-http-in-secs), [DODelayForegroundDownloadFromHttp](waas-delivery-optimization-reference.md#delay-foreground-download-from-http-in-secs). To improve efficiencies from peers or a dedicated cache server, a good starting point is 60 seconds for background settings and 30 seconds for foreground settings.
 
+> [!NOTE]
+> Not all content types are eligible for P2P. Refer to the [complete list](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) to learn more.
+
 ### Bandwidth throttling options
 
-* Reduce disruptions by throttling differently at different times of day, using the business hours policies, [DOSetHoursToLimitBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#set-business-hours-to-limit-background-download-bandwidth) and [DOSetHoursToLimitForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#set-business-hours-to-limit-foreground-download-bandwidth).
+Regardless of P2P, consider setting the following policies to avoid network disruption.
+
 * Manage network usage as a percentage or absolute value. These policies include: [DOPercentageMaxBackgroundBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth), [DOPercentageMaxForegroundBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth), [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs), and [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs).
+* Reduce disruptions by throttling differently at different times of day, using the business hours policies, [DOSetHoursToLimitBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#set-business-hours-to-limit-background-download-bandwidth) and [DOSetHoursToLimitForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#set-business-hours-to-limit-foreground-download-bandwidth).
 
 > [!NOTE]
 > The absolute policies are recommended in low bandwidth environments.
->
-> Not all content types are eligible for P2P. Refer to the [complete list](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) to learn more.
 
 ## 7. Connected cache
 
@@ -191,7 +197,7 @@ Looking to improve efficiency? Some of the most powerful settings you can change
 
 * [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname) is the list of cache host server names, separated with commas. *Delivery Optimization client connects to the listed Microsoft Connected Cache servers in the order as they're listed.*
 * [DOCacheHostSource](waas-delivery-optimization-reference.md#cache-server-hostname-source) can be used to dynamically discover cache host servers on the network, using DHCP.
-* [DelayCacheServerFallbackBackground](waas-delivery-optimization-reference.md#delay-background-download-cache-server-fallback-in-secs) and [DelayCacheServerFallbackForeground](waas-delivery-optimization-reference.md#delay-foreground-download-cache-server-fallback-in-secs) are the delay policies to help improve chances of pulling content from the network cache host servers. (See recommended values in [Improve Efficiencies](#6-improve-efficiencies) section above).
+* [DelayCacheServerFallbackBackground](waas-delivery-optimization-reference.md#delay-background-download-cache-server-fallback-in-secs) and [DelayCacheServerFallbackForeground](waas-delivery-optimization-reference.md#delay-foreground-download-cache-server-fallback-in-secs) are the delay policies to help improve chances of pulling content from the network cache host servers. (See recommended values in [Improve P2P efficiency](#6-improve-p2p-efficiency) section above).
 * [DODisallowCacheServerDownloadsOnVPN](waas-delivery-optimization-reference.md#disallow-cache-server-downloads-on-vpn) allows control of the cache host server to supply content, when device is on a VPN connection.
 
 ## Summary of basic configuration recommendations
@@ -202,7 +208,7 @@ Looking to improve efficiency? Some of the most powerful settings you can change
 | Do not use P2P | DownloadMode | 0 |
 | Number of devices in the organization | MinFileSizeToCache | 1 MB for peer group > 100 devices |
 | Idle system resources | MaxCacheAge | 7 days (604800 seconds) |
-| Improve efficiencies | MinBackgroundQoS and DelayBackgroundDownloadFromHttp / DelayForegroundDownloadFromHttp  | 500 KB/s and 60/30 seconds |
+| Improve P2P efficiency | MinBackgroundQoS and DelayBackgroundDownloadFromHttp / DelayForegroundDownloadFromHttp  | 500 KB/s and 60/30 seconds |
 | Using Connected Cache? | DelayCacheServerFallbackBackground / DelayCacheServerFallbackForeground | 60/30 seconds |
 
 ## Monitor Delivery Optimization
