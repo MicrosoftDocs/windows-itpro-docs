@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.collection:
 - highpri
 - tier2
+- essentials-manage
 ---
 
 # Mobile Device Management overview
