@@ -33,7 +33,7 @@ An increasingly important zero-trust workflow is conditional access – gating a
 
 To ensure that Intune gets an accurate picture about the device’s health as part of enforcing these policies, ideally it has tamper-resistant logs on the state of the relevant security capabilities. This is where hardware security is critical as any malicious software running on the device could attempt to provide false signals to the service. One of the core benefits of a hardware security technology like the TPM, is that it has a tamper-resistant log of the state of the system. Services can cryptographically validate that logs and the associated system state reported by the TPM truly come from the TPM. 
 
-For the end-to-end scenario to be truly successful at scale the hardware-based security is not enough though. Since access to enterprise assets is being gated based on security settings that are being reported by the TPM logs, it is critical that these logs are available reliably. Zero-trust security essentially requires high reliability. 
+For the end-to-end scenario to be truly successful at scale, the hardware-based security is not enough. Since access to enterprise assets is being gated based on security settings that are being reported by the TPM logs, it is critical that these logs are available reliably. Zero-trust security essentially requires high reliability. 
 
 With Pluton, when it is configured as the TPM for the system, customers using conditional access get the benefits of Pluton’s security architecture and implementation with the reliability that comes from the tight integration and collaboration between Pluton and other Microsoft components and services.
 
