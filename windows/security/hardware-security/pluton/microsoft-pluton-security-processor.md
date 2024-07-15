@@ -2,7 +2,7 @@
 title: Microsoft Pluton security processor
 description: Learn more about Microsoft Pluton security processor
 ms.topic: conceptual
-ms.date: 02/19/2024
+ms.date: 07/10/2024
 ---
 
 # Microsoft Pluton security processor
@@ -13,7 +13,7 @@ Microsoft Pluton is currently available on devices with Ryzen 6000 and Qualcomm 
 
 ## What is Microsoft Pluton?
 
-Designed by Microsoft and built by silicon partners, Microsoft Pluton is a secure crypto-processor built into the CPU for security at the core to ensure code integrity and the latest protection with updates delivered by Microsoft through Windows Update. Pluton protects credentials, identities, personal data and encryption keys. Information is significantly harder to be removed even if an attacker installs malware or has complete physical possession of the PC.
+Designed by Microsoft and built by silicon partners, Microsoft Pluton is a secure crypto-processor built into the CPU for security at the core to ensure code integrity and the latest protection with updates delivered by Microsoft through Windows Update. Pluton protects credentials, identities, personal data, and encryption keys. Information is significantly harder to be removed even if an attacker installs malware or has complete physical possession of the PC.
 
 Microsoft Pluton is designed to provide the functionality of the Trusted Platform Module (TPM) and deliver other security functionality beyond what is possible with the TPM 2.0 specification, and allows for other Pluton firmware and OS features to be delivered over time via Windows Update. For more information, see [Microsoft Pluton as TPM](pluton-as-tpm.md).
 

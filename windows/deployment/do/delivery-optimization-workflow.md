@@ -8,15 +8,13 @@ author: cmknox
 ms.author: carmenf
 manager: aaroncz
 ms.reviewer: mstewart
-ms.collection: 
+ms.collection:
   - tier3
-  - essentials-privacy
-  - essentials-security
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
 ms.date: 05/23/2024
 ---
 
@@ -30,7 +28,7 @@ Delivery Optimization can't be used to download or send personal content. Delive
 
 Delivery Optimization downloads the same updates and apps that you would get through [Windows Update](../update/windows-update-security.md), Microsoft Store apps, and other Microsoft updates using the same security measures. To make sure you're getting authentic updates, Delivery Optimization gets information securely from Microsoft to check the authenticity of each part of an update or app that it downloads from other PCs. The authenticity of the downloads is checked again before installing it. <!--8658744-->
 
-## Download request workflow  
+## Download request workflow
 
 This workflow allows Delivery Optimization to securely and efficiently deliver requested content to the calling device and explains client-service communication. Delivery Optimization uses content metadata to verify the content and to determine all available locations to pull content from.
 
@@ -50,4 +48,4 @@ This workflow allows Delivery Optimization to securely and efficiently deliver r
 | cp\*.prod.do.dsp.mp.microsoft.com <br> | 443 | Content Policy | Provides content specific policies and as content metadata URLs. | **Profile**: The device type (for example, PC or Xbox) <br> **ContentId**: The content identifier <br> **doClientVersion**: The version of the DoSvc client <br> **countryCode**: The country the client is connected from <br> **altCatalogID**: If ContentID isn't available, use the download URL instead <br> **eID**: Client grouping ID <br> **CacheHost**: Cache host ID |
 | disc\*.prod.do.dsp.mp.microsoft.com | 443 | Discovery | Directs clients to a particular instance of the peer matching service (Array), ensuing that clients are collocated by factors, such as content, groupID and external IP. | **Profile**: The device type (for example, PC or Xbox) <br> **ContentID**: The content identifier <br> **doClientVersion**: The version of the DoSvc client <br> **partitionID**: Client partitioning hint <br> **altCatalogID**: If ContentID isn't available, use the download URL instead <br> **eID**: Client grouping ID |
 | array\*.prod.do.dsp.mp.microsoft.com | 443 | Arrays | Provides the client with list of peers that have the same content and belong to the same peer group. | **Profile**: The device type (for example, PC or Xbox) <br> **ContentID**: The content identifier <br> **doClientVersion**: The version of the DoSvc client <br> **altCatalogID**: If ContentID isn't available, use the download URL instead <br> **PeerID**:  Identity of the device running DO client <br> **ReportedIp**: The internal / private IP Address <br> **IsBackground**: Is the download interactive or background <br> **Uploaded**: Total bytes uploaded to peers <br> **Downloaded**: Total bytes downloaded from peers <br> **DownloadedCdn**: Total bytes downloaded from CDN <br> **Left**: Bytes left to download <br> **Peers Wanted**: Total number of peers wanted <br> **Group ID**: Group the device belongs to (set via DownloadMode 2 + Group ID GP / MDM policies) <br> **Scope**: The Download mode <br> **UploadedBPS**: The upload speed in bytes per second <br> **DownloadBPS**: The download speed in Bytes per second <br> **eID**: Client grouping ID |
-| dl.delivery.mp.microsoft.com <br> download.windowsupdate.com | 80 | Delivery Optimization metadata file hosting | CDN hostnames for Delivery Optimization content metadata files | Metadata download can come from different hostnames, but it's required for peer to peer. |  
+| dl.delivery.mp.microsoft.com <br> download.windowsupdate.com | 80 | Delivery Optimization metadata file hosting | CDN hostnames for Delivery Optimization content metadata files | Metadata download can come from different hostnames, but it's required for peer to peer. |

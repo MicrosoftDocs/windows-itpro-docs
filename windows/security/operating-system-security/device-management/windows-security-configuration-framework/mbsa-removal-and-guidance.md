@@ -2,7 +2,7 @@
 title: Guide to removing Microsoft Baseline Security Analyzer (MBSA)
 description: This article documents the removal of Microsoft Baseline Security Analyzer (MBSA) and provides alternative solutions.
 ms.localizationpriority: medium
-ms.date: 07/11/2023
+ms.date: 07/10/2024
 ms.topic: conceptual
 ---
 
@@ -28,7 +28,7 @@ For example:
 [![Screenshot that shows the PowerShell script.](images/powershell-example.png)](https://www.powershellgallery.com/packages/Scan-UpdatesOffline/1.0)
 
 The preceding scripts use the [WSUS offline scan file](https://support.microsoft.com/help/927745/detailed-information-for-developers-who-use-the-windows-update-offline) (wsusscn2.cab) to perform a scan and get the same information on missing updates as MBSA supplied. MBSA also relied on the wsusscn2.cab to determine which updates were missing from a given system without connecting to any online service or server. The wsusscn2.cab file is still available and there are currently no plans to remove or replace it.
-The wsusscn2.cab file contains the metadata of only security updates, update rollups and service packs available from Microsoft Update; it doesn't contain any information on non-security updates, tools or drivers.
+The wsusscn2.cab file contains the metadata of only security updates, update rollups, and service packs available from Microsoft Update; it doesn't contain any information on non-security updates, tools, or drivers.
 
 ## More information
 

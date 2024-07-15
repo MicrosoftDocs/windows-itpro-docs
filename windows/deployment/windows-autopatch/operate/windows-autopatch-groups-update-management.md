@@ -1,7 +1,7 @@
 ---
 title: Software update management for Autopatch groups
 description: This article provides an overview of how updates are handled with Autopatch groups
-ms.date: 07/25/2023
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: overview
@@ -13,7 +13,6 @@ ms.reviewer: andredm7
 ms.collection:
   - highpri
   - tier1
-  - essentials-manage
 ---
 
 # Software update management
