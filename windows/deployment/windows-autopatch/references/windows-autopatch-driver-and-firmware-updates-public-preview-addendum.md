@@ -4,7 +4,7 @@ description:  This article explains how driver and firmware updates are managed 
 ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: legal
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan

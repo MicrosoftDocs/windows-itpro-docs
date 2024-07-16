@@ -4,7 +4,7 @@ description: This article explains how Microsoft Edge updates are managed in Win
 ms.date: 09/15/2023
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
