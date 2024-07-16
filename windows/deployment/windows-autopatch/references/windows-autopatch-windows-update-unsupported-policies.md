@@ -4,7 +4,7 @@ description: This article explains Windows update policies in Windows Autopatch
 ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: concept-article
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
