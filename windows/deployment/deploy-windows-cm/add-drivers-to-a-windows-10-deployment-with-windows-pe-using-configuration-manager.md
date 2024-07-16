@@ -6,7 +6,7 @@ ms.author: frankroj
 ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: itpro-deploy
 ms.date: 10/27/2022
 ---

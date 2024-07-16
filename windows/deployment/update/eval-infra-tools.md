@@ -3,7 +3,7 @@ title: Evaluate infrastructure and tools
 description: Review the steps to ensure your infrastructure is ready to deploy updates to clients in your organization.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: article
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
 manager: aaroncz
