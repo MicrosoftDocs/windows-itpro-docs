@@ -5,8 +5,6 @@
       href: windows-10-and-privacy-compliance.md
     - name: Configure Windows diagnostic data in your organization
       href: configure-windows-diagnostic-data-in-your-organization.md
-    - name: Changes to Windows diagnostic data collection
-      href: changes-to-windows-diagnostic-data-collection.md
     - name: Diagnostic Data Viewer
       items: 
         - name: Diagnostic Data Viewer Overview

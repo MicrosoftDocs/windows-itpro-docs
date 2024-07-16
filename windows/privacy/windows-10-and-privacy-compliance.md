@@ -246,5 +246,4 @@ Microsoft Intune is a cloud-based endpoint management solution. It manages user 
 * [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 * [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 * [Privacy at Microsoft](https://privacy.microsoft.com/privacy-report)
-* [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md)
 * [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/)
