@@ -30,9 +30,9 @@ For a device to be eligible for Microsoft Edge updates as a part of Windows Auto
 
 ## Update release schedule
 
-Microsoft Edge will check for updates every 10 hours. Quality updates occur weekly by default. Feature updates occur automatically every four weeks and are rolled out [progressively](/deployedge/microsoft-edge-update-progressive-rollout) by the Microsoft Edge product group to ensure the best experience for customers. All users will see the update within a few days of the initial release.
+Microsoft Edge checks for updates every 10 hours. Quality updates occur weekly by default. Feature updates occur automatically every four weeks and are rolled out [progressively](/deployedge/microsoft-edge-update-progressive-rollout) by the Microsoft Edge product group to ensure the best experience for customers. The update is available within a few days of the initial release.
 
-Browser updates with critical security fixes will have a faster rollout cadence than updates that don't have critical security fixes to ensure prompt protection from vulnerabilities.
+Browser updates with critical security fixes have a faster rollout cadence than updates that don't have critical security fixes to ensure fast protection from vulnerabilities.
 
 Devices in the Test device group receive feature updates from the [Beta Channel](/deployedge/microsoft-edge-channels#beta-channel). This channel is fully supported and automatically updated with new features approximately every four weeks.
 
