@@ -4,7 +4,7 @@ description: This article provides details about the data platform and privacy c
 ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: reference
+ms.topic: concept-article
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan

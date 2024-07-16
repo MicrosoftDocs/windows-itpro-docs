@@ -5,7 +5,7 @@ ms.author: frankroj
 description: The Compatibility Administrator tool helps you resolve potential application-compatibility issues before deploying a new version of Windows.
 ms.service: windows-client
 author: frankroj
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: itpro-deploy
 ms.date: 10/28/2022
 ---
