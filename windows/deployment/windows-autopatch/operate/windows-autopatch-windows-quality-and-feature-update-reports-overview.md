@@ -1,10 +1,10 @@
 ---
 title: Windows quality and feature update reports overview
 description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch.
-ms.date: 04/09/2024 
+ms.date: 07/10/2024 
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: overview
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
@@ -53,7 +53,6 @@ The Windows feature update report types are organized into the following focus a
 
 Users with the following permissions can access the reports:
 
-- Global Administrator
 - Intune Service Administrator
 - Global Reader
 - Services Support Administrator

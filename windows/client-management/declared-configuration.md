@@ -1,7 +1,7 @@
 ---
 title: Declared configuration protocol
 description: Learn more about using declared configuration protocol for desired state management of Windows devices.
-ms.date: 09/26/2023
+ms.date: 07/08/2024
 ms.topic: overview
 ---
 

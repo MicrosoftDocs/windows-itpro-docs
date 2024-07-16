@@ -1,10 +1,10 @@
 ---
 title: Conflicting configurations
 description: This article explains how to remediate conflicting configurations affecting the Windows Autopatch service.
-ms.date: 09/05/2023
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: concept-article
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
