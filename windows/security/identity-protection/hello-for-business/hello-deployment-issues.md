@@ -15,7 +15,7 @@ PIN reset on Microsoft Entra joined devices uses a flow called *web sign-in* to 
 
 ### Identify PIN Reset allowed domains issue
 
-The user can launch the PIN reset flow from the lock screen using the *I forgot my PIN* link in the PIN credential provider. Selecting the link launches a full screen UI for the PIN experience on Microsoft Entra join devices. Typically, the UI displays an Azure authentication page, where the user authenticates using Microsoft Entra credentials and completes MFA.
+The user can launch the PIN reset flow from the lock screen using the *I forgot my PIN* link in the PIN credential provider. Selecting the link launches a full screen UI for the PIN experience on Microsoft Entra join devices. Typically, the UI displays an authentication page, where the user authenticates using Microsoft Entra credentials and completes MFA.
 
 In federated environments, authentication may be configured to route to AD FS or a non-Microsoft identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it fails and displays the *We can't open that page right now* error, if the domain for the server page isn't included in an allowlist.
 
@@ -23,7 +23,7 @@ If you're a customer of *Azure US Government* cloud, PIN reset also attempts to 
 
 ### Resolve PIN Reset allowed domains issue
 
-To resolve the error, you can configure a list of allowed domains for PIN reset using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure the policy, see [Configure allowed URLs for federated identity providers on Microsoft Entra joined devices](hello-feature-pin-reset.md#configure-allowed-urls-for-federated-identity-providers-on-azure-ad-joined-devices).
+To resolve the error, you can configure a list of allowed domains for PIN reset using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure the policy, see [Configure allowed URLs for federated identity providers on Microsoft Entra joined devices](hello-feature-pin-reset.md#configure-allowed-urls-for-federated-identity-providers-on-microsoft-entra-joined-devices).
 
 ## Hybrid key trust sign in broken due to user public key deletion
 

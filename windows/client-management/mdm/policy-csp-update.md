@@ -1,7 +1,7 @@
 ---
 title: Update Policy CSP
 description: Learn more about the Update Area in Policy CSP.
-ms.date: 02/14/2024 
+ms.date: 06/19/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -18,6 +18,7 @@ ms.date: 02/14/2024
 Update CSP policies are listed below based on the group policy area:
 
 - [Windows Insider Preview](#windows-insider-preview)
+  - [AlwaysAutoRebootAtScheduledTimeMinutes](#alwaysautorebootatscheduledtimeminutes)
   - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
   - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
 - [Manage updates offered from Windows Update](#manage-updates-offered-from-windows-update)
@@ -99,6 +100,68 @@ Update CSP policies are listed below based on the group policy area:
   - [SetAutoRestartNotificationDisable](#setautorestartnotificationdisable)
 
 ## Windows Insider Preview
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Begin -->
+### AlwaysAutoRebootAtScheduledTimeMinutes
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AlwaysAutoRebootAtScheduledTimeMinutes
+```
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-Begin -->
+<!-- Description-Source-ADMX -->
+
+- If you enable this policy, a restart timer will always begin immediately after Windows Update installs important updates, instead of first notifying users on the login screen for at least two days.
+
+The restart timer can be configured to start with any value from 15 to 180 minutes. When the timer runs out, the restart will proceed even if the PC has signed-in users.
+
+- If you disable or don't configure this policy, Windows Update won't alter its restart behavior.
+
+If the "No auto-restart with logged-on users for scheduled automatic updates installations" policy is enabled, then this policy has no effect.
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[15-180]` |
+| Default Value  | 15 |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AlwaysAutoRebootAtScheduledTime |
+| Friendly Name | Always automatically restart at the scheduled time |
+| Element Name | work (minutes) |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Manage end user experience |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
 ### ConfigureDeadlineNoAutoRebootForFeatureUpdates

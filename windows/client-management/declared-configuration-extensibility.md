@@ -1,13 +1,13 @@
 ---
 title: Declared configuration extensibility
 description: Learn more about declared configuration extensibility through native WMI providers.
-ms.date: 09/26/2023
+ms.date: 07/08/2024
 ms.topic: how-to
 ---
 
 # Declared configuration extensibility providers
 
-The declared configuration enrollment, which supports the declared configuration client stack, offers extensibility through native WMI providers. This feature instantiates and interfaces with a Windows Management Instrumentation (WMI) provider that has implemented a management infrastructure (MI) interface. The interface must implement GetTargetResource, TestTargetResource, and SetTargetResource methods, and may implement any number of string properties.
+The declared configuration enrollment, which supports the declared configuration client stack, offers extensibility through native WMI providers. This feature instantiates and interfaces with a Windows Management Instrumentation (WMI) provider that implements a management infrastructure (MI) interface. The interface must implement GetTargetResource, TestTargetResource, and SetTargetResource methods, and can implement any number of string properties.
 
 > [!NOTE]
 > Only string properties are currently supported by extensibility providers.
@@ -51,7 +51,7 @@ uint32 SetTargetResource(
 
 To create a native WMI provider, follow the steps outlined in [How to implement an MI provider](/previous-versions/windows/desktop/wmi_v2/how-to-implement-an-mi-provider). These steps include how to generate the source code for an MI interface using the `Convert-MofToProvider.exe` tool to generate the DLL and prepare it for placement.
 
-1. Create a MOF file that defines the schema for the desired state configuration resource including parameters and methods. This file includes the required parameters for the resource.
+1. Create a Managed Object Format (MOF) file that defines the schema for the desired state configuration resource including parameters and methods. This file includes the required parameters for the resource.
 2. Copy the schema MOF file along with any required files into the provider tools directory, for example: ProviderGenerationTool.
 3. Edit the required files and include the correct file names and class names.
 4. Invoke the provider generator tool to generate the provider's project files.

@@ -1,12 +1,11 @@
 ---
 title: Windows default media removal policy
-description: In Windows 10 and later, the default removal policy for external storage media changed from Better performance to Quick removal.
-ms.date: 08/10/2023
+description: Manage default media removal policy in Windows.
+ms.date: 07/01/2024
 ms.topic: conceptual
-ms.localizationpriority: medium
 ---
 
-# Change in default removal policy for external storage media in Windows
+# Manage default media removal policy
 
 Windows defines two main policies, **Quick removal** and **Better performance**, that control how the system interacts with external storage devices such as USB thumb drives or Thunderbolt-enabled external drives. Beginning in Windows 10 version 1809, the default policy is **Quick removal**. In earlier versions of Windows, the default policy was **Better performance**.
 
@@ -16,7 +15,7 @@ You can change the policy setting for each external device, and the policy that 
 
 You can use the storage device policy setting to change the manner in which Windows manages storage devices to better meet your needs. The policy settings have the following effects:
 
-- **Quick removal**: This policy manages storage operations in a manner that keeps the device ready to remove at any time. You can remove the device without using the Safely Remove Hardware process. However, to do this, Windows can't cache disk write operations. This may degrade system performance.
+- **Quick removal**: This policy manages storage operations in a manner that keeps the device ready to remove at any time. You can remove the device without using the Safely Remove Hardware process. However, to do this, Windows can't cache disk write operations. This can degrade system performance.
 - **Better performance**: This policy manages storage operations in a manner that improves system performance. When this policy is in effect, Windows can cache write operations to the external device. However, you must use the Safely Remove Hardware process to remove the external drive. The Safely Remove Hardware process protects the integrity of data on the device by making sure that all cached operations finish.
 
 > [!IMPORTANT]

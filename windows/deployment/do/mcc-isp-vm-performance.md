@@ -12,7 +12,7 @@ ms.reviewer: mstewart
 ms.collection: tier3
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/mcc-isp target=_blank>Microsoft Connected Cache for ISPs</a>
-ms.date: 12/31/2017
+ms.date: 05/23/2024
 ---
 
 # Enhancing cache performance
@@ -30,7 +30,7 @@ The Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. Install 
 
 #### Drive performance
 
-The maximum number of disks supported is 9. When configuring your drives, we recommend SSD drives as cache read speed of SSD is superior to HDD. In addition, using multiple disks is recommended to improve cache performance. 
+The maximum number of disks supported is 9. When configuring your drives, we recommend SSD drives as cache read speed of SSD is superior to HDD. In addition, using multiple disks is recommended to improve cache performance.
 
 RAID disk configurations are discouraged as cache performance will be impacted. If using RAID disk configurations, ensure striping.
 

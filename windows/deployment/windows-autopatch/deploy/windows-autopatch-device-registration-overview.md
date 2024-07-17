@@ -4,7 +4,7 @@ description: This article provides an overview on how to register devices in Aut
 ms.date: 02/15/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: concept-article
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan

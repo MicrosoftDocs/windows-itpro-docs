@@ -10,20 +10,19 @@ manager: aaroncz
 ms.reviewer: mstewart
 ms.collection:
   - tier3
-  - essentials-manage
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 08/13/2023
+ms.date: 05/23/2024
 ---
 
 # Monitor Delivery Optimization
 
 To monitor Delivery Optimization, you can use either the Windows Update for Business Delivery Optimization Report or Windows PowerShell cmdlets.
 
-## Monitor with Windows Update for Business Delivery Optimization Report
+## Monitor with Windows Update for Business Delivery Optimization report
 
 Windows Update for Business Delivery Optimization Report provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer, Microsoft Connected Cache (MCC), HTTP source/CDN distribution over the past 28 days.
 
@@ -47,7 +46,7 @@ For details, see [Windows Update for Business Delivery Optimization Report](/win
 | TotalBytesDownloaded | The number of bytes from any source downloaded so far |
 | PercentPeerCaching |The percentage of bytes downloaded from peers versus over HTTP |
 | BytesFromPeers | Total bytes downloaded from peer devices (sum of bytes downloaded from LAN, Group, and Internet Peers) |
-| BytesfromHTTP | Total number of bytes received over HTTP. This metric represents all HTTP sources, **which includes BytesFromCacheServer** |
+| BytesFromHTTP | Total number of bytes received over HTTP. This metric represents all HTTP sources, **which includes BytesFromCacheServer** |
 | Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but isn't uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
 | Priority | Priority of the download; values are **foreground** or **background** |
 | BytesFromCacheServer | Total number of bytes received from cache server (MCC) |
@@ -58,17 +57,17 @@ For details, see [Windows Update for Business Delivery Optimization Report](/win
 | BytesToGroupPeers | Total number of bytes delivered from peers found in the group |
 | BytesToInternetPeers | Total number of bytes delivered from peers found on the LAN  |
 | DownloadDuration | Total download time in seconds |
-| HttpConnectionCount |  |
-| LanConnectionCount |  |
-| GroupConnectionCount |  |
-| InternetConnectionCount |  |
-| DownloadMode |  |
+| HttpConnectionCount | Number of connections to HTTP source |
+| LanConnectionCount | Number of connections to LAN peers |
+| GroupConnectionCount | Number of connections to Group peers |
+| InternetConnectionCount | Number of connections to Internet peers |
+| DownloadMode | Delivery Optimization DownloadMode value |
 | SourceURL | Http source for the file |
 | CacheHost | IP address for the cache server |
 | NumPeers | Indicates the total number of peers returned from the service. |
 | PredefinedCallerApplication | Indicates the last caller that initiated a request for the file. |
 | ExpireOn | The target expiration date and time for the file. |
-| IsPinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
+| IsPinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `Set-DeliveryOptimizationStatus`). |
 
 `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
@@ -76,40 +75,36 @@ For details, see [Windows Update for Business Delivery Optimization Report](/win
 | --- | --- |
 | FilesDownloaded | Number of files downloaded |
 | FilesUploaded | Number of files uploaded |
-| Files | |
+| Files | Number of files available in the Delivery Optimization cache |
 | TotalBytesDownloaded | Total bytes downloaded |
 | TotalBytesUploaded | Total bytes uploaded |
 | AverageDownloadSize | Average transfer size (download); that is, the number bytes downloaded divided by the number of files |
 | AverageUploadSize | Average transfer size (upload); the number of bytes uploaded divided by the number of files |
-| DownloadMode | Delivery Optimization Download mode used to deliver file |
-| CacheSizeBytes |  |
-| TotalDiskBytes |  |
-| AvailableDiskBytes |  |
-| CpuUsagePct |  |
-| MemUsageKB |  |
-| NumberOfPeers |  |
-| CacheHostConnections |  |
-| CdnConnections |  |
-| LanConnections |  |
-| LinkLocalConnections |  |
-| GroupConnections |  |
-| InternetConnections |  |
-| DownlinkBps |  |
-| DownlinkUsageBps |  |
-| UplinkBps |  |
-| UplinkUsageBps |  |
-| ForegroundDownloadRatePct |  |
-| BackgroundDownloadRatePct |  |
-| UploadRatePct |  |
-| UplinkUsageBps |  |
-| ForegroundDownloadRatePct |  |
-| BackgroundDownloadRatePct |  |
-| UploadRatePct |  |
-| UploadCount |  |
-| ForegroundDownloadCount |  |
-| ForegroundDownloadsPending |  |
-| BackgroundDownloadCount |  |
-| BackgroundDownloadsPending |  |
+| DownloadMode | Delivery Optimization Download mode configured for this device |
+| CacheSizeBytes | Total disk space occupied by downloaded files in Delivery Optimization cache  |
+| TotalDiskBytes | Total space of the disk volume on which Delivery Optimization cache is currently located  |
+| AvailableDiskBytes | Free space of the disk volume on which Delivery Optimization cache is currently located  |
+| CpuUsagePct | Average CPU usage by the Delivery Optimization process |
+| MemUsageKB | Amount of committed memory currently used by the Delivery Optimization process |
+| NumberOfPeers | Total number of peers found across all files currently in the cache |
+| CacheHostConnections | Number of connections to Microsoft Connected Cache servers |
+| CdnConnections | Number of connections to CDN servers |
+| LanConnections | Number of connections to LAN peers |
+| LinkLocalConnections | Number of connections to Link Local peers |
+| GroupConnections | Number of connections to Group peers|
+| InternetConnections | Number of connections to Internet peers |
+| DownlinkBps | Average download bandwidth usage currently seen across all network adapters |
+| DownlinkUsageBps | Average bandwidth currently used by Delivery Optimization for downloads |
+| UplinkBps | Average upload bandwidth usage currently seen across all network adapters |
+| UplinkUsageBps | Average bandwidth currently used by Delivery Optimization for uploads |
+| ForegroundDownloadRatePct | Percentage of bandwidth to be used for foreground downloads |
+| BackgroundDownloadRatePct | Percentage of bandwidth to be used for background downloads |
+| UploadRatePct | Percentage of upload bandwidth to be used for uploads |
+| UploadCount | Number of files in Delivery Optimization cache currently eligible for uploading  |
+| ForegroundDownloadCount | Number of foreground downloads that are running  |
+| ForegroundDownloadsPending | Number of foreground downloads that are waiting in queue |
+| BackgroundDownloadCount | Number of background downloads that are running  |
+| BackgroundDownloadsPending | Number of background downloads that are waiting in queue |
 
 Using the `-Verbose` option returns additional information:
 
@@ -135,17 +130,17 @@ Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth
 
 **Starting in Windows 10, version 1903:**
 
-`set-DeliveryOptimizationStatus -ExpireOn [date time]` extends the expiration of all files in the cache. You can set the expiration immediately for all files that are in the "caching" state. For files in progress ("downloading"), the expiration is applied once the download is complete. You can set the expiration up to one year from the current date and time.
+`Set-DeliveryOptimizationStatus -ExpireOn [date time]` extends the expiration of all files in the cache. You can set the expiration immediately for all files that are in the "caching" state. For files in progress ("downloading"), the expiration is applied once the download is complete. You can set the expiration up to one year from the current date and time.
 
-`set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]` extends expiration for a single specific file in the cache.
+`Set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]` extends expiration for a single specific file in the cache.
 
 You can now "pin" files to keep them persistent in the cache, only with files that are downloaded in modes 1, 2, or 3.
 
-`set-DeliveryOptimizationStatus -Pin [True] -File ID [FileID]` keeps a specific file in the cache such that it won't be deleted until the expiration date and time (which you set with `set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]`). The file is also excluded from the cache quota calculation.
+`Set-DeliveryOptimizationStatus -Pin [True] -File ID [FileID]` keeps a specific file in the cache such that it won't be deleted until the expiration date and time (which you set with `Set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]`). The file is also excluded from the cache quota calculation.
 
-`set-DeliveryOptimizationStatus -Pin [False] -File ID [FileID]` "unpins" a file, so that it will be deleted when the expiration date and time are reached. The file is included in the cache quota calculation.
+`Set-DeliveryOptimizationStatus -Pin [False] -File ID [FileID]` "unpins" a file, so that it will be deleted when the expiration date and time are reached. The file is included in the cache quota calculation.
 
-`delete-DeliveryOptimizationCache` lets you clear files from the cache and remove all persisted data related to them. You can use these options with this cmdlet:
+`Delete-DeliveryOptimizationCache` lets you clear files from the cache and remove all persisted data related to them. You can use these options with this cmdlet:
 
 - `-FileID` specifies a particular file to delete.
 - `-IncludePinnedFiles` deletes all files that are pinned.
@@ -188,7 +183,6 @@ If `Path` isn't specified, this cmdlet reads all logs from the DoSvc log directo
 
 Log entries are written to the PowerShell pipeline as objects. To dump logs to a text file, run `Get-DeliveryOptimizationLog | Set-Content <output file>` or something similar.
 
-
 **Starting in Windows 10, version 1803:**
 
 `Get-DOConfig -Verbose`
@@ -198,7 +192,7 @@ This cmdlet lists local configuration and policies that are applied to Delivery 
 DownloadMode:Simple
 DownloadModeProvider:Mdm Provider
 
-The provider is listed as "Default Provider" if it's using the Delivery Optimization platform configured default. 
+The provider is listed as "Default Provider" if it's using the Delivery Optimization platform configured default.
 
 The cmdlet returns the following data:
 
@@ -217,4 +211,3 @@ The cmdlet returns the following data:
 - DownloadForegroundLimitPct: Corresponds to the [DOPercentageMaxForegroundBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth) policy.
 - MaxUploadRatePct: Corresponds to the [DOMaxUploadBandwidth](waas-delivery-optimization-reference.md#max-upload-bandwidth) policy (deprecated in Windows 10, version 2004).
 - UploadLimitMonthlyGB: Corresponds to the [DOMonthlyUploadDataCap](waas-delivery-optimization-reference.md#monthly-upload-data-cap) policy.
-

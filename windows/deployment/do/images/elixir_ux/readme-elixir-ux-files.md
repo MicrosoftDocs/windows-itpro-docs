@@ -5,7 +5,7 @@ description: Elixir images read me file
 ms.service: windows-client
 author: nidos
 ms.author: nidos
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/31/2017
 ms.subservice: itpro-updates
 robots: noindex

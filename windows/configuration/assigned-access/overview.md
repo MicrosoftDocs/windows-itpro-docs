@@ -1,7 +1,7 @@
 ---
 title: What is Assigned Access?
-description: Learn about Assigned Access and how you can use it to configure a Windows device as a kiosk or restricted user experience.
-ms.date: 03/04/2024
+description: Learn how to configure a Windows kiosk for single-app and multi-app scenarios with Assigned Access.
+ms.date: 06/14/2024
 ms.topic: overview
 ---
 
@@ -324,6 +324,8 @@ The following keyboard shortcuts are blocked for the user accounts with Assigned
 | <kbd>LaunchApp1</kbd>                                | Open the app that is assigned to this key                                                     |
 | <kbd>LaunchApp2</kbd>                                | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
 | <kbd>LaunchMail</kbd>                                | Open the default mail client                                                                  |
+
+For information on how to customize keyboard shortcuts, see [Assigned Access recommendations](recommendations.md#keyboard-shortcuts).
 
 ## Remove Assigned Access
 

@@ -202,7 +202,7 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 
 <!--Links-->
 
-[AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
+[AZ-4]: /entra/identity/devices/troubleshoot-device-dsregcmd
 [CSP-1]: /windows/client-management/mdm/passportforwork-csp
 [ENTRA-1]: /entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azureadhybridauthenticationmanagement-module
 [MEM-1]: /mem/intune/configuration/custom-settings-configure

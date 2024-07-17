@@ -71,7 +71,7 @@ Sign-in to computer running Microsoft Entra Connect with access equivalent to *l
 The easiest way to verify that the onPremisesDistingushedNamne attribute is synchronized is to use the Graph Explorer for Microsoft Graph.
 
 1. Open a web browser and navigate to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
-1. Select **Sign in to Graph Explorer** and provide Azure credentials
+1. Select **Sign in to Graph Explorer** and provide Microsoft Entra ID credentials
 
    > [!NOTE]
    > To successfully query the Graph API, adequate [permissions](/graph/api/user-get?) must be granted
@@ -487,7 +487,7 @@ Certificate enrollment for Microsoft Entra joined devices occurs over the Intern
 
 Ideally, you configure your Microsoft Intune SCEP certificate profile to use multiple external NDES URLs. This enables Microsoft Intune to round-robin load balance the certificate requests to identically configured NDES Servers (each NDES server can accommodate approximately 300 concurrent requests). Microsoft Intune sends these requests to Microsoft Entra Application Proxies.
 
-Microsoft Entra Application proxies are serviced by lightweight Application Proxy Connector agents. See [What is Application Proxy](/azure/active-directory/manage-apps/application-proxy#what-is-application-proxy) for more details. These agents are installed on your on-premises, domain joined devices and make authenticated secure outbound connection to Azure, waiting to process requests from Microsoft Entra Application Proxies. You can create connector groups in Microsoft Entra ID to assign specific connectors to service specific applications.
+Microsoft Entra Application proxies are serviced by lightweight Application Proxy Connector agents. See [What is Application Proxy](/entra/identity/app-proxy/#what-is-application-proxy) for more details. These agents are installed on your on-premises, domain joined devices and make authenticated secure outbound connection to Azure, waiting to process requests from Microsoft Entra Application Proxies. You can create connector groups in Microsoft Entra ID to assign specific connectors to service specific applications.
 
 Connector group automatically round-robin, load balance the Microsoft Entra application proxy requests to the connectors within the assigned connector group. This ensures Windows Hello for Business certificate requests have multiple dedicated Microsoft Entra application proxy connectors exclusively available to satisfy enrollment requests. Load balancing the NDES servers and connectors should ensure users enroll their Windows Hello for Business certificates in a timely manner.
 
@@ -495,7 +495,7 @@ Connector group automatically round-robin, load balance the Microsoft Entra appl
 
 Sign-in a workstation with access equivalent to a *domain user*.
 
-1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**
+1. Access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator)
 1. Select **All Services**. Type **Microsoft Entra ID** to filter the list of services. Under **SERVICES**, select **Microsoft Entra ID**
 1. Under **MANAGE**, select **Application proxy**
 1. Select **Download connector service**. Select **Accept terms & Download**. Save the file (AADApplicationProxyConnectorInstaller.exe) in a location accessible by others on the domain
@@ -506,7 +506,7 @@ Sign-in a workstation with access equivalent to a *domain user*.
 1. Start **AADApplicationProxyConnectorInstaller.exe**
 1. Read the license terms and then select **I agree to the license terms and conditions**. Select **Install**
    ![Azure Application Proxy Connector: license terms](images/aadjcert/azureappproxyconnectorinstall-01.png)
-1. Sign-in to Microsoft Azure with access equivalent to **Global Administrator**
+1. Sign-in as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator)
    ![Azure Application Proxy Connector: sign-in](images/aadjcert/azureappproxyconnectorinstall-02.png)
 1. When the installation completes. Read the information regarding outbound proxy servers. Select **Close**
    ![Azure Application Proxy Connector: read](images/aadjcert/azureappproxyconnectorinstall-03.png)
@@ -516,7 +516,7 @@ Sign-in a workstation with access equivalent to a *domain user*.
 
 Sign-in a workstation with access equivalent to a *domain user*.
 
-1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**
+1. Access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator)
 1. Select **All Services**. Type **Microsoft Entra ID** to filter the list of services. Under **SERVICES**, select **Microsoft Entra ID**
 1. Under **MANAGE**, select **Application proxy**.
 
@@ -533,7 +533,7 @@ Sign-in a workstation with access equivalent to a *domain user*.
 
 Sign-in a workstation with access equivalent to a *domain user*.
 
-1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**
+1. Access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator)
 1. Select **All Services**. Type **Microsoft Entra ID** to filter the list of services. Under **SERVICES**, select **Microsoft Entra ID**
 1. Under **MANAGE**, select **Application proxy**
 1. Select **Configure an app**
@@ -692,7 +692,7 @@ Optionally (not required), you can configure the Intune connector for certificat
 
 Sign-in a workstation with access equivalent to a *domain user*.
 
-1. Sign-in to the [Azure portal](https://portal.azure.com/) with access equivalent to **Global Administrator**
+1. Access to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator)
 1. Select **All Services**. Type **Microsoft Entra ID** to filter the list of services. Under **SERVICES**, select **Microsoft Entra ID**
 1. Select **Groups**. Select **New group**
 1. Select **Security** from the **Group type** list

@@ -3,8 +3,7 @@ title: Managing and troubleshooting Windows Defender Application Control policie
 description: Gather information about how your deployed Windows Defender Application Control policies are behaving.
 ms.localizationpriority: medium
 ms.date: 03/30/2023
-ms.topic: article
-ms.collection: essentials-manage
+ms.topic: how-to
 ---
 
 # Windows Defender Application Control operational guide

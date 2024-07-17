@@ -1,7 +1,7 @@
 ---
 title: Windows Sandbox
 description: Windows Sandbox overview
-ms.topic: article
+ms.topic: conceptual
 ms.date: 03/26/2024
 ---
 

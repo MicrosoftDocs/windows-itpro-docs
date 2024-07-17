@@ -1,7 +1,7 @@
 ---
 title: DevicePreparation DDF file
 description: View the XML file containing the device description framework (DDF) for the DevicePreparation configuration service provider.
-ms.date: 04/10/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->

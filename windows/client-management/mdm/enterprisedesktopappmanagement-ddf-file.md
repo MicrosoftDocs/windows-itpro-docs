@@ -1,7 +1,7 @@
 ---
 title: EnterpriseDesktopAppManagement DDF file
 description: View the XML file containing the device description framework (DDF) for the EnterpriseDesktopAppManagement configuration service provider.
-ms.date: 04/10/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -40,7 +40,7 @@ The following XML file contains the device description framework (DDF) for the E
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -225,6 +225,7 @@ The following XML file contains the device description framework (DDF) for the E
               <Delete />
               <Exec />
               <Get />
+              <Replace />
             </AccessType>
             <Description><![CDATA[Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag <DownloadFromAad> was added to the <Enforcement> section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.]]></Description>
             <DFFormat>
@@ -400,7 +401,7 @@ The following XML file contains the device description framework (DDF) for the E
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -585,6 +586,7 @@ The following XML file contains the device description framework (DDF) for the E
               <Delete />
               <Exec />
               <Get />
+              <Replace />
             </AccessType>
             <Description><![CDATA[Executes the download and installation of the application. In Windows 10, version 1703 service release, a new tag <DownloadFromAad> was added to the <Enforcement> section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.]]></Description>
             <DFFormat>

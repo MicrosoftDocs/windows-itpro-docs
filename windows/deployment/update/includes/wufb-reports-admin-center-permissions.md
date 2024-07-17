@@ -19,7 +19,6 @@ Accessing Windows Update for Business reports typcially requires permissions fro
 
 To [enroll](../wufb-reports-enable.md#bkmk_enroll) into Windows Update for Business reports from the [Azure portal](https://portal.azure.com) or the [Microsoft 365 admin center](https://admin.microsoft.com) requires one of the following roles:
 
-- [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) Microsoft Entra role
 - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator) Microsoft Entra role
 - [Windows Update deployment administrator](/azure/active-directory/roles/permissions-reference#windows-update-deployment-administrator) Microsoft Entra role
 - [Policy and profile manager](/mem/intune/fundamentals/role-based-access-control#built-in-roles) Microsoft Intune role

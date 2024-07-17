@@ -14,7 +14,7 @@ Starting in **Windows 11, version 22H2**, WebAuthn APIs support ECC algorithms.
 
 ## What does this mean?
 
-By using WebAuthn APIs, developer partners and the developer community can use [Windows Hello](./index.md) or [FIDO2 Security Keys](/azure/active-directory/authentication/howto-authentication-passwordless-security-key) to implement passwordless multi-factor authentication for their applications on Windows devices.
+By using WebAuthn APIs, developer partners and the developer community can use [Windows Hello](./index.md) or [FIDO2 Security Keys][ENT-1] to implement passwordless multi-factor authentication for their applications on Windows devices.
 
 Users of these apps or sites can use any browser that supports WebAuthn APIs for passwordless authentication. Users will have a familiar and consistent experience on Windows, no matter which browser they use.
 
@@ -69,7 +69,7 @@ FIDO2 authenticators have already been implemented and WebAuthn relying parties 
 - Keys for multiple accounts (keys can be stored per relying party)
 - Client PIN
 - Location (the authenticator returns a location)
-- [Hash-based Message Authentication Code (HMAC)-secret](/dotnet/api/system.security.cryptography.hmac) (enables offline scenarios)
+- [Hash-based Message Authentication Code (HMAC)-secret][NET-1] (enables offline scenarios)
 
 The following options might be useful in the future, but haven't been observed in the wild yet:
 
@@ -100,15 +100,26 @@ Here's an approximate layout of where the Microsoft bits go:
 - **WebAuthn client: Microsoft Edge**. Microsoft Edge can handle the user interface for the WebAuthn and CTAP2 features that this article describes. It also supports the AppID extension. Microsoft Edge can interact with both CTAP1 and CTAP2 authenticators. This scope for interaction means that it can create and use both U2F and FIDO2 credentials. However, Microsoft Edge doesn't speak the U2F protocol. Therefore, relying parties must use only the WebAuthn specification. Microsoft Edge on Android doesn't support WebAuthn.
 
   > [!NOTE]
-  > For authoritative information about Microsoft Edge support for WebAuthn and CTAP, see [Legacy Microsoft Edge developer documentation](/microsoft-edge/dev-guide/windows-integration/web-authentication).
+  > For authoritative information about Microsoft Edge support for WebAuthn and CTAP, see [Legacy Microsoft Edge developer documentation][EDGE-1].
 
 - **Platform: Windows 10, Windows 11**. Windows 10 and Windows 11 host the Win32 Platform WebAuthn APIs.
 
-- **Roaming Authenticators**. You might notice that there's no *Microsoft* roaming authenticator. The reason is because there's already a strong ecosystem of products that specialize in strong authentication, and every customer (whether corporations or individuals) has different requirements for security, ease of use, distribution, and account recovery. For more information on the ever-growing list of FIDO2-certified authenticators, see [FIDO Certified Products](https://fidoalliance.org/certification/fido-certified-products/). The list includes built-in authenticators, roaming authenticators, and even chip manufacturers who have certified designs.
+- **Roaming Authenticators**. You might notice that there's no *Microsoft* roaming authenticator. The reason is because there's already a strong ecosystem of products that specialize in strong authentication, and every customer (whether corporations or individuals) has different requirements for security, ease of use, distribution, and account recovery. For more information on the ever-growing list of FIDO2-certified authenticators, see [FIDO Certified Products][EXT-1]. The list includes built-in authenticators, roaming authenticators, and even chip manufacturers who have certified designs.
 
 ## Developer references
 
-The WebAuthn APIs are documented in the [Microsoft/webauthn](https://github.com/Microsoft/webauthn) GitHub repo. To understand how FIDO2 authenticators work, review the following two specifications:
+The WebAuthn APIs are documented in the [Microsoft/webauthn][EXT-2] GitHub repo. To understand how FIDO2 authenticators work, review the following two specifications:
 
-- [Web Authentication: An API for accessing Public Key Credentials](https://www.w3.org/TR/webauthn/) (available on the W3C site). This document is known as the WebAuthn spec.
-- [Client to Authenticator Protocol (CTAP)](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html). This document is available at the [FIDO Alliance](http://fidoalliance.org/) site, on which hardware and platform teams are working together to solve the problem of FIDO authentication.
+- [Web Authentication: An API for accessing Public Key Credentials][EXT-3] (available on the W3C site). This document is known as the WebAuthn spec.
+- [Client to Authenticator Protocol (CTAP)][EXT-4]. This document is available at the [FIDO Alliance][EXT-5] site, on which hardware and platform teams are working together to solve the problem of FIDO authentication.
+
+<!--links-->
+
+[ENT-1]: /entra/identity/authentication/how-to-enable-passkey-fido2
+[NET-1]: /dotnet/api/system.security.cryptography.hmac
+[EDGE-1]: /microsoft-edge/dev-guide/windows-integration/web-authentication
+[EXT-1]: https://fidoalliance.org/certification/fido-certified-products/
+[EXT-2]: https://github.com/Microsoft/webauthn
+[EXT-3]: https://www.w3.org/TR/webauthn/
+[EXT-4]: https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html
+[EXT-5]: http://fidoalliance.org

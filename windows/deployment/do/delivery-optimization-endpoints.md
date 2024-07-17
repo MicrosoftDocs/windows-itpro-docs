@@ -14,7 +14,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>
 - ✅ <a href=https://learn.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache target=_blank>Connected Cache on a Configuration Manager distribution point</a>		
-ms.date: 03/31/2023
+ms.date: 05/23/2024
 ---
 
 # Microsoft Connected Cache content and services endpoints
@@ -22,7 +22,7 @@ ms.date: 03/31/2023
 > [!NOTE]
 > All ports are outbound.
 
-This article lists the content and services endpoints to allow in your firewall to be used by Microsoft Connected Cache. 
+This article lists the content and services endpoints to allow in your firewall to be used by Microsoft Connected Cache.
 Use the table below to reference any particular content types or services endpoints that are required for [Connected Cache on a Configuration Manager distribution point](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache), [Connected Cache managed in Azure](waas-microsoft-connected-cache.md), or both.
 
 |Domain Name  |Protocol/Port(s)  | Content Type | Additional Information | Microsoft Connected Cache Version |

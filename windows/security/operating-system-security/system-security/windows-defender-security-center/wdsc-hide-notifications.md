@@ -1,26 +1,26 @@
 ---
 title: Hide notifications from Windows Security
 description: Prevent Windows Security notifications from appearing on user endpoints
-ms.date: 07/31/2023
-ms.topic: article
+ms.date: 06/27/2024
+ms.topic: how-to
 ---
 
 # Hide Windows Security notifications
 
 **Windows Security** is used by many Windows security features to provide notifications about the health and security of the machine. These include notifications about firewalls, antivirus products, Windows Defender SmartScreen, and others.
 
-In some cases, it may not be appropriate to show these notifications, for example, if you want to hide regular status updates, or if you want to hide all notifications to the employees in your organization.
+In some cases, it may not be appropriate to show these notifications, for example, if you want to hide regular status updates, or if you want to hide all notifications to the users in your organization.
 
 There are two levels to hiding notifications:
 
-1. Hide non-critical notifications, such as regular updates about the number of scans Microsoft Defender Antivirus ran in the past week
-2. Hide all notifications
+1. Hide noncritical notifications, such as regular updates about the number of scans Microsoft Defender Antivirus ran in the past week
+1. Hide all notifications
 
 If you set **Hide all notifications** to **Enabled**, changing the **Hide non-critical notifications** setting has no effect.
 
 You can only use Group Policy to change these settings.
 
-## Use Group Policy to hide non-critical notifications
+## Use Group Policy to hide noncritical notifications
 
 You can hide notifications that describe regular events related to the health and security of the machine. These notifications are the ones that don't require an action from the machine's user. It can be useful to hide these notifications if you find they're too numerous or you have other status reporting on a larger scale (such as Windows Update for Business reports or Microsoft Configuration Manager reporting).
 
@@ -30,11 +30,11 @@ These notifications can be hidden only by using Group Policy.
 > You must have Windows 10, version 1903 or higher. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
 1. Download the latest [Administrative Templates (.admx) for Windows 10, v2004](https://www.microsoft.com/download/101445).
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)). Right-click the Group Policy Object (GPO) you want to configure and select **Edit**.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below, the path would be **Windows components > Windows Defender Security Center > Notifications**
 1. Open the **Hide non-critical notifications** setting and set it to **Enabled**. Select **OK**.
-1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
+1. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 ## Use Group Policy to hide all notifications
 
@@ -45,7 +45,7 @@ These notifications can be hidden only by using Group Policy.
 > [!IMPORTANT]
 > You must have Windows 10, version 1903 or higher. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)). Right-click the Group Policy Object you want to configure and select **Edit**.
 1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below, the path would be **Windows components > Windows Defender Security Center > Notifications**.
 
@@ -53,7 +53,7 @@ These notifications can be hidden only by using Group Policy.
     > For Windows 10 version 2004 and above the path would be **Windows components > Windows Security > Notifications**.
 
 1. Open the **Hide all notifications** setting and set it to **Enabled**. Select **OK**.
-1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
+1. [Deploy](/windows/win32/srvnodes/group-policy) the updated GPO as you normally do.
 
 > [!NOTE]
 > You can use the following registry key and DWORD value to **Hide all notifications**.
@@ -90,14 +90,14 @@ These notifications can be hidden only by using Group Policy.
 | OS support ended, device at risk | Support for your version of Windows has ended. Microsoft Defender Antivirus is no longer supported, and your device might be at risk. | SUPPORT_ENDED _and_ SUPPORT_ENDED_NO_DEFENDER | Yes |Virus & threat protection notification|
 | Summary notification, items found | Microsoft Defender Antivirus successfully took action on _n_ threats since your last summary. Your device was scanned _n_ times. | RECAP_FOUND_THREATS_SCANNED | No |Virus & threat protection notification|
 | Summary notification, items found, no scan count | Microsoft Defender Antivirus successfully took action on _n_ threats since your last summary. | RECAP_FOUND_THREATS | No |Virus & threat protection notification|
-| Summary notification, **no** items found, scans performed | Microsoft Defender Antivirus didn't find any threats since your last summary.  Your device was scanned _n_ times. | RECAP_NO THREATS_SCANNED | No |Virus & threat protection notification|
+| Summary notification, **no** items found, scans performed | Microsoft Defender Antivirus didn't find any threats since your last summary. Your device was scanned _n_ times. | RECAP_NO THREATS_SCANNED | No |Virus & threat protection notification|
 | Summary notification, **no** items found, no scans | Microsoft Defender Antivirus didn't find any threats since your last summary. | RECAP_NO_THREATS | No |Virus & threat protection notification|
 | Scan finished, manual, threats found | Microsoft Defender Antivirus scanned your device at _timestamp_ on _date_, and took action against threats. | RECENT_SCAN_FOUND_THREATS | No |Virus & threat protection notification|
-| Scan finished, manual, **no** threats found | Microsoft Defender Antivirus scanned your device at _timestamp_ on _date_.  No threats were found. | RECENT_SCAN_NO_THREATS | No |Virus & threat protection notification|
+| Scan finished, manual, **no** threats found | Microsoft Defender Antivirus scanned your device at _timestamp_ on _date_. No threats were found. | RECENT_SCAN_NO_THREATS | No |Virus & threat protection notification|
 | Threat found | Microsoft Defender Antivirus found threats. Get details. | CRITICAL | No |Virus & threat protection notification|
-| LPS on notification | Microsoft Defender Antivirus is periodically scanning your device.  You're also using another antivirus program for active protection. | PERIODIC_SCANNING_ON | No |Virus & threat protection notification|
-| Long running BaFS | Your IT administrator  requires a security scan of this item.  The scan could take up to _n_ seconds. | BAFS | No |Firewall and network protection notification|
-| Long running BaFS customized | _Company_ requires a security scan of this item.  The scan could take up to _n_ seconds. | BAFS_DETECTED_CUSTOM (body) | No |Firewall and network protection notification|
+| LPS on notification | Microsoft Defender Antivirus is periodically scanning your device. You're also using another antivirus program for active protection. | PERIODIC_SCANNING_ON | No |Virus & threat protection notification|
+| Long running BaFS | Your IT administrator  requires a security scan of this item. The scan could take up to _n_ seconds. | BAFS | No |Firewall and network protection notification|
+| Long running BaFS customized | _Company_ requires a security scan of this item. The scan could take up to _n_ seconds. | BAFS_DETECTED_CUSTOM (body) | No |Firewall and network protection notification|
 | Sense detection | This application was removed because it was blocked by your IT security settings | WDAV_SENSE_DETECTED | No |Firewall and network protection notification|
 | Sense detection customized | This application was removed because it was blocked by your IT security settings | WDAV_SENSE_DETECTED_CUSTOM (body) | No |Firewall and network protection notification|
 | Ransomware specific detection | Microsoft Defender Antivirus has detected threats, which may include ransomware. | WDAV_RANSOMWARE_DETECTED | No |Virus & threat protection notification|

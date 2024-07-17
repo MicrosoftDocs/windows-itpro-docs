@@ -34,6 +34,506 @@
       "source_path": "windows/application-management/add-apps-and-features.md",
       "redirect_url": "/windows/client-management/client-tools/add-remove-hide-features",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-about-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-about-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-add-or-remove-an-administrator-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-add-or-remove-an-administrator-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-add-or-upgrade-packages-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-add-or-upgrade-packages-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-administering-appv-with-powershell.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-administering-appv-with-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-administering-virtual-applications-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-administering-virtual-applications-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-allow-administrators-to-enable-connection-groups.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-allow-administrators-to-enable-connection-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-application-publishing-and-client-interaction.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-application-publishing-and-client-interaction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-apply-the-deployment-configuration-file-with-powershell.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-apply-the-deployment-configuration-file-with-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-apply-the-user-configuration-file-with-powershell.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-apply-the-user-configuration-file-with-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-auto-batch-sequencing.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-auto-batch-sequencing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-auto-batch-updating.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-auto-batch-updating",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-auto-clean-unpublished-packages.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-auto-clean-unpublished-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-auto-provision-a-vm.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-auto-provision-a-vm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-available-mdm-settings.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-available-mdm-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-capacity-planning.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-capacity-planning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-client-configuration-settings.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-client-configuration-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-configure-access-to-packages-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-configure-access-to-packages-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-configure-connection-groups-to-ignore-the-package-version.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-configure-connection-groups-to-ignore-the-package-version",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-configure-the-client-to-receive-updates-from-the-publishing-server.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-configure-the-client-to-receive-updates-from-the-publishing-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-connection-group-file.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-connection-group-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-connection-group-virtual-environment.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-connection-group-virtual-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-connect-to-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-connect-to-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-convert-a-package-created-in-a-previous-version-of-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-convert-a-package-created-in-a-previous-version-of-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-create-a-connection-group.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-create-a-connection-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-create-a-connection-group-with-user-published-and-globally-published-packages.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-create-a-connection-group-with-user-published-and-globally-published-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-create-a-custom-configuration-file-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-create-a-custom-configuration-file-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-create-and-use-a-project-template.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-create-and-use-a-project-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-create-a-package-accelerator.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-create-a-package-accelerator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-create-a-package-accelerator-with-powershell.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-create-a-package-accelerator-with-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-create-a-virtual-application-package-package-accelerator.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-create-a-virtual-application-package-package-accelerator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-creating-and-managing-virtualized-applications.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-creating-and-managing-virtualized-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-customize-virtual-application-extensions-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-customize-virtual-application-extensions-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-delete-a-connection-group.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-delete-a-connection-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-delete-a-package-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-delete-a-package-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploy-appv-databases-with-sql-scripts.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploy-appv-databases-with-sql-scripts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploy-appv-packages-with-electronic-software-distribution-solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploying-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploying-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploying-microsoft-office-2010-wth-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploying-microsoft-office-2010-wth-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploying-microsoft-office-2013-with-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploying-microsoft-office-2013-with-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploying-microsoft-office-2016-with-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploying-microsoft-office-2016-with-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploying-packages-with-electronic-software-distribution-solutions.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploying-packages-with-electronic-software-distribution-solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploying-the-appv-sequencer-and-client.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploying-the-appv-sequencer-and-client",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploying-the-appv-server.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploying-the-appv-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deployment-checklist.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deployment-checklist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploy-the-appv-server.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploy-the-appv-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-deploy-the-appv-server-with-a-script.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-deploy-the-appv-server-with-a-script",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-dynamic-configuration.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-dynamic-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-enable-administrators-to-publish-packages-with-electronic-software-distribution-solutions.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-enable-administrators-to-publish-packages-with-electronic-software-distribution-solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-enable-reporting-on-the-appv-client-with-powershell.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-enable-reporting-on-the-appv-client-with-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-enable-the-app-v-desktop-client.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-enable-the-app-v-desktop-client",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-evaluating-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-evaluating-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-for-windows.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-for-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-getting-started.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-high-level-architecture.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-high-level-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-install-the-management-and-reporting-databases-on-separate-computers.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-install-the-management-and-reporting-databases-on-separate-computers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-install-the-management-server-on-a-standalone-computer.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-install-the-management-server-on-a-standalone-computer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-install-the-publishing-server-on-a-remote-computer.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-install-the-publishing-server-on-a-remote-computer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-install-the-reporting-server-on-a-standalone-computer.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-install-the-reporting-server-on-a-standalone-computer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-install-the-sequencer.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-install-the-sequencer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-load-the-powershell-cmdlets-and-get-cmdlet-help.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-load-the-powershell-cmdlets-and-get-cmdlet-help",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-maintaining-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-maintaining-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-managing-connection-groups.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-managing-connection-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-migrating-to-appv-from-a-previous-version.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-migrating-to-appv-from-a-previous-version",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-modify-an-existing-virtual-application-package.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-modify-an-existing-virtual-application-package",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-modify-client-configuration-with-powershell.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-modify-client-configuration-with-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-move-the-appv-server-to-another-computer.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-move-the-appv-server-to-another-computer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-operations.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-performance-guidance.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-performance-guidance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-planning-checklist.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-planning-checklist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-planning-folder-redirection-with-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-planning-folder-redirection-with-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-planning-for-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-planning-for-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-planning-for-appv-server-deployment.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-planning-for-appv-server-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-planning-for-high-availability-with-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-planning-for-high-availability-with-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-planning-for-sequencer-and-client-deployment.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-planning-for-sequencer-and-client-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-planning-for-using-appv-with-office.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-planning-for-using-appv-with-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-planning-to-deploy-appv.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-planning-to-deploy-appv",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-planning-to-deploy-appv-with-electronic-software-distribution-solutions.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-planning-to-deploy-appv-with-electronic-software-distribution-solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-preparing-your-environment.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-preparing-your-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-prerequisites.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-publish-a-connection-group.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-publish-a-connection-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-publish-a-packages-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-publish-a-packages-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-register-and-unregister-a-publishing-server-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-register-and-unregister-a-publishing-server-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-release-notes-for-appv-for-windows.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-release-notes-for-appv-for-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-release-notes-for-appv-for-windows-1703.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-release-notes-for-appv-for-windows-1703",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-reporting.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-reporting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-running-locally-installed-applications-inside-a-virtual-environment.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-running-locally-installed-applications-inside-a-virtual-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-security-considerations.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-security-considerations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-sequence-a-new-application.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-sequence-a-new-application",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-sequence-a-package-with-powershell.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-sequence-a-package-with-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-supported-configurations.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-supported-configurations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-technical-reference.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-transfer-access-and-configurations-to-another-version-of-a-package-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-transfer-access-and-configurations-to-another-version-of-a-package-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-troubleshooting.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-using-the-client-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-using-the-client-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-view-and-configure-applications-and-default-virtual-application-extensions-with-the-management-console.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-view-and-configure-applications-and-default-virtual-application-extensions-with-the-management-console",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/application-management/app-v/appv-viewing-appv-server-publishing-metadata.md",
+      "redirect_url": "/microsoft-desktop-optimization-pack/app-v/appv-viewing-appv-server-publishing-metadata",
+      "redirect_document_id": false
     }
   ]
 }

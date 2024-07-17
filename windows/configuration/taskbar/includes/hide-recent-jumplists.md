@@ -19,5 +19,5 @@ Prevents the operating system and installed programs from creating and displayin
 
 |  | Path |
 |--|--|
-| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)<br><br>- `./User/Vendor/MSFT/Policy/Config/Start/`[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) |
-| **GPO** | **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **don't keep history of recently opened documents**<br><br> **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **don't keep history of recently opened documents**|
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists)<br>- `./User/Vendor/MSFT/Policy/Config/Start/`[HideRecentJumplists](/windows/client-management/mdm/policy-csp-start#hiderecentjumplists) |
+| **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **don't keep history of recently opened documents**<br>- **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **don't keep history of recently opened documents**|

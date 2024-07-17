@@ -1,20 +1,16 @@
 ---
 title: Windows Security
 description: Windows Security brings together common Windows security features into one place.
-ms.date: 08/11/2023
-ms.topic: article
+ms.date: 06/27/2024
+ms.topic: conceptual
 ---
 
 # Windows Security
 
-This library describes **Windows Security** settings, and provides information on configuring certain features, including:
+This article describes **Windows Security** settings, and provides information on configuring certain features, including:
 
 - [Showing and customizing contact information](wdsc-customize-contact-information.md)
 - [Hiding notifications](wdsc-hide-notifications.md)
-
-In Windows 10, version 1709 and later, the settings also show information from third-party antivirus and firewall apps.
-
-In Windows 10, version 1803, the settings have two new areas: **Account protection** and **Device security**.
 
 ![Screenshot of the Windows Security showing that the device is protected and five icons for each of the features.](images/security-center-home.png)
 
@@ -31,7 +27,7 @@ For more information about each section, options for configuring the sections, a
 
 - [Virus & threat protection](wdsc-virus-threat-protection.md), which has information and access to antivirus ransomware protection settings and notifications, including Controlled folder access, and sign-in to Microsoft OneDrive.
 - [Account protection](wdsc-account-protection.md), which has information and access to sign-in and account protection settings.
-- [Firewall & network protection](wdsc-firewall-network-protection.md), which has information and access to firewall settings, including Windows Defender Firewall.
+- [Firewall & network protection](wdsc-firewall-network-protection.md), which has information and access to firewall settings, including Windows Firewall.
 - [App & browser control](wdsc-app-browser-control.md), covering Windows Defender SmartScreen settings and Exploit protection mitigations.
 - [Device security](wdsc-device-security.md), which provides access to built-in device security settings.
 - [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues.
@@ -52,7 +48,7 @@ For more information about each section, options for configuring the sections, a
 
     ![Screenshot of the Start menu showing the results of a search for the Windows Security, the first option with a large shield symbol is selected.](images/security-center-start-menu.png)
 
-- Open an area from Windows **Settings**.
+- Open an area from Windows **Settings** > **Privacy & security** > **Windows Security**.
 
     ![Screenshot of Windows Settings showing the different areas available in the Windows Security.](images/settings-windows-defender-security-center-areas.png)
 
@@ -88,4 +84,4 @@ If you disable any of the individual features, it prevents that feature from rep
 > [!IMPORTANT]
 > If you individually disable any of the services, it won't disable the other services or **Windows Security** itself.
 
-For example, [using a third-party antivirus disables Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility). However, **Windows Security** still runs, shows its icon in the taskbar, and displays information about the other features, such as Windows Defender SmartScreen and Windows Defender Firewall.
+For example, [using a third-party antivirus disables Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility). However, **Windows Security** still runs, shows its icon in the taskbar, and displays information about the other features, such as Windows Defender SmartScreen and Windows Firewall.

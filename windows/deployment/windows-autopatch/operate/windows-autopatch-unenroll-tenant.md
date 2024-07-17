@@ -1,7 +1,7 @@
 ---
 title: Unenroll your tenant
 description: This article explains what unenrollment means for your organization and what actions you must take.
-ms.date: 08/08/2023
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to

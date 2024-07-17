@@ -4,6 +4,8 @@ description: Learn how to configure the Windows Start menu to provide quick acce
 ms.topic: overview
 ms.date: 04/10/2024
 zone_pivot_groups: windows-versions-11-10
+ms.collection:
+- essentials-manage
 appliesto:
 ---
 

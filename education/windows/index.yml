@@ -9,7 +9,6 @@ metadata:
   ms.collection:
     - education
     - tier1
-    - essentials-navigation
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
@@ -137,4 +136,4 @@ additionalContent:
             - text: Microsoft Intune community
               url: https://techcommunity.microsoft.com/t5/microsoft-intune/bd-p/Microsoft-Intune
             - text: Microsoft Support community
-              url: https://answers.microsoft.com/windows/forum
+              url: https://answers.microsoft.com/

@@ -135,7 +135,7 @@ With Windows Enterprise or Education editions, an organization can benefit from 
 
 To compare Windows editions and review pricing, see the following sites:
 
-- [Compare Windows editions](https://www.microsoft.com/en-us/windows/business/windows-10-pro-vs-windows-11-pro) <!-- Leaving in language reference in URL because URL without it doesn't redirect properly>
+- [Compare Windows editions](https://www.microsoft.com/en-us/windows/business/windows-10-pro-vs-windows-11-pro) <!-- Leaving in language reference in URL because URL without it doesn't redirect properly-->
 - [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing)
 
 Benefits of moving to Windows as an online service include:

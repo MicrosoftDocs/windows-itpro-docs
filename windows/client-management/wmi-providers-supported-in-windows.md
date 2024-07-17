@@ -2,7 +2,7 @@
 title: WMI providers supported in Windows
 description: Manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service with Windows Management Infrastructure (WMI).
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # WMI providers supported in Windows
@@ -76,7 +76,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 | [**MDM_WirelesssProfileXML**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-wirelessprofilexml)        | Yes                          |
 | [**MDM_WNSChannel**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-wnschannel)                         | Yes                          |
 | [**MDM_WNSConfiguration**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-wnsconfiguration)             | Yes                          |
-| [**MSFT_NetFirewallProfile**](/previous-versions/windows/desktop/wfascimprov/msft-netfirewallprofile)           | Yes                          |
+| [**MSFT_NetFirewallProfile**](/windows/win32/fwp/wmi/wfascimprov/msft-netfirewallprofile)                       | Yes                          |
 | [**MSFT_VpnConnection**](/previous-versions/windows/desktop/vpnclientpsprov/msft-vpnconnection)                 | Yes                          |
 | [**SoftwareLicensingProduct**](/previous-versions/windows/desktop/sppwmi/softwarelicensingproduct)              |                              |
 | [**SoftwareLicensingService**](/previous-versions/windows/desktop/sppwmi/softwarelicensingservice)              |                              |

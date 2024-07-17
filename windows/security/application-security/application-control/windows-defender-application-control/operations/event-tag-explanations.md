@@ -3,7 +3,7 @@ title: Understanding Application Control event tags
 description: Learn what different Windows Defender Application Control event tags signify.
 ms.localizationpriority: medium
 ms.date: 05/09/2023
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Understanding Application Control event tags

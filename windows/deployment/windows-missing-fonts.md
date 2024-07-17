@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
 manager: aaroncz
-ms.topic: article
+ms.topic: conceptual
 ms.date: 03/28/2024
 ms.subservice: itpro-deploy
 zone_pivot_groups: windows-versions-11-10

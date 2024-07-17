@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
-ms.date: 03/21/2024
+ms.date: 05/23/2024
 ---
 
 # Microsoft Connected Cache for ISPs overview
@@ -44,7 +44,6 @@ For the full list of content endpoints that Microsoft Connected Cache for ISPs s
 MCC complements peering by offloading static content that is served off of multiple CDNs such as Akamai, Lumen, Edgecast. Static content such as OS updates, Apps, Software installs etc. can't be served via 8075. So, even if you're peering with Microsoft, you can benefit from installing MCC.
 
 :::image type="content" source="./media/mcc-isp-overview/mcc-isp-peeringvsmcc.png" alt-text="Chart containing Peering vs Cache Content Traffic." lightbox="./media/mcc-isp-overview/mcc-isp-peeringvsmcc.png":::
-
 
 ## How MCC works
 
@@ -90,4 +89,3 @@ The following are recommended hardware configurations based on traffic ranges:
 *Requires systems (chipset, CPU, motherboard) with PCIe version 3, or higher.
 
 **Drive speeds are important and to achieve higher egress, we recommend SSD NVMe in m.2 PCIe slot (version 4, or higher).
-

@@ -13,6 +13,8 @@
           href: update/release-cycle.md
         - name: Basics of Windows updates, channels, and tools
           href: update/get-started-updates-channels-tools.md
+        - name: Defining Windows update-managed devices
+          href: update/update-managed-unmanaged-devices.md
         - name: Prepare servicing strategy for Windows client updates
           href: update/waas-servicing-strategy-windows-10-updates.md
         - name: Deployment proof of concept
@@ -27,44 +29,44 @@
     - name: Plan
       items:
         - name: Plan for Windows 11
-          href: /windows/whats-new/windows-11-plan?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /windows/whats-new/windows-11-plan?context=/windows/deployment/context/context
         - name: Create a deployment plan
           href: update/create-deployment-plan.md
         - name: Define readiness criteria
           href: update/plan-define-readiness.md
         - name: Evaluate infrastructure and tools
           href: update/eval-infra-tools.md
-        - name: Determine application readiness
-          href: update/plan-determine-app-readiness.md
         - name: Define your servicing strategy
           href: update/plan-define-strategy.md
         - name: Delivery Optimization for Windows client updates
-          href: do/waas-delivery-optimization.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: do/waas-delivery-optimization.md?context=/windows/deployment/context/context
           items:
             - name: Using a proxy with Delivery Optimization
-              href: do/delivery-optimization-proxy.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: do/delivery-optimization-proxy.md?context=/windows/deployment/context/context
             - name: Delivery Optimization client-service communication
-              href: do/delivery-optimization-workflow.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: do/delivery-optimization-workflow.md?context=/windows/deployment/context/context
         - name: Windows 10 deployment considerations
           href: planning/windows-10-deployment-considerations.md
         - name: Windows 10 infrastructure requirements
           href: planning/windows-10-infrastructure-requirements.md
         - name: Plan for volume activation
           href: volume-activation/plan-for-volume-activation-client.md
+        - name: Windows compatibility cookbook
+          href: /windows/compatibility/
         - name: Features removed or planned for replacement
           items:
             - name: Windows client features lifecycle
-              href: /windows/whats-new/feature-lifecycle?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: /windows/whats-new/feature-lifecycle?context=/windows/deployment/context/context
             - name: Deprecated features
-              href: /windows/whats-new/deprecated-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: /windows/whats-new/deprecated-features?context=/windows/deployment/context/context
             - name: Resources for deprecated features
-              href: /windows/whats-new/deprecated-features-resources?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: /windows/whats-new/deprecated-features-resources?context=/windows/deployment/context/context
             - name: Removed features
-              href: /windows/whats-new/removed-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: /windows/whats-new/removed-features?context=/windows/deployment/context/context
     - name: Prepare
       items:
         - name: Prepare for Windows 11
-          href: /windows/whats-new/windows-11-prepare?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /windows/whats-new/windows-11-prepare?context=/windows/deployment/context/context
         - name: Prepare to deploy Windows client updates
           href: update/prepare-deploy-windows.md
         - name: Evaluate and update infrastructure
@@ -72,7 +74,7 @@
         - name: Update Baseline
           href: update/update-baseline.md
         - name: Set up Delivery Optimization for Windows client updates
-          href: do/waas-delivery-optimization-setup.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: do/waas-delivery-optimization-setup.md?context=/windows/deployment/context/context
         - name: Configure BranchCache for Windows client updates
           href: update/waas-branchcache.md
         - name: Prepare for deployment with Configuration Manager
@@ -113,7 +115,7 @@
             - name: Deploy updates with Group Policy
               href: update/waas-wufb-group-policy.md
             - name: Deploy updates using CSPs and MDM
-              href: update/waas-wufb-csp-mdm.md              
+              href: update/waas-wufb-csp-mdm.md
             - name: Update Windows client media with Dynamic Update
               href: update/media-dynamic-update.md
             - name: Migrating and acquiring optional Windows content
@@ -322,25 +324,25 @@
         - name: Resolve Windows upgrade errors
           href: upgrade/resolve-windows-upgrade-errors.md
         - name: Quick fixes
-          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?context=/windows/deployment/context/context
         - name: SetupDiag
           href: upgrade/setupdiag.md
         - name: Troubleshooting upgrade errors
-          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-issues-troubleshooting?context=/windows/deployment/context/context
         - name: Windows error reporting
           href: upgrade/windows-error-reporting.md
         - name: Upgrade error codes
-          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?context=/windows/deployment/context/context
         - name: Log files
           href: upgrade/log-files.md
         - name: Resolution procedures
-          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-resolution-procedures?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-resolution-procedures?context=/windows/deployment/context/context
         - name: Submit Windows client upgrade errors
           href: upgrade/submit-errors.md
       - name: Troubleshoot Windows Update
         items:
         - name: How to troubleshoot Windows Update
-          href: /troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?context=/windows/deployment/context/context
         - name: Opt out of safeguard holds
           href: update/safeguard-opt-out.md
         - name: Determine the source of Windows Updates
@@ -348,7 +350,7 @@
         - name: Windows Update security
           href: ./update/windows-update-security.md
         - name: Common Windows Update errors
-          href: /troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/common-windows-update-errors?context=/windows/deployment/context/context
         - name: Windows Update error code reference
           href: update/windows-update-error-reference.md
         - name: Troubleshoot the Windows Update for Business deployment service
@@ -369,15 +371,15 @@
         - name: Servicing stack updates
           href: update/servicing-stack-updates.md
         - name: Update CSP policies
-          href: /windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /windows/client-management/mdm/policy-csp-update?context=/windows/deployment/context/context
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
         - name: Update other Microsoft products
           href: update/update-other-microsoft-products.md
         - name: Delivery Optimization reference
-          href: do/waas-delivery-optimization-reference.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: do/waas-delivery-optimization-reference.md?context=/windows/deployment/context/context
         - name: FoD and language packs for WSUS and Configuration Manager
-          href: update/fod-and-lang-packs.md         
+          href: update/fod-and-lang-packs.md
         - name: Windows client in S mode
           href: s-mode.md
         - name: Switch to Windows client Pro or Enterprise from S mode

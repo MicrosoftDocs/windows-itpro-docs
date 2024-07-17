@@ -1,7 +1,7 @@
 ---
 title: What version of Windows am I running?
 description: Discover which version of Windows you're running to determine whether or not your device is enrolled in the Long-Term Servicing Channel or General Availability Channel.
-ms.date: 08/10/2023
+ms.date: 07/01/2024
 ms.topic: conceptual
 ---
 
@@ -16,8 +16,6 @@ To determine if your device is enrolled in the Long-Term Servicing Channel or th
 ## System Properties
 
 Select **Start** > **Settings** > **System**, then select **About**. You then see **Edition**, **Version**, and **OS Build** information.
-
-:::image type="content" source="images/systemcollage.png" alt-text="screenshot of the system properties window for a device running Windows 10.":::
 
 ## Using Keyword Search
 

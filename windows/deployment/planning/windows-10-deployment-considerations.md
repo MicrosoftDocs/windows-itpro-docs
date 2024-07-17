@@ -6,7 +6,7 @@ ms.author: frankroj
 ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: itpro-deploy
 ms.date: 10/28/2022
 ---
@@ -69,7 +69,7 @@ In either of these scenarios, you can make various configuration changes to the 
 For computers using the [General Availability Channel](../update/waas-overview.md#general-availability-channel), you can deploy these upgrades by using various methods:
 
 -   Windows Update or Windows Update for Business, for devices where you want to receive updates directly from the Internet.
--   Windows Server Update Services (WSUS), for devices configured to pull updates from internal servers after they're approved (deploying like an update). 
+-   Windows Server Update Services (WSUS), for devices configured to pull updates from internal servers after they're approved (deploying like an update).
 -   Configuration Manager task sequences.
 -   Configuration Manager software update capabilities (deploying like an update).
 
@@ -79,5 +79,4 @@ The upgrade process is also optimized to reduce the overall time and network ban
 
 ## Related articles
 
-[Windows 10 compatibility](windows-10-compatibility.md)<br>
 [Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md)

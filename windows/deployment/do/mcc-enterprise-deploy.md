@@ -1,6 +1,6 @@
 ---
 title: Deploying your cache node
-description: How to deploy a Microsoft Connected Cache (MCC) for Enterprise and Education cache node from the Auzre portal.
+description: How to deploy a Microsoft Connected Cache (MCC) for Enterprise and Education cache node from the Azure portal.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>	
-ms.date: 11/09/2023
+ms.date: 05/23/2024
 ---
 
 # Deploy your cache node
@@ -32,10 +32,9 @@ To deploy MCC to your server:
 1. [Verify MCC functionality](#verify-mcc-server-functionality)
 1. [Review common Issues](#common-issues) if needed.
 
-
 ### Provide Microsoft with the Azure subscription ID
 
-As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft. 
+As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft.
 
 > [!IMPORTANT]
 > As we near the release of public preview, we have paused onboarding. Please continue to submit the form to express interest so we can follow up with you once public preview of Microsoft Connected Cache for Enteprise and Education is available. To register your interest, fill out the form located at [https://aka.ms/MSConnectedCacheSignup](https://aka.ms/MSConnectedCacheSignup).
@@ -44,12 +43,13 @@ For information about creating or locating your subscription ID, see [Steps to o
 
 ### Create the MCC resource in Azure
 
-The MCC Azure management portal is used to create and manage MCC nodes. An Azure subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
+The MCC Azure management portal is used to create and manage MCC nodes. An Azure subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes.
 
-Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you'll be given a link to the Azure portal where you can create the resource described below. 
+Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you'll be given a link to the Azure portal where you can create the resource described below.
 
 1. In the Azure portal home page, choose **Create a resource**:  
-    :::image type="content" source="./images/ent-mcc-create-azure-resource.png" alt-text="Screenshot of the Azure portal. The create a resource option is outlined in red.":::
+
+   :::image type="content" source="./images/ent-mcc-create-azure-resource.png" alt-text="Screenshot of the Azure portal. The create a resource option is outlined in red.":::
 
 1. Type **Microsoft Connected Cache** into the search box, and hit **Enter** to show search results.
 
@@ -58,8 +58,9 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
 1. Select **Microsoft Connected Cache Enterprise** and choose **Create** on the next screen to start the process of creating the MCC resource.
 
-    :::image type="content" source="./images/ent-mcc-azure-search-result.png" alt-text="Screenshot of the Azure portal search results for Microsoft Connected Cache.":::
-    :::image type="content" source="./images/ent-mcc-azure-marketplace.png" alt-text="Screenshot of Microsoft Connected Cache Enterprise within the Azure Marketplace.":::
+   :::image type="content" source="./images/ent-mcc-azure-search-result.png" alt-text="Screenshot of the Azure portal search results for Microsoft Connected Cache.":::
+
+   :::image type="content" source="./images/ent-mcc-azure-marketplace.png" alt-text="Screenshot of Microsoft Connected Cache Enterprise within the Azure Marketplace.":::
 
 1. Fill in the required fields to create the MCC resource.
 
@@ -75,8 +76,7 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
       :::image type="content" source="./images/ent-mcc-azure-create-connected-cache.png" alt-text="Screenshot of the Create a Connected Cache page within the Azure Marketplace.":::
 
-1. Once all the information has been entered, select the **Review + Create** button. Once validation is complete, select the **Create** button to start the
-    resource creation.
+1. Once all the information has been entered, select the **Review + Create** button. Once validation is complete, select the **Create** button to start the resource creation.
 
     :::image type="content" source="./images/ent-mcc-azure-cache-created.png" alt-text="Screenshot of the completed cache deployment within the Azure." lightbox="./images/ent-mcc-azure-cache-created.png":::
 
@@ -102,7 +102,7 @@ Creating an MCC node is a multi-step process and the first step is to access the
 
 1. Selecting the **Create Cache Node** button will open the **Create Cache Node** page; **Cache Node Name** is the only field required for cache node creation.
 
-   | **Field Name**| **Expected Value**|**Description** |
+   | Field Name | Expected Value | Description |
    |---|---|---|
    | **Cache Node Name** | Alphanumeric name that doesn't include any spaces. | The name of the cache node. You may choose names based on location such as `Seattle-1`. This name must be unique and can't be changed later. |
 
@@ -193,15 +193,16 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
     > </br>
     > </br> [D] Do not run **[R] Run once** [S] Suspend [?] Help (default is "D"):
 
-1. Choose whether you would like to create a new external virtual switch or select an existing external virtual switch.  
+1. Choose whether you would like to create a new external virtual switch or select an existing external virtual switch.
+
    If creating a new external virtual switch, name your switch and be sure to choose a Local Area Connection (USB adapters work as well however, we do not recommend using Wi-Fi). A computer restart will be required if you're creating a new switch.
 
-    > [!NOTE]
-    > Restarting your computer after creating a switch is recommended. You'll notice network delays during installation if the computer has not been restarted.
+   > [!NOTE]
+   > Restarting your computer after creating a switch is recommended. You'll notice network delays during installation if the computer has not been restarted.
 
-    If you restarted your computer after creating a switch, start from step 2 above and skip to step 5.
+   If you restarted your computer after creating a switch, start from step 2 above and skip to step 5.
 
-    If you opt to use an existing external switch, select the switch from the presented options. Local Area Connection (or USB) is preferable to Wi-Fi. 
+   If you opt to use an existing external switch, select the switch from the presented options. Local Area Connection (or USB) is preferable to Wi-Fi.
 
    :::image type="content" source="./images/ent-mcc-script-new-switch.png" alt-text="Screenshot of the installer script running in PowerShell when a new switch is created." lightbox="./images/ent-mcc-script-new-switch.png":::
 
@@ -220,16 +221,22 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
    For example, for host configuration where the server IP Address is 192.168.1.202 and the subnet mask is 255.255.255.0, the static IP can be anything 192.168.1.* except 192.168.1.202.
    <!-- Insert Image 1 & 2. Remove ent-mcc-script-dynamic-address.png image (it is replaced by image 2) -->
     :::image type="content" source="./images/external-switch-1.jpg" alt-text="Screenshot of a sample output of ipconfig command showing example of subnet mask." lightbox="./images/external-switch-1.jpg":::
+
     :::image type="content" source="./images/assigning-ip-2.png" alt-text="Screenshot of multiple installer questions about ipv4 address for Eflow." lightbox="./images/assigning-ip-2.png":::
-   
+
    If you would like to use your own DNS server instead of Google DNS 8.8.8.8, select **n** and set your own DNS server IP.
+
    :::image type="content" source="./images/use-custom-dns-3.png" alt-text="Screenshot of multiple installer questions about setting an alternate DNS server." lightbox="./images/use-custom-dns-3.png":::
-   If you use a dynamic IP address, the DHCP server will automatically configure the IP address and DNS settings. 
- 
-1. Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and how many cores you would like to allocate for the VM. For this example, we chose the default values for download path, install path, and virtual hard disk path. 
+
+   If you use a dynamic IP address, the DHCP server will automatically configure the IP address and DNS settings.
+
+1. Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and how many cores you would like to allocate for the VM. For this example, we chose the default values for download path, install path, and virtual hard disk path.
+
    <!-- Insert Image 4 -->
    :::image type="content" source="./images/installation-info-4.png" alt-text="Screenshot of multiple installer questions about memory and storage for EFLOW." lightbox="./images/installation-info-4.png":::
-   For more information, see [Sizing Recommendations](mcc-enterprise-prerequisites.md#sizing-recommendations) for memory, virtual storage, and CPU cores. For this example we chose the recommend values for a Branch Office/Small Enterprise deployment.
+
+   For more information, see [Sizing Recommendations](mcc-enterprise-prerequisites.md#sizing-recommendations) for memory, virtual storage, and CPU cores. For this example we chose the recommended values for a Branch Office/Small Enterprise deployment.
+
    <!-- Insert Image 5 -->
    :::image type="content" source="./images/memory-storage-5.png" alt-text="Screenshot of multiple installer questions about memory and storage." lightbox="./images/memory-storage-5.png":::
    <!-- Remove: If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
@@ -238,12 +245,15 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
        :::image type="content" source="./images/ent-mcc-script-select-hub.png" alt-text="Screenshot of the installer script running in PowerShell prompting you to select which IoT Hub to use." lightbox="./images/ent-mcc-script-select-hub.png":::
        -->
-1.  When the installation is complete, you should see the following output (the values below will be your own)
-       :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell." lightbox="./images/ent-mcc-script-complete.png":::
+1. When the installation is complete, you should see the following output (the values below will be your own)
+
+    :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell." lightbox="./images/ent-mcc-script-complete.png":::
        <!-- Insert Image 7 -->
+
     :::image type="content" source="./images/installation-complete-7.png" alt-text="Screenshot of expected output when installation is complete." lightbox="./images/installation-complete-7.png":::
 
 1. Your MCC deployment is now complete.
+
    If you don't see any errors, continue to the next section to validate your MCC deployment. Your VM will not appear in Hyper-V Manager as it is an EFLOW VM.
    - After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
    - If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
@@ -267,10 +277,12 @@ Connect to the EFLOW VM and check if MCC is properly running:
 
 You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, try this command in a few minutes. The MCC container can take a few minutes to deploy. If iotedge list times out, you can run docker ps -a to list the running containers.
 If the 3 containers are still not running, run the following commands to check if DNS resolution is working correctly:
+
 ```bash
 ping www.microsoft.com
 resolvectl query microsoft.com
 ```
+
 See the [common issues](#common-issues) section for more information.
 
 #### Verify server side
@@ -285,7 +297,7 @@ A successful test result will display a status code of 200 along with additional
 
 :::image type="content" source="./images/ent-mcc-verify-server-ssh.png" alt-text="Screenshot of a successful wget with an SSH client." lightbox="./images/ent-mcc-verify-server-ssh.png":::
 
- :::image type="content" source="./images/ent-mcc-verify-server-powershell.png" alt-text="Screenshot of a successful wget using PowerShell." lightbox="./images/ent-mcc-verify-server-powershell.png":::
+:::image type="content" source="./images/ent-mcc-verify-server-powershell.png" alt-text="Screenshot of a successful wget using PowerShell." lightbox="./images/ent-mcc-verify-server-powershell.png":::
 
 Similarly, enter the following URL from a browser in the network:
 
@@ -311,9 +323,9 @@ If you're seeing errors similar to this error: `The term Get-<Something> isn't r
 
 1. Ensure you have Hyper-V enabled:
 
-    **Windows 10:** [Enable Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
+   **Windows 10:** [Enable Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 
-    **Windows Server:** [Install the Hyper-V role on Windows Server](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
+   **Windows Server:** [Install the Hyper-V role on Windows Server](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
 #### Verify Running MCC Container
 
@@ -336,10 +348,9 @@ This command will provide the current status of the starting, stopping of a cont
 
 :::image type="content" source="./images/ent-mcc-journalctl.png" alt-text="Screenshot of the output from journalctl -u iotedge -f." lightbox="./images/ent-mcc-journalctl.png":::
 
-
 > [!NOTE]
 > You should consult the IoT Edge troubleshooting guide ([Common issues and resolutions for Azure IoT Edge](/azure/iot-edge/troubleshoot)) for any issues you may encounter configuring IoT Edge, but we've listed a few issues that we encountered during our internal validation.
->
+
 
 ### DNS needs to be configured
 
@@ -355,53 +366,53 @@ To configure the device to work with your DNS, use the following steps:
 
 1. Use `ifconfig` to find the appropriate NIC adapter name.
 
-    ```bash
-    ifconfig
-    ```
+   ```bash
+   ifconfig
+   ```
 
 1. Run `nmcli device show <network adapter name>` to show the DNS name for the ethernet adapter. For example, to show DNS information for **eno1**:
 
-    ```bash
-    nmcli device show eno1 
-    ```
+   ```bash
+   nmcli device show eno1 
+   ```
 
-    :::image type="content" source="images/mcc-isp-nmcli.png" alt-text="Screenshot of a sample output of nmcli command to show network adapter information." lightbox="./images/mcc-isp-nmcli.png":::
+   :::image type="content" source="images/mcc-isp-nmcli.png" alt-text="Screenshot of a sample output of nmcli command to show network adapter information." lightbox="./images/mcc-isp-nmcli.png":::
 
 1. Open or create the Docker configuration file used to configure the DNS server.
 
-    ```bash
-    sudo nano /etc/docker/daemon.json
-    ```
+   ```bash
+   sudo nano /etc/docker/daemon.json
+   ```
 
 1. Paste the following string into the **daemon.json** file, and include the appropriate DNS server address. For example, in the previous screenshot, `IP4.DNS[1]` is `10.50.10.50`.
 
-    ```bash
-    { "dns": ["x.x.x.x"]}
-    ```
+   ```bash
+   { "dns": ["x.x.x.x"]}
+   ```
 
 1. Save the changes to daemon.json. If you need to change permissions on this file, use the following command:
 
-    ```bash
-    sudo chmod 555 /etc/docker/daemon.json
-    ```
+   ```bash
+   sudo chmod 555 /etc/docker/daemon.json
+   ```
 
 1. Restart Docker to pick up the new DNS setting. Then restart IoT Edge.
 
-    ```bash
-    sudo systemctl restart docker
-    sudo systemctl daemon-reload
-    sudo restart IoTEdge
-    ```
+   ```bash
+   sudo systemctl restart docker
+   sudo systemctl daemon-reload
+   sudo restart IoTEdge
+   ```
 
 ### Resolve DNS issues
-Follow these steps if you see a DNS error when trying to resolve hostnames during the provisioning or download of container:
-Run ``` Get-EflowVmEndpoint ``` to get interface name
 
-Once you get the name 
+Follow these steps if you see a DNS error when trying to resolve hostnames during the provisioning or download of container:
+Run `Get-EflowVmEndpoint` to get interface name
+
+Once you get the name:
+
 ```bash
 Set-EflowVmDNSServers -vendpointName "interface name from above" -dnsServers @("DNS_IP_ADDRESS")
 Stop-EflowVm
 Start-EflowVm
 ```
-
-

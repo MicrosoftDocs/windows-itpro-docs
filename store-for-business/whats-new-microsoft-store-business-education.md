@@ -8,17 +8,19 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
-ms.date: 01/11/2024
+ms.date: 06/21/2024
 ms.reviewer: 
 ---
 
 # What's new in Microsoft Store for Business and Education
 
-> [!IMPORTANT]
->
-> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
-
 ## Latest updates for Store for Business and Education
+
+**June 2024**
+
+The Microsoft Store for Business and Microsoft Store for Education portals will retire on August 15, 2024. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-intune-integration-with-the-microsoft-store-on-windows/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286). If you are using offline licensing, you can use the [WinGet Download command](/windows/package-manager/winget/download) to continue to access offline apps and license files.
+
+## Previous releases and updates
 
 **January 2024**
 
@@ -27,8 +29,6 @@ ms.reviewer:
 The private store tab and associated functionality was removed from the Microsoft Store for Business and Education portal. This includes the ability to add apps to private groups and to download and install apps from the private store.  
 
 We recommend customers use the [Private app repository, Windows Package Manager, and Company Portal app](/windows/application-management/private-app-repository-mdm-company-portal-windows-11) to provide a private app repository within their organization.
-
-## Previous releases and updates
 
 [May 2023](release-history-microsoft-store-business-education.md#may-2023)
 - Tab removed from Microsoft Store apps on Windows 10 PCs.
