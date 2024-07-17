@@ -430,7 +430,7 @@ Specifies whether device lock is enabled.
 > - MaxDevicePasswordFailedAttempts
 > - MaxInactivityTimeDeviceLock
 
-[!NOTE]
+> [!NOTE]
 > DevicePasswordExpiration isn't supported through MDMWinsOverGP.
 
 <!-- DevicePasswordEnabled-Editable-End -->
