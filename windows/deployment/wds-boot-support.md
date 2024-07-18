@@ -35,17 +35,16 @@ The following table provides support details for specific deployment scenarios. 
 |--- |--- |--- |--- |--- |--- |
 |**Windows 11**|Not supported, blocked.|Not supported, blocked.|Not supported, blocked.|Not supported, blocked.|Not supported, blocked.|
 |**Windows 10**|Supported, using a boot image from matching or newer version.|Supported, using a boot image from Windows 10, version 1607 or later.|Supported, using a boot image from Windows 10, version 1809 or later.|Not supported.|Not supported.|
+|**Windows Server 2025**|Not supported.|Not supported.|Not supported.|Not supported.|Not supported.|
 |**Windows Server 2022**|Deprecated, with a warning message.|Deprecated, with a warning message.|Deprecated, with a warning message.|Deprecated, with a warning message.|Not supported.|
 |**Windows Server 2019**|Supported, using a boot image from Windows 10, version 1809 or later.|Supported.|Supported.|Not supported.|Not supported.|
 |**Windows Server 2016**|Supported, using a boot image from Windows 10, version 1607 or later.|Supported.|Not supported.|Not supported.|Not supported.|
 
+> [!NOTE]
+> Since WS2025 does not support WDS **boot.wim** deployment scenarios anymore, you will see error message "A media driver your computer needs is missing. This could be a DVD, USB or Hard disk driver. If you have a CD, DVD, or USB flash drive with the driver on it, please insert it now.".
 ## Reason for the change
 
-Alternatives to WDS, such as [Microsoft Configuration Manager](/mem/configmgr/) and [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) (MDT) provide a better, more flexible, and feature-rich experience for deploying Windows images.
-
-> [!NOTE]
->
-> [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) (MDT) only supports deployment of Windows 10. It doesn't support deployment of Windows 11. For more information, see [Supported platforms](/mem/configmgr/mdt/release-notes#supported-platforms).
+Alternatives to WDS, [Microsoft Configuration Manager](/mem/configmgr/) provide a better, more flexible, and feature-rich experience for deploying Windows images.
 
 ## Not affected
 
