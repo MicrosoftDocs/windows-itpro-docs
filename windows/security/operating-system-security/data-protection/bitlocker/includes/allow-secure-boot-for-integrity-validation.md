@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 10/30/2023
+ms.date: 07/18/2024
 ms.topic: include
 ---
 
@@ -26,3 +26,6 @@ When this policy is enabled and the hardware is capable of using Secure Boot for
 |--|--|
 | **CSP** | Not available |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** |
+
+> [!NOTE]
+> To prevent boot manger roll-back attacks, Windows updates released on and after July 2024 changed the default PCR Validation Profile for **UEFI with Secure Boot** from `7, 11` to `4, 7, 11`.
