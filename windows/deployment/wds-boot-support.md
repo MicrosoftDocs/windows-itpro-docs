@@ -50,7 +50,7 @@ The following table provides support details for specific deployment scenarios. 
 
 ## Reason for the change
 
-Alternatives to WDS, such as [Microsoft Configuration Manager](/mem/configmgr/), provide a better, more flexible, and feature-rich experience for deploying Windows images.
+Alternatives to WDS, such as [Microsoft Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment), provide a better, more flexible, and feature-rich experience for deploying Windows images.
 
 ## Not affected
 
@@ -73,4 +73,4 @@ If WDS is being used with **boot.wim** from installation media for end-to-end op
 ## Related content
 
 - [Features removed or no longer developed starting with Windows Server 2022](/windows-server/get-started/removed-deprecated-features-windows-server-2022#features-were-no-longer-developing).
-- [Create a custom Windows PE boot image with ](deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md).
+- [Customize boot images with Configuration Manager](/mem/configmgr/osd/get-started/customize-boot-images).
