@@ -5,7 +5,7 @@ ms.author: frankroj
 description: Resolve Windows upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 author: frankroj
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 ms.service: windows-client
 ms.subservice: itpro-deploy
 ms.date: 01/18/2024

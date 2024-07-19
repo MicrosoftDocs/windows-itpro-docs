@@ -54,6 +54,11 @@
       "source_path": "windows/privacy/windows-personal-data-services-configuration.md",
       "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields.md",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/preview-app-and-driver-compatibility-insights-in-endpoint/ba-p/3482136",
+      "redirect_document_id": false
     }
   ]
 }

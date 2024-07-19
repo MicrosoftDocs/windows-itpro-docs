@@ -4,7 +4,7 @@ titleSuffix: Windows Update for Business reports
 description: Windows Update for Business reports support, feedback, and troubleshooting information.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: article
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
 manager: aaroncz

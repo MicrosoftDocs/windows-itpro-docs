@@ -7,7 +7,7 @@ author: frankroj
 ms.author: frankroj
 ms.service: windows-client
 ms.date: 11/07/2022
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: itpro-fundamentals
 ---
 
