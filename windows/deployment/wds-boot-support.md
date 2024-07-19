@@ -50,13 +50,13 @@ The following table provides support details for specific deployment scenarios. 
 
 ## Reason for the change
 
-Alternatives to WDS, [Microsoft Configuration Manager](/mem/configmgr/) provides a better, more flexible, and feature-rich experience for deploying Windows images.
+Alternatives to WDS, such as [Microsoft Configuration Manager](/mem/configmgr/), provide a better, more flexible, and feature-rich experience for deploying Windows images.
 
 ## Not affected
 
 This change doesn't affect WDS PXE boot. WDS can still be used to PXE boot devices with custom boot images, but **boot.wim** can't be used as the boot image and run Windows Setup in WDS mode.
 
-Windows Setup can still run from a network share. This change doesn't change Workflows that use a custom boot.wim, such as MDT or Configuration Manager.
+Windows Setup can still run from a network share. This change doesn't change Workflows that use a custom boot.wim, such as Microsoft Deployment Toolkit (MDT) or Microsoft Configuration Manager.
 
 ## Summary
 
@@ -73,4 +73,4 @@ If WDS is being used with **boot.wim** from installation media for end-to-end op
 ## Related content
 
 - [Features removed or no longer developed starting with Windows Server 2022](/windows-server/get-started/removed-deprecated-features-windows-server-2022#features-were-no-longer-developing).
-- [Create a custom Windows PE boot image with Configuration Manager](deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md).
+- [Create a custom Windows PE boot image with ](deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md).
