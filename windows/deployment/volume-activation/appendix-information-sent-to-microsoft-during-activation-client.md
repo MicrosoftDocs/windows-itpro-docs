@@ -9,7 +9,7 @@ ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
 ms.date: 03/29/2024
-ms.topic: article
+ms.topic: conceptual
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>

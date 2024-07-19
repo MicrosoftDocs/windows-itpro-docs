@@ -13,7 +13,6 @@ ms.reviewer: rekhanr
 ms.collection:
   - highpri
   - tier1
-  - essentials-manage
 ---
 
 # Policy health and remediation

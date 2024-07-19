@@ -1,7 +1,7 @@
 ---
 title: Control the health of Windows devices
 description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows devices.
-ms.date: 08/11/2023
+ms.date: 07/10/2024
 ms.topic: conceptual
 ---
 
@@ -11,7 +11,7 @@ This article details an end-to-end solution that helps you protect high-value as
 
 ## Introduction
 
-For Bring Your Own Device (BYOD) scenarios, employees bring commercially available devices to access both work-related resources and their personal data. Users want to use the device of their choice to access the organization's applications, data, and resources not only from the internal network but also from anywhere. This phenomenon is also known as the consumerization of IT.
+For Bring Your Own Device (BYOD) scenarios, users bring commercially available devices to access both work-related resources and their personal data. Users want to use the device of their choice to access the organization's applications, data, and resources not only from the internal network but also from anywhere. This phenomenon is also known as the consumerization of IT.
 
 Users want to have the best productivity experience when accessing corporate applications and working on organization data from their devices. That means they don't tolerate being prompted to enter their work credentials each time they access an application or a file server. From a security perspective, it also means that users manipulate corporate credentials and corporate data on unmanaged devices.
 
@@ -27,7 +27,7 @@ Windows is an important component of an end-to-end security solution that focuse
 
 Today's computing threat landscape is increasing at a speed never encountered before. The sophistication of criminal attacks is growing, and there's no doubt that malware now targets both consumers and professionals in all industries.
 
-During recent years, one particular category of threat has become prevalent: advanced persistent threats (APTs). The term APT is commonly used to describe any attack that seems to target individual organizations on an on-going basis. In fact, this type of attack typically involves determined adversaries who may use any methods or techniques necessary.
+During recent years, one particular category of threat has become prevalent: advanced persistent threats (APTs). The term APT is commonly used to describe any attack that seems to target individual organizations on an ongoing basis. In fact, this type of attack typically involves determined adversaries who may use any methods or techniques necessary.
 
 With the BYOD phenomena, a poorly maintained device represents a target of choice. For an attacker, it's an easy way to breach the security network perimeter, gain access to, and then steal high-value assets.
 
@@ -97,7 +97,7 @@ This section describes what Windows offers in terms of security defenses and wha
 
 ### Windows hardware-based security defenses
 
-The most aggressive forms of malware try to insert themselves into the boot process as early as possible so that they can take control of the operating system early and prevent protection mechanisms and antimalware software from working. This type of malicious code is often called a rootkit or bootkit. The best way to avoid having to deal with low-level malware is to secure the boot process so that the device is protected from the very start. Windows supports multiple layers of boot protection. Some of these features are available only if specific types of hardware are installed. For more information, see the [Hardware requirements](#hardware-requirements) section.
+The most aggressive forms of malware try to insert themselves into the boot process as early as possible so that they can take control of the operating system early and prevent protection mechanisms and anti-malware software from working. This type of malicious code is often called a rootkit or bootkit. The best way to avoid having to deal with low-level malware is to secure the boot process so that the device is protected from the very start. Windows supports multiple layers of boot protection. Some of these features are available only if specific types of hardware are installed. For more information, see the [Hardware requirements](#hardware-requirements) section.
 
 :::image type="content" alt-text="figure 4." source="images/hva-fig4-hardware.png":::
 
@@ -153,14 +153,14 @@ Windows supports features to help prevent sophisticated low-level malware like r
 
 - **Early Launch Antimalware (ELAM).** ELAM tests all drivers before they load and prevents unapproved drivers from loading.
 
-    Traditional antimalware apps don't start until after the boot drivers have been loaded, which gives a rootkit that is disguised as a driver the opportunity to work. ELAM is a Windows mechanism introduced in a previous version of Windows that allows antimalware software to run early in the boot sequence. Thus, the antimalware component is the first third-party component to run and control the initialization of other boot drivers until the Windows operating system is operational. When the system is started with a complete runtime environment (network access, storage, and so on), then a full-featured antimalware is loaded.
+    Traditional anti-malware apps don't start until after the boot drivers have been loaded, which gives a rootkit that is disguised as a driver the opportunity to work. ELAM is a Windows mechanism introduced in a previous version of Windows that allows anti-malware software to run early in the boot sequence. Thus, the anti-malware component is the first third-party component to run and control the initialization of other boot drivers until the Windows operating system is operational. When the system is started with a complete runtime environment (network access, storage, and so on), then a full-featured anti-malware is loaded.
 
-    ELAM can load a Microsoft or non-Microsoft antimalware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the operating system hasn't started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: Examine every boot driver and determine whether it is on the list of trusted drivers. If it's not trusted, Windows won't load it.
+    ELAM can load a Microsoft or non-Microsoft anti-malware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the operating system hasn't started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: Examine every boot driver and determine whether it is on the list of trusted drivers. If it's not trusted, Windows won't load it.
 
     > [!NOTE]
     > Windows Defender, Microsoft's antimalware included by default in Windows, supports ELAM; it can be replaced with a third-party antimalware compatible solution. The name of the Windows Defender ELAM driver is WdBoot.sys. Windows Defender uses its ELAM driver to roll back any malicious changes made to the Windows Defender driver at the next reboot. This prevents kernel mode malware making lasting changes to Windows Defender's mini-filter driver before shutdown or reboot.
 
-    The ELAM signed driver is loaded before any other third-party drivers or applications, which allows the antimalware software to detect and block any attempts to tamper with the boot process by trying to load unsigned or untrusted code.
+    The ELAM signed driver is loaded before any other third-party drivers or applications, which allows the anti-malware software to detect and block any attempts to tamper with the boot process by trying to load unsigned or untrusted code.
 
     The ELAM driver is a small driver with a small policy database that has a narrow scope, focused on drivers that are loaded early at system launch. The policy database is stored in a registry hive that is also measured to the TPM, to record the operational parameters of the ELAM driver. An ELAM driver must be signed by Microsoft and the associated certificate must contain the complementary EKU (1.3.6.1.4.1.311.61.4.1).
 
@@ -170,9 +170,9 @@ Windows supports features to help prevent sophisticated low-level malware like r
 
 - **Hypervisor-protected Code Integrity (HVCI).** Hypervisor-protected Code Integrity is a feature of Device Guard that ensures only drivers, executables, and DLLs that comply with the Device Guard Code Integrity policy are allowed to run.
 
-    When enabled and configured, Windows can start the Hyper-V virtualization-based security services. HVCI helps protect the system core (kernel), privileged drivers, and system defenses, like antimalware solutions, by preventing malware from running early in the boot process, or after startup.
+    When enabled and configured, Windows can start the Hyper-V Virtualization-based security services. HVCI helps protect the system core (kernel), privileged drivers, and system defenses, like anti-malware solutions, by preventing malware from running early in the boot process, or after startup.
 
-    HVCI uses virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This dependency on verification means that kernel memory pages can never be Writable and Executable (W+X) and executable code can't be directly modified.
+    HVCI uses Virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This dependency on verification means that kernel memory pages can never be Writable and Executable (W+X) and executable code can't be directly modified.
 
     > [!NOTE]
     > Device Guard devices that run Kernel Mode Code Integrity with virtualization-based security must have compatible drivers. For additional information, please read the [Driver compatibility with Device Guard in Windows](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-compatibility-with-device-guard-in-windows-10/ba-p/364865) blog post.
@@ -184,17 +184,17 @@ Windows supports features to help prevent sophisticated low-level malware like r
 
     In Windows, Credential Guard aims to protect domain corporate credentials from theft and reuse by malware. With Credential Guard, Windows implemented an architectural change that fundamentally prevents the current forms of the pass-the-hash (PtH) attack.
 
-    This attack-free state is accomplished by using Hyper-V and the new virtualization-based security feature to create a protected container where trusted code and secrets are isolated from the Windows kernel. This accomplishment means that even if the Windows kernel is compromised, an attacker has no way to read and extract the data required to initiate a PtH attack. Credential Guard prevents this unauthorized access because the memory where secrets are stored is no longer accessible from the regular OS, even in kernel mode - the hypervisor controls who can access the memory.
+    This attack-free state is accomplished by using Hyper-V and the new Virtualization-based security feature to create a protected container where trusted code and secrets are isolated from the Windows kernel. This accomplishment means that even if the Windows kernel is compromised, an attacker has no way to read and extract the data required to initiate a PtH attack. Credential Guard prevents this unauthorized access because the memory where secrets are stored is no longer accessible from the regular OS, even in kernel mode - the hypervisor controls who can access the memory.
 
 - **Health attestation.** The device's firmware logs the boot process, and Windows can send it to a trusted server that can check and assess the device's health.
 
-    Windows takes measurements of the UEFI firmware and each of the Windows and antimalware components are made as they load during the boot process. Additionally, they're taken and measured sequentially, not all at once. When these measurements are complete, their values are digitally signed and stored securely in the TPM and can't be changed unless the system is reset.
+    Windows takes measurements of the UEFI firmware and each of the Windows and anti-malware components are made as they load during the boot process. Additionally, they're taken and measured sequentially, not all at once. When these measurements are complete, their values are digitally signed and stored securely in the TPM and can't be changed unless the system is reset.
 
     For more information, see [Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](/previous-versions/windows/hardware/design/dn653311(v=vs.85)).
 
     During each subsequent boot, the same components are measured, which allows comparison of the measurements against an expected baseline. For more security, the values measured by the TPM can be signed and transmitted to a remote server, which can then perform the comparison. This process, called *remote device health attestation*, allows the server to verify health status of the Windows device.
 
-    Although Secure Boot is a proactive form of protection, health attestation is a reactive form of boot protection. Health attestation ships disabled in Windows and is enabled by an antimalware or an MDM vendor. Unlike Secure Boot, health attestation won't stop the boot process and enter remediation when a measurement doesn't work. But with conditional access control, health attestation will help to prevent access to high-value assets.
+    Although Secure Boot is a proactive form of protection, health attestation is a reactive form of boot protection. Health attestation ships disabled in Windows and is enabled by an anti-malware or an MDM vendor. Unlike Secure Boot, health attestation won't stop the boot process and enter remediation when a measurement doesn't work. But with conditional access control, health attestation helps to prevent access to high-value assets.
 
 ### Virtualization-based security
 
@@ -202,16 +202,16 @@ Virtualization-based security provides a new trust boundary for Windows and uses
 
 Virtualization-based security helps to protect against a compromised kernel or a malicious user with Administrator privileges. Virtualization-based security isn't trying to protect against a physical attacker.
 
-The following Windows services are protected with virtualization-based security:
+The following Windows services are protected with Virtualization-based security:
 
 - **Credential Guard** (LSA Credential Isolation): prevents pass-the-hash attacks and enterprise credential theft that happens by reading and dumping the content of lsass memory
-- **Device Guard** (Hyper-V Code Integrity): Device Guard uses the new virtualization-based security in Windows to isolate the Code Integrity service from the Windows kernel itself, which lets the service use signatures defined by your enterprise-controlled policy to help determine what is trustworthy. In effect, the Code Integrity service runs alongside the kernel in a Windows hypervisor-protected container.
+- **Device Guard** (Hyper-V Code Integrity): Device Guard uses the new Virtualization-based security in Windows to isolate the Code Integrity service from the Windows kernel itself, which lets the service use signatures defined by your enterprise-controlled policy to help determine what is trustworthy. In effect, the Code Integrity service runs alongside the kernel in a Windows hypervisor-protected container.
 - **Other isolated services**: for example, on Windows Server 2016, there's the vTPM feature that allows you to have encrypted virtual machines (VMs) on servers.
 
 > [!NOTE]
 > Virtualization-based security is only available with Enterprise edition. Virtualization-based security requires devices with UEFI (2.3.1 or higher) with Secure Boot enabled, x64 processor with Virtualization Extensions and SLAT enabled. IOMMU, TPM 2.0. and support for Secure Memory overwritten are optional, but recommended.
 
-The schema below is a high-level view of Windows with virtualization-based security.
+The schema below is a high-level view of Windows with Virtualization-based security.
 
 :::image type="content" alt-text="figure 5." source="images/hva-fig5-virtualbasedsecurity.png":::
 
@@ -231,7 +231,7 @@ credential isolation is enabled, it then spawns LsaIso.exe as an isolated proces
 
 Device Guard is a feature of Windows Enterprise that allows organizations to lock down a device to help protect it from running untrusted software. In this configuration, the only applications allowed to run are those applications that are trusted by the organization.
 
-The trust decision to execute code is performed by using Hyper-V Code Integrity, which runs in virtualization-based security, a Hyper-V protected container that runs alongside regular Windows.
+The trust decision to execute code is performed by using Hyper-V Code Integrity, which runs in Virtualization-based security, a Hyper-V protected container that runs alongside regular Windows.
 
 Hyper-V Code Integrity is a feature that validates the integrity of a driver or system file each time it's loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with Administrator privileges. On x64-based versions of Windows, kernel-mode drivers must be digitally signed.
 
@@ -252,7 +252,7 @@ Device Guard needs to be planned and configured to be truly effective. It isn't 
 There are three different parts that make up the Device Guard solution in Windows:
 
 - The first part is a base **set of hardware security features** introduced with the previous version of Windows. TPM for hardware cryptographic operations and UEFI with modern firmware, along with Secure Boot, allows you to control what the device is running when the systems start.
-- After the hardware security feature, there's the code integrity engine. In Windows, **Code Integrity is now fully configurable** and now resides in Isolated user mode, a part of the memory that is protected by virtualization-based security.
+- After the hardware security feature, there's the code integrity engine. In Windows, **Code Integrity is now fully configurable** and now resides in Isolated user mode, a part of the memory that is protected by Virtualization-based security.
 - The last part of Device Guard is **manageability**. Code Integrity configuration is exposed through specific Group Policy Objects, PowerShell cmdlets, and MDM configuration service providers (CSPs).
 
 For more information on how to deploy Device Guard in an enterprise, see the [Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
@@ -270,7 +270,7 @@ To protect high-value assets, SAWs are used to make secure connections to those 
 
 Similarly, on corporate fully managed workstations, where applications are installed by using a distribution tool like Microsoft Configuration Manager, Intune, or any third-party device management, then Device Guard is applicable. In that type of scenario, the organization has a good idea of the software that an average user is running.
 
-It could be challenging to use Device Guard on corporate, lightly managed workstations where the user is typically allowed to install software on their own. When an organization offers great flexibility, it's difficult to run Device Guard in enforcement mode. Nevertheless, Device Guard can be run in Audit mode, and in that case, the event log will contain a record of any binaries that violated the Device Guard policy. When Device Guard is used in Audit mode, organizations can get rich data about drivers and applications that users install and run.
+It could be challenging to use Device Guard on corporate, lightly managed workstations where the user is typically allowed to install software on their own. When an organization offers great flexibility, it's difficult to run Device Guard in enforcement mode. Nevertheless, Device Guard can be run in Audit mode, and in that case, the event log contains a record of any binaries that violated the Device Guard policy. When Device Guard is used in Audit mode, organizations can get rich data about drivers and applications that users install and run.
 
 Before you can benefit from the protection included in Device Guard, Code Integrity policy must be created by using tools provided by Microsoft, but the policy can be deployed with common management tools, like Group Policy. The Code Integrity policy is a binary-encoded XML document that includes configuration settings for both the User and Kernel-modes of Windows, along with restrictions on Windows script hosts. Device Guard Code Integrity policy restricts what code can run on a device.
 
@@ -286,14 +286,14 @@ Device Guard policy into the UpdateSigner section.
 
 On computers with Device Guard, Microsoft proposes to move from a world where unsigned apps can be run without restriction to a world where only signed and trusted code is allowed to run on Windows.
 
-With Windows, organizations will make line-of-business (LOB) apps available to members of the organization through the Microsoft Store infrastructure. More specifically, LOB apps will be available in a private store within the public Microsoft Store. Microsoft Store signs and distributes Universal
+With Windows, organizations make line-of-business (LOB) apps available to members of the organization through the Microsoft Store infrastructure. More specifically, LOB apps are available in a private store within the public Microsoft Store. Microsoft Store signs and distributes Universal
 Windows apps and Classic Windows apps. All apps downloaded from the Microsoft Store are signed.
 
 In organizations today, many LOB applications are unsigned. Code signing is frequently viewed as a tough problem to solve for various reasons, like the lack of code signing expertise. Even if code signing is a best practice, many internal applications aren't signed.
 
 Windows includes tools that allow IT pros to take applications that have been already packaged and run them through a process to create more signatures that can be distributed along with existing applications.
 
-### Why are antimalware and device management solutions still necessary?
+### Why are anti-malware and device management solutions still necessary?
 
 Although allowlist mechanisms are efficient at ensuring that only trusted applications can be run, they can't prevent the compromise of a trusted (but vulnerable) application by malicious content designed to exploit a known vulnerability. Device Guard doesn't protect against user mode malicious code run by exploiting vulnerabilities.
 
@@ -301,7 +301,7 @@ Vulnerabilities are weaknesses in software that could allow an attacker to compr
 
 It's common to see attackers distributing specially crafted content in an attempt to exploit known vulnerabilities in user mode software like web browsers (and their plug-ins), Java virtual machines, PDF readers, or document editors. As of today, 90 percent of discovered vulnerabilities affect user mode applications compared to the operating system and kernel mode drivers that host them.
 
-To combat these threats, patching is the single most effective control, with antimalware software forming complementary layers of defense.
+To combat these threats, patching is the single most effective control, with anti-malware software forming complementary layers of defense.
 
 Most application software has no facility for updating itself, so even if the software vendor publishes an update that fixes the vulnerability, the user may not know that the update is available or how to obtain it, and therefore remains vulnerable to attack. Organizations still need to manage devices and to patch vulnerabilities.
 
@@ -319,23 +319,23 @@ For more information on device health attestation, see the [Detect an unhealthy 
 
 ### Hardware requirements
 
-The following table details the hardware requirements for both virtualization-based security services and the health attestation feature. For more information, see [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
+The following table details the hardware requirements for both Virtualization-based security services and the health attestation feature. For more information, see [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
 |Hardware|Motivation|
 |--- |--- |
 |UEFI 2.3.1 or later firmware with Secure Boot enabled|Required to support UEFI Secure Boot. UEFI Secure Boot ensures that the device boots only authorized code. Additionally, Boot Integrity (Platform Secure Boot) must be supported following the requirements in Hardware Compatibility Specification for Systems for Windows under the subsection: "System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby"|
-|Virtualization extensions, such as Intel VT-x, AMD-V, and SLAT must be enabled|Required to support virtualization-based security. **Note:** Device Guard can be enabled without using virtualization-based security.|
-|X64 processor|Required to support virtualization-based security that uses Windows Hypervisor. Hyper-V is supported only on x64 processor (and not on x86). Direct Memory Access (DMA) protection can be enabled to provide extra memory protection but requires processors to include DMA protection technologies.|
+|Virtualization extensions, such as Intel VT-x, AMD-V, and SLAT must be enabled|Required to support Virtualization-based security. **Note:** Device Guard can be enabled without using Virtualization-based security.|
+|X64 processor|Required to support Virtualization-based security that uses Windows Hypervisor. Hyper-V is supported only on x64 processor (and not on x86). Direct Memory Access (DMA) protection can be enabled to provide extra memory protection but requires processors to include DMA protection technologies.|
 |IOMMU, such as Intel VT-d, AMD-Vi|Support for the IOMMU in Windows enhances system resiliency against DMA attacks.|
-|Trusted Platform Module (TPM)|Required to support health attestation and necessary for other key protections for virtualization-based security. TPM 2.0 is supported. Support for TPM 1.2 was added beginning in Windows 10, version 1607 (RS1)|
+|Trusted Platform Module (TPM)|Required to support health attestation and necessary for other key protections for Virtualization-based security. TPM 2.0 is supported. Support for TPM 1.2 was added beginning in Windows 10, version 1607 (RS1)|
 
-This section presented information about several closely related controls in Windows . The multi-layer defenses and in-depth approach help to eradicate low-level malware during boot sequence. Virtualization-based security is a fundamental operating system architecture change that adds a new security boundary. Device Guard and Credential Guard respectively help to block untrusted code and protect corporate domain credentials from theft and reuse. This section also briefly discussed the importance of managing devices and patching vulnerabilities. All these technologies can be used to harden and lock down devices while limiting the risk of attackers compromising them.
+This section presented information about several closely related controls in Windows. The multi-layer defenses and in-depth approach help to eradicate low-level malware during boot sequence. Virtualization-based security is a fundamental operating system architecture change that adds a new security boundary. Device Guard and Credential Guard respectively help to block untrusted code and protect corporate domain credentials from theft and reuse. This section also briefly discussed the importance of managing devices and patching vulnerabilities. All these technologies can be used to harden and lock down devices while limiting the risk of attackers compromising them.
 
 ## Detect an unhealthy Windows-based device
 
 As of today, many organizations only consider devices to be compliant with company policy after they've passed various checks that show, for example, that the operating system is in the correct state, properly configured, and has security protection enabled. Unfortunately, with today's systems, this form of reporting isn't entirely reliable because malware can spoof a software statement about system health. A rootkit, or a similar low-level exploit, can report a false healthy state to traditional compliance tools.
 
-The biggest challenge with rootkits is that they can be undetectable to the client. Because they start before antimalware, and they have system-level privileges, they can completely disguise themselves while continuing to access system resources. As a result, traditional computers infected with rootkits appear to be healthy, even with antimalware running.
+The biggest challenge with rootkits is that they can be undetectable to the client. Because they start before anti-malware, and they have system-level privileges, they can completely disguise themselves while continuing to access system resources. As a result, traditional computers infected with rootkits appear to be healthy, even with anti-malware running.
 
 As previously discussed, the health attestation feature of Windows uses the TPM hardware component to securely record a measurement of every boot-related component, including firmware, Windows kernel, and even early boot drivers. Because health attestation uses the hardware-based security capabilities of TPM, the log of all boot measured components remains out of the reach of any malware.
 
@@ -345,9 +345,9 @@ After the devices attest a trusted boot state, they can prove that they aren't r
 
 To understand the concept of device health, it's important to know traditional measures that IT pros have taken to prevent the breach of malware. Malware control technologies are highly focused on the prevention of installation and distribution.
 
-However, the use of traditional malware prevention technologies like antimalware or patching solutions brings a new set of issues for IT pros: the ability to monitor and control the compliance of devices accessing organization's resources.
+However, the use of traditional malware prevention technologies like anti-malware or patching solutions brings a new set of issues for IT pros: the ability to monitor and control the compliance of devices accessing organization's resources.
 
-The definition of device compliance will vary based on an organization's installed antimalware, device configuration settings, patch management baseline, and other security requirements. But health of the device is part of the overall device compliance policy.
+The definition of device compliance will vary based on an organization's installed anti-malware, device configuration settings, patch management baseline, and other security requirements. But health of the device is part of the overall device compliance policy.
 
 The health of the device isn't binary and depends on the organization's security implementation. The Health Attestation Service provides information back to the MDM on which security features are enabled during the boot of the device by using trustworthy hardware TPM.
 
@@ -364,13 +364,13 @@ A relying party like an MDM can inspect the report generated by the remote healt
 > [!NOTE]
 > To use the health attestation feature of Windows, the device must be equipped with a discrete or firmware TPM. There is no restriction on any particular edition of Windows.
 
-Windows supports health attestation scenarios by allowing applications access to the underlying health attestation configuration service provider (CSP) so that applications can request a health attestation token. The measurement of the boot sequence can be checked at any time locally by an antimalware or an MDM agent.
+Windows supports health attestation scenarios by allowing applications access to the underlying health attestation configuration service provider (CSP) so that applications can request a health attestation token. The measurement of the boot sequence can be checked at any time locally by an anti-malware or an MDM agent.
 
 Remote device health attestation combined with an MDM provides a hardware-rooted method for reporting the current security status and detecting any changes, without having to trust the software running on the system.
 
-In the case where malicious code is running on the device, the use of a remote server is required. If a rootkit is present on the device, the antimalware is no longer reliable, and its behavior can be hijacked by a malicious code running early in the startup sequence. This reason is what makes it important to use Secure Boot and Device Guard, to control which code is loaded during the boot sequence.
+In the case where malicious code is running on the device, the use of a remote server is required. If a rootkit is present on the device, the anti-malware is no longer reliable, and its behavior can be hijacked by a malicious code running early in the startup sequence. This reason is what makes it important to use Secure Boot and Device Guard, to control which code is loaded during the boot sequence.
 
-The antimalware software can search to determine whether the boot sequence contains any signs of malware, such as a rootkit. It can also send the TCG log and the PCRs to a remote health attestation server to provide a separation between the measurement component and the verification component.
+The anti-malware software can search to determine whether the boot sequence contains any signs of malware, such as a rootkit. It can also send the TCG log and the PCRs to a remote health attestation server to provide a separation between the measurement component and the verification component.
 
 Health attestation logs the measurements in various TPM Platform Configuration Registers (PCRs) and TCG logs during the boot process.
 
@@ -602,7 +602,7 @@ The figure below shows how the Health Attestation Service is expected to work wi
 
 :::image type="content" alt-text="figure 10." source="images/hva-fig9-intune.png":::
 
-An MDM solution can then use health state statements and take them to the next level by coupling with client policies that will enable conditional access to be granted based on the device's ability to prove that it's malware free, its antimalware system is functional and up to date, the
+An MDM solution can then use health state statements and take them to the next level by coupling with client policies that will enable conditional access to be granted based on the device's ability to prove that it's malware free, its anti-malware system is functional and up to date, the
 firewall is running, and the devices patch state is compliant.
 
 Finally, resources can be protected by denying access to endpoints that are unable to prove they're healthy. This feature is much needed for BYOD devices that need to access organizational resources.
@@ -736,7 +736,7 @@ The following list contains high-level key takeaways to improve the security pos
 
 - **Use virtualization-based security**
 
-    When you have Kernel Mode Code Integrity protected by virtualization-based security, the code integrity rules are still enforced even if a vulnerability allows unauthorized kernel mode memory access. Keep in mind that Device Guard devices that run Kernel Code Integrity with virtualization-based security must have compatible drivers.
+    When you have Kernel Mode Code Integrity protected by Virtualization-based security, the code integrity rules are still enforced even if a vulnerability allows unauthorized kernel mode memory access. Keep in mind that Device Guard devices that run Kernel Code Integrity with Virtualization-based security must have compatible drivers.
 
 - **Start to deploy Device Guard with Audit mode**
 
@@ -756,7 +756,7 @@ The following list contains high-level key takeaways to improve the security pos
 
 Health attestation is a key feature of Windows that includes client and cloud components to control access to high-value assets based on a user and their device's identity and compliance with corporate governance policy. Organizations can choose to detect and report unhealthy devices, or to configure health enforcement rules based on their needs. Health attestation provides an end-to-end security model and integration points, which vendors and software developers can use to build and integrate a customized solution.
 
-## Related topics
+## Related articles
 
 - [Protect derived domain credentials with Credential Guard](/windows/access-protection/credential-guard/credential-guard)
 - [Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide)

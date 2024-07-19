@@ -15,7 +15,7 @@ metadata:
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 04/25/2024
+  ms.date: 07/11/2024
 
 highlightedContent:
   items:
@@ -34,19 +34,15 @@ highlightedContent:
   - title: Windows commercial licensing
     itemType: overview
     url: /windows/whats-new/windows-licensing
-  - title: Copilot in Windows
-    itemType: how-to-guide
-    url: /windows/client-management/manage-windows-copilot
   - title: Windows 365 documentation
     itemType: overview
     url: /windows-365
   - title: Explore all Windows trainings and learning paths for IT pros
     itemType: learn
     url: https://learn.microsoft.com/en-us/training/browse/?products=windows&roles=administrator
-
-#  - title: Enroll Windows client devices in Microsoft Intune
-#    itemType: how-to-guide
-#    url: /mem/intune/fundamentals/deployment-guide-enrollment-windows
+  - title: Enroll Windows client devices in Microsoft Intune
+    itemType: how-to-guide
+    url: /mem/intune/fundamentals/deployment-guide-enrollment-windows
 
 productDirectory:
   title: Get started
@@ -55,10 +51,10 @@ productDirectory:
     - title: Learn how to deploy Windows
       imageSrc: /media/common/i_deploy.svg
       links:
-        - url: /mem/autopilot/
-          text: Windows Autopilot overview
-        - url: /mem/autopilot/tutorial/autopilot-scenarios
-          text: "Tutorial: Windows Autopilot scenarios"
+        - url: /autopilot/
+          text: Windows Autopilot
+        - url: /autopilot/device-preparation/compare
+          text: Compare Windows Autopilot solutions
         - url: /windows/deployment/do/
           text: Delivery optimization
         - url: /windows/deployment/update/deployment-service-overview
@@ -103,14 +99,14 @@ productDirectory:
     - title: Learn how to manage Windows
       imageSrc: /media/common/i_management.svg
       links:
+        - url: /windows/client-management/administrative-tools-in-windows-10
+          text: Windows administrative tools
+        - url: /windows/client-management/client-tools/windows-version-search
+          text: What version of Windows am I running?
         - url: /windows/client-management/mobile-device-enrollment
           text: MDM enrollment
         - url: /windows/client-management/mdm/
-          text: Configuration Service Provider (CSP)
-        - url: /windows/client-management/administrative-tools-in-windows-10
-          text: Windows administrative tools
-        - url: /windows/client-management/manage-windows-copilot
-          text: Manage Copilot in Windows
+          text: Configuration Service Provider (CSP) reference
         - url: /windows/application-management/index
           text: Learn more about application management >
         - url: /windows/client-management
