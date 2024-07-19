@@ -2,13 +2,13 @@
 title: Manage Windows devices in your organization - transitioning to modern management
 description: This article offers strategies for deploying and managing Windows devices, including deploying Windows in a mixed environment.
 ms.localizationpriority: medium
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ms.topic: conceptual
 ---
 
 # Manage Windows devices in your organization - transitioning to modern management
 
-Use of personal devices for work, and employees working outside the office, may be changing how your organization manages devices. Certain parts of your organization might require deep, granular control over devices, while other parts might seek lighter, scenario-based management that empowers the modern workforce. Windows offers the flexibility to respond to these changing requirements, and can easily be deployed in a mixed environment. You can shift the percentage of Windows devices gradually, following the normal upgrade schedules used in your organization.
+Use of personal devices for work, and users working outside the office, may be changing how your organization manages devices. Certain parts of your organization might require deep, granular control over devices, while other parts might seek lighter, scenario-based management that empowers the modern workforce. Windows offers the flexibility to respond to these changing requirements, and can easily be deployed in a mixed environment. You can shift the percentage of Windows devices gradually, following the normal upgrade schedules used in your organization.
 
 Your organization can support various operating systems across a wide range of device types, and manage them through a common set of tools such as Microsoft Configuration Manager, Microsoft Intune, or other third-party products. This "managed diversity" enables you to empower your users to benefit from the productivity enhancements available on their new Windows devices (including rich touch and ink support), while still maintaining your standards for security and manageability. It can help you and your organization benefit from Windows faster.
 
@@ -45,13 +45,13 @@ You can use Windows and services like [Microsoft Entra ID](/azure/active-directo
 
 You can envision user and device management as falling into these two categories:
 
-- **Corporate (CYOD) or personal (BYOD) devices used by mobile users for SaaS apps such as Office 365.** With Windows, your employees can self-provision their devices:
+- **Corporate (CYOD) or personal (BYOD) devices used by mobile users for SaaS apps such as Office 365.** With Windows, your users can self-provision their devices:
 
   - For corporate devices, they can set up corporate access with [Microsoft Entra join](/azure/active-directory/devices/overview). When you offer them Microsoft Entra join with automatic Intune MDM enrollment, they can bring devices into a corporate-managed state in [*one step*](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/windows-10-azure-ad-and-microsoft-intune-automatic-mdm/ba-p/244067), all from the cloud.
 
-    Microsoft Entra join is also a great solution for temporary staff, partners, or other part-time employees. These accounts can be kept separate from the on-premises AD domain but still access needed corporate resources.
+    Microsoft Entra join is also a great solution for temporary staff, partners, or other part-time users. These accounts can be kept separate from the on-premises AD domain but still access needed corporate resources.
 
-  - Likewise, for personal devices, employees can use a new, simplified [BYOD experience](/azure/active-directory/devices/overview) to add their work account to Windows, then access work resources on the device.
+  - Likewise, for personal devices, users can use a new, simplified [BYOD experience](/azure/active-directory/devices/overview) to add their work account to Windows, then access work resources on the device.
 
 - **Domain joined PCs and tablets used for traditional applications and access to important resources.** These applications and resources may be traditional ones that require authentication or accessing highly sensitive or classified resources on-premises.
 
@@ -71,7 +71,7 @@ As you review the roles in your organization, you can use the following generali
 
 ## Settings and configuration
 
-Your configuration requirements are defined by multiple factors, including the level of management needed, the devices and data managed, and your industry requirements. Meanwhile, employees are frequently concerned about IT applying strict policies to their personal devices, but they still want access to corporate email and documents. You can create a consistent set of configurations across PCs, tablets, and phones through the common MDM layer.
+Your configuration requirements are defined by multiple factors, including the level of management needed, the devices and data managed, and your industry requirements. Meanwhile, users are frequently concerned about IT applying strict policies to their personal devices, but they still want access to corporate email and documents. You can create a consistent set of configurations across PCs, tablets, and phones through the common MDM layer.
 
 - **MDM**: MDM gives you a way to configure settings that achieve your administrative intent without exposing every possible setting. (In contrast, group policy exposes fine-grained settings that you control individually.) One benefit of MDM is that it enables you to apply broader privacy, security, and application management settings through lighter and more efficient tools. MDM also allows you to target Internet-connected devices to manage policies without using group policy that requires on-premises domain-joined devices. This provision makes MDM the best choice for devices that are constantly on the go.
 

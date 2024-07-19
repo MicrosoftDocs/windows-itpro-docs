@@ -1,7 +1,7 @@
 ---
 title: PDE DDF file
 description: View the XML file containing the device description framework (DDF) for the PDE configuration service provider.
-ms.date: 06/19/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -39,7 +39,7 @@ The following XML file contains the device description framework (DDF) for the P
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x87;0x88;0x88*;0xAB;0xAC;0xB4;0xBC;0xBD;0xBF;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>

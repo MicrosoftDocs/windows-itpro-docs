@@ -2,7 +2,7 @@
 title: Mobile device management MDM for device updates
 description: Windows provides several APIs to help mobile device management (MDM) solutions manage updates. Learn how to use these APIs to implement update management.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ms.collection:
 - highpri
 - tier2
@@ -25,7 +25,7 @@ In particular, Windows provides APIs to enable MDMs to:
 - Enter a per-device update approval list. The list makes sure devices only install updates that are approved and tested.
 - Approve end-user license agreements (EULAs) for the end user so update deployment can be automated even for updates with EULAs.
 
-This article provides independent software vendors (ISV) with the information they need to implement update management in Windows. For more information, see [Policy CSP - Update](mdm/policy-csp-update.md).
+This article provides independent software publishers (ISV) with the information they need to implement update management in Windows. For more information, see [Policy CSP - Update](mdm/policy-csp-update.md).
 
 > [!NOTE]
 > The OMA DM APIs for specifying update approvals and getting compliance status refer to updates by using an Update ID. The Update ID is a GUID that identifies a particular update. The MDM will want to show IT-friendly information about the update, instead of a raw GUID, including the update's title, description, KB, update type, like a security update or service pack. For more information, see [[MS-WSUSSS]: Windows Update Services: Server-Server Protocol](/openspecs/windows_protocols/ms-wsusss/f49f0c3e-a426-4b4b-b401-9aeb2892815c).
@@ -88,7 +88,7 @@ This section describes a possible algorithm for using the server-server sync pro
 
 First some background:
 
-- If you have a multi-tenant MDM, the update metadata can be kept in a shared partition, since it's common to all tenants.
+- If you have a multitenant MDM, the update metadata can be kept in a shared partition, since it's common to all tenants.
 - A metadata sync service can then be implemented. The service periodically calls server-server sync to pull in metadata for the updates IT cares about.
 - The MDM component that uses OMA DM to control devices (described in the next section) should send the metadata sync service the list of needed updates it gets from each client, if those updates aren't already known to the device.
 
@@ -130,7 +130,7 @@ The following screenshots of the administrator console show the list of update t
 
 ### SyncML example
 
-Set auto update to notify and defer.
+Set Microsoft AutoUpdate to notify and defer.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">

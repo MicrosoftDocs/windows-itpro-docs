@@ -3,14 +3,14 @@ title: Use Windows Event Forwarding to help with intrusion detection
 description: Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.date: 12/22/2023
+ms.date: 07/10/2024
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection
 
 Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 
-Windows Event Forwarding (WEF) reads any operational or administrative event log on a device in your organization and forwards the events you choose to a Windows Event Collector (WEC) server.
+Windows Event Forwarding (WEF) reads any operational or administrative event logged on a device in your organization and forwards the events you choose to a Windows Event Collector (WEC) server.
 
 To accomplish this functionality, there are two different subscriptions published to client devices - the Baseline subscription and the suspect subscription. The Baseline subscription enrolls all devices in your organization, and a Suspect subscription only includes devices that have been added by you. The Suspect subscription collects more events to help build context for system activity and can quickly be updated to accommodate new events and/or scenarios as needed without impacting baseline operations.
 
@@ -35,12 +35,12 @@ For the minimum recommended audit policy and registry system ACL settings, see [
 > [!NOTE]
 > These are only minimum values need to meet what the WEF subscription selects.
 
-From a WEF subscription management perspective, the event queries provided should be used in two separate subscriptions for ease of maintenance; only machines meeting specific criteria would be allowed access to the targeted subscription, this access would be determined by an algorithm or an analysts' direction. All devices should have access to the Baseline subscription.
+From a WEF subscription management perspective, the event queries provided should be used in two separate subscriptions for ease of maintenance; only machines meeting specific criteria would be allowed access to the targeted subscription. This access would be determined by an algorithm or an analysts' direction. All devices should have access to the Baseline subscription.
 
 This system of dual subscription means you would create two base subscriptions:
 
--   **Baseline WEF subscription**. Events collected from all hosts; these events include some role-specific events, which will only be emitted by those machines.
--   **Targeted WEF subscription**. Events collected from a limited set of hosts due to unusual activity and/or heightened awareness for those systems.
+- **Baseline WEF subscription**. Events collected from all hosts; these events include some role-specific events, which will only be emitted by those machines.
+- **Targeted WEF subscription**. Events collected from a limited set of hosts due to unusual activity and/or heightened awareness for those systems.
 
 Each using the respective event query below. For the Targeted subscription, enabling the "read existing events" option should be set to true to allow collection of existing events from systems. By default, WEF subscriptions will only forward events generated after the WEF subscription was received by the client.
 
@@ -58,7 +58,7 @@ The longer answer is: The **Eventlog-forwardingPlugin/Operational** event channe
 
 ### Is WEF Push or Pull?
 
-A WEF subscription can be configured to be pushed or pulled, but not both. The simplest, most flexible IT deployment with the greatest scalability can be achieved by using a push, or source initiated, subscription. WEF clients are configured by using a GPO and the built-in forwarding client is activated. For pull, collector initiated, the subscription on the WEC server is pre-configured with the names of the WEF Client devices from which events are to be selected. Those clients are to be configured ahead of time to allow the credentials used in the subscription to access their event logs remotely (normally by adding the credential to the **Event Log Readers** built-in local security group.) A useful scenario: closely monitoring a specific set of machines.
+A WEF subscription can be configured to be pushed or pulled, but not both. The simplest, most flexible IT deployment with the greatest scalability can be achieved by using a push, or source initiated, subscription. WEF clients are configured by using a GPO and the built-in forwarding client is activated. For pull, collector initiated, the subscription on the WEC server is preconfigured with the names of the WEF Client devices from which events are to be selected. Those clients are to be configured ahead of time to allow the credentials used in the subscription to access their event logs remotely (normally by adding the credential to the **Event Log Readers** built-in local security group.) A useful scenario: closely monitoring a specific set of machines.
 
 ### Will WEF work over VPN or RAS?
 
@@ -67,7 +67,7 @@ WEF handles VPN, RAS, and DirectAccess scenarios well and will reconnect and sen
 ### How is client progress tracked?
 
 The WEC server maintains in its registry the bookmark information and last heartbeat time for each event source for each WEF subscription. When an event source reconnects to a WEC server, the last bookmark position is sent to the device to use as a starting point to resume forwarding events. If a
-WEF client has no events to send, the WEF client will connect periodically to send a Heartbeat to the WEC server to indicate it's active. This heartbeat value can be individually configured for each subscription.
+WEF client has no events to send, the WEF client connects periodically to send a Heartbeat to the WEC server to indicate it's active. This heartbeat value can be individually configured for each subscription.
 
 ### Will WEF work in an IPv4, IPv6, or mixed IPv4/IPv6 environment?
 
@@ -130,19 +130,19 @@ For collector initiated subscriptions: The subscription contains the list of mac
 
 ### Can a client communicate to multiple WEF Event Collectors?
 
-Yes. If you desire a High-Availability environment, configure multiple WEC servers with the same subscription configuration and publish both WEC Server URIs to WEF clients. WEF Clients will forward events simultaneously to the configured subscriptions on the WEC servers, if they have the appropriate access.
+Yes. If you desire a High-Availability environment, configure multiple WEC servers with the same subscription configuration and publish both WEC Server URIs to WEF clients. WEF Clients forward events simultaneously to the configured subscriptions on the WEC servers, if they have the appropriate access.
 
 ### What are the WEC server's limitations?
 
 There are three factors that limit the scalability of WEC servers. The general rule for a stable WEC server on commodity hardware is planning for a total of 3,000 events per second on average for all configured subscriptions.
 
--   **Disk I/O**. The WEC server doesn't process or validate the received event, but rather buffers the received event and then logs it to a local event log file (EVTX file). The speed of logging to the EVTX file is limited by the disk write speed. Isolating the EVTX file to its own array or using high speed disks can increase the number of events per second that a single WEC server can receive.
--   **Network Connections**. While a WEF source doesn't maintain a permanent, persistent connection to the WEC server, it doesn't immediately disconnect after sending its events. This leniency means that the number of WEF sources that can simultaneously connect to the WEC server is limited to the open TCP ports available on the WEC server.
--   **Registry size**. For each unique device that connects to a WEF subscription, there's a registry key (corresponding to the FQDN of the WEF Client) created to store bookmark and source heartbeat information. If this information isn't pruned to remove inactive clients, this set of registry keys can grow to an unmanageable size over time.
+- **Disk I/O**. The WEC server doesn't process or validate the received event, but rather buffers the received event and then logs it to a local event log file (EVTX file). The speed of logging to the EVTX file is limited by the disk write speed. Isolating the EVTX file to its own array or using high speed disks can increase the number of events per second that a single WEC server can receive.
+- **Network Connections**. While a WEF source doesn't maintain a permanent, persistent connection to the WEC server, it doesn't immediately disconnect after sending its events. This leniency means that the number of WEF sources that can simultaneously connect to the WEC server is limited to the open TCP ports available on the WEC server.
+- **Registry size**. For each unique device that connects to a WEF subscription, there's a registry key (corresponding to the FQDN of the WEF Client) created to store bookmark and source heartbeat information. If this information isn't pruned to remove inactive clients, this set of registry keys can grow to an unmanageable size over time.
 
-    -   When a subscription has &gt;1000 WEF sources connect to it over its operational lifetime, also known as lifetime WEF sources, Event Viewer can become unresponsive for a few minutes when selecting the **Subscriptions** node in the left-navigation, but will function normally afterwards.
-    -   At &gt;50,000 lifetime WEF sources, Event Viewer is no longer an option and wecutil.exe (included with Windows) must be used to configure and manage subscriptions.
-    -   At &gt;100,000 lifetime WEF sources, the registry won't be readable and the WEC server will likely have to be rebuilt.
+    - When a subscription has &gt;1000 WEF sources connect to it over its operational lifetime, also known as lifetime WEF sources, Event Viewer can become unresponsive for a few minutes when selecting the **Subscriptions** node in the left-navigation, but will function normally afterwards.
+    - At &gt;50,000 lifetime WEF sources, Event Viewer is no longer an option and wecutil.exe (included with Windows) must be used to configure and manage subscriptions.
+    - At &gt;100,000 lifetime WEF sources, the registry won't be readable and the WEC server will likely have to be rebuilt.
 
 ## Subscription information
 
@@ -158,56 +158,56 @@ The subscription is essentially a collection of query statements applied to the 
 
 To gain the most value out of the baseline subscription, we recommend having the following requirements set on the device to ensure that the clients are already generating the required events to be forwarded off the system.
 
--   Apply a security audit policy that is a super-set of the recommended minimum audit policy. For more info, see [Appendix A - Minimum Recommended minimum Audit Policy](#bkmk-appendixa). This policy ensures that the security event log is generating the required events.
--   Apply at least an Audit-Only AppLocker policy to devices.
+- Apply a security audit policy that is a super-set of the recommended minimum audit policy. For more info, see [Appendix A - Minimum Recommended minimum Audit Policy](#bkmk-appendixa). This policy ensures that the security event log is generating the required events.
+- Apply at least an Audit-Only AppLocker policy to devices.
 
-    -   If you're already allowing or restricting events by using AppLocker, then this requirement is met.
-    -   AppLocker events contain useful information, such as file hash and digital signature information for executables and scripts.
+    - If you're already allowing or restricting events by using AppLocker, then this requirement is met.
+    - AppLocker events contain useful information, such as file hash and digital signature information for executables and scripts.
 
--   Enable disabled event channels and set the minimum size for modern event files.
--   Currently, there's no GPO template for enabling or setting the maximum size for the modern event files. This threshold must be defined by using a GPO. For more info, see [Appendix C - Event Channel Settings (enable and Channel Access) methods](#bkmk-appendixc).
+- Enable disabled event channels and set the minimum size for modern event files.
+- Currently, there's no GPO template for enabling or setting the maximum size for the modern event files. This threshold must be defined by using a GPO. For more info, see [Appendix C - Event Channel Settings (enable and Channel Access) methods](#bkmk-appendixc).
 
 The annotated event query can be found in the following. For more info, see [Appendix F - Annotated Suspect Subscription Event Query](#bkmk-appendixf).
 
-- Anti-malware events from Microsoft Antimalware or Windows Defender. These events can be configured for any given anti-malware product easily if it writes to the Windows event log.
+- Anti-malware events from Windows Security. These events can be configured for any given anti-malware product easily if it writes to the Windows event log.
 - Security event log Process Create events.
 - AppLocker Process Create events (EXE, script, packaged App installation and execution).
 - Registry modification events. For more info, see [Appendix B - Recommended minimum Registry System ACL Policy](#bkmk-appendixb).
 - OS startup and shutdown
 
-  -   Startup events include operating system version, service pack level, QFE version, and boot mode.
+  - Startup events include operating system version, service pack level, QFE version, and boot mode.
 
 - Service install
 
-  -   Includes what the name of the service, the image path, and who installed the service.
+  - Includes what the name of the service, the image path, and who installed the service.
 
 - Certificate Authority audit events
 
-  -   These events are only applicable on systems with the Certificate Authority role installed.
-  -   Logs certificate requests and responses.
+  - These events are only applicable on systems with the Certificate Authority role installed.
+  - Logs certificate requests and responses.
 
 - User profile events
 
-  -   Use of a temporary profile or unable to create a user profile may indicate an intruder is interactively logging into a device but not wanting to leave a persistent profile behind.
+  - Use of a temporary profile or unable to create a user profile may indicate an intruder is interactively logging into a device but not wanting to leave a persistent profile behind.
 
 - Service start failure
 
-  -   Failure codes are localized, so you have to check the message DLL for values.
+  - Failure codes are localized, so you have to check the message DLL for values.
 
 - Network share access events
 
-  -   Filter out IPC$ and /NetLogon file shares, which are expected and noisy.
+  - Filter out IPC$ and /NetLogon file shares, which are expected and noisy.
 
 - System shutdown initiate requests
 
-  -   Find out what initiated the restart of a device.
+  - Find out what initiated the restart of a device.
 
-- User-initiated interactive sign-out event
+- User-initiated interactive sign out event
 - Remote Desktop Services sessions connect, reconnect, or disconnect.
 - EMET events, if EMET is installed.
 - Event forwarding plugin events
 
-  -   For monitoring WEF subscription operations, such as Partial Success events. This event is useful for diagnosing deployment issues.
+  - For monitoring WEF subscription operations, such as Partial Success events. This event is useful for diagnosing deployment issues.
 
 - Network share creation and deletion
 
@@ -217,111 +217,111 @@ The annotated event query can be found in the following. For more info, see [App
 
 - Sign-in sessions
 
-  -   Sign-in success for interactive (local and Remote Interactive/Remote Desktop)
-  -   Sign-in success for services for non-built-in accounts, such as LocalSystem, LocalNetwork, and so on.
-  -   Sign-in success for batch sessions
-  -   Sign-in session close, which is sign-out events for non-network sessions.
+  - Sign-in success for interactive (local and Remote Interactive/Remote Desktop)
+  - Sign-in success for services for non-built-in accounts, such as LocalSystem, LocalNetwork, and so on.
+  - Sign-in success for batch sessions
+  - Sign-in session close, which is sign out events for non-network sessions.
 
 - Windows Error Reporting (Application crash events only)
 
-  -   This session can help detect early signs of intruder not familiar with enterprise environment using targeted malware.
+  - This session can help detect early signs of intruder not familiar with enterprise environment using targeted malware.
 
 - Event log service events
 
-  -   Errors, start events, and stop events for the Windows Event Log service.
+  - Errors, start events, and stop events for the Windows Event Log service.
 
 - Event log cleared (including the Security Event Log)
 
-  -   This event could indicate an intruder that is covering their tracks.
+  - This event could indicate an intruder that is covering their tracks.
 
 - Special privileges assigned to new sign in
 
-  -   This assignation indicates that at the time of signing in, a user is either an Administrator or has the sufficient access to make themselves Administrator.
+  - This assignation indicates that at the time of signing in, a user is either an Administrator or has the sufficient access to make themselves Administrator.
 
 - Outbound Remote Desktop Services session attempts
 
-  -   Visibility into potential beachhead for intruder
+  - Visibility into potential beachhead for intruder
 
 - System time changed
 - SMB Client (mapped drive connections)
 - Account credential validation
 
-  -   Local accounts or domain accounts on domain controllers
+  - Local accounts or domain accounts on domain controllers
 
 - A user was added or removed from the local Administrators security group.
 - Crypto API private key accessed
 
-  -   Associated with signing objects using the locally stored private key.
+  - Associated with signing objects using the locally stored private key.
 
 - Task Scheduler task creation and delete
 
-  -   Task Scheduler allows intruders to run code at specified times as LocalSystem.
+  - Task Scheduler allows intruders to run code at specified times as LocalSystem.
 
 - Sign-in with explicit credentials
 
-  -   Detect credential use changes by intruders to access more resources.
+  - Detect credential use changes by intruders to access more resources.
 
 - Smartcard card holder verification events
 
-  -   This event detects when a smartcard is being used.
+  - This event detects when a smartcard is being used.
 
 ### Suspect subscription
 
 This subscription adds some possible intruder-related activity to help analyst further refine their determinations about the state of the device.
 
--   Sign-in session creation for network sessions
+- Sign-in session creation for network sessions
 
-    -   Enables time-series analysis of network graphs.
+    - Enables time-series analysis of network graphs.
 
--   RADIUS and VPN events
+- RADIUS and VPN events
 
-    -   Useful if you use a Microsoft IAS RADIUS/VPN implementation. It shows user-&gt; IP address assignment with remote IP address connecting to the enterprise.
+    - Useful if you use a Microsoft IAS RADIUS/VPN implementation. It shows user-&gt; IP address assignment with remote IP address connecting to the enterprise.
 
--   Crypto API X509 object and build chain events
+- Crypto API X509 object and build chain events
 
-    -   Detects known bad certificate, CA, or sub-CA
-    -   Detects unusual process use of CAPI
+    - Detects known bad certificate, CA, or sub-CA
+    - Detects unusual process use of CAPI
 
--   Groups assigned to local sign in
+- Groups assigned to local sign in
 
-    -   Gives visibility to groups that enable account-wide access
-    -   Allows better planning for remediation efforts
-    -   Excludes well known, built-in system accounts.
+    - Gives visibility to groups that enable account-wide access
+    - Allows better planning for remediation efforts
+    - Excludes well known, built-in system accounts.
 
--   Sign-in session exit
+- Sign-in session exit
 
-    -   Specific for network sign-in sessions.
+    - Specific for network sign-in sessions.
 
--   Client DNS lookup events
+- Client DNS lookup events
 
-    -   Returns what process performed a DNS query and the results returned from the DNS server.
+    - Returns what process performed a DNS query and the results returned from the DNS server.
 
--   Process exit
+- Process exit
 
-    -   Enables checking for processes terminating unexpectedly.
+    - Enables checking for processes terminating unexpectedly.
 
--   Local credential validation or signing in with explicit credentials
+- Local credential validation or signing in with explicit credentials
 
-    -   Generated when the local SAM is authoritative for the account credentials being authenticated.
-    -   Noisy on domain controllers
-    -   On client devices, it's only generated when local accounts sign in.
+    - Generated when the local SAM is authoritative for the account credentials being authenticated.
+    - Noisy on domain controllers
+    - On client devices, it's only generated when local accounts sign in.
 
--   Registry modification audit events
+- Registry modification audit events
 
-    -   Only when a registry value is being created, modified, or deleted.
+    - Only when a registry value is being created, modified, or deleted.
 
--   Wireless 802.1x authentication
+- Wireless 802.1x authentication
 
-    -   Detect wireless connection with a peer MAC address
+    - Detect wireless connection with a peer MAC address
 
--   Windows PowerShell logging
+- Windows PowerShell logging
 
-    -   Covers Windows PowerShell 2.0 and later and includes the Windows PowerShell 5.0 logging improvements for in-memory attacks using Windows PowerShell.
-    -   Includes Windows PowerShell remoting logging
+    - Covers Windows PowerShell 2.0 and later and includes the Windows PowerShell 5.0 logging improvements for in-memory attacks using Windows PowerShell.
+    - Includes Windows PowerShell remoting logging
 
--   User Mode Driver Framework "Driver Loaded" event
+- User Mode Driver Framework "Driver Loaded" event
 
-    -   Can possibly detect a USB device loading multiple device drivers. For example, a USB\_STOR device loading the keyboard or network driver.
+    - Can possibly detect a USB device loading multiple device drivers. For example, a USB\_STOR device loading the keyboard or network driver.
 
 ## <a href="" id="bkmk-appendixa"></a>Appendix A - Minimum recommended minimum audit policy
 

@@ -2,7 +2,7 @@
 title: Secured-core configuration lock
 description: A secured-core PC (SCPC) feature that prevents configuration drift from secured-core PC features caused by unintentional misconfiguration.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
@@ -63,7 +63,7 @@ The steps to turn on config lock using Microsoft Intune are as follows:
 
 Config lock is designed to ensure that a secured-core PC isn't unintentionally misconfigured. You keep the ability to enable or disable SCPC features, for example, firmware protection. You can make these changes with group policies or MDM services like Microsoft Intune.
 
-:::image type="content" source="images/configlock-mem-firmwareprotect.png" alt-text="The Defender Firmware protection setting, with a description of Windows Defender System Guard protects your device from compromised firmware. The setting is set to Off.":::
+:::image type="content" source="images/configlock-mem-firmwareprotect.png" alt-text="The Defender Firmware protection setting, with a description of System Guard protects your device from compromised firmware. The setting is set to Off.":::
 
 ## FAQ
 

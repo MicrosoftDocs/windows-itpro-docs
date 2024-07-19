@@ -2,7 +2,7 @@
 title: Connect to remote Microsoft Entra joined device
 description: Learn how to use Remote Desktop Connection to connect to a Microsoft Entra joined device.
 ms.localizationpriority: medium
-ms.date: 08/10/2023
+ms.date: 07/01/2024
 ms.topic: conceptual
 ms.collection:
 - highpri
@@ -14,17 +14,15 @@ ms.collection:
 Windows supports remote connections to devices joined to Active Directory s well as devices joined to Microsoft Entra ID using Remote Desktop Protocol (RDP).
 
 - Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
-- Starting in Windows 10/11, with 2022-10 update installed, you can [use Microsoft Entra authentication to connect to the remote Microsoft Entra device](#connect-with-azure-ad-authentication).
+- Starting in Windows 10/11, with 2022-10 update installed, you can [use Microsoft Entra authentication to connect to the remote Microsoft Entra device](#connect-with-microsoft-entra-authentication).
 
 ## Prerequisites
 
 - Both devices (local and remote) must be running a supported version of Windows.
 - Remote device must have the **Connect to and use this PC from another device using the Remote Desktop app** option selected under **Settings** > **System** > **Remote Desktop**.
-  - It's recommended to select **Require devices to use Network Level Authentication to connect** option.
+  - Select **Require devices to use Network Level Authentication to connect** option is recommended.
 - If the user who joined the device to Microsoft Entra ID is the only one who is going to connect remotely, no other configuration is needed. To allow more users or groups to connect to the device remotely, you must [add users to the Remote Desktop Users group](#add-users-to-remote-desktop-users-group) on the remote device.
 - Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-guard) is turned off on the device you're using to connect to the remote device.
-
-<a name='connect-with-azure-ad-authentication'></a>
 
 ## Connect with Microsoft Entra authentication
 
@@ -63,8 +61,6 @@ To connect to the remote computer:
 The Windows lock screen in the remote session doesn't support Microsoft Entra authentication tokens or passwordless authentication methods like FIDO keys. The lack of support for these authentication methods means that users can't unlock their screens in a remote session. When you try to lock a remote session, either through user action or system policy, the session is instead disconnected and the service sends a message to the user explaining they've been disconnected.
 
 Disconnecting the session also ensures that when the connection is relaunched after a period of inactivity, Microsoft Entra ID reevaluates the applicable conditional access policies.
-
-<a name='connect-without-azure-ad-authentication'></a>
 
 ## Connect without Microsoft Entra authentication
 

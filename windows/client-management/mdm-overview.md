@@ -1,12 +1,13 @@
 ---
 title: Mobile Device Management overview
 description: Windows provides an enterprise-level solution to mobile management, to help IT pros comply with security policies while avoiding compromise of user's privacy.
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.collection:
 - highpri
 - tier2
+- essentials-manage
 ---
 
 # Mobile Device Management overview
@@ -55,8 +56,6 @@ For information about the MDM policies defined in the Intune security baseline, 
 ### Can there be more than one MDM server to enroll and manage devices in Windows?
 
 No. Only one MDM is allowed.
-
-<a name='how-do-i-set-the-maximum-number-of-azure-active-directory-joined-devices-per-user'></a>
 
 ### How do I set the maximum number of Microsoft Entra joined devices per user?
 

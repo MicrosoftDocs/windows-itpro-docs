@@ -1,7 +1,7 @@
 ---
 title: Manage driver and firmware updates
 description: This article explains how you can manage driver and firmware updates with Windows Autopatch
-ms.date: 08/22/2023
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to

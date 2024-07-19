@@ -1,7 +1,7 @@
 ---
 title: Configure your network
 description: This article details the network configurations needed for Windows Autopatch
-ms.date: 09/15/2023
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to

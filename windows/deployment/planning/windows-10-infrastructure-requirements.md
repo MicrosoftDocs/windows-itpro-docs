@@ -6,7 +6,7 @@ ms.author: frankroj
 ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: itpro-deploy
 ms.date: 10/28/2022
 ---
@@ -97,4 +97,3 @@ Windows 10 Enterprise and Windows 10 Enterprise LTSC installations use different
 
 [Windows 10 servicing options](../update/waas-servicing-strategy-windows-10-updates.md)<br>
 [Windows 10 deployment considerations](windows-10-deployment-considerations.md)<br>
-[Windows 10 compatibility](windows-10-compatibility.md)<br>

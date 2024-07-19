@@ -4,7 +4,7 @@ description: Learn how Kernel DMA Protection protects Windows devices against dr
 ms.collection:
   - tier1
 ms.topic: conceptual
-ms.date: 01/09/2024
+ms.date: 07/10/2024
 ---
 
 # Kernel DMA Protection
@@ -20,16 +20,16 @@ Drive-by DMA attacks are attacks that occur while the owner of the system isn't 
 
 ## How Windows protects against DMA drive-by attacks
 
-Windows uses the system *Input/Output Memory Management Unit (IOMMU)* to block external peripherals from starting and performing DMA, unless the drivers for these peripherals support memory isolation (such as DMA-remapping). Peripherals with [DMA Remapping compatible drivers][LINK-1] will be automatically enumerated, started, and allowed to perform DMA to their assigned memory regions.
+Windows uses the system *Input/Output Memory Management Unit (IOMMU)* to block external peripherals from starting and performing DMA, unless the drivers for these peripherals support memory isolation (such as DMA-remapping). Peripherals with [DMA Remapping compatible drivers][LINK-1] are automatically enumerated, started, and allowed to perform DMA to their assigned memory regions.
 
-By default, peripherals with DMA Remapping incompatible drivers will be blocked from starting and performing DMA until an authorized user signs into the system or unlocks the screen. IT administrators can modify the default behavior applied to devices with DMA Remapping incompatible drivers using MDM or group policies.
+By default, peripherals with DMA Remapping incompatible drivers are blocked from starting and performing DMA until an authorized user signs into the system or unlocks the screen. IT administrators can modify the default behavior applied to devices with DMA Remapping incompatible drivers using MDM or group policies.
 
 ## User experience
 
 When Kernel DMA Protection is enabled:
 
-- Peripherals with DMA Remapping-compatible device drivers will be automatically enumerated and started
-- Peripherals with DMA Remapping-incompatible drivers will be blocked from starting if the peripheral was plugged in before an authorized user logs in, or while the screen is locked. Once the system is unlocked, the peripheral driver will be started by the OS, and the peripheral will continue to function normally until the system is rebooted, or the peripheral is unplugged. The peripheral will continue to function normally if the user locks the screen or signs out of the system.
+- Peripherals with DMA Remapping-compatible device drivers are automatically enumerated and started
+- Peripherals with DMA Remapping-incompatible drivers are blocked from starting if the peripheral was plugged in before an authorized user logs in, or while the screen is locked. Once the system is unlocked, the peripheral driver is started by the OS, and the peripheral continues to function normally until the system is rebooted, or the peripheral is unplugged. The peripheral will continue to function normally if the user locks the screen or signs out of the system.
 
 [!INCLUDE [kernel-direct-memory-access-dma-protection](../../../includes/licensing/kernel-direct-memory-access-dma-protection.md)]
 
@@ -44,7 +44,7 @@ Kernel DMA Protection isn't compatible with other BitLocker DMA attacks counterm
 
 ## Check if Kernel DMA Protection is enabled
 
-Systems that support Kernel DMA Protection will enable the feature automatically, with no user or IT admin configuration required.
+Systems that support Kernel DMA Protection enable the feature automatically, with no user or IT admin configuration required.
 
 You can use the Windows Security settings to check if Kernel DMA Protection is enabled:
 
@@ -53,7 +53,7 @@ You can use the Windows Security settings to check if Kernel DMA Protection is e
 
    :::image type="content" source="images/kernel-dma-protection-security-center.png" alt-text="Screenshot of Kernel DMA protection in Windows Security." lightbox="images/kernel-dma-protection-security-center.png" border="true":::
 
-   Alternatively, you can use the System Information desktop app (`msinfo32.exe`). If the system supports Kernel DMA Protection, the **Kernel DMA Protection** value will be set to **ON**.
+   Alternatively, you can use the System Information desktop app (`msinfo32.exe`). If the system supports Kernel DMA Protection, the **Kernel DMA Protection** value is set to **ON**.
 
    :::image type="content" source="images/kernel-dma-protection.png" alt-text="Screenshot of Kernel DMA protection in System Information." lightbox="images/kernel-dma-protection.png" border="true":::
 
@@ -91,7 +91,7 @@ Use the Windows-provided drivers for the peripherals, when available. If there a
 
 ### My system's Kernel DMA Protection is off. Can DMA-remapping for a specific device be turned on?
 
-Yes. DMA remapping for a specific device can be turned on independent from Kernel DMA Protection. For example, if the driver opts in and VT-d (Virtualization Technology for Directed I/O) is turned on, then DMA remapping will be enabled for the devices driver even if Kernel DMA Protection is turned off.
+Yes. DMA remapping for a specific device can be turned on independent from Kernel DMA Protection. For example, if the driver opts in and VT-d (Virtualization Technology for Directed I/O) is turned on, then DMA remapping is enabled for the devices driver even if Kernel DMA Protection is turned off.
 
 Kernel DMA Protection is a policy that allows or blocks devices to perform DMA, based on their remapping state and capabilities.
 
@@ -117,5 +117,4 @@ The policy can be enabled by using:
 [LINK-1]: /windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers
 [LINK-2]: /windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies
 [LINK-3]: /windows-hardware/design/device-experiences/oem-kernel-dma-protection
-
 [EXT-1]: https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf

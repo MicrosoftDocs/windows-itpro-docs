@@ -55,9 +55,9 @@
       "titleSuffix": "Configure Windows",
       "contributors_to_exclude": [
         "dstrome2",
-        "rjagiewich",  
+        "rjagiewich",
         "American-Dipper",
-        "claydetels19", 
+        "claydetels19",
         "jborsecnik",
         "v-stchambers",
         "shdyas",
@@ -72,9 +72,6 @@
       ]
     },
     "fileMetadata": {
-      "feedback_system": {
-        "ue-v/**/*.*": "None"
-      },
       "author":{
         "accessibility//**/*.md": "paolomatarazzo",
         "accessibility//**/*.yml": "paolomatarazzo",
@@ -96,8 +93,6 @@
         "taskbar//**/*.yml": "paolomatarazzo",
         "tips//**/*.md": "paolomatarazzo",
         "tips//**/*.yml": "paolomatarazzo",
-        "ue-v//**/*.md": "aczechowski",
-        "ue-v//**/*.yml": "aczechowski",
         "wcd//**/*.md": "vinaypamnani-msft",
         "wcd//**/*.yml": "vinaypamnani-msft"
       },
@@ -122,8 +117,6 @@
         "taskbar//**/*.yml": "paoloma",
         "tips//**/*.md": "paoloma",
         "tips//**/*.yml": "paoloma",
-        "ue-v//**/*.md": "aaroncz",
-        "ue-v//**/*.yml": "aaroncz",
         "wcd//**/*.md": "vinpa",
         "wcd//**/*.yml": "vinpa"
       },
@@ -132,18 +125,11 @@
         "start//**/*.md": "ericpapa"
       },
       "ms.collection": {
-        "wcd//**/*.md": "must-keep",
-        "ue-v//**/*.md": [
-          "must-keep",
-          "tier3"
-        ]
+        "wcd//**/*.md": "must-keep"
       },
       "appliesto": {
         "*/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
-        ],
-        "ue-v//**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
         ],
         "wcd//**/*.md": ""

@@ -15,7 +15,7 @@ items:
     href: manage-settings-app-with-group-policy.md
   - name: Manage default media removal policy
     href: change-default-removal-policy-external-storage-media.md
-  - name: What version of Windows am I running
-    href: windows-version-search.md
   - name: Windows libraries
     href: windows-libraries.md
+  - name: What version of Windows am I running
+    href: windows-version-search.md

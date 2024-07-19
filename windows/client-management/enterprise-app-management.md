@@ -2,7 +2,7 @@
 title: Enterprise app management
 description: This article covers one of the key mobile device management (MDM) features for managing the lifecycle of apps across Windows devices.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # Enterprise app management
@@ -116,7 +116,7 @@ There are two basic types of apps you can deploy:
 - Store apps.
 - Enterprise signed apps.
 
-To deploy enterprise signed apps, you must enable a setting on the device to allow trusted apps. The apps can be signed by a Microsoft approved root (such as Symantec), an enterprise deployed root, or apps that are self-signed. This section covers the steps to configure the device for non-store app deployment.
+To deploy enterprise signed apps, you must enable a setting on the device to allow trusted apps. The apps can be signed by a Microsoft approved root (such as Symantec), an enterprise deployed root, or apps that are self-signed. This section covers the steps to configure the device for nonstore app deployment.
 
 ### Unlock the device for non-Store apps
 
@@ -154,7 +154,7 @@ Here's an example:
 
 ### Unlock the device for developer mode
 
-Development of apps on Windows devices no longer requires a special license. You can enable debugging and deployment of non-packaged apps using [ApplicationManagement/AllowDeveloperUnlock](mdm/policy-csp-applicationmanagement.md) policy in Policy CSP.
+Development of apps on Windows devices no longer requires a special license. You can enable debugging and deployment of nonpackaged apps using [ApplicationManagement/AllowDeveloperUnlock](mdm/policy-csp-applicationmanagement.md) policy in Policy CSP.
 
 AllowDeveloperUnlock policy enables the development mode on the device. The AllowDeveloperUnlock isn't configured by default, which means only Microsoft Store apps can be installed. If the management server explicitly sets the value to off, the setting is disabled in the settings panel on the device.
 
@@ -238,8 +238,8 @@ If you purchased an app from the Store for Business, the app license must be dep
 
 In the SyncML, you need to specify the following information in the `Exec` command:
 
-- License ID - This ID is specified in the LocURI. The License ID for the offline license is referred to as the "Content ID" in the license file. You can retrieve this information from the Base64 encoded license download from the Store for Business.
-- License Content - This content is specified in the data section. The License Content is the Base64 encoded blob of the license.
+- License ID - This ID is specified in the LocURI. The License ID for the offline license is referred to as the "Content ID" in the license file. You can retrieve this information from the Base 64 encoded license download from the Store for Business.
+- License Content - This content is specified in the data section. The License Content is the Base 64 encoded blob of the license.
 
 Here's an example of an offline license installation.
 
@@ -469,7 +469,7 @@ When an app installation is completed, a Windows notification is sent. You can a
   - NOT\_INSTALLED (0) - The node was added, but the execution wasn't completed.
   - INSTALLING (1) - Execution has started, but the deployment hasn't completed. If the deployment completes regardless of success, then this value is updated.
   - FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription.
-  - INSTALLED (3) - Once an install is successful this node is cleaned up. If the clean up action hasn't completed, then this state may briefly appear.
+  - INSTALLED (3) - Once an install is successful this node is cleaned up. If the clean-up action hasn't completed, then this state may briefly appear.
 - LastError - The last error reported by the app deployment server.
 - LastErrorDescription - Describes the last error reported by the app deployment server.
 - Status - An integer that indicates the progress of the app installation. In cases of an HTTPS location, this status shows the estimated download progress. Status isn't available for provisioning and only used for user-based installations. For provisioning, the value is always 0.

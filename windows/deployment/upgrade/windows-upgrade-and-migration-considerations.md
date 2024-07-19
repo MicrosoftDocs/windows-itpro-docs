@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: itpro-deploy
 ms.date: 08/09/2023
 ---
@@ -37,13 +37,13 @@ You can use USMT to automate migration during large deployments of the Windows o
 
 > [!IMPORTANT]
 >
-> USMT only supports devices that are joined to a local Active Directory domain. USMT doesn't support Microsoft Entra joined devices. 
+> USMT only supports devices that are joined to a local Active Directory domain. USMT doesn't support Microsoft Entra joined devices.
 
 ## Upgrade and migration considerations
 Whether you're upgrading or migrating to a new version of Windows, you must be aware of the following issues and considerations:
 
 ### Application compatibility
-For more information about application compatibility in Windows, see [Use Upgrade Readiness to manage Windows upgrades](/windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades).
+For more information about application compatibility in Windows, see [Windows compatibility cookbook](/windows/compatibility/).
 
 ### Multilingual Windows image upgrades
 When performing multilingual Windows upgrades, cross-language upgrades aren't supported by USMT. If you're upgrading or migrating an operating system with multiple language packs installed, you can upgrade or migrate only to the system default user interface (UI) language. For example, if English is the default but you have a Spanish language pack installed, you can upgrade or migrate only to English.
@@ -58,11 +58,9 @@ During the configuration pass of Windows Setup, the root access control list (AC
 
 Changing the ACLs may affect the performance of Windows Setup if the default Windows XP ACLs are applied to a partition with a large amount of data. Because of these performance concerns, you can change the following registry value to disable this feature:
 
-``` syntax
-Key: HKLM\System\Setup
-Type: REG_DWORD 
-Value: "DDACLSys_Disabled" = 1
-```
+`Key: HKLM\System\Setup`
+`Type: REG_DWORD`
+`Value: "DDACLSys_Disabled" = 1`
 
 This feature is disabled if this registry key value exists and is configured to `1`.
 

@@ -7,7 +7,7 @@ description: Understand the most common methods to monitor the success of the ac
 ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: itpro-fundamentals
 ms.date: 03/29/2024
 appliesto:

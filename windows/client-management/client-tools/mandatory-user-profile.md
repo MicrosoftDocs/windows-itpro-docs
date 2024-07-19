@@ -1,16 +1,13 @@
 ---
 title: Create mandatory user profiles
-description: A mandatory user profile is a special type of pre-configured roaming user profile that administrators can use to specify settings for users.
-ms.date: 08/10/2023
+description: A mandatory user profile is a special type of preconfigured roaming user profile that administrators can use to specify settings for users.
+ms.date: 07/01/2024
 ms.topic: conceptual
-ms.collection:
-- highpri
-- tier2
 ---
 
 # Create mandatory user profiles
 
-A mandatory user profile is a roaming user profile that has been pre-configured by an administrator to specify settings for users. Settings commonly defined in a mandatory profile include (but aren't limited to) icons that appear on the desktop, desktop backgrounds, user preferences in Control Panel, printer selections, and more. Configuration changes made during a user's session that are normally saved to a roaming user profile aren't saved when a mandatory user profile is assigned.
+A mandatory user profile is a roaming user profile that has been preconfigured by an administrator to specify settings for users. Settings commonly defined in a mandatory profile include (but aren't limited to) icons that appear on the desktop, desktop backgrounds, user preferences in Control Panel, printer selections, and more. Configuration changes made during a user's session that are normally saved to a roaming user profile aren't saved when a mandatory user profile is assigned.
 
 Mandatory user profiles are useful when standardization is important, such as on a kiosk device or in educational settings. Only system administrators can make changes to mandatory user profiles.
 
@@ -118,12 +115,12 @@ In a domain, you modify properties for the user account to point to the mandator
 ### How to apply a mandatory user profile to users
 
 1. Open **Active Directory Users and Computers** (dsa.msc).
-1. Navigate to the user account that you'll assign the mandatory profile to.
+1. Navigate to the user account that you want to assign the mandatory profile to.
 1. Right-click the user name and open **Properties**.
 1. On the **Profile** tab, in the **Profile path** field, enter the path to the shared folder without the extension. For example, if the folder name is `\\server\share\profile.v6`, you would enter `\\server\share\profile`.
 1. Select **OK**.
 
-It may take some time for this change to replicate to all domain controllers.
+It can take some time for this change to replicate to all domain controllers.
 
 ## Apply policies to improve sign-in time
 
