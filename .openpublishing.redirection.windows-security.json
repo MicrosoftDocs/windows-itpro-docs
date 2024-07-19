@@ -52,7 +52,12 @@
     },
     {
       "source_path": "windows/security//threat-protection/microsoft-defender-application-guard/md-app-guard-browser-extension.md",
-      "redirect_url": "/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-browser-extension",
+      "redirect_url": "/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-browser-extension.md",
+      "redirect_url": "/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview",
       "redirect_document_id": false
     },
     {
