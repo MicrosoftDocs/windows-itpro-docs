@@ -1,7 +1,7 @@
 ---
 title: Encrypted hard drives
 description: Learn how encrypted hard drives use the rapid encryption that is provided by BitLocker to enhance data security and management.
-ms.date: 10/18/2023
+ms.date: 07/22/2024
 ms.topic: concept-article
 ---
 
@@ -75,7 +75,7 @@ To configure encrypted hard drives as startup drives, use the same methods as st
 
 There are three policy settings to manage how BitLocker uses hardware-based encryption and which encryption algorithms to use. If these settings aren't configured or disabled on systems that are equipped with encrypted drives, BitLocker uses software-based encryption:
 
-- [Configure use of hardware-based encryption for fixed data drives](bitlocker/configure.md?tabs=fixed#configure-use-of-hardware-based-encryption-for-fixed-data-drives)  
+- [Configure use of hardware-based encryption for fixed data drives](bitlocker/configure.md?tabs=fixed#configure-use-of-hardware-based-encryption-for-fixed-data-drives)
 - [Configure use of hardware-based encryption for removable data drives](bitlocker/configure.md?tabs=removable#configure-use-of-hardware-based-encryption-for-removable-data-drives)
 - [Configure use of hardware-based encryption for operating system drives](bitlocker/configure.md?tabs=os#configure-use-of-hardware-based-encryption-for-operating-system-drives)
 
