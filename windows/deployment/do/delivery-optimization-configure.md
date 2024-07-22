@@ -183,7 +183,7 @@ Regardless of P2P, consider setting the following policies to avoid network disr
 
 * [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname) is the list of cache host server names, separated with commas. *Delivery Optimization client connects to the listed Microsoft Connected Cache servers in the order as they're listed.*
 * [DOCacheHostSource](waas-delivery-optimization-reference.md#cache-server-hostname-source) can be used to dynamically discover cache host servers on the network, using DHCP.
-* [DelayCacheServerFallbackBackground](waas-delivery-optimization-reference.md#delay-background-download-cache-server-fallback-in-secs) and [DelayCacheServerFallbackForeground](waas-delivery-optimization-reference.md#delay-foreground-download-cache-server-fallback-in-secs) are the delay policies to help improve chances of pulling content from the network cache host servers. (See recommended values in [Improve P2P efficiency](#6-improve-p2p-efficiency) section above).
+* [DelayCacheServerFallbackBackground](waas-delivery-optimization-reference.md#delay-background-download-cache-server-fallback-in-secs) and [DelayCacheServerFallbackForeground](waas-delivery-optimization-reference.md#delay-foreground-download-cache-server-fallback-in-secs) are the delay policies to help improve chances of pulling content from the network cache host servers. (See recommended values in [Improve P2P efficiency](#2d-improve-p2p-efficiency) section above).
 * [DODisallowCacheServerDownloadsOnVPN](waas-delivery-optimization-reference.md#disallow-cache-server-downloads-on-vpn) allows control of the cache host server to supply content, when device is on a VPN connection.
 
 ## 4. Choose where to set Delivery Optimization policies
