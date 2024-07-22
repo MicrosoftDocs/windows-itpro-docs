@@ -15,7 +15,7 @@ metadata:
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
-  ms.date: 04/01/2024
+  ms.date: 07/12/2024
   localization_priority: medium
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -34,10 +34,10 @@ landingContent:
       url: update/plan-define-readiness.md
     - text: Define your servicing strategy
       url: update/plan-define-strategy.md
-    - text: Determine application readiness
-      url: update/plan-determine-app-readiness.md
     - text: Plan for volume activation
       url: volume-activation/plan-for-volume-activation-client.md
+    - text: Windows compatibility cookbook
+      url: /windows/compatibility/
 
 - title: Prepare
   linkLists:

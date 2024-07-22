@@ -7,7 +7,7 @@ ms.author: frankroj
 ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: itpro-fundamentals
 ms.date: 03/29/2024
 appliesto:
