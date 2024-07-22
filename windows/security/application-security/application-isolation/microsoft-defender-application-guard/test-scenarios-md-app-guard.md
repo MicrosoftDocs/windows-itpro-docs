@@ -47,17 +47,17 @@ Before you can use Application Guard in managed mode, you must install Windows 1
 
 3. Set up the Network Isolation settings in Group Policy:
 
-   a.  Select the **Windows** icon, type `Group Policy`, and then select **Edit Group Policy**.
+   1.  Select the **Windows** icon, type `Group Policy`, and then select **Edit Group Policy**.
 
-   b.  Go to the **Administrative Templates\Network\Network Isolation\Enterprise resource domains hosted in the cloud** setting.
+   1.  Go to the **Administrative Templates\Network\Network Isolation\Enterprise resource domains hosted in the cloud** setting.
 
-   c.  For the purposes of this scenario, type `.microsoft.com` into the **Enterprise cloud resources** box.
+   1.  For the purposes of this scenario, type `.microsoft.com` into the **Enterprise cloud resources** box.
 
    ![Group Policy editor with Enterprise cloud resources setting.](images/appguard-gp-network-isolation.png)
 
-   d. Go to the **Administrative Templates\Network\Network Isolation\Domains categorized as both work and personal** setting.
+   1. Go to the **Administrative Templates\Network\Network Isolation\Domains categorized as both work and personal** setting.
 
-   e. For the purposes of this scenario, type `bing.com` into the **Neutral resources** box.
+   1. For the purposes of this scenario, type `bing.com` into the **Neutral resources** box.
 
    ![Group Policy editor with Neutral resources setting.](images/appguard-gp-network-isolation-neutral.png)
 
