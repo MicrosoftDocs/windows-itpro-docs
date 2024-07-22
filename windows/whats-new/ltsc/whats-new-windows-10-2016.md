@@ -34,29 +34,6 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 
 [Learn more about using provisioning packages in Windows 10.](/windows/configuration/provisioning-packages/provisioning-packages)
 
-### Windows Upgrade Readiness
-
->[!IMPORTANT]
->Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a General Availability Channel release.
-
-Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for more direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft's experience upgrading millions of devices to Windows 10.
-
-With Windows diagnostic data enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they're known to Microsoft.
-
-Use Upgrade Readiness to get:
-
-- A visual workflow that guides you from pilot to production
-- Detailed computer and application inventory
-- Powerful computer level search and drill-downs
-- Guidance and insights into application and driver compatibility issues, with suggested fixes
-- Data driven application rationalization tools
-- Application usage information, allowing targeted validation; workflow to track validation progress and decisions
-- Data export to commonly used software deployment tools
-
-The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are upgrade-ready.
-
-[Learn more about planning and managing Windows upgrades with Windows Upgrade Readiness.](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)
-
 ## Security
 
 ### Credential Guard and Device Guard

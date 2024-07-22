@@ -61,11 +61,6 @@ sections:
         answer: |
           Many existing Win32 and Win64 applications already run reliably on Windows 10 without any changes. You can also expect strong compatibility and support for Web apps and devices.
 
-      - question: |
-          Is there an easy way to assess if my organization's devices are ready to upgrade to Windows 10?
-        answer: |
-          [Desktop Analytics](/mem/configmgr/desktop-analytics/overview) provides powerful insights and recommendations about the computers, applications, and drivers in your organization, at no extra cost and without other infrastructure requirements. This service guides you through your upgrade and feature update projects using a workflow based on Microsoft recommended practices. Up-to-date inventory data allows you to balance cost and risk in your upgrade projects.
-
   - name: Administration and deployment
     questions:
       - question: |
