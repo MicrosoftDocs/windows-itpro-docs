@@ -230,10 +230,13 @@ Once a user has the extension and its companion app installed on their enterpris
 1. Open either Firefox or Chrome, whichever browser you have the extension installed on.
 
 2. Navigate to an organizational website. In other words, an internal website maintained by your organization. You might see this evaluation page for an instant before the site is fully loaded.
+
    ![The evaluation page displayed while the page is being loaded, explaining that the user must wait.](images/app-guard-chrome-extension-evaluation-page.png)
 
 3. Navigate to a nonenterprise, external website site, such as [www.bing.com](https://www.bing.com). The site should be redirected to Microsoft Defender Application Guard Edge.
+
    ![A non-enterprise website being redirected to an Application Guard container -- the text displayed explains that the page is being opened in Application Guard for Microsoft Edge.](images/app-guard-chrome-extension-launchIng-edge.png)
 
-4. Open a new Application Guard window, by selecting the Microsoft Defender Application Guard icon, then **New Application Guard Window**
+4. Open a new Application Guard window, by selecting the Microsoft Defender Application Guard icon, then **New Application Guard Window**.
+
    ![The "New Application Guard Window" option is highlighted in red](images/app-guard-chrome-extension-new-app-guard-page.png)
