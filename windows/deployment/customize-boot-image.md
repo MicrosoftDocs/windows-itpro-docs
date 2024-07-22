@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
-ms.topic: article
+ms.topic: conceptual
 ms.date: 05/09/2024
 ms.subservice: itpro-deploy
 appliesto:

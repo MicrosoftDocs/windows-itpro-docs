@@ -4,7 +4,7 @@ description: This article details the types of reports available and info about 
 ms.date: 07/10/2024 
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: overview
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
