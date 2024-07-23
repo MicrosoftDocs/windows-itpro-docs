@@ -10,7 +10,7 @@ ms.topic: include
 With this policy setting you can prevent multiple users to sign in at the same time, using the Fast User Switching feature.
 
 - If enabled, only one user can sign in at a time. The Fast User Switching entry points are hidden from the sign-in screen, the Start menu, and the Task Manager. If multiple users want to sign in, the current user must sign out first
-- If disabled or not configured, multiple users can sign in at the same time. The Fast User Switching entry points are availabe from the sign-in screen, the Start menu, and the Task Manager. The current user doesn't have to sign out to allow another user to sign in
+- If disabled or not configured, multiple users can sign in at the same time. The Fast User Switching entry points are available from the sign-in screen, the Start menu, and the Task Manager. The current user doesn't have to sign out to allow another user to sign in
 
 |  | Path |
 |--|--|
