@@ -16,14 +16,16 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 07/01/2024
+ms.date: 07/23/2024
 ---
 
 # Troubleshoot Delivery Optimization
 
+This article discusses how to troubleshoot Delivery Optimization.
+
 ## DO Troubleshooter
 
-[Check out](https://aka.ms/do-fix) the new Delivery Optimization Troubleshooter. This tool provides a device health check to verify the device is set up properly to use Delivery Optimization. To scope the output more specifically, use one of the available switches:
+[Check out](https://aka.ms/do-fix) for the new Delivery Optimization Troubleshooter. This tool provides a device health check to verify the device is set up properly to use Delivery Optimization. To scope the output more specifically, use one of the available switches:
 
 - -HealthCheck: Provides an overall check of the device setup to ensure Delivery Optimization communication is possible on the device.
 - -P2P: Provides output specific to P2P settings, efficiency, and errors.
@@ -35,7 +37,7 @@ This section summarizes common problems and some solutions to try.
 
 ### If you don't see any bytes from peers
 
-If you don't see any bytes coming from peers the cause might be one of the following issues:
+If you don't see any bytes coming from peers, the cause might be one of the following issues:
 
 - Clients aren't able to reach the Delivery Optimization cloud services.
 - The cloud service doesn't see other peers on the network.
