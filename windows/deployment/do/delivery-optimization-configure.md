@@ -80,22 +80,22 @@ There are a range of [Delivery Optimization settings](waas-delivery-optimization
 
 Peer groups can be defined in Delivery Optimization using a combination of settings such as [DODownloadMode](waas-delivery-optimization-reference.md#download-mode), [DOGroupID](waas-delivery-optimization-reference.md#group-id), [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids), and [DORestrictPeerSelection](waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection). *The combination of settings used will depend on your desired peer group(s) and your network topology.*
 
-#### Peering setup
+#### Peering setup options
 
-##### Define peer groups
+Delivery Optimization can use P2P to help improve bandwidth efficiencies. The section outlines the different options available to define peer groups for your environment.
 
-###### Local area network (LAN)
+##### Local area network (LAN)
 
 To define a peer group limited to your LAN, choose [DODownloadMode](waas-delivery-optimization-reference.md#download-mode) (1), LAN-mode. This download mode setting includes any devices that share the same public IP address when they connect to the Internet (behind the same NAT) in a single peer group.
 
 > [!NOTE]
 > Consider using Group download mode and/or limiting peer selection to the subnet if your network topology is a Hub and Spoke.
 
-###### Wide area network (WAN)
+##### Wide area network (WAN)
 
 To achieve peer groups across NATs within the same site, over the WAN, or to have more control in your local environment, use download mode ‘2’, Group-mode. Group download mode allows you to define a unique GUID Group ID or use existing logical groupings (e.g. AD Site) in your enterprise with the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) setting to identify a peer group.
 
-###### GroupIDSource default behavior
+##### GroupIDSource default behavior
 
 There are several options for identifying your Group ID using the [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids). The default behavior, when the [DOGroupID](waas-delivery-optimization-reference.md#group-id) or [DOGroupIDSource](waas-delivery-optimization-reference.md#select-the-source-of-group-ids)  policies aren't set, is to determine the Group ID using AD Site (1), Authenticated domain SID (2), or Microsoft Entra tenant ID (5). [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about all DOGroupIDSource available options.
 
@@ -104,7 +104,7 @@ There are several options for identifying your Group ID using the [DOGroupIDSour
 >
 > For Configuration Manager users, we recommend leveraging existing [boundary groups](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization) to define the peer groups.
 
-###### Restrict peer selection
+##### Restrict peer selection
 
 If your environment requires a more granular approach, you can use the restrict peer discovery setting alongside the download mode to achieve more control. For example, if you have several different subnets behind the same NAT but want to limit your peer groups to a single subnet, choose [DODownloadMode](waas-delivery-optimization-reference.md#download-mode) (1) and [DORestrictPeerSelection](waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection) (Subnet). This setting can be used with any of the peer-related download modes (1, 2, or 3).
 
