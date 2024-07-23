@@ -63,87 +63,87 @@
     {
       "source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/basic-level-windows-diagnostic-events-and-fields-1703",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/basic-level-windows-diagnostic-events-and-fields-1709",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields-1803.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/basic-level-windows-diagnostic-events-and-fields-1803",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields-1903.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/basic-level-windows-diagnostic-events-and-fields-1903",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/manage-windows-1903-endpoints.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/manage-windows-1903-endpoints",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/manage-windows-1909-endpoints.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/manage-windows-1909-endpoints",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/manage-windows-2004-endpoints.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/manage-windows-2004-endpoints",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/manage-windows-20H2-endpoints.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/manage-windows-20H2-endpoints",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/manage-windows-21H1-endpoints.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/manage-windows-21H1-endpoints",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/windows-endpoints-1809-non-enterprise-editions.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/windows-endpoints-1809-non-enterprise-editions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/windows-endpoints-1903-non-enterprise-editions.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/windows-endpoints-1903-non-enterprise-editions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/windows-endpoints-1909-non-enterprise-editions.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/windows-endpoints-1909-non-enterprise-editions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/windows-endpoints-2004-non-enterprise-editions.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/windows-endpoints-2004-non-enterprise-editions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/windows-endpoints-20H2-non-enterprise-editions.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/windows-endpoints-20H2-non-enterprise-editions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/windows-endpoints-21H1-non-enterprise-editions.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/windows-endpoints-21H1-non-enterprise-editions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/windows-diagnostic-data-1703.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/windows-diagnostic-data-1703",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/changes-to-windows-diagnostic-data-collection.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/changes-to-windows-diagnostic-data-collection",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
