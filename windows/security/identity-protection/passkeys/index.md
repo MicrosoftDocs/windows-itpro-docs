@@ -315,18 +315,18 @@ Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use the Set
 
 For passkey cross-device authentication scenarios, both the Windows device and the mobile device must have Bluetooth enabled and connected to the Internet. This allows the user to authorize another device securely over Bluetooth without transferring or copying the passkey itself.
 
-Some organizations restrict the use of Bluetooth, preventing the use of passkeys. In this case, organizations can enable the use of passkeys by only allowing Bluetooth pairing with passkey\FIDO2 authenticators. To do so, use the [Bluetooth Policy CSP](/windows/client-management/mdm/policy-csp-bluetooth) and the [deviceinstallation policy CSP]/windows/client-management/mdm/policy-csp-deviceinstallation).
+Some organizations restrict the use of Bluetooth, preventing the use of passkeys. In this case, organizations can enable the use of passkeys by only allowing Bluetooth pairing with passkey\FIDO2 authenticators. To do so, use the [Bluetooth Policy CSP][CSP-8] and the [DeviceInstallation Policy CSP][CSP-7].
 
 The following table provides an example of CSP settings to allow passkeys in a Bluetooth-restricted environment:
 
 | Setting                                                                                                                                                          |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising][CSP-1] <li>Data type: **Integer** </li><li>Value:`0` </li><br><br>When set to `0`, the device won't send out advertisements.|
-| OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowDiscoverableMode][CSP-2] <li>Data type: **Integer** </li><li>Value:`0` </li><br><br>When set to `0`, other devices won't be able to detect the device. |
-| OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPrepairing][CSP-3]<li>Data type: **Integer** </li><li>Value:`0` </li><br><br>Prevents specific bundled Bluetooth peripherals to automatically pair with the host device.</li> |
-| OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPromptedProximalConnections][CSP-4] <li>Data type: **Integer** </li><li>Value:`0`</li><br><br>Prevents users from using Swift Pair and other proximity-based scenarios.|
+| OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising][CSP-1] <li>Data type: **Integer** </li><li>Value:`0` </li><br>When set to `0`, the device won't send out advertisements.|
+| OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowDiscoverableMode][CSP-2] <li>Data type: **Integer** </li><li>Value:`0` </li><br>When set to `0`, other devices won't be able to detect the device. |
+| OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPrepairing][CSP-3]<li>Data type: **Integer** </li><li>Value:`0` </li><br>Prevents specific bundled Bluetooth peripherals to automatically pair with the host device.</li> |
+| OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPromptedProximalConnections][CSP-4] <li>Data type: **Integer** </li><li>Value:`0`</li><br>Prevents users from using Swift Pair and other proximity-based scenarios.|
 | OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[ServicesAllowedList][CSP-5] </li><li>Data type: **String** </li><li>Value:`{0000FFFD-0000-1000-8000-00805F9B34FB};{0000FFF9-0000-1000-8000-00805F9B34FB}` <br><br> Set a list of allowable Bluetooth services and profiles: <br>- FIDO Alliance Universal Second Factor Authenticator service (`0000fffd-0000-1000-8000-00805f9b34fb`) <br>- FIDO2 secure client-to-authenticator transport service (`0000FFF9-0000-1000-8000-00805F9B34FB`)<br><br>For more information see [FIDO CTAP 2.1 standard specification][BT-1] and [Bluetooth Assigned Numbers document][BT-2]. |
-| OMA-URI: `./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/`[PreventInstallationOfMatchingDeviceIDs][CSP-6]<li>Data type: **String** </li><li>Value:`<enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><data id="DeviceInstall_IDs_Deny_List" value="1&#xF000;BTH\MS_BTHPAN"/>`</li><br><br>This configuration disables the existing Bluetooth Personal Area Network (PAN) network adapter, preventing the installation of the Bluetooth Network Adapter that can be used for network connectivity or tethering.|
+| OMA-URI: `./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/`[PreventInstallationOfMatchingDeviceIDs][CSP-6]<li>Data type: **String** </li><li>Value:`<enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><data id="DeviceInstall_IDs_Deny_List" value="1&#xF000;BTH\MS_BTHPAN"/>`</li><br>This configuration disables the existing Bluetooth Personal Area Network (PAN) network adapter, preventing the installation of the Bluetooth Network Adapter that can be used for network connectivity or tethering.|
 
 To configure devices with Microsoft Intune, [you can use a Settings catalog policy][INT-1] or a [custom policy][INT-2].
 
@@ -351,3 +351,5 @@ To provide feedback for passkeys, open [**Feedback Hub**][FHUB] and use the cate
 [CSP-4]: /windows/client-management/mdm/policy-csp-bluetooth#allowpromptedproximalconnections
 [CSP-5]: /windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist
 [CSP-6]: /windows/client-management/mdm/policy-csp-deviceinstallation#preventinstallationofmatchingdeviceids
+[CSP-7]: /windows/client-management/mdm/policy-csp-deviceinstallation
+[CSP-8]: /windows/client-management/mdm/policy-csp-bluetooth
