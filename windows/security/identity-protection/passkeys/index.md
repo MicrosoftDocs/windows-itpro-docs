@@ -319,21 +319,30 @@ To provide feedback for passkeys, open [**Feedback Hub**][FHUB] and use the cate
 
 For passkey cross-device authentication scenarios, both the Windows device and the mobile device must have Bluetooth enabled and connected to the Internet. This allows the user to authorize another device securely over Bluetooth without transferring or copying the passkey itself.
 
-Some organizations restrict the use of Bluetooth, preventing the use of passkeys. In this case, organizations can enable the use of passkeys by only allowing Bluetooth pairing with passkey\FIDO2 authenticators. To do so, use the [Bluetooth Policy CSP](../../../client-management/mdm/policy-csp-bluetooth.md)
+Some organizations restrict the use of Bluetooth, preventing the use of passkeys. In this case, organizations can enable the use of passkeys by only allowing Bluetooth pairing with passkey\FIDO2 authenticators. To do so, use the [Bluetooth Policy CSP](/windows/client-management/mdm/policy-csp-bluetooth.md)
 
 | OMA-URI | Data type | Value |
 |--|--|--|
-| `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising](../../../client-management/mdm/policy-csp-bluetooth.md#allowadvertising)|Integer|`0` <br> When set to `0`, the device won't send out advertisements.|
-| `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowDiscoverableMode](../../../client-management/mdm/policy-csp-bluetooth.md#allowdiscoverablemode)|Integer|`0` <br> When set to `0`, other devices won't be able to detect the device.|
-| `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPrepairing](../../../client-management/mdm/policy-csp-bluetooth.md#allowprepiaring)|Integer|`0`<br> Prevents specific bundled Bluetooth peripherals to automatically pair with the host device.|
-| `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPromptedProximalConnections](../../../client-management/mdm/policy-csp-bluetooth.md#allowpromptedproximalconnections)|Integer|`0` <br> Prevents users from using Swift Pair and other proximity-based scenarios.|
-| `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[ServicesAllowedList](../../../client-management/mdm/policy-csp-bluetooth.md#servicesallowedlist)|String|`{0000FFFD-0000-1000-8000-00805F9B34FB};{0000FFF9-0000-1000-8000-00805F9B34FB}` <br> Set a list of allowable Bluetooth services and profiles: <br>- FIDO Alliance Universal Second Factor Authenticator service <br>- FIDO2 secure client-to-authenticator transport service|
-| `./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/`[PreventInstallationOfMatchingDeviceIDs](../../../client-management/mdm/policy-csp-deviceinstallation.md#preventinstallationofmatchingdeviceids)|String|`<enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><Data id="BTH\MS_BTHPAN"/>` <br>This configuration:<br>- disables the existing Bluetooth Personal Area Network (PAN) network adapter<br>- prevents the installation of the Bluetooth Network Adapter that can be used for network connectivity\tethering from a Bluetooth device and the endpoint|
+| `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising](/windows/client-management/mdm/policy-csp-bluetooth.md#allowadvertising)|Integer|`0` <br> When set to `0`, the device won't send out advertisements.|
+| `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowDiscoverableMode](/windows/client-management/mdm/policy-csp-bluetooth.md#allowdiscoverablemode)|Integer|`0` <br> When set to `0`, other devices won't be able to detect the device.|
+| `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPrepairing](/windows/client-management/mdm/policy-csp-bluetooth.md#allowprepiaring)|Integer|`0`<br> Prevents specific bundled Bluetooth peripherals to automatically pair with the host device.|
+| `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPromptedProximalConnections](/windows/client-management/mdm/policy-csp-bluetooth.md#allowpromptedproximalconnections)|Integer|`0` <br> Prevents users from using Swift Pair and other proximity-based scenarios.|
+| `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[ServicesAllowedList](/windows/client-management/mdm/policy-csp-bluetooth.md#servicesallowedlist)|String|`{0000FFFD-0000-1000-8000-00805F9B34FB};{0000FFF9-0000-1000-8000-00805F9B34FB}` <br> Set a list of allowable Bluetooth services and profiles: <br>- FIDO Alliance Universal Second Factor Authenticator service <br>- FIDO2 secure client-to-authenticator transport service|
+| `./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/`[PreventInstallationOfMatchingDeviceIDs](/windows/client-management/mdm/policy-csp-deviceinstallation.md#preventinstallationofmatchingdeviceids)|String|`<enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><Data id="BTH\MS_BTHPAN"/>` <br>This configuration:<br>- disables the existing Bluetooth Personal Area Network (PAN) network adapter<br>- prevents the installation of the Bluetooth Network Adapter that can be used for network connectivity\tethering from a Bluetooth device and the endpoint|
 
 For more information see:
 
 - [FIDO CTAP 2.1 standard specification](https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-20210615.html#ble-fido-service)
 - [Bluetooth Assigned Numbers document](https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Assigned_Numbers/out/en/Assigned_Numbers.pdf?v=1713387868258)
+
+| Setting                                                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <li> OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising](/windows/client-management/mdm/policy-csp-bluetooth.md#allowadvertising) </li><li>Data type: **Integer** </li><li>Value:`0` <br>  </li><li>Details: When set to `0`, the device won't send out advertisements.</li> |
+| <li> OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising](/windows/client-management/mdm/policy-csp-bluetooth.md#allowadvertising) </li><li>Data type: **Integer** </li><li>Value:`0` <br>  </li><li>Details: When set to `0`, the device won't send out advertisements.</li> |
+| <li> OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising](/windows/client-management/mdm/policy-csp-bluetooth.md#allowadvertising) </li><li>Data type: **Integer** </li><li>Value:`0` <br>  </li><li>Details: When set to `0`, the device won't send out advertisements.</li> |
+| <li> OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising](/windows/client-management/mdm/policy-csp-bluetooth.md#allowadvertising) </li><li>Data type: **Integer** </li><li>Value:`0` <br>  </li><li>Details: When set to `0`, the device won't send out advertisements.</li> |
+| <li> OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising](/windows/client-management/mdm/policy-csp-bluetooth.md#allowadvertising) </li><li>Data type: **Integer** </li><li>Value:`0` <br>  </li><li>Details: When set to `0`, the device won't send out advertisements.</li> |
+| <li> OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising](/windows/client-management/mdm/policy-csp-bluetooth.md#allowadvertising) </li><li>Data type: **Integer** </li><li>Value:`0` <br>  </li><li>Details: When set to `0`, the device won't send out advertisements.</li> |
 
 <!--links used in this document-->
 
