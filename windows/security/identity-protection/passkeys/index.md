@@ -315,7 +315,9 @@ Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use the Set
 
 For passkey cross-device authentication scenarios, both the Windows device and the mobile device must have Bluetooth enabled and connected to the Internet. This allows the user to authorize another device securely over Bluetooth without transferring or copying the passkey itself.
 
-Some organizations restrict the use of Bluetooth, preventing the use of passkeys. In this case, organizations can enable the use of passkeys by only allowing Bluetooth pairing with passkey\FIDO2 authenticators. To do so, use the [Bluetooth Policy CSP][CSP-8] and the [DeviceInstallation Policy CSP][CSP-7].
+Some organizations restrict Bluetooth usage, which includes the use of passkeys. In such cases, organizations can allow passkeys by permitting Bluetooth pairing exclusively with passkey-enabled FIDO2 authenticators.
+
+To limit the use of Bluetooth to only passkey use cases, use the [Bluetooth Policy CSP][CSP-8] and the [DeviceInstallation Policy CSP][CSP-7].
 
 The following table provides an example of CSP settings to allow passkeys in a Bluetooth-restricted environment:
 
