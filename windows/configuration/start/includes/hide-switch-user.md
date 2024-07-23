@@ -5,7 +5,12 @@ ms.date: 04/10/2024
 ms.topic: include
 ---
 
-### Hide Switch account
+### Hide Switch user
+
+With this policy setting you can hide the **Switch user** option from the user tile in the start menu:
+
+- If enabled, the **Switch user** option is hidden
+- If disabled or not configured, the **Switch user** option is available
 
 |  | Path |
 |--|--|
