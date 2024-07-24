@@ -28,7 +28,7 @@ This article describes the different configuration considerations to optimize De
 Use this checklist to guide you through different aspects when modifying Delivery Optimization configurations for your environment.
 
 1. Prerequisites to allow Delivery Optimization communication
-1. Evaluate Delivery Optimization policies based on the follwoing items:
+1. Evaluate Delivery Optimization policies based on the following items:
 
     * Network topology
     * Organization size
