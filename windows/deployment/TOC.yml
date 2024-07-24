@@ -74,7 +74,7 @@
         - name: Update Baseline
           href: update/update-baseline.md
         - name: Set up Delivery Optimization for Windows client updates
-          href: do/waas-delivery-optimization-setup.md?context=/windows/deployment/context/context
+          href: do/delivery-optimization-configure.md?context=/windows/deployment/context/context
         - name: Configure BranchCache for Windows client updates
           href: update/waas-branchcache.md
         - name: Prepare for deployment with Configuration Manager
