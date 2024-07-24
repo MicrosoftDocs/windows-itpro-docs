@@ -27,7 +27,7 @@
     },
     {
       "source_path": "windows/configuration/configure-windows-telemetry-in-your-organization.md",
-      "redirect_url": "/windows/configuration/configure-windows-diagnostic-data-in-your-organization",
+      "redirect_url": "/windows/privacy/configure-windows-diagnostic-data-in-your-organization",
       "redirect_document_id": false
     },
     {
@@ -267,12 +267,12 @@
     },
     {
       "source_path": "windows/configuration/windows-diagnostic-data-1709.md",
-      "redirect_url": "/windows/configuration/windows-diagnostic-data",
+      "redirect_url": "/previous-versions/windows/it-pro/privacy/basic-level-windows-diagnostic-events-and-fields-1709",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configuration/windows-diagnostic-data.md",
-      "redirect_url": "/windows/privacy/windows-diagnostic-data",
+      "redirect_url": "/windows/privacy/index",
       "redirect_document_id": false
     },
     {
