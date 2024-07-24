@@ -1186,6 +1186,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/do/waas-delivery-optimization-setup.md",
+      "redirect_url": "/windows/deployment/do/delivery-optimization-configure",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "windows/deployment/update/plan-determine-app-readiness.md",
       "redirect_url": "/windows/compatibility/windows-11/testing-guidelines",
       "redirect_document_id": false

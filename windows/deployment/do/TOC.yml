@@ -11,10 +11,12 @@
     href: waas-delivery-optimization-faq.yml    
   - name: Configure Delivery Optimization for Windows
     items:
-    - name: Set up Delivery Optimization for Windows
-      href: waas-delivery-optimization-setup.md
+    - name: Delivery Optimization configuration considerations
+      href: delivery-optimization-configure.md
     - name: Monitor Delivery Optimization for Windows
       href: waas-delivery-optimization-monitor.md
+    - name: Troubleshoot Delivery Optimization
+      href: delivery-optimization-troubleshoot.md
     - name: Configure Delivery Optimization settings using Microsoft Intune
       href: /mem/intune/configuration/delivery-optimization-windows
   - name: Resources for Delivery Optimization
@@ -27,8 +29,6 @@
       href: delivery-optimization-proxy.md
     - name: Testing Delivery Optimization
       href: delivery-optimization-test.md
-    - name: Delivery Optimization Troubleshooter
-      href: https://aka.ms/do-fix
 - name: Microsoft Connected Cache
   items:
     - name: What is Microsoft Connected Cache?
