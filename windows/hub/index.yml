@@ -91,7 +91,7 @@ productDirectory:
           text: Diagnostic Data Viewer
         - url: /windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services
           text: Manage connections to Microsoft services
-        - url: /windows/privacy/windows-10-and-privacy-compliance
+        - url: /windows/privacy/windows-privacy-compliance-guide
           text: Windows privacy compliance guide
         - url: /windows/privacy
           text: Learn more about privacy in Windows >

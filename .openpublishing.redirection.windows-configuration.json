@@ -47,7 +47,7 @@
     },
     {
       "source_path": "windows/configuration/gdpr-win10-whitepaper.md",
-      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_url": "/windows/privacy/windows-privacy-compliance-guide",
       "redirect_document_id": false
     },
     {
@@ -262,7 +262,7 @@
     },
     {
       "source_path": "windows/configuration/windows-diagnostic-data-1703.md",
-      "redirect_url": "/previous-versions/windows/it-pro/privacy/windows-diagnostic-data-1703",
+      "redirect_url": "/previous-versions/windows/it-pro/privacy/basic-level-windows-diagnostic-events-and-fields-1703",
       "redirect_document_id": false
     },
     {

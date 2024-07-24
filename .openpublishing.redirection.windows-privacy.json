@@ -7,17 +7,17 @@
     },
     {
       "source_path": "windows/privacy/deploy-data-processor-service-windows.md",
-      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_url": "/windows/privacy/windows-privacy-compliance-guide",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/gdpr-it-guidance.md",
-      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_url": "/windows/privacy/windows-privacy-compliance-guide",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/privacy/gdpr-win10-whitepaper.md",
-      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_url": "/windows/privacy/windows-privacy-compliance-guide",
       "redirect_document_id": false
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "source_path": "windows/privacy/windows-personal-data-services-configuration.md",
-      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_url": "/windows/privacy/windows-privacy-compliance-guide",
       "redirect_document_id": false
     },
     {
@@ -144,6 +144,21 @@
       "source_path": "windows/privacy/changes-to-windows-diagnostic-data-collection.md",
       "redirect_url": "/previous-versions/windows/it-pro/privacy/changes-to-windows-diagnostic-data-collection",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/windows-10-and-privacy-compliance.md",
+      "redirect_url": "/windows/privacy/windows-privacy-compliance-guide",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/privacy/windows-diagnostic-data.md",
+      "redirect_url": "/windows/privacy/optional-diagnostic-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/privacy/Microsoft-DiagnosticDataViewer.md",
+      "redirect_url": "/windows/privacy/diagnostic-data-viewer-powershell",
+      "redirect_document_id": true
     }
   ]
 }

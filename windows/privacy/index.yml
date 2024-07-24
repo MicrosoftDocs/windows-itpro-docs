@@ -24,7 +24,7 @@ highlightedContent:
   items:
     - title: Windows privacy & compliance guide for IT and compliance professionals
       itemType: overview
-      url: Windows-10-and-privacy-compliance.md
+      url: windows-privacy-compliance-guide.md
     - title: Configure Windows diagnostic data
       itemType: how-to-guide
       url: configure-windows-diagnostic-data-in-your-organization.md
@@ -47,7 +47,7 @@ productDirectory:
     - title: Optional diagnostic data
       imageSrc: /media/common/i_get-started.svg
       summary: Get examples of the types of optional diagnostic data collected from Windows
-      url: windows-diagnostic-data.md
+      url: optional-diagnostic-data.md
 
 additionalContent:
   sections:

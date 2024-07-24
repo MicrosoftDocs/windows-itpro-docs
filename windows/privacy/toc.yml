@@ -2,7 +2,7 @@
   href: index.yml
   items: 
     - name: "Windows Privacy Compliance: A Guide for IT and Compliance Professionals"
-      href: windows-10-and-privacy-compliance.md
+      href: windows-privacy-compliance-guide.md
     - name: Configure Windows diagnostic data in your organization
       href: configure-windows-diagnostic-data-in-your-organization.md
     - name: Diagnostic Data Viewer
@@ -10,7 +10,7 @@
         - name: Diagnostic Data Viewer Overview
           href: diagnostic-data-viewer-overview.md
         - name: Diagnostic Data Viewer for PowerShell Overview
-          href: Microsoft-DiagnosticDataViewer.md
+          href: diagnostic-data-viewer-powershell.md
     - name: Required Windows diagnostic data events and fields
       items: 
         - name: Windows 11, versions 23H2 and 22H2
@@ -24,7 +24,7 @@
     - name: Optional Windows diagnostic data
       items:
         - name: Optional diagnostic data for Windows 11 and Windows 10
-          href: windows-diagnostic-data.md
+          href: optional-diagnostic-data.md
     - name: Manage Windows connected experiences
       items: 
         - name: Manage connections from Windows operating system components to Microsoft services
