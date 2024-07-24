@@ -59,7 +59,7 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 
 ## Calculations for Delivery Optimization
 
-Each calculated values used in the Delivery Optimization report are listed below.
+The calculated values used in the Delivery Optimization report are listed below.
 
 **Efficiency (%) Calculations**:
 
