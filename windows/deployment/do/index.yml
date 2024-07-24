@@ -41,12 +41,12 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Delivery Optimization recommended settings
-            url: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
+          - text: Delivery Optimization configuration considerations
+            url: delivery-optimization-configure.md
           - text: Monitor Delivery Optimization for Windows
             url: waas-delivery-optimization-monitor.md
           - text: Troubleshoot Delivery Optimization
-            url: waas-delivery-optimization-setup.md#troubleshooting
+            url: delivery-optimization-troubleshoot.md
           - text: Delivery Optimization Frequently Asked Questions
             url: ../do/waas-delivery-optimization-faq.yml
           - text: Submit feedback
