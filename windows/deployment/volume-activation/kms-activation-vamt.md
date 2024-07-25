@@ -47,7 +47,7 @@ Before configuring KMS activation, ensure that your network and VAMT installatio
 
 5. Select **Apply**, and then select **OK** to close the **Volume Activation Management Tool Preferences** dialog box.
 
-6. Select the products to be activated by selecting individual products in the product list view in the center pane. You can use the **Filter** function to narrow your search for computers by clicking **Filter** in the right-side pane to open the **Filter Products** dialog box.In the **Filter Products** dialog box, you can filter the list by computer name, product name, product key type, license status, or by any combination of these options.
+6. Select the products to be activated by selecting individual products in the product list view in the center pane. You can use the **Filter** function to narrow your search for computers by clicking **Filter** in the right-side pane to open the **Filter Products** dialog box. In the **Filter Products** dialog box, you can filter the list by computer name, product name, product key type, license status, or by any combination of these options.
 
     - To filter the list by computer name, enter a name in the **Computer Name** box.
 
