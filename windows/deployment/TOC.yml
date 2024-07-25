@@ -198,8 +198,6 @@
           href: volume-activation/active-directory-based-activation-overview.md
         - name: Install and configure VAMT
           items:
-          - name: Overview
-            href: volume-activation/install-configure-vamt.md
           - name: VAMT requirements
             href: volume-activation/vamt-requirements.md
           - name: Install VAMT
@@ -208,8 +206,6 @@
             href: volume-activation/configure-client-computers-vamt.md
         - name: Add and manage products
           items:
-          - name: Overview
-            href: volume-activation/add-manage-products-vamt.md
           - name: Add and remove computers
             href: volume-activation/add-remove-computers-vamt.md
           - name: Update product status
@@ -218,8 +214,6 @@
             href: volume-activation/remove-products-vamt.md
         - name: Manage product keys
           items:
-          - name: Overview
-            href: volume-activation/manage-product-keys-vamt.md
           - name: Add and remove a product key
             href: volume-activation/add-remove-product-key-vamt.md
           - name: Install a product key
@@ -228,8 +222,6 @@
             href: volume-activation/install-kms-client-key-vamt.md
         - name: Manage activations
           items:
-          - name: Overview
-            href: volume-activation/manage-activations-vamt.md
           - name: Run online activation
             href: volume-activation/online-activation-vamt.md
           - name: Run proxy activation
@@ -244,24 +236,20 @@
             href: volume-activation/activate-forest-by-proxy-vamt.md
         - name: Manage VAMT data
           items:
-          - name: Overview
-            href: volume-activation/manage-vamt-data.md
           - name: Import and export VAMT data
             href: volume-activation/import-export-vamt-data.md
           - name: Use VAMT in Windows PowerShell
             href: volume-activation/use-vamt-in-windows-powershell.md
-          - name: VAMT step-by-step scenarios
-            items:
-            - name: Overview
-              href: volume-activation/vamt-step-by-step.md
-            - name: "Scenario 1: online activation"
-              href: volume-activation/scenario-online-activation-vamt.md
-            - name: "Scenario 2: proxy activation"
-              href: volume-activation/scenario-proxy-activation-vamt.md
-            - name: "Scenario 3: KMS client activation"
-              href: volume-activation/scenario-kms-activation-vamt.md
-          - name: VAMT known issues
-            href: volume-activation/vamt-known-issues.md
+        - name: VAMT step-by-step scenarios
+          items:
+          - name: "Scenario 1: online activation"
+            href: volume-activation/scenario-online-activation-vamt.md
+          - name: "Scenario 2: proxy activation"
+            href: volume-activation/scenario-proxy-activation-vamt.md
+          - name: "Scenario 3: KMS client activation"
+            href: volume-activation/scenario-kms-activation-vamt.md
+        - name: VAMT known issues
+          href: volume-activation/vamt-known-issues.md
     - name: Monitor
       items:
       - name: Windows Update for Business reports

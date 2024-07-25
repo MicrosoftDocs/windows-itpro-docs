@@ -1,13 +1,13 @@
 ---
 title: Plan for volume activation
 description: Product activation is the process of validating software with the manufacturer after it's installed on a specific computer.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: concept-article
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.date: 03/29/2024
 appliesto:
@@ -24,8 +24,8 @@ appliesto:
 >
 > Looking for information on retail activation?
 >
-> - [Activate Windows](https://support.microsoft.com/help/12440/).
-> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644).
+> - [Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227).
+> - [Product activation for Windows](https://support.microsoft.com/windows/product-activation-for-windows-online-support-telephone-numbers-35f6a805-1259-88b4-f5e9-b52cccef91a0).
 
 *Product activation* is the process of validating software with the manufacturer after it's installed on a specific computer. Activation confirms that the product is genuine and not a fraudulent copy. Activation also confirms that the product key or serial number is valid and isn't compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
 
@@ -76,7 +76,7 @@ With a retail product, the Volume Activation Management Tool (VAMT), which is di
 - Telephone activation.
 - VAMT proxy activation.
 
-Telephone activation is primarily used in situations where a computer is isolated from all networks. VAMT proxy activation with retail keys is sometimes used when an IT department wants to centralize retail activations. VAMT can also be used when a computer with a retail version of the operating system is isolated from the Internet but connected to the LAN. For volume-licensed products, however, the best method or combination of methods must be determined to use in the environment. For currently supported versions of Windows Pro and Enterprise, one of the following three models can be chosen:
+Telephone activation is primarily used in situations where a computer is isolated from all networks. VAMT proxy activation with retail keys is sometimes used when an IT department wants to centralize retail activations. VAMT can also be used when a computer with a retail version of the operating system is isolated from the internet but connected to the LAN. For volume-licensed products, however, the best method or combination of methods must be determined to use in the environment. For currently supported versions of Windows Pro and Enterprise, one of the following three models can be chosen:
 
 - Multiple Activation Keys (MAK).
 - KMS.
@@ -97,7 +97,7 @@ To use a MAK, the computers to be activated must have a MAK installed. The MAK i
 
 In the simplest terms, a MAK acts like a retail key, except that a MAK is valid for activating multiple computers. Each MAK can be used a specific number of times. The VAMT can help with tracking the number of performed activations with each key and how many activations remain.
 
-Organizations can download MAK and KMS keys from the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=618213) website. Each MAK has a preset number of activations, which are based on a percentage of the count of licenses the organization purchases. However, the number of activations that are available can be increased with the MAK by calling Microsoft.
+Organizations can download MAK and KMS keys from the [Volume Licensing Service Center](https://admin.microsoft.com/adminportal/home#/subscriptions/vlnew) website. Each MAK has a preset number of activations, which are based on a percentage of the count of licenses the organization purchases. However, the number of activations that are available can be increased with the MAK by calling Microsoft.
 
 ### Key Management Service
 
@@ -121,7 +121,7 @@ A modern business network has many nuances and interconnections. This section ex
 
 ### Core network
 
-The organization's core network is that part of the network that enjoys stable, high-speed, reliable connectivity to infrastructure servers. In many cases, the core network is also connected to the Internet. However, Internet connectivity isn't a requirement to use the KMS or Active Directory-based activation after the KMS server or ADDS is configured and active. The organization's core network likely consists of many network segments. In many organizations, the core network makes up most of the business network.
+The organization's core network is that part of the network that enjoys stable, high-speed, reliable connectivity to infrastructure servers. In many cases, the core network is also connected to the internet. However, internet connectivity isn't a requirement to use the KMS or Active Directory-based activation after the KMS server or ADDS is configured and active. The organization's core network likely consists of many network segments. In many organizations, the core network makes up most of the business network.
 
 In the core network, a centralized KMS solution is recommended. Active Directory-based activation can also be used, but in many organizations, KMS might still be required to computers that aren't joined to the domain. Some administrators prefer to run both solutions to have the most flexibility, while others prefer to choose only a KMS-based solution for simplicity. Active Directory-based activation as the only solution is workable if all of the clients in the organization are running currently supported versions of Windows.
 
@@ -163,7 +163,7 @@ If the network is fully isolated, MAK-independent activation would be the recomm
 
 #### Branch offices and distant networks
 
-From mining operations to ships at sea, organizations often have a few computers that aren't easily connected to the core network or the Internet. Some organizations have network segments at branch offices that are large and well-connected internally, but have a slow or unreliable WAN link to the rest of the organization. There are several options in these situations:
+From mining operations to ships at sea, organizations often have a few computers that aren't easily connected to the core network or the internet. Some organizations have network segments at branch offices that are large and well-connected internally, but have a slow or unreliable WAN link to the rest of the organization. There are several options in these situations:
 
 - **Active Directory-based activation**. In any site where the client computers are running currently supported versions of Windows, Active Directory-based activation is supported, and it can be activated by joining the domain.
 
@@ -183,7 +183,7 @@ Active Directory-based activation can be used on computers when they meet the fo
 - The computer is running a currently supported version of Windows or Windows Server.
 - The computer connects to the domain at least once every 180 days, either directly or through a VPN.
 
-Otherwise for computers that rarely or never connect to the network, MAK independent activation should be used either via the telephone or the Internet.
+Otherwise for computers that rarely or never connect to the network, MAK independent activation should be used either via the telephone or the internet.
 
 ### Test and development labs
 
@@ -215,13 +215,13 @@ By evaluating network connectivity and the numbers of computers at each site, th
 
 When it's know which keys are needed, the keys must be obtained. Generally speaking, volume licensing keys are collected in two ways:
 
-- Go to the **Product Keys** section of the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=618213) for the following agreements: Open, Open Value, Select, Enterprise, and Services Provider License.
+- Go to the **Product Keys** section of the [Volume Licensing Service Center](https://admin.microsoft.com/adminportal/home#/subscriptions/vlnew) for the following agreements: Open, Open Value, Select, Enterprise, and Services Provider License.
 
-- Contact the [Microsoft activation center](https://go.microsoft.com/fwlink/p/?LinkId=618264).
+- Contact the [Microsoft activation center](https://www.microsoft.com/licensing/existing-customer/activation-centers).
 
 ### KMS host keys
 
-A KMS host needs a key that activates, or authenticates, the KMS host with Microsoft. This key is referred to as the *KMS host key*, but it's formally known as a *Microsoft Customer Specific Volume License Key* (CSVLK). Some documentation and Internet references use the term KMS key, but CSVLK is the proper name for current documentation and management tools.
+A KMS host needs a key that activates, or authenticates, the KMS host with Microsoft. This key is referred to as the *KMS host key*, but it's formally known as a *Microsoft Customer Specific Volume License Key* (CSVLK). Some documentation and internet references use the term KMS key, but CSVLK is the proper name for current documentation and management tools.
 
 A KMS host running a currently supported version of Windows Server can activate both Windows Server and Windows client operating systems. A KMS host key is also needed to create the activation objects in ADDS, as described later in this guide. A KMS host key is needed for any KMS that is set up. Additionally, it needs to be determined if Active Directory-based activation will be used.
 
@@ -274,4 +274,4 @@ The flow of KMS activation is shown in Figure 3, and it follows this sequence:
 
 ## Related content
 
-- [Volume Activation for Windows](volume-activation-windows.md).
+- [Volume activation for Windows](volume-activation-windows.md).

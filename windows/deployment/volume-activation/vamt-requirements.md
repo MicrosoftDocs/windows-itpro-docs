@@ -1,13 +1,13 @@
 ---
-title: VAMT Requirements
-description: In this article, learn about the product key and system requirements for Volume Activation Management Tool (VAMT).
+title: VAMT requirements
+description: Learn about the product key and system requirements for Volume Activation Management Tool (VAMT).
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 03/29/2024
-ms.topic: conceptual
+ms.topic: concept-article
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ---
 
@@ -21,7 +21,7 @@ The Volume Activation Management Tool (VAMT) can be used to perform activations 
 
 |Product key type |Where to obtain |
 |-----------------|----------------|
-|<ul><li>Multiple Activation Key (MAK)</li><li>Key Management Service (KMS) host key (CSVLK)</li><li>KMS client setup keys (GVLK)</li></ul> |Volume licensing keys can only be obtained with a signed contract from Microsoft. For more info, see the [Microsoft Volume Licensing portal](https://go.microsoft.com/fwlink/p/?LinkId=227282). |
+|<ul><li>Multiple Activation Key (MAK)</li><li>Key Management Service (KMS) host key (CSVLK)</li><li>KMS client setup keys (GVLK)</li></ul> |Volume licensing keys can only be obtained with a signed contract from Microsoft. For more information, see the [Microsoft Volume Licensing portal](https://admin.microsoft.com/adminportal/home#/subscriptions/vlnew). |
 |Retail product keys |Obtained at time of product purchase. |
 
 ## System requirements
@@ -41,4 +41,6 @@ The following table lists the system requirements for the VAMT host computer.
 
 ## Related content
 
-- [Install and configure VAMT](install-configure-vamt.md).
+[Install VAMT](install-vamt.md)
+
+[Configure client computers](configure-client-computers-vamt.md)

@@ -1,20 +1,20 @@
 ---
-title: Update Product Status
+title: Update product status
 description: Learn how to use the Update license status function to add the products that are installed on the computers.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 03/29/2024
-ms.topic: conceptual
+ms.topic: how-to
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ---
 
 # Update product status
 
 After computers are added to the Volume Activation Management Tool (VAMT) database, the **Update license status** function needs to be used to add the products that are installed on the computers. The **Update license status** can also be used at any time to retrieve the most current license status for any products in the VAMT database.
-To retrieve license status, VAMT must have administrative permissions on all selected computers and Windows Management Instrumentation (WMI) must be accessible through the Windows Firewall. In addition, for workgroup computers, a registry key must be created to enable remote administrative actions under User Account Control (UAC). For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
+To retrieve license status, VAMT must have administrative permissions on all selected computers and Windows Management Instrumentation (WMI) must be accessible through the Windows Firewall. In addition, for workgroup computers, a registry key must be created to enable remote administrative actions under User Account Control (UAC). For more information, see [Configure client computers](configure-client-computers-vamt.md).
 
 > [!NOTE]
 > The license-status query requires a valid computer name for each system queried. If the VAMT database contains computers that were added without Personally Identifiable Information, computer names will not be available for those computers, and the status for these computers will not be updated.
@@ -37,4 +37,6 @@ To retrieve license status, VAMT must have administrative permissions on all sel
 
 ## Related content
 
-- [Add and Manage Products](add-manage-products-vamt.md).
+[Add and remove computers](add-remove-computers-vamt.md)
+
+[Remove products](remove-products-vamt.md)

@@ -1,18 +1,15 @@
 ---
 title: Activate using Active Directory-based activation
 description: Learn how active directory-based activation is implemented as a role service that relies on Active Directory Domain Services (ADDS) to store activation objects.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-author: frankroj
-ms.author: frankroj
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
 ms.date: 03/29/2024
 ms.topic: how-to
-ms.collection:
-  - highpri
-  - tier2
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -28,8 +25,8 @@ appliesto:
 >
 > Looking for information on retail activation?
 >
-> - [Activate Windows](https://support.microsoft.com/help/12440/).
-> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644).
+> - [Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227).
+> - [Product activation for Windows](https://support.microsoft.com/windows/product-activation-for-windows-online-support-telephone-numbers-35f6a805-1259-88b4-f5e9-b52cccef91a0).
 
 Active Directory-based activation is implemented as a role service that relies on Active Directory Domain Services (ADDS) to store activation objects. Active Directory-based activation requires updating the forest schema with `adprep.exe` on a supported server OS. After the schema is updated, older domain controllers can still activate clients.
 

@@ -1,19 +1,19 @@
 ---
-title: Perform KMS Activation (Windows 10)
-description: The Volume Activation Management Tool (VAMT) can be used to perform volume activation using the Key Management Service (KMS).
+title: Run KMS activation
+description: The Volume Activation Management Tool (VAMT) can be used to run volume activation using the Key Management Service (KMS).
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 11/07/2022
-ms.topic: conceptual
+ms.topic: how-to
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ---
 
-# Perform KMS activation
+# Run KMS activation
 
-The Volume Activation Management Tool (VAMT) can be used to perform volume activation using the Key Management Service (KMS). You can use VAMT to activate Generic Volume Licensing Keys, or KMS client keys, on products accessible to VAMT. GVLKs are the default product keys used by the volume-license editions of Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server® 2012, and Microsoft Office 2010. GVLKs are already installed in volume-license editions of these products.
+The Volume Activation Management Tool (VAMT) can be used to run volume activation using the Key Management Service (KMS). You can use VAMT to activate Generic Volume Licensing Keys, or KMS client keys, on products accessible to VAMT. GVLKs are the default product keys used by the volume-license editions of Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server® 2012, and Microsoft Office 2010. GVLKs are already installed in volume-license editions of these products.
 
 ## Requirements
 
@@ -61,3 +61,11 @@ Before configuring KMS activation, ensure that your network and VAMT installatio
 
 10. If you're supplying alternate credentials, at the prompt, type the appropriate user name and password and select **OK**.
 VAMT displays the **Volume Activation** dialog box until it completes the requested action. When the process is finished, the updated activation status of each product appears in the product list view in the center pane.
+
+## Related articles
+
+[Run online activation](online-activation-vamt.md)
+
+[Run proxy activation](proxy-activation-vamt.md)
+
+[Run local reactivation](local-reactivation-vamt.md)

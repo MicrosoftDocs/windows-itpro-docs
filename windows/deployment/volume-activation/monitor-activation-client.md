@@ -1,13 +1,13 @@
 ---
 title: Monitor activation
-ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
 description: Understand the most common methods to monitor the success of the activation process for a computer running Windows.
-ms.service: windows-client
-author: frankroj
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
+ms.reviewer: nganguly
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: concept-article
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.date: 03/29/2024
 appliesto:
@@ -24,8 +24,8 @@ appliesto:
 >
 > Looking for information on retail activation?
 >
-> - [Activate Windows](https://support.microsoft.com/help/12440/).
-> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644).
+> - [Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227).
+> - [Product activation for Windows](https://support.microsoft.com/windows/product-activation-for-windows-online-support-telephone-numbers-35f6a805-1259-88b4-f5e9-b52cccef91a0).
 
 The success of the activation process for a computer running Windows can be monitored in several ways. The most popular methods include:
 
@@ -39,10 +39,10 @@ The success of the activation process for a computer running Windows can be moni
 
 - Microsoft System Center Operations Manager and the KMS Management Pack can provide insight and information to users of System Center Operations Manager.
 
-- See [Troubleshooting activation error codes](/windows-server/get-started/activation-error-codes) for information about troubleshooting procedures for Multiple Activation Key (MAK) or the Key Management Service (KMS).
+- See [Troubleshooting activation error codes](/troubleshoot/windows-server/licensing-and-activation/troubleshoot-activation-error-codes) for information about troubleshooting procedures for Multiple Activation Key (MAK) or the Key Management Service (KMS).
 
-- The Volume Activation Management Tool (VAMT) provides a single site from which to manage and monitor volume activations. This feature is explained in the next section.
+- The Volume Activation Management Tool (VAMT) provides a single site from which to manage and monitor volume activations. For more information, see [Introduction to VAMT](introduction-vamt.md).
 
 ## Related content
 
-- [Volume Activation for Windows](volume-activation-windows.md).
+[Volume activation for Windows](volume-activation-windows.md).

@@ -1582,7 +1582,7 @@
     },
     {
       "source_path": "windows/deploy/add-manage-products-vamt.md",
-      "redirect_url": "/windows/deployment/volume-activation/add-manage-products-vamt",
+      "redirect_url": "/windows/deployment/volume-activation/add-remove-computers-vamt",
       "redirect_document_id": false
     },
     {
@@ -1732,7 +1732,7 @@
     },
     {
       "source_path": "windows/deploy/install-configure-vamt.md",
-      "redirect_url": "/windows/deployment/volume-activation/install-configure-vamt",
+      "redirect_url": "/windows/deployment/volume-activation/vamt-requirements",
       "redirect_document_id": false
     },
     {
@@ -1777,17 +1777,17 @@
     },
     {
       "source_path": "windows/deploy/manage-activations-vamt.md",
-      "redirect_url": "/windows/deployment/volume-activation/manage-activations-vamt",
+      "redirect_url": "/windows/deployment/volume-activation/online-activation-vamt",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/manage-product-keys-vamt.md",
-      "redirect_url": "/windows/deployment/volume-activation/manage-product-keys-vamt",
+      "redirect_url": "/windows/deployment/volume-activation/add-remove-product-key-vamt",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/manage-vamt-data.md",
-      "redirect_url": "/windows/deployment/volume-activation/manage-vamt-data",
+      "redirect_url": "/windows/deployment/volume-activation/import-export-vamt-data",
       "redirect_document_id": false
     },
     {
@@ -2422,7 +2422,7 @@
     },
     {
       "source_path": "windows/deploy/vamt-step-by-step.md",
-      "redirect_url": "/windows/deployment/volume-activation/vamt-step-by-step",
+      "redirect_url": "/windows/deployment/volume-activation/scenario-online-activation-vamt",
       "redirect_document_id": false
     },
     {
