@@ -1,15 +1,15 @@
 ---
-title: Appendix Information sent to Microsoft during activation
+title: Appendix information sent to Microsoft during activation
 description: Learn about the information sent to Microsoft during activation.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-author: frankroj
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
 ms.date: 03/29/2024
-ms.topic: conceptual
+ms.topic: reference
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -24,8 +24,8 @@ appliesto:
 >
 > Looking for information on retail activation?
 >
-> - [Activate Windows](https://support.microsoft.com/help/12440/).
-> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644).
+> - [Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227).
+> - [Product activation for Windows](https://support.microsoft.com/windows/product-activation-for-windows-online-support-telephone-numbers-35f6a805-1259-88b4-f5e9-b52cccef91a0).
 
 When a computer running a currently supported version of Windows is activated, the following information is sent to Microsoft:
 
@@ -78,8 +78,4 @@ Standard computer information is also sent, but the computer's IP address is onl
 
 Microsoft uses the information to confirm a properly licensed copy of the software. Microsoft doesn't use the information to contact individual consumers.
 
-For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=619879).
-
-## Related content
-
-- [Volume Activation for Windows](volume-activation-windows.md).
+For more information, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).

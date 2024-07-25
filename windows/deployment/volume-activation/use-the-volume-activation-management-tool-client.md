@@ -1,14 +1,14 @@
 ---
 title: Use the Volume Activation Management Tool
 description: The Volume Activation Management Tool (VAMT) provides several useful features, including the ability to track and monitor several types of product keys.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.localizationpriority: medium
 ms.date: 03/29/2024
-ms.topic: conceptual
+ms.topic: concept-article
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -24,8 +24,8 @@ appliesto:
 >
 > Looking for information on retail activation?
 >
-> - [Activate Windows](https://support.microsoft.com/help/12440/).
-> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644).
+> - [Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227).
+> - [Product activation for Windows](https://support.microsoft.com/windows/product-activation-for-windows-online-support-telephone-numbers-35f6a805-1259-88b4-f5e9-b52cccef91a0).
 
 The Volume Activation Management Tool (VAMT) provides several useful features, including the ability to perform VAMT proxy activation and to track and monitor several types of product keys.
 
@@ -35,7 +35,7 @@ For currently supported versions of Windows Server, VAMT can be installed direct
 
 For currently supported versions of Windows client, VAMT can be installed as part of the Windows Assessment and Deployment Kit (Windows ADK). The Windows ADK is a free download. For more information, including links to download the Windows ADK, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
-## Activating with the Volume Activation Management Tool
+## Activate with VAMT
 
 VAMT can be used to complete the activation process in products by using MAK and retail keys. Computers can be activated either individually or in groups. The VAMT enables two activation scenarios:
 
@@ -45,7 +45,7 @@ VAMT can be used to complete the activation process in products by using MAK and
 
     When this method is used, only the VAMT host computer requires Internet access. Proxy activation by using the VAMT is beneficial for isolated network segments and for cases where the organization has a mix of retail, MAK, and KMS-based activations.
 
-## Tracking products and computers with the Volume Activation Management Tool
+## Track products and computers
 
 The VAMT provides an overview of the activation and licensing status of computers across an organization's network, as shown in Figure 18. Several prebuilt reports are also available to help proactively manage licensing.
 
@@ -53,7 +53,7 @@ The VAMT provides an overview of the activation and licensing status of computer
 
 **Figure 18**. The VAMT showing the licensing status of multiple computers
 
-## Tracking key usage with the Volume Activation Management Tool
+## Track key usage
 
 The VAMT makes it easier to track the various keys that are issued to an organization. Each key can be entered into VAMT, and then the VAMT can use those keys for online or proxy activation of clients. The tool can also describe what type of key it's and to which product group it belongs. The VAMT is the most convenient way to quickly determine how many activations remain on a MAK. Figure 19 shows an example of key types and usage.
 
@@ -61,7 +61,7 @@ The VAMT makes it easier to track the various keys that are issued to an organiz
 
 **Figure 19**. The VAMT showing key types and usage
 
-## Other Volume Activation Management Tool features
+## Other features
 
 The VAMT stores information in a Microsoft SQL Server database for performance and flexibility, and it provides a single graphical user interface for managing activations and performing other activation-related tasks, such as:
 
@@ -74,7 +74,6 @@ The VAMT stores information in a Microsoft SQL Server database for performance a
 For more information, see:
 
 - [Volume Activation Management Tool (VAMT) Overview](./volume-activation-management-tool.md).
-- [VAMT Step-by-Step Scenarios](./vamt-step-by-step.md).
 
 ## Related content
 
