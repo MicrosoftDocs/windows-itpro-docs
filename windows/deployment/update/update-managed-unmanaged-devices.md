@@ -5,9 +5,9 @@ ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: overview
 ms.date: 06/25/2024
-author: mikolding
-ms.author: v-mikolding
-ms.reviewer: mstewart,thtrombl,v-fvalentyna,arcarley
+author: v-fvalentyna
+ms.author: v-fvalentyna
+ms.reviewer: mstewart,thtrombl,arcarley
 manager: aaroncz
 ms.localizationpriority: medium
 appliesto:
