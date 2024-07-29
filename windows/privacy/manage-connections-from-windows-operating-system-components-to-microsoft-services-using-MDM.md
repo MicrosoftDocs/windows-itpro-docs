@@ -32,7 +32,7 @@ This article describes the network connections that Windows 10 and Windows 11 co
 >[!Warning]
 >If a user executes the "Reset this PC" command (Settings -> Update & Security -> Recovery) with the "Remove Everything" option the >Windows Restricted Traffic Limited Functionality settings will need to be re-applied in order re-restrict the device's egress traffic. >To do this the client must be re-enrolled to the Microsoft Intune service. Egress traffic may occur during the period prior to the re->application of the Restricted Traffic Limited Functionality settings.  If the user executes a "Reset this PC" with the "Keep my files" >option the Restricted Traffic Limited Functionality settings are retained on the device, and therefore the client will remain in a >Restricted Traffic configuration during and after the "Keep my files" reset, and no re-enrollment is required.
 
-For more information on Microsoft Intune, see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](/intune/).
+For more information on Microsoft Intune, see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](/mem/intune/).
 
 For detailed information about managing network connections to Microsoft services using Windows Settings, Group Policies and Registry settings see [Manage connections from Windows operating system components to Microsoft services](./manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
