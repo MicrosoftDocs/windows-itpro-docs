@@ -120,7 +120,7 @@ In the Release management blade, you can:
 
 ### Release schedule
 
-For each [deployment ring](windows-autopatch-update-management.md#windows-autopatch-deployment-rings), the **Release schedule** tab contains:
+For each deployment ring, the **Release schedule** tab contains:
 
 - The status of the update. Releases appear as **Active**. The update schedule is based on the values of the [Windows 10 Update Ring policies](/mem/intune/protect/windows-update-for-business-configure), which are configured on your behalf.
 - The date the update is available.
