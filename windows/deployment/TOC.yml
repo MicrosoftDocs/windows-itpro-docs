@@ -186,83 +186,70 @@
           href: volume-activation/monitor-activation-client.md
         - name: Use the Volume Activation Management Tool
           href: volume-activation/use-the-volume-activation-management-tool-client.md
-        href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
+        - name: Information sent to Microsoft during activation
+          href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
       - name: Volume Activation Management Tool (VAMT)
         items:
         - name: VAMT technical reference
           href: volume-activation/volume-activation-management-tool.md
         - name: Introduction to VAMT
           href: volume-activation/introduction-vamt.md
-        - name: Active Directory-Based Activation Overview
+        - name: Active Directory-Based activation overview
           href: volume-activation/active-directory-based-activation-overview.md
-        - name: Install and Configure VAMT
+        - name: Install and configure VAMT
           items:
-          - name: Overview
-            href: volume-activation/install-configure-vamt.md
-          - name: VAMT Requirements
+          - name: VAMT requirements
             href: volume-activation/vamt-requirements.md
           - name: Install VAMT
             href: volume-activation/install-vamt.md
-          - name: Configure Client Computers
+          - name: Configure client computers
             href: volume-activation/configure-client-computers-vamt.md
-        - name: Add and Manage Products
+        - name: Add and manage products
           items:
-          - name: Overview
-            href: volume-activation/add-manage-products-vamt.md
-          - name: Add and Remove Computers
+          - name: Add and remove computers
             href: volume-activation/add-remove-computers-vamt.md
-          - name: Update Product Status
+          - name: Update product status
             href: volume-activation/update-product-status-vamt.md
-          - name: Remove Products
+          - name: Remove products
             href: volume-activation/remove-products-vamt.md
-        - name: Manage Product Keys
+        - name: Manage product keys
           items:
-          - name: Overview
-            href: volume-activation/manage-product-keys-vamt.md
-          - name: Add and Remove a Product Key
+          - name: Add and remove a product key
             href: volume-activation/add-remove-product-key-vamt.md
-          - name: Install a Product Key
+          - name: Install a product key
             href: volume-activation/install-product-key-vamt.md
-          - name: Install a KMS Client Key
+          - name: Install a KMS client key
             href: volume-activation/install-kms-client-key-vamt.md
-        - name: Manage Activations
+        - name: Manage activations
           items:
-          - name: Overview
-            href: volume-activation/manage-activations-vamt.md
-          - name: Run Online Activation
+          - name: Run online activation
             href: volume-activation/online-activation-vamt.md
-          - name: Run Proxy Activation
+          - name: Run proxy activation
             href: volume-activation/proxy-activation-vamt.md
-          - name: Run KMS Activation
+          - name: Run KMS activation
             href: volume-activation/kms-activation-vamt.md
-          - name: Run Local Reactivation
+          - name: Run local reactivation
             href: volume-activation/local-reactivation-vamt.md
-          - name: Activate an Active Directory Forest Online
+          - name: Activate an Active Directory forest online
             href: volume-activation/activate-forest-vamt.md
-          - name: Activate by Proxy an Active Directory Forest
+          - name: Activate by proxy an Active Directory forest
             href: volume-activation/activate-forest-by-proxy-vamt.md
-        - name: Manage VAMT Data
+        - name: Manage VAMT data
           items:
-          - name: Overview
-            href: volume-activation/manage-vamt-data.md
-          - name: Import and Export VAMT Data
+          - name: Import and export VAMT data
             href: volume-activation/import-export-vamt-data.md
           - name: Use VAMT in Windows PowerShell
             href: volume-activation/use-vamt-in-windows-powershell.md
-          - name: VAMT Step-by-Step Scenarios
-            items:
-            - name: Overview
-              href: volume-activation/vamt-step-by-step.md
-            - name: "Scenario 1: Online Activation"
-              href: volume-activation/scenario-online-activation-vamt.md
-            - name: "Scenario 2: Proxy Activation"
-              href: volume-activation/scenario-proxy-activation-vamt.md
-            - name: "Scenario 3: KMS Client Activation"
-              href: volume-activation/scenario-kms-activation-vamt.md
-          - name: VAMT Known Issues
-            href: volume-activation/vamt-known-issues.md
-      - name: Information sent to Microsoft during activation
-        href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
+        - name: VAMT step-by-step scenarios
+          items:
+          - name: "Scenario 1: online activation"
+            href: volume-activation/scenario-online-activation-vamt.md
+          - name: "Scenario 2: proxy activation"
+            href: volume-activation/scenario-proxy-activation-vamt.md
+          - name: "Scenario 3: KMS client activation"
+            href: volume-activation/scenario-kms-activation-vamt.md
+        - name: VAMT known issues
+          href: volume-activation/vamt-known-issues.md
     - name: Monitor
       items:
       - name: Windows Update for Business reports

@@ -1,34 +1,34 @@
 ---
-title: Scenario 2 Proxy Activation (Windows 10)
+title: Scenario 2 - proxy activation
 description: Use the Volume Activation Management Tool (VAMT) to activate products that are installed on workgroup computers in an isolated lab environment.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 11/07/2022
-ms.topic: conceptual
+ms.topic: how-to
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ---
 
-# Scenario 2: Proxy Activation
+# Scenario 2: proxy activation
 
-In this scenario, the Volume Activation Management Tool (VAMT) is used to activate products that are installed on workgroup computers in an isolated lab environment. For workgroups that are isolated from the larger network, you can perform proxy activation of Multiple Activation Keys (MAKs), KMS Host keys (CSVLKs), Generic Volume License Keys (GVLKs) (or KMS client keys), or retail keys. Proxy activation is performed by installing a second instance of VAMT on a computer in the isolated workgroup. You can then use removable media to transfer VAMT Computer Information Lists (CILXs) between the instance of VAMT in the isolated workgroup and another VAMT host that has Internet access. The following diagram shows a Multiple Activation Key (MAK) proxy activation scenario:
+In this scenario, the Volume Activation Management Tool (VAMT) is used to activate products that are installed on workgroup computers in an isolated lab environment. For workgroups that are isolated from the larger network, you can perform proxy activation of Multiple Activation Keys (MAKs), KMS Host keys (CSVLKs), Generic Volume License Keys (GVLKs) (or KMS client keys), or retail keys. Proxy activation is performed by installing a second instance of VAMT on a computer in the isolated workgroup. You can then use removable media to transfer VAMT Computer Information Lists (CILXs) between the instance of VAMT in the isolated workgroup and another VAMT host that has internet access. The following diagram shows a Multiple Activation Key (MAK) proxy activation scenario:
 
 ![VAMT MAK proxy activation scenario.](images/dep-win8-l-vamt-makproxyactivationscenario.jpg)
 
-## Step 1: Install VAMT on a Workgroup Computer in the Isolated Lab
+## Step 1: Install VAMT on a workgroup computer in the isolated lab
 
 1. Install VAMT on a host computer in the isolated lab workgroup. This computer can be running Windows 7, Windows 8, Windows 10, Windows Server 2008 R2, or Windows Server® 2012.
 
 2. Select the VAMT icon in the **Start** menu to open VAMT.
 
-## Step 2: Configure the Windows Management Instrumentation Firewall Exception on target computers
+## Step 2: Configure the Windows Management Instrumentation firewall exception on target computers
 
-- Ensure that the Windows Management Instrumentation (WMI) firewall exception has been enabled for all target computers. For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
+- Ensure that the Windows Management Instrumentation (WMI) firewall exception has been enabled for all target computers. For more information, see [Configure client computers](configure-client-computers-vamt.md).
 
     > [!NOTE]
-    > To retrieve the license status on the selected computers, VAMT must have administrative permissions on the remote computers and WMI must be accessible through the Windows Firewall. In addition, for workgroup computers, a registry key must be created to enable remote administrative actions under User Account Control (UAC). For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
+    > To retrieve the license status on the selected computers, VAMT must have administrative permissions on the remote computers and WMI must be accessible through the Windows Firewall. In addition, for workgroup computers, a registry key must be created to enable remote administrative actions under User Account Control (UAC). For more information, see [Configure client computers](configure-client-computers-vamt.md).
 
 ## Step 3: Connect to a VAMT database
 
@@ -36,7 +36,7 @@ In this scenario, the Volume Activation Management Tool (VAMT) is used to activa
 
 2. Select **Connect**.
 
-3. If you're already connected to a database, in the center pane VAMT displays an inventory of the products and product keys, and a license overview of the computers in the database. If you need to connect to a different database, select **Successfully connected to the Server** to open the **Database Connection Settings** dialog box. For more information about how to create VAMT databases and adding VAMT data, see [Manage VAMT Data.](manage-vamt-data.md)
+3. If you're already connected to a database, in the center pane VAMT displays an inventory of the products and product keys, and a license overview of the computers in the database. If you need to connect to a different database, select **Successfully connected to the Server** to open the **Database Connection Settings** dialog box. For more information about how to create VAMT databases and adding VAMT data, see [Import and export Volume Activation Management Tool data](import-export-vamt-data.md).
 
 ## Step 4: Discover products
 
@@ -46,7 +46,7 @@ In this scenario, the Volume Activation Management Tool (VAMT) is used to activa
 
 3. In the **Discover Products** dialog box, select **Search for computers in the Active Directory** to display the search options, and then select the search options that you want to use. You can search for computers in an Active Directory domain, by individual computer name or IP address, in a workgroup, or by a general LDAP query:
 
-    - To search for computers in an Active Directory domain, select **Search for computers in the Active Directory**. Then under **Domain Filter Criteria**, in the list of domain names, select the name of the domain that you want to search. You can narrow the search further by typing a name in the **Filter by computer name** field to search for specific computers in the domain. This filter supports the asterisk (\*) wildcard. For example, typing "a\*" will display only computer names that start with the letter "a".
+    - To search for computers in an Active Directory domain, select **Search for computers in the Active Directory**. Then under **Domain Filter Criteria**, in the list of domain names, select the name of the domain that you want to search. You can narrow the search further by typing a name in the **Filter by computer name** field to search for specific computers in the domain. This filter supports the asterisk (`*`) wildcard. For example, typing `a*` will display only computer names that start with the letter "a".
 
     - To search by individual computer name or IP address, select **Manually enter name or IP address**. Then enter the full name or IP address in the **One or more computer names or IP addresses separated by commas** text box. Separate multiple entries with a comma. Both IPv4 and IPv6addressing are supported.
 
@@ -91,10 +91,10 @@ To collect the status from select computers in the database, you can select comp
 
 - VAMT displays the **Collecting product information** dialog box while it collects the license status of all supported products on the selected computers. When the process is finished, the updated license status of each product will appear in the product list view in the center pane.
 
-  > [!NOTE]  
+  > [!NOTE]
   > If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
 
-## Step 7: Add Product Keys
+## Step 7: Add product keys
 
 1. Select the **Product Keys** node in the left-side pane, and then select **Add Product Keys** in the right-side pane to open the **Add Product Keys** dialog box.
 
@@ -106,7 +106,7 @@ To collect the status from select computers in the database, you can select comp
 
     The keys that you have added appear in the **Product Keys** list view in the center pane.
 
-## Step 8: Install the Product Keys on the Isolated Lab Computers
+## Step 8: Install the product keys on the isolated lab computers
 
 1. In the left-side pane, in the **Products** node select the product that you want to install keys onto.
 
@@ -130,7 +130,7 @@ To collect the status from select computers in the database, you can select comp
 
 ## Step 9: Export VAMT data to a `.cilx` file
 
-In this step, you export VAMT from the workgroup's host computer and save it in a `.cilx` file. Then you copy the `.cilx` file to removable media so that you can take it to a VAMT host computer that is connected to the Internet. In MAK proxy activation, it's critical to retain this file, because VAMT uses it to apply the Confirmation IDs (CIDs) to the proper products.
+In this step, you export VAMT from the workgroup's host computer and save it in a `.cilx` file. Then you copy the `.cilx` file to removable media so that you can take it to a VAMT host computer that is connected to the internet. In MAK proxy activation, it's critical to retain this file, because VAMT uses it to apply the Confirmation IDs (CIDs) to the proper products.
 
 1. Select the individual products that successfully received a product key in Step 8. If needed, sort and filter the list to find the products.
 
@@ -157,7 +157,7 @@ In this step, you export VAMT from the workgroup's host computer and save it in 
 
 ## Step 10: Acquire confirmation IDs from Microsoft on the internet connected host computer
 
-1. Insert the removable media into the VAMT host that has Internet access.
+1. Insert the removable media into the VAMT host that has internet access.
 
 2. Open VAMT. Make sure you are on the root node, and that the **Volume Activation Management Tool** view is displayed in the center pane.
 
@@ -167,9 +167,9 @@ In this step, you export VAMT from the workgroup's host computer and save it in 
 
 5. When the CID collection process is complete, VAMT displays a **Volume Activation Management Tool** message that shows the number of confirmation IDs that were successfully acquired, and the name of the file where the IDs were saved. Select **OK** to close the message.
 
-## Step 11: Import the `.cilx` file onto the VAMT host within the Isolated lab workgroup
+## Step 11: Import the `.cilx` file onto the VAMT host within the isolated lab workgroup
 
-1. Remove the storage device that contains the `.cilx` file from the Internet-connected VAMT host computer and insert it into the VAMT host computer in the isolated lab.
+1. Remove the storage device that contains the `.cilx` file from the internet-connected VAMT host computer and insert it into the VAMT host computer in the isolated lab.
 
 2. Open VAMT and verify that you're connected to the database that contains the computer with the product keys that you're activating.
 
@@ -181,7 +181,7 @@ In this step, you export VAMT from the workgroup's host computer and save it in 
 
 6. VAMT displays a progress message while the data is being imported. Select **OK** when a message appears and confirms that the data has been successfully imported.
 
-## Step 12: Apply the CIDs and Activate the Isolated Lab Computers
+## Step 12: Apply the CIDs and activate the isolated lab computers
 
 1. Select the products to which you want to apply CIDs. If needed, sort and filter the list to find the products.
 
@@ -190,7 +190,7 @@ In this step, you export VAMT from the workgroup's host computer and save it in 
     VAMT displays the **Applying Confirmation Id** dialog box while it installs the CIDs on the selected products. When VAMT finishes installing the CIDs, the status appears in the **Action Status** column of the dialog box. Select **Close** to close the dialog box. You can also select the **Automatically close when done** check box when the dialog box appears.
     The same status appears under the **Status of Last Action** column in the product list view in the center pane.
 
-## Step 13: (Optional) Reactivating Reimaged Computers in the Isolated Lab
+## Step 13: (Optional) Reactivating reimaged computers in the isolated lab
 
 If you have captured new images of the computers in the isolated lab, but the underlying hardware of those computers hasn't changed, VAMT can reactivate those computers using the CIDs that are stored in the database.
 
@@ -213,4 +213,4 @@ If you have captured new images of the computers in the isolated lab, but the un
 
 ## Related articles
 
-- [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
+[Run proxy activation](proxy-activation-vamt.md)

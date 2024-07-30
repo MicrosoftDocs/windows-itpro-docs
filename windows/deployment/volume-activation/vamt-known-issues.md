@@ -1,13 +1,13 @@
 ---
-title: VAMT known issues (Windows 10)
+title: VAMT known issues
 description: Find out the current known issues with the Volume Activation Management Tool (VAMT), versions 3.0. and 3.1.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 11/07/2022
-ms.topic: conceptual
+ms.topic: concept-article
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ---
 
@@ -54,17 +54,17 @@ On the KMS host computer, perform the following steps:
    ```
 
 5. In the
-   
+
    `C:\KB3058168\x86_microsoft-windows-s..nent-sku-csvlk-pack_31bf3856ad364e35_6.3.9600.17815_none_bd26b4f34d049716`
-   
+
    folder, copy the
-   
+
    `pkeyconfig-csvlk.xrm-ms`
-   
+
    file. Paste this file into the
-   
+
    `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT3\pkconfig`
-   
+
    folder.
 
 6. Restart VAMT.
