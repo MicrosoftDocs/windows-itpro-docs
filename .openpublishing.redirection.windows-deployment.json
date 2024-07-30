@@ -1224,6 +1224,146 @@
       "source_path": "windows/deployment/volume-activation/vamt-step-by-step.md",
       "redirect_url": "/windows/deployment/volume-activation/scenario-online-activation-vamt",
       "redirect_document_id": false
+    },
+    {
+    "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-groups-update-management.md",
+    "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-overview",
+    "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-and-feature-update-reports-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-summary-dashboard.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-quality-update-summary-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-status-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-quality-update-status-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-trending-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-quality-update-trending-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-reliability-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-reliability-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-summary-dashboard.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-summary-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-status-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-status-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-trending-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-trending-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-device-alerts.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-device-alerts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-policy-health-and-remediation.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-policy-health-and-remediation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-resolve-policy-conflicts.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-resolve-policy-conflicts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-maintain-environment.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/monitor/windows-autopatch-maintain-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-customize-windows-update-settings.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-customize-windows-update-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-edge.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-edge",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-exclude-device.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-exclude-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-manage-driver-and-firmware-updates.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-manage-driver-and-firmware-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-manage-windows-feature-update-releases.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-manage-windows-feature-update-releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-microsoft-365-apps-enterprise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-support-request.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-support-request",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-teams.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-unenroll-tenant.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-unenroll-tenant",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-feature-update-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-communications.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-quality-update-communications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-quality-update-end-user-update-exp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-quality-update-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-signals.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-quality-update-signals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-microsoft-365-policies.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-microsoft-365-policies",
+      "redirect_document_id": false
     }
   ]
 }
