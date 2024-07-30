@@ -104,8 +104,8 @@ Alternatively, your administrators can also choose to use Windows Autopilot. Win
 
 You can use the following articles to learn more about Windows Autopilot and how to use Windows Autopilot to deploy Windows:
 
-- [Overview of Windows Autopilot](/windows/deployment/windows-Autopilot/windows-Autopilot)
-- [Windows Autopilot deployment process](/windows/deployment/windows-Autopilot/deployment-process)
+- [Overview of Windows Autopilot](/autopilot/overview)
+- [Windows Autopilot deployment process](/autopilot/deployment-process)
 
 #### _2.3.2 Managing Windows connected experiences and essential services_
 
