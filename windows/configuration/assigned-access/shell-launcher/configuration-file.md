@@ -106,7 +106,7 @@ Each profile defines a `Shell` element, which contains details about the applica
 |-|-|-|
 |`Shell`| Application that is used as a Windows shell. |- For Universal Windows Platform (UWP) apps, you must provide the App User Model ID (AUMID). Learn how to [Find the Application User Model ID of an installed app](../../store/find-aumid.md).<br>- For desktop apps, specify the full path of the executable, which can contain system environment variables in the form of `%variableName%`. You can also specify any parameters that the app might require. |
 |`V2:AppType`| Defines the type of application. |Allowed values are `Desktop` and `UWP`.|
-|`V2:AllAppsFullScreen` | Boolean value that defines if all applications are executed in full screen. |- When set to `True`, Shell Launcher runs every app in full screen, or maximized for desktop apps.<br>- When set to `False` or not set, only the custom shell app runs in full screen; other apps launched by the user run in windowed mode.|
+|`V2:AllAppsFullScreen` | Boolean value that defines if all applications are executed in full screen. |- When set to `true`, Shell Launcher runs every app in full screen, or maximized for desktop apps.<br>- When set to `false` or not set, only the custom shell app runs in full screen; other apps launched by the user run in windowed mode.|
 
 Example:
 
