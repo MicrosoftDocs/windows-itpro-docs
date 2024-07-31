@@ -128,9 +128,7 @@ For organizations seeking greater control, you can allow or block Microsoft 365 
 
 [Servicing profiles](/deployoffice/admincenter/servicing-profile) is a feature in the [Microsoft 365 Apps admin center](https://config.office.com/) that provides controlled update management of monthly Office updates, including controls for user and device targeting, scheduling, rollback, and reporting.
 
-A [service profile](/deployoffice/admincenter/servicing-profile#compatibility-with-other-management-tools) takes precedence over other policies, such as a Microsoft Intune policy or the Office Deployment Tool. The servicing profile affects all devices that meet the [device eligibility requirements](#device-eligibility) regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it's ineligible for Microsoft 365 App update management.
-
-However, the device may still be eligible for other managed updates. For more information about a device's eligibility for a given [software update workload](windows-autopatch-update-management.md#software-update-workloads), see the Device eligibility section of each respective software update workload.
+A [service profile](/deployoffice/admincenter/servicing-profile#compatibility-with-other-management-tools) takes precedence over other policies, such as a Microsoft Intune policy or the Office Deployment Tool. The servicing profile affects all devices that meet the [device eligibility requirements](#device-eligibility) regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it's ineligible for Microsoft 365 App update management.However, the device may still be eligible for other managed updates.
 
 ## Incidents and outages
 
