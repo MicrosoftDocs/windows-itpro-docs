@@ -13,7 +13,7 @@ items:
     items:
     - name: Using PowerShell scripting with the WMI Bridge Provider
       href: ../using-powershell-scripting-with-the-wmi-bridge-provider.md
-    - name: WMI providers supported in Windows 10
+    - name: WMI providers supported in Windows
       href: ../wmi-providers-supported-in-windows.md
   - name: Understanding ADMX policies
     href: ../understanding-admx-backed-policies.md
@@ -56,9 +56,9 @@ items:
           href: policies-in-policy-csp-supported-by-group-policy.md
         - name: Policies supported by HoloLens 2
           href: policies-in-policy-csp-supported-by-hololens2.md
-        - name: Policies supported by HoloLens (1st gen) Commercial Suite
+        - name: Policies supported by HoloLens (first gen) Commercial Suite
           href: policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md
-        - name: Policies supported by HoloLens (1st gen) Development Edition
+        - name: Policies supported by HoloLens (first gen) Development Edition
           href: policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md
         - name: Policies supported by Windows 10 IoT Core
           href: policies-in-policy-csp-supported-by-iot-core.md
@@ -381,7 +381,7 @@ items:
           href: policy-csp-authentication.md
         - name: Autoplay
           href: policy-csp-autoplay.md
-        - name: Bitlocker
+        - name: BitLocker
           href: policy-csp-bitlocker.md
         - name: BITS
           href: policy-csp-bits.md
