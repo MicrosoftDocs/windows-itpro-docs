@@ -1223,7 +1223,9 @@ If you enter an invalid value, you'll remain on your current version until you c
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Supported value type is a string containing Windows version number. For example, `1809`, `1903`, etc.
 <!-- TargetReleaseVersion-Editable-End -->
-
+> [!NOTE]
+> You need to set up the ProductVersion CSP along with the TargetReleaseVersion CSP for it to work.
+> 
 <!-- TargetReleaseVersion-DFProperties-Begin -->
 **Description framework properties**:
 
