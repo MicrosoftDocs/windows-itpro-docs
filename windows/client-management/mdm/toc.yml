@@ -34,6 +34,8 @@ items:
     items:
     - name: Declared Configuration extensibility
       href: ../declared-configuration-extensibility.md
+    - name: Resource access
+      href: ../declared-configuration-resource-access.md
     - name: DeclaredConfiguration CSP
       href: declaredconfiguration-csp.md
     - name: DMClient CSP
