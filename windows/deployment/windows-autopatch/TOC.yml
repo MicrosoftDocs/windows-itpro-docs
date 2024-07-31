@@ -50,42 +50,39 @@
     - name: Manage
       href: 
       items:
-        - name: Windows updates
-          href: 
+        - name: Customize Windows Update settings
+          href: manage/windows-autopatch-customize-windows-update-settings.md
+        - name: Windows feature updates
+          href: manage/windows-autopatch-windows-feature-update-overview.md
           items:
-            - name: Customize Windows Update settings
-              href: manage/windows-autopatch-customize-windows-update-settings.md
-            - name: Windows feature updates
-              href: manage/windows-autopatch-windows-feature-update-overview.md
-              items:
-                - name: Manage Windows feature updates
-                  href: manage/windows-autopatch-manage-windows-feature-update-releases.md
-            - name: Windows quality updates
-              href: manage/windows-autopatch-windows-quality-update-overview.md
-              items:
-                - name: Windows quality update end user experience
-                  href: manage/windows-autopatch-windows-quality-update-end-user-exp.md
-                - name: Windows quality update signals
-                  href: manage/windows-autopatch-windows-quality-update-signals.md
-                - name: Windows quality update communications
-                  href: manage/windows-autopatch-windows-quality-update-communications.md
-            - name: Manage driver and firmware updates
-              href: manage/windows-autopatch-manage-driver-and-firmware-updates.md
-            - name: Microsoft 365 Apps for enterprise
-              href: manage/windows-autopatch-microsoft-365-apps-enterprise.md
-              items:
-                - name: Microsoft 365 Apps for enterprise update policies
-                  href: manage/windows-autopatch-microsoft-365-policies.md
-            - name: Microsoft Edge
-              href: manage/windows-autopatch-edge.md
-            - name: Microsoft Teams
-              href: manage/windows-autopatch-teams.md
-            - name: Submit a support request
-              href: manage/windows-autopatch-support-request.md
-            - name: Exclude a device
-              href: manage/windows-autopatch-exclude-device.md
-            - name: Unenroll your tenant
-              href: manage/windows-autopatch-unenroll-tenant.md
+            - name: Manage Windows feature updates
+              href: manage/windows-autopatch-manage-windows-feature-update-releases.md
+        - name: Windows quality updates
+          href: manage/windows-autopatch-windows-quality-update-overview.md
+          items:
+            - name: Windows quality update end user experience
+              href: manage/windows-autopatch-windows-quality-update-end-user-exp.md
+            - name: Windows quality update signals
+              href: manage/windows-autopatch-windows-quality-update-signals.md
+            - name: Windows quality update communications
+              href: manage/windows-autopatch-windows-quality-update-communications.md
+        - name: Manage driver and firmware updates
+          href: manage/windows-autopatch-manage-driver-and-firmware-updates.md
+        - name: Microsoft 365 Apps for enterprise
+          href: manage/windows-autopatch-microsoft-365-apps-enterprise.md
+          items:
+            - name: Microsoft 365 Apps for enterprise update policies
+              href: manage/windows-autopatch-microsoft-365-policies.md
+        - name: Microsoft Edge
+          href: manage/windows-autopatch-edge.md
+        - name: Microsoft Teams
+          href: manage/windows-autopatch-teams.md
+        - name: Submit a support request
+          href: manage/windows-autopatch-support-request.md
+        - name: Exclude a device
+          href: manage/windows-autopatch-exclude-device.md
+        - name: Unenroll your tenant
+          href: manage/windows-autopatch-unenroll-tenant.md
     - name: Monitor
       href:
       items:
