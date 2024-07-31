@@ -23,7 +23,7 @@ Configuration Service Providers (CSPs) play a vital role for configuring Resourc
 
 - [RootCACertificates CSP](mdm/rootcacertificates-csp.md)
 
-## Handling Configuration Requests
+## Handling configuration requests
 
 The [Declared Configuration](declared-configuration.md) stack on the device processes configuration requests and maintains the desired state, which is key to Resource access. The efficiency and accuracy of handling configuration requests are critical for effective Resource access.
 
@@ -36,7 +36,7 @@ The [Declared Configuration](declared-configuration.md) stack on the device proc
 - **Monitoring**: Observe device performance and health from a centralized cloud platform, ensuring devices operate smoothly and efficiently. Monitoring can detect and address any issues with device resource configurations.
 - **Policy Enforcement**: Apply and maintain organizational policies across devices consistently and at scale, ensuring compliance and uniform configuration. This aspect allows organizations to maintain the desired security posture across devices.
 
-## Resource Access Guidelines
+## Resource access guidelines
 
 These guidelines provide best practices and examples for developers and testers to implement resource access (RA) configurations in a secure, efficient, and consistent manner. They aim to enhance network security and optimize resource access for end users while adhering to policies and compliance requirements.
 
@@ -49,7 +49,7 @@ These guidelines provide best practices and examples for developers and testers 
 
 By following these guidelines and understanding the syntax of the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md), you can effectively implement and manage RA configurations while maintaining security and compliance.
 
-## Resource Access Configuration with Examples
+## Resource access configuration with examples
 
 Resource access configuration utilizes the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md). A declared configuration request for configuring resource access is sent using an OMA-URI similar to `./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/{DocID}/Document`.
 
@@ -90,7 +90,7 @@ Only supported osdefinedscenarios can be used. Unsupported values result in a fa
 - msftextensibilitymiproviderInstall
 - msftadmxinstall
 
-### Adding a VPNv2 Profile for Resource Access
+### Adding a VPNv2 profile for resource access
 
 This example uses the [VPNv2 CSP](mdm/vpnv2-csp.md) to enable the **Always On** mode for a VPN Profile on the device.
 
@@ -129,7 +129,7 @@ This example uses the [VPNv2 CSP](mdm/vpnv2-csp.md) to enable the **Always On** 
 > - The `id` of `<DeclaredConfiguration>` should be a unique string.
 > - `<Format>` of `<Meta>` should be `chr` and `<Type>` should be `text/plain`.
 
-### Updating a VPNv2 Profile for Resource Access
+### Updating a VPNv2 profile for resource access
 
 This example is the same as previous example, except that it uses `<Replace>` instead of `<Add>`.
 
@@ -162,7 +162,7 @@ This example is the same as previous example, except that it uses `<Replace>` in
 </SyncML>
 ```
 
-### Getting the VPNv2 Profile
+### Getting the VPNv2 profile
 
 This example uses `<Get>` to retrieve the results of the Declared configuration request to verify the **Always On** mode of the VPNv2 profile.
 
@@ -187,7 +187,7 @@ This example uses `<Get>` to retrieve the results of the Declared configuration 
 </SyncML>
 ```
 
-### Deleting a VPNv2 Profile
+### Deleting the VPNv2 profile
 
 This example uses `<Delete>` to remove the configuration request to set the VPNv2 profile.
 
