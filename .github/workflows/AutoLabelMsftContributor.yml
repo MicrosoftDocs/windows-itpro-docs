@@ -1,0 +1,40 @@
+name: Auto label Microsoft contributors
+
+permissions:
+  pull-requests: write
+  contents: read
+  actions: read
+      
+on: 
+    workflow_run:
+        workflows: [Background tasks]
+        types:
+            - completed
+
+jobs:
+    download-payload:
+        if: github.repository_visibility == 'public'
+        name: Download and extract payload artifact
+        uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-ExtractPayload.yml@workflows-prod
+        with:
+            WorkflowId: ${{ github.event.workflow_run.id }}
+            OrgRepo: ${{ github.repository }}
+        secrets:
+            AccessToken: ${{ secrets.GITHUB_TOKEN }}
+
+    label-msft:
+        name: Label Microsoft contributors
+        if: github.repository_visibility == 'public'
+        needs: [download-payload]
+        uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-AutoLabelMsftContributor.yml@workflows-prod
+        with:
+          PayloadJson: ${{ needs.download-payload.outputs.WorkflowPayload }}
+        secrets:
+          AccessToken: ${{ secrets.GITHUB_TOKEN }}
+          TeamReadAccessToken: ${{ secrets.ORG_READTEAMS_TOKEN }}
+            
+            
+        
+          
+
+            
