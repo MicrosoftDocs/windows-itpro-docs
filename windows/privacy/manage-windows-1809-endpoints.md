@@ -27,7 +27,7 @@ Some Windows components, app, and related services transfer data to Microsoft ne
 
 This article lists different endpoints that are available on a clean installation of Windows 10, version 1709 and later.
 Details about the different ways to control traffic to these endpoints are covered in [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
-Where applicable, each endpoint covered in this topic includes a link to specific details about how to control traffic to it.
+Where applicable, each endpoint covered in this article includes a link to specific details about how to control traffic to it.
 
 We used the following methodology to derive these network endpoints:
 
@@ -157,9 +157,9 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 ## Certificates
 
-Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA) are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates where the server certificate issuer is unknown or is not trusted by the service. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.
+Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA) are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates where the server certificate issuer is unknown or isn't trusted by the service. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.
 
-If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.
+If automatic updates are turned off, applications and websites may stop working because they didn't receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.
 
 The following endpoint is used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available. It's possible to [turn off traffic to this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update), but that isn't recommended because when root certificates are updated over time, applications and websites may stop working because they didn't receive an updated root certificate the application uses.
 
@@ -218,7 +218,7 @@ To turn off traffic for these endpoints, enable the following Group Policy: Admi
 ## Font streaming
 
 The following endpoints are used to download fonts on demand.
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#font-streaming), you will not be able to download fonts on demand.
+If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#font-streaming), you won't be able to download fonts on demand.
 
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|
@@ -451,7 +451,7 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 | svchost | HTTP  | `*.dl.delivery.mp.microsoft.com` |
 
 The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store.
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device won't be able to connect to Windows Update and Microsoft Update to help keep the device secure. Also, the device will not be able to acquire and update apps from the Store.
+If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the device won't be able to connect to Windows Update and Microsoft Update to help keep the device secure. Also, the device won't be able to acquire and update apps from the Store.
 
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|
@@ -463,7 +463,7 @@ These are dependent on enabling:
 - [Microsoft account](manage-windows-1809-endpoints.md#microsoft-account)
 
 The following endpoint is used for content regulation.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-wu), the Windows Update Agent will be unable to contact the endpoint, and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.
 
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|
@@ -485,11 +485,6 @@ If you disable this endpoint, Windows Defender won't be able to update its malwa
 To view endpoints for other versions of Windows 10 Enterprise, see:
 
 - [Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md)
-
-To view endpoints for non-Enterprise Windows 10 editions, see:
-
-- [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
-- [Windows 10, version 21H1, connection endpoints for non-Enterprise editions](windows-endpoints-21H1-non-enterprise-editions.md)
 
 
 ## Related links

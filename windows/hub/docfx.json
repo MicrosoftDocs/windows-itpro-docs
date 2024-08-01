@@ -52,12 +52,11 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows for IT Pros",
       "contributors_to_exclude": [
         "dstrome2",
-        "rjagiewich",  
+        "rjagiewich",
         "American-Dipper",
-        "claydetels19", 
+        "claydetels19",
         "jborsecnik",
         "v-stchambers",
         "shdyas",
