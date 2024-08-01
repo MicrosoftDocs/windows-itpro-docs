@@ -51,7 +51,6 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Application Management",
       "contributors_to_exclude": [
         "dstrome2",
         "rjagiewich",
