@@ -1,6 +1,6 @@
 ---
 description: Learn more about the required Windows 10 diagnostic data gathered.
-title: Required diagnostic events and fields for Windows 10 (versions 22H2, 21H2, 21H1, 20H2, and 2004)
+title: Required diagnostic events and fields for Windows 10, versions 22H2 and 21H2
 ms.service: windows-client
 ms.subservice: itpro-privacy
 ms.localizationpriority: high
@@ -13,16 +13,15 @@ ms.topic: reference
 ---
 
 
-# Required diagnostic events and fields for Windows 10: versions 22H2, 21H2, 21H1, 20H2, and 2004
+# Required diagnostic events and fields for Windows 10, versions 22H2 and 21H2
 
  **Applies to**
 
 - Windows 10, version 22H2
 - Windows 10, version 21H2
-- Windows 10, version 21H1
-- Windows 10, version 20H2
-- Windows 10, version 2004
 
+> [!NOTE]
+> The information in this article also applies to these versions of Windows 10: 21H1, 20H2, and 2004. But those versions have reached their end of servicing date. For more information, see [Microsoft Product Lifecycle](/lifecycle/products).
 
 Required diagnostic data gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store.
 
