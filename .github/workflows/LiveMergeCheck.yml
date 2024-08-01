@@ -1,0 +1,22 @@
+name: PR can merge into branch
+
+permissions:
+  pull-requests: write
+  statuses: write
+  contents: read
+      
+on: 
+  pull_request_target:
+    types: [opened, reopened, synchronize, edited]
+
+jobs:
+
+  live-merge:
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-LiveMergeCheck.yml@workflows-prod
+    with:
+      PayloadJson: ${{ toJSON(github) }}
+    secrets:
+      AccessToken: ${{ secrets.GITHUB_TOKEN }}
+
+
+  
