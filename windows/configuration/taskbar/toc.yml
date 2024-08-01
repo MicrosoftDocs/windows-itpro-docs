@@ -1,7 +1,10 @@
 items:
-- name: Customize the Taskbar in Windows 11
-  href: customize-taskbar-windows-11.md
-- name: Supported Taskbar CSPs
-  href: supported-csp-taskbar-windows.md
-- name: Customize the Taskbar in Windows 10
-  href: configure-windows-10-taskbar.md
+- name: Overview
+  href: index.md
+  displayName: Configure the Windows taskbar
+- name: Policy settings
+  href: policy-settings.md
+- name: Configure the pinned applications
+  href: pinned-apps.md
+- name: XML schema definition (XSD)
+  href: xsd.md

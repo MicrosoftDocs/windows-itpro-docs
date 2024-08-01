@@ -1,7 +1,7 @@
 ---
 title: TimeLanguageSettings Policy CSP
 description: Learn more about the TimeLanguageSettings Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -22,7 +22,7 @@ ms.date: 01/18/2024
 <!-- AllowSet24HourClock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowSet24HourClock-Applicability-End -->
 
 <!-- AllowSet24HourClock-OmaUri-Begin -->

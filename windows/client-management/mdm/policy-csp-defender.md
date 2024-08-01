@@ -1,7 +1,7 @@
 ---
 title: Defender Policy CSP
 description: Learn more about the Defender Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -402,7 +402,7 @@ This policy setting allows you to manage whether or not to scan for malicious so
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 1 |
+| Default Value  | 0 |
 <!-- AllowFullScanRemovableDriveScanning-DFProperties-End -->
 
 <!-- AllowFullScanRemovableDriveScanning-AllowedValues-Begin -->
@@ -410,8 +410,8 @@ This policy setting allows you to manage whether or not to scan for malicious so
 
 | Value | Description |
 |:--|:--|
-| 0 | Not allowed. Turns off scanning on removable drives. |
-| 1 (Default) | Allowed. Scans removable drives. |
+| 0 (Default) | Not allowed. Turns off scanning on removable drives. |
+| 1 | Allowed. Scans removable drives. |
 <!-- AllowFullScanRemovableDriveScanning-AllowedValues-End -->
 
 <!-- AllowFullScanRemovableDriveScanning-GpMapping-Begin -->

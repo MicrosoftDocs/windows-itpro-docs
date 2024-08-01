@@ -39,6 +39,7 @@
       "ms.collection": [
         "tier2"
       ],
+      "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.service": "windows-client",
       "ms.subservice": "itpro-apps",
@@ -50,12 +51,11 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Application Management",
       "contributors_to_exclude": [
         "dstrome2",
-        "rjagiewich",  
+        "rjagiewich",
         "American-Dipper",
-        "claydetels19", 
+        "claydetels19",
         "jborsecnik",
         "v-stchambers",
         "shdyas",
@@ -67,11 +67,6 @@
       "searchScope": [
         "Windows 10"
       ]
-    },
-    "fileMetadata": {
-      "feedback_system": {
-        "app-v/**/*.*": "None"
-      }
     },
     "template": [],
     "dest": "win-app-management",

@@ -1,9 +1,9 @@
 ---
 title: Authorize reputable apps with the Intelligent Security Graph (ISG)
-description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
+description: Automatically authorize applications that Microsoft's ISG recognizes as having known good reputation.
 ms.localizationpriority: medium
 ms.date: 12/31/2017
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Authorize reputable apps with the Intelligent Security Graph (ISG)
@@ -42,29 +42,29 @@ Setting up the ISG is easy using any management solution you wish. Configuring t
 To allow apps and binaries based on the Microsoft Intelligent Security Graph, the **Enabled:Intelligent Security Graph authorization** option must be specified in the WDAC policy. This step can be done with the Set-RuleOption cmdlet. You should also set the **Enabled:Invalidate EAs on Reboot** option so that ISG results are verified again after each reboot. The ISG option isn't recommended for devices that don't have regular access to the internet. The following example shows both options set.
 
 ```xml
-<Rules> 
-    <Rule> 
-      <Option>Enabled:Unsigned System Integrity Policy</Option> 
-    </Rule> 
-    <Rule> 
-      <Option>Enabled:Advanced Boot Options Menu</Option> 
-    </Rule> 
-    <Rule> 
-      <Option>Required:Enforce Store Applications</Option> 
-    </Rule> 
+<Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Advanced Boot Options Menu</Option>
+    </Rule>
+    <Rule>
+      <Option>Required:Enforce Store Applications</Option>
+    </Rule>
     <Rule>
       <Option>Enabled:UMCI</Option>
     </Rule>
     <Rule>
-      <Option>Enabled:Managed Installer</Option> 
+      <Option>Enabled:Managed Installer</Option>
     </Rule>
-    <Rule> 
-      <Option>Enabled:Intelligent Security Graph Authorization</Option> 
-    </Rule> 
-    <Rule> 
-      <Option>Enabled:Invalidate EAs on Reboot</Option> 
-    </Rule> 
-</Rules> 
+    <Rule>
+      <Option>Enabled:Intelligent Security Graph Authorization</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Invalidate EAs on Reboot</Option>
+    </Rule>
+</Rules>
 ```
 
 ### Enable the necessary services to allow WDAC to use the ISG correctly on the client
@@ -91,7 +91,7 @@ Since the ISG only allows binaries that are "known good", there are cases where 
 
 Packaged apps aren't supported with the ISG and will need to be separately authorized in your WDAC policy. Since packaged apps have a strong app identity and must be signed, it's straightforward to [authorize packaged apps](/windows/security/threat-protection/windows-defender-application-control/manage-packaged-apps-with-windows-defender-application-control) with your WDAC policy.
 
-The ISG doesn't authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
+The ISG doesn't authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.
 
 > [!NOTE]
 > A rule that explicitly denies or allows a file will take precedence over that file's reputation data. Microsoft Intune's built-in WDAC support includes the option to trust apps with good reputation via the ISG, but it has no option to add explicit allow or deny rules. In most cases, customers using application control will need to deploy a custom WDAC policy (which can include the ISG option if desired) using [Intune's OMA-URI functionality](../deployment/deploy-wdac-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri).

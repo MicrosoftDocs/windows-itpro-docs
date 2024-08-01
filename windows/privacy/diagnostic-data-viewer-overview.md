@@ -44,7 +44,7 @@ Before you can use this tool for viewing Windows diagnostic data, you must turn 
 Download the app from the [Microsoft Store Diagnostic Data Viewer](https://www.microsoft.com/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1) page.
 
 > [!Important]
-> It's possible that your Windows device doesn't have the Microsoft Store available (for example, Windows Server). If this is the case, see [Diagnostic Data Viewer for PowerShell](./microsoft-diagnosticdataviewer.md).
+> It's possible that your Windows device doesn't have the Microsoft Store available (for example, Windows Server). If this is the case, see [Diagnostic Data Viewer for PowerShell](./diagnostic-data-viewer-powershell.md).
 
 ### Start the Diagnostic Data Viewer
 
@@ -174,3 +174,6 @@ The **Review problem reports** tool opens, showing you your Windows Error Report
 - Restart the *DiagTrack* service, through the Services tab in task manager, and open Diagnostic Data Viewer.
 
 **Background:** Some of the diagnostic data collected from the new Microsoft Edge is sent using a Protocol Buffers (protobuf) to reduce network bandwidth and to improve data transfer efficiency. Diagnostic Data Viewer has a decoding capability to translate this protobuf format into human readable text. Due to a bug, sometimes the decoder fails to translate these protobuf messages and hence some of the New Microsoft Edge diagnostic data will appear as a blob of encoded text.
+
+> [!IMPORTANT]
+> To inquire about Windows data access or interoperability related to the Digital Markets Act (DMA), [submit this form](https://go.microsoft.com/fwlink/p/?linkid=2271128).

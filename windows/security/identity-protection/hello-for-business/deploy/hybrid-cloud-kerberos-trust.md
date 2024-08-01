@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business cloud Kerberos trust deployment guide
 description: Learn how to deploy Windows Hello for Business in a cloud Kerberos trust scenario.
-ms.date: 01/03/2024
+ms.date: 03/12/2024
 ms.topic: tutorial
 ---
 
@@ -202,7 +202,7 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 
 <!--Links-->
 
-[AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
+[AZ-4]: /entra/identity/devices/troubleshoot-device-dsregcmd
 [CSP-1]: /windows/client-management/mdm/passportforwork-csp
 [ENTRA-1]: /entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azureadhybridauthenticationmanagement-module
 [MEM-1]: /mem/intune/configuration/custom-settings-configure

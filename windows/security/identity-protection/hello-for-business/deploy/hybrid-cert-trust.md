@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business hybrid certificate trust deployment guide
 description: Learn how to deploy Windows Hello for Business in a hybrid certificate trust scenario.
-ms.date: 01/03/2024
+ms.date: 06/23/2024
 ms.topic: tutorial
 ---
 
@@ -28,13 +28,13 @@ ms.topic: tutorial
 > Once the prerequisites are met, deploying Windows Hello for Business consists of the following steps:
 >
 > - [Configure and validate the Public Key Infrastructure](hybrid-cert-trust-pki.md)
-> - [Configure Active Directory Federation Services](hybrid-cert-trust-adfs.md) 
+> - [Configure Active Directory Federation Services](hybrid-cert-trust-adfs.md)
 > - [Configure and enroll in Windows Hello for Business](hybrid-cert-trust-enroll.md)
 > - (optional) [Configure single sign-on for Microsoft Entra joined devices](../hello-hybrid-aadj-sso.md)
 
 ## Federated authentication to Microsoft Entra ID
 
-Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Microsoft Entra ID using AD FS. You must also configure the AD FS farm to support Azure registered devices.
+Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Microsoft Entra ID using AD FS. You must also configure the AD FS farm to support Microsoft Entra registered devices.
 
 If you're new to AD FS and federation services:
 
@@ -82,9 +82,9 @@ During Windows Hello for Business provisioning, users receive a sign-in certific
 > [Next: configure and validate the Public Key Infrastructure >](hybrid-cert-trust-pki.md)
 
 <!--links-->
-[AZ-8]: /azure/active-directory/devices/hybrid-azuread-join-plan
-[AZ-10]: /azure/active-directory/devices/howto-hybrid-azure-ad-join#federated-domains
-[AZ-11]: /azure/active-directory/devices/hybrid-azuread-join-manual
+[AZ-8]: /entra/identity/devices/hybrid-join-plan
+[AZ-10]: /entra/identity/devices/how-to-hybrid-join#federated-domains
+[AZ-11]: /entra/identity/devices/hybrid-join-manual
 
 [SER-2]: /windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm
 [SER-3]: /windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts

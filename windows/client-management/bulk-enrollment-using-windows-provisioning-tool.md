@@ -1,13 +1,13 @@
 ---
 title: Bulk enrollment
-description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to reimage the devices.
+description: Bulk enrollment is an efficient way to set up an MDM server to manage a large number of devices without the need to reimage the devices.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # Bulk enrollment using Windows Configuration Designer
 
-Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to reimage the devices. You can use the [Provisioning CSP](mdm/provisioning-csp.md) for bulk enrollment, except for the Microsoft Entra join enrollment scenario.
+Bulk enrollment is an efficient way to set up an MDM server to manage a large number of devices without the need to reimage the devices. You can use the [Provisioning CSP](mdm/provisioning-csp.md) for bulk enrollment, except for the Microsoft Entra join enrollment scenario.
 
 ## Typical use cases
 
@@ -68,7 +68,7 @@ Using the WCD, create a provisioning package using the enrollment information re
     ![bulk enrollment screenshot.](images/bulk-enrollment.png)
 
 1. Configure the other settings, such as the Wi-Fi connections so that the device can join a network before joining MDM (for example, **Runtime settings** > **ConnectivityProfiles** > **WLANSetting**).
-1. When you're done adding all the settings, on the **File** menu, select **Save**.
+1. After adding all the settings, select **Save** on the **File** menu.
 1. On the main menu, select **Export** > **Provisioning package**.
 
     ![icd menu for export.](images/bulk-enrollment2.png)
@@ -120,7 +120,7 @@ Using the WCD, create a provisioning package using the enrollment information re
    For detailed descriptions of these settings, see [Provisioning CSP](mdm/provisioning-csp.md).
 
 1. Configure the other settings, such as the Wi-Fi connection so that the device can join a network before joining MDM (for example, **Runtime settings** > **ConnectivityProfiles** > **WLANSetting**).
-1. When you're done adding all the settings, on the **File** menu, select **Save**.
+1. After adding all the settings, select **Save** on the **File** menu.
 1. Export and build the package (steps 10-13 in previous section).
 1. Apply the package to some test devices and verify that they work. For more information, see [Apply a provisioning package](#apply-a-provisioning-package).
 1. Apply the package to your devices.
@@ -142,7 +142,7 @@ Using the WCD, create a provisioning package using the enrollment information re
 - If the provisioning engine receives a failure from a CSP, it retries provisioning three times in a row.
 - If all immediate attempts fail, a delayed task is launched to try provisioning again later. It will retry four times at a decaying rate of 15 minutes -> 1 hr -> 4 hr -> "Next System Start". These attempts are run from the SYSTEM context.
 - It also retries the provisioning each time it's launched, if started from somewhere else as well.
-- In addition, provisioning will be restarted in the SYSTEM context after a sign in and the [system has been idle](/windows/win32/taskschd/task-idle-conditions).
+- In addition, provisioning will be restarted in the SYSTEM context after a sign in and the [system is idle](/windows/win32/taskschd/task-idle-conditions).
 
 ## Related articles
 

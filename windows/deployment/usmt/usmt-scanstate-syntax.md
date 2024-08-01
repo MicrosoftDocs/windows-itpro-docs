@@ -6,8 +6,8 @@ manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
-ms.topic: article
+ms.date: 04/30/2024
+ms.topic: conceptual
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -85,7 +85,7 @@ There are several benefits to running the `ScanState.exe` command on an offline 
 - **Improved success of migration.**
 
   The migration success rate is increased because:
-  
+
   - Files aren't locked for editing while offline.
   - WinPE provides administrator access to files in the offline Windows file system, eliminating the need for administrator-level access to the online system.
 
@@ -197,33 +197,33 @@ For more information, see [Migrate EFS Files and Certificates](usmt-migrate-efs-
 
 ## Incompatible command-line options
 
-The following table indicates which command-line options aren't compatible with the `ScanState.exe` command. If the table entry for a particular combination has a ✔️, the options are compatible and they can be used together. The ❌ symbol means that the options aren't compatible. For example, the `/nocompress` option can't be used with the `/encrypt` option.
+The following table indicates which command-line options aren't compatible with the `ScanState.exe` command. If the table entry for a particular combination has a ✅, the options are compatible and they can be used together. The ❌ symbol means that the options aren't compatible. For example, the `/nocompress` option can't be used with the `/encrypt` option.
 
 |Command-Line Option|/keyfile|/nocompress|/genconfig|/all|
 |--- |--- |--- |--- |--- |
-|**/i**| ✔️ | ✔️ | ✔️ | ✔️ |
-|**/o**| ✔️ | ✔️ | ✔️ | ✔️ |
-|**/v**| ✔️ | ✔️ | ✔️ | ✔️ |
-|**/nocompress**| ✔️ | ✔️ | ✔️ |N/A|
-|**/localonly**| ✔️ | ✔️ | ❌ | ✔️ |
-|**/key**| ❌ | ✔️ | ❌ | ✔️ |
-|**/encrypt**|Required*| ❌ | ❌ | ✔️ |
-|**/keyfile**|N/A| ✔️ | ❌ | ✔️ |
-|**/l**| ✔️ | ✔️ | ✔️ | ✔️ |
-|**/listfiles**| ✔️ | ✔️ | ❌ | ✔️ |
-|**/progress**| ✔️ | ✔️ | ❌ | ✔️ |
-|**/r**| ✔️ | ✔️ | ❌ | ✔️ |
-|**/w**| ✔️ | ✔️ | ❌ | ✔️ |
-|**/c**| ✔️ | ✔️ | ❌ | ✔️ |
-|**/p**| ✔️ | ✔️ | ❌ |N/A|
-|**/all**| ✔️ | ✔️ | ❌ | ✔️ |
-|**/ui**| ✔️ | ✔️ | ❌ | ❌ |
-|**/ue**| ✔️ | ✔️ | ❌ | ❌ |
-|**/uel**| ✔️ | ✔️ | ❌ | ❌ |
-|**/efs**:*\<option\>*| ✔️ | ✔️ | ❌ | ✔️ |
-|**/genconfig**| ✔️ | ✔️ |N/A| ✔️ |
-|**/config**| ✔️ | ✔️ | ❌ | ✔️ |
-|*\<StorePath\>*| ✔️ | ✔️ | ❌ | ✔️ |
+|**/i**| ✅ | ✅ | ✅ | ✅ |
+|**/o**| ✅ | ✅ | ✅ | ✅ |
+|**/v**| ✅ | ✅ | ✅ | ✅ |
+|**/nocompress**| ✅ | ✅ | ✅ |N/A|
+|**/localonly**| ✅ | ✅ | ❌ | ✅ |
+|**/key**| ❌ | ✅ | ❌ | ✅ |
+|**/encrypt**|Required*| ❌ | ❌ | ✅ |
+|**/keyfile**|N/A| ✅ | ❌ | ✅ |
+|**/l**| ✅ | ✅ | ✅ | ✅ |
+|**/listfiles**| ✅ | ✅ | ❌ | ✅ |
+|**/progress**| ✅ | ✅ | ❌ | ✅ |
+|**/r**| ✅ | ✅ | ❌ | ✅ |
+|**/w**| ✅ | ✅ | ❌ | ✅ |
+|**/c**| ✅ | ✅ | ❌ | ✅ |
+|**/p**| ✅ | ✅ | ❌ |N/A|
+|**/all**| ✅ | ✅ | ❌ | ✅ |
+|**/ui**| ✅ | ✅ | ❌ | ❌ |
+|**/ue**| ✅ | ✅ | ❌ | ❌ |
+|**/uel**| ✅ | ✅ | ❌ | ❌ |
+|**/efs**:*\<option\>*| ✅ | ✅ | ❌ | ✅ |
+|**/genconfig**| ✅ | ✅ |N/A| ✅ |
+|**/config**| ✅ | ✅ | ❌ | ✅ |
+|*\<StorePath\>*| ✅ | ✅ | ❌ | ✅ |
 
 > [!NOTE]
 >

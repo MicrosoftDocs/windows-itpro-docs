@@ -3,7 +3,7 @@ title: Merge Windows Defender Application Control policies (WDAC)
 description: Learn how to merge WDAC policies as part of your policy lifecycle management.
 ms.manager: jsuther
 ms.date: 04/22/2021
-ms.topic: article
+ms.topic: how-to
 ms.localizationpriority: medium
 ---
 

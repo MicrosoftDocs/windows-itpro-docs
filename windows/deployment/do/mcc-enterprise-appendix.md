@@ -15,7 +15,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>
-ms.date: 11/07/2023
+ms.date: 05/23/2024
 ---
 
 # Appendix
@@ -28,7 +28,8 @@ ms.date: 11/07/2023
 ### Troubleshooting
 
 If you're not able to sign up for a Microsoft Azure subscription with the **Account belongs to a directory that cannot be associated with an Azure subscription. Please sign in with a different account.** error, see the following articles:
-- [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription). 
+
+- [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription).
 - [Troubleshoot issues when you sign up for a new account in the Azure portal](/azure/cost-management-billing/manage/troubleshoot-azure-sign-up).
 
 ## Hardware specifications
@@ -91,15 +92,15 @@ There are multiple methods that can be used to apply a policy to PCs that should
 
 You can either set your MCC IP address or FQDN using:
 
-1.  Registry key (version 1709 and later):  
+1. Registry key (version 1709 and later):  
     `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization`
 </br>
     "DOCacheHost"=" "  
-    
+
     From an elevated command prompt:
 
-    ```
-    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
+    ```powershell
+        reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
     ```
 
 1. MDM path (version 1809 and later):
@@ -110,7 +111,6 @@ You can either set your MCC IP address or FQDN using:
 
    :::image type="content" source="./images/ent-mcc-group-policy-hostname.png" alt-text="Screenshot of the Group Policy editor showing the Cache Server Hostname Group Policy setting." lightbox="./images/ent-mcc-group-policy-hostname.png":::
 
-
 ## Verify content using the DO client
 
 To verify that the Delivery Optimization client can download content using MCC, you can use the following steps:
@@ -119,7 +119,6 @@ To verify that the Delivery Optimization client can download content using MCC, 
 
    :::image type="content" source="./images/ent-mcc-store-example-download.png" alt-text="Screenshot of the Microsoft Store with the game, Angry Birds 2, selected.":::
 
-
 1. Verify downloads came from MCC by one of two methods:
 
     - Using the PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see *BytesFromCacheServer*.
@@ -127,7 +126,7 @@ To verify that the Delivery Optimization client can download content using MCC, 
       :::image type="content" source="./images/ent-mcc-get-deliveryoptimizationstatus.png" alt-text="Screenshot of the output of Get-DeliveryOptimization | FT from PowerShell." lightbox="./images/ent-mcc-get-deliveryoptimizationstatus.png":::
 
     - Using the Delivery Optimization Activity Monitor
-    
+
       :::image type="content" source="./images/ent-mcc-delivery-optimization-activity.png" alt-text="Screenshot of the Delivery Optimization Activity Monitor.":::
 
 ## EFLOW

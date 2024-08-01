@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 09/08/2023
+ms.date: 06/04/2024
 ---
 
 # How to check Windows release health
@@ -33,7 +33,7 @@ Ensure the following prerequisites are met to display the Windows release health
    - Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
 
 - Sign into the Microsoft 365 admin center using an [admin role](/microsoft-365/admin/add-users/about-admin-roles).
-   - Most roles containing the word `administrator` give you access to the Windows release health page such as [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator), [Helpdesk Administrator](/azure/active-directory/roles/permissions-reference#helpdesk-administrator), and [Service Support Administrator](/azure/active-directory/roles/permissions-reference#service-support-administrator). For more information, see [Assign admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/assign-admin-roles).
+   - Most roles containing the word `administrator` give you access to the Windows release health page such as [Helpdesk Administrator](/azure/active-directory/roles/permissions-reference#helpdesk-administrator) and [Service Support Administrator](/azure/active-directory/roles/permissions-reference#service-support-administrator). For more information, see [Assign admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/assign-admin-roles).
 
 > [!NOTE]
 > Currently, Windows release health is available for Government Community Cloud (GCC) tenants, but isn't available for GCC High and DoD. <!--8337541-->
@@ -84,6 +84,18 @@ You can sign up for email notifications about Windows known issues and informati
 
 > [!Note]
 > When a single known issue affects multiple versions of Windows, you'll receive only one email notification, even if you've selected notifications for multiple versions. Duplicate emails won't be sent.
+
+## Working with the Windows updates API in Microsoft Graph
+<!--8884260-->
+If you'd like to develop an alternative way to get information on known issues documented within the Windows release health section in the admin center, you can use the Windows updates API in [Microsoft Graph](/graph/api/overview).
+
+The Windows updates API has current and historical known issues data for any supported Windows product. You can check if an issue is confirmed, and if a resolution is available before calling support or spending time troubleshooting.
+
+The Windows updates API also has product lifecycle information. For instance, you can search for end of servicing dates for all supported Windows versions and editions you manage in your organization. For more information on how to access these known issue and lifecycle data, see [Microsoft Graph product resource type](/graph/api/resources/windowsupdates-product).
+
+> [!Note]
+> These Windows data sets are currently under the [Microsoft Graph REST API beta endpoint reference](/graph/api/overview?view=graph-rest-beta&preserve-view=true).
+
 
 ## Status definitions
 

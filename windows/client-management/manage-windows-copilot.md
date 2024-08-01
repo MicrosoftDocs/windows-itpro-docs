@@ -1,11 +1,14 @@
 ---
 title: Manage Copilot in Windows
 description: Learn how to manage Copilot in Windows for commercial environments using MDM and group policy. Learn about the chat providers available to Copilot in Windows.
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 02/09/2024
+ms.date: 06/13/2024
 ms.author: mstewart
 author: mestew
+ms.collection:
+  - windows-copilot
+  - magic-ai-copilot
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2 or later</a>
 ---
@@ -15,15 +18,19 @@ appliesto:
 
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
+> [!Note]
+> - This article and the [TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) policy isn't for the [new Copilot experience](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-copilot-in-windows-for-your-workforce/ba-p/4141999) that's in some [Windows Insider builds](https://blogs.windows.com/windows-insider/2024/05/22/releasing-windows-11-version-24h2-to-the-release-preview-channel/) and that will be gradually rolling out to Windows 11 and Windows 10 devices. <!--9048085-->
+
 Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. Copilot in Windows appears as a side bar docked on the Windows desktop and is designed to help users get things done in Windows. Copilot in Windows can perform common tasks in Windows like changing Windows settings, which makes it different from the browser-based [Copilot in Edge](/copilot/edge). However, both user experiences, Copilot in Windows and Copilot in Edge, can share the same underlying chat provider platform. It's important for organizations to properly configure the chat provider platform that Copilot in Windows uses, since it's possible for users to copy and paste sensitive information into the chat.
 
-> [!Note]
-> - Copilot in Windows is currently available as a preview. We will continue to experiment with new ideas and methods using your feedback.
-> - Copilot in Windows (in preview) is available in select global markets and will be rolled out to additional markets over time. [Learn more](https://www.microsoft.com/windows/copilot-ai-features#faq). <!--8737645-->
 
 ## Configure Copilot in Windows for commercial environments
 
 At a high level, managing and configuring Copilot in Windows for your organization involves the following steps:
+
+> [!Note]
+> - Copilot in Windows is currently available as a preview. We will continue to experiment with new ideas and methods using your feedback.
+> - Copilot in Windows (in preview) is available in select global markets and will be rolled out to additional markets over time. [Learn more](https://www.microsoft.com/windows/copilot-ai-features#faq). <!--8737645-->
 
 1. Understand the [available chat provider platforms for Copilot in Windows](#chat-provider-platforms-for-copilot-in-windows)
 1. [Configure the chat provider platform](#configure-the-chat-provider-platform-that-copilot-in-windows-uses) used by Copilot in Windows
@@ -109,10 +116,12 @@ To verify that Copilot with commercial data protection is enabled for the user a
 1. To verify that commercial data protection is enabled for the user, select the user's **Display name** to open the flyout menu.
 1. In the flyout, select the **Licenses & apps** tab, then expand the **Apps** list.
 1. Verify that **Copilot** is enabled for the user.
-1. If you prefer to view a user's licenses from the [Azure portal](https://portal.azure.com), you'll find it under **Microsoft Entra ID** > **Users**. Select the user's name, then **Licenses**. Select a  license that includes **Copilot**, and verify that it's listed as **On**.
-
-   > [!Note]
-   > If you previously disabled Copilot with commercial data protection (formerly Bing Chat Enterprise) using the URL, `https://aka.ms/TurnOffBCE`, see [Manage Copilot](/copilot/manage) for verifying that commercial data protection is enabled for your users.
+1. If you prefer to view a user's licenses from the [Azure portal](https://portal.azure.com), you'll find it under **Microsoft Entra ID** > **Users**. Select the user's name, then **Licenses**. Select a  license that includes **Copilot**, and verify that it's listed as **On**. If you previously disabled Copilot with commercial data protection (formerly Bing Chat Enterprise), see [Manage Copilot](/copilot/manage) for verifying that commercial data protection is enabled for your users.
+1. Copilot with commercial data protection is used as the chat provider platform for users when the following conditions are met:
+   - Users have an eligible license, commercial data protection in Copilot is enabled, and the [Copilot in Windows user experience is enabled](#enable-the-copilot-in-windows-user-experience-for-windows-11-version-22h2-clients).
+   - Users are signed in with their Microsoft Entra ID (work accounts)
+      - Users can sign into Windows with their Microsoft Entra ID
+      - For Active Directory users on Windows 11, a Microsoft Entra ID in the Web Account Manager (WAM) authentication broker can be used. Entra IDs in Microsoft Edge profiles and Microsoft 365 Apps would both be in WAM. <!--8470699-->
 
 The following sample PowerShell script connects to Microsoft Graph and lists which users that have Copilot with commercial data protection enabled and disabled:
 

@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business known deployment issues
 description: This article is a troubleshooting guide for known Windows Hello for Business deployment issues.
-ms.date: 06/02/2023
+ms.date: 03/12/2024
 ms.topic: troubleshooting
 ---
 
@@ -15,15 +15,15 @@ PIN reset on Microsoft Entra joined devices uses a flow called *web sign-in* to 
 
 ### Identify PIN Reset allowed domains issue
 
-The user can launch the PIN reset flow from the lock screen using the *I forgot my PIN* link in the PIN credential provider. Selecting the link launches a full screen UI for the PIN experience on Microsoft Entra join devices. Typically, the UI displays an Azure authentication page, where the user authenticates using Microsoft Entra credentials and completes MFA.
+The user can launch the PIN reset flow from the lock screen using the *I forgot my PIN* link in the PIN credential provider. Selecting the link launches a full screen UI for the PIN experience on Microsoft Entra join devices. Typically, the UI displays an authentication page, where the user authenticates using Microsoft Entra credentials and completes MFA.
 
-In federated environments, authentication may be configured to route to AD FS or a third-party identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it fails and displays the *We can't open that page right now* error, if the domain for the server page isn't included in an allowlist.
+In federated environments, authentication may be configured to route to AD FS or a non-Microsoft identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it fails and displays the *We can't open that page right now* error, if the domain for the server page isn't included in an allowlist.
 
 If you're a customer of *Azure US Government* cloud, PIN reset also attempts to navigate to a domain that isn't included in the default allowlist. The result is the message *We can't open that page right now*.
 
 ### Resolve PIN Reset allowed domains issue
 
-To resolve the error, you can configure a list of allowed domains for PIN reset using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure the policy, see [Configure allowed URLs for federated identity providers on Microsoft Entra joined devices](hello-feature-pin-reset.md#configure-allowed-urls-for-federated-identity-providers-on-azure-ad-joined-devices).
+To resolve the error, you can configure a list of allowed domains for PIN reset using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure the policy, see [Configure allowed URLs for federated identity providers on Microsoft Entra joined devices](hello-feature-pin-reset.md#configure-allowed-urls-for-federated-identity-providers-on-microsoft-entra-joined-devices).
 
 ## Hybrid key trust sign in broken due to user public key deletion
 
@@ -49,18 +49,18 @@ After the initial sign-in attempt, the user's Windows Hello for Business public 
 
 To resolve the issue, update Windows Server 2016 and 2019 domain controllers with the latest patches. For Windows Server 2016, the behavior is fixed in build *14393.4104* ([KB4593226](https://support.microsoft.com/help/4593226)) and later. For Windows Server 2019, the behavior is fixed in build *17763.1637* ([KB4592440](https://support.microsoft.com/help/4592440)).
 
-## Microsoft Entra joined device access to on-premises resources using key trust and third-party Certificate Authority (CA)
+## Microsoft Entra joined device access to on-premises resources using key trust and non-Microsoft Certificate Authority (CA)
 
 Applies to:
 
 - Microsoft Entra joined key trust deployments
-- Third-party certificate authority (CA) issuing domain controller certificates
+- Non-Microsoft certificate authority (CA) issuing domain controller certificates
 
-Windows Hello for Business uses smart-card based authentication for many operations. This type of authentication has special guidelines when using a third-party CA for certificate issuance, some of which apply to the domain controllers. Not all Windows Hello for Business deployment types require these configurations. Accessing on-premises resources from a Microsoft Entra joined device does require special configuration when using a third-party CA to issue domain controller certificates.
+Windows Hello for Business uses smart-card based authentication for many operations. This type of authentication has special guidelines when using a non-Microsoft CA for certificate issuance, some of which apply to the domain controllers. Not all Windows Hello for Business deployment types require these configurations. Accessing on-premises resources from a Microsoft Entra joined device does require special configuration when using a non-Microsoft CA to issue domain controller certificates.
 
-For more information, read [Guidelines for enabling smart card sign in with third-party certification authorities](/troubleshoot/windows-server/windows-security/enabling-smart-card-logon-third-party-certification-authorities).
+For more information, read [Guidelines for enabling smart card sign in with non-Microsoft certification authorities](/troubleshoot/windows-server/windows-security/enabling-smart-card-logon-third-party-certification-authorities).
 
-### Identify on-premises resource access issues with third party CAs
+### Identify on-premises resource access issues with non-Microsoft CAs
 
 The issue can be identified using network traces or Kerberos logging from the client. In the network trace, the client fails to place a `TGS_REQ` request when a user attempts to access a resource. On the client, it can be observed in the Kerberos operation event log under `Application and Services/Microsoft/Windows/Security-Kerberos/Operational`. The logs are disabled by default. The failure event for this case includes the following information:
 
@@ -80,7 +80,7 @@ Expected Domain Name: ad.contoso.com
 Error Code: 0xC000006D
 ```
 
-### Resolve on-premises resource access issue with third party CAs
+### Resolve on-premises resource access issue with non-Microsoft CAs
 
 To resolve the issue, domain controller certificates must be updated so that the certificate subject contains the directory path of the server object (distinguished name).
 Example Subject: `CN=DC1,OU=Domain Controllers,DC=ad,DC=contoso,DC=com`

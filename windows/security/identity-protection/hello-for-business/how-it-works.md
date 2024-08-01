@@ -1,7 +1,7 @@
 ---
 title: How Windows Hello for Business works
 description: Learn how Windows Hello for Business works, and how it can help you protect your organization.
-ms.date: 01/09/2024
+ms.date: 04/23/2024
 ms.topic: concept-article
 ---
 
@@ -78,7 +78,7 @@ All devices included in the Windows Hello for Business deployment must go throug
 - For cloud and hybrid deployments, the identity provider is Microsoft Entra ID, and the device registers with the *Device Registration Service*
 - For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the *Enterprise Device Registration Service* hosted on AD FS
 
-When a device is registered, the IdP provides the device with an identity that is used to authenticate the device when a user signs-in.
+When a device is registered, the IdP provides the device with an identity that is used to authenticate the device when a user signs in.
 
 There are different registration types, which are identified as *join type*. For more information, see [What is a device identity][ENTRA-1].
 
@@ -96,7 +96,16 @@ For detailed sequence diagrams, see [how device registration works][ENTRA-4].
 :::row-end:::
 
 > [!NOTE]
-> The list of prerequisites varies depending on the deployment type, as described in the article [Plan a Windows Hello for Business deployment](deploy/index.md).
+>
+> Depending on the deployment type, Windows Hello for Business provisioning is launched only if:
+>
+> - The device meets the Windows Hello hardware requirements
+> - The device is joined to Active Directory or Microsoft Entra ID
+> - The user signs in with an account defined in Active Directory or Microsoft Entra ID
+> - The Windows Hello for Business policy is enabled
+> - The user is not connected to the machine via Remote Desktop
+>
+> Additional prerequisites for specific deployment types are described in the article [Plan a Windows Hello for Business deployment](deploy/index.md).
 
 During the provisioning phase, a *Windows Hello container* is created. A Windows Hello container is a logical grouping of *key material*, or data. The container holds organization's credentials only on devices that are *registered* with the organization's IdP.
 
@@ -147,8 +156,8 @@ Access to the key material stored in the container, is enabled only by the PIN o
 A container can contain several types of key material:
 
 - An *authentication key*, which is always an asymmetric public-private key pair. This key pair is generated during registration. It must be unlocked each time it's accessed, by using either the user's PIN or a biometric gesture. The authentication key exists until the user resets the PIN, at which time a new key is generated. When the new key is generated, all the key material that the old key previously protected must be decrypted and re-encrypted using the new key
-- One or multiple *user ID keys*. These keys can be either symmetric or asymmetric, depending on which IdP you use. For certificate-based Windows Hello for Work, when the container is unlocked, applications that require access to the user ID key or key pair can request access. User ID keys are used to sign or encrypt authentication requests or tokens sent from this device to the IdP. User ID keys are typically long-lived but could have a shorter lifetime than the authentication key. Microsoft accounts, Active Directory accounts, and Microsoft Entra accounts all require the use of asymmetric key pairs. The device generates public and private keys, registers the public key with the IdP (which stores it for later verification), and securely stores the private key. For organizatrons, the user ID keys can be generated in two ways:
-  - The user ID key pair can be associated with an organization's Certificate Authority (CA). This option lets organizations that have an existing PKI continue to use it where appropriate. Given that many applications, such as VPN solutions, require the use of certificates, when you deploy Windows Hello in this mode, it allows a faster transition away from user passwords while still preserving certificate-based functionality. This option also allows the organization to store other certificates in the protected container. For example, certificates that allows the user to authenticate via RDP
+- One or multiple *user ID keys*. These keys can be either symmetric or asymmetric, depending on which IdP you use. For certificate-based Windows Hello for Work, when the container is unlocked, applications that require access to the user ID key or key pair can request access. User ID keys are used to sign or encrypt authentication requests or tokens sent from this device to the IdP. User ID keys are typically long-lived but could have a shorter lifetime than the authentication key. Microsoft accounts, Active Directory accounts, and Microsoft Entra accounts all require the use of asymmetric key pairs. The device generates public and private keys, registers the public key with the IdP (which stores it for later verification), and securely stores the private key. For organizations, the user ID keys can be generated in two ways:
+  - The user ID key pair can be associated with an organization's Certificate Authority (CA). This option lets organizations that have an existing PKI continue to use it where appropriate. Given that many applications, such as VPN solutions, require the use of certificates, when you deploy Windows Hello in this mode, it allows a faster transition away from user passwords while still preserving certificate-based functionality. This option also allows the organization to store other certificates in the protected container. For example, certificates that allow the user to authenticate via RDP
   - The IdP can generate the user ID key pair directly, which allows quick, lower-overhead deployment of Windows Hello in environments that don't have or need a PKI
 
 User ID keys are used to authenticate the user to a service. For example, by signing a nonce to prove possession of the private key, which corresponds to a registered public key. Users with an Active Directory, Microsoft Entra ID or Microsoft account have a key associated with their account. The key can be used to sign into their Windows device by authenticating to a domain controller (Active Directory scenario), or to the cloud (Microsoft Entra ID and MSA scenarios).
@@ -217,6 +226,17 @@ For more information, see [What is a Primary Refresh Token][ENTRA-2].
 ### Windows Hello for Business and password changes
 
 Changing a user account password doesn't affect sign-in or unlock, since Windows Hello for Business uses a key or certificate.
+
+However, when users are required to change their password (for example, due to password expiration policies), then they won't be notified of the password change requirement when signing in with Windows Hello. This might cause failures to authenticate to Active Directory-protected resources. To mitigate the issue consider one of the following options:
+
+- Disable password expiration for the user accounts
+- As an alternative to password expiration policies, consider adopting [PIN expiration policies](policy-settings.md?tabs=pin#expiration)
+- If password expiration is an organization's requirement, instruct the users to change their passwords regularly or when they receive authentication failure messages. Users can reset their password by:
+  - Using the <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> > **Change a password** option
+  - Sign in with their password. If the password must be changed, Windows prompts the user to update it
+
+> [!IMPORTANT]
+> To change a user's password, the device must be able to communicate with a domain controller.
 
 ## Next steps
 

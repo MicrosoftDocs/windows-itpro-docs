@@ -1,7 +1,7 @@
 ---
 title: EnterpriseModernAppManagement CSP
 description: Learn more about the EnterpriseModernAppManagement CSP.
-ms.date: 01/18/2024
+ms.date: 04/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -4602,7 +4602,7 @@ Specifies HoursBetweenUpdateChecks for a specific package.
 
 | Property name | Property value |
 |:--|:--|
-| Format | `bool` |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[8-10000]` |
 | Default Value  | 8 |

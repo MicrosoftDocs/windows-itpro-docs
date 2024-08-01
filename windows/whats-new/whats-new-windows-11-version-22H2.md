@@ -6,12 +6,12 @@ ms.service: windows-client
 ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: reference
 ms.collection:
   - highpri
   - tier2
 ms.subservice: itpro-fundamentals
-ms.date: 08/11/2023
+ms.date: 07/09/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
 ---

@@ -1,7 +1,7 @@
 ---
 title: ADMX_TerminalServer Policy CSP
 description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->

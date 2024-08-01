@@ -2,7 +2,7 @@
 title: Enable memory integrity
 description: This article explains the steps to opt in to using memory integrity on Windows devices.
 ms.topic: conceptual
-ms.date: 03/16/2023
+ms.date: 07/10/2024
 appliesto:
   - "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
   - "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
@@ -13,16 +13,15 @@ appliesto:
 
 # Enable virtualization-based protection of code integrity
 
-**Memory integrity** is a virtualization-based security (VBS) feature available in Windows. Memory integrity and VBS improve the threat model of Windows and provide stronger protections against malware trying to exploit the Windows kernel. VBS uses the Windows hypervisor to create an isolated virtual environment that becomes the root of trust of the OS that assumes the kernel can be compromised. Memory integrity is a critical component that protects and hardens Windows by running kernel mode code integrity within the isolated virtual environment of VBS. Memory integrity also restricts kernel memory allocations that could be used to compromise the system.
+**Memory integrity** is a Virtualization-based security (VBS) feature available in Windows. Memory integrity and VBS improve the threat model of Windows and provide stronger protections against malware trying to exploit the Windows kernel. VBS uses the Windows hypervisor to create an isolated virtual environment that becomes the root of trust of the OS that assumes the kernel can be compromised. Memory integrity is a critical component that protects and hardens Windows by running kernel mode code integrity within the isolated virtual environment of VBS. Memory integrity also restricts kernel memory allocations that could be used to compromise the system.
 
 > [!NOTE]
-> Memory integrity works better with Intel Kabylake and higher processors with *Mode-Based Execution Control*, and AMD Zen 2 and higher processors with *Guest Mode Execute Trap* capabilities. Older processors rely on an emulation of these features, called *Restricted User Mode*, and will have a bigger impact on performance. When nested virtualization is enabled, memory integrity works better when the VM is version >= 9.3.
+>
+> - Memory integrity is sometimes referred to as *hypervisor-protected code integrity (HVCI)* or *hypervisor enforced code integrity*, and was originally released as part of *Device Guard*. Device Guard is no longer used except to locate memory integrity and VBS settings in Group Policy or the Windows registry.
+> - Memory integrity works better with Intel Kabylake and higher processors with *Mode-Based Execution Control*, and AMD Zen 2 and higher processors with *Guest Mode Execute Trap* capabilities. Older processors rely on an emulation of these features, called *Restricted User Mode*, and will have a bigger impact on performance. When nested virtualization is enabled, memory integrity works better when the VM is version >= 9.3.
 
 > [!WARNING]
 > Some applications and hardware device drivers may be incompatible with memory integrity. This incompatibility can cause devices or software to malfunction and in rare cases may result in a boot failure (blue screen). Such issues may occur after memory integrity has been turned on or during the enablement process itself. If compatibility issues occur, see [Troubleshooting](#troubleshooting) for remediation steps.
-
-> [!NOTE]
-> Memory integrity is sometimes referred to as *hypervisor-protected code integrity (HVCI)* or *hypervisor enforced code integrity*, and was originally released as part of *Device Guard*. Device Guard is no longer used except to locate memory integrity and VBS settings in Group Policy or the Windows registry.
 
 ## Memory integrity features
 
@@ -47,29 +46,22 @@ Beginning with Windows 11 22H2, **Windows Security** shows a warning if memory i
 
 ### Enable memory integrity using Intune
 
-Enabling in Intune requires using the Code Integrity node in the [VirtualizationBasedTechnology CSP](/windows/client-management/mdm/policy-csp-virtualizationbasedtechnology). You can configure these settings by using the [settings catalog](/mem/intune/configuration/settings-catalog).
+Use the **Virtualization Based Technology** > **Hypervisor Enforced Code Integrity** setting using the [settings catalog](/mem/intune/configuration/settings-catalog) to enable memory integrity. You can also use the HypervisorEnforcedCodeIntegrity node in the [VirtualizationBasedTechnology CSP](/windows/client-management/mdm/policy-csp-virtualizationbasedtechnology).
 
 ### Enable memory integrity using Group Policy
 
 1. Use Group Policy Editor (gpedit.msc) to either edit an existing GPO or create a new one.
-
-2. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.
-
-3. Double-click **Turn on Virtualization Based Security**.
-
-4. Select **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled without UEFI lock**. Only select **Enabled with UEFI lock** if you want to prevent memory integrity from being disabled remotely or by policy update. Once enabled with UEFI lock, you must have access to the UEFI BIOS menu to turn off Secure Boot if you want to turn off memory integrity.
-
+1. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.
+1. Double-click **Turn on Virtualization Based Security**.
+1. Select **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled without UEFI lock**. Only select **Enabled with UEFI lock** if you want to prevent memory integrity from being disabled remotely or by policy update. Once enabled with UEFI lock, you must have access to the UEFI BIOS menu to turn off Secure Boot if you want to turn off memory integrity.
    ![Enable memory integrity using Group Policy.](images/enable-hvci-gp.png)
+1. Select **Ok** to close the editor.
 
-5. Select **Ok** to close the editor.
-
-To apply the new policy on a domain-joined computer, either restart or run `gpupdate /force` in an elevated command prompt.
+To apply the new policy on a domain-joined computer, either restart or run `gpupdate /force` in an elevated Command Prompt.
 
 ### Use registry keys to enable memory integrity
 
 Set the following registry keys to enable memory integrity. These keys provide exactly the same set of configuration options provided by Group Policy.
-
-<!--This comment ensures that the Important above and the Warning below don't merge together. -->
 
 > [!IMPORTANT]
 >
@@ -79,19 +71,13 @@ Set the following registry keys to enable memory integrity. These keys provide e
 >
 > - All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. We recommend that you enable these features on a group of test computers before you enable them on users' computers.
 
-#### For Windows 10 version 1607 and later and for Windows 11 version 21H2
-
 Recommended settings (to enable memory integrity without UEFI Lock):
 
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
-
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
-
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 0 /f
-
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 1 /f
-
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
@@ -155,52 +141,6 @@ reg delete HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\Hyperviso
 reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /t REG_DWORD /d 2 /f
 ```
 
-#### For Windows 10 version 1511 and earlier
-
-Recommended settings (to enable memory integrity, without UEFI Lock):
-
-```console
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
-
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
-
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG_DWORD /d 1 /f
-
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG_DWORD /d 1 /f
-```
-
-If you want to customize the preceding recommended settings, use the following settings.
-
-**To enable VBS (it is always locked to UEFI)**
-
-```console
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
-```
-
-**To enable VBS and require Secure boot only (value 1)**
-
-```console
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
-```
-
-**To enable VBS with Secure Boot and DMA (value 3)**
-
-```console
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
-```
-
-**To enable memory integrity (with the default, UEFI lock)**
-
-```console
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG_DWORD /d 1 /f
-```
-
-**To enable memory integrity without UEFI lock**
-
-```console
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG_DWORD /d 1 /f
-```
-
 ### Enable memory integrity using Windows Defender Application Control (WDAC)
 
 You can use WDAC policy to turn on memory integrity using any of the following techniques:
@@ -214,10 +154,12 @@ You can use WDAC policy to turn on memory integrity using any of the following t
 
 ### Validate enabled VBS and memory integrity features
 
-Windows 10, Windows 11, and Windows Server 2016 and higher have a WMI class for VBS-related properties and features: *Win32\_DeviceGuard*. This class can be queried from an elevated Windows PowerShell session by using the following command:
+#### Use Win32_DeviceGuard WMI class
+
+Windows 10, Windows 11, and Windows Server 2016 and higher have a WMI class for VBS-related properties and features: **Win32_DeviceGuard**. This class can be queried from an elevated Windows PowerShell session by using the following command:
 
 ```powershell
-Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
+Get-CimInstance -ClassName Win32_DeviceGuard -Namespace root\Microsoft\Windows\DeviceGuard
 ```
 
 > [!NOTE]
@@ -225,82 +167,84 @@ Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windo
 
 The output of this command provides details of the available hardware-based security features and those features that are currently enabled.
 
-#### AvailableSecurityProperties
+##### AvailableSecurityProperties
 
 This field helps to enumerate and report state on the relevant security properties for VBS and memory integrity.
 
-Value | Description
--|-
-**0.** | If present, no relevant properties exist on the device.
-**1.** | If present, hypervisor support is available.
-**2.** | If present, Secure Boot is available.
-**3.** | If present, DMA protection is available.
-**4.** | If present, Secure Memory Overwrite is available.
-**5.** | If present, NX protections are available.
-**6.** | If present, SMM mitigations are available.
-**7.** | If present, MBEC/GMET is available.
-**8.** | If present, APIC virtualization is available.
+| Value | Description                                             |
+|-------|---------------------------------------------------------|
+| **0** | If present, no relevant properties exist on the device. |
+| **1** | If present, hypervisor support is available.            |
+| **2** | If present, Secure Boot is available.                   |
+| **3** | If present, DMA protection is available.                |
+| **4** | If present, Secure Memory Overwrite is available.       |
+| **5** | If present, NX protections are available.               |
+| **6** | If present, SMM mitigations are available.              |
+| **7** | If present, MBEC/GMET is available.                     |
+| **8** | If present, APIC virtualization is available.           |
 
-#### InstanceIdentifier
+##### InstanceIdentifier
 
 A string that is unique to a particular device and set by WMI.
 
-#### RequiredSecurityProperties
+##### RequiredSecurityProperties
 
 This field describes the required security properties to enable VBS.
 
-Value | Description
--|-
-**0.** | Nothing is required.
-**1.** | If present, hypervisor support is needed.
-**2.** | If present, Secure Boot is needed.
-**3.** | If present, DMA protection is needed.
-**4.** | If present, Secure Memory Overwrite is needed.
-**5.** | If present, NX protections are needed.
-**6.** | If present, SMM mitigations are needed.
-**7.** | If present, MBEC/GMET is needed.
+| Value | Description                                    |
+|-------|------------------------------------------------|
+| **0** | Nothing is required.                           |
+| **1** | If present, hypervisor support is needed.      |
+| **2** | If present, Secure Boot is needed.             |
+| **3** | If present, DMA protection is needed.          |
+| **4** | If present, Secure Memory Overwrite is needed. |
+| **5** | If present, NX protections are needed.         |
+| **6** | If present, SMM mitigations are needed.        |
+| **7** | If present, MBEC/GMET is needed.               |
 
-#### SecurityServicesConfigured
+##### SecurityServicesConfigured
 
-This field indicates whether Credential Guard or memory integrity has been configured.
+This field indicates whether Credential Guard or memory integrity is configured.
 
-Value | Description
--|-
-**0.** | No services are configured.
-**1.** | If present, Credential Guard is configured.
-**2.** | If present, memory integrity is configured.
-**3.** | If present, System Guard Secure Launch is configured.
-**4.** | If present, SMM Firmware Measurement is configured.
+| Value | Description                                           |
+|-------|-------------------------------------------------------|
+| **0** | No services are configured.                           |
+| **1** | If present, Credential Guard is configured.           |
+| **2** | If present, memory integrity is configured.           |
+| **3** | If present, System Guard Secure Launch is configured. |
+| **4** | If present, SMM Firmware Measurement is configured.   |
 
-#### SecurityServicesRunning
+##### SecurityServicesRunning
 
 This field indicates whether Credential Guard or memory integrity is running.
 
-Value | Description
--|-
-**0.** | No services running.
-**1.** | If present, Credential Guard is running.
-**2.** | If present, memory integrity is running.
-**3.** | If present, System Guard Secure Launch is running.
-**4.** | If present, SMM Firmware Measurement is running.
+| Value | Description                                        |
+|-------|----------------------------------------------------|
+| **0** | No services running.                               |
+| **1** | If present, Credential Guard is running.           |
+| **2** | If present, memory integrity is running.           |
+| **3** | If present, System Guard Secure Launch is running. |
+| **4** | If present, SMM Firmware Measurement is running.   |
 
-#### Version
+##### Version
 
 This field lists the version of this WMI class. The only valid value now is **1.0**.
 
-#### VirtualizationBasedSecurityStatus
+##### VirtualizationBasedSecurityStatus
 
 This field indicates whether VBS is enabled and running.
 
-Value  | Description
--|-
-**0.** | VBS isn't enabled.
-**1.** | VBS is enabled but not running.
-**2.** | VBS is enabled and running.
+| Value | Description                     |
+|-------|---------------------------------|
+| **0** | VBS isn't enabled.              |
+| **1** | VBS is enabled but not running. |
+| **2** | VBS is enabled and running.     |
 
-#### PSComputerName
+##### PSComputerName
 
 This field lists the computer name. All valid values for computer name.
+
+#### Use msinfo32.exe
 
 Another method to determine the available and enabled VBS features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the VBS features are displayed at the bottom of the **System Summary** section.
 
@@ -308,7 +252,7 @@ Another method to determine the available and enabled VBS features is to run msi
 
 ## Troubleshooting
 
-- If a device driver fails to load or crashes at runtime, you may be able to update the driver using **Device Manager**.
+- If a device driver fails to load or crashes at runtime, you might be able to update the driver using **Device Manager**.
 - If you experience a critical error during boot or your system is unstable after turning on memory integrity, you can recover using the Windows Recovery Environment (Windows RE).
     1. First, disable any policies that are used to enable VBS and memory integrity, for example Group Policy.
     2. Then, boot to Windows RE on the affected computer, see [Windows RE Technical Reference](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference).
@@ -338,5 +282,5 @@ Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 - The Hyper-V host must run at least Windows Server 2016 or Windows 10 version 1607.
 - The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10.
 - Memory integrity and [nested virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time. To enable the Hyper-V role on the virtual machine, you must first install the Hyper-V role in a Windows nested virtualization environment.
-- Virtual Fibre Channel adapters aren't compatible with memory integrity. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of virtualization-based security using `Set-VMSecurity`.
-- The AllowFullSCSICommandSet option for pass-through disks isn't compatible with memory integrity. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of virtualization-based security using `Set-VMSecurity`.
+- Virtual Fibre Channel adapters aren't compatible with memory integrity. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of Virtualization-based security using `Set-VMSecurity`.
+- The AllowFullSCSICommandSet option for pass-through disks isn't compatible with memory integrity. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of Virtualization-based security using `Set-VMSecurity`.

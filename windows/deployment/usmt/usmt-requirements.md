@@ -6,8 +6,8 @@ manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/18/2024
-ms.topic: article
+ms.date: 04/30/2024
+ms.topic: conceptual
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -24,10 +24,10 @@ The following table lists the operating systems supported in USMT.
 
 | Operating<br>Systems | ScanState<br>(Source<br>Device)| LoadState<br>(Destination<br>Device)|
 |--- |--- |--- |
-|Windows 7|✔️|❌|
-|Windows 8|✔️|❌|
-|Windows 10|✔️|✔️|
-|Windows 11|✔️|✔️|
+|Windows 7|✅|❌|
+|Windows 8|✅|❌|
+|Windows 10|✅|✅|
+|Windows 11|✅|✅|
 
 > [!NOTE]
 >
@@ -79,7 +79,7 @@ To open an elevated command prompt:
 
 ### Specify the `/c` option and \<ErrorControl\> settings in the `Config.xml` file
 
-USMT fails if it can't migrate a file or setting, unless the `/c` option is specified. When the `/c` option is specified, USMT logs an error each time it encounters a file that is in use that didn't migrate, but the migration isn't be interrupted. In USMT, which types of errors should allow the migration to continue and which should cause the migration to fail can be specified in the `Config.xml` file. For more information about error reporting, and the **\<ErrorControl\>** element, see [Config.xml file](usmt-configxml-file.md#errorcontrol), [Log files](usmt-log-files.md), and [XML elements library](usmt-xml-elements-library.md).
+USMT fails if it can't migrate a file or setting, unless the `/c` option is specified. When the `/c` option is specified, USMT logs an error each time it encounters a file that is in use that didn't migrate, but the migration isn't to be interrupted. In USMT, which types of errors should allow the migration to continue and which should cause the migration to fail can be specified in the `Config.xml` file. For more information about error reporting, and the **\<ErrorControl\>** element, see [Config.xml file](usmt-configxml-file.md#errorcontrol), [Log files](usmt-log-files.md), and [XML elements library](usmt-xml-elements-library.md).
 
 ## LoadState
 

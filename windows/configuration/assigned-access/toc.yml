@@ -1,0 +1,33 @@
+items:
+- name: Overview
+  href: index.md
+- name: Assigned Access
+  items:
+  - name: What is Assigned Access?
+    href: overview.md
+  - name: Quickstarts
+    items:
+      - name: Configure a kiosk with Assigned Access
+        href: quickstart-kiosk.md
+      - name: Configure a restricted user experience with Assigned Access
+        href: quickstart-restricted-user-experience.md
+  - name: Create an Assigned Access configuration file
+    href: configuration-file.md
+  - name: Reference
+    items:
+      - name: Assigned Access XSD
+        href: xsd.md
+      - name: Assigned Access XML examples
+        href: examples.md
+      - name: Assigned Access policy settings
+        href: policy-settings.md
+- name: Shell Launcher
+  href: shell-launcher/toc.yml
+- name: Recommendations
+  href: recommendations.md
+- name: Assigned Access CSP 🔗
+  href: /windows/client-management/mdm/assignedaccess-csp
+- name: Troubleshoot 🔗
+  href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
+- name: Configure Microsoft Edge kiosk mode 🔗
+  href: /deployedge/microsoft-edge-configure-kiosk-mode

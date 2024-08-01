@@ -3,29 +3,21 @@ items:
   href: index.yml
 - name: Accessibility information for IT Pros
   href: accessibility/index.md
-- name: Customize the appearance
-  items:
-    - name: Start
-      href: start/toc.yml
-    - name: Taskbar
-      href: taskbar/toc.yml
+- name: Start
+  href: start/toc.yml
+- name: Taskbar
+  href: taskbar/toc.yml
+- name: Windows spotlight
+  href: windows-spotlight/index.md
 - name: Microsoft Store
-  items:
-  - name: Configure access to the Microsoft Store
-    href: store/stop-employees-from-using-microsoft-store.md
-  - name: Manage Microsoft Store tips, "fun facts", and suggestions
-    href: tips/manage-tips-and-suggestions.md
-- name: Windows Spotlight
-  href: lock-screen/windows-spotlight.md
+  href: store/toc.yml
 - name: Cellular settings
   href: cellular/provisioning-apn.md
-- name: Kiosks and restricted user experience
-  href: kiosk/toc.yml
+- name: Kiosks and restricted user experiences
+  href: assigned-access/toc.yml
 - name: Multi-user and guest devices
   href: shared-pc/toc.yml
-- name: Use provisioning packages
+- name: Provisioning packages
   href: provisioning-packages/toc.yml
-- name: Windows Configuration Designer reference
+- name: Windows Configuration Designer
   href: wcd/toc.yml
-- name: User Experience Virtualization (UE-V)
-  href: ue-v/toc.yml

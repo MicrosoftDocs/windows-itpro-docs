@@ -14,7 +14,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 11/08/2022
+ms.date: 07/23/2024
 ---
 
 # Testing Delivery Optimization
@@ -29,9 +29,9 @@ Delivery Optimization is a powerful and useful tool to help enterprises manage b
 
 One of the most powerful advantages of using Delivery Optimization is the ability to fine-tune settings that empower users to dial in Microsoft content delivery to meet the needs of specific environments.
 
-## Monitoring The Results
+## Monitoring the Results
 
-Since Delivery Optimization is on by default, you're able to monitor the value either through the Windows Settings for 'Delivery Optimization' using Delivery Optimization PowerShell [cmdlets.](waas-delivery-optimization-setup.md), and/or via the [Windows Update for Business Report](../update/wufb-reports-workbook.md) experience in Azure.
+Since Delivery Optimization is on by default, you're able to monitor the value either through the Windows Settings for 'Delivery Optimization' using Delivery Optimization PowerShell [cmdlets.](waas-delivery-optimization-reference.md), and/or via the [Windows Update for Business Report](../update/wufb-reports-workbook.md) experience in Azure.
 
 In the case where Delivery Optimization isn't working in your environment, it's important to investigate to get to the root of the problem. We recommend a test environment be created to easily evaluate typical devices to ensure Delivery Optimization is working properly. For starters, 'Scenario 1: Basic Setup' should be created to test the use of Delivery Optimization between two machines. This scenario is designed to eliminate any noise in the environment to ensure there's nothing preventing Delivery Optimization from working on the devices. Once you have a baseline, you can expand the test environment for more sophisticated tests.
 
@@ -90,35 +90,39 @@ The following set of instructions will be used for each machine:
 1. Open PowerShell console as 'Administrator'.
    * Clear the DO cache: 'Delete-DeliveryOptimizationCache'.
    * Run 'Get-DeliveryOptimizationStatus'.
+
 2. Open MS Store and search for 'Asphalt Legends 9'. Select *Get* to initiate the download of the content (content size: ~3.4 GB).
 
 **On machine #1**
 
 * Run 'Test Instructions'
 
-|Windows 10 | Windows 11
-|--------|-------------------------------|
-| :::image type="content" source="images/test-scenarios/win10/m1-basic-complete.png" alt-text="Windows 10 21H2 - Machine 1 - Basic Test." lightbox="images/test-scenarios/win10/m1-basic-complete.png"::: | :::image type="content" source="images/test-scenarios/win11/m1-basic-complete.png" alt-text="Windows 11 21H2 - Machine 1 - Basic Test." lightbox="images/test-scenarios/win11/m1-basic-complete.png"::: |
-| **Observations** | |
-| *No peers were found on the first machine downloading the content.<br>* 'TotalBytesDownloaded' is equal to the file size.<br>*Status is set to 'Caching' the content so future peers can use it.<br>* Download was happening in the foreground.<br>*DownloadMode is set to 'Group' and no peers were found.<br>* No distinct observations seen between Window 10 and Windows 11 devices. |
+  |Windows 10 | Windows 11 |
+  |--------|-------------------------------|
+  | :::image type="content" source="images/test-scenarios/win10/m1-basic-complete.png" alt-text="Windows 10 21H2 - Machine 1 - Basic Test." lightbox="images/test-scenarios/win10/m1-basic-complete.png"::: | :::image type="content" source="images/test-scenarios/win11/m1-basic-complete.png" alt-text="Windows 11 21H2 - Machine 1 - Basic Test." lightbox="images/test-scenarios/win11/m1-basic-complete.png":::|
+  | **Observations** | |
+  | - No peers were found on the first machine downloading the content.<br>- 'TotalBytesDownloaded' is equal to the file size.<br>- Status is set to 'Caching' the content so future peers can use it.<br>- Download was happening in the foreground.<br>- DownloadMode is set to 'Group' and no peers were found.<br>- No distinct observations seen between Window 10 and Windows 11 devices. |
 
-*Wait 5 minutes*.
+  *Wait 5 minutes*.
 
 **On machine #2**
 
 * Run 'Test Instructions'
 
-|Windows 10 | Windows 11 |
-|--------|--------------------------------|
-| :::image type="content" source="images/test-scenarios/win10/m2-basic-complete.png" alt-text="Windows 10 21H2 - Machine 2 - Basic Test." lightbox="images/test-scenarios/win10/m2-basic-complete.png"::: | :::image type="content" source="images/test-scenarios/win11/m2-basic-complete.png" alt-text="Windows 11 21H2 - Machine 2 - Basic Test." lightbox="images/test-scenarios/win11/m2-basic-complete.png":::|
-| **Observations** | **Observations**|
-| *A peer was found for the content and 87% of total bytes came from the peer. <br>* One peer was found for the piece of content, which is expected as there are only two devices in the peering group. <br> *Download mode was set to 'Group', but since group mode includes both LAN and Group devices, Delivery Optimization prioritizes LAN peers, if found. Therefore, 'BytesFromLanPeers' shows bytes where 'BytesFromGroupPeers' doesn't. <br>* 'DownloadDuration' is roughly the same between machines.|*A peer was found for the content and 90% of total bytes came from the peer. <br>* All other points are the same as Windows 10 results. |
+  |Windows 10 | Windows 11 |
+  |--------|--------------------------------|
+  | :::image type="content" source="images/test-scenarios/win10/m2-basic-complete.png" alt-text="Windows 10 21H2 - Machine 2 - Basic Test." lightbox="images/test-scenarios/win10/m2-basic-complete.png"::: | :::image type="content" source="images/test-scenarios/win11/m2-basic-complete.png" alt-text="Windows 11 21H2 - Machine 2 - Basic Test." lightbox="images/test-scenarios/win11/m2-basic-complete.png":::|
+  | **Observations** | **Observations** |
+  | - A peer was found for the content and 87% of total bytes came from the peer. <br>- One peer was found for the piece of content, which is expected as there are only two devices in the peering group. <br>- Download mode was set to 'Group', but since group mode includes both LAN and Group devices, Delivery Optimization prioritizes LAN peers, if found. Therefore, 'BytesFromLanPeers' shows bytes where 'BytesFromGroupPeers' doesn't. <br>- 'DownloadDuration' is roughly the same between machines.| - A peer was found for the content and 90% of total bytes came from the peer. <br>-  All other points are the same as Windows 10 results. |
 
 ### Scenario 2: Advance Setup
 
 **Goal:**
+
 Demonstrate how Delivery Optimization peer-to-peer technology works in a non-controlled environment and expanding to three machines
+
 **Expected Results:**
+
 Machine 1 will download zero bytes from peers and Machine 2 will find peers and download 50-99% from peers. Machine 3 will find two peers and download 50-99% from peers.
 
 #### Test Machine Setup
@@ -131,10 +135,10 @@ Machine 1 will download zero bytes from peers and Machine 2 will find peers and 
 |RAM | 8 GB |
 |Disk size | 127 GB |
 |Network | Connected to same network, one that is representative of the corporate network. |
-|Delivery Optimization 'Download Mode' Policy| 2 (Group)(set on each machine) |
+|Delivery Optimization 'Download Mode' Policy| 2 (Group)(set on each machine). |
 |Delivery Optimization 'Group ID' Policy| Set the *same* 'GUID' on each test machine. A GUID is required value, which can be generated using PowerShell, '[guid]::NewGuid().](https://devblogs.microsoft.com/scripting/powertip-create-a-new-guid-by-using-powershell/)'. |
-|Delivery Optimization 'Delay background download from http' Policy | 60 (set on each machine) |
-|Delivery Optimization 'Delay foreground download from http Policy |60 (set on each machine) |
+|Delivery Optimization 'Delay background download from http' Policy | 60 (set on each machine). |
+|Delivery Optimization 'Delay foreground download from http Policy |60 (set on each machine). |
 
 #### Testing Instructions
 
@@ -148,25 +152,25 @@ The following set of instructions will be used for each machine:
 
 * Run 'Test Instructions'
 
-**Output: Windows 10 (21H2)**
+  **Output: Windows 10 (21H2)**
 
-![Windows 10 21H2 - Machine 1 - Advanced Test.](images/test-scenarios/win10/m1-adv-complete.png)
+  ![Windows 10 21H2 - Machine 1 - Advanced Test.](images/test-scenarios/win10/m1-adv-complete.png)
 
 **Observations**
 
-* The first download in the group of devices shows all bytes coming from HTTP, 'BytesFromHttp'.
-* Download is in the 'Foreground' because the Store app is doing the download and in the foreground on the device because it's initiated by the user in the Store app.
-* No peers are found.
+  * The first download in the group of devices shows all bytes coming from HTTP, 'BytesFromHttp'.
+  * Download is in the 'Foreground' because the Store app is doing the download and in the foreground on the device because it's initiated by the user in the Store app.
+  * No peers are found.
 
-*Wait 5 minutes*.
+  *Wait 5 minutes*.
 
 **On machine #2:**
 
 * Run 'Test Instructions'
 
-**Output** Windows 10 (21H2)
+  **Output** Windows 10 (21H2)
 
-![Windows 10 21H2 - Machine 2 - Advanced Test.](images/test-scenarios/win10/m2-adv-complete.png)
+  ![Windows 10 21H2 - Machine 2 - Advanced Test.](images/test-scenarios/win10/m2-adv-complete.png)
 
 **Observations**
 
@@ -179,9 +183,9 @@ The following set of instructions will be used for each machine:
 
 * Run 'Test Instructions'
 
-**Output:** Windows 10 (21H2)
+  **Output:** Windows 10 (21H2)
 
-![Windows 10 21H2 - Machine 3 - Advanced Test.](images/test-scenarios/win10/m3-adv-complete.png)
+  ![Windows 10 21H2 - Machine 3 - Advanced Test.](images/test-scenarios/win10/m3-adv-complete.png)
 
 **Observations**
 
@@ -217,4 +221,4 @@ Using Delivery Optimization can help make a significant impact in customer envir
 
 The testing scenarios found in this document help to show a controlled test environment, helping to prevent updates from interrupting the peering results. The other, a more real-world case, demonstrates how content available across peers will be used as the source of the content.
 
-If there are issues found while testing, the Delivery Optimization PowerShell [cmdlets](waas-delivery-optimization-setup.md) can be a helpful tool to help explain what is happening in the environment.
+If there are issues found while testing, the Delivery Optimization PowerShell [cmdlets](waas-delivery-optimization-reference.md) can be a helpful tool to help explain what is happening in the environment.

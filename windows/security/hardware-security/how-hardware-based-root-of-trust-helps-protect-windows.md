@@ -2,7 +2,7 @@
 title: How System Guard helps protect Windows
 description: Learn how System Guard reorganizes the existing Windows system integrity features under one roof.
 ms.localizationpriority: medium
-ms.date: 01/16/2024
+ms.date: 07/10/2024
 ms.topic: conceptual
 ---
 
@@ -33,7 +33,7 @@ Also, a bug fix for UEFI code can take a long time to design, build, retest, val
 
 ### Secure Launch—the Dynamic Root of Trust for Measurement (DRTM)
 
-[System Guard Secure Launch](system-guard-secure-launch-and-smm-protection.md), first introduced in Windows 10 version 1809, aims to alleviate these issues by leveraging a technology known as the Dynamic Root of Trust for Measurement (DRTM). DRTM lets the system freely boot into untrusted code initially, but shortly after launches the system into a trusted state by taking control of all CPUs and forcing them down a well-known and measured code path. This has the benefit of allowing untrusted early UEFI code to boot the system, but then being able to securely transition into a trusted and measured state.
+[System Guard Secure Launch](system-guard-secure-launch-and-smm-protection.md), first introduced in Windows 10 version 1809, aims to alleviate these issues by using a technology known as the Dynamic Root of Trust for Measurement (DRTM). DRTM lets the system freely boot into untrusted code initially, but shortly after launches the system into a trusted state by taking control of all CPUs and forcing them down a well-known and measured code path. This has the benefit of allowing untrusted early UEFI code to boot the system, but then being able to securely transition into a trusted and measured state.
 
 ![System Guard Secure Launch.](images/system-guard-secure-launch.png)
 
@@ -41,7 +41,7 @@ Secure Launch simplifies management of SRTM measurements because the launch code
 
 ### System Management Mode (SMM) protection
 
-System Management Mode (SMM) is a special-purpose CPU mode in x86 microcontrollers that handles power management, hardware configuration, thermal monitoring, and anything else the manufacturer deems useful. Whenever one of these system operations is requested, a non-maskable interrupt (SMI) is invoked at runtime, which executes SMM code installed by the BIOS. SMM code executes in the highest privilege level and is invisible to the OS, which makes it an attractive target for malicious activity. Even if System Guard Secure Launch is used to late launch, SMM code can potentially access hypervisor memory and change the hypervisor.
+System Management Mode (SMM) is a special-purpose CPU mode in x86 microcontrollers that handles power management, hardware configuration, thermal monitoring, and anything else the manufacturer deems useful. Whenever one of these system operations is requested, a nonmaskable interrupt (SMI) is invoked at runtime, which executes SMM code installed by the BIOS. SMM code executes in the highest privilege level and is invisible to the OS, which makes it an attractive target for malicious activity. Even if System Guard Secure Launch is used to late launch, SMM code can potentially access hypervisor memory and change the hypervisor.
 
 To defend against this, two techniques are used:
 
@@ -88,7 +88,7 @@ This feature is available for the following processors:
 |AUX Policy|The required AUX policy must be as follows: <ul><li> A = TPM2_PolicyLocality (Locality 3 & Locality 4) </li><li>B = TPM2_PolicyCommandCode (TPM_CC_NV_UndefineSpecial)</li><li>authPolicy = \{A} OR {{A} AND \{B}}</li><li>authPolicy digest = 0xef, 0x9a, 0x26, 0xfc, 0x22, 0xd1, 0xae, 0x8c, 0xec, 0xff, 0x59, 0xe9, 0x48, 0x1a, 0xc1, 0xec, 0x53, 0x3d, 0xbe, 0x22, 0x8b, 0xec, 0x6d, 0x17, 0x93, 0x0f, 0x4c, 0xb2, 0xcc, 0x5b, 0x97, 0x24</li></ul>|
 |TPM NV Index|Platform firmware must set up a TPM NV index for use by the OS with: <ul><li>Handle: 0x01C101C0 </li><li>Attributes: <ul><li>TPMA_NV_POLICYWRITE</li><li>TPMA_NV_PPREAD </li><li>TPMA_NV_OWNERREAD</li><li>TPMA_NV_AUTHREAD</li><li>TPMA_NV_POLICYREAD</li><li>TPMA_NV_NO_DA</li><li>TPMA_NV_PLATFORMCREATE</li><li>TPMA_NV_POLICY_DELETE</li></ul> <li>A policy of: </li><ul><li>A = TPM2_PolicyAuthorize(MSFT_DRTM_AUTH_BLOB_SigningKey)</li><li>B = TPM2_PolicyCommandCode(TPM_CC_NV_UndefineSpaceSpecial) </li><li> authPolicy = \{A} OR {{A} AND \{B}} </li><li> Digest value of 0xcb, 0x45, 0xc8, 0x1f, 0xf3, 0x4b, 0xcf, 0x0a, 0xfb, 0x9e, 0x1a, 0x80, 0x29, 0xfa, 0x23, 0x1c, 0x87, 0x27, 0x30, 0x3c, 0x09, 0x22, 0xdc, 0xce, 0x68, 0x4b, 0xe3, 0xdb, 0x81, 0x7c, 0x20, 0xe1 </li></ul></ul> |
 |Platform firmware|Platform firmware must carry all code required to execute an Intel&reg; Trusted Execution Technology secure launch: <ul><li>Intel&reg; SINIT ACM must be carried in the OEM BIOS</li><li>Platforms must ship with a production ACM signed by the correct production Intel&reg; ACM signer for the platform</li></ul>|
-|Platform firmware update|System firmware is recommended to be updated via UpdateCapsule in Windows Update. |
+|Platform firmware update|It's recommended to update System firmware via UpdateCapsule in Windows Update. |
 
 ### Requirements for AMD&reg; processors starting with Zen2 or later silicon
 
@@ -102,7 +102,7 @@ This feature is available for the following processors:
 |Modern/Connected Standby|Platforms must support Modern/Connected Standby.|
 |TPM NV Index|Platform firmware must set up a TPM NV index for use by the OS with: <ul><li>Handle: 0x01C101C0 </li><li>Attributes: <ul><li>TPMA_NV_POLICYWRITE</li><li>TPMA_NV_PPREAD </li><li>TPMA_NV_OWNERREAD</li><li>TPMA_NV_AUTHREAD</li><li>TPMA_NV_POLICYREAD</li><li>TPMA_NV_NO_DA</li><li>TPMA_NV_PLATFORMCREATE</li><li>TPMA_NV_POLICY_DELETE</li></ul> <li>A policy of: </li><ul><li>A = TPM2_PolicyAuthorize(MSFT_DRTM_AUTH_BLOB_SigningKey)</li><li>B = TPM2_PolicyCommandCode(TPM_CC_NV_UndefineSpaceSpecial) </li><li> authPolicy = \{A} OR {{A} AND \{B}} </li><li> Digest value of 0xcb, 0x45, 0xc8, 0x1f, 0xf3, 0x4b, 0xcf, 0x0a, 0xfb, 0x9e, 0x1a, 0x80, 0x29, 0xfa, 0x23, 0x1c, 0x87, 0x27, 0x30, 0x3c, 0x09, 0x22, 0xdc, 0xce, 0x68, 0x4b, 0xe3, 0xdb, 0x81, 0x7c, 0x20, 0xe1 </li></ul></ul> |
 |Platform firmware|Platform firmware must carry all code required to execute Secure Launch: <ul><li>AMD&reg; Secure Launch platforms must ship with AMD&reg; DRTM driver devnode exposed and the AMD&reg; DRTM driver installed</li></ul><br/>Platform must have AMD&reg; Secure Processor Firmware Anti-Rollback protection enabled <br/> Platform must have AMD&reg; Memory Guard enabled.|
-|Platform firmware update|System firmware is recommended to be updated via UpdateCapsule in Windows Update. |
+|Platform firmware update|It's recommended to update System firmware via UpdateCapsule in Windows Update. |
 
 ### Requirements for Qualcomm&reg; processors with SD850 or later chipsets
 
@@ -112,4 +112,4 @@ This feature is available for the following processors:
 |Monitor Mode Page Tables|All Monitor Mode page tables must: <ul><li>NOT contain any mappings to EfiConventionalMemory (for example no OS/VMM owned memory) </li><li>They must NOT have execute and write permissions for the same page </li><li>Platforms must only allow Monitor Mode pages marked as executable </li><li>The memory map must report Monitor Mode as EfiReservedMemoryType</li><li>Platforms must provide mechanism to protect the Monitor Mode page tables from modification</li></ul> |
 |Modern/Connected Standby|Platforms must support Modern/Connected Standby.|
 |Platform firmware|Platform firmware must carry all code required to launch.|
-|Platform firmware update|System firmware is recommended to be updated via UpdateCapsule in Windows Update. |
+|Platform firmware update|It's recommended to update System firmware via UpdateCapsule in Windows Update. |

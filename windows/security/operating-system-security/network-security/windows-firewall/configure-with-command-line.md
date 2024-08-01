@@ -1,6 +1,6 @@
 ---
 title: Manage Windows Firewall with the command line
-description: Learn how to manage Windows Firewall from the command line. This guide provides examples how to manage Windows Firewall with PowerShell and Netsh. 
+description: Learn how to manage Windows Firewall from the command line. This guide provides examples how to manage Windows Firewall with PowerShell and Netsh.
 ms.topic: how-to
 ms.date: 11/21/2023
 ---
@@ -61,7 +61,7 @@ Disabling Windows Firewall can also cause problems, including:
 - Activation of Windows via phone fails
 - Application or OS incompatibilities that depend on Windows Firewall
 
-Microsoft recommends disabling Windows Firewall only when installing a third-party firewall, and resetting Windows Firewall back to defaults when the third-party software is disabled or removed.
+Microsoft recommends disabling Windows Firewall only when installing a non-Microsoft firewall, and resetting Windows Firewall back to defaults when the non-Microsoft software is disabled or removed.
 If disabling Windows Firewall is required, don't disable it by stopping the Windows Firewall service (in the **Services** snap-in, the display name is Windows Firewall and the service name is MpsSvc).
 Stopping the Windows Firewall service isn't supported by Microsoft.
 Non-Microsoft firewall software can programmatically disable only the parts of Windows Firewall that need to be disabled for compatibility.

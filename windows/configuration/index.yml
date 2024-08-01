@@ -11,7 +11,7 @@ metadata:
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 02/06/2024
+  ms.date: 04/25/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,40 +21,66 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Customize the Windows Start menu layout
-            url: start/customize-start-menu-layout-windows-11.md
-          - text: Customize the Windows taskbar
-            url: taskbar/customize-taskbar-windows-11.md
-          - text: Configure Windows Spotlight on the lock screen
-            url: lock-screen/windows-spotlight.md
+          - text: Configure the Start menu
+            url: start/index.md
+          - text: Customize the Taskbar
+            url: taskbar/index.md
+          - text: Configure Windows spotlight
+            url: windows-spotlight/index.md
           - text: Accessibility information for IT pros
             url: accessibility/index.md
+      - linkListType: reference
+        links:
+          - text: Start policy settings
+            url: start/policy-settings.md
 
-  - title: Configure a Windows kiosk
+  - title: Kiosks and restricted user experiences
     linkLists:
+      - linkListType: concept
+        links:
+          - text: What is Assigned Access?
+            url: assigned-access/overview.md
+          - text: What is Shell Launcher?
+            url: assigned-access/shell-launcher/index.md
       - linkListType: how-to-guide
         links:
-          - text: Configure kiosks and digital signs
-            url: kiosk/kiosk-methods.md
-          - text: Set up a single-app kiosk
-            url: kiosk/kiosk-single-app.md
-          - text: Set up a multi-app kiosk for Windows 11
-            url: kiosk/lock-down-windows-11-to-specific-apps.md
-          - text: Manage multi-user and guest devices
-            url: shared-devices-concepts.md
+          - text: Configure kiosks and restricted user experiences
+            url: assigned-access/index.md
+      - linkListType: quickstart
+        links:
+          - text: Configure a kiosk with Assigned Access
+            url: assigned-access/quickstart-kiosk.md
+          - text: Configure a kiosk with Shell Launcher
+            url: assigned-access/shell-launcher/quickstart-kiosk.md
+          - text: Configure a restricted user experience with Assigned Access
+            url: assigned-access/quickstart-restricted-user-experience.md
+      - linkListType: reference
+        links:
+          - text: Assigned Access XML Schema Definition (XSD)
+            url: assigned-access/xsd.md
+          - text: Shell Launcher XML Schema Definition (XSD)
+            url: assigned-access/shell-launcher/xsd.md
 
   - title: Configure shared devices
     linkLists:
+      - linkListType: concept
+        links:
+          - text: Shared devices concepts
+            url: /windows/configuration/shared-pc/shared-devices-concepts
       - linkListType: how-to-guide
         links:
-          - text: Manage multi-user and guest devices
-            url: shared-devices-concepts.md
+          - text: Configure a shared or guest Windows device
+            url: /windows/configuration/shared-pc/set-up-shared-or-guest-pc
+      - linkListType: reference
+        links:
+          - text: Shared PC technical reference
+            url: /windows/configuration/shared-pc/shared-pc-technical
 
   - title: Use provisioning packages
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Provisioning packages for Windows
+          - text: Provisioning packages overview
             url: provisioning-packages/provisioning-packages.md
           - text: Install Windows Configuration Designer
             url: provisioning-packages/provisioning-install-icd.md

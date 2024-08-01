@@ -15,16 +15,16 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
-ms.date: 10/10/2022
+ms.date: 05/23/2024
 ---
 
 # Update or uninstall your cache node
 
-This article details how to update or uninstall your cache node. 
+This article details how to update or uninstall your cache node.
 
 ## Update cache node
 
-Microsoft will release updates for Microsoft Connected Cache periodically to improve performance, functionality, and security. Updates won't require any action from the customer. Instead, when an update is available, your cache node will automatically update during low traffic hours with minimal to no impact to your end customers. 
+Microsoft will release updates for Microsoft Connected Cache periodically to improve performance, functionality, and security. Updates won't require any action from the customer. Instead, when an update is available, your cache node will automatically update during low traffic hours with minimal to no impact to your end customers.
 
 To view which version your cache nodes are currently on, navigate to the **Cache nodes** tab to view the versions in the list view.
 

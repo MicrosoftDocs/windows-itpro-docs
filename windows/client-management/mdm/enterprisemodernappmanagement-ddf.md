@@ -1,7 +1,7 @@
 ---
 title: EnterpriseModernAppManagement DDF file
 description: View the XML file containing the device description framework (DDF) for the EnterpriseModernAppManagement configuration service provider.
-ms.date: 01/18/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -4550,7 +4550,7 @@ The following XML file contains the device description framework (DDF) for the E
                   <DefaultValue>8</DefaultValue>
                   <Description>Specifies HoursBetweenUpdateChecks for a specific package</Description>
                   <DFFormat>
-                    <bool />
+                    <int />
                   </DFFormat>
                   <Occurrence>
                     <One />

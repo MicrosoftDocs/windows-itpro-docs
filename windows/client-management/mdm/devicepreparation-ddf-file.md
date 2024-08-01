@@ -1,7 +1,7 @@
 ---
 title: DevicePreparation DDF file
 description: View the XML file containing the device description framework (DDF) for the DevicePreparation configuration service provider.
-ms.date: 01/31/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -64,6 +64,16 @@ The following XML file contains the device description framework (DDF) for the D
         <DFType>
           <MIME />
         </DFType>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>false</MSFT:Value>
+            <MSFT:ValueDescription>Disable Page</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>true</MSFT:Value>
+            <MSFT:ValueDescription>Enable Page</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
       </DFProperties>
     </Node>
     <Node>
@@ -320,6 +330,16 @@ The following XML file contains the device description framework (DDF) for the D
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>false</MSFT:Value>
+              <MSFT:ValueDescription>Mdm Agent Not Installed</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>true</MSFT:Value>
+              <MSFT:ValueDescription>Mdm Agent Installed</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
         </DFProperties>
       </Node>
       <Node>
@@ -342,6 +362,16 @@ The following XML file contains the device description framework (DDF) for the D
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>false</MSFT:Value>
+              <MSFT:ValueDescription>No Reboot Required</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>true</MSFT:Value>
+              <MSFT:ValueDescription>Reboot Required</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
         </DFProperties>
       </Node>
     </Node>

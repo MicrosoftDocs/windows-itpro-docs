@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 02/29/2024
+ms.date: 04/24/2024
 ms.collection: privacy-windows
 ms.topic: reference
 ---
@@ -29,11 +29,8 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 You can learn more about Windows functional and diagnostic data through these articles:
 
 - [Required diagnostic events and fields for Windows 11, versions 23H2 and 22H2](required-diagnostic-events-fields-windows-11-22H2.md)
-- [Required diagnostic events and fields for Windows 10: versions 22H2, 21H2, 21H1, 20H2, and 2004](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Required diagnostic events and fields for Windows 10, versions 22H2 and 21H2](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
-- [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
-- [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
-- [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
 
@@ -55,12 +52,12 @@ The following fields are available:
 - **DestinationPath**  The path to the destination we're installing to.
 - **DownloadSize**  The size in bytes needed to download the package.
 - **ErrorText**  Optional text describing any errors.
-- **InstallationActionId**  The type of action ( 0 - Unknown, 1 - Install Started, 2 - Install Paused, 3 - Install Resumed, 4 - Installation Ready to Play, 5 - Change Source (Merged Install), 6 - Install Error, 7 - Install Complete, 8 - Install Aborted, 9 - Change Source (Auto Select), 10 - Change Source (Apply Update))
+- **InstallationActionId**  The type of action (0 - Unknown, 1 - Install Started, 2 - Install Paused, 3 - Install Resumed, 4 - Installation Ready to Play, 5 - Change Source (Merged Install), 6 - Install Error, 7 - Install Complete, 8 - Install Aborted, 9 - Change Source (Auto Select), 10 - Change Source (Apply Update))
 - **InstallationErrorSource**  The source of the error: 0 - None, 1 - Optical Drive, 2 - Network, 3 - Local, 4 - Destination, 5 - Licensing, 6 - Registration, 7 - Other
 - **InstallationSessionId**  The unique Identifier for the installation session of this install. Goes from ‘Start’ to ‘End’ and all chunks/points in between.
-- **InstallationStageId**  The stage of install ( 0 - Unknown, 1 - Package, 2 - Pls )
+- **InstallationStageId**  The stage of install (0 - Unknown, 1 - Package, 2 - Pls)
 - **InstallationStatus**  HRESULT of the installation. Should be null except for the end or error events.
-- **InstallationTypeId**  The type of install ( 0 - Unknown, 1 - Network, 2 - Disc, 3 - Hybrid, 4 - Update, 5 - Move, 6 - Copy ).
+- **InstallationTypeId**  The type of install (0 - Unknown, 1 - Network, 2 - Disc, 3 - Hybrid, 4 - Update, 5 - Move, 6 - Copy).
 - **OriginalStatus**  The untransformed error code. The transformed, public value is stored in InstallationStatus.
 - **PackageSize**  The size in bytes of the package.
 - **PackageSpecifiers**  The map of Intelligent Delivery region specifiers present in the installing package.
@@ -1373,7 +1370,7 @@ The following fields are available:
 - **AppraiserBranch**  The source branch in which the version of Appraiser that is running was built.
 - **AppraiserDataVersion**  The version of the data files being used by the Appraiser diagnostic data run.
 - **AppraiserProcess**  The name of the process that launched Appraiser.
-- **AppraiserVersion**  The file version (major, minor and build) of the Appraiser DLL, concatenated without dots.
+- **AppraiserVersion**  The file version (major, minor, and build) of the Appraiser DLL, concatenated without dots.
 - **AuxFinal**  Obsolete, always set to false.
 - **AuxInitial**  Obsolete, indicates if Appraiser is writing data files to be read by the Get Windows 10 app.
 - **CountCustomSdbs**  The number of custom Sdbs used by Appraiser.
@@ -1387,7 +1384,7 @@ The following fields are available:
 - **PCFP**  An ID for the system calculated by hashing hardware identifiers.
 - **PerfBackoff**  Indicates if the run was invoked with logic to stop running when a user is present. Helps to understand why a run may have a longer elapsed time than normal.
 - **PerfBackoffInsurance**  Indicates if appraiser is running without performance backoff because it has run with perf backoff and failed to complete several times in a row.
-- **RunAppraiser**  Indicates if Appraiser was set to run at all. If this if false, it's understood that data events won't be received from this device.
+- **RunAppraiser**  Indicates if Appraiser was set to run at all. If this is false, it's understood that data events won't be received from this device.
 - **RunDate**  The date that the diagnostic data run was stated, expressed as a filetime.
 - **RunGeneralTel**  Indicates if the generaltel.dll component was run. Generaltel collects additional diagnostic data on an infrequent schedule and only from machines at diagnostic data levels higher than Basic.
 - **RunOnline**  Indicates if appraiser was able to connect to Windows Update and therefore is making decisions using up-to-date driver coverage information.
@@ -1601,7 +1598,7 @@ The following fields are available:
 
 - **ActivationChannel**  Retrieves the retail license key or Volume license key for a machine.
 - **AssignedAccessStatus**  Kiosk configuration mode.
-- **CompactOS**  Indicates if the Compact OS feature from Win10 is enabled.
+- **CompactOS**  Indicates if the Compact OS feature from Windows 10 is enabled.
 - **DeveloperUnlockStatus**  Represents if a device has been developer unlocked by the user or Group Policy.
 - **DeviceTimeZone**  The time zone that is set on the device. Example: Pacific Standard Time
 - **GenuineState**  Retrieves the ID Value specifying the OS Genuine check.
@@ -1615,7 +1612,7 @@ The following fields are available:
 - **LicenseStateReason**  Retrieves why (or how) a system is licensed or unlicensed.  The HRESULT may indicate an error code that indicates a key blocked error, or it may indicate that we're running an OS License granted by the MS store.
 - **OA3xOriginalProductKey**  Retrieves the License key stamped by the OEM to the machine.
 - **OSEdition**  Retrieves the version of the current OS.
-- **OSInstallType**  Retrieves a numeric description of what install was used on the device i.e. clean, upgrade, refresh, reset, etc
+- **OSInstallType**  Retrieves a numeric description of what install was used on the device i.e. clean, upgrade, refresh, reset, etc.
 - **OSOOBEDateTime**  Retrieves Out of Box Experience (OOBE) Date in Coordinated Universal Time (UTC).
 - **OSSKU**  Retrieves the Friendly Name of OS Edition.
 - **OSSubscriptionStatus**  Represents the existing status for enterprise subscription feature for PRO machines.
@@ -1624,7 +1621,7 @@ The following fields are available:
 - **ProductActivationResult**  Returns Boolean if the OS Activation was successful.
 - **ProductActivationTime**  Returns the OS Activation time for tracking piracy issues.
 - **ProductKeyID2**  Retrieves the License key if the machine is updated with a new license key.
-- **RACw7Id**  Retrieves the Microsoft Reliability Analysis Component (RAC) Win7 Identifier. RAC is used to monitor and analyze system usage and reliability.
+- **RACw7Id**  Retrieves the Microsoft Reliability Analysis Component (RAC) Win 7 Identifier. RAC is used to monitor and analyze system usage and reliability.
 - **ServiceMachineIP**  Retrieves the IP address of the KMS host used for anti-piracy.
 - **ServiceMachinePort**  Retrieves the port of the KMS host used for anti-piracy.
 - **ServiceProductKeyID**  Retrieves the License key of the KMS
@@ -1783,7 +1780,7 @@ The following fields are available:
 - **InternalPrimaryDisplayPhysicalDPIY**  Retrieves the physical DPI in the y-direction of the internal display.
 - **InternalPrimaryDisplayResolutionHorizontal**  Retrieves the number of pixels in the horizontal direction of the internal display.
 - **InternalPrimaryDisplayResolutionVertical**  Retrieves the number of pixels in the vertical direction of the internal display.
-- **InternalPrimaryDisplaySizePhysicalH**  Retrieves the physical horizontal length of the display in mm. Used for calculating the diagonal length in inches .
+- **InternalPrimaryDisplaySizePhysicalH**  Retrieves the physical horizontal length of the display in mm. Used for calculating the diagonal length in inches.
 - **InternalPrimaryDisplaySizePhysicalY**  Retrieves the physical vertical length of the display in mm. Used for calculating the diagonal length in inches
 - **NumberofExternalDisplays**  Retrieves the number of external displays connected to the machine
 - **NumberofInternalDisplays**  Retrieves the number of internal displays in a machine.
@@ -1880,15 +1877,15 @@ The following fields are available:
 - **AppStoreAutoUpdatePolicy**  Retrieves the Microsoft Store App Auto Update group policy setting
 - **DelayUpgrade**  Retrieves the Windows upgrade flag for delaying upgrades.
 - **IsHotPatchEnrolled**  Represents the current state of the device in relation to enrollment in the hotpatch program.
-- **OSAssessmentFeatureOutOfDate**  How many days has it been since a the last feature update was released but the device didn't install it?
+- **OSAssessmentFeatureOutOfDate**  How many days has it been since the last feature update was released but the device didn't install it?
 - **OSAssessmentForFeatureUpdate**  Is the device is on the latest feature update?
 - **OSAssessmentForQualityUpdate**  Is the device on the latest quality update?
 - **OSAssessmentForSecurityUpdate**  Is the device  on the latest security update?
-- **OSAssessmentQualityOutOfDate**  How many days has it been since a the last quality update was released but the device didn't install it?
+- **OSAssessmentQualityOutOfDate**  How many days has it been since the last quality update was released but the device didn't install it?
 - **OSAssessmentReleaseInfoTime**  The freshness of release information used to perform an assessment.
 - **OSRollbackCount**  The number of times feature updates have rolled back on the device.
 - **OSRolledBack**  A flag that represents when a feature update has rolled back during setup.
-- **OSUninstalled**  A flag that represents when a feature update is uninstalled on a device .
+- **OSUninstalled**  A flag that represents when a feature update is uninstalled on a device.
 - **OSWUAutoUpdateOptions**  Retrieves the auto update settings on the device.
 - **OSWUAutoUpdateOptionsSource**  The source of auto update setting that appears in the OSWUAutoUpdateOptions field.  For example: Group Policy (GP), Mobile Device Management (MDM), and Default.
 - **UninstallActive**  A flag that represents when a device has uninstalled a previous upgrade recently.
@@ -2210,7 +2207,7 @@ The following fields are available:
 
 - **action**  The change that was invoked on a device inventory object.
 - **inventoryId**  Device ID used for Compatibility testing
-- **objectInstanceId**  Object identity which is unique within the device scope.
+- **objectInstanceId**  Object identity, which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
@@ -2290,7 +2287,7 @@ The following fields are available:
 - **pendingDecision**  Indicates the cause of reboot, if applicable.
 - **primitiveExecutionContext**  The state during system startup when the uninstall was completed.
 - **revisionVersion**  The revision number of the security update being uninstalled.
-- **transactionCanceled**  Indicates whether the uninstall was cancelled.
+- **transactionCanceled**  Indicates whether the uninstall was canceled.
 
 
 ### CbsServicingProvider.CbsQualityUpdateInstall
@@ -2552,7 +2549,7 @@ The following fields are available:
 - **HeartBeatSequenceNumber**  The sequence number of this heartbeat.
 - **InvalidHttpCodeCount**  Number of invalid HTTP codes received from contacting Vortex.
 - **LastAgentConnectionError**  Last non-timeout error encountered in the host/agent channel.
-- **LastEventSizeOffender**  Event name of last event which exceeded max event size.
+- **LastEventSizeOffender**  Event name of last event that exceeded max event size.
 - **LastInvalidHttpCode**  Last invalid HTTP code received from Vortex.
 - **MaxActiveAgentConnectionCount**  The maximum number of active agents during this heartbeat timeframe.
 - **MaxInUseScenarioCounter**  Soft maximum number of scenarios loaded by UTC.
@@ -3103,7 +3100,7 @@ The following fields are available:
 
 - **InventoryVersion**  The version of the inventory binary generating the events.
 - **ProducerId**  The ACPI vendor ID.
-- **VersionValue**  The 64 bit component version value.
+- **VersionValue**  The 64-bit component version value.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryAcpiPhatVersionElementStartSync
@@ -3132,7 +3129,7 @@ The following fields are available:
 - **LattePackageId**  The ID of the Latte package.
 - **MsiInstallDate**  The install date recorded in the program's MSI package.
 - **MsiPackageCode**  A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage.
-- **MsiProductCode**  A GUID that describe the MSI Product.
+- **MsiProductCode**  A GUID that describes the MSI Product.
 - **Name**  The name of the application.
 - **PackageFullName**  The package full name for a Store application.
 - **ProgramInstanceId**  A hash of the file IDs in an app.
@@ -3756,7 +3753,7 @@ This Ping event sends a detailed inventory of software and hardware information 
 The following fields are available:
 
 - **appAp**  Any additional parameters for the specified application. Default: ''.
-- **appAppId**  The GUID that identifies the product. Compatible clients must transmit this attribute. Please see the wiki for additional information. Default: undefined.
+- **appAppId**  The GUID that identifies the product. Compatible clients must transmit this attribute. See the wiki for additional information. Default: undefined.
 - **appBrandCode**  The brand code under which the product was installed, if any. A brand code is a short (4-character) string used to identify installations that took place as a result of partner deals or website promotions. Default: ''.
 - **appChannel**  An integer indicating the channel of the installation (i.e. Canary or Dev).
 - **appClientId**  A generalized form of the brand code that can accept a wider range of values and is used for similar purposes. Default: ''.
@@ -3764,13 +3761,13 @@ The following fields are available:
 - **appCohortHint**  A machine-readable enum indicating that the client has a desire to switch to a different release cohort. The exact legal values are app-specific and should be shared between the server and app implementations. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
 - **appCohortName**  A stable non-localized human-readable enum indicating which (if any) set of messages the app should display to the user. For example, an app with a cohort Name of 'beta' might display beta-specific branding to the user. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
 - **appConsentState**  Bit flags describing the diagnostic data disclosure and response flow where 1 indicates the affirmative and 0 indicates the negative or unspecified data. Bit 1 indicates consent was given, bit 2 indicates data originated from the download page, bit 18 indicates choice for sending data about how the browser is used, and bit 19 indicates choice for sending data about websites visited.
-- **appDayOfInstall**  The date-based counting equivalent of appInstallTimeDiffSec (the numeric calendar day that the app was installed on). This value is provided by the server in the response to the first request in the installation flow. The client MAY fuzz this value to the week granularity (e.g. send '0' for 0 through 6, '7' for 7 through 13, etc.). The first communication to the server should use a special value of '-1'. A value of '-2' indicates that this value isn't known. Please see the wiki for additional information. Default: '-2'.
+- **appDayOfInstall**  The date-based counting equivalent of appInstallTimeDiffSec (the numeric calendar day that the app was installed on). This value is provided by the server in the response to the first request in the installation flow. The client MAY fuzz this value to the week granularity (e.g. send '0' for 0 through 6, '7' for 7 through 13, etc.). The first communication to the server should use a special value of '-1'. A value of '-2' indicates that this value isn't known. See the wiki for additional information. Default: '-2'.
 - **appExperiments**  A key/value list of experiment identifiers. Experiment labels are used to track membership in different experimental groups, and may be set at install or update time. The experiments string is formatted as a semicolon-delimited concatenation of experiment label strings. An experiment label string is an experiment Name, followed by the '=' character, followed by an experimental label value. For example: 'crdiff=got_bsdiff;optimized=O3'. The client shouldn't transmit the expiration date of any experiments it has, even if the server previously specified a specific expiration date. Default: ''.
 - **appInstallTime**  The product install time in seconds. '0' if unknown. Default: '-1'.
 - **appInstallTimeDiffSec**  The difference between the current time and the install date in seconds. '0' if unknown. Default: '-1'.
 - **appLang**  The language of the product install, in IETF BCP 47 representation. Default: ''.
 - **appLastLaunchTime**  The time when browser was last launched.
-- **appNextVersion**  The version of the app that the update flow to which this event belongs attempted to reach, regardless of the success or failure of the update operation. Please see the wiki for additional information. Default: '0.0.0.0'.
+- **appNextVersion**  The version of the app that the update flow to which this event belongs attempted to reach, regardless of the success or failure of the update operation. See the wiki for additional information. Default: '0.0.0.0'.
 - **appPingEventAppSize**  The total number of bytes of all downloaded packages. Default: '0'.
 - **appPingEventDoneBeforeOOBEComplete**  Indicates whether the install or update was completed before Windows Out of the Box Experience ends. 1 means event completed before OOBE finishes; 0 means event wasn't completed before OOBE finishes; -1 means the field doesn't apply.
 - **appPingEventDownloadMetricsCdnCCC**  ISO 2 character country or region code that matches to the country or region updated binaries are delivered from. E.g.: US.
@@ -3784,8 +3781,8 @@ The following fields are available:
 - **appPingEventDownloadMetricsUrl**  For events representing a download, the CDN URL provided by the update server for the client to download the update, the URL is controlled by Microsoft servers and always maps back to either *.delivery.mp.microsoft.com or msedgesetup.azureedge.net. Default: ''.
 - **appPingEventDownloadTimeMs**  For events representing a download, the time elapsed between the start of the download and the end of the download, in milliseconds. For events representing an entire update flow, the sum of all such download times over the course of the update flow. Sent in events that have an event type of '1', '2', '3', and '14' only. Default: '0'.
 - **appPingEventErrorCode**  The error code (if any) of the operation, encoded as a signed, base-10 integer. Default: '0'.
-- **appPingEventEventResult**  An enum indicating the result of the event. Please see the wiki for additional information. Default: '0'.
-- **appPingEventEventType**  An enum indicating the type of the event. Compatible clients MUST transmit this attribute. Please see the wiki for additional information.
+- **appPingEventEventResult**  An enum indicating the result of the event. See the wiki for additional information. Default: '0'.
+- **appPingEventEventType**  An enum indicating the type of the event. Compatible clients MUST transmit this attribute. See the wiki for additional information.
 - **appPingEventExtraCode1**  Additional numeric information about the operation's result, encoded as a signed, base-10 integer. Default: '0'.
 - **appPingEventInstallTimeMs**  For events representing an install, the time elapsed between the start of the install and the end of the install, in milliseconds. For events representing an entire update flow, the sum of all such durations. Sent in events that have an event type of '2' and '3' only. Default: '0'.
 - **appPingEventNumBytesDownloaded**  The number of bytes downloaded for the specified application. Default: '0'.
@@ -3797,9 +3794,9 @@ The following fields are available:
 - **appUpdateCheckIsUpdateDisabled**  The state of whether app updates are restricted by group policy. True if updates have been restricted by group policy or false if they haven't.
 - **appUpdateCheckTargetVersionPrefix**  A component-wise prefix of a version number, or a complete version number suffixed with the $ character. The server shouldn't return an update instruction to a version number that doesn't match the prefix or complete version number. The prefix is interpreted a dotted-tuple that specifies the exactly-matching elements; it isn't a lexical prefix (for example, '1.2.3' must match '1.2.3.4' but must not match '1.2.34'). Default: ''.
 - **appUpdateCheckTtToken**  An opaque access token that can be used to identify the requesting client as a member of a trusted-tester group. If non-empty, the request should be sent over SSL or another secure protocol. Default: ''.
-- **appVersion**  The version of the product install. Please see the wiki for additional information. Default: '0.0.0.0'.
+- **appVersion**  The version of the product install. See the wiki for additional information. Default: '0.0.0.0'.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **eventType**  A string indicating the type of the event. Please see the wiki for additional information.
+- **eventType**  A string indicating the type of the event. See the wiki for additional information.
 - **expETag**  An identifier representing all service applied configurations and experiments when current update happens. Used for testing only.
 - **hwDiskType**  Device’s hardware disk type.
 - **hwHasAvx**  '1' if the client's hardware supports the AVX instruction set. '0' if the client's hardware doesn't support the AVX instruction set. '-1' if unknown. Default: '-1'.
@@ -3842,7 +3839,7 @@ The following fields are available:
 - **app_name**  The name of the crashing process.
 - **app_session_guid**  Encodes the boot session, process id, and process start time.
 - **app_version**  The version of the crashing process.
-- **client_id_hash**  Hash of the browser client ID which helps identify installations.
+- **client_id_hash**  Hash of the browser client ID that helps identify installations.
 - **etag**  Encodes the running experiments in the browser.
 - **module_name**  The name of the module in which the crash originated.
 - **module_offset**  Memory offset into the module in which the crash originated.
@@ -4039,11 +4036,11 @@ The following fields are available:
 
 ### Microsoft.Windows.SecureBootTelemetry.SecureBootEncodeUEFI
 
-Information about Secure Boot configuration including the PK, KEKs, DB and DBX files on the device.
+Information about Secure Boot configuration including the PK, KEKs, DB, and DBX files on the device.
 
 The following fields are available:
 
-- **SecureBootUEFIEncoding**  Information about the PK, KEKs, DB and DBX files on the device.
+- **SecureBootUEFIEncoding**  Information about the PK, KEKs, DB, and DBX files on the device.
 
 
 ### XboxSystemFlightRecorder.SmcErrorLog
@@ -4134,12 +4131,12 @@ The following fields are available:
 
 ### Microsoft.Windows.Setup.WinSetupMon.ProtectionViolation
 
-This event provides information about move or deletion of a file or a directory which is being monitored for data safety during feature updates. The data collected with this event is used to help keep Windows up to date.
+This event provides information about move or deletion of a file or a directory that is being monitored for data safety during feature updates. The data collected with this event is used to help keep Windows up to date.
 
 The following fields are available:
 
-- **Path**  Path to the file or the directory which is being moved or deleted.
-- **Process**  Path to the process which is requesting the move or the deletion.
+- **Path**  Path to the file or the directory that is being moved or deleted.
+- **Process**  Path to the process that is requesting the move or the deletion.
 - **TargetPath**  (Optional) If the operation is a move, the target path to which the file or directory is being moved.
 
 
@@ -4204,14 +4201,14 @@ The following fields are available:
 
 - **ActivityMatchingId**  Contains a unique ID identifying a single CheckForUpdates session from initialization to completion.
 - **AllowCachedResults**  Indicates if the scan allowed using cached results.
-- **ApplicableUpdateInfo**  Metadata for the updates which were detected as applicable
+- **ApplicableUpdateInfo**  Metadata for the updates that were detected as applicable
 - **CachedEngineVersion**  For self-initiated healing, the version of the SIH engine that is cached on the device. If the SIH engine doesn't exist, the value is null.
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **ClientVersion**  The version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. No data is currently reported in this field. Expected value for this field is 0.
 - **DriverSyncPassPerformed**  Were drivers scanned this time?
 - **EventInstanceID**  A globally unique identifier for event instance.
-- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
+- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was canceled, succeeded, or failed.
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6
@@ -4222,9 +4219,9 @@ The following fields are available:
 - **MetadataIntegrityMode**  The mode of the update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **NumberOfApplicationsCategoryScanEvaluated**  The number of categories (apps) for which an app update scan checked
 - **NumberOfLoop**  The number of round trips the scan required
-- **NumberOfNewUpdatesFromServiceSync**  The number of updates which were seen for the first time in this scan
-- **NumberOfUpdatesEvaluated**  The total number of updates which were evaluated as a part of the scan
-- **NumFailedMetadataSignatures**  The number of metadata signatures checks which failed for new metadata synced down.
+- **NumberOfNewUpdatesFromServiceSync**  The number of updates that were seen for the first time in this scan
+- **NumberOfUpdatesEvaluated**  The total number of updates that were evaluated as a part of the scan
+- **NumFailedMetadataSignatures**  The number of metadata signatures checks that failed for new metadata synced down.
 - **Online**  Indicates if this was an online scan.
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName wasn't provided.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -4232,7 +4229,7 @@ The following fields are available:
 - **ScanDurationInSeconds**  The number of seconds a scan took
 - **ScanEnqueueTime**  The number of seconds it took to initialize a scan
 - **ScanProps**  This is a 32-bit integer containing Boolean properties for a given Windows Update scan. The following bits are used; all remaining bits are reserved and set to zero. Bit 0 (0x1): IsInteractive - is set to 1 if the scan is requested by a user, or 0 if the scan is requested by Automatic Updates. Bit 1 (0x2): IsSeeker - is set to 1 if the Windows Update client's Seeker functionality is enabled. Seeker functionality is enabled on certain interactive scans, and results in the scans returning certain updates that are in the initial stages of release (not yet released for full adoption via Automatic Updates).
-- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
+- **ServiceGuid**  An ID that represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
 - **ServiceUrl**  The environment URL a device is configured to scan with
 - **StatusCode**  Indicates the result of a CheckForUpdates event (success, cancellation, failure code HResult).
 - **SyncType**  Describes the type of scan the event was
@@ -4255,7 +4252,7 @@ The following fields are available:
 - **DownloadPriority**  Indicates whether a download happened at background, normal, or foreground priority.
 - **DownloadProps**  Information about the download operation properties in the form of a bitmask.
 - **EventInstanceID**  A globally unique identifier for event instance.
-- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started downloading content, or whether it was cancelled, succeeded, or failed.
+- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started downloading content, or whether it was canceled, succeeded, or failed.
 - **EventType**  Possible values are Child, Bundle, or Driver.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **FlightBuildNumber**  If this download was for a flight (pre-release build), this indicates the build number of that flight.
@@ -4285,7 +4282,7 @@ The following fields are available:
 
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client
 - **ClientVersion**  The version number of the software distribution client
-- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed
+- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was canceled, succeeded, or failed
 - **EventType**  Possible values are "Child", "Bundle", "Relase" or "Driver"
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough
 - **FileId**  A hash that uniquely identifies a file
@@ -4293,7 +4290,7 @@ The following fields are available:
 - **FlightId**  The unique identifier for each flight
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one
 - **RevisionNumber**  Unique revision number of Update
-- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.)
+- **ServiceGuid**  An ID that represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.)
 - **StatusCode**  Indicates the result of a CheckForUpdates event (success, cancellation, failure code HResult)
 - **UpdateId**  Unique Update ID
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue
@@ -4315,7 +4312,7 @@ The following fields are available:
 - **DownloadState**  Current state of the active download for this content (queued, suspended, or progressing)
 - **EventType**  Possible values are "Child", "Bundle", or "Driver"
 - **FlightId**  The unique identifier for each flight
-- **IsNetworkMetered**  Indicates whether Windows considered the current network to be ?metered"
+- **IsNetworkMetered**  Indicates whether Windows considered the current network to be metered"
 - **MOAppDownloadLimit**  Mobile operator cap on size of application downloads, if any
 - **MOUpdateDownloadLimit**  Mobile operator cap on size of operating system update downloads, if any
 - **PowerState**  Indicates the power state of the device at the time of heartbeart (DC, AC, Battery Saver, or Connected Standby)
@@ -4351,7 +4348,7 @@ This event sends data about an AppX app that has been updated from the Microsoft
 
 The following fields are available:
 
-- **ApplicableUpdateInfo**  Metadata for the updates which were detected as applicable.
+- **ApplicableUpdateInfo**  Metadata for the updates that were detected as applicable.
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
 - **NumberOfApplicableUpdates**  The number of updates ultimately deemed applicable to the system after the detection process is complete.
@@ -4554,7 +4551,7 @@ The following fields are available:
 
 ### Microsoft.Surface.SystemReset.Prod.ResetCauseEventV2
 
-This event sends reason for SAM, PCH and SoC reset. The data collected with this event is used to keep Windows performing properly.
+This event sends reason for SAM, PCH, and SoC reset. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
@@ -4733,7 +4730,7 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantInteractive
 
-An user action such as button click happens.
+A user action such as button click happens.
 
 The following fields are available:
 
@@ -4814,7 +4811,7 @@ The following fields are available:
 
 - **CV**  The correlation vector.
 - **GlobalEventCounter**  The counter for all telemetry on the device.
-- **UpdateAssistantDownloadCancelled**  True when the ESD download is cancelled.
+- **UpdateAssistantDownloadCancelled**  True when the ESD download is canceled.
 - **UpdateAssistantDownloadDownloadTotalBytes**  The total size in bytes of the download.
 - **UpdateAssistantDownloadEditionMismatch**  True if downloaded ESD doesn't match edition.
 - **UpdateAssistantDownloadESDEncrypted**  True if ESD is encrypted.
@@ -4838,7 +4835,7 @@ This event indicates that the detection phase of USO has started. The data colle
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **ExpeditePolicyId**  The policy ID of the expedite request.
+- **ExpeditePolicyId**  The policy ID of the expedited request.
 - **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
 - **ExpediteUpdatesInProgress**  List of update IDs in progress.
 - **ExpediteUsoLastError**  The last error returned by USO.
@@ -4938,7 +4935,7 @@ This event is received when the UpdateHealthTools service uploads device informa
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of remediation.
 - **UpdateHealthToolsDeviceUbrChanged**  1 if the Ubr just changed, 0 otherwise.
 - **UpdateHealthToolsDeviceUri**  The URI to be used for push notifications on this device.
@@ -4946,7 +4943,7 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsDeviceInformationUploadFailed
 
-This event provides information for device which failed to upload the details. The data collected with this event is used to help keep Windows secure and up to date.
+This event provides information for device that failed to upload the details. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -4963,7 +4960,7 @@ This event is received when a push notification has been completed by the Update
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of UpdateHealthTools.
 - **UpdateHealthToolsEnterpriseActionResult**  The HRESULT return by the enterprise action.
 - **UpdateHealthToolsEnterpriseActionType**  Enum describing the type of action requested by the push.
@@ -4976,7 +4973,7 @@ This event is received when the UpdateHealthTools service receives a push notifi
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of UpdateHealthTools.
 - **UpdateHealthToolsDeviceUri**  The URI to be used for push notifications on this device.
 - **UpdateHealthToolsEnterpriseActionType**  Enum describing the type of action requested by the push.
@@ -4992,7 +4989,7 @@ This event is received when there's status on a push notification. The data coll
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of UpdateHealthTools.
 - **UpdateHealthToolsDeviceUri**  The URI to be used for push notifications on this device.
 - **UpdateHealthToolsEnterpriseActionType**  Enum describing the type of action requested by the push.
@@ -5007,7 +5004,7 @@ This event is sent when a device has been detected as DSS device. The data colle
 The following fields are available:
 
 - **CV**  A correlation vector.
-- **GlobalEventCounter**  This is a client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  This is a client side counter that indicates ordering of events sent by this user.
 - **PackageVersion**  The package version of the label.
 
 
@@ -5018,7 +5015,7 @@ This event is sent when the service first starts. It's a heartbeat indicating th
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
+- **GlobalEventCounter**  Client side counter that indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of remediation.
 
 
@@ -5347,7 +5344,7 @@ The following fields are available:
 - **ClientId**  If using Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, the default value is Media360, but it can be overwritten by the caller to a unique value.
 - **FlightData**  Unique value that identifies the flight.
 - **HostOSBuildNumber**  The build number of the downlevel OS.
-- **HostOsSkuName**  The operating system edition which is running Setup360 instance (downlevel OS).
+- **HostOsSkuName**  The operating system edition that is running Setup360 instance (downlevel OS).
 - **InstanceId**  A unique GUID that identifies each instance of setuphost.exe.
 - **ReportId**  In the Windows Update scenario, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  More detailed information about phase/action when the potential failure occurred.
@@ -5355,7 +5352,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360 (HRESULT used to diagnose errors).
 - **Setup360Scenario**  The Setup360 flow type (for example, Boot, Media, Update, MCT).
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of the target OS).
-- **State**  Exit state of given Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  Exit state of given Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  An ID that uniquely identifies a group of events.
 - **WuId**  This is the Windows Update Client ID. In the Windows Update scenario, this is the same as the clientId.
 
@@ -5369,7 +5366,7 @@ The following fields are available:
 - **ClientId**  With Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightData**  Unique value that identifies the flight.
 - **HostOSBuildNumber**  The build number of the previous OS.
-- **HostOsSkuName**  The OS edition which is running Setup360 instance (previous OS).
+- **HostOsSkuName**  The OS edition that is running Setup360 instance (previous OS).
 - **InstanceId**  A unique GUID that identifies each instance of setuphost.exe
 - **ReportId**  With Windows Update, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  More detailed information about the phase/action when the potential failure occurred.
@@ -5377,7 +5374,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  ID that uniquely identifies a group of events.
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as the clientId.
 
@@ -5391,7 +5388,7 @@ The following fields are available:
 - **ClientId**  For Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightData**  Unique value that identifies the flight.
 - **HostOSBuildNumber**  The build number of the previous OS.
-- **HostOsSkuName**  The OS edition which is running the Setup360 instance (previous OS).
+- **HostOsSkuName**  The OS edition that is running the Setup360 instance (previous OS).
 - **InstanceId**  A unique GUID that identifies each instance of setuphost.exe.
 - **ReportId**  For Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Detailed information about the phase or action when the potential failure occurred.
@@ -5399,7 +5396,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  Exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  Exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  ID that uniquely identifies a group of events.
 - **WuId**  Windows Update client ID.
 
@@ -5413,7 +5410,7 @@ The following fields are available:
 - **ClientId**  With Windows Update, this is the Windows Update client ID that is passed to Setup. In Media setup, the default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightData**  Unique value that identifies the flight.
 - **HostOSBuildNumber**  The build number of the previous OS.
-- **HostOsSkuName**  The OS edition which is running Setup360 instance (previous OS).
+- **HostOsSkuName**  The OS edition that is running Setup360 instance (previous OS).
 - **InstanceId**  A unique GUID that identifies each instance of setuphost.exe.
 - **ReportId**  With Windows Update, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Extension of result - more granular information about phase/action when the potential failure happened
@@ -5421,7 +5418,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that's used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as ClientId.
 
@@ -5435,7 +5432,7 @@ The following fields are available:
 - **ClientId**  Using Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightData**  Unique value that identifies the flight.
 - **HostOSBuildNumber**  The build number of the previous OS.
-- **HostOsSkuName**  The OS edition which is running Setup360 instance (previous operating system).
+- **HostOsSkuName**  The OS edition that is running Setup360 instance (previous operating system).
 - **InstanceId**  A unique GUID that identifies each instance of setuphost.exe.
 - **ReportId**  Using Windows Update, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Detailed information about the phase/action when the potential failure occurred.
@@ -5457,7 +5454,7 @@ The following fields are available:
 - **ClientId**  For Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightData**  In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **HostOSBuildNumber**  The build number of the previous operating system.
-- **HostOsSkuName**  The OS edition which is running the Setup360 instance (previous operating system).
+- **HostOsSkuName**  The OS edition that is running the Setup360 instance (previous operating system).
 - **InstanceId**  Unique GUID that identifies each instance of setuphost.exe.
 - **ReportId**  For Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Detailed information about the phase/action when the potential failure occurred.
@@ -5465,7 +5462,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of the target OS).
-- **State**  The exit state of the Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of the Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  ID that uniquely identifies a group of events.
 - **WuId**  Windows Update client ID.
 
@@ -5479,7 +5476,7 @@ The following fields are available:
 - **ClientId**  With Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightData**  Unique value that identifies the flight.
 - **HostOSBuildNumber**  The build number of the previous OS.
-- **HostOsSkuName**  The OS edition which is running Setup360 instance (previous OS).
+- **HostOsSkuName**  The OS edition that is running Setup360 instance (previous OS).
 - **InstanceId**  A unique GUID that identifies each instance of setuphost.exe
 - **ReportId**  With Windows Update, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Detailed information about the phase/action when the potential failure occurred.
@@ -5487,7 +5484,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used to diagnose errors.
 - **Setup360Scenario**  Setup360 flow type (Boot, Media, Update, MCT).
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as the clientId.
 
@@ -5501,7 +5498,7 @@ The following fields are available:
 - **ClientId**  For Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightData**  Unique value that identifies the flight.
 - **HostOSBuildNumber**  The build number of the previous OS.
-- **HostOsSkuName**  The OS edition which is running the Setup360 instance (previous OS).
+- **HostOsSkuName**  The OS edition that is running the Setup360 instance (previous OS).
 - **InstanceId**  A unique GUID that identifies each instance of setuphost.exe.
 - **ReportId**  For Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Detailed information about the phase/action when the potential failure occurred.
@@ -5509,7 +5506,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type, Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  Windows Update client ID.
 
@@ -5616,7 +5613,7 @@ The following fields are available:
 - **ClientId**  With Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightData**  Unique value that identifies the flight.
 - **HostOSBuildNumber**  The build number of the previous OS.
-- **HostOsSkuName**  The OS edition which is running Setup360 instance (previous OS).
+- **HostOsSkuName**  The OS edition that is running Setup360 instance (previous OS).
 - **InstanceId**  A unique GUID that identifies each instance of setuphost.exe
 - **ReportId**  With Windows Update, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Detailed information about the phase/action when the potential failure occurred.
@@ -5624,7 +5621,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as the clientId.
 
@@ -5642,7 +5639,7 @@ The following fields are available:
 - **HrLastFailure**  Error code from the failed removal.
 - **HrResetDatastore**  Result of the attempted removal.
 - **HrStopGroupOfServices**  Result of stopping the services.
-- **MaskServicesStopped**  Bit field to indicate which services were stopped succesfully. Bit on means success. List of services: usosvc(1<<0), dosvc(1<<1), wuauserv(1<<2), bits(1<<3).
+- **MaskServicesStopped**  Bit field to indicate which services were stopped successfully. Bit on means success. List of services: usosvc(1<<0), dosvc(1<<1), wuauserv(1<<2), bits(1<<3).
 - **NumberServicesToStop**  The number of services that require manual stopping.
 
 
@@ -5681,7 +5678,7 @@ The following fields are available:
 
 ### Microsoft.Windows.WERVertical.OSCrash
 
-This event sends binary data from the collected dump file wheneveer a bug check occurs, to help keep Windows up to date. The is the OneCore version of this event.
+This event sends binary data from the collected dump file whenever a bug check occurs, to help keep Windows up to date. The is the OneCore version of this event.
 
 The following fields are available:
 
@@ -5735,7 +5732,7 @@ The following fields are available:
 
 - **creatorId**  The unique identifier for the entity that created the error record.
 - **errorFlags**  Any flags set on the error record.
-- **notifyType**  The unique identifier for the notification mechanism which reported the error to the operating system.
+- **notifyType**  The unique identifier for the notification mechanism that reported the error to the operating system.
 - **partitionId**  The unique identifier for the partition on which the hardware error occurred.
 - **platformId**  The unique identifier for the platform on which the hardware error occurred.
 - **record**  A collection of binary data containing the full error record.
@@ -6116,7 +6113,7 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.StateTransition
 
-Products in the process of being fulfilled (installed or updated) are maintained in a list. This event is sent any time there's a change in a product's fulfillment status (pending, working, paused, cancelled, or complete), to help keep Windows up to date and secure.
+Products in the process of being fulfilled (installed or updated) are maintained in a list. This event is sent any time there's a change in a product's fulfillment status (pending, working, paused, canceled, or complete), to help keep Windows up to date and secure.
 
 The following fields are available:
 
@@ -6213,7 +6210,7 @@ The following fields are available:
 - **doClientVersion**  The version of the Delivery Optimization client.
 - **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).
 - **downloadModeReason**  Reason for the download.
-- **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
+- **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, DefaultProvider = 99).
 - **errorCode**  The error code that was returned.
 - **experimentId**  ID used to correlate client/services calls that are part of the same test during A/B testing.
 - **fileID**  The ID of the file being downloaded.
@@ -6298,7 +6295,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.DeviceUpdateAgent.UpdateAgentAnalysisSummary
 
-This event collects information regarding the state of devices and drivers on the system following a reboot after the install phase of the new device manifest UUP (Unified Update Platform) update scenario which is used to install a device manifest describing a set of driver packages. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the state of devices and drivers on the system following a reboot after the install phase of the new device manifest UUP (Unified Update Platform) update scenario that is used to install a device manifest describing a set of driver packages. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 

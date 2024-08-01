@@ -43,8 +43,6 @@
       "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.subservice": "itpro-configure",
       "ms.service": "windows-client",
-      "ms.author": "paoloma",
-      "author": "paolomatarazzo",
       "manager": "aaroncz",
       "feedback_system": "Standard",
       "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
@@ -54,12 +52,11 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Configure Windows",
       "contributors_to_exclude": [
         "dstrome2",
-        "rjagiewich",  
+        "rjagiewich",
         "American-Dipper",
-        "claydetels19", 
+        "claydetels19",
         "jborsecnik",
         "v-stchambers",
         "shdyas",
@@ -74,38 +71,64 @@
       ]
     },
     "fileMetadata": {
-      "feedback_system": {
-        "ue-v/**/*.*": "None"
+      "author":{
+        "accessibility//**/*.md": "paolomatarazzo",
+        "accessibility//**/*.yml": "paolomatarazzo",
+        "assigned-access//**/*.md": "paolomatarazzo",
+        "assigned-access//**/*.yml": "paolomatarazzo",
+        "cellular//**/*.md": "paolomatarazzo",
+        "cellular//**/*.yml": "paolomatarazzo",
+        "lock-screen//**/*.md": "paolomatarazzo",
+        "lock-screen//**/*.yml": "paolomatarazzo",
+        "provisioning-packages//**/*.md": "vinaypamnani-msft",
+        "provisioning-packages//**/*.yml": "vinaypamnani-msft",
+        "shared-pc//**/*.md": "paolomatarazzo",
+        "shared-pc//**/*.yml": "paolomatarazzo",
+        "start//**/*.md": "paolomatarazzo",
+        "start//**/*.yml": "paolomatarazzo",
+        "store//**/*.md": "paolomatarazzo",
+        "store//**/*.yml": "paolomatarazzo",
+        "taskbar//**/*.md": "paolomatarazzo",
+        "taskbar//**/*.yml": "paolomatarazzo",
+        "tips//**/*.md": "paolomatarazzo",
+        "tips//**/*.yml": "paolomatarazzo",
+        "wcd//**/*.md": "vinaypamnani-msft",
+        "wcd//**/*.yml": "vinaypamnani-msft"
       },
-      "author": {
-        "wcd//**/*.md": "aczechowski",
-        "wcd//**/*.yml": "aczechowski",
-        "ue-v//**/*.md": "aczechowski",
-        "ue-v//**/*.yml": "aczechowski"
-      },
-      "ms.author": {
-        "wcd//**/*.md": "aaroncz",
-        "wcd//**/*.yml": "aaroncz",
-        "ue-v//**/*.md": "aaroncz",
-        "ue-v//**/*.yml": "aaroncz"
+      "ms.author":{
+        "accessibility//**/*.md": "paoloma",
+        "accessibility//**/*.yml": "paoloma",
+        "assigned-access//**/*.md": "paoloma",
+        "assigned-access//**/*.yml": "paoloma",
+        "cellular//**/*.md": "paoloma",
+        "cellular//**/*.yml": "paoloma",
+        "lock-screen//**/*.md": "paoloma",
+        "lock-screen//**/*.yml": "paoloma",
+        "provisioning-packages//**/*.md": "vinpa",
+        "provisioning-packages//**/*.yml": "vinpa",
+        "shared-pc//**/*.md": "paoloma",
+        "shared-pc//**/*.yml": "paoloma",
+        "start//**/*.md": "paoloma",
+        "start//**/*.yml": "paoloma",
+        "store//**/*.md": "paoloma",
+        "store//**/*.yml": "paoloma",
+        "taskbar//**/*.md": "paoloma",
+        "taskbar//**/*.yml": "paoloma",
+        "tips//**/*.md": "paoloma",
+        "tips//**/*.yml": "paoloma",
+        "wcd//**/*.md": "vinpa",
+        "wcd//**/*.yml": "vinpa"
       },
       "ms.reviewer": {
         "kiosk//**/*.md": "sybruckm",
         "start//**/*.md": "ericpapa"
       },
       "ms.collection": {
-        "wcd//**/*.md": "must-keep",
-        "ue-v//**/*.md": [
-          "must-keep",
-          "tier3"
-        ]
+        "wcd//**/*.md": "must-keep"
       },
       "appliesto": {
         "*/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
-        ],
-        "ue-v//**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
         ],
         "wcd//**/*.md": ""

@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description: This article details how to register devices in Autopatch.
-ms.date: 02/15/2024
+ms.date: 07/10/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -80,10 +80,6 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
             - Device configuration
             - Office Click-to-run
 - Last Intune device check in completed within the last 28 days.
-- Devices must have Serial Number, Model and Manufacturer.
-
-> [!NOTE]
-> Windows Autopatch doesn't support device emulators that don't generate the serial number, model and manufacturer information. Devices that use a non-supported device emulator fail the **Intune or Cloud-Attached** prerequisite check.
 
 > [!IMPORTANT]
 > Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
@@ -116,10 +112,7 @@ The following are the possible device readiness statuses in Windows Autopatch:
 
 ## Built-in roles required for device registration
 
-A role defines the set of permissions granted to users assigned to that role. You can use one of the following built-in roles in Windows Autopatch to register devices:
-
-- Microsoft Entra Global Administrator
-- Intune Service Administrator
+A role defines the set of permissions granted to users assigned to that role. You can use the **Intune Service Administrator** role to register devices.
 
 For more information, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 

@@ -4,11 +4,8 @@ description: Application Control restricts which applications users are allowed 
 ms.localizationpriority: medium
 ms.collection:
 - tier3
-- must-keep
-- essentials-navigation
-- essentials-overview
 ms.date: 08/30/2023
-ms.topic: article
+ms.topic: overview
 ---
 
 # Application Control for Windows

@@ -1,18 +1,16 @@
 ---
 title: Windows subscription activation
-description: Learn how to step up from Windows Pro to  a Windows Enterprise subscription or from Windows Eduction Pro to a Windows Education subscription.
+description: Learn how to step up from Windows Pro to a Windows Enterprise subscription or from Windows Eduction Pro to a Windows Education subscription.
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
-ms.collection:
-  - highpri
-  - tier2
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
+ms.reviewer: nganguly
 ms.topic: concept-article
 zone_pivot_groups: windows-versions-11-10
-ms.date: 02/29/2024
+ms.date: 03/04/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -47,9 +45,12 @@ Organizations that have an enterprise agreement can also benefit from the servic
 >
 > Subscription activation is available for qualifying devices running currently supported versions of Windows. Subscription activation can't be used to upgrade to a newer version of Windows.
 
+### Adding Conditional Access policy
+
 Organizations that use the Subscription Activation feature to enable users to "step-up" from one version of Windows to another and use Conditional Access policies to control access need to exclude one of the following cloud apps from their Conditional Access policies using **Select Excluded Cloud Apps**:
 
 - [Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
+
 - [Windows Store for Business, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f](/troubleshoot/azure/active-directory/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications).
 
 Although the app ID is the same in both instances, the name of the cloud app depends on the tenant.
@@ -60,7 +61,17 @@ For more information about configuring exclusions in Conditional Access policies
 
 When a device has been offline for an extended period of time, the device might not reactivate automatically if this Conditional Access exclusion isn't in place. Setting this Conditional Access exclusion ensures that Subscription Activation continues to work seamlessly.
 
-Starting with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later, users are prompted for authentication with a toast notification when Subscription Activation needs to reactivate. The prompt for authentication usually occurs when a device has been offline for an extended period of time. This change eliminates the need for an exclusion in the Conditional Access policy for Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later. A Conditional Access policy can still be used with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later if the prompt for user authentication via a toast notification isn't desired.
+Starting with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later, users are prompted for authentication with a toast notification when Subscription Activation needs to reactivate. The toast notification will show the following message:
+
+> **Your account requires authentication**
+>
+> **Please sign in to your work or school account to verify your information.**
+
+Additionally, in the [**Activation**](ms-settings:activation) pane, the following message might appear:
+
+> **Please sign in to your work or school account to verify your information.**
+
+The prompt for authentication usually occurs when a device has been offline for an extended period of time. This change eliminates the need for an exclusion in the Conditional Access policy for Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later. A Conditional Access policy can still be used with Windows 11, version 23H2 with [KB5034848](https://support.microsoft.com/help/5034848) or later if the prompt for user authentication via a toast notification isn't desired.
 
 ## Subscription activation for Education
 
@@ -122,7 +133,7 @@ With Windows Enterprise or Education editions, an organization can benefit from 
 
 To compare Windows editions and review pricing, see the following sites:
 
-- [Compare Windows editions](https://www.microsoft.com/en-us/windows/business/windows-10-pro-vs-windows-11-pro) <!-- Leaving in language reference in URL because URL without it doesn't redirect properly>
+- [Compare Windows editions](https://www.microsoft.com/en-us/windows/business/windows-10-pro-vs-windows-11-pro) <!-- Leaving in language reference in URL because URL without it doesn't redirect properly-->
 - [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing)
 
 Benefits of moving to Windows as an online service include:

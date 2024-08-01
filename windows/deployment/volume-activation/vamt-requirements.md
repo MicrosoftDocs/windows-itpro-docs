@@ -1,13 +1,13 @@
 ---
-title: VAMT Requirements (Windows 10)
-description: In this article, learn about the product key and system requierements for Volume Activation Management Tool (VAMT).
+title: VAMT requirements
+description: Learn about the product key and system requirements for Volume Activation Management Tool (VAMT).
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
+ms.date: 03/29/2024
+ms.topic: concept-article
 ms.service: windows-client
-author: frankroj
-ms.date: 11/07/2022
-ms.topic: article
 ms.subservice: itpro-fundamentals
 ---
 
@@ -21,7 +21,7 @@ The Volume Activation Management Tool (VAMT) can be used to perform activations 
 
 |Product key type |Where to obtain |
 |-----------------|----------------|
-|<ul><li>Multiple Activation Key (MAK)</li><li>Key Management Service (KMS) host key (CSVLK)</li><li>KMS client setup keys (GVLK)</li></ul> |Volume licensing keys can only be obtained with a signed contract from Microsoft. For more info, see the [Microsoft Volume Licensing portal](https://go.microsoft.com/fwlink/p/?LinkId=227282). |
+|<ul><li>Multiple Activation Key (MAK)</li><li>Key Management Service (KMS) host key (CSVLK)</li><li>KMS client setup keys (GVLK)</li></ul> |Volume licensing keys can only be obtained with a signed contract from Microsoft. For more information, see the [Microsoft Volume Licensing portal](https://admin.microsoft.com/adminportal/home#/subscriptions/vlnew). |
 |Retail product keys |Obtained at time of product purchase. |
 
 ## System requirements
@@ -36,9 +36,11 @@ The following table lists the system requirements for the VAMT host computer.
 | External Drive | Removable media (Optional) |
 | Display | 1024x768 or higher resolution monitor |
 | Network | Connectivity to remote computers via Windows Management Instrumentation (TCP/IP) and Microsoft Activation Web Service on the Internet via HTTPS |
-| Operating System | Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2, Windows Server 2012, or later. |
-| Additional Requirements | <ul><li>Connection to a SQL Server database. For more info, see [Install VAMT](install-vamt.md).</li><li>PowerShell 3.0: For Windows 8, Windows 8.1, Windows 10, and Windows Server 2012, PowerShell is included in the installation. For previous versions of Windows and Windows Server, you must download PowerShell 3.0. To download PowerShell, go to [Download Windows PowerShell 3.0](/powershell/scripting/install/installing-powershell).</li><li>If installing on Windows Server 2008 R2, you must also install .NET Framework 3.51.</li></ul> |
+| Operating System | Currently supported versions of [Windows client](/windows/release-health/supported-versions-windows-client) and [Windows Server](/windows/release-health/windows-server-release-info). |
+| Additional Requirements | <ul><li>Connection to a SQL Server database. For more info, see [Install VAMT](install-vamt.md).</li><li>PowerShell, which is included with all currently supported versions of Windows.</li></ul> |
 
-## Related articles
+## Related content
 
-- [Install and configure VAMT](install-configure-vamt.md)
+[Install VAMT](install-vamt.md)
+
+[Configure client computers](configure-client-computers-vamt.md)

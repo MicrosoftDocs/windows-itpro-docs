@@ -1,167 +1,155 @@
-### YamlMime:Hub
+### YamlMime:Landing
 
-title: Windows client security documentation
-summary: Learn how to secure Windows clients for your organization.
-brand: windows
+title: Windows security documentation
+summary: Windows is designed with zero-trust principles at its core, offering powerful security from chip to cloud. As organizations embrace hybrid work environments, the need for robust security solutions becomes paramount. Windows integrates advanced hardware and software protection, ensuring data integrity and access control across devices. Learn about the different security features included in Windows.
 
 metadata:
-  ms.topic: hub-page
+  ms.topic: landing-page
   ms.collection:
     - tier1
-    - essentials-navigation
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 09/18/2023
+  ms.date: 03/12/2024
 
-highlightedContent:
-  items:
-  - title: Get started with Windows security
-    itemType: get-started
-    url: introduction.md
-  - title: Windows 11, version 22H2
-    itemType: whats-new
-    url: /windows/whats-new/whats-new-windows-11-version-22H2
-  - title: Advance your security posture with Microsoft Intune from chip to cloud
-    itemType: learn
-    url: https://learn.microsoft.com/training/modules/m365-advance-organization-security-posture/
-  - title: Security features licensing and edition requirements
-    itemType: overview
-    url: /windows/security/licensing-and-edition-requirements
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
+landingContent:
 
-productDirectory:
-  title: Get started
-  items:
+  - title: Learn about hardware security
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Trusted Platform Module (TPM)
+            url: /windows/security/hardware-security/tpm/trusted-platform-module-overview
+          - text: Microsoft Pluton
+            url: /windows/security/hardware-security/pluton/microsoft-pluton-security-processor
+          - text: Windows Defender System Guard
+            url: /windows-hardware/design/device-experiences/oem-vbs
+          - text: Virtualization-based security (VBS)
+            url: /windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows
+          - text: Secured-core PC
+            url: /windows-hardware/design/device-experiences/oem-highly-secure-11
 
-    - title: Hardware security
-      imageSrc: /media/common/i_usb.svg
-      links:
-        - url: /windows/security/hardware-security/tpm/trusted-platform-module-overview
-          text: Trusted Platform Module
-        - url: /windows/security/hardware-security/pluton/microsoft-pluton-security-processor
-          text: Microsoft Pluton
-        - url: /windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows
-          text: Windows Defender System Guard
-        - url: /windows-hardware/design/device-experiences/oem-vbs
-          text: Virtualization-based security (VBS)
-        - url: /windows-hardware/design/device-experiences/oem-highly-secure-11
-          text: Secured-core PC
-        - url: /windows/security/hardware-security
-          text: Learn more about hardware security >
+  - title: Learn about OS security
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Trusted boot
+            url: /windows/security/operating-system-security
+          - text: Windows security settings
+            url: /windows/security/operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center
+          - text: BitLocker
+            url: /windows/security/operating-system-security/data-protection/bitlocker/
+          - text: Personal Data Encryption (PDE)
+            url: /windows/security/operating-system-security/data-protection/personal-data-encryption
+          - text: Windows security baselines
+            url: /windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines
+          - text: Microsoft Defender SmartScreen
+            url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/
+          - text: Windows Firewall
+            url: /windows/security/operating-system-security/network-security/windows-firewall/
+      - linkListType: architecture
+        links:
+          - text: BitLocker planning guide
+            url: /windows/security/operating-system-security/data-protection/bitlocker/planning-guide
+      - linkListType: how-to-guide
+        links:
+          - text: Configure BitLocker
+            url: /windows/security/operating-system-security/data-protection/bitlocker/configure
+          - text: Configure PDE
+            url: /windows/security/operating-system-security/data-protection/personal-data-encryption/configure
+      - linkListType: whats-new
+        links:
+          - text: Hyper-V firewall
+            url: /windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall
 
-    - title: OS security
-      imageSrc: /media/common/i_threat-protection.svg
-      links:
-        - url: /windows/security/operating-system-security
-          text: Trusted boot
-        - url: /windows/security/operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center
-          text: Windows security settings
-        - url: 	/windows/security/operating-system-security/data-protection/bitlocker/
-          text: BitLocker
-        - url: /windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines
-          text: Windows security baselines
-        - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/
-          text: Microsoft Defender SmartScreen
-        - url: /windows/security/operating-system-security
-          text: Learn more about OS security >
+  - title: Learn about identity protection
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Passwordless strategy
+            url: /windows/security/identity-protection/passwordless-strategy
+          - text: Windows Hello for Business
+            url: /windows/security/identity-protection/hello-for-business
+          - text: Windows passwordless experience
+            url: /windows/security/identity-protection/passwordless-experience
+          - text: Web sign-in for Windows
+            url: /windows/security/identity-protection/web-sign-in
+          - text: Passkeys
+            url: /windows/security/identity-protection/passkeys
+          - text: FIDO2 security keys
+            url: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
+          - text: Enhanced phishing protection with SmartScreen
+            url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
+      - linkListType: how-to-guide
+        links:
+          - text: Configure PIN reset
+            url: /windows/security/identity-protection/hello-for-business/pin-reset
+          - text: RDP sign-in with Windows Hello for Business
+            url: /windows/security/identity-protection/hello-for-business/rdp-sign-in
+      - linkListType: architecture
+        links:
+          - text: Plan a Windows Hello for Business deployment
+            url: /windows/security/identity-protection/hello-for-business/deploy/
+      - linkListType: deploy
+        links:
+          - text: Cloud Kerberos trust deployment guide
+            url: /windows/security/identity-protection/hello-for-business/deploy/hybrid-cloud-kerberos-trust
 
-    - title: Identity protection
-      imageSrc: /media/common/i_identity-protection.svg
-      links:
-        - url: /windows/security/identity-protection/hello-for-business
-          text: Windows Hello for Business
-        - url: /windows/security/identity-protection/passwordless-experience
-          text: Windows passwordless experience
-        - url: /windows/security/identity-protection/web-sign-in
-          text: Web sign-in for Windows
-        - url: /windows/security/identity-protection/passkeys
-          text: Support for passkeys in Windows
-        - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
-          text: Enhanced phishing protection with SmartScreen
-        - url: /windows/security/identity-protection
-          text: Learn more about identity protection >
+  - title: Learn about application security
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows Defender Application Control (WDAC)
+            url: /windows/security/application-security/application-control/windows-defender-application-control/
+          - text: User Account Control (UAC)
+            url: /windows/security/application-security/application-control/user-account-control
+          - text: Microsoft vulnerable driver blocklist
+            url: /windows/security/application-security/application-control/windows-defender-application-control/design/microsoft-recommended-driver-block-rules
+          - text: Microsoft Defender Application Guard (MDAG)
+            url: /windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview
+          - text: Windows Sandbox
+            url: /windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview
+      - linkListType: how-to-guide
+        links:
+          - text: Configure Windows Sandbox
+            url: /windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-configure-using-wsb-file
 
-    - title: Application security
-      imageSrc: /media/common/i_queries.svg
-      links:
-        - url: /windows/security/application-security/application-control/windows-defender-application-control/
-          text: Windows Defender Application Control (WDAC)
-        - url: /windows/security/application-security/application-control/user-account-control
-          text: User Account Control (UAC)
-        - url: /windows/security/application-security/application-control/windows-defender-application-control/design/microsoft-recommended-driver-block-rules
-          text: Microsoft vulnerable driver blocklist
-        - url: /windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview
-          text: Microsoft Defender Application Guard (MDAG)
-        - url: /windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview
-          text: Windows Sandbox
-        - url: /windows/security/application-security
-          text: Learn more about application security >
+  - title: Learn about security foundations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Zero trust
+            url: /windows/security/security-foundations/zero-trust-windows-device-health
+          - text: FIPS 140 validation
+            url: /windows/security/security-foundations/certification/fips-140-validation
+          - text: Common Criteria Certifications
+            url: /windows/security/security-foundations/certification/windows-platform-common-criteria
+          - text: Microsoft Security Development Lifecycle (SDL)
+            url: /windows/security/security-foundations/msft-security-dev-lifecycle
+          - text: Microsoft Windows Insider Preview bounty program
+            url: https://www.microsoft.com/msrc/bounty-windows-insider-preview
+          - text: OneFuzz service
+            url: https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/
+      - linkListType: whats-new
+        links:
+          - text: Completed FIPS validations - Windows 11
+            url: /windows/security/security-foundations/certification/validations/fips-140-windows11
+          - text: Completed CC certifications - Windows 11
+            url: /windows/security/security-foundations/certification/validations/cc-windows11
 
-    - title: Security foundations
-      imageSrc: /media/common/i_build.svg
-      links:
-        - url: /windows/security/security-foundations/certification/fips-140-validation
-          text: FIPS 140-2 validation
-        - url: /windows/security/security-foundations/certification/windows-platform-common-criteria
-          text: Common Criteria Certifications
-        - url: /windows/security/security-foundations/msft-security-dev-lifecycle
-          text: Microsoft Security Development Lifecycle (SDL)
-        - url: https://www.microsoft.com/msrc/bounty-windows-insider-preview
-          text: Microsoft Windows Insider Preview bounty program
-        - url: https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/
-          text: OneFuzz service
-        - url: /windows/security/security-foundations
-          text: Learn more about security foundations >
-
-    - title: Cloud security
-      imageSrc: /media/common/i_cloud-security.svg
-      links:
-        - url: /mem/intune/protect/security-baselines
-          text: Security baselines with Intune
-        - url: /windows/deployment/windows-autopatch
-          text: Windows Autopatch
-        - url: /windows/deployment/windows-autopilot
-          text: Windows Autopilot
-        - url: /universal-print
-          text: Universal Print
-        - url: /windows/client-management/mdm/remotewipe-csp
-          text: Remote wipe
-        - url: /windows/security/cloud-security
-          text: Learn more about cloud security >
-
-additionalContent:
-  sections:
-    - title: More Windows resources
-      items:
-
-        - title: Windows Server
-          links:
-            - text: Windows Server documentation
-              url: /windows-server
-            - text: What's new in Windows Server 2022?
-              url: /windows-server/get-started/whats-new-in-windows-server-2022
-            - text: Windows Server blog
-              url: https://cloudblogs.microsoft.com/windowsserver/
-
-        - title: Windows product site and blogs
-          links:
-            - text: Find out how Windows enables your business to do more
-              url: https://www.microsoft.com/microsoft-365/windows
-            - text: Windows blogs
-              url: https://blogs.windows.com/
-            - text: Windows IT Pro blog
-              url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
-            - text: Microsoft Intune blog
-              url: https://techcommunity.microsoft.com/t5/microsoft-intune-blog/bg-p/MicrosoftEndpointManagerBlog
-            - text: "Windows help & learning: end-user documentation"
-              url: https://support.microsoft.com/windows
-
-        - title: Participate in the community
-          links:
-            - text: Windows community
-              url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
-            - text: Microsoft Intune community
-              url: https://techcommunity.microsoft.com/t5/microsoft-intune/bd-p/Microsoft-Intune
-            - text: Microsoft Support community
-              url: https://answers.microsoft.com/windows/forum
+  - title: Learn about cloud security
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Security baselines with Intune
+            url: /mem/intune/protect/security-baselines
+          - text: Windows Autopatch
+            url: /windows/deployment/windows-autopatch
+          - text: Windows Autopilot
+            url: /windows/deployment/windows-autopilot
+          - text: Universal Print
+            url: /universal-print
+          - text: Remote wipe
+            url: /windows/client-management/mdm/remotewipe-csp

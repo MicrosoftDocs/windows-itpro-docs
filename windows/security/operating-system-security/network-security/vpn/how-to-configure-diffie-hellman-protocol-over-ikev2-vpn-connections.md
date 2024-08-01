@@ -1,7 +1,7 @@
 ---
 title: How to configure cryptographic settings for IKEv2 VPN connections
 description: Learn how to update the IKEv2 cryptographic settings of VPN servers and clients by running VPN cmdlets to secure connections.
-ms.date: 08/03/2023
+ms.date: 05/06/2024
 ms.topic: how-to
 ---
 
@@ -9,11 +9,11 @@ ms.topic: how-to
 
 In IKEv2 VPN connections, the default setting for IKEv2 cryptographic settings are:
 
-- Encryption Algorithm: DES3  
-- Integrity, Hash Algorithm: SHA1  
+- Encryption Algorithm: DES3
+- Integrity, Hash Algorithm: SHA1
 - Diffie Hellman Group (Key Size): DH2
 
-These settings aren't secure for IKE exchanges.  
+These settings aren't secure for IKE exchanges.
 
 To secure the connections, update the configuration of VPN servers and clients by running VPN cmdlets.
 
@@ -42,27 +42,27 @@ Set-VpnConnectionIPsecConfiguration -ConnectionName <String>
 
 ## IKEv2 Crypto Settings Example
 
-The following commands configure the IKEv2 cryptographic settings to:  
+The following commands configure the IKEv2 cryptographic settings to:
 
-- Encryption Algorithm: AES128  
-- Integrity, Hash Algorithm: SHA256  
-- Diffie Hellman Group (Key Size): DH14  
+- Encryption Algorithm: AES128
+- Integrity, Hash Algorithm: SHA256
+- Diffie Hellman Group (Key Size): DH14
 
-### IKEv2 VPN Server  
+### IKEv2 VPN Server
 
 ```powershell
-Set-VpnServerConfiguration -TunnelType IKEv2 -CustomPolicy -AuthenticationTransformConstants SHA256128 -CipherTransformConstants AES128 -DHGroup Group14 -EncryptionMethod AES128 -IntegrityCheckMethod SHA256 -PFSgroup PFS2048 -SALifeTimeSeconds 28800 -MMSALifeTimeSeconds 86400 -SADataSizeForRenegotiationKilobytes 1024000  
+Set-VpnServerConfiguration -TunnelType IKEv2 -CustomPolicy -AuthenticationTransformConstants SHA256128 -CipherTransformConstants AES128 -DHGroup Group14 -EncryptionMethod AES128 -IntegrityCheckMethod SHA256 -PFSgroup PFS2048 -SALifeTimeSeconds 28800 -MMSALifeTimeSeconds 86400 -SADataSizeForRenegotiationKilobytes 1024000
 restart-service RemoteAccess -PassThru
 ```
 
 If you need to switch back to the default IKEv2 settings, use this command:
 
 ```powershell
-Set-VpnServerConfiguration -TunnelType IKEv2 -RevertToDefault  
+Set-VpnServerConfiguration -TunnelType IKEv2 -RevertToDefault
 restart-service RemoteAccess -PassThru
 ```
 
-### IKEv2 VPN Client  
+### IKEv2 VPN Client
 
 ```powershell
 Set-VpnConnectionIPsecConfiguration -ConnectionName <String - your VPN connection name> -AuthenticationTransformConstants SHA256128 -CipherTransformConstants AES128 -DHGroup Group14 -EncryptionMethod AES128 -IntegrityCheckMethod SHA256 -PfsGroup PFS2048 -Force
@@ -74,5 +74,5 @@ If you need to switch back to the default IKEv2 settings, use this command:
 Set-VpnConnectionIPsecConfiguration -ConnectionName <String - your VPN connection name> -RevertToDefault -Force
 ```
 
-> [!TIP]  
-> If you're configuring a all-user VPN connection or a Device Tunnel you must use the `-AllUserConnection` parameter in the `Set-VpnConnectionIPsecConfiguration` command.  
+> [!TIP]
+> If you're configuring a all-user VPN connection or a Device Tunnel you must use the `-AllUserConnection` parameter in the `Set-VpnConnectionIPsecConfiguration` command.

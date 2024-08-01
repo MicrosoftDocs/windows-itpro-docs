@@ -1,7 +1,7 @@
 ---
 title: AssignedAccess DDF file
 description: View the XML file containing the device description framework (DDF) for the AssignedAccess configuration service provider.
-ms.date: 01/18/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -54,7 +54,7 @@ The following XML file contains the device description framework (DDF) for the A
         </AccessType>
         <Description>This node can accept and return json string which comprises of account name, and AUMID for Kiosk mode app.
 
-Example: {"User":"domain\\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}.
+Example: {"User":"domain\\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}. 
 
 When configuring kiosk mode app, account name will be used to find the target user. Account name includes domain name and user name. Domain name can be optional if user name is unique across the system. For a local account, domain name should be machine name. When "Get" is executed on this node, domain name is always returned in the output.
 

@@ -1,7 +1,7 @@
 ---
 title: Windows Autopatch deployment guide
 description: This guide explains how to successfully deploy Windows Autopatch in your environment
-ms.date: 08/24/2023
+ms.date: 07/08/2024
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -12,7 +12,6 @@ manager: aaroncz
 ms.reviewer: hathind
 ms.collection:
   - tier2
-  - essentials-get-started
 ---
 
 # Windows Autopatch deployment guide
@@ -321,11 +320,11 @@ If you need assistance with your Windows Autopatch deployment journey, you have 
 
 First contact your Microsoft Account team who can work with you to establish any guidance or support you might need. If you don't have a Microsoft Account Team contact or wish to explore other routes, Microsoft FastTrack offers Microsoft 365 deployment guidance for customers with 150 or more licenses of an eligible subscription at no additional cost. Finally, you can also log a support request with the Windows Autopatch Service Engineering Team.
 
-### Windows Autopatch Private Community (APC)
+### Windows Commercial Advisors (WCA)
 
-Once you're underway with your deployment, consider joining the [Windows Autopatch Private Community (APC)](https://aka.ms/WindowsAutopatchPrivateCommunity) where you can:
+Once you're underway with your deployment, consider joining the [Windows Commercial Advisors (WCA)](https://aka.ms/joinccp) community within the [Microsoft Management Customer Connection Program (MM CCP)](https://techcommunity.microsoft.com/t5/microsoft-intune-blog/announcing-the-microsoft-management-customer-connection-program/ba-p/3725035), where you can:
 
-- Engage directly with the Windows Autopatch Engineering Teams and other Autopatch customers
+- Engage directly with the Windows Commercial Engineering Teams and other Windows Commercial Customers
 - Gain access to:
     - Exclusive virtual meetings
     - Focus groups
@@ -333,6 +332,3 @@ Once you're underway with your deployment, consider joining the [Windows Autopat
     - Teams discussions
     - Previews
 
-### Windows Autopatch Technology Adoption Program (TAP)
-
-If you have at least 500 devices enrolled in the service, and will test and give Microsoft feedback at least once a year, consider signing up to the [Windows Autopatch Technology Adoption Program (TAP)](https://aka.ms/JoinWindowsAutopatchTAP) to try out new and upcoming Windows Autopatch features.

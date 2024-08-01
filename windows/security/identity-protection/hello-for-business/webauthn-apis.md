@@ -1,7 +1,7 @@
 ---
 title: WebAuthn APIs
 description: Learn how to use WebAuthn APIs to enable passwordless authentication for your sites and apps.
-ms.date: 07/27/2023
+ms.date: 04/23/2024
 ms.topic: how-to
 ---
 # WebAuthn APIs for passwordless authentication on Windows
@@ -14,13 +14,13 @@ Starting in **Windows 11, version 22H2**, WebAuthn APIs support ECC algorithms.
 
 ## What does this mean?
 
-By using WebAuthn APIs, developer partners and the developer community can use [Windows Hello](./index.md) or [FIDO2 Security Keys](/azure/active-directory/authentication/howto-authentication-passwordless-security-key) to implement passwordless multi-factor authentication for their applications on Windows devices.
+By using WebAuthn APIs, developer partners and the developer community can use [Windows Hello](./index.md) or [FIDO2 Security Keys][ENT-1] to implement passwordless multi-factor authentication for their applications on Windows devices.
 
 Users of these apps or sites can use any browser that supports WebAuthn APIs for passwordless authentication. Users will have a familiar and consistent experience on Windows, no matter which browser they use.
 
 Developers should use the WebAuthn APIs to support FIDO2 authentication keys in a consistent way for users. Additionally, developers can use all the transports that are available per FIDO2 specifications (USB, NFC, and BLE) while avoiding the interaction and management overhead.
 
-> [!NOTE]  
+> [!NOTE]
 > When these APIs are in use, Windows 10 browsers or applications don't have direct access to the FIDO2 transports for FIDO-related messaging.
 
 ## The big picture
@@ -29,7 +29,7 @@ The Client to Authenticator Protocol 2 (CTAP2) and WebAuthn define an abstractio
 
 The authentication process starts when the user makes a specific user gesture that indicates consent for the operation. At the request of the client, the authenticator securely creates strong cryptographic keys and stores them locally.
 
-After these client-specific keys are created, clients can request attestations for registration and authentication. The type of signature that the private key uses reflects the user gesture that was made.  
+After these client-specific keys are created, clients can request attestations for registration and authentication. The type of signature that the private key uses reflects the user gesture that was made.
 
 The following diagram shows how CTAP and WebAuthn interact. The light blue dotted arrows represent interactions that depend on the specific implementation of the platform APIs.
 
@@ -39,15 +39,15 @@ The following diagram shows how CTAP and WebAuthn interact. The light blue dotte
 
 A combined WebAuthn/CTAP2 dance includes the following cast of characters:
 
-- **Client device**. The *client device* is the hardware that hosts a given strong authentication. Laptops and phones are examples of client devices.  
+- **Client device**. The *client device* is the hardware that hosts a given strong authentication. Laptops and phones are examples of client devices.
 
-- **Relying parties and clients**. *Relying parties* are web or native applications that consume strong credentials. The relying parties run on client devices.  
+- **Relying parties and clients**. *Relying parties* are web or native applications that consume strong credentials. The relying parties run on client devices.
 
   - As a relying party, a native application can also act as a WebAuthn client to make direct WebAuthn calls.
-  
-  - As a relying party, a web application can't directly interact with the WebAuthn API. The relying party must broker the deal through the browser.  
-  
-  > [!NOTE]  
+
+  - As a relying party, a web application can't directly interact with the WebAuthn API. The relying party must broker the deal through the browser.
+
+  > [!NOTE]
   > The preceding diagram doesn't depict Single Sign-On (SSO) authentication. Be careful not to confuse FIDO relying parties with federated relying parties.
 
 - **WebAuthn API**. The *WebAuthn API* enables clients to make requests to authenticators. The client can request the authenticator to create a key, provide an assertion about a key, report capabilities, manage a PIN, and so on.
@@ -69,7 +69,7 @@ FIDO2 authenticators have already been implemented and WebAuthn relying parties 
 - Keys for multiple accounts (keys can be stored per relying party)
 - Client PIN
 - Location (the authenticator returns a location)
-- [Hash-based Message Authentication Code (HMAC)-secret](/dotnet/api/system.security.cryptography.hmac) (enables offline scenarios)
+- [Hash-based Message Authentication Code (HMAC)-secret][NET-1] (enables offline scenarios)
 
 The following options might be useful in the future, but haven't been observed in the wild yet:
 
@@ -82,7 +82,7 @@ The following options might be useful in the future, but haven't been observed i
 
 The Microsoft FIDO2 implementation has been years in the making. Software and services are implemented independently as standards-compliant entities. As of the Windows 10, version 1809 (October 2018) release, all Microsoft components use the latest WebAuthn Candidate Release. It's a stable release that's not expected to normatively change before the specification is finally ratified. Because Microsoft is among the first in the world to deploy FIDO2, some combinations of popular non-Microsoft components won't be interoperable yet.
 
-Here's an approximate layout of where the Microsoft bits go:  
+Here's an approximate layout of where the Microsoft bits go:
 
 :::image type="content" source="images/webauthn-apis/webauthn-apis-fido2-overview-microsoft-version.png" alt-text="The diagram shows how the WebAuthn API interacts with the Microsoft relying parties and the CTAPI2 API.":::
 
@@ -94,21 +94,32 @@ Here's an approximate layout of where the Microsoft bits go:
   - Offline scenarios work (enabled by using HMAC)
   - Users can put keys for multiple user accounts on the same authenticator
   - If it's necessary, authenticators can use a client PIN to unlock a TPM
-  > [!IMPORTANT]  
+  > [!IMPORTANT]
   > Because Microsoft Account requires features and extensions that are unique to FIDO2 CTAP2 authenticators, it doesn't accept CTAP1 (U2F) credentials.
 
 - **WebAuthn client: Microsoft Edge**. Microsoft Edge can handle the user interface for the WebAuthn and CTAP2 features that this article describes. It also supports the AppID extension. Microsoft Edge can interact with both CTAP1 and CTAP2 authenticators. This scope for interaction means that it can create and use both U2F and FIDO2 credentials. However, Microsoft Edge doesn't speak the U2F protocol. Therefore, relying parties must use only the WebAuthn specification. Microsoft Edge on Android doesn't support WebAuthn.
 
-  > [!NOTE]  
-  > For authoritative information about Microsoft Edge support for WebAuthn and CTAP, see [Legacy Microsoft Edge developer documentation](/microsoft-edge/dev-guide/windows-integration/web-authentication).
+  > [!NOTE]
+  > For authoritative information about Microsoft Edge support for WebAuthn and CTAP, see [Legacy Microsoft Edge developer documentation][EDGE-1].
 
 - **Platform: Windows 10, Windows 11**. Windows 10 and Windows 11 host the Win32 Platform WebAuthn APIs.
 
-- **Roaming Authenticators**. You might notice that there's no *Microsoft* roaming authenticator. The reason is because there's already a strong ecosystem of products that specialize in strong authentication, and every customer (whether corporations or individuals) has different requirements for security, ease of use, distribution, and account recovery. For more information on the ever-growing list of FIDO2-certified authenticators, see [FIDO Certified Products](https://fidoalliance.org/certification/fido-certified-products/). The list includes built-in authenticators, roaming authenticators, and even chip manufacturers who have certified designs.
+- **Roaming Authenticators**. You might notice that there's no *Microsoft* roaming authenticator. The reason is because there's already a strong ecosystem of products that specialize in strong authentication, and every customer (whether corporations or individuals) has different requirements for security, ease of use, distribution, and account recovery. For more information on the ever-growing list of FIDO2-certified authenticators, see [FIDO Certified Products][EXT-1]. The list includes built-in authenticators, roaming authenticators, and even chip manufacturers who have certified designs.
 
 ## Developer references
 
-The WebAuthn APIs are documented in the [Microsoft/webauthn](https://github.com/Microsoft/webauthn) GitHub repo. To understand how FIDO2 authenticators work, review the following two specifications:
+The WebAuthn APIs are documented in the [Microsoft/webauthn][EXT-2] GitHub repo. To understand how FIDO2 authenticators work, review the following two specifications:
 
-- [Web Authentication: An API for accessing Public Key Credentials](https://www.w3.org/TR/webauthn/) (available on the W3C site). This document is known as the WebAuthn spec.
-- [Client to Authenticator Protocol (CTAP)](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html). This document is available at the [FIDO Alliance](http://fidoalliance.org/) site, on which hardware and platform teams are working together to solve the problem of FIDO authentication.
+- [Web Authentication: An API for accessing Public Key Credentials][EXT-3] (available on the W3C site). This document is known as the WebAuthn spec.
+- [Client to Authenticator Protocol (CTAP)][EXT-4]. This document is available at the [FIDO Alliance][EXT-5] site, on which hardware and platform teams are working together to solve the problem of FIDO authentication.
+
+<!--links-->
+
+[ENT-1]: /entra/identity/authentication/how-to-enable-passkey-fido2
+[NET-1]: /dotnet/api/system.security.cryptography.hmac
+[EDGE-1]: /microsoft-edge/dev-guide/windows-integration/web-authentication
+[EXT-1]: https://fidoalliance.org/certification/fido-certified-products/
+[EXT-2]: https://github.com/Microsoft/webauthn
+[EXT-3]: https://www.w3.org/TR/webauthn/
+[EXT-4]: https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html
+[EXT-5]: http://fidoalliance.org
