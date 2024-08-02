@@ -4082,7 +4082,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md",
-      "redirect_url": "/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen",
+      "redirect_url": "https://feedback.smartscreen.microsoft.com/smartscreenfaq.aspx",
       "redirect_document_id": false
     },
     {
@@ -6727,7 +6727,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
-      "redirect_url": "/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview",
+      "redirect_url": "https://feedback.smartscreen.microsoft.com/smartscreenfaq.aspx",
       "redirect_document_id": false
     },
     {
