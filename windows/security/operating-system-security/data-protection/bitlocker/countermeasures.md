@@ -96,20 +96,6 @@ An attacker might modify the boot manager configuration database (BCD), which is
 
 An attacker might also replace the entire operating system disk while preserving the platform hardware and firmware, and could then extract a protected BitLocker key blob from the metadata of the victim OS partition. The attacker could then attempt to unseal that BitLocker key blob by calling the TPM API from an operating system under their control. This can't succeed because when Windows seals the BitLocker key to the TPM, it does it with a PCR 11 value of 0. To successfully unseal the blob, PCR 11 in the TPM must have a value of 0. However, when the boot manager passes the control to any boot loader (legitimate or rogue), it always changes PCR 11 to a value of 1. Since the PCR 11 value is guaranteed to be different after exiting the boot manager, the attacker can't unlock the BitLocker key.
 
-To prevent boot manger roll-back attacks, Windows updates released on and after July 2024 changed the default PCR Validation Profile for **UEFI with Secure Boot** from `7, 11` to `4, 7, 11`.
-
-The PCR values map to:
-
-- `PCR 4: Boot Manager`
-- `PCR 7: Secure Boot State`
-- `PCR 11: BitLocker access control`
-
-> [!TIP]
-> To check what PCRs are in use, execute the following command:
-> ```cmd
-> manage-bde.exe -protectors -get c:
-> ```
-
 ## Attacker countermeasures
 
 The following sections cover mitigations for different types of attackers.
