@@ -5,7 +5,7 @@ summary: Learn how to deploy, secure, and manage Windows clients for your organi
 brand: windows
 
 metadata:
-  title: Windows client documentation
+  title: Windows client documentation for IT Pros
   description: Learn how to deploy, secure, and manage Windows clients for your organization.
   ms.topic: hub-page
   ms.service: windows-client
@@ -91,7 +91,7 @@ productDirectory:
           text: Diagnostic Data Viewer
         - url: /windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services
           text: Manage connections to Microsoft services
-        - url: /windows/privacy/windows-10-and-privacy-compliance
+        - url: /windows/privacy/windows-privacy-compliance-guide
           text: Windows privacy compliance guide
         - url: /windows/privacy
           text: Learn more about privacy in Windows >

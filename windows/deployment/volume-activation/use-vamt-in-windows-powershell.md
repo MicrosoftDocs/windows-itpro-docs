@@ -1,13 +1,13 @@
 ---
-title: Use VAMT in Windows PowerShell (Windows 10)
+title: Use VAMT in Windows PowerShell
 description: Learn how to use Volume Activation Management Tool (VAMT) PowerShell cmdlets to perform the same functions as the Vamt.exe command-line tool.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 11/07/2022
-ms.topic: conceptual
+ms.topic: how-to
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ---
 
@@ -19,27 +19,23 @@ The Volume Activation Management Tool (VAMT) PowerShell cmdlets can be used to p
 
 ### Install PowerShell 3.0
 
-VAMT PowerShell cmdlets require Windows PowerShell, which is included in Windows 10, Windows 8 and Windows Server® 2012. You can download PowerShell for Windows 7 or other operating systems from the [Microsoft Download Center](/powershell/scripting/install/installing-powershell).
+VAMT PowerShell cmdlets require Windows PowerShell, which is included in Windows 10 and later. To download the latest version of PowerShell, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell).
 
-### Install the Windows Assessment and Deployment Kit**
+### Install the Windows Assessment and Deployment Kit
 
-In addition to PowerShell, you must import the VAMT PowerShell module. The module is included in the VAMT 3.0 folder after you install the Windows Assessment and Deployment Kit (Windows ADK).
+In addition to PowerShell, you must import the VAMT PowerShell module. The module is included in the VAMT 3.0 folder after you install the [Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
 
 ### Prepare the VAMT PowerShell environment
 
 To open PowerShell with administrative credentials, select **Start** and enter `PowerShell` to locate the program. Right-click **Windows PowerShell**, and then select **Run as administrator**. To open PowerShell in Windows 7, select **Start**, select **All Programs**, select **Accessories**, select **Windows PowerShell**, right-click **Windows PowerShell**, and then select **Run as administrator**.
 
-  > [!IMPORTANT]  
+  > [!IMPORTANT]
   > If you are using a computer that has an 64-bit processor, select **Windows PowerShell (x86)**. VAMT PowerShell cmdlets are only supported for x86 architecture. You must use an x86 version of Windows PowerShell to import the VAMT module
-  
+
   The x86 versions of Windows PowerShell are available in the following directories:
 
-- PowerShell:
-  
-  `C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
-- PowerShell ISE:
-  
-  `C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell_ise.exe`
+- PowerShell: `C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
+- PowerShell ISE: `C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell_ise.exe`
 
 For all supported operating systems, you can use the VAMT PowerShell module included with the Windows ADK. By default, the module is installed with the Windows ADK in the VAMT folder. Change directories to the directory where VAMT is located. For example, if the Windows ADK is installed in the default location of `C:\Program Files(x86)\Windows Kits\10`, enter:
 
@@ -85,7 +81,7 @@ get-help get-VamtProduct -all
    For example, enter:
 
    ```powershell
-   get-help get-VamtProduct 
+   get-help get-VamtProduct
    ```
 
 2. To see examples using a cmdlet, enter:

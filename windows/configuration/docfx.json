@@ -52,7 +52,6 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Configure Windows",
       "contributors_to_exclude": [
         "dstrome2",
         "rjagiewich",

@@ -1,0 +1,41 @@
+name: Assign and label PR
+
+permissions:
+  pull-requests: write
+  contents: read
+  actions: read
+      
+on: 
+    workflow_run:
+        workflows: [Background tasks]
+        types:
+            - completed
+
+jobs:
+    download-payload:
+        name: Download and extract payload artifact
+        uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-ExtractPayload.yml@workflows-prod
+        with:
+            WorkflowId: ${{ github.event.workflow_run.id }}
+            OrgRepo: ${{ github.repository }}
+        secrets:
+            AccessToken: ${{ secrets.GITHUB_TOKEN }}
+
+    label-assign:
+        name: Run assign and label
+        needs: [download-payload]
+        uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-AutoLabelAssign.yml@workflows-prod
+        with:
+            PayloadJson: ${{ needs.download-payload.outputs.WorkflowPayload }}
+            AutoAssignUsers: 1
+            AutoLabel: 1
+            ExcludedUserList: '["user1", "user2"]'
+            ExcludedBranchList: '["branch1", "branch2"]'
+        secrets:
+            AccessToken: ${{ secrets.GITHUB_TOKEN }}
+            
+            
+        
+          
+
+            

@@ -27,7 +27,7 @@ landingContent:
   - linkListType: concept
     links:
     - text: Plan for Windows 11
-      url: /windows/whats-new/windows-11-plan?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+      url: /windows/whats-new/windows-11-plan?context=/windows/deployment/context/context
     - text: Create a deployment plan
       url: update/create-deployment-plan.md
     - text: Define readiness criteria
@@ -44,7 +44,7 @@ landingContent:
   - linkListType: get-started
     links:
     - text: Prepare for Windows 11
-      url: /windows/whats-new/windows-11-prepare?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+      url: /windows/whats-new/windows-11-prepare?context=/windows/deployment/context/context
     - text: Prepare to deploy Windows updates
       url: update/prepare-deploy-windows.md
     - text: Prepare updates using Windows Update for Business
@@ -52,7 +52,7 @@ landingContent:
     - text: Evaluate and update infrastructure
       url: update/update-policies.md
     - text: Set up Delivery Optimization for Windows client updates
-      url: do/waas-delivery-optimization-setup.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+      url: do/delivery-optimization-configure.md?context=/windows/deployment/context/context
     - text: Prepare for imaging with Configuration Manager
       url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
 
