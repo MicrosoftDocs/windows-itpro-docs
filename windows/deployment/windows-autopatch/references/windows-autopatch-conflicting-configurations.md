@@ -37,8 +37,6 @@ The most common sources of conflicting configurations include:
 ```cmd
 Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations Value=Any
 Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DisableWindowsUpdateAccess Value=Any
-Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\WUServer String=Any
-Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\UseWUServer Value=Any
 Location= HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\NoAutoUpdate Value=Any
 ```
 
@@ -90,8 +88,6 @@ Copy and paste the following PowerShell script into PowerShell or a PowerShell e
 ```powershell
 Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "DoNotConnectToWindowsUpdateInternetLocations"
 Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "DisableWindowsUpdateAccess"
-Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" -Name "WUServer"
-Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" -Name "UseWUServer"
 Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" -Name "NoAutoUpdate"
 ```
 
@@ -104,8 +100,6 @@ Copy and paste the following code into a text editor, and save it with a `.cmd` 
 echo Deleting registry keys...
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "DoNotConnectToWindowsUpdateInternetLocations" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "DisableWindowsUpdateAccess" /f
-reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate" /v "WUServer" /f
-reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v "UseWUServer" /f
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v "NoAutoUpdate" /f
 echo Registry keys deleted.
 Pause
@@ -120,9 +114,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
 "DoNotConnectToWindowsUpdateInternetLocations"=-
 "DisableWindowsUpdateAccess"=-
-"WUServer"=-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
-"UseWUServer"=-
 "NoAutoUpdate"=-
 ```
 
