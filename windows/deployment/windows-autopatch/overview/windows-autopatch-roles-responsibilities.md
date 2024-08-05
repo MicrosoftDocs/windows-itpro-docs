@@ -15,7 +15,7 @@ ms.collection:
   - tier1
 ---
 
-# Roles and responsibilities
+# Roles and responsibilities 
 
 This article outlines your responsibilities and Windows Autopatch's responsibilities when:
 
