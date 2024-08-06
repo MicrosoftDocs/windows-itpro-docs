@@ -358,7 +358,7 @@ Possible error values:
 <!-- Device-DeviceAccount-ExchangeModernAuthEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19041.789] and later <br> ✅ Windows 10, version 2009 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19042.789] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19041.789] and later <br> ✅ Windows 10, version 20H2 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19042.789] and later <br> ✅ Windows Insider Preview |
 <!-- Device-DeviceAccount-ExchangeModernAuthEnabled-Applicability-End -->
 
 <!-- Device-DeviceAccount-ExchangeModernAuthEnabled-OmaUri-Begin -->
@@ -1010,7 +1010,7 @@ Specifies the domain of the Skype for Business account when you are using Active
 <!-- Device-InBoxApps-Teams-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB4566782](https://support.microsoft.com/help/4566782) [10.0.19041.450] and later <br> ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB4566782](https://support.microsoft.com/help/4566782) [10.0.19041.450] and later <br> ✅ Windows 10, version 20H2 [10.0.19042] and later |
 <!-- Device-InBoxApps-Teams-Applicability-End -->
 
 <!-- Device-InBoxApps-Teams-OmaUri-Begin -->
@@ -1049,7 +1049,7 @@ This node controls policies specific to the Teams App on Surface Hub.
 <!-- Device-InBoxApps-Teams-Configurations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB4566782](https://support.microsoft.com/help/4566782) [10.0.19041.450] and later <br> ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB4566782](https://support.microsoft.com/help/4566782) [10.0.19041.450] and later <br> ✅ Windows 10, version 20H2 [10.0.19042] and later |
 <!-- Device-InBoxApps-Teams-Configurations-Applicability-End -->
 
 <!-- Device-InBoxApps-Teams-Configurations-OmaUri-Begin -->
@@ -2314,7 +2314,7 @@ Specifies whether to allow the ability to resume a session when the session time
 <!-- Device-Properties-DefaultAutomaticFraming-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 [10.0.19042] and later |
 <!-- Device-Properties-DefaultAutomaticFraming-Applicability-End -->
 
 <!-- Device-Properties-DefaultAutomaticFraming-OmaUri-Begin -->

@@ -286,7 +286,7 @@ The most restrictive value is `0` to not allow indexing of encrypted items.
 <!-- AllowSearchHighlights-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5011543](https://support.microsoft.com/help/5011543) [10.0.19042.1620] and later <br> ✅ Windows 10, version 21H1 with [KB5011543](https://support.microsoft.com/help/5011543) [10.0.19043.1620] and later <br> ✅ Windows 10, version 21H2 with [KB5011543](https://support.microsoft.com/help/5011543) [10.0.19044.1620] and later <br> ✅ Windows 11, version 21H2 with [KB5023774](https://support.microsoft.com/help/5023774) [10.0.22000.1761] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5011543](https://support.microsoft.com/help/5011543) [10.0.19042.1620] and later <br> ✅ Windows 10, version 21H1 with [KB5011543](https://support.microsoft.com/help/5011543) [10.0.19043.1620] and later <br> ✅ Windows 10, version 21H2 with [KB5011543](https://support.microsoft.com/help/5011543) [10.0.19044.1620] and later <br> ✅ Windows 11, version 21H2 with [KB5023774](https://support.microsoft.com/help/5023774) [10.0.22000.1761] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- AllowSearchHighlights-Applicability-End -->
 
 <!-- AllowSearchHighlights-OmaUri-Begin -->

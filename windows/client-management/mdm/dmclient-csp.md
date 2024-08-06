@@ -2167,7 +2167,7 @@ Integer node determining if a Device was Successfully provisioned. 0 is failure,
 <!-- Device-Provider-{ProviderID}-ForceAadToken-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5014699](https://support.microsoft.com/help/5014699) [10.0.19042.1766] and later <br> ✅ Windows 10, version 21H1 with [KB5014699](https://support.microsoft.com/help/5014699) [10.0.19043.1766] and later <br> ✅ Windows 10, version 21H2 with [KB5014699](https://support.microsoft.com/help/5014699) [10.0.19044.1766] and later <br> ✅ Windows 11, version 21H2 with [KB5014697](https://support.microsoft.com/help/5014697) [10.0.22000.739] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5014699](https://support.microsoft.com/help/5014699) [10.0.19042.1766] and later <br> ✅ Windows 10, version 21H1 with [KB5014699](https://support.microsoft.com/help/5014699) [10.0.19043.1766] and later <br> ✅ Windows 10, version 21H2 with [KB5014699](https://support.microsoft.com/help/5014699) [10.0.19044.1766] and later <br> ✅ Windows 11, version 21H2 with [KB5014697](https://support.microsoft.com/help/5014697) [10.0.22000.739] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-ForceAadToken-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ForceAadToken-OmaUri-Begin -->
@@ -2374,7 +2374,7 @@ Returns the hardware device ID.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-OmaUri-Begin -->
@@ -2452,7 +2452,7 @@ Endpoint Discovery is the process where a specific URL (the "discovery endpoint"
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-OmaUri-Begin -->
@@ -2492,7 +2492,7 @@ This is an execution node and will trigger a silent Declared Configuration enrol
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-OmaUri-Begin -->
@@ -2547,7 +2547,7 @@ Returns the current enrollment or un-enrollment status of the linked enrollment.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-OmaUri-Begin -->
@@ -2586,7 +2586,7 @@ Supports Get Only. Returns the HRESULT for the last error when enroll/unenroll f
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-OmaUri-Begin -->

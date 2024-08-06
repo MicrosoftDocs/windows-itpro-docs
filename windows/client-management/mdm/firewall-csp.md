@@ -1103,7 +1103,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 <!-- Device-MdmStore-DynamicKeywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-OmaUri-Begin -->
@@ -1141,7 +1141,7 @@ This value is used as an on/off switch. If this value is on and EnableFirewall i
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-OmaUri-Begin -->
@@ -1180,7 +1180,7 @@ A list of dynamic keyword addresses for use within firewall rules. Dynamic keywo
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-OmaUri-Begin -->
@@ -1222,7 +1222,7 @@ A unique GUID string identifier for this dynamic keyword address.
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Addresses-OmaUri-Begin -->
@@ -1273,7 +1273,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-AutoResolve-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-AutoResolve-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-AutoResolve-OmaUri-Begin -->
@@ -1322,7 +1322,7 @@ If this flag is set to TRUE, then the 'keyword' field of this object is expected
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Keyword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Keyword-Applicability-End -->
 
 <!-- Device-MdmStore-DynamicKeywords-Addresses-{Id}-Keyword-OmaUri-Begin -->
@@ -2341,7 +2341,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressDynamicKeywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19042.1706] and later <br> ✅ Windows 10, version 21H1 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19043.1706] and later <br> ✅ Windows 10, version 21H2 with [KB5013942](https://support.microsoft.com/help/5013942) [10.0.19044.1706] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressDynamicKeywords-Applicability-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-RemoteAddressDynamicKeywords-OmaUri-Begin -->
