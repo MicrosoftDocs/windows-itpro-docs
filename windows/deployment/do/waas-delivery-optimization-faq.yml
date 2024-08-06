@@ -17,7 +17,7 @@ metadata:
     - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
     - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019, and later</a>
     - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>	
-  ms.date: 05/23/2024
+  ms.date: 08/06/2024
 title: Frequently Asked Questions about Delivery Optimization
 summary: |
   This article answers frequently asked questions about Delivery Optimization.
@@ -29,7 +29,7 @@ summary: |
   - [How are downloads initiated by Delivery Optimization?](#how-are-downloads-initiated-by-delivery-optimization)
   - [Delivery Optimization is downloading Windows content on my devices directly from an IP Address, is it expected?](#delivery-optimization-is-downloading-windows-content-on-my-devices-directly-from-an-ip-address--is-it-expected)
   - [How do I turn off Delivery Optimization?](#how-do-i-turn-off-delivery-optimization)
-  - [My download is failing with error code 0x80d03002, how do I fix it?](#my-download-is-failing-with-error-code-0x80d03002--how-do-i-fix-it]
+  - [My download is failing with error code 0x80d03002, how do I fix it?](#my-download-is-failing-with-error-code-0x80d03002--how-do-i-fix-it)
 
   **Network related configuration questions**:
  
