@@ -29,6 +29,7 @@ summary: |
   - [How are downloads initiated by Delivery Optimization?](#how-are-downloads-initiated-by-delivery-optimization)
   - [Delivery Optimization is downloading Windows content on my devices directly from an IP Address, is it expected?](#delivery-optimization-is-downloading-windows-content-on-my-devices-directly-from-an-ip-address--is-it-expected)
   - [How do I turn off Delivery Optimization?](#how-do-i-turn-off-delivery-optimization)
+  - [My download is failing with error code 0x80d03002, how do I fix it?](#my-download-is-failing-with-error-code-0x80d03002--how-do-i-fix-it]
 
   **Network related configuration questions**:
  
