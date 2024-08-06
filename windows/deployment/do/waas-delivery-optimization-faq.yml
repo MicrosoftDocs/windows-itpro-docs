@@ -29,6 +29,7 @@ summary: |
   - [How are downloads initiated by Delivery Optimization?](#how-are-downloads-initiated-by-delivery-optimization)
   - [Delivery Optimization is downloading Windows content on my devices directly from an IP Address, is it expected?](#delivery-optimization-is-downloading-windows-content-on-my-devices-directly-from-an-ip-address--is-it-expected)
   - [How do I turn off Delivery Optimization?](#how-do-i-turn-off-delivery-optimization)
+  - [My download is failing with error code 0x80d03002, how do I fix it?](#my-download-is-failing-with-error-code-0x80d03002--how-do-i-fix-it]
 
   **Network related configuration questions**:
  
@@ -68,11 +69,17 @@ sections:
         answer: |
           Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a device is configured to use Delivery Optimization peering (on by default), it does so with the HTTP downloader capabilities to optimize bandwidth usage. 
           If you'd like to disable peer-to-peer capabilities of Delivery Optimization, change the Delivery Optimization [Download mode](waas-delivery-optimization-reference.md#download-mode) setting to '0', which will disable peer-to-peer and provide hash checks. [Download mode](waas-delivery-optimization-reference.md#download-mode) set to '99' should only be used when the device is offline and doesn't have internet access.
-          Don't set **Download mode** to '100' (Bypass), which can cause some content to fail to download. Starting in Windows 11, Download mode '100' is deprecated.
+          Don't set **Download mode** to '100' (Bypass), which can cause some content to fail to download with error code 0x80d03002. Starting in Windows 11, Download mode '100' is deprecated.
 
           > [!NOTE]
           > Disabling Delivery Optimization won't prevent content from downloading to your devices. If you're looking to pause updates, you need to set policies for the relevant components such as Windows Update, Windows Store or Microsoft Edge browser.  If you're looking to reduce the load on your network, look into using Delivery Optimization Peer-to-Peer, Microsoft Connected Cache or apply the [network throttling policies](waas-delivery-optimization-reference.md#maximum-download-bandwidth) available for Delivery Optimization.
-  
+       
+      - question: My download is failing with error code 0x80d03002, how do I fix it?
+        answer: |
+          If you set the DownloadMode policy to '100' (Bypass) some content downloads that require Delivery Optimization may fail with error code 0x80d03002.
+          If you intend to disable peer-to-peer capabilities of Delivery Optimization, change the Delivery Optimization [Download mode](waas-delivery-optimization-reference.md#download-mode) setting to '0', which will disable peer-to-peer and provide hash checks. [Download mode](waas-delivery-optimization-reference.md#download-mode) set to '99' should only be used when the device is offline and doesn't have internet access.
+          Don't set **Download mode** to '100' (Bypass), which can cause some content to fail to download. Starting in Windows 11, Download mode '100' is deprecated.
+
   - name: Network related configuration questions
     questions:
       - question: Which ports does Delivery Optimization use?
