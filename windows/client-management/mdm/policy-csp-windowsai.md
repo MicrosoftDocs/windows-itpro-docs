@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 06/28/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -82,7 +82,7 @@ This policy setting allows you to determine whether end users have the option to
 <!-- TurnOffWindowsCopilot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 21H2 [10.0.19044.3758] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2361] and later <br> ✅ Windows 11, version 23H2 [10.0.22631] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 21H2 [10.0.19044.3758] and later <br> ✅ Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278) [10.0.19045.3758] and later <br> ✅ Windows 11, version 22H2 with [KB5030310](https://support.microsoft.com/help/5030310) [10.0.22621.2361] and later <br> ✅ Windows 11, version 23H2 [10.0.22631] and later |
 <!-- TurnOffWindowsCopilot-Applicability-End -->
 
 <!-- TurnOffWindowsCopilot-OmaUri-Begin -->

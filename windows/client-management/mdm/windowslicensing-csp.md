@@ -1,7 +1,7 @@
 ---
 title: WindowsLicensing CSP
 description: Learn more about the WindowsLicensing CSP.
-ms.date: 01/18/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -156,7 +156,7 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 <!-- Device-DeviceLicensingService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-OmaUri-Begin -->
@@ -195,7 +195,7 @@ Device Based Subscription.
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-OmaUri-Begin -->
@@ -234,7 +234,7 @@ Returns the last error code of Refresh/Remove Device License operation. Value wo
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-OmaUri-Begin -->
@@ -273,7 +273,7 @@ Returns last error description from Device Licensing. Value would be empty, if e
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-OmaUri-Begin -->
@@ -312,7 +312,7 @@ Returns the status of Refresh/Remove Device License operation.
 <!-- Device-DeviceLicensingService-LicenseType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-LicenseType-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-LicenseType-OmaUri-Begin -->
