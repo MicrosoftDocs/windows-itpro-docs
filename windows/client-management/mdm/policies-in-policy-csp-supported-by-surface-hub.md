@@ -118,7 +118,7 @@ This article lists the policies that are applicable for the Surface Hub operatin
 - [SubmitSamplesConsent](policy-csp-defender.md#submitsamplesconsent)
 - [ThreatSeverityDefaultAction](policy-csp-defender.md#threatseveritydefaultaction)
 
-## Defender
+## Defender CSP
 
 - [{GroupId}](defender-csp.md#configurationdevicecontrolpolicygroupsgroupid)
 - [{RuleId}](defender-csp.md#configurationdevicecontrolpolicyrulesruleid)
@@ -291,7 +291,7 @@ This article lists the policies that are applicable for the Surface Hub operatin
 - [EnterpriseProxyServersAreAuthoritative](policy-csp-networkisolation.md#enterpriseproxyserversareauthoritative)
 - [NeutralResources](policy-csp-networkisolation.md#neutralresources)
 
-## Policy
+## Policy CSP
 
 - [ADMXInstall](policy-configuration-service-provider.md#deviceconfigoperationsadmxinstall)
 

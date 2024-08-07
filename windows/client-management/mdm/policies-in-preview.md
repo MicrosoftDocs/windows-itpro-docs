@@ -12,11 +12,11 @@ ms.date: 08/06/2024
 
 This article lists the policies that are applicable for Windows Insider Preview builds.
 
-## ClientCertificateInstall
+## ClientCertificateInstall CSP
 
 - [AttestPrivateKey](clientcertificateinstall-csp.md#userscepuniqueidinstallattestprivatekey)
 
-## CloudDesktop
+## CloudDesktop CSP
 
 - [EnablePhysicalDeviceAccessOnCtrlAltDel](clouddesktop-csp.md#userenablephysicaldeviceaccessonctrlaltdel)
 - [EnablePhysicalDeviceAccessOnErrorScreens](clouddesktop-csp.md#userenablephysicaldeviceaccessonerrorscreens)
@@ -31,7 +31,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [OverrideMinimumEnabledDTLSVersionClient](policy-csp-cryptography.md#overrideminimumenableddtlsversionclient)
 - [OverrideMinimumEnabledDTLSVersionServer](policy-csp-cryptography.md#overrideminimumenableddtlsversionserver)
 
-## DeclaredConfiguration
+## DeclaredConfiguration CSP
 
 - [Document](declaredconfiguration-csp.md#hostcompletedocumentsdociddocument)
 - [Abandoned](declaredconfiguration-csp.md#hostcompletedocumentsdocidpropertiesabandoned)
@@ -58,7 +58,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [MinimumPasswordLengthAudit](policy-csp-devicelock.md#minimumpasswordlengthaudit)
 - [RelaxMinimumPasswordLengthLimits](policy-csp-devicelock.md#relaxminimumpasswordlengthlimits)
 
-## DevicePreparation
+## DevicePreparation CSP
 
 - [PageEnabled](devicepreparation-csp.md#pageenabled)
 - [PageStatus](devicepreparation-csp.md#pagestatus)
@@ -71,7 +71,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [MdmAgentInstalled](devicepreparation-csp.md#mdmprovidermdmagentinstalled)
 - [RebootRequired](devicepreparation-csp.md#mdmproviderrebootrequired)
 
-## DMClient
+## DMClient CSP
 
 - [DiscoveryEndpoint](dmclient-csp.md#deviceproviderprovideridlinkedenrollmentdiscoveryendpoint)
 - [Enabled](dmclient-csp.md#deviceproviderprovideridconfigrefreshenabled)
@@ -89,7 +89,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [EnableDevDrive](policy-csp-filesystem.md#enabledevdrive)
 - [DevDriveAttachPolicy](policy-csp-filesystem.md#devdriveattachpolicy)
 
-## HealthAttestation
+## HealthAttestation CSP
 
 - [AttestErrorMessage](healthattestation-csp.md#attesterrormessage)
 
@@ -104,7 +104,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [AllowLegacyURLFields](policy-csp-internetexplorer.md#allowlegacyurlfields)
 
-## LanguagePackManagement
+## LanguagePackManagement CSP
 
 - [Providers](language-pack-management-csp.md#installedlanguageslanguage-idproviders)
 - [LanguageFeatures](language-pack-management-csp.md#installedlanguageslanguage-idlanguagefeatures)
@@ -115,7 +115,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [StartInstallation](language-pack-management-csp.md#installlanguage-idstartinstallation)
 - [SystemPreferredUILanguages](language-pack-management-csp.md#languagesettingssystempreferreduilanguages)
 
-## LAPS
+## LAPS CSP
 
 - [PassphraseLength](laps-csp.md#policiespassphraselength)
 - [AutomaticAccountManagementEnabled](laps-csp.md#policiesautomaticaccountmanagementenabled)
@@ -185,12 +185,12 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [DisableAccountNotifications](policy-csp-notifications.md#disableaccountnotifications)
 
-## PassportForWork
+## PassportForWork CSP
 
 - [EnableWindowsHelloProvisioningForSecurityKeys](passportforwork-csp.md#devicetenantidpoliciesenablewindowshelloprovisioningforsecuritykeys)
 - [DisablePostLogonProvisioning](passportforwork-csp.md#devicetenantidpoliciesdisablepostlogonprovisioning)
 
-## Reboot
+## Reboot CSP
 
 - [WeeklyRecurrent](reboot-csp.md#scheduleweeklyrecurrent)
 
@@ -219,7 +219,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [EnableSudo](policy-csp-sudo.md#enablesudo)
 
-## SurfaceHub
+## SurfaceHub CSP
 
 - [ExchangeModernAuthEnabled](surfacehub-csp.md#deviceaccountexchangemodernauthenabled)
 
@@ -281,7 +281,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [DisableAIDataAnalysis](policy-csp-windowsai.md#disableaidataanalysis)
 
-## WindowsLicensing
+## WindowsLicensing CSP
 
 - [SubscriptionType](windowslicensing-csp.md#subscriptionssubscriptiontype)
 - [SubscriptionStatus](windowslicensing-csp.md#subscriptionssubscriptionstatus)
