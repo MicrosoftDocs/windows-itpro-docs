@@ -108,7 +108,7 @@ sections:
           The decision of when to move to the next ring is handled by Windows Autopatch; it isn't customer configurable.
       - question: Can you customize the scheduling of an update rollout to only install on certain days and times?
         answer: |
-          No, you can't customize update scheduling. However, you can specify [active hours](../operate/windows-autopatch-windows-quality-update-end-user-exp.md) to prevent users from updating during business hours.
+          No, you can't customize update scheduling. However, you can specify [active hours](../manage/windows-autopatch-windows-quality-update-end-user-exp.md) to prevent users from updating during business hours.
       - question: Does Autopatch support include and exclude groups, or dynamic groups to define deployment ring membership?
         answer: |
           Windows Autopatch doesn't support managing update deployment ring membership using your Microsoft Entra groups. For more information, see [Moving devices in between deployment rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-deployment-rings).
