@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 08/06/2024
+ms.date: 08/07/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -210,10 +210,6 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [DisableAccessibilitySettingSync](policy-csp-settingssync.md#disableaccessibilitysettingsync)
 - [DisableLanguageSettingSync](policy-csp-settingssync.md#disablelanguagesettingsync)
-
-## SpeakForMe
-
-- [EnableSpeakForMe](policy-csp-speakforme.md#speakforme-enablespeakforme)
 
 ## Sudo
 
