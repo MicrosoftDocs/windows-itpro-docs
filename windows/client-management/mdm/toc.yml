@@ -8,8 +8,9 @@ items:
   - name: Device description framework (DDF) files
     href: configuration-service-provider-ddf.md
   - name: Support scenarios
-    href: configuration-service-provider-support.md
     items:
+    - name: Configuration service provider support
+      href: configuration-service-provider-support.md
     - name: Policies supported by Windows Insider Preview
       href: policies-in-preview.md
     - name: Policies supported by HoloLens 2
@@ -358,6 +359,8 @@ items:
           href: policy-csp-admx-workfoldersclient.md
         - name: ADMX_WPN
           href: policy-csp-admx-wpn.md
+        - name: AppDeviceInventory
+          href: policy-csp-appdeviceinventory.md
         - name: ApplicationDefaults
           href: policy-csp-applicationdefaults.md
         - name: ApplicationManagement

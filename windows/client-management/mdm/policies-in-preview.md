@@ -12,6 +12,12 @@ ms.date: 08/07/2024
 
 This article lists the policies that are applicable for Windows Insider Preview builds.
 
+## AppDeviceInventory
+
+- [TurnOffInstallTracing](policy-csp-appdeviceinventory.md#turnoffinstalltracing)
+- [TurnOffAPISamping](policy-csp-appdeviceinventory.md#turnoffapisamping)
+- [TurnOffApplicationFootprint](policy-csp-appdeviceinventory.md#turnoffapplicationfootprint)
+
 ## ClientCertificateInstall CSP
 
 - [AttestPrivateKey](clientcertificateinstall-csp.md#userscepuniqueidinstallattestprivatekey)
@@ -276,6 +282,8 @@ This article lists the policies that are applicable for Windows Insider Preview 
 ## WindowsAI
 
 - [DisableAIDataAnalysis](policy-csp-windowsai.md#disableaidataanalysis)
+- [DisableImageCreator](policy-csp-windowsai.md#disableimagecreator)
+- [DisableCocreator](policy-csp-windowsai.md#disablecocreator)
 
 ## WindowsLicensing CSP
 

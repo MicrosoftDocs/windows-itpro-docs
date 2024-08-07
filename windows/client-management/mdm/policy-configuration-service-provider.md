@@ -1,7 +1,7 @@
 ---
 title: Policy CSP
 description: Learn more about the Policy CSP.
-ms.date: 08/06/2024
+ms.date: 08/07/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1069,6 +1069,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [ADMX_WordWheel](policy-csp-admx-wordwheel.md)
 - [ADMX_WorkFoldersClient](policy-csp-admx-workfoldersclient.md)
 - [ADMX_WPN](policy-csp-admx-wpn.md)
+- [AppDeviceInventory](policy-csp-appdeviceinventory.md)
 - [ApplicationDefaults](policy-csp-applicationdefaults.md)
 - [ApplicationManagement](policy-csp-applicationmanagement.md)
 - [AppRuntime](policy-csp-appruntime.md)
