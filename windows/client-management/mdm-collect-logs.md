@@ -2,7 +2,7 @@
 title: Collect MDM logs
 description: Learn how to collect MDM logs. Examining these logs can help diagnose enrollment or device management issues in Windows devices managed by an MDM server.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ms.collection:
 - highpri
 - tier2
@@ -40,7 +40,7 @@ mdmdiagnosticstool.exe -area "DeviceEnrollment;DeviceProvisioning;Autopilot" -zi
 
 ### Understanding zip structure
 
-The zip file has logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment, DeviceProvisioning and Autopilot areas. It applies to the zip files collected via command line or Feedback Hub
+The zip file has logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment, DeviceProvisioning, and Autopilot areas. It applies to the zip files collected via command line or Feedback Hub
 
 - DiagnosticLogCSP_Collector_Autopilot_*: Autopilot etls
 - DiagnosticLogCSP_Collector_DeviceProvisioning_*: Provisioning etls (Microsoft-Windows-Provisioning-Diagnostics-Provider)

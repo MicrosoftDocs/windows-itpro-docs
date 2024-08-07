@@ -3,7 +3,7 @@ title: Override Process Mitigation Options
 description: How to use Group Policy to override individual Process Mitigation Options settings and to help enforce specific app-related security policies.
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.date: 12/22/2023
+ms.date: 07/10/2024
 ---
 
 # Override Process Mitigation Options to help enforce app-related security policies
@@ -13,10 +13,10 @@ Windows includes group policy-configurable "Process Mitigation Options" that add
 > [!IMPORTANT]
 > We recommend trying these mitigations in a test lab before deploying to your organization, to determine if they interfere with your organization's required apps.
 
-The Group Policy settings in this topic are related to three types of process mitigations. All three types are on by default for 64-bit applications, but by using the Group Policy settings described in this topic, you can configure more protections. The types of process mitigations are:
+The Group Policy settings in this article are related to three types of process mitigations. All three types are on by default for 64-bit applications, but by using the Group Policy settings described in this article, you can configure more protections. The types of process mitigations are:
 
-- **Data Execution Prevention (DEP)** is a system-level memory protection feature that enables the operating system to mark one or more pages of memory as non-executable, preventing code from being run from that region of memory, to help prevent exploitation of buffer overruns. DEP helps prevent code from being run from data pages such as the default heap, stacks, and memory pools. For more information, see [Data Execution Prevention](../../threat-protection/overview-of-threat-mitigations-in-windows-10.md#data-execution-prevention).
-- **Structured Exception Handling Overwrite Protection (SEHOP)** is designed to block exploits that use the Structured Exception Handler (SEH) overwrite technique. Because this protection mechanism is provided at run-time, it helps to protect apps regardless of whether they've been compiled with the latest improvements. For more information, see [Structured Exception Handling Overwrite Protection](../../threat-protection/overview-of-threat-mitigations-in-windows-10.md#structured-exception-handling-overwrite-protection).
+- **Data Execution Prevention (DEP)** is a system-level memory protection feature that enables the operating system to mark one or more pages of memory as nonexecutable, preventing code from being run from that region of memory, to help prevent exploitation of buffer overruns. DEP helps prevent code from being run from data pages such as the default heap, stacks, and memory pools. For more information, see [Data Execution Prevention](../../threat-protection/overview-of-threat-mitigations-in-windows-10.md#data-execution-prevention).
+- **Structured Exception Handling Overwrite Protection (SEHOP)** is designed to block exploits that use the Structured Exception Handler (SEH) overwrite technique. Because this protection mechanism is provided at run-time, it helps to protect apps regardless of whether they're compiled with the latest improvements. For more information, see [Structured Exception Handling Overwrite Protection](../../threat-protection/overview-of-threat-mitigations-in-windows-10.md#structured-exception-handling-overwrite-protection).
 - **Address Space Layout Randomization (ASLR)** loads DLLs into random memory addresses at boot time to mitigate against malware that's designed to attack specific memory locations, where specific DLLs are expected to be loaded. For more information, see [Address Space Layout Randomization](../../threat-protection/overview-of-threat-mitigations-in-windows-10.md#address-space-layout-randomization). To find more ASLR protections in the table below, look for `IMAGES` or `ASLR`.
 
 The following procedure describes how to use Group Policy to override individual **Process Mitigation Options** settings.
@@ -27,7 +27,7 @@ The following procedure describes how to use Group Policy to override individual
 
     ![Screenshot of the Group Policy editor: Process Mitigation Options with setting enabled and Show button active.](images/gp-process-mitigation-options.png)
 
-2. Click **Enabled**, and then in the **Options** area, click **Show** to open the **Show Contents** box, where you'll be able to add your apps and the appropriate bit flag values, as shown in the [Setting the bit field](#setting-the-bit-field) and [Example](#example) sections of this topic.
+2. Select **Enabled**, and then in the **Options** area, select **Show** to open the **Show Contents** box, where you can add your apps and the appropriate bit flag values, as shown in the [Setting the bit field](#setting-the-bit-field) and [Example](#example) sections of this article.
 
     > [!IMPORTANT]
     > For each app you want to include, you must include:
@@ -45,14 +45,14 @@ Here's a visual representation of the bit flag locations for the various Process
 
 Where the bit flags are read from right to left and are defined as:
 
-| Flag | Bit location | Setting                                                                           | Details                                                                                                                                                                                                                                                                                |
-|------|--------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A    | 0            | `PROCESS_CREATION_MITIGATION_POLICY_DEP_ENABLE (0x00000001)`                      | Turns on Data Execution Prevention (DEP) for child processes.                                                                                                                                                                                                                          |
-| B    | 1            | `PROCESS_CREATION_MITIGATION_POLICY_DEP_ATL_THUNK_ENABLE (0x00000002)`            | Turns on DEP-ATL thunk emulation for child processes. DEP-ATL thunk emulation lets the system intercept non-executable (NX) faults that originate from the Active Template Library (ATL) thunk layer, and then emulate and handle the instructions so the process can continue to run. |
-| C    | 2            | `PROCESS_CREATION_MITIGATION_POLICY_SEHOP_ENABLE (0x00000004)`                    | Turns on Structured Exception Handler Overwrite Protection (SEHOP) for child processes. SEHOP helps to block exploits that use the Structured Exception Handler (SEH) overwrite technique.                                                                                             |
-| D    | 8            | `PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON (0x00000100)` | Uses the force Address Space Layout Randomization (ASLR) setting to act as though an image base collision happened at load time, forcibly rebasing images that aren't dynamic base compatible. Images without the base relocation section won't be loaded if relocations are required. |
-| E    | 15           | `PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_ON (0x00010000)`        | Turns on the bottom-up randomization policy, which includes stack randomization options and causes a random location to be used as the lowest user address.                                                                                                                            |
-| F    | 16           | `PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF (0x00020000)`       | Turns off the bottom-up randomization policy, which includes stack randomization options and causes a random location to be used as the lowest user address.                                                                                                                           |
+| Flag | Bit location | Setting | Details |
+|--|--|--|--|
+| A | 0 | `PROCESS_CREATION_MITIGATION_POLICY_DEP_ENABLE (0x00000001)` | Turns on Data Execution Prevention (DEP) for child processes. |
+| B | 1 | `PROCESS_CREATION_MITIGATION_POLICY_DEP_ATL_THUNK_ENABLE (0x00000002)` | Turns on DEP-ATL thunk emulation for child processes. DEP-ATL thunk emulation lets the system intercept nonexecutable (NX) faults that originate from the Active Template Library (ATL) thunk layer, and then emulate and handle the instructions so the process can continue to run. |
+| C | 2 | `PROCESS_CREATION_MITIGATION_POLICY_SEHOP_ENABLE (0x00000004)` | Turns on Structured Exception Handler Overwrite Protection (SEHOP) for child processes. SEHOP helps to block exploits that use the Structured Exception Handler (SEH) overwrite technique. |
+| D | 8 | `PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON (0x00000100)` | Uses the force Address Space Layout Randomization (ASLR) setting to act as though an image base collision happened at load time, forcibly rebasing images that aren't dynamic base compatible. Images without the base relocation section aren't loaded if relocations are required. |
+| E | 15 | `PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_ON (0x00010000)` | Turns on the bottom-up randomization policy, which includes stack randomization options and causes a random location to be used as the lowest user address. |
+| F | 16 | `PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF (0x00020000)` | Turns off the bottom-up randomization policy, which includes stack randomization options and causes a random location to be used as the lowest user address. |
 
 ### Example
 

@@ -1,29 +1,35 @@
 items:
   - name: Overview
     href: provisioning-packages.md
-  - name: How provisioning works in Windows client
+  - name: How provisioning works
     href: provisioning-how-it-works.md
-  - name: Introduction to configuration service providers (CSPs)
-    href: how-it-pros-can-use-configuration-service-providers.md
-  - name: Install Windows Configuration Designer
-    href: provisioning-install-icd.md
-  - name: Create a provisioning package
-    href: provisioning-create-package.md
-  - name: Apply a provisioning package
-    href: provisioning-apply-package.md
-  - name: Settings changed when you uninstall a provisioning package
-    href: provisioning-uninstall-package.md
-  - name: Provision PCs with common settings for initial deployment (desktop wizard)
-    href: provision-pcs-for-initial-deployment.md
-  - name: Provision PCs with apps
-    href: provision-pcs-with-apps.md
-  - name: Use a script to install a desktop app in provisioning packages
-    href: provisioning-script-to-install-app.md
+  - name: Quickstarts
+    items:
+    - name: Install Windows Configuration Designer
+      href: provisioning-install-icd.md
+    - name: Create a provisioning package (desktop wizard)
+      href: provision-pcs-for-initial-deployment.md
+    - name: Create a provisioning package (advanced)
+      href: provisioning-create-package.md
+    - name: Apply a provisioning package
+      href: provisioning-apply-package.md
+  - name: Provision apps
+    items:
+    - name: Provision apps
+      href: provision-pcs-with-apps.md
+    - name: Use a script to install a desktop app
+      href: provisioning-script-to-install-app.md
   - name: Create a provisioning package with multivariant settings
     href: provisioning-multivariant.md
-  - name: PowerShell cmdlets for provisioning Windows client (reference)
-    href: provisioning-powershell.md
   - name: Diagnose provisioning packages
     href: diagnose-provisioning-packages.md
-  - name: Windows Configuration Designer command-line interface (reference)
-    href: provisioning-command-line.md
+  - name: Settings changed when you uninstall a provisioning package
+    href: provisioning-uninstall-package.md
+  - name: Reference
+    items:
+    - name: Introduction to configuration service providers (CSPs)
+      href: how-it-pros-can-use-configuration-service-providers.md
+    - name: Windows Configuration Designer command-line interface
+      href: provisioning-command-line.md
+    - name: PowerShell cmdlets for provisioning Windows client
+      href: provisioning-powershell.md

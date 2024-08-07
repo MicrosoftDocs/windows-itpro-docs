@@ -2,7 +2,7 @@
 title: Certificate Renewal
 description: Learn how to find all the resources that you need to provide continuous access to client certificates.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/08/2024
 ---
 
 # Certificate Renewal
@@ -19,7 +19,7 @@ Windows supports automatic certificate renewal, also known as Renew On Behalf Of
 > [!NOTE]
 > Certificate renewal of the enrollment certificate through ROBO is only supported with Microsoft PKI.
 
-Auto certificate renewal is the only supported MDM client certificate renewal method for the device that's enrolled using WAB authentication. Meaning, the AuthPolicy is set to Federated. It also means if the server supports WAB authentication, then the MDM certificate enrollment server MUST also support client TLS to renew the MDM client certificate.
+Auto certificate renewal is the only supported MDM client certificate renewal method for a device enrolled using WAB authentication. Meaning, the AuthPolicy is set to Federated. It also means if the server supports WAB authentication, then the MDM certificate enrollment server MUST also support client TLS to renew the MDM client certificate.
 
 For Windows devices, during the MDM client certificate enrollment phase or during MDM management section, the enrollment server or MDM server could configure the device to support automatic MDM client certificate renewal using [CertificateStore CSP's](mdm/certificatestore-csp.md) ROBOSupport node under `CertificateStore/My/WSTEP/Renew` URL.
 
@@ -89,7 +89,7 @@ In Windows, the renewal period can only be set during the MDM enrollment phase. 
 
 For more information about the parameters, see the [CertificateStore configuration service provider](mdm/certificatestore-csp.md).
 
-Unlike manual certificate renewal, the device doesn't perform an automatic MDM client certificate renewal if the certificate is already expired. To make sure the device has enough time to automatically renew, we recommend you set a renewal period a couple months (40-60 days) before the certificate expires. And, set the renewal retry interval to every few days, like every 4-5 days instead of every seven days (weekly). This change increases the chance that the device will try to connect at different days of the week.
+Unlike manual certificate renewal, the device doesn't perform an automatic MDM client certificate renewal if the certificate is already expired. To make sure the device has enough time to automatically renew, we recommend you set a renewal period a couple months (40-60 days) before the certificate expires. And, set the renewal retry interval to every few days, like every 4-5 days instead of every seven days (weekly). This change increases the chance that the device tries to connect at different days of the week.
 
 ## Certificate renewal response
 
@@ -99,7 +99,7 @@ When RequestType is set to Renew, the web service verifies the following (in add
 - The client's certificate is in the renewal period
 - The certificate is issued by the enrollment service
 - The requester is the same as the requester for initial enrollment
-- For standard client's request, the client hasn't been blocked
+- For standard client's request, the client isn't blocked
 
 After validation is completed, the web service retrieves the PKCS#10 content from the PKCS#7 BinarySecurityToken. The rest is the same as initial enrollment, except that the Provisioning XML only needs to have the new certificate issued by the CA.
 

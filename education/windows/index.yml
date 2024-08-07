@@ -9,20 +9,19 @@ metadata:
   ms.collection:
     - education
     - tier1
-    - essentials-navigation
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 10/30/2023
+  ms.date: 07/22/2024
 
 highlightedContent:
   items:
   - title: Get started with Windows 11 SE
     itemType: get-started
     url: windows-11-se-overview.md
-  - title: Windows 11, version 22H2
+  - title: Windows 11, version 23H2
     itemType: whats-new
-    url: /windows/whats-new/whats-new-windows-11-version-22H2
+    url: /windows/whats-new/whats-new-windows-11-version-23h2
   - title: Explore all Windows trainings and learning paths for IT pros
     itemType: learn
     url: https://learn.microsoft.com/en-us/training/browse/?products=windows&roles=administrator
@@ -137,4 +136,4 @@ additionalContent:
             - text: Microsoft Intune community
               url: https://techcommunity.microsoft.com/t5/microsoft-intune/bd-p/Microsoft-Intune
             - text: Microsoft Support community
-              url: https://answers.microsoft.com/windows/forum
+              url: https://answers.microsoft.com/

@@ -49,7 +49,7 @@ To register the applications, follow these steps:
 
 :::row:::
   :::column span="3":::
-  1. Go to the [Microsoft PIN Reset Service Production website][APP-1], and sign in as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator). Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to the application to access your organization
+  1. Go to the [Microsoft PIN Reset Service Production website][APP-1], and sign in as at least an [Application Administrator][ENT-2]. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to the application to access your organization
   :::column-end:::
   :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset service permissions page." source="images/pin-reset/pin-reset-service-prompt.png" lightbox="images/pin-reset/pin-reset-service-prompt.png" border="true":::
@@ -57,7 +57,7 @@ To register the applications, follow these steps:
 :::row-end:::
 :::row:::
   :::column span="3":::
-  2. Go to the [Microsoft PIN Reset Client Production website][APP-2], and sign as at least an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator). Review the permissions requested by the *Microsoft Pin Reset Client Production* application, and select **Next**.
+  2. Go to the [Microsoft PIN Reset Client Production website][APP-2], and sign as at least an [Application Administrator][ENT-2]. Review the permissions requested by the *Microsoft Pin Reset Client Production* application, and select **Next**.
   :::column-end:::
   :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset client permissions page." source="images/pin-reset/pin-reset-client-prompt.png" lightbox="images/pin-reset/pin-reset-client-prompt.png" border="true":::
@@ -76,7 +76,7 @@ To register the applications, follow these steps:
 
 ### Confirm that the two PIN Reset service principals are registered in your tenant
 
-1. Sign in to the [Microsoft Entra Manager admin center](https://entra.microsoft.com)
+1. Sign in to the [Microsoft Entra Manager admin center][ENTRA]
 1. Select **Microsoft Entra ID > Applications > Enterprise applications**
 1. Search by application name "Microsoft PIN" and verify that both **Microsoft Pin Reset Service Production** and **Microsoft Pin Reset Client Production** are in the list
    :::image type="content" alt-text="PIN reset service permissions page." source="images/pin-reset/pin-reset-applications.png" lightbox="images/pin-reset/pin-reset-applications-expanded.png":::
@@ -103,7 +103,7 @@ The following instructions provide details how to configure your devices. Select
 >[!NOTE]
 > You can also configure PIN recovery from the **Endpoint security** blade:
 >
-> 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
+> 1. Sign in to the [Microsoft Intune admin center][INTUNE]
 > 1. Select **Endpoint security > Account protection > Create Policy**
 
 Alternatively, you can configure devices using a [custom policy][INT-1] with the [PassportForWork CSP][CSP-1].
@@ -113,7 +113,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 | `./Vendor/MSFT/Policy/PassportForWork/`*TenantId*`/Policies/EnablePinRecovery`| Boolean | True |
 
 >[!NOTE]
-> You must replace `TenantId` with the identifier of your Microsoft Entra tenant. To look up your Tenant ID, see [How to find your Microsoft Entra tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account::
+> You must replace `TenantId` with the identifier of your Microsoft Entra tenant. To look up your Tenant ID, see [How to find your Microsoft Entra tenant ID][ENT-3] or try the following, ensuring to sign-in with your organization's account::
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization?$select=id
@@ -133,7 +133,7 @@ GET https://graph.microsoft.com/v1.0/organization?$select=id
 
 #### Confirm that PIN Recovery policy is enforced on the devices
 
-The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/azure/active-directory/devices/troubleshoot-device-dsregcmd) from the command line. This state can be found under the output in the user state section as the **CanReset** line item. If **CanReset** reports as DestructiveOnly, then only destructive PIN reset is enabled. If **CanReset** reports DestructiveAndNonDestructive, then nondestructive PIN reset is enabled.
+The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**][ENT-4] from the command line. This state can be found under the output in the user state section as the **CanReset** line item. If **CanReset** reports as DestructiveOnly, then only destructive PIN reset is enabled. If **CanReset** reports DestructiveAndNonDestructive, then nondestructive PIN reset is enabled.
 
 **Sample User state Output for Destructive PIN Reset**
 
@@ -233,12 +233,18 @@ For Microsoft Entra hybrid joined devices:
 > [!NOTE]
 > Key trust on Microsoft Entra hybrid joined devices doesn't support destructive PIN reset from above the Lock Screen. This is due to the sync delay between when a user provisions their Windows Hello for Business credential and being able to use it for sign-in. For this deployment model, you must deploy non-destructive PIN reset for above lock PIN reset to work.
 
-You may find that PIN reset from Settings only works post sign in. Also, the lock screen PIN reset function doesn't work if you have any matching limitation of self-service password reset from the lock screen. For more information, see [Enable Microsoft Entra self-service password reset at the Windows sign-in screen](/azure/active-directory/authentication/howto-sspr-windows#general-limitations).
+You may find that PIN reset from Settings only works post sign in. Also, the lock screen PIN reset function doesn't work if you have any matching limitation of self-service password reset from the lock screen. For more information, see [Enable Microsoft Entra self-service password reset at the Windows sign-in screen][ENT-1].
 
 <!--links-->
 
-[CSP-1]: /windows/client-management/mdm/passportforwork-csp
-[CSP-2]: /windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls
-[INT-1]: /mem/intune/configuration/settings-catalog
 [APP-1]: https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent
 [APP-2]: https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent
+[CSP-1]: /windows/client-management/mdm/passportforwork-csp
+[CSP-2]: /windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls
+[ENT-1]: /entra/identity/authentication/howto-sspr-windows#general-limitations
+[ENT-2]: /entra/identity/role-based-access-control/permissions-reference#application-administrator
+[ENT-3]: /entra/fundamentals/how-to-find-tenant
+[ENT-4]: /entra/identity/devices/troubleshoot-device-dsregcmd
+[ENTRA]: https://entra.microsoft.com
+[INT-1]: /mem/intune/configuration/settings-catalog
+[INTUNE]: https://go.microsoft.com/fwlink/?linkid=2109431

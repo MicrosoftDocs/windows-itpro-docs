@@ -1,7 +1,7 @@
 ---
 title: Defender DDF file
 description: View the XML file containing the device description framework (DDF) for the Defender configuration service provider.
-ms.date: 05/20/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -3595,6 +3595,104 @@ The following XML file contains the device description framework (DDF) for the D
                 </MSFT:Enum>
               </MSFT:AllowedValues>
             </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>BruteForceProtectionPlugins</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <node />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <DDFName />
+              </DFType>
+            </DFProperties>
+            <Node>
+              <NodeName>BruteForceProtectionLocalNetworkBlocking</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <Description>Extend brute-force protection coverage in Microsoft Defender Antivirus to block local network addresses.</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:Applicability>
+                  <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+                  <MSFT:CspVersion>1.3</MSFT:CspVersion>
+                </MSFT:Applicability>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>0</MSFT:Value>
+                    <MSFT:ValueDescription>Brute-force protection will not block local network addresses</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>1</MSFT:Value>
+                    <MSFT:ValueDescription>Brute-force protection will block local network addresses</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>BruteForceProtectionSkipLearningPeriod</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <Description>Skip the 2-week initial learning period, so brute-force protection in Microsoft Defender Antivirus can start blocking immediately.</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:Applicability>
+                  <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+                  <MSFT:CspVersion>1.3</MSFT:CspVersion>
+                </MSFT:Applicability>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>0</MSFT:Value>
+                    <MSFT:ValueDescription>Brute-force protection blocks threats only after completing a 2-week learning period</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>1</MSFT:Value>
+                    <MSFT:ValueDescription>Brute-force protection starts blocking threats immediately</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+              </DFProperties>
+            </Node>
           </Node>
           <Node>
             <NodeName>BruteForceProtectionExclusions</NodeName>

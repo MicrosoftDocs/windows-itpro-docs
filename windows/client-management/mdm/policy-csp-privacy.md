@@ -1,15 +1,13 @@
 ---
 title: Privacy Policy CSP
 description: Learn more about the Privacy Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Privacy-Begin -->
 # Policy CSP - Privacy
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Privacy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -2400,6 +2398,207 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 
 <!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-End -->
 
+<!-- LetAppsAccessGenerativeAI-Begin -->
+## LetAppsAccessGenerativeAI
+
+<!-- LetAppsAccessGenerativeAI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGenerativeAI-Applicability-End -->
+
+<!-- LetAppsAccessGenerativeAI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGenerativeAI
+```
+<!-- LetAppsAccessGenerativeAI-OmaUri-End -->
+
+<!-- LetAppsAccessGenerativeAI-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can use generative AI features of Windows.
+<!-- LetAppsAccessGenerativeAI-Description-End -->
+
+<!-- LetAppsAccessGenerativeAI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGenerativeAI-Editable-End -->
+
+<!-- LetAppsAccessGenerativeAI-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-2]` |
+| Default Value  | 0 |
+<!-- LetAppsAccessGenerativeAI-DFProperties-End -->
+
+<!-- LetAppsAccessGenerativeAI-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGenerativeAI |
+| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
+| Element Name | LetAppsAccessGenerativeAI_Enum |
+<!-- LetAppsAccessGenerativeAI-GpMapping-End -->
+
+<!-- LetAppsAccessGenerativeAI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGenerativeAI-Examples-End -->
+
+<!-- LetAppsAccessGenerativeAI-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-Begin -->
+## LetAppsAccessGenerativeAI_ForceAllowTheseApps
+
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGenerativeAI_ForceAllowTheseApps
+```
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to use generative AI features of Windows. This setting overrides the default LetAppsAccessGenerativeAI policy setting for the specified apps.
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-Description-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-Editable-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGenerativeAI |
+| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
+| Element Name | LetAppsAccessGenerativeAI_ForceAllowTheseApps_List |
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-Examples-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceAllowTheseApps-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-Begin -->
+## LetAppsAccessGenerativeAI_ForceDenyTheseApps
+
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGenerativeAI_ForceDenyTheseApps
+```
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied the use generative AI features of Windows. This setting overrides the default LetAppsAccessGenerativeAI policy setting for the specified apps.
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-Description-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-Editable-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGenerativeAI |
+| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
+| Element Name | LetAppsAccessGenerativeAI_ForceDenyTheseApps_List |
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-Examples-End -->
+
+<!-- LetAppsAccessGenerativeAI_ForceDenyTheseApps-End -->
+
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessGenerativeAI_UserInControlOfTheseApps
+
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGenerativeAI_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the generative AI setting for the listed apps. This setting overrides the default LetAppsAccessGenerativeAI policy setting for the specified apps.
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-Description-End -->
+
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-Editable-End -->
+
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGenerativeAI |
+| Path | AppPrivacy > AT > WindowsComponents > AppPrivacy |
+| Element Name | LetAppsAccessGenerativeAI_UserInControlOfTheseApps_List |
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-Examples-End -->
+
+<!-- LetAppsAccessGenerativeAI_UserInControlOfTheseApps-End -->
+
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-Begin -->
 ## LetAppsAccessGraphicsCaptureProgrammatic
 
@@ -2929,7 +3128,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence-OmaUri-Begin -->
@@ -3005,7 +3204,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3070,7 +3269,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3135,7 +3334,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.25000] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-OmaUri-Begin -->

@@ -6,9 +6,9 @@ description: New and updated IT Pro content about new features in Windows 10 Ent
 ms.service: windows-client
 author: mestew
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: reference
 ms.subservice: itpro-fundamentals
-ms.date: 12/18/2023
+ms.date: 07/09/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2019</a>
 ---
@@ -484,10 +484,10 @@ Previous versions of the Microsoft Application Virtualization Sequencer (App-V S
 
 For more information, see the following articles:
 
-- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-provision-a-vm)
-- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-batch-sequencing)
-- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-batch-updating)
-- [Automatically cleanup unpublished packages on the App-V client](/windows/application-management/app-v/appv-auto-clean-unpublished-packages)
+- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/microsoft-desktop-optimization-pack/app-v/appv-auto-provision-a-vm)
+- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/microsoft-desktop-optimization-pack/app-v/appv-auto-batch-sequencing)
+- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/microsoft-desktop-optimization-pack/app-v/appv-auto-batch-updating)
+- [Automatically cleanup unpublished packages on the App-V client](/microsoft-desktop-optimization-pack/app-v/appv-auto-clean-unpublished-packages)
 
 ### Windows diagnostic data
 

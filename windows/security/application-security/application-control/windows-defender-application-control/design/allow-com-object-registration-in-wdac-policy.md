@@ -3,7 +3,7 @@ title: Allow COM object registration in a WDAC policy
 description: You can allow COM object registration in a Windows Defender Application Control policy.
 ms.localizationpriority: medium
 ms.date: 04/05/2023
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Allow COM object registration in a Windows Defender Application Control policy
@@ -153,11 +153,11 @@ The table that follows describes the list of COM objects that are inherently tru
 | scrrun.dll | 0D43FE01-F093-11CF-8940-00A0C9054228 |
 | vbscript.dll | 3F4DACA4-160D-11D2-A8E9-00104B365C9F |
 | WEX.Logger.Log | 70B46225-C474-4852-BB81-48E0D36F9A5A |
-| TE.Common.TestData | 1d68f3c0-b5f8-4abd-806a-7bc57cdce35a | 
+| TE.Common.TestData | 1d68f3c0-b5f8-4abd-806a-7bc57cdce35a |
 | TE.Common.RuntimeParameters | 9f3d4048-6028-4c5b-a92d-01bc977af600 |
 | TE.Common.Verify | e72cbabf-8e48-4d27-b14e-1f347f6ec71a |
 | TE.Common.Interruption | 5850ba6f-ce72-46d4-a29b-0d3d9f08cc0b |
-| msxml6.dll | 2933BF90-7B36-11d2-B20E-00C04F983E60 | 
+| msxml6.dll | 2933BF90-7B36-11d2-B20E-00C04F983E60 |
 | msxml6.dll | ED8C108E-4349-11D2-91A4-00C04F7969E8 |
 | mmcndmgr.dll | ADE6444B-C91F-4E37-92A4-5BB430A33340 |
 | puiobj.dll | B021FF57-A928-459C-9D6C-14DED0C9BED2 |

@@ -20,7 +20,7 @@ appliesto:
 # Microsoft Connected Cache for Internet Service Providers (early preview)
 
 > [!IMPORTANT]
-> This document is for Microsoft Connected Cache (early preview). Microsoft Connected Cache for ISPs is now in Public Preview - for our early preview customers, we highly encourage you to migrate your cache nodes to our public preview. See [instructions on how to migrate](#migrating-your-mcc-to-public-preview) below.
+> This document is for Microsoft Connected Cache (early preview). Microsoft Connected Cache for ISPs is now in Public Preview - for our early preview customers, we highly encourage you to onboard onto our Public Preview program. For instructions on signing up and onboarding please visit [Operator sign up and service onboarding for Microsoft Connected Cache](mcc-isp-signup.md).
 
 ## Overview
 
@@ -441,6 +441,13 @@ If the test fails, for more information, see the [common issues](#common-issues)
 
 ## Common Issues
 
+### Microsoft Connected Cache is no longer serving traffic
+If you did not migrate your cache node then your cache node may still be on early preview version.
+Microsoft Connected Cache for Internet Service Providers is now in Public Preview! To get started, visit  [Azure portal](https://www.portal.azure.com) to sign up for Microsoft Connected Cache for Internet Service Providers. Please see [Operator sign up and service onboarding for Microsoft Connected Cache](mcc-isp-signup.md) for more information on the requirements for sign up and onboarding.
+<br>
+<br>
+<br>
+
 > [!NOTE]
 > This section only lists common issues. For more information on additional issues you may encounter when configuring IoT Edge, see the [IoT Edge troubleshooting guide](/azure/iot-edge/troubleshoot).
 
@@ -551,19 +558,6 @@ If you have an MCC that's already active and running, follow the steps below to 
 
 1. To finish configuring your MCC with BGP routing, continue from Step 10 of [Steps to Install MCC](#steps-to-install-mcc). -->
 
-## Migrating your MCC to Public Preview
-
-> [!NOTE]
-> Please note, if you reboot your server, the version that you are currently on will no longer function, after which you will be required to migrate to the new version.
-
-We recommend migrating now to the new version to access these benefits and ensure no downtime.
-
-To migrate, use the following steps:
-
-1. Navigate to the cache node that you would like to migrate and select **Download Migration Package** using the button at the top of the page.
-1. Follow the instructions under the **Connected Cache Migrate Scripts** section within Azure portal.
-   :::image type="content" source="images/mcc-isp-migrate.png" alt-text="A screenshot of Azure portal showing the migration instructions for migrating a cache node from the early preview to the public preview." lightbox="images/mcc-isp-migrate.png":::
-1. Go to https://portal.azure.com and navigate to your resource to check your migrated cache nodes.
 
 ## Uninstalling MCC
 

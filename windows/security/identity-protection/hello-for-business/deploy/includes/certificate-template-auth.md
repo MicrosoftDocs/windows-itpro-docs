@@ -61,4 +61,4 @@ CertUtil: -dsTemplate command completed successfully."
 ```
 
 >[!NOTE]
->If you gave your Windows Hello for Business Authentication certificate template a different name, then replace `WHFBAuthentication` in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc). Or, you can view the template name using the `Get-CATemplate` ADCS Administration Windows PowerShell cmdlet on your certification authority.
+>If you gave your Windows Hello for Business Authentication certificate template a different name, then replace `WHFBAuthentication` in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc).

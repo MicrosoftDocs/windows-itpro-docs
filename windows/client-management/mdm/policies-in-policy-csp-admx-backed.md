@@ -1,7 +1,7 @@
 ---
 title: ADMX-backed policies in Policy CSP
 description: Learn about the ADMX-backed policies in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1943,6 +1943,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [IZ_Policy_OpenSearchQuery_Trusted](policy-csp-admx-windowsexplorer.md)
 - [IZ_Policy_OpenSearchPreview_Trusted](policy-csp-admx-windowsexplorer.md)
 - [EnableShellShortcutIconRemotePath](policy-csp-admx-windowsexplorer.md)
+- [DisableMotWOnInsecurePathCopy](policy-csp-admx-windowsexplorer.md)
 - [EnableSmartScreen](policy-csp-admx-windowsexplorer.md)
 - [NoNewAppAlert](policy-csp-admx-windowsexplorer.md)
 - [ShowHibernateOption](policy-csp-admx-windowsexplorer.md)
@@ -2210,6 +2211,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [AllowSaveTargetAsInIEMode](policy-csp-internetexplorer.md)
 - [DisableInternetExplorerApp](policy-csp-internetexplorer.md)
 - [EnableExtendedIEModeHotkeys](policy-csp-internetexplorer.md)
+- [AllowLegacyURLFields](policy-csp-internetexplorer.md)
 - [ResetZoomForDialogInIEMode](policy-csp-internetexplorer.md)
 - [EnableGlobalWindowListInIEMode](policy-csp-internetexplorer.md)
 - [JScriptReplacement](policy-csp-internetexplorer.md)
@@ -2537,6 +2539,7 @@ This article lists the ADMX-backed policies in Policy CSP.
 - [DoNotAllowWebAuthnRedirection](policy-csp-remotedesktopservices.md)
 - [DisconnectOnLockLegacyAuthn](policy-csp-remotedesktopservices.md)
 - [DisconnectOnLockMicrosoftIdentityAuthn](policy-csp-remotedesktopservices.md)
+- [TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME](policy-csp-remotedesktopservices.md)
 
 ## RemoteManagement
 

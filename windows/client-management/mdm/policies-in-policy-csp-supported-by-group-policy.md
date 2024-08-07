@@ -1,7 +1,7 @@
 ---
 title: Policies in Policy CSP supported by Group Policy
 description: Learn about the policies in Policy CSP supported by Group Policy.
-ms.date: 05/20/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -530,6 +530,10 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [LetAppsAccessEmail_ForceAllowTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessEmail_ForceDenyTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessEmail_UserInControlOfTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI_ForceAllowTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI_ForceDenyTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI_UserInControlOfTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureProgrammatic](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps](policy-csp-privacy.md)
@@ -805,6 +809,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](policy-csp-update.md)
 - [ConfigureDeadlineNoAutoRebootForQualityUpdates](policy-csp-update.md)
 - [AllowOptionalContent](policy-csp-update.md)
+- [AlwaysAutoRebootAtScheduledTimeMinutes](policy-csp-update.md)
 
 ## UserRights
 
@@ -872,7 +877,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 - [TurnOffWindowsCopilot](policy-csp-windowsai.md)
 - [DisableAIDataAnalysis](policy-csp-windowsai.md)
-- [AllowImageCreator](policy-csp-windowsai.md)
 
 ## WindowsDefenderSecurityCenter
 

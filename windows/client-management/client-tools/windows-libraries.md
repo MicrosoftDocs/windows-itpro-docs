@@ -2,12 +2,14 @@
 title: Windows Libraries
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
 ms.topic: conceptual
-ms.date: 08/10/2023
+ms.date: 07/01/2024
 ---
 
 # Windows libraries
 
 Libraries are virtual containers for users' content. A library can contain files and folders stored on the local computer or in a remote storage location. In Windows Explorer, users interact with libraries in ways similar to how they would interact with other folders. Libraries are built upon the legacy known folders (such as My Documents, My Pictures, and My Music) that users are familiar with, and these known folders are automatically included in the default libraries and set as the default save location.
+
+To show libraries in File Explorer, go to **Options**, select the **View** tab, and then select **Show libraries**.
 
 ## Features for Users
 

@@ -1,16 +1,13 @@
 ---
-title: PowerShell cmdlets for provisioning Windows 10/11
-description: Learn more about the Windows PowerShell cmdlets that you can use with Provisioning packages on Windows10/11 client desktop devices.
-ms.topic: article
-
-ms.date: 12/31/2017
+title: PowerShell cmdlets for provisioning packages in Windows
+description: Learn more about the Windows PowerShell cmdlets that you can use with Provisioning packages on Windows devices.
+ms.topic: conceptual
+ms.date: 07/09/2024
 ---
 
-# PowerShell cmdlets for provisioning Windows client (reference)
+# PowerShell cmdlets for provisioning Windows client
 
 Windows client includes Provisioning PowerShell cmdlets. These cmdlets make it easy to script the following functions.
-
-## cmdlets
 
 - **Add-ProvisioningPackage**: Applies a provisioning package.
 
@@ -59,7 +56,7 @@ Windows client includes Provisioning PowerShell cmdlets. These cmdlets make it e
 
   - `Uninstall-TrustedProvisioningCertificate <thumbprint>`
 
->[!NOTE]
+> [!NOTE]
 > You can use Get-Help to get usage help on any command. For example: `Get-Help Add-ProvisioningPackage`
 
 Trace logs are captured when using cmdlets. The following logs are available in the logs folder after the cmdlet completes:
@@ -69,20 +66,5 @@ Trace logs are captured when using cmdlets. The following logs are available in 
 - ProvTrace.&lt;timestamp&gt;.TXT - TEXT file containing trace output formatted for easy reading, filtered to only show events logged by providers in the WPRP file
 - ProvLogReport.&lt;timestamp&gt;.XLS - Excel file containing trace output, filtered to only show events logged by providers in WPRP file
 
-
-
->[!NOTE]
->When applying provisioning packages using Powershell cmdlets, the default behavior is to suppress the prompt that appears when applying an unsigned provisioning package. This is by design so that provisioning packages can be applied as part of existing scripts.
-
-## Related articles
-
-- [How provisioning works in Windows client](provisioning-how-it-works.md)
-- [Install Windows Configuration Designer](provisioning-install-icd.md)
-- [Create a provisioning package](provisioning-create-package.md)
-- [Apply a provisioning package](provisioning-apply-package.md)
-- [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
-- [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
-- [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
-
+> [!NOTE]
+> When applying provisioning packages using Powershell cmdlets, the default behavior is to suppress the prompt that appears when applying an unsigned provisioning package. This is by design so that provisioning packages can be applied as part of existing scripts.

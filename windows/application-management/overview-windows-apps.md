@@ -4,7 +4,7 @@ description: Learn about the different types of apps that run on Windows. For ex
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 08/28/2023
+ms.date: 06/28/2024
 ms.topic: overview
 ms.service: windows-client
 ms.subservice: itpro-apps
@@ -31,7 +31,7 @@ For more information on deploying Microsoft 365 apps, see the [Deployment guide 
 
 ### Power Apps
 
-These apps are custom, low-code apps to connect to business data, modernize processes, and solve unique challenges. Power Apps are available online and on-premises, can run in a web browser, and on mobile devices. They can be created by business analysts and professional developers. 
+These apps are custom, low-code apps to connect to business data, modernize processes, and solve unique challenges. Power Apps are available online and on-premises, can run in a web browser, and on mobile devices. They can be created by business analysts and professional developers.
 
 For more information, see [What is Power Apps?](/power-apps/powerapps-overview).
 
@@ -182,7 +182,7 @@ App-V allows Win32 apps to be used as virtual apps.
 
 On an on-premises server, you install and configure the App-V server components, and then install your Win32 apps. On Windows Enterprise client devices, you use the App-V client components to run the virtualized apps. They allow users to open the virtual apps using the icons and file names they're familiar with. Users use the apps as if they're installed locally.
 
-The benefit is to deliver virtual apps in real time, and as-needed. For more information, see [Application Virtualization (App-V) for Windows overview](./app-v/appv-for-windows.md).
+The benefit is to deliver virtual apps in real time, and as-needed. For more information, see [Application Virtualization (App-V) for Windows overview](/microsoft-desktop-optimization-pack/app-v/appv-for-windows).
 
 ## Manage apps
 

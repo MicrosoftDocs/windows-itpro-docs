@@ -1,7 +1,7 @@
 ---
 title: PassportForWork DDF file
 description: View the XML file containing the device description framework (DDF) for the PassportForWork configuration service provider.
-ms.date: 04/10/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -870,7 +870,7 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
               <MIME />
             </DFType>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>99.9.99999, 10.0.22621.3374, 10.0.22000.2899, 10.0.20348.2402, 10.0.19041.4239</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.6</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">
@@ -881,45 +881,6 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
               <MSFT:Enum>
                 <MSFT:Value>true</MSFT:Value>
                 <MSFT:ValueDescription>Provisioning Disabled</MSFT:ValueDescription>
-              </MSFT:Enum>
-            </MSFT:AllowedValues>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DisablePostLogonCredentialCaching</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <DefaultValue>False</DefaultValue>
-            <Description>Disable caching of the Windows Hello for Business credential after sign-in.</Description>
-            <DFFormat>
-              <bool />
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME />
-            </DFType>
-            <MSFT:Applicability>
-              <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-              <MSFT:CspVersion>1.6</MSFT:CspVersion>
-            </MSFT:Applicability>
-            <MSFT:AllowedValues ValueType="ENUM">
-              <MSFT:Enum>
-                <MSFT:Value>false</MSFT:Value>
-                <MSFT:ValueDescription>Credential Caching Enabled</MSFT:ValueDescription>
-              </MSFT:Enum>
-              <MSFT:Enum>
-                <MSFT:Value>true</MSFT:Value>
-                <MSFT:ValueDescription>Credential Caching Disabled</MSFT:ValueDescription>
               </MSFT:Enum>
             </MSFT:AllowedValues>
           </DFProperties>

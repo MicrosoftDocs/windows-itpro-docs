@@ -6,7 +6,7 @@ ms.collection:
 - must-keep
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 12/23/2023
+ms.date: 06/07/2024
 ---
 
 # AppLocker rule collection extensions
@@ -35,4 +35,4 @@ To apply AppLocker policy to nonuser processes, set ``<Services EnforcementMode=
 
 ## System apps
 
-When using AppLocker to control nonuser processes, your policy must allow all Windows system code or your device night behave unexpectedly. To automatically allow all system code that is part of Windows, set ``<SystemApps Allow="Enabled"/>`` in the ``<RedstoneExtensions>`` section as shown in the preceding XML fragment.
+When using AppLocker to control nonuser processes, your policy must allow all Windows system code or your device might behave unexpectedly. To automatically allow all system code that is part of Windows, set ``<SystemApps Allow="Enabled"/>`` in the ``<RedstoneExtensions>`` section as shown in the preceding XML fragment.

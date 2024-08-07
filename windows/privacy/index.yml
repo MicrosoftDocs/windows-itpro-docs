@@ -9,7 +9,7 @@ metadata:
   description: Learn about how privacy is managed in Windows.
   ms.service: windows-client
   ms.subservice: itpro-privacy
-  ms.topic: hub-page # Required
+  ms.topic: hub-page
   ms.collection:
   - highpri
   - essentials-privacy
@@ -17,162 +17,49 @@ metadata:
   author: DHB-MSFT
   ms.author: danbrown
   manager: laurawi
-  ms.date: 09/08/2021 #Required; mm/dd/yyyy format.
+  ms.date: 06/27/2024
   ms.localizationpriority: high
 
-# highlightedContent section (optional)
-# Maximum of 8 items
 highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
-    # Card
     - title: Windows privacy & compliance guide for IT and compliance professionals
       itemType: overview
-      url: Windows-10-and-privacy-compliance.md
-    # Card
+      url: windows-privacy-compliance-guide.md
     - title: Configure Windows diagnostic data
       itemType: how-to-guide
       url: configure-windows-diagnostic-data-in-your-organization.md
-    # Card
     - title: View Windows diagnostic data
       itemType: how-to-guide
       url: diagnostic-data-viewer-overview.md
 
-# productDirectory section (optional)
 productDirectory:
   title: Understand Windows diagnostic data in Windows 10 and Windows 11
   summary: For the latest Windows 10 version and Windows 11, learn more about what Windows diagnostic data is collected under the different settings.
   items:
-    # Card
     - title: Windows 11 required diagnostic data
-      # imageSrc should be square in ratio with no whitespace
       imageSrc: /media/common/i_extend.svg
       summary: Learn more about basic Windows diagnostic data events and fields collected.
       url: required-diagnostic-events-fields-windows-11-22H2.md
-    # Card
     - title: Windows 10 required diagnostic data
       imageSrc: /media/common/i_build.svg
       summary: See what changes Windows is making to align to the new data collection taxonomy
       url: required-windows-diagnostic-data-events-and-fields-2004.md
-    # Card
     - title: Optional diagnostic data
       imageSrc: /media/common/i_get-started.svg
       summary: Get examples of the types of optional diagnostic data collected from Windows
-      url: windows-diagnostic-data.md
+      url: optional-diagnostic-data.md
 
-# conceptualContent section (optional)
-# conceptualContent:
-# # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-#   title: sectiontitle # < 60 chars (optional)
-#   summary: sectionsummary # < 160 chars (optional)
-#   items:
-#     # Card
-#     - title: cardtitle1
-#       links:
-#         - url: file1.md OR https://learn.microsoft.com/file1
-#           itemType: itemType
-#           text: linktext1
-#         - url: file2.md OR https://learn.microsoft.com/file2
-#           itemType: itemType
-#           text: linktext2
-#         - url: file3.md OR https://learn.microsoft.com/file3
-#           itemType: itemType
-#           text: linktext3
-#       # footerLink (optional)
-#       footerLink:
-#         url: filefooter.md OR https://learn.microsoft.com/filefooter
-#         text: See more
-#     # Card
-#     - title: cardtitle2
-#       links:
-#         - url: file1.md OR https://learn.microsoft.com/file1
-#           itemType: itemType
-#           text: linktext1
-#         - url: file2.md OR https://learn.microsoft.com/file2
-#           itemType: itemType
-#           text: linktext2
-#         - url: file3.md OR https://learn.microsoft.com/file3
-#           itemType: itemType
-#           text: linktext3
-#       # footerLink (optional)
-#       footerLink:
-#         url: filefooter.md OR https://learn.microsoft.com/filefooter
-#         text: See more
-#     # Card
-#     - title: cardtitle3
-#       links:
-#         - url: file1.md OR https://learn.microsoft.com/file1
-#           itemType: itemType
-#           text: linktext1
-#         - url: file2.md OR https://learn.microsoft.com/file2
-#           itemType: itemType
-#           text: linktext2
-#         - url: file3.md OR https://learn.microsoft.com/file3
-#           itemType: itemType
-#           text: linktext3
-#       # footerLink (optional)
-#       footerLink:
-#         url: filefooter.md OR https://learn.microsoft.com/filefooter
-#         text: See more
-
-# # tools section (optional)
-# tools:
-#   title: sectiontitle # < 60 chars (optional)
-#   summary: sectionsummary # < 160 chars (optional)
-#   items:
-#     # Card
-#     - title: cardtitle1
-#       # imageSrc should be square in ratio with no whitespace
-#       imageSrc: ./media/index/image1.svg OR https://learn.microsoft.com/media/logos/image1.svg
-#       url: file1.md
-#     # Card
-#     - title: cardtitle2
-#       imageSrc: ./media/index/image2.svg OR https://learn.microsoft.com/media/logos/image2.svg
-#       url: file2.md
-#     # Card
-#     - title: cardtitle3
-#       imageSrc: ./media/index/image3.svg OR https://learn.microsoft.com/media/logos/image3.svg
-#       url: file3.md
-
-# additionalContent section (optional)
-# Card with summary style
-# additionalContent:
-#   # Supports up to 3 sections
-#   sections:
-#     - title: sectiontitle # < 60 chars (optional)
-#       summary: sectionsummary # < 160 chars (optional)
-#       items:
-#         # Card
-#         - title: cardtitle1
-#           summary: cardsummary1
-#           url: file1.md OR https://learn.microsoft.com/file1
-#         # Card
-#         - title: cardtitle2
-#           summary: cardsummary2
-#           url: file1.md OR https://learn.microsoft.com/file2
-#         # Card
-#         - title: cardtitle3
-#           summary: cardsummary3
-#           url: file1.md OR https://learn.microsoft.com/file3
-#   # footer (optional)
-#   footer: "footertext [linktext](/footerfile)"
-
-# additionalContent section (optional)
-# Card with links style
 additionalContent:
-  # Supports up to 3 sections
   sections:
     - items:
-        # Card
         - title: View and manage Windows 10 connection endpoints
           links:
             - text: Manage Windows 10 connection endpoints
-              url: ./manage-windows-2004-endpoints.md
+              url: ./manage-windows-21h2-endpoints.md
             - text: Manage connection endpoints for non-Enterprise editions of Windows 10
-              url: windows-endpoints-2004-non-enterprise-editions.md
+              url: windows-endpoints-21h1-non-enterprise-editions.md
             - text: Manage connections from Windows to Microsoft services
               url: manage-connections-from-windows-operating-system-components-to-microsoft-services.md
-        # Card
         - title: Additional resources
           links:
             - text: Windows 10 on Trust Center
@@ -181,5 +68,4 @@ additionalContent:
               url: /microsoft-365/compliance/gdpr
             - text: Support for GDPR Accountability on Service Trust Portal
               url: https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted
-  # footer (optional)
-  # footer: "footertext [linktext](/footerfile)"
+

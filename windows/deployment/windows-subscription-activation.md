@@ -4,12 +4,10 @@ description: Learn how to step up from Windows Pro to a Windows Enterprise subsc
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
-ms.collection:
-  - highpri
-  - tier2
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
+ms.reviewer: nganguly
 ms.topic: concept-article
 zone_pivot_groups: windows-versions-11-10
 ms.date: 03/04/2024
@@ -135,7 +133,7 @@ With Windows Enterprise or Education editions, an organization can benefit from 
 
 To compare Windows editions and review pricing, see the following sites:
 
-- [Compare Windows editions](https://www.microsoft.com/en-us/windows/business/windows-10-pro-vs-windows-11-pro) <!-- Leaving in language reference in URL because URL without it doesn't redirect properly>
+- [Compare Windows editions](https://www.microsoft.com/en-us/windows/business/windows-10-pro-vs-windows-11-pro) <!-- Leaving in language reference in URL because URL without it doesn't redirect properly-->
 - [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing)
 
 Benefits of moving to Windows as an online service include:

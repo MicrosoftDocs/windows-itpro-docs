@@ -2,7 +2,7 @@
 title: Secure the Windows boot process
 description: This article describes how Windows security features help protect your PC from malware, including rootkits and other applications.
 ms.topic: conceptual
-ms.date: 08/11/2023
+ms.date: 07/10/2024
 ms.collection:
   - tier1
 ---
@@ -73,7 +73,7 @@ These requirements help protect you from rootkits while allowing you to run any 
 
 To prevent malware from abusing these options, the user must manually configure the UEFI firmware to trust a non-certified bootloader or to turn off Secure Boot. Software can't change the Secure Boot settings.
 
-The default state of Secure Boot has a wide circle of trust, which can result in customers trusting boot components they may not need. Since the Microsoft 3rd Party UEFI CA certificate signs the bootloaders for all Linux distributions, trusting the Microsoft 3rd Party UEFI CA signature in the UEFI database  increase  s the attack surface of systems. A customer who intended to only trust and boot a single Linux distribution will trust all distributions - much more than their desired configuration. A vulnerability in any of the bootloaders exposes the system and places the customer at risk of exploit for a bootloader they never intended to use, as seen in recent vulnerabilities, for example [with the GRUB bootloader](https://msrc.microsoft.com/security-guidance/advisory/ADV200011) or [firmware-level rootkit]( https://www.darkreading.com/threat-intelligence/researchers-uncover-dangerous-new-firmware-level-rootkit) affecting boot components. [Secured-core PCs](/windows-hardware/design/device-experiences/OEM-highly-secure-11) require Secure Boot to be enabled and configured to distrust the Microsoft 3rd Party UEFI CA signature, by default, to provide customers with the most secure configuration of their PCs possible.
+The default state of Secure Boot has a wide circle of trust, which can result in customers trusting boot components they may not need. Since the Microsoft 3rd Party UEFI CA certificate signs the bootloaders for all Linux distributions, trusting the Microsoft 3rd Party UEFI CA signature in the UEFI database  increase  s the attack surface of systems. A customer who intended to only trust and boot a single Linux distribution will trust all distributions - more than their desired configuration. A vulnerability in any of the bootloaders exposes the system and places the customer at risk of exploit for a bootloader they never intended to use, as seen in recent vulnerabilities, for example [with the GRUB bootloader](https://msrc.microsoft.com/security-guidance/advisory/ADV200011) or [firmware-level rootkit]( https://www.darkreading.com/threat-intelligence/researchers-uncover-dangerous-new-firmware-level-rootkit) affecting boot components. [Secured-core PCs](/windows-hardware/design/device-experiences/OEM-highly-secure-11) require Secure Boot to be enabled and configured to distrust the Microsoft 3rd Party UEFI CA signature, by default, to provide customers with the most secure configuration of their PCs possible.
 
 To trust and boot operating systems, like Linux, and components signed by the UEFI signature, Secured-core PCs can be configured in the BIOS menu to add the signature in the UEFI database by following these steps:
 
@@ -91,11 +91,11 @@ Like most mobile devices, Arm-based devices, such as the Microsoft Surface RT de
 
 Trusted Boot takes over where Secure Boot ends. The bootloader verifies the digital signature of the Windows kernel before loading it. The Windows kernel, in turn, verifies every other component of the Windows startup process, including the boot drivers, startup files, and ELAM. If a file has been modified, the bootloader detects the problem and refuses to load the corrupted component. Often, Windows can automatically repair the corrupted component, restoring the integrity of Windows and allowing the PC to start normally.
 
-## Early Launch Anti-Malware
+## Early Launch anti-malware
 
 Because Secure Boot has protected the bootloader and Trusted Boot has protected the Windows kernel, the next opportunity for malware to start is by infecting a non-Microsoft boot driver. Traditional anti-malware apps don't start until after the boot drivers have been loaded, giving a rootkit disguised as a driver the opportunity to work.
 
-Early Launch Anti-Malware (ELAM) can load a Microsoft or non-Microsoft anti-malware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the OS hasn't started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: examine every boot driver and determine whether it is on the list of trusted drivers. If it's not trusted, Windows doesn't load it.
+Early Launch anti-malware (ELAM) can load a Microsoft or non-Microsoft anti-malware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the OS hasn't started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: examine every boot driver and determine whether it is on the list of trusted drivers. If it's not trusted, Windows doesn't load it.
 
 An ELAM driver isn't a full-featured anti-malware solution; that loads later in the boot process. Windows Defender (included with Windows) supports ELAM, as does several non-Microsoft anti-malware apps.
 

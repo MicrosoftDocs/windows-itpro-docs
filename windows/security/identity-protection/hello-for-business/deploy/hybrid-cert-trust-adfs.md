@@ -1,7 +1,7 @@
 ---
 title: Configure Active Directory Federation Services in a hybrid certificate trust model
 description: Learn how to configure Active Directory Federation Services (AD FS) to support the Windows Hello for Business hybrid certificate trust model.
-ms.date: 03/12/2024
+ms.date: 06/23/2024
 ms.topic: tutorial
 ---
 
@@ -52,19 +52,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 1. Restart the AD FS server
 
 > [!NOTE]
-> For AD FS 2019 in a hybrid certificate trust model, a PRT issue exists. You may encounter this error in the AD FS Admin event logs: *Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'*. To remediate this error:
->
-> 1. Launch AD FS management console and browse to **Services > Scope Descriptions**
-> 1. Right click **Scope Descriptions** and select **Add Scope Description**
-> 1. Under name type `ugs` and select **Apply > OK**
-> 1. Launch PowerShell as an administrator
-> 1. Obtain the *ObjectIdentifier* of the application permission with the `ClientRoleIdentifier` parameter equal to `38aa3b87-a06d-4817-b275-7a316988d93b`:
-> ```PowerShell
-> (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
-> ```
-> 1. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`.
-> 1. Restart the AD FS service
-> 1. On the client: Restart the client. User should be prompted to provision Windows Hello for Business
+> For AD FS 2019 and later in a certificate trust model, a known PRT issue exists. You may encounter this error in AD FS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. For more information about the isse and its resolution, see [Certificate trust provisioning with AD FS broken on windows server 2019](../hello-deployment-issues.md#certificate-trust-provisioning-with-ad-fs-broken-on-windows-server-2019).
 
 ## Section review and next steps
 

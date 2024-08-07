@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments using MDM and group policy. Learn about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 05/23/2024
+ms.date: 06/13/2024
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -12,13 +12,16 @@ ms.collection:
 appliesto:
 - ✅ <a href="https://www.microsoft.com/windows/business/devices/copilot-plus-pcs#copilot-plus-pcs" target="_blank">Copilot+ PCs</a>
 ---
----
+
 
 # Manage Recall
 <!--8908044-->
 >**Looking for consumer information?** See [Retrace your steps with Recall](https://support.microsoft.com/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c).
 
 Recall allows you to search across time to find the content you need. Just describe how you remember it, and Recall retrieves the moment you saw it. Recall takes snapshots of your screen and stores them in a timeline. Snapshots are taken every five seconds while content on the screen is different from the previous snapshot. Snapshots are locally stored and locally analyzed on your PC. Recall's analysis allows you to search for content, including both images and text, using natural language.
+
+> [!NOTE]
+> Recall is coming soon through a post-launch Windows update. See [aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs). 
 
 When Recall opens the snapshot a user selected, it enables screenray, which runs on top of the saved snapshot. Screenray analyzes what's in the snapshot and allows users to interact with individual elements in the snapshot. For instance, users can copy text from the snapshot or send pictures from the snapshot to an app that supports `jpeg` files.
 
@@ -87,3 +90,7 @@ The amount of disk space users can allocate to Recall varies depending on how mu
 Microsoft has been on a responsible AI journey since 2017, when we defined our principles and approach to ensuring this technology is used in a way that is driven by ethical principles that put people first. For more about our responsible AI journey, the ethical principles that guide us, and the tooling and capabilities we've created to assure that we develop AI technology responsibly, see [Responsible AI](https://www.microsoft.com/ai/responsible-ai).
 
 Recall uses optical character recognition (OCR), local to the PC, to analyze snapshots and facilitate search. For more information about OCR, see [Transparency note and use cases for OCR](/legal/cognitive-services/computer-vision/ocr-transparency-note). For more information about privacy and security, see [Privacy and control over your Recall experience](https://support.microsoft.com/windows/privacy-and-control-over-your-recall-experience-d404f672-7647-41e5-886c-a3c59680af15).
+
+## Information for developers
+
+If you're a developer and want to launch Recall, you can call the `ms-recall` protocol URI. When you call this, Recall opens and takes a snapshot of the screen, which is the default behavior for when Recall is launched. For more information about using Recall in your Windows app, see [Recall overview](/windows/ai/apis/recall) in the Windows AI API documentation.

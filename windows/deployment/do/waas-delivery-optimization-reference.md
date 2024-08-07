@@ -21,7 +21,7 @@ ms.date: 05/23/2024
 
 > **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the main spreadsheet available at the Download Center [for Windows 11](https://www.microsoft.com/en-us/download/details.aspx?id=104594) or [for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=104678).
 
-There are many configuration options you can set in Delivery Optimization to customize the content delivery experience specific to your environment needs. This article summarizes those configurations for your reference. If you just need an overview of Delivery Optimization, see [What is Delivery Optimization](waas-delivery-optimization.md). If you need information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows](waas-delivery-optimization-setup.md).
+There are many configuration options you can set in Delivery Optimization to customize the content delivery experience specific to your environment needs. This article summarizes those configurations for your reference. If you just need an overview of Delivery Optimization, see [What is Delivery Optimization](waas-delivery-optimization.md). If you need information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows](delivery-optimization-configure.md).
 
 ## Delivery Optimization options
 
@@ -37,7 +37,7 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Download mode](#download-mode) | DODownloadMode | 1511 | Default is configured to LAN(1). The Group [Download mode](#download-mode) (2) combined with [Group ID](#group-id), enables administrators to create custom device groups that share content between devices in the group.|
 | [Group ID](#group-id)  | DOGroupID | 1511 | Used with Group [Download mode](#download-mode). If not configured, check [GroupIDSource](#select-the-source-of-group-ids). When GroupID or GroupIDSource policies aren't configured, the GroupID is defined as the AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order.  |
 | [Select the source of Group IDs](#select-the-source-of-group-ids) | DOGroupIDSource | 1803 | If not configured, check [Group ID](#group-id). When the GroupID or GroupIDSource policies aren't configured, the Group is defined as the AD Site (1), Authenticated domain SID (2) or Microsoft Entra tenant ID (5), in that order. |
-| [Select a method to restrict peer selection](#select-a-method-to-restrict-peer-selection) | DORestrictPeerSelectionBy | 1803 | Starting in Windows 11, a new option to use 'Local discovery (DNS-SD)' is available to configure via this policy. |
+| [Select a method to restrict peer selection](#select-a-method-to-restrict-peer-selection) | DORestrictPeerSelectionBy | 1803 | Default isn't configured.|
 | [Minimum RAM (inclusive) allowed to use peer caching](#minimum-ram-inclusive-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 | Default value is 4 GB. |
 | [Minimum disk size allowed to use peer caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 | Default value is 32 GB. |
 | [Max cache age](#max-cache-age) | DOMaxCacheAge | 1511 | Default value is 259,200 seconds (three days). |
@@ -87,8 +87,8 @@ All cached files have to be above a set minimum size. This size is automatically
 More options available that control the impact Delivery Optimization has on your network include the following settings:
 
 - [Minimum Background QoS](#minimum-background-qos) lets administrators guarantee a minimum download speed for Windows updates. This setting adjusts the amount of data downloaded directly from HTTP sources, rather than other peers in the network.
-- [Maximum Foreground Download Bandwidth](#maximum-foreground-download-bandwidth) specifies the maximum foreground download bandwidth*hat Delivery Optimization uses, across all concurrent download activities, as a percentage of available download bandwidth.
-- [Maximum Background Download Bandwidth](#maximum-background-download-bandwidth) specifies the **maximum background download bandwidth** that Delivery Optimization uses, across all concurrent download activities, as a percentage of available download bandwidth.
+- [Maximum Foreground Download Bandwidth](#maximum-foreground-download-bandwidth) specifies the maximum foreground download bandwidth that Delivery Optimization uses, across all concurrent download activities, as a percentage of available download bandwidth.
+- [Maximum Background Download Bandwidth](#maximum-background-download-bandwidth) specifies the maximum background download bandwidth that Delivery Optimization uses, across all concurrent download activities, as a percentage of available download bandwidth.
 - [Set Business Hours to Limit Background Download Bandwidth](#set-business-hours-to-limit-background-download-bandwidth) specifies the maximum background download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 - [Set Business Hours to Limit Foreground Download Bandwidth](#set-business-hours-to-limit-foreground-download-bandwidth) specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 - [Select a method to restrict Peer Selection](#select-a-method-to-restrict-peer-selection) restricts peer selection by the options you select.
@@ -96,7 +96,7 @@ More options available that control the impact Delivery Optimization has on your
 
 #### Policies to prioritize the use of peer-to-peer and cache server sources
 
-When Delivery Optimization client is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client connects to both MCC and peers in parallel. If the desired content can't be obtained from MCC or peers, Delivery Optimization will automatically fallback to the HTTP source to get the requested content. There are four settings that allow you to prioritize peer-to-peer or MCC sources by delaying the immediate fallback to HTTP source, which is the default behavior.
+When Delivery Optimization client is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client connects to both MCC and peers in parallel. If the desired content can't be obtained from MCC or peers, Delivery Optimization will automatically fall back to the HTTP source to get the requested content. There are four settings that allow you to prioritize peer-to-peer or MCC sources by delaying the immediate fallback to HTTP source, which is the default behavior.
 
 ##### Peer-to-peer delay fallback settings
 
@@ -127,7 +127,7 @@ Download mode dictates which download sources clients are allowed to use when do
 
 | Download mode option | Functionality when configured |
 | --- | --- |
-| HTTP Only (0) | This setting disables peer-to-peer caching but still allows Delivery Optimization to download content over HTTP from the download's original source or a Microsoft Connected Cache server. This mode uses additional metadata provided by the Delivery Optimization cloud services for a peerless reliable and efficient download experience. |
+| HTTP Only (0) | This setting disables peer-to-peer caching but still allows Delivery Optimization to download content over HTTP from the download's original source or a Microsoft Connected Cache server. This mode uses additional metadata provided by the Delivery Optimization cloud services for a peerless, reliable and efficient download experience. |
 | LAN (**1 - Default**) | This default operating mode for Delivery Optimization enables peer sharing on the same network. The Delivery Optimization cloud service finds other clients that connect to the Internet using the same public IP as the target client. These clients then try to connect to other peers on the same network by using their private subnet IP.|
 | Group (2) | When group mode is set, the group is automatically selected based on the device's Active Directory Domain Services (AD DS) site (Windows 10, version 1607) or the domain the device is authenticated to (Windows 10, version 1511). In group mode, peering occurs across internal subnets, between devices that belong to the same group, including devices in remote offices. You can use GroupID option to create your own custom group independently of domains and AD DS sites. Starting with Windows 10, version 1803, you can use the GroupIDSource parameter to take advantage of other method to create groups dynamically. Group download mode is the recommended option for most organizations looking to achieve the best bandwidth optimization with Delivery Optimization. |
 | Internet (3) | Enable Internet peer sources for Delivery Optimization. |
@@ -233,11 +233,13 @@ Starting in Windows 10, version 1803, specifies the maximum background download 
 
 MDM Setting: **DORestrictPeerSelectionBy**
 
-Starting in Windows 10, version 1803, configure this policy to restrict peer selection via selected option. In Windows 11, the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. These options apply to both Download Modes LAN (1) and Group (2) and therefore means there's no peering between subnets.
+Starting in Windows 10, version 1803, configure this policy to further restrict peer selection in Download Modes LAN (1) and Group (2). In Windows 11, the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = None, 1 = Subnet mask, and 2 = Local Peer Discovery (DNS-SD). Choosing either Subnet mask (1) or Local Peer Discovery (2) will avoid peering between subnets.
 
-If Group mode is configured, Delivery Optimization connects to locally discovered peers that are also part of the same Group (have the same Group ID).
+If Group mode is configured, Delivery Optimization connects to locally discovered peers that are also part of the same Group (have the same Group ID) and prevents devices that aren't using the same Group ID from participating.
 
 In Windows 11, the Local Peer Discovery (DNS-SD) option can be configured via MDM or Group Policy. However, in Windows 10, this feature can be enabled by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**.
+
+The default behaviors differ between Windows 10 and Windows 11. In Windows 10, there is no restriction configured. In Windows 11, the default peer selection is restricted to the Subnet only in LAN [Download mode](#download-mode) (1)
 
 ### Delay foreground download from HTTP (in secs)
 

@@ -1,7 +1,7 @@
 ---
 title: Windows Sandbox configuration
 description: Windows Sandbox configuration
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/26/2024
 ---
 
@@ -60,7 +60,7 @@ Supported values:
 
 - *Enable*: Enables vGPU support in the sandbox.
 - *Disable*: Disables vGPU support in the sandbox. If this value is set, the sandbox uses software rendering, which might be slower than virtualized GPU.
-- *Default* This value is the default value for vGPU support. Currently, this default value denotes that vGPU is disabled.
+- *Default* This value is the default value for vGPU support. Currently, this default value denotes that vGPU is enabled.
 
 > [!NOTE]
 > Enabling virtualized GPU can potentially increase the attack surface of the sandbox.

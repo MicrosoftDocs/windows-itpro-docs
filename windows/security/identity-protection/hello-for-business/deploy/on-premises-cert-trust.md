@@ -1,12 +1,11 @@
 ---
 title: Windows Hello for Business on-premises certificate trust deployment guide
 description: Learn how to deploy Windows Hello for Business in an on-premises, certificate trust scenario.
-ms.date: 03/12/2024
+ms.date: 06/23/2024
 ms.topic: tutorial
 ---
 
 # On-premises certificate trust deployment guide
-
 
 [!INCLUDE [apply-to-on-premises-cert-trust](includes/apply-to-on-premises-cert-trust.md)]
 
@@ -48,8 +47,6 @@ Windows Hello for Business must have a Public Key Infrastructure (PKI) when usin
 
 [!INCLUDE [web-server-certificate-template](includes/certificate-template-web-server.md)]
 
-[!INCLUDE [enrollment-agent-certificate-template](includes/certificate-template-enrollment-agent.md)]
-
 [!INCLUDE [auth-certificate-template](includes/certificate-template-auth.md)]
 
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
@@ -64,7 +61,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Expand the parent node from the navigation pane
 1. Select **Certificate Templates** in the navigation pane
 1. Right-click the **Certificate Templates** node. Select **New > Certificate Template** to issue
-1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)*, *Internal Web Server*, *WHFB Enrollment Agent* and *WHFB Authentication* templates you created in the previous steps. Select **OK** to publish the selected certificate templates to the certification authority
+1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)*, *Internal Web Server*, and *WHFB Authentication* templates you created in the previous steps. Select **OK** to publish the selected certificate templates to the certification authority
 1. If you published the *Domain Controller Authentication (Kerberos)* certificate template, then unpublish the certificate templates you included in the superseded templates list
    - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
 1. Close the console
@@ -85,7 +82,6 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 > - Configure domain controller and web server certificate templates
 > - Supersede existing domain controller certificates
 > - Unpublish superseded certificate templates
-> - Configure an enrollment agent certificate template
 > - Publish the certificate templates to the CA
 > - Deploy certificates to the domain controllers
 > - Validate the domain controllers configuration

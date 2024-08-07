@@ -1,7 +1,7 @@
 ---
 title: CloudDesktop DDF file
 description: View the XML file containing the device description framework (DDF) for the CloudDesktop configuration service provider.
-ms.date: 03/05/2024
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -17,6 +17,69 @@ The following XML file contains the device description framework (DDF) for the C
   <VerDTD>1.2</VerDTD>
   <MSFT:Diagnostics>
   </MSFT:Diagnostics>
+  <Node>
+    <NodeName>CloudDesktop</NodeName>
+    <Path>./User/Vendor/MSFT</Path>
+    <DFProperties>
+      <AccessType>
+        <Get />
+      </AccessType>
+      <Description>The CloudDesktop configuration service provider is used to configure different Cloud PC related scenarios.</Description>
+      <DFFormat>
+        <node />
+      </DFFormat>
+      <Occurrence>
+        <One />
+      </Occurrence>
+      <Scope>
+        <Permanent />
+      </Scope>
+      <DFType>
+        <MIME />
+      </DFType>
+      <MSFT:Applicability>
+        <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+        <MSFT:CspVersion>2.0</MSFT:CspVersion>
+        <MSFT:EditionAllowList>0x4;0x30;0x31;0x7E;0x88;0xA1;0xA2;0xA4;0xA5;0xBC;0xBF;0xCD;</MSFT:EditionAllowList>
+      </MSFT:Applicability>
+    </DFProperties>
+    <Node>
+      <NodeName>EnablePhysicalDeviceAccess</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <DefaultValue>false</DefaultValue>
+        <Description>Configuring this node gives access to the physical devices used to boot to Cloud PCs from the Ctrl+Alt+Del page for specified users. This node supports these options: 0. Not enabled 1. Enabled.</Description>
+        <DFFormat>
+          <bool />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFTitle>Enable access to physical device</DFTitle>
+        <DFType>
+          <MIME />
+        </DFType>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>false</MSFT:Value>
+            <MSFT:ValueDescription>Access to physical device disabled</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>true</MSFT:Value>
+            <MSFT:ValueDescription>Access to physical device enabled</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+  </Node>
   <Node>
     <NodeName>CloudDesktop</NodeName>
     <Path>./Device/Vendor/MSFT</Path>
@@ -40,7 +103,7 @@ The following XML file contains the device description framework (DDF) for the C
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.22621.3235</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x30;0x31;0x7E;0x87;0x88;0x88*;0xA1;0xA2;0xA4;0xA5;0xB4;0xBC;0xBD;0xBF;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x30;0x31;0x7E;0x88;0xA1;0xA2;0xA4;0xA5;0xBC;0xBF;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>

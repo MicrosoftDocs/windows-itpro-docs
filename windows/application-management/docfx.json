@@ -51,7 +51,6 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Application Management",
       "contributors_to_exclude": [
         "dstrome2",
         "rjagiewich",
@@ -68,11 +67,6 @@
       "searchScope": [
         "Windows 10"
       ]
-    },
-    "fileMetadata": {
-      "feedback_system": {
-        "app-v/**/*.*": "None"
-      }
     },
     "template": [],
     "dest": "win-app-management",
