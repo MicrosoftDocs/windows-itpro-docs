@@ -1,7 +1,7 @@
 ---
 title: CloudDesktop CSP
 description: Learn more about the CloudDesktop CSP.
-ms.date: 06/19/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -22,7 +22,8 @@ The following list shows the CloudDesktop configuration service provider nodes:
   - [BootToCloudPCEnhanced](#deviceboottocloudpcenhanced)
   - [EnableBootToCloudSharedPCMode](#deviceenableboottocloudsharedpcmode)
 - ./User/Vendor/MSFT/CloudDesktop
-  - [EnablePhysicalDeviceAccess](#userenablephysicaldeviceaccess)
+  - [EnablePhysicalDeviceAccessOnCtrlAltDel](#userenablephysicaldeviceaccessonctrlaltdel)
+  - [EnablePhysicalDeviceAccessOnErrorScreens](#userenablephysicaldeviceaccessonerrorscreens)
 <!-- CloudDesktop-Tree-End -->
 
 <!-- Device-BootToCloudPCEnhanced-Begin -->
@@ -31,7 +32,7 @@ The following list shows the CloudDesktop configuration service provider nodes:
 <!-- Device-BootToCloudPCEnhanced-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.3235] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5035942](https://support.microsoft.com/help/5035942) [10.0.22621.3374] and later |
 <!-- Device-BootToCloudPCEnhanced-Applicability-End -->
 
 <!-- Device-BootToCloudPCEnhanced-OmaUri-Begin -->
@@ -131,31 +132,31 @@ Setting this node to "true" configures boot to cloud for Shared PC mode. Boot to
 
 <!-- Device-EnableBootToCloudSharedPCMode-End -->
 
-<!-- User-EnablePhysicalDeviceAccess-Begin -->
-## User/EnablePhysicalDeviceAccess
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-Begin -->
+## User/EnablePhysicalDeviceAccessOnCtrlAltDel
 
-<!-- User-EnablePhysicalDeviceAccess-Applicability-Begin -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
 | ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-EnablePhysicalDeviceAccess-Applicability-End -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-Applicability-End -->
 
-<!-- User-EnablePhysicalDeviceAccess-OmaUri-Begin -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-OmaUri-Begin -->
 ```User
-./User/Vendor/MSFT/CloudDesktop/EnablePhysicalDeviceAccess
+./User/Vendor/MSFT/CloudDesktop/EnablePhysicalDeviceAccessOnCtrlAltDel
 ```
-<!-- User-EnablePhysicalDeviceAccess-OmaUri-End -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-OmaUri-End -->
 
-<!-- User-EnablePhysicalDeviceAccess-Description-Begin -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-Description-Begin -->
 <!-- Description-Source-DDF -->
 Configuring this node gives access to the physical devices used to boot to Cloud PCs from the Ctrl+Alt+Del page for specified users. This node supports these options: 0. Not enabled 1. Enabled.
-<!-- User-EnablePhysicalDeviceAccess-Description-End -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-Description-End -->
 
-<!-- User-EnablePhysicalDeviceAccess-Editable-Begin -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-EnablePhysicalDeviceAccess-Editable-End -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-Editable-End -->
 
-<!-- User-EnablePhysicalDeviceAccess-DFProperties-Begin -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
@@ -163,22 +164,71 @@ Configuring this node gives access to the physical devices used to boot to Cloud
 | Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
-<!-- User-EnablePhysicalDeviceAccess-DFProperties-End -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-DFProperties-End -->
 
-<!-- User-EnablePhysicalDeviceAccess-AllowedValues-Begin -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-AllowedValues-Begin -->
 **Allowed values**:
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Access to physical device disabled. |
-| true | Access to physical device enabled. |
-<!-- User-EnablePhysicalDeviceAccess-AllowedValues-End -->
+| false (Default) | Access to physical device on CtrlAltDel page disabled. |
+| true | Access to physical device on CtrlAltDel page enabled. |
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-AllowedValues-End -->
 
-<!-- User-EnablePhysicalDeviceAccess-Examples-Begin -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-EnablePhysicalDeviceAccess-Examples-End -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-Examples-End -->
 
-<!-- User-EnablePhysicalDeviceAccess-End -->
+<!-- User-EnablePhysicalDeviceAccessOnCtrlAltDel-End -->
+
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-Begin -->
+## User/EnablePhysicalDeviceAccessOnErrorScreens
+
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-Applicability-End -->
+
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/CloudDesktop/EnablePhysicalDeviceAccessOnErrorScreens
+```
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-OmaUri-End -->
+
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-Description-Begin -->
+<!-- Description-Source-DDF -->
+Configuring this node gives access to the physical devices used to boot to Cloud PCs from the error screens for specified users. This node supports these options: 0. Not enabled 1. Enabled.
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-Description-End -->
+
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-Editable-End -->
+
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | false |
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-DFProperties-End -->
+
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Access to physical device on error screens disabled. |
+| true | Access to physical device on error screens enabled. |
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-AllowedValues-End -->
+
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-Examples-End -->
+
+<!-- User-EnablePhysicalDeviceAccessOnErrorScreens-End -->
 
 <!-- CloudDesktop-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

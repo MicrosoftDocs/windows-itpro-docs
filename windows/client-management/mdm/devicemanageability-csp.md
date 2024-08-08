@@ -1,7 +1,7 @@
 ---
 title: DeviceManageability CSP
 description: Learn more about the DeviceManageability CSP.
-ms.date: 01/18/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -269,7 +269,7 @@ Enrollment Info string value set by the config source. Recommended to sent to se
 <!-- Device-Provider-{ProviderID}-PayloadTransfer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-PayloadTransfer-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-PayloadTransfer-OmaUri-Begin -->
