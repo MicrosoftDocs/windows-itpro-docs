@@ -1,7 +1,7 @@
 ---
 title: Declared configuration protocol
 description: Learn more about using declared configuration protocol for desired state management of Windows devices.
-ms.date: 07/08/2024
+ms.date: 08/07/2024
 ms.topic: overview
 ---
 
@@ -17,9 +17,77 @@ With the [Declared Configuration CSP](mdm/declaredconfiguration-csp.md), the OMA
 
 The benefit of the declared configuration desired state model is that it's efficient and accurate, especially since it's the responsibility of the declared configuration client to configure the device. The efficiency of declared configuration is because the client can asynchronously process batches of scenario settings, which free up the server resources to do other work. Thus the declared configuration protocol has low latency. As for configuration quality and accuracy, the declared configuration client stack has detailed knowledge of the configuration surface area of the device. This behavior includes the proper handling of continuous device updates that affect the configuration scenario.
 
+## Declared configuration refresh interval
+
+The Declared Configuration refresh schedule is created whenever there is a Declared Configuration doc present on the device and there is currently no schedule task for refresh. The task runs every 4 hours by default and can be configured. Each time the Declared Configuration refresh task runs, it checks for all drifts from desired state by comparing the current system configuration versus the server intention in the Declared Configuration docs. If there are any drifts, Declared Configuration engine will try to reapply the Declared Configuration docs to fix it. In case where a Declared Configuration doc cannot be reapplied due to instance data missing, the Declared Configuration doc will be marked as drifted state and a new sync session will be triggered to notify there is a drift.
+
+To identify, adjust or remove the refresh schedule, use the **RefreshInterval** URI:
+
+- Identify current schedule:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <SyncML xmlns="SYNCML:SYNCML1.1">
+      <SyncBody>
+        <Get>
+          <CmdID>2</CmdID>
+          <Item>
+            <Target>
+              <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration/RefreshInterval</LocURI>
+            </Target>
+          </Item>
+        </Get>
+        <Final />
+      </SyncBody>
+    </SyncML>
+    ```
+
+- Adjust current schedule:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <SyncML xmlns="SYNCML:SYNCML1.1">
+      <SyncBody>
+        <Replace>
+          <CmdID>2</CmdID>
+          <Item>
+            <Meta>
+              <Format>int</Format>
+              <Type>text/plain</Type>
+            </Meta>
+            <Target>
+              <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration/RefreshInterval</LocURI>
+            </Target>
+            <Data>30</Data>
+          </Item>
+        </Replace>
+        <Final />
+      </SyncBody>
+    </SyncML>
+    ```
+
+- Delete the current schedule and use system default:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <SyncML xmlns="SYNCML:SYNCML1.1">
+      <SyncBody>
+        <Delete>
+          <CmdID>2</CmdID>
+          <Item>
+            <Target>
+              <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration/RefreshInterval</LocURI>
+            </Target>
+          </Item>
+        </Delete>
+        <Final />
+      </SyncBody>
+    </SyncML>
+    ```
+
 ## Declared configuration enrollment
 
-[Mobile Device Enrollment Protocol version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692) describes enrollment including discovery, which covers the primary and declared configuration enrollments. The device uses the following new [DMClient CSP](mdm/dmclient-csp.md) policies for declared configuration dual enrollment:
+The device uses new [DMClient CSP](mdm/dmclient-csp.md) policies for declared configuration dual enrollment:
 
 - [LinkedEnrollment/Enroll](mdm/dmclient-csp.md#deviceproviderprovideridlinkedenrollmentenroll)
 - [LinkedEnrollment/Unenroll](mdm/dmclient-csp.md#deviceproviderprovideridlinkedenrollmentunenroll)

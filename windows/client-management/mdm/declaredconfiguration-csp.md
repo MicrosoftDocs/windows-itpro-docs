@@ -801,7 +801,7 @@ Both `MSFTExtensibilityMIProviderConfig` and `MSFTExtensibilityMIProviderInvento
     | `context` | States that this document is targeting the device. The value should be `Device`. |
     | `id` | The unique identifier of the document set by the server. This value should be a GUID. |
     | `checksum` | This value is the server-supplied version of the document. |
-    | `osdefinedscenario` | The named scenario that the client should configure with the given configuration data. For  extensibility, the scenario is either `MSFTExtensibilityMIProviderConfig` or `MSFTExtensibilityMIProviderInventory`. |
+    | `osdefinedscenario` | The named scenario that the client should configure with the given configuration data. For extensibility, the scenario is either `MSFTExtensibilityMIProviderConfig` or `MSFTExtensibilityMIProviderInventory`. |
 
 - The `<DSC>` XML tag describes the targeted WMI provider expressed by a namespace and class name along with the values either to be applied to the device or queried by the MI provider.
 
@@ -854,6 +854,8 @@ On every client response to the server's request, the client constructs a declar
 ```
 
 In this example, there's one declared configuration document listed in the alert summary. The alert summary lists every document that the client stack is processing, either a configuration or inventory request. It describes the context of the document that specifies the scope of how the document is applied. The **context** value should be `Device`.
+
+## Declared configuration states
 
 The **state** attribute has a value of `60`, which indicates that the document was processed successfully. The following class defines the other state values:
 
