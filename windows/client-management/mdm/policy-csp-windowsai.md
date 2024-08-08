@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 06/28/2024
+ms.date: 08/07/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -73,6 +73,122 @@ This policy setting allows you to determine whether end users have the option to
 
 <!-- DisableAIDataAnalysis-End -->
 
+<!-- DisableCocreator-Begin -->
+## DisableCocreator
+
+<!-- DisableCocreator-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableCocreator-Applicability-End -->
+
+<!-- DisableCocreator-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableCocreator
+```
+<!-- DisableCocreator-OmaUri-End -->
+
+<!-- DisableCocreator-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to control whether Cocreator functionality is disabled in the Windows Paint app. If this policy is enabled, Cocreator functionality won't be accessible in the Paint app. If this policy is disabled or not configured, users will be able to access Cocreator functionality.
+<!-- DisableCocreator-Description-End -->
+
+<!-- DisableCocreator-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCocreator-Editable-End -->
+
+<!-- DisableCocreator-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableCocreator-DFProperties-End -->
+
+<!-- DisableCocreator-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Cocreator is enabled. |
+| 1 | Cocreator is disabled. |
+<!-- DisableCocreator-AllowedValues-End -->
+
+<!-- DisableCocreator-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableCocreator |
+| Path | WindowsAI > AT > WindowsComponents > Paint |
+<!-- DisableCocreator-GpMapping-End -->
+
+<!-- DisableCocreator-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCocreator-Examples-End -->
+
+<!-- DisableCocreator-End -->
+
+<!-- DisableImageCreator-Begin -->
+## DisableImageCreator
+
+<!-- DisableImageCreator-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableImageCreator-Applicability-End -->
+
+<!-- DisableImageCreator-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableImageCreator
+```
+<!-- DisableImageCreator-OmaUri-End -->
+
+<!-- DisableImageCreator-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to control whether Image Creator functionality is disabled in the Windows Paint app. If this policy is enabled, Image Creator functionality won't be accessible in the Paint app. If this policy is disabled or not configured, users will be able to access Image Creator functionality.
+<!-- DisableImageCreator-Description-End -->
+
+<!-- DisableImageCreator-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableImageCreator-Editable-End -->
+
+<!-- DisableImageCreator-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableImageCreator-DFProperties-End -->
+
+<!-- DisableImageCreator-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Image Creator is enabled. |
+| 1 | Image Creator is disabled. |
+<!-- DisableImageCreator-AllowedValues-End -->
+
+<!-- DisableImageCreator-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableImageCreator |
+| Path | WindowsAI > AT > WindowsComponents > Paint |
+<!-- DisableImageCreator-GpMapping-End -->
+
+<!-- DisableImageCreator-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableImageCreator-Examples-End -->
+
+<!-- DisableImageCreator-End -->
+
 <!-- TurnOffWindowsCopilot-Begin -->
 ## TurnOffWindowsCopilot
 
@@ -82,7 +198,7 @@ This policy setting allows you to determine whether end users have the option to
 <!-- TurnOffWindowsCopilot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 21H2 [10.0.19044.3758] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2361] and later <br> ✅ Windows 11, version 23H2 [10.0.22631] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 21H2 [10.0.19044.3758] and later <br> ✅ Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278) [10.0.19045.3758] and later <br> ✅ Windows 11, version 22H2 with [KB5030310](https://support.microsoft.com/help/5030310) [10.0.22621.2361] and later <br> ✅ Windows 11, version 23H2 [10.0.22631] and later |
 <!-- TurnOffWindowsCopilot-Applicability-End -->
 
 <!-- TurnOffWindowsCopilot-OmaUri-Begin -->

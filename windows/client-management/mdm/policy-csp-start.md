@@ -1,7 +1,7 @@
 ---
 title: Start Policy CSP
 description: Learn more about the Start Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1423,7 +1423,7 @@ To validate this policy, do the following steps:
 <!-- HideRecommendedPersonalizedSites-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.1928] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5027303](https://support.microsoft.com/help/5027303) [10.0.22621.1928] and later |
 <!-- HideRecommendedPersonalizedSites-Applicability-End -->
 
 <!-- HideRecommendedPersonalizedSites-OmaUri-Begin -->

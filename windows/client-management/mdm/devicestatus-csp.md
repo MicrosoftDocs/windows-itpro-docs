@@ -1,7 +1,7 @@
 ---
 title: DeviceStatus CSP
 description: Learn more about the DeviceStatus CSP.
-ms.date: 01/18/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -789,7 +789,7 @@ Indicates whether the SIM card associated with the specific IMEI number is roami
 <!-- Device-CertAttestation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-CertAttestation-Applicability-End -->
 
 <!-- Device-CertAttestation-OmaUri-Begin -->
@@ -828,7 +828,7 @@ Node for Certificate Attestation.
 <!-- Device-CertAttestation-MDMClientCertAttestation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-CertAttestation-MDMClientCertAttestation-Applicability-End -->
 
 <!-- Device-CertAttestation-MDMClientCertAttestation-OmaUri-Begin -->
@@ -1807,7 +1807,7 @@ Node for the TPM query.
 <!-- Device-TPM-ManufacturerId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1387] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19041.1387] and later <br> ✅ Windows 10, version 20H2 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-TPM-ManufacturerId-Applicability-End -->
 
 <!-- Device-TPM-ManufacturerId-OmaUri-Begin -->
@@ -1847,7 +1847,7 @@ String that specifies the TPM manufacturer ID as a number.
 <!-- Device-TPM-ManufacturerIdTxt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1387] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19041.1387] and later <br> ✅ Windows 10, version 20H2 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-TPM-ManufacturerIdTxt-Applicability-End -->
 
 <!-- Device-TPM-ManufacturerIdTxt-OmaUri-Begin -->
@@ -1887,7 +1887,7 @@ String that specifies the TPM manufacturer ID as text.
 <!-- Device-TPM-ManufacturerVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1387] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19041.1387] and later <br> ✅ Windows 10, version 20H2 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-TPM-ManufacturerVersion-Applicability-End -->
 
 <!-- Device-TPM-ManufacturerVersion-OmaUri-Begin -->

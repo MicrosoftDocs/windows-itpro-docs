@@ -1,7 +1,7 @@
 ---
 title: Update Policy CSP
 description: Learn more about the Update Area in Policy CSP.
-ms.date: 06/19/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -673,7 +673,7 @@ If you disable or don't configure this policy, Windows Update won't alter its be
 <!-- DisableWUfBSafeguards-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1490] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1110] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1110] and later <br> ✅ Windows 10, version 2004 [10.0.19041.546] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB4577069](https://support.microsoft.com/help/4577069) [10.0.17763.1490] and later <br> ✅ Windows 10, version 1903 with [KB4577062](https://support.microsoft.com/help/4577062) [10.0.18362.1110] and later <br> ✅ Windows 10, version 1909 with [KB4577062](https://support.microsoft.com/help/4577062) [10.0.18363.1110] and later <br> ✅ Windows 10, version 2004 with [KB4577063](https://support.microsoft.com/help/4577063) [10.0.19041.546] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableWUfBSafeguards-Applicability-End -->
 
 <!-- DisableWUfBSafeguards-OmaUri-Begin -->
@@ -1129,7 +1129,7 @@ Specifies the date and time when the IT admin wants to start pausing the Quality
 <!-- ProductVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ProductVersion-Applicability-End -->
 
 <!-- ProductVersion-OmaUri-Begin -->
@@ -1197,7 +1197,7 @@ Supported value type is a string containing a Windows product. For example, "Win
 <!-- TargetReleaseVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134.1488] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 10, version 1909 [10.0.18363.836] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 with [KB4556807](https://support.microsoft.com/help/4556807) [10.0.17134.1488] and later <br> ✅ Windows 10, version 1809 with [KB4551853](https://support.microsoft.com/help/4551853) [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18362.836] and later <br> ✅ Windows 10, version 1909 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18363.836] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- TargetReleaseVersion-Applicability-End -->
 
 <!-- TargetReleaseVersion-OmaUri-Begin -->
@@ -1225,8 +1225,8 @@ Supported value type is a string containing Windows version number. For example,
 
 > [!NOTE]
 > You need to set up the ProductVersion CSP along with the TargetReleaseVersion CSP for it to work.
-
 <!-- TargetReleaseVersion-Editable-End -->
+
 <!-- TargetReleaseVersion-DFProperties-Begin -->
 **Description framework properties**:
 
@@ -1401,7 +1401,7 @@ This policy should be enabled only when [UpdateServiceUrl](#updateserviceurl) is
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240.18818] and later <br> ✅ Windows 10, version 1607 [10.0.14393.4169] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2108] and later <br> ✅ Windows 10, version 1709 [10.0.16299.2166] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1967] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1697] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1316] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1316] and later <br> ✅ Windows 10, version 2004 [10.0.19041.746] and later <br> ✅ Windows 10, version 2009 [10.0.19042.746] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 with [KB4598231](https://support.microsoft.com/help/4598231) [10.0.10240.18818] and later <br> ✅ Windows 10, version 1607 with [KB4598243](https://support.microsoft.com/help/4598243) [10.0.14393.4169] and later <br> ✅ Windows 10, version 1703 with [KB4520010](https://support.microsoft.com/help/4520010) [10.0.15063.2108] and later <br> ✅ Windows 10, version 1709 with [KB4580328](https://support.microsoft.com/help/4580328) [10.0.16299.2166] and later <br> ✅ Windows 10, version 1803 with [KB4598245](https://support.microsoft.com/help/4598245) [10.0.17134.1967] and later <br> ✅ Windows 10, version 1809 with [KB4598230](https://support.microsoft.com/help/4598230) [10.0.17763.1697] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1316] and later <br> ✅ Windows 10, version 1909 with [KB4598229](https://support.microsoft.com/help/4598229) [10.0.18363.1316] and later <br> ✅ Windows 10, version 2004 with [KB4598242](https://support.microsoft.com/help/4598242) [10.0.19041.746] and later <br> ✅ Windows 10, version 20H2 with [KB4598242](https://support.microsoft.com/help/4598242) [10.0.19042.746] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Applicability-End -->
 
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-OmaUri-Begin -->
@@ -1531,7 +1531,7 @@ Allows Windows Update Agent to determine the download URL when it's missing from
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-OmaUri-Begin -->
@@ -1600,7 +1600,7 @@ Configure this policy to specify whether to receive **Windows Driver Updates** f
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-OmaUri-Begin -->
@@ -1670,7 +1670,7 @@ Configure this policy to specify whether to receive **Windows Feature Updates** 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-OmaUri-Begin -->
@@ -1739,7 +1739,7 @@ Configure this policy to specify whether to receive **Other Updates** from Windo
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-OmaUri-Begin -->
@@ -1809,7 +1809,7 @@ Configure this policy to specify whether to receive **Windows Quality Updates** 
 <!-- SetProxyBehaviorForUpdateDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240.18696] and later <br> ✅ Windows 10, version 1607 [10.0.14393.3930] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2500] and later <br> ✅ Windows 10, version 1709 [10.0.16299.2107] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1726] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1457] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1082] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1082] and later <br> ✅ Windows 10, version 2004 [10.0.19041.508] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 with [KB4577049](https://support.microsoft.com/help/4577049) [10.0.10240.18696] and later <br> ✅ Windows 10, version 1607 with [KB4577015](https://support.microsoft.com/help/4577015) [10.0.14393.3930] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2500] and later <br> ✅ Windows 10, version 1709 with [KB4577041](https://support.microsoft.com/help/4577041) [10.0.16299.2107] and later <br> ✅ Windows 10, version 1803 with [KB4577032](https://support.microsoft.com/help/4577032) [10.0.17134.1726] and later <br> ✅ Windows 10, version 1809 with [KB4570333](https://support.microsoft.com/help/4570333) [10.0.17763.1457] and later <br> ✅ Windows 10, version 1903 with [KB4574727](https://support.microsoft.com/help/4574727) [10.0.18362.1082] and later <br> ✅ Windows 10, version 1909 with [KB4574727](https://support.microsoft.com/help/4574727) [10.0.18363.1082] and later <br> ✅ Windows 10, version 2004 with [KB4571756](https://support.microsoft.com/help/4571756) [10.0.19041.508] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetProxyBehaviorForUpdateDetection-Applicability-End -->
 
 <!-- SetProxyBehaviorForUpdateDetection-OmaUri-Begin -->
@@ -2409,7 +2409,7 @@ Allows the IT admin to manage whether to scan for app updates from Microsoft Upd
 <!-- AllowTemporaryEnterpriseFeatureControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.1344] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5022913](https://support.microsoft.com/help/5022913) [10.0.22621.1344] and later |
 <!-- AllowTemporaryEnterpriseFeatureControl-Applicability-End -->
 
 <!-- AllowTemporaryEnterpriseFeatureControl-OmaUri-Begin -->
@@ -2653,7 +2653,7 @@ Minimum number of days from update installation until restarts occur automatical
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1852] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1474] and later <br> ✅ Windows 10, version 2004 [10.0.19041.906] and later <br> ✅ Windows 10, version 2009 [10.0.19042.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB5000854](https://support.microsoft.com/help/5000854) [10.0.17763.1852] and later <br> ✅ Windows 10, version 1909 with [KB5000850](https://support.microsoft.com/help/5000850) [10.0.18363.1474] and later <br> ✅ Windows 10, version 2004 with [KB5000842](https://support.microsoft.com/help/5000842) [10.0.19041.906] and later <br> ✅ Windows 10, version 20H2 with [KB5000842](https://support.microsoft.com/help/5000842) [10.0.19042.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-OmaUri-Begin -->
