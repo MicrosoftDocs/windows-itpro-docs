@@ -1,7 +1,7 @@
 ---
 title: SurfaceHub CSP
 description: Learn more about the SurfaceHub CSP.
-ms.date: 05/20/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -358,7 +358,7 @@ Possible error values:
 <!-- Device-DeviceAccount-ExchangeModernAuthEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.789] and later <br> ✅ Windows 10, version 2009 [10.0.19042.789] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19041.789] and later <br> ✅ Windows 10, version 20H2 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19042.789] and later <br> ✅ Windows Insider Preview |
 <!-- Device-DeviceAccount-ExchangeModernAuthEnabled-Applicability-End -->
 
 <!-- Device-DeviceAccount-ExchangeModernAuthEnabled-OmaUri-Begin -->
@@ -689,7 +689,7 @@ This method validates the data provided and then commits the changes.
 <!-- Device-Dot3-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.64] and later <br> ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4048955](https://support.microsoft.com/help/4048955) [10.0.16299.64] and later <br> ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Dot3-Applicability-End -->
 
 <!-- Device-Dot3-OmaUri-Begin -->
@@ -728,7 +728,7 @@ Parent node.
 <!-- Device-Dot3-EapUserData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.64] and later <br> ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4048955](https://support.microsoft.com/help/4048955) [10.0.16299.64] and later <br> ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Dot3-EapUserData-Applicability-End -->
 
 <!-- Device-Dot3-EapUserData-OmaUri-Begin -->
@@ -767,7 +767,7 @@ Used to specify credentials to authenticate device to the network.
 <!-- Device-Dot3-LanProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.64] and later <br> ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4048955](https://support.microsoft.com/help/4048955) [10.0.16299.64] and later <br> ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Dot3-LanProfile-Applicability-End -->
 
 <!-- Device-Dot3-LanProfile-OmaUri-Begin -->
@@ -1010,7 +1010,7 @@ Specifies the domain of the Skype for Business account when you are using Active
 <!-- Device-InBoxApps-Teams-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.450] and later <br> ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB4566782](https://support.microsoft.com/help/4566782) [10.0.19041.450] and later <br> ✅ Windows 10, version 20H2 [10.0.19042] and later |
 <!-- Device-InBoxApps-Teams-Applicability-End -->
 
 <!-- Device-InBoxApps-Teams-OmaUri-Begin -->
@@ -1049,7 +1049,7 @@ This node controls policies specific to the Teams App on Surface Hub.
 <!-- Device-InBoxApps-Teams-Configurations-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.450] and later <br> ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB4566782](https://support.microsoft.com/help/4566782) [10.0.19041.450] and later <br> ✅ Windows 10, version 20H2 [10.0.19042] and later |
 <!-- Device-InBoxApps-Teams-Configurations-Applicability-End -->
 
 <!-- Device-InBoxApps-Teams-Configurations-OmaUri-Begin -->
@@ -1262,7 +1262,7 @@ Meeting information displayed on the welcome screen.
 <!-- Device-InBoxApps-Whiteboard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 with [KB4522355](https://support.microsoft.com/help/4522355) [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-InBoxApps-Whiteboard-Applicability-End -->
 
 <!-- Device-InBoxApps-Whiteboard-OmaUri-Begin -->
@@ -1301,7 +1301,7 @@ This node controls policies specific to the Whiteboard App on Surface Hub.
 <!-- Device-InBoxApps-Whiteboard-SharingDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 with [KB4522355](https://support.microsoft.com/help/4522355) [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-InBoxApps-Whiteboard-SharingDisabled-Applicability-End -->
 
 <!-- Device-InBoxApps-Whiteboard-SharingDisabled-OmaUri-Begin -->
@@ -1349,7 +1349,7 @@ When enabled, prevents a user from initiating a collaborative session on the dev
 <!-- Device-InBoxApps-Whiteboard-SignInDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 with [KB4522355](https://support.microsoft.com/help/4522355) [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-InBoxApps-Whiteboard-SignInDisabled-Applicability-End -->
 
 <!-- Device-InBoxApps-Whiteboard-SignInDisabled-OmaUri-Begin -->
@@ -1398,7 +1398,7 @@ When enabled, prevents a user from Signing into Whiteboard on the device.
 <!-- Device-InBoxApps-Whiteboard-TelemetryDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 with [KB4522355](https://support.microsoft.com/help/4522355) [10.0.18362.449] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-InBoxApps-Whiteboard-TelemetryDisabled-Applicability-End -->
 
 <!-- Device-InBoxApps-Whiteboard-TelemetryDisabled-OmaUri-Begin -->
@@ -1787,7 +1787,7 @@ Specifies the start time for maintenance hours in minutes from midnight. For exa
 <!-- Device-Management-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 with [KB4015438](https://support.microsoft.com/help/4015438) [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Management-Applicability-End -->
 
 <!-- Device-Management-OmaUri-Begin -->
@@ -1826,7 +1826,7 @@ Not a supported scenario.
 <!-- Device-Management-GroupName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 with [KB4015438](https://support.microsoft.com/help/4015438) [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Management-GroupName-Applicability-End -->
 
 <!-- Device-Management-GroupName-OmaUri-Begin -->
@@ -1865,7 +1865,7 @@ The name of the domain admin group to add to the administrators group on the dev
 <!-- Device-Management-GroupSid-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 with [KB4015438](https://support.microsoft.com/help/4015438) [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Management-GroupSid-Applicability-End -->
 
 <!-- Device-Management-GroupSid-OmaUri-Begin -->
@@ -2021,7 +2021,7 @@ Primary key for authenticating with workspace. Will always return an empty strin
 <!-- Device-MOMAgentGovtCloud-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 with [KB5036979](https://support.microsoft.com/help/5036979) [10.0.19045.4355] and later |
 <!-- Device-MOMAgentGovtCloud-Applicability-End -->
 
 <!-- Device-MOMAgentGovtCloud-OmaUri-Begin -->
@@ -2059,7 +2059,7 @@ Primary key for authenticating with workspace. Will always return an empty strin
 <!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 with [KB5036979](https://support.microsoft.com/help/5036979) [10.0.19045.4355] and later |
 <!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-Applicability-End -->
 
 <!-- Device-MOMAgentGovtCloud-AzureCloudIndexGovtCloud-OmaUri-Begin -->
@@ -2099,7 +2099,7 @@ Enum value for Azure Clouds supported for OMS tracking in SurfaceHub.
 <!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 with [KB5036979](https://support.microsoft.com/help/5036979) [10.0.19045.4355] and later |
 <!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-Applicability-End -->
 
 <!-- Device-MOMAgentGovtCloud-WorkspaceIDGovtCloud-OmaUri-Begin -->
@@ -2138,7 +2138,7 @@ GUID identifying the Microsoft Operations Management Suite workspace ID to colle
 <!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045.4355] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 with [KB5036979](https://support.microsoft.com/help/5036979) [10.0.19045.4355] and later |
 <!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-Applicability-End -->
 
 <!-- Device-MOMAgentGovtCloud-WorkspaceKeyGovtCloud-OmaUri-Begin -->
@@ -2314,7 +2314,7 @@ Specifies whether to allow the ability to resume a session when the session time
 <!-- Device-Properties-DefaultAutomaticFraming-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 [10.0.19042] and later |
 <!-- Device-Properties-DefaultAutomaticFraming-Applicability-End -->
 
 <!-- Device-Properties-DefaultAutomaticFraming-OmaUri-Begin -->
@@ -2804,7 +2804,7 @@ Specifies the number of minutes until the Hub enters sleep mode.
 <!-- Device-Properties-SurfaceHubMeetingMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 with [KB4015438](https://support.microsoft.com/help/4015438) [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-SurfaceHubMeetingMode-Applicability-End -->
 
 <!-- Device-Properties-SurfaceHubMeetingMode-OmaUri-Begin -->
@@ -2845,7 +2845,7 @@ Teams mode.
 <!-- Device-Properties-VtcAppPackageId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 with [KB4015438](https://support.microsoft.com/help/4015438) [10.0.14393.969] and later <br> ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Properties-VtcAppPackageId-Applicability-End -->
 
 <!-- Device-Properties-VtcAppPackageId-OmaUri-Begin -->
