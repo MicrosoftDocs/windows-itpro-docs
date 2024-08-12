@@ -4,7 +4,6 @@ description: Learn how to plan and implement a WDAC deployment.
 ms.localizationpriority: medium
 ms.date: 01/23/2023
 ms.topic: overview
-ms.collection: essentials-get-started
 ---
 
 # Deploying Windows Defender Application Control (WDAC) policies
@@ -31,7 +30,7 @@ Before you deploy your WDAC policies, you must first convert the XML to its bina
     {
         $PolicyBinary = "SiPolicy.p7b"
     }
-    
+
     ## Binary file will be written to your desktop
     ConvertFrom-CIPolicy -XmlFilePath $WDACPolicyXMLFile -BinaryFilePath $env:USERPROFILE\Desktop\$PolicyBinary
    ```

@@ -1,7 +1,7 @@
 ---
 title: Enhanced Phishing Protection in Microsoft Defender SmartScreen
 description: Learn how Enhanced Phishing Protection for Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
-ms.date: 11/02/2023
+ms.date: 07/10/2024
 ms.topic: conceptual
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
@@ -19,7 +19,7 @@ If a user signs into Windows using a password, Enhanced Phishing Protection work
 - If users type their work or school password into a website or app that SmartScreen finds suspicious, Enhanced Phishing Protection can automatically collect information from that website or app to help identify security threats. For example, the content displayed, sounds played, and application memory.
 
 > [!NOTE]
-> When a user signs-in to a device using a Windows Hello for Business PIN or biometric, Enhanced Phishing Protection does not alert the user or send events to [Microsoft Defender for Endpoint (MDE)](/microsoft-365/security/defender-endpoint/).
+> When a user signs in to a device using a Windows Hello for Business PIN or biometric, Enhanced Phishing Protection does not alert the user or send events to [Microsoft Defender for Endpoint (MDE)](/microsoft-365/security/defender-endpoint/).
 
 ## Benefits of Enhanced Phishing Protection in Microsoft Defender SmartScreen
 
@@ -37,7 +37,7 @@ Enhanced Phishing Protection provides robust phishing protections for work or sc
 
 ## Configure Enhanced Phishing Protection for your organization
 
-Enhanced Phishing Protection can be configured via Microsoft Intune, Group Policy Objects (GPO) or Configuration Service Providers (CSP) with an MDM service. These settings are available to configure your devices using either Microsoft Intune, GPO or CSP.
+Enhanced Phishing Protection can be configured via Microsoft Intune, Group Policy Objects (GPO) or Configuration Service Providers (CSP) with an MDM service. These settings are available to configure your devices using either Microsoft Intune, GPO, or CSP.
 
 | Setting | Description |
 |--|--|
@@ -51,7 +51,7 @@ Enhanced Phishing Protection allows organizations to add their custom identity p
 
 To add your organization's custom sign-in URL to Enhanced Phishing Protection, configure the `EnableWebSignIn` policy in the [Authentication Policy CSP](/windows/client-management/mdm/policy-csp-authentication#enablewebsignin). For more information, see [Web sign-in for Windows](../../../identity-protection/web-sign-in/index.md).
 
-Follow these instructions to configure your devices using either Microsoft Intune, GPO or CSP.
+Follow these instructions to configure your devices using either Microsoft Intune, GPO, or CSP.
 
 #### [:::image type="icon" source="../../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 

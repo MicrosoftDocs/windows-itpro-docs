@@ -1,7 +1,7 @@
 ---
 title: DevDetail CSP
 description: Learn more about the DevDetail CSP.
-ms.date: 01/18/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -700,7 +700,7 @@ SMBIOS Serial Number of the device.
 <!-- Device-Ext-Microsoft-SMBIOSVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1387] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19041.1387] and later <br> ✅ Windows 10, version 20H2 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Ext-Microsoft-SMBIOSVersion-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-SMBIOSVersion-OmaUri-Begin -->

@@ -1,7 +1,7 @@
 ---
 title: Enable hardware-based isolation for Microsoft Edge
 description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed), and how to install Application Guard in your enterprise.
-ms.date: 12/12/2023
+ms.date: 07/11/2024
 ms.topic: how-to
 ---
 
@@ -31,7 +31,7 @@ Standalone mode is applicable for:
 
 ## Enterprise-managed mode
 
-You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to add non-enterprise domain(s) in the container.
+You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to add nonenterprise domain(s) in the container.
 
 Enterprise-managed mode is applicable for:
 
@@ -93,7 +93,7 @@ Application Guard functionality is turned off by default. However, you can quick
 
    To learn more about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
-1. In the **Assignments** page, select the users or groups that will receive the policy. Select **Next**.
+1. In the **Assignments** page, select the users or groups that receive the policy. Select **Next**.
 
    To learn more about assigning policies, see [Assign policies in Microsoft Intune](/mem/intune/configuration/device-profile-assign).
 

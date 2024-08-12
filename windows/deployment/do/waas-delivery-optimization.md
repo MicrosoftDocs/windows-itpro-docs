@@ -11,11 +11,10 @@ ms.reviewer: mstewart
 ms.collection:
   - tier3
   - highpri
-  - essentials-overview
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 05/23/2024
 ---
 
@@ -29,7 +28,7 @@ To use either the peer-to-peer functionality or the Microsoft Connected Cache fe
 
 You can use Delivery Optimization with Windows Update, Windows Server Update Services (WSUS), Microsoft Intune/Windows Update for Business, or Microsoft Configuration Manager (when installation of Express Updates is enabled).
 
-For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization](waas-delivery-optimization-setup.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
+For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization](delivery-optimization-configure.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 
 > [!NOTE]
 > WSUS can also use [BranchCache](../update/waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead.
@@ -99,7 +98,7 @@ To gain a deeper understanding of the Delivery Optimization client-service commu
 
 ## Set up Delivery Optimization for Windows
 
-[Learn more](waas-delivery-optimization-setup.md) about the Delivery Optimization settings to ensure proper setup in your environment.
+[Learn more](delivery-optimization-configure.md) about the Delivery Optimization settings to ensure proper setup in your environment.
 
 ## Delivery Optimization reference
 

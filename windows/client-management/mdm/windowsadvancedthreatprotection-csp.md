@@ -17,6 +17,13 @@ The table below shows the applicability of Windows:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
+> [!IMPORTANT]
+> Windows 11 Home devices that have been upgraded to one of the below mentioned applicable editions might require you to run the following command before onboarding:
+> 
+> `DISM /online /Add-Capability /CapabilityName:Microsoft.Windows.Sense.Client~~~~`
+> 
+> For more information about edition upgrades and features, see [Customize Windows features](/windows-hardware/manufacture/desktop/windows-features?view=windows-11&preserve-view=true).
+
 The Windows Defender Advanced Threat Protection (WDATP) configuration service provider (CSP) allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
 
 The following example shows the WDATP configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).

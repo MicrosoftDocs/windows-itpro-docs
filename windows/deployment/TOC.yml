@@ -29,44 +29,44 @@
     - name: Plan
       items:
         - name: Plan for Windows 11
-          href: /windows/whats-new/windows-11-plan?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /windows/whats-new/windows-11-plan?context=/windows/deployment/context/context
         - name: Create a deployment plan
           href: update/create-deployment-plan.md
         - name: Define readiness criteria
           href: update/plan-define-readiness.md
         - name: Evaluate infrastructure and tools
           href: update/eval-infra-tools.md
-        - name: Determine application readiness
-          href: update/plan-determine-app-readiness.md
         - name: Define your servicing strategy
           href: update/plan-define-strategy.md
         - name: Delivery Optimization for Windows client updates
-          href: do/waas-delivery-optimization.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: do/waas-delivery-optimization.md?context=/windows/deployment/context/context
           items:
             - name: Using a proxy with Delivery Optimization
-              href: do/delivery-optimization-proxy.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: do/delivery-optimization-proxy.md?context=/windows/deployment/context/context
             - name: Delivery Optimization client-service communication
-              href: do/delivery-optimization-workflow.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: do/delivery-optimization-workflow.md?context=/windows/deployment/context/context
         - name: Windows 10 deployment considerations
           href: planning/windows-10-deployment-considerations.md
         - name: Windows 10 infrastructure requirements
           href: planning/windows-10-infrastructure-requirements.md
         - name: Plan for volume activation
           href: volume-activation/plan-for-volume-activation-client.md
+        - name: Windows compatibility cookbook
+          href: /windows/compatibility/
         - name: Features removed or planned for replacement
           items:
             - name: Windows client features lifecycle
-              href: /windows/whats-new/feature-lifecycle?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: /windows/whats-new/feature-lifecycle?context=/windows/deployment/context/context
             - name: Deprecated features
-              href: /windows/whats-new/deprecated-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: /windows/whats-new/deprecated-features?context=/windows/deployment/context/context
             - name: Resources for deprecated features
-              href: /windows/whats-new/deprecated-features-resources?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: /windows/whats-new/deprecated-features-resources?context=/windows/deployment/context/context
             - name: Removed features
-              href: /windows/whats-new/removed-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+              href: /windows/whats-new/removed-features?context=/windows/deployment/context/context
     - name: Prepare
       items:
         - name: Prepare for Windows 11
-          href: /windows/whats-new/windows-11-prepare?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /windows/whats-new/windows-11-prepare?context=/windows/deployment/context/context
         - name: Prepare to deploy Windows client updates
           href: update/prepare-deploy-windows.md
         - name: Evaluate and update infrastructure
@@ -74,7 +74,7 @@
         - name: Update Baseline
           href: update/update-baseline.md
         - name: Set up Delivery Optimization for Windows client updates
-          href: do/waas-delivery-optimization-setup.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: do/delivery-optimization-configure.md?context=/windows/deployment/context/context
         - name: Configure BranchCache for Windows client updates
           href: update/waas-branchcache.md
         - name: Prepare for deployment with Configuration Manager
@@ -186,83 +186,70 @@
           href: volume-activation/monitor-activation-client.md
         - name: Use the Volume Activation Management Tool
           href: volume-activation/use-the-volume-activation-management-tool-client.md
-        href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
+        - name: Information sent to Microsoft during activation
+          href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
       - name: Volume Activation Management Tool (VAMT)
         items:
         - name: VAMT technical reference
           href: volume-activation/volume-activation-management-tool.md
         - name: Introduction to VAMT
           href: volume-activation/introduction-vamt.md
-        - name: Active Directory-Based Activation Overview
+        - name: Active Directory-Based activation overview
           href: volume-activation/active-directory-based-activation-overview.md
-        - name: Install and Configure VAMT
+        - name: Install and configure VAMT
           items:
-          - name: Overview
-            href: volume-activation/install-configure-vamt.md
-          - name: VAMT Requirements
+          - name: VAMT requirements
             href: volume-activation/vamt-requirements.md
           - name: Install VAMT
             href: volume-activation/install-vamt.md
-          - name: Configure Client Computers
+          - name: Configure client computers
             href: volume-activation/configure-client-computers-vamt.md
-        - name: Add and Manage Products
+        - name: Add and manage products
           items:
-          - name: Overview
-            href: volume-activation/add-manage-products-vamt.md
-          - name: Add and Remove Computers
+          - name: Add and remove computers
             href: volume-activation/add-remove-computers-vamt.md
-          - name: Update Product Status
+          - name: Update product status
             href: volume-activation/update-product-status-vamt.md
-          - name: Remove Products
+          - name: Remove products
             href: volume-activation/remove-products-vamt.md
-        - name: Manage Product Keys
+        - name: Manage product keys
           items:
-          - name: Overview
-            href: volume-activation/manage-product-keys-vamt.md
-          - name: Add and Remove a Product Key
+          - name: Add and remove a product key
             href: volume-activation/add-remove-product-key-vamt.md
-          - name: Install a Product Key
+          - name: Install a product key
             href: volume-activation/install-product-key-vamt.md
-          - name: Install a KMS Client Key
+          - name: Install a KMS client key
             href: volume-activation/install-kms-client-key-vamt.md
-        - name: Manage Activations
+        - name: Manage activations
           items:
-          - name: Overview
-            href: volume-activation/manage-activations-vamt.md
-          - name: Run Online Activation
+          - name: Run online activation
             href: volume-activation/online-activation-vamt.md
-          - name: Run Proxy Activation
+          - name: Run proxy activation
             href: volume-activation/proxy-activation-vamt.md
-          - name: Run KMS Activation
+          - name: Run KMS activation
             href: volume-activation/kms-activation-vamt.md
-          - name: Run Local Reactivation
+          - name: Run local reactivation
             href: volume-activation/local-reactivation-vamt.md
-          - name: Activate an Active Directory Forest Online
+          - name: Activate an Active Directory forest online
             href: volume-activation/activate-forest-vamt.md
-          - name: Activate by Proxy an Active Directory Forest
+          - name: Activate by proxy an Active Directory forest
             href: volume-activation/activate-forest-by-proxy-vamt.md
-        - name: Manage VAMT Data
+        - name: Manage VAMT data
           items:
-          - name: Overview
-            href: volume-activation/manage-vamt-data.md
-          - name: Import and Export VAMT Data
+          - name: Import and export VAMT data
             href: volume-activation/import-export-vamt-data.md
           - name: Use VAMT in Windows PowerShell
             href: volume-activation/use-vamt-in-windows-powershell.md
-          - name: VAMT Step-by-Step Scenarios
-            items:
-            - name: Overview
-              href: volume-activation/vamt-step-by-step.md
-            - name: "Scenario 1: Online Activation"
-              href: volume-activation/scenario-online-activation-vamt.md
-            - name: "Scenario 2: Proxy Activation"
-              href: volume-activation/scenario-proxy-activation-vamt.md
-            - name: "Scenario 3: KMS Client Activation"
-              href: volume-activation/scenario-kms-activation-vamt.md
-          - name: VAMT Known Issues
-            href: volume-activation/vamt-known-issues.md
-      - name: Information sent to Microsoft during activation
-        href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
+        - name: VAMT step-by-step scenarios
+          items:
+          - name: "Scenario 1: online activation"
+            href: volume-activation/scenario-online-activation-vamt.md
+          - name: "Scenario 2: proxy activation"
+            href: volume-activation/scenario-proxy-activation-vamt.md
+          - name: "Scenario 3: KMS client activation"
+            href: volume-activation/scenario-kms-activation-vamt.md
+        - name: VAMT known issues
+          href: volume-activation/vamt-known-issues.md
     - name: Monitor
       items:
       - name: Windows Update for Business reports
@@ -324,25 +311,25 @@
         - name: Resolve Windows upgrade errors
           href: upgrade/resolve-windows-upgrade-errors.md
         - name: Quick fixes
-          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?context=/windows/deployment/context/context
         - name: SetupDiag
           href: upgrade/setupdiag.md
         - name: Troubleshooting upgrade errors
-          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-issues-troubleshooting?context=/windows/deployment/context/context
         - name: Windows error reporting
           href: upgrade/windows-error-reporting.md
         - name: Upgrade error codes
-          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?context=/windows/deployment/context/context
         - name: Log files
           href: upgrade/log-files.md
         - name: Resolution procedures
-          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-resolution-procedures?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/windows-10-upgrade-resolution-procedures?context=/windows/deployment/context/context
         - name: Submit Windows client upgrade errors
           href: upgrade/submit-errors.md
       - name: Troubleshoot Windows Update
         items:
         - name: How to troubleshoot Windows Update
-          href: /troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?context=/windows/deployment/context/context
         - name: Opt out of safeguard holds
           href: update/safeguard-opt-out.md
         - name: Determine the source of Windows Updates
@@ -350,7 +337,7 @@
         - name: Windows Update security
           href: ./update/windows-update-security.md
         - name: Common Windows Update errors
-          href: /troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /troubleshoot/windows-client/deployment/common-windows-update-errors?context=/windows/deployment/context/context
         - name: Windows Update error code reference
           href: update/windows-update-error-reference.md
         - name: Troubleshoot the Windows Update for Business deployment service
@@ -371,13 +358,13 @@
         - name: Servicing stack updates
           href: update/servicing-stack-updates.md
         - name: Update CSP policies
-          href: /windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: /windows/client-management/mdm/policy-csp-update?context=/windows/deployment/context/context
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
         - name: Update other Microsoft products
           href: update/update-other-microsoft-products.md
         - name: Delivery Optimization reference
-          href: do/waas-delivery-optimization-reference.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+          href: do/waas-delivery-optimization-reference.md?context=/windows/deployment/context/context
         - name: FoD and language packs for WSUS and Configuration Manager
           href: update/fod-and-lang-packs.md
         - name: Windows client in S mode

@@ -1,14 +1,14 @@
 ---
-title: Policies in Policy CSP supported by Windows 10 Team
-description: Learn about the policies in Policy CSP supported by Windows 10 Team.
-ms.date: 06/19/2024
+title: Policies supported by Windows 10 Team
+description: Learn about the policies supported by Windows 10 Team.
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
-# Policies in Policy CSP supported by Windows 10 Team
+# Policies supported by Windows 10 Team
 
-This article lists the policies in Policy CSP that are applicable for the Surface Hub operating system, **Windows 10 Team**.
+This article lists the policies that are applicable for the Surface Hub operating system, **Windows 10 Team**.
 
 ## ApplicationDefaults
 
@@ -118,6 +118,128 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [SubmitSamplesConsent](policy-csp-defender.md#submitsamplesconsent)
 - [ThreatSeverityDefaultAction](policy-csp-defender.md#threatseveritydefaultaction)
 
+## Defender CSP
+
+- [{GroupId}](defender-csp.md#configurationdevicecontrolpolicygroupsgroupid)
+- [{RuleId}](defender-csp.md#configurationdevicecontrolpolicyrulesruleid)
+- [{ThreatId}](defender-csp.md#detectionsthreatid)
+- [AllowDatagramProcessingOnWinServer](defender-csp.md#configurationallowdatagramprocessingonwinserver)
+- [AllowNetworkProtectionDownLevel](defender-csp.md#configurationallownetworkprotectiondownlevel)
+- [AllowNetworkProtectionOnWinServer](defender-csp.md#configurationallownetworkprotectiononwinserver)
+- [AllowSwitchToAsyncInspection](defender-csp.md#configurationallowswitchtoasyncinspection)
+- [ArchiveMaxDepth](defender-csp.md#configurationarchivemaxdepth)
+- [ArchiveMaxSize](defender-csp.md#configurationarchivemaxsize)
+- [ASROnlyPerRuleExclusions](defender-csp.md#configurationasronlyperruleexclusions)
+- [BehavioralNetworkBlocks](defender-csp.md#configurationbehavioralnetworkblocks)
+- [BruteForceProtection](defender-csp.md#configurationbehavioralnetworkblocksbruteforceprotection)
+- [BruteForceProtectionAggressiveness](defender-csp.md#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionaggressiveness)
+- [BruteForceProtectionConfiguredState](defender-csp.md#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionconfiguredstate)
+- [BruteForceProtectionExclusions](defender-csp.md#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionexclusions)
+- [BruteForceProtectionLocalNetworkBlocking](defender-csp.md#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionpluginsbruteforceprotectionlocalnetworkblocking)
+- [BruteForceProtectionMaxBlockTime](defender-csp.md#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionmaxblocktime)
+- [BruteForceProtectionPlugins](defender-csp.md#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionplugins)
+- [BruteForceProtectionSkipLearningPeriod](defender-csp.md#configurationbehavioralnetworkblocksbruteforceprotectionbruteforceprotectionpluginsbruteforceprotectionskiplearningperiod)
+- [Category](defender-csp.md#detectionsthreatidcategory)
+- [ComputerState](defender-csp.md#healthcomputerstate)
+- [Configuration](defender-csp.md#configuration)
+- [CurrentStatus](defender-csp.md#detectionsthreatidcurrentstatus)
+- [DataDuplicationDirectory](defender-csp.md#configurationdataduplicationdirectory)
+- [DataDuplicationLocalRetentionPeriod](defender-csp.md#configurationdataduplicationlocalretentionperiod)
+- [DataDuplicationMaximumQuota](defender-csp.md#configurationdataduplicationmaximumquota)
+- [DataDuplicationRemoteLocation](defender-csp.md#configurationdataduplicationremotelocation)
+- [DaysUntilAggressiveCatchupQuickScan](defender-csp.md#configurationdaysuntilaggressivecatchupquickscan)
+- [DefaultEnforcement](defender-csp.md#configurationdefaultenforcement)
+- [DefenderEnabled](defender-csp.md#healthdefenderenabled)
+- [DefenderVersion](defender-csp.md#healthdefenderversion)
+- [Detections](defender-csp.md#detections)
+- [DeviceControl](defender-csp.md#configurationdevicecontrol)
+- [DeviceControlEnabled](defender-csp.md#configurationdevicecontrolenabled)
+- [DisableCacheMaintenance](defender-csp.md#configurationdisablecachemaintenance)
+- [DisableCoreServiceECSIntegration](defender-csp.md#configurationdisablecoreserviceecsintegration)
+- [DisableCoreServiceTelemetry](defender-csp.md#configurationdisablecoreservicetelemetry)
+- [DisableCpuThrottleOnIdleScans](defender-csp.md#configurationdisablecputhrottleonidlescans)
+- [DisableDatagramProcessing](defender-csp.md#configurationdisabledatagramprocessing)
+- [DisableDnsOverTcpParsing](defender-csp.md#configurationdisablednsovertcpparsing)
+- [DisableDnsParsing](defender-csp.md#configurationdisablednsparsing)
+- [DisableFtpParsing](defender-csp.md#configurationdisableftpparsing)
+- [DisableGradualRelease](defender-csp.md#configurationdisablegradualrelease)
+- [DisableHttpParsing](defender-csp.md#configurationdisablehttpparsing)
+- [DisableInboundConnectionFiltering](defender-csp.md#configurationdisableinboundconnectionfiltering)
+- [DisableLocalAdminMerge](defender-csp.md#configurationdisablelocaladminmerge)
+- [DisableNetworkProtectionPerfTelemetry](defender-csp.md#configurationdisablenetworkprotectionperftelemetry)
+- [DisableQuicParsing](defender-csp.md#configurationdisablequicparsing)
+- [DisableRdpParsing](defender-csp.md#configurationdisablerdpparsing)
+- [DisableSmtpParsing](defender-csp.md#configurationdisablesmtpparsing)
+- [DisableSshParsing](defender-csp.md#configurationdisablesshparsing)
+- [DisableTlsParsing](defender-csp.md#configurationdisabletlsparsing)
+- [EnableConvertWarnToBlock](defender-csp.md#configurationenableconvertwarntoblock)
+- [EnableDnsSinkhole](defender-csp.md#configurationenablednssinkhole)
+- [EnableFileHashComputation](defender-csp.md#configurationenablefilehashcomputation)
+- [EnableUdpReceiveOffload](defender-csp.md#configurationenableudpreceiveoffload)
+- [EnableUdpSegmentationOffload](defender-csp.md#configurationenableudpsegmentationoffload)
+- [EngineUpdatesChannel](defender-csp.md#configurationengineupdateschannel)
+- [EngineVersion](defender-csp.md#healthengineversion)
+- [ExcludedIpAddresses](defender-csp.md#configurationexcludedipaddresses)
+- [ExecutionStatus](defender-csp.md#detectionsthreatidexecutionstatus)
+- [FullScanOverdue](defender-csp.md#healthfullscanoverdue)
+- [FullScanRequired](defender-csp.md#healthfullscanrequired)
+- [FullScanSigVersion](defender-csp.md#healthfullscansigversion)
+- [FullScanTime](defender-csp.md#healthfullscantime)
+- [GroupData](defender-csp.md#configurationdevicecontrolpolicygroupsgroupidgroupdata)
+- [Health](defender-csp.md#health)
+- [HideExclusionsFromLocalAdmins](defender-csp.md#configurationhideexclusionsfromlocaladmins)
+- [HideExclusionsFromLocalUsers](defender-csp.md#configurationhideexclusionsfromlocalusers)
+- [InitialDetectionTime](defender-csp.md#detectionsthreatidinitialdetectiontime)
+- [IntelTDTEnabled](defender-csp.md#configurationinteltdtenabled)
+- [IsVirtualMachine](defender-csp.md#healthisvirtualmachine)
+- [LastThreatStatusChangeTime](defender-csp.md#detectionsthreatidlastthreatstatuschangetime)
+- [MeteredConnectionUpdates](defender-csp.md#configurationmeteredconnectionupdates)
+- [Name](defender-csp.md#detectionsthreatidname)
+- [NetworkProtectionReputationMode](defender-csp.md#configurationnetworkprotectionreputationmode)
+- [NisEnabled](defender-csp.md#healthnisenabled)
+- [NumberOfDetections](defender-csp.md#detectionsthreatidnumberofdetections)
+- [OfflineScan](defender-csp.md#offlinescan)
+- [OobeEnableRtpAndSigUpdate](defender-csp.md#configurationoobeenablertpandsigupdate)
+- [PassiveRemediation](defender-csp.md#configurationpassiveremediation)
+- [PerformanceModeStatus](defender-csp.md#configurationperformancemodestatus)
+- [PlatformUpdatesChannel](defender-csp.md#configurationplatformupdateschannel)
+- [PolicyGroups](defender-csp.md#configurationdevicecontrolpolicygroups)
+- [PolicyRules](defender-csp.md#configurationdevicecontrolpolicyrules)
+- [ProductStatus](defender-csp.md#healthproductstatus)
+- [QuickScanIncludeExclusions](defender-csp.md#configurationquickscanincludeexclusions)
+- [QuickScanOverdue](defender-csp.md#healthquickscanoverdue)
+- [QuickScanSigVersion](defender-csp.md#healthquickscansigversion)
+- [QuickScanTime](defender-csp.md#healthquickscantime)
+- [RandomizeScheduleTaskTimes](defender-csp.md#configurationrandomizescheduletasktimes)
+- [RebootRequired](defender-csp.md#healthrebootrequired)
+- [RemoteEncryptionProtection](defender-csp.md#configurationbehavioralnetworkblocksremoteencryptionprotection)
+- [RemoteEncryptionProtectionAggressiveness](defender-csp.md#configurationbehavioralnetworkblocksremoteencryptionprotectionremoteencryptionprotectionaggressiveness)
+- [RemoteEncryptionProtectionConfiguredState](defender-csp.md#configurationbehavioralnetworkblocksremoteencryptionprotectionremoteencryptionprotectionconfiguredstate)
+- [RemoteEncryptionProtectionExclusions](defender-csp.md#configurationbehavioralnetworkblocksremoteencryptionprotectionremoteencryptionprotectionexclusions)
+- [RemoteEncryptionProtectionMaxBlockTime](defender-csp.md#configurationbehavioralnetworkblocksremoteencryptionprotectionremoteencryptionprotectionmaxblocktime)
+- [RollbackEngine](defender-csp.md#rollbackengine)
+- [RollbackPlatform](defender-csp.md#rollbackplatform)
+- [RtpEnabled](defender-csp.md#healthrtpenabled)
+- [RuleData](defender-csp.md#configurationdevicecontrolpolicyrulesruleidruledata)
+- [Scan](defender-csp.md#scan)
+- [ScanOnlyIfIdleEnabled](defender-csp.md#configurationscanonlyifidleenabled)
+- [SchedulerRandomizationTime](defender-csp.md#configurationschedulerrandomizationtime)
+- [ScheduleSecurityIntelligenceUpdateDay](defender-csp.md#configurationschedulesecurityintelligenceupdateday)
+- [ScheduleSecurityIntelligenceUpdateTime](defender-csp.md#configurationschedulesecurityintelligenceupdatetime)
+- [SecuredDevicesConfiguration](defender-csp.md#configurationsecureddevicesconfiguration)
+- [SecurityIntelligenceLocationUpdateAtScheduledTimeOnly](defender-csp.md#configurationsecurityintelligencelocationupdateatscheduledtimeonly)
+- [SecurityIntelligenceUpdatesChannel](defender-csp.md#configurationsecurityintelligenceupdateschannel)
+- [Severity](defender-csp.md#detectionsthreatidseverity)
+- [SignatureOutOfDate](defender-csp.md#healthsignatureoutofdate)
+- [SignatureVersion](defender-csp.md#healthsignatureversion)
+- [State](defender-csp.md#healthdevicecontrolstate)
+- [SupportLogLocation](defender-csp.md#configurationsupportloglocation)
+- [TamperProtection](defender-csp.md#configurationtamperprotection)
+- [TamperProtectionEnabled](defender-csp.md#healthtamperprotectionenabled)
+- [ThrottleForScheduledScanOnly](defender-csp.md#configurationthrottleforscheduledscanonly)
+- [UpdateSignature](defender-csp.md#updatesignature)
+- [URL](defender-csp.md#detectionsthreatidurl)
+
 ## DeliveryOptimization
 
 - [DOAbsoluteMaxCacheSize](policy-csp-deliveryoptimization.md#doabsolutemaxcachesize)
@@ -168,6 +290,10 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 - [EnterpriseProxyServers](policy-csp-networkisolation.md#enterpriseproxyservers)
 - [EnterpriseProxyServersAreAuthoritative](policy-csp-networkisolation.md#enterpriseproxyserversareauthoritative)
 - [NeutralResources](policy-csp-networkisolation.md#neutralresources)
+
+## Policy CSP
+
+- [ADMXInstall](policy-configuration-service-provider.md#deviceconfigoperationsadmxinstall)
 
 ## Privacy
 

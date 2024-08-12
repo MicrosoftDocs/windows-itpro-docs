@@ -8,7 +8,21 @@ items:
   - name: Device description framework (DDF) files
     href: configuration-service-provider-ddf.md
   - name: Support scenarios
-    href: configuration-service-provider-support.md
+    items:
+    - name: Configuration service provider support
+      href: configuration-service-provider-support.md
+    - name: Policies supported by Windows Insider Preview
+      href: policies-in-preview.md
+    - name: Policies supported by HoloLens 2
+      href: policies-in-policy-csp-supported-by-hololens2.md
+    - name: Policies supported by HoloLens (1st gen) Commercial Suite
+      href: policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md
+    - name: Policies supported by HoloLens (1st gen) Development Edition
+      href: policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md
+    - name: Policies supported by Windows 10 Team
+      href: policies-in-policy-csp-supported-by-surface-hub.md
+    - name: Policies that can be set using Exchange Active Sync
+      href: policies-in-policy-csp-that-can-be-set-using-eas.md
   - name: WMI Bridge provider
     items:
     - name: Using PowerShell scripting with the WMI Bridge Provider
@@ -46,24 +60,6 @@ items:
       items:
       - name: Policy CSP DDF file
         href: configuration-service-provider-ddf.md
-      - name: Policy CSP support scenarios
-        items:
-        - name: Policies that are ADMX-backed
-          href: policies-in-policy-csp-admx-backed.md
-        - name: Policies supported by Group Policy
-          href: policies-in-policy-csp-supported-by-group-policy.md
-        - name: Policies supported by HoloLens 2
-          href: policies-in-policy-csp-supported-by-hololens2.md
-        - name: Policies supported by HoloLens (1st gen) Commercial Suite
-          href: policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md
-        - name: Policies supported by HoloLens (1st gen) Development Edition
-          href: policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md
-        - name: Policies supported by Windows 10 IoT Core
-          href: policies-in-policy-csp-supported-by-iot-core.md
-        - name: Policies supported by Windows 10 Team
-          href: policies-in-policy-csp-supported-by-surface-hub.md
-        - name: Policies that can be set using Exchange Active Sync (EAS)
-          href: policies-in-policy-csp-that-can-be-set-using-eas.md
       - name: Policy CSP areas
         expanded: true
         items:
@@ -363,6 +359,8 @@ items:
           href: policy-csp-admx-workfoldersclient.md
         - name: ADMX_WPN
           href: policy-csp-admx-wpn.md
+        - name: AppDeviceInventory
+          href: policy-csp-appdeviceinventory.md
         - name: ApplicationDefaults
           href: policy-csp-applicationdefaults.md
         - name: ApplicationManagement

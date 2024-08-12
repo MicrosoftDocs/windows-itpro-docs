@@ -70,6 +70,8 @@ Depending on the diagnostic data settings on the device, diagnostic data can be 
 
 Later in this document we provide further details about how to control what’s collected and what data can be included in these different types of diagnostic data.
 
+As of March 6, 2024, Microsoft Edge diagnostic data is collected separately from Windows diagnostic data on Windows 10 (version 22H2 and newer) and Windows 11 (version 23H2 and newer) devices in the European Economic Area. The collection of Microsoft Edge diagnostic data is subject to its own settings. For more information related to this change, see [Microsoft Edge, browsing data, and privacy](https://support.microsoft.com/windows/bb8174ba-9d73-dcf2-9b4a-c582b4e640dd).
+
 ### Data transmission
 
 All diagnostic data is encrypted using Transport Layer Security (TLS) and uses certificate pinning during transfer from the device to the Microsoft data management services.

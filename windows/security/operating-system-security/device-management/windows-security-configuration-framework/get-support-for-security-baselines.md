@@ -3,7 +3,7 @@ title: Get support for security baselines
 description: Find answers to frequently asked question on how to get support for baselines, the Security Compliance Toolkit (SCT), and related articles.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 10/31/2023
+ms.date: 07/10/2024
 ---
 
 # Get Support

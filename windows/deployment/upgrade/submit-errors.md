@@ -6,7 +6,7 @@ description: Download the Feedback Hub app, and then submit Windows upgrade erro
 ms.service: windows-client
 author: frankroj
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: itpro-deploy
 ms.date: 01/18/2024
 appliesto:

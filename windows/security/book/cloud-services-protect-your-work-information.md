@@ -232,7 +232,7 @@ Universal Print has integrated with Administrative Units in Microsoft Entra ID t
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
 - [Universal Print](https://www.microsoft.com/microsoft-365/windows/universal-print)
-- [Data storage in Universal Print](/universal-print/fundamentals/universal-print-encryption)
+- [Data handling in Universal Print](/universal-print/data-handling)
 - [Delegate Printer Administration with Administrative Units](/universal-print/portal/delegated-admin)
 
 For customers who want to stay on Print Servers, we recommend using the Microsoft IPP Print driver. For features beyond what's covered in the standard IPP driver, use Print Support Applications (PSA) for Windows from the respective printer OEM.

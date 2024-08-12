@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 07/09/2024
+ms.date: 08/12/2024
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -47,6 +47,8 @@ The features in this article are no longer being actively developed, and might b
 
 | Feature | Details and mitigation  | Deprecation announced |
 |---|---|---|
+| Paint 3D <!--8995017--> | Paint 3D is deprecated and will be removed from the Microsoft Store on November 4, 2024. To view and edit 2D images, you can use [Paint](https://apps.microsoft.com/detail/9pcfs5b6t72h) or [Photos](https://apps.microsoft.com/detail/9wzdncrfjbh4). For viewing 3D content, you can use [3D Viewer](https://apps.microsoft.com/detail/9nblggh42ths). For more information, see [Resources for deprecated features](deprecated-features-resources.md#paint-3d). | August 2024 |
+| Adobe Type1 fonts <!--9183716-->| Adobe PostScript Type1 fonts are deprecated and support will be removed in a future release of Windows. </br></br> In January 2023, Adobe announced the [end of support for PostScript Type1 fonts](https://helpx.adobe.com/fonts/kb/postscript-type-1-fonts-end-of-support.html) for their latest software offerings. Remove any dependencies on this font type by selecting a supported font type. To display currently installed fonts, go to **Settings** > **Personalization** > **Fonts**. Application developers and content owners should test their apps and data files with the Adobe Type1 fonts removed. For more information, contact the application vendor or Adobe. | August 2024 |
 | DirectAccess <!--8713507-->| DirectAccess is deprecated and will be removed in a future release of Windows. We recommend [migrating from DirectAccess to Always On VPN](/windows-server/remote/remote-access/da-always-on-vpn-migration/da-always-on-migration-overview). | June 2024 | 
 | NTLM <!--8396018-->| All versions of [NTLM](/windows/win32/secauthn/microsoft-ntlm), including LANMAN, NTLMv1, and NTLMv2, are no longer under active feature development and are deprecated. Use of NTLM will continue to work in the next release of Windows Server and the next annual release of Windows. Calls to NTLM should be replaced by calls to Negotiate, which will try to authenticate with Kerberos and only fall back to NTLM when necessary. For more information, see [Resources for deprecated features](deprecated-features-resources.md). | June 2024 |
 | Driver Verifier GUI (verifiergui.exe) <!--8995057--> | Driver Verifier GUI, verifiergui.exe, is deprecated and will be removed in a future version of Windows. You can use the [Verifier Command Line](/windows-hardware/drivers/devtest/verifier-command-line) (verifier.exe) instead of the Driver Verifier GUI.| May 2024 | 
@@ -103,7 +105,7 @@ The features in this article are no longer being actively developed, and might b
 |IIS Digest Authentication | We recommend that users use alternative authentication methods.| 1709 |
 |RSA/AES Encryption for IIS   | We recommend that users use CNG encryption provider. | 1709 |
 |Screen saver functionality in Themes   | Disabled in Themes. Screen saver functionality in Group Policies, Control Panel, and Sysprep continues to be functional. Lock screen features and policies are preferred. | 1709 |
-|Sync your settings (updated: August 17, 2017) | Back-end changes: In future releases, the back-end storage for the current sync process will change. A single cloud storage system will be used for Enterprise State Roaming and all other users. The **Sync your settings** options and the Enterprise State Roaming feature will continue to work provided your clients are running an up-to-date version of: </br> - Windows 11 </br> - Windows 10, version 21H2, or later | 1709 |
+|Sync your settings (updated: July, 30, 2024) | Back-end changes: In future releases, the back-end storage for the current sync process will change. A single cloud storage system will be used for Enterprise State Roaming and all other users. As part of this change, we will stop supporting the Device Syncing Settings and App Data report.  All other  **Sync your settings** options and the Enterprise State Roaming feature will continue to work provided your clients are running an up-to-date version of: </br> - Windows 11 </br> - Windows 10, version 21H2, or later | 1709 |
 |System Image Backup (SIB) Solution|This feature is also known as the **Backup and Restore (Windows 7)** legacy control panel. For full-disk backup solutions, look for a third-party product from another software publisher. You can also use [OneDrive](/onedrive/) to sync data files with Microsoft 365.| 1709 |
 |TLS RC4 Ciphers  |To be disabled by default. For more information, see [TLS (Schannel SSP) changes in Windows 10 and Windows Server 2016](/windows-server/security/tls/tls-schannel-ssp-changes-in-windows-10-and-windows-server)| 1709 |
 |Trusted Platform Module (TPM) Owner Password Management |This functionality within TPM.msc will be migrated to a new user interface.| 1709 |
