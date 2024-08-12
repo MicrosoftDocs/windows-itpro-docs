@@ -38,7 +38,7 @@ If you have access to the recovery key, enter the 48-digits in the preboot recov
 If BitLocker recovery keys are stored in Microsoft Entra ID, users can access them using the following URL: https://myaccount.microsoft.com. From the **Devices** tab, users can select a Windows device that they own, and select the option **View BitLocker Keys**.
 
 > [!NOTE]
-> By default, users can retrieve their BitLocker reecovery keys from Microsoft Entra ID. This behavior can be modified with the option **Restrict users from recovering the BitLocker key(s) for their owned devices**. For more information, see [Restrict member users' default permissions][ENTRA-1].
+> By default, users can retrieve their BitLocker recovery keys from Microsoft Entra ID. This behavior can be modified with the option **Restrict users from recovering the BitLocker key(s) for their owned devices**. For more information, see [Restrict member users' default permissions][ENTRA-1].
 
 ### Self-recovery with USB flash drive
 
