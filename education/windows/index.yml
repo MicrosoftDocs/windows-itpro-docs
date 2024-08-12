@@ -78,7 +78,7 @@ productDirectory:
           text: Set up a shared or guest Windows device
         - url: /education/windows/take-tests-in-windows
           text: Take tests and assessments in Windows
-        - url: /education/windows/suspcs/provisioning-package.md
+        - url: /education/windows/suspcs/provisioning-package
           text: Provisioning package settings
         - url: https://www.youtube.com/watch?v=2ZLup_-PhkA
           text: "Video: Use the Set up School PCs App"
