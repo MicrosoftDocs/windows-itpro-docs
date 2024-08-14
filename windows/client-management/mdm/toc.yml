@@ -43,16 +43,17 @@ items:
       href: ../structure-of-oma-dm-provisioning-files.md
     - name: Server requirements for OMA DM
       href: ../server-requirements-windows-mdm.md
-  - name: Declared Configuration protocol
-    href: ../declared-configuration.md
+  - name: Declared Configuration
     items:
+    - name: Declared Configuration protocol
+      href: ../declared-configuration.md
     - name: Declared Configuration discovery
       href: ../declared-configuration-discovery.md
     - name: Declared Configuration enrollment
       href: ../declared-configuration-enrollment.md
     - name: Declared Configuration extensibility
       href: ../declared-configuration-extensibility.md
-    - name: Resource access
+    - name: Declared Configuration resource access
       href: ../declared-configuration-resource-access.md
     - name: DeclaredConfiguration CSP
       href: declaredconfiguration-csp.md

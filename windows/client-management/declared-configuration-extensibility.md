@@ -1,7 +1,7 @@
 ---
 title: Declared configuration extensibility
 description: Learn more about declared configuration extensibility through native WMI providers.
-ms.date: 07/08/2024
+ms.date: 08/14/2024
 ms.topic: how-to
 ---
 

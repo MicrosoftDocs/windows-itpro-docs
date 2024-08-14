@@ -1,115 +1,50 @@
 ---
 title: Declared configuration discovery
 description: Learn more about configuring discovery for declared configuration enrollment.
-ms.date: 08/12/2024
+ms.date: 08/14/2024
 ms.topic: how-to
 ---
 
 # Declared configuration discovery
 
-Declared configuration discovery uses a dedicated JSON schema to query enrollment details from the [discovery service endpoint (DS)](/openspecs/windows_protocols/ms-mde2/60deaa44-52df-4a47-a844-f5b42037f7d3#gt_8d76dac8-122a-452b-8c97-b25af916f19b).
+Declared configuration discovery uses a dedicated JSON schema to query enrollment details from the [discovery service endpoint (DS)](/openspecs/windows_protocols/ms-mde2/60deaa44-52df-4a47-a844-f5b42037f7d3#gt_8d76dac8-122a-452b-8c97-b25af916f19b). This process involves sending HTTP requests with specific headers and a JSON body containing details such as user domain, tenant ID, and OS version. The DS responds with the necessary enrollment service URLs and authentication policies based on the enrollment type (Microsoft Entra joined or registered devices).
 
-## Supported platforms
-
-Declared Configuration enrollment for [Microsoft Entra joined devices](/entra/identity/devices/concept-directory-join) is supported for all versions of Windows 10/11.
-
-Declared Configuration enrollment for [Microsoft Entra registered devices](/entra/identity/devices/concept-device-registration) is supported for Windows 10/11 with the following updates:
-
-- Windows 11, version 24H2 with [KB5040529](https://support.microsoft.com/help/5040529) (OS Build 26100.1301)
-- Windows 11, version 23H2 with [KB5040527](https://support.microsoft.com/help/5040527) (OS Build 22631.3958)
-- Windows 11, version 22H2 with [KB5040527](https://support.microsoft.com/help/5040527) (OS Build 22621.3958)
-- Windows 10, version 22H2 with [KB5040525](https://support.microsoft.com/help/5040525) (OS Build 19045.4717)
+This article outlines the schema structure for the HTTP request and response bodies, and provides examples to guide the implementation.
 
 ## Schema structure
 
 ### HTTP request headers
 
-**Correlation Headers**
+| Header                           | Required | Description                       |
+|----------------------------------|----------|-----------------------------------|
+| `MS-CV: %s`                      | No       | Correlation vector for enrollment |
+| `client-request-id: %s`          | No       | Request ID                        |
+| `Content-Type: application/json` | Yes      | HTTP Content-Type                 |
 
-- `"(MS-CV: %s)"`
-    - Required: false
-    - Description: Correlation vector for enrollment
+### HTTP Request Body (JSON)
 
-- `"(client-request-id: %s)"`
-    - Required: false
-    - Description: Request ID
+| Field | Required | Description |
+|--|--|--|
+| `userDomain` | No | Domain name of the enrolled account |
+| `upn` | No | User Principal Name (UPN) of the enrolled account |
+| `tenantId` | No | Tenant ID of the enrolled account |
+| `emmDeviceId` | No | Enterprise mobility management (EMM) device ID of the enrolled account |
+| `enrollmentType` | Entra joined: No <br>Entra registered: Yes | Enrollment type of the enrolled account. <br><br>Supported Values: <br>- `Device`: Indicates the parent enrollment type is Entra joined (DS response should specify "AuthPolicy": "Federated"). <br>-`User`: Indicates parent enrollment type is Entra registered (DS response should specify "AuthPolicy": "Certificate"). <br>- Legacy case (Entra joined only): If the `enrollmentType` parameter isn't included in the request body, the device should be treated as Entra joined. |
+| `osVersion` | Yes | OS version on the device. The DS can use the `osVersion` to determine if the client platform supports Declared Configuration enrollment. Review [supported platforms](declared-configuration.md#supported-platforms) for details. |
 
-**Content-Type Header**
+### HTTP DS Response Body (JSON)
 
-- `"Content-Type: application/json"`
-    - Required: true
-    - Description: HTTP Content-Type
-
-### HTTP request body (JSON)
-
-- `"userDomain" : "%s"`
-    - Required: false
-    - Description: Domain name of the enrolled account
-
- - `"upn" : "%s"`
-     - Required: false
-     - Description: User Principal Name (UPN) of the enrolled account
-
- - `"tenantId" : "%s"`
-    - Required: false
-    - Description: Tenant ID of the enrolled account
-
- - `"emmDeviceId" : "%s"`
-     - Required: false
-     - Description: Enterprise mobility management (EMM) device ID of the enrolled account
-
- - `"enrollmentType" : "%s"`
-    - Required:
-        - AADJ: false
-        - WPJ: true
-    - Description: Enrollment type of the enrolled account
-    - Supported Values:
-        - "Device": Indicates the parent enrollment type is AADJ (DS response should specify "AuthPolicy": "Federated").
-        - "User": Indicates parent enrollment type is WPJ (DS response should specify "AuthPolicy": "Certificate")
-        - Legacy case (AADJ only): If the "enrollmentType" parameter isn't included in the request body, the device should be treated as AADJ.
-
-- `"osVersion" : "%d.%d.%d.%d"`
-    - Required: true
-    - Description: OS version on the device. The DS can use the `osVersion` to determine if the client platform supports Declared Configuration enrollment. Review [Supported platforms](#supported-platforms) for details.
-
-### HTTP DS response body (JSON)
-
-- `"EnrollmentServiceUrl" : "%s"`
-    - Required: true
-    - Description: URL of the Declared Configuration enrollment service
-
-- `"EnrollmentVersion" : "%s"`
-    - Required: false
-    - Description: Enrollment version
-
-- `"EnrollmentPolicyServiceUrl" : "%s"`
-    - Required: true
-    - Description: Enrollment Policy Service URL
-
-- `"AuthenticationServiceUrl" : "%s"`
-    - Required: true
-    - Description: Authentication Service URL
-
-- `"ManagementResource" : "%s"`
-    - Required: false
-    - Description: Management Resource
-
-- `"TouUrl" : "%s"`
-    - Required: false
-    - Description: Terms of use URL
-
-- `"AuthPolicy" : "%s"`
-    - Required: true
-    - Description: Authentication policy
-    - Supported values: "Federated" (required for AADJ), "Certificate" (required for WPJ)
-
-- `"errorCode" : "%s"`
-    - Required: false
-    - Description: Status code. An errorCode value of **UPNRequired** triggers the client to send a subsequent request with a value for the UPN property, if available.
-
-- `"message" : "%s"`
-    - Required: false
-    - Description: Status message
+| Field                        | Required | Description                                                                                                                                |
+|------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| `EnrollmentServiceUrl`       | Yes      | URL of the Declared Configuration enrollment service                                                                                       |
+| `EnrollmentVersion`          | No       | Enrollment version                                                                                                                         |
+| `EnrollmentPolicyServiceUrl` | Yes      | Enrollment Policy Service URL                                                                                                              |
+| `AuthenticationServiceUrl`   | Yes      | Authentication Service URL                                                                                                                 |
+| `ManagementResource`         | No       | Management Resource                                                                                                                        |
+| `TouUrl`                     | No       | Terms of use URL                                                                                                                           |
+| `AuthPolicy`                 | Yes      | Authentication policy. Supported values: <br>- `Federated` (required for Entra joined) <br>- `Certificate` (required for Entra registered) |
+| `errorCode`                  | No       | Error code                                                                                                                                 |
+| `message`                    | No       | Status message                                                                                                                             |
 
 ## Examples
 
@@ -123,7 +58,7 @@ Declared Configuration enrollment for [Microsoft Entra registered devices](/entr
 
 1. Single template approach: Client sends the **UPN** value in the initial request, along with the **tenantId** parameter.
 
-    1. AADJ
+    1. Microsoft Entra joined:
 
         ```json
         {
@@ -136,7 +71,7 @@ Declared Configuration enrollment for [Microsoft Entra registered devices](/entr
         }
         ```
 
-    1. WPJ
+    1. Microsoft Entra registered:
 
         ```json
         {
@@ -152,7 +87,7 @@ Declared Configuration enrollment for [Microsoft Entra registered devices](/entr
 
 1. No UPN (legacy)
 
-    1. AADJ
+    1. Microsoft Entra joined:
 
         ```json
         {
@@ -163,7 +98,7 @@ Declared Configuration enrollment for [Microsoft Entra registered devices](/entr
         }
         ```
 
-    1. WPJ
+    1. Microsoft Entra registered:
 
         ```json
         {
@@ -176,7 +111,7 @@ Declared Configuration enrollment for [Microsoft Entra registered devices](/entr
 
 1. UPN requested by the server (legacy format). Review [error handling](#error-handling) for details on how the server can request UPN data if it isn't provided in the initial request.
 
-    1. AADJ
+    1. Microsoft Entra joined:
 
         ```json
         {
@@ -187,7 +122,7 @@ Declared Configuration enrollment for [Microsoft Entra registered devices](/entr
         }
         ```
 
-    1. WPJ
+    1. Microsoft Entra registered:
 
         ```json
         {
@@ -206,7 +141,7 @@ Declared Configuration enrollment for [Microsoft Entra registered devices](/entr
 
 **Body**
 
-1. Microsoft Entra joined devices (requires "AuthPolicy": "Federated")
+1. Microsoft Entra joined (requires `"AuthPolicy": "Federated"`):
 
     ```json
     {
@@ -219,7 +154,7 @@ Declared Configuration enrollment for [Microsoft Entra registered devices](/entr
     }
     ```
 
-1. Microsoft Entra registered devices (requires "AuthPolicy": "Certificate")
+1. Microsoft Entra registered (requires `"AuthPolicy": "Certificate"`):
 
     ```json
     {
@@ -234,33 +169,29 @@ Declared Configuration enrollment for [Microsoft Entra registered devices](/entr
 
 ### Authentication
 
-Declared Configuration enrollment requires different authentication mechanisms for Microsoft Entra joined and registered devices.
+Declared Configuration enrollment requires different authentication mechanisms for Microsoft Entra joined and registered devices. The Declared Configuration DS must integrate with the authentication model by specifying the appropriate `AuthPolicy` value in the discovery response, based on the `enrollmentType` property of the request.
 
-- Microsoft Entra joined devices use 'Federated' authentication (Entra device token)
-- Microsoft Entra registered devices use 'Certificate' authentication (MDM certificate provisioned for the parent enrollment).
+- **Microsoft Entra joined devices** use **Federated** authentication (Entra device token).
+- **Microsoft Entra registered devices** use **Certificate** authentication (MDM certificate provisioned for the parent enrollment).
 
-The Declared Configuration DS must integrate with the authentication model by specifying the appropriate `authPolicy` value in the discovery response, based on the `enrollmentType` property of the request.
+#### Rules
 
-Rules are:
+- **For Microsoft Entra joined devices**:
+    - **Discovery request**: `"enrollmentType": "Device"`
+    - **Discovery response**: `"AuthPolicy": "Federated"`
+    - **Authentication**: The client uses the Entra device token to authenticate with the Declared Configuration enrollment server.
 
-- [Discovery request] `"enrollmentType": "Device"` (Microsoft Entra joined devices)
-    - [Discovery response] `"AuthPolicy": "Federated"`
-    - -> The client uses the Entra device token to authenticate with the Declared Configuration enrollment server.
+- **For legacy cases (where `enrollmentType` value is empty)**:
+    - **Discovery request**: `"enrollmentType": ""`
+    - **Discovery response**: `"AuthPolicy": "Federated"`
+    - **Authentication**: The client uses the Entra device token to authenticate with the Declared Configuration enrollment server.
 
-- [Discovery request (legacy case where enrollmentType value is empty)] `"enrollmentType": ""` (Microsoft Entra joined devices)
-    - [Discovery response] `"AuthPolicy": "Federated"`
-    - -> The client uses the Entra device token to authenticate with the Declared Configuration enrollment server.
-
-- [Discovery request] `"enrollmentType": "Device"` (Microsoft Entra registered devices)
-    - [Discovery response] `"AuthPolicy": "Certificate"`
-    - -> The client uses the MDM certificate from the parent enrollment to authenticate with the Declared Configuration enrollment server.
+- **For Microsoft Entra registered devices**:
+    - **Discovery request**: `"enrollmentType": "User"`
+    - **Discovery response**: `"AuthPolicy": "Certificate"`
+    - **Authentication**: The client uses the MDM certificate from the parent enrollment to authenticate with the Declared Configuration enrollment server.
 
 ## Error handling
 
-#### UPN required
-
-If no UPN value is provided in the discovery request, the DS can set the errorCode property in the response as **UPNRequired** to trigger the client to retry the request with a UPN value provided.
-
-#### Timeout/throttling:
-
-The server can set the flag `WINHTTP_QUERY_RETRY_AFTER` to configure the client request to retry after a specified delay.
+- **UPNRequired**: If no UPN value is provided in the discovery request, the DS can set the `errorCode` in the response to trigger the client to retry the request with a UPN value provided.
+- **WINHTTP_QUERY_RETRY_AFTER**: The server can set this flag to configure the client request to retry after a specified delay. This is useful for handling timeout or throttling scenarios.

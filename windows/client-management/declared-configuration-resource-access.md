@@ -1,15 +1,15 @@
 ---
 title: Resource access overview
 description: Learn more about configuring resource access using Declared Configuration
-ms.date: 08/07/2024
+ms.date: 08/14/2024
 ms.topic: how-to
 ---
 
-# Resource access
+# Declared configuration resource access
 
 Resource Access (RA) is used to manage device configurations and enforce policies to ensure the devices remain in a desired state. It's crucial for maintaining security, compliance, and operational efficiency in organizations. Declared Configuration cloud service is used to send the desired state of a resource to the device where correspondingly the device has the responsibility to enforce and maintain the resource configuration state.
 
-[Configuration Service Providers (CSPs)](mdm/index.yml) play a vital role for configuring Resource access by acting as an interface between the device and the Declared Configuration protocol. They provide a consistent and standardized approach to deploying and enforcing configurations. CSPs support various resource access scenarios, including:
+[Configuration Service Providers (CSPs)](mdm/index.yml) play a vital role for configuring Resource access and act as an interface between the device and the Declared Configuration protocol. They provide a consistent and standardized approach to deploying and enforcing configurations. CSPs support various resource access scenarios, including:
 
 - [VPNv2 CSP](mdm/vpnv2-csp.md) and [VPN CSP](mdm/vpn-csp.md)
 - [Wi-Fi CSP](mdm/wifi-csp.md)
@@ -264,7 +264,7 @@ MDM-managed resources, such as a VPN profile, are transferred/migrated to Window
 
 Abandoning a resource occurs when certain resources are no longer targeted to a user or group. Instead of deleting the resource on the device, the server can choose to abandon the Declared Configuration document. An abandoned resource stays on the device but stops refreshing the Declared Configuration document that handles drift control. Also the resource ownership is transferred back to MDM, which means the same resource can be modified via legacy MDM channel again.
 
-Example: Abandoning a Windows Declared Configuration Document, by setting the **Abandoned** property to **1**.
+This example abandons a Windows Declared Configuration Document, by setting the **Abandoned** property to **1**.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -291,7 +291,7 @@ Example: Abandoning a Windows Declared Configuration Document, by setting the **
 
 Unabandoning the document causes the document to be applied right away, transferring the resource ownership back to Declared Configuration management and blocking legacy MDM channel from managing the channels again.
 
-Example: Unabandoning a Windows Declared Configuration Document, by setting the **Abandoned** property to **0**.
+This example unabandons a Windows Declared Configuration Document, by setting the **Abandoned** property to **0**.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

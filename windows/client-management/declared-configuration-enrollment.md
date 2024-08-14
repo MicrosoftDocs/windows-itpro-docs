@@ -1,13 +1,15 @@
 ---
 title: Declared configuration enrollment
 description: Learn more about configuring enrollment for declared configuration protocol.
-ms.date: 08/12/2024
+ms.date: 08/14/2024
 ms.topic: how-to
 ---
 
 # Declared configuration enrollment
 
-The device uses new [DMClient CSP](mdm/dmclient-csp.md) policies for declared configuration dual enrollment:
+Declared configuration enrollment leverages new [DMClient CSP](mdm/dmclient-csp.md) policies to facilitate dual enrollment for Windows devices. This process involves setting specific configuration service provider (CSP) policies and executing SyncML commands to manage the enrollment state.
+
+The key CSP policies used for declared configuration enrollment include:
 
 - [LinkedEnrollment/Enroll](mdm/dmclient-csp.md#deviceproviderprovideridlinkedenrollmentenroll)
 - [LinkedEnrollment/Unenroll](mdm/dmclient-csp.md#deviceproviderprovideridlinkedenrollmentunenroll)
