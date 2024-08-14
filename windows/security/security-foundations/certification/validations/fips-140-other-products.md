@@ -3,11 +3,8 @@ title: FIPS 140 validated modules for other products
 description: This topic lists the completed FIPS 140 cryptographic module validations for products other than Windows and Windows Server that leverage the Windows cryptographic modules.
 ms.date: 2/1/2024
 ms.topic: reference
-ms.author: v-rodurff
-author: msrobertd
-ms.reviewer: paoloma
-ms.collection: tier3
 ---
+
 # FIPS 140 validated modules in other products
 
 The following tables list the completed FIPS 140 validations in products other than Windows and Windows Server that leverage the Windows cryptographic modules. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For details on the FIPS approved algorithms used by each module, including CAVP algorithm certificates, see the module's linked Security Policy document or CMVP module certificate.
