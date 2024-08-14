@@ -4,6 +4,7 @@ description: Learn about the settings that are configured in the provisioning pa
 ms.date: 04/10/2024
 ms.topic: reference
 appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
@@ -28,7 +29,7 @@ For a more detailed look at the policies, see the Windows article [Set up shared
 | Policy name | Default value | Description |
 |--|--|--|
 | Enable Shared PC mode | True | Configures the PCs so they're in shared PC mode. |
-| Set education policies | True | School-optimized settings are applied to the PCs so that they're appropriate for an educational environment. To see all recommended and enabled policies, see [Windows 10 configuration recommendation for education customers](./configure-windows-for-education.md). |
+| Set education policies | True | School-optimized settings are applied to the PCs so that they're appropriate for an educational environment.|
 | Account Model | Only guest, Domain-joined only, or Domain-joined and guest | Controls how users can sign in on the PC. Configurable from the Set up School PCs app. Choosing domain-joined enables any user in the domain to sign in. Specifying the guest option adds the Guest option to the sign-in screen and enable anonymous guest access to the PC. |
 | Deletion policy | Delete at disk space threshold and inactive threshold | Delete at disk space threshold starts deleting accounts when available disk space falls below the threshold you set for disk level deletion. It stops deleting accounts when the available disk space reaches the threshold you set for disk level caching. Accounts are deleted in order of oldest accessed to most recently accessed. Also deletes accounts if they haven't signed in within the number of days specified by inactive threshold policy. |
 | Disk level caching | 50% | Sets 50% of total disk space to be used as the disk space threshold for account caching. |
@@ -120,13 +121,3 @@ Review the table below to estimate your expected provisioning time. A package th
 | Default settings + apps | Wi-Fi | 10 to 15 minutes |
 | Default settings + remove preinstalled apps (CleanPC) | Wi-Fi | 60 minutes |
 | Default settings + other settings (Not CleanPC) | Wi-Fi | 5 minutes |
-
-## Next steps
-
-Learn more about setting up devices with the Set up School PCs app.
-
-- [Microsoft Entra join with Set up School PCs](set-up-school-pcs-azure-ad-join.md)
-- [Set up School PCs technical reference](set-up-school-pcs-technical.md)
-- [Set up Windows 10 devices for education](set-up-windows-10.md)
-
-When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
