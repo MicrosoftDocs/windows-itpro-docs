@@ -8,7 +8,7 @@ metadata:
   author: vinaypamnani-msft
   ms.author: vinpa
   manager: aaroncz
-  ms.date: 04/05/2023
+  ms.date: 08/14/2024
 # linkListType: overview | how-to-guide | tutorial | video
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -39,8 +39,6 @@ landingContent:
             url: design/microsoft-recommended-driver-block-rules.md
           - text: Example WDAC policies
             url: design/example-wdac-base-policies.md
-          - text: LOB Win32 apps on S Mode
-            url: deployment/LOB-win32-apps-on-s.md
           - text: Managing multiple policies
             url: design/deploy-multiple-wdac-policies.md
       - linkListType: how-to-guide
