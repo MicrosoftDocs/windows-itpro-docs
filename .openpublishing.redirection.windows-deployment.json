@@ -1364,6 +1364,11 @@
       "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-microsoft-365-policies.md",
       "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-microsoft-365-policies",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/manage/windows-autopatch-windows-quality-update-signals.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-quality-update-overview",
+      "redirect_document_id": true
     }
   ]
 }

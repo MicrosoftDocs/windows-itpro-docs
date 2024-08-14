@@ -24,10 +24,8 @@ items:
         href: /windows/deployment/windows-10-pro-in-s-mode?context=/education/context/context
       - name: Deploy Win32 apps to S Mode devices
         href: /windows/security/threat-protection/windows-defender-application-control/lob-win32-apps-on-s?context=/education/context/context
-    - name: Considerations for shared and guest devices
+    - name: Shared devices and guests access
       href: /windows/configuration/shared-devices-concepts?context=/education/context/context
-    - name: Windows 10 configuration recommendations for education customers
-      href: configure-windows-for-education.md
     - name: Take tests and assessments in Windows
       href: take-tests-in-windows.md
 - name: How-to-guides
@@ -49,7 +47,7 @@ items:
     - name: Get and deploy Minecraft Education
       href: get-minecraft-for-education.md
     - name: Use the Set up School PCs app
-      href: use-set-up-school-pcs-app.md
+      href: suspcs/index.md
     - name: Upgrade Windows Home to Windows Education on student-owned devices
       href: change-home-to-edu.md
 - name: Reference
@@ -57,9 +55,9 @@ items:
     - name: Set up School PCs
       items:
       - name: Set up School PCs app technical reference
-        href: set-up-school-pcs-technical.md
+        href: suspcs/reference.md
       - name: Provisioning package settings
-        href: set-up-school-pcs-provisioning-package.md
+        href: suspcs/provisioning-package.md
     - name: Take a Test technical reference
       href: take-a-test-app-technical.md
     - name: Shared PC technical reference
