@@ -37,45 +37,77 @@ These guidelines provide best practices and examples for developers and testers 
 
 By following these guidelines and understanding the syntax of the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md), you can effectively implement and manage RA configurations while maintaining security and compliance.
 
-## Resource access configuration with examples
+## Declared Configuration document
 
-Resource access configuration utilizes the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md). A declared configuration request for configuring resource access is sent using an OMA-URI similar to `./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/{DocID}/Document`.
+The value of the `Document` leaf node in the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md) is an XML document that describes the request. Here's a sample Declared Configuration document with the configuration data specified for resource accecss.
 
-- The URI is prefixed with a targeted scope. The `<LocURI>` and the DeclaredConfiguration Context need to match. For example, when `LocURI` starts with **Device**, Context should be **Device** as well. When `LocURI` doesn't start with **Device**, Context should be **User**.
-- `{DocID}` is a unique identifier for the desired state of the configuration scenario. Every document must have an **ID**, which must be a GUID.
+```xml
+<DeclaredConfiguration context="user" schema="1.0" id="DCA000B5-397D-40A1-AABF-40B25078A7F9" osdefinedscenario="MSFTVPN" checksum="A0">
+  <CSP name="./Vendor/MSFT/VPNv2">
+    <URI path="Test_SonicWall/TrafficFilterList/0/Protocol" type="int">2</URI>
+    <URI path="Test_SonicWall/TrafficFilterList/0/Direction" type="chr">outbound</URI>
+  </CSP>
+</DeclaredConfiguration>
+```
 
-:::image type="content" source="images/declared-configuration-ra-syntax.png" alt-text="Declared Configuration resource access syntax":::
-
-Only supported values for `osdefinedscenario` can be used. Unsupported values result in a failure.
+Only supported values for `osdefinedscenario` can be used. Unsupported values result in an error message similar to `Invalid scenario name`.
 
 | osdefinedscenario            | Recommended using with        |
 |------------------------------|-------------------------------|
 | MSFTWiredNetwork             | WiredNetwork                  |
 | MSFTResource                 | ActiveSync                    |
-| MSFTVpn                      | VPN and VPNv2                 |
+| MSFTVPN                      | VPN and VPNv2                 |
 | MSFTWifi                     | Wifi                          |
 | MSFTInventory                | Certificate inventory         |
 | MSFTClientCertificateInstall | SCEP, PFX, Bulk Template Data |
 
-Examples:
+These `osdefinedscenario` values require the following tags and attributes.
 
-1. MSFTWifi (snippet) for Wifi:
+- The `<CSP>` XML tag describes the CSP being targeted.
+
+    This tag has the following attributes:
+
+    | Attribute | Description |
+    |--|--|
+    | `name` | Specifies the targeted CSP OMA-URI. |
+
+- The `<URI>` XML tag specifies the CSP setting node along with the desired value.
+
+    This tag has the following attributes:
+
+    | Attribute | Description       |
+    |-----------|-------------------|
+    | `path`    | Setting path      |
+    | `type`    | Setting data type |
+
+> [!NOTE]
+> The target of the scenario settings must match the Declared Configuration context. The CSP **scope** defined in `<LocURI>` and Declared Configuration **context** must both be either `Device` or `User`.
+>
+> :::image type="content" source="images/declared-configuration-ra-syntax.png" alt-text="Declared Configuration resource access syntax":::
+
+### osdefinedscenario examples
+
+- Partial `MSFTWifi` example for Wifi:
 
     ```xml
     <DeclaredConfiguration context="Device" schema="1.0" id="10249228-e719-58bf-b459-060de45240f1" osdefinedscenario="MSFTWifi" checksum="11111111">
     <CSP name="./Vendor/MSFT/WiFi">
     ```
 
-1. MSFTTResource (snippet) for ActiveSync:
+- Partial `MSFTResource` example for ActiveSync:
 
     ```xml
     <DeclaredConfiguration context="User" schema="1.0" id="33333333-1861-4131-96e8-44444444" osdefinedscenario="MSFTResource" checksum="5555">
     <CSP name="./Vendor/MSFT/ActiveSync">
     ```
 
+## SyncML examples
+
+The standard OMA-DM SyncML syntax is used to specify the DeclaredConfiguration CSP operations such as **Replace**, **Add**, and **Delete**. The payload of the SyncML's `<Data>` element must be XML-encoded. For this XML encoding, there are various online encoders that you can use. To avoid encoding the payload, you can use [CDATA Section](https://www.w3.org/TR/REC-xml/#sec-cdata-sect) as shown in the following SyncML examples.
+
 ### Configure a VPNv2 profile for resource access
 
-This example uses the [VPNv2 CSP](mdm/vpnv2-csp.md) to configure a VPN profile named **Test_SonicWall** on the device in the **User** scope.
+This example demostrates how to use the [VPNv2 CSP](mdm/vpnv2-csp.md) to configure a VPN profile named **Test_SonicWall** on the device in the **User** scope.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -118,15 +150,17 @@ This example uses the [VPNv2 CSP](mdm/vpnv2-csp.md) to configure a VPN profile n
 </SyncML>
 ```
 
+<!--
 > [!NOTE]
 >
 > - Format of the `<LocURI>` and `<DeclaredConfiguration>` follow the [Declared Configuration CSP](mdm/declaredconfiguration-csp.md) syntax.
 > - The `id` of `<DeclaredConfiguration>` should be a unique string.
 > - `<Format>` of `<Meta>` should be `chr` and `<Type>` should be `text/plain`.
+-->
 
 ### Updating a VPNv2 profile for resource access
 
-This example uses the same Declared Configuration **Document ID**, but with a new checksum("A3"). It installs a new VPNv2 profile named `Test_SonicwallNew`, and deletes the old profile.
+This example demonstrates how to use the same Declared Configuration **Document ID**, but with a new checksum("A3"). It installs a new VPNv2 profile named `Test_SonicwallNew`, and deletes the old profile.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -166,7 +200,7 @@ This example uses the same Declared Configuration **Document ID**, but with a ne
 
 ### Getting the VPNv2 profile
 
-This example uses `<Get>` to retrieve the results of the Declared configuration request.
+This example demonstrates how to use `<Get>` to retrieve the results of the Declared configuration request.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -230,7 +264,7 @@ This example uses `<Get>` to retrieve the results of the Declared configuration 
 
 ### Deleting the VPNv2 profile
 
-This example uses `<Delete>` to remove the configuration request to set the VPNv2 profile.
+This example demonstrates how to use `<Delete>` to remove the configuration request to set the VPNv2 profile.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -253,66 +287,11 @@ This example uses `<Delete>` to remove the configuration request to set the VPNv
 </SyncML>
 ```
 
-
 ## Resource Ownership
 
-MDM-managed resources, such as a VPN profile, are transferred/migrated to Windows Declared Configuration management when a Declared Configuration document is sent to the device for the same resource. This resource stays under Declared Configuration management until the Windows Declared Configuration document is deleted or abandoned. Otherwise, when MDM tries to manage the same resource via the legacy MDM channel using SyncML, it fails with error 0x86000031.
+MDM-managed resources, such as a VPN profile, are transferred/migrated to Windows Declared Configuration management when a Declared Configuration document is sent to the device for the same resource. This resource stays under Declared Configuration management until the Windows Declared Configuration document is [deleted](mdm/declaredconfiguration-csp.md#delete-a-declared-configuration-document) or [abandoned](mdm/declaredconfiguration-csp.md#abandon-a-declared-configuration-document). Otherwise, when MDM tries to manage the same resource via the legacy MDM channel using SyncML, it fails with error 0x86000031.
 
 `MDM ConfigurationManager: Command failure status. Configuraton Source ID: (29c383c5-6e2d-43bf-a741-c63cb7516bb4), Enrollment Type: (MDMDeviceWithAAD), CSP Name: (ActiveSync), Command Type: (Add: from Replace or Add), CSP URI: (./User/Vendor/MSFT/ActiveSync/Accounts/{3b8b9d4d-a24e-4c6d-a460-034d0bfb9316}), Result: (Unknown Win32 Error code: 0x86000031).`
-
-### Abandon Workflow
-
-Abandoning a resource occurs when certain resources are no longer targeted to a user or group. Instead of deleting the resource on the device, the server can choose to abandon the Declared Configuration document. An abandoned resource stays on the device but stops refreshing the Declared Configuration document that handles drift control. Also the resource ownership is transferred back to MDM, which means the same resource can be modified via legacy MDM channel again.
-
-This example abandons a Windows Declared Configuration Document, by setting the **Abandoned** property to **1**.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
-  <SyncBody>
-    <Replace>
-      <CmdID>10</CmdID>
-      <Item>
-        <Target>
-          <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/DCA000B5-397D-40A1-AABF-40B25078A7F9/Properties/Abandoned</LocURI>
-        </Target>
-        <Meta>
-          <Format xmlns="syncml:metinf">int</Format>
-        </Meta>
-        <Data>1</Data>
-      </Item>
-    </Replace>
-    <Final />
-  </SyncBody>
-</SyncML>
-```
-
-### Unabandon workflow
-
-Unabandoning the document causes the document to be applied right away, transferring the resource ownership back to Declared Configuration management and blocking legacy MDM channel from managing the channels again.
-
-This example unabandons a Windows Declared Configuration Document, by setting the **Abandoned** property to **0**.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
-  <SyncBody>
-    <Replace>
-      <CmdID>10</CmdID>
-      <Item>
-        <Target>
-          <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/DCA000B5-397D-40A1-AABF-40B25078A7F9/Properties/Abandoned</LocURI>
-        </Target>
-        <Meta>
-          <Format xmlns="syncml:metinf">int</Format>
-        </Meta>
-        <Data>0</Data>
-      </Item>
-    </Replace>
-    <Final />
-  </SyncBody>
-</SyncML>
-```
 
 ## Bulk template data
 

@@ -58,7 +58,7 @@ To create a native WMI provider, follow the steps outlined in [How to implement 
 5. Copy the generated files into the provider's project folder.
 6. Start the development process.
 
-## Example
+## Example MI Provider
 
 This example provides more details about each step to demonstrate how to implement a sample native resource named `MSFT_FileDirectoryConfiguration`.
 
@@ -234,6 +234,171 @@ The `MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource` function does the
     - `MSFT_FileDirectoryConfiguration_GetTargetResource_Destruct`
 
 1. Clean up resources, for example, free allocated memory.
+
+## Declared Configuration document
+
+> [!IMPORTANT]
+> The target of the scenario settings can only be device wide for extensibility. The CSP **scope** defined in `<LocURI>` and Declared Configuration **context** must be `Device`.
+
+The value of the `Document` leaf node in the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md) is an XML document that describes the request. Here's a sample Declared Configuration document with the configuration data specified for extensibility.
+
+```xml
+<DeclaredConfiguration schema="1.0" context="Device" id="27FEA311-68B9-4320-9FC4-296F6FDFAFE2" checksum="99925209110918B67FE962460137AA3440AFF4DB6ABBE15C8F499682457B9999" osdefinedscenario="MSFTExtensibilityMIProviderConfig">
+    <DSC namespace="root/Microsoft/Windows/DesiredStateConfiguration" className="MSFT_FileDirectoryConfiguration">
+        <Key name="DestinationPath">c:\data\test\bin\ut_extensibility.tmp</Key>
+        <Value name="Contents">TestFileContent1</Value>
+    </DSC>
+</DeclaredConfiguration>
+```
+
+Only supported values for `osdefinedscenario` can be used. Unsupported values result in an error message similar to `Invalid scenario name`.
+
+| osdefinedscenario                    | Description                                  |
+|--------------------------------------|----------------------------------------------|
+| MSFTExtensibilityMIProviderConfig    | Used to configure MI provider settings.      |
+| MSFTExtensibilityMIProviderInventory | Used to retrieve MI provider setting values. |
+
+Both `MSFTExtensibilityMIProviderConfig` and `MSFTExtensibilityMIProviderInventory` scenarios that require the same tags and attributes.
+
+- The `<DSC>` XML tag describes the targeted WMI provider expressed by a namespace and class name along with the values either to be applied to the device or queried by the MI provider.
+
+    This tag has the following attributes:
+
+    | Attribute | Description |
+    |--|--|
+    | `namespace` | Specifies the targeted MI provider namespace. |
+    | `classname` | The targeted MI provider. |
+
+- The `<Key>` XML tag describes the required parameter name and value. It only needs a value for configuration. The name is an attribute and the value is `<Key>` content.
+
+    This tag has the following attributes:
+
+    | Attribute | Description |
+    |--|--|
+    | `name` | Specifies the name of an MI provider parameter. |
+
+- The `<Value>` XML tag describes the optional parameter name and value. It only needs a value for configuration. The name is an attribute and the value is `<Value>` content.
+
+    This tag has the following attributes:
+
+    | Attribute | Description |
+    |--|--|
+    | `name` | Specifies the name of an MI provider parameter. |
+
+## SyncML examples
+
+The standard OMA-DM SyncML syntax is used to specify the DeclaredConfiguration CSP operations such as **Replace**, **Add**, and **Delete**. The payload of the SyncML's `<Data>` element must be XML-encoded. For this XML encoding, there are various online encoders that you can use. To avoid encoding the payload, you can use [CDATA Section](https://www.w3.org/TR/REC-xml/#sec-cdata-sect) as shown in the following SyncML examples.
+
+### Configuration request
+
+This example demonstrates how to send a configuration request using the `MSFT_FileDirectoryConfiguration` MI provider with the `MSFTExtensibilityMIProviderConfig` scenario.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML xmlns="SYNCML:SYNCML1.1">
+  <SyncBody>
+    <Replace>
+      <CmdID>14</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document</LocURI>
+        </Target>
+        <Data><![CDATA[
+            <DeclaredConfiguration schema="1.0" context="Device" id="27FEA311-68B9-4320-9FC4-296F6FDFAFE2" checksum="99925209110918B67FE962460137AA3440AFF4DB6ABBE15C8F499682457B9999" osdefinedscenario="MSFTExtensibilityMIProviderConfig">
+                <DSC namespace="root/Microsoft/Windows/DesiredStateConfiguration" className="MSFT_FileDirectoryConfiguration">
+                    <Key name="DestinationPath">c:\data\test\bin\ut_extensibility.tmp</Key>
+                    <Value name="Contents">TestFileContent1</Value>
+                </DSC>
+            </DeclaredConfiguration>
+        ]]></Data>
+      </Item>
+    </Replace>
+  </SyncBody>
+</SyncML>
+```
+
+### Inventory request
+
+This example demonstrates how to send an inventory request using the MSFT_FileDirectoryConfiguration MI provider with the MSFTExtensibilityMIProviderInventory scenario.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML xmlns="SYNCML:SYNCML1.1">
+  <SyncBody>
+    <Replace>
+      <CmdID>15</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents/12345678-1234-1234-1234-123456789012/Document</LocURI>
+        </Target>
+        <Data><![CDATA[
+            <DeclaredConfiguration schema="1.0" context="Device" id="12345678-1234-1234-1234-123456789012" checksum="1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF" osdefinedscenario="MSFTExtensibilityMIProviderInventory">
+                <DSC namespace="root/Microsoft/Windows/DesiredStateConfiguration" className="MSFT_FileDirectoryConfiguration">
+                    <Key name="DestinationPath">c:\data\test\bin\ut_extensibility.tmp</Key>
+                </DSC>
+            </DeclaredConfiguration>
+        ]]></Data>
+      </Item>
+    </Replace>
+  </SyncBody>
+</SyncML>
+```
+
+### Retrieve results
+
+This example retrieves the results of a configuration or inventory request:
+
+**Request**:
+
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.1">
+    <SyncBody>
+    <Get>
+        <CmdID>2</CmdID>
+        <Item>
+        <Meta>
+            <Format>chr</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Target>
+            <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Results/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document</LocURI>
+        </Target>
+        </Item>
+    </Get>
+    <Final />
+    </SyncBody>
+</SyncML>
+```
+
+**Response**:
+
+```xml
+<Status>
+    <CmdID>2</CmdID>
+    <MsgRef>1</MsgRef>
+    <CmdRef>2</CmdRef>
+    <Cmd>Get</Cmd>
+    <Data>200</Data>
+</Status>
+<Results>
+    <CmdID>3</CmdID>
+    <MsgRef>1</MsgRef>
+    <CmdRef>2</CmdRef>
+    <Item>
+        <Source>
+            <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Results/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document</LocURI>
+        </Source>
+        <Data>
+            <DeclaredConfigurationResult context="Device" schema="1.0" id="99988660-9080-3433-96e8-f32e85011999" osdefinedscenario="MSFTPolicies" checksum="99925209110918B67FE962460137AA3440AFF4DB6ABBE15C8F499682457B9999" result_checksum="EE4F1636201B0D39F71654427E420E625B9459EED17ACCEEE1AC9B358F4283FD" operation="Set" state="60">
+                <DSC namespace="root/Microsoft/Windows/DesiredStateConfiguration" className="MSFT_FileDirectoryConfiguration" status="200" state="60">
+                    <Key name="DestinationPath" />
+                    <Value name="Contents" />
+                </DSC>
+            </DeclaredConfigurationResult>
+        </Data>
+    </Item>
+</Results>
+```
 
 ## MI implementation references
 

@@ -7,14 +7,14 @@ ms.topic: overview
 
 # What is the declared configuration protocol
 
-The declared configuration protocol is a desired state device configuration model designed for efficient and reliable management of Windows devices. It leverages the OMA-DM SyncML protocol to provide all necessary settings in a single batch through a dedicated OMA-DM server. The device's declared configuration client stack processes these settings to achieve the desired state in the most efficient and reliable manner.
+The declared configuration protocol is a desired state device configuration model designed for efficient and reliable management of Windows devices. It uses the OMA-DM SyncML protocol to provide all necessary settings in a single batch through a dedicated OMA-DM server. The device's declared configuration client stack processes these settings to achieve the desired state in the most efficient and reliable manner.
 
 The declared configuration protocol requires that a device has a separate [OMA-DM enrollment](mdm-overview.md), which is dependent on the device being enrolled with the primary OMA-DM server. The desired state model is a different model from the current model where the server is responsible for the device's desire state. This dual enrollment is only allowed if the device is already enrolled into a primary MDM server. This other enrollment separates the desired state management functionality from the primary functionality.
 
 - [Declared configuration discovery](declared-configuration-discovery.md): The initial discovery phase of the Declared Configuration Protocol uses a dedicated JSON schema to query enrollment details from the [discovery service endpoint (DS)](/openspecs/windows_protocols/ms-mde2/60deaa44-52df-4a47-a844-f5b42037f7d3#gt_8d76dac8-122a-452b-8c97-b25af916f19b). This phase involves sending HTTP requests with specific headers and a JSON body containing details such as user domain, tenant ID, and OS version. The DS responds with the necessary enrollment service URLs and authentication policies based on the enrollment type (Microsoft Entra joined or registered devices).
 - [Declared configuration enrollment](declared-configuration-enrollment.md): The enrollment phase follows the [MS-MDE2 protocol](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692) and uses new [DMClient CSP](mdm/dmclient-csp.md) policies for dual enrollment. This phase involves setting the `LinkedEnrollment/DiscoveryEndpoint` and triggering the `LinkedEnrollment/Enroll` using SyncML commands. The device can then manage its configuration state by interacting with the OMA-DM server through these policies.
 
-The declared configuration enrollment offers following desired state management features:
+The declared configuration enrollment offers these desired state management features:
 
 - [Resource access](declared-configuration-resource-access.md): Provides access to necessary resources for configuration.
 - [Extensibility](declared-configuration-extensibility.md): Allows for extending the configuration capabilities as needed.
@@ -36,9 +36,9 @@ Declared Configuration enrollment for [Microsoft Entra registered devices](/entr
 - Windows 11, version 22H2 with [KB5040527](https://support.microsoft.com/help/5040527) (OS Build 22621.3958)
 - Windows 10, version 22H2 with [KB5040525](https://support.microsoft.com/help/5040525) (OS Build 19045.4717)
 
-## Declared configuration refresh interval
+## Refresh interval
 
-The Declared Configuration refresh schedule is created whenever there's a Declared Configuration doc present on the device and there's currently no schedule task for refresh. The task runs every 4 hours by default and can be configured. Each time the Declared Configuration refresh task runs, it checks for all drifts from desired state by comparing the current system configuration versus the server intention in the Declared Configuration docs. If there are any drifts, Declared Configuration engine tries to reapply the Declared Configuration docs to fix it. In case where a Declared Configuration doc can't be reapplied due to instance data missing, the Declared Configuration doc is marked in drifted state and a new sync session is triggered to notify there's a drift.
+The Declared configuration refresh schedule is created whenever there's a Declared Configuration doc present on the device and there's currently no schedule task for refresh. The task runs every 4 hours by default and can be configured. Each time the Declared Configuration refresh task runs, it checks for all drifts from desired state by comparing the current system configuration versus the server intention in the Declared Configuration docs. If there are any drifts, Declared Configuration engine tries to reapply the Declared Configuration docs to fix it. In case where a Declared Configuration doc can't be reapplied due to instance data missing, the Declared Configuration doc is marked in drifted state and a new sync session is triggered to notify there's a drift.
 
 To identify, adjust or remove the refresh schedule, use the **RefreshInterval** URI:
 
