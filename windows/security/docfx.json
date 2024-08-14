@@ -100,8 +100,8 @@
         "operating-system-security/data-protection/**/*.yml": "paolomatarazzo",
         "operating-system-security/network-security/**/*.md": "paolomatarazzo",
         "operating-system-security/network-security/**/*.yml": "paolomatarazzo",
-        "security-foundations/certification/**/*.md": "paolomatarazzo",
-        "security-foundations/certification/**/*.yml": "paolomatarazzo"
+        "security-foundations/certification/**/*.md": "mike-grimm",
+        "security-foundations/certification/**/*.yml": "mike-grimm"
       },
       "ms.author": {
         "application-security//**/*.md": "vinpa",
@@ -122,8 +122,8 @@
         "operating-system-security/data-protection/**/*.yml": "paoloma",
         "operating-system-security/network-security/**/*.md": "paoloma",
         "operating-system-security/network-security/**/*.yml": "paoloma",
-        "security-foundations/certification/**/*.md": "paoloma",
-        "security-foundations/certification/**/*.yml": "paoloma"
+        "security-foundations/certification/**/*.md": "mgrimm",
+        "security-foundations/certification/**/*.yml": "mgrimm"
       },
       "appliesto": {
         "application-security//**/*.md": [
