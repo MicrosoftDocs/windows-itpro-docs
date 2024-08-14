@@ -39,7 +39,7 @@ productDirectory:
           text: "Tutorial: deploy and manage Windows devices in a school"
         - url: /education/windows/tutorial-school-deployment/enroll-autopilot
           text: Enrollment in Intune with Windows Autopilot
-        - url: use-set-up-school-pcs-app.md
+        - url: suspcs/index.md
           text: Deploy devices with Set up School PCs
         - url: /windows/deployment
           text: Learn more about Windows deployment >
@@ -78,7 +78,7 @@ productDirectory:
           text: Set up a shared or guest Windows device
         - url: /education/windows/take-tests-in-windows
           text: Take tests and assessments in Windows
-        - url: set-up-school-pcs-provisioning-package.md
+        - url: /education/windows/suspcs/provisioning-package
           text: Provisioning package settings
         - url: https://www.youtube.com/watch?v=2ZLup_-PhkA
           text: "Video: Use the Set up School PCs App"

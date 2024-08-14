@@ -62,8 +62,6 @@
           items:
             - name: Windows quality update end user experience
               href: manage/windows-autopatch-windows-quality-update-end-user-exp.md
-            - name: Windows quality update signals
-              href: manage/windows-autopatch-windows-quality-update-signals.md
             - name: Windows quality update communications
               href: manage/windows-autopatch-windows-quality-update-communications.md
         - name: Manage driver and firmware updates
