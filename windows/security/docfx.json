@@ -100,8 +100,8 @@
         "operating-system-security/data-protection/**/*.yml": "paolomatarazzo",
         "operating-system-security/network-security/**/*.md": "paolomatarazzo",
         "operating-system-security/network-security/**/*.yml": "paolomatarazzo",
-        "security-foundations/certification/*.md": "paolomatarazzo",
-        "security-foundations/certification/*.yml": "paolomatarazzo"
+        "security-foundations/certification/**/*.md": "paolomatarazzo",
+        "security-foundations/certification/**/*.yml": "paolomatarazzo"
       },
       "ms.author": {
         "application-security//**/*.md": "vinpa",
@@ -122,8 +122,8 @@
         "operating-system-security/data-protection/**/*.yml": "paoloma",
         "operating-system-security/network-security/**/*.md": "paoloma",
         "operating-system-security/network-security/**/*.yml": "paoloma",
-        "security-foundations/certification/*.md": "paoloma",
-        "security-foundations/certification/*.yml": "paoloma"
+        "security-foundations/certification/**/*.md": "paoloma",
+        "security-foundations/certification/**/*.yml": "paoloma"
       },
       "appliesto": {
         "application-security//**/*.md": [
@@ -238,7 +238,7 @@
         "operating-system-security/device-management/windows-security-configuration-framework/*.md": "jmunck",
         "operating-system-security/network-security/vpn/*.md": "pesmith",
         "operating-system-security/network-security/windows-firewall/*.md": "nganguly",
-        "security-foundations/certification/*.md": "paoloma"
+        "security-foundations/certification/**/*.md": "paoloma"
       },
       "ms.collection": {
         "book/*.md": "tier3",
@@ -247,7 +247,7 @@
         "information-protection/tpm/*.md": "tier1",
         "operating-system-security/data-protection/bitlocker/*.md": "tier1",
         "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
-        "security-foundations/certification/*.md": "tier3",
+        "security-foundations/certification/**/*.md": "tier3",
         "threat-protection/auditing/*.md": "tier3"
       },
       "ROBOTS": {
