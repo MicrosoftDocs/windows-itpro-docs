@@ -306,6 +306,21 @@
       "source_path": "education/windows/tutorial-school-deployment/troubleshoot-overview.md",
       "redirect_url": "/mem/intune/industry/education/tutorial-school-deployment/troubleshoot-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/use-set-up-school-pcs-app.md",
+      "redirect_url": "/education/windows/suspcs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-school-pcs-technical.md",
+      "redirect_url": "/education/windows/suspcs/reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-school-pcs-provisioning-package.md",
+      "redirect_url": "/education/windows/suspcs/provisioning-package",
+      "redirect_document_id": false
     }
   ]
 }
