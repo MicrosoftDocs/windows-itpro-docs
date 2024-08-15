@@ -3,10 +3,6 @@ title: Windows Common Criteria certifications
 description: Learn how Microsoft products are certified under the Common Criteria for Information Technology Security Evaluation program.
 ms.date: 2/1/2024
 ms.topic: reference
-ms.author: v-rodurff
-author: msrobertd
-ms.reviewer: paoloma
-ms.collection: tier3
 ---
 
 # Common Criteria certifications
