@@ -898,22 +898,22 @@ This example demonstrates how to unabandon a Windows Declared Configuration Docu
 
 The SyncML deletion of the document only removes the document but any settings persist on the device. This example demonstrates how to delete a document.
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <SyncML xmlns="SYNCML:SYNCML1.1">
-    <SyncBody>
-        <Delete>
-            <CmdID>2</CmdID>
-            <Item>
-            <Target>
-                <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document</LocURI>
-            </Target>
-            </Item>
-        </Delete>
-        <Final/>
-        </SyncBody>
-    </SyncML>
-    ```
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncBody>
+    <Delete>
+        <CmdID>2</CmdID>
+        <Item>
+        <Target>
+            <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document</LocURI>
+        </Target>
+        </Item>
+    </Delete>
+    <Final/>
+    </SyncBody>
+</SyncML>
+```
 <!-- DeclaredConfiguration-CspMoreInfo-End -->
 
 <!-- DeclaredConfiguration-End -->
