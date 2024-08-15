@@ -48,7 +48,7 @@
       href: 
       items:
         - name: Manage Windows Autopatch groups
-          href: manage/windows-autopatch-groups-manage-autopatch-groups.md
+          href: manage/windows-autopatch-manage-autopatch-groups.md
         - name: Customize Windows Update settings
           href: manage/windows-autopatch-customize-windows-update-settings.md
         - name: Windows feature updates

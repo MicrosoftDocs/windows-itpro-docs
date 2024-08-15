@@ -1371,7 +1371,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/windows-autopatch/deploy/windows-autopatch-manage-autopatch-groups.md",
+      "source_path": "windows/deployment/windows-autopatch/deploy/windows-autopatch-groups-manage-autopatch-groups.md",
       "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-manage-autopatch-groups",
       "redirect_document_id": true
     }
