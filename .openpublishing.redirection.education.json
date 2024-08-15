@@ -92,7 +92,7 @@
     },
     {
       "source_path": "education/windows/enable-s-mode-on-surface-go-devices.md",
-      "redirect_url": "/windows/deployment/s-mode",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/s-mode/index",
       "redirect_document_id": false
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "source_path": "education/windows/test-windows10s-for-edu.md",
-      "redirect_url": "/windows/deployment/s-mode",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/s-mode/index",
       "redirect_document_id": false
     },
     {
