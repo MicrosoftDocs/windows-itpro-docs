@@ -16,14 +16,6 @@ items:
         href: windows-11-se-settings-list.md
       - name: Frequently Asked Questions (FAQ)
         href: windows-11-se-faq.yml
-    - name: Windows in S Mode
-      items:
-      - name: Overview
-        href: /windows/deployment/s-mode?context=/education/context/context
-      - name: Switch Windows edition from S mode
-        href: /windows/deployment/windows-10-pro-in-s-mode?context=/education/context/context
-      - name: Deploy Win32 apps to S Mode devices
-        href: /windows/security/threat-protection/windows-defender-application-control/lob-win32-apps-on-s?context=/education/context/context
     - name: Shared devices and guests access
       href: /windows/configuration/shared-devices-concepts?context=/education/context/context
     - name: Take tests and assessments in Windows

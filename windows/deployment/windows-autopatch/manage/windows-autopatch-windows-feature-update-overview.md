@@ -98,8 +98,8 @@ There are two scenarios that the Global release is used:
 
 | Scenario | Description |
 | ----- | ----- |
-| Scenario #1 | You assign Microsoft Entra groups to be used with the deployment ring (Last) or you add additional deployment rings when you customize the [Default Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group).<p>A global Windows feature update policy is automatically assigned behind the scenes to the newly added deployment rings or when you assigned Microsoft Entra groups to the deployment ring (Last) in the Default Autopatch group.</p> |
-| Scenario #2 | You create new [Custom Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#create-a-custom-autopatch-group).<p>The global Windows feature policy is automatically assigned behind the scenes to all deployment rings as part of the Custom Autopatch groups you create.</p> |
+| Scenario #1 | You assign Microsoft Entra groups to be used with the deployment ring (Last) or you add additional deployment rings when you customize the [Default Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group).<p>A global Windows feature update policy is automatically assigned behind the scenes to the newly added deployment rings or when you assigned Microsoft Entra groups to the deployment ring (Last) in the Default Autopatch group.</p> |
+| Scenario #2 | You create new [Custom Autopatch groups](../manage/windows-autopatch-manage-autopatch-groups.md#create-a-custom-autopatch-group).<p>The global Windows feature policy is automatically assigned behind the scenes to all deployment rings as part of the Custom Autopatch groups you create.</p> |
 
 > [!NOTE]
 > Global releases don't show up in the Windows feature updates release management blade.
@@ -124,7 +124,7 @@ The differences in between the global and the default Windows feature update pol
 
 | Default Windows feature update policy | Global Windows feature update policy |
 | ----- | ----- |
-| <ul><li>Set by default with the Default Autopatch group and assigned to Test, Ring1, Ring2, Ring3. The default policy isn't automatically assigned to the Last ring in the Default Autopatch group.</li><li>The Windows Autopatch service keeps its minimum Windows OS version updated following the recommendation of minimum Windows OS version [currently serviced by the Windows servicing channels](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2).</li></ul> | <ul><li>Set by default and assigned to all new deployment rings added as part of the Default Autopatch group customization.</li><li>Set by default and assigned to all deployment rings created as part of Custom Autopatch groups.</li></ul>
+| <ul><li>Set by default with the Default Autopatch group and assigned to Test, Ring1, Ring2, Ring3. The default policy isn't automatically assigned to the Last ring in the Default Autopatch group.</li><li>The Windows Autopatch service keeps its minimum Windows OS version updated following the recommendation of minimum Windows OS version [currently serviced by the Windows servicing channels](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2).</li></ul> | <ul><li>Set by default and assigned to all new deployment rings added as part of the Default Autopatch group customization.</li><li>Set by default and assigned to all deployment rings created as part of Custom Autopatch groups.</li></ul> |
 
 ### Custom release
 
