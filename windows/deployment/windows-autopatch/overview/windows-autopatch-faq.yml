@@ -79,7 +79,7 @@ sections:
           No. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service. For more information about policies and configurations, see [Changes made at tenant enrollment](/windows/deployment/windows-autopatch/references/windows-autopatch-changes-to-tenant).
       - question: How can I represent our organizational structure with our own deployment cadence?
         answer: |
-          [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md) helps you manage updates in a way that makes sense for your businesses. For more information, see [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) and [Manage Windows Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md).
+          [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md) helps you manage updates in a way that makes sense for your businesses. For more information, see [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) and [Manage Windows Autopatch groups](../manage/windows-autopatch-manage-autopatch-groups.md).
   - name: Update management
     questions:
       - question: What systems does Windows Autopatch update?

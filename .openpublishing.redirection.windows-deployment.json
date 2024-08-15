@@ -1379,6 +1379,11 @@
       "source_path": "windows/deployment/s-mode.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/s-mode/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/deploy/windows-autopatch-groups-manage-autopatch-groups.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-manage-autopatch-groups",
+      "redirect_document_id": true
     }
   ]
 }
