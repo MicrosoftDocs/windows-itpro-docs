@@ -367,10 +367,6 @@
           href: do/waas-delivery-optimization-reference.md?context=/windows/deployment/context/context
         - name: FoD and language packs for WSUS and Configuration Manager
           href: update/fod-and-lang-packs.md
-        - name: Windows client in S mode
-          href: s-mode.md
-        - name: Switch to Windows client Pro or Enterprise from S mode
-          href: windows-10-pro-in-s-mode.md
         - name: Windows client deployment tools
           items:
             - name: Windows client deployment scenarios and tools
