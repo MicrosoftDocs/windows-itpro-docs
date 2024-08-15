@@ -99,7 +99,9 @@
         "operating-system-security/data-protection/**/*.md": "paolomatarazzo",
         "operating-system-security/data-protection/**/*.yml": "paolomatarazzo",
         "operating-system-security/network-security/**/*.md": "paolomatarazzo",
-        "operating-system-security/network-security/**/*.yml": "paolomatarazzo"
+        "operating-system-security/network-security/**/*.yml": "paolomatarazzo",
+        "security-foundations/certification/**/*.md": "mike-grimm",
+        "security-foundations/certification/**/*.yml": "mike-grimm"
       },
       "ms.author": {
         "application-security//**/*.md": "vinpa",
@@ -119,7 +121,9 @@
         "operating-system-security/data-protection/**/*.md": "paoloma",
         "operating-system-security/data-protection/**/*.yml": "paoloma",
         "operating-system-security/network-security/**/*.md": "paoloma",
-        "operating-system-security/network-security/**/*.yml": "paoloma"
+        "operating-system-security/network-security/**/*.yml": "paoloma",
+        "security-foundations/certification/**/*.md": "mgrimm",
+        "security-foundations/certification/**/*.yml": "mgrimm"
       },
       "appliesto": {
         "application-security//**/*.md": [
@@ -233,7 +237,8 @@
         "operating-system-security/data-protection/personal-data-encryption/*.md": "rhonnegowda",
         "operating-system-security/device-management/windows-security-configuration-framework/*.md": "jmunck",
         "operating-system-security/network-security/vpn/*.md": "pesmith",
-        "operating-system-security/network-security/windows-firewall/*.md": "nganguly"
+        "operating-system-security/network-security/windows-firewall/*.md": "nganguly",
+        "security-foundations/certification/**/*.md": "paoloma"
       },
       "ms.collection": {
         "book/*.md": "tier3",
@@ -242,6 +247,7 @@
         "information-protection/tpm/*.md": "tier1",
         "operating-system-security/data-protection/bitlocker/*.md": "tier1",
         "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
+        "security-foundations/certification/**/*.md": "tier3",
         "threat-protection/auditing/*.md": "tier3"
       },
       "ROBOTS": {

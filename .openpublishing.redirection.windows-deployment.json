@@ -1489,6 +1489,21 @@
       "source_path": "windows/deployment/planning/using-the-sua-wizard.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/using-the-sua-wizard",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-pro-in-s-mode.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/s-mode/switch-edition-from-s-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/s-mode.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/s-mode/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/deploy/windows-autopatch-groups-manage-autopatch-groups.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-manage-autopatch-groups",
+      "redirect_document_id": true
     }
   ]
 }

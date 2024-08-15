@@ -5127,7 +5127,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-application-control/LOB-win32-apps-on-s.md",
-      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/LOB-win32-apps-on-s",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/s-mode/wdac-allow-lob-win32-apps",
       "redirect_document_id": false
     },
     {
@@ -9183,6 +9183,11 @@
     {
       "source_path": "windows/security/identity-protection/hello-for-business/hello-feature-dual-enrollment.md",
       "redirect_url": "/windows/security/identity-protection/hello-for-business/dual-enrollment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/application-security/application-control/windows-defender-application-control/deployment/LOB-win32-apps-on-s.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/s-mode/wdac-allow-lob-win32-apps",
       "redirect_document_id": false
     }
   ]
