@@ -10997,7 +10997,7 @@
     },
     {
       "source_path": "windows/plan/act-technical-reference.md",
-      "redirect_url": "/windows/deployment/planning/compatibility-administrator-users-guide",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/compatibility-administrator-users-guide",
       "redirect_document_id": false
     },
     {
@@ -11042,12 +11042,12 @@
     },
     {
       "source_path": "windows/plan/applying-filters-to-data-in-the-sua-tool.md",
-      "redirect_url": "/windows/deployment/planning/applying-filters-to-data-in-the-sua-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/applying-filters-to-data-in-the-sua-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/available-data-types-and-operators-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/available-data-types-and-operators-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/available-data-types-and-operators-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11082,17 +11082,17 @@
     },
     {
       "source_path": "windows/plan/compatibility-administrator-users-guide.md",
-      "redirect_url": "/windows/deployment/planning/compatibility-administrator-users-guide",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/compatibility-administrator-users-guide",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/compatibility-fix-database-management-strategies-and-deployment.md",
-      "redirect_url": "/windows/deployment/planning/compatibility-fix-database-management-strategies-and-deployment",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/compatibility-fix-database-management-strategies-and-deployment",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md",
-      "redirect_url": "/windows/deployment/planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/compatibility-fixes-for-windows-8-windows-7-and-windows-vista",
       "redirect_document_id": false
     },
     {
@@ -11112,12 +11112,12 @@
     },
     {
       "source_path": "windows/plan/creating-a-custom-compatibility-fix-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/creating-a-custom-compatibility-fix-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/creating-a-custom-compatibility-fix-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/creating-a-custom-compatibility-mode-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/creating-a-custom-compatibility-mode-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/creating-a-custom-compatibility-mode-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11127,7 +11127,7 @@
     },
     {
       "source_path": "windows/plan/creating-an-apphelp-message-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/creating-an-apphelp-message-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/creating-an-apphelp-message-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11202,7 +11202,7 @@
     },
     {
       "source_path": "windows/plan/enabling-and-disabling-compatibility-fixes-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/enabling-and-disabling-compatibility-fixes-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/enabling-and-disabling-compatibility-fixes-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11222,7 +11222,7 @@
     },
     {
       "source_path": "windows/plan/fixing-applications-by-using-the-sua-tool.md",
-      "redirect_url": "/windows/deployment/planning/fixing-applications-by-using-the-sua-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/fixing-applications-by-using-the-sua-tool",
       "redirect_document_id": false
     },
     {
@@ -11242,7 +11242,7 @@
     },
     {
       "source_path": "windows/plan/installing-and-uninstalling-custom-compatibility-databases-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/installing-and-uninstalling-custom-compatibility-databases-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/installing-and-uninstalling-custom-compatibility-databases-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11267,7 +11267,7 @@
     },
     {
       "source_path": "windows/plan/managing-application-compatibility-fixes-and-custom-fix-databases.md",
-      "redirect_url": "/windows/deployment/planning/managing-application-compatibility-fixes-and-custom-fix-databases",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/managing-application-compatibility-fixes-and-custom-fix-databases",
       "redirect_document_id": false
     },
     {
@@ -11317,12 +11317,12 @@
     },
     {
       "source_path": "windows/plan/searching-for-fixed-applications-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/searching-for-fixed-applications-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/searching-for-fixed-applications-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/searching-for-installed-compatibility-fixes-with-the-query-tool-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/searching-for-installed-compatibility-fixes-with-the-query-tool-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/searching-for-installed-compatibility-fixes-with-the-query-tool-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11367,7 +11367,7 @@
     },
     {
       "source_path": "windows/plan/showing-messages-generated-by-the-sua-tool.md",
-      "redirect_url": "/windows/deployment/planning/showing-messages-generated-by-the-sua-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/showing-messages-generated-by-the-sua-tool",
       "redirect_document_id": false
     },
     {
@@ -11382,12 +11382,12 @@
     },
     {
       "source_path": "windows/plan/sua-users-guide.md",
-      "redirect_url": "/windows/deployment/planning/sua-users-guide",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/sua-users-guide",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/tabs-on-the-sua-tool-interface.md",
-      "redirect_url": "/windows/deployment/planning/tabs-on-the-sua-tool-interface",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/tabs-on-the-sua-tool-interface",
       "redirect_document_id": false
     },
     {
@@ -11402,7 +11402,7 @@
     },
     {
       "source_path": "windows/plan/testing-your-application-mitigation-packages.md",
-      "redirect_url": "/windows/deployment/planning/testing-your-application-mitigation-packages",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/testing-your-application-mitigation-packages",
       "redirect_document_id": false
     },
     {
@@ -11427,7 +11427,7 @@
     },
     {
       "source_path": "windows/plan/understanding-and-using-compatibility-fixes.md",
-      "redirect_url": "/windows/deployment/planning/understanding-and-using-compatibility-fixes",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/understanding-and-using-compatibility-fixes",
       "redirect_document_id": false
     },
     {
@@ -11442,27 +11442,27 @@
     },
     {
       "source_path": "windows/plan/using-the-compatibility-administrator-tool.md",
-      "redirect_url": "/windows/deployment/planning/using-the-compatibility-administrator-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/using-the-compatibility-administrator-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/using-the-sdbinstexe-command-line-tool.md",
-      "redirect_url": "/windows/deployment/planning/using-the-sdbinstexe-command-line-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/using-the-sdbinstexe-command-line-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/using-the-sua-tool.md",
-      "redirect_url": "/windows/deployment/planning/using-the-sua-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/using-the-sua-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/using-the-sua-wizard.md",
-      "redirect_url": "/windows/deployment/planning/using-the-sua-wizard",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/using-the-sua-wizard",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/viewing-the-events-screen-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/viewing-the-events-screen-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/viewing-the-events-screen-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
