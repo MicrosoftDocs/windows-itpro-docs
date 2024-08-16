@@ -84,7 +84,7 @@ This walkthrough describes how to customize a Windows PE boot image including up
 
 > [!TIP]
 >
-> ADK 10.1.26100.1 (May 2024) and the ADK 10.1.25398.1 (September 2023) are based off **Microsoft server operating system, version 22H2 for x64-based Systems**. Make sure to update the search term appropriately.
+> The ADK 10.1.25398.1 (September 2023) is based off **Microsoft server operating system, version 22H2 for x64-based Systems**. Make sure to update the search term appropriately.
 
 1. Once the cumulative update has been found, download the appropriate version for the version and architecture of Windows that matches the Windows PE boot image. For example, if the version of the Windows PE boot image is Windows 11 22H2 64-bit, then download the **Cumulative Update for Windows 11 Version 22H2 for x64-based Systems** version of the update.
 
