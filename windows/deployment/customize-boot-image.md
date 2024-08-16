@@ -1206,7 +1206,7 @@ In the following boot image scenario for WDS:
 - The boot image modified as part of this guide is outside of the `<RemoteInstall>` folder. For example, the `winpe.wim` boot image that comes with the Windows ADK
 - The updated boot image is being added as a new boot image in WDS
 
-then follow these steps to add the boot image in WDS:
+Follow these steps to add the boot image in WDS:
 
 1. Add the updated boot image to WDS using the following command lines:
 
