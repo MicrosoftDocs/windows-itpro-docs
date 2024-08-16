@@ -260,7 +260,7 @@ This example demonstrates how to use `<Get>` to retrieve the results of the WinD
 ```
 
 > [!TIP]
-> To understand the state values, see [WinDC states](mdm/declaredconfiguration-csp.md#declared-configuration-states).
+> To understand the state values, see [WinDC states](mdm/declaredconfiguration-csp.md#windc-states).
 
 ### Deleting the VPNv2 profile
 
@@ -289,7 +289,7 @@ This example demonstrates how to use `<Delete>` to remove the configuration requ
 
 ## Resource Ownership
 
-MDM-managed resources, such as a VPN profile, are transferred/migrated to WinDC management when a WinDC document is sent to the device for the same resource. This resource stays under WinDC management until the WinDC document is [deleted](mdm/declaredconfiguration-csp.md#delete-a-declared-configuration-document) or [abandoned](mdm/declaredconfiguration-csp.md#abandon-a-declared-configuration-document). Otherwise, when MDM tries to manage the same resource via the legacy MDM channel using SyncML, it fails with error 0x86000031.
+MDM-managed resources, such as a VPN profile, are transferred/migrated to WinDC management when a WinDC document is sent to the device for the same resource. This resource stays under WinDC management until the WinDC document is [deleted](mdm/declaredconfiguration-csp.md#delete-a-windc-document) or [abandoned](mdm/declaredconfiguration-csp.md#abandon-a-windc-document). Otherwise, when MDM tries to manage the same resource via the legacy MDM channel using SyncML, it fails with error 0x86000031.
 
 `MDM ConfigurationManager: Command failure status. Configuraton Source ID: (29c383c5-6e2d-43bf-a741-c63cb7516bb4), Enrollment Type: (MDMDeviceWithAAD), CSP Name: (ActiveSync), Command Type: (Add: from Replace or Add), CSP URI: (./User/Vendor/MSFT/ActiveSync/Accounts/{3b8b9d4d-a24e-4c6d-a460-034d0bfb9316}), Result: (Unknown Win32 Error code: 0x86000031).`
 

@@ -17,11 +17,11 @@ The primary MDM model is one where the MDM server is solely responsible for orch
 
 The Windows declared configuration (WinDC) device management model requires the server to deliver all the setting values to the device for the scenario configuration. The server sends them asynchronously in batches through the DeclaredConfiguration CSP.
 
-- During the client-initiated OMA-DM session, the WinDC server sends a configuration or an inventory WinDC document to the client through the [DeclaredConfiguration CSP URI](#declared-configuration-oma-uri). If the device verifies the syntax of the document is correct, the client stack pushes the request to its orchestrator to process the request asynchronously. The client stack then exits, and returns control back to the WinDC service. This behavior allows the device to asynchronously process the request.
+- During the client-initiated OMA-DM session, the WinDC server sends a configuration or an inventory WinDC document to the client through the [DeclaredConfiguration CSP URI](#declaredconfiguration-oma-uri). If the device verifies the syntax of the document is correct, the client stack pushes the request to its orchestrator to process the request asynchronously. The client stack then exits, and returns control back to the WinDC service. This behavior allows the device to asynchronously process the request.
 
-- On the client, if there are any requests in process or completed, it sends a [generic alert](#declared-configuration-generic-alert) to the server. This alert summarizes each document's status, state, and progress. Every client HTTPS request to the WinDC OMA-DM server includes this summary.
+- On the client, if there are any requests in process or completed, it sends a [generic alert](#windc-generic-alert) to the server. This alert summarizes each document's status, state, and progress. Every client HTTPS request to the WinDC OMA-DM server includes this summary.
 
-- The WinDC server uses the generic alert to determine which requests are completed successfully or with errors. The server can then synchronously retrieve the WinDC document process results through the [DeclaredConfiguration CSP URI](#declared-configuration-oma-uri).
+- The WinDC server uses the generic alert to determine which requests are completed successfully or with errors. The server can then synchronously retrieve the WinDC document process results through the [DeclaredConfiguration CSP URI](#declaredconfiguration-oma-uri).
 <!-- DeclaredConfiguration-Editable-End -->
 
 <!-- DeclaredConfiguration-Tree-Begin -->
