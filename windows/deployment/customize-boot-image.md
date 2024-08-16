@@ -82,9 +82,9 @@ This walkthrough describes how to customize a Windows PE boot image including up
 
 1. When searching the [Microsoft Update Catalog](https://catalog.update.microsoft.com/) site, use the search term `"<year>-<month> cumulative update for windows <x>"` where `year` is the four-digit current year, `<month>` is the two-digit current month, and `<x>` is the version of Windows that Windows PE is based on. Make sure to include the quotes (`"`). For example, to search for the latest cumulative update for Windows 11 in August 2023, use the search term `"2023-08 cumulative update for Windows 11"`, again making sure to include the quotes. If the cumulative update hasn't been released yet for the current month, then search for the previous month.
 
-> [!TIP]
->
-> The ADK 10.1.25398.1 (September 2023) is based off **Microsoft server operating system, version 22H2 for x64-based Systems**. Make sure to update the search term appropriately.
+  > [!TIP]
+  >
+  > The ADK 10.1.25398.1 (September 2023) is based off **Microsoft server operating system, version 22H2 for x64-based Systems**. Make sure to update the search term appropriately.
 
 1. Once the cumulative update has been found, download the appropriate version for the version and architecture of Windows that matches the Windows PE boot image. For example, if the version of the Windows PE boot image is Windows 11 22H2 64-bit, then download the **Cumulative Update for Windows 11 Version 22H2 for x64-based Systems** version of the update.
 
