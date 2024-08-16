@@ -54,71 +54,46 @@ With checkpoint cumulative updates, the update file level differentials are base
 
 ## Features added to Windows 11 since version 23H2
 
-New features and enhancements were introduced to Windows 11, version 23H2 periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an optional nonsecurity preview release and gradually rolled out to clients. These new features are released later as part of a monthly security update release. For more information about continuous innovation, see [Update release cycle for Windows clients](/windows/deployment/update/release-cycle#continuous-innovation-for-windows-11) Some of the features were released within the past year's continuous innovation updates and carry forward into the 24H2 annual feature update include:
+New features and enhancements were introduced to Windows 11, version 23H2 periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an optional nonsecurity preview release and gradually rolled out to clients. These new features are released later as part of a monthly security update release. For more information about continuous innovation, see [Update release cycle for Windows clients](/windows/deployment/update/release-cycle#continuous-innovation-for-windows-11) 
+
+Some of the features were released within the past year's continuous innovation updates and carry forward into the 24H2 annual feature update include:
 
 
 ### Feature1
 <!--max-->
 
-### Feature2
-<!--8138336-->
-Windows passwordless experience is a security policy that promotes a user experience without passwords on Microsoft Entra joined devices.
-When the policy is enabled, certain Windows authentication scenarios don't offer users the option to use a password, helping organizations and preparing users to gradually move away from passwords. For more information, see [Windows passwordless experience](/windows/security/identity-protection/passwordless-experience/).
 
-### Web sign-in for Windows
-<!--8344016-->
-You can enable a web-based sign-in experience on Microsoft Entra joined devices, unlocking new sign-in options and capabilities. For more information, see [Web sign-in for Windows](/windows/security/identity-protection/web-sign-in).
+### Enable optional updates
+<!--7991583-->
+In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using the **Enable optional updates** policy. For more information about optional content, see [Enable optional updates](/windows/deployment/update/waas-configure-wufb#enable-optional-updates).
 
-### Declared configuration protocol
-<!--7771694 --> 
-**Declared configuration protocol** is a new protocol for device configuration management that's based on a desired state model and uses OMA-DM SyncML protocol. It allows the server to provide the device with a collection of settings for a specific scenario, and the device to handle the configuration request and maintain its state. For more information, see [What is the declared configuration protocol](/windows/client-management/declared-configuration).
+### Remote Desktop Connection improvements
 
-### Education themes
-<!--7771679-->
-You can deploy education themes to your devices. The education themes are designed for students using devices in a school. For more information, see [Configure education themes for Windows 11](/education/windows/edu-themes).
+Remote Desktop Connection has the following improvements:
+- The Remote Desktop Connection settup window (mstsc.exe) follows the text scalling settings under **Settings** > **Accessability** > **Text size**. 
+- Remote Desktop Connection supports zoom options of 350, 400, 450 and 500%
+- Connection bar design has been improved 
 
-### Temporary enterprise feature control
-<!--7790977-->
-Controls were added to temporarily turn off certain features that were introduced during monthly cumulative updates for managed Windows 11, version 23H2 devices. For more information, see [Temporary enterprise feature control](temporary-enterprise-feature-control.md).
+### Wi-Fi 7 support
+<!--8850300-->
+Support has been added for Wi-Fi 7 when using capable access point and PCs. Wi-Fi 7, also known as IEEE 802.11be Extremely High Throughput (EHT) is the latest Wi-Fi technology that offers unprecedented speed, reliability, and efficiency for your wireless devices. For more information about Wi-Fi 7, see the [Wi-Fi Alliance announcement](https://www.wi-fi.org/discover-wi-fi/wi-fi-7).
 
-### Multi-app kiosk
-<!--6444738-->
+## Bluetooth &#174; Low Energy Audio support
 
-You can configure a multi-app kiosk, which displays a customized start menu of allowed apps. For more information, see [Set up a multi-app kiosk on Windows 11 devices](/windows/configuration/lock-down-windows-11-to-specific-apps).
+Customers who use these assistive hearing devices are now able to directly pair, stream audio, take calls, and control audio presets when they use an LE Audio-compatible PC. Users who have Bluetooth LE Audio capable assistive hearing devices can determine if their PC is LE Audio-compatible, set up, and manage their devices via **Settings** > **Accessibility** > **Hearing devices**.  
 
-### Copilot in Windows
-<!--8138371-->
-Copilot in Windows provides centralized generative AI assistance to your users right from the Windows desktop. For more information, see [Manage Copilot in Windows](/windows/client-management/manage-windows-copilot).
+## Sudo for Windows
 
-### Windows Hello for Business authentication improvement
-<!--7771685-->
-Peripheral face and fingerprint sensors can be used for Windows Hello for Business authentication on devices where Enhanced Sign-in Security (Secure Biometrics) has been enabled at the factory. Previously this functionality was blocked. For more information, see [Common questions about Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-faq).
-
-### LAPS native integration
-<!--6399966-->
-Use Windows Local Administrator Password Solution (LAPS) to regularly rotate and manage local administrator account passwords. For more information, see [Local Administrator Password Solution (LAPS)](/windows-server/identity/laps/laps-overview)
-
-### Federated sign-in
-<!--7593916, 7593946-->
-You can sign into Windows using a federated identity, which simplifies the experience for students. For example, students and educators can use QR code badges to sign-in. This feature is designed specifically for Education editions of Windows. For more information, see [Configure federated sign-in for Windows devices](/education/windows/federated-sign-in).
-
-### Customize Windows 11 taskbar buttons
-<!--07525381-->
-[Policies to customize Windows 11 taskbar buttons](/windows/configuration/supported-csp-taskbar-windows#csp-policies-to-customize-windows-11-taskbar-buttons) were added to provide you with more control over the taskbar search experience across your organization.
-
-### Braille displays
-<!--7579823-->
-The compatibility of braille displays was expanded. Braille displays work seamlessly and reliably across multiple screen readers, improving the end user experience. We also added support for new braille displays and new braille input and output languages in Narrator. For more information, see [Accessibility information for IT professionals](/windows/configuration/windows-accessibility-for-ITPros).
-
-### Dev Drive
-
-Dev Drive is a new form of storage volume available to improve performance for key developer workloads. For more information, see [Set up a Dev Drive on Windows 11](/windows/dev-drive/).
+Sudo for Windows is a new way for users to run elevated commands (as an administrator) directly from an unelevated console session. For more information, see [Sudo for Windows](/windows/sudo/).
 
 ### Additional features
 <!--notable UX items for IT pros from other updates-->
 
-- **Feature1**: Notable feature or change description
-- **Feature2**: Notable feature or change description
+- **File Explorer**: The following changes were made to File Explorer context menu:
+  - Support for creating 7-zip and TAR archives
+  - **Compress to** > **Additional options** allows you to compress individual files with gzip, BZip2, xz, or Zstandard 
+  - Labels have been added to the context menu icons for actions like copy, paste, delete and rename
+- **OOBE improvement**: when you need to connect to a network and there's no Wi-Fi drivers, you'll be given an *Install drivers* option to install drivers you've already downloaded
 
 ## Features removed in Windows 11, version 24H2
 
