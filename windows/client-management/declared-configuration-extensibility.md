@@ -1,13 +1,13 @@
 ---
-title: Declared configuration extensibility
-description: Learn more about declared configuration extensibility through native WMI providers.
-ms.date: 08/14/2024
+title: Windows declared configuration extensibility
+description: Learn more about Windows declared configuration extensibility through native WMI providers.
+ms.date: 08/16/2024
 ms.topic: how-to
 ---
 
 # Declared configuration extensibility providers
 
-The declared configuration enrollment, which supports the declared configuration client stack, offers extensibility through native WMI providers. This feature instantiates and interfaces with a Windows Management Instrumentation (WMI) provider that implements a management infrastructure (MI) interface. The interface must implement GetTargetResource, TestTargetResource, and SetTargetResource methods, and can implement any number of string properties.
+The Windows declared configuration (WinDC) enrollment offers extensibility through native WMI providers. This feature instantiates and interfaces with a Windows Management Instrumentation (WMI) provider that implements a management infrastructure (MI) interface. The interface must implement GetTargetResource, TestTargetResource, and SetTargetResource methods, and can implement any number of string properties.
 
 > [!NOTE]
 > Only string properties are currently supported by extensibility providers.
@@ -235,12 +235,12 @@ The `MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource` function does the
 
 1. Clean up resources, for example, free allocated memory.
 
-## Declared Configuration document
+## WinDC document
 
 > [!IMPORTANT]
-> The target of the scenario settings can only be device wide for extensibility. The CSP **scope** defined in `<LocURI>` and Declared Configuration **context** must be `Device`.
+> The target of the scenario settings can only be device wide for extensibility. The CSP **scope** defined in `<LocURI>` and WinDC **context** must be `Device`.
 
-The value of the `Document` leaf node in the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md) is an XML document that describes the request. Here's a sample Declared Configuration document with the configuration data specified for extensibility.
+The value of the `Document` leaf node in the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md) is an XML document that describes the request. Here's a sample WinDC document with the configuration data specified for extensibility.
 
 ```xml
 <DeclaredConfiguration schema="1.0" context="Device" id="27FEA311-68B9-4320-9FC4-296F6FDFAFE2" checksum="99925209110918B67FE962460137AA3440AFF4DB6ABBE15C8F499682457B9999" osdefinedscenario="MSFTExtensibilityMIProviderConfig">
@@ -402,13 +402,13 @@ This example retrieves the results of a configuration or inventory request:
 
 ## MI implementation references
 
-- [Introducing the management infrastructure (MI) API](/archive/blogs/wmi/introducing-new-management-infrastructure-mi-api)
-- [Implementing MI provider (1) - Overview](/archive/blogs/wmi/implementing-mi-provider-1-overview)
-- [Implementing MI provider (2) - Define schema](/archive/blogs/wmi/implementing-mi-provider-2-define-schema)
-- [Implementing MI provider (3) - Generate code](/archive/blogs/wmi/implementing-mi-provider-3-generate-code)
-- [Implementing MI provider (4) - Generate code (continue)](/archive/blogs/wmi/implementing-mi-provider-4-generate-code-continute)
-- [Implementing MI provider (5) - Implement](/archive/blogs/wmi/implementing-mi-provider-5-implement)
-- [Implementing MI provider (6) - Build, register, and debug](/archive/blogs/wmi/implementing-mi-provider-6-build-register-and-debug)
+- [Management infrastructure (MI) API](/archive/blogs/wmi/introducing-new-management-infrastructure-mi-api)
+- [MI provider (1) - Overview](/archive/blogs/wmi/implementing-mi-provider-1-overview)
+- [MI provider (2) - Define schema](/archive/blogs/wmi/implementing-mi-provider-2-define-schema)
+- [MI provider (3) - Generate code](/archive/blogs/wmi/implementing-mi-provider-3-generate-code)
+- [MI provider (4) - Generate code (continue)](/archive/blogs/wmi/implementing-mi-provider-4-generate-code-continute)
+- [MI provider (5) - Implement](/archive/blogs/wmi/implementing-mi-provider-5-implement)
+- [MI provider (6) - Build, register, and debug](/archive/blogs/wmi/implementing-mi-provider-6-build-register-and-debug)
 - [MI interfaces](/previous-versions/windows/desktop/wmi_v2/mi-interfaces)
 - [MI datatypes](/previous-versions/windows/desktop/wmi_v2/mi-datatypes)
 - [MI structures and unions](/previous-versions/windows/desktop/wmi_v2/mi-structures-and-unions)

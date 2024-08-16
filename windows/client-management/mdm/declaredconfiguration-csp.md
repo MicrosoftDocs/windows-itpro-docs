@@ -1,7 +1,7 @@
 ---
 title: DeclaredConfiguration CSP
 description: Learn more about the DeclaredConfiguration CSP.
-ms.date: 01/18/2024
+ms.date: 08/16/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -15,13 +15,13 @@ ms.date: 01/18/2024
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The primary MDM model is one where the MDM server is solely responsible for orchestration and continuous maintenance of the state of the device for configuration scenarios. This behavior results in intensive network traffic and high network latency due to the synchronous configuration model based on the OMA-DM Syncml standard. It's also error-prone given that the server needs deep knowledge of the client.
 
-The declared configuration device management model requires the server to deliver all the setting values to the device for the scenario configuration. The server sends them asynchronously in batches through the client declared configuration CSP.
+The Windows declared configuration (WinDC) device management model requires the server to deliver all the setting values to the device for the scenario configuration. The server sends them asynchronously in batches through the DeclaredConfiguration CSP.
 
-- During the client-initiated OMA-DM session, the declared configuration server sends a configuration or an inventory declared configuration document to the client through the [Declared Configuration CSP URI](#declared-configuration-oma-uri). If the device verifies the syntax of the document is correct, the client stack pushes the request to its orchestrator to process the request asynchronously. The client stack then exits, and returns control back to the declared configuration service. This behavior allows the device to asynchronously process the request.
+- During the client-initiated OMA-DM session, the WinDC server sends a configuration or an inventory WinDC document to the client through the [DeclaredConfiguration CSP URI](#declared-configuration-oma-uri). If the device verifies the syntax of the document is correct, the client stack pushes the request to its orchestrator to process the request asynchronously. The client stack then exits, and returns control back to the WinDC service. This behavior allows the device to asynchronously process the request.
 
-- On the client, if there are any requests in process or completed, it sends a [generic alert](#declared-configuration-generic-alert) to the server. This alert summarizes each document's status, state, and progress. Every client HTTPS request to the declared configuration OMA-DM server includes this summary.
+- On the client, if there are any requests in process or completed, it sends a [generic alert](#declared-configuration-generic-alert) to the server. This alert summarizes each document's status, state, and progress. Every client HTTPS request to the WinDC OMA-DM server includes this summary.
 
-- The declared configuration server uses the generic alert to determine which requests are completed successfully or with errors. The server can then synchronously retrieve the declared configuration document process results through the [Declared Configuration CSP URI](#declared-configuration-oma-uri).
+- The WinDC server uses the generic alert to determine which requests are completed successfully or with errors. The server can then synchronously retrieve the WinDC document process results through the [DeclaredConfiguration CSP URI](#declared-configuration-oma-uri).
 <!-- DeclaredConfiguration-Editable-End -->
 
 <!-- DeclaredConfiguration-Tree-Begin -->
@@ -730,9 +730,9 @@ The Document node's value is an XML based document containing a collection of se
 
 <!-- DeclaredConfiguration-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
-## Declared Configuration OMA URI
+## DeclaredConfiguration OMA URI
 
-A declared configuration request is sent using an OMA-URI similar to `./Device/Vendor/MSFT/DeclaredConfiguration/Host/[Complete|Inventory]/Documents/{DocID}/Document`.
+A WinDC request is sent using an OMA-URI similar to `./Device/Vendor/MSFT/DeclaredConfiguration/Host/[Complete|Inventory]/Documents/{DocID}/Document`.
 
 - The URI is prefixed with a targeted scope (`User` or `Device`).
 - `{DocID}` is a unique identifier for the desired state of the configuration scenario. Every document must have an ID, which must be a GUID.
@@ -740,7 +740,7 @@ A declared configuration request is sent using an OMA-URI similar to `./Device/V
 
 The following URI is an example of a **Complete** request: `./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document`
 
-## Declared Configuration document
+## WinDC document
 
 ```xml
 <DeclaredConfiguration
@@ -753,7 +753,7 @@ The following URI is an example of a **Complete** request: `./Device/Vendor/MSFT
 </DeclaredConfiguration>
 ```
 
-The `<DeclaredConfiguration>` XML tag specifies the details of the declared configuration document to process. The document could be part of a configuration request or an inventory request. The DeclaredConfiguration CSP has two URIs to allow the specification of a [configuration](#hostcomplete) or an [inventory](#hostinventory) request.
+The `<DeclaredConfiguration>` XML tag specifies the details of the WinDC document to process. The document could be part of a configuration request or an inventory request. The DeclaredConfiguration CSP has two URIs to allow the specification of a [configuration](#hostcomplete) or an [inventory](#hostinventory) request.
 
 This tag has the following attributes:
 
@@ -765,16 +765,16 @@ This tag has the following attributes:
 | `checksum`          | This value is the server-supplied version of the document.                             |
 | `osdefinedscenario` | The named scenario that the client should configure with the given configuration data. |
 
-The DeclaredConfiguration CSP synchronously validates the batch of settings described by the `<DeclaredConfiguration>` element, which represents the declared configuration document. It checks for correct syntax based on the declared configuration XML schema. If there's a syntax error, the CSP returns an error immediately back to the server as part of the current OMA-DM session. If the syntax check passes, then the request is passed on to a Windows service. The Windows service asynchronously attempts the desired state configuration of the specified scenario. This process frees up the server to do other work thus the low latency of the declared configuration protocol. The Windows client service, the orchestrator, is responsible for driving the configuration of the device based on the server supplied desire state. The service also maintains this state throughout its lifetime, until the server removes or modifies it.
+The DeclaredConfiguration CSP synchronously validates the batch of settings described by the `<DeclaredConfiguration>` element, which represents the WinDC document. It checks for correct syntax based on the WinDC XML schema. If there's a syntax error, the CSP returns an error immediately back to the server as part of the current OMA-DM session. If the syntax check passes, then the request is passed on to a Windows service. The Windows service asynchronously attempts the desired state configuration of the specified scenario. This process frees up the server to do other work thus the low latency of the WinDC protocol. The Windows client service, the orchestrator, is responsible for driving the configuration of the device based on the server supplied desire state. The service also maintains this state throughout its lifetime, until the server removes or modifies it.
 
 The actual processing of the request pivots around the `osdefinedscenario` tag and the configuration data specified within the document. For more information, see:
 
-- [Declared Configuration document for resource access](../declared-configuration-resource-access.md#declared-configuration-document)
-- [Declared Configuration document for extensibility](../declared-configuration-extensibility.md#declared-configuration-document)
+- [WinDC document for resource access](../declared-configuration-resource-access.md#windc-document)
+- [WinDC document for extensibility](../declared-configuration-extensibility.md#windc-document)
 
-## Declared configuration generic alert
+## WinDC generic alert
 
-On every client response to the server's request, the client constructs a declared configuration alert. This alert summarizes the state of each of the documents that the Windows service has processed. The following XML is an example alert:
+On every client response to the server's request, the client constructs a WinDC alert. This alert summarizes the state of each of the documents that the Windows service has processed. The following XML is an example alert:
 
 ```xml
 <Alert>
@@ -797,11 +797,11 @@ On every client response to the server's request, the client constructs a declar
 </Alert>
 ```
 
-In this example, there's one declared configuration document listed in the alert summary. The alert summary lists every document that the client stack is processing, either a configuration or inventory request. It describes the context of the document that specifies the scope of how the document is applied. The **context** value should be `Device`.
+In this example, there's one WinDC document listed in the alert summary. The alert summary lists every document that the client stack is processing, either a configuration or inventory request. It describes the context of the document that specifies the scope of how the document is applied. The **context** value should be `Device`.
 
 The **state** attribute has a value of `60`, which indicates that the document was processed successfully.
 
-## Declared configuration states
+## WinDC states
 
 The following class defines the state values:
 
@@ -840,11 +840,11 @@ enum class DCCSPURIState :unsigned long
 - [SyncML examples for resource access](../declared-configuration-resource-access.md#syncml-examples)
 - [SyncML examples for extensibility](../declared-configuration-extensibility.md#syncml-examples)
 
-### Abandon a Declared Configuration document
+### Abandon a WinDC document
 
-Abandoning a resource occurs when certain resources are no longer targeted to a user or group. Instead of deleting the resource on the device, the server can choose to abandon the Declared Configuration document. An abandoned resource stays on the device but stops refreshing the Declared Configuration document that handles drift control. Also the [resource ownership](../declared-configuration-resource-access.md#resource-ownership) is transferred to MDM, which means the same resource can be modified via legacy MDM channel again.
+Abandoning a resource occurs when certain resources are no longer targeted to a user or group. Instead of deleting the resource on the device, the server can choose to abandon the WinDC document. An abandoned resource stays on the device but stops refreshing the WinDC document that handles drift control. Also the [resource ownership](../declared-configuration-resource-access.md#resource-ownership) is transferred to MDM, which means the same resource can be modified via legacy MDM channel again.
 
-This example demonstrats how to abandon a Declared Configuration Document, by setting the **Abandoned** property to **1**.
+This example demonstrates how to abandon a WinDC document, by setting the **Abandoned** property to **1**.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -867,11 +867,11 @@ This example demonstrats how to abandon a Declared Configuration Document, by se
 </SyncML>
 ```
 
-### Unabandon a Declared Configuration document
+### Unabandon a WinDC document
 
-Unabandoning the document causes the document to be applied right away, transferring the [resource ownership](../declared-configuration-resource-access.md#resource-ownership) back to Declared Configuration management and blocking legacy MDM channel from managing the channels again.
+Unabandoning the document causes the document to be applied right away, transferring the [resource ownership](../declared-configuration-resource-access.md#resource-ownership) back to WinDC management and blocking legacy MDM channel from managing the channels again.
 
-This example demonstrates how to unabandon a Windows Declared Configuration Document, by setting the **Abandoned** property to **0**.
+This example demonstrates how to unabandon a WinDC document, by setting the **Abandoned** property to **0**.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -894,7 +894,7 @@ This example demonstrates how to unabandon a Windows Declared Configuration Docu
 </SyncML>
 ```
 
-### Delete a Declared Configuration document
+### Delete a WinDC document
 
 The SyncML deletion of the document only removes the document but any settings persist on the device. This example demonstrates how to delete a document.
 

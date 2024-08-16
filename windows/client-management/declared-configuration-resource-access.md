@@ -1,15 +1,15 @@
 ---
-title: Resource access overview
-description: Learn more about configuring resource access using Declared Configuration
-ms.date: 08/14/2024
+title: Windows declared configuration resource access
+description: Learn more about configuring resource access using Windows declared Configuration.
+ms.date: 08/16/2024
 ms.topic: how-to
 ---
 
 # Declared configuration resource access
 
-Resource Access (RA) is used to manage device configurations and enforce policies to ensure the devices remain in a desired state. It's crucial for maintaining security, compliance, and operational efficiency in organizations. Declared Configuration cloud service is used to send the desired state of a resource to the device where correspondingly the device has the responsibility to enforce and maintain the resource configuration state.
+Windows declared configuration (WinDC) resource access is used to manage device configurations and enforce policies to ensure the devices remain in a desired state. It's crucial for maintaining security, compliance, and operational efficiency in organizations. WinDC cloud service is used to send the desired state of a resource to the device where correspondingly the device has the responsibility to enforce and maintain the resource configuration state.
 
-[Configuration Service Providers (CSPs)](mdm/index.yml) play a vital role for configuring Resource access and act as an interface between the device and the Declared Configuration protocol. They provide a consistent and standardized approach to deploying and enforcing configurations. CSPs support various resource access scenarios, including:
+[Configuration Service Providers (CSPs)](mdm/index.yml) play a vital role for configuring Resource access and act as an interface between the device and the WinDC protocol. They provide a consistent and standardized approach to deploying and enforcing configurations. CSPs support various resource access scenarios, including:
 
 - [VPNv2 CSP](mdm/vpnv2-csp.md) and [VPN CSP](mdm/vpn-csp.md)
 - [Wi-Fi CSP](mdm/wifi-csp.md)
@@ -18,10 +18,10 @@ Resource Access (RA) is used to manage device configurations and enforce policie
 - [WiredNetwork CSP](mdm/wirednetwork-csp.md)
 - [RootCACertificates CSP](mdm/rootcacertificates-csp.md)
 
-The [Declared Configuration](declared-configuration.md) stack on the device processes configuration requests and maintains the desired state, which is key to RA. The efficiency, accuracy, and enforcement of configuration requests are critical for effective RA. Resource access integrates seamlessly with Declared Configuration, providing an extended method for managing devices through the cloud with enhanced scalability and efficiency.
+The WinDC stack on the device processes configuration requests and maintains the desired state, which is key to RA. The efficiency, accuracy, and enforcement of configuration requests are critical for effective RA. Resource access integrates seamlessly with WinDC, providing an extended method for managing devices through the cloud with enhanced scalability and efficiency.
 
 - **Efficiency**: Batch-based processing minimizes server resource usage and reduces latency.
-- **Accuracy**: Declared Configuration client stack understands the device's configuration surface area, enabling effective handling of continuous updates. It ensures precise execution of configuration changes communicated by the cloud service.
+- **Accuracy**: WinDC client stack understands the device's configuration surface area, enabling effective handling of continuous updates. It ensures precise execution of configuration changes communicated by the cloud service.
 - **Policy Enforcement**: Apply and maintain organizational policies across devices consistently and at scale, ensuring compliance and uniform configuration. This aspect allows organizations to maintain the desired security posture across devices.
 
 ## Resource access guidelines
@@ -37,9 +37,9 @@ These guidelines provide best practices and examples for developers and testers 
 
 By following these guidelines and understanding the syntax of the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md), you can effectively implement and manage RA configurations while maintaining security and compliance.
 
-## Declared Configuration document
+## WinDC document
 
-The value of the `Document` leaf node in the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md) is an XML document that describes the request. Here's a sample Declared Configuration document with the configuration data specified for resource accecss.
+The value of the `Document` leaf node in the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md) is an XML document that describes the request. Here's a sample WinDC document with the configuration data specified for resource access.
 
 ```xml
 <DeclaredConfiguration context="user" schema="1.0" id="DCA000B5-397D-40A1-AABF-40B25078A7F9" osdefinedscenario="MSFTVPN" checksum="A0">
@@ -81,9 +81,9 @@ These `osdefinedscenario` values require the following tags and attributes.
     | `type`    | Setting data type |
 
 > [!NOTE]
-> The target of the scenario settings must match the Declared Configuration context. The CSP **scope** defined in `<LocURI>` and Declared Configuration **context** must both be either `Device` or `User`.
+> The target of the scenario settings must match the WinDC context. The CSP **scope** defined in `<LocURI>` and WinDC **context** must both be either `Device` or `User`.
 >
-> :::image type="content" source="images/declared-configuration-ra-syntax.png" alt-text="Declared Configuration resource access syntax":::
+> :::image type="content" source="images/declared-configuration-ra-syntax.png" alt-text="WinDC resource access syntax":::
 
 ### osdefinedscenario examples
 
@@ -107,7 +107,7 @@ The standard OMA-DM SyncML syntax is used to specify the DeclaredConfiguration C
 
 ### Configure a VPNv2 profile for resource access
 
-This example demostrates how to use the [VPNv2 CSP](mdm/vpnv2-csp.md) to configure a VPN profile named **Test_SonicWall** on the device in the **User** scope.
+This example demonstrates how to use the [VPNv2 CSP](mdm/vpnv2-csp.md) to configure a VPN profile named **Test_SonicWall** on the device in the **User** scope.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -153,14 +153,14 @@ This example demostrates how to use the [VPNv2 CSP](mdm/vpnv2-csp.md) to configu
 <!--
 > [!NOTE]
 >
-> - Format of the `<LocURI>` and `<DeclaredConfiguration>` follow the [Declared Configuration CSP](mdm/declaredconfiguration-csp.md) syntax.
+> - Format of the `<LocURI>` and `<DeclaredConfiguration>` follow the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md) syntax.
 > - The `id` of `<DeclaredConfiguration>` should be a unique string.
 > - `<Format>` of `<Meta>` should be `chr` and `<Type>` should be `text/plain`.
 -->
 
 ### Updating a VPNv2 profile for resource access
 
-This example demonstrates how to use the same Declared Configuration **Document ID**, but with a new checksum("A3"). It installs a new VPNv2 profile named `Test_SonicwallNew`, and deletes the old profile.
+This example demonstrates how to use the same WinDC **Document ID**, but with a new checksum("A3"). It installs a new VPNv2 profile named `Test_SonicwallNew`, and deletes the old profile.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
@@ -200,7 +200,7 @@ This example demonstrates how to use the same Declared Configuration **Document 
 
 ### Getting the VPNv2 profile
 
-This example demonstrates how to use `<Get>` to retrieve the results of the Declared configuration request.
+This example demonstrates how to use `<Get>` to retrieve the results of the WinDC request.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -260,7 +260,7 @@ This example demonstrates how to use `<Get>` to retrieve the results of the Decl
 ```
 
 > [!TIP]
-> To understand the state values, see [Declared configuration states](mdm/declaredconfiguration-csp.md#declared-configuration-states).
+> To understand the state values, see [WinDC states](mdm/declaredconfiguration-csp.md#declared-configuration-states).
 
 ### Deleting the VPNv2 profile
 
@@ -289,7 +289,7 @@ This example demonstrates how to use `<Delete>` to remove the configuration requ
 
 ## Resource Ownership
 
-MDM-managed resources, such as a VPN profile, are transferred/migrated to Windows Declared Configuration management when a Declared Configuration document is sent to the device for the same resource. This resource stays under Declared Configuration management until the Windows Declared Configuration document is [deleted](mdm/declaredconfiguration-csp.md#delete-a-declared-configuration-document) or [abandoned](mdm/declaredconfiguration-csp.md#abandon-a-declared-configuration-document). Otherwise, when MDM tries to manage the same resource via the legacy MDM channel using SyncML, it fails with error 0x86000031.
+MDM-managed resources, such as a VPN profile, are transferred/migrated to WinDC management when a WinDC document is sent to the device for the same resource. This resource stays under WinDC management until the WinDC document is [deleted](mdm/declaredconfiguration-csp.md#delete-a-declared-configuration-document) or [abandoned](mdm/declaredconfiguration-csp.md#abandon-a-declared-configuration-document). Otherwise, when MDM tries to manage the same resource via the legacy MDM channel using SyncML, it fails with error 0x86000031.
 
 `MDM ConfigurationManager: Command failure status. Configuraton Source ID: (29c383c5-6e2d-43bf-a741-c63cb7516bb4), Enrollment Type: (MDMDeviceWithAAD), CSP Name: (ActiveSync), Command Type: (Add: from Replace or Add), CSP URI: (./User/Vendor/MSFT/ActiveSync/Accounts/{3b8b9d4d-a24e-4c6d-a460-034d0bfb9316}), Result: (Unknown Win32 Error code: 0x86000031).`
 
@@ -302,7 +302,7 @@ The Bulk template data scenario extends beyond the regular [ClientCertificateIns
 A PFXImport template document contains the structure necessary for importing certificates in bulk. The document should define the necessary fields, and the format required for the bulk import.
 
 - The document type must be `BulkTemplate`.
-- The URI path is different than the regular URIs by using the `@#pfxThumbprint#` syntax, it declares that it's a dynamic node. Instance data for dynamic nodes is sent later by the server. Each dynamic node might contain dynamic subnodes, such as the `@#pfxBlob#` and `#@pfxPassword#` nodes in this example.
+- The URI path is different than the regular URIs by using the `@#pfxThumbprint#` syntax, it declares that it's a dynamic node. [Instance data](#template-data) for dynamic nodes is sent later using `BulkVariables`. Each dynamic node might contain dynamic subnodes, such as the `@#pfxBlob#` and `#@pfxPassword#` nodes in this example.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -388,7 +388,7 @@ In this example, there are two instances. Each instance defines values for **pfx
 When the bulk template data document is successfully processed, the specified certificates are imported into the defined stores with the provided passwords and key locations.
 
 - Successful Import: The certificates are correctly imported into the device's certificate stores.
-- Error Handling: Any errors encountered during the import process should be documented and include relevant status codes or messages for troubleshooting.
+- Error Handling: Any errors encountered during the import process include relevant status codes or messages for troubleshooting.
 
 **Request**:
 
