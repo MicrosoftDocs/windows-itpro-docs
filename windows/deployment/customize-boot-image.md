@@ -1124,10 +1124,10 @@ For more information, see [wdsutil stop-server](/windows-server/administration/w
 
 In the following boot image replacement scenario for WDS:
 
-- The boot image modified as part of this guide is outside of the `<RemoteInstall>` folder. For example, the `winpe.wim` boot image that comes with the Windows ADK
-- An existing boot image in WDS is being replaced with the updated boot image
+- The boot image modified as part of this guide is outside of the `<RemoteInstall>` folder. For example, the `winpe.wim` boot image that comes with the Windows ADK.
+- An existing boot image in WDS is being replaced with the updated boot image.
 
-then follow these steps to update the boot image in WDS:
+Follow these steps to update the boot image in WDS:
 
 1. Replace the existing boot image in WDS with the modified boot image using the following command lines:
 
