@@ -42,14 +42,13 @@
               href: deploy/windows-autopatch-register-devices.md
             - name: Windows Autopatch groups overview
               href: deploy/windows-autopatch-groups-overview.md
-              items:
-                - name: Manage Windows Autopatch groups
-                  href: deploy/windows-autopatch-groups-manage-autopatch-groups.md
             - name: Post-device registration readiness checks
               href: deploy/windows-autopatch-post-reg-readiness-checks.md
     - name: Manage
       href: 
       items:
+        - name: Manage Windows Autopatch groups
+          href: manage/windows-autopatch-manage-autopatch-groups.md
         - name: Customize Windows Update settings
           href: manage/windows-autopatch-customize-windows-update-settings.md
         - name: Windows feature updates
@@ -62,8 +61,6 @@
           items:
             - name: Windows quality update end user experience
               href: manage/windows-autopatch-windows-quality-update-end-user-exp.md
-            - name: Windows quality update signals
-              href: manage/windows-autopatch-windows-quality-update-signals.md
             - name: Windows quality update communications
               href: manage/windows-autopatch-windows-quality-update-communications.md
         - name: Manage driver and firmware updates

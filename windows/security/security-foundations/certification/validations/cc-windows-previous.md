@@ -3,10 +3,6 @@ title: Common Criteria certifications for previous Windows releases
 description: Learn about the completed Common Criteria certifications for previous Windows releases.
 ms.date: 2/1/2024
 ms.topic: reference
-ms.author: v-rodurff
-author: msrobertd
-ms.reviewer: paoloma
-ms.collection: tier3
 ---
 
 # Common Criteria certifications for previous Windows releases
