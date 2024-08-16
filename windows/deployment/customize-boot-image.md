@@ -914,7 +914,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
 ## Step 13: Update boot image in products that utilize it (if applicable)
 
-After the default `winpe.wim` boot image from the Windows ADK has been updated, additional steps usually need to take place in the product(s) that utilize the boot image. The following links contain information on how to update the boot image for several popular products that utilize boot images:
+After the default `winpe.wim` boot image from the Windows ADK has been updated, additional steps usually need to take place in the products that utilize the boot image. The following links contain information on how to update the boot image for several popular products that utilize boot images:
 
 - [Microsoft Configuration Manager](#updating-the-boot-image-in-configuration-manager)
 - [Microsoft Deployment Toolkit (MDT)](#updating-the-boot-image-and-boot-media-in-mdt)
