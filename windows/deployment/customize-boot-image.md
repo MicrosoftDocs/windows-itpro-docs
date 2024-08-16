@@ -27,7 +27,7 @@ Microsoft recommends updating Windows PE boot images with the latest cumulative 
 
 > [!TIP]
 >
-> The boot images from the [ADK 10.1.26100.1 (May 2024)](/windows-hardware/get-started/adk-install) and later already contain the cumulative updates to address the BlackLotus UEFI bootkit vulnerability.
+> The boot images from the [ADK 10.1.26100.1 (May 2024)](/windows-hardware/get-started/adk-install) and later already contain the cumulative update to address the BlackLotus UEFI bootkit vulnerability.
 
 This walkthrough describes how to customize a Windows PE boot image including updating with the latest cumulative update, adding drivers, and adding optional components. Additionally this walkthrough goes over how customizations in boot images affect several different popular products that utilize boot images, such as Microsoft Configuration Manager, Microsoft Deployment Toolkit (MDT), and Windows Deployment Services (WDS).
 
@@ -672,7 +672,7 @@ In particular, this step is needed when addressing the BlackLotus UEFI bootkit v
 
 > [!TIP]
 >
-> The boot images from the [ADK 10.1.26100.1 (May 2024)](/windows-hardware/get-started/adk-install) and later already contain the cumulative updates to address the BlackLotus UEFI bootkit vulnerability.
+> The boot images from the [ADK 10.1.26100.1 (May 2024)](/windows-hardware/get-started/adk-install) and later already contain the cumulative update to address the BlackLotus UEFI bootkit vulnerability.
 
 > [!NOTE]
 >
