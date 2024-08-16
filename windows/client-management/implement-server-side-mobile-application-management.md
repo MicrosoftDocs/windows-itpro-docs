@@ -9,7 +9,7 @@ ms.date: 07/08/2024
 
 Windows Information Protection (WIP) is a lightweight solution for managing company data access and security on personal devices. WIP support is built into Windows.
 
-[!INCLUDE [Deprecate Windows Information Protection](../security/information-protection/windows-information-protection/includes/wip-deprecation.md)]
+[!INCLUDE [Deprecate Windows Information Protection](mdm/includes/wip-deprecation.md)]
 
 ## Integration with Microsoft Entra ID
 
@@ -23,7 +23,7 @@ Regular non administrator users can enroll to MAM.
 
 ## Understand Windows Information Protection
 
-WIP takes advantage of [built-in policies](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect company data on the device. To protect user-owned applications on personal devices, WPJ limits enforcement of WIP policies to [enlightened apps](/windows/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip) and WIP-aware apps. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on WIP policies. WIP-aware apps indicate to Windows that they don't handle personal data, and therefore, it's safe for Windows to protect data on their behalf.
+WIP takes advantage of [built-in policies](/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect company data on the device. To protect user-owned applications on personal devices, WPJ limits enforcement of WIP policies to [enlightened apps](/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip) and WIP-aware apps. Enlightened apps can differentiate between corporate and personal data, correctly determining which to protect based on WIP policies. WIP-aware apps indicate to Windows that they don't handle personal data, and therefore, it's safe for Windows to protect data on their behalf.
 
 To make applications WIP-aware, app developers need to include the following data in the app resource file.
 
