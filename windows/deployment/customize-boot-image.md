@@ -7,7 +7,7 @@ author: frankroj
 manager: aaroncz
 ms.author: frankroj
 ms.topic: conceptual
-ms.date: 05/09/2024
+ms.date: 08/16/2024
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -24,6 +24,10 @@ appliesto:
 The Windows PE (WinPE) boot images that are included with the Windows ADK have a minimal number of features and drivers. However the boot images can be customized by adding drivers, optional components, and applying the latest cumulative update.
 
 Microsoft recommends updating Windows PE boot images with the latest cumulative update for maximum security and protection. The latest cumulative updates may also resolve known issues. For example, the Windows PE boot image can be updated with the latest cumulative update to address the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
+
+> [!TIP]
+>
+> The boot images from the [ADK 10.1.26100.1 (May 2024)](/windows-hardware/get-started/adk-install) and later already contain the cumulative update to address the BlackLotus UEFI bootkit vulnerability.
 
 This walkthrough describes how to customize a Windows PE boot image including updating with the latest cumulative update, adding drivers, and adding optional components. Additionally this walkthrough goes over how customizations in boot images affect several different popular products that utilize boot images, such as Microsoft Configuration Manager, Microsoft Deployment Toolkit (MDT), and Windows Deployment Services (WDS).
 
@@ -77,6 +81,10 @@ This walkthrough describes how to customize a Windows PE boot image including up
 1. Go to the [Microsoft Update Catalog](https://catalog.update.microsoft.com/) site and search for the latest cumulative update. The Windows version of the cumulative update should match the version of the Windows PE boot image that is being updated.
 
 1. When searching the [Microsoft Update Catalog](https://catalog.update.microsoft.com/) site, use the search term `"<year>-<month> cumulative update for windows <x>"` where `year` is the four-digit current year, `<month>` is the two-digit current month, and `<x>` is the version of Windows that Windows PE is based on. Make sure to include the quotes (`"`). For example, to search for the latest cumulative update for Windows 11 in August 2023, use the search term `"2023-08 cumulative update for Windows 11"`, again making sure to include the quotes. If the cumulative update hasn't been released yet for the current month, then search for the previous month.
+
+    > [!TIP]
+    >
+    > The boot images in the **ADK 10.1.25398.1 (September 2023)** are based off **Microsoft server operating system, version 22H2 for x64-based Systems**. Make sure to update the search term appropriately.
 
 1. Once the cumulative update has been found, download the appropriate version for the version and architecture of Windows that matches the Windows PE boot image. For example, if the version of the Windows PE boot image is Windows 11 22H2 64-bit, then download the **Cumulative Update for Windows 11 Version 22H2 for x64-based Systems** version of the update.
 
@@ -662,6 +670,10 @@ This step doesn't update or change the boot image. However, it makes sure that t
 
 In particular, this step is needed when addressing the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
 
+> [!TIP]
+>
+> The boot images from the [ADK 10.1.26100.1 (May 2024)](/windows-hardware/get-started/adk-install) and later already contain the cumulative update to address the BlackLotus UEFI bootkit vulnerability.
+
 > [!NOTE]
 >
 > **Microsoft Configuration Manager** and **Windows Deployment Services (WDS)** automatically extract the bootmgr boot files from the boot images when the boot images are updated in these products. They don't use the bootmgr boot files from the Windows ADK.
@@ -902,7 +914,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
 ## Step 13: Update boot image in products that utilize it (if applicable)
 
-After the default `winpe.wim` boot image from the Windows ADK has been updated, additional steps usually need to take place in the product(s) that utilize the boot image. The following links contain information on how to update the boot image for several popular products that utilize boot images:
+After the default `winpe.wim` boot image from the Windows ADK has been updated, additional steps usually need to take place in the products that utilize the boot image. The following links contain information on how to update the boot image for several popular products that utilize boot images:
 
 - [Microsoft Configuration Manager](#updating-the-boot-image-in-configuration-manager)
 - [Microsoft Deployment Toolkit (MDT)](#updating-the-boot-image-and-boot-media-in-mdt)
@@ -1112,10 +1124,10 @@ For more information, see [wdsutil stop-server](/windows-server/administration/w
 
 In the following boot image replacement scenario for WDS:
 
-- The boot image modified as part of this guide is outside of the `<RemoteInstall>` folder. For example, the `winpe.wim` boot image that comes with the Windows ADK
-- An existing boot image in WDS is being replaced with the updated boot image
+- The boot image modified as part of this guide is outside of the `<RemoteInstall>` folder. For example, the `winpe.wim` boot image that comes with the Windows ADK.
+- An existing boot image in WDS is being replaced with the updated boot image.
 
-then follow these steps to update the boot image in WDS:
+Follow these steps to update the boot image in WDS:
 
 1. Replace the existing boot image in WDS with the modified boot image using the following command lines:
 
@@ -1194,7 +1206,7 @@ In the following boot image scenario for WDS:
 - The boot image modified as part of this guide is outside of the `<RemoteInstall>` folder. For example, the `winpe.wim` boot image that comes with the Windows ADK
 - The updated boot image is being added as a new boot image in WDS
 
-then follow these steps to add the boot image in WDS:
+Follow these steps to add the boot image in WDS:
 
 1. Add the updated boot image to WDS using the following command lines:
 
