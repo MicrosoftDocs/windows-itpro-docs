@@ -82,10 +82,7 @@ With the increase of employee-owned devices in the enterprise, there's also an i
 
 Windows Information Protection (WIP) helps to protect against this potential data leakage without otherwise interfering with the employee experience. WIP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps.
 
-- [Create a Windows Information Protection (WIP) policy](/windows/security/information-protection/windows-information-protection/overview-create-wip-policy)
-- [General guidance and best practices for Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)
-
-[Learn more about Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+[Learn more about Windows Information Protection (WIP)](/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
 ### Windows Defender
 
@@ -107,7 +104,7 @@ With the growing threat from more sophisticated targeted attacks, a new security
 ### VPN security
 
 - The VPN client can integrate with the Conditional Access Framework, a cloud-based policy engine built into Microsoft Entra ID, to provide a device compliance option for remote clients.
-- The VPN client can integrate with Windows Information Protection (WIP) policy to provide extra security. [Learn more about Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
+- The VPN client can integrate with Windows Information Protection (WIP) policy to provide extra security. [Learn more about Windows Information Protection](/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
 - New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
 - Microsoft Intune: *VPN* profile template includes support for native VPN plug-ins. For more information, see [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure).
 
