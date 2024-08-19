@@ -1,7 +1,7 @@
 ---
 title: SurfaceHub CSP
 description: Learn more about the SurfaceHub CSP.
-ms.date: 08/06/2024
+ms.date: 08/16/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -84,6 +84,7 @@ The following list shows the SurfaceHub configuration service provider nodes:
     - [SleepTimeout](#propertiessleeptimeout)
     - [SurfaceHubMeetingMode](#propertiessurfacehubmeetingmode)
     - [VtcAppPackageId](#propertiesvtcapppackageid)
+  - [UpdateBootManager](#updatebootmanager)
 <!-- SurfaceHub-Tree-End -->
 
 <!-- Device-DeviceAccount-Begin -->
@@ -2877,6 +2878,55 @@ App name.
 <!-- Device-Properties-VtcAppPackageId-Examples-End -->
 
 <!-- Device-Properties-VtcAppPackageId-End -->
+
+<!-- Device-UpdateBootManager-Begin -->
+## UpdateBootManager
+
+<!-- Device-UpdateBootManager-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 [10.0.19045] and later |
+<!-- Device-UpdateBootManager-Applicability-End -->
+
+<!-- Device-UpdateBootManager-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SurfaceHub/UpdateBootManager
+```
+<!-- Device-UpdateBootManager-OmaUri-End -->
+
+<!-- Device-UpdateBootManager-Description-Begin -->
+<!-- Description-Source-DDF -->
+Enables new boot manager usage.
+<!-- Device-UpdateBootManager-Description-End -->
+
+<!-- Device-UpdateBootManager-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-UpdateBootManager-Editable-End -->
+
+<!-- Device-UpdateBootManager-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Get, Replace |
+| Default Value  | 0 |
+<!-- Device-UpdateBootManager-DFProperties-End -->
+
+<!-- Device-UpdateBootManager-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disable new boot manager. |
+| 320 | Enable new boot manager. |
+<!-- Device-UpdateBootManager-AllowedValues-End -->
+
+<!-- Device-UpdateBootManager-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-UpdateBootManager-Examples-End -->
+
+<!-- Device-UpdateBootManager-End -->
 
 <!-- SurfaceHub-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

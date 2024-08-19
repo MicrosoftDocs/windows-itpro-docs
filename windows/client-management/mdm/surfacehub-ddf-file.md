@@ -1,7 +1,7 @@
 ---
 title: SurfaceHub DDF file
 description: View the XML file containing the device description framework (DDF) for the SurfaceHub configuration service provider.
-ms.date: 04/22/2024
+ms.date: 08/16/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1573,6 +1573,43 @@ The following XML file contains the device description framework (DDF) for the S
           <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
+    </Node>
+    <Node>
+      <NodeName>UpdateBootManager</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Enables new boot manager usage.</Description>
+        <DefaultValue>0</DefaultValue>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.19045</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Disable new boot manager</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>320</MSFT:Value>
+            <MSFT:ValueDescription>Enable new boot manager</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+      </DFProperties>
     </Node>
     <Node>
       <NodeName>Management</NodeName>
