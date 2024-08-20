@@ -190,7 +190,7 @@ The following are the Microsoft Entra ID assigned groups that represent the soft
 
 ### About device registration
 
-Autopatch groups register devices with the Windows Autopatch service when you either [create](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#create-a-custom-autopatch-group) or [edit a Custom Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group), and/or when you [edit the Default Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group) to use your existing Microsoft Entra groups instead of the Windows Autopatch Device Registration group provided by the service.
+Autopatch groups register devices with the Windows Autopatch service when you either [create](../manage/windows-autopatch-manage-autopatch-groups.md#create-a-custom-autopatch-group) or [edit a Custom Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group), and/or when you [edit the Default Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group) to use your existing Microsoft Entra groups instead of the Windows Autopatch Device Registration group provided by the service.
 
 ## Common ways to use Autopatch groups
 

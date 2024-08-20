@@ -1,7 +1,7 @@
 ---
 title: Authentication Policy CSP
 description: Learn more about the Authentication Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -284,7 +284,7 @@ Your organization federates to "Contoso IDP" and your web sign-in portal at `sig
 <!-- ConfigureWebSignInAllowedUrls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134.2145] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 with [KB5001339](https://support.microsoft.com/help/5001339) [10.0.17134.2145] and later |
 <!-- ConfigureWebSignInAllowedUrls-Applicability-End -->
 
 <!-- ConfigureWebSignInAllowedUrls-OmaUri-Begin -->
@@ -393,7 +393,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 <!-- EnablePasswordlessExperience-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 23H2 [10.0.22631.2506] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 23H2 with [KB5031455](https://support.microsoft.com/help/5031455) [10.0.22631.2506] and later |
 <!-- EnablePasswordlessExperience-Applicability-End -->
 
 <!-- EnablePasswordlessExperience-OmaUri-Begin -->

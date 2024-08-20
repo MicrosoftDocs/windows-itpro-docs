@@ -1,0 +1,26 @@
+name: Background tasks
+
+permissions:
+  pull-requests: write
+  contents: read
+  
+on:
+  pull_request_target:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Save payload data
+        env:
+          PayloadJson: ${{ toJSON(github) }}
+          AccessToken: ${{ github.token }}
+        run: |
+          mkdir -p ./pr
+          echo $PayloadJson > ./pr/PayloadJson.json
+          sed -i -e "s/$AccessToken/XYZ/g" ./pr/PayloadJson.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PayloadJson
+          path: pr/

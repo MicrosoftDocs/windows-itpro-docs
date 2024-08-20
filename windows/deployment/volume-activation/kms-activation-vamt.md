@@ -1,19 +1,19 @@
 ---
-title: Perform KMS Activation (Windows 10)
-description: The Volume Activation Management Tool (VAMT) can be used to perform volume activation using the Key Management Service (KMS).
+title: Run KMS activation
+description: The Volume Activation Management Tool (VAMT) can be used to run volume activation using the Key Management Service (KMS).
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 11/07/2022
-ms.topic: conceptual
+ms.topic: how-to
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ---
 
-# Perform KMS activation
+# Run KMS activation
 
-The Volume Activation Management Tool (VAMT) can be used to perform volume activation using the Key Management Service (KMS). You can use VAMT to activate Generic Volume Licensing Keys, or KMS client keys, on products accessible to VAMT. GVLKs are the default product keys used by the volume-license editions of Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server® 2012, and Microsoft Office 2010. GVLKs are already installed in volume-license editions of these products.
+The Volume Activation Management Tool (VAMT) can be used to run volume activation using the Key Management Service (KMS). You can use VAMT to activate Generic Volume Licensing Keys, or KMS client keys, on products accessible to VAMT. GVLKs are the default product keys used by the volume-license editions of Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server® 2012, and Microsoft Office 2010. GVLKs are already installed in volume-license editions of these products.
 
 ## Requirements
 
@@ -47,7 +47,7 @@ Before configuring KMS activation, ensure that your network and VAMT installatio
 
 5. Select **Apply**, and then select **OK** to close the **Volume Activation Management Tool Preferences** dialog box.
 
-6. Select the products to be activated by selecting individual products in the product list view in the center pane. You can use the **Filter** function to narrow your search for computers by clicking **Filter** in the right-side pane to open the **Filter Products** dialog box.In the **Filter Products** dialog box, you can filter the list by computer name, product name, product key type, license status, or by any combination of these options.
+6. Select the products to be activated by selecting individual products in the product list view in the center pane. You can use the **Filter** function to narrow your search for computers by clicking **Filter** in the right-side pane to open the **Filter Products** dialog box. In the **Filter Products** dialog box, you can filter the list by computer name, product name, product key type, license status, or by any combination of these options.
 
     - To filter the list by computer name, enter a name in the **Computer Name** box.
 
@@ -61,3 +61,11 @@ Before configuring KMS activation, ensure that your network and VAMT installatio
 
 10. If you're supplying alternate credentials, at the prompt, type the appropriate user name and password and select **OK**.
 VAMT displays the **Volume Activation** dialog box until it completes the requested action. When the process is finished, the updated activation status of each product appears in the product list view in the center pane.
+
+## Related articles
+
+[Run online activation](online-activation-vamt.md)
+
+[Run proxy activation](proxy-activation-vamt.md)
+
+[Run local reactivation](local-reactivation-vamt.md)

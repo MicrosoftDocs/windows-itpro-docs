@@ -14,7 +14,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 11/08/2022
+ms.date: 07/23/2024
 ---
 
 # Testing Delivery Optimization
@@ -31,7 +31,7 @@ One of the most powerful advantages of using Delivery Optimization is the abilit
 
 ## Monitoring the Results
 
-Since Delivery Optimization is on by default, you're able to monitor the value either through the Windows Settings for 'Delivery Optimization' using Delivery Optimization PowerShell [cmdlets.](waas-delivery-optimization-setup.md), and/or via the [Windows Update for Business Report](../update/wufb-reports-workbook.md) experience in Azure.
+Since Delivery Optimization is on by default, you're able to monitor the value either through the Windows Settings for 'Delivery Optimization' using Delivery Optimization PowerShell [cmdlets.](waas-delivery-optimization-reference.md), and/or via the [Windows Update for Business Report](../update/wufb-reports-workbook.md) experience in Azure.
 
 In the case where Delivery Optimization isn't working in your environment, it's important to investigate to get to the root of the problem. We recommend a test environment be created to easily evaluate typical devices to ensure Delivery Optimization is working properly. For starters, 'Scenario 1: Basic Setup' should be created to test the use of Delivery Optimization between two machines. This scenario is designed to eliminate any noise in the environment to ensure there's nothing preventing Delivery Optimization from working on the devices. Once you have a baseline, you can expand the test environment for more sophisticated tests.
 
@@ -221,4 +221,4 @@ Using Delivery Optimization can help make a significant impact in customer envir
 
 The testing scenarios found in this document help to show a controlled test environment, helping to prevent updates from interrupting the peering results. The other, a more real-world case, demonstrates how content available across peers will be used as the source of the content.
 
-If there are issues found while testing, the Delivery Optimization PowerShell [cmdlets](waas-delivery-optimization-setup.md) can be a helpful tool to help explain what is happening in the environment.
+If there are issues found while testing, the Delivery Optimization PowerShell [cmdlets](waas-delivery-optimization-reference.md) can be a helpful tool to help explain what is happening in the environment.

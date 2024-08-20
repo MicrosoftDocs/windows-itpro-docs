@@ -1,3 +1,4 @@
+items:
 - name: Deploy and update Windows client
   href: index.yml
   items:
@@ -74,7 +75,7 @@
         - name: Update Baseline
           href: update/update-baseline.md
         - name: Set up Delivery Optimization for Windows client updates
-          href: do/waas-delivery-optimization-setup.md?context=/windows/deployment/context/context
+          href: do/delivery-optimization-configure.md?context=/windows/deployment/context/context
         - name: Configure BranchCache for Windows client updates
           href: update/waas-branchcache.md
         - name: Prepare for deployment with Configuration Manager
@@ -186,83 +187,70 @@
           href: volume-activation/monitor-activation-client.md
         - name: Use the Volume Activation Management Tool
           href: volume-activation/use-the-volume-activation-management-tool-client.md
-        href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
+        - name: Information sent to Microsoft during activation
+          href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
       - name: Volume Activation Management Tool (VAMT)
         items:
         - name: VAMT technical reference
           href: volume-activation/volume-activation-management-tool.md
         - name: Introduction to VAMT
           href: volume-activation/introduction-vamt.md
-        - name: Active Directory-Based Activation Overview
+        - name: Active Directory-Based activation overview
           href: volume-activation/active-directory-based-activation-overview.md
-        - name: Install and Configure VAMT
+        - name: Install and configure VAMT
           items:
-          - name: Overview
-            href: volume-activation/install-configure-vamt.md
-          - name: VAMT Requirements
+          - name: VAMT requirements
             href: volume-activation/vamt-requirements.md
           - name: Install VAMT
             href: volume-activation/install-vamt.md
-          - name: Configure Client Computers
+          - name: Configure client computers
             href: volume-activation/configure-client-computers-vamt.md
-        - name: Add and Manage Products
+        - name: Add and manage products
           items:
-          - name: Overview
-            href: volume-activation/add-manage-products-vamt.md
-          - name: Add and Remove Computers
+          - name: Add and remove computers
             href: volume-activation/add-remove-computers-vamt.md
-          - name: Update Product Status
+          - name: Update product status
             href: volume-activation/update-product-status-vamt.md
-          - name: Remove Products
+          - name: Remove products
             href: volume-activation/remove-products-vamt.md
-        - name: Manage Product Keys
+        - name: Manage product keys
           items:
-          - name: Overview
-            href: volume-activation/manage-product-keys-vamt.md
-          - name: Add and Remove a Product Key
+          - name: Add and remove a product key
             href: volume-activation/add-remove-product-key-vamt.md
-          - name: Install a Product Key
+          - name: Install a product key
             href: volume-activation/install-product-key-vamt.md
-          - name: Install a KMS Client Key
+          - name: Install a KMS client key
             href: volume-activation/install-kms-client-key-vamt.md
-        - name: Manage Activations
+        - name: Manage activations
           items:
-          - name: Overview
-            href: volume-activation/manage-activations-vamt.md
-          - name: Run Online Activation
+          - name: Run online activation
             href: volume-activation/online-activation-vamt.md
-          - name: Run Proxy Activation
+          - name: Run proxy activation
             href: volume-activation/proxy-activation-vamt.md
-          - name: Run KMS Activation
+          - name: Run KMS activation
             href: volume-activation/kms-activation-vamt.md
-          - name: Run Local Reactivation
+          - name: Run local reactivation
             href: volume-activation/local-reactivation-vamt.md
-          - name: Activate an Active Directory Forest Online
+          - name: Activate an Active Directory forest online
             href: volume-activation/activate-forest-vamt.md
-          - name: Activate by Proxy an Active Directory Forest
+          - name: Activate by proxy an Active Directory forest
             href: volume-activation/activate-forest-by-proxy-vamt.md
-        - name: Manage VAMT Data
+        - name: Manage VAMT data
           items:
-          - name: Overview
-            href: volume-activation/manage-vamt-data.md
-          - name: Import and Export VAMT Data
+          - name: Import and export VAMT data
             href: volume-activation/import-export-vamt-data.md
           - name: Use VAMT in Windows PowerShell
             href: volume-activation/use-vamt-in-windows-powershell.md
-          - name: VAMT Step-by-Step Scenarios
-            items:
-            - name: Overview
-              href: volume-activation/vamt-step-by-step.md
-            - name: "Scenario 1: Online Activation"
-              href: volume-activation/scenario-online-activation-vamt.md
-            - name: "Scenario 2: Proxy Activation"
-              href: volume-activation/scenario-proxy-activation-vamt.md
-            - name: "Scenario 3: KMS Client Activation"
-              href: volume-activation/scenario-kms-activation-vamt.md
-          - name: VAMT Known Issues
-            href: volume-activation/vamt-known-issues.md
-      - name: Information sent to Microsoft during activation
-        href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
+        - name: VAMT step-by-step scenarios
+          items:
+          - name: "Scenario 1: online activation"
+            href: volume-activation/scenario-online-activation-vamt.md
+          - name: "Scenario 2: proxy activation"
+            href: volume-activation/scenario-proxy-activation-vamt.md
+          - name: "Scenario 3: KMS client activation"
+            href: volume-activation/scenario-kms-activation-vamt.md
+        - name: VAMT known issues
+          href: volume-activation/vamt-known-issues.md
     - name: Monitor
       items:
       - name: Windows Update for Business reports
@@ -380,10 +368,6 @@
           href: do/waas-delivery-optimization-reference.md?context=/windows/deployment/context/context
         - name: FoD and language packs for WSUS and Configuration Manager
           href: update/fod-and-lang-packs.md
-        - name: Windows client in S mode
-          href: s-mode.md
-        - name: Switch to Windows client Pro or Enterprise from S mode
-          href: windows-10-pro-in-s-mode.md
         - name: Windows client deployment tools
           items:
             - name: Windows client deployment scenarios and tools
@@ -507,62 +491,6 @@
                         - name: USMT Resources
                           href: usmt/usmt-resources.md
 
-            - name: Application Compatibility Toolkit (ACT) Technical Reference
-              items:
-                - name: SUA User's Guide
-                  items:
-                  - name: Overview
-                    href: planning/sua-users-guide.md
-                  - name: Use the SUA Wizard
-                    href: planning/using-the-sua-wizard.md
-                  - name: Use the SUA Tool
-                    href: planning/using-the-sua-tool.md
-                  - name: Tabs on the SUA Tool Interface
-                    href: planning/tabs-on-the-sua-tool-interface.md
-                  - name: Show Messages Generated by the SUA Tool
-                    href: planning/showing-messages-generated-by-the-sua-tool.md
-                  - name: Apply Filters to Data in the SUA Tool
-                    href: planning/applying-filters-to-data-in-the-sua-tool.md
-                  - name: Fix apps using the SUA Tool
-                    href: planning/fixing-applications-by-using-the-sua-tool.md
-                - name: Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista
-                  href: planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md
-                - name: Compatibility Administrator User's Guide
-                  items:
-                  - name: Overview
-                    href: planning/compatibility-administrator-users-guide.md
-                  - name: Use the Compatibility Administrator Tool
-                    href: planning/using-the-compatibility-administrator-tool.md
-                  - name: Available Data Types and Operators in Compatibility Administrator
-                    href: planning/available-data-types-and-operators-in-compatibility-administrator.md
-                  - name: Search for Fixed Applications in Compatibility Administrator
-                    href: planning/searching-for-fixed-applications-in-compatibility-administrator.md
-                  - name: Search for Installed Compatibility Fixes with the Query Tool in Compatibility Administrator
-                    href: planning/searching-for-installed-compatibility-fixes-with-the-query-tool-in-compatibility-administrator.md
-                  - name: Create a Custom Compatibility Fix in Compatibility Administrator
-                    href: planning/creating-a-custom-compatibility-fix-in-compatibility-administrator.md
-                  - name: Create a Custom Compatibility Mode in Compatibility Administrator
-                    href: planning/creating-a-custom-compatibility-mode-in-compatibility-administrator.md
-                  - name: Create an AppHelp Message in Compatibility Administrator
-                    href: planning/creating-an-apphelp-message-in-compatibility-administrator.md
-                  - name: View the Events Screen in Compatibility Administrator
-                    href: planning/viewing-the-events-screen-in-compatibility-administrator.md
-                  - name: Enable and Disable Compatibility Fixes in Compatibility Administrator
-                    href: planning/enabling-and-disabling-compatibility-fixes-in-compatibility-administrator.md
-                  - name: Install and Uninstall Custom Compatibility Databases in Compatibility Administrator
-                    href: planning/installing-and-uninstalling-custom-compatibility-databases-in-compatibility-administrator.md
-                - name: Manage Application-Compatibility Fixes and Custom Fix Databases
-                  items:
-                  - name: Overview
-                    href: planning/managing-application-compatibility-fixes-and-custom-fix-databases.md
-                  - name: Understand and Use Compatibility Fixes
-                    href: planning/understanding-and-using-compatibility-fixes.md
-                  - name: Compatibility Fix Database Management Strategies and Deployment
-                    href: planning/compatibility-fix-database-management-strategies-and-deployment.md
-                  - name: Test Your Application Mitigation Packages
-                    href: planning/testing-your-application-mitigation-packages.md
-                  - name: Use the Sdbinst.exe Command-Line Tool
-                    href: planning/using-the-sdbinstexe-command-line-tool.md
         - name: Add fonts in Windows
           href: windows-missing-fonts.md
         - name: Customize Windows PE boot images

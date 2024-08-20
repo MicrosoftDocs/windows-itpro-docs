@@ -1,7 +1,7 @@
 ---
 title: NetworkListManager Policy CSP
 description: Learn more about the NetworkListManager Area in Policy CSP.
-ms.date: 01/31/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -168,7 +168,7 @@ This policy setting allows you to specify whether users can change the network n
 <!-- AllowedTlsAuthenticationEndpoints-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 [10.0.19042] and later |
 <!-- AllowedTlsAuthenticationEndpoints-Applicability-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-OmaUri-Begin -->
@@ -221,7 +221,7 @@ Invoke-WebRequest -Uri https://nls.corp.contoso.com -Method get -UseBasicParsing
 <!-- ConfiguredTlsAuthenticationNetworkName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 [10.0.19042] and later |
 <!-- ConfiguredTlsAuthenticationNetworkName-Applicability-End -->
 
 <!-- ConfiguredTlsAuthenticationNetworkName-OmaUri-Begin -->

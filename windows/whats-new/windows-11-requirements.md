@@ -60,7 +60,7 @@ To upgrade directly to Windows 11, eligible Windows 10 devices must meet both of
 > [!NOTE]
 >
 > - S mode is only supported on the Home edition of Windows 11.
-> - If you're running a different edition of Windows in S mode, before upgrading to Windows 11, first [switch out of S mode](/windows/deployment/windows-10-pro-in-s-mode).
+> - If you're running a different edition of Windows in S mode, before upgrading to Windows 11, first [switch out of S mode](/previous-versions/windows/it-pro/windows-10/deployment/s-mode/switch-edition-from-s-mode).
 > - To switch a device out of Windows 10 in S mode also requires internet connectivity. If you switch out of S mode, you can't switch back to S mode later.
 
 ## Feature-specific requirements
