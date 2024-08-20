@@ -370,7 +370,7 @@ New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{
 ---
 
 >[!NOTE]
->Once the settings are applied, if you try to pair a device vua Bluetooth, it will initailly pair and immediately disconnect. The Bluetooth device is blocked from loading and not availabe from Settings nor Device Manager.
+>Once the settings are applied, if you try to pair a device via Bluetooth, it will initailly pair and immediately disconnect. The Bluetooth device is blocked from loading and not availabe from Settings nor Device Manager.
 
 ## :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
 
