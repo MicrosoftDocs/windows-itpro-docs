@@ -1,13 +1,13 @@
 ---
-title: Add and Remove a Product Key (Windows 10)
+title: Add and remove a product key
 description: Add a product key to the Volume Activation Management Tool (VAMT) database. Also, learn how to remove the key from the database.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 11/07/2022
-ms.topic: conceptual
+ms.topic: how-to
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ---
 
@@ -38,4 +38,6 @@ Before you can use a Multiple Activation Key (MAK), retail, or KMS Host key (CSV
 
 ## Related articles
 
-- [Manage Product Keys](manage-product-keys-vamt.md)
+[Install a product key](install-product-key-vamt.md)
+
+[Install a KMS client key](install-kms-client-key-vamt.md)

@@ -1,7 +1,7 @@
 ---
 title: DeviceStatus DDF file
 description: View the XML file containing the device description framework (DDF) for the DeviceStatus configuration service provider.
-ms.date: 06/28/2024
+ms.date: 08/07/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -406,6 +406,9 @@ The following XML file contains the device description framework (DDF) for the D
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+          </MSFT:Applicability>
         </DFProperties>
       </Node>
     </Node>

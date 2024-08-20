@@ -1,7 +1,7 @@
 ---
 title: DeviceLock Policy CSP
 description: Learn more about the DeviceLock Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 08/05/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -432,7 +432,6 @@ Specifies whether device lock is enabled.
 
 > [!NOTE]
 > DevicePasswordExpiration isn't supported through MDMWinsOverGP.
-
 <!-- DevicePasswordEnabled-Editable-End -->
 
 <!-- DevicePasswordEnabled-DFProperties-Begin -->

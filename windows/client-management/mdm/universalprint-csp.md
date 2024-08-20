@@ -18,9 +18,9 @@ The table below shows the applicability of Windows:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-The UniversalPrint configuration service provider (CSP) is used to add Universal Print-compatible printers to Windows client endpoints. Universal Print is a cloud-based printing solution that runs entirely in Microsoft Azure. It doesn't require any on-premises infrastructure. For more specific information, go to [What is Universal Print](/universal-print/fundamentals/universal-print-whatis).
+The UniversalPrint configuration service provider (CSP) is used to add Universal Print-compatible printers to Windows client endpoints. Universal Print is a cloud-based printing solution that runs entirely in Microsoft Azure. It doesn't require any on-premises infrastructure. For more specific information, see [Discover Universal Print](/universal-print/discover-universal-print).
 
-This CSP was added in Windows 11 and in Windows 10 21H2 July 2022 update [KB5015807](https://support.microsoft.com/topic/july-12-2022-kb5015807-os-builds-19042-1826-19043-1826-and-19044-1826-8c8ea8fe-ec83-467d-86fb-a2f48a85eb41).
+This CSP was added in Windows 11 and in Windows 10, version 21H2 July 2022 update [KB5015807](https://support.microsoft.com/topic/july-12-2022-kb5015807-os-builds-19042-1826-19043-1826-and-19044-1826-8c8ea8fe-ec83-467d-86fb-a2f48a85eb41).
 
 The following example shows the UniversalPrint configuration service provider in tree format.
 
@@ -52,7 +52,7 @@ The data type is node (XML node). Supported operation is Get.
 
 <a href="" id="guidprintersharedid)"></a>**`<GUID>` (PrinterSharedID)**
 
-The Share ID is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Share ID in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
+The Share ID is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Share ID in the printer's properties in the [Universal Print portal](/universal-print/reference/portal/navigate-azure-portal).
 
 The data type is node (XML node). Supported operations are Get, Add, and Delete.
 
@@ -61,7 +61,7 @@ The data type is node (XML node). Supported operations are Get, Add, and Delete.
 
 <a href="" id="clouddeviceid"></a>**CloudDeviceID**
 
-The Printer ID is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Printer ID in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
+The Printer ID is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Printer ID in the printer's properties in the [Universal Print portal](/universal-print/reference/portal/navigate-azure-portal).
 
 The data type is string/text (GUID). Supported operations are Get, Add, Delete, and Replace.
 
@@ -70,7 +70,7 @@ The data type is string/text (GUID). Supported operations are Get, Add, Delete, 
 
 <a href="" id="printersharedname"></a>**PrinterSharedName**
 
-The Share Name is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Share Name in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
+The Share Name is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Share Name in the printer's properties in the [Universal Print portal](/universal-print/reference/portal/navigate-azure-portal).
 
 The data type is string/text. Supported operations are Get, Add, Delete, and Replace.
 

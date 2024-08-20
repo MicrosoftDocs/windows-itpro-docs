@@ -1,14 +1,14 @@
 ---
-title: Volume Activation for Windows
+title: Volume activation for Windows
 description: Learn how to use volume activation to deploy & activate Windows.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.localizationpriority: medium
 ms.date: 03/29/2024
-ms.topic: conceptual
+ms.topic: overview
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -18,7 +18,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
 ---
 
-# Volume Activation for Windows
+# Volume activation for Windows
 
 > [!TIP]
 >
@@ -28,8 +28,8 @@ appliesto:
 >
 > Looking for information on retail activation?
 >
-> - [Activate Windows](https://support.microsoft.com/help/12440/).
-> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644).
+> - [Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227).
+> - [Product activation for Windows](https://support.microsoft.com/windows/product-activation-for-windows-online-support-telephone-numbers-35f6a805-1259-88b4-f5e9-b52cccef91a0).
 
 This guide is designed to help organizations that are planning to use volume activation to deploy and activate Windows.
 

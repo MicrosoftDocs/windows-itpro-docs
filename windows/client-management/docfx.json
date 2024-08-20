@@ -56,19 +56,20 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Client Management",
       "contributors_to_exclude": [
         "dstrome2",
-        "rjagiewich",  
+        "rjagiewich",
         "American-Dipper",
-        "claydetels19", 
+        "claydetels19",
         "jborsecnik",
         "v-stchambers",
         "shdyas",
         "Stacyrch140",
         "garycentric",
         "dstrome",
-        "beccarobins"
+        "beccarobins",
+        "padmagit77",
+        "aditisrivastava07"
       ],
       "searchScope": [
         "Windows 10"

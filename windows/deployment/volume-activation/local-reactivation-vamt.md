@@ -1,17 +1,17 @@
 ---
-title: Perform Local Reactivation (Windows 10)
+title: Run local reactivation
 description: An initially activated a computer using scenarios like MAK, retail, or CSLVK (KMS host), can be reactivated with Volume Activation Management Tool (VAMT).
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 11/07/2022
-ms.topic: conceptual
+ms.topic: how-to
+ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ---
 
-# Perform local reactivation
+# Run local reactivation
 
 If you reinstall Windows® or Microsoft® Office 2010 on a computer that was initially activated using proxy activation (MAK, retail, or CSLVK (KMS host)), and have not made significant changes to the hardware, use this local reactivation procedure to reactivate the program on that computer.
 Local reactivation relies upon data that was created during the initial proxy activation and stored in the Volume Activation Management Tool (VAMT) database. The database contains the installation ID (IID) and confirmation ID (Pending CID). Local reactivation uses this data to reapply the CID and reactivate those products. Reapplying the same CID conserves the remaining activations on the key.
@@ -19,7 +19,7 @@ Local reactivation relies upon data that was created during the initial proxy ac
 > [!NOTE]
 > During the initial proxy activation, the CID is bound to a digital "fingerprint", which is calculated from values assigned to several different hardware components in the computer. If the computer has had significant hardware changes, this fingerprint will no longer match the CID. In this case, you must obtain a new CID for the computer from Microsoft.
 
-## To perform a local reactivation
+## To run a local reactivation
 
 1. Open VAMT. Make sure that you're connected to the desired database.
 
@@ -51,4 +51,8 @@ Local reactivation relies upon data that was created during the initial proxy ac
 
 ## Related article
 
-- [Manage Activations](manage-activations-vamt.md)
+[Run online activation](online-activation-vamt.md)
+
+[Run proxy activation](proxy-activation-vamt.md)
+
+[Run KMS activation](kms-activation-vamt.md)

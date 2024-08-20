@@ -2,7 +2,7 @@
 title: Start policy settings
 description: Learn about the policy settings to configure the Windows Start menu.
 ms.topic: reference
-ms.date: 04/10/2024
+ms.date: 07/10/2024
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
@@ -132,19 +132,37 @@ Select one of the tabs to see the list of available settings:
 
 #### [:::image type="icon" source="../images/icons/user.svg"::: **Account options**](#tab/user)
 
+::: zone pivot="windows-11"
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
+|[Hide **Sign out**](#hide-sign-out)|✅|✅|
+|[Hide **Switch user**](#hide-switch-user)|✅|❌|
+|[Hide entry points for Fast User Switching](#hide-entry-points-for-fast-user-switching)|✅|✅|
+|[Hide user tile](#hide-user-tile)|✅|❌|
+::: zone-end
+
+::: zone pivot="windows-10"
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Hide **Change account settings**](#hide-change-account-settings)|✅|❌|
 |[Hide **Lock**](#hide-lock)|✅|❌|
 |[Hide **Sign out**](#hide-sign-out)|✅|✅|
-|[Hide **Switch account**](#hide-switch-account)|✅|❌|
+|[Hide **Switch user**](#hide-switch-user)|✅|❌|
+|[Hide entry points for Fast User Switching](#hide-entry-points-for-fast-user-switching)|✅|✅|
 |[Hide user tile](#hide-user-tile)|✅|❌|
+::: zone-end
 
 [!INCLUDE [hide-change-account-settings](includes/hide-change-account-settings.md)]
+
+::: zone pivot="windows-10"
 [!INCLUDE [hide-lock](includes/hide-lock.md)]
+::: zone-end
+
 [!INCLUDE [hide-signout](includes/hide-signout.md)]
-[!INCLUDE [hide-switch-user](includes/hide-switch-account.md)]
-[!INCLUDE [hide-switch-user](includes/hide-user-tile.md)]
+[!INCLUDE [hide-switch-user](includes/hide-switch-user.md)]
+[!INCLUDE [hide-lock](includes/hide-entry-points-for-fast-user-switching.md)]
+[!INCLUDE [hide-user-tile](includes/hide-user-tile.md)]
 
 #### [:::image type="icon" source="../images/icons/folder.svg"::: **Pinned folders**](#tab/folders)
 
@@ -174,6 +192,21 @@ Select one of the tabs to see the list of available settings:
 
 #### [:::image type="icon" source="../images/icons/power.svg"::: **Power options**](#tab/power)
 
+
+::: zone pivot="windows-11"
+|Policy name| CSP | GPO |
+|-|-|-|
+|[Hide **Hibernate** ](#hide-hibernate)|✅|❌|
+|[Hide **Lock**](#hide-lock)|✅|❌|
+|[Hide **Power** button](#hide-power-button)|✅|❌|
+|[Hide **Restart**](#hide-restart)|✅|❌|
+|[Hide **Shut down**](#hide-shut-down)|✅|❌|
+|[Hide **Sleep**](#hide-sleep)|✅|❌|
+|[Remove and prevent access to the shut down restart sleep and hibernate commands](#remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands)|❌|✅|
+::: zone-end
+
+::: zone pivot="windows-10"
+
 |Policy name| CSP | GPO |
 |-|-|-|
 |[Hide **Hibernate** ](#hide-hibernate)|✅|❌|
@@ -183,7 +216,12 @@ Select one of the tabs to see the list of available settings:
 |[Hide **Sleep**](#hide-sleep)|✅|❌|
 |[Remove and prevent access to the shut down restart sleep and hibernate commands](#remove-and-prevent-access-to-the-shut-down-restart-sleep-and-hibernate-commands)|❌|✅|
 
+::: zone-end
+
 [!INCLUDE [hide-hibernate](includes/hide-hibernate.md)]
+::: zone pivot="windows-11"
+[!INCLUDE [hide-lock](includes/hide-lock.md)]
+::: zone-end
 [!INCLUDE [hide-power-button](includes/hide-power-button.md)]
 [!INCLUDE [hide-restart](includes/hide-restart.md)]
 [!INCLUDE [hide-shut-down](includes/hide-shut-down.md)]

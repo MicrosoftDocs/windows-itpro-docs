@@ -3,10 +3,6 @@ title: FIPS 140 validated modules for Windows Server Semi-Annual Releases
 description: This topic lists the completed FIPS 140 cryptographic module validations for Windows Server semi-annual releases.
 ms.date: 2/1/2024
 ms.topic: reference
-ms.author: v-rodurff
-author: msrobertd
-ms.reviewer: paoloma
-ms.collection: tier3
 ---
 
 # FIPS 140 validated modules in Windows Server semi-annual releases

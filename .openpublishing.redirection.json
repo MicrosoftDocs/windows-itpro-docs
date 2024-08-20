@@ -1272,7 +1272,7 @@
     },
     {
       "source_path": "windows/configure/basic-level-windows-diagnostic-events-and-fields-1703.md",
-      "redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
+      "redirect_url": "/previous-versions/windows/it-pro/privacy/basic-level-windows-diagnostic-events-and-fields-1703",
       "redirect_document_id": false
     },
     {
@@ -1302,7 +1302,7 @@
     },
     {
       "source_path": "windows/configure/configure-windows-telemetry-in-your-organization.md",
-      "redirect_url": "/windows/configuration/configure-windows-diagnostic-data-in-your-organization",
+      "redirect_url": "/windows/privacy/configure-windows-diagnostic-data-in-your-organization",
       "redirect_document_id": false
     },
     {
@@ -1527,7 +1527,7 @@
     },
     {
       "source_path": "windows/configure/windows-diagnostic-data-1703.md",
-      "redirect_url": "/windows/configuration/windows-diagnostic-data",
+      "redirect_url": "/previous-versions/windows/it-pro/privacy/basic-level-windows-diagnostic-events-and-fields-1703",
       "redirect_document_id": false
     },
     {
@@ -1582,7 +1582,7 @@
     },
     {
       "source_path": "windows/deploy/add-manage-products-vamt.md",
-      "redirect_url": "/windows/deployment/volume-activation/add-manage-products-vamt",
+      "redirect_url": "/windows/deployment/volume-activation/add-remove-computers-vamt",
       "redirect_document_id": false
     },
     {
@@ -1732,7 +1732,7 @@
     },
     {
       "source_path": "windows/deploy/install-configure-vamt.md",
-      "redirect_url": "/windows/deployment/volume-activation/install-configure-vamt",
+      "redirect_url": "/windows/deployment/volume-activation/vamt-requirements",
       "redirect_document_id": false
     },
     {
@@ -1777,17 +1777,17 @@
     },
     {
       "source_path": "windows/deploy/manage-activations-vamt.md",
-      "redirect_url": "/windows/deployment/volume-activation/manage-activations-vamt",
+      "redirect_url": "/windows/deployment/volume-activation/online-activation-vamt",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/manage-product-keys-vamt.md",
-      "redirect_url": "/windows/deployment/volume-activation/manage-product-keys-vamt",
+      "redirect_url": "/windows/deployment/volume-activation/add-remove-product-key-vamt",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/manage-vamt-data.md",
-      "redirect_url": "/windows/deployment/volume-activation/manage-vamt-data",
+      "redirect_url": "/windows/deployment/volume-activation/import-export-vamt-data",
       "redirect_document_id": false
     },
     {
@@ -2422,7 +2422,7 @@
     },
     {
       "source_path": "windows/deploy/vamt-step-by-step.md",
-      "redirect_url": "/windows/deployment/volume-activation/vamt-step-by-step",
+      "redirect_url": "/windows/deployment/volume-activation/scenario-online-activation-vamt",
       "redirect_document_id": false
     },
     {
@@ -5077,7 +5077,7 @@
     },
     {
       "source_path": "windows/keep-secure/app-behavior-with-wip.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/app-behavior-with-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/app-behavior-with-wip",
       "redirect_document_id": false
     },
     {
@@ -5727,7 +5727,7 @@
     },
     {
       "source_path": "windows/keep-secure/collect-wip-audit-event-logs.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/collect-wip-audit-event-logs",
       "redirect_document_id": false
     },
     {
@@ -6037,7 +6037,7 @@
     },
     {
       "source_path": "windows/keep-secure/create-and-verify-an-efs-dra-certificate.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate",
       "redirect_document_id": false
     },
     {
@@ -6052,7 +6052,7 @@
     },
     {
       "source_path": "windows/keep-secure/create-edp-policy-using-sccm.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/create-wip-policy-using-sccm",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr",
       "redirect_document_id": false
     },
     {
@@ -6097,7 +6097,7 @@
     },
     {
       "source_path": "windows/keep-secure/create-wip-policy-using-sccm.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/create-wip-policy-using-sccm",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr",
       "redirect_document_id": false
     },
     {
@@ -6547,12 +6547,12 @@
     },
     {
       "source_path": "windows/keep-secure/enlightened-microsoft-apps-and-edp.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/enlightened-microsoft-apps-and-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/enlightened-microsoft-apps-and-wip.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/enlightened-microsoft-apps-and-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip",
       "redirect_document_id": false
     },
     {
@@ -7917,12 +7917,12 @@
     },
     {
       "source_path": "windows/keep-secure/guidance-and-best-practices-edp.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/guidance-and-best-practices-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/guidance-and-best-practices-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/guidance-and-best-practices-wip.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/guidance-and-best-practices-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/guidance-and-best-practices-wip",
       "redirect_document_id": false
     },
     {
@@ -8177,7 +8177,7 @@
     },
     {
       "source_path": "windows/keep-secure/limitations-with-wip.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/limitations-with-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/limitations-with-wip",
       "redirect_document_id": false
     },
     {
@@ -8282,7 +8282,7 @@
     },
     {
       "source_path": "windows/keep-secure/mandatory-settings-for-wip.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/mandatory-settings-for-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/mandatory-settings-for-wip",
       "redirect_document_id": false
     },
     {
@@ -8662,12 +8662,12 @@
     },
     {
       "source_path": "windows/keep-secure/overview-create-edp-policy.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/overview-create-wip-policy",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/overview-create-wip-policy",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/overview-create-wip-policy.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/overview-create-wip-policy",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/overview-create-wip-policy",
       "redirect_document_id": false
     },
     {
@@ -8837,12 +8837,12 @@
     },
     {
       "source_path": "windows/keep-secure/protect-enterprise-data-using-edp.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/protect-enterprise-data-using-wip.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip",
       "redirect_document_id": false
     },
     {
@@ -8867,7 +8867,7 @@
     },
     {
       "source_path": "windows/keep-secure/recommended-network-definitions-for-wip.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/recommended-network-definitions-for-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/recommended-network-definitions-for-wip",
       "redirect_document_id": false
     },
     {
@@ -9232,12 +9232,12 @@
     },
     {
       "source_path": "windows/keep-secure/testing-scenarios-for-edp.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/testing-scenarios-for-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/testing-scenarios-for-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/testing-scenarios-for-wip.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/testing-scenarios-for-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/testing-scenarios-for-wip",
       "redirect_document_id": false
     },
     {
@@ -9522,7 +9522,7 @@
     },
     {
       "source_path": "windows/keep-secure/using-owa-with-wip.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/using-owa-with-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/using-owa-with-wip",
       "redirect_document_id": false
     },
     {
@@ -9757,12 +9757,12 @@
     },
     {
       "source_path": "windows/keep-secure/wip-app-enterprise-context.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/wip-app-enterprise-context",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/wip-app-enterprise-context",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/keep-secure/wip-enterprise-overview.md",
-      "redirect_url": "/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip",
       "redirect_document_id": false
     },
     {
@@ -10372,7 +10372,7 @@
     },
     {
       "source_path": "windows/manage/configure-windows-telemetry-in-your-organization.md",
-      "redirect_url": "/windows/configuration/configure-windows-diagnostic-data-in-your-organization",
+      "redirect_url": "/windows/privacy/configure-windows-diagnostic-data-in-your-organization",
       "redirect_document_id": false
     },
     {
@@ -10997,7 +10997,7 @@
     },
     {
       "source_path": "windows/plan/act-technical-reference.md",
-      "redirect_url": "/windows/deployment/planning/compatibility-administrator-users-guide",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/compatibility-administrator-users-guide",
       "redirect_document_id": false
     },
     {
@@ -11042,12 +11042,12 @@
     },
     {
       "source_path": "windows/plan/applying-filters-to-data-in-the-sua-tool.md",
-      "redirect_url": "/windows/deployment/planning/applying-filters-to-data-in-the-sua-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/applying-filters-to-data-in-the-sua-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/available-data-types-and-operators-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/available-data-types-and-operators-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/available-data-types-and-operators-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11082,17 +11082,17 @@
     },
     {
       "source_path": "windows/plan/compatibility-administrator-users-guide.md",
-      "redirect_url": "/windows/deployment/planning/compatibility-administrator-users-guide",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/compatibility-administrator-users-guide",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/compatibility-fix-database-management-strategies-and-deployment.md",
-      "redirect_url": "/windows/deployment/planning/compatibility-fix-database-management-strategies-and-deployment",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/compatibility-fix-database-management-strategies-and-deployment",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md",
-      "redirect_url": "/windows/deployment/planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/compatibility-fixes-for-windows-8-windows-7-and-windows-vista",
       "redirect_document_id": false
     },
     {
@@ -11112,12 +11112,12 @@
     },
     {
       "source_path": "windows/plan/creating-a-custom-compatibility-fix-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/creating-a-custom-compatibility-fix-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/creating-a-custom-compatibility-fix-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/creating-a-custom-compatibility-mode-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/creating-a-custom-compatibility-mode-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/creating-a-custom-compatibility-mode-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11127,7 +11127,7 @@
     },
     {
       "source_path": "windows/plan/creating-an-apphelp-message-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/creating-an-apphelp-message-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/creating-an-apphelp-message-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11202,7 +11202,7 @@
     },
     {
       "source_path": "windows/plan/enabling-and-disabling-compatibility-fixes-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/enabling-and-disabling-compatibility-fixes-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/enabling-and-disabling-compatibility-fixes-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11222,7 +11222,7 @@
     },
     {
       "source_path": "windows/plan/fixing-applications-by-using-the-sua-tool.md",
-      "redirect_url": "/windows/deployment/planning/fixing-applications-by-using-the-sua-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/fixing-applications-by-using-the-sua-tool",
       "redirect_document_id": false
     },
     {
@@ -11242,7 +11242,7 @@
     },
     {
       "source_path": "windows/plan/installing-and-uninstalling-custom-compatibility-databases-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/installing-and-uninstalling-custom-compatibility-databases-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/installing-and-uninstalling-custom-compatibility-databases-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11267,7 +11267,7 @@
     },
     {
       "source_path": "windows/plan/managing-application-compatibility-fixes-and-custom-fix-databases.md",
-      "redirect_url": "/windows/deployment/planning/managing-application-compatibility-fixes-and-custom-fix-databases",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/managing-application-compatibility-fixes-and-custom-fix-databases",
       "redirect_document_id": false
     },
     {
@@ -11317,12 +11317,12 @@
     },
     {
       "source_path": "windows/plan/searching-for-fixed-applications-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/searching-for-fixed-applications-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/searching-for-fixed-applications-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/searching-for-installed-compatibility-fixes-with-the-query-tool-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/searching-for-installed-compatibility-fixes-with-the-query-tool-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/searching-for-installed-compatibility-fixes-with-the-query-tool-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -11367,7 +11367,7 @@
     },
     {
       "source_path": "windows/plan/showing-messages-generated-by-the-sua-tool.md",
-      "redirect_url": "/windows/deployment/planning/showing-messages-generated-by-the-sua-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/showing-messages-generated-by-the-sua-tool",
       "redirect_document_id": false
     },
     {
@@ -11382,12 +11382,12 @@
     },
     {
       "source_path": "windows/plan/sua-users-guide.md",
-      "redirect_url": "/windows/deployment/planning/sua-users-guide",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/sua-users-guide",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/tabs-on-the-sua-tool-interface.md",
-      "redirect_url": "/windows/deployment/planning/tabs-on-the-sua-tool-interface",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/tabs-on-the-sua-tool-interface",
       "redirect_document_id": false
     },
     {
@@ -11402,7 +11402,7 @@
     },
     {
       "source_path": "windows/plan/testing-your-application-mitigation-packages.md",
-      "redirect_url": "/windows/deployment/planning/testing-your-application-mitigation-packages",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/testing-your-application-mitigation-packages",
       "redirect_document_id": false
     },
     {
@@ -11427,7 +11427,7 @@
     },
     {
       "source_path": "windows/plan/understanding-and-using-compatibility-fixes.md",
-      "redirect_url": "/windows/deployment/planning/understanding-and-using-compatibility-fixes",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/understanding-and-using-compatibility-fixes",
       "redirect_document_id": false
     },
     {
@@ -11442,27 +11442,27 @@
     },
     {
       "source_path": "windows/plan/using-the-compatibility-administrator-tool.md",
-      "redirect_url": "/windows/deployment/planning/using-the-compatibility-administrator-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/using-the-compatibility-administrator-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/using-the-sdbinstexe-command-line-tool.md",
-      "redirect_url": "/windows/deployment/planning/using-the-sdbinstexe-command-line-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/using-the-sdbinstexe-command-line-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/using-the-sua-tool.md",
-      "redirect_url": "/windows/deployment/planning/using-the-sua-tool",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/using-the-sua-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/using-the-sua-wizard.md",
-      "redirect_url": "/windows/deployment/planning/using-the-sua-wizard",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/using-the-sua-wizard",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/viewing-the-events-screen-in-compatibility-administrator.md",
-      "redirect_url": "/windows/deployment/planning/viewing-the-events-screen-in-compatibility-administrator",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/compatibility/viewing-the-events-screen-in-compatibility-administrator",
       "redirect_document_id": false
     },
     {
@@ -12377,22 +12377,22 @@
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/app-behavior-with-wip.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/app-behavior-with-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/app-behavior-with-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/collect-wip-audit-event-logs",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure",
       "redirect_document_id": false
     },
     {
@@ -12402,7 +12402,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure",
       "redirect_document_id": false
     },
     {
@@ -12417,12 +12417,12 @@
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/create-wip-policy-using-sccm.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/deploy-wip-policy-using-intune-azure.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/deploy-wip-policy-using-intune-azure",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/deploy-wip-policy-using-intune-azure",
       "redirect_document_id": false
     },
     {
@@ -12432,57 +12432,57 @@
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/enlightened-microsoft-apps-and-wip.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/guidance-and-best-practices-wip.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/guidance-and-best-practices-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/limitations-with-wip.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/limitations-with-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/limitations-with-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/mandatory-settings-for-wip.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/mandatory-settings-for-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/mandatory-settings-for-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/overview-create-wip-policy-sccm.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/overview-create-wip-policy-configmgr",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/overview-create-wip-policy.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/overview-create-wip-policy",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/overview-create-wip-policy",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/recommended-network-definitions-for-wip.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/recommended-network-definitions-for-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/recommended-network-definitions-for-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/testing-scenarios-for-wip.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/testing-scenarios-for-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/testing-scenarios-for-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/using-owa-with-wip.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/using-owa-with-wip",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/using-owa-with-wip",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/threat-protection/windows-information-protection/wip-app-enterprise-context.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/wip-app-enterprise-context",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/security/information-protection/windows-information-protection/wip-app-enterprise-context",
       "redirect_document_id": false
     },
     {

@@ -26,8 +26,6 @@ A platform validation profile consists of a set of PCR indices ranging from 0 to
 
 > [!NOTE]
 > When Secure Boot State (PCR7) support is available, the default platform validation profile secures the encryption key using Secure Boot State (PCR 7) and the BitLocker access control (PCR 11).
->
-> To prevent boot manger roll-back attacks, Windows updates released on and after July 2024 changed the default PCR Validation Profile for **UEFI with Secure Boot** from `7, 11` to `4, 7, 11`.
 
 The following list identifies all of the available PCRs:
 
