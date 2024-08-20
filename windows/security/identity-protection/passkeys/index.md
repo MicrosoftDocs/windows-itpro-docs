@@ -319,14 +319,13 @@ Some organizations restrict Bluetooth usage, which includes the use of passkeys.
 
 To limit the use of Bluetooth to only passkey use cases, use the [Bluetooth Policy CSP][CSP-8] and the [DeviceInstallation Policy CSP][CSP-7].
 
->[!NOTE]
->Once the settings are applied, if you try to pair a device vua Bluetooth, it will initailly pair and immediately disconnect. The Bluetooth device is blocked from loading and not availabe from Settings nor Device Manager.
+### Device configuration
 
 [!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
 
 #### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
 
-The following table contains a list of CSP settings to allow passkeys in a Bluetooth-restricted environment:
+To configure devices with Microsoft Intune, [you can use a custom policy][INT-2] with these settings:
 
 | Setting |
 |--|
@@ -336,8 +335,6 @@ The following table contains a list of CSP settings to allow passkeys in a Bluet
 | <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPromptedProximalConnections][CSP-4] </li><li>Data type: **Integer** </li><li>Value: `0`</li><br>Prevents users from using Swift Pair and other proximity-based scenarios. |
 | <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[ServicesAllowedList][CSP-5] </li></li><li>Data type: **String** </li><li>Value: `{0000FFFD-0000-1000-8000-00805F9B34FB};{0000FFF9-0000-1000-8000-00805F9B34FB}` <br><br> Set a list of allowable Bluetooth services and profiles: <br>- FIDO Alliance Universal Second Factor Authenticator service (`0000fffd-0000-1000-8000-00805f9b34fb`) <br>- FIDO2 secure client-to-authenticator transport service (`0000FFF9-0000-1000-8000-00805F9B34FB`)<br><br>For more information see [FIDO CTAP 2.1 standard specification][BT-1] and [Bluetooth Assigned Numbers document][BT-2]. |
 | <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/`[PreventInstallationOfMatchingDeviceIDs][CSP-6]</li><li>Data type: **String** </li><li>Value: `<enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><data id="DeviceInstall_IDs_Deny_List" value="1&#xF000;BTH\MS_BTHPAN"/>`</li><br>This configuration disables the existing Bluetooth Personal Area Network (PAN) network adapter, preventing the installation of the Bluetooth Network Adapter that can be used for network connectivity or tethering. |
-
-To configure devices with Microsoft Intune, [you can use a custom policy][INT-2].
 
 #### [:::image type="icon" source="../../images/icons/powershell.svg" border="false"::: **PowerShell**](#tab/powershell)
 
@@ -371,6 +368,9 @@ New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{
 [!INCLUDE [powershell-wmi-bridge-2](../../../../includes/configure/powershell-wmi-bridge-2.md)]
 
 ---
+
+>[!NOTE]
+>Once the settings are applied, if you try to pair a device vua Bluetooth, it will initailly pair and immediately disconnect. The Bluetooth device is blocked from loading and not availabe from Settings nor Device Manager.
 
 ## :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
 
