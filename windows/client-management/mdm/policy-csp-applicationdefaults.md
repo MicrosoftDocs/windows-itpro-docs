@@ -40,7 +40,8 @@ This policy allows an administrator to set default file type and protocol associ
 <!-- DefaultAssociationsConfiguration-Editable-End -->
 
 <!-- DefaultAssociationsConfiguration-DFProperties-Begin -->
-**Description framework properties**:
+**  
+Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
