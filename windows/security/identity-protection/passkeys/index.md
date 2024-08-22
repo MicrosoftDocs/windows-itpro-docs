@@ -31,7 +31,7 @@ FIDO protocols prioritize user privacy, as they're designed to prevent online se
 
 ### Passkeys compared to passwords
 
-Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys are easy to create, don't need to be remembered, and don't need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They're highly secure because they're only stored on the user's devices, with the service only storing public keys. Passkeys are designed to prevent attackers to guess or obtain them, which helps to make them resistant to phishing attempts where the attacker may try to trick the user into revealing the private key. Passkeys are enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
+Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys are easy to create, don't need to be remembered, and don't need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They're highly secure because they're only stored on the user's devices, with the service only storing public keys. Passkeys are designed to prevent attackers to guess or obtain them, which helps to make them resistant to phishing attempts where the attacker might try to trick the user into revealing the private key. Passkeys are enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
 
 [!INCLUDE [passkey](../../../../includes/licensing/passkeys.md)]
 
@@ -113,7 +113,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 
 :::row:::
   :::column span="4":::
-  4. Select your linked device name (e.g. **Pixel**) > **Next**
+  4. Select your linked device name (for example, **Pixel**) > **Next**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -241,7 +241,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 
 :::row:::
   :::column span="4":::
-  4. Select your linked device name (e.g. **Pixel**) > **Next**
+  4. Select your linked device name (for example, **Pixel**) > **Next**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -329,12 +329,12 @@ To configure devices with Microsoft Intune, [you can use a custom policy][INT-2]
 
 | Setting |
 |--|
-| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising][CSP-1] </li><li>Data type: **Integer** </li><li>Value: `0` </li><br>When set to `0`, the device won't send out advertisements. |
-| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowDiscoverableMode][CSP-2] </li><li>Data type: **Integer** </li><li>Value: `0` </li><br>When set to `0`, other devices won't be able to detect the device. |
+| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising][CSP-1] </li><li>Data type: **Integer** </li><li>Value: `0` </li><br>When set to `0`, the device doesn't send out advertisements. |
+| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowDiscoverableMode][CSP-2] </li><li>Data type: **Integer** </li><li>Value: `0` </li><br>When set to `0`, other devices can't detect the device. |
 | <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPrepairing][CSP-3]</li><li>Data type: **Integer** </li><li>Value: `0` </li><br>Prevents specific bundled Bluetooth peripherals from automatically pairing with the host device.</li> |
 | <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPromptedProximalConnections][CSP-4] </li><li>Data type: **Integer** </li><li>Value: `0`</li><br>Prevents users from using Swift Pair and other proximity-based scenarios. |
-| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[ServicesAllowedList][CSP-5] </li></li><li>Data type: **String** </li><li>Value: `{0000FFFD-0000-1000-8000-00805F9B34FB};{0000FFF9-0000-1000-8000-00805F9B34FB}` <br><br> Set a list of allowable Bluetooth services and profiles: <br>- FIDO Alliance Universal Second Factor Authenticator service (`0000fffd-0000-1000-8000-00805f9b34fb`) <br>- FIDO2 secure client-to-authenticator transport service (`0000FFF9-0000-1000-8000-00805F9B34FB`)<br><br>For more information see [FIDO CTAP 2.1 standard specification][BT-1] and [Bluetooth Assigned Numbers document][BT-2]. |
-| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/`[PreventInstallationOfMatchingDeviceIDs][CSP-6]</li><li>Data type: **String** </li><li>Value: `<enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><data id="DeviceInstall_IDs_Deny_List" value="1&#xF000;BTH\MS_BTHPAN"/>`</li><br>This configuration disables the existing Bluetooth Personal Area Network (PAN) network adapter, preventing the installation of the Bluetooth Network Adapter that can be used for network connectivity or tethering. |
+| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[ServicesAllowedList][CSP-5] </li></li><li>Data type: **String** </li><li>Value: `{0000FFFD-0000-1000-8000-00805F9B34FB};{0000FFF9-0000-1000-8000-00805F9B34FB}` <br><br> Set a list of allowable Bluetooth services and profiles: <br>- FIDO Alliance Universal Second Factor Authenticator service (`0000fffd-0000-1000-8000-00805f9b34fb`) <br>- FIDO2 secure client-to-authenticator transport service (`0000FFF9-0000-1000-8000-00805F9B34FB`)<br><br>For more information, see [FIDO CTAP 2.1 standard specification][BT-1] and [Bluetooth Assigned Numbers document][BT-2]. |
+| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/`[PreventInstallationOfMatchingDeviceIDs][CSP-6]</li><li>Data type: **String** </li><li>Value: `<enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><data id="DeviceInstall_IDs_Deny_List" value="1&#xF000;BTH\MS_BTHPAN"/>`</li><br>Disables the existing Bluetooth Personal Area Network (PAN) network adapter, preventing the installation of the Bluetooth Network Adapter that can be used for network connectivity or tethering. |
 
 #### [:::image type="icon" source="../../images/icons/powershell.svg" border="false"::: **PowerShell**](#tab/powershell)
 
@@ -370,7 +370,7 @@ New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{
 ---
 
 >[!NOTE]
->Once the settings are applied, if you try to pair a device via Bluetooth, it will initailly pair and immediately disconnect. The Bluetooth device is blocked from loading and not availabe from Settings nor Device Manager.
+>Once the settings are applied, if you try to pair a device via Bluetooth, it will initially pair and immediately disconnect. The Bluetooth device is blocked from loading and not available from Settings nor Device Manager.
 
 ## :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
 
