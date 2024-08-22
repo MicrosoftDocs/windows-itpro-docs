@@ -16,7 +16,10 @@ sections:
     questions:
       - question: What's the difference between Windows Hello and Windows Hello for Business?
         answer: |
-          Windows Hello represents the biometric framework provided in Windows. Windows Hello lets users use biometrics to sign in to their devices by securely storing their user name and password and releasing it for authentication when the user successfully identifies themselves using biometrics. Windows Hello for Business uses asymmetric keys protected by the device's security module that requires a user gesture (PIN or biometrics) to authenticate.
+          *Windows Hello* is an authentication technology that allows users to sign in to their Windows devices using biometric data, or a PIN, instead of a traditional password.
+
+          *Windows Hello for Business* is an extension of Windows Hello that provides enterprise-grade security and management capabilities, including device attestation, certificate-based authentication, and conditional access policies. Policy settings can be deployed to devices to ensure they're secure and compliant with organizational requirements.
+
       - question: Why a PIN is better than an online password
         answer: |
           Three main reasons:
