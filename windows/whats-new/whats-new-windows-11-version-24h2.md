@@ -61,7 +61,29 @@ Some of the features were released within the past year's continuous innovation 
 
 ### Feature1
 <!--max-->
-### 
+
+### LAPS improvements
+
+[LAPS](/windows-server/identity/laps/laps-overview) has a new automatic account management feature. IT admins can configure Windows LAPS to:
+- Automatically create the managed local account
+- Configure name of account
+- Enable or disable the account
+- Randomize the name of the account
+
+### Personal Data Encryption (PDE) for folders
+
+PDE for folders is a security feature where the contents of the known Windows folders (Documents, Desktop and Pictures) are protected using a user authenticated encryption mechanism. Windows Hello is the user authentication used to provide the keys for encrypting user data in the folders. PDE for folders can be enabled from a policy on Intune. IT admins can select the subset or all of the folders above and applying that policy to a group of users in their organization.
+PDE for Folders settings is available on Intune under **Endpoint Security** > **Disk encryption**. <!-- this page will be updated /mem/intune/protect/endpoint-security-disk-encryption-policy PDE folders is also in settings catalog as well ==>
+
+For more information about PDE, see [PDE overview](/windows/security/operating-system-security/data-protection/personal-data-encryption)
+
+
+### Windows protected print mode
+
+Windows protected print mode enables devices to print using only the Windows modern print stack, which is designed for [Morpia certified printers](https://mopria.org/certified-products). With Morpia certified printers, there's no longer a need to rely on third-party software installers. To enable Windows protected print mode:
+- Go to **Settings** > **Bluetooth & Devices** > **Printers & scanners**, then choose **Setup** under **Windows protected print mode**
+- Enable the **Configure Windows protected print** policy in Group Policy under **Computer Configuration** > **Administrative Templates** > **Printers**
+
 
 ### Wi-Fi 7 support
 <!--8850300-->
@@ -70,8 +92,6 @@ Support  for Wi-Fi 7 was added when using capable access point and PCs. Wi-Fi 7,
 ## Sudo for Windows
 
 Sudo for Windows is a new way for users to run elevated commands (as an administrator) directly from an unelevated console session. For more information, see [Sudo for Windows](/windows/sudo/).
-
-
 
 ### Enable optional updates
 <!--7991583-->
