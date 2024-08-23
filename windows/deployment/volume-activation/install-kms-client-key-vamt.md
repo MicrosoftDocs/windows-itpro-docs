@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.date: 11/07/2022
 ms.topic: how-to
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ---
 
 # Install a KMS client key

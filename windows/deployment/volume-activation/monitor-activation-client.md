@@ -8,7 +8,7 @@ ms.reviewer: nganguly
 ms.localizationpriority: medium
 ms.topic: concept-article
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ms.date: 03/29/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

@@ -3,7 +3,7 @@ title: Windows quality update communications
 description: This article explains Windows quality update communications
 ms.date: 07/08/2024
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: concept-article
 ms.localizationpriority: medium
 author: tiaraquan

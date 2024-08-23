@@ -8,7 +8,7 @@ ms.reviewer: nganguly
 ms.date: 11/07/2022
 ms.topic: concept-article
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ---
 
 # Active Directory-Based Activation overview
