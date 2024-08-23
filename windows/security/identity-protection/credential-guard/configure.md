@@ -404,4 +404,4 @@ bcdedit /set vsmlaunchtype off
 <!--links-->
 
 [CSP-1]: /windows/client-management/mdm/policy-csp-deviceguard#enablevirtualizationbasedsecurity
-[INT-1]: /mem/intune/configuration/settings-catalog
+[INT-1]: /mem/intune/configuration/custom-settings-configure
