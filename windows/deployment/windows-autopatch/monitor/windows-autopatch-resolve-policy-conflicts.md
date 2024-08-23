@@ -3,7 +3,7 @@ title: Resolve policy conflicts
 description: This article describes how to resolve Windows Autopatch policy conflicts.
 ms.date: 04/09/2024
 ms.service: windows-client
-ms.subservice: itpro-autopatch
+ms.subservice: autopatch
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
