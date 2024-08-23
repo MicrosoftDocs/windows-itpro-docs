@@ -3,7 +3,7 @@ title: Windows feature updates overview
 description: This article explains how Windows feature updates are managed with Autopatch groups
 ms.date: 07/08/2024
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: overview
 ms.localizationpriority: medium
 author: tiaraquan

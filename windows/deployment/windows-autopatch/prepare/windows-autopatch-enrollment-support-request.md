@@ -3,7 +3,7 @@ title: Submit a tenant enrollment support request
 description: This article details how to submit a tenant enrollment support request
 ms.date: 07/08/2024
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
