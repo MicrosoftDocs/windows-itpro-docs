@@ -13,7 +13,7 @@ metadata:
   manager: aaroncz
   ms.date: 05/30/2022 #Required; mm/dd/yyyy format.
   ms.service: windows-client
-  ms.subservice: itpro-updates
+  ms.subservice: autopatch
   ms.collection:
     - highpri
     - tier2
