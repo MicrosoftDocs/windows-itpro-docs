@@ -2,7 +2,7 @@
 title: Windows subscription activation
 description: Learn how to step up from Windows Pro to a Windows Enterprise subscription or from Windows Eduction Pro to a Windows Education subscription.
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ms.localizationpriority: medium
 ms.author: kaushika
 author: kaushika-msft

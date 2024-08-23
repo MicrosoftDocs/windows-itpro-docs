@@ -3,7 +3,7 @@ title: Enroll your tenant
 description: This article details how to enroll your tenant
 ms.date: 07/08/2024
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan

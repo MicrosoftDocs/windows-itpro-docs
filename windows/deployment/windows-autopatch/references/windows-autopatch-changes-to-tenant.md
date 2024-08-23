@@ -3,7 +3,7 @@ title: Changes made at tenant enrollment
 description: This reference article details the changes made to your tenant when enrolling into Windows Autopatch
 ms.date: 12/13/2023
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: concept-article
 ms.localizationpriority: medium
 author: tiaraquan
