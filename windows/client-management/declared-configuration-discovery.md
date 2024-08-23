@@ -29,7 +29,7 @@ This article outlines the schema structure for the HTTP request and response bod
 | `upn` | No | User Principal Name (UPN) of the enrolled account |
 | `tenantId` | No | Tenant ID of the enrolled account |
 | `emmDeviceId` | No | Enterprise mobility management (EMM) device ID of the enrolled account |
-| `enrollmentType` | Entra joined: No <br>Entra registered: Yes | Enrollment type of the enrolled account. <br><br>Supported Values: <br>- `Device`: Indicates the parent enrollment type is Entra joined (DS response should specify "AuthPolicy": "Federated"). <br>-`User`: Indicates parent enrollment type is Entra registered (DS response should specify "AuthPolicy": "Certificate"). <br>- Legacy case (Entra joined only): If the `enrollmentType` parameter isn't included in the request body, the device should be treated as Entra joined. |
+| `enrollmentType` | Entra joined: No <br>Entra registered: Yes | Enrollment type of the enrolled account. <br><br>Supported Values: <br>- `Device`: Indicates the parent enrollment type is Entra joined (DS response should specify "AuthPolicy": "Federated"). <br>- `User`: Indicates parent enrollment type is Entra registered (DS response should specify "AuthPolicy": "Certificate"). <br>- Legacy case (Entra joined only): If the `enrollmentType` parameter isn't included in the request body, the device should be treated as Entra joined. |
 | `osVersion` | Yes | OS version on the device. The DS can use the `osVersion` to determine if the client platform supports WinDC enrollment. Review [supported platforms](declared-configuration.md#supported-platforms) for details. |
 
 ### HTTP DS Response Body (JSON)
@@ -128,7 +128,7 @@ This article outlines the schema structure for the HTTP request and response bod
         {
             "upn" : "johndoe@contoso.com",
             "emmDeviceId" : "00000000-0000-0000-0000-000000000000",
-            "enrollmentType" : "WPJ",
+            "enrollmentType" : "User",
             "osVersion" : "10.0.00000.0"
         }
         ```
@@ -193,5 +193,5 @@ WinDC enrollment requires different authentication mechanisms for Microsoft Entr
 
 ## Error handling
 
-- **UPNRequired**: If no UPN value is provided in the discovery request, the DS can set the `errorCode` in the response to trigger the client to retry the request with a UPN value provided.
+- **UPNRequired**: If no UPN value is provided in the discovery request, the DS can set the `errorCode` to **UPNRequired** in the response to trigger the client to retry the request with a UPN value, if available.
 - **WINHTTP_QUERY_RETRY_AFTER**: The server can set this flag to configure the client request to retry after a specified delay. This flag is useful for handling timeout or throttling scenarios.
