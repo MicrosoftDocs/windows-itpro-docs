@@ -106,7 +106,7 @@ Windows Hello for Business is enabled by default for devices that are Microsoft 
 
 Configuration type| Details |
 |--|-|
-| CSP (user)|**Key path**: `HHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies`<br>**Key name**: `UsePassportForWork`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to disable |
+| CSP (user)|**Key path**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies`<br>**Key name**: `UsePassportForWork`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to disable |
 | CSP (device)|**Key path**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`<br>**Key name**: `UsePassportForWork`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to disable |
 | GPO (user)|**Key path**: `HKEY_USERS\<UserSID>\SOFTWARE\Policies\Microsoft\PassportForWork`<br>**Key name**: `Enabled`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to disable |
 | GPO (user)|**Key path**: `KEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork`<br>**Key name**: `Enabled`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` to enable<br>&emsp;`0` to disable |

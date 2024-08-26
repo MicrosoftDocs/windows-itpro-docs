@@ -22,7 +22,7 @@
         - name: Configure your network
           href: prepare/windows-autopatch-configure-network.md
         - name: Enroll your tenant
-          href: prepare/windows-autopatch-enroll-tenant.md
+          href: prepare/windows-autopatch-feature-activation.md
           items:
             - name: Fix issues found by the Readiness assessment tool
               href: prepare/windows-autopatch-fix-issues.md
@@ -79,7 +79,7 @@
         - name: Exclude a device
           href: manage/windows-autopatch-exclude-device.md
         - name: Unenroll your tenant
-          href: manage/windows-autopatch-unenroll-tenant.md
+          href: manage/windows-autopatch-feature-deactivation.md
     - name: Monitor
       href:
       items:
@@ -128,7 +128,7 @@
             - name: Conflicting configurations
               href: references/windows-autopatch-conflicting-configurations.md
         - name: Changes made at tenant enrollment
-          href: references/windows-autopatch-changes-to-tenant.md
+          href: references/windows-autopatch-changes-made-at-feature-activation.md
     - name: What's new
       href:
       items: 
