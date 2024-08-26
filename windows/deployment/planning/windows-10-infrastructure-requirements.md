@@ -35,7 +35,7 @@ The latest version of the Microsoft Deployment Toolkit (MDT) is available for do
 
 For Configuration Manager, Windows 10 version specific support is offered with [various releases](/mem/configmgr/core/plan-design/configs/support-for-windows-10).
 
-For more information about Microsoft Configuration Manager support for Windows 10, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
+For more information about Microsoft Configuration Manager support for Windows 10, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager).
 
 ## Management tools
 

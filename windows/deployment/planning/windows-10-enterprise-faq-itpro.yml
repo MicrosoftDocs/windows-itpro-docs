@@ -77,7 +77,7 @@ sections:
       - question: |
           Can I upgrade computers from Windows 7 or Windows 8.1 without deploying a new image?
         answer: |
-          Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device. For more information, see [Upgrade to Windows 10 with Microsoft Configuration Manager](../deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md).
+          Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device. For more information, see [Upgrade to Windows 10 with Microsoft Configuration Manager](/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager).
 
       - question: |
           Can I upgrade from Windows 7 Enterprise or Windows 8.1 Enterprise to Windows 10 Enterprise for free?

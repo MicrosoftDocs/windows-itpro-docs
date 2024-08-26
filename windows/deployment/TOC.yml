@@ -18,14 +18,6 @@ items:
           href: update/update-managed-unmanaged-devices.md
         - name: Prepare servicing strategy for Windows client updates
           href: update/waas-servicing-strategy-windows-10-updates.md
-        - name: Deployment proof of concept
-          items:
-            - name: 'Step by step guide: Configure a test lab to deploy Windows 10'
-              href: windows-10-poc.md
-            - name: Deploy Windows 10 in a test lab using Configuration Manager
-              href: windows-10-poc-sc-config-mgr.md
-        - name: Deployment process posters
-          href: windows-10-deployment-posters.md
 
     - name: Plan
       items:
@@ -79,7 +71,7 @@ items:
         - name: Configure BranchCache for Windows client updates
           href: update/waas-branchcache.md
         - name: Prepare for deployment with Configuration Manager
-          href: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+          href: /previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager
         - name: Build a successful servicing strategy
           items:
             - name: Check release health
@@ -97,16 +89,6 @@ items:
               href: /autopilot/
             - name: Windows deployment scenarios and tools
               href: windows-deployment-scenarios-and-tools.md
-            - name: Deploy Windows client with Configuration Manager
-              items:
-                - name: Deploy to a new device
-                  href: deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md
-                - name: Refresh a device
-                  href: deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md
-                - name: Replace a device
-                  href: deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md
-                - name: In-place upgrade
-                  href: deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md
         - name: Deploy Windows client updates
           items:
             - name: Assign devices to servicing channels
