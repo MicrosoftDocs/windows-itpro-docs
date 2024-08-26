@@ -1574,6 +1574,21 @@
       "source_path": "/windows/deployment/windows-10-deployment-posters.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-10-deployment-posters",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/prepare/windows-autopatch-enroll-tenant.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/prepare/windows-autopatch-feature-activation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/manage/windows-autopatch-unenroll-tenant.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-feature-deactivation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-changes-to-tenant.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-changes-made-at-feature-activation",
+      "redirect_document_id": true
     }
   ]
 }

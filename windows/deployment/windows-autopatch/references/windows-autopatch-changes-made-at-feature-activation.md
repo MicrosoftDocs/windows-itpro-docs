@@ -3,7 +3,7 @@ title: Changes made at tenant enrollment
 description: This reference article details the changes made to your tenant when enrolling into Windows Autopatch
 ms.date: 12/13/2023
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: concept-article
 ms.localizationpriority: medium
 author: tiaraquan
@@ -34,7 +34,7 @@ Windows Autopatch creates an enterprise application in your tenant. This enterpr
 
 ## Microsoft Entra groups
 
-Windows Autopatch will create the required Microsoft Entra groups to operate the service.
+Windows Autopatch creates the required Microsoft Entra groups to operate the service.
 
 The following groups target Windows Autopatch configurations to devices and management of the service by our [first party enterprise applications](#windows-autopatch-enterprise-applications).
 
@@ -54,7 +54,7 @@ The following groups target Windows Autopatch configurations to devices and mana
 
 ## Device configuration policies
 
-- Windows Autopatch - Set MDM to Win Over GPO
+- Windows Autopatch - Set MDM to Win Over GPO (Group Policy Objects)
 - Windows Autopatch - Data Collection
 
 | Policy name | Policy description | Properties | Value |

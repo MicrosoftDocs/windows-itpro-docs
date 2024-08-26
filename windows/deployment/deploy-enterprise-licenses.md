@@ -6,7 +6,7 @@ author: kaushika-msft
 manager: cshepard
 ms.reviewer: nganguly
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.date: 03/04/2024

@@ -8,7 +8,7 @@ ms.reviewer: nganguly
 ms.date: 11/07/2022
 ms.topic: how-to
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ---
 
 # Add and remove computers

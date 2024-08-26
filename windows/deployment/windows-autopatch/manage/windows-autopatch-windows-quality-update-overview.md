@@ -3,7 +3,7 @@ title: Windows quality updates overview with Autopatch groups experience
 description: This article explains how Windows quality updates are managed with Autopatch
 ms.date: 05/24/2024
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
