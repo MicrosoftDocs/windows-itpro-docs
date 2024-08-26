@@ -199,7 +199,7 @@ The deployment process for the replace scenario is as follows:
 ## Related articles
 
 - [Upgrade to Windows with Microsoft Configuration Manager](/mem/configmgr/osd/deploy-use/upgrade-windows-to-the-latest-version).
-- [Deploy Windows using PXE and Configuration Manager](deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md).
+- [Deploy Windows using PXE and Configuration Manager](/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager).
 - [Windows setup technical reference](/windows-hardware/manufacture/desktop/windows-setup-technical-reference).
 - [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 - [UEFI firmware](/windows-hardware/design/device-experiences/oem-uefi).
