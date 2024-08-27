@@ -46,12 +46,12 @@ conceptualContent:
       - url: /autopilot/
         itemType: deploy
         text: Windows Autopilot
-      - url: /windows/deployment/do/
-        itemType: concept
-        text: Delivery optimization
       - url: /windows/deployment/windows-autopatch
         itemType: overview
         text: Windows Autopatch
+      - url: /windows/deployment/do/
+        itemType: concept
+        text: Delivery optimization
       footerLink:
         url: /windows/deployment
         text: See more
