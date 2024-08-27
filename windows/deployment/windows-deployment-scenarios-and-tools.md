@@ -14,7 +14,7 @@ ms.subservice: itpro-deploy
 
 To successfully deploy the Windows 10 operating system and applications for your organization, understand the available tools to help with the process. In this article, you'll learn about the most commonly used tools for Windows 10 deployment.
 
-Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). These tools aren't a complete solution on their own. Combine these tools with solutions like [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) to get a complete deployment solution.
+Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). These tools aren't a complete solution on their own. Combine these tools with solutions like [Configuration Manager](/mem/configmgr) to get a complete deployment solution.
 
 In this article, you also learn about different types of reference images that you can build, and why reference images are beneficial for most organizations
 
@@ -39,7 +39,7 @@ Dism.exe /Online /Enable-Feature /FeatureName:NetFX3 /All /Source:D:\Sources\SxS
 In Windows 10, you can use Windows PowerShell for many of the functions done by DISM.exe. The equivalent command in Windows 10 using PowerShell is:
 
 ```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All 
+Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All
 -Source D:\Sources\SxS -LimitAccess
 ```
 
@@ -179,7 +179,7 @@ MDT is a free deployment solution from Microsoft. It provides end-to-end guidanc
 
 MDT has two main parts: the first is Lite Touch, which is a stand-alone deployment solution; the second is Zero Touch, which is an extension to Configuration Manager.
 
-**Note**  
+**Note**
 Lite Touch and Zero Touch are marketing names for the two solutions that MDT supports, and the naming has nothing to do with automation. You can fully automate the stand-alone MDT solution (Lite Touch), and you can configure the solution integration with Configuration Manager to prompt for information.
 
 ![The Deployment Workbench in, showing a task sequence.](images/mdt-11-fig13.png)

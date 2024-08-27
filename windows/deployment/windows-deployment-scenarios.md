@@ -37,7 +37,7 @@ The following tables summarize various Windows deployment scenarios. The scenari
 |Scenario|Description|More information|
 |--- |--- |--- |
 |[Windows Autopilot](#windows-autopilot)|Customize the out-of-box-experience (OOBE) for an organization, and deploy a new system with apps and settings already configured|[Overview of Windows Autopilot](/autopilot/windows-autopilot)|
-|[In-place upgrade](#in-place-upgrade)|Use Windows Setup to update the Windows version and migrate apps and settings. Rollback data is saved in Windows.old.|[Perform an in-place upgrade to Windows using Configuration Manager](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager)|
+|[In-place upgrade](#in-place-upgrade)|Use Windows Setup to update the Windows version and migrate apps and settings. Rollback data is saved in Windows.old.|[Perform an in-place upgrade to Windows using Configuration Manager](/mem/configmgr/osd/deploy-use/upgrade-windows-to-the-latest-version)|
 
 ### Dynamic
 
@@ -51,9 +51,9 @@ The following tables summarize various Windows deployment scenarios. The scenari
 
 |Scenario|Description|More information|
 |--- |--- |--- |
-|[Bare metal](#new-computer)|Deploy a new device, or wipe an existing device and deploy with a fresh image. |[Deploy Windows using PXE and Configuration Manager](/windows/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager)|
-|[Refresh](#computer-refresh)|Also called wipe and load. Redeploy a device by saving the user state, wiping the disk, then restoring the user state. | [Refresh a Windows client with a currently supported version of Windows using Configuration Manager](/windows/deployment/deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager)|
-|[Replace](#computer-replace)|Replace an existing device with a new one by saving the user state on the old device and then restoring it to the new device.| [Replace a Windows client with a currently supported version of Windows using Configuration Manager](/windows/deployment/deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager)|
+|[Bare metal](#new-computer)|Deploy a new device, or wipe an existing device and deploy with a fresh image. |[Deploy Windows using PXE and Configuration Manager](/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager)|
+|[Refresh](#computer-refresh)|Also called wipe and load. Redeploy a device by saving the user state, wiping the disk, then restoring the user state. | [Refresh a Windows client with a currently supported version of Windows using Configuration Manager](/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager)|
+|[Replace](#computer-replace)|Replace an existing device with a new one by saving the user state on the old device and then restoring it to the new device.| [Replace a Windows client with a currently supported version of Windows using Configuration Manager](/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager)|
 
 > [!IMPORTANT]
 >
@@ -134,7 +134,7 @@ While Windows includes various provisioning settings and deployment mechanisms, 
 In the past, organizations typically deployed Windows using an image-based process built on top of tools provided in:
 
 - [Windows Assessment and Deployment Kit](windows-adk-scenarios-for-it-pros.md).
-- [Microsoft Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
+- [Microsoft Configuration Manager](/mem/configmgr).
 - Windows Deployment Services (WDS).
 - Microsoft Deployment Toolkit.
 
@@ -198,8 +198,8 @@ The deployment process for the replace scenario is as follows:
 
 ## Related articles
 
-- [Upgrade to Windows with Microsoft Configuration Manager](./deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md).
-- [Deploy Windows using PXE and Configuration Manager](deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md).
+- [Upgrade to Windows with Microsoft Configuration Manager](/mem/configmgr/osd/deploy-use/upgrade-windows-to-the-latest-version).
+- [Deploy Windows using PXE and Configuration Manager](/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager).
 - [Windows setup technical reference](/windows-hardware/manufacture/desktop/windows-setup-technical-reference).
 - [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 - [UEFI firmware](/windows-hardware/design/device-experiences/oem-uefi).
