@@ -1519,6 +1519,11 @@
       "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-changes-to-tenant.md",
       "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-changes-made-at-feature-activation",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-windows-update-unsupported-policies.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-update-policies",
+      "redirect_document_id": false
     }
   ]
 }

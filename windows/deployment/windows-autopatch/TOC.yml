@@ -63,6 +63,8 @@
               href: manage/windows-autopatch-windows-quality-update-end-user-exp.md
             - name: Windows quality update communications
               href: manage/windows-autopatch-windows-quality-update-communications.md
+            - name: Windows quality update policies
+              href: manage/windows-autopatch-windows-update-policies.md
         - name: Manage driver and firmware updates
           href: manage/windows-autopatch-manage-driver-and-firmware-updates.md
         - name: Microsoft 365 Apps for enterprise
@@ -120,13 +122,8 @@
     - name: References
       href:
       items:
-        - name: Update policies
-          href:
-          items:
-            - name: Windows update policies
-              href: references/windows-autopatch-windows-update-unsupported-policies.md
-            - name: Conflicting configurations
-              href: references/windows-autopatch-conflicting-configurations.md
+        - name: Conflicting configurations
+          href: references/windows-autopatch-conflicting-configurations.md
         - name: Changes made at tenant enrollment
           href: references/windows-autopatch-changes-made-at-feature-activation.md
     - name: What's new
