@@ -1572,12 +1572,12 @@
     },
     {
       "source_path": "windows/deploy/add-a-windows-10-operating-system-image-using-configuration-manager.md",
-      "redirect_url": "/windows/deployment/deploy-windows-sccm/add-a-windows-10-operating-system-image-using-configuration-manager",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md",
-      "redirect_url": "/windows/deployment/deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager",
       "redirect_document_id": false
     },
     {
@@ -1657,12 +1657,12 @@
     },
     {
       "source_path": "windows/deploy/create-a-custom-windows-pe-boot-image-with-configuration-manager.md",
-      "redirect_url": "/windows/deployment/deploy-windows-sccm/create-a-custom-windows-pe-boot-image-with-configuration-manager",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/create-a-task-sequence-with-configuration-manager-and-mdt.md",
-      "redirect_url": "/windows/deployment/deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/create-a-task-sequence-with-configuration-manager-and-mdt",
       "redirect_document_id": false
     },
     {
@@ -1672,7 +1672,7 @@
     },
     {
       "source_path": "windows/deploy/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md",
-      "redirect_url": "/windows/deployment/deploy-windows-sccm/create-an-application-to-deploy-with-windows-10-using-configuration-manager",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/create-an-application-to-deploy-with-windows-10-using-configuration-manager",
       "redirect_document_id": false
     },
     {
@@ -1687,7 +1687,7 @@
     },
     {
       "source_path": "windows/deploy/deploy-windows-10-using-pxe-and-configuration-manager.md",
-      "redirect_url": "/windows/deployment/deploy-windows-sccm/deploy-windows-10-using-pxe-and-configuration-manager",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager",
       "redirect_document_id": false
     },
     {
@@ -1707,7 +1707,7 @@
     },
     {
       "source_path": "windows/deploy/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md",
-      "redirect_url": "/windows/deployment/deploy-windows-sccm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager",
       "redirect_document_id": false
     },
     {
@@ -1857,7 +1857,7 @@
     },
     {
       "source_path": "windows/deploy/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md",
-      "redirect_url": "/windows/deployment/deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
       "redirect_document_id": false
     },
     {
@@ -1927,7 +1927,7 @@
     },
     {
       "source_path": "windows/deploy/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md",
-      "redirect_url": "/windows/deployment/deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager",
       "redirect_document_id": false
     },
     {
@@ -1942,7 +1942,7 @@
     },
     {
       "source_path": "windows/deploy/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md",
-      "redirect_url": "/windows/deployment/deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager",
       "redirect_document_id": false
     },
     {
@@ -2467,12 +2467,12 @@
     },
     {
       "source_path": "windows/deploy/windows-10-poc-sc-config-mgr.md",
-      "redirect_url": "/windows/deployment/windows-10-poc-sc-config-mgr",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-10-poc-sc-config-mgr",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy/windows-10-poc.md",
-      "redirect_url": "/windows/deployment/windows-10-poc",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/windows-10-poc",
       "redirect_document_id": false
     },
     {

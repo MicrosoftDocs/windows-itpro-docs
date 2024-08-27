@@ -15,7 +15,7 @@ metadata:
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
-  ms.date: 07/12/2024
+  ms.date: 08/22/2024
   ms.localizationpriority: medium
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -54,7 +54,7 @@ landingContent:
     - text: Set up Delivery Optimization for Windows client updates
       url: do/delivery-optimization-configure.md?context=/windows/deployment/context/context
     - text: Prepare for imaging with Configuration Manager
-      url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+      url: /previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager
 
 - title: Deploy
   linkLists:
@@ -69,7 +69,7 @@ landingContent:
     - text: Deploy Windows updates with Configuration Manager
       url: update/deploy-updates-configmgr.md
     - text: Upgrade Windows using Configuration Manager
-      url: deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md
+      url: /mem/configmgr/osd/deploy-use/upgrade-windows-to-the-latest-version
     - text: Check release health
       url: update/check-release-health.md
 
@@ -130,9 +130,9 @@ landingContent:
   - linkListType: how-to-guide
     links:
       - text: Upgrade Windows using Configuration Manager
-        url: deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md
-      - text: Deploy a Windows image using Configuration Manager
-        url: deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md
+        url: /mem/configmgr/osd/deploy-use/upgrade-windows-to-the-latest-version
+      - text: Deploy a Windows 10 image using Configuration Manager
+        url: /previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager
       - text: Convert a disk from MBR to GPT
         url: mbr-to-gpt.md
       - text: Resolve Windows upgrade errors
