@@ -1,148 +1,135 @@
 ### YamlMime:Hub
 
-title: Windows client documentation for IT Pros
-summary: Learn how to deploy, secure, and manage Windows clients for your organization.
+title: Windows client documentation
+summary: Documentation for IT pros on how to deploy, secure, and manage Windows clients for your organization.
 brand: windows
 
 metadata:
-  title: Windows client documentation for IT Pros
-  description: Learn how to deploy, secure, and manage Windows clients for your organization.
+  title: Windows client documentation
+  description: Documentation for IT pros on how to deploy, secure, and manage Windows clients for your organization.
   ms.topic: hub-page
   ms.service: windows-client
   ms.collection:
     - tier1
     - essentials-navigation
-  author: paolomatarazzo
-  ms.author: paoloma
+  author: aczechowski
+  ms.author: aaroncz
   manager: aaroncz
-  ms.date: 07/11/2024
+  ms.date: 08/27/2024
 
 highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
+
   - title: Get started with Windows 11
     itemType: get-started
     url: /windows/whats-new/windows-11-overview
+
   - title: Windows 11, version 23H2
     itemType: whats-new
     url: /windows/whats-new/whats-new-windows-11-version-23h2
+
   - title: Windows 11, version 23H2 group policy settings reference
     itemType: download
     url: https://www.microsoft.com/download/details.aspx?id=105668
-  - title: Windows release health
-    itemType: whats-new
-    url: /windows/release-health
-  - title: Windows commercial licensing
-    itemType: overview
-    url: /windows/whats-new/windows-licensing
-  - title: Windows 365 documentation
-    itemType: overview
-    url: /windows-365
-  - title: Explore all Windows trainings and learning paths for IT pros
-    itemType: learn
-    url: https://learn.microsoft.com/en-us/training/browse/?products=windows&roles=administrator
-  - title: Enroll Windows client devices in Microsoft Intune
-    itemType: how-to-guide
-    url: /mem/intune/fundamentals/deployment-guide-enrollment-windows
 
-productDirectory:
-  title: Get started
+  - title: Windows administrative tools
+    itemType: concept
+    url: /windows/client-management/client-tools/administrative-tools-in-windows
+
+
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
-
-    - title: Learn how to deploy Windows
-      imageSrc: /media/common/i_deploy.svg
+    - title: Deploy Windows
       links:
-        - url: /autopilot/
-          text: Windows Autopilot
-        - url: /autopilot/device-preparation/compare
-          text: Compare Windows Autopilot solutions
-        - url: /windows/deployment/do/
-          text: Delivery optimization
-        - url: /windows/deployment/update/deployment-service-overview
-          text: Windows Update for Business deployment service
-        - url: /windows/deployment/windows-autopatch
-          text: Windows Autopatch overview
-        - url: /windows/deployment
-          text: Learn more about Windows deployment >
+      - url: /autopilot/
+        itemType: deploy
+        text: Windows Autopilot
+      - url: /windows/deployment/windows-autopatch
+        itemType: overview
+        text: Windows Autopatch
+      - url: /windows/deployment/do/
+        itemType: concept
+        text: Delivery optimization
+      footerLink:
+        url: /windows/deployment
+        text: See more
 
-    - title: Learn how to secure Windows
-      imageSrc: /media/common/i_security-management.svg
+    - title: Secure Windows
       links:
-        - url: /windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines
-          text: Windows security baselines
-        - url: /windows/security/identity-protection/hello-for-business
-          text: Windows Hello for Business
-        - url: /windows/security/identity-protection/web-sign-in
-          text: Web sign-in for Windows
-        - url: /windows/security/threat-protection/windows-defender-application-control
-          text: Windows Defender Application Control (WDAC)
-        - url: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview
-          text: Microsoft Defender Application Guard
-        - url: /windows/security
-          text: Learn more about Windows security >
+      - url: /windows/security/introduction
+        itemType: overview
+        text: Introduction to Windows security
+      - url: /windows/security/operating-system-security/data-protection/bitlocker/
+        itemType: concept
+        text: BitLocker
+      - url: /windows/security/identity-protection/hello-for-business
+        itemType: concept
+        text: Windows Hello for Business
+      footerLink:
+        url: /windows/security
+        text: See more
 
-    - title: Learn about privacy in Windows
-      imageSrc: /media/common/i_lock.svg
+    - title: Privacy in Windows
       links:
-        - url: /windows/privacy/required-diagnostic-events-fields-windows-11-22h2
-          text: Windows 11 required diagnostic data
-        - url: /windows/privacy/configure-windows-diagnostic-data-in-your-organization
-          text: Configure Windows diagnostic data in your organization
-        - url: /windows/privacy/diagnostic-data-viewer-overview
-          text: Diagnostic Data Viewer
-        - url: /windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services
-          text: Manage connections to Microsoft services
-        - url: /windows/privacy/windows-privacy-compliance-guide
-          text: Windows privacy compliance guide
-        - url: /windows/privacy
-          text: Learn more about privacy in Windows >
+      - url: /windows/privacy/required-diagnostic-events-fields-windows-11-22h2
+        itemType: reference
+        text: Windows 11 required diagnostic data
+      - url: /windows/privacy/configure-windows-diagnostic-data-in-your-organization
+        itemType: how-to-guide
+        text: Configure Windows diagnostic data in your organization
+      - url: /windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services
+        itemType: reference
+        text: Manage connections to Microsoft services
+      footerLink:
+        url: /windows/privacy
+        text: See more
 
-    - title: Learn how to manage Windows
-      imageSrc: /media/common/i_management.svg
+    - title: Manage Windows
       links:
-        - url: /windows/client-management/administrative-tools-in-windows-10
-          text: Windows administrative tools
-        - url: /windows/client-management/client-tools/windows-version-search
-          text: What version of Windows am I running?
-        - url: /windows/client-management/mobile-device-enrollment
-          text: MDM enrollment
-        - url: /windows/client-management/mdm/
-          text: Configuration Service Provider (CSP) reference
-        - url: /windows/application-management/index
-          text: Learn more about application management >
-        - url: /windows/client-management
-          text: Learn more about Windows management >
+      - url: /windows/client-management/client-tools/administrative-tools-in-windows
+        itemType: concept
+        text: Windows administrative tools
+      - url: /windows/client-management/client-tools/windows-version-search
+        itemType: how-to-guide
+        text: What version of Windows am I running?
+      - url: /windows/client-management/mdm/
+        itemType: reference
+        text: Configuration Service Provider (CSP) policies
+      footerLink:
+        url: /windows/client-management
+        text: See more
 
-    - title: Learn how to configure Windows
-      imageSrc: /media/common/i_config-tools.svg
+    - title: Configure Windows
       links:
-        - url: /windows/configuration/windows-accessibility-for-itpros
-          text: Accessibility information
-        - url: /windows/configuration/provisioning-packages/provisioning-packages
-          text: Use Provisioning packages to configure new devices
-        - url: /windows/configuration/customize-start-menu-layout-windows-11
-          text: Customize the Start menu layout
-        - url: /windows/configuration/set-up-shared-or-guest-pc
-          text: Set up a shared or guest PC
-        - url: /windows/configuration/assigned-access
-          text: Configure kiosks and restricted user experiences
-        - url: /windows/configuration
-          text: Learn more about Windows configuration >
+      - url: /windows/configuration/accessibility/
+        itemType: overview
+        text: Accessibility information
+      - url: /windows/configuration/start/layout
+        itemType: how-to-guide
+        text: Customize the Start layout
+      - url: /windows/configuration/assigned-access
+        itemType: concept
+        text: Kiosks and restricted user experiences
+      footerLink:
+        url: /windows/configuration
+        text: See more
 
-    - title: Learn about Windows for Education
-      imageSrc: /media/common/i_advanced.svg
+    - title: Windows for Education
       links:
-        - url: /education/windows/tutorial-school-deployment/
-          text: "Tutorial: deploy and manage Windows devices in a school"
-        - url: /education/windows/windows-11-se-overview
-          text: Windows 11 SE Overview
-        - url: /education/windows/federated-sign-in
-          text: Configure federated sign-in for Windows devices
-        - url: /education/windows/get-minecraft-for-education
-          text: Get and deploy Minecraft Education
-        - url: /education/windows/take-tests-in-windows
-          text: Take tests and assessments in Windows
-        - url: /education/Windows
-          text: Learn more about Windows for Education >
+      - url: /education/windows/federated-sign-in
+        itemType: how-to-guide
+        text: Configure federated sign-in for Windows devices
+      - url: /education/windows/get-minecraft-for-education
+        itemType: concept
+        text: Get and deploy Minecraft Education
+      - url: /education/windows/windows-11-se-overview
+        itemType: overview
+        text: Windows 11 SE
+      footerLink:
+        url: /education/windows
+        text: See more
 
 additionalContent:
   sections:
@@ -151,46 +138,36 @@ additionalContent:
 
         - title: Windows hardware
           links:
-            - text: Windows hardware developer documentation
-              url: /windows-hardware/drivers/
-            - text: Get started with building Windows devices
-              url: /windows-hardware/get-started
+            - text: Download and install the Windows ADK
+              url: /windows-hardware/get-started/adk-install
             - text: Download the Windows Driver Kit
               url: /windows-hardware/drivers/download-the-wdk
             - text: Device and driver installation
               url: /windows-hardware/drivers/install/overview-of-device-and-driver-installation
-            - text: Windows Driver Frameworks
-              url: /windows-hardware/drivers/wdf/
-            - text: Kernel-mode driver architecture design guide
-              url: /windows-hardware/drivers/kernel/
 
         - title: Windows Server
           links:
             - text: Windows Server documentation
               url: /windows-server
-            - text: What's new in Windows Server 2022?
-              url: /windows-server/get-started/whats-new-in-windows-server-2022
+            - text: What's new in Windows Server 2025
+              url: /windows-server/get-started/whats-new-windows-server-2025
             - text: Windows Server blog
-              url: https://cloudblogs.microsoft.com/windowsserver/
+              url: https://www.microsoft.com/windows-server/blog/
 
         - title: Windows product site and blogs
           links:
-            - text: Find out how Windows enables your business to do more
-              url: https://www.microsoft.com/microsoft-365/windows
+            - text: Windows user documentation
+              url: https://support.microsoft.com/windows
             - text: Windows blogs
               url: https://blogs.windows.com/
             - text: Windows IT Pro blog
-              url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
-            - text: Microsoft Intune blog
-              url: https://techcommunity.microsoft.com/t5/microsoft-intune-blog/bg-p/MicrosoftEndpointManagerBlog
-            - text: "Windows help & learning: end-user documentation"
-              url: https://support.microsoft.com/windows
+              url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows-ITPro-blog
 
         - title: Participate in the community
           links:
             - text: Windows community
-              url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
-            - text: Microsoft Intune community
-              url: https://techcommunity.microsoft.com/t5/microsoft-intune/bd-p/Microsoft-Intune
-            - text: Microsoft Support community
-              url: https://answers.microsoft.com/
+              url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows
+            - text: Windows office hours
+              url: https://aka.ms/Windows/OfficeHours
+            - text: Microsoft support community
+              url: https://answers.microsoft.com/windowsclient/forum
