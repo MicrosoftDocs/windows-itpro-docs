@@ -106,7 +106,6 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-
       - text: Customize Windows PE boot images
         url: customize-boot-image.md
       - text: Convert a disk from MBR to GPT
