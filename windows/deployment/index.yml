@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Windows client deployment documentation # < 60 chars; shows at top of hub page
-summary: Learn about deploying and updating Windows client devices in your organization. # < 160 chars
+title: Windows deployment documentation # < 60 chars; shows at top of hub page
+summary: Learn about deploying and updating Windows devices in your organization. # < 160 chars
 
 metadata:
-  title: Windows client deployment documentation # Required; browser tab title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about deploying and updating Windows client devices in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  title: Windows deployment documentation # Required; browser tab title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about deploying and updating Windows devices in your organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page
   ms.service: windows-client
   ms.subservice: itpro-deploy
@@ -58,8 +58,6 @@ landingContent:
       url: update/deploy-updates-intune.md
     - text: Deploy Windows updates with Configuration Manager
       url: update/deploy-updates-configmgr.md
-    - text: Upgrade Windows using Configuration Manager
-      url: /mem/configmgr/osd/deploy-use/upgrade-windows-to-the-latest-version
     - text: Optimize and cache content
       url: do/index.yml
 

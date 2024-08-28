@@ -1,10 +1,10 @@
 items:
-- name: Deploy and update Windows client
+- name: Deploy and update Windows
   href: index.yml
   items:
     - name: Get started
       items:
-        - name: Windows client deployment scenarios
+        - name: Windows deployment scenarios
           href: windows-deployment-scenarios.md
         - name: Quick guide to Windows as a service
           href: update/waas-quick-start.md
@@ -16,7 +16,7 @@ items:
           href: update/get-started-updates-channels-tools.md
         - name: Defining Windows update-managed devices
           href: update/update-managed-unmanaged-devices.md
-        - name: Prepare servicing strategy for Windows client updates
+        - name: Prepare servicing strategy for Windows updates
           href: update/waas-servicing-strategy-windows-10-updates.md
 
     - name: Plan
@@ -35,13 +35,8 @@ items:
           href: update/windows-update-security.md
         - name: Windows upgrade and migration considerations
           href: upgrade/windows-upgrade-and-migration-considerations.md
-        - name: Delivery Optimization for Windows client updates
+        - name: Delivery Optimization for Windows updates
           href: do/waas-delivery-optimization.md?context=/windows/deployment/context/context
-          items:
-            - name: Using a proxy with Delivery Optimization
-              href: do/delivery-optimization-proxy.md?context=/windows/deployment/context/context
-            - name: Delivery Optimization client-service communication
-              href: do/delivery-optimization-workflow.md?context=/windows/deployment/context/context
         - name: Windows 10 deployment considerations
           href: planning/windows-10-deployment-considerations.md
         - name: Windows 10 infrastructure requirements
@@ -52,15 +47,15 @@ items:
       items:
         - name: Prepare for Windows 11
           href: /windows/whats-new/windows-11-prepare?context=/windows/deployment/context/context
-        - name: Prepare to deploy Windows client updates
+        - name: Prepare to deploy Windows updates
           href: update/prepare-deploy-windows.md
         - name: Evaluate and update infrastructure
           href: update/update-policies.md
-        - name: Update Baseline
+        - name: Update baseline
           href: update/update-baseline.md
-        - name: Set up Delivery Optimization for Windows client updates
+        - name: Set up Delivery Optimization for Windows updates
           href: do/delivery-optimization-configure.md?context=/windows/deployment/context/context
-        - name: Configure BranchCache for Windows client updates
+        - name: Configure BranchCache for Windows updates
           href: update/waas-branchcache.md
         - name: Prepare for deployment with Configuration Manager
           href: /previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager
@@ -70,17 +65,17 @@ items:
       items:
         - name: Deploy Windows
           items:
-            - name: Deploy Windows client with Autopilot
+            - name: Deploy Windows with Autopilot
               href: /autopilot/
             - name: Windows deployment scenarios and tools
               href: windows-deployment-scenarios-and-tools.md
-        - name: Deploy Windows client updates
+        - name: Deploy Windows updates
           items:
             - name: Assign devices to servicing channels
               href: update/waas-servicing-channels-windows-10-updates.md
             - name: Deploy updates with WSUS
               href: update/waas-manage-updates-wsus.md
-            - name: Update Windows client media with dynamic update
+            - name: Update Windows media with dynamic update
               href: update/media-dynamic-update.md
             - name: Migrating and acquiring optional Windows content
               href: update/optional-content.md
@@ -220,58 +215,56 @@ items:
           href: volume-activation/vamt-known-issues.md
     - name: Monitor
       items:
-      - name: Windows Update for Business reports
+      - name: Windows Update for Business reports overview
+        href: update/wufb-reports-overview.md
+      - name: Enable Windows Update for Business reports
         items:
-        - name: Windows Update for Business reports overview
-          href: update/wufb-reports-overview.md
+        - name: Windows Update for Business reports prerequisites
+          href: update/wufb-reports-prerequisites.md
         - name: Enable Windows Update for Business reports
-          items:
-          - name: Windows Update for Business reports prerequisites
-            href: update/wufb-reports-prerequisites.md
-          - name: Enable Windows Update for Business reports
-            href: update/wufb-reports-enable.md
-          - name: Configure clients with a script
-            href: update/wufb-reports-configuration-script.md
-          - name: Configure clients manually
-            href: update/wufb-reports-configuration-manual.md
-          - name: Configure clients with Microsoft Intune
-            href: update/wufb-reports-configuration-intune.md
-        - name: Use Windows Update for Business reports
-          items:
-          - name: Windows Update for Business reports workbook
-            href: update/wufb-reports-workbook.md
-          - name: Delivery Optimization data in reports
-            href: update/wufb-reports-do.md
-          - name: Software updates in the Microsoft 365 admin center
-            href: update/wufb-reports-admin-center.md
-          - name: Use Windows Update for Business reports data
-            href: update/wufb-reports-use.md
-          - name: FAQ for Windows Update for Business reports
-            href: update/wufb-reports-faq.yml
-          - name: Feedback and support
-            href: update/wufb-reports-help.md
+          href: update/wufb-reports-enable.md
+        - name: Configure clients with a script
+          href: update/wufb-reports-configuration-script.md
+        - name: Configure clients manually
+          href: update/wufb-reports-configuration-manual.md
+        - name: Configure clients with Microsoft Intune
+          href: update/wufb-reports-configuration-intune.md
+      - name: Use Windows Update for Business reports
+        items:
+        - name: Windows Update for Business reports workbook
+          href: update/wufb-reports-workbook.md
+        - name: Delivery Optimization data in reports
+          href: update/wufb-reports-do.md
+        - name: Software updates in the Microsoft 365 admin center
+          href: update/wufb-reports-admin-center.md
+        - name: Use Windows Update for Business reports data
+          href: update/wufb-reports-use.md
+        - name: FAQ for Windows Update for Business reports
+          href: update/wufb-reports-faq.yml
+        - name: Feedback and support
+          href: update/wufb-reports-help.md
+      - name: Windows Update for Business reports schema reference
+        items:
         - name: Windows Update for Business reports schema reference
-          items:
-          - name: Windows Update for Business reports schema reference
-            href: update/wufb-reports-schema.md
-          - name: UCClient
-            href: update/wufb-reports-schema-ucclient.md
-          - name: UCClientReadinessStatus
-            href: update/wufb-reports-schema-ucclientreadinessstatus.md
-          - name: UCClientUpdateStatus
-            href: update/wufb-reports-schema-ucclientupdatestatus.md
-          - name: UCDeviceAlert
-            href: update/wufb-reports-schema-ucdevicealert.md
-          - name: UCDOAggregatedStatus
-            href: update/wufb-reports-schema-ucdoaggregatedstatus.md
-          - name: UCDOStatus
-            href: update/wufb-reports-schema-ucdostatus.md
-          - name: UCServiceUpdateStatus
-            href: update/wufb-reports-schema-ucserviceupdatestatus.md
-          - name: UCUpdateAlert
-            href: update/wufb-reports-schema-ucupdatealert.md
-          - name: Enumerated types
-            href: update/wufb-reports-schema-enumerated-types.md
+          href: update/wufb-reports-schema.md
+        - name: UCClient
+          href: update/wufb-reports-schema-ucclient.md
+        - name: UCClientReadinessStatus
+          href: update/wufb-reports-schema-ucclientreadinessstatus.md
+        - name: UCClientUpdateStatus
+          href: update/wufb-reports-schema-ucclientupdatestatus.md
+        - name: UCDeviceAlert
+          href: update/wufb-reports-schema-ucdevicealert.md
+        - name: UCDOAggregatedStatus
+          href: update/wufb-reports-schema-ucdoaggregatedstatus.md
+        - name: UCDOStatus
+          href: update/wufb-reports-schema-ucdostatus.md
+        - name: UCServiceUpdateStatus
+          href: update/wufb-reports-schema-ucserviceupdatestatus.md
+        - name: UCUpdateAlert
+          href: update/wufb-reports-schema-ucupdatealert.md
+        - name: Enumerated types
+          href: update/wufb-reports-schema-enumerated-types.md
     - name: Troubleshoot
       items:
       - name: Resolve upgrade errors
@@ -292,7 +285,7 @@ items:
           href: upgrade/log-files.md
         - name: Resolution procedures
           href: /troubleshoot/windows-client/deployment/windows-10-upgrade-resolution-procedures?context=/windows/deployment/context/context
-        - name: Submit Windows client upgrade errors
+        - name: Submit Windows upgrade errors
           href: upgrade/submit-errors.md
       - name: Troubleshoot Windows Update
         items:
