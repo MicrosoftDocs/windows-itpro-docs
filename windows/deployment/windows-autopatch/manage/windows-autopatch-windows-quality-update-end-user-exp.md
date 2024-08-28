@@ -3,7 +3,7 @@ title: Windows quality update end user experience
 description: This article explains the Windows quality update end user experience
 ms.date: 07/08/2024
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan

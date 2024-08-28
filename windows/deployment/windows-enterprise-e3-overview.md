@@ -2,7 +2,7 @@
 title: Windows Enterprise E3 in CSP
 description: Describes Windows Enterprise E3, an offering that delivers, by subscription, the features of Windows Enterprise edition.
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ms.localizationpriority: medium
 ms.date: 02/13/2024
 ms.author: kaushika

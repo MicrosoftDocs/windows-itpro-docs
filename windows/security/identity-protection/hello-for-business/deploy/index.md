@@ -275,6 +275,8 @@ All supported Windows Server versions can be used with Windows Hello for Busines
 | **🔲** | **On-premises** | Key | All supported versions |
 | **🔲** | **On-premises** | Certificate | All supported versions |
 
+The minimum required domain functional and forest functional levels are Windows Server 2008 R2 for all deployment models.
+
 ## Prepare users
 
 When you are ready to enable Windows Hello for Business in your organization, make sure to prepare the users by explaining how to provision and use Windows Hello.

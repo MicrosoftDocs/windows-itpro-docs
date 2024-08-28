@@ -3,10 +3,10 @@ title: Reliability report
 description: This article describes the reliability score for each Windows quality update cycle based on stop error codes detected on managed devices.
 ms.date: 04/09/2024
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: how-to
 ms.localizationpriority: medium
-author: tiaraquan 
+author: tiaraquan
 ms.author: tiaraquan
 manager: aaroncz
 ms.reviewer: hathind

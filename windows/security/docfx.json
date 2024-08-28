@@ -54,6 +54,7 @@
         }
       },
       "contributors_to_exclude": [
+        "aditisrivastava07",
         "alekyaj",
         "alexbuckgit",
         "American-Dipper",
@@ -64,17 +65,14 @@
         "dstrome2",
         "garycentric",
         "jborsecnik",
+        "padmagit77",
         "rjagiewich",
         "rmca14",
         "shdyas",
         "Stacyrch140",
         "tiburd",
         "traya1",
-        "v-dihans",
-        "v-stchambers",
-        "v-stsavell",
-        "padmagit77",
-        "aditisrivastava07"
+        "v-stsavell"
       ],
       "searchScope": [
         "Windows 10"

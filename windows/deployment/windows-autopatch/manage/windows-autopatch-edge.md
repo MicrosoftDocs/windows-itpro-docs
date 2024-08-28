@@ -3,7 +3,7 @@ title: Microsoft Edge
 description: This article explains how Microsoft Edge updates are managed in Windows Autopatch
 ms.date: 09/15/2023
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan

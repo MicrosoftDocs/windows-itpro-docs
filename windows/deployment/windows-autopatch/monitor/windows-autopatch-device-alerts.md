@@ -3,7 +3,7 @@ title: Device alerts
 description: Provide notifications and information about the necessary steps to keep your devices up to date.
 ms.date: 07/08/2023
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan

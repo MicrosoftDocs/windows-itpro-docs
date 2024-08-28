@@ -8,7 +8,7 @@ ms.reviewer: nganguly
 ms.date: 03/29/2024
 ms.topic: concept-article
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ---
 
 # VAMT requirements
