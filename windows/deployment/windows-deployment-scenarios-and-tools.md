@@ -1,6 +1,6 @@
 ---
-title: Windows 10 deployment scenarios and tools
-description: Learn about the tools you can use to deploy Windows 10 and related applications to your organization. Explore deployment scenarios.
+title: Windows deployment scenarios and tools
+description: Learn about the tools that can be used to deploy Windows and related applications to your organization. Explore deployment scenarios.
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
@@ -10,68 +10,71 @@ ms.date: 11/23/2022
 ms.subservice: itpro-deploy
 ---
 
-# Windows 10 deployment scenarios and tools
+# Windows deployment scenarios and tools
 
-To successfully deploy the Windows 10 operating system and applications for your organization, understand the available tools to help with the process. In this article, you'll learn about the most commonly used tools for Windows 10 deployment.
+To successfully deploy the Windows operating system and applications for your organization, it's important to understand the available tools to help with the process. This article covers the most commonly used tools for Windows 10 deployment.
 
 Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). These tools aren't a complete solution on their own. Combine these tools with solutions like [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) to get a complete deployment solution.
 
-In this article, you also learn about different types of reference images that you can build, and why reference images are beneficial for most organizations
+This article also covers the different types of reference images that can be built, and why reference images are beneficial for most organizations.
 
 ## Windows Assessment and Deployment Kit
 
-Windows ADK contains core assessment and deployment tools and technologies, including Deployment Image Servicing and Management (DISM), Windows Imaging and Configuration Designer (Windows ICD), Windows System Image Manager (Windows SIM), User State Migration Tool (USMT), Volume Activation Management Tool (VAMT), Windows Preinstallation Environment (Windows PE), Windows Assessment Services, Windows Performance Toolkit (WPT), Application Compatibility Toolkit (ACT), and Microsoft SQL Server 2012 Express. For more information, see [Windows ADK for Windows 10](/windows-hardware/get-started/adk-install) or [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
+Windows ADK contains core assessment and deployment tools and technologies, including:
 
-![The Windows 10 ADK feature selection page.](images/win-10-adk-select.png)
+- [Deployment Image Servicing and Management (DISM)](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
+- [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-packages).
+- [Windows System Image Manager (Windows SIM)](/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference).
+- [User State Migration Tool (USMT)](/windows/deployment/usmt/usmt-overview).
+- [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool).
+- [Windows Preinstallation Environment (Windows PE)](/windows-hardware/manufacture/desktop/winpe-intro).
+- [Windows Assessment Toolkit](/windows-hardware/test/assessments/).
+- [Windows Performance Toolkit (WPT)](/windows-hardware/test/wpt/).
 
-The Windows 10 ADK feature selection page.
+For more information, see the following articles:
+
+- [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
+- [Windows ADK for Windows scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
+- [Kits and tools overview](/windows-hardware/get-started/kits-and-tools-overview).
 
 ### Deployment Image Servicing and Management (DISM)
 
-DISM is one of the deployment tools included in the Windows ADK and is used for capturing, servicing, and deploying boot images and operating system images.
+DISM is one of the deployment tools included in the Windows ADK. It's used for capturing, servicing, and deploying both boot images and operating system images.
 
-DISM services online and offline images. For example, with DISM you can install the Microsoft .NET Framework 3.5.1 in Windows 10 online, which means that you can start the installation in the running operating system, not that you get the software online. The /LimitAccess switch configures DISM to get the files only from a local source:
+DISM services online and offline images. For example, with DISM you can install the Microsoft .NET Framework while Windows is online, which means that you can start the installation in the running operating system. The `/LimitAccess` switch configures DISM to get the files only from a local source. For example:
 
 ```cmd
 Dism.exe /Online /Enable-Feature /FeatureName:NetFX3 /All /Source:D:\Sources\SxS /LimitAccess
 ```
 
-In Windows 10, you can use Windows PowerShell for many of the functions done by DISM.exe. The equivalent command in Windows 10 using PowerShell is:
+In Windows you can use Windows PowerShell for many of the functions done by DISM.exe. The equivalent command in Windows using PowerShell is:
 
 ```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All 
+Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All
 -Source D:\Sources\SxS -LimitAccess
 ```
-
-![Using DISM functions in PowerShell.](images/mdt-11-fig05.png)
-
-Using DISM functions in PowerShell.
 
 For more information on DISM, see [DISM technical reference](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 
 ### User State Migration Tool (USMT)
 
-USMT is a backup and restore tool that allows you to migrate user state, data, and settings from one installation to another. Microsoft Deployment Toolkit (MDT) and Configuration Manager use USMT as part of the operating system deployment process.
+USMT is a backup and restore tool that allows you to migrate user state, data, and settings from one installation to another. Microsoft Configuration Manager uses USMT as part of the operating system deployment process.
 
-USMT includes several command-line tools, the most important of which are ScanState and LoadState:
+USMT includes several command-line tools, the most important of which are **ScanState** and **LoadState**:
 
 - **ScanState.exe**: This tool performs the user-state backup.
 - **LoadState.exe**: This tool performs the user-state restore.
-- **UsmtUtils.exe**: This tool supplements the functionality in ScanState.exe and LoadState.exe.
+- **UsmtUtils.exe**: This tool supplements the functionality in **ScanState.exe** and **LoadState.exe**.
 
 In addition to these tools, there are also XML templates that manage which data is migrated. You can customize the templates, or create new ones, to manage the backup process at a high level of detail. USMT uses the following terms for its templates:
 
 - **Migration templates**: The default templates in USMT.
 - **Custom templates**: Custom templates that you create.
-- **Config template**: An optional template called Config.xml which you can use to exclude or include components in a migration without modifying the other standard XML templates.
+- **Config template**: An optional template called **Config.xml** which you can use to exclude or include components in a migration without modifying the other standard XML templates.
 
-![A sample USMT migration file that will exclude .MP3 files on all local drives and include the folder C:\\Data and all its files, including its subdirectories and their files..](images/mdt-11-fig06.png)
+USMT supports capturing and restoring both data and settings from currently supported versions of Windows. It also supports migrating from a 32-bit operating system to a 64-bit operating system, but not the other way around. For example, you can use USMT to migrate from Windows 10 x86 to Windows 11 x64.
 
-A sample USMT migration file that will exclude .MP3 files on all local drives and include the folder C:\\Data and all its files, including its subdirectories and their files.
-
-USMT supports capturing data and settings from Windows Vista and later, and restoring the data and settings to Windows 7 and later (including Windows 10 in both cases). It also supports migrating from a 32-bit operating system to a 64-bit operating system, but not the other way around. For example, you can use USMT to migrate from Windows 7 x86 to Windows 10 x64.
-
-By default USMT migrates many settings, most of which are related to the user profile but also to Control Panel configurations, file types, and more. The default templates that are used in Windows 10 deployments are MigUser.xml and MigApp.xml. These two default templates migrate the following data and settings:
+By default USMT migrates many settings, most of which are related to the user profile but also to Control Panel configurations, file types, and more. The default templates that are used in Windows deployments are **MigUser.xml** and **MigApp.xml**. These two default templates migrate the following data and settings:
 
 - Folders from each profile, including those folders from user profiles, and shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
 
@@ -83,55 +86,46 @@ By default USMT migrates many settings, most of which are related to the user pr
     > The asterisk (`*`) stands for zero or more characters.
 
     > [!NOTE]
-    > The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) that Microsoft Office applications can use aren't migrated by default.
+    > The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) used by Microsoft Office applications aren't migrated by default.
 
-- Operating system component settings
+- Operating system component settings.
 
-- Application settings
+- Application settings.
 
-These settings are migrated by the default MigUser.xml and MigApp.xml templates. For more information, see [What does USMT migrate?](./usmt/usmt-what-does-usmt-migrate.md) For more general information on USMT, see [USMT technical reference](./usmt/usmt-reference.md).
+These settings are migrated by the default **MigUser.xml** and **MigApp.xml** templates. For more information, see [What does USMT migrate?](./usmt/usmt-what-does-usmt-migrate.md) For more general information on USMT, see [User State Migration Tool (USMT) overview](./usmt/usmt-overview.md).
 
-### Windows Imaging and Configuration Designer
+### Windows Configuration Designer
 
-Windows Imaging and Configuration Designer (Windows ICD) is a tool designed to assist with the creation of provisioning packages that can be used to dynamically configure a Windows device (PCs, tablets, and phones). This tool is useful for setting up new devices, without the need for reimaging the device with a custom image.
+Windows Configuration Designer is a tool designed to assist with the creation of provisioning packages that can be used to dynamically configure a Windows device. This tool is useful for setting up new devices without the need for reimaging the device with a custom image.
 
-![Windows Imaging and Configuration Designer.](images/windows-icd.png)
-
-Windows Imaging and Configuration Designer.
-
-For more information, see [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
+For more information, see [Provisioning packages for Windows](/windows/configuration/provisioning-packages/provisioning-packages).
 
 ### Windows System Image Manager (Windows SIM)
 
 Windows SIM is an authoring tool for Unattend.xml files. When using MDT and/or Configuration Manager, you don't need Windows SIM often because those systems automatically update the Unattend.xml file during the deployment, greatly simplifying the process overall.
 
-![Windows answer file opened in Windows SIM.](images/mdt-11-fig07.png)
-
-Windows answer file opened in Windows SIM.
-
-For more information, see [Windows System Image Manager Technical Reference]( https://go.microsoft.com/fwlink/p/?LinkId=619906).
+For more information, see [Windows System Image Manager Technical Reference](/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference).
 
 ### Volume Activation Management Tool (VAMT)
 
-If you don't use KMS, manage your MAKs centrally with the Volume Activation Management Tool (VAMT). Use this tool to install and manage product keys throughout the organization. VAMT can also activate on behalf of clients without internet access, acting as a MAK proxy.
+If not using [Key Management Services (KMS)](/windows-server/get-started/kms-client-activation-keys), Multiple Activation Keys (MAKs) can be centrally managed with the Volume Activation Management Tool (VAMT). Use this tool to install and manage product keys throughout the organization. VAMT can also activate on behalf of clients without internet access, acting as a MAK proxy.
 
-![The updated Volume Activation Management Tool.](images/mdt-11-fig08.png)
-
-The updated Volume Activation Management Tool.
-
-VAMT also can be used to create reports, switch from MAK to KMS, manage Active Directory-based activation, and manage Office 2010 and Office 2013 volume activation. VAMT also supports PowerShell (instead of the old command-line tool). For example, if you want to get information from the VAMT database, you can type:
+VAMT also can be used to create reports, switch from MAK to KMS, manage Active Directory-based activation, and manage Office volume activation. VAMT also supports PowerShell. For example, to get information from the VAMT database, enter:
 
 ```powershell
 Get-VamtProduct
 ```
 
-For more information on the VAMT, see [VAMT technical reference](./volume-activation/volume-activation-management-tool.md).
+For more information on the VAMT, see the following articles:
+
+- [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool).
+- [VAMT technical reference](./volume-activation/volume-activation-management-tool.md).
 
 ### Windows Preinstallation Environment (Windows PE)
 
-Windows PE is a "Lite" version of Windows 10 and was created to act as a deployment platform. Windows PE replaces the DOS or Linux boot disks that ruled the deployment solutions of the last decade.
+Windows PE is a "lite" version of Windows used as a deployment platform.
 
-The key thing to know about Windows PE is that, like the operating system, it needs drivers for at least network and storage devices in each PC. Luckily Windows PE includes the same drivers as the full Windows 10 operating system, which means much of your hardware will work out of the box.
+Windows PE is like any other operating system and it needs drivers. However, it doesn't need a full set of drivers. It only needs the drivers to deploy Windows. Normally this is just network and storage drivers. Luckily Windows PE includes the same drivers as the full Windows 10 operating system, which means much of your hardware will work out of the box.
 
 ![A machine booted with the Windows ADK default Windows PE boot image.](images/mdt-11-fig09.png)
 
@@ -179,7 +173,7 @@ MDT is a free deployment solution from Microsoft. It provides end-to-end guidanc
 
 MDT has two main parts: the first is Lite Touch, which is a stand-alone deployment solution; the second is Zero Touch, which is an extension to Configuration Manager.
 
-**Note**  
+**Note**
 Lite Touch and Zero Touch are marketing names for the two solutions that MDT supports, and the naming has nothing to do with automation. You can fully automate the stand-alone MDT solution (Lite Touch), and you can configure the solution integration with Configuration Manager to prompt for information.
 
 ![The Deployment Workbench in, showing a task sequence.](images/mdt-11-fig13.png)
