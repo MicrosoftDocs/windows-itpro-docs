@@ -79,6 +79,8 @@ items:
               href: update/media-dynamic-update.md
             - name: Migrating and acquiring optional Windows content
               href: update/optional-content.md
+            - name: Deploy feature updates for user-initiated installations
+              href: update/feature-update-user-install.md
             - name: Safeguard holds
               items:
                 - name: Safeguard holds
@@ -322,6 +324,8 @@ items:
           href: update/fod-and-lang-packs.md
         - name: Add fonts in Windows
           href: windows-missing-fonts.md
+        - name: Windows Updates using forward and reverse differentials
+          href: update/forward-reverse-differentials.md
 
     - name: Deployment tools
       items:
