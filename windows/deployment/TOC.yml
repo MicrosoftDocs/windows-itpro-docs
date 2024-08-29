@@ -1,10 +1,10 @@
 items:
-- name: Deploy and update Windows client
+- name: Deploy and update Windows
   href: index.yml
   items:
     - name: Get started
       items:
-        - name: Windows client deployment scenarios
+        - name: Windows deployment scenarios
           href: windows-deployment-scenarios.md
         - name: Quick guide to Windows as a service
           href: update/waas-quick-start.md
@@ -16,7 +16,7 @@ items:
           href: update/get-started-updates-channels-tools.md
         - name: Defining Windows update-managed devices
           href: update/update-managed-unmanaged-devices.md
-        - name: Prepare servicing strategy for Windows client updates
+        - name: Prepare servicing strategy for Windows updates
           href: update/waas-servicing-strategy-windows-10-updates.md
 
     - name: Plan
@@ -31,80 +31,62 @@ items:
           href: update/eval-infra-tools.md
         - name: Define your servicing strategy
           href: update/plan-define-strategy.md
-        - name: Delivery Optimization for Windows client updates
+        - name: Windows Update security
+          href: update/windows-update-security.md
+        - name: Windows upgrade and migration considerations
+          href: upgrade/windows-upgrade-and-migration-considerations.md
+        - name: Delivery Optimization for Windows updates
           href: do/waas-delivery-optimization.md?context=/windows/deployment/context/context
-          items:
-            - name: Using a proxy with Delivery Optimization
-              href: do/delivery-optimization-proxy.md?context=/windows/deployment/context/context
-            - name: Delivery Optimization client-service communication
-              href: do/delivery-optimization-workflow.md?context=/windows/deployment/context/context
         - name: Windows 10 deployment considerations
           href: planning/windows-10-deployment-considerations.md
         - name: Windows 10 infrastructure requirements
           href: planning/windows-10-infrastructure-requirements.md
-        - name: Plan for volume activation
-          href: volume-activation/plan-for-volume-activation-client.md
         - name: Windows compatibility cookbook
           href: /windows/compatibility/
-        - name: Features removed or planned for replacement
-          items:
-            - name: Windows client features lifecycle
-              href: /windows/whats-new/feature-lifecycle?context=/windows/deployment/context/context
-            - name: Deprecated features
-              href: /windows/whats-new/deprecated-features?context=/windows/deployment/context/context
-            - name: Resources for deprecated features
-              href: /windows/whats-new/deprecated-features-resources?context=/windows/deployment/context/context
-            - name: Removed features
-              href: /windows/whats-new/removed-features?context=/windows/deployment/context/context
     - name: Prepare
       items:
         - name: Prepare for Windows 11
           href: /windows/whats-new/windows-11-prepare?context=/windows/deployment/context/context
-        - name: Prepare to deploy Windows client updates
+        - name: Prepare to deploy Windows updates
           href: update/prepare-deploy-windows.md
         - name: Evaluate and update infrastructure
           href: update/update-policies.md
-        - name: Update Baseline
+        - name: Update baseline
           href: update/update-baseline.md
-        - name: Set up Delivery Optimization for Windows client updates
+        - name: Set up Delivery Optimization for Windows updates
           href: do/delivery-optimization-configure.md?context=/windows/deployment/context/context
-        - name: Configure BranchCache for Windows client updates
+        - name: Configure BranchCache for Windows updates
           href: update/waas-branchcache.md
         - name: Prepare for deployment with Configuration Manager
           href: /previous-versions/windows/it-pro/windows-10/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager
-        - name: Build a successful servicing strategy
-          items:
-            - name: Check release health
-              href: update/check-release-health.md
-            - name: Prepare updates using Windows Update for Business
-              href: update/waas-manage-updates-wufb.md
-            - name: Prepare updates using WSUS
-              href: update/waas-manage-updates-wsus.md
-
+        - name: Check release health
+          href: update/check-release-health.md
     - name: Deploy
       items:
-        - name: Deploy Windows client
+        - name: Deploy Windows
           items:
-            - name: Deploy Windows client with Autopilot
+            - name: Deploy Windows with Autopilot
               href: /autopilot/
             - name: Windows deployment scenarios and tools
               href: windows-deployment-scenarios-and-tools.md
-        - name: Deploy Windows client updates
+        - name: Deploy Windows updates
           items:
             - name: Assign devices to servicing channels
               href: update/waas-servicing-channels-windows-10-updates.md
             - name: Deploy updates with WSUS
               href: update/waas-manage-updates-wsus.md
-            - name: Deploy updates with Group Policy
-              href: update/waas-wufb-group-policy.md
-            - name: Deploy updates using CSPs and MDM
-              href: update/waas-wufb-csp-mdm.md
-            - name: Update Windows client media with Dynamic Update
+            - name: Update Windows media with dynamic update
               href: update/media-dynamic-update.md
             - name: Migrating and acquiring optional Windows content
               href: update/optional-content.md
+            - name: Deploy feature updates for user-initiated installations
+              href: update/feature-update-user-install.md
             - name: Safeguard holds
-              href: update/safeguard-holds.md
+              items:
+                - name: Safeguard holds
+                  href: update/safeguard-holds.md
+                - name: Opt out of safeguard holds
+                  href: update/safeguard-opt-out.md
             - name: Manage the Windows client update experience
               items:
                 - name: Manage device restarts after updates
@@ -123,7 +105,7 @@ items:
               href: update/wufb-compliancedeadlines.md
             - name: Integrate Windows Update for Business with management solutions
               href: update/waas-integrate-wufb.md
-            - name: 'Walkthrough: use Group Policy to configure Windows Update for Business'
+            - name: Use group policy to configure Windows Update for Business
               href: update/waas-wufb-group-policy.md
             - name: Deploy updates using CSPs and MDM
               href: update/waas-wufb-csp-mdm.md
@@ -235,59 +217,57 @@ items:
           href: volume-activation/vamt-known-issues.md
     - name: Monitor
       items:
-      - name: Windows Update for Business reports
+      - name: Windows Update for Business reports overview
+        href: update/wufb-reports-overview.md
+      - name: Enable Windows Update for Business reports
         items:
-        - name: Windows Update for Business reports overview
-          href: update/wufb-reports-overview.md
+        - name: Windows Update for Business reports prerequisites
+          href: update/wufb-reports-prerequisites.md
         - name: Enable Windows Update for Business reports
-          items:
-          - name: Windows Update for Business reports prerequisites
-            href: update/wufb-reports-prerequisites.md
-          - name: Enable Windows Update for Business reports
-            href: update/wufb-reports-enable.md
-          - name: Configure clients with a script
-            href: update/wufb-reports-configuration-script.md
-          - name: Configure clients manually
-            href: update/wufb-reports-configuration-manual.md
-          - name: Configure clients with Microsoft Intune
-            href: update/wufb-reports-configuration-intune.md
-        - name: Use Windows Update for Business reports
-          items:
-          - name: Windows Update for Business reports workbook
-            href: update/wufb-reports-workbook.md
-          - name: Delivery Optimization data in reports
-            href: update/wufb-reports-do.md
-          - name: Software updates in the Microsoft 365 admin center
-            href: update/wufb-reports-admin-center.md
-          - name: Use Windows Update for Business reports data
-            href: update/wufb-reports-use.md
-          - name: FAQ for Windows Update for Business reports
-            href: update/wufb-reports-faq.yml
-          - name: Feedback and support
-            href: update/wufb-reports-help.md
+          href: update/wufb-reports-enable.md
+        - name: Configure clients with a script
+          href: update/wufb-reports-configuration-script.md
+        - name: Configure clients manually
+          href: update/wufb-reports-configuration-manual.md
+        - name: Configure clients with Microsoft Intune
+          href: update/wufb-reports-configuration-intune.md
+      - name: Use Windows Update for Business reports
+        items:
+        - name: Windows Update for Business reports workbook
+          href: update/wufb-reports-workbook.md
+        - name: Delivery Optimization data in reports
+          href: update/wufb-reports-do.md
+        - name: Software updates in the Microsoft 365 admin center
+          href: update/wufb-reports-admin-center.md
+        - name: Use Windows Update for Business reports data
+          href: update/wufb-reports-use.md
+        - name: FAQ for Windows Update for Business reports
+          href: update/wufb-reports-faq.yml
+        - name: Feedback and support
+          href: update/wufb-reports-help.md
+      - name: Windows Update for Business reports schema reference
+        items:
         - name: Windows Update for Business reports schema reference
-          items:
-          - name: Windows Update for Business reports schema reference
-            href: update/wufb-reports-schema.md
-          - name: UCClient
-            href: update/wufb-reports-schema-ucclient.md
-          - name: UCClientReadinessStatus
-            href: update/wufb-reports-schema-ucclientreadinessstatus.md
-          - name: UCClientUpdateStatus
-            href: update/wufb-reports-schema-ucclientupdatestatus.md
-          - name: UCDeviceAlert
-            href: update/wufb-reports-schema-ucdevicealert.md
-          - name: UCDOAggregatedStatus
-            href: update/wufb-reports-schema-ucdoaggregatedstatus.md
-          - name: UCDOStatus
-            href: update/wufb-reports-schema-ucdostatus.md
-          - name: UCServiceUpdateStatus
-            href: update/wufb-reports-schema-ucserviceupdatestatus.md
-          - name: UCUpdateAlert
-            href: update/wufb-reports-schema-ucupdatealert.md
-          - name: Enumerated types
-            href: update/wufb-reports-schema-enumerated-types.md
-    - name: Troubleshooting
+          href: update/wufb-reports-schema.md
+        - name: UCClient
+          href: update/wufb-reports-schema-ucclient.md
+        - name: UCClientReadinessStatus
+          href: update/wufb-reports-schema-ucclientreadinessstatus.md
+        - name: UCClientUpdateStatus
+          href: update/wufb-reports-schema-ucclientupdatestatus.md
+        - name: UCDeviceAlert
+          href: update/wufb-reports-schema-ucdevicealert.md
+        - name: UCDOAggregatedStatus
+          href: update/wufb-reports-schema-ucdoaggregatedstatus.md
+        - name: UCDOStatus
+          href: update/wufb-reports-schema-ucdostatus.md
+        - name: UCServiceUpdateStatus
+          href: update/wufb-reports-schema-ucserviceupdatestatus.md
+        - name: UCUpdateAlert
+          href: update/wufb-reports-schema-ucupdatealert.md
+        - name: Enumerated types
+          href: update/wufb-reports-schema-enumerated-types.md
+    - name: Troubleshoot
       items:
       - name: Resolve upgrade errors
         items:
@@ -303,28 +283,20 @@ items:
           href: upgrade/windows-error-reporting.md
         - name: Upgrade error codes
           href: /troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?context=/windows/deployment/context/context
-        - name: Log files
+        - name: Upgrade log files
           href: upgrade/log-files.md
         - name: Resolution procedures
           href: /troubleshoot/windows-client/deployment/windows-10-upgrade-resolution-procedures?context=/windows/deployment/context/context
-        - name: Submit Windows client upgrade errors
+        - name: Submit Windows upgrade errors
           href: upgrade/submit-errors.md
       - name: Troubleshoot Windows Update
         items:
         - name: How to troubleshoot Windows Update
           href: /troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?context=/windows/deployment/context/context
-        - name: Opt out of safeguard holds
-          href: update/safeguard-opt-out.md
-        - name: Determine the source of Windows Updates
-          href: ./update/how-windows-update-works.md
-        - name: Windows Update security
-          href: ./update/windows-update-security.md
         - name: Common Windows Update errors
           href: /troubleshoot/windows-client/deployment/common-windows-update-errors?context=/windows/deployment/context/context
         - name: Windows Update error code reference
           href: update/windows-update-error-reference.md
-        - name: Troubleshoot the Windows Update for Business deployment service
-          href: update/deployment-service-troubleshoot.md
 
     - name: Reference
       items:
@@ -338,142 +310,138 @@ items:
           href: deploy-m365.md
         - name: Understand the Unified Update Platform
           href: update/windows-update-overview.md
+        - name: Windows Update log files
+          href: update/windows-update-logs.md
         - name: Servicing stack updates
           href: update/servicing-stack-updates.md
         - name: Update CSP policies
           href: /windows/client-management/mdm/policy-csp-update?context=/windows/deployment/context/context
-        - name: Additional Windows Update settings
-          href: update/waas-wu-settings.md
         - name: Update other Microsoft products
           href: update/update-other-microsoft-products.md
         - name: Delivery Optimization reference
           href: do/waas-delivery-optimization-reference.md?context=/windows/deployment/context/context
-        - name: FoD and language packs for WSUS and Configuration Manager
+        - name: Features on Demand and language packs
           href: update/fod-and-lang-packs.md
-        - name: Windows client deployment tools
-          items:
-            - name: Windows client deployment scenarios and tools
-              items:
-                - name: Windows Deployment Services (WDS) boot.wim support
-                  href: wds-boot-support.md
-                - name: Convert MBR partition to GPT
-                  href: mbr-to-gpt.md
-                - name: Configure a PXE server to load Windows PE
-                  href: configure-a-pxe-server-to-load-windows-pe.md
-                - name: Windows ADK for Windows 10 scenarios for IT Pros
-                  href: windows-adk-scenarios-for-it-pros.md
-                - name: User State Migration Tool (USMT) technical reference
-                  items:
-                    - name: USMT overview articles
-                      items:
-                        - name: USMT overview
-                          href: usmt/usmt-overview.md
-                        - name: Getting started with the USMT
-                          href: usmt/getting-started-with-the-user-state-migration-tool.md
-                        - name: Windows upgrade and migration considerations
-                          href: upgrade/windows-upgrade-and-migration-considerations.md
-                    - name: USMT How-to articles
-                      items:
-                        - name: Exclude Files and Settings
-                          href: usmt/usmt-exclude-files-and-settings.md
-                        - name: Extract Files from a Compressed USMT Migration Store
-                          href: usmt/usmt-extract-files-from-a-compressed-migration-store.md
-                        - name: Include Files and Settings
-                          href: usmt/usmt-include-files-and-settings.md
-                        - name: Migrate Application Settings
-                          href: usmt/migrate-application-settings.md
-                        - name: Migrate EFS Files and Certificates
-                          href: usmt/usmt-migrate-efs-files-and-certificates.md
-                        - name: Migrate User Accounts
-                          href: usmt/usmt-migrate-user-accounts.md
-                        - name: Reroute Files and Settings
-                          href: usmt/usmt-reroute-files-and-settings.md
-                        - name: Verify the Condition of a Compressed Migration Store
-                          href: usmt/verify-the-condition-of-a-compressed-migration-store.md
-
-                    - name: USMT Reference
-                      items:
-                        - name: USMT Requirements
-                          href: usmt/usmt-requirements.md
-                        - name: USMT Best Practices
-                          href: usmt/usmt-best-practices.md
-                        - name: How USMT Works
-                          href: usmt/usmt-how-it-works.md
-                        - name: Plan Your Migration
-                          href: usmt/usmt-plan-your-migration.md
-                        - name: Common Migration Scenarios
-                          href: usmt/usmt-common-migration-scenarios.md
-                        - name: What Does USMT Migrate?
-                          href: usmt/usmt-what-does-usmt-migrate.md
-                        - name: Choose a Migration Store Type
-                          href: usmt/usmt-choose-migration-store-type.md
-                        - name: Migration Store Types Overview
-                          href: usmt/migration-store-types-overview.md
-                        - name: Estimate Migration Store Size
-                          href: usmt/usmt-estimate-migration-store-size.md
-                        - name: Hard-Link Migration Store
-                          href: usmt/usmt-hard-link-migration-store.md
-                        - name: Migration Store Encryption
-                          href: usmt/usmt-migration-store-encryption.md
-                        - name: Determine What to Migrate
-                          href: usmt/usmt-determine-what-to-migrate.md
-                        - name: Identify users
-                          href: usmt/usmt-identify-users.md
-                        - name: Identify Applications Settings
-                          href: usmt/usmt-identify-application-settings.md
-                        - name: Identify Operating System Settings
-                          href: usmt/usmt-identify-operating-system-settings.md
-                        - name: Identify File Types, Files, and Folders
-                          href: usmt/usmt-identify-file-types-files-and-folders.md
-                        - name: Test Your Migration
-                          href: usmt/usmt-test-your-migration.md
-                        - name: USMT Command-line Syntax
-                          href: usmt/usmt-command-line-syntax.md
-                        - name: ScanState Syntax
-                          href: usmt/usmt-scanstate-syntax.md
-                        - name: LoadState Syntax
-                          href: usmt/usmt-loadstate-syntax.md
-                        - name: UsmtUtils Syntax
-                          href: usmt/usmt-utilities.md
-                        - name: USMT XML Reference
-                          href: usmt/usmt-xml-reference.md
-                        - name: Understanding Migration XML Files
-                          href: usmt/understanding-migration-xml-files.md
-                        - name: Config.xml File
-                          href: usmt/usmt-configxml-file.md
-                        - name: Customize USMT XML Files
-                          href: usmt/usmt-customize-xml-files.md
-                        - name: Custom XML Examples
-                          href: usmt/usmt-custom-xml-examples.md
-                        - name: Conflicts and Precedence
-                          href: usmt/usmt-conflicts-and-precedence.md
-                        - name: General Conventions
-                          href: usmt/usmt-general-conventions.md
-                        - name: XML File Requirements
-                          href: usmt/xml-file-requirements.md
-                        - name: Recognized Environment Variables
-                          href: usmt/usmt-recognized-environment-variables.md
-                        - name: XML Elements Library
-                          href: usmt/usmt-xml-elements-library.md
-                        - name: Offline Migration Reference
-                          href: usmt/offline-migration-reference.md
-
-                    - name: Troubleshoot USMT
-                      items:
-                        - name: USMT Troubleshooting
-                          href: usmt/usmt-troubleshooting.md
-                        - name: USMT Common Issues
-                          href: /troubleshoot/windows-client/deployment/usmt-common-issues
-                        - name: USMT Frequently Asked Questions
-                          href: usmt/usmt-faq.yml
-                        - name: USMT Log Files
-                          href: usmt/usmt-log-files.md
-                        - name: USMT Return Codes
-                          href: /troubleshoot/windows-client/deployment/usmt-return-codes
-                        - name: USMT Resources
-                          href: usmt/usmt-resources.md
-
         - name: Add fonts in Windows
           href: windows-missing-fonts.md
+        - name: Windows Updates using forward and reverse differentials
+          href: update/forward-reverse-differentials.md
+
+    - name: Deployment tools
+      items:
         - name: Customize Windows PE boot images
           href: customize-boot-image.md
+        - name: Convert MBR partition to GPT
+          href: mbr-to-gpt.md
+        - name: Configure a PXE server to load Windows PE
+          href: configure-a-pxe-server-to-load-windows-pe.md
+        - name: Windows Deployment Services (WDS) boot.wim support
+          href: wds-boot-support.md
+        - name: Windows ADK for Windows 10 scenarios for IT Pros
+          href: windows-adk-scenarios-for-it-pros.md
+        - name: User State Migration Tool (USMT) technical reference
+          items:
+            - name: USMT overview articles
+              items:
+                - name: USMT overview
+                  href: usmt/usmt-overview.md
+                - name: Getting started with the USMT
+                  href: usmt/getting-started-with-the-user-state-migration-tool.md
+            - name: USMT How-to articles
+              items:
+                - name: Exclude Files and Settings
+                  href: usmt/usmt-exclude-files-and-settings.md
+                - name: Extract Files from a Compressed USMT Migration Store
+                  href: usmt/usmt-extract-files-from-a-compressed-migration-store.md
+                - name: Include Files and Settings
+                  href: usmt/usmt-include-files-and-settings.md
+                - name: Migrate Application Settings
+                  href: usmt/migrate-application-settings.md
+                - name: Migrate EFS Files and Certificates
+                  href: usmt/usmt-migrate-efs-files-and-certificates.md
+                - name: Migrate User Accounts
+                  href: usmt/usmt-migrate-user-accounts.md
+                - name: Reroute Files and Settings
+                  href: usmt/usmt-reroute-files-and-settings.md
+                - name: Verify the Condition of a Compressed Migration Store
+                  href: usmt/verify-the-condition-of-a-compressed-migration-store.md
+            - name: USMT Reference
+              items:
+                - name: USMT Requirements
+                  href: usmt/usmt-requirements.md
+                - name: USMT Best Practices
+                  href: usmt/usmt-best-practices.md
+                - name: How USMT Works
+                  href: usmt/usmt-how-it-works.md
+                - name: Plan Your Migration
+                  href: usmt/usmt-plan-your-migration.md
+                - name: Common Migration Scenarios
+                  href: usmt/usmt-common-migration-scenarios.md
+                - name: What Does USMT Migrate?
+                  href: usmt/usmt-what-does-usmt-migrate.md
+                - name: Choose a Migration Store Type
+                  href: usmt/usmt-choose-migration-store-type.md
+                - name: Migration Store Types Overview
+                  href: usmt/migration-store-types-overview.md
+                - name: Estimate Migration Store Size
+                  href: usmt/usmt-estimate-migration-store-size.md
+                - name: Hard-Link Migration Store
+                  href: usmt/usmt-hard-link-migration-store.md
+                - name: Migration Store Encryption
+                  href: usmt/usmt-migration-store-encryption.md
+                - name: Determine What to Migrate
+                  href: usmt/usmt-determine-what-to-migrate.md
+                - name: Identify users
+                  href: usmt/usmt-identify-users.md
+                - name: Identify Applications Settings
+                  href: usmt/usmt-identify-application-settings.md
+                - name: Identify Operating System Settings
+                  href: usmt/usmt-identify-operating-system-settings.md
+                - name: Identify File Types, Files, and Folders
+                  href: usmt/usmt-identify-file-types-files-and-folders.md
+                - name: Test Your Migration
+                  href: usmt/usmt-test-your-migration.md
+                - name: USMT Command-line Syntax
+                  href: usmt/usmt-command-line-syntax.md
+                - name: ScanState Syntax
+                  href: usmt/usmt-scanstate-syntax.md
+                - name: LoadState Syntax
+                  href: usmt/usmt-loadstate-syntax.md
+                - name: UsmtUtils Syntax
+                  href: usmt/usmt-utilities.md
+                - name: USMT XML Reference
+                  href: usmt/usmt-xml-reference.md
+                - name: Understanding Migration XML Files
+                  href: usmt/understanding-migration-xml-files.md
+                - name: Config.xml File
+                  href: usmt/usmt-configxml-file.md
+                - name: Customize USMT XML Files
+                  href: usmt/usmt-customize-xml-files.md
+                - name: Custom XML Examples
+                  href: usmt/usmt-custom-xml-examples.md
+                - name: Conflicts and Precedence
+                  href: usmt/usmt-conflicts-and-precedence.md
+                - name: General Conventions
+                  href: usmt/usmt-general-conventions.md
+                - name: XML File Requirements
+                  href: usmt/xml-file-requirements.md
+                - name: Recognized Environment Variables
+                  href: usmt/usmt-recognized-environment-variables.md
+                - name: XML Elements Library
+                  href: usmt/usmt-xml-elements-library.md
+                - name: Offline Migration Reference
+                  href: usmt/offline-migration-reference.md
+            - name: Troubleshoot USMT
+              items:
+                - name: USMT Troubleshooting
+                  href: usmt/usmt-troubleshooting.md
+                - name: USMT Common Issues
+                  href: /troubleshoot/windows-client/deployment/usmt-common-issues
+                - name: USMT Frequently Asked Questions
+                  href: usmt/usmt-faq.yml
+                - name: USMT Log Files
+                  href: usmt/usmt-log-files.md
+                - name: USMT Return Codes
+                  href: /troubleshoot/windows-client/deployment/usmt-return-codes
+                - name: USMT Resources
+                  href: usmt/usmt-resources.md

@@ -2477,7 +2477,7 @@
     },
     {
       "source_path": "windows/deploy/windows-10-upgrade-paths.md",
-      "redirect_url": "/windows/deployment/upgrade/windows-10-upgrade-paths",
+      "redirect_url": "/windows/deployment/upgrade/windows-upgrade-paths",
       "redirect_document_id": false
     },
     {

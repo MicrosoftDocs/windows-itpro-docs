@@ -1,6 +1,6 @@
 ---
 title: Windows Updates using forward and reverse differentials
-description: A technique to produce compact software updates optimized for any origin and destination revision pair
+description: A technique to produce compact software updates optimized for any origin and destination revision pair.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: reference
@@ -8,7 +8,7 @@ author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 08/21/2021
@@ -29,7 +29,7 @@ technique to build compact software update packages that are applicable to any
 revision of the base version, and then describe how Windows quality updates
 use this technique.
 
-## General Terms
+## General terms
 
 The following general terms apply throughout this document:
 
@@ -76,7 +76,7 @@ The flip side of express download is that the size of PSF files can be large dep
 
 In the following sections, we describe how quality updates use this technique based on forward and reverse differentials for newer releases of Windows  and Windows Server to overcome the challenges with express downloads.
 
-## High-level Design
+## High-level design
 
 ### Update packaging
 
@@ -86,7 +86,7 @@ There can be cases where new files are added to the system during servicing. The
 
 ![Outer box labeled .msu containing two sub-boxes: 1) Applicability Logic, 2) box labeled .cab containing four sub-boxes: 1) update metadata, 2) content manifests, 3) delta sub RTM transform to sub N (file 1, file2, etc.), and 4) delta sub N transform to RTM (file 1, file 2, etc.).](images/PSF4.png)
 
-### Hydration and installation 
+### Hydration and installation
 
 Once the usual applicability checks are performed on the update package and are determined to be applicable, the Windows component servicing infrastructure hydrates the full files during preinstallation and then proceeds with the usual installation process.
 
@@ -98,7 +98,7 @@ Below is a high-level sequence of activities that the component servicing infras
 - Resolve any dependencies and install components.
 - Clean up older state (V<sub>N-1</sub>); the previous state V<sub>N</sub> is retained for uninstallation and restoration or repair.
 
-### **Resilient Hydration**
+### Resilient hydration
 
 To ensure resiliency against component store corruption or missing files that could occur due to susceptibility of certain types of hardware to file system corruption, a corruption repair service has been traditionally used to recover the component store automatically (automatic corruption repair) or on demand (manual corruption repair) using an online or local repair source. This service will continue to offer the ability to repair and recover content for hydration and successfully install an update, if needed.
 
