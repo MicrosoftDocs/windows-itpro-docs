@@ -37,6 +37,10 @@ This policy setting decides if hibernate on the machine is allowed or not. Suppo
 
 <!-- AllowHibernate-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This policy does not override **powercfg** configuration and has no effect on the device if Hibernate is disabled using either of the following methods:
+> - Running the command `powercfg /hibernate off`.
+> - Modifying the **HibernateEnabled** value to **0** in the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power` registry key.
 <!-- AllowHibernate-Editable-End -->
 
 <!-- AllowHibernate-DFProperties-Begin -->
