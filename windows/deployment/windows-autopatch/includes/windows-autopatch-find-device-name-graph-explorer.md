@@ -1,16 +1,16 @@
 ---
-author: mestew
-ms.author: mstewart
+author: tiaraquan
+ms.author: tiaraquan
 manager: aaroncz
-ms.subservice: itpro-updates
 ms.service: windows-client
+ms.subservice: autopatch
 ms.topic: include
-ms.date: 02/14/2023
+ms.date: 09/16/2024
 ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
 
-Use the [device](/graph/api/resources/device) resource type to find clients to enroll into the deployment service. Change the query parameters to fit your specific needs. For more information, see [Use query parameters](/graph/query-parameters).
+Use the [device](/graph/api/resources/device) resource type to find clients to enroll into Windows Autopatch. Change the query parameters to fit your specific needs. For more information, see [Use query parameters](/graph/query-parameters).
 
 - Displays the **AzureAD Device ID** and **Name** of all devices:
 

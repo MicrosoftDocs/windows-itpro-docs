@@ -1,7 +1,7 @@
 ---
 title: Quality update status report
-description: Provides a per device view of the current update status for all Windows Autopatch enrolled devices.
-ms.date: 07/08/2024
+description: Provides a per device view of the current update status for all Windows Autopatch managed devices.
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -17,7 +17,9 @@ ms.collection:
 
 # Quality update status report
 
-The Quality update status report provides a per device view of the current update status for all Windows Autopatch enrolled devices.
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
+
+The Quality update status report provides a per device view of the current update status for all Windows Autopatch managed devices.
 
 **To view the Quality update status report:**
 
@@ -53,7 +55,7 @@ The following information is available as optional columns in the Quality update
 | ----- | ----- |
 | Microsoft Entra device ID | The current Microsoft Entra ID recorded device ID for the device |
 | Serial number | The current Intune recorded serial number for the device |
-| Intune last check in time | The last time the device checked in to Intune |
+| Intune last check-in time | The last time the device checked in to Intune |
 | Service State | The Service State provided from Windows Update |
 | Service Substate | The Service Substate provided from Windows Update |
 | Client State | The Client State provided from Windows Update |
@@ -75,7 +77,7 @@ The following options are available:
 
 | Option | Description |
 | ----- | ----- |
-| Search | Use to search by device name, Microsoft Entra device ID or serial number |
+| Search | Use to search by device name, Microsoft Entra device ID, or serial number |
 | Sort | Select the **column headings** to sort the report data in ascending and descending order. |
 | Export | Select **Export devices** at the top of the page to export data from this report into a CSV file. |
 | Filter | Select either the **Add filters** or at the top of the report to filter the results. |

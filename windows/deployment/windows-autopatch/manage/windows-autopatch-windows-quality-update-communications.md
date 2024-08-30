@@ -1,7 +1,7 @@
 ---
 title: Windows quality update communications
 description: This article explains Windows quality update communications
-ms.date: 07/08/2024
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: concept-article
@@ -16,6 +16,8 @@ ms.collection:
 ---
 
 # Windows quality update communications
+
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
 There are three categories of communication that are sent out during a Windows quality and feature update:
 
@@ -35,7 +37,7 @@ Communications are posted to, as appropriate for the type of communication, to t
 
 | Communication | Location | Timing | Description |
 | ----- | ----- |  ----- | ----- |
-| Release schedule | <ul><li>Messages blade</li><li>Email sent to your specified [admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><ul> | At least seven days prior to the second Tuesday of the month| Notification of the planned release window for each ring. |
+| Release schedule | <ul><li>Messages blade</li><li>Email sent to your specified [admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><ul> | At least seven days before the second Tuesday of the month| Notification of the planned release window for each ring. |
 | Release start | Same as release schedule | The second Tuesday of every month. | Notification that the update is now being released into your environment. |
 | Release summary | Same as release schedule | The fourth Tuesday of every month. | Informs you of the percentage of eligible devices that were patched during the release. |
 
@@ -56,10 +58,10 @@ If you don't want to receive standard communications for Windows Updates release
 
 The most common type of communication during a release is a customer advisory. Customer advisories are posted to both Message center and the Messages blade of the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) shortly after Autopatch becomes aware of the new information.
 
-There are some circumstances where Autopatch will need to change the release schedule based on new information.
+There are some circumstances where Autopatch needs to change the release schedule based on new information.
 
-For example, new threat intelligence may require us to expedite a release, or we may pause due to user experience concerns. If the schedule of a quality update is changed, paused, resumed, or expedited, we'll inform you as quickly as possible so that you can adapt to the new information.
+For example, new threat intelligence might require us to expedite a release, or we might pause due to user experience concerns. If the schedule of a quality update is changed, paused, resumed, or expedited, we inform you as quickly as possible so that you can adapt to the new information.
 
 ## Incident communications
 
-Despite the best intentions, every service should plan for failure and success. When there's an incident, timely and transparent communication is key to building and maintaining your trust. If insufficient numbers of devices have been updated to meet the service level objective, devices will experience an interruption to productivity, and an incident will be raised. Microsoft will update the status of the incident at least once every 24 hours.
+Despite the best intentions, every service should plan for failure and success. When there's an incident, timely and transparent communication is key to building and maintaining your trust. If insufficient numbers of devices are updated to meet the service level objective, devices experience an interruption to productivity, and an incident are raised. Microsoft updates the status of the incident at least once every 24 hours.
