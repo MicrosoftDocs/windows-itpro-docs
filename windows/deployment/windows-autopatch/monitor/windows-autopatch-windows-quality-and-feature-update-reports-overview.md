@@ -78,7 +78,7 @@ Each status has its own set of sub statuses to further describe the status.
 Up to date devices are devices that meet all of the following prerequisites:
 
 - [Prerequisites](../prepare/windows-autopatch-prerequisites.md)
-- [Prerequisites for device registration](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration)
+- [Prerequisites for device registration](../deploy/windows-autopatch-device-registration-overview.md#prerequisites-for-device-registration)
 - [Windows quality and feature update device readiness](../deploy/windows-autopatch-post-reg-readiness-checks.md)
 - [Post-device readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md)
 - Applied the current monthly cumulative updates
