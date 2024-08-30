@@ -68,7 +68,7 @@ This article outlines the general process to follow to migrate files and setting
 1. To collect files and settings, run the `ScanState.exe` command on the source computer. All of the **.xml** files that the `ScanState.exe` command needs to use should be specified. For example,
 
      ```cmd
-        ScanState.exe \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log
+     ScanState.exe \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log
      ```
 
      > [!NOTE]
