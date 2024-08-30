@@ -6,7 +6,7 @@ ms.author: frankroj
 author: frankroj
 ms.service: windows-client
 ms.topic: conceptual
-ms.date: 08/28/2024
+ms.date: 08/30/2024
 ms.subservice: itpro-deploy
 ---
 
@@ -110,7 +110,7 @@ For more information, see [Windows System Image Manager Technical Reference](/wi
 
 If not using [Key Management Services (KMS)](/windows-server/get-started/kms-client-activation-keys), Multiple Activation Keys (MAKs) can be centrally managed with the Volume Activation Management Tool (VAMT). Use this tool to install and manage product keys throughout the organization. VAMT can also activate on behalf of clients without internet access, acting as a MAK proxy.
 
-VAMT also can be used to create reports, switch from MAK to KMS, manage Active Directory-based activation, and manage Office volume activation. VAMT also supports PowerShell. For example, to get information from the VAMT database, enter:
+VAMT can also be used to create reports, switch from MAK to KMS, manage Active Directory-based activation, and manage Office volume activation. VAMT also supports PowerShell. For example, to get information from the VAMT database, enter:
 
 ```powershell
 Get-VamtProduct
@@ -145,15 +145,15 @@ The main functions of Windows Deployment Services (WDS) are:
 
 The following considerations should be observed when using WDS for operating system deployment:
 
-- WDS can be configured for stand-alone mode or for Active Directory integration. Active Directory integration mode is the recommended option in most scenarios.
+- WDS can be configured for stand-alone mode or for Active Directory integration. Active Directory integration mode is recommended in most scenarios.
 
-- WDS has the capability to manage drivers. However, driver management through Microsoft Configuration Manager is more suitable for deployment due to the flexibility offered by Microsoft Configuration Manager.
+- WDS has the capability to manage drivers. However, driver management through Microsoft Configuration Manager is more suitable for deployment due to its flexibility.
 
-- WDS can pre-stage unknown devices as a known computer in Active Directory. However, Microsoft Configuration Manager also has the capability of staging unknown devices as known devices in it's database. In most scenarios, Microsoft Configuration Manager is a better solution for pre-staging devices since Microsoft Configuration Manager allows greater control and management.
+- WDS can pre-stage unknown devices as a known computer in Active Directory. However, Microsoft Configuration Manager also has the capability of staging unknown devices as known devices in it's database. In most scenarios, Microsoft Configuration Manager is a better solution for pre-staging devices since it allows greater control and management.
 
 - Trivial File Transfer Protocol (TFTP) block size and windows size settings can be configured with WDS to increase performance and download speeds during PXE booting. However, although an increase in TFTP settings can increase performance and download speeds, it can also decrease reliability and cause failures, including a reduction of download speeds. There are many variables involved when determining TFTP settings, including networking equipment, network configuration, and device compatibility.
 
-For stand-alone WDS, TFTP settings can be configured in the WDS console under the **TFTP** tab in the properties of the WDS server. For Microsoft Configuration manager, see [Customize the RamDisk TFTP block and window sizes on PXE-enabled distribution points](/mem/configmgr/osd/get-started/prepare-site-system-roles-for-operating-system-deployments#customize-the-ramdisk-tftp-block-and-window-sizes-on-pxe-enabled-distribution-points).
+    For stand-alone WDS, TFTP settings can be configured in the WDS console under the **TFTP** tab in the properties of the WDS server. For Microsoft Configuration manager, see [Customize the RamDisk TFTP block and window sizes on PXE-enabled distribution points](/mem/configmgr/osd/get-started/prepare-site-system-roles-for-operating-system-deployments#customize-the-ramdisk-tftp-block-and-window-sizes-on-pxe-enabled-distribution-points).
 
 ## Windows Server Update Services
 
@@ -163,14 +163,9 @@ For more information on WSUS, see the [Windows Server Update Services (WSUS)](/w
 
 ## Unified Extensible Firmware Interface
 
-Unified Extensible Firmware Interface (**UEFI**) is used to initialize and boot a device. It's the successor for BIOS that was the method used for many years to initialize and boot a device. However, BIOS had several limitations including:
+Unified Extensible Firmware Interface (**UEFI**) is used to initialize and boot a device. It's the successor for BIOS, the method used for many years to initialize and boot a device.
 
 This section will go over the advantages of UEFI over BIOS, how the two differ, and now it affects operating system deployment.
-
-- 16-bit code
-- 1-MB address space
-- Poor performance on ROM initialization
-- MBR maximum bootable disk size of 2.2 TB
 
 ### Introduction to UEFI
 
@@ -181,21 +176,21 @@ Although BIOS was used successfully on devices for many years, it has some limit
 - Poor performance on ROM initialization
 - MBR maximum bootable disk size of 2.2 TB
 
-As the replacement to BIOS, UEFI has many features that Windows uses. UEFI has the following features not available in BIOS:
+As the replacement to BIOS, UEFI has many features BIOS doesn't have. Windows can take advantage of many of these UEFI features. UEFI has the following features not available in BIOS:
 
-- **Support for large disks** - UEFI requires a GUID Partition Table (GPT) based disk GPT supports can support disks up to approximately 16.8 million TB in disk size and more than 100 primary disks.
+- **Support for large disks** - UEFI requires a GUID Partition Table (GPT) based disk. GPT can support disks up to approximately 16.8 million TB in disk size. GPT also supports more than 100 primary disks.
 
-- **Faster boot time** - UEFI replaces interrupt call INT 13h that is available BIOS, improving boot time, especially when resuming from hibernate.
+- **Faster boot time** - UEFI replaces BIOS interrupt call INT 13h, improving boot time, especially when resuming from hibernate.
 
 - **Multicast deployment** - UEFI firmware can use multicast directly when it boots up. With solutions such as WDS and Microsoft Configuration Manager, multicast support is only available by first booting into Windows PE. With UEFI, multicast can run directly from UEFI.
 
-- **Compatibility with earlier BIOS** - Older devices with UEFI had a UEFI implementation that included a compatibility support module (CSM) that emulates BIOS. Due to the current wide support of UEFI, modern devices don't have CSM and therefore aren't backward compatible with BIOS. For example, Windows 11 only supports modern devices since it doesn't support BIOS and only supports UEFI.
+- **Compatibility with earlier BIOS** - Older devices with UEFI had a UEFI implementation that included a compatibility support module (CSM) that emulates BIOS. However, due to the current wide support of UEFI, modern devices generally don't have a CSM and therefore aren't backward compatible with BIOS. For example, Windows 11 and newer doesn't support BIOS so therefore only runs on modern devices that have UEFI.
 
 - **CPU-independent architecture** - BIOS can run both 32-bit and 64-bit versions of firmware. However, all firmware device drivers on BIOS systems must be 16-bit. This limitation affects performance and only 64 KB of memory can be addressed. UEFI removes these limitations.
 
 - **CPU-independent drivers** - On BIOS systems, PCI add-on cards must include a ROM that contains a separate driver for all supported CPU architectures. This limitation isn't needed for UEFI because UEFI has the ability to use EFI Byte Code (EBC) images. EBC images allow for a processor-independent device driver environment.
 
-- **Flexible pre-operating system environment** - UEFI supports UEFI application that can run before the OS is loaded. UEFI applications allow many additional features such as diagnostics, automatic repairs, and call home to report errors.
+- **Flexible pre-operating system environment** - UEFI supports UEFI application that can run before the OS is loaded. UEFI applications allow many additional features such as diagnostics, automatic repairs, and the ability to call home to report errors.
 
 - **Secure boot** - Currently supported versions of Windows use the UEFI firmware validation process, called [secure boot](/windows-hardware/design/device-experiences/oem-secure-boot). When secure boot is used, UEFI ensures that it launches only a verified operating system loader and that malware can't switch the boot loader.
 
@@ -204,9 +199,12 @@ As the replacement to BIOS, UEFI has many features that Windows uses. UEFI has t
 In regard to UEFI, hardware is divided into four device classes:
 
 - **Class 0 devices.** Devices in this class are BIOS, or non-UEFI, devices.
+
 - **Class 1 devices.** Devices in this class behave like a standard BIOS device, but they run EFI internally. They should be treated as normal BIOS-based machines. Class 1 devices use a CSM to emulate BIOS.
+
 - **Class 2 devices.** Devices in this class have the capability to behave as either a BIOS device or as a UEFI device. The boot process or the configuration in the firmware of the device determines the mode. Class 2 devices use a CSM to emulate BIOS.
-- **Class 3 devices.** The devices of this class are UEFI-only devices. Devices in this class must run an operating system that supports only UEFI. All currently supported versions of Windows support UEFI. Class 3 devices don't have a CSM to emulate BIOS.
+
+- **Class 3 devices.** The devices in this class are UEFI-only devices. They don't have backwards compatibility with BIOS. Devices in this class must run an operating system that supports UEFI. All currently supported versions of Windows support UEFI. Class 3 devices don't have a CSM to emulate BIOS.
 
 In general, all modern devices are Class 3 devices. Class 0, Class 1, and Class 2 devices are older devices and are no longer manufactured.
 
@@ -219,7 +217,7 @@ In general, all modern devices are Class 3 devices. Class 0, Class 1, and Class 
 - UEFI doesn't support cross-platform boot.
 
   - UEFI x64 devices can only run a 64-bit operating system. Most modern UEFI devices are x64.
-  - UEFI x86 devices can run only a 32-bit operating system. For Windows, only Windows 10 x86 supports UEFI x86. Windows 11 and newer doesn't support UEFI x86 although UEFI x86 devices are rare.
+  - UEFI x86 devices can run only a 32-bit operating system. For Windows, only Windows 10 x86 supports UEFI x86. Windows 11 and newer doesn't support UEFI x86. Lack of UEFI x86 support in Windows 11 generally isn't an issue since UEFI x86 devices are rare.
 
 ### UEFI considerations for operating system deployment
 
@@ -229,18 +227,26 @@ There are many things that affect operating system deployment as soon as you run
 
     When a Class 2 device is switched from BIOS to UEFI, one of the following two actions needs to take place:
 
-  - Via a tool such as [diskpart](/windows-server/administration/windows-commands/diskpart), the disk needs to be converted from MBR to GPT, and then partitioned accordingly to support UEFI. For example, while Windows running on BIOS only requires one partition that can be either FAT32 or NTFS, Windows running on a UEFI device requires the following partitions:
+  - The disk needs to be converted from MBR to GPT and then partitioned accordingly to support UEFI. This conversion can be done via a tool such as [diskpart](/windows-server/administration/windows-commands/diskpart). For example, while Windows running on BIOS only requires one partition that can be either FAT32 or NTFS, Windows running on a UEFI device requires the following partitions:
 
     - FAT32 boot/system partition.
     - NTFS OS partition.
     - Microsoft reserved partition (MSR) partition (unique to Windows).
     - Recovery partition (optional).
 
-    Because the existing disk is wiped as part of this process, Windows also needs to be reinstalled.
+    Because the existing disk is wiped as part of this process, the following actions need to take place:
+
+    - Windows need to be reinstalled.
+    - Applications need to be reinstalled.
+    - Data and settings need to be backed up and restored.
 
     For more information, see [UEFI/GPT-based hard drive partitions](/windows-hardware/manufacture/desktop/configure-uefigpt-based-hard-drive-partitions).
 
-  - The [MBR2GPT.EXE](mbr-to-gpt.md) tool used to convert the disk from MBR to GPT for use with UEFI. **MBR2GPT.EXE** also reconfigures the partitioning on the disk with the correct partitioning for Windows to run on UEFI. The benefit of using the **MBR2GPT.EXE** is that it converts the disk and repartitions it without wiping the disk and without data loss, meaning Windows doesn't need to be reinstalled.
+  - The [MBR2GPT.EXE](mbr-to-gpt.md) tool can be used to convert the disk from MBR to GPT for use with UEFI in a non-destructive way. **MBR2GPT.EXE** also reconfigures the partitioning on the disk with the correct partitioning for Windows to run on UEFI. The benefit of using the **MBR2GPT.EXE** is that it converts the disk and repartitions it without wiping the disk and without data loss. Since the disk isn't wiped and there's no data loss, the following actions don't need to be performed:
+
+    - Windows doesn't need to be reinstalled.
+    - Applications don't need to be reinstalled.
+    - Data and settings don't need to be backed up and restored.
 
 - When you deploy a Class 2 device, make sure the boot option is set to the proper boot device (hard drive, flash drive, PXE, etc.) The boot options available on Class 2 devices might differ between BIOS and UEFI modes.
 

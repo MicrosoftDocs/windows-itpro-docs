@@ -8,7 +8,7 @@ ms.service: windows-client
 author: frankroj
 ms.topic: conceptual
 ms.subservice: itpro-deploy
-ms.date: 08/28/2024
+ms.date: 08/30/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
