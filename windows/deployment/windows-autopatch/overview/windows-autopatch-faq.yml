@@ -54,7 +54,7 @@ sections:
           - [Switch workloads for device configuration, Windows Update and Microsoft 365 Apps from Configuration Manager to Intune](/mem/configmgr/comanage/how-to-switch-workloads) (minimum Pilot Intune. Pilot collection must contain the devices you want to register into Autopatch.)
       - question: What are the Intune permissions needed to operate Windows Autopatch?
         answer: |
-          You must use the Microsoft Entra Global Administrator role to activate Windows Autopatch features. For registering devices, managing update deployment and reporting tasks, use the Intune Service Administrator role. For more information, see [Built-in roles for device registration](../deploy/windows-autopatch-device-registration.md#built-in-roles-required-for-device-registration).
+          You must use the Microsoft Entra Global Administrator role to activate Windows Autopatch features. For registering devices, managing update deployment and reporting tasks, use the Intune Service Administrator role. For more information, see [Built-in roles for device registration](../deploy/windows-autopatch-device-registration-overview.md#built-in-roles-required-for-device-registration).
       - question: Are there hardware requirements for Windows Autopatch?
         answer: |
           No, Windows Autopatch doesn't require any specific hardware. However, general hardware requirements for updates are still applicable. For example, to deliver Windows 11 to your Autopatch devices they must meet [specific hardware requirements](/windows/whats-new/windows-11-requirements). Windows devices must be supported by your hardware OEM.
