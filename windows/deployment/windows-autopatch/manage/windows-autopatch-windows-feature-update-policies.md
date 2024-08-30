@@ -4,7 +4,7 @@ description: This article describes Windows feature update policies used in Wind
 ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
-ms.topic: overview
+ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
@@ -76,7 +76,7 @@ The differences in between the global and the default Windows feature update pol
 
 ## Windows Update ring policies
 
-Feature update policies work with Windows Update rings policies. Windows Update rings policies are created for each deployment ring for the [Autopatch group](../deploy/windows-autopatch-groups-overview.md#key-concepts) based on the deployment settings you define. The policy name convention is **`Windows Autopatch Update Policy - <Autopatch group name> - <Deployment group name>`**.
+Feature update policies work with Windows Update rings policies. Windows Update rings policies are created for each deployment ring for the [Autopatch group](../deploy/windows-autopatch-groups-overview.md#key-benefits) based on the deployment settings you define. The policy name convention is **`Windows Autopatch Update Policy - <Autopatch group name> - <Deployment group name>`**.
 
 The following table details the default Windows Update rings policy values that affect either the default or custom Windows feature updates releases:
 

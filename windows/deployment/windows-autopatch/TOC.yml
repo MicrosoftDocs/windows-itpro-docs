@@ -48,6 +48,8 @@
           items:
             - name: Customize Windows Update settings
               href: manage/windows-autopatch-customize-windows-update-settings.md
+            - name: Windows Autopatch group policies
+              href: manage/windows-autopatch-groups-policies.md
         - name: Windows feature updates
           href: manage/windows-autopatch-windows-feature-update-overview.md
           items:

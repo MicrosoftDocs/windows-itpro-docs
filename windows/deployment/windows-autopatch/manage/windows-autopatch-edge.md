@@ -22,7 +22,7 @@ ms.collection:
 Windows Autopatch uses the [Stable Channel](/deployedge/microsoft-edge-channels#stable-channel) of Microsoft Edge.
 
 > [!IMPORTANT]
-> To update Microsoft 365 Apps for enterprise, you must [create at least one Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) first and **Microsoft Edge update setting** must be set to [**Allow**](#allow-or-block-edge-updates). For more information on workloads supported by Windows Autopatch groups, see [Software update workloads](../deploy/windows-autopatch-groups-overview.md#software-update-workloads).
+> To update Microsoft 365 Apps for enterprise, you must [create at least one Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) first and **Microsoft Edge update setting** must be set to [**Allow**](#allow-or-block-microsoft-edge-updates). For more information on workloads supported by Windows Autopatch groups, see [Software update workloads](../deploy/windows-autopatch-groups-overview.md#software-update-workloads).
 
 ## Device eligibility
 

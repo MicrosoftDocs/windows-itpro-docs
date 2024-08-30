@@ -1598,12 +1598,12 @@
     {
       "source_path": "windows/deployment/windows-autopatch/prepare/windows-autopatch-fix-issues.md",
       "redirect_url": "/windows/deployment/windows-autopatch/prepare/windows-autopatch-feature-activation",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }, 
     {
       "source_path": "windows/deployment/windows-autopatch/prepare/windows-autopatch-enrollment-support-request.md",
       "redirect_url": "/windows/deployment/windows-autopatch/prepare/windows-autopatch-feature-activation",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/windows-autopatch/manage/windows-autopatch-manage-windows-feature-update-releases.md",
@@ -1618,7 +1618,7 @@
     {
       "source_path": "windows/deployment/update/deployment-service-prerequisites.md",
       "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-prerequisites",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/deployment-service-feature-updates.md",
@@ -1638,7 +1638,7 @@
     {
       "source_path": "windows/deployment/update/deployment-service-troubleshoot.md",
       "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-troubleshoot-programmatic-controls",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/PSFxWhitepaper.md",

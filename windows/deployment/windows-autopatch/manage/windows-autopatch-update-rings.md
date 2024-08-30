@@ -27,7 +27,7 @@ You can manage Update rings for Windows 10 and later devices with Windows Autopa
 
 You can import your organization’s existing Intune Update rings for Windows 10 and later into Windows Autopatch. Importing your organization’s Update rings provides the benefits of the Windows Autopatch's reporting and device readiness without the need to redeploy, or change your organization’s existing update rings.
 
-Imported rings automatically register all targeted devices into Windows Autopatch. For more information about device registration, see the [device registration workflow diagram](../deploy/windows-autopatch-device-registration-overview.md#detailed-device-registration-workflow-diagram).
+Imported rings automatically register all targeted devices into Windows Autopatch. For more information about device registration, see the [device registration workflow diagram](../deploy/windows-autopatch-register-devices.md#detailed-device-registration-workflow-diagram).
 
 > [!NOTE]
 > Devices which are registered as part of an imported ring, might take up to 72 hours after the devices have received the latest version of the policy, to be reflected in Windows Autopatch devices blade and reporting. For more information about reporting, see [Windows quality and feature update reports overview](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md).

@@ -22,7 +22,7 @@ ms.collection:
 ## Service level objective
 
 > [!IMPORTANT]
-> To update Microsoft 365 Apps for enterprise, you must [create at least one Autopatch group](../manage/windows-autopatch-groups-manage-autopatch-groups.md#create-an-autopatch-group) first and **Microsoft 365 app update setting** must be set to [**Allow**](#allow-or-block-microsoft-365-app-updates). For more information on workloads supported by Windows Autopatch groups, see [Software update workloads](../deploy/windows-autopatch-groups-overview.md#software-update-workloads).
+> To update Microsoft 365 Apps for enterprise, you must [create at least one Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) first and **Microsoft 365 app update setting** must be set to [**Allow**](#allow-or-block-microsoft-365-app-updates). For more information on workloads supported by Windows Autopatch groups, see [Software update workloads](../deploy/windows-autopatch-groups-overview.md#software-update-workloads).
 
 Windows Autopatch aims to keep at least 90% of eligible devices on a [supported version](/deployoffice/overview-update-channels#support-duration-for-monthly-enterprise-channel) of the Monthly Enterprise Channel (MEC) for the:
 

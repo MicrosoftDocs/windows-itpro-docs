@@ -21,7 +21,7 @@ For this article, you'll use Graph Explorer to make requests to the [Microsoft G
 1. You may need to enable the [`WindowsUpdates.ReadWrite.All` permission](/graph/permissions-reference#windows-updates-permissions) to use the queries in this article. To enable the permission:
     1. Select the **Modify permissions** tab in Graph Explorer.
     1. In the permissions dialog box, select the **WindowsUpdates.ReadWrite.All** permission then select **Consent**. You may need to sign in again to grant consent.
-       :::image type="content" source="../media/7512398-graph-modify-permission.png" alt-text="Screenshot of the modify permissions tab in Graph Explorer" lightbox="../media/7512398-wufbds-modify-permission.png" :::
+       :::image type="content" source="../media/7512398-graph-modify-permission.png" alt-text="Screenshot of the modify permissions tab in Graph Explorer" lightbox="../media/7512398-graph-modify-permission.png" :::
 
 1. To make requests:
    1. Select either GET, POST, PUT, PATCH, or DELETE from the drop-down list for the HTTP method.

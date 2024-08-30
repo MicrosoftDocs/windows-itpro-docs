@@ -40,7 +40,7 @@ The overall device registration process is as follows:
 
 :::image type="content" source="../media/windows-autopatch-device-registration-overview.png" alt-text="Overview of the device registration process" lightbox="../media/windows-autopatch-device-registration-overview.png":::
 
-1. IT admin reviews [Windows Autopatch device registration prerequisites](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration) before registering devices with Windows Autopatch.
+1. IT admin reviews [Windows Autopatch device registration prerequisites](#prerequisites-for-device-registration) before registering devices with Windows Autopatch.
 2. IT admin identifies and adds devices or nests other Microsoft Entra device groups into any Microsoft Entra group used with an Autopatch group, imported (WUfB) policies, or direct membership to the **Modern Workplace Devices-Windows-Autopatch-X-groups**.
 3. Windows Autopatch then:
     1. Performs device readiness prior registration (prerequisite checks).
@@ -67,7 +67,7 @@ When you [start using Autopatch](../prepare/windows-autopatch-feature-activation
 | Modern Workplace Devices-Windows Autopatch-Broad | Final deployment ring for broad rollout into the organization |
 
 > [!CAUTION]
-> Adding or importing devices directly into any of these groups isn't supported. Doing so might affect the Windows Autopatch service. To move devices between these groups, see [Move devices in between deployment rings](../deploy/windows-autopatch-register-devices.md#move-devices-between-deployment-rings).
+> Adding or importing devices directly into any of these groups isn't supported. Doing so might affect the Windows Autopatch service. To move devices between these groups, see [Move devices in between deployment rings](../deploy/windows-autopatch-register-devices.md#move-devices-in-between-deployment-rings).
 
 > [!IMPORTANT]
 > Windows Autopatch device registration doesn't assign devices to the Test deployment rings of either the service-based (**Modern Workplace Devices-Windows Autopatch-Test**), or your Autopatch groups. This is intended to prevent devices that are essential to a business from being affected or devices that are used by executives from receiving early software update deployments.
