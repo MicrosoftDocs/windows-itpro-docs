@@ -87,7 +87,7 @@ The following groups target Windows Autopatch configurations to devices and mana
 ## Microsoft Edge update policies
 
 > [!IMPORTANT]
-> By default, these policies are not deployed. You can opt-in to deploy these policies when you [activate Windows Autopatch features](../prepare/windows-autopatch-feature-activation.md).<p>To update Microsoft Office, you must [create at least one Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md) and the toggle the must be set to [**Allow**](../manage/windows-autopatch-edge.md#allow-or-block-edge-updates).</p>
+> By default, these policies are not deployed. You can opt-in to deploy these policies when you [activate Windows Autopatch features](../prepare/windows-autopatch-feature-activation.md).<p>To update Microsoft Office, you must [create at least one Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md) and the toggle the must be set to [**Allow**](../manage/windows-autopatch-edge.md#allow-or-block-microsoft-edge-updates).</p>
 
 - Windows Autopatch - Edge Update Channel Stable
 - Windows Autopatch - Edge Update Channel Beta

@@ -30,7 +30,7 @@ Business Premium and A3+ licenses include:
 
 ### [Windows Enterprise E3+ and F3](#tab/windows-enterprise-e3-f3-entitlements)
 
-The following licenses provide access to the Windows Autopatch features [included in Business premium and A3+ licenses](../overview/windows-autopatch-overview.md#business-premium-and-a3-licenses) and its [additional features](../overview/windows-autopatch-overview.md#windows-enterprise-e3-and-F3-licenses) after you [activate Windows Autopatch features](../prepare/windows-autopatch-feature-activation.md):
+The following licenses provide access to the Windows Autopatch features [included in Business premium and A3+ licenses](../overview/windows-autopatch-overview.md#business-premium-and-a3-licenses) and its [additional features](../overview/windows-autopatch-overview.md#windows-enterprise-e3-and-f3-licenses) after you [activate Windows Autopatch features](../prepare/windows-autopatch-feature-activation.md):
 
 - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
 - Windows 10/11 Enterprise E3 or E5 VDA
