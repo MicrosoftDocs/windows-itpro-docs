@@ -76,11 +76,46 @@ USMT supports capturing and restoring both data and settings from currently supp
 
 By default USMT migrates many settings, most of which are related to the user profile but also to Control Panel configurations, file types, and more. The default templates that are used in Windows deployments are **MigUser.xml** and **MigApp.xml**. These two default templates migrate the following data and settings:
 
-- Folders from each profile, including those folders from user profiles, and shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
+- Folders from each profile, including those folders from user profiles, and shared and public profiles. For example, the following folders:
+
+  - Documents.
+  - Video.
+  - Music.
+  - Pictures.
+  - Desktop.
 
 - The following specific file types:
 
     `.accdb`, `.ch3`, `.csv`, `.dif`, `.doc*`, `.dot*`, `.dqy`, `.iqy`, `.mcw`, `.mdb*`, `.mpp`, `.one*`, `.oqy`, `.or6`, `.pot*`, `.ppa`, `.pps*`, `.ppt*`, `.pre`, `.pst`, `.pub`, `.qdf`, `.qel`, `.qph`, `.qsd`, `.rqy`, `.rtf`, `.scd`, `.sh3`, `.slk`, `.txt`, `.vl*`, `.vsd`, `.wk*`, `.wpd`, `.wps`, `.wq1`, `.wri`, `.xl*`, `.xla`, `.xlb`, `.xls*`
+
+:::row:::
+   :::column span="":::
+      `.accdb`
+   :::column-end:::
+   :::column span="":::
+      `.ch3`
+   :::column-end:::
+   :::column span="":::
+      `.csv`
+   :::column-end:::
+   :::column span="":::
+      `.dif`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `.doc*`
+   :::column-end:::
+   :::column span="":::
+      `.dot*`
+   :::column-end:::
+   :::column span="":::
+      `.dqy`
+   :::column-end:::
+   :::column span="":::
+      `.iqy`
+   :::column-end:::
+:::row-end:::
 
     > [!NOTE]
     > The asterisk (`*`) stands for zero or more characters.
