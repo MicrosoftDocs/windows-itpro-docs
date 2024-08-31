@@ -125,14 +125,14 @@ By default USMT migrates many settings, most of which are related to the user pr
      :::column span="":::
         `.one*`
      :::column-end:::
-  :::row-end:::
-  :::row:::
      :::column span="":::
         `.oqy`
      :::column-end:::
      :::column span="":::
         `.or6`
      :::column-end:::
+  :::row-end:::
+  :::row:::
      :::column span="":::
         `.pot*`
      :::column-end:::
@@ -163,8 +163,6 @@ By default USMT migrates many settings, most of which are related to the user pr
      :::column span="":::
         `.qph`
      :::column-end:::
-  :::row-end:::
-    :::row:::
      :::column span="":::
         `.qsd`
      :::column-end:::
@@ -177,6 +175,8 @@ By default USMT migrates many settings, most of which are related to the user pr
      :::column span="":::
         `.scd`
      :::column-end:::
+  :::row-end:::
+  :::row:::
      :::column span="":::
         `.sh3`
      :::column-end:::
@@ -201,9 +201,6 @@ By default USMT migrates many settings, most of which are related to the user pr
      :::column span="":::
         `.wps`
      :::column-end:::
-  :::row-end:::
-    :::row-end:::
-    :::row:::
      :::column span="":::
         `.wq1`, , , , , 
      :::column-end:::
