@@ -126,7 +126,104 @@ By default USMT migrates many settings, most of which are related to the user pr
         `.one*`
      :::column-end:::
   :::row-end:::
-
+  :::row:::
+     :::column span="":::
+        `.oqy`
+     :::column-end:::
+     :::column span="":::
+        `.or6`
+     :::column-end:::
+     :::column span="":::
+        `.pot*`
+     :::column-end:::
+     :::column span="":::
+        `.ppa`
+     :::column-end:::
+     :::column span="":::
+        `.pps*`
+     :::column-end:::
+     :::column span="":::
+        `.ppt*`
+     :::column-end:::
+     :::column span="":::
+        `.pre`
+     :::column-end:::
+     :::column span="":::
+        `.pst`
+     :::column-end:::
+     :::column span="":::
+        `.pub`
+     :::column-end:::
+     :::column span="":::
+        `.qdf`
+     :::column-end:::
+     :::column span="":::
+        `.qel`
+     :::column-end:::
+     :::column span="":::
+        `.qph`
+     :::column-end:::
+  :::row-end:::
+    :::row:::
+     :::column span="":::
+        `.qsd`
+     :::column-end:::
+     :::column span="":::
+        `.rqy`
+     :::column-end:::
+     :::column span="":::
+        `.rtf`
+     :::column-end:::
+     :::column span="":::
+        `.scd`
+     :::column-end:::
+     :::column span="":::
+        `.sh3`
+     :::column-end:::
+     :::column span="":::
+        `.slk`
+     :::column-end:::
+     :::column span="":::
+        `.txt`
+     :::column-end:::
+     :::column span="":::
+        `.vl*`
+     :::column-end:::
+     :::column span="":::
+        `.vsd`
+     :::column-end:::
+     :::column span="":::
+        `.wk*`
+     :::column-end:::
+     :::column span="":::
+        `.wpd`
+     :::column-end:::
+     :::column span="":::
+        `.wps`
+     :::column-end:::
+  :::row-end:::
+    :::row-end:::
+    :::row:::
+     :::column span="":::
+        `.wq1`, , , , , 
+     :::column-end:::
+     :::column span="":::
+        `.wri`
+     :::column-end:::
+     :::column span="":::
+        `.xl*`
+     :::column-end:::
+     :::column span="":::
+        `.xla`
+     :::column-end:::
+     :::column span="":::
+        `.xlb`
+     :::column-end:::
+     :::column span="":::
+        `.xls*`
+     :::column-end:::
+  :::row-end:::
+  
   > [!NOTE]
   >
   > - The asterisk (`*`) stands for zero or more characters.
