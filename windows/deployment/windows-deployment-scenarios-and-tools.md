@@ -101,8 +101,6 @@ By default USMT migrates many settings, most of which are related to the user pr
    :::column span="":::
       `.dif`
    :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="":::
       `.doc*`
    :::column-end:::
@@ -117,11 +115,11 @@ By default USMT migrates many settings, most of which are related to the user pr
    :::column-end:::
 :::row-end:::
 
-    > [!NOTE]
-    > The asterisk (`*`) stands for zero or more characters.
-
-    > [!NOTE]
-    > The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) used by Microsoft Office applications aren't migrated by default.
+  > [!NOTE]
+  >
+  > - The asterisk (`*`) stands for zero or more characters.
+  >
+  > - The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) used by Microsoft Office applications aren't migrated by default.
 
 - Operating system component settings.
 
