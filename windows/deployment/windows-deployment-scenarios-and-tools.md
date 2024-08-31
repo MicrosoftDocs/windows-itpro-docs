@@ -113,6 +113,18 @@ By default USMT migrates many settings, most of which are related to the user pr
    :::column span="":::
       `.iqy`
    :::column-end:::
+   :::column span="":::
+      `.mcw`
+   :::column-end:::
+   :::column span="":::
+      `.mdb*`
+   :::column-end:::
+   :::column span="":::
+      `.mpp`
+   :::column-end:::
+   :::column span="":::
+      `.one*`
+   :::column-end:::
 :::row-end:::
 
   > [!NOTE]
