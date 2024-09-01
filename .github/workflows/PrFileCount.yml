@@ -1,0 +1,22 @@
+name: PR file count less than limit
+
+permissions:
+  pull-requests: write
+  statuses: write
+  contents: read
+      
+on: 
+  pull_request_target:
+    types: [opened, reopened, synchronize, labeled, unlabeled, edited]
+
+jobs:
+
+  file-count:
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-PrFileCount.yml@workflows-prod
+    with:
+      PayloadJson: ${{ toJSON(github) }}
+    secrets:
+      AccessToken: ${{ secrets.GITHUB_TOKEN }}
+
+
+  

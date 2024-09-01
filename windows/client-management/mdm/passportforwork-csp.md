@@ -1,7 +1,7 @@
 ---
 title: PassportForWork CSP
 description: Learn more about the PassportForWork CSP.
-ms.date: 06/21/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -163,7 +163,7 @@ Root node for policies.
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2402] and later <br> ✅ Windows 10, version 2004 [10.0.19041.4239] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.2899] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3374] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2402] and later <br> ✅ Windows 10, version 2004 [10.0.19041.4239] and later <br> ✅ Windows 11, version 21H2 with [KB5036894](https://support.microsoft.com/help/5036894) [10.0.22000.2899] and later <br> ✅ Windows 11, version 22H2 with [KB5035942](https://support.microsoft.com/help/5035942) [10.0.22621.3374] and later <br> ✅ Windows Insider Preview |
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-DisablePostLogonProvisioning-OmaUri-Begin -->
@@ -1051,7 +1051,7 @@ Windows Hello for Business can use certificates to authenticate to on-premise re
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 21H2 [10.0.19044.1566] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.527] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 21H2 with [KB5010415](https://support.microsoft.com/help/5010415) [10.0.19044.1566] and later <br> ✅ Windows 11, version 21H2 with [KB5010414](https://support.microsoft.com/help/5010414) [10.0.22000.527] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-Applicability-End -->
 
 <!-- Device-{TenantId}-Policies-UseCloudTrustForOnPremAuth-OmaUri-Begin -->

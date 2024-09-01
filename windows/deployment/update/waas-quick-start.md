@@ -32,7 +32,7 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 
 For more information, see [Overview of Windows as a service](waas-overview.md).
 
-For some interesting in-depth information about how cumulative updates work, see [Windows Updates using forward and reverse differentials](PSFxWhitepaper.md).
+For some interesting in-depth information about how cumulative updates work, see [Windows Updates using forward and reverse differentials](forward-reverse-differentials.md).
 
 ## Key concepts
 

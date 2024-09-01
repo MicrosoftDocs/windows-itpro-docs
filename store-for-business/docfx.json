@@ -37,7 +37,10 @@
         "tier2"
       ],
       "breadcrumb_path": "/microsoft-store/breadcrumb/toc.json",
-      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "uhfHeaderId": "MSDocsHeader-Archive",
+      "is_archived": true,
+      "is_retired": true,
+      "ROBOTS": "NOINDEX,NOFOLLOW",
       "ms.author": "trudyha",
       "audience": "ITPro",
       "ms.service": "store-for-business",
@@ -65,7 +68,9 @@
         "Stacyrch140",
         "garycentric",
         "dstrome",
-        "alekyaj" 
+        "alekyaj",
+        "aditisrivastava07",
+        "padmagit77"
       ]
     },
     "fileMetadata": {},

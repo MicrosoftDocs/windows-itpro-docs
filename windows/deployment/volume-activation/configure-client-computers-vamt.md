@@ -1,14 +1,14 @@
 ---
-title: Configure Client Computers (Windows 10)
+title: Configure client computers
 description: Learn how to configure client computers to enable the Volume Activation Management Tool (VAMT) to function correctly.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-author: frankroj
-ms.author: frankroj
-ms.service: windows-client
 ms.date: 11/07/2022
-ms.topic: conceptual
-ms.subservice: itpro-fundamentals
+ms.topic: how-to
+ms.service: windows-client
+ms.subservice: activation
 ---
 
 # Configure client computers
@@ -62,9 +62,9 @@ Enable the VAMT to access client computers across multiple subnets using the **W
    - Windows Management Instrumentation (WMI-In)
 
 4. In the **Windows Firewall with Advanced Security** dialog box, select **Inbound Rules** from the left-hand panel.
-  
+
 5. Right-click the desired rule and select **Properties** to open the **Properties** dialog box.
-  
+
    - On the **General** tab, select the **Allow the connection** checkbox.
 
    - On the **Scope** tab, change the Remote IP Address setting from "Local Subnet" (default) to allow the specific access you need.
@@ -109,4 +109,6 @@ The above configurations will open an additional port through the Windows Firewa
 
 ## Related articles
 
-- [Install and Configure VAMT](install-configure-vamt.md)
+[VAMT requirements](vamt-requirements.md)
+
+[Install VAMT](install-vamt.md)

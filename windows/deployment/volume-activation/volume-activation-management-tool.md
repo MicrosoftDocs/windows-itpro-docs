@@ -1,12 +1,12 @@
 ---
 title: VAMT technical reference
 description: The Volume Activation Management Tool (VAMT) enables network administrators to automate and centrally manage volume activation and retail activation.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
-author: frankroj
+ms.subservice: activation
 ms.date: 03/29/2024
 ms.topic: overview
 ---
@@ -21,16 +21,6 @@ The Volume Activation Management Tool (VAMT) allows automation and central manag
 
 VAMT is only available in an EN-US (x86) package.
 
-## In this section
+## Next steps
 
-|Article |Description |
-|------|------------|
-|[Introduction to VAMT](introduction-vamt.md) |Provides a description of VAMT and common usages. |
-|[Active Directory-based activation overview](active-directory-based-activation-overview.md) |Describes Active Directory-based activation scenarios. |
-|[Install and configure VAMT](install-configure-vamt.md) |Describes how to install VAMT and use it to configure client computers in the network. |
-|[Add and manage products](add-manage-products-vamt.md) |Describes how to add client computers into VAMT. |
-|[Manage product keys](manage-product-keys-vamt.md) |Describes how to add and remove a product key from VAMT. |
-|[Manage activations](manage-activations-vamt.md) |Describes how to activate a client computer by using various activation methods. |
-|[Manage VAMT data](manage-vamt-data.md) |Describes how to save, import, export, and merge a Computer Information List (CILX) file using VAMT. |
-|[VAMT step-by-step scenarios](vamt-step-by-step.md) |Provides step-by-step instructions for using VAMT in typical environments. |
-|[VAMT known issues](vamt-known-issues.md) |Lists known issues in VAMT. |
+[Introduction to VAMT](introduction-vamt.md)

@@ -1,19 +1,19 @@
 ---
-title: Scenario 3 KMS Client Activation (Windows 10)
+title: Scenario 3 - KMS client activation
 description: Learn how to use the Volume Activation Management Tool (VAMT) to activate Key Management Service (KMS) client keys or Generic Volume License Keys (GVLKs).
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 11/07/2022
-ms.topic: conceptual
-ms.subservice: itpro-fundamentals
+ms.topic: how-to
+ms.service: windows-client
+ms.subservice: activation
 ---
 
 # Scenario 3: KMS client activation
 
-In this scenario, you use the Volume Activation Management Tool (VAMT) to activate Key Management Service (KMS) client keys or Generic Volume License Keys (GVLKs). This type of activation can be performed on either Core Network or Isolated Lab computers. By default, volume license editions of Windows Vista, Windows® 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server® 2012, and Microsoft® Office 2010 use KMS for activation. GVLKs are already installed in volume license editions of these products. You don't have to enter a key to activate a product as a GVLK, unless you're converting a MAK-activated product to a KMS activation. For more information, see [Install a KMS Client Key](install-kms-client-key-vamt.md).
+In this scenario, you use the Volume Activation Management Tool (VAMT) to activate Key Management Service (KMS) client keys or Generic Volume License Keys (GVLKs). This type of activation can be performed on either Core Network or Isolated Lab computers. By default, volume license editions of Windows Vista, Windows® 7, Windows 8, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server® 2012, and Microsoft® Office 2010 use KMS for activation. GVLKs are already installed in volume license editions of these products. You don't have to enter a key to activate a product as a GVLK, unless you're converting a MAK-activated product to a KMS activation. For more information, see [Install a KMS client key](install-kms-client-key-vamt.md).
 
 The procedure that is described below assumes the following configuration:
 
@@ -56,4 +56,8 @@ The same status is shown under the **Status of Last Action** column in the produ
 
 ## Related articles
 
-- [VAMT step-by-step scenarios](vamt-step-by-step.md)
+[Run KMS activation](kms-activation-vamt.md)
+
+[Activate using Key Management Service](activate-using-key-management-service-vamt.md)
+
+[Install a KMS client key](install-kms-client-key-vamt.md)

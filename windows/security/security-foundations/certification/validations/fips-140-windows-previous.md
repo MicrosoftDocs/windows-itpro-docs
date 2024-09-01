@@ -3,11 +3,8 @@ title: FIPS 140 validated modules for previous Windows versions
 description: This topic lists the completed FIPS 140 cryptographic module validations for versions of Windows prior to Windows 10.
 ms.date: 2/1/2024
 ms.topic: reference
-ms.author: v-rodurff
-author: msrobertd
-ms.reviewer: paoloma
-ms.collection: tier3
 ---
+
 # FIPS 140 validated modules in previous Windows versions
 
 The following tables list the completed FIPS 140 validations of cryptographic modules used in versions of Windows  prior to Windows 10, organized by major release of the operating system. The linked Security Policy document for each module provides details on the module capabilities and the policies the operator must follow to use the module in its FIPS approved mode of operation. For information on using the overall operating system in its FIPS approved mode, see [Use Windows in a FIPS approved mode of operation](../fips-140-validation.md#use-windows-in-a-fips-approved-mode-of-operation). For details on the FIPS approved algorithms used by each module, including CAVP algorithm certificates, see the module's linked Security Policy document or CMVP module certificate.

@@ -1,17 +1,17 @@
 ---
-title: Scenario 1 Online Activation (Windows 10)
+title: Scenario 1 - online activation
 description: Achieve network access by deploying the Volume Activation Management Tool (VAMT) in a Core Network environment.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 11/07/2022
-ms.topic: conceptual
-ms.subservice: itpro-fundamentals
+ms.topic: how-to
+ms.service: windows-client
+ms.subservice: activation
 ---
 
-# Scenario 1: Online Activation
+# Scenario 1: online activation
 
 In this scenario, the Volume Activation Management Tool (VAMT) is deployed in the Core Network environment. VAMT is installed on a central computer that has network access to all of the client computers. Both the VAMT host and the client computers have Internet access. The following illustration shows a diagram of an online activation scenario for Multiple Activation Keys (MAKs). You can use this scenario for online activation of the following key types:
 
@@ -36,10 +36,10 @@ The Secure Zone represents higher-security Core Network computers that have addi
 
 ## Step 2: Configure the Windows Management Instrumentation firewall exception on target computers
 
-- Ensure that the Windows Management Instrumentation (WMI) firewall exception has been enabled for all target computers. For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
+- Ensure that the Windows Management Instrumentation (WMI) firewall exception has been enabled for all target computers. For more information, see [Configure client computers](configure-client-computers-vamt.md).
 
     > [!NOTE]
-    > To retrieve product license status, VAMT must have administrative permissions on the remote computers and WMI must be available through the Windows Firewall. In addition, for workgroup computers, a registry key must be created to enable remote administrative actions under User Account Control (UAC). For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
+    > To retrieve product license status, VAMT must have administrative permissions on the remote computers and WMI must be available through the Windows Firewall. In addition, for workgroup computers, a registry key must be created to enable remote administrative actions under User Account Control (UAC). For more information, see [Configure client computers](configure-client-computers-vamt.md).
 
 ## Step 3: Connect to a VAMT database
 
@@ -47,7 +47,7 @@ The Secure Zone represents higher-security Core Network computers that have addi
 
 2. Select **Connect**.
 
-3. If you're already connected to a database, VAMT displays an inventory of the products and product keys in the center pane, and a license overview of the computers in the database. If you need to connect to a different database, select **Successfully connected to Server** to open **the Database Connection Settings** dialog box. For more information about how to create VAMT databases and adding VAMT data, see [Manage VAMT Data](manage-vamt-data.md)
+3. If you're already connected to a database, VAMT displays an inventory of the products and product keys in the center pane, and a license overview of the computers in the database. If you need to connect to a different database, select **Successfully connected to Server** to open **the Database Connection Settings** dialog box. For more information about how to create VAMT databases and adding VAMT data, see [Import and export VAMT data](import-export-vamt-data.md).
 
 ## Step 4: Discover products
 
@@ -57,11 +57,11 @@ The Secure Zone represents higher-security Core Network computers that have addi
 
 3. In the **Discover Products** dialog box, select **Search for computers in the Active Directory** to display the search options, and then select the search options that you want to use. You can search for computers in an Active Directory domain, by individual computer name or IP address, in a workgroup, or by a general Lightweight Directory Access Protocol (LDAP) query:
 
-    - To search for computers in an Active Directory domain, select **Search for computers in the Active Directory**. Then under **Domain Filter Criteria**, in the list of domain names select the name of the domain that you want to search. You can narrow the search further by typing a name in the **Filter by computer name** field to search for specific computers in the domain. This filter supports the asterisk (\*) wildcard. For example, typing "a\*" will display only those computer names that start with the letter "a".
+    - To search for computers in an Active Directory domain, select **Search for computers in the Active Directory**. Then under **Domain Filter Criteria**, in the list of domain names select the name of the domain that you want to search. You can narrow the search further by typing a name in the **Filter by computer name** field to search for specific computers in the domain. This filter supports the asterisk (`*`) wildcard. For example, typing `a*` will display only those computer names that start with the letter "a".
 
     - To search by individual computer name or IP address, select **Manually enter name or IP address**. Then enter the full name or IP address in the **One or more computer names or IP addresses separated by commas** text box. Separate multiple entries with a comma. VAMT supports both IPv4 and IPV6 addressing.
 
-    - To search for computers in a workgroup, select **Search for computers in the workgroup**. Then under **Workgroup Filter Criteria**, in the list of workgroup names, select the name of the workgroup that you want to search. You can narrow the search further by typing a name in the **Filter by computer name** field to search for a specific computer in the workgroup. This filter supports the asterisk (\*) wildcard. For example, typing "a\*" will display only computer names that start with the letter "a".
+    - To search for computers in a workgroup, select **Search for computers in the workgroup**. Then under **Workgroup Filter Criteria**, in the list of workgroup names, select the name of the workgroup that you want to search. You can narrow the search further by typing a name in the **Filter by computer name** field to search for a specific computer in the workgroup. This filter supports the asterisk (`*`) wildcard. For example, typing `a*` will display only computer names that start with the letter "a".
 
     - To search for computers by using a general LDAP query, select **Search with LDAP query** and enter your query in the text box that appears. VAMT will validate the LDAP query syntax, but will otherwise run the query without additional checks.
 
@@ -101,7 +101,7 @@ To collect the status from select computers in the database, you can select comp
 
 - VAMT displays the **Collecting product information** dialog box while it collects the license status of all supported products on the selected computers. When the process is finished, the updated license status of each product will appear in the product list view in the center pane.
 
-  > [!NOTE]  
+  > [!NOTE]
   > If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
 
 ## Step 7: Add product keys and determine the remaining activation count
@@ -156,4 +156,4 @@ To collect the status from select computers in the database, you can select comp
 
 ## Related articles
 
-- [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
+[Run online activation](online-activation-vamt.md)
