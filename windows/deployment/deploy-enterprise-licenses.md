@@ -1,16 +1,14 @@
 ---
 title: Deploy Windows Enterprise licenses
 description: Steps to deploy Windows Enterprise licenses for Windows Enterprise E3 or E5 subscription activation, or for Windows Enterprise E3 in CSP.
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
+ms.reviewer: nganguly
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.collection:
-  - highpri
-  - tier2
 ms.date: 03/04/2024
 zone_pivot_groups: windows-versions-11-10
 appliesto:

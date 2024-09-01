@@ -100,8 +100,6 @@
           href: deployment/create-code-signing-cert-for-wdac.md
     - name: Disable WDAC policies
       href: deployment/disable-wdac-policies.md
-    - name: LOB Win32 Apps on S Mode
-      href: deployment/LOB-win32-apps-on-s.md
 - name: WDAC operational guide
   href: operations/wdac-operational-guide.md
   items:

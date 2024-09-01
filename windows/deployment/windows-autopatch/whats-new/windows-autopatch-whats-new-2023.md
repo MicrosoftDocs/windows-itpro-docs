@@ -3,7 +3,7 @@ title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
 ms.date: 12/14/2023
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: whats-new
 ms.localizationpriority: medium
 author: tiaraquan
@@ -100,7 +100,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | ----- | ----- |
 | [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md) | Updated article to include Windows Autopatch groups |
 | [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
-| [Manage Windows Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Manage Windows Autopatch groups](../manage/windows-autopatch-manage-autopatch-groups.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 | [Customize Windows Update settings](../operate/windows-autopatch-groups-windows-update.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 | [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 | [Windows feature updates](../operate/windows-autopatch-groups-windows-feature-update-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
@@ -147,8 +147,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | [Software update management](../operate/windows-autopatch-groups-update-management.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
 | [Customize Windows Update settings](../operate/windows-autopatch-groups-windows-update.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
 | [Windows quality update overview](../operate/windows-autopatch-groups-windows-quality-update-overview.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
-| [Windows quality update end user experience](../operate/windows-autopatch-groups-windows-quality-update-end-user-exp.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
-| [Windows quality update signals](../operate/windows-autopatch-groups-windows-quality-update-signals.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
+| [Windows quality update end user experience](../manage/windows-autopatch-windows-quality-update-end-user-exp.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
 | [Windows quality update communications](../operate/windows-autopatch-groups-windows-quality-update-communications.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
 | [Windows feature update overview](../operate/windows-autopatch-groups-windows-feature-update-overview.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
 | [Manage Windows feature update](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |

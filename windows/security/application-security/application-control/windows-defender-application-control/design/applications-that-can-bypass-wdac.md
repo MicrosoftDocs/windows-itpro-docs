@@ -169,7 +169,7 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
     <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
-    <Deny ID="ID_DENY_MSBUILD" FriendlyName="MSBuild.exe" FileName="MSBuild.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_MSBUILD" FriendlyName="MSBuild.exe" FileName="MSBuild.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MSBUILD_DLL" FriendlyName="MSBuild.dll" FileName="MSBuild.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MSHTA" FriendlyName="mshta.exe" FileName="mshta.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_NTKD" FriendlyName="ntkd.exe" FileName="ntkd.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />

@@ -1,35 +1,35 @@
 ---
-title: Perform Online Activation (Windows 10)
+title: Run online activation
 description: Learn how to use the Volume Activation Management Tool (VAMT) to enable client products to be activated online.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.date: 11/07/2022
-ms.topic: conceptual
-ms.subservice: itpro-fundamentals
+ms.topic: how-to
+ms.service: windows-client
+ms.subservice: activation
 ---
 
-# Perform online activation
+# Run online activation
 
-You can use the Volume Activation Management Tool (VAMT) to enable client products to be activated over the Internet. You can install the client products with any kind of product key that is eligible for online activation—Multiple Activation Key (MAK), retail, and Windows Key Management Services (KMS) host key.
+You can use the Volume Activation Management Tool (VAMT) to enable client products to be activated over the internet. You can install the client products with any kind of product key that is eligible for online activation—Multiple Activation Key (MAK), retail, and Windows Key Management Services (KMS) host key.
 
 ## Requirements
 
-Before performing online activation, ensure that the network and the VAMT installation meet the following requirements:
+Before running online activation, ensure that the network and the VAMT installation meet the following requirements:
 
 - VAMT is installed on a central computer that has network access to all client computers.
 
-- Both the VAMT host and client computers have Internet access.
+- Both the VAMT host and client computers have internet access.
 
 - The products that you want to activate are added to VAMT.
 
-- VAMT has administrative permissions on all computers that you intend to activate, and that Windows Management Instrumentation (WMI) can be accessed through the Windows firewall. For more information, see [Configure Client Computers](configure-client-computers-vamt.md).
+- VAMT has administrative permissions on all computers that you intend to activate, and that Windows Management Instrumentation (WMI) can be accessed through the Windows firewall. For more information, see [Configure client computers](configure-client-computers-vamt.md).
 
-The product keys that are installed on the client products must have a sufficient number of remaining activations. If you're activating a MAK key, you can retrieve the remaining number of activations for that key by selecting the MAK in the product key list in the center pane and then clicking **Refresh product key data online** in the right-side pane. This action retrieves the number of remaining activations for the MAK from Microsoft. This step requires Internet access and that the remaining activation count can only be retrieved for MAKs.
+The product keys that are installed on the client products must have a sufficient number of remaining activations. If you're activating a MAK key, you can retrieve the remaining number of activations for that key by selecting the MAK in the product key list in the center pane and then clicking **Refresh product key data online** in the right-side pane. This action retrieves the number of remaining activations for the MAK from Microsoft. This step requires internet access and that the remaining activation count can only be retrieved for MAKs.
 
-## To perform an online activation
+## To run an online activation
 
 1. Open VAMT.
 
@@ -54,11 +54,15 @@ The product keys that are installed on the client products must have a sufficien
     The same status is shown under the **Status of Last Action** column in the products list view in the center pane.
 
     > [!NOTE]
-    > Online activation does not enable you to save the Confirmation IDs (CIDs). As a result, you cannot perform local reactivation.
+    > Online activation doesn't enable you to save the Confirmation IDs (CIDs). As a result, you can't run local reactivation.
 
-    > [!NOTE]  
+    > [!NOTE]
     > You can use online activation to select products that have different key types and activate the products at the same time.
 
 ## Related articles
 
-- [Manage activations](manage-activations-vamt.md)
+[Run proxy activation](proxy-activation-vamt.md)
+
+[Run KMS activation](kms-activation-vamt.md)
+
+[Run local reactivation](local-reactivation-vamt.md)

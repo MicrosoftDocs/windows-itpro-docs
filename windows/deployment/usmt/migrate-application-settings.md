@@ -6,7 +6,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
+ms.date: 08/30/2024
 ms.topic: conceptual
 ms.subservice: itpro-deploy
 appliesto:
@@ -28,13 +28,13 @@ A test computer that contains the operating system of the source computers shoul
 
 ## Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer
 
-Before USMT migrates the settings, check whether the application is installed on the source computer, and that it's the correct version. If the application isn't installed on the source computer, USMT still spends time searching for the application's settings. More importantly, if USMT collects settings for an application that isn't installed, it could migrate settings that cause the destination computer to function incorrectly. Also determine whether there's more than one version of the application because the new version could store the settings in a different location.  Mismatched application versions could lead to unexpected results on the destination computer.
+Before USMT migrates the settings, check whether the application is installed on the source computer, and that it's the correct version. If the application isn't installed on the source computer, USMT still spends time searching for the application's settings. More importantly, if USMT collects settings for an application that isn't installed, it could migrate settings that cause the destination computer to function incorrectly. Also determine whether there's more than one version of the application because the new version could store the settings in a different location. Mismatched application versions could lead to unexpected results on the destination computer.
 
-There are many ways to detect if an application is installed. The best practice is to check for an application uninstall key in the registry, and then search the computer for the executable file that installed the application. It's important to check for both of these items, because sometimes different versions of the same application share the same uninstall key. Even if the key is there, it could correspond to a different version of the application that is wanted.
+There are many ways to detect if an application is installed. The best practice is to check for an application uninstall key in the registry. The computer can then be searched for the executable file that installed the application. It's important to check for both of these items, because sometimes different versions of the same application share the same uninstall key. Even if the key is there, it could correspond to a different version of the application that is wanted.
 
 ### Check the registry for an application uninstall key
 
-When many applications are installed (especially those installed using the Microsoft Windows Installer technology), an application uninstall key is created under:
+When many applications are installed, especially those installed using the Microsoft Windows Installer technology, an application uninstall key is created under:
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall`
 
@@ -44,11 +44,17 @@ For example, when Adobe Acrobat Reader 7 is installed, it creates a key named:
 
 Therefore, if a computer contains this key, then Adobe Acrobat Reader 7 is installed on the computer. The existence of a registry key can be checked using the `DoesObjectExist` helper function.
 
-Usually, this key can be found by searching under:
+The **Uninstall** registry key for a particular application can be found under the following registry key:
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall`
 
-for the name of the application, the name of the application executable file, or for the name of the company that makes the application. The Registry Editor, `Regedit.exe` located in the `%SystemRoot%`, can be used to search the registry.
+To find the **Uninstall** key for a specific application, search for one of the following items under the **Uninstall** registry key:
+
+- Name of the application.
+- Name of the application executable file.
+- Name of the company that makes the application.
+
+To search the registry, use the Registry Editor `Regedit.exe`. `Regedit.exe` is located in the path stored in `%SystemRoot%`, normally `C:\Windows`.
 
 ### Check the file system for the application executable file
 
@@ -76,7 +82,7 @@ Next, go through the user interface and make a list of all of the available sett
      >
      > Most applications store their settings under the user profile. That is, the settings stored in the file system are under the `%UserProfile%` directory, and the settings stored in the registry are under the `HKEY_CURRENT_USER` hive. For these applications, the output of the file and registry monitoring tools can be filtered to show activity only under these locations. This filtering considerably reduces the amount of output that needs to be examined.
 
-1. Start the monitoring tool(s), change a setting, and look for registry and file system writes that occurred when the setting was changed. Make sure the changes made actually take effect. For example, if changing a setting in Microsoft Word by selecting a check box in the **Options** dialog box, the change typically doesn't take effect until the dialog box is closed by selecting **OK**.
+1. Start the monitoring tools, change a setting, and look for registry and file system writes that occurred when the setting was changed. Make sure the changes made actually take effect. For example, if changing a setting in Microsoft Word by selecting a check box in the **Options** dialog box, the change typically doesn't take effect until the dialog box is closed by selecting **OK**.
 
 1. When the setting is changed, note the changes to the file system and registry. There could be more than one file or registry values for each setting. The minimal set of file and registry changes that are required to change this setting should be identified. This set of files and registry keys is what needs to be migrated in order to migrate the setting.
 

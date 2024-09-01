@@ -1,7 +1,7 @@
 ---
 title: PrinterProvisioning CSP
 description: Learn more about the PrinterProvisioning CSP.
-ms.date: 01/18/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -32,7 +32,7 @@ The following list shows the PrinterProvisioning configuration service provider 
 <!-- User-UPPrinterInstalls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-OmaUri-Begin -->
@@ -71,7 +71,7 @@ This setting will take the action on the specified user account to install or un
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-OmaUri-Begin -->
@@ -111,7 +111,7 @@ Identifies the Universal Print printer, by its Share ID, you wish to install on 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-OmaUri-Begin -->
@@ -150,7 +150,7 @@ Identifies the Universal Print printer, by its Printer ID, you wish to install o
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-ErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-ErrorCode-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-ErrorCode-OmaUri-Begin -->
@@ -189,7 +189,7 @@ HRESULT of the last installation returned code.
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Install-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Install-OmaUri-Begin -->
@@ -228,7 +228,7 @@ Support async execute. Install Universal Print printer.
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-OmaUri-Begin -->
@@ -267,7 +267,7 @@ Identifies the Universal Print printer, by its Share Name, you wish to install o
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 with [KB5014666](https://support.microsoft.com/help/5014666) [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Status-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Status-OmaUri-Begin -->

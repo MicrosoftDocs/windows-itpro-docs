@@ -22,7 +22,7 @@
         - name: Configure your network
           href: prepare/windows-autopatch-configure-network.md
         - name: Enroll your tenant
-          href: prepare/windows-autopatch-enroll-tenant.md
+          href: prepare/windows-autopatch-feature-activation.md
           items:
             - name: Fix issues found by the Readiness assessment tool
               href: prepare/windows-autopatch-fix-issues.md
@@ -42,98 +42,90 @@
               href: deploy/windows-autopatch-register-devices.md
             - name: Windows Autopatch groups overview
               href: deploy/windows-autopatch-groups-overview.md
-              items:
-                - name: Manage Windows Autopatch groups
-                  href: deploy/windows-autopatch-groups-manage-autopatch-groups.md
             - name: Post-device registration readiness checks
               href: deploy/windows-autopatch-post-reg-readiness-checks.md
-    - name: Operate
+    - name: Manage
       href: 
       items:
-        - name: Software update management
-          href: operate/windows-autopatch-groups-update-management.md
+        - name: Manage Windows Autopatch groups
+          href: manage/windows-autopatch-manage-autopatch-groups.md
+        - name: Customize Windows Update settings
+          href: manage/windows-autopatch-customize-windows-update-settings.md
+        - name: Windows feature updates
+          href: manage/windows-autopatch-windows-feature-update-overview.md
           items:
-              - name: Windows updates
-                href:
-                items:
-                  - name: Customize Windows Update settings
-                    href: operate/windows-autopatch-groups-windows-update.md
-                  - name: Windows quality updates
-                    href: operate/windows-autopatch-groups-windows-quality-update-overview.md
-                    items:
-                      - name: Windows quality update end user experience
-                        href: operate/windows-autopatch-groups-windows-quality-update-end-user-exp.md
-                      - name: Windows quality update signals
-                        href: operate/windows-autopatch-groups-windows-quality-update-signals.md
-                      - name: Windows quality update communications
-                        href: operate/windows-autopatch-groups-windows-quality-update-communications.md
-                  - name: Windows feature updates
-                    href: operate/windows-autopatch-groups-windows-feature-update-overview.md
-                    items:
-                      - name: Manage Windows feature updates
-                        href: operate/windows-autopatch-groups-manage-windows-feature-update-release.md
-              - name: Microsoft 365 Apps for enterprise
-                href: operate/windows-autopatch-microsoft-365-apps-enterprise.md
-              - name: Microsoft Edge
-                href: operate/windows-autopatch-edge.md
-              - name: Microsoft Teams
-                href: operate/windows-autopatch-teams.md
-        - name: Windows quality and feature update reports overview
-          href: operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md
+            - name: Manage Windows feature updates
+              href: manage/windows-autopatch-manage-windows-feature-update-releases.md
+        - name: Windows quality updates
+          href: manage/windows-autopatch-windows-quality-update-overview.md
           items:
-            - name: Windows quality update reports
-              href:
-              items:
-                - name: Summary dashboard
-                  href: operate/windows-autopatch-groups-windows-quality-update-summary-dashboard.md
-                - name: Quality update status report
-                  href: operate/windows-autopatch-groups-windows-quality-update-status-report.md
-                - name: Quality update trending report
-                  href: operate/windows-autopatch-groups-windows-quality-update-trending-report.md
-                - name: Reliability report
-                  href: operate/windows-autopatch-reliability-report.md
+            - name: Windows quality update end user experience
+              href: manage/windows-autopatch-windows-quality-update-end-user-exp.md
+            - name: Windows quality update communications
+              href: manage/windows-autopatch-windows-quality-update-communications.md
+            - name: Windows quality update policies
+              href: manage/windows-autopatch-windows-update-policies.md
+        - name: Manage driver and firmware updates
+          href: manage/windows-autopatch-manage-driver-and-firmware-updates.md
+        - name: Microsoft 365 Apps for enterprise
+          href: manage/windows-autopatch-microsoft-365-apps-enterprise.md
+          items:
+            - name: Microsoft 365 Apps for enterprise update policies
+              href: manage/windows-autopatch-microsoft-365-policies.md
+        - name: Microsoft Edge
+          href: manage/windows-autopatch-edge.md
+        - name: Microsoft Teams
+          href: manage/windows-autopatch-teams.md
+        - name: Submit a support request
+          href: manage/windows-autopatch-support-request.md
+        - name: Exclude a device
+          href: manage/windows-autopatch-exclude-device.md
+        - name: Unenroll your tenant
+          href: manage/windows-autopatch-feature-deactivation.md
+    - name: Monitor
+      href:
+      items:
+        - name: Windows feature and quality update reports overview
+          href: monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md
+          items:
             - name: Windows feature update reports
               href:
               items:
                 - name: Summary dashboard
-                  href: operate/windows-autopatch-groups-windows-feature-update-summary-dashboard.md
+                  href: monitor/windows-autopatch-windows-feature-update-summary-dashboard.md
                 - name: Feature update status report
-                  href: operate/windows-autopatch-groups-windows-feature-update-status-report.md
+                  href: monitor/windows-autopatch-windows-feature-update-status-report.md
                 - name: Feature update trending report
-                  href: operate/windows-autopatch-groups-windows-feature-update-trending-report.md
-            - name: Windows quality and feature update device alerts
-              href: operate/windows-autopatch-device-alerts.md
+                  href: monitor/windows-autopatch-windows-feature-update-trending-report.md
+            - name: Windows quality update reports
+              href:
+              items:
+                - name: Summary dashboard
+                  href: monitor/windows-autopatch-windows-quality-update-summary-dashboard.md
+                - name: Quality update status report
+                  href: monitor/windows-autopatch-windows-quality-update-status-report.md
+                - name: Quality update trending report
+                  href: monitor/windows-autopatch-windows-quality-update-trending-report.md
+                - name: Reliability report
+                  href: monitor/windows-autopatch-reliability-report.md
+            - name: Windows feature and quality update device alerts
+              href: monitor/windows-autopatch-device-alerts.md
         - name: Policy health
           href:
           items:
             - name: Policy health and remediation
-              href: operate/windows-autopatch-policy-health-and-remediation.md
+              href: monitor/windows-autopatch-policy-health-and-remediation.md
             - name: Resolve policy conflicts
-              href: operate/windows-autopatch-resolve-policy-conflicts.md
+              href: monitor/windows-autopatch-resolve-policy-conflicts.md
         - name: Maintain the Windows Autopatch environment
-          href: operate/windows-autopatch-maintain-environment.md
-        - name: Manage driver and firmware updates
-          href: operate/windows-autopatch-manage-driver-and-firmware-updates.md
-        - name: Submit a support request
-          href: operate/windows-autopatch-support-request.md
-        - name: Exclude a device
-          href: operate/windows-autopatch-exclude-device.md
-        - name: Unenroll your tenant
-          href: operate/windows-autopatch-unenroll-tenant.md
+          href: monitor/windows-autopatch-maintain-environment.md
     - name: References
       href:
       items:
-        - name: Update policies
-          href:
-          items:
-            - name: Windows update policies
-              href: references/windows-autopatch-windows-update-unsupported-policies.md
-            - name: Microsoft 365 Apps for enterprise update policies
-              href: references/windows-autopatch-microsoft-365-policies.md
-            - name: Conflicting configurations
-              href: references/windows-autopatch-conflicting-configurations.md
+        - name: Conflicting configurations
+          href: references/windows-autopatch-conflicting-configurations.md
         - name: Changes made at tenant enrollment
-          href: references/windows-autopatch-changes-to-tenant.md
+          href: references/windows-autopatch-changes-made-at-feature-activation.md
     - name: What's new
       href:
       items: 
