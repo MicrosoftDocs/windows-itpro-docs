@@ -52,7 +52,6 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Windows Update ([feature updates quality updates, language packs, drivers](../update/get-started-updates-channels-tools.md#types-of-updates)) | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Windows 10/11 UWP Store apps | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Windows 11 Win32 Store apps | Windows 11 | :heavy_check_mark: | |
-| Windows 10 Store for Business apps | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Windows Defender definition updates | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Intune Win32 apps| Windows 10 1709, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
 | Microsoft 365 Apps and updates | Windows 10 1709, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
