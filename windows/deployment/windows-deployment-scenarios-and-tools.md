@@ -76,17 +76,23 @@ USMT supports capturing and restoring both data and settings from currently supp
 
 By default USMT migrates many settings, most of which are related to the user profile but also to Control Panel configurations, file types, and more. The default templates that are used in Windows deployments are **MigUser.xml** and **MigApp.xml**. These two default templates migrate the following data and settings:
 
-- Folders from each profile, including those folders from user profiles, and shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
+- Folders from each profile, including those folders from user profiles, and shared and public profiles. For example, the following folders:
+
+  - Documents.
+  - Video.
+  - Music.
+  - Pictures.
+  - Desktop.
 
 - The following specific file types:
 
     `.accdb`, `.ch3`, `.csv`, `.dif`, `.doc*`, `.dot*`, `.dqy`, `.iqy`, `.mcw`, `.mdb*`, `.mpp`, `.one*`, `.oqy`, `.or6`, `.pot*`, `.ppa`, `.pps*`, `.ppt*`, `.pre`, `.pst`, `.pub`, `.qdf`, `.qel`, `.qph`, `.qsd`, `.rqy`, `.rtf`, `.scd`, `.sh3`, `.slk`, `.txt`, `.vl*`, `.vsd`, `.wk*`, `.wpd`, `.wps`, `.wq1`, `.wri`, `.xl*`, `.xla`, `.xlb`, `.xls*`
-
-    > [!NOTE]
-    > The asterisk (`*`) stands for zero or more characters.
-
-    > [!NOTE]
-    > The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) used by Microsoft Office applications aren't migrated by default.
+  
+  > [!NOTE]
+  >
+  > - The asterisk (`*`) stands for zero or more characters.
+  >
+  > - The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) used by Microsoft Office applications aren't migrated by default.
 
 - Operating system component settings.
 
