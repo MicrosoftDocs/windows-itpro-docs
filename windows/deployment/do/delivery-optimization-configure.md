@@ -69,7 +69,7 @@ Delivery Optimization requires the use of certain ports to deliver content. Make
 | Port    | Protocol | Function          |
 |---------|-------------------|----------|
 | 7680    | TCP/IP | Listen for P2P using TCP/IP |
-| 3544    | TCP/IP | Use Teredo to discover and connect to peers across NATs |
+| 3544    | UDP | Use Teredo to discover and connect to peers across NATs. For more information, see the [Teredo documentation](/windows/win32/teredo/required-firewall-exceptions-for-teredo). |
 | 443     | HTTPS / TLS 1.2 | Use to communicate Delivery Optimization client and service |
 
 ## 2. Evaluate Delivery Optimization policies
