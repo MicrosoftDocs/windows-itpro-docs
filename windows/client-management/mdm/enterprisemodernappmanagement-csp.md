@@ -5994,6 +5994,9 @@ Identifier for the entity that requested the license, such as the client who acq
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> The Microsoft Store for Business and Microsoft Store for Education are retired. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).
+
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-DFProperties-Begin -->

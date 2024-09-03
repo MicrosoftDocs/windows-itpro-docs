@@ -1,7 +1,7 @@
 ---
 title: Browser Policy CSP
 description: Learn more about the Browser Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 09/03/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1481,7 +1481,7 @@ Sideloading installs and runs unverified extensions in Microsoft Edge. With this
 
 If enabled or not configured, sideloading of unverified extensions in Microsoft Edge is allowed.
 
-If disabled, sideloading of unverified extensions in Microsoft Edge isn't allowed. Extensions can be installed only through Microsoft store (including a store for business), enterprise storefront (such as Company Portal) or PowerShell (using Add-AppxPackage). When disabled, this policy doesn't prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, in Group Policy Editor, enable Allows development of Windows Store apps and installing them from an integrated development environment (IDE), which is located at:
+If disabled, sideloading of unverified extensions in Microsoft Edge isn't allowed. Extensions can be installed only through Microsoft store, enterprise storefront (such as Company Portal) or PowerShell (using Add-AppxPackage). When disabled, this policy doesn't prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, in Group Policy Editor, enable Allows development of Windows Store apps and installing them from an integrated development environment (IDE), which is located at:
 
 Computer Configuration > Administrative Templates > Windows Components > App Package Deployment.
 
@@ -3364,9 +3364,7 @@ You can define a list of extensions in Microsoft Edge that users cannot turn off
 Related Documents:
 
 - [Find a package family name (PFN) for per-app VPN](/mem/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business)
 - [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy)
-- [Manage apps from the Microsoft Store for Business and Education with Configuration Manager](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
 - [Add a Windows line-of-business app to Microsoft Intune](/mem/intune/apps/lob-apps-windows)
 <!-- PreventTurningOffRequiredExtensions-Editable-End -->
 
