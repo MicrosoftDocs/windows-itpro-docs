@@ -139,6 +139,9 @@ If your organization utilizes another remote support tool such as [Remote Help](
 
 To disable Quick Assist, block traffic to the `https://remoteassistance.support.services.microsoft.com` endpoint. This is the primary endpoint used by Quick Assist to establish a session, and once blocked, Quick Assist can't be used to get help or help someone.
 
+> [!NOTE]
+> Blocking the endpoint will disrupt the functionality of Remote Help, as it relies on this endpoint for operation.
+
 ### Uninstall Quick Assist
 
 #### Uninstall via PowerShell
