@@ -15,7 +15,6 @@ By using Windows MDM to manage app lifecycles, administrators can deploy and man
 
 Windows offers the ability for management servers to:
 
-- Install apps directly from the Microsoft Store for Business
 - Deploy offline Store apps and licenses
 - Deploy line-of-business (LOB) apps (non-Store apps)
 - Inventory all apps for a user (Store and non-Store apps)
@@ -28,7 +27,7 @@ Windows offers the ability for management servers to:
 
 Windows lets you inventory all apps deployed to a user, and inventory all apps for all users of a Windows device. The [EnterpriseModernAppManagement](mdm/enterprisemodernappmanagement-csp.md) configuration service provider (CSP) inventories packaged apps and doesn't include traditional Win32 apps installed via MSI or executables. When the apps are inventoried, they're separated based on the following app classifications:
 
-- **Store**: Apps that have been acquired from the Microsoft Store, either directly or delivered with the enterprise from the Store for Business.
+- **Store**: Apps that have been acquired from the Microsoft Store.
 - **nonStore**: Apps that weren't acquired from the Microsoft Store.
 - **System**: Apps that are part of the operating system and can't be uninstalled. This classification is read-only and can only be inventoried.
 
@@ -197,6 +196,9 @@ You can install apps to a specific user or to all users of a device. Apps are in
 To deploy an app to a user directly from the Microsoft Store, the management server runs an Add and Exec command on the AppInstallation node of the EnterpriseModernAppManagement CSP. This feature is only supported in the user context, and not supported in the device context.
 
 If you purchased an app from the Store for Business and the app is specified for an online license, then the app and license must be acquired directly from the Microsoft Store.
+
+> [!NOTE]
+> The Microsoft Store for Business and Microsoft Store for Education are retired. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).
 
 Here are the requirements for this scenario:
 

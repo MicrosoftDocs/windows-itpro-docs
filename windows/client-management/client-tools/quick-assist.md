@@ -106,6 +106,7 @@ For more information, visit [Install Quick Assist](https://support.microsoft.com
 
 To deploy Quick Assist with Intune, see [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft).
 
+<!-- commenting out since Store for Business and Microsoft Store for Education retired May 31, 20203
 ### Install Quick Assist Offline
 
 To install Quick Assist offline, you need to download your APPXBUNDLE and unencoded XML file from [Microsoft Store for Business](https://businessstore.microsoft.com). Visit [Download an offline-licensed app](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) for more information.
@@ -113,7 +114,7 @@ To install Quick Assist offline, you need to download your APPXBUNDLE and unenco
 1. Start **Windows PowerShell** with Administrative privileges
 1. In PowerShell, change the directory to the location where you saved the file in step 1: `cd <location of package file>`
 1. To install Quick Assist, run the following command: `Add-AppxProvisionedPackage -Online -PackagePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe.AppxBundle" -LicensePath "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe_4bc27046-84c5-8679-dcc7-d44c77a47dd0.xml"`
-1. After Quick Assist is installed, run this command to confirm that Quick Assist is installed for the user: `Get-AppxPackage *QuickAssist* -AllUsers`
+1. After Quick Assist is installed, run this command to confirm that Quick Assist is installed for the user: `Get-AppxPackage *QuickAssist* -AllUsers` --> 
 
 ### Microsoft Edge WebView2
 
