@@ -121,11 +121,6 @@ sections:
       - question: Does Windows Autopatch Support Dual Scan for Windows Update?
         answer: |
           Dual Scan for Windows has been deprecated and replaced with the [scan source policy](/windows/deployment/update/wufb-wsus). Windows Autopatch supports the scan source policy if the Feature updates, and Windows quality updates workloads are configured for Windows update. If Feature and Windows updates are configured for WSUS, it could cause disruptions to the service and your release schedules.
-  - name: Other
-    questions:
-      - question: Are there Autopatch specific APIs or PowerShell scripts available?
-        answer: |
-          Programmatic access to Autopatch isn't currently available.
 additionalContent: |
   ## Additional Content
   [Provide feedback](https://go.microsoft.com/fwlink/?linkid=2195593) or start a discussion in our [Windows Autopatch Tech Community](https://aka.ms/Community/WindowsAutopatch)
