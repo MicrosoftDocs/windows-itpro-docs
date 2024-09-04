@@ -4,7 +4,7 @@ description: Learn about the different types of apps that run on Windows. For ex
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 06/28/2024
+ms.date: 09/03/2024
 ms.topic: overview
 ms.service: windows-client
 ms.subservice: itpro-apps
@@ -126,9 +126,7 @@ For more information, see:
 When you use the Microsoft Store app, Windows users can download apps from the public store. They can also download apps provided by your organization, which is called the *private store*. If your organization creates its own apps, you can use [Windows Package Manager](/windows/package-manager) to add apps to the private store.
 
 > [!NOTE]
-> Retirement of the Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. Customers may continue to use the current capabilities for free apps until that time. There will be no support for Microsoft Store for Business and Education for Windows 11.
->
-> For more information, see [Evolving the Microsoft Store for Business and Education](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-the-microsoft-store-for-business-and-education/bc-p/3771217). This blog post describes the new Microsoft Store experience for both Windows 11 and Windows 10. To learn about other options for getting and managing apps, see [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft).
+> The Microsoft Store for Business and Microsoft Store for Education are retired. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring). There will be no support for Microsoft Store for Business and Education for Windows 11.
 
 To help manage the Microsoft Store on your devices, you can use policies:
 
