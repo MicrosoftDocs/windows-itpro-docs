@@ -1441,7 +1441,7 @@ Valid values: From 0 to 599940, where the value is the amount of inactivity time
 <!-- Description-Source-DDF -->
 Interactive logon: Message text for users attempting to log on This security setting specifies a text message that's displayed to users when they log on. This text is often used for legal reasons, for example, to warn users about the ramifications of misusing company information or to warn them that their actions may be audited. Default: No message.
 > [!IMPORTANT]
-> Windows Autopilot pre-provisioning doesn't work when this policy setting is enabled. [Windows Autopilot troubleshooting FAQ](https://learn.microsoft.com/autopilot/troubleshooting-faq#troubleshooting-policy-conflicts-with-windows-autopilot)
+> Windows Autopilot pre-provisioning doesn't work when this policy setting is enabled. [Windows Autopilot troubleshooting FAQ](/autopilot/troubleshooting-faq#troubleshooting-policy-conflicts-with-windows-autopilot)
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Description-End -->
 
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Editable-Begin -->
@@ -1492,7 +1492,7 @@ Interactive logon: Message text for users attempting to log on This security set
 <!-- Description-Source-DDF -->
 Interactive logon: Message title for users attempting to log on This security setting allows the specification of a title to appear in the title bar of the window that contains the Interactive logon: Message text for users attempting to log on. Default: No message.
 > [!IMPORTANT]
-> Windows Autopilot pre-provisioning doesn't work when this policy setting is enabled. [Windows Autopilot troubleshooting FAQ](https://learn.microsoft.com/autopilot/troubleshooting-faq#troubleshooting-policy-conflicts-with-windows-autopilot)
+> Windows Autopilot pre-provisioning doesn't work when this policy setting is enabled. [Windows Autopilot troubleshooting FAQ](/autopilot/troubleshooting-faq#troubleshooting-policy-conflicts-with-windows-autopilot)
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-Description-End -->
 
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-Editable-Begin -->
