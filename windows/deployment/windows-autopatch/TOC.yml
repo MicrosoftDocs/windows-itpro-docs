@@ -22,7 +22,7 @@
         - name: Configure your network
           href: prepare/windows-autopatch-configure-network.md
         - name: Enroll your tenant
-          href: prepare/windows-autopatch-enroll-tenant.md
+          href: prepare/windows-autopatch-feature-activation.md
           items:
             - name: Fix issues found by the Readiness assessment tool
               href: prepare/windows-autopatch-fix-issues.md
@@ -63,6 +63,8 @@
               href: manage/windows-autopatch-windows-quality-update-end-user-exp.md
             - name: Windows quality update communications
               href: manage/windows-autopatch-windows-quality-update-communications.md
+            - name: Windows quality update policies
+              href: manage/windows-autopatch-windows-update-policies.md
         - name: Manage driver and firmware updates
           href: manage/windows-autopatch-manage-driver-and-firmware-updates.md
         - name: Microsoft 365 Apps for enterprise
@@ -79,7 +81,7 @@
         - name: Exclude a device
           href: manage/windows-autopatch-exclude-device.md
         - name: Unenroll your tenant
-          href: manage/windows-autopatch-unenroll-tenant.md
+          href: manage/windows-autopatch-feature-deactivation.md
     - name: Monitor
       href:
       items:
@@ -120,15 +122,10 @@
     - name: References
       href:
       items:
-        - name: Update policies
-          href:
-          items:
-            - name: Windows update policies
-              href: references/windows-autopatch-windows-update-unsupported-policies.md
-            - name: Conflicting configurations
-              href: references/windows-autopatch-conflicting-configurations.md
+        - name: Conflicting configurations
+          href: references/windows-autopatch-conflicting-configurations.md
         - name: Changes made at tenant enrollment
-          href: references/windows-autopatch-changes-to-tenant.md
+          href: references/windows-autopatch-changes-made-at-feature-activation.md
     - name: What's new
       href:
       items: 

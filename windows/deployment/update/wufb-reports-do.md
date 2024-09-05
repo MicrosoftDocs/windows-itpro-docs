@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 04/12/2023
+ms.date: 09/03/2024
 ---
 
 # Delivery Optimization data in Windows Update for Business reports
@@ -154,7 +154,7 @@ There are many Microsoft [content types](waas-delivery-optimization.md#types-of-
 
 | Content Category | Content Types Included |
 | --- | --- |
-| Apps | Windows 10 Store apps,  Windows 10 Store for Business apps, Windows 11 UWP Store apps |
+| Apps | Windows 10 Store apps, Windows 11 UWP Store apps |
 | Driver Updates | Windows Update [Driver updates](get-started-updates-channels-tools.md#types-of-updates) |
 | Feature Updates | Windows Update [Feature updates](get-started-updates-channels-tools.md#types-of-updates) |
 | Office | Microsoft 365 Apps and updates |
