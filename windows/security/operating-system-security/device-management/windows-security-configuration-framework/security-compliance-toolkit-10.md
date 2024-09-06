@@ -35,7 +35,7 @@ The Security Compliance Toolkit consists of:
   - Office 2016
   - Microsoft 365 Apps for Enterprise Version 2206
 - Microsoft Edge security baseline
-  - Microsoft Edge version 114
+  - Microsoft Edge version 128
 - Tools
   - Policy Analyzer
   - Local Group Policy Object (LGPO)
