@@ -1,8 +1,9 @@
 ---
 title: Windows accessibility for IT pros
 description: Basic guidance for IT administrators on accessibility features available in Windows client.
-ms.date: 07/25/2024
+ms.date: 08/22/2024
 ms.topic: concept-article
+ms.subservice: accessibility
 ms.collection: tier1
 ---
 

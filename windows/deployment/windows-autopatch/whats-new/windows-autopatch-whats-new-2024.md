@@ -3,7 +3,7 @@ title: What's new 2024
 description: This article lists the 2024 feature releases and any corresponding Message center post numbers.
 ms.date: 04/09/2024
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: whats-new
 ms.localizationpriority: medium
 author: tiaraquan

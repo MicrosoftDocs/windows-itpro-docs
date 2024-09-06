@@ -1,7 +1,7 @@
 ---
 title: EnterpriseModernAppManagement CSP
 description: Learn more about the EnterpriseModernAppManagement CSP.
-ms.date: 04/10/2024
+ms.date: 09/03/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -381,9 +381,11 @@ This is a required node. The following list shows the supported deployment optio
 - ForceUpdateToAnyVersion
 - DeferRegistration="1". If the app is in use at the time of installation. This option stages the files for an app update and completes the registration of the app update after the app closes. Available in the latest insider flight of 20H1.
 - StageOnly="1". Stages the files for an app installation or update without installing the app. Available in 1803.
-- LicenseUri="\\server\license.lic". Deploys an offline license from the Microsoft Store for Business. Available in 1607.
+- LicenseUri="\\server\license.lic". Deploys an offline license. Available in 1607.
 - ValidateDependencies="1". This option is used at provisioning/staging time. If it's set to 1, deployment will perform the same dependency validation during staging that we would normally do at registration time, failing and rejecting the provision request if the dependencies aren't present. Available in the latest insider flight of 20H1.
 - ExcludeAppFromLayoutModification="1". Sets that the app will be provisioned on all devices and will be able to retain the apps provisioned without pinning them to start layout. Available in 1809.
+
+
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-DFProperties-Begin -->
@@ -821,7 +823,7 @@ This is a required node.
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-Begin -->
 <!-- Description-Source-DDF -->
-Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
+Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Editable-Begin -->
@@ -904,6 +906,8 @@ Identifier for the entity that requested the license, such as the client who acq
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> The Microsoft Store for Business and Microsoft Store for Education are retired. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-End -->
 
 <!-- Device-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-DFProperties-Begin -->
@@ -992,6 +996,8 @@ This is a required node. Query parameters:
 
 - Source - specifies the app classification that aligns to the existing inventory nodes. You can use a specific filter or if no filter is specified then all sources will be returned. If no value is specified, all classifications are returned. Valid values are:
   - AppStore - This classification is for apps that were acquired from Microsoft Store. These were apps directly installed from Microsoft Store or enterprise apps from Microsoft Store for Business.
+    > [!NOTE]
+    > The Microsoft Store for Business and Microsoft Store for Education are retired. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).
   - nonStore - This classification is for apps that weren't acquired from the Microsoft Store.
   - System - Apps that are part of the OS. You can't uninstall these apps. This classification is read-only and can only be inventoried.
 
@@ -1012,6 +1018,8 @@ This is a required node. Query parameters:
 - Publisher - specifies the publisher of a particular package. If you specify this parameter, it returns the publisher if the value exists in the Publisher field.
 
   If you don't specify this value, then all publishers are returned.
+
+
 <!-- Device-AppManagement-AppInventoryQuery-Editable-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-DFProperties-Begin -->
@@ -5464,7 +5472,7 @@ This is a required node. The following list shows the supported deployment optio
 - ForceUpdateToAnyVersion
 - DeferRegistration="1". If the app is in use at the time of installation. This option stages the files for an app update and completes the registration of the app update after the app closes. Available in the latest insider flight of 20H1.
 - StageOnly="1". Stages the files for an app installation or update without installing the app. Available in 1803.
-- LicenseUri="\\server\license.lic". Deploys an offline license from the Microsoft Store for Business. Available in 1607.
+- LicenseUri="\\server\license.lic". Deploys an offline license. Available in 1607.
 - ValidateDependencies="1". This option is used at provisioning/staging time. If it's set to 1, deployment will perform the same dependency validation during staging that we would normally do at registration time, failing and rejecting the provision request if the dependencies aren't present. Available in the latest insider flight of 20H1.
 - ExcludeAppFromLayoutModification="1". Sets that the app will be provisioned on all devices and will be able to retain the apps provisioned without pinning them to start layout. Available in 1809.
 <!-- User-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-End -->
@@ -5903,7 +5911,7 @@ This is a required node.
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-Begin -->
 <!-- Description-Source-DDF -->
-Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
+Category of license that's used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Description-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-LicenseCategory-Editable-Begin -->
@@ -5986,6 +5994,9 @@ Identifier for the entity that requested the license, such as the client who acq
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> The Microsoft Store for Business and Microsoft Store for Education are retired. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).
+
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-DFProperties-Begin -->

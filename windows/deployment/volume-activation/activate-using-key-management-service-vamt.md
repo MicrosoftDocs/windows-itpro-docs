@@ -2,7 +2,7 @@
 title: Activate using Key Management Service
 description: Learn how to use Key Management Service (KMS) to activate Windows.
 ms.service: windows-client
-ms.subservice: itpro-fundamentals
+ms.subservice: activation
 ms.author: kaushika
 author: kaushika-msft
 manager: cshepard
