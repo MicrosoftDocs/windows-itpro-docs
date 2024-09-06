@@ -95,6 +95,15 @@ When an OEM releases a newer update version that qualifies to be the new recomme
 1. In the **Decline for these rings** dropdown, select the applicable rings. Declined drivers are grayed out in the Approve for these rings dropdown.
 1. Select **Save**.
 
+### Extensions and Plug and play driver updates
+
+Extensions and Plug and play driver updates might not require admin approval.
+
+| Driver update | Description |
+| ----- | ----- |
+| Extensions | Windows Autopatch doesn't manage extension drivers. They're easily identified by the term 'extension' in the name. Extensions are typically minor updates to a base driver package that can enhance, modify, or filter the functionality provided by the base driver. They play a crucial role in facilitating effective communication between the operating system and the hardware. If the device hasn't received drivers from Windows Update for some time, the device might have multiple extension drivers offered during the first scan. For more information, see [Why do my devices have driver updates installed that didn't pass through an updates policy?](/mem/intune/protect/windows-driver-updates-overview#why-do-my-devices-have-driver-updates-installed-that-didnt-pass-through-an-updates-policy). |
+| Plug and play | When Windows detects a hardware or software component (such as, but not limited to, a mouse, keyboard, or webcam) without an existing driver, it automatically downloads and installs the latest driver to ensure the component functions properly to keep the end-user productive. After the initial installation, the driver becomes manageable. Any additional updates require approval before being offered to the device. |
+
 ### Other drivers and firmware
 
 Other driver updates are updates available from the original equipment manufacturer (OEM) aside from the current recommended driver update. These updates remain in the policy if they're newer than the driver version that is currently installed on at least one device with the policy.
@@ -117,5 +126,5 @@ These updates can include:
     3. Manage the drivers for all or some deployment rings
 1. In the **Approve for these rings** dropdown, select the applicable rings. Approved drivers are grayed out in the Decline for these rings dropdown.  
 1. In the **Decline for these rings** dropdown, select the applicable rings. Declined drivers are grayed out in the Approve for these rings dropdown.
-1. You must provide a justification for the change.  If you need to submit a support request, you must copy and paste your justification in your support request. The Windows Autopatch Service Engineering Team doesn’t have access to your original justification.
+1. You must provide a justification for the change. If you need to submit a support request, you must copy and paste your justification in your support request. The Windows Autopatch Service Engineering Team doesn’t have access to your original justification.
 1. Select **Save**.
