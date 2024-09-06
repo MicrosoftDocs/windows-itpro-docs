@@ -62,13 +62,23 @@ Some of the features were released within the past year's continuous innovation 
 ### Feature1
 <!--max-->
 
-### LAPS improvements
+### Local Administrator Password Solution (LAPS) improvements
 
 [LAPS](/windows-server/identity/laps/laps-overview) has a new automatic account management feature. IT admins can configure Windows LAPS to:
 - Automatically create the managed local account
 - Configure name of account
 - Enable or disable the account
 - Randomize the name of the account
+
+LAPS has the following policy improvements: 
+
+- Added passphrase settings for the [PasswordComplexity](/windows/client-management/mdm/laps-csp#policiespasswordcomplexity) policy
+   - Use [PassphraseLength](/windows/client-management/mdm/laps-csp#policiespassphraselength) to control the number of words in a new passphrase
+- Added an improved readablity setting for the [PasswordComplexity](/windows/client-management/mdm/laps-csp#policiespasswordcomplexity) policy, which generates passwords without using characters that are easily confused with another character. For example, the number zero and the letter O aren't used in the password since the characters can be confused.
+
+Image rollback detection was introduced for LAPS. LAPS can detect when a device was rolled back to a previous image. When a device is rolled back, the password in Active Directory might not match the password on the device that was rolled back. This new feature adds an Active Directory attribute, `msLAPS-CurrentPasswordVersion`, to the Windows LAPS schema. This attribute contains a random GUID that's written by Windows LAPS every time a new password is persisted in Active Directory, followed by saving a local copy. During every processing cycle, the GUID stored in `msLAPS-CurrentPasswordVersion` will be queried and compared to the locally persisted copy. If the GUIDs are different, the password will be immediately rotated. To enable this feature, you need to run the latest version of the [Update-LapsADSchema PowerShell cmdlet](/powershell/module/laps/update-lapsadschema). 
+
+
 
 ### Personal Data Encryption (PDE) for folders
 
