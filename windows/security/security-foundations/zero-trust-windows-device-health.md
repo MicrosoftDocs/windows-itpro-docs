@@ -5,7 +5,7 @@ ms.topic: concept-article
 manager: aaroncz
 ms.author: paoloma
 author: paolomatarazzo
-ms.date: 11/07/2023
+ms.date: 09/06/2024
 ---
 
 # Zero Trust and Windows device health

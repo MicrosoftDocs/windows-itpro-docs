@@ -1,9 +1,9 @@
 ---
-ms.date: 11/07/2023
+ms.date: 09/06/2024
 title: Local Accounts
 description: Learn how to secure and manage access to the resources on a standalone or member server for services or users.
 ms.topic: concept-article
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
@@ -37,7 +37,7 @@ The default Administrator account can't be deleted or locked out, but it can be 
 
 Windows setup disables the built-in Administrator account and creates another local account that is a member of the Administrators group.
 
-Members of the Administrators groups can run apps with elevated permissions without using the *Run as Administrator* option. Fast User Switching is more secure than using `runas` or different-user elevation.  
+Members of the Administrators groups can run apps with elevated permissions without using the *Run as Administrator* option. Fast User Switching is more secure than using `runas` or different-user elevation.
 
 #### Account group membership
 
@@ -219,7 +219,7 @@ The following table shows the Group Policy and registry settings that are used t
 ||Registry value data|0|
 
 > [!NOTE]
-> You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
+> You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates.
 
 #### To enforce local account restrictions for remote access
 
