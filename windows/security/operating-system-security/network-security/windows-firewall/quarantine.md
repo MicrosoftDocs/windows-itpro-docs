@@ -2,7 +2,7 @@
 title: Quarantine behavior
 description: Learn about Windows Firewall and the quarantine feature behavior.
 ms.topic: concept-article
-ms.date: 11/21/2023
+ms.date: 09/06/2024
 ---
 
 # Quarantine behavior
@@ -77,7 +77,7 @@ Inside the wfpdiag.xml, search for `netEvents` that have `FWPM_NET_EVENT_TYPE_CL
 The characters in the application ID name are separated by periods:
 
 ```XML
- <asString>         \\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.w.i.n.d.o.w.s.\\.s.y.s.t.e.m.3.2.\\.s.v.c.h.o.s.t...e.x.e... </asString> 
+ <asString>         \\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.w.i.n.d.o.w.s.\\.s.y.s.t.e.m.3.2.\\.s.v.c.h.o.s.t...e.x.e... </asString>
 ```
 
 The `netEvent` contains more information about the dropped packet, including information about its capabilities, the filter that dropped the packet, and much more.

@@ -2,7 +2,7 @@
 title: Filter origin audit log
 description: Learn about Windows Firewall and filter origin audit log to troubleshoot packet drops.
 ms.topic: troubleshooting
-ms.date: 11/21/2023
+ms.date: 09/06/2024
 ---
 
 # Filter origin audit log
