@@ -1,7 +1,7 @@
 ---
 title: Take a Test app technical reference
 description: List of policies and settings applied by the Take a Test app.
-ms.date: 11/02/2023
+ms.date: 09/06/2024
 ms.topic: reference
 ---
 
@@ -15,7 +15,7 @@ Assessment vendors can use Take a Test as a platform to lock down the operating 
 
 ## PC lock-down for assessment
 
- When the assessment page initiates lock-down, the student's desktop is locked and the app executes above the Windows lock screen. This provides a sandbox that ensures the student can only interact with the Take a Test app. After transitioning to the lock screen, Take a Test applies local MDM policies to further lock down the device. The whole process of going above the lock screen and applying policies is what defines lock-down. The lock-down process is atomic, which means that if any part of the lock-down operation fails, the app won't be above lock and won't have any of the policies applied.  
+ When the assessment page initiates lock-down, the student's desktop is locked and the app executes above the Windows lock screen. This provides a sandbox that ensures the student can only interact with the Take a Test app. After transitioning to the lock screen, Take a Test applies local MDM policies to further lock down the device. The whole process of going above the lock screen and applying policies is what defines lock-down. The lock-down process is atomic, which means that if any part of the lock-down operation fails, the app won't be above lock and won't have any of the policies applied.
 
 When running above the lock screen:
 
@@ -64,7 +64,7 @@ When Take a Test is running, the following functionality is available to student
     - Assistive technology that might be running
     - Lock screen (not available if student is using a dedicated test account)
 
-    > [!NOTE] 
+    > [!NOTE]
     > The app will exit if the student signs in to an account from the lock screen.
     > Progress made in the test may be lost or invalidated.
 - The student can exit the test by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>

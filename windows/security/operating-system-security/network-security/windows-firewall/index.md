@@ -1,8 +1,8 @@
 ---
-title: Windows Firewall overview 
+title: Windows Firewall overview
 description: Learn overview information about the Windows Firewall security feature.
 ms.topic: overview
-ms.date: 11/21/2023
+ms.date: 09/06/2024
 ---
 
 # Windows Firewall overview
