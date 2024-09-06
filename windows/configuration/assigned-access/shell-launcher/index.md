@@ -127,5 +127,4 @@ Depending on your configuration, you can have a user to automatically sign in to
 <!--links-->
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
-[MEM-2]: /mem/intune/fundamentals/licenses#device-only-licenses
 [WIN-3]: /windows/client-management/mdm/assignedaccess-csp
