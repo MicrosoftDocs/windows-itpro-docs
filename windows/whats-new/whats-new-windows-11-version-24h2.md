@@ -81,7 +81,7 @@ Image rollback detection was introduced for LAPS. LAPS can detect when a device 
 
 ### Rust in the Windows kernel
 
-There's a new implementation of [GDI region](/windows/win32/gdi/regions) in win32kbase_rs.sys. Rust offers advantages in reliability and security over traditional programs written in C/C++.  
+There's a new implementation of [GDI region](/windows/win32/gdi/regions) in win32kbase_rs.sys. Since Rust offers advantages in reliability and security over traditional programs written in C/C++, you'll continue to see more use of it in the kernel.
 
 ### Personal Data Encryption (PDE) for folders
 
