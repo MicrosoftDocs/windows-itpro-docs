@@ -46,11 +46,14 @@ items:
   - name: Declared Configuration
     items:
     - name: Declared Configuration protocol
-      href: ../declared-configuration.md
-    - name: Declared Configuration discovery
-      href: ../declared-configuration-discovery.md
-    - name: Declared Configuration enrollment
-      href: ../declared-configuration-enrollment.md
+      expanded: true
+      items:
+        - name: Protocol overview
+          href: ../declared-configuration.md
+        - name: Discovery
+          href: ../declared-configuration-discovery.md
+        - name: Enrollment
+          href: ../declared-configuration-enrollment.md
     - name: Declared Configuration extensibility
       href: ../declared-configuration-extensibility.md
     - name: Declared Configuration resource access
