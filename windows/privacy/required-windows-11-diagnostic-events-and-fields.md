@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 04/24/2024
+ms.date: 10/01/2024
 ms.collection: privacy-windows
 ms.topic: reference
 ---
@@ -166,7 +166,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser binary generating the events.
-
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
 
@@ -438,7 +437,7 @@ The following fields are available:
 - **DriverAvailableInbox**  Is a driver included with the operating system for this PNP device?
 - **DriverAvailableOnline**  Is there a driver for this PNP device on Windows Update?
 - **DriverAvailableUplevel**  Is there a driver on Windows Update or included with the operating system for this PNP device?
-- **DriverBlockOverridden**  Is there's a driver block on the device that has been overridden?
+- **DriverBlockOverridden**  Is there a driver block on the device that has been overridden?
 - **NeedsDismissAction**  Will the user would need to dismiss a warning during Setup for this device?
 - **NotRegressed**  Does the device have a problem code on the source OS that is no better than the one it would have on the target OS?
 - **SdbDeviceBlockUpgrade**  Is there an SDB block on the PNP device that blocks upgrade?
@@ -1475,7 +1474,7 @@ The following fields are available:
 - **AzureOSIDPresent**  Represents the field used to identify an Azure machine.
 - **AzureVMType**  Represents whether the instance is Azure VM PAAS, Azure VM IAAS or any other VMs.
 - **CDJType**  Represents the type of cloud domain joined for the machine.
-- **CommercialId**  Represents the GUID for the commercial entity that the device is a member of.  Will be used to reflect insights back to customers.
+- **CommercialId**  Represents the GUID for the commercial entity that the device is a member of. Will be used to reflect insights back to customers.
 - **ContainerType**  The type of container, such as process or virtual machine hosted.
 - **EnrollmentType**  Defines the type of MDM enrollment on the device.
 - **HashedDomain**  The hashed representation of the user domain used for login.
@@ -1489,7 +1488,6 @@ The following fields are available:
 - **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an enterprise Configuration Manager environment.
 - **ServerFeatures**  Represents the features installed on a Windows Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
 - **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
-
 
 ### Census.Firmware
 
@@ -1956,6 +1954,7 @@ The following fields are available:
 Fires when HVCI is already enabled so no need to continue auto-enablement.
 
 
+
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciScanGetResultFailed
 
 Fires when driver scanning fails to get results.
@@ -2197,6 +2196,7 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
+
 ## Common data fields
 
 ### Ms.Device.DeviceInventoryChange
@@ -2210,6 +2210,7 @@ The following fields are available:
 - **objectInstanceId**  Object identity, which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+
 
 
 ## Component-based servicing events
@@ -2985,6 +2986,7 @@ The following fields are available:
 - **PreviousExecutionState**  Windows Mixed Reality Portal app prior execution state.
 - **wilActivity**  Windows Mixed Reality Portal app wilActivity ID.
 
+
 ### Microsoft.Windows.Shell.HolographicFirstRun.AppLifecycleService_Resuming
 
 This event indicates Windows Mixed Reality Portal app resuming. This event is also used to count WMR device. The data collected with this event is used to keep Windows performing properly.
@@ -3570,7 +3572,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousUUPInfoAdd
 
-This event provides data on Unified Update Platform (UUP) products and what version they are at. The data collected with this event is used to keep Windows performing properly.
+This event provides data on Unified Update Platform (UUP) products and what version they're at. The data collected with this event is used to keep Windows performing properly.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
@@ -3996,7 +3998,6 @@ The following fields are available:
 - **extendedData**  GTL extended data section for each app to add its own extensions.
 - **timeToActionMs**  Time in MS for this Page Action.
 
-
 ### Microsoft.Surface.Mcu.Prod.CriticalLog
 
 Error information from Surface device firmware.
@@ -4312,7 +4313,7 @@ The following fields are available:
 - **DownloadState**  Current state of the active download for this content (queued, suspended, or progressing)
 - **EventType**  Possible values are "Child", "Bundle", or "Driver"
 - **FlightId**  The unique identifier for each flight
-- **IsNetworkMetered**  Indicates whether Windows considered the current network to be metered"
+- **IsNetworkMetered**  Indicates whether Windows considered the current network to be "metered"
 - **MOAppDownloadLimit**  Mobile operator cap on size of application downloads, if any
 - **MOUpdateDownloadLimit**  Mobile operator cap on size of operating system update downloads, if any
 - **PowerState**  Indicates the power state of the device at the time of heartbeart (DC, AC, Battery Saver, or Connected Standby)
@@ -6355,7 +6356,7 @@ The following fields are available:
 - **flightMetadata**  Contains the FlightId and the build being flighted.
 - **objectId**  Unique value for each Update Agent mode.
 - **relatedCV**  Correlation vector value generated from the latest USO scan.
-- **result**  Result of the initialize phase of the update. 0 = Succeeded, 1 = Failed, 2 = Cancelled, 3 = Blocked, 4 = BlockCancelled.
+- **result**  Result of the initialize phase of the update. 0 = Succeeded, 1 = Failed, 2 = Canceled, 3 = Blocked, 4 = BlockCancelled.
 - **scenarioId**  The scenario ID. Example: MobileUpdate, DesktopLanguagePack, DesktopFeatureOnDemand, or DesktopDriverUpdate.
 - **sessionData**  Contains instructions to update agent for processing FODs and DUICs (Null for other scenarios).
 - **sessionId**  Unique value for each Update Agent mode attempt.
@@ -6587,6 +6588,15 @@ The following fields are available:
 - **ResultId**  The result generated by the evaluation and presentation.
 - **WasCompleted**  True if the user interaction campaign is complete.
 - **WasPresented**  True if the user interaction campaign is displayed to the user.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.IHExit
+
+This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **InteractionCampaignID**  GUID identifying the interaction campaign that RUXIMIH processed.
 
 
 ## Windows Update mitigation events
@@ -6841,6 +6851,3 @@ The following fields are available:
 - **Flags**  The flags passed to the hard reserve adjustment function.
 - **PendingHardReserveAdjustment**  The final change to the hard reserve size.
 - **UpdateType**  Indicates whether the change is an increase or decrease in the size of the hard reserve.
-
-
-
