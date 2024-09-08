@@ -8,7 +8,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 10/01/24
+ms.date: 10/01/2024
 ms.topic: reference
 ms.collection: privacy-windows
 ---
