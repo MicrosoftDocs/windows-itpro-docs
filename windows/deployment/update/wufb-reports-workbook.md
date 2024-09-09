@@ -142,11 +142,11 @@ The **Device status** group for feature updates contains the following items:
 
 ## Driver updates tab
 
-The **Driver update** tab provides information on driver and firmware update deployments from [Windows Update for Business deployment service](deployment-service-overview.md). Generalized data is at the top of the page in tiles. The data becomes more specific as you navigate lower in this tab. The top of the driver updates tab contains tiles with the following information:
+The **Driver update** tab provides information on driver and firmware update deployments from [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview). Generalized data is at the top of the page in tiles. The data becomes more specific as you navigate lower in this tab. The top of the driver updates tab contains tiles with the following information:
 
 **Devices taking driver updates**: Count of devices that are installing driver and firmware updates.
 **Approved updates**: Count of approved driver updates
-**Total policies**: The total number of deployment polices for driver and firmware updates from [Windows Update for Business deployment service](deployment-service-overview.md)
+**Total policies**: The total number of deployment polices for driver and firmware updates from [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
 **Active alerts**: Count of active alerts for driver deployments
 
 Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 1000 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
