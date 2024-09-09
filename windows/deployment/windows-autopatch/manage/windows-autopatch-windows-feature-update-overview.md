@@ -64,9 +64,9 @@ For more information about Windows feature update policies that are created for 
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** from the left navigation menu.
-1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release management** blade, select **Release schedule**, then **Windows feature updates**.
-1. In the **Windows feature updates** blade, select **New release**.
+1. Under the **Manage updates** section, select **Windows updates**.
+1. In the **Windows updates** blade, select the **Feature updates** tab.
+1. Select **Create Autopatch multi-phase release**.
 1. In the **Basics** page:
     1. Enter a **Name** for the custom release.
     2. Select the **Version** to deploy.
@@ -81,7 +81,7 @@ For more information about Windows feature update policies that are created for 
 1. In the **Review + create** page, review all settings. Once you're ready, select **Create**.
 
 > [!NOTE]
-> Custom releases can't be deleted from the Windows feature updates release management blade. The custom release record serves as a historical record for auditing purposes when needed.
+> Custom releases can't be deleted from the Feature updates tab in the Windows updates blade. The custom release record serves as a historical record for auditing purposes when needed.
 
 ## Edit a custom release
 
@@ -92,9 +92,9 @@ For more information about Windows feature update policies that are created for 
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** from the left navigation menu.
-1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release schedule** tab, select **Windows feature updates**.
-1. In the **Windows feature updates** blade, select the **horizontal ellipses (…)** > Edit to customize your gradual rollout of your feature updates release, then select **Save**.
+1. Under the **Manage updates** section, select **Windows updates**.
+1. In the **Windows update** blade, select the **Feature updates** tab.
+1. In the **Feature updates** tab, select the **horizontal ellipses (…)** > Edit to customize your gradual rollout of your feature updates release, then select **Save**.
     1. Only the release schedule can be customized when using the edit function. You can't add or remove Autopatch groups or modify the phase order when editing a release.
 1. Select **Review + Create**.
 1. Select **Apply** to save your changes.
@@ -108,9 +108,9 @@ For more information about Windows feature update policies that are created for 
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** from the left navigation menu.
-1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release schedule** tab, select **Windows feature updates**.
-1. In the **Windows feature updates** blade, select the **horizontal ellipses (…)** > **Cancel** to cancel your feature updates release.
+1. Under the **Manage updates** section, select **Windows updates**.
+1. In the **Windows updates** blade, select the **Feature updates** tab.
+1. In the **Feature updates** tab, select the **horizontal ellipses (…)** > **Cancel** to cancel your feature updates release.
 1. Select a reason for cancellation from the dropdown menu.
 1. Optional. Enter details about why you're pausing or resuming the selected update.
 1. Select **Cancel deployment** to save your changes.
@@ -130,9 +130,9 @@ For more information about Windows feature update policies that are created for 
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** from the left navigation menu.
-1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release schedule** tab, select **Windows feature updates**.
-1. In the **Windows feature updates** blade, select the **horizontal ellipses (…)** > **Pause** or **Resume** to pause or resume your feature updates release.
+1. Under the **Manage updates** section, select **Windows updates**.
+1. In the **Windows updates** blade, select the **Feature updates** tab.
+1. In the **Feature updates** tab, select the **horizontal ellipses (…)** > **Pause** or **Resume** to pause or resume your feature updates release.
 1. Select a reason from the dropdown menu.
 1. Optional. Enter details about why you're pausing or resuming the selected update.
 1. If you're resuming an update, you can select one or more deployment rings.

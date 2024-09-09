@@ -36,9 +36,8 @@ Before you start managing Autopatch groups, ensure you meet the [Windows Autopat
 **To create an Autopatch group:**
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Devices** from the left navigation menu.
-1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release management** blade, select **Autopatch groups**.
+1. Select **Tenant administration** from the left navigation menu.
+1. Under the **Windows Autopatch** section, select **Autopatch groups**.
 1. In the **Autopatch groups** blade, select **Create**.
 1. In the **Basics** page, enter a **name** and a **description** then select **Next: Deployment rings**.
     1. Enter up to 64 characters for the Autopatch group name and 150 characters maximum for the description. The Autopatch group name is appended to both the update rings and the DSS policy names that get created once the Autopatch group is created.

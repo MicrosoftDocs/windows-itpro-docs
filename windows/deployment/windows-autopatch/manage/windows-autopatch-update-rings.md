@@ -41,9 +41,9 @@ Imported rings automatically register all targeted devices into Windows Autopatc
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** from the left navigation menu.
-3. Under the **Windows Autopatch** section, select **Release management**.
-4. In the **Release management** blade, go to the **Release schedule** tab and select **Windows quality updates**.
-5. Select **Import Update rings for Windows 10 and later**.
+3. Under the **Manage updates** section, select **Windows updates**.
+4. In the **Windows updates** blade, go to the **Update rings** tab.
+5. Select **Enroll policies**.
 6. Select the existing rings you would like to import.
 7. Select **Import**.
 
@@ -53,8 +53,8 @@ Imported rings automatically register all targeted devices into Windows Autopatc
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** from the left navigation menu.
-3. Under the **Windows Autopatch** section, select **Release management**.
-4. In the **Release management** blade, go to the **Release schedule** tab and select **Windows quality updates**.
+3. Under the **Manage updates** section, select **Windows updates**.
+4. In the **Windows updates** blade, go to the **Update rings**.
 5. Select the Update rings for Windows 10 and later you would like to remove.
 6. Select the **horizontal ellipses (...)** and select **Remove**.
 

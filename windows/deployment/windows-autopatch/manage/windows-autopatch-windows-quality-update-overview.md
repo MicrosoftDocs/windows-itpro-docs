@@ -25,7 +25,7 @@ For more information about how to expedite quality update for Windows 10 or late
 
 [!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-Windows Autopatch aims to keep at least 95% of [Up to Date devices](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices) on the latest quality update. Autopatch uses the previously defined release schedule on a per ring basis with a five-day reporting period to calculate and evaluate the service level objective (SLO). The result of the service level objective is the column "% with the latest quality update" displayed in release management and reporting.
+Windows Autopatch aims to keep at least 95% of [Up to Date devices](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices) on the latest quality update. Autopatch uses the previously defined release schedule on a per ring basis with a five-day reporting period to calculate and evaluate the service level objective (SLO). The result of the service level objective is the column "% with the latest quality update" displayed in the Windows updates blade and reporting.
 
 ## Service level objective calculation
 
@@ -64,18 +64,7 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 
 For the deployment rings that pass quality updates deferral date, the OOB release schedule is expedited and deployed on the same day. For the deployment rings that have deferral upcoming, OOBs is released as per the set deferral dates.
 
-**To view deployed Out of Band quality updates:**
-
-1. Go to [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Windows Autopatch** > **Release management**.
-2. Under the **Release Announcements** tab, you can view the knowledge base (KB) articles corresponding to deployed OOB and regular Windows quality updates. You can also view the schedules for OOB update releases in the Release Schedule tab.
-
-> [!NOTE]
-> Announcements and OOB update schedules will be **removed** from the Release announcements tab when the next quality update is released. Further, if quality updates are paused for a deployment ring, the OOB updates will also be paused.
-
 ## Pause and resume a release
-
-> [!CAUTION]
-> You should only pause and resume [Windows quality](#pause-and-resume-a-release) and [Windows feature updates](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md#pause-and-resume-a-release) on Windows Autopatch managed devices using the Windows Autopatch Release management blade. Do **not** use the Microsoft Intune end-user experience flows to pause or resume Windows Autopatch managed devices.
 
 The service-level pause is driven by the various software update deployment-related signals Windows Autopatch receives from Windows Update for Business, and several other product groups within Microsoft.
 
@@ -91,8 +80,8 @@ If Windows Autopatch detects a significant issue with a release, we might decide
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** from the left navigation menu.
-1. Under the **Windows Autopatch** section, select **Release management**.
-1. In the **Release management** blade, go to the **Release schedule** tab and select **Windows quality updates**.
+1. Under the **Manage updates** section, select **Windows updates**.
+1. In the **Windows updates** blade, select the **Quality updates** tab.
 1. Select the Autopatch group or deployment ring that you want to pause or resume. Select either: **Pause** or **Resume**. Alternatively, you can select the **horizontal ellipses (...)** of the Autopatch group or deployment ring you want to pause or resume. Select, **Pause, or **Resume** from the dropdown menu.
 1. Optional. Enter the justification about why you're pausing or resuming the selected update.
 1. Optional. Select **This pause is related to Windows Update**. When you select this checkbox, you must provide information about how the pause is related to Windows Update.

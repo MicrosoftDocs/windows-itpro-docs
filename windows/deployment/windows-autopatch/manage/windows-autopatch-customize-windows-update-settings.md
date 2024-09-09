@@ -44,7 +44,7 @@ With the deadline-drive cadence type, you can control and customize the deferral
 
 Each deployment ring can be scheduled independent of the others, and there are no dependencies that the previous deployment ring must be scheduled before the next ring. Further, if the cadence type is set as **Deadline-driven**, the automatic update behavior setting, **Reset to default** in the Windows Update for Business policy, are applied.
 
-It's possible for you to change the cadence from the Windows Autopatch Release management blade while update deployments are in progress. Windows Autopatch abides by the principle to always respect your preferences over service-defined values.
+It's possible for you to change the cadence from the Windows Autopatch groups blade while update deployments are in progress. Windows Autopatch abides by the principle to always respect your preferences over service-defined values.
 
 However, if an update already started for a particular deployment ring, Windows Autopatch isn't able to change the cadence for that ring during that ongoing update cycle. The changes will only be effective in the next update cycle.
 
@@ -98,7 +98,7 @@ For more information, see [Windows Update settings you can manage with Intune up
 **To customize the Windows Update deployment cadence:**
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Navigate to **Devices** > **Windows Autopatch** > **Release management** > **Release settings** select **Autopatch groups**. Select the **horizontal ellipses (…)** > **Edit** for the Autopatch group you want to edit.
+2. Navigate to **Tenant administration** > **Windows Autopatch** > **Autopatch groups**. Select the **horizontal ellipses (…)** > **Edit** for the Autopatch group you want to edit.
 3. Select the **horizontal ellipses (…)** across each ring to manage the deployment cadence or notification settings.
 4. Select **Next** to navigate to the Windows update settings page. The page lists the existing settings for each of the deployment rings in the Autopatch group.
 5. Select [**Manage deployment cadence**](#cadence-types) to customize Windows Update settings.
@@ -116,4 +116,4 @@ For more information, see [Windows Update settings you can manage with Intune up
     1. Select **Save** once you select the preferred setting.
 7. Repeat the same process to customize each of the rings. Once done, select **Next**.
 8. In **Review + apply**, you're able to review the selected settings for each of the rings.
-9. Select **Apply** to apply the changes to the ring policy. Once the settings are applied, the saved changes can be verified in the **Release schedule** tab. The Windows quality update schedule on the **Release schedule** tab is updated as per the customized settings.
+9. Select **Apply** to apply the changes to the ring policy.
