@@ -65,7 +65,7 @@ No. SCM supported only SCAP 1.0, which wasn't updated as SCAP evolved. The new t
 | Name | Details | Security Tools |
 |--|--|--|
 | Microsoft 365 Apps for enterprise, version 2306 | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-m365-apps-for-enterprise-v2306/ba-p/3858702) | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
-| Microsoft Edge, version 117 | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-117/ba-p/3930862) | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
+| Microsoft Edge, version 128 | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-128/ba-p/4237524) | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 
 ## Related articles
 
