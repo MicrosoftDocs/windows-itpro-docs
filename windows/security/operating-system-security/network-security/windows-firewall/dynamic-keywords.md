@@ -2,7 +2,7 @@
 title: Windows Firewall dynamic keywords
 description: Learn about Windows Firewall dynamic keywords and how to configure it using Windows PowerShell.
 ms.topic: how-to
-ms.date: 01/16/2024
+ms.date: 09/06/2024
 ---
 
 # Windows Firewall dynamic keywords

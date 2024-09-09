@@ -1,7 +1,7 @@
 ---
 title: Windows Firewall tools
 description: Learn about the available tools to configure Windows Firewall and firewall rules.
-ms.date: 11/20/2023
+ms.date: 09/06/2024
 ms.topic: best-practice
 ---
 
