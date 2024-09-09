@@ -888,7 +888,7 @@ To enable this behavior:
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
-If you disable or don't configure this policy setting, devices enrolled to the Windows Update for Business deployment service won't be able to take advantage of some deployment service features.
+If you disable or don't configure this policy setting, devices enrolled to Windows Autopatch won't be able to take advantage of some deployment service features.
 <!-- AllowWUfBCloudProcessing-Description-End -->
 
 <!-- AllowWUfBCloudProcessing-Editable-Begin -->
