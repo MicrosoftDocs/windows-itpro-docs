@@ -39,7 +39,7 @@ The Autopatch service creates additional driver profiles on a per-deployment rin
 Choosing between Automatic and Manual modes can be done per-deployment ring and/or per Autopatch group. For a single Autopatch group, a mix of both Automatic and Manual policies is allowed. If you were previously in Manual mode, we create Manual policies for all your group rings. If Automatic (the default) was previously used, we create Automatic policies instead.  
 
 > [!IMPORTANT]
-> If you switch between Automatic and Manual modes, new policies are generated to **replace old policies**. **You’ll lose any approvals previously made for those groups and/or deployment rings**.
+> If you switch between Automatic and Manual modes, new policies are generated to **replace old policies**. **You’ll lose any approvals, paused drivers, and declined drivers previously made for those groups and/or deployment rings**.
 
 | Modes | Description |
 | ----- | -----|
@@ -71,7 +71,7 @@ The deferral period allows you to delay the installation of driver and firmware 
 The deferral period can be set from 0 to 14 days, and it can be different for each deployment ring.  
 
 > [!NOTE]
-> The deferral period only applies to Automatic driver and firmware updates. Updates to approved Manual policies, that are approved, are installed immediately.
+> The deferral period only applies to automatically approved driver and firmware updates. An admin must specify the date to start offering a driver with any manual approval.
 
 ### Recommended driver and firmware updates across managed devices
 
@@ -85,14 +85,15 @@ When an OEM releases a newer update version that qualifies to be the new recomme
 
 **To approve and deploy recommended drivers:**
 
-1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), navigate to **Devices** > **Manage Updates** | **Windows Autopatch** > **Driver Updates** > **Recommended drivers** tab. This tab lists all drivers that are to be deployed to all Autopatch managed devices.
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), navigate to **Devices** > **Manage updates** > **Windows updates** > **Driver updates**.
+1. Select **Manage drivers for Autopatch groups** or select one of the **Drivers to review** links.
 1. Select the driver or drivers you’d like to manage.  
 1. Select **Manage**. You can either:
-    1. Approve the drivers for all or some deployment rings
-    2. Decline the drivers for all or some deployment rings
-    3. Manage the drivers for all or some deployment rings
-1. In the **Approve for these rings** dropdown, select the applicable rings. Approved drivers are grayed out in the Decline for these rings dropdown.  
-1. In the **Decline for these rings** dropdown, select the applicable rings. Declined drivers are grayed out in the Approve for these rings dropdown.
+    1. Approve for all policies
+    2. Decline for all unreviewed policies
+    3. Manage for individual policies
+1. In the **Approve for all policies** dropdown, select the date to make the driver available through Windows Update.
+1. In the **Manage for individual policies** dropdown, select the policies to approve or decline the driver.
 1. Select **Save**.
 
 ### Extensions and Plug and play driver updates
@@ -118,13 +119,14 @@ These updates can include:
 
 **To approve and deploy other drivers:**
 
-1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), navigate to **Devices** > **Windows Autopatch** > **Release Management** > **Release schedule** > **Driver Updates** > **Other drivers** tab. This tab lists updates that are available from the original equipment manufacturer (OEM) aside from the current recommended driver update. The list of drivers in this tab can be long.
-1. Select the driver or drivers you’d like to manage throughout the tenant.
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), navigate to **Devices** > **Manage updates** > **Windows update** > **Driver Updates**.
+1. Select **Manage drivers for Autopatch groups** or select one of the **Drivers to review** links.
+1. Select **Other drivers** tab. You can either:
+1. Select the driver or drivers you’d like to manage.
 1. Select **Manage**. You can either:
-    1. Approve the drivers for all or some deployment rings
-    2. Decline the drivers for all or some deployment rings
-    3. Manage the drivers for all or some deployment rings
-1. In the **Approve for these rings** dropdown, select the applicable rings. Approved drivers are grayed out in the Decline for these rings dropdown.  
-1. In the **Decline for these rings** dropdown, select the applicable rings. Declined drivers are grayed out in the Approve for these rings dropdown.
-1. You must provide a justification for the change. If you need to submit a support request, you must copy and paste your justification in your support request. The Windows Autopatch Service Engineering Team doesn’t have access to your original justification.
+    1. Approve for all policies
+    2. Decline for all unreviewed policies
+    3. Manage for individual policies
+1. In the **Approve for all policies** dropdown, select the date to make the driver available through Windows Update.  
+1. In the **Manage for individual policies** dropdown, select the policies to approve or decline the driver.
 1. Select **Save**.
