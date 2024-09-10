@@ -101,9 +101,7 @@ sections:
 
           **For Delivery Optimization metadata**:
 
-          - `*.dl.delivery.mp.microsoft.com`
-
-          **For the payloads (optional)**:
+          - `*.dl.delivery.mp.microsoft.com
 
           - `*.windowsupdate.com`
 
