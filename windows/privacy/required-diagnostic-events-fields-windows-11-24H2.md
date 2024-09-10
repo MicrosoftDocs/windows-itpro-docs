@@ -440,7 +440,7 @@ Fires when the compatibility check completes. Gives the results from the check.
 The following fields are available:
 
 - **IsRecommended**  Denotes whether all compatibility checks have passed and, if so, returns true. Otherwise returns false.
-- **Issues**  If compatibility checks failed, provides bit indexed indicators of issues detected. Table located here: https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-hvci-enablement#check-results-of-hvci-default-enablement.
+- **Issues**  If compatibility checks failed, provides bit indexed indicators of issues detected. Table located here: [Check results of HVCI default enablement](/windows-hardware/design/device-experiences/oem-hvci-enablement#check-results-of-memory-integrity-default-enablement)
 - **Scenario**  No content is currently available.
 
 
@@ -462,7 +462,7 @@ Fires at the beginning and end of the HVCI auto-enablement process in sysprep.
 
 The following fields are available:
 
-- **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure. See [wilActivity](#wilactivity).
+- **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure.
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciAlreadyEnabled
@@ -728,8 +728,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **Common**  No content is currently available. See [Common](#common).
-- **EventData**  No content is currently available. See [EventData](#eventdata).
+- **Common**  No content is currently available.
+- **EventData**  No content is currently available.
 
 
 ### Ms.Support.Info
@@ -738,8 +738,8 @@ No content is currently available.
 
 The following fields are available:
 
-- **Common**  No content is currently available. See [Common](#common).
-- **EventData**  No content is currently available. See [EventData](#eventdata).
+- **Common**  No content is currently available.
+- **EventData**  No content is currently available.
 
 
 ## Component-based servicing events
@@ -1364,7 +1364,7 @@ The following fields are available:
 - **IsDeviceSetupComplete**  Windows Mixed Reality Portal app state of device setup completion.
 - **PackageVersion**  Windows Mixed Reality Portal app package version.
 - **PreviousExecutionState**  Windows Mixed Reality Portal app prior execution state.
-- **wilActivity**  Windows Mixed Reality Portal app wilActivity ID. See [wilActivity](#wilactivity).
+- **wilActivity**  Windows Mixed Reality Portal app wilActivity ID.
 
 
 ### Microsoft.Windows.Shell.HolographicFirstRun.SomethingWentWrong
@@ -1507,16 +1507,16 @@ No content is currently available.
 
 The following fields are available:
 
-- **BootEnvironment**  No content is currently available. See [BootEnvironment](#bootenvironment).
+- **BootEnvironment**  No content is currently available.
 - **BootStatValid**  No content is currently available.
-- **Bugcheck**  No content is currently available. See [Bugcheck](#bugcheck).
-- **CrashDump**  No content is currently available. See [CrashDump](#crashdump).
+- **Bugcheck**  No content is currently available.
+- **CrashDump**  No content is currently available.
 - **CurrentBootId**  No content is currently available.
-- **FirmwareReset**  No content is currently available. See [FirmwareReset](#firmwarereset).
+- **FirmwareReset**  No content is currently available.
 - **LastShutdownBootId**  No content is currently available.
-- **LongPowerButtonHold**  No content is currently available. See [LongPowerButtonHold](#longpowerbuttonhold).
-- **SystemStateTransition**  No content is currently available. See [SystemStateTransition](#systemstatetransition).
-- **Watchdog**  No content is currently available. See [Watchdog](#watchdog).
+- **LongPowerButtonHold**  No content is currently available.
+- **SystemStateTransition**  No content is currently available.
+- **Watchdog**  No content is currently available.
 - **WheaBootErrorCount**  No content is currently available.
 
 
@@ -1553,7 +1553,7 @@ The following fields are available:
 - **device_sample_rate**  A number representing how often the device sends telemetry, expressed as a percentage. Low values indicate that device sends more events and high values indicate that device sends fewer events. The value is rounded to 5 significant figures for privacy reasons and if an error is hit in getting the device sample number value from the registry then this will be -1; and if client is not on a UTC-enabled platform, then this value will not be set.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event, where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSourceName**  A string representation of the installation source.
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
@@ -1585,7 +1585,7 @@ The following fields are available:
 - **device_sample_rate**  A number representing how often the device sends telemetry, expressed as a percentage. Low values indicate that device sends more events and high values indicate that device sends fewer events. The value is rounded to 5 significant figures for privacy reasons and if an error is hit in getting the device sample number value from the registry then this will be -1; and if client is not on a UTC-enabled platform, then this value will not be set.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSourceName**  A string representation of the installation source.
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
@@ -1617,7 +1617,7 @@ The following fields are available:
 - **device_sample_rate**  A number representing how often the device sends telemetry, expressed as a percentage. Low values indicate that device sends more events and high values indicate that device sends fewer events. The value is rounded to 5 significant figures for privacy reasons and if an error is hit in getting the device sample number value from the registry then this will be -1; and if client is not on a UTC-enabled platform, then this value will not be set.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSourceName**  A string representation of the installation source.
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
@@ -1649,7 +1649,7 @@ The following fields are available:
 - **device_sample_rate**  A number representing how often the device sends telemetry, expressed as a percentage. Low values indicate that device sends more events and high values indicate that device sends fewer events. The value is rounded to 5 significant figures for privacy reasons and if an error is hit in getting the device sample number value from the registry then this will be -1; and if client is not on a UTC-enabled platform, then this value will not be set.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSourceName**  A string representation of the installation source.
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
@@ -3432,7 +3432,7 @@ The following fields are available:
 - **HRESULT**  No content is currently available.
 - **publisherIntent**  Publisher Intent id associated with the update.
 - **reason**  Reason for EULA acceptance.
-- **update**  Update for which EULA has been accepted. See [update](#update).
+- **update**  Update for which EULA has been accepted.
 - **UusVersion**  No content is currently available.
 
 
@@ -3445,7 +3445,7 @@ The following fields are available:
 - **approved**  Flag to determine if it is approved or not.
 - **provider**  The provider related to which the update is approved.
 - **publisherIntent**  The publisher intent of the Update.
-- **update**  Additional information about the Update. See [update](#update).
+- **update**  Additional information about the Update.
 - **UusVersion**  No content is currently available.
 
 
@@ -3479,12 +3479,11 @@ The following fields are available:
 - **provider**  The provider that is being invoked to perform this action (WU, Legacy UO Provider etc.).
 - **publisherIntent**  No content is currently available.
 - **scenario**  No content is currently available.
-- **update**  Update related metadata including UpdateId. See [update](#update).
+- **update**  Update related metadata including UpdateId.
 - **uptimeMinutes**  Duration USO for up for in the current boot session.
 - **uptimeMinutesDelta**  No content is currently available.
 - **UusVersion**  No content is currently available.
-- **wilActivity**  Wil Activity related information. See [wilActivity](#wilactivity).
-
+- **wilActivity**  Wil Activity related information.
 
 ### Microsoft.Windows.Update.SIHClient.CheckForUpdatesStarted
 
