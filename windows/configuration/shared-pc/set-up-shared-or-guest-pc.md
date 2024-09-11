@@ -1,7 +1,7 @@
 ---
 title: Configure a shared or guest Windows device
 description: Description of how to configured Shared PC mode, which is a Windows feature that optimizes devices for shared use scenarios.
-ms.date: 11/08/2023
+ms.date: 09/06/2024
 ms.topic: how-to
 ---
 
@@ -25,9 +25,7 @@ Shared PC can be configured using the following methods:
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
 
-#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune**](#tab/intune)
-
-
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
 To configure devices using Microsoft Intune, [create a **Settings catalog** policy][MEM-2], and use the settings listed under the category **`Shared PC`**:
 

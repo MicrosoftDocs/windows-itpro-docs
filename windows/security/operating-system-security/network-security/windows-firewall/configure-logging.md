@@ -1,8 +1,8 @@
 ---
-title: Configure Windows Firewall logging 
+title: Configure Windows Firewall logging
 description: Learn how to configure Windows Firewall to log dropped packets or successful connections with CSP and group policy.
 ms.topic: how-to
-ms.date: 11/21/2023
+ms.date: 09/06/2024
 ---
 
 # Configure Windows Firewall logging
@@ -137,7 +137,7 @@ If not, add *FullControl* permissions for `mpssvc` to the folder, subfolders and
 
 ```PowerShell
 $LogPath = Join-Path -path $env:windir -ChildPath "System32\LogFiles\Firewall"
-$NewAcl = Get-Acl -Path $LogPath 
+$NewAcl = Get-Acl -Path $LogPath
 
 $identity = "NT SERVICE\mpssvc"
 $fileSystemRights = "FullControl"
