@@ -3662,7 +3662,7 @@ The following fields are available:
 - **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce.
 - **NumFailedAudienceMetadataSignatures**  Number of audience Publisher Intent metadata signatures checks which failed for new metadata synced.
 - **NumFailedMetadataSignatures**  Number of metadata signatures checks which failed for new metadata synced download.
-- **Props**  Commit Props.
+- **Props**  Commit Props (MergedUpdate).
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **ServiceUrl**  Environment URL for which a device is configured to scan.
@@ -3703,7 +3703,7 @@ This event checks for update retries on the Windows Update client. The data coll
 The following fields are available:
 
 - **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
-- **Props**  Commit Props.
+- **Props**  Commit Props (MergedUpdate).
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **ServiceUrl**  Environment URL for which a device is configured to scan.
@@ -3767,7 +3767,7 @@ The following fields are available:
 - **NumberOfApplicableUpdates**  Number of updates which were ultimately deemed applicable to the system after detection process is complete.
 - **NumFailedAudienceMetadataSignatures**  Number of audience PublisherIntent metadata signatures checks which failed for new metadata synced.
 - **NumFailedMetadataSignatures**  Number of metadata signatures checks which failed for new metadata synced download.
-- **Props**  Commit Props.
+- **Props**  Commit Props (MergedUpdate).
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **ServiceUrl**  Environment URL for which a device is configured to scan.
@@ -3789,7 +3789,7 @@ The following fields are available:
 - **ExtendedStatusCode**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  Commit Props.
+- **Props**  Commit Props (MergedUpdate).
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
@@ -3810,7 +3810,7 @@ The following fields are available:
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  Commit Props.
+- **Props**  Commit Props (MergedUpdate).
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **UpdateId**  Identifier associated with the specific piece of content.
@@ -3829,7 +3829,7 @@ The following fields are available:
 - **EventType**  Indicates the purpose of the event - whether scan started, succeeded, failed, etc.
 - **FlightId**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **HandlerType**  The specific id of the flight the device is getting.
-- **Props**  Commit Props.
+- **Props**  Commit Props (MergedUpdate).
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **UndockedComponents**  Information consisting of Id, HR, ModuleVer, LoadProps, Path relating to the Undocked component.
@@ -3844,23 +3844,23 @@ This event tracks the download canceled event when the update client is trying t
 The following fields are available:
 
 - **BundleId**  Name of application making the Windows Update request. Used to identify context of request.
-- **CallerName**  No content is currently available.
-- **ClassificationId**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
+- **ClassificationId**  Classification identifier of the update content.
 - **DownloadPriority**  Indicates the priority of the download activity.
-- **DownloadStartTimeUTC**  No content is currently available.
+- **DownloadStartTimeUTC**  Download start time to measure the length of the session.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
-- **HandlerInfo**  No content is currently available.
-- **HandlerType**  No content is currently available.
+- **HandlerInfo**  HandlerInfo Blob.
+- **HandlerType**  HandlerType Blob.
 - **HostName**  Identifies the hostname.
 - **NetworkCost**  Identifies the network cost.
 - **NetworkRestrictionStatus**  When download is done, identifies whether network switch happened to restricted.
-- **Props**  No content is currently available.
-- **Reason**  No content is currently available.
+- **Props**  A bitmask for additional flags associated with the download request.
+- **Reason** Cancel reason information.
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.DownloadFailed
@@ -3870,24 +3870,24 @@ This event tracks the download failed event when the update client is trying to 
 The following fields are available:
 
 - **BundleId**  Name of application making the Windows Update request. Used to identify context of request.
-- **CallerName**  No content is currently available.
-- **ClassificationId**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
+- **ClassificationId**  Provides context about distribution stack for reporting.
 - **DownloadPriority**  Indicates the priority of the download activity.
-- **DownloadStartTimeUTC**  No content is currently available.
+- **DownloadStartTimeUTC**  Start time to measure length of session.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **FlightId**  The specific id of the flight the device is getting.
-- **HandlerInfo**  No content is currently available.
-- **HandlerType**  No content is currently available.
+- **HandlerInfo**  HandlerInfo Blob.
+- **HandlerType**  HandlerType Blob.
 - **HostName**  Identifies the hostname.
 - **NetworkCost**  Identifies the network cost.
 - **NetworkRestrictionStatus**  When download is done, identifies whether network switch happened to restricted.
-- **Props**  No content is currently available.
+- **Props**  Commit Props (MergedUpdate).
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.DownloadPaused
@@ -3904,7 +3904,7 @@ The following fields are available:
 - **FlightId**  Secondary status code for certain scenarios where StatusCode wasn't specific enough.
 - **HandlerInfo**  Blob of Handler related information.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  Commit Props {MergedUpdate}
+- **Props**  Commit Props (MergedUpdate)
 - **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
@@ -3919,20 +3919,20 @@ This event tracks the download queued event when the update client is trying to 
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
-- **ClassificationId**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
+- **ClassificationId**  Classification identifier of the update content.
 - **DownloadPriority**  Indicates the priority of the download activity.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
-- **HandlerInfo**  No content is currently available.
-- **HandlerType**  No content is currently available.
-- **Props**  No content is currently available.
-- **QueuedReason**  No content is currently available.
+- **HandlerInfo**  Blob of Handler related information.
+- **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
+- **Props**  Commit Props (MergedUpdate)
+- **QueuedReason**  The reason in which a download has been queued.
 - **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  The version of the Update Undocked Stack.
 
 
 ### Microsoft.Windows.Update.WUClient.DownloadResumed
@@ -3964,17 +3964,17 @@ This event tracks the install canceled event when the update client is trying to
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  No content is currently available.
-- **Reason**  No content is currently available.
+- **Props**  Install props (UsedSystemVolume, MergedUpdate, IsSuccessFailurePostReboot, isInteractive)
+- **Reason**  Install canceled reason.
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.InstallFailed
@@ -3984,20 +3984,20 @@ This event tracks the install failed event when the update client is trying to u
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **FlightId**  The specific id of the flight the device is getting.
-- **HandlerInfo**  No content is currently available.
+- **HandlerInfo**  Handler specific information.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  No content is currently available.
+- **Props**  Install props (UsedSystemVolume, MergedUpdate, IsSuccessFailurePostReboot, isInteractive)
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
-- **UndockedComponents**  No content is currently available.
+- **UndockedComponents**  Information about the undocked components.
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.InstallRebootPending
@@ -4007,17 +4007,16 @@ This event tracks the install reboot pending event when the update client is try
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  No content is currently available.
+- **Props** Install props (UsedSystemVolume, MergedUpdate, IsSuccessFailurePostReboot, isInteractive)
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
-
+- **UusVersion**  Active UUS version.
 
 ### Microsoft.Windows.Update.WUClient.InstallStarted
 
@@ -4026,16 +4025,16 @@ The event tracks the install started event when the update client is trying to u
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  No content is currently available.
+- **Props** Install props (UsedSystemVolume, MergedUpdate, IsSuccessFailurePostReboot, isInteractive)
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.InstallSucceeded
@@ -4045,18 +4044,18 @@ The event tracks the successful install event when the update client is trying t
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
-- **HandlerInfo**  No content is currently available.
+- **HandlerInfo**  Handler specific datapoints.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  No content is currently available.
+- **Props** Install props (UsedSystemVolume, MergedUpdate, IsSuccessFailurePostReboot, isInteractive)
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
-- **UndockedComponents**  No content is currently available.
+- **UndockedComponents**  Information about the undocked components.
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.RevertFailed
@@ -4066,19 +4065,19 @@ This event tracks the revert failed event when the update client is trying to up
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **FlightId**  The specific id of the flight the device is getting.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  No content is currently available.
+- **Props**  Commit Props (MergedUpdate)
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
-- **UndockedComponents**  No content is currently available.
+- **UndockedComponents**  Information consisting of Id, HR, ModuleVer, LoadProps, Path relating to the Undocked component.
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.RevertStarted
@@ -4088,16 +4087,16 @@ This event tracks the revert started event when the update client is trying to u
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  No content is currently available.
+- **Props**  Revert props (MergedUpdate)
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  The version of the Update Undocked Stack.
 
 
 ### Microsoft.Windows.Update.WUClient.RevertSucceeded
@@ -4107,17 +4106,17 @@ The event tracks the successful revert event when the update client is trying to
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  No content is currently available.
+- **Props**  Revert props (MergedUpdate)
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
-- **UndockedComponents**  No content is currently available.
+- **UndockedComponents**  Information consisting of Id, HR, ModuleVer, LoadProps, Path relating to the Undocked component.
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClientExt.DownloadCheckpoint
@@ -4126,7 +4125,7 @@ This is a checkpoint event between the Windows Update download phases for UUP co
 
 The following fields are available:
 
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **FileId**  Unique identifier for the downloaded file.
@@ -4136,7 +4135,7 @@ The following fields are available:
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClientExt.DownloadHeartbeat
@@ -4147,24 +4146,24 @@ The following fields are available:
 
 - **BytesTotal**  Total bytes to transfer for this content.
 - **BytesTransferred**  Total bytes transferred for this content at the time of heartbeat.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **ConnectionStatus**  Indicates the connectivity state of the device at the time of heartbeat.
 - **CurrentError**  Last (transient) error encountered by the active download.
-- **DownloadHBFlags**  No content is currently available.
+- **DownloadHBFlags**  Flags indicating if power state is ignored.
 - **DownloadState**  Current state of the active download for this content (queued, suspended, progressing).
 - **EventType**  Possible values are "Child", "Bundle", "Relase" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
 - **MOAppDownloadLimit**  Mobile operator cap on size of application downloads, if any.
 - **MOUpdateDownloadLimit**  Mobile operator cap on size of OS update downloads, if any.
 - **PowerState**  Indicates the power state of the device at the time of heartbeart (DC, AC, Battery Saver, Connected Standby).
-- **Props**  No content is currently available.
+- **Props**  Commit Props (MergedUpdate)
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ResumeCount**  Number of times this active download has resumed from a suspended state.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **SuspendCount**  Number of times this active download has entered a suspended state.
 - **SuspendReason**  Last reason for which this active download has entered suspended state.
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  The version of the Update Undocked Stack.
 
 
 ### Microsoft.Windows.Update.WUClientExt.UpdateMetadataIntegrityFragmentSigning
@@ -4173,7 +4172,7 @@ This event helps to identify whether update content has been tampered with and p
 
 The following fields are available:
 
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **EndpointUrl**  URL of the endpoint where client obtains update metadata. Used to identify test vs staging vs production environments.
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **LeafCertId**  Integral id from the FragmentSigning data for certificate which failed.
@@ -4185,7 +4184,7 @@ The following fields are available:
 - **SHA256OfLeafCerData**  Base64 string of hash of the leaf cert data.
 - **SLSPrograms**  A test program a machine may be opted in. Examples include "Canary" and "Insider Fast".
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClientExt.UpdateMetadataIntegrityGeneral
@@ -4211,7 +4210,7 @@ This event helps to identify whether update content has been tampered with and p
 
 The following fields are available:
 
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **EndpointUrl**  URL of the endpoint where client obtains update metadata. Used to identify test vs staging vs production environments.
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **LeafCertId**  Integral id from the FragmentSigning data for certificate which failed.
@@ -4226,8 +4225,8 @@ The following fields are available:
 - **SLSPrograms**  A test program a machine may be opted in. Examples include "Canary" and "Insider Fast".
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **TimestampTokenId**  Created time encoded in the timestamp blob. This will be zeroed if the token is malformed and decoding failed.
-- **UpdateID**  No content is currently available.
-- **UusVersion**  No content is currently available.
+- **UpdateID**  String of update id and version number.
+- **UusVersion**  The version of the Update Undocked Stack.
 
 
 ### Microsoft.Windows.Update.WUClientExt.UpdateMetadataIntegrityTimestamp
@@ -4236,7 +4235,7 @@ This event helps to identify whether update content has been tampered with and p
 
 The following fields are available:
 
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **EndpointUrl**  URL of the endpoint where client obtains update metadata. Used to identify test vs staging vs production environments.
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
@@ -4246,7 +4245,7 @@ The following fields are available:
 - **SLSPrograms**  A test program a machine may be opted in. Examples include "Canary" and "Insider Fast".
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **TimestampTokenId**  Created time encoded in the timestamp blob. This will be zeroed if the token is itself malformed and decoding failed.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS Version.
 - **ValidityWindowInDays**  Validity window in effect when verifying the timestamp.
 
 
