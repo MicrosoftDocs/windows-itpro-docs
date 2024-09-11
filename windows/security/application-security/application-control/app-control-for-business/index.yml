@@ -20,12 +20,10 @@ landingContent:
         links:
           - text: What is Application Control?
             url: appcontrol.md
-          - text: What is App Control for Business?
-            url: appcontrol-and-applocker-overview.md
           - text: What is AppLocker?
             url: applocker\applocker-overview.md
-          - text: App Control and AppLocker feature availability
-            url: feature-availability.md
+          - text: App Control and AppLocker overview
+            url: appcontrol-and-applocker-overview.md
   # Card
   - title: Learn about Policy Design
     linkLists:

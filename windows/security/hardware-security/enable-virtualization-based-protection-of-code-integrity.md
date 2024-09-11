@@ -141,16 +141,16 @@ reg delete HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\Hyperviso
 reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /t REG_DWORD /d 2 /f
 ```
 
-### Enable memory integrity using Windows Defender Application Control (WDAC)
+### Enable memory integrity using App Control for Business
 
-You can use WDAC policy to turn on memory integrity using any of the following techniques:
+You can use App Control policy to turn on memory integrity using any of the following techniques:
 
-1. Use the [WDAC Wizard](https://aka.ms/wdacwizard) to create or edit your WDAC policy and select the option **Hypervisor-protected Code Integrity** on the **Policy Rules** page of the Wizard.
+1. Use the [App Control Wizard](https://aka.ms/wdacwizard) to create or edit your App Control policy and select the option **Hypervisor-protected Code Integrity** on the **Policy Rules** page of the Wizard.
 2. Use the [Set-HVCIOptions](/powershell/module/configci/set-hvcioptions) PowerShell cmdlet.
-3. Edit your WDAC policy XML and modify the value set for the `<HVCIOptions>` element.
+3. Edit your App Control policy XML and modify the value set for the `<HVCIOptions>` element.
 
 > [!NOTE]
-> If your WDAC policy is set to turn memory integrity on, it will be turned on even if the policy is in audit mode.
+> If your App Control policy is set to turn memory integrity on, it will be turned on even if the policy is in audit mode.
 
 ### Validate enabled VBS and memory integrity features
 

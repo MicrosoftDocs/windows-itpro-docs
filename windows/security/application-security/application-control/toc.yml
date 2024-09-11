@@ -1,9 +1,9 @@
 items:
 - name: Smart App Control
   href: app-control-for-business/appcontrol.md
-- name: Windows Defender Application Control
+- name: App Control for Business
   href: app-control-for-business/appcontrol.md
-- name: Windows Defender Application Control and virtualization-based protection of code integrity
+- name: App Control for Business and virtualization-based protection of code integrity
   href: introduction-to-virtualization-based-security-and-appcontrol.md
 - name: User Account Control (UAC)
   items:
