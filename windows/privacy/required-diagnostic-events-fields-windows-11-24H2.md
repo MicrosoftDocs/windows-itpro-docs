@@ -508,14 +508,12 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.KcetHvciDisabled
 
-No content is currently available.
-
+This event indicates that kernel-mode Control-flow Enforcement Technology (CET), which is a CPU-based security feature that protects against return address hijacking attacks from malicious software, was unable to be enabled because HVCI (a dependent security feature) was not also enabled.
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.State.DefenderSwitchedNWOff
 
-No content is currently available.
-
+This event tracks when Defender turns off Smart App Control via the Cloud.
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.State.DefenderSwitchedNWOffIgnored
@@ -534,13 +532,12 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.CodeIntegrity.State.SwitchedNWOff
 
-No content is currently available.
-
+This event tracks when Smart App Control is turned off.
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.State.SwitchedNWToEnforcementMode
 
-No content is currently available.
+This events tracks when Smart App Control is changed from evaluation to enforcement mode.
 
 
 
@@ -2084,7 +2081,7 @@ The following fields are available:
 
 ### Microsoft.Windows.WinRE.Agent.ExtendOsPartitionSucceed
 
-No content is currently available.
+This event emits success for the extending OS Partition operation.
 
 
 
@@ -2099,13 +2096,13 @@ The following fields are available:
 
 ### Microsoft.Windows.WinRE.Agent.WinreFormatPartition
 
-No content is currently available.
+This event fires when WinRE partition is formatted.
 
 
 
 ### Microsoft.Windows.WinRE.Agent.WinreFormatPartitionSucceed
 
-No content is currently available.
+This vvent fires when WinRE partition attempts to format and succeeds.
 
 
 ## Privacy consent logging events
@@ -3380,14 +3377,14 @@ This event reports the installation result details of the MACUpdate expedited ap
 The following fields are available:
 
 - **Completed**  Indicates whether the installation is complete.
-- **DeploymentAttempted**  No content is currently available.
-- **DeploymentErrorCode**  No content is currently available.
-- **DeploymentExtendedErrorCode**  No content is currently available.
+- **DeploymentAttempted**  Whether the deployment was attempted.
+- **DeploymentErrorCode**  The error code resulting from the deployment attempt.
+- **DeploymentExtendedErrorCode**  The extended error code resulting from the deployment attempt.
 - **InstallFailureReason**  Indicates the reason an install failed.
 - **IsRetriableError**  Indications whether the error is retriable.
 - **OperationStatus**  Returns the operation status result reported by the installation attempt.
 - **Succeeded**  Indicates whether the installation succeeded.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  The version of the UUS stack currently active.
 - **VelocityEnabled**  Indicates whether the velocity tag for MACUpdate is enabled.
 
 
@@ -3659,19 +3656,19 @@ This event checks for updates canceled on the Windows Update client. The data co
 
 The following fields are available:
 
-- **AADDeviceTicketResult**  No content is currently available.
-- **CallerName**  No content is currently available.
+- **AADDeviceTicketResult**  Identifies result of AAD Device Token Acquisition.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce.
-- **NumFailedAudienceMetadataSignatures**  No content is currently available.
-- **NumFailedMetadataSignatures**  Number of metadata signatures checks which failed for new metadata synced down.
-- **Props**  No content is currently available.
+- **NumFailedAudienceMetadataSignatures**  Number of audience Publisher Intent metadata signatures checks which failed for new metadata synced.
+- **NumFailedMetadataSignatures**  Number of metadata signatures checks which failed for new metadata synced download.
+- **Props**  Commit Props.
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **ServiceUrl**  Environment URL for which a device is configured to scan.
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
 - **SyncType**  Describes the type of scan for this event (1-Full Sync, 2-Delta Sync, 3-Full CatScan Sync, 4-Delta CatScan Sync).
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.CheckForUpdatesFailed
@@ -3680,23 +3677,23 @@ This event checks for failed updates on the Windows Update client. The data coll
 
 The following fields are available:
 
-- **AADDeviceTicketResult**  No content is currently available.
-- **CallerName**  No content is currently available.
+- **AADDeviceTicketResult**  Identifies result of AAD Device Token Acquisition.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
-- **FailedUpdateInfo**  No content is currently available.
-- **HandlerInfo**  No content is currently available.
-- **HandlerType**  No content is currently available.
+- **FailedUpdateInfo**  Information about the update failure.
+- **HandlerInfo**  Blob of Handler related information.
+- **HandlerType**  Name of Handler.
 - **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce.
-- **NumFailedAudienceMetadataSignatures**  No content is currently available.
-- **NumFailedMetadataSignatures**  Number of metadata signatures checks which failed for new metadata synced down.
-- **Props**  No content is currently available.
+- **NumFailedAudienceMetadataSignatures**  Number of audience PublisherIntent metadata signatures checks which failed for new metadata synced.
+- **NumFailedMetadataSignatures**  Number of metadata signatures checks which failed for new metadata synced download.
+- **Props**  A bitmask for additional flags associated with the Windows Update request (IsInteractive, IsSeeker, AllowCachedResults, DriverSyncPassPerformed, IPv4, IPv6, Online, ExtendedMetadataIncl, WUfb).
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **ServiceUrl**  Environment URL for which a device is configured to scan.
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult.).
 - **SyncType**  Describes the type of scan for this event (1-Full Sync, 2-Delta Sync, 3-Full CatScan Sync, 4-Delta CatScan Sync).
-- **UndockedComponents**  No content is currently available.
-- **UusVersion**  No content is currently available.
+- **UndockedComponents**  Information consisting of Id, HR, ModuleVer, LoadProps, Path relating to the Undocked component.
+- **UusVersion**  Active UUSVersion.
 
 
 ### Microsoft.Windows.Update.WUClient.CheckForUpdatesRetry
@@ -3705,13 +3702,13 @@ This event checks for update retries on the Windows Update client. The data coll
 
 The following fields are available:
 
-- **CallerName**  No content is currently available.
-- **Props**  No content is currently available.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
+- **Props**  Commit Props.
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **ServiceUrl**  Environment URL for which a device is configured to scan.
 - **SyncType**  Describes the type of scan for this event (1-Full Sync, 2-Delta Sync, 3-Full CatScan Sync, 4-Delta CatScan Sync).
-- **UusVersion**  No content is currently available.
+- **UusVersion**  The version of the Update Undocked Stack.
 
 
 ### Microsoft.Windows.Update.WUClient.CheckForUpdatesScanInitFailed
@@ -3720,19 +3717,18 @@ This event checks for failed update initializations on the Windows Update client
 
 The following fields are available:
 
-- **AADDeviceTicketResult**  No content is currently available.
-- **CallerName**  No content is currently available.
-- **MetadataIntegrityMode**  No content is currently available.
-- **NumFailedAudienceMetadataSignatures**  No content is currently available.
-- **NumFailedMetadataSignatures**  No content is currently available.
-- **RelatedCV**  No content is currently available.
+- **AADDeviceTicketResult**  Identifies result of AAD Device Token Acquisition.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
+- **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce.
+- **NumFailedAudienceMetadataSignatures**  Number of audience PublisherIntent metadata signatures checks which failed for new metadata synced.
+- **NumFailedMetadataSignatures**  Number of metadata signatures checks which failed for new metadata synced download.
+- **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
-- **ServiceUrl**  No content is currently available.
+- **ServiceUrl**  Environment URL for which a device is configured to scan.
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
-- **SyncType**  No content is currently available.
-- **UndockedComponents**  No content is currently available.
-- **UusVersion**  No content is currently available.
-
+- **SyncType**  Describes the type of scan the event was.
+- **UndockedComponents**  Information consisting of Id, HR, ModuleVer, LoadProps, Path relating to the Undocked component.
+- **UusVersion**  Active UUS version.
 
 ### Microsoft.Windows.Update.WUClient.CheckForUpdatesServiceRegistrationFailed
 
@@ -3740,19 +3736,19 @@ This event checks for updates for failed service registrations the Windows Updat
 
 The following fields are available:
 
-- **AADDeviceTicketResult**  No content is currently available.
-- **CallerName**  No content is currently available.
+- **AADDeviceTicketResult**  Identifies result of AAD Device Token Acquisition.
+- **CallerName**  For drivers targeted to a specific device model, this is the version release of the drivers being distributed to the device.
 - **Context**  Context of failure.
-- **MetadataIntegrityMode**  No content is currently available.
-- **NumFailedAudienceMetadataSignatures**  No content is currently available.
-- **NumFailedMetadataSignatures**  No content is currently available.
-- **RelatedCV**  No content is currently available.
+- **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce.
+- **NumFailedAudienceMetadataSignatures**  Number of audience Publisher Intent metadata signatures checks which failed for new metadata synced.
+- **NumFailedMetadataSignatures**  Number of audience Publisher Intent metadata signatures checks which failed for new metadata synced download.
+- **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
-- **ServiceUrl**  No content is currently available.
+- **ServiceUrl**  Environment URL for which a device is configured to scan.
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
-- **SyncType**  No content is currently available.
-- **UndockedComponents**  No content is currently available.
-- **UusVersion**  No content is currently available.
+- **SyncType**  Describes the type of scan the event was.
+- **UndockedComponents**  Information consisting of Id, HR, ModuleVer, LoadProps, Path relating to the Undocked component.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.CheckForUpdatesSucceeded
@@ -3761,23 +3757,23 @@ This event checks for successful updates on the Windows Update client. The data 
 
 The following fields are available:
 
-- **AADDeviceTicketInfo**  No content is currently available.
-- **AADDeviceTicketResult**  No content is currently available.
+- **AADDeviceTicketInfo**  Identifies result of AAD Device Token Acquisition.
+- **AADDeviceTicketResult**  Identifies result of AAD Device Token Acquisition.
 - **ApplicableUpdateInfo**  Metadata for the updates which were detected as applicable.
-- **CallerName**  No content is currently available.
-- **HandlerInfo**  No content is currently available.
-- **HandlerType**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
+- **HandlerInfo**  HandlerInfo Blob.
+- **HandlerType**  HandlerType blob.
 - **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce.
 - **NumberOfApplicableUpdates**  Number of updates which were ultimately deemed applicable to the system after detection process is complete.
-- **NumFailedAudienceMetadataSignatures**  No content is currently available.
-- **NumFailedMetadataSignatures**  Number of metadata signatures checks which failed for new metadata synced down.
-- **Props**  No content is currently available.
+- **NumFailedAudienceMetadataSignatures**  Number of audience PublisherIntent metadata signatures checks which failed for new metadata synced.
+- **NumFailedMetadataSignatures**  Number of metadata signatures checks which failed for new metadata synced download.
+- **Props**  Commit Props.
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **ServiceUrl**  Environment URL for which a device is configured to scan.
 - **SyncType**  Describes the type of scan for this event (1-Full Sync, 2-Delta Sync, 3-Full CatScan Sync, 4-Delta CatScan Sync).
-- **UusVersion**  No content is currently available.
-- **WUFBInfo**  No content is currently available.
+- **UusVersion**  Active UUS version.
+- **WUFBInfo**  WufBinfoBlob.
 
 
 ### Microsoft.Windows.Update.WUClient.CommitFailed
@@ -3787,19 +3783,19 @@ This event checks for failed commits on the Windows Update client. The data coll
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Indicates the purpose of the event - whether because scan started, succeeded, failed, etc.
 - **ExtendedStatusCode**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  No content is currently available.
-- **RelatedCV**  No content is currently available.
+- **Props**  Commit Props.
+- **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
-- **UndockedComponents**  No content is currently available.
+- **UndockedComponents**  Information consisting of Id, HR, ModuleVer, LoadProps, Path relating to the Undocked component.
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.CommitStarted
@@ -3809,16 +3805,16 @@ This event tracks the commit started event on the Windows Update client. The dat
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver".
 - **FlightId**  The specific id of the flight the device is getting.
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
-- **Props**  No content is currently available.
-- **RelatedCV**  No content is currently available.
+- **Props**  Commit Props.
+- **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Current active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.CommitSucceeded
@@ -3828,17 +3824,17 @@ This event is used to track the commit succeeded process, after the update insta
 The following fields are available:
 
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
-- **CallerName**  No content is currently available.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
 - **ClassificationId**  Classification identifier of the update content.
 - **EventType**  Indicates the purpose of the event - whether scan started, succeeded, failed, etc.
 - **FlightId**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **HandlerType**  The specific id of the flight the device is getting.
-- **Props**  No content is currently available.
-- **RelatedCV**  No content is currently available.
+- **Props**  Commit Props.
+- **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc.).
-- **UndockedComponents**  No content is currently available.
+- **UndockedComponents**  Information consisting of Id, HR, ModuleVer, LoadProps, Path relating to the Undocked component.
 - **UpdateId**  Identifier associated with the specific piece of content.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active UUS version.
 
 
 ### Microsoft.Windows.Update.WUClient.DownloadCanceled
