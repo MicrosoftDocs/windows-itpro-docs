@@ -27,24 +27,24 @@ Windows 11, version 24H2 follows the [Windows 11 servicing timeline](/lifecycle/
 
 Devices updating from Windows 11, version 23H2 use an enablement package. Most the files for the 24H2 update already exist on Windows 11, version 23H2 devices that have a recent monthly security update installed. Many of the new features are already enabled on Windows 11, version 23H2 clients. <!-- However, some features are just in an inactive and dormant state because they are under [temporary enterprise feature control](temporary-enterprise-feature-control.md). These new features remain dormant until they're turned on through the enablement package, a small, quick-to-install switch that activates all of the Windows 11, version 24H2 features. -->
 
-Windows 11, version 24H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [PLACEHOLDER- How to get the Windows 11, version 24H2 update](https://blogs.windows.com/windowsexperience/?p=178531). Review the [PLACEHOLDER- Windows 11, version 24H2 Windows IT Pro blog post](https://aka.ms/new-in-24H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
+Windows 11, version 24H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 24H2 update]( https://aka.ms/how-to-get-24H2). Review the [Windows 11, version 24H2 Windows IT Pro blog post](https://aka.ms/new-in-24H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
 
 
 To learn more about the status of the update rollout, known issues, and new information, see [Windows release health](/windows/release-health/).
 
-<!--
 ## Features no longer under temporary enterprise control
 
-[Temporary enterprise feature control](temporary-enterprise-feature-control.md) temporarily turns off certain features that were introduced during monthly cumulative updates for managed Windows 11, version 23H2 devices. For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
+[Temporary enterprise feature control](temporary-enterprise-feature-control.md) temporarily turns off certain features that were introduced during monthly cumulative updates for managed Windows 11 devices. For the purposes of temporary enterprise control, a system is considered managed if it's configured to get updates from Windows Update for Business or [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus). Clients that get updates from Microsoft Configuration Manager and Microsoft Intune are considered managed since their updates ultimately come from WSUS or Windows Updates for Business.
 
-When a managed Windows 11, version 23H2 device installs [version 24H2](https://support.microsoft.com/kb/5027397), the following features will no longer be under temporary enterprise feature control:
-
+There aren't any features under temporary enterprise control between Windows 11, version 23H2 and Windows 11, version 24H2. For a list of features that were under temporary enterprise control between Windows 11, version 22H2 and Windows 11, version 23H2, see, [Windows 11 features behind temporary enterprise feature control](temporary-enterprise-feature-control.md).
+<!--
 | Feature | KB article where the feature was introduced | 
 |---|---|
-| PLACEHOLDER Touch-optimized taskbar for 2-in-1 devices  | [February 28, 2023 - KB5022913](https://support.microsoft.com/kb/5022913)  | 
-
-
+| PLACEHOLDER | [February 28, 2023 - KB5022913](https://support.microsoft.com/kb/5022913)  | 
 -->
+
+
+
 ## Checkpoint cumulative updates
 <!--8769182--> 
 Microsoft is introducing checkpoint cumulative updates, a new servicing model that enables devices running Windows 11, version 24H2 or later to save time, bandwidth and hard drive space when getting features and security enhancements via the latest cumulative update. Previously, the cumulative updates contained all changes to the binaries since the last release to manufacturing (RTM) version. The size of the cumulative updates could grow large over time since RTM was used as the baseline for each update.
@@ -64,8 +64,9 @@ Some of the features were released within the past year's continuous innovation 
 
 ### Local Security Authority (LSA) protection enablement on upgrade
 
-[LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) helps protect against theft of secrets and credentials used for logon by preventing unauthorized code from running in the LSA process and by preventing dumping of process memory. Starting with on upgrade, an audit occurs for incompatibilities with LSA protection for a period of time. If incompatibilities aren't detected, LSA protection is automatically enabled. You can check and change the enablement state of LSA protection in the Windows Security application under the Device Security > Core Isolation page. LSA protection records whether programs are blocked from loading into LSA in the event log. If you would like to check if something has been blocked, information on the logs recorded is available here:/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#identify-plug-ins-and-drivers-that-lsassexe-fails-to-load
+[LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) helps protect against theft of secrets and credentials used for logon by preventing unauthorized code from running in the LSA process and by preventing dumping of process memory. Starting with this upgrade, an audit occurs for incompatibilities with LSA protection for a period of time. If incompatibilities aren't detected, LSA protection is automatically enabled. You can check and change the enablement state of LSA protection in the Windows Security application under the **Device Security** > **Core Isolation** page. I n the event log, LSA protection records whether programs are blocked from loading into LSA. If you would like to check if something was blocked, review the [logs](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#identify-plug-ins-and-drivers-that-lsassexe-fails-to-load).
 
+ 
 ### Remote Mailslot protocol disabled by default
 
 [Remote Mailslot protocol](/openspecs/windows_protocols/ms-mail/47ac910f-1dec-4791-8486-9b3e8fd542da) was [deprecated](deprecated-features.md#deprecated-features) in November 2023 and is now disabled by default starting in Windows 11, version 24H2. For more information on Remote Mailslots, see [About Mailslots](/windows/win32/ipc/about-mailslots). 
@@ -105,10 +106,13 @@ Windows protected print mode enables devices to print using only the Windows mod
 - Go to **Settings** > **Bluetooth & Devices** > **Printers & scanners**, then choose **Setup** under **Windows protected print mode**
 - Enable the **Configure Windows protected print** policy in Group Policy under **Computer Configuration** > **Administrative Templates** > **Printers**
 
+### App Control for Business
+<!--8223790-->
+Customers can now use App Control for Business (formerly called Windows Defender Application Control) and its next-generation capabilities to protect their digital estate from malicious code. With App Control for Business, IT teams can configure what runs in a business environment through Microsoft Intune or other MDMs in the admin console, including setting up Intune as a managed installer. For more information, see [Application Control for Windows](/windows/security/application-security/application-control/app-control-for-business/appcontrol).
 
 ### Wi-Fi 7 support
 <!--8850300-->
-Support  for Wi-Fi 7 was added when using capable access point and PCs. Wi-Fi 7, also known as IEEE 802.11be Extremely High Throughput (EHT) is the latest Wi-Fi technology that offers unprecedented speed, reliability, and efficiency for your wireless devices. For more information about Wi-Fi 7, see the [Wi-Fi Alliance announcement](https://www.wi-fi.org/discover-wi-fi/wi-fi-7).
+Support  for Wi-Fi 7 was added when using capable access point and PCs. Wi-Fi 7, also known as IEEE 802.11be Extremely High Throughput (EHT) is the latest Wi-Fi technology that offers unprecedented speed, reliability, and efficiency for your wireless devices. For more information about Wi-Fi 7, see the [Wi-Fi Alliance announcement](https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-introduces-wi-fi-certified-7).
 
 ## Sudo for Windows
 
