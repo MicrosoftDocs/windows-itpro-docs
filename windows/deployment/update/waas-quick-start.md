@@ -32,7 +32,7 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 
 For more information, see [Overview of Windows as a service](waas-overview.md).
 
-For some interesting in-depth information about how cumulative updates work, see [Windows Updates using forward and reverse differentials](PSFxWhitepaper.md).
+For some interesting in-depth information about how cumulative updates work, see [Windows Updates using forward and reverse differentials](forward-reverse-differentials.md).
 
 ## Key concepts
 
@@ -50,4 +50,4 @@ Extensive advanced testing isn't required. Instead, only business-critical apps 
 
 This process repeats with each new feature update. These are small deployment projects, compared to the large projects that were necessary with the old three-to-five-year Windows release cycles.
 
-Other technologies such as [BranchCache](waas-branchcache.md) and [Delivery Optimization](../do/waas-delivery-optimization-setup.md), both peer-to-peer distribution tools, can help with the distribution of the feature update installation files.
+Other technologies such as [BranchCache](waas-branchcache.md) and [Delivery Optimization](../do/delivery-optimization-configure.md), both peer-to-peer distribution tools, can help with the distribution of the feature update installation files.

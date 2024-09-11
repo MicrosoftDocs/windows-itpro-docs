@@ -49,19 +49,20 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Deployment",
       "contributors_to_exclude": [
         "dstrome2",
-        "rjagiewich",  
+        "rjagiewich",
         "American-Dipper",
-        "claydetels19", 
+        "claydetels19",
         "jborsecnik",
         "v-stchambers",
         "shdyas",
         "Stacyrch140",
         "garycentric",
         "dstrome",
-        "alekyaj"
+        "alekyaj",
+        "aditisrivastava07",
+        "padmagit77"
       ],
       "searchScope": [
         "Windows 10"

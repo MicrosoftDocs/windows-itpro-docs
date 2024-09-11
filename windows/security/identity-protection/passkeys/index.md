@@ -1,11 +1,11 @@
 ---
 title: Support for passkeys in Windows
 description: Learn about passkeys and how to use them on Windows devices.
-ms.collection: 
+ms.collection:
 - tier1
 ms.topic: overview
-ms.date: 11/07/2023
-appliesto: 
+ms.date: 09/06/2024
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ---
@@ -31,7 +31,7 @@ FIDO protocols prioritize user privacy, as they're designed to prevent online se
 
 ### Passkeys compared to passwords
 
-Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys are easy to create, don't need to be remembered, and don't need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They're highly secure because they're only stored on the user's devices, with the service only storing public keys. Passkeys are designed to prevent attackers to guess or obtain them, which helps to make them resistant to phishing attempts where the attacker may try to trick the user into revealing the private key. Passkeys are enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
+Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys are easy to create, don't need to be remembered, and don't need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They're highly secure because they're only stored on the user's devices, with the service only storing public keys. Passkeys are designed to prevent attackers to guess or obtain them, which helps to make them resistant to phishing attempts where the attacker might try to trick the user into revealing the private key. Passkeys are enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
 
 [!INCLUDE [passkey](../../../../includes/licensing/passkeys.md)]
 
@@ -113,7 +113,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 
 :::row:::
   :::column span="4":::
-  4. Select your linked device name (e.g. **Pixel**) > **Next**
+  4. Select your linked device name (for example, **Pixel**) > **Next**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -241,7 +241,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 
 :::row:::
   :::column span="4":::
-  4. Select your linked device name (e.g. **Pixel**) > **Next**
+  4. Select your linked device name (for example, **Pixel**) > **Next**
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -311,12 +311,86 @@ Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use the Set
 > [!NOTE]
 > Some passkeys for *login.microsoft.com* can't be deleted, as they're used with Microsoft Entra ID and/or Microsoft Account for signing in to the device and Microsoft services.
 
+## Passkeys in Bluetooth-restricted environments
+
+For passkey cross-device authentication scenarios, both the Windows device and the mobile device must have Bluetooth enabled and connected to the Internet. This allows the user to authorize another device securely over Bluetooth without transferring or copying the passkey itself.
+
+Some organizations restrict Bluetooth usage, which includes the use of passkeys. In such cases, organizations can allow passkeys by permitting Bluetooth pairing exclusively with passkey-enabled FIDO2 authenticators.
+
+To limit the use of Bluetooth to only passkey use cases, use the [Bluetooth Policy CSP][CSP-8] and the [DeviceInstallation Policy CSP][CSP-7].
+
+### Device configuration
+
+[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
+
+#### [:::image type="icon" source="../../images/icons/intune.svg" border="false"::: **Intune/CSP**](#tab/intune)
+
+To configure devices with Microsoft Intune, [you can use a custom policy][INT-2] with these settings:
+
+| Setting |
+|--|
+| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowAdvertising][CSP-1] </li><li>Data type: **Integer** </li><li>Value: `0` </li><br>When set to `0`, the device doesn't send out advertisements. |
+| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowDiscoverableMode][CSP-2] </li><li>Data type: **Integer** </li><li>Value: `0` </li><br>When set to `0`, other devices can't detect the device. |
+| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPrepairing][CSP-3]</li><li>Data type: **Integer** </li><li>Value: `0` </li><br>Prevents specific bundled Bluetooth peripherals from automatically pairing with the host device.</li> |
+| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[AllowPromptedProximalConnections][CSP-4] </li><li>Data type: **Integer** </li><li>Value: `0`</li><br>Prevents users from using Swift Pair and other proximity-based scenarios. |
+| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Bluetooth/`[ServicesAllowedList][CSP-5] </li></li><li>Data type: **String** </li><li>Value: `{0000FFFD-0000-1000-8000-00805F9B34FB};{0000FFF9-0000-1000-8000-00805F9B34FB}` <br><br> Set a list of allowable Bluetooth services and profiles: <br>- FIDO Alliance Universal Second Factor Authenticator service (`0000fffd-0000-1000-8000-00805f9b34fb`) <br>- FIDO2 secure client-to-authenticator transport service (`0000FFF9-0000-1000-8000-00805F9B34FB`)<br><br>For more information, see [FIDO CTAP 2.1 standard specification][BT-1] and [Bluetooth Assigned Numbers document][BT-2]. |
+| <li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/`[PreventInstallationOfMatchingDeviceIDs][CSP-6]</li><li>Data type: **String** </li><li>Value: `<enabled/><data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/><data id="DeviceInstall_IDs_Deny_List" value="1&#xF000;BTH\MS_BTHPAN"/>`</li><br>Disables the existing Bluetooth Personal Area Network (PAN) network adapter, preventing the installation of the Bluetooth Network Adapter that can be used for network connectivity or tethering. |
+
+#### [:::image type="icon" source="../../images/icons/powershell.svg" border="false"::: **PowerShell**](#tab/powershell)
+
+[!INCLUDE [powershell-wmi-bridge-1](../../../../includes/configure/powershell-wmi-bridge-1.md)]
+
+```powershell
+# Bluetooth configuration
+$namespaceName = "root\cimv2\mdm\dmmap"
+$className = "MDM_Policy_Config01_Bluetooth02"
+New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{
+    ParentID="./Vendor/MSFT/Policy/Config";
+    InstanceID="Bluetooth";
+    AllowDiscoverableMode=0;
+    AllowAdvertising=0;
+    AllowPrepairing=0;
+    AllowPromptedProximalConnections=0;
+    ServicesAllowedList="{0000FFF9-0000-1000-8000-00805F9B34FB};{0000FFFD-0000-1000-8000-00805F9B34FB}"
+}
+
+
+# Device installation configuration
+$namespaceName = "root\cimv2\mdm\dmmap"
+$className = "MDM_Policy_Config01_DeviceInstallation02"
+New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{
+    ParentID="./Vendor/MSFT/Policy/Config";
+    InstanceID="DeviceInstallation";
+    PreventInstallationOfMatchingDeviceIDs='<![CDATA[<Enabled/><Data id="DeviceInstall_IDs_Deny_List" value="1&#xF000;BTH\MS_BTHPAN"/><Data id="DeviceInstall_IDs_Deny_Retroactive" value="true"/>]]>'
+}
+```
+
+[!INCLUDE [powershell-wmi-bridge-2](../../../../includes/configure/powershell-wmi-bridge-2.md)]
+
+---
+
+>[!NOTE]
+>Once the settings are applied, if you try to pair a device via Bluetooth, it will initially pair and immediately disconnect. The Bluetooth device is blocked from loading and not available from Settings nor Device Manager.
+
 ## :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
 
 To provide feedback for passkeys, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passkey**.
 
 <!--links used in this document-->
 
+[BT-1]: https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-20210615.html#ble-fido-service
+[BT-2]: https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Assigned_Numbers/out/en/Assigned_Numbers.pdf?v=1713387868258
 [FHUB]: feedback-hub:?tabid=2&newFeedback=true
 [KB-1]: https://support.microsoft.com/kb/5030310
 [MSS-1]: ms-settings:savedpasskeys
+
+[INT-2]: /mem/intune/configuration/custom-settings-configure
+
+[CSP-1]: /windows/client-management/mdm/policy-csp-bluetooth#allowadvertising
+[CSP-2]: /windows/client-management/mdm/policy-csp-bluetooth#allowdiscoverablemode
+[CSP-3]: /windows/client-management/mdm/policy-csp-bluetooth#allowprepairing
+[CSP-4]: /windows/client-management/mdm/policy-csp-bluetooth#allowpromptedproximalconnections
+[CSP-5]: /windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist
+[CSP-6]: /windows/client-management/mdm/policy-csp-deviceinstallation#preventinstallationofmatchingdeviceids
+[CSP-7]: /windows/client-management/mdm/policy-csp-deviceinstallation
+[CSP-8]: /windows/client-management/mdm/policy-csp-bluetooth

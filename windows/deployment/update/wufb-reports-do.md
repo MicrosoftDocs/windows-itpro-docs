@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 04/12/2023
+ms.date: 09/03/2024
 ---
 
 # Delivery Optimization data in Windows Update for Business reports
@@ -59,7 +59,7 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 
 ## Calculations for Delivery Optimization
 
-Each calculated values used in the Delivery Optimization report are listed below.
+The calculated values used in the Delivery Optimization report are listed below.
 
 **Efficiency (%) Calculations**:
 
@@ -154,7 +154,7 @@ There are many Microsoft [content types](waas-delivery-optimization.md#types-of-
 
 | Content Category | Content Types Included |
 | --- | --- |
-| Apps | Windows 10 Store apps,  Windows 10 Store for Business apps, Windows 11 UWP Store apps |
+| Apps | Windows 10 Store apps, Windows 11 UWP Store apps |
 | Driver Updates | Windows Update [Driver updates](get-started-updates-channels-tools.md#types-of-updates) |
 | Feature Updates | Windows Update [Feature updates](get-started-updates-channels-tools.md#types-of-updates) |
 | Office | Microsoft 365 Apps and updates |
@@ -188,7 +188,7 @@ A row in UCDOAggregatedStatus represents data summarized at the tenant level (Az
 If there's a Connected Cache server at the ISP level, BytesFromCache filters out any bytes coming the ISP's Connected Cache.
 
 - **How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?**
-[Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-setup.md#monitor-delivery-optimization) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization telemetry events.
+[Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-reference.md) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization telemetry events.
 
 - **The report represents the last 28 days of data, why do some queries include >= seven days?**
 The data in the report does represent the last 28 days of data. The query for last seven days is just to get the data for the latest snapshot from past seven days. It's possible that data is delayed for sometime and not available for current day, so we look for past 7 day snapshot in log analytics and show the latest snapshot.

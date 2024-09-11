@@ -1,7 +1,7 @@
 ---
 title: Experience Policy CSP
 description: Learn more about the Experience Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 08/07/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1887,7 +1887,7 @@ _**Turn syncing off by default but don’t disable**_
 <!-- EnableOrganizationalMessages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.900] and later <br> ✅ Windows Insider Preview |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.4828] and later <br> ✅ Windows 11, version 22H2 with [KB5020044](https://support.microsoft.com/help/5020044) [10.0.22621.900] and later <br> ✅ Windows Insider Preview |
 <!-- EnableOrganizationalMessages-Applicability-End -->
 
 <!-- EnableOrganizationalMessages-OmaUri-Begin -->

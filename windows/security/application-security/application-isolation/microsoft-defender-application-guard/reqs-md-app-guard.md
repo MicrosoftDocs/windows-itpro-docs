@@ -3,7 +3,7 @@ title: System requirements for Microsoft Defender Application Guard
 description: Learn about the system requirements for installing and running Microsoft Defender Application Guard.
 ms.topic: overview
 ms.localizationpriority: medium
-ms.date: 12/12/2023
+ms.date: 07/11/2024
 ---
 
 # System requirements for Microsoft Defender Application Guard
@@ -24,8 +24,8 @@ Your environment must have the following hardware to run Microsoft Defender Appl
 
 | Hardware | Description |
 |--------|-----------|
-| 64-bit CPU|A 64-bit computer with minimum four cores (logical processors) is required for hypervisor and virtualization-based security (VBS). For more info about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more info about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
-| CPU virtualization extensions|Extended page tables, also called _Second Level Address Translation (SLAT)_ <p> **AND** <p> One of the following virtualization extensions for VBS:<br/>VT-x (Intel)<br/>**OR**<br/>AMD-V |
+| 64-bit CPU|A 64-bit computer with minimum four cores (logical processors) is required for hypervisor and Virtualization-based security (VBS). For more info about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more info about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
+| CPU virtualization extensions|Extended page tables, also called _Second Level Address Translation (SLAT)_ <br><br> **AND** <br><br> One of the following virtualization extensions for VBS:<br/>VT-x (Intel)<br/>**OR**<br/>AMD-V |
 | Hardware memory | Microsoft requires a minimum of 8-GB RAM |
 | Hard disk | 5-GB free space, solid state disk (SSD) recommended |
 | Input/Output Memory Management Unit (IOMMU) support| Not required, but recommended |
@@ -38,4 +38,4 @@ Your environment must have the following hardware to run Microsoft Defender Appl
 |--------|-----------|
 | Operating system | Windows 10 Enterprise or Education editions, version 1809 or later <br/> Windows 10 Professional edition, version 1809 or later (only [standalone mode](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/install-md-app-guard#standalone-mode) is supported)  <br/> Windows 11 Education or Enterprise editions <br/> Windows 11 Professional edition (only [Standalone mode](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/install-md-app-guard#standalone-mode) is supported) |
 | Browser | Microsoft Edge |
-| Management system <br> (only for managed devices)| [Microsoft Intune](/intune/) <p> **OR** <p> [Microsoft Configuration Manager](/configmgr/) <p> **OR** <p> [Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753298(v=ws.11)) <p> **OR** <p>Your current, company-wide, non-Microsoft mobile device management (MDM) solution. For info about non-Microsoft MDM solutions, see the documentation that came with your product. |
+| Management system <br> (only for managed devices)| [Microsoft Intune](/mem/intune/) <br><br> **OR** <br><br> [Microsoft Configuration Manager](/mem/configmgr/) <br><br> **OR** <br><br> [Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753298(v=ws.11)) <br><br> **OR** <br><br>Your current, company-wide, non-Microsoft mobile device management (MDM) solution. For info about non-Microsoft MDM solutions, see the documentation that came with your product. |

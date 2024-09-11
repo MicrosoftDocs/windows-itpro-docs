@@ -1,7 +1,7 @@
 ---
 title: DMClient CSP
 description: Learn more about the DMClient CSP.
-ms.date: 06/28/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -632,7 +632,7 @@ This node, when it's set, tells the client to set how many minutes the device sh
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5035854](https://support.microsoft.com/help/5035854) [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 with [KB5034848](https://support.microsoft.com/help/5034848) [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-OmaUri-Begin -->
@@ -671,7 +671,7 @@ Parent node for ConfigRefresh nodes.
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5035854](https://support.microsoft.com/help/5035854) [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 with [KB5034848](https://support.microsoft.com/help/5034848) [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-OmaUri-Begin -->
@@ -712,7 +712,7 @@ This node determines the number of minutes between refreshes.
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5035854](https://support.microsoft.com/help/5035854) [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 with [KB5034848](https://support.microsoft.com/help/5034848) [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-OmaUri-Begin -->
@@ -761,7 +761,7 @@ This node determines whether or not a periodic settings refresh for MDM policies
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5035854](https://support.microsoft.com/help/5035854) [10.0.22000.2836] and later <br> ✅ Windows 11, version 22H2 with [KB5034848](https://support.microsoft.com/help/5034848) [10.0.22621.3235] and later <br> ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-OmaUri-Begin -->
@@ -2167,7 +2167,7 @@ Integer node determining if a Device was Successfully provisioned. 0 is failure,
 <!-- Device-Provider-{ProviderID}-ForceAadToken-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1766] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1766] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1766] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.739] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5014699](https://support.microsoft.com/help/5014699) [10.0.19042.1766] and later <br> ✅ Windows 10, version 21H1 with [KB5014699](https://support.microsoft.com/help/5014699) [10.0.19043.1766] and later <br> ✅ Windows 10, version 21H2 with [KB5014699](https://support.microsoft.com/help/5014699) [10.0.19044.1766] and later <br> ✅ Windows 11, version 21H2 with [KB5014697](https://support.microsoft.com/help/5014697) [10.0.22000.739] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-ForceAadToken-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ForceAadToken-OmaUri-Begin -->
@@ -2374,7 +2374,7 @@ Returns the hardware device ID.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-OmaUri-Begin -->
@@ -2452,7 +2452,7 @@ Endpoint Discovery is the process where a specific URL (the "discovery endpoint"
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-OmaUri-Begin -->
@@ -2492,7 +2492,7 @@ This is an execution node and will trigger a silent Declared Configuration enrol
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-OmaUri-Begin -->
@@ -2547,7 +2547,7 @@ Returns the current enrollment or un-enrollment status of the linked enrollment.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-OmaUri-Begin -->
@@ -2586,7 +2586,7 @@ Supports Get Only. Returns the HRESULT for the last error when enroll/unenroll f
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 20H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 with [KB5018482](https://support.microsoft.com/help/5018482) [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 with [KB5016691](https://support.microsoft.com/help/5016691) [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-OmaUri-Begin -->
@@ -3609,7 +3609,7 @@ An integer that maps to a known error state or condition on the system. Valid va
 <!-- Device-Provider-{ProviderID}-Recovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-Recovery-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-OmaUri-Begin -->
@@ -3648,7 +3648,7 @@ Parent node for Recovery nodes.
 <!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-OmaUri-Begin -->
@@ -3697,7 +3697,7 @@ This node determines whether or not the client will automatically initiate a MDM
 <!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-OmaUri-Begin -->
@@ -3746,7 +3746,7 @@ This node initiates a recovery action. The server can specify prerequisites befo
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-OmaUri-Begin -->

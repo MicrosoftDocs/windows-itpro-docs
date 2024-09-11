@@ -9,5 +9,5 @@ ms.topic: include
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideSignOut](/windows/client-management/mdm/policy-csp-start#hidelock) |
+| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Start/`[HideLock](/windows/client-management/mdm/policy-csp-start#hidelock) |
 | **GPO** | Not available. |

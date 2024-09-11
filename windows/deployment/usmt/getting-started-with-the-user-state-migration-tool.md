@@ -8,7 +8,7 @@ ms.service: windows-client
 author: frankroj
 ms.topic: conceptual
 ms.subservice: itpro-deploy
-ms.date: 01/09/2024
+ms.date: 08/30/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -65,17 +65,17 @@ This article outlines the general process to follow to migrate files and setting
      >
      > USMT fails if it can't migrate a file or setting unless the `/c` option is specified. When the `/c` option is specified, USMT ignores the errors, and logs an error every time that it encounters a file that is being used that USMT didn't migrate. The `<ErrorControl>` section in the `Config.xml` file can be used to specify which errors should be ignored, and which should cause the migration to fail.
 
-1. Run the `ScanState.exe` command on the source computer to collect files and settings. All of the **.xml** files that the `ScanState.exe` command needs to use should be specified. For example,
+1. To collect files and settings, run the `ScanState.exe` command on the source computer. All of the **.xml** files that the `ScanState.exe` command needs to use should be specified. For example,
 
      ```cmd
-        ScanState.exe \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log
+     ScanState.exe \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log
      ```
 
      > [!NOTE]
      >
      > The `ScanState.exe` command must be run in **Administrator** mode on the source computer. To run in **Administrator** mode, right-click **Command Prompt**, and then select **Run As Administrator**. For more information about how the `ScanState.exe` command processes and stores the data, see [How USMT Works](usmt-how-it-works.md).
 
-1. Run the `UsmtUtils.exe` command with the `/Verify` option to ensure that the created store isn't corrupted.
+1. To ensure that the created store isn't corrupted, run the `UsmtUtils.exe` command with the `/Verify` option.
 
 ## Step 3: Prepare the destination computer and restore files and settings
 

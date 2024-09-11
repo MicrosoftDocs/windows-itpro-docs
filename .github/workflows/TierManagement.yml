@@ -1,0 +1,21 @@
+name: Tier management
+
+permissions:
+  pull-requests: write
+  contents: read
+      
+on: 
+  issue_comment:
+    types: [created, edited]
+
+jobs:
+
+  tier-mgmt:
+    if: github.repository_visibility == 'private'
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-TierManagement.yml@workflows-prod
+    with:
+      PayloadJson: ${{ toJSON(github) }}
+      EnableWriteSignOff: 1
+      EnableReadOnlySignoff: 0
+    secrets:
+      AccessToken: ${{ secrets.GITHUB_TOKEN }}

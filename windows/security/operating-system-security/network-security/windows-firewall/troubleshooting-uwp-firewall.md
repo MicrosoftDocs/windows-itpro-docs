@@ -2,7 +2,7 @@
 title: Troubleshooting UWP App Connectivity Issues in Windows Firewall
 description: Troubleshooting UWP App Connectivity Issues in Windows Firewall
 ms.topic: troubleshooting
-ms.date: 11/07/2023
+ms.date: 09/06/2024
 ---
 
 # Troubleshooting UWP App Connectivity Issues
@@ -83,7 +83,7 @@ package SID, or application ID name. The characters in the application ID name
 will be separated by periods:
 
 ```XML
-(ex)                     
+(ex)
 
 <asString>
 \\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.w.i.n.d.o.w.s.\\.s.y.s.t.e.m.3.2.\\.s.v.c.h.o.s.t...e.x.e...
@@ -118,18 +118,18 @@ remote address, capabilities, etc.
         <item>FWPM_NET_EVENT_FLAG_LOCAL_PORT_SET</item>
         <item>FWPM_NET_EVENT_FLAG_REMOTE_PORT_SET</item>
         <item>FWPM_NET_EVENT_FLAG_APP_ID_SET</item>
-        <item>FWPM_NET_EVENT_FLAG_USER_ID_SET</item>    
+        <item>FWPM_NET_EVENT_FLAG_USER_ID_SET</item>
         <item>FWPM_NET_EVENT_FLAG_IP_VERSION_SET</item>
         <item>FWPM_NET_EVENT_FLAG_PACKAGE_ID_SET</item>
     </flags>
     <ipVersion>FWP_IP_VERSION_V6</ipVersion>
-    <ipProtocol>6</ipProtocol>                
-    <localAddrV6.byteArray16>2001:4898:30:3:256c:e5ba:12f3:beb1</localAddrV6.byteArray16>    
+    <ipProtocol>6</ipProtocol>
+    <localAddrV6.byteArray16>2001:4898:30:3:256c:e5ba:12f3:beb1</localAddrV6.byteArray16>
     <remoteAddrV6.byteArray16>2620:1ec:c11::200</remoteAddrV6.byteArray16>
 <localPort>52127</localPort>
 <remotePort>443</remotePort>
 <scopeId>0</scopeId>
-<appId>                
+<appId>
     <data>5c006400650076006900630065005c0068006100720064006400690073006b0076006f006c0075006d00650031005c00700072006f006700720061006d002000660069006c00650073005c00770069006e0064006f007700730061007000700073005c00610066003600390032006200660066002d0036003700370039002d0034003200340066002d0038003700300065002d006600360065003500390063003500300032003300340039005f0031002e0031002e00310030002e0030005f007800360034005f005f00350063003000330037006a0061007200350038003300390072005c0075007700700073006f0063006b006500740063006c00690065006e0074002e006500780065000000</data>
     <asString>\\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.p.r.o.g.r.a.m.
        .f.i.l.e.s.\\.w.i.n.d.o.w.s.a.p.p.s.\\.a.f.6.9.2.b.f.f.-.6.7.7.9.-.4.2.4.f.-.8.7.0.e.-.f.6.e.5.9.c.5.0.2.3.4.9._.1...1...1.0...0._.x.6.4._._.5.c.0.3.7.j.a.r.5.8.3.9.r.\\.u.w.p.s.o.c.k.e.t.c.l.i.e.n.t...e.x.e...</asString>
@@ -152,7 +152,7 @@ remote address, capabilities, etc.
 <internalFields>
 <internalFlags/>
 <remoteAddrBitmap>0000000000000000</remoteAddrBitmap>
-<capabilities numItems="3">                
+<capabilities numItems="3">
     <item>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT</item>
     <item>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT_SERVER</item>
     <item>FWP_CAPABILITIES_FLAG_PRIVATE_NETWORK</item>
@@ -195,7 +195,7 @@ allowed by Filter #125918, from the InternetClient Default Rule.
     <asString>.+......</asString>
     </providerData>
     <layerKey>FWPM_LAYER_ALE_AUTH_CONNECT_V6</layerKey>
-    <subLayerKey>FWPM_SUBLAYER_MPSSVC_WSH</subLayerKey     
+    <subLayerKey>FWPM_SUBLAYER_MPSSVC_WSH</subLayerKey
     <weight>
     <type>FWP_EMPTY</type>
     </weight>
@@ -284,7 +284,7 @@ The important part of this condition is **S-1-15-3-1**, which is the capability 
 From the **netEvent** capabilities section, capabilities from netEvent, Wfpdiag-Case-1.xml.
 
 ```xml
-<capabilities numItems="3">                
+<capabilities numItems="3">
     <item>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT</item>
     <item>FWP_CAPABILITIES_FLAG_INTERNET_CLIENT_SERVER</item>
     <item>FWP_CAPABILITIES_FLAG_PRIVATE_NETWORK</item>
@@ -575,7 +575,7 @@ In this example, the UWP app is unable to reach the Intranet target address, 10.
     <localPort>52998</localPort>
     <remotePort>53</remotePort>
     <scopeId>0</scopeId>
-    <appId>                
+    <appId>
     <data>5c006400650076006900630065005c0068006100720064006400690073006b0076006f006c0075006d00650031005c00700072006f006700720061006d002000660069006c00650073005c00770069006e0064006f007700730061007000700073005c00610066003600390032006200660066002d0036003700370039002d0034003200340066002d0038003700300065002d006600360065003500390063003500300032003300340039005f0031002e0031002e00310031002e0030005f007800360034005f005f00350063003000330037006a0061007200350038003300390072005c0075007700700073006f0063006b006500740063006c00690065006e0074002e006500780065000000</data>
     <asString>\\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.p.r.o.g.r.a.m.
     .f.i.l.e.s.\\.w.i.n.d.o.w.s.a.p.p.s.\\.a.f.6.9.2.b.f.f.-.6.7.7.9.-.4.2.4.f.-.8.7.0.e.-.f.6.e.5.9.c.5.0.2.3.4.9._.1...1...1.1...0._.x.6.4._._.5.c.0.3.7.j.a.r.5.8.3.9.r.\\.u.w.p.s.o.c.k.e.t.c.l.i.e.n.t...e.x.e...</asString>
@@ -653,7 +653,7 @@ In this example, the UWP app is unable to reach the Intranet target address, 10.
     <localPort>52956</localPort>
     <remotePort>53</remotePort>
     <scopeId>0</scopeId>
-    <appId>    
+    <appId>
     <data>5c006400650076006900630065005c0068006100720064006400690073006b0076006f006c0075006d00650031005c00700072006f006700720061006d002000660069006c00650073005c00770069006e0064006f007700730061007000700073005c00610066003600390032006200660066002d0036003700370039002d0034003200340066002d0038003700300065002d006600360065003500390063003500300032003300340039005f0031002e0031002e00310033002e0030005f007800360034005f005f00350063003000330037006a0061007200350038003300390072005c0075007700700073006f0063006b006500740063006c00690065006e0074002e006500780065000000</data>
     <asString>\\.d.e.v.i.c.e.\\.h.a.r.d.d.i.s.k.v.o.l.u.m.e.1.\\.p.r.o.g.r.a.m.
     .f.i.l.e.s.\\.w.i.n.d.o.w.s.a.p.p.s.\\.a.f.6.9.2.b.f.f.-.6.7.7.9.-.4.2.4.f.-.8.7.0.e.-.f.6.e.5.9.c.5.0.2.3.4.9._.1...1...1.3...0._.x.6.4._._.5.c.0.3.7.j.a.r.5.8.3.9.r.\\.u.w.p.s.o.c.k.e.t.c.l.i.e.n.t...e.x.e...</asString>

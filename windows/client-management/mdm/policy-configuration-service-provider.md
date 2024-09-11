@@ -1,7 +1,7 @@
 ---
 title: Policy CSP
 description: Learn more about the Policy CSP.
-ms.date: 04/10/2024
+ms.date: 08/07/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -402,7 +402,7 @@ Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4520006](https://support.microsoft.com/help/4520006) [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 with [KB4519978](https://support.microsoft.com/help/4519978) [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 with [KB4520062](https://support.microsoft.com/help/4520062) [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 with [KB4517211](https://support.microsoft.com/help/4517211) [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-OmaUri-Begin -->
@@ -441,7 +441,7 @@ Properties of Win32 App ADMX Ingestion.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4520006](https://support.microsoft.com/help/4520006) [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 with [KB4519978](https://support.microsoft.com/help/4519978) [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 with [KB4520062](https://support.microsoft.com/help/4520062) [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 with [KB4517211](https://support.microsoft.com/help/4517211) [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-OmaUri-Begin -->
@@ -481,7 +481,7 @@ Setting Type of Win32 App. Policy Or Preference.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4520006](https://support.microsoft.com/help/4520006) [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 with [KB4519978](https://support.microsoft.com/help/4519978) [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 with [KB4520062](https://support.microsoft.com/help/4520062) [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 with [KB4517211](https://support.microsoft.com/help/4517211) [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-OmaUri-Begin -->
@@ -521,7 +521,7 @@ Unique ID of ADMX file.
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 with [KB4520006](https://support.microsoft.com/help/4520006) [10.0.16299.1481] and later <br> ✅ Windows 10, version 1803 with [KB4519978](https://support.microsoft.com/help/4519978) [10.0.17134.1099] and later <br> ✅ Windows 10, version 1809 with [KB4520062](https://support.microsoft.com/help/4520062) [10.0.17763.832] and later <br> ✅ Windows 10, version 1903 with [KB4517211](https://support.microsoft.com/help/4517211) [10.0.18362.387] and later <br> ✅ Windows 10, version 1909 [10.0.18363] and later |
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-Applicability-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-{AppName}-Properties-{SettingsType}-{AdmxFileId}-Version-OmaUri-Begin -->
@@ -1069,6 +1069,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [ADMX_WordWheel](policy-csp-admx-wordwheel.md)
 - [ADMX_WorkFoldersClient](policy-csp-admx-workfoldersclient.md)
 - [ADMX_WPN](policy-csp-admx-wpn.md)
+- [AppDeviceInventory](policy-csp-appdeviceinventory.md)
 - [ApplicationDefaults](policy-csp-applicationdefaults.md)
 - [ApplicationManagement](policy-csp-applicationmanagement.md)
 - [AppRuntime](policy-csp-appruntime.md)

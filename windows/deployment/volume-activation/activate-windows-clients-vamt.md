@@ -1,15 +1,15 @@
 ---
 title: Activate clients running Windows
 description: Activate clients running Windows after configuring Key Management Service (KMS) or Active Directory-based activation.
+ms.author: kaushika
+author: kaushika-msft
+manager: cshepard
 ms.reviewer: nganguly
-manager: aaroncz
-ms.author: frankroj
-ms.service: windows-client
-author: frankroj
 ms.localizationpriority: medium
 ms.date: 03/29/2024
-ms.topic: conceptual
-ms.subservice: itpro-fundamentals
+ms.topic: concept-article
+ms.service: windows-client
+ms.subservice: activation
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -24,8 +24,8 @@ appliesto:
 >
 > Looking for information on retail activation?
 >
-> - [Activate Windows](https://support.microsoft.com/help/12440/).
-> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644).
+> - [Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227).
+> - [Product activation for Windows](https://support.microsoft.com/windows/product-activation-for-windows-online-support-telephone-numbers-35f6a805-1259-88b4-f5e9-b52cccef91a0).
 
 After Key Management Service (KMS) or Active Directory-based activation is configured in a network, activating a client running Windows is easy. If the computer is configured with a Generic Volume License Key (GVLK), IT or the user don't need to take any action. It just works.
 

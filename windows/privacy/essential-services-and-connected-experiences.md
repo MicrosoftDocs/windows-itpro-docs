@@ -109,22 +109,12 @@ To view endpoints for Windows Enterprise, see:
 
 - [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 21H1](manage-windows-21H1-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20h2-endpoints.md)
-- [Manage connection endpoints for Windows 10  version 2004](manage-windows-2004-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
 
 To view endpoints for non-Enterprise Windows editions, see:
 
 - [Windows 11 connection endpoints for non-Enterprise editions](windows-11-endpoints-non-enterprise-editions.md)
-- [Windows 10, version 21H1, connection endpoints for non-Enterprise editions](windows-endpoints-21H1-non-enterprise-editions.md)
-- [Windows 10, version 20H2, connection endpoints for non-Enterprise editions](windows-endpoints-20H2-non-enterprise-editions.md)
-- [Windows 10, version 2004, connection endpoints for non-Enterprise editions](windows-endpoints-2004-non-enterprise-editions.md)
-- [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
-- [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
-- [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
+
 
 > [!IMPORTANT]
 > To inquire about Windows data access or interoperability related to the Digital Markets Act (DMA), [submit this form](https://go.microsoft.com/fwlink/p/?linkid=2271128).
