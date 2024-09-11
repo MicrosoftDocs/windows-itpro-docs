@@ -1,43 +1,42 @@
 ---
-title: Allow apps deployed with a WDAC managed installer
+title: Allow apps deployed with a App Control managed installer
 description: Explains how to configure a custom Managed Installer.
 ms.localizationpriority: medium
 ms.date: 02/02/2023
 ms.topic: how-to
 ---
 
-# Automatically allow apps deployed by a managed installer with Windows Defender Application Control
+# Automatically allow apps deployed by a managed installer with App Control for Business
 
-> [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-Windows Defender Application Control (WDAC) includes an option called **managed installer** that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution, such as Microsoft Configuration Manager (MEMCM) or Microsoft Intune.
+App Control for Business includes an option called **managed installer** that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution, such as Microsoft Configuration Manager (MEMCM) or Microsoft Intune.
 
 ## How does a managed installer work?
 
 Managed installer uses a special rule collection in **AppLocker** to designate binaries that are trusted by your organization as an authorized source for application installation. When one of these trusted binaries runs, Windows monitors the binary's process (and any child processes it launches) and watches for files being written to disk. As files are written, they're tagged as originating from a managed installer.
 
-You can then configure WDAC to trust files that are installed by a managed installer by adding the "Enabled:Managed Installer" option to your WDAC policy. When that option is set, WDAC will check for managed installer origin information when determining whether or not to allow a binary to run. As long as there are no deny rules for the binary, WDAC will allow it to run based purely on its managed installer origin.
+You can then configure App Control to trust files that are installed by a managed installer by adding the "Enabled:Managed Installer" option to your App Control policy. When that option is set, App Control will check for managed installer origin information when determining whether or not to allow a binary to run. As long as there are no deny rules for the binary, App Control will allow it to run based purely on its managed installer origin.
 
 ## Security considerations with managed installer
 
 Since managed installer is a heuristic-based mechanism, it doesn't provide the same security guarantees as explicit allow or deny rules do. Managed installer is best suited where users operate as standard user, and where all software is deployed and installed by a software distribution solution such as MEMCM.
 
-Users with administrator privileges, or malware running as an administrator user on the system, may be able to circumvent the intent of your WDAC policies when the managed installer option is allowed.
+Users with administrator privileges, or malware running as an administrator user on the system, may be able to circumvent the intent of your App Control policies when the managed installer option is allowed.
 
-If a managed installer process runs in the context of a user with standard privileges, then it's possible that standard users or malware running as standard user may be able to circumvent the intent of your WDAC policies.
+If a managed installer process runs in the context of a user with standard privileges, then it's possible that standard users or malware running as standard user may be able to circumvent the intent of your App Control policies.
 
 Some application installers may automatically run the application at the end of the installation process. If the application runs automatically, and the installer was run by a managed installer, then the managed installer's heuristic tracking and authorization will extend to all files that are created during the first run of the application. This extension could result in unintentional authorization of an executable. To avoid that, ensure that the method of application deployment that is used as a managed installer limits running applications as part of installation.
 
 ## Known limitations with managed installer
 
-- Application control, based on managed installer, doesn't support applications that self-update. If an application that was deployed by a managed installer later updates itself, the updated application files won't include the origin information from the managed installer, and they might not be able to run. When you rely on managed installers, you must deploy and install all application updates by using a managed installer, or include rules to authorize the app in the WDAC policy. In some cases, it may be possible to also designate an application binary that performs self-updates as a managed installer. Proper review for functionality and security should be performed for the application before using this method.
+- Application control, based on managed installer, doesn't support applications that self-update. If an application that was deployed by a managed installer later updates itself, the updated application files won't include the origin information from the managed installer, and they might not be able to run. When you rely on managed installers, you must deploy and install all application updates by using a managed installer, or include rules to authorize the app in the App Control policy. In some cases, it may be possible to also designate an application binary that performs self-updates as a managed installer. Proper review for functionality and security should be performed for the application before using this method.
 
 - Some applications or installers may extract, download, or generate binaries and immediately attempt to run them. Files run by such a process may not be allowed by the managed installer heuristic. In some cases, it may be possible to also designate an application binary that performs such an operation as a managed installer. Proper review for functionality and security should be performed for the application before using this method.
 
-- The managed installer heuristic doesn't authorize kernel drivers. The WDAC policy must have rules that allow the necessary drivers to run.
+- The managed installer heuristic doesn't authorize kernel drivers. The App Control policy must have rules that allow the necessary drivers to run.
 
-## Configure managed installer tracking with AppLocker and WDAC
+## Configure managed installer tracking with AppLocker and App Control
 
 To turn on managed installer tracking, you must:
 
@@ -48,7 +47,7 @@ To turn on managed installer tracking, you must:
 > The managed installer AppLocker policy below is designed to be safely merged with any pre-existing AppLocker policies and won't change the behavior of those policies. However, if applied on a device that doesn't currently have any AppLocker policy, you will see a large increase in warning events generated in the *AppLocker - EXE and DLL* event log. If you're using an event forwarding and collection service, like LogAnalytics, you may want to adjust the configuration for that event log to only collect Error events or stop collecting events from that log altogether.
 
 > [!NOTE]
-> MEMCM will automatically configure itself as a managed installer, and enable the required AppLocker components, if you deploy one of its inbox WDAC policies. If you are configuring MEMCM as a managed installer using any other method, additional setup is required. Use the [**ManagedInstaller** cmdline switch in your ccmsetup.exe setup](/mem/configmgr/core/clients/deploy/about-client-installation-properties#managedinstaller). Or you can deploy one of the MEMCM inbox audit mode policies alongside your custom policy.
+> MEMCM will automatically configure itself as a managed installer, and enable the required AppLocker components, if you deploy one of its inbox App Control policies. If you are configuring MEMCM as a managed installer using any other method, additional setup is required. Use the [**ManagedInstaller** cmdline switch in your ccmsetup.exe setup](/mem/configmgr/core/clients/deploy/about-client-installation-properties#managedinstaller). Or you can deploy one of the MEMCM inbox audit mode policies alongside your custom policy.
 
 ### Create and deploy an AppLocker policy that defines your managed installer rules and enables services enforcement for executables and DLLs
 
@@ -189,12 +188,12 @@ The AppLocker policy creation UI in GPO Editor and the AppLocker PowerShell cmdl
 > [!NOTE]
 > Managed installer tracking will start the next time a process runs that matches your managed installer rules. If an intended process is already running, you must restart it.
 
-## Enable the managed installer option in WDAC policy
+## Enable the managed installer option in App Control policy
 
-In order to enable trust for the binaries laid down by managed installers, the "Enabled: Managed Installer" option must be specified in your WDAC policy.
+In order to enable trust for the binaries laid down by managed installers, the "Enabled: Managed Installer" option must be specified in your App Control policy.
 This setting can be defined by using the [Set-RuleOption cmdlet](/powershell/module/configci/set-ruleoption) with Option 13.
 
-Below are steps to create a WDAC policy that allows Windows to boot and enables the managed installer option.
+Below are steps to create a App Control policy that allows Windows to boot and enables the managed installer option.
 
 1. Copy the DefaultWindows_Audit policy into your working folder from "C:\Windows\schemas\CodeIntegrity\ExamplePolicies\DefaultWindows_Audit.xml"
 
@@ -212,10 +211,10 @@ Below are steps to create a WDAC policy that allows Windows to boot and enables 
     Set-RuleOption -FilePath <XML filepath> -Option 13
     ```
 
-4. Deploy your WDAC policy. See [Deploying Windows Defender Application Control (WDAC) policies](../deployment/appcontrol-deployment-guide.md).
+4. Deploy your App Control policy. See [Deploying App Control for Business policies](../deployment/appcontrol-deployment-guide.md).
 
 > [!NOTE]
-> Your WDAC policy must include rules for all system/boot components, kernel drivers, and any other authorized applications that can't be deployed through a managed installer.
+> Your App Control policy must include rules for all system/boot components, kernel drivers, and any other authorized applications that can't be deployed through a managed installer.
 
 ## Remove Managed Installer feature
 

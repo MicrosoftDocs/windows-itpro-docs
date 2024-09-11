@@ -1,16 +1,16 @@
 ---
-title: Understanding Windows Defender Application Control (WDAC) secure settings
-description: Learn about secure settings in Windows Defender Application Control.
+title: Understanding App Control for Business secure settings
+description: Learn about secure settings in App Control for Business.
 ms.localizationpriority: medium
 ms.date: 04/05/2023
 ms.topic: conceptual
 ---
 
-# Understanding WDAC Policy Settings
+# Understanding App Control Policy Settings
 
-Windows Defender Application Control (WDAC) policies expose a Settings section where policy authors can define arbitrary secure settings. Secure Settings provide local admin tamper-free settings for secure boot enabled systems, with policy signing enabled. Settings consist of a Provider, Key, ValueName, and a setting value. Setting values can be of type boolean, ulong, binary, and string. Applications can query for policy settings using WldpQuerySecurityPolicy.
+App Control for Business policies expose a Settings section where policy authors can define arbitrary secure settings. Secure Settings provide local admin tamper-free settings for secure boot enabled systems, with policy signing enabled. Settings consist of a Provider, Key, ValueName, and a setting value. Setting values can be of type boolean, ulong, binary, and string. Applications can query for policy settings using WldpQuerySecurityPolicy.
 
-An example settings section of a Windows Defender Application Control policy:
+An example settings section of a App Control for Business policy:
 
 ```xml
 <Settings>
@@ -24,11 +24,11 @@ An example settings section of a Windows Defender Application Control policy:
 
 ## Example Scenario
 
-An application that may want to restrict its capabilities, when used on a system with an active Windows Defender Application Control policy. Application authors can define a WDAC policy, setting their application queries, in order to disable certain features. For example, if Contoso's Foo Application wants to disable a risky feature, such as macro execution, they can define a WDAC policy setting, and query for it at runtime. Contoso can then instruct IT administrators to configure the setting in their WDAC policy, if they don't want Foo Application to execute macros on a system with a WDAC policy.
+An application that may want to restrict its capabilities, when used on a system with an active App Control for Business policy. Application authors can define a App Control policy, setting their application queries, in order to disable certain features. For example, if Contoso's Foo Application wants to disable a risky feature, such as macro execution, they can define a App Control policy setting, and query for it at runtime. Contoso can then instruct IT administrators to configure the setting in their App Control policy, if they don't want Foo Application to execute macros on a system with a App Control policy.
 
 ## WldpQuerySecurityPolicy
 
-API that queries the secure settings of a Windows Defender Application Control policy.
+API that queries the secure settings of a App Control for Business policy.
 
 ### Syntax
 

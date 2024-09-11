@@ -12,7 +12,7 @@ This article for IT professionals describes the steps to manually merge AppLocke
 
 If you need to merge multiple AppLocker policies into a single one, you can either manually merge the policies or use the Windows PowerShell cmdlets for AppLocker. You can't automatically merge policies by using the AppLocker console. For info about merging policies by using Windows PowerShell, see [Merge AppLocker policies by using Set-ApplockerPolicy](merge-applocker-policies-by-using-set-applockerpolicy.md).
 
-The AppLocker policy is stored in XML format, and an exported policy can be edited with any text or XML editor. To export an AppLocker policy, see [Export an AppLocker policy to an XML file](/windows/security/application-security/application-control/windows-defender-application-control/applocker/export-an-applocker-policy-to-an-xml-file). Before making changes to an AppLocker policy manually, review [Working with AppLocker rules](/windows/security/application-security/application-control/windows-defender-application-control/applocker/working-with-applocker-rules).
+The AppLocker policy is stored in XML format, and an exported policy can be edited with any text or XML editor. To export an AppLocker policy, see [Export an AppLocker policy to an XML file](export-an-applocker-policy-to-an-xml-file.md). Before making changes to an AppLocker policy manually, review [Working with AppLocker rules](working-with-applocker-rules.md).
 
 Membership in the local **Administrators** group, or equivalent, is the minimum required to complete this procedure.
 

@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Application Control Wizard Supplemental Policy Creation
-description: Creating supplemental application control policies with the WDAC Wizard.
+title: App Control for Business Wizard Supplemental Policy Creation
+description: Creating supplemental application control policies with the App Control Wizard.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 06/07/2023
@@ -8,20 +8,19 @@ ms.date: 06/07/2023
 
 # Creating a new Supplemental Policy with the Wizard
 
-> [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-Beginning in Windows 10 version 1903, Windows Defender Application Control (WDAC) supports the creation of multiple active policies on a device. One or more supplemental policies allow customers to expand a [WDAC base policy](appcontrol-wizard-create-base-policy.md) to increase the circle of trust of the policy. A supplemental policy can expand only one base policy, but multiple supplementals can expand the same base policy. When supplemental policies are used, applications allowed by the base or any of its supplemental policies are allowed to run.
+Beginning in Windows 10 version 1903, App Control for Business supports the creation of multiple active policies on a device. One or more supplemental policies allow customers to expand a [App Control base policy](appcontrol-wizard-create-base-policy.md) to increase the circle of trust of the policy. A supplemental policy can expand only one base policy, but multiple supplementals can expand the same base policy. When supplemental policies are used, applications allowed by the base or any of its supplemental policies are allowed to run.
 
-Prerequisite information about application control can be accessed through the [WDAC design guide](appcontrol-design-guide.md). This page outlines the steps to create a supplemental application control policy, configure the policy options, and the signer and file rules.
+Prerequisite information about application control can be accessed through the [App Control design guide](appcontrol-design-guide.md). This page outlines the steps to create a supplemental application control policy, configure the policy options, and the signer and file rules.
 
 ## Expanding a Base Policy
 
-Once the Supplemental Policy type is chosen on the New Policy page, policy name and file dialog fields can be used to name and save the supplemental policy. The next step requires selecting a base policy to expand. To expand a base policy, the base must allow supplemental policies. The WDAC Wizard verifies if the base policy allows supplementals and shows the following confirmation.
+Once the Supplemental Policy type is chosen on the New Policy page, policy name and file dialog fields can be used to name and save the supplemental policy. The next step requires selecting a base policy to expand. To expand a base policy, the base must allow supplemental policies. The App Control Wizard verifies if the base policy allows supplementals and shows the following confirmation.
 
 ![Base policy allows supplemental policies.](../images/appcontrol-wizard-supplemental-expandable.png)
 
-If the base policy isn't configured for supplemental policies, the Wizard attempts to convert the policy to one that can be supplemented. Once successful, the Wizard shows a dialog demonstrating that the addition of the Allow Supplemental Policy rule was completed.  
+If the base policy isn't configured for supplemental policies, the Wizard attempts to convert the policy to one that can be supplemented. Once successful, the Wizard shows a dialog demonstrating that the addition of the Allow Supplemental Policy rule was completed.
 
 ![Wizard confirms modification of base policy.](../images/appcontrol-wizard-confirm-base-policy-modification.png)
 
@@ -53,9 +52,9 @@ File rules in an application control policy specify the level at which applicati
 
 ### Publisher Rules
 
-The Publisher file rule type uses properties in the code signing certificate chain to base file rules. Once the file to base the rule off of, called the *reference file*, is selected, use the slider to indicate the specificity of the rule.  The following table shows the relationship between the slider placement, the corresponding Windows Defender Application Control (WDAC) rule level, and its description. The lower the placement on the table and the UI slider, the greater the specificity of the rule.
+The Publisher file rule type uses properties in the code signing certificate chain to base file rules. Once the file to base the rule off of, called the *reference file*, is selected, use the slider to indicate the specificity of the rule.  The following table shows the relationship between the slider placement, the corresponding App Control for Business rule level, and its description. The lower the placement on the table and the UI slider, the greater the specificity of the rule.
 
-| Rule Condition | WDAC Rule Level | Description |
+| Rule Condition | App Control Rule Level | Description |
 |------------ | ----------- | ----------- |
 | **Issuing CA** | PCACertificate | Highest available certificate is added to the signers. This certificate is typically the PCA certificate, one level below the root certificate. Any file signed by this certificate is affected. |
 | **Publisher** | Publisher | This rule is a combination of the PCACertificate rule and the common name (CN) of the leaf certificate. Any file signed by a major CA but with a leaf from a specific company, for example, a device driver publisher, is affected. |
@@ -86,9 +85,9 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 Lastly, the Wizard supports creating file rules using the hash of the file. Although this level is specific, it can cause extra administrative overhead to maintain the current product versions' hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. By default, the Wizard uses file hash as the fallback in case a file rule can't be created using the specified file rule level.
 
 #### Deleting Signing Rules
-  
+
 The table on the left of the page documents the allow and deny rules in the template, and any custom rules you create. Rules can be deleted from the policy by selecting the rule from the rules list table. Once the rule is highlighted, press the delete button underneath the table. You're again prompted for another confirmation. Select `Yes` to remove the rule from the policy and the rules table.
 
 ## Up next
 
-- [Editing a Windows Defender Application Control (WDAC) policy using the Wizard](appcontrol-wizard-editing-policy.md)
+- [Editing a App Control for Business policy using the Wizard](appcontrol-wizard-editing-policy.md)

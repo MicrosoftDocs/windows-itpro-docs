@@ -1,19 +1,18 @@
 ---
-title: Applications that can bypass WDAC and how to block them
+title: Applications that can bypass App Control and how to block them
 description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
 ms.localizationpriority: medium
 ms.date: 06/14/2023
 ms.topic: reference
 ---
 
-# Applications that can bypass WDAC and how to block them
+# Applications that can bypass App Control and how to block them
 
-> [!NOTE]
-> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [WDAC feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass WDAC.
+Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass App Control.
 
-Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. An attacker can use these applications or files to circumvent application allow policies, including WDAC:
+Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. An attacker can use these applications or files to circumvent application allow policies, including App Control:
 
 - addinprocess.exe
 - addinprocess32.exe
@@ -88,9 +87,9 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 > [!NOTE]
 > This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered.
 
-Certain software applications may allow other code to run by design. Unless these applications are business critical, you should block them in your WDAC policy. In addition, when an application version is upgraded to fix a security vulnerability or potential WDAC bypass, add *deny* rules to your application control policies for that application's previous, less secure versions.
+Certain software applications may allow other code to run by design. Unless these applications are business critical, you should block them in your App Control policy. In addition, when an application version is upgraded to fix a security vulnerability or potential App Control bypass, add *deny* rules to your application control policies for that application's previous, less secure versions.
 
-Microsoft recommends that you install the latest security updates. For example, updates help resolve several issues in PowerShell modules that allowed an attacker to bypass WDAC. These modules can be blocked by their corresponding hashes.
+Microsoft recommends that you install the latest security updates. For example, updates help resolve several issues in PowerShell modules that allowed an attacker to bypass App Control. These modules can be blocked by their corresponding hashes.
 
 As of October 2017, system.management.automation.dll is updated to revoke earlier versions by hash values, instead of version rules.
 
@@ -100,9 +99,9 @@ If you wish to use this blocklist policy on Windows Server 2016, locate the deny
 - msxml6.dll
 - jscript9.dll
 
-The blocklist policy that follows includes "Allow all" rules for both kernel and user mode that make it safe to deploy as a standalone WDAC policy. On Windows versions 1903 and above, Microsoft recommends converting this policy to multiple policy format using the *Set-CiPolicyIdInfo* cmdlet with the *-ResetPolicyId* switch. Then, you can deploy it as a Base policy side-by-side with any other policies in your environment. To instead add these rules to an existing Base policy, you can merge the policy that follows using the *Merge-CIPolicy* cmdlet. If merging into an existing policy that includes an explicit allowlist, you should first remove the two "Allow all" rules and their corresponding FileRuleRefs from the blocklist policy.
+The blocklist policy that follows includes "Allow all" rules for both kernel and user mode that make it safe to deploy as a standalone App Control policy. On Windows versions 1903 and above, Microsoft recommends converting this policy to multiple policy format using the *Set-CiPolicyIdInfo* cmdlet with the *-ResetPolicyId* switch. Then, you can deploy it as a Base policy side-by-side with any other policies in your environment. To instead add these rules to an existing Base policy, you can merge the policy that follows using the *Merge-CIPolicy* cmdlet. If merging into an existing policy that includes an explicit allowlist, you should first remove the two "Allow all" rules and their corresponding FileRuleRefs from the blocklist policy.
 
-**WDAC policy XML**:
+**App Control policy XML**:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1531,4 +1530,4 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
 
 ## More information
 
-- [Merge WDAC policies](../deployment/merge-appcontrol-policies.md)
+- [Merge App Control policies](../deployment/merge-appcontrol-policies.md)

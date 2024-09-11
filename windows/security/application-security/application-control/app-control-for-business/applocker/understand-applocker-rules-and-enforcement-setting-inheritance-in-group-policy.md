@@ -10,7 +10,7 @@ ms.date: 12/22/2023
 
 This article for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.
 
-Rule enforcement is applied only to collections of rules, not individual rules. For more info on rule collections, see [AppLocker rule collections](/windows/security/application-security/application-control/windows-defender-application-control/applocker/working-with-applocker-rules#rule-collections).
+Rule enforcement is applied only to collections of rules, not individual rules. For more info on rule collections, see [AppLocker rule collections](working-with-applocker-rules.md#rule-collections).
 
 Group Policy merges AppLocker policy in two ways:
 

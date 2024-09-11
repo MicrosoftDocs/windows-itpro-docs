@@ -1,26 +1,25 @@
 ---
-title: Policy creation for common WDAC usage scenarios
-description: Develop a plan for deploying Windows Defender Application Control (WDAC) in your organization based on these common scenarios.
+title: Policy creation for common App Control usage scenarios
+description: Develop a plan for deploying App Control for Business in your organization based on these common scenarios.
 ms.localizationpriority: medium
 ms.date: 04/05/2023
 ms.topic: conceptual
 ---
 
-# Windows Defender Application Control deployment in different scenarios: types of devices
+# App Control for Business deployment in different scenarios: types of devices
 
-> [!NOTE]
-> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-Typically, deployment of Windows Defender Application Control (WDAC) happens best in phases, rather than being a feature that you simply "turn on." The choice and sequence of phases depends on the way various computers and other devices are used in your organization, and to what degree IT manages those devices. The following table can help you begin to develop a plan for deploying WDAC in your organization. It's common for organizations to have device use cases across each of the categories described.
+Typically, deployment of App Control for Business happens best in phases, rather than being a feature that you simply "turn on." The choice and sequence of phases depends on the way various computers and other devices are used in your organization, and to what degree IT manages those devices. The following table can help you begin to develop a plan for deploying App Control in your organization. It's common for organizations to have device use cases across each of the categories described.
 
 ## Types of devices
 
-|  Type of device                 | How WDAC relates to this type of device  |
+|  Type of device                 | How App Control relates to this type of device  |
 |------------------------------------|------------------------------------------------------|
-| **Lightly managed devices**: Company-owned, but users are free to install software.<br>Devices are required to run organization's antivirus solution and client management tools. | Windows Defender Application Control can be used to help protect the kernel, and to monitor (audit) for problem applications rather than limiting the applications that can be run. |
-| **Fully managed devices**: Allowed software is restricted by IT department.<br>Users can request for more software, or install from a list of applications provided by IT department.<br>Examples: locked-down, company-owned desktops and laptops. | An initial baseline Windows Defender Application Control policy can be established and enforced. Whenever the IT department approves more applications, it updates the WDAC policy and (for unsigned LOB applications) the catalog. |
-| **Fixed-workload devices**: Perform same tasks every day.<br>Lists of approved applications rarely change.<br>Examples: kiosks, point-of-sale systems, call center computers. | Windows Defender Application Control can be deployed fully, and deployment and ongoing administration are relatively straightforward.<br>After Windows Defender Application Control deployment, only approved applications can run. This rule is because of protections offered by WDAC. |
-| **Bring Your Own Device**: Employees are allowed to bring their own devices, and also use those devices away from work. | In most cases, Windows Defender Application Control doesn't apply. Instead, you can explore other hardening and security features with MDM-based conditional access solutions, such as Microsoft Intune. However, you may choose to deploy an audit-mode policy to these devices or employ a blocklist only policy to prevent specific apps or binaries that are considered malicious or vulnerable by your organization. |
+| **Lightly managed devices**: Company-owned, but users are free to install software.<br>Devices are required to run organization's antivirus solution and client management tools. | App Control for Business can be used to help protect the kernel, and to monitor (audit) for problem applications rather than limiting the applications that can be run. |
+| **Fully managed devices**: Allowed software is restricted by IT department.<br>Users can request for more software, or install from a list of applications provided by IT department.<br>Examples: locked-down, company-owned desktops and laptops. | An initial baseline App Control for Business policy can be established and enforced. Whenever the IT department approves more applications, it updates the App Control policy and (for unsigned LOB applications) the catalog. |
+| **Fixed-workload devices**: Perform same tasks every day.<br>Lists of approved applications rarely change.<br>Examples: kiosks, point-of-sale systems, call center computers. | App Control for Business can be deployed fully, and deployment and ongoing administration are relatively straightforward.<br>After App Control for Business deployment, only approved applications can run. This rule is because of protections offered by App Control. |
+| **Bring Your Own Device**: Employees are allowed to bring their own devices, and also use those devices away from work. | In most cases, App Control for Business doesn't apply. Instead, you can explore other hardening and security features with MDM-based conditional access solutions, such as Microsoft Intune. However, you may choose to deploy an audit-mode policy to these devices or employ a blocklist only policy to prevent specific apps or binaries that are considered malicious or vulnerable by your organization. |
 
 ## An introduction to Lamna Healthcare Company
 
@@ -34,4 +33,4 @@ Recently, Lamna experienced a ransomware event that required an expensive recove
 
 ## Up next
 
-- [Create a Windows Defender Application Control policy for lightly managed devices](create-appcontrol-policy-for-lightly-managed-devices.md)
+- [Create a App Control for Business policy for lightly managed devices](create-appcontrol-policy-for-lightly-managed-devices.md)

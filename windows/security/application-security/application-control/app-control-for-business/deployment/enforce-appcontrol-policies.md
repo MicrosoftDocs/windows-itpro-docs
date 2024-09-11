@@ -1,29 +1,28 @@
 ---
-title: Enforce Windows Defender Application Control (WDAC) policies
-description: Learn how to switch a WDAC policy from audit to enforced mode.
+title: Enforce App Control for Business policies
+description: Learn how to switch a App Control policy from audit to enforced mode.
 ms.manager: jsuther
 ms.date: 04/22/2021
 ms.topic: how-to
 ms.localizationpriority: medium
 ---
 
-# Enforce Windows Defender Application Control (WDAC) policies
+# Enforce App Control for Business policies
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-You should now have one or more Windows Defender Application Control policies broadly deployed in audit mode. You have analyzed events collected from the devices with those policies and you're ready to enforce. Use this procedure to prepare and deploy your WDAC policies in enforcement mode.
+You should now have one or more App Control for Business policies broadly deployed in audit mode. You have analyzed events collected from the devices with those policies and you're ready to enforce. Use this procedure to prepare and deploy your App Control policies in enforcement mode.
 
 > [!NOTE]
-> Some of the steps described in this article only apply to Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features. Evaluate the impact for any features that may be unavailable on your clients running earlier versions of Windows 10 and Windows Server. You may need to adapt this guidance to meet your specific organization's needs.
+> Some of the steps described in this article only apply to Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's App Control policies, consider whether your managed clients can use all or some of these features. Evaluate the impact for any features that may be unavailable on your clients running earlier versions of Windows 10 and Windows Server. You may need to adapt this guidance to meet your specific organization's needs.
 
-## Convert WDAC **base** policy from audit to enforced
+## Convert App Control **base** policy from audit to enforced
 
-As described in [common Windows Defender Application Control deployment scenarios](../design/common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As described in [common App Control for Business deployment scenarios](../design/common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
-**Alice Pena** is the IT team lead responsible for Lamna's WDAC rollout.
+**Alice Pena** is the IT team lead responsible for Lamna's App Control rollout.
 
-Alice previously created and deployed a policy for the organization's [fully managed devices](../design/create-appcontrol-policy-for-fully-managed-devices.md). They updated the policy based on audit event data as described in [Use audit events to create WDAC policy rules](audit-appcontrol-policies.md) and redeployed it. All remaining audit events are as expected and Alice is ready to switch to enforcement mode.
+Alice previously created and deployed a policy for the organization's [fully managed devices](../design/create-appcontrol-policy-for-fully-managed-devices.md). They updated the policy based on audit event data as described in [Use audit events to create App Control policy rules](audit-appcontrol-policies.md) and redeployed it. All remaining audit events are as expected and Alice is ready to switch to enforcement mode.
 
 1. Initialize the variables that will be used and create the enforced policy by copying the audit version.
 
@@ -34,14 +33,14 @@ Alice previously created and deployed a policy for the organization's [fully man
    cp $AuditPolicyXML $EnforcedPolicyXML
    ```
 
-2. Use [Set-CIPolicyIdInfo](/powershell/module/configci/set-cipolicyidinfo) to give the new policy a unique ID, and descriptive name. Changing the ID and name lets you deploy the enforced policy side by side with the audit policy. Do this step if you plan to harden your WDAC policy over time. If you prefer to replace the audit policy in-place, you can skip this step.
+2. Use [Set-CIPolicyIdInfo](/powershell/module/configci/set-cipolicyidinfo) to give the new policy a unique ID, and descriptive name. Changing the ID and name lets you deploy the enforced policy side by side with the audit policy. Do this step if you plan to harden your App Control policy over time. If you prefer to replace the audit policy in-place, you can skip this step.
 
    ```powershell
    $EnforcedPolicyID = Set-CIPolicyIdInfo -FilePath $EnforcedPolicyXML -PolicyName $EnforcedPolicyName -ResetPolicyID
    $EnforcedPolicyID = $EnforcedPolicyID.Substring(11)
    ```
 
-3. *[Optionally]* Use [Set-RuleOption](/powershell/module/configci/set-ruleoption) to enable rule options 9 ("Advanced Boot Options Menu") and 10 ("Boot Audit on Failure"). Option 9 allows users to disable WDAC enforcement for a single boot session from a pre-boot menu. Option 10 instructs Windows to switch the policy from enforcement to audit only if a boot critical kernel-mode driver is blocked. We strongly recommend these options when deploying a new enforced policy to your first deployment ring. Then, if no issues are found, you can remove the options and restart your deployment.
+3. *[Optionally]* Use [Set-RuleOption](/powershell/module/configci/set-ruleoption) to enable rule options 9 ("Advanced Boot Options Menu") and 10 ("Boot Audit on Failure"). Option 9 allows users to disable App Control enforcement for a single boot session from a pre-boot menu. Option 10 instructs Windows to switch the policy from enforcement to audit only if a boot critical kernel-mode driver is blocked. We strongly recommend these options when deploying a new enforced policy to your first deployment ring. Then, if no issues are found, you can remove the options and restart your deployment.
 
    ```powershell
    Set-RuleOption -FilePath $EnforcedPolicyXML -Option 9
@@ -54,7 +53,7 @@ Alice previously created and deployed a policy for the organization's [fully man
    Set-RuleOption -FilePath $EnforcedPolicyXML -Option 3 -Delete
    ```
 
-5. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the new WDAC policy to binary:
+5. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the new App Control policy to binary:
 
    > [!NOTE]
    > If you did not use -ResetPolicyID in Step 2 above, then you must replace $EnforcedPolicyID in the following command with the *PolicyID* attribute found in your base policy XML.
@@ -86,7 +85,7 @@ Since the enforced policy was given a unique PolicyID in the previous procedure,
    > [!NOTE]
    > If Set-CIPolicyIdInfo does not output the new PolicyID value on your Windows 10 version, you will need to obtain the *PolicyId* value from the XML directly.
 
-3. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the new Windows Defender Application Control supplemental policy to binary:
+3. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the new App Control for Business supplemental policy to binary:
 
    ```powershell
    $EnforcedSuppPolicyBinary = $env:USERPROFILE+"\Desktop\"+$SupplementalPolicyName+"_"+$SupplementalPolicyID+".xml"
@@ -96,4 +95,4 @@ Since the enforced policy was given a unique PolicyID in the previous procedure,
 
 ## Deploy your enforced policy and supplemental policies
 
-Now that your base policy is in enforced mode, you can begin to deploy it to your managed endpoints. For information about deploying policies, see [Deploying Windows Defender Application Control (WDAC) policies](appcontrol-deployment-guide.md).
+Now that your base policy is in enforced mode, you can begin to deploy it to your managed endpoints. For information about deploying policies, see [Deploying App Control for Business policies](appcontrol-deployment-guide.md).

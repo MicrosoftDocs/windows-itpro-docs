@@ -1,24 +1,23 @@
 ---
-title: Create a WDAC policy for lightly managed devices
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+title: Create a App Control policy for lightly managed devices
+description: App Control for Business restricts which applications users are allowed to run and the code that runs in the system core.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 11/07/2022
 ---
 
-# Create a WDAC policy for lightly managed devices
+# Create a App Control policy for lightly managed devices
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their WDAC-managed devices as described in later articles.
+This section outlines the process to create a App Control for Business policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their App Control-managed devices as described in later articles.
 
 > [!NOTE]
-> Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
+> Some of the App Control for Business options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's App Control policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-As in [Windows Defender Application Control deployment in different scenarios: types of devices](common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As in [App Control for Business deployment in different scenarios: types of devices](common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
-**Alice Pena** is the IT team lead tasked with the rollout of WDAC. Lamna currently has loose application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to application control and use different policies for different workloads.
+**Alice Pena** is the IT team lead tasked with the rollout of App Control. Lamna currently has loose application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to application control and use different policies for different workloads.
 
 For most users and devices, Alice wants to create an initial policy that is as relaxed as possible in order to minimize user productivity impact, while still providing security value.
 
@@ -52,7 +51,7 @@ Based on the above, Alice defines the pseudo-rules for the policy:
    - C:\Program Files (x86)\*
    - %windir%\*
 
-## Create a custom base policy using an example WDAC base policy
+## Create a custom base policy using an example App Control base policy
 
 Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's lightly managed devices. Alice decides to use the example `SmartAppControl.xml` to create the initial base policy and then customize it to meet Lamna's needs.
 
@@ -61,7 +60,7 @@ Alice follows these steps to complete this task:
 1. On a client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
 
     > [!NOTE]
-    > If you prefer to use a different [example Windows Defender Application Control base policy](example-appcontrol-base-policies.md), substitute the example policy path with your preferred base policy in this step.
+    > If you prefer to use a different [example App Control for Business base policy](example-appcontrol-base-policies.md), substitute the example policy path with your preferred base policy in this step.
 
     ```powershell
     $PolicyPath = $env:userprofile+"\Desktop\"
@@ -79,7 +78,7 @@ Alice follows these steps to complete this task:
 1. Modify the policy to remove unsupported rule:
 
     > [!NOTE]
-    > `SmartAppControl.xml` is available on Windows 11 version 22H2 and later. This policy includes "Enabled:Conditional Windows Lockdown Policy" rule that is unsupported for enterprise WDAC policies and must be removed. For more information, see [WDAC and Smart App Control](../appcontrol.md#wdac-and-smart-app-control). If you are using an example policy other than `SmartAppControl.xml`, skip this step.
+    > `SmartAppControl.xml` is available on Windows 11 version 22H2 and later. This policy includes "Enabled:Conditional Windows Lockdown Policy" rule that is unsupported for enterprise App Control policies and must be removed. For more information, see [App Control and Smart App Control](../appcontrol.md#app-control-and-smart-app-control). If you are using an example policy other than `SmartAppControl.xml`, skip this step.
 
     ```powershell
     [xml]$xml = Get-Content $LamnaPolicy
@@ -127,7 +126,7 @@ Alice follows these steps to complete this task:
 
 1. If appropriate, add more signer or file rules to further customize the policy for your organization.
 
-1. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the Windows Defender Application Control policy to a binary format:
+1. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the App Control for Business policy to a binary format:
 
     ```powershell
     [xml]$PolicyXML = Get-Content $LamnaPolicy
@@ -145,13 +144,13 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
 - **Users with administrative access**
 
-  This trade-off is the most impactful security trade-off. It allows the device user, or malware running with the user's privileges, to modify or remove the WDAC policy on the device. Additionally, administrators can configure any app to act as a managed installer, which would allow them to gain persistent app authorization for whatever apps or binaries they wish.
+  This trade-off is the most impactful security trade-off. It allows the device user, or malware running with the user's privileges, to modify or remove the App Control policy on the device. Additionally, administrators can configure any app to act as a managed installer, which would allow them to gain persistent app authorization for whatever apps or binaries they wish.
 
   Possible mitigations:
 
-  - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
+  - Use signed App Control policies and UEFI BIOS access protection to prevent tampering of App Control policies.
   - To remove the requirement for managed installer, create and deploy signed catalog files as part of the app deployment process.
-  - Use device attestation to detect the configuration state of WDAC at boot time and use that information to condition access to sensitive corporate resources.
+  - Use device attestation to detect the configuration state of App Control at boot time and use that information to condition access to sensitive corporate resources.
 
 - **Unsigned policies**
 
@@ -159,7 +158,7 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
   Possible mitigations:
 
-  - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
+  - Use signed App Control policies and UEFI BIOS access protection to prevent tampering of App Control policies.
   - Limit who can elevate to administrator on the device.
 
 - **Managed installer**
@@ -186,7 +185,7 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
   Possible mitigations:
 
-  - Use signed WDAC policies that allow authorized signed supplemental policies only.
+  - Use signed App Control policies that allow authorized signed supplemental policies only.
   - Use a restrictive audit mode policy to audit app usage and augment vulnerability detection.
 
 - **FilePath rules**
@@ -208,5 +207,5 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
 ## Up next
 
-- [Create a Windows Defender Application Control policy for fully managed devices](create-appcontrol-policy-for-fully-managed-devices.md)
-- [Prepare to deploy Windows Defender Application Control policies](../deployment/appcontrol-deployment-guide.md)
+- [Create a App Control for Business policy for fully managed devices](create-appcontrol-policy-for-fully-managed-devices.md)
+- [Prepare to deploy App Control for Business policies](../deployment/appcontrol-deployment-guide.md)

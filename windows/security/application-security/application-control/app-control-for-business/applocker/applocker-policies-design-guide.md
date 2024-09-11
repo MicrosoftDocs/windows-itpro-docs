@@ -12,7 +12,7 @@ This article for the IT professional introduces the design and planning steps re
 
 This guide provides important designing and planning information for deploying application control policies by using AppLocker. Through a sequential and iterative process, you can create an AppLocker policy deployment plan for your organization that addresses your specific application control requirements by department, organizational unit, or business group.
 
-To understand if AppLocker is the correct application control solution for your organization, see [Windows Defender Application Control and AppLocker overview](/windows/security/application-security/application-control/windows-defender-application-control/wdac-and-applocker-overview).
+To understand if AppLocker is the correct application control solution for your organization, see [App Control for Business and AppLocker overview](../appcontrol-and-applocker-overview.md).
 
 ## In this section
 

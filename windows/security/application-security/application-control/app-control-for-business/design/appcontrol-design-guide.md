@@ -1,17 +1,16 @@
 ---
-title: Windows Defender Application Control design guide
-description: Microsoft Windows Defender Application Control allows organizations to control what apps and drivers will run on their managed Windows devices.
+title: App Control for Business design guide
+description: Microsoft App Control for Business allows organizations to control what apps and drivers will run on their managed Windows devices.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 02/20/2018
 ---
 
-# Windows Defender Application Control design guide
+# App Control for Business design guide
 
-> [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-This guide covers design and planning for Windows Defender Application Control (WDAC). It's intended to help security architects, security administrators, and system administrators create a plan that addresses specific application control requirements for different departments or business groups within an organization.
+This guide covers design and planning for App Control for Business. It's intended to help security architects, security administrators, and system administrators create a plan that addresses specific application control requirements for different departments or business groups within an organization.
 
 ## Plan for success
 
@@ -22,16 +21,16 @@ A common refrain you may hear about application control is that it is "too hard.
 -   The organization has a plan to handle potential helpdesk support requests for users who are blocked from running some apps.
 -   The organization has considered where application control can be most useful (for example, securing sensitive workloads or business functions) and also where it may be difficult to achieve (for example, developer workstations).
 
-Once these business factors are in place, you're ready to begin planning your Windows Defender Application Control (WDAC) deployment. The following topics can help guide you through your planning process.
+Once these business factors are in place, you're ready to begin planning your App Control for Business deployment. The following topics can help guide you through your planning process.
 
 ## In this section
 
 | Topic | Description |
 | - | - |
-| [Plan for WDAC policy management](plan-appcontrol-management.md) | This topic describes the decisions you need to make to establish the processes for managing and maintaining WDAC policies. |
-| [Understand WDAC policy design decisions](understand-appcontrol-policy-design-decisions.md) | This topic lists the design questions, possible answers, and ramifications of the decisions, when you plan a deployment of application control policies. |
-| [Understand WDAC policy rules and file rules](select-types-of-rules-to-create.md) | This topic lists resources you can use when selecting your application control policy rules by using WDAC. |
-| [Policy creation for common WDAC usage scenarios](common-appcontrol-use-cases.md) | This set of topics outlines common use case scenarios, and helps you begin to develop a plan for deploying WDAC in your organization. |
-| [Policy creation using the WDAC Wizard tool](appcontrol-wizard.md) | This set of topics describes how to use the WDAC Wizard desktop app to easily create, edit, and merge WDAC policies. |
+| [Plan for App Control policy management](plan-appcontrol-management.md) | This topic describes the decisions you need to make to establish the processes for managing and maintaining App Control policies. |
+| [Understand App Control policy design decisions](understand-appcontrol-policy-design-decisions.md) | This topic lists the design questions, possible answers, and ramifications of the decisions, when you plan a deployment of application control policies. |
+| [Understand App Control policy rules and file rules](select-types-of-rules-to-create.md) | This topic lists resources you can use when selecting your application control policy rules by using App Control. |
+| [Policy creation for common App Control usage scenarios](common-appcontrol-use-cases.md) | This set of topics outlines common use case scenarios, and helps you begin to develop a plan for deploying App Control in your organization. |
+| [Policy creation using the App Control Wizard tool](appcontrol-wizard.md) | This set of topics describes how to use the App Control Wizard desktop app to easily create, edit, and merge App Control policies. |
 
-After planning is complete, the next step is to deploy WDAC. The [Windows Defender Application Control Deployment Guide](../deployment/appcontrol-deployment-guide.md) covers creating and testing policies, deploying the enforcement setting, and managing and maintaining policies.
+After planning is complete, the next step is to deploy App Control. The [App Control for Business Deployment Guide](../deployment/appcontrol-deployment-guide.md) covers creating and testing policies, deploying the enforcement setting, and managing and maintaining policies.

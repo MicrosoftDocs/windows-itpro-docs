@@ -11,8 +11,7 @@ ms.topic: how-to
 
 # Microsoft recommended driver block rules
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
 Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers. When vulnerabilities in drivers are found, we work with our partners to ensure they're quickly patched and rolled out to the ecosystem. The vulnerable driver blocklist is designed to help harden systems against non-Microsoft-developed drivers across the Windows ecosystem with any of the following attributes:
 
@@ -39,24 +38,24 @@ With Windows 11 2022 update, the vulnerable driver blocklist  is enabled by defa
 
 The blocklist is updated with each new major release of Windows, typically 1-2 times per year, including most recently with the Windows 11 2022 update released in September 2022. The most current blocklist is now also available for Windows 10 20H2 and Windows 11 21H2 users as an optional update from Windows Update. Microsoft will occasionally publish future updates through regular Windows servicing.
 
-Customers who always want the most up-to-date driver blocklist can also use Windows Defender Application Control (WDAC) to apply the latest recommended driver blocklist contained in this article. For your convenience, we provide a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, use the following XML to create your own custom WDAC policies.
+Customers who always want the most up-to-date driver blocklist can also use App Control for Business to apply the latest recommended driver blocklist contained in this article. For your convenience, we provide a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, use the following XML to create your own custom App Control policies.
 
-## Blocking vulnerable drivers using WDAC
+## Blocking vulnerable drivers using App Control
 
-Microsoft recommends enabling [HVCI](../../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking [this list of drivers](#vulnerable-driver-blocklist-xml) within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can cause devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies) and review the audit block events.
+Microsoft recommends enabling [HVCI](../../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking [this list of drivers](#vulnerable-driver-blocklist-xml) within your existing App Control for Business policy. Blocking kernel drivers without sufficient testing can cause devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](../deployment/audit-appcontrol-policies.md) and review the audit block events.
 
 > [!IMPORTANT]
-> Microsoft also recommends enabling Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from loading, however enabling **Microsoft vulnerable driver blocklist** or applying this WDAC policy will prevent the existing driver from loading.
+> Microsoft also recommends enabling Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from loading, however enabling **Microsoft vulnerable driver blocklist** or applying this App Control policy will prevent the existing driver from loading.
 
 ## Steps to download and apply the vulnerable driver blocklist binary
 
 If you prefer to apply the [vulnerable driver blocklist](#vulnerable-driver-blocklist-xml) exactly as shown, follow these steps:
 
-1. Download the [WDAC policy refresh tool](https://aka.ms/refreshpolicy)
+1. Download the [App Control policy refresh tool](https://aka.ms/refreshpolicy)
 2. Download and extract the [vulnerable driver blocklist binaries](https://aka.ms/VulnerableDriverBlockList)
 3. Select either the audit only version or the enforced version and rename the file to SiPolicy.p7b
 4. Copy SiPolicy.p7b to %windir%\system32\CodeIntegrity
-5. Run the WDAC policy refresh tool you downloaded in Step 1 above to activate and refresh all WDAC policies on your computer
+5. Run the App Control policy refresh tool you downloaded in Step 1 above to activate and refresh all App Control policies on your computer
 
 To check that the policy was successfully applied on your computer:
 
@@ -64,15 +63,15 @@ To check that the policy was successfully applied on your computer:
 2. Browse to **Applications and Services Logs - Microsoft - Windows - CodeIntegrity - Operational**
 3. Select **Filter Current Log...**
 4. Replace "&lt;All Event IDs&gt;" with "3099" and select OK.
-5. Look for a 3099 event where the PolicyNameBuffer and PolicyIdBuffer match the Name and Id PolicyInfo settings found at the bottom of the blocklist WDAC Policy XML in this article. NOTE: Your computer may have more than one 3099 event if other WDAC policies are also present.
+5. Look for a 3099 event where the PolicyNameBuffer and PolicyIdBuffer match the Name and Id PolicyInfo settings found at the bottom of the blocklist App Control Policy XML in this article. NOTE: Your computer may have more than one 3099 event if other App Control policies are also present.
 
 > [!NOTE]
-> If any vulnerable drivers are already running that would be blocked by the policy, you must reboot your computer for those drivers to be blocked. Running processes aren't shutdown when activating a new WDAC policy without reboot.
+> If any vulnerable drivers are already running that would be blocked by the policy, you must reboot your computer for those drivers to be blocked. Running processes aren't shutdown when activating a new App Control policy without reboot.
 
 ## Vulnerable driver blocklist XML
 
 > [!IMPORTANT]
-> The following policy contains **Allow All** rules. If your version of Windows supports WDAC multiple policies, we recommend deploying this policy alongside any existing WDAC policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create a WDAC Deny Policy](/windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy#single-policy-considerations).
+> The following policy contains **Allow All** rules. If your version of Windows supports App Control multiple policies, we recommend deploying this policy alongside any existing App Control policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create a App Control Deny Policy](create-appcontrol-deny-policy.md#guidance-on-creating-app-control-deny-policies).
 
 > [!NOTE]
 > To use this policy with Windows Server 2016, you must convert the policy XML on a device running a newer operating system.
@@ -4756,4 +4755,4 @@ The following recommended blocklist xml policy file can also be downloaded from 
 
 ## More information
 
-- [Merge Windows Defender Application Control policies](/windows/security/threat-protection/windows-defender-application-control/merge-windows-defender-application-control-policies)
+- [Merge App Control for Business policies](../deployment/merge-appcontrol-policies.md)

@@ -9,7 +9,7 @@ appliesto:
 
 # CiTool technical reference
 
-CiTool makes Windows Defender Application Control (WDAC) policy management easier for IT admins. You can use this tool to manage Windows Defender Application Control policies and CI tokens. This article describes how to use CiTool to update and manage policies. It's currently included as part of the Windows image in Windows 11, version 22H2.
+CiTool makes App Control for Business policy management easier for IT admins. You can use this tool to manage App Control for Business policies and CI tokens. This article describes how to use CiTool to update and manage policies. It's currently included as part of the Windows image in Windows 11, version 22H2.
 
 ## Policy commands
 
@@ -35,7 +35,7 @@ CiTool makes Windows Defender Application Control (WDAC) policy management easie
 | Command | Description | Alias |
 |--------|---------|---------|
 | `--device-id` | Dump the code integrity device ID. | `-id` |
-| `--refresh` | Attempt to refresh WDAC policies. | `-r` |
+| `--refresh` | Attempt to refresh App Control policies. | `-r` |
 | `--help` | Display the tool's help menu. | `-h` |
 
 ## Output attributes and descriptions
@@ -69,25 +69,25 @@ CiTool makes Windows Defender Application Control (WDAC) policy management easie
 
 ## Examples
 
-### Deploy a WDAC policy
+### Deploy a App Control policy
 
 ```powershell
 CiTool --update-policy "\Windows\Temp\{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}.cip"
 ```
 
-### Refresh the WDAC policies on the system
+### Refresh the App Control policies on the system
 
 ```powershell
 CiTool --refresh
 ```
 
-### Remove a specific WDAC policy by its policy ID
+### Remove a specific App Control policy by its policy ID
 
 ```powershell
 CiTool --remove-policy "{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}"
 ```
 
-### List the actively enforced WDAC policies on the system
+### List the actively enforced App Control policies on the system
 
 ```powershell
 # Check each policy's IsEnforced state and return only the enforced policies

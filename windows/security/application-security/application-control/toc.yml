@@ -4,7 +4,7 @@ items:
 - name: Windows Defender Application Control
   href: app-control-for-business/appcontrol.md
 - name: Windows Defender Application Control and virtualization-based protection of code integrity
-  href: introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+  href: introduction-to-virtualization-based-security-and-appcontrol.md
 - name: User Account Control (UAC)
   items:
   - name: Overview

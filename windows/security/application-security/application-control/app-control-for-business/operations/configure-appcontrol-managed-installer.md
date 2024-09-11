@@ -8,8 +8,7 @@ ms.topic: troubleshooting
 
 # Managed installer and ISG technical reference and troubleshooting guide
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
 ## Enabling managed installer and Intelligent Security Graph (ISG) logging events
 
@@ -17,7 +16,7 @@ Refer to [Understanding Application Control Events](event-id-explanations.md#dia
 
 ## Using fsutil to query extended attributes for Managed Installer (MI)
 
-Customers using Windows Defender Application Control (WDAC) with Managed Installer (MI) enabled can use fsutil.exe to determine whether a file was created by a managed installer process. This verification is done by querying the Extended Attributes (EAs) on a file using fsutil.exe and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. Then, you can use the data from the first row of output to identify if the file was created by a managed installer. For example, let's look at the fsutil.exe output for a file called application.exe:
+Customers using App Control for Business with Managed Installer (MI) enabled can use fsutil.exe to determine whether a file was created by a managed installer process. This verification is done by querying the Extended Attributes (EAs) on a file using fsutil.exe and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. Then, you can use the data from the first row of output to identify if the file was created by a managed installer. For example, let's look at the fsutil.exe output for a file called application.exe:
 
 **Example:**
 
@@ -47,7 +46,7 @@ If there is "00" in the fifth position of the output (the start of the second UL
 
 0000: 01 00 00 00 **`00` 00 00 00** 00 00 00 00 01 00 00 00
 
-Finally, the two-character set in the ninth position of the output (the start of the third ULONG) indicates whether the file was created by a process running as managed installer. A value of "00" means the file was directly written by a managed installer process and will run if your WDAC policy trusts managed installers.
+Finally, the two-character set in the ninth position of the output (the start of the third ULONG) indicates whether the file was created by a process running as managed installer. A value of "00" means the file was directly written by a managed installer process and will run if your App Control policy trusts managed installers.
 
 0000: 01 00 00 00 00 00 00 00 **`00` 00 00 00** 01 00 00 00
 
@@ -98,4 +97,4 @@ Both managed installer and the ISG depend on AppLocker to provide some functiona
    Get-AppLockerPolicy -Effective -XML > $env:USERPROFILE\Desktop\AppLocker.xml
    ```
 
-   Then open the XML file created and confirm it contains the rules you expect. In particular, the policy should include at least one rule for each of the EXE, DLL, and MANAGEDINSTALLER RuleCollections. The RuleCollections can either be set to AuditOnly or Enabled. Additionally, the EXE and DLL RuleCollections must include the RuleCollectionExtensions configuration as shown in [Automatically allow apps deployed by a managed installer with Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer#create-and-deploy-an-applocker-policy-that-defines-your-managed-installer-rules-and-enables-services-enforcement-for-executables-and-dlls).
+   Then open the XML file created and confirm it contains the rules you expect. In particular, the policy should include at least one rule for each of the EXE, DLL, and MANAGEDINSTALLER RuleCollections. The RuleCollections can either be set to AuditOnly or Enabled. Additionally, the EXE and DLL RuleCollections must include the RuleCollectionExtensions configuration as shown in [Automatically allow apps deployed by a managed installer with App Control for Business](../design/configure-authorized-apps-deployed-with-a-managed-installer.md#create-and-deploy-an-applocker-policy-that-defines-your-managed-installer-rules-and-enables-services-enforcement-for-executables-and-dlls).

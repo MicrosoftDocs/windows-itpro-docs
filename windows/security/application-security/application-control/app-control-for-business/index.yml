@@ -3,7 +3,7 @@
 title: Application Control for Windows
 metadata:
   title: Application Control for Windows
-  description: Landing page for Windows Defender Application Control
+  description: Landing page for App Control for Business
   ms.topic: landing-page
   author: vinaypamnani-msft
   ms.author: vinpa
@@ -20,11 +20,11 @@ landingContent:
         links:
           - text: What is Application Control?
             url: appcontrol.md
-          - text: What is Windows Defender Application Control (WDAC)?
+          - text: What is App Control for Business?
             url: appcontrol-and-applocker-overview.md
           - text: What is AppLocker?
             url: applocker\applocker-overview.md
-          - text: WDAC and AppLocker feature availability
+          - text: App Control and AppLocker feature availability
             url: feature-availability.md
   # Card
   - title: Learn about Policy Design
@@ -33,31 +33,31 @@ landingContent:
         links:
           - text: Using code signing to simplify application control
             url: deployment/use-code-signing-for-better-control-and-protection.md
-          - text: Applications that can bypass WDAC and how to block them
+          - text: Applications that can bypass App Control and how to block them
             url: design/applications-that-can-bypass-appcontrol.md
           - text: Microsoft's Recommended Driver Blocklist
             url: design/microsoft-recommended-driver-block-rules.md
-          - text: Example WDAC policies
+          - text: Example App Control policies
             url: design/example-appcontrol-base-policies.md
           - text: Managing multiple policies
             url: design/deploy-multiple-appcontrol-policies.md
       - linkListType: how-to-guide
         links:
-          - text: Create a WDAC policy for a lightly managed device
+          - text: Create a App Control policy for a lightly managed device
             url: design/create-appcontrol-policy-for-lightly-managed-devices.md
-          - text: Create a WDAC policy for a fully managed device
+          - text: Create a App Control policy for a fully managed device
             url: design/create-appcontrol-policy-for-fully-managed-devices.md
-          - text: Create a WDAC policy for a fixed-workload
+          - text: Create a App Control policy for a fixed-workload
             url: design/create-appcontrol-policy-using-reference-computer.md
-          - text: Create a WDAC blocklist policy
+          - text: Create a App Control blocklist policy
             url: design/create-appcontrol-deny-policy.md
-          - text: Deploying catalog files for WDAC management
+          - text: Deploying catalog files for App Control management
             url: deployment/deploy-catalog-files-to-support-appcontrol.md
-          - text: Using the WDAC Wizard
+          - text: Using the App Control Wizard
             url: design/appcontrol-wizard.md
       #- linkListType: Tutorial (videos)
       #  links:
-      #    - text: Using the WDAC Wizard
+      #    - text: Using the App Control Wizard
       #      url:  video md
       #    - text: Specifying custom values
       #      url:  video md
@@ -68,7 +68,7 @@ landingContent:
         links:
           - text: Understanding policy and file rules
             url: design/select-types-of-rules-to-create.md
-          - text: Understanding WDAC secure settings
+          - text: Understanding App Control secure settings
             url: design/understanding-appcontrol-policy-settings.md
       - linkListType: how-to-guide
         links:
@@ -83,7 +83,7 @@ landingContent:
           - text: Manage plug-ins, add-ins, and modules
             url: design/use-appcontrol-policy-to-control-specific-plug-ins-add-ins-and-modules.md
   # Card
-  - title: Learn how to deploy WDAC Policies
+  - title: Learn how to deploy App Control Policies
     linkLists:
       - linkListType: overview
         links:
@@ -93,7 +93,7 @@ landingContent:
             url: deployment/audit-appcontrol-policies.md
           - text: Enforcement mode policies
             url: deployment/enforce-appcontrol-policies.md
-          - text: Disabling WDAC policies
+          - text: Disabling App Control policies
             url: deployment/disable-appcontrol-policies.md
       - linkListType: tutorial
         links:
@@ -106,7 +106,7 @@ landingContent:
           - text: Deployment with group policy
             url: deployment/deploy-appcontrol-policies-using-group-policy.md
   # Card
-  - title: Learn how to troubleshoot and debug WDAC events
+  - title: Learn how to troubleshoot and debug App Control events
     linkLists:
       - linkListType: overview
         links:

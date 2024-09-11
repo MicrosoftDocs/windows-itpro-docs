@@ -29,7 +29,7 @@ This article describes the rule collection extensions added in Windows 10 and la
 
 ## Services enforcement
 
-By default, AppLocker policy only applies to code running in a user's context. On Windows 10, Windows 11, and Windows Server 2016 or later, you can apply AppLocker policy to nonuser processes, including services running as SYSTEM. You must enable services enforcement when using AppLocker with Windows Defender Application Control's (WDAC) [managed installer](/windows/security/application-security/application-control/windows-defender-application-control/design/configure-authorized-apps-deployed-with-a-managed-installer) feature.
+By default, AppLocker policy only applies to code running in a user's context. On Windows 10, Windows 11, and Windows Server 2016 or later, you can apply AppLocker policy to nonuser processes, including services running as SYSTEM. You must enable services enforcement when using AppLocker with App Control for Business's [managed installer](../design/configure-authorized-apps-deployed-with-a-managed-installer.md) feature.
 
 To apply AppLocker policy to nonuser processes, set ``<Services EnforcementMode="Enabled"/>`` in the ``<ThresholdExtensions>`` section as shown in the preceding XML fragment.
 

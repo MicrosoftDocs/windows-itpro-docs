@@ -8,14 +8,13 @@ ms.topic: troubleshooting
 
 # Testing and Debugging AppId Tagging Policies
 
-> [!NOTE]
-> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-After deployment of the WDAC AppId Tagging policy, WDAC will log a 3099 policy deployed event in the [Event Viewer logs](../operations/event-id-explanations.md). You first should ensure that the policy has been successfully deployed onto the system by verifying the presence of the 3099 event.
+After deployment of the App Control AppId Tagging policy, App Control will log a 3099 policy deployed event in the [Event Viewer logs](../operations/event-id-explanations.md). You first should ensure that the policy has been successfully deployed onto the system by verifying the presence of the 3099 event.
 
 ## Verifying Tags on Running Processes
 
-After verifying the policy has been deployed, the next step is to verify that the application processes you expect to pass the AppId Tagging policy have your tag set. Note that processes running at the time of policy deployment will need to be restarted since Windows Defender Application Control (WDAC) can only tag processes created after the policy has been deployed.
+After verifying the policy has been deployed, the next step is to verify that the application processes you expect to pass the AppId Tagging policy have your tag set. Note that processes running at the time of policy deployment will need to be restarted since App Control for Business can only tag processes created after the policy has been deployed.
 
 1. Download and Install the Windows Debugger
 

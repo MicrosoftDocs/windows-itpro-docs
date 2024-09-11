@@ -1,6 +1,6 @@
 ---
 title: Query Application Control events with Advanced Hunting
-description: Learn how to query Windows Defender Application Control events across your entire organization by using Advanced Hunting.
+description: Learn how to query App Control for Business events across your entire organization by using Advanced Hunting.
 ms.localizationpriority: medium
 ms.date: 03/01/2022
 ms.topic: troubleshooting
@@ -8,12 +8,12 @@ ms.topic: troubleshooting
 
 # Querying Application Control events centrally using Advanced hunting
 
-A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode.
+A App Control for Business policy logs events locally in Windows Event Viewer in either enforced or audit mode.
 While Event Viewer helps to see the impact on a single system, IT Pros want to gauge it across many systems.
 
-In November 2018, we added functionality in Microsoft Defender for Endpoint that makes it easy to view WDAC events centrally from all connected systems.
+In November 2018, we added functionality in Microsoft Defender for Endpoint that makes it easy to view App Control events centrally from all connected systems.
 
-Advanced hunting in Microsoft Defender for Endpoint allows customers to query data using a rich set of capabilities. WDAC events can be queried with using an ActionType that starts with "AppControl".
+Advanced hunting in Microsoft Defender for Endpoint allows customers to query data using a rich set of capabilities. App Control events can be queried with using an ActionType that starts with "AppControl".
 This capability is supported beginning with Windows version 1607.
 
 ## Action Types
@@ -22,8 +22,8 @@ This capability is supported beginning with Windows version 1607.
 | - | - | - |
 | AppControlCodeIntegrityDriverRevoked | 3023 | The driver file under validation didn't meet the requirements to pass the application control policy. |
 | AppControlCodeIntegrityImageRevoked | 3036 | The signed file under validation is signed by a code signing certificate that has been revoked by Microsoft or the certificate issuing authority. |
-| AppControlCodeIntegrityPolicyAudited | 3076 | This event is the main Windows Defender Application Control block event for audit mode policies. It indicates the file would have been blocked if the WDAC policy was enforced. |
-| AppControlCodeIntegrityPolicyBlocked | 3077 | This event is the main Windows Defender Application Control block event for enforced policies. It indicates the file didn't pass your WDAC policy and was blocked. |
+| AppControlCodeIntegrityPolicyAudited | 3076 | This event is the main App Control for Business block event for audit mode policies. It indicates the file would have been blocked if the App Control policy was enforced. |
+| AppControlCodeIntegrityPolicyBlocked | 3077 | This event is the main App Control for Business block event for enforced policies. It indicates the file didn't pass your App Control policy and was blocked. |
 | AppControlExecutableAudited | 8003 | Applied only when the Audit only enforcement mode is enabled. Specifies the .exe or .dll file would be blocked if the Enforce rules enforcement mode were enabled. |
 | AppControlExecutableBlocked | 8004 | The .exe or .dll file can't run. |
 | AppControlPackagedAppAudited | 8021 | Applied only when the Audit only enforcement mode is enabled. Specifies the packaged app would be blocked if the Enforce rules enforcement mode were enabled. |
@@ -45,7 +45,7 @@ Learn more about the [Understanding Application Control event IDs (Windows)](eve
 
 Query Example 1: Query the application control action types summarized by type for past seven days
 
-Here's a simple example query that shows all the Windows Defender Application Control events generated in the last seven days from machines being monitored by Microsoft Defender for Endpoint:
+Here's a simple example query that shows all the App Control for Business events generated in the last seven days from machines being monitored by Microsoft Defender for Endpoint:
 
 ```
 DeviceEvents
@@ -55,7 +55,7 @@ ActionType startswith "AppControl"
 | order by Machines desc
 ```
 
-The query results can be used for several important functions related to managing Windows Defender Application Control including:
+The query results can be used for several important functions related to managing App Control for Business including:
 
 - Assessing the impact of deploying policies in audit mode
   Since applications still run in audit mode, it's an ideal way to see the impact and correctness of the rules included in the policy. Integrating the generated events with Advanced Hunting makes it much easier to have broad deployments of audit mode policies and see how the included rules would influence those systems in real world usage. This audit mode data will help streamline the transition to using policies in enforced mode.

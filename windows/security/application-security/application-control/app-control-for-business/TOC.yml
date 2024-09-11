@@ -4,22 +4,22 @@
   href: appcontrol.md
   expanded: true
   items:
-    - name: WDAC and AppLocker Overview
+    - name: App Control and AppLocker Overview
       href: appcontrol-and-applocker-overview.md
-    - name: WDAC and AppLocker Feature Availability
+    - name: App Control and AppLocker Feature Availability
       href: feature-availability.md
     - name: Virtualization-based protection of code integrity
-      href: ../introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
-- name: WDAC design guide
+      href: ../introduction-to-virtualization-based-security-and-appcontrol.md
+- name: App Control design guide
   href: design/appcontrol-design-guide.md
   items:
-    - name: Plan for WDAC policy lifecycle management
+    - name: Plan for App Control policy lifecycle management
       href: design/plan-appcontrol-management.md
-    - name: Design your WDAC policy
+    - name: Design your App Control policy
       items:
-        - name: Understand WDAC policy design decisions
+        - name: Understand App Control policy design decisions
           href: design/understand-appcontrol-policy-design-decisions.md
-        - name: Understand WDAC policy rules and file rules
+        - name: Understand App Control policy rules and file rules
           href: design/select-types-of-rules-to-create.md
           items:
             - name: Allow apps installed by a managed installer
@@ -28,88 +28,88 @@
               href: design/use-appcontrol-with-intelligent-security-graph.md
             - name: Allow COM object registration
               href: design/allow-com-object-registration-in-appcontrol-policy.md
-            - name: Use WDAC with .NET hardening
+            - name: Use App Control with .NET hardening
               href: design/appcontrol-and-dotnet.md
-            - name: Script enforcement with Windows Defender Application Control
+            - name: Script enforcement with App Control for Business
               href: design/script-enforcement.md
-            - name: Manage packaged apps with WDAC
+            - name: Manage packaged apps with App Control
               href: design/manage-packaged-apps-with-appcontrol.md
-            - name: Use WDAC to control specific plug-ins, add-ins, and modules
+            - name: Use App Control to control specific plug-ins, add-ins, and modules
               href: design/use-appcontrol-policy-to-control-specific-plug-ins-add-ins-and-modules.md
-            - name: Understand WDAC policy settings
+            - name: Understand App Control policy settings
               href: design/understanding-appcontrol-policy-settings.md
-        - name: Use multiple WDAC policies
+        - name: Use multiple App Control policies
           href: design/deploy-multiple-appcontrol-policies.md
-    - name: Create your WDAC policy
+    - name: Create your App Control policy
       items:
-        - name: Example WDAC base policies
+        - name: Example App Control base policies
           href: design/example-appcontrol-base-policies.md
-        - name: Policy creation for common WDAC usage scenarios
+        - name: Policy creation for common App Control usage scenarios
           href: design/common-appcontrol-use-cases.md
           items:
-            - name: Create a WDAC policy for lightly managed devices
+            - name: Create a App Control policy for lightly managed devices
               href: design/create-appcontrol-policy-for-lightly-managed-devices.md
-            - name: Create a WDAC policy for fully managed devices
+            - name: Create a App Control policy for fully managed devices
               href: design/create-appcontrol-policy-for-fully-managed-devices.md
-            - name: Create a WDAC policy for fixed-workload devices
+            - name: Create a App Control policy for fixed-workload devices
               href: design/create-appcontrol-policy-using-reference-computer.md
-            - name: Create a WDAC deny list policy
+            - name: Create a App Control deny list policy
               href: design/create-appcontrol-deny-policy.md
-            - name: Applications that can bypass WDAC and how to block them
+            - name: Applications that can bypass App Control and how to block them
               href: design/applications-that-can-bypass-appcontrol.md
             - name: Microsoft recommended driver block rules
               href: design/microsoft-recommended-driver-block-rules.md
-        - name: Use the WDAC Wizard tool
+        - name: Use the App Control Wizard tool
           href: design/appcontrol-wizard.md
           items:
-            - name: Create a base WDAC policy with the Wizard
+            - name: Create a base App Control policy with the Wizard
               href: design/appcontrol-wizard-create-base-policy.md
-            - name: Create a supplemental WDAC policy with the Wizard
+            - name: Create a supplemental App Control policy with the Wizard
               href: design/appcontrol-wizard-create-supplemental-policy.md
-            - name: Editing a WDAC policy with the Wizard
+            - name: Editing a App Control policy with the Wizard
               href: design/appcontrol-wizard-editing-policy.md
-            - name: Creating WDAC Policy Rules from WDAC Events
+            - name: Creating App Control Policy Rules from App Control Events
               href: design/appcontrol-wizard-parsing-event-logs.md
-            - name: Merging multiple WDAC policies with the Wizard
+            - name: Merging multiple App Control policies with the Wizard
               href: design/appcontrol-wizard-merging-policies.md
-- name: WDAC deployment guide
+- name: App Control deployment guide
   href: deployment/appcontrol-deployment-guide.md
   items:
-    - name: Deploy WDAC policies with MDM
+    - name: Deploy App Control policies with MDM
       href: deployment/deploy-appcontrol-policies-using-intune.md
-    - name: Deploy WDAC policies with Configuration Manager
+    - name: Deploy App Control policies with Configuration Manager
       href: deployment/deploy-appcontrol-policies-with-memcm.md
-    - name: Deploy WDAC policies with script
+    - name: Deploy App Control policies with script
       href: deployment/deploy-appcontrol-policies-with-script.md
-    - name: Deploy WDAC policies with group policy
+    - name: Deploy App Control policies with group policy
       href: deployment/deploy-appcontrol-policies-using-group-policy.md
-    - name: Audit WDAC policies
+    - name: Audit App Control policies
       href: deployment/audit-appcontrol-policies.md
-    - name: Merge WDAC policies
+    - name: Merge App Control policies
       href: deployment/merge-appcontrol-policies.md
-    - name: Enforce WDAC policies
+    - name: Enforce App Control policies
       href: deployment/enforce-appcontrol-policies.md
-    - name: Use code signing for added control and protection with WDAC
+    - name: Use code signing for added control and protection with App Control
       href: deployment/use-code-signing-for-better-control-and-protection.md
       items:
-        - name: Deploy catalog files to support WDAC
+        - name: Deploy catalog files to support App Control
           href: deployment/deploy-catalog-files-to-support-appcontrol.md
-        - name: Use signed policies to protect Windows Defender Application Control against tampering
+        - name: Use signed policies to protect App Control for Business against tampering
           href: deployment/use-signed-policies-to-protect-appcontrol-against-tampering.md
-        - name: "Optional: Create a code signing cert for WDAC"
+        - name: "Optional: Create a code signing cert for App Control"
           href: deployment/create-code-signing-cert-for-appcontrol.md
-    - name: Disable WDAC policies
+    - name: Disable App Control policies
       href: deployment/disable-appcontrol-policies.md
-- name: WDAC operational guide
+- name: App Control operational guide
   href: operations/appcontrol-operational-guide.md
   items:
-    - name: WDAC debugging and troubleshooting
+    - name: App Control debugging and troubleshooting
       href: operations/appcontrol-debugging-and-troubleshooting.md
     - name: Understanding Application Control event IDs
       href: operations/event-id-explanations.md
     - name: Understanding Application Control event tags
       href: operations/event-tag-explanations.md
-    - name: Query WDAC events with Advanced hunting
+    - name: Query App Control events with Advanced hunting
       href: operations/querying-application-control-events-centrally-using-advanced-hunting.md
     - name: Known Issues
       href: operations/known-issues.md
@@ -117,9 +117,9 @@
       href: operations/configure-appcontrol-managed-installer.md
     - name: CITool.exe technical reference
       href: operations/citool-commands.md
-    - name: Inbox WDAC policies
+    - name: Inbox App Control policies
       href: operations/inbox-appcontrol-policies.md
-- name: WDAC AppId Tagging guide
+- name: App Control AppId Tagging guide
   href: AppIdTagging/appcontrol-appid-tagging-guide.md
   items:
     - name: Creating AppId Tagging Policies

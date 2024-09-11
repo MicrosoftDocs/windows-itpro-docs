@@ -1,6 +1,6 @@
 ---
 title: Understanding Application Control event IDs
-description: Learn what different Windows Defender Application Control event IDs signify.
+description: Learn what different App Control for Business event IDs signify.
 ms.localizationpriority: medium
 ms.date: 03/24/2023
 ms.topic: reference
@@ -8,50 +8,50 @@ ms.topic: reference
 
 # Understanding Application Control events
 
-## WDAC Events Overview
+## App Control Events Overview
 
-WDAC logs events when a policy is loaded, when a file is blocked, or when a file would be blocked if in audit mode. These block events include information that identifies the policy and gives more details about the block. WDAC doesn't generate events when a binary is allowed. However, you can turn on allow audit events for files authorized by a managed installer or the Intelligent Security Graph (ISG) as described later in this article.
+App Control logs events when a policy is loaded, when a file is blocked, or when a file would be blocked if in audit mode. These block events include information that identifies the policy and gives more details about the block. App Control doesn't generate events when a binary is allowed. However, you can turn on allow audit events for files authorized by a managed installer or the Intelligent Security Graph (ISG) as described later in this article.
 
-### Core WDAC event logs
+### Core App Control event logs
 
-WDAC events are generated under two locations in the Windows Event Viewer:
+App Control events are generated under two locations in the Windows Event Viewer:
 
 - **Applications and Services logs - Microsoft - Windows - CodeIntegrity - Operational** includes events about Application Control policy activation and the control of executables, dlls, and drivers.
 - **Applications and Services logs - Microsoft - Windows - AppLocker - MSI and Script** includes events about the control of MSI installers, scripts, and COM objects.
 
-Most app and script failures that occur when WDAC is active can be diagnosed using these two event logs. This article describes in greater detail the events that exist in these logs. To understand the meaning of different data elements, or tags, found in the details of these events, see [Understanding Application Control event tags](event-tag-explanations.md).
+Most app and script failures that occur when App Control is active can be diagnosed using these two event logs. This article describes in greater detail the events that exist in these logs. To understand the meaning of different data elements, or tags, found in the details of these events, see [Understanding Application Control event tags](event-tag-explanations.md).
 
 > [!NOTE]
 > **Applications and Services logs - Microsoft - Windows - AppLocker - MSI and Script** events are not included on Windows Server Core edition.
 
-## WDAC block events for executables, dlls, and drivers
+## App Control block events for executables, dlls, and drivers
 
 These events are found in the **CodeIntegrity - Operational** event log.
 
 | Event ID | Explanation |
 |--------|-----------|
 | 3004 | This event isn't common and may occur with or without an Application Control policy present. It typically indicates a kernel driver tried to load with an invalid signature. For example, the file may not be WHQL-signed on a system where WHQL is required. <br><br> This event is also seen for kernel- or user-mode code that the developer opted-in to [/INTEGRITYCHECK](/cpp/build/reference/integritycheck-require-signature-check) but isn't signed correctly. |
-| 3033 | This event may occur with or without an Application Control policy present and should occur alongside a 3077 event if caused by WDAC policy. It often means the file's signature is revoked or a signature with the Lifetime Signing EKU has expired. Presence of the Lifetime Signing EKU is the only case where WDAC blocks files due to an expired signature. Try using option `20 Enabled:Revoked Expired As Unsigned` in your policy along with a rule (for example, hash) that doesn't rely on the revoked or expired cert. <br><br> This event also occurs if code compiled with [Code Integrity Guard (CIG)](/microsoft-365/security/defender-endpoint/exploit-protection-reference#code-integrity-guard) tries to load other code that doesn't meet the CIG requirements. |
+| 3033 | This event may occur with or without an Application Control policy present and should occur alongside a 3077 event if caused by App Control policy. It often means the file's signature is revoked or a signature with the Lifetime Signing EKU has expired. Presence of the Lifetime Signing EKU is the only case where App Control blocks files due to an expired signature. Try using option `20 Enabled:Revoked Expired As Unsigned` in your policy along with a rule (for example, hash) that doesn't rely on the revoked or expired cert. <br><br> This event also occurs if code compiled with [Code Integrity Guard (CIG)](/microsoft-365/security/defender-endpoint/exploit-protection-reference#code-integrity-guard) tries to load other code that doesn't meet the CIG requirements. |
 | 3034 | This event isn't common. It's the audit mode equivalent of event 3033. |
 | 3076 | This event is the main Application Control block event for audit mode policies. It indicates that the file would have been blocked if the policy was enforced. |
 | 3077 | This event is the main Application Control block event for enforced policies. It indicates that the file didn't pass your policy and was blocked. |
 | 3089 | This event contains signature information for files that were blocked or audit blocked by Application Control. One of these events is created for each signature of a file. Each event shows the total number of signatures found and an index value to identify the current signature. Unsigned files generate a single one of these events with TotalSignatureCount of 0. These events are correlated with 3004, 3033, 3034, 3076 and 3077 events. You can match the events using the `Correlation ActivityID` found in the **System** portion of the event. |
 
-## WDAC block events for packaged apps, MSI installers, scripts, and COM objects
+## App Control block events for packaged apps, MSI installers, scripts, and COM objects
 
 These events are found in the **AppLocker - MSI and Script** event log.
 
 | Event ID | Explanation |
 |--------|-----------|
-| 8028 | This event indicates that a script host, such as PowerShell, queried Application Control about a file the script host was about to run. Since the policy was in audit mode, the script or MSI file should have run, but wouldn't have passed the WDAC policy if it was enforced. Some script hosts may have additional information in their logs. Note: Most third-party script hosts don't integrate with Application Control. Consider the risks from unverified scripts when choosing which script hosts you allow to run. |
-| 8029 | This event is the enforcement mode equivalent of event 8028. Note: While this event says that a script was blocked, the script hosts control the actual script enforcement behavior. The script host may allow the file to run with restrictions and not block the file outright. For example, PowerShell runs script not allowed by your WDAC policy in [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). |
-| 8036| COM object was blocked. To learn more about COM object authorization, see [Allow COM object registration in a Windows Defender Application Control policy](../design/allow-com-object-registration-in-appcontrol-policy.md). |
-| 8037 | This event indicates that a script host checked whether to allow a script to run, and the file passed the WDAC policy. |
+| 8028 | This event indicates that a script host, such as PowerShell, queried Application Control about a file the script host was about to run. Since the policy was in audit mode, the script or MSI file should have run, but wouldn't have passed the App Control policy if it was enforced. Some script hosts may have additional information in their logs. Note: Most third-party script hosts don't integrate with Application Control. Consider the risks from unverified scripts when choosing which script hosts you allow to run. |
+| 8029 | This event is the enforcement mode equivalent of event 8028. Note: While this event says that a script was blocked, the script hosts control the actual script enforcement behavior. The script host may allow the file to run with restrictions and not block the file outright. For example, PowerShell runs script not allowed by your App Control policy in [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). |
+| 8036| COM object was blocked. To learn more about COM object authorization, see [Allow COM object registration in a App Control for Business policy](../design/allow-com-object-registration-in-appcontrol-policy.md). |
+| 8037 | This event indicates that a script host checked whether to allow a script to run, and the file passed the App Control policy. |
 | 8038 | Signing information event correlated with either an 8028 or 8029 event. One 8038 event is generated for each signature of a script file. Contains the total number of signatures on a script file and an index as to which signature it is. Unsigned script files generate a single 8038 event with TotalSignatureCount 0. These events are correlated with 8028 and 8029 events and can be matched using the `Correlation ActivityID` found in the **System** portion of the event. |
-| 8039 | This event indicates that a packaged app (MSIX/AppX) was allowed to install or run because the WDAC policy is in audit mode. But, it would have been blocked if the policy was enforced. |
-| 8040 | This event indicates that a packaged app was prevented from installing or running due to the WDAC policy. |
+| 8039 | This event indicates that a packaged app (MSIX/AppX) was allowed to install or run because the App Control policy is in audit mode. But, it would have been blocked if the policy was enforced. |
+| 8040 | This event indicates that a packaged app was prevented from installing or running due to the App Control policy. |
 
-## WDAC policy activation events
+## App Control policy activation events
 
 These events are found in the **CodeIntegrity - Operational** event log.
 
@@ -72,7 +72,7 @@ These events are found in the **CodeIntegrity - Operational** event log.
 > [!NOTE]
 > When Managed Installer is enabled, customers using LogAnalytics should be aware that Managed Installer may fire many 3091 events.  Customers may need to filter out these events to avoid high LogAnalytics costs.
 
-The following events provide helpful diagnostic information when a WDAC policy includes the ISG or MI option. These events can help you debug why something was allowed/denied based on managed installer or ISG. Events 3090, 3091, and 3092 don't necessarily indicate a problem but should be reviewed in context with other events like 3076 or 3077.
+The following events provide helpful diagnostic information when a App Control policy includes the ISG or MI option. These events can help you debug why something was allowed/denied based on managed installer or ISG. Events 3090, 3091, and 3092 don't necessarily indicate a problem but should be reviewed in context with other events like 3076 or 3077.
 
 Unless otherwise noted, these events are found in either the **CodeIntegrity - Operational** event log or the **CodeIntegrity - Verbose** event log depending on your version of Windows.
 
@@ -81,7 +81,7 @@ Unless otherwise noted, these events are found in either the **CodeIntegrity - O
 | 3090 | *Optional* This event indicates that a file was allowed to run based purely on ISG or managed installer. |
 | 3091 | This event indicates that a file didn't have ISG or managed installer authorization and the Application Control policy is in audit mode. |
 | 3092 | This event is the enforcement mode equivalent of 3091. |
-| 8002 | This event is found in the **AppLocker - EXE and DLL** event log. When a process launches that matches a managed installer rule, this event is raised with PolicyName = MANAGEDINSTALLER found in the event Details. Events with PolicyName = EXE or DLL aren't related to WDAC. |
+| 8002 | This event is found in the **AppLocker - EXE and DLL** event log. When a process launches that matches a managed installer rule, this event is raised with PolicyName = MANAGEDINSTALLER found in the event Details. Events with PolicyName = EXE or DLL aren't related to App Control. |
 
 Events 3090, 3091, and 3092 are reported per active policy on the system, so you may see multiple events for the same file.
 

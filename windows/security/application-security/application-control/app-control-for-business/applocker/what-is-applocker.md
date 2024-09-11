@@ -10,7 +10,7 @@ ms.date: 12/23/2023
 
 This article for the IT professional describes what AppLocker is.
 
-Windows includes two technologies that can be used for application control, depending on your organization's specific scenarios and requirements: Windows Defender Application Control (WDAC) and AppLocker. For information to help you choose when to use WDAC or AppLocker, see [WDAC and AppLocker overview](/windows/security/application-security/application-control/windows-defender-application-control/wdac-and-applocker-overview).
+Windows includes two technologies that can be used for application control, depending on your organization's specific scenarios and requirements: App Control for Business and AppLocker. For information to help you choose when to use App Control or AppLocker, see [App Control and AppLocker overview](../appcontrol-and-applocker-overview.md).
 
 AppLocker helps you create rules to allow or deny apps from running based on information about the apps' files. You can also use AppLocker to control which users or groups can run those apps.
 

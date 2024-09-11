@@ -1,6 +1,6 @@
 ---
 title: Understanding Application Control event tags
-description: Learn what different Windows Defender Application Control event tags signify.
+description: Learn what different App Control for Business event tags signify.
 ms.localizationpriority: medium
 ms.date: 05/09/2023
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.topic: conceptual
 
 # Understanding Application Control event tags
 
-Windows Defender Application Control (WDAC) events include many fields, which provide helpful troubleshooting information to figure out exactly what an event means. This article describes the values and meanings for a few useful event tags.
+App Control for Business events include many fields, which provide helpful troubleshooting information to figure out exactly what an event means. This article describes the values and meanings for a few useful event tags.
 
 ## SignatureType
 
@@ -33,7 +33,7 @@ Represents the signature level at which the code was verified.
 |---|----------|
 | 0 | Signing level hasn't yet been checked |
 | 1 | File is unsigned or has no signature that passes the active policies |
-| 2 | Trusted by Windows Defender Application Control policy |
+| 2 | Trusted by App Control for Business policy |
 | 3 | Developer signed code |
 | 4 | Authenticode signed |
 | 5 | Microsoft Store signed app PPL (Protected Process Light) |
@@ -71,7 +71,7 @@ Represents why verification failed, or if it succeeded.
 | 18 | Custom signing level not met; returned if signature fails to match `CISigners` in UMCI. |
 | 19 | Binary is revoked based on its file hash. |
 | 20 | SHA1 cert hash's timestamp is missing or after valid cutoff as defined by Weak Crypto Policy. |
-| 21 | Failed to pass Windows Defender Application Control policy. |
+| 21 | Failed to pass App Control for Business policy. |
 | 22 | Not Isolated User Mode (IUM)) signed; indicates an attempt to load a standard Windows binary into a virtualization-based security (VBS) trustlet. |
 | 23 | Invalid image hash. This error can indicate file corruption or a problem with the file's signature. Signatures using elliptic curve cryptography (ECC), such as ECDSA, return this VerificationError. |
 | 24 | Flight root not allowed; indicates trying to run flight-signed code on production OS. |
@@ -82,7 +82,7 @@ Represents why verification failed, or if it succeeded.
 
 ## Policy activation event Options
 
-The Application Control policy rule option values can be derived from the "Options" field in the Details section for successful [policy activation events](event-id-explanations.md#wdac-policy-activation-events). To parse the values, first convert the hex value to binary. To derive and parse these values, follow the below workflow.
+The Application Control policy rule option values can be derived from the "Options" field in the Details section for successful [policy activation events](event-id-explanations.md#app-control-policy-activation-events). To parse the values, first convert the hex value to binary. To derive and parse these values, follow the below workflow.
 
 - Access Event Viewer.
 - Access the Code integrity 3099 event.
@@ -105,7 +105,7 @@ For a simple solution for converting hex to binary, follow these steps:
 
 This view provides the hex code in binary form, with each bit address shown separately.  The bit addresses start at 0 in the bottom right.  Each bit address correlates to a specific event policy-rule option.  If the bit address holds a value of 1, the setting is in the policy.
 
-Next, use the bit addresses and their values from the following table to determine the state of each [policy rule-option](../design/select-types-of-rules-to-create.md#table-1-windows-defender-application-control-policy---policy-rule-options). For example, if the bit address of 16 holds a value of 1, then the **Enabled: Audit Mode (Default)** option is in the policy. This setting means that the policy is in audit mode.
+Next, use the bit addresses and their values from the following table to determine the state of each [policy rule-option](../design/select-types-of-rules-to-create.md#table-1-app-control-for-business-policy---policy-rule-options). For example, if the bit address of 16 holds a value of 1, then the **Enabled: Audit Mode (Default)** option is in the policy. This setting means that the policy is in audit mode.
 
 | Bit Address | Policy Rule Option |
 |-------|------|
@@ -157,7 +157,7 @@ The rule means trust anything signed by a certificate that chains to this root C
 | 18 | Microsoft ECC Product Root CA 2018 |
 | 19 | Microsoft ECC Devices Root CA 2017 |
 
-For well-known roots, the TBS hashes for the certificates are baked into the code for Windows Defender Application Control. For example, they don't need to be listed as TBS hashes in the policy file.
+For well-known roots, the TBS hashes for the certificates are baked into the code for App Control for Business. For example, they don't need to be listed as TBS hashes in the policy file.
 
 ## Status values
 

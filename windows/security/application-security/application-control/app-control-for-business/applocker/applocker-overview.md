@@ -11,13 +11,13 @@ ms.date: 01/03/2024
 
 # AppLocker
 
-This article provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers. AppLocker is also used by some features of Windows Defender Application Control.
+This article provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers. AppLocker is also used by some features of App Control for Business.
 
 > [!NOTE]
-> AppLocker is a defense-in-depth security feature and not considered a defensible Windows [security feature](https://www.microsoft.com/msrc/windows-security-servicing-criteria). [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview) should be used when the goal is to provide robust protection against a threat and there are expected to be no by-design limitations that would prevent the security feature from achieving this goal.
+> AppLocker is a defense-in-depth security feature and not considered a defensible Windows [security feature](https://www.microsoft.com/msrc/windows-security-servicing-criteria). [App Control for Business](../appcontrol-and-applocker-overview.md) should be used when the goal is to provide robust protection against a threat and there are expected to be no by-design limitations that would prevent the security feature from achieving this goal.
 
 > [!NOTE]
-> By default, AppLocker policy only applies to code launched in a user's context. On Windows 10, Windows 11, and Windows Server 2016 or later, you can apply AppLocker policy to non-user processes, including those running as SYSTEM. For more information, see [AppLocker rule collection extensions](/windows/security/application-security/application-control/windows-defender-application-control/applocker/rule-collection-extensions#services-enforcement).
+> By default, AppLocker policy only applies to code launched in a user's context. On Windows 10, Windows 11, and Windows Server 2016 or later, you can apply AppLocker policy to non-user processes, including those running as SYSTEM. For more information, see [AppLocker rule collection extensions](rule-collection-extensions.md#services-enforcement).
 
 AppLocker can help you:
 

@@ -1,21 +1,20 @@
 ---
-title: Allow COM object registration in a WDAC policy
-description: You can allow COM object registration in a Windows Defender Application Control policy.
+title: Allow COM object registration in a App Control policy
+description: You can allow COM object registration in a App Control for Business policy.
 ms.localizationpriority: medium
 ms.date: 04/05/2023
 ms.topic: how-to
 ---
 
-# Allow COM object registration in a Windows Defender Application Control policy
+# Allow COM object registration in a App Control for Business policy
 
-> [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
 The [Microsoft Component Object Model (COM)](/windows/desktop/com/the-component-object-model) is a platform-independent, distributed, object-oriented system for creating binary software components that can interact. COM specifies an object model and programming requirements that enable COM objects to interact with other objects.
 
-## COM object configurability in WDAC policy
+## COM object configurability in App Control policy
 
-Windows Defender Application Control (WDAC) enforces a built-in allowlist for COM object registration. While this list works for most common application usage scenarios, you may need to allow more COM objects to support the apps used in your organization. You can specify allowed COM objects via their GUID in your WDAC policy as described in this article.
+App Control for Business enforces a built-in allowlist for COM object registration. While this list works for most common application usage scenarios, you may need to allow more COM objects to support the apps used in your organization. You can specify allowed COM objects via their GUID in your App Control policy as described in this article.
 
 > [!NOTE]
 > To add this functionality to other versions of Windows 10, you can install the following or later updates.
@@ -46,7 +45,7 @@ One attribute:
 
 ### Multiple policy considerations
 
-Similar to executable files, COM objects must pass all enforced WDAC policies on the system to run. For example, if the COM object under evaluation passes most but not all of your WDAC policies, the COM object is blocked. If you're using a combination of base and supplemental policies, the COM object just needs to be allowlisted in either the base policy or one of the supplemental policies.
+Similar to executable files, COM objects must pass all enforced App Control policies on the system to run. For example, if the COM object under evaluation passes most but not all of your App Control policies, the COM object is blocked. If you're using a combination of base and supplemental policies, the COM object just needs to be allowlisted in either the base policy or one of the supplemental policies.
 
 ### Examples
 
@@ -126,10 +125,10 @@ To add this CLSID to the existing policy, follow these steps:
 
 1. Open PowerShell ISE with Administrative privileges.
 
-2. Copy and edit this command, then run it from the admin PowerShell ISE. Consider the policy name to be `WDAC_policy.xml`.
+2. Copy and edit this command, then run it from the admin PowerShell ISE. Consider the policy name to be `AppControl_policy.xml`.
 
     ```PowerShell
-    PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\WDAC_policy.xml -Key "{f8d253d9-89a4-4daa-87b6-1168369f0b21}" -Provider WSH -Value true -ValueName EnterpriseDefinedClsId -ValueType Boolean
+    PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\AppControl_policy.xml -Key "{f8d253d9-89a4-4daa-87b6-1168369f0b21}" -Provider WSH -Value true -ValueName EnterpriseDefinedClsId -ValueType Boolean
     ```
 
     Once the command has run, find the following section added to the policy XML.
@@ -145,7 +144,7 @@ To add this CLSID to the existing policy, follow these steps:
 
 ### Default COM Object allowlist
 
-The table that follows describes the list of COM objects that are inherently trusted in Windows Defender Application Control. Objects in this list don't need to be allowlisted in your WDAC policies. They can be denied by creating explicit deny rules in your WDAC policy.
+The table that follows describes the list of COM objects that are inherently trusted in App Control for Business. Objects in this list don't need to be allowlisted in your App Control policies. They can be denied by creating explicit deny rules in your App Control policy.
 
 | File Name | CLSID |
 |--------|-----------|

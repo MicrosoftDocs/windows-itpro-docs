@@ -1,17 +1,16 @@
 ---
-title: Use multiple Windows Defender Application Control Policies
-description: Windows Defender Application Control supports multiple code integrity policies for one device.
+title: Use multiple App Control for Business Policies
+description: App Control for Business supports multiple code integrity policies for one device.
 ms.localizationpriority: medium
 ms.date: 04/15/2024
 ms.topic: how-to
 ---
 
-# Use multiple Windows Defender Application Control Policies
+# Use multiple App Control for Business Policies
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-Beginning with Windows 10 version 1903 and Windows Server 2022, you can deploy multiple Windows Defender Application Control (WDAC) policies side-by-side on a device. To allow more than 32 active policies, install the Windows security update released on, or after, April 9, 2024 and then restart the device. With these updates, there's no limit for the number of policies you can deploy at once to a given device. Until you install the Windows security update released on or after April 9, 2024, your device is limited to 32 active policies and you must not exceed that number.
+Beginning with Windows 10 version 1903 and Windows Server 2022, you can deploy multiple App Control for Business policies side-by-side on a device. To allow more than 32 active policies, install the Windows security update released on, or after, April 9, 2024 and then restart the device. With these updates, there's no limit for the number of policies you can deploy at once to a given device. Until you install the Windows security update released on or after April 9, 2024, your device is limited to 32 active policies and you must not exceed that number.
 
 >[!NOTE]
 >The policy limit was not removed on Windows 11 21H2 and will remain limited to 32 policies.
@@ -29,7 +28,7 @@ Here are some common scenarios where multiple side-by-side policies are useful:
     - For supplemental policies, applications allowed by either the base policy or its supplemental policy/policies run
 
 > [!NOTE]
-> Pre-1903 systems do not support the use of Multiple Policy Format WDAC policies.
+> Pre-1903 systems do not support the use of Multiple Policy Format App Control policies.
 
 ## Base and supplemental policy interaction
 
@@ -38,7 +37,7 @@ Here are some common scenarios where multiple side-by-side policies are useful:
 - Base + supplemental policy: union
   - Files allowed by either the base policy or the supplemental policy run
 
-## Creating WDAC policies in Multiple Policy Format
+## Creating App Control policies in Multiple Policy Format
 
 In order to allow multiple policies to exist and take effect on a single system, policies must be created using the new Multiple Policy Format. The "MultiplePolicyFormat" switch in [New-CIPolicy](/powershell/module/configci/new-cipolicy?preserve-view=true&view=win10-ps) results in 1) unique values generated for the policy ID and 2) the policy type set as a Base policy. The below example describes the process of creating a new policy in the multiple policy format.
 
@@ -75,7 +74,7 @@ When you're merging policies, the policy type and ID of the leftmost/first polic
 
 ## Deploying multiple policies
 
-In order to deploy multiple Windows Defender Application Control policies, you must either deploy them locally by copying the `*.cip` policy files into the proper folder or by using the ApplicationControl CSP.
+In order to deploy multiple App Control for Business policies, you must either deploy them locally by copying the `*.cip` policy files into the proper folder or by using the ApplicationControl CSP.
 
 ### Deploying multiple policies locally
 
@@ -89,11 +88,11 @@ To deploy policies locally using the new multiple policy format, follow these st
 
 ### Deploying multiple policies via ApplicationControl CSP
 
-Multiple Windows Defender Application Control policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). The CSP also provides support for rebootless policy deployment.<br>
+Multiple App Control for Business policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). The CSP also provides support for rebootless policy deployment.<br>
 
 However, when policies are unenrolled from an MDM server, the CSP attempts to remove every policy not actively deployed, not just the policies added by the CSP. This behavior happens because the system doesn't know what deployment methods were used to apply individual policies.
 
 For more information on deploying multiple policies, optionally using Microsoft Intune's custom OMA-URI capability, see [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp).
 
 > [!NOTE]
-> WMI and GP do not currently support multiple policies. Instead, customers who cannot directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format Windows Defender Application Control policies.
+> WMI and GP do not currently support multiple policies. Instead, customers who cannot directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format App Control for Business policies.

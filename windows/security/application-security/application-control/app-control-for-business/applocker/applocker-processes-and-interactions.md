@@ -8,8 +8,7 @@ ms.date: 12/23/2023
 
 # AppLocker processes and interactions
 
-> [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
 This article for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
 

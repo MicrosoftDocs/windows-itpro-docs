@@ -1,22 +1,21 @@
 ---
-title: Create a code signing cert for Windows Defender Application Control
-description: Learn how to set up a publicly issued code signing certificate, so you can sign catalog files or WDAC policies internally.
+title: Create a code signing cert for App Control for Business
+description: Learn how to set up a publicly issued code signing certificate, so you can sign catalog files or App Control policies internally.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 12/01/2022
 ---
 
-# Optional: Create a code signing cert for Windows Defender Application Control  
+# Optional: Create a code signing cert for App Control for Business
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+[!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this signing, you'll either need to use [Microsoft's Trusted Signing service](/azure/trusted-signing/), a publicly issued code signing certificate or an internal CA. If you've purchased a code signing certificate, you can skip this article, and instead follow other articles listed in the [Windows Defender Application Control Deployment Guide](appcontrol-deployment-guide.md).
+As you deploy App Control for Business, you might need to sign catalog files or App Control policies internally. To do this signing, you'll either need to use [Microsoft's Trusted Signing service](/azure/trusted-signing/), a publicly issued code signing certificate or an internal CA. If you've purchased a code signing certificate, you can skip this article, and instead follow other articles listed in the [App Control for Business Deployment Guide](appcontrol-deployment-guide.md).
 
 If you have an internal CA, complete these steps to create a code signing certificate.
 
 > [!WARNING]
-> When creating signing certificates for WDAC policy signing, Boot failure (blue screen) may occur if your signing certificate does not follow these rules:
+> When creating signing certificates for App Control policy signing, Boot failure (blue screen) may occur if your signing certificate does not follow these rules:
 >
 > - All policies, including base and supplemental, must be signed according to the [PKCS 7 Standard](https://datatracker.ietf.org/doc/html/rfc5652).
 > - Use RSA keys with 2K, 3K, or 4K key size only. ECDSA isn't supported.
@@ -34,7 +33,7 @@ If you have an internal CA, complete these steps to create a code signing certif
 
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box. Select **Windows Server 2012** from the **Certification Authority** list, and then select **Windows 8 / Windows Server 2012** from the **Certificate recipient** list.
 
-5. On the **General** tab, specify the **Template display name** and **Template name**. This example uses the name **WDAC Catalog Signing Certificate**.
+5. On the **General** tab, specify the **Template display name** and **Template name**. This example uses the name **App Control Catalog Signing Certificate**.
 
 6. On the **Request Handling** tab, select the **Allow private key to be exported** check box.
 
@@ -64,7 +63,7 @@ When this certificate template has been created, you must publish it to the CA p
 
     A list of available templates to issue appears, including the template you created.
 
-2. Select the WDAC Catalog signing certificate, and then select **OK**.
+2. Select the App Control Catalog signing certificate, and then select **OK**.
 
 Now that the template is available to be issued, you must request one from the computer running Windows 10 or Windows 11 on which you create and sign catalog files. To begin, open the MMC, and then complete the following steps:
 
@@ -95,6 +94,6 @@ This certificate must be installed in the user's personal store on the computer 
 
 3. Choose the default settings, and then select **Export all extended properties**.
 
-4. Set a password, select an export path, and then select **WDACCatSigningCert.pfx** as the file name.
+4. Set a password, select an export path, and then select **AppControlCatSigningCert.pfx** as the file name.
 
 When the certificate has been exported, import it into the personal store for the user who will be signing the catalog files or code integrity policies on the specific computer that will be signing them.
