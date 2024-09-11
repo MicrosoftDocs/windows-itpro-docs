@@ -20,11 +20,11 @@ Single-policy format App Control for Business policies (pre-1903 policy schema) 
 > [!IMPORTANT]
 > Group Policy-based deployment of App Control for Business policies only supports single-policy format App Control policies. To use App Control on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for policy deployment.
 
-You should now have a App Control policy converted into binary form. If not, follow the steps described in [Deploying App Control for Business policies](appcontrol-deployment-guide.md).
+You should now have an App Control policy converted into binary form. If not, follow the steps described in [Deploying App Control for Business policies](appcontrol-deployment-guide.md).
 
-The following procedure walks you through how to deploy a App Control policy called **SiPolicy.p7b** to a test OU called *App Control Enabled PCs* by using a GPO called **Contoso GPO Test**.
+The following procedure walks you through how to deploy an App Control policy called **SiPolicy.p7b** to a test OU called *App Control Enabled PCs* by using a GPO called **Contoso GPO Test**.
 
-To deploy and manage a App Control for Business policy with Group Policy:
+To deploy and manage an App Control for Business policy with Group Policy:
 
 1. On a client computer on which RSAT is installed, open the GPMC by running **GPMC.MSC**
 

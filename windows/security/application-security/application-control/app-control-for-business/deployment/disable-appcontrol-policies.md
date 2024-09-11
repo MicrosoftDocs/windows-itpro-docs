@@ -32,7 +32,7 @@ To make a policy effectively inactive before removing it, you can first replace 
 1. Replace the policy rules with "Allow *" rules;
 2. Set option **3 Enabled:Audit Mode** to change the policy to audit mode only;
 3. Set option **11 Disabled:Script Enforcement**;
-4. Allow all COM objects. See [Allow COM object registration in a App Control policy](../design/allow-com-object-registration-in-appcontrol-policy.md#examples);
+4. Allow all COM objects. See [Allow COM object registration in an App Control policy](../design/allow-com-object-registration-in-appcontrol-policy.md#examples);
 5. If applicable, remove option **0 Enabled:UMCI** to convert the policy to kernel mode only.
 
 > [!IMPORTANT]
@@ -54,7 +54,7 @@ You can use a Mobile Device Management (MDM) solution, like Microsoft Intune, to
 
 <!-- Waiting for information from Intune team on specific steps...
 
-The steps to use Intune's custom OMA-URI functionality to remove a App Control policy are:
+The steps to use Intune's custom OMA-URI functionality to remove an App Control policy are:
 
 1. Open the Microsoft Intune portal and [create a profile with custom settings](/mem/intune/configuration/custom-settings-windows-10).
 
@@ -141,7 +141,7 @@ mountvol $MountPoint /D
 
 ## Remove App Control policies causing boot stop failures
 
-A App Control policy that blocks boot critical drivers can cause a boot stop failure (BSOD) to occur, though this can be mitigated by setting option **10 Enabled:Boot Audit On Failure** in your policies. Additionally, signed App Control policies protect the policy from administrative manipulation and malware that has gained administrative-level access to the system. For this reason, signed App Control policies are intentionally more difficult to remove than unsigned policies even for administrators. Tampering with or removing a signed App Control policy will cause a BSOD to occur.
+an App Control policy that blocks boot critical drivers can cause a boot stop failure (BSOD) to occur, though this can be mitigated by setting option **10 Enabled:Boot Audit On Failure** in your policies. Additionally, signed App Control policies protect the policy from administrative manipulation and malware that has gained administrative-level access to the system. For this reason, signed App Control policies are intentionally more difficult to remove than unsigned policies even for administrators. Tampering with or removing a signed App Control policy will cause a BSOD to occur.
 
 To remove a policy that is causing boot stop failures:
 

@@ -1,6 +1,6 @@
 ---
 title: Deploy catalog files to support App Control for Business
-description: Catalog files simplify running unsigned applications in the presence of a App Control for Business policy.
+description: Catalog files simplify running unsigned applications in the presence of an App Control for Business policy.
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.date: 11/30/2022
@@ -14,7 +14,7 @@ ms.date: 11/30/2022
 
 You need to [obtain a code signing certificate for your own use](use-code-signing-for-better-control-and-protection.md#obtain-code-signing-certificates-for-your-own-use) and use it to sign the catalog file. Then, distribute the signed catalog file using your preferred content deployment mechanism.
 
-Finally, add a signer rule to your App Control policy for your signing certificate. Then, any apps covered by your signed catalog files are able to run, even if the apps were previously unsigned. With this foundation, you can more easily build a App Control policy that blocks all unsigned code, because most malware is unsigned.
+Finally, add a signer rule to your App Control policy for your signing certificate. Then, any apps covered by your signed catalog files are able to run, even if the apps were previously unsigned. With this foundation, you can more easily build an App Control policy that blocks all unsigned code, because most malware is unsigned.
 
 ## Create catalog files using Package Inspector
 
@@ -300,7 +300,7 @@ At the time of the next software inventory cycle, when the targeted clients rece
 
 ## Allow apps signed by your catalog signing certificate in your App Control policy
 
-Now that you have your signed catalog file, you can add a signer rule to your policy that allows anything signed with that certificate. If you haven't yet created a App Control policy, see the [App Control for Business design guide](../design/appcontrol-design-guide.md).
+Now that you have your signed catalog file, you can add a signer rule to your policy that allows anything signed with that certificate. If you haven't yet created an App Control policy, see the [App Control for Business design guide](../design/appcontrol-design-guide.md).
 
 On a computer where the signed catalog file has been deployed, you can use [New-CiPolicyRule](/powershell/module/configci/new-cipolicyrule) to create a signer rule from any file included in that catalog. Then use [Merge-CiPolicy](/powershell/module/configci/merge-cipolicy) to add the rule to your policy XML. Be sure to replace the path values in the following sample:
 

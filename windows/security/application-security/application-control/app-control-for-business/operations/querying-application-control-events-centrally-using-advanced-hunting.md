@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 
 # Querying Application Control events centrally using Advanced hunting
 
-A App Control for Business policy logs events locally in Windows Event Viewer in either enforced or audit mode.
+an App Control for Business policy logs events locally in Windows Event Viewer in either enforced or audit mode.
 While Event Viewer helps to see the impact on a single system, IT Pros want to gauge it across many systems.
 
 In November 2018, we added functionality in Microsoft Defender for Endpoint that makes it easy to view App Control events centrally from all connected systems.

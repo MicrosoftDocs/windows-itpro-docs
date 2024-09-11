@@ -33,4 +33,4 @@ Recently, Lamna experienced a ransomware event that required an expensive recove
 
 ## Up next
 
-- [Create a App Control for Business policy for lightly managed devices](create-appcontrol-policy-for-lightly-managed-devices.md)
+- [Create an App Control for Business policy for lightly managed devices](create-appcontrol-policy-for-lightly-managed-devices.md)

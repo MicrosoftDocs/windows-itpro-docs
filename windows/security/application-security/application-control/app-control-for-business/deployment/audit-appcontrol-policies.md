@@ -12,14 +12,14 @@ ms.topic: conceptual
 
 Running Application Control in audit mode lets you discover applications, binaries, and scripts that are missing from your App Control policy but should be included.
 
-While a App Control policy is running in audit mode, any binary that runs but would have been denied is logged in the **Applications and Services Logs\\Microsoft\\Windows\\CodeIntegrity\\Operational** event log. Script and MSI are logged in the **Applications and Services Logs\\Microsoft\\Windows\\AppLocker\\MSI and Script** event log. These events can be used to generate a new App Control policy that can be merged with the original Base policy or deployed as a separate Supplemental policy, if allowed.
+While an App Control policy is running in audit mode, any binary that runs but would have been denied is logged in the **Applications and Services Logs\\Microsoft\\Windows\\CodeIntegrity\\Operational** event log. Script and MSI are logged in the **Applications and Services Logs\\Microsoft\\Windows\\AppLocker\\MSI and Script** event log. These events can be used to generate a new App Control policy that can be merged with the original Base policy or deployed as a separate Supplemental policy, if allowed.
 
 ## Overview of the process to create App Control policy to allow apps using audit events
 
 > [!Note]
-> You must have already deployed a App Control audit mode policy to use this process. If you have not already done so, see [Deploying App Control for Business policies](appcontrol-deployment-guide.md).
+> You must have already deployed an App Control audit mode policy to use this process. If you have not already done so, see [Deploying App Control for Business policies](appcontrol-deployment-guide.md).
 
-To familiarize yourself with creating App Control rules from audit events, follow these steps on a device with a App Control audit mode policy.
+To familiarize yourself with creating App Control rules from audit events, follow these steps on a device with an App Control audit mode policy.
 
 1. Install and run an application not allowed by the App Control policy but that you want to allow.
 
@@ -28,7 +28,7 @@ To familiarize yourself with creating App Control rules from audit events, follo
    **Figure 1. Exceptions to the deployed App Control policy**
    ![Event showing exception to App Control policy.](../images/dg-fig23-exceptionstocode.png)
 
-3. In an elevated PowerShell session, run the following commands to initialize variables used by this procedure. This procedure builds upon the **Lamna_FullyManagedClients_Audit.xml** policy introduced in [Create a App Control policy for fully managed devices](../design/create-appcontrol-policy-for-fully-managed-devices.md) and will produce a new policy called **EventsPolicy.xml**.
+3. In an elevated PowerShell session, run the following commands to initialize variables used by this procedure. This procedure builds upon the **Lamna_FullyManagedClients_Audit.xml** policy introduced in [Create an App Control policy for fully managed devices](../design/create-appcontrol-policy-for-fully-managed-devices.md) and will produce a new policy called **EventsPolicy.xml**.
 
    ```powershell
    $PolicyName= "Lamna_FullyManagedClients_Audit"

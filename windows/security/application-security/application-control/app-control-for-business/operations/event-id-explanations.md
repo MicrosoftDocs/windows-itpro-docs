@@ -45,7 +45,7 @@ These events are found in the **AppLocker - MSI and Script** event log.
 |--------|-----------|
 | 8028 | This event indicates that a script host, such as PowerShell, queried Application Control about a file the script host was about to run. Since the policy was in audit mode, the script or MSI file should have run, but wouldn't have passed the App Control policy if it was enforced. Some script hosts may have additional information in their logs. Note: Most third-party script hosts don't integrate with Application Control. Consider the risks from unverified scripts when choosing which script hosts you allow to run. |
 | 8029 | This event is the enforcement mode equivalent of event 8028. Note: While this event says that a script was blocked, the script hosts control the actual script enforcement behavior. The script host may allow the file to run with restrictions and not block the file outright. For example, PowerShell runs script not allowed by your App Control policy in [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). |
-| 8036| COM object was blocked. To learn more about COM object authorization, see [Allow COM object registration in a App Control for Business policy](../design/allow-com-object-registration-in-appcontrol-policy.md). |
+| 8036| COM object was blocked. To learn more about COM object authorization, see [Allow COM object registration in an App Control for Business policy](../design/allow-com-object-registration-in-appcontrol-policy.md). |
 | 8037 | This event indicates that a script host checked whether to allow a script to run, and the file passed the App Control policy. |
 | 8038 | Signing information event correlated with either an 8028 or 8029 event. One 8038 event is generated for each signature of a script file. Contains the total number of signatures on a script file and an index as to which signature it is. Unsigned script files generate a single 8038 event with TotalSignatureCount 0. These events are correlated with 8028 and 8029 events and can be matched using the `Correlation ActivityID` found in the **System** portion of the event. |
 | 8039 | This event indicates that a packaged app (MSIX/AppX) was allowed to install or run because the App Control policy is in audit mode. But, it would have been blocked if the policy was enforced. |
@@ -72,7 +72,7 @@ These events are found in the **CodeIntegrity - Operational** event log.
 > [!NOTE]
 > When Managed Installer is enabled, customers using LogAnalytics should be aware that Managed Installer may fire many 3091 events.  Customers may need to filter out these events to avoid high LogAnalytics costs.
 
-The following events provide helpful diagnostic information when a App Control policy includes the ISG or MI option. These events can help you debug why something was allowed/denied based on managed installer or ISG. Events 3090, 3091, and 3092 don't necessarily indicate a problem but should be reviewed in context with other events like 3076 or 3077.
+The following events provide helpful diagnostic information when an App Control policy includes the ISG or MI option. These events can help you debug why something was allowed/denied based on managed installer or ISG. Events 3090, 3091, and 3092 don't necessarily indicate a problem but should be reviewed in context with other events like 3076 or 3077.
 
 Unless otherwise noted, these events are found in either the **CodeIntegrity - Operational** event log or the **CodeIntegrity - Verbose** event log depending on your version of Windows.
 

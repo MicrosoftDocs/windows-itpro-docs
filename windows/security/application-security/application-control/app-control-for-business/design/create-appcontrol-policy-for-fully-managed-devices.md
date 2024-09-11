@@ -1,16 +1,16 @@
 ---
-title: Create a App Control policy for fully managed devices
+title: Create an App Control policy for fully managed devices
 description: App Control for Business restricts which applications users are allowed to run and the code that runs in system core.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 11/07/2022
 ---
 
-# Create a App Control policy for fully managed devices
+# Create an App Control policy for fully managed devices
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-This section outlines the process to create a App Control for Business policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-appcontrol-policy-for-lightly-managed-devices.md) is that all software deployed to a fully managed device is managed by IT and users of the device can't install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Intune. Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
+This section outlines the process to create an App Control for Business policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-appcontrol-policy-for-lightly-managed-devices.md) is that all software deployed to a fully managed device is managed by IT and users of the device can't install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Intune. Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
 
 > [!NOTE]
 > Some of the App Control for Business options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's App Control policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
@@ -144,5 +144,5 @@ Alice has defined a policy for Lamna's fully managed devices that makes some tra
 
 ## Up next
 
-- [Create a App Control for Business policy for fixed-workload devices using a reference computer](create-appcontrol-policy-using-reference-computer.md)
+- [Create an App Control for Business policy for fixed-workload devices using a reference computer](create-appcontrol-policy-using-reference-computer.md)
 - [Prepare to deploy App Control for Business policies](../deployment/appcontrol-deployment-guide.md)

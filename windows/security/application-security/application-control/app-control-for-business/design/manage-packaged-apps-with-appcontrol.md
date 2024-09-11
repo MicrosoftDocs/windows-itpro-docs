@@ -66,7 +66,7 @@ Then use the [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) PowerS
 
 ##### Create PFN rule from an installed MSIX app
 
-Use the following steps to create a App Control PFN rule for an app that is installed on the system:
+Use the following steps to create an App Control PFN rule for an app that is installed on the system:
 
 1. From the **Policy Signing Rules** page of the [App Control Wizard](https://aka.ms/wdacwizard), select **Add Custom Rule**.
 2. Check **Usermode Rule** as the Rule Scope, if not checked.

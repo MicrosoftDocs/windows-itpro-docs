@@ -1,6 +1,6 @@
 ---
 title: Example App Control for Business base policies
-description: When creating a App Control for Business policy for an organization, start from one of the many available example base policies.
+description: When creating an App Control for Business policy for an organization, start from one of the many available example base policies.
 ms.topic: reference
 ms.localizationpriority: medium
 ms.date: 03/31/2023

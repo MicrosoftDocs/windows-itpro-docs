@@ -1,12 +1,12 @@
 ---
-title: Allow COM object registration in a App Control policy
-description: You can allow COM object registration in a App Control for Business policy.
+title: Allow COM object registration in an App Control policy
+description: You can allow COM object registration in an App Control for Business policy.
 ms.localizationpriority: medium
 ms.date: 04/05/2023
 ms.topic: how-to
 ---
 
-# Allow COM object registration in a App Control for Business policy
+# Allow COM object registration in an App Control for Business policy
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 

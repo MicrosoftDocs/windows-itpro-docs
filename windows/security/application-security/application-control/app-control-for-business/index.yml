@@ -41,13 +41,13 @@ landingContent:
             url: design/deploy-multiple-appcontrol-policies.md
       - linkListType: how-to-guide
         links:
-          - text: Create a App Control policy for a lightly managed device
+          - text: Create an App Control policy for a lightly managed device
             url: design/create-appcontrol-policy-for-lightly-managed-devices.md
-          - text: Create a App Control policy for a fully managed device
+          - text: Create an App Control policy for a fully managed device
             url: design/create-appcontrol-policy-for-fully-managed-devices.md
-          - text: Create a App Control policy for a fixed-workload
+          - text: Create an App Control policy for a fixed-workload
             url: design/create-appcontrol-policy-using-reference-computer.md
-          - text: Create a App Control blocklist policy
+          - text: Create an App Control blocklist policy
             url: design/create-appcontrol-deny-policy.md
           - text: Deploying catalog files for App Control management
             url: deployment/deploy-catalog-files-to-support-appcontrol.md

@@ -47,13 +47,13 @@
         - name: Policy creation for common App Control usage scenarios
           href: design/common-appcontrol-use-cases.md
           items:
-            - name: Create a App Control policy for lightly managed devices
+            - name: Create an App Control policy for lightly managed devices
               href: design/create-appcontrol-policy-for-lightly-managed-devices.md
-            - name: Create a App Control policy for fully managed devices
+            - name: Create an App Control policy for fully managed devices
               href: design/create-appcontrol-policy-for-fully-managed-devices.md
-            - name: Create a App Control policy for fixed-workload devices
+            - name: Create an App Control policy for fixed-workload devices
               href: design/create-appcontrol-policy-using-reference-computer.md
-            - name: Create a App Control deny list policy
+            - name: Create an App Control deny list policy
               href: design/create-appcontrol-deny-policy.md
             - name: Applications that can bypass App Control and how to block them
               href: design/applications-that-can-bypass-appcontrol.md
@@ -66,7 +66,7 @@
               href: design/appcontrol-wizard-create-base-policy.md
             - name: Create a supplemental App Control policy with the Wizard
               href: design/appcontrol-wizard-create-supplemental-policy.md
-            - name: Editing a App Control policy with the Wizard
+            - name: Editing an App Control policy with the Wizard
               href: design/appcontrol-wizard-editing-policy.md
             - name: Creating App Control Policy Rules from App Control Events
               href: design/appcontrol-wizard-parsing-event-logs.md

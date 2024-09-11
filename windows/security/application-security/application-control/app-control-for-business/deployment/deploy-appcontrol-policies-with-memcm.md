@@ -24,11 +24,11 @@ Configuration Manager includes native support for App Control, which allows you 
 
 Configuration Manager doesn't remove policies once deployed. To stop enforcement, you should switch the policy to audit mode, which will produce the same effect. If you want to disable App Control for Business altogether (including audit mode), you can deploy a script to delete the policy file from disk, and either trigger a reboot or wait for the next reboot.
 
-### Create a App Control Policy in Configuration Manager
+### Create an App Control Policy in Configuration Manager
 
 1. Select **Asset and Compliance** > **Endpoint Protection** > **App Control for Business** > **Create Application Control Policy**
 
-    ![Create a App Control policy in Configuration Manager.](../images/memcm/memcm-create-appcontrol-policy.jpg)
+    ![Create an App Control policy in Configuration Manager.](../images/memcm/memcm-create-appcontrol-policy.jpg)
 
 2. Enter the name of the policy > **Next**
 3. Enable **Enforce a restart of devices so that this policy can be enforced for all processes**
@@ -39,7 +39,7 @@ Configuration Manager doesn't remove policies once deployed. To stop enforcement
 
 6. Select **Add** to begin creating rules for trusted software
 
-    ![Create a App Control path rule in Configuration Manager.](../images/memcm/memcm-create-appcontrol-rule.jpg)
+    ![Create an App Control path rule in Configuration Manager.](../images/memcm/memcm-create-appcontrol-rule.jpg)
 
 7. Select **File** or **Folder** to create a path rule > **Browse**
 

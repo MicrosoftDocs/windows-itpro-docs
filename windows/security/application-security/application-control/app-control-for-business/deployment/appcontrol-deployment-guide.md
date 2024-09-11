@@ -1,6 +1,6 @@
 ---
 title: Deploying App Control for Business policies
-description: Learn how to plan and implement a App Control deployment.
+description: Learn how to plan and implement an App Control deployment.
 ms.localizationpriority: medium
 ms.date: 01/23/2023
 ms.topic: overview

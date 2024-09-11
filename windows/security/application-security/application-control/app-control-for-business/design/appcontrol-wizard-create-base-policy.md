@@ -117,4 +117,4 @@ The policy signing rules list table on the left of the page documents the allow 
 
 ## Up next
 
-- [Editing a App Control for Business policy using the Wizard](appcontrol-wizard-editing-policy.md)
+- [Editing an App Control for Business policy using the Wizard](appcontrol-wizard-editing-policy.md)

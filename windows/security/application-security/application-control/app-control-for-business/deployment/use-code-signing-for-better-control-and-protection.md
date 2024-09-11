@@ -29,7 +29,7 @@ To learn how to create and manage catalog files for existing apps, see [Deploy c
 
 ## Signed App Control policies
 
-While a App Control policy begins as an XML document, it's then converted into a binary-encoded file before deployment. This binary version of your policy can be code signed like any other application binary, offering many of the same benefits as described above for signed code. Additionally, signed policies are treated specially by App Control and help protect against tampering or removal of a policy even by an admin user.
+While an App Control policy begins as an XML document, it's then converted into a binary-encoded file before deployment. This binary version of your policy can be code signed like any other application binary, offering many of the same benefits as described above for signed code. Additionally, signed policies are treated specially by App Control and help protect against tampering or removal of a policy even by an admin user.
 
 For more information on using signed policies, see [Use signed policies to protect App Control for Business against tampering](use-signed-policies-to-protect-appcontrol-against-tampering.md)
 

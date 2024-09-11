@@ -37,7 +37,7 @@ Before you attempt to deploy a signed policy, you should first deploy an unsigne
    ```
 
    > [!NOTE]
-   > This example uses an enforced version of the App Control policy that you created in [Create a App Control for Business policy from a reference computer](../design/create-appcontrol-policy-using-reference-computer.md) article. If you sign another policy, be sure to update the **$PolicyPath** and **$PolicyName** variables with the correct information.
+   > This example uses an enforced version of the App Control policy that you created in [Create an App Control for Business policy from a reference computer](../design/create-appcontrol-policy-using-reference-computer.md) article. If you sign another policy, be sure to update the **$PolicyPath** and **$PolicyName** variables with the correct information.
 
 2. Navigate to your desktop as the working directory:
 

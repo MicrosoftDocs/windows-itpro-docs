@@ -1,5 +1,5 @@
 ---
-title: Allow apps deployed with a App Control managed installer
+title: Allow apps deployed with an App Control managed installer
 description: Explains how to configure a custom Managed Installer.
 ms.localizationpriority: medium
 ms.date: 02/02/2023
@@ -193,7 +193,7 @@ The AppLocker policy creation UI in GPO Editor and the AppLocker PowerShell cmdl
 In order to enable trust for the binaries laid down by managed installers, the "Enabled: Managed Installer" option must be specified in your App Control policy.
 This setting can be defined by using the [Set-RuleOption cmdlet](/powershell/module/configci/set-ruleoption) with Option 13.
 
-Below are steps to create a App Control policy that allows Windows to boot and enables the managed installer option.
+Below are steps to create an App Control policy that allows Windows to boot and enables the managed installer option.
 
 1. Copy the DefaultWindows_Audit policy into your working folder from "C:\Windows\schemas\CodeIntegrity\ExamplePolicies\DefaultWindows_Audit.xml"
 

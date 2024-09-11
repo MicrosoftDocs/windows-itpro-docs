@@ -25,7 +25,7 @@ App Control shares the *AppLocker - MSI and Script* event log for all script enf
 > [!NOTE]
 > When a script runs that is not allowed by policy, App Control raises an event indicating that the script was "blocked." However, the actual script enforcement behavior is handled by the script host and may not actually completely block the file from running.
 >
-> Also be aware that some script hosts may change how they behave even if a App Control policy is in audit mode only. You should review the script host specific information in this article and test thoroughly within your environment to ensure the scripts you need to run are working properly.
+> Also be aware that some script hosts may change how they behave even if an App Control policy is in audit mode only. You should review the script host specific information in this article and test thoroughly within your environment to ensure the scripts you need to run are working properly.
 
 ## Enlightened script hosts that are part of Windows
 
@@ -57,6 +57,6 @@ App Control additionally enforces a restricted allowlist for COM objects that yo
 
 ## Scripts that aren't directly controlled by App Control
 
-App Control doesn't directly control code run via the Windows Command Processor (cmd.exe), including .bat/.cmd script files. However, anything that such a batch script tries to run is subject to App Control control. If you don't need to run cmd.exe, it's recommended to block it outright or allow it only by exception based on the calling process. See [Use a App Control for Business policy to control specific plug-ins, add-ins, and modules](use-appcontrol-policy-to-control-specific-plug-ins-add-ins-and-modules.md).
+App Control doesn't directly control code run via the Windows Command Processor (cmd.exe), including .bat/.cmd script files. However, anything that such a batch script tries to run is subject to App Control control. If you don't need to run cmd.exe, it's recommended to block it outright or allow it only by exception based on the calling process. See [Use an App Control for Business policy to control specific plug-ins, add-ins, and modules](use-appcontrol-policy-to-control-specific-plug-ins-add-ins-and-modules.md).
 
 App Control doesn't control scripts run through an unenlightened script host, such as many 3rd-party Java or Python engines. If your App Control policy allows an unenlightened script host to run, then you implicitly allow all scripts run through that host. For non-Microsoft script hosts, you should check with the software vendor whether their script hosts are enlightened to App Control policy.

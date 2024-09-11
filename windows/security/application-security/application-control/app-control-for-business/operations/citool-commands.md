@@ -69,7 +69,7 @@ CiTool makes App Control for Business policy management easier for IT admins. Yo
 
 ## Examples
 
-### Deploy a App Control policy
+### Deploy an App Control policy
 
 ```powershell
 CiTool --update-policy "\Windows\Temp\{BF61FE40-8929-4FDF-9EC2-F7A767717F0B}.cip"

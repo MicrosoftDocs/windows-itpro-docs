@@ -86,7 +86,7 @@ Also, since the ISG option passes along reputation from app installers to the bi
 
 ## Known limitations with using the ISG
 
-Since the ISG only allows binaries that are "known good", there are cases where the ISG may be unable to predict whether legitimate software is safe to run. If that happens, the software will be blocked by App Control. In this case, you need to allow the software with a rule in your App Control policy, deploy a catalog signed by a certificate trusted in the App Control policy, or install the software from a App Control managed installer. Installers or applications that dynamically create binaries at runtime, and self-updating applications, may exhibit this symptom.
+Since the ISG only allows binaries that are "known good", there are cases where the ISG may be unable to predict whether legitimate software is safe to run. If that happens, the software will be blocked by App Control. In this case, you need to allow the software with a rule in your App Control policy, deploy a catalog signed by a certificate trusted in the App Control policy, or install the software from an App Control managed installer. Installers or applications that dynamically create binaries at runtime, and self-updating applications, may exhibit this symptom.
 
 Packaged apps aren't supported with the ISG and will need to be separately authorized in your App Control policy. Since packaged apps have a strong app identity and must be signed, it's straightforward to [authorize packaged apps](manage-packaged-apps-with-appcontrol.md) with your App Control policy.
 

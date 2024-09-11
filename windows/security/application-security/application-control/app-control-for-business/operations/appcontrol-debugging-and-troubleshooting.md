@@ -123,7 +123,7 @@ Here's an example of detailed EventData from a typical App Control enforcement m
 
 | Element name | Description |
 | ----- | ----- |
-| System - Correlation - \[ActivityID\] | **Not shown in screenshot** <br> Use the correlation ActivityID to match a App Control block event with one or more 3089 signature events. |
+| System - Correlation - \[ActivityID\] | **Not shown in screenshot** <br> Use the correlation ActivityID to match an App Control block event with one or more 3089 signature events. |
 | File Name | The file's path and name on disk that was blocked from running. Since the name on disk is mutable, this value **isn't** the one used when creating App Control file rules with `-Level FileName`. Instead, see the OriginalFileName element later in this table. |
 | Process Name | The path and name of the file that attempted to run the blocked file. Also called the parent process. |
 | Requested Signing Level | The Windows signing authorization level the code needed to pass in order to run. See [Requested and validated signing level](event-tag-explanations.md#requested-and-validated-signing-level). |
@@ -151,7 +151,7 @@ Here's an example of detailed EventData from a typical App Control enforcement m
 
 | Element name | Description |
 | ----- | ----- |
-| System - Correlation - \[ActivityID\] | Use the correlation ActivityID to match a App Control signature event with its block event. |
+| System - Correlation - \[ActivityID\] | Use the correlation ActivityID to match an App Control signature event with its block event. |
 | TotalSignatureCount | The total number of signatures detected for the blocked file. |
 | Signature | The index count, starting at 0, of the current signature shown in this 3089 event. If the file had multiple signatures, you'll find other 3089 events for the other signatures. |
 | Hash | The hash value that App Control used to match the file. This value should match one of the four hashes shown on the 3077 or 3076 block event. If no signatures were found for the file (TotalSignatureCount = 0), then only the hash value is shown. |

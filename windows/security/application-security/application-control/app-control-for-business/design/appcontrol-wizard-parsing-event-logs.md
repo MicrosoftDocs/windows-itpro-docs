@@ -21,7 +21,7 @@ As of [version 2.2.0.0](https://webapp-wdac-wizard.azurewebsites.net/archives.ht
 To create rules from the App Control event logs on the system:
 
 1. Select **Policy Editor** from the main page.
-2. Select **Convert Event Log to a App Control Policy**.
+2. Select **Convert Event Log to an App Control Policy**.
 3. Select the **Parse Event Logs** button under the **Parse Event Logs from the System Event Viewer to Policy** header.
 
    The Wizard parses the relevant audit and block events from the CodeIntegrity (App Control) Operational and AppLocker MSI and Script logs. You see a notification when the Wizard successfully finishes reading the events.
@@ -37,7 +37,7 @@ To create rules from the App Control event logs on the system:
 To create rules from the App Control `.EVTX` event logs files on the system:
 
 1. Select **Policy Editor** from the main page.
-2. Select **Convert Event Log to a App Control Policy**.
+2. Select **Convert Event Log to an App Control Policy**.
 3. Select the **Parse Log File(s)** button under the **Parse Event Log evtx Files to Policy** header.
 4. Select the App Control CodeIntegrity Event log EVTX file(s) from the disk to parse.
 
@@ -84,7 +84,7 @@ To create rules from the App Control events in [MDE Advanced Hunting](../operati
    > [![Export the MDE Advanced Hunting results to CSV](../images/appcontrol-wizard-event-log-mde-ah-export.png)](../images/appcontrol-wizard-event-log-mde-ah-export-expanded.png)
 
 3. Select **Policy Editor** from the main page.
-4. Select **Convert Event Log to a App Control Policy**.
+4. Select **Convert Event Log to an App Control Policy**.
 5. Select the **Parse Log File(s)** button under the "Parse MDE Advanced Hunting Events to Policy" header.
 6. Select the App Control MDE Advanced Hunting export CSV files from the disk to parse.
 

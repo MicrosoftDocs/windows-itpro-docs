@@ -1,16 +1,16 @@
 ---
-title: Create a App Control policy for lightly managed devices
+title: Create an App Control policy for lightly managed devices
 description: App Control for Business restricts which applications users are allowed to run and the code that runs in the system core.
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 11/07/2022
 ---
 
-# Create a App Control policy for lightly managed devices
+# Create an App Control policy for lightly managed devices
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-This section outlines the process to create a App Control for Business policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their App Control-managed devices as described in later articles.
+This section outlines the process to create an App Control for Business policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their App Control-managed devices as described in later articles.
 
 > [!NOTE]
 > Some of the App Control for Business options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's App Control policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
@@ -207,5 +207,5 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
 ## Up next
 
-- [Create a App Control for Business policy for fully managed devices](create-appcontrol-policy-for-fully-managed-devices.md)
+- [Create an App Control for Business policy for fully managed devices](create-appcontrol-policy-for-fully-managed-devices.md)
 - [Prepare to deploy App Control for Business policies](../deployment/appcontrol-deployment-guide.md)

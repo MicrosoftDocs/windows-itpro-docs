@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 App Control for Business policies expose a Settings section where policy authors can define arbitrary secure settings. Secure Settings provide local admin tamper-free settings for secure boot enabled systems, with policy signing enabled. Settings consist of a Provider, Key, ValueName, and a setting value. Setting values can be of type boolean, ulong, binary, and string. Applications can query for policy settings using WldpQuerySecurityPolicy.
 
-An example settings section of a App Control for Business policy:
+An example settings section of an App Control for Business policy:
 
 ```xml
 <Settings>
@@ -24,11 +24,11 @@ An example settings section of a App Control for Business policy:
 
 ## Example Scenario
 
-An application that may want to restrict its capabilities, when used on a system with an active App Control for Business policy. Application authors can define a App Control policy, setting their application queries, in order to disable certain features. For example, if Contoso's Foo Application wants to disable a risky feature, such as macro execution, they can define a App Control policy setting, and query for it at runtime. Contoso can then instruct IT administrators to configure the setting in their App Control policy, if they don't want Foo Application to execute macros on a system with a App Control policy.
+An application that may want to restrict its capabilities, when used on a system with an active App Control for Business policy. Application authors can define an App Control policy, setting their application queries, in order to disable certain features. For example, if Contoso's Foo Application wants to disable a risky feature, such as macro execution, they can define an App Control policy setting, and query for it at runtime. Contoso can then instruct IT administrators to configure the setting in their App Control policy, if they don't want Foo Application to execute macros on a system with an App Control policy.
 
 ## WldpQuerySecurityPolicy
 
-API that queries the secure settings of a App Control for Business policy.
+API that queries the secure settings of an App Control for Business policy.
 
 ### Syntax
 
