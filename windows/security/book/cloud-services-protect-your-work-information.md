@@ -144,11 +144,11 @@ Once this verification is complete, the attestation service returns a signed rep
 
 - [Azure Attestation overview](/azure/attestation/overview)
 
-## Windows Autopatch
+## Windows Update for Business deployment service
 
-Windows Autopatch, a core component of the Windows Update for Business product family, is a cloud-based solution that transforms the way update management is handled. Complementing existing [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) policies and [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), the service provides control over the approval, scheduling, and safeguarding of updates - delivered straight from Windows Update to managed devices.
+The Windows Update for Business deployment service, a core component of the Windows Update for Business product family, is a cloud-based solution that transforms the way update management is handled. Complementing existing [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) policies and [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), the service provides control over the approval, scheduling, and safeguarding of updates - delivered straight from Windows Update to managed devices.
 
-Windows Autopatch powers Windows Update management via Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> and Autopatch. Windows Autopach currently allows the management of [drivers and firmware](/graph/windowsupdates-manage-driver-update), expedited [quality updates](/graph/windowsupdates-deploy-expedited-update) and [feature updates](/graph/windowsupdates-deploy-update).
+The Windows Update for Business deployment service powers Windows Update management via Microsoft Intune<sup>[\[9\]](conclusion.md#footnote9)</sup> and Autopatch. The deployment service currently allows the management of [drivers and firmware](/graph/windowsupdates-manage-driver-update), expedited [quality updates](/graph/windowsupdates-deploy-expedited-update) and [feature updates](/graph/windowsupdates-deploy-update).
 
 For an in-depth understanding of this service, including its benefits and prerequisites for use, practical guides on specific capabilities, Microsoft Graph training, and a behind-the-scenes look at how the deployment service functions, read [here](/windows/deployment/update/waas-manage-updates-wufb)[.](/windows/deployment/update/waas-manage-updates-wufb)
 
