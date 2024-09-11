@@ -1,5 +1,5 @@
 ---
-title: App Control for Businessand virtualization-based code integrity
+title: App Control for Business and virtualization-based code integrity
 description: Hardware and software system integrity-hardening capabilities that can be deployed separately or in combination with App Control for Business.
 ms.localizationpriority: medium
 author: vinaypamnani-msft
@@ -15,7 +15,7 @@ appliesto:
 - ✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>
 ---
 
-# App Control for Businessand virtualization-based protection of code integrity
+# App Control and virtualization-based protection of code integrity
 
 Windows includes a set of hardware and OS technologies that, when configured together, allow enterprises to "lock down" Windows systems so they behave more like kiosk devices. In this configuration, [**App Control for Business**](app-control-for-business/appcontrol.md) is used to restrict devices to run only approved apps, while the OS is hardened against kernel memory attacks using [**memory integrity**](../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md).
 
