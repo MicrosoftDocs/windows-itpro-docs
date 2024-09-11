@@ -722,26 +722,6 @@ The following fields are available:
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 - 
 
-### Ms.Support.HttpEvent
-
-No content is currently available.
-
-The following fields are available:
-
-- **Common**  No content is currently available.
-- **EventData**  No content is currently available.
-
-
-### Ms.Support.Info
-
-No content is currently available.
-
-The following fields are available:
-
-- **Common**  No content is currently available.
-- **EventData**  No content is currently available.
-
-
 ## Component-based servicing events
 
 ### CbsServicingProvider.CbsCapabilityEnumeration
