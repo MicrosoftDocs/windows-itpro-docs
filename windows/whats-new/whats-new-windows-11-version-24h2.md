@@ -44,13 +44,21 @@ There aren't any features under temporary enterprise control between Windows 11,
 -->
 
 
-
 ## Checkpoint cumulative updates
 <!--8769182--> 
 Microsoft is introducing checkpoint cumulative updates, a new servicing model that enables devices running Windows 11, version 24H2 or later to save time, bandwidth and hard drive space when getting features and security enhancements via the latest cumulative update. Previously, the cumulative updates contained all changes to the binaries since the last release to manufacturing (RTM) version. The size of the cumulative updates could grow large over time since RTM was used as the baseline for each update.
 
 With checkpoint cumulative updates, the update file level differentials are based on a previous cumulative update instead of the RTM release. Cumulative updates that serve as a checkpoint will be released periodically. Using a checkpoint rather than RTM means the subsequent update packages are smaller, which makes downloads and installations faster. Using a checkpoint also means that in order for a device to install the latest cumulative update, the installation of a prerequisite cumulative update might be required. For more information about checkpoint cumulative updates, see [https://aka.ms/CheckpointCumulativeUpdates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-windows-11-checkpoint-cumulative-updates/ba-p/4182552).
 
+## Features exclusive to Copilot+ PCs in 24H2
+
+Copilot+ PCs are a new class of Windows 11 AI PCs that are powered by a neural processing unit (NPU) that can perform more than 40 trillion operations per second (TOPS). The following features are exclusive to Copilot+ PCs in Windows 11, version 24H2: 
+
+- Live Captions allow you to translate audio and video content into English subtitles from 44 languages. For more information, see [Use live captions to better understand audio](https://support.microsoft.com/topic/b52da59c-14b8-4031-aeeb-f6a47e6055df).
+- Windows Studio Effects is the collective name of AI-powered video call and audio effects that are available on Copilot+ PCs and select Windows 11 devices with compatible NPUs. Windows Studio Effects automatically improves lighting and cancels noises during video calls. For more information, see [Windows Studio Effects](https://support.microsoft.com/topic/273c1fa8-2b3f-41b1-a587-7cc7a24b62d8).
+- Cocreator in Paint allows you to create amazing artwork with the help of AI. Enter a text prompt, start drawing in Paint, and Cocreator will generate artwork based on what you're drawing. For more information, see [Cocreator in Paint](https://support.microsoft.com/topic/53857513-e36c-472d-8d4a-adbcd14b2e54)
+- Auto super resolution (Auto SR) seamlessly integrates with Windows to automatically enhance the frame rates of existing games in real-time while also providing detailed visuals on screen. For more information, see [Automatic Super Resolution](https://support.microsoft.com/topic/5d6d95fa-cc02-4673-b62c-2c50f06385aa).
+- Image Creator and Restyle Image in the Microsoft Photos app lets you reimagine your photos or create new images with the assistance of AI. For more information, see [Microsoft Photos Restyle Image and Image Creator](https://support.microsoft.com/topic/6c352e99-d954-49c9-84cd-b7cacd018868).
 
 ## Features added to Windows 11 since version 23H2
 
@@ -64,7 +72,7 @@ Some of the features were released within the past year's continuous innovation 
 
 ### Local Security Authority (LSA) protection enablement on upgrade
 
-[LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) helps protect against theft of secrets and credentials used for logon by preventing unauthorized code from running in the LSA process and by preventing dumping of process memory. Starting with this upgrade, an audit occurs for incompatibilities with LSA protection for a period of time. If incompatibilities aren't detected, LSA protection is automatically enabled. You can check and change the enablement state of LSA protection in the Windows Security application under the **Device Security** > **Core Isolation** page. I n the event log, LSA protection records whether programs are blocked from loading into LSA. If you would like to check if something was blocked, review the [logs](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#identify-plug-ins-and-drivers-that-lsassexe-fails-to-load).
+[LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) helps protect against theft of secrets and credentials used for logon by preventing unauthorized code from running in the LSA process and by preventing dumping of process memory. Starting with this upgrade, an audit occurs for incompatibilities with LSA protection for a period of time. If incompatibilities aren't detected, LSA protection is automatically enabled. You can check and change the enablement state of LSA protection in the Windows Security application under the **Device Security** > **Core Isolation** page. I n the event log, LSA protection records whether programs are blocked from loading into LSA. If you would like to check if something was blocked, review the [logging](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#identify-plug-ins-and-drivers-that-lsassexe-fails-to-load).
 
  
 ### Remote Mailslot protocol disabled by default
@@ -114,7 +122,7 @@ Customers can now use App Control for Business (formerly called Windows Defender
 <!--8850300-->
 Support  for Wi-Fi 7 was added when using capable access point and PCs. Wi-Fi 7, also known as IEEE 802.11be Extremely High Throughput (EHT) is the latest Wi-Fi technology that offers unprecedented speed, reliability, and efficiency for your wireless devices. For more information about Wi-Fi 7, see the [Wi-Fi Alliance announcement](https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-introduces-wi-fi-certified-7).
 
-## Sudo for Windows
+### Sudo for Windows
 
 Sudo for Windows is a new way for users to run elevated commands (as an administrator) directly from an unelevated console session. For more information, see [Sudo for Windows](/windows/sudo/).
 
@@ -130,7 +138,7 @@ Remote Desktop Connection has the following improvements:
 - Improvements to the connection bar design
 
 
-## Bluetooth &#174; Low Energy Audio support
+### Bluetooth &#174; Low Energy Audio support
 
 Customers who use these assistive hearing devices are now able to directly pair, stream audio, take calls, and control audio presets when they use an LE Audio-compatible PC. Users who have Bluetooth LE Audio capable assistive hearing devices can determine if their PC is LE Audio-compatible, set up, and manage their devices via **Settings** > **Accessibility** > **Hearing devices**.  
 
@@ -144,10 +152,11 @@ Customers who use these assistive hearing devices are now able to directly pair,
   - Labels were added to the context menu icons for actions like copy, paste, delete, and rename
 - **OOBE improvement**: when you need to connect to a network and there's no Wi-Fi drivers, you're given an *Install drivers* option to install drivers that are already downloaded
 - **Registry Editor**: The Registry Editor supports limiting a search to the currently selected key and its descendants
+- **Task Manager**: The Task Manager settings page has [Mica material](/windows/apps/design/style/mica) and a redesigned icon 
 
 ## Features removed in Windows 11, version 24H2
 
-The following [deprecated features](deprecated-features.md) are removed in Windows 11, version 24H2:
+The following [deprecated features](deprecated-features.md) are [removed](removed-features.md) in Windows 11, version 24H2:
 
 - **WordPad**: WordPad is removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. <!--8254696, 8494641-->
 - **Alljoyn**: Microsoft's implementation of AllJoyn, which included the [Windows.Devices.AllJoyn API namespace](/uwp/api/windows.devices.alljoyn), a [Win32 API](/windows/win32/api/_alljoyn/), a [management configuration service provider (CSP)](/windows/client-management/mdm/alljoynmanagement-csp), and an [Alljoyn Router Service](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#alljoyn-router-service) is retired.<!--8396030-->
