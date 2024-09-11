@@ -3841,7 +3841,11 @@ System objects: Strengthen default permissions of internal system objects (e.g.,
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop. This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user. - Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. - Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
+User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop. This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user. 
+
+- Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. 
+
+- Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Description-End -->
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Editable-Begin -->
@@ -4165,7 +4169,11 @@ User Account Control: Detect application installations and prompt for elevation 
 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate executable files that are signed and validated This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local computers. The options are: - Enabled: Enforces the PKI certification path validation for a given executable file before it's permitted to run. - Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.
+User Account Control: Only elevate executable files that are signed and validated This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local computers. The options are: 
+
+- Enabled: Enforces the PKI certification path validation for a given executable file before it's permitted to run. 
+
+- Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Description-End -->
 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Editable-Begin -->
@@ -4223,7 +4231,11 @@ User Account Control: Only elevate executable files that are signed and validate
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ..\Program Files\, including subfolders - ..\Windows\system32\ - ..\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. - Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
+User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ..\Program Files\, including subfolders - ..\Windows\system32\ - ..\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: 
+
+- Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. 
+
+- Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-End -->
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Editable-Begin -->
@@ -4281,7 +4293,11 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Turn on Admin Approval Mode This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are: - Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. - Disabled: Admin Approval Mode and all related UAC policy settings are disabled.
+User Account Control: Turn on Admin Approval Mode This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are: 
+
+- Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
+
+- Disabled: Admin Approval Mode and all related UAC policy settings are disabled.
 
 > [!NOTE]
 > If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
@@ -4342,7 +4358,11 @@ User Account Control: Turn on Admin Approval Mode This policy setting controls t
 
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Switch to the secure desktop when prompting for elevation This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop. The options are: - Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users. - Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.
+User Account Control: Switch to the secure desktop when prompting for elevation This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop. The options are: 
+
+- Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users. 
+
+- Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Description-End -->
 
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Editable-Begin -->
@@ -4458,7 +4478,11 @@ User Account Control: Configure type of Admin Approval Mode. This policy setting
 
 <!-- UserAccountControl_UseAdminApprovalMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Use Admin Approval Mode for the built-in Administrator account This policy setting controls the behavior of Admin Approval Mode for the built-in Administrator account. The options are: - Enabled: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation. - Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.
+User Account Control: Use Admin Approval Mode for the built-in Administrator account This policy setting controls the behavior of Admin Approval Mode for the built-in Administrator account. The options are: 
+
+- Enabled: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation. 
+
+- Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.
 <!-- UserAccountControl_UseAdminApprovalMode-Description-End -->
 
 <!-- UserAccountControl_UseAdminApprovalMode-Editable-Begin -->
@@ -4516,7 +4540,11 @@ User Account Control: Use Admin Approval Mode for the built-in Administrator acc
 
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Virtualize file and registry write failures to per-user locations This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to %ProgramFiles%, %Windir%, %Windir%\system32, or HKLM\Software. The options are: - Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry. - Disabled: Applications that write data to protected locations fail.
+User Account Control: Virtualize file and registry write failures to per-user locations This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to %ProgramFiles%, %Windir%, %Windir%\system32, or HKLM\Software. The options are: 
+
+- Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry. 
+
+- Disabled: Applications that write data to protected locations fail.
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Description-End -->
 
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Editable-Begin -->
