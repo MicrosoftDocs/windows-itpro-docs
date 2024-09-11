@@ -66,7 +66,7 @@ Merge-CIPolicy -PolicyPaths $ DenyPolicy, $ExistingPolicy -OutputFilePath $Exist
 
 ## Creating a Deny policy tutorial
 
-Deny rules and policies can be created using the PowerShell cmdlets or the [App Control Wizard](https://webapp-app-control-wizard.azurewebsites.net/). We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash.
+Deny rules and policies can be created using the PowerShell cmdlets or the [App Control Wizard](https://webapp-wdac-wizard.azurewebsites.net/). We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash.
 
 ### Software Publisher-based deny rule
 

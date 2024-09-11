@@ -14,7 +14,7 @@ The App Control for Business policy wizard is an open-source Windows desktop app
 
 ## Downloading the application
 
-Download the tool from the official [App Control for Business Policy Wizard website](https://webapp-app-control-wizard.azurewebsites.net/) as an MSIX packaged application. The tool's source code is available as part of Microsoft's Open Source Software offerings on GitHub at the [App Control for Business Policy Wizard repository](https://github.com/MicrosoftDocs/App Control-Toolkit).
+Download the tool from the official [App Control for Business Policy Wizard website](https://webapp-wdac-wizard.azurewebsites.net/) as an MSIX packaged application. The tool's source code is available as part of Microsoft's Open Source Software offerings on GitHub at the [App Control for Business Policy Wizard repository](https://github.com/MicrosoftDocs/App Control-Toolkit).
 
 ### Supported clients
 

@@ -10,7 +10,7 @@ ms.date: 01/24/2024
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-As of [version 2.2.0.0](https://webapp-app-control-wizard.azurewebsites.net/archives.html), the App Control Wizard supports creating App Control policy rules from the following event log types:
+As of [version 2.2.0.0](https://webapp-wdac-wizard.azurewebsites.net/archives.html), the App Control Wizard supports creating App Control policy rules from the following event log types:
 
 1. [App Control event log events on the system](#app-control-event-viewer-log-parsing)
 2. [Exported App Control events (EVTX files) from any system](#app-control-event-log-file-parsing)
