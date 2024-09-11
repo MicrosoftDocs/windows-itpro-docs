@@ -45,198 +45,198 @@ The following fields are available:
 
 - **DatasourceApplicationFile_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_NI22H2**  No content is currently available.
+- **DatasourceApplicationFile_NI22H2**  The count of the number of this particular object type present on this device.
 - **DatasourceApplicationFile_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_RS1**  The total number of objects of this type present on this device.
-- **DatasourceApplicationFile_ZN23H2**  No content is currently available.
-- **DatasourceApplicationFile_ZN23H2Exp**  No content is currently available.
-- **DatasourceApplicationFile_ZN23H2Setup**  No content is currently available.
-- **DatasourceApplicationFileBackup**  No content is currently available.
-- **DatasourceBackupApplicationRestore**  No content is currently available.
+- **DatasourceApplicationFile_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DatasourceApplicationFile_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DatasourceApplicationFile_ZN23H2Setup**  The count of the number of this particular object type present on this device.
+- **DatasourceApplicationFileBackup**  The count of the number of this particular object type present on this device.
+- **DatasourceBackupApplicationRestore**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_NI22H2**  No content is currently available.
+- **DatasourceDevicePnp_NI22H2**  The count of the number of this particular object type present on this device.
 - **DatasourceDevicePnp_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_RS1**  The total DataSourceDevicePnp objects targeting Windows 10 version 1607 on this device.
-- **DatasourceDevicePnp_ZN23H2**  No content is currently available.
-- **DatasourceDevicePnp_ZN23H2Exp**  No content is currently available.
-- **DatasourceDevicePnp_ZN23H2Setup**  No content is currently available.
+- **DatasourceDevicePnp_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DatasourceDevicePnp_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DatasourceDevicePnp_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_NI22H2**  No content is currently available.
+- **DatasourceDriverPackage_NI22H2**  The count of the number of this particular object type present on this device.
 - **DatasourceDriverPackage_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_RS1**  The total number of objects of this type present on this device.
-- **DatasourceDriverPackage_ZN23H2**  No content is currently available.
-- **DatasourceDriverPackage_ZN23H2Exp**  No content is currently available.
-- **DatasourceDriverPackage_ZN23H2Setup**  No content is currently available.
+- **DatasourceDriverPackage_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DatasourceDriverPackage_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DatasourceDriverPackage_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_NI22H2**  No content is currently available.
+- **DataSourceMatchingInfoBlock_NI22H2**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoBlock_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoBlock_ZN23H2**  No content is currently available.
-- **DataSourceMatchingInfoBlock_ZN23H2Exp**  No content is currently available.
-- **DataSourceMatchingInfoBlock_ZN23H2Setup**  No content is currently available.
+- **DataSourceMatchingInfoBlock_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DataSourceMatchingInfoBlock_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DataSourceMatchingInfoBlock_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_NI22H2**  No content is currently available.
+- **DataSourceMatchingInfoPassive_NI22H2**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPassive_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPassive_ZN23H2**  No content is currently available.
-- **DataSourceMatchingInfoPassive_ZN23H2Exp**  No content is currently available.
-- **DataSourceMatchingInfoPassive_ZN23H2Setup**  No content is currently available.
+- **DataSourceMatchingInfoPassive_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DataSourceMatchingInfoPassive_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DataSourceMatchingInfoPassive_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_NI22H2**  No content is currently available.
+- **DataSourceMatchingInfoPostUpgrade_NI22H2**  The count of the number of this particular object type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_ZN23H2**  No content is currently available.
-- **DataSourceMatchingInfoPostUpgrade_ZN23H2Exp**  No content is currently available.
-- **DataSourceMatchingInfoPostUpgrade_ZN23H2Setup**  No content is currently available.
+- **DataSourceMatchingInfoPostUpgrade_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_NI22H2**  No content is currently available.
+- **DatasourceSystemBios_NI22H2**  The count of the number of this particular object type present on this device.
 - **DatasourceSystemBios_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_RS1**  The total DatasourceSystemBios objects targeting Windows 10 version 1607 present on this device.
-- **DatasourceSystemBios_ZN23H2**  No content is currently available.
-- **DatasourceSystemBios_ZN23H2Exp**  No content is currently available.
-- **DatasourceSystemBios_ZN23H2Setup**  No content is currently available.
+- **DatasourceSystemBios_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DatasourceSystemBios_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DatasourceSystemBios_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_NI22H2**  No content is currently available.
+- **DecisionApplicationFile_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionApplicationFile_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_RS1**  The total number of objects of this type present on this device.
-- **DecisionApplicationFile_ZN23H2**  No content is currently available.
-- **DecisionApplicationFile_ZN23H2Exp**  No content is currently available.
-- **DecisionApplicationFile_ZN23H2Setup**  No content is currently available.
+- **DecisionApplicationFile_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionApplicationFile_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionApplicationFile_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_NI22H2**  No content is currently available.
+- **DecisionDevicePnp_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionDevicePnp_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_RS1**  The total number of objects of this type present on this device.
-- **DecisionDevicePnp_ZN23H2**  No content is currently available.
-- **DecisionDevicePnp_ZN23H2Exp**  No content is currently available.
-- **DecisionDevicePnp_ZN23H2Setup**  No content is currently available.
+- **DecisionDevicePnp_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionDevicePnp_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionDevicePnp_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_NI22H2**  No content is currently available.
+- **DecisionDriverPackage_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionDriverPackage_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_RS1**  The total number of objects of this type present on this device.
-- **DecisionDriverPackage_ZN23H2**  No content is currently available.
-- **DecisionDriverPackage_ZN23H2Exp**  No content is currently available.
-- **DecisionDriverPackage_ZN23H2Setup**  No content is currently available.
+- **DecisionDriverPackage_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionDriverPackage_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionDriverPackage_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_NI22H2**  No content is currently available.
+- **DecisionMatchingInfoBlock_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoBlock_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoBlock_ZN23H2**  No content is currently available.
-- **DecisionMatchingInfoBlock_ZN23H2Exp**  No content is currently available.
-- **DecisionMatchingInfoBlock_ZN23H2Setup**  No content is currently available.
+- **DecisionMatchingInfoBlock_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionMatchingInfoBlock_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionMatchingInfoBlock_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_NI22H2**  No content is currently available.
+- **DecisionMatchingInfoPassive_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPassive_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_RS1**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1607 on this device.
-- **DecisionMatchingInfoPassive_ZN23H2**  No content is currently available.
-- **DecisionMatchingInfoPassive_ZN23H2Exp**  No content is currently available.
-- **DecisionMatchingInfoPassive_ZN23H2Setup**  No content is currently available.
+- **DecisionMatchingInfoPassive_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionMatchingInfoPassive_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionMatchingInfoPassive_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_NI22H2**  No content is currently available.
+- **DecisionMatchingInfoPostUpgrade_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionMatchingInfoPostUpgrade_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS1**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1607 on this device.
-- **DecisionMatchingInfoPostUpgrade_ZN23H2**  No content is currently available.
-- **DecisionMatchingInfoPostUpgrade_ZN23H2Exp**  No content is currently available.
-- **DecisionMatchingInfoPostUpgrade_ZN23H2Setup**  No content is currently available.
+- **DecisionMatchingInfoPostUpgrade_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionMatchingInfoPostUpgrade_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionMatchingInfoPostUpgrade_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_NI22H2**  No content is currently available.
+- **DecisionMediaCenter_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionMediaCenter_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_RS1**  The total number of objects of this type present on this device.
-- **DecisionMediaCenter_ZN23H2**  No content is currently available.
-- **DecisionMediaCenter_ZN23H2Exp**  No content is currently available.
-- **DecisionMediaCenter_ZN23H2Setup**  No content is currently available.
+- **DecisionMediaCenter_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionMediaCenter_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionMediaCenter_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionSModeState_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSModeState_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSModeState_NI22H2**  No content is currently available.
+- **DecisionSModeState_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionSModeState_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSModeState_RS1**  The total number of objects of this type present on this device.
-- **DecisionSModeState_ZN23H2**  No content is currently available.
-- **DecisionSModeState_ZN23H2Exp**  No content is currently available.
-- **DecisionSModeState_ZN23H2Setup**  No content is currently available.
+- **DecisionSModeState_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionSModeState_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionSModeState_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionSystemBios_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_NI22H2**  No content is currently available.
+- **DecisionSystemBios_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionSystemBios_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_RS1**  The total number of objects of this type present on this device.
-- **DecisionSystemBios_ZN23H2**  No content is currently available.
-- **DecisionSystemBios_ZN23H2Exp**  No content is currently available.
-- **DecisionSystemBios_ZN23H2Setup**  No content is currently available.
+- **DecisionSystemBios_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionSystemBios_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionSystemBios_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionSystemDiskSize_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemDiskSize_NI22H2**  No content is currently available.
+- **DecisionSystemDiskSize_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionSystemDiskSize_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_RS1**  The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_ZN23H2**  No content is currently available.
-- **DecisionSystemDiskSize_ZN23H2Exp**  No content is currently available.
-- **DecisionSystemDiskSize_ZN23H2Setup**  No content is currently available.
+- **DecisionSystemDiskSize_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionSystemDiskSize_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionSystemDiskSize_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionSystemMemory_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemMemory_NI22H2**  No content is currently available.
+- **DecisionSystemMemory_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionSystemMemory_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_RS1**  The total number of objects of this type present on this device.
-- **DecisionSystemMemory_ZN23H2**  No content is currently available.
-- **DecisionSystemMemory_ZN23H2Exp**  No content is currently available.
-- **DecisionSystemMemory_ZN23H2Setup**  No content is currently available.
+- **DecisionSystemMemory_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionSystemMemory_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionSystemMemory_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionSystemProcessorCpuCores_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemProcessorCpuCores_NI22H2**  No content is currently available.
+- **DecisionSystemProcessorCpuCores_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionSystemProcessorCpuCores_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_RS1**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_ZN23H2**  No content is currently available.
-- **DecisionSystemProcessorCpuCores_ZN23H2Exp**  No content is currently available.
-- **DecisionSystemProcessorCpuCores_ZN23H2Setup**  No content is currently available.
+- **DecisionSystemProcessorCpuCores_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionSystemProcessorCpuCores_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionSystemProcessorCpuCores_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionSystemProcessorCpuModel_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemProcessorCpuModel_NI22H2**  No content is currently available.
+- **DecisionSystemProcessorCpuModel_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionSystemProcessorCpuModel_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_RS1**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_ZN23H2**  No content is currently available.
-- **DecisionSystemProcessorCpuModel_ZN23H2Exp**  No content is currently available.
-- **DecisionSystemProcessorCpuModel_ZN23H2Setup**  No content is currently available.
+- **DecisionSystemProcessorCpuModel_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionSystemProcessorCpuModel_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionSystemProcessorCpuModel_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionSystemProcessorCpuSpeed_CO21H2Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorPopCnt**  No content is currently available.
+- **DecisionSystemProcessorPopCnt**  The count of the number of this particular object type present on this device.
 - **DecisionTest_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionTest_NI22H2**  No content is currently available.
+- **DecisionTest_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionTest_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_RS1**  The total number of objects of this type present on this device.
-- **DecisionTest_ZN23H2**  No content is currently available.
-- **DecisionTest_ZN23H2Exp**  No content is currently available.
-- **DecisionTest_ZN23H2Setup**  No content is currently available.
+- **DecisionTest_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionTest_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionTest_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionTpmVersion_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionTpmVersion_NI22H2**  No content is currently available.
+- **DecisionTpmVersion_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionTpmVersion_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_RS1**  The total number of objects of this type present on this device.
-- **DecisionTpmVersion_ZN23H2**  No content is currently available.
-- **DecisionTpmVersion_ZN23H2Exp**  No content is currently available.
-- **DecisionTpmVersion_ZN23H2Setup**  No content is currently available.
+- **DecisionTpmVersion_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionTpmVersion_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionTpmVersion_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **DecisionUefiSecureBoot_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionUefiSecureBoot_NI22H2**  No content is currently available.
+- **DecisionUefiSecureBoot_NI22H2**  The count of the number of this particular object type present on this device.
 - **DecisionUefiSecureBoot_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_RS1**  The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_ZN23H2**  No content is currently available.
-- **DecisionUefiSecureBoot_ZN23H2Exp**  No content is currently available.
-- **DecisionUefiSecureBoot_ZN23H2Setup**  No content is currently available.
+- **DecisionUefiSecureBoot_ZN23H2**  The count of the number of this particular object type present on this device.
+- **DecisionUefiSecureBoot_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **DecisionUefiSecureBoot_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **InventoryApplicationFile**  The count of the number of this particular object type present on this device.
 - **InventoryLanguagePack**  The count of the number of this particular object type present on this device.
 - **InventoryMediaCenter**  The count of the number of this particular object type present on this device.
@@ -248,12 +248,12 @@ The following fields are available:
 - **SystemProcessorCompareExchange**  The count of the number of this particular object type present on this device.
 - **SystemProcessorLahfSahf**  The count of the number of this particular object type present on this device.
 - **SystemProcessorNx**  The total number of objects of this type present on this device.
-- **SystemProcessorPopCnt**  No content is currently available.
-- **SystemProcessorPopCnt_NI22H2**  No content is currently available.
-- **SystemProcessorPopCnt_RS1**  No content is currently available.
-- **SystemProcessorPopCnt_ZN23H2**  No content is currently available.
-- **SystemProcessorPopCnt_ZN23H2Exp**  No content is currently available.
-- **SystemProcessorPopCnt_ZN23H2Setup**  No content is currently available.
+- **SystemProcessorPopCnt**  The count of the number of this particular object type present on this device.
+- **SystemProcessorPopCnt_NI22H2**  The count of the number of this particular object type present on this device.
+- **SystemProcessorPopCnt_RS1**  The count of the number of this particular object type present on this device.
+- **SystemProcessorPopCnt_ZN23H2**  The count of the number of this particular object type present on this device.
+- **SystemProcessorPopCnt_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **SystemProcessorPopCnt_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 - **SystemProcessorPrefetchW**  The total number of objects of this type present on this device.
 - **SystemProcessorSse2**  The total number of objects of this type present on this device.
 - **SystemTouch**  The count of the number of this particular object type present on this device.
@@ -262,12 +262,12 @@ The following fields are available:
 - **SystemWlan**  The total number of objects of this type present on this device.
 - **Wmdrm_CO21H2Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **Wmdrm_NI22H2**  No content is currently available.
+- **Wmdrm_NI22H2**  The count of the number of this particular object type present on this device.
 - **Wmdrm_NI22H2Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_RS1**  The total number of objects of this type present on this device.
-- **Wmdrm_ZN23H2**  No content is currently available.
-- **Wmdrm_ZN23H2Exp**  No content is currently available.
-- **Wmdrm_ZN23H2Setup**  No content is currently available.
+- **Wmdrm_ZN23H2**  The count of the number of this particular object type present on this device.
+- **Wmdrm_ZN23H2Exp**  The count of the number of this particular object type present on this device.
+- **Wmdrm_ZN23H2Setup**  The count of the number of this particular object type present on this device.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
@@ -373,26 +373,26 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPopCntAdd
 
-No content is currently available.
+This event sends data indicating whether the system supports the PopCnt CPU requirement for newer versions of Windows, to help keep Windows up-to-date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **AppraiserVersion**  No content is currently available.
-- **Blocking**  No content is currently available.
-- **PopCntPassed**  No content is currently available.
+- **AppraiserVersion**  Appraiser version
+- **Blocking**  Is the upgrade blocked due to the processor missing the PopCnt instruction?
+- **PopCntPassed**  Whether the machine passes the latest OS hardware requirements or not for the PopCnt instruction.
 
 
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPopCntStartSync
 
-No content is currently available.
+The SystemProcessorPopCntStartSync event indicates that a new set of SystemProcessorPopCntAdd events will be sent. This event is used to understand if the system supports the PopCnt CPU requirement for newer versions of Windows.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **AppraiserVersion**  No content is currently available.
+- **AppraiserVersion**  Appraiser version.
 
 
 ## Census events
@@ -429,8 +429,8 @@ Indicates if OEM attempted to block autoenablement via regkey.
 The following fields are available:
 
 - **BlockHvciAutoenablement**  True if auto-enablement was successfully blocked, false otherwise.
-- **BlockRequested**  No content is currently available.
-- **Scenario**  No content is currently available.
+- **BlockRequested**  Whether an autoenablement block was requested.
+- **Scenario**  Used to differentiate VBS and HVCI paths.
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.Compatibility
@@ -450,10 +450,10 @@ Fires when auto-enablement is successful and HVCI is being enabled on the device
 
 The following fields are available:
 
-- **Error**  No content is currently available.
-- **Scenario**  No content is currently available.
-- **SuccessfullyEnabled**  No content is currently available.
-- **Upgrade**  No content is currently available.
+- **Error**  Error code if there was an issue during enablement
+- **Scenario**  Indicates whether enablement was for VBS vs HVCI
+- **SuccessfullyEnabled**  Indicates whether enablement was successful
+- **Upgrade**  Indicates whether the event was fired during upgrade (rather than clean install)
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HVCIActivity
@@ -467,7 +467,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciAlreadyEnabled
 
-No content is currently available.
+Fires when HVCI is already enabled so no need to continue auto-enablement.
 
 
 
@@ -1048,8 +1048,8 @@ The following fields are available:
 - **DX11UMDFilePath**  The file path to the location of the DirectX 11 Display User Mode Driver in the Driver Store.
 - **DX12UMDFilePath**  The file path to the location of the DirectX 12 Display User Mode Driver in the Driver Store.
 - **DX9UMDFilePath**  The file path to the location of the DirectX 9 Display User Mode Driver in the Driver Store.
-- **DxDbCurrentVersion**  No content is currently available.
-- **DxDbVersionCheckStatus**  No content is currently available.
+- **DxDbCurrentVersion**  Version of the DirectX Database on the device.
+- **DxDbVersionCheckStatus**  Numeric value indicating the result of the last check on the DirectX Database version for the device.
 - **GPUDeviceID**  The GPU device ID.
 - **GPUPreemptionLevel**  The maximum preemption level supported by GPU for graphics payload.
 - **GPURevisionID**  The GPU revision ID.
@@ -1061,7 +1061,7 @@ The following fields are available:
 - **InterfaceFuncPointersProvided2**  Number of device driver interface function pointers provided.
 - **InterfaceFuncPointersProvided3**  Number of device driver interface function pointers provided.
 - **InterfaceId**  The GPU interface ID.
-- **IsCrossAdapterScanOutSupported**  No content is currently available.
+- **IsCrossAdapterScanOutSupported**  Boolean value indicating whether the adapter supports cross-adapter scanout optimization.
 - **IsDisplayDevice**  Does the GPU have displaying capabilities?
 - **IsHwFlipQueueEnabled**  Boolean value indicating whether hardware flip queues are enabled.
 - **IsHwSchEnabled**  Boolean value indicating whether hardware scheduling is enabled.
@@ -1078,12 +1078,12 @@ The following fields are available:
 - **IsSoftwareDevice**  Is this a software implementation of the GPU?
 - **IsVirtualRefreshRateSupported**  Boolean value indicating whether the adapter supports virtual refresh rates.
 - **KMDFilePath**  The file path to the location of the Display Kernel Mode Driver in the Driver Store.
-- **MdmSupportStatus**  No content is currently available.
+- **MdmSupportStatus**  Numeric value indicating support for Microsoft Display Mux.
 - **MeasureEnabled**  Is the device listening to MICROSOFT_KEYWORD_MEASURES?
-- **NodeTypes**  No content is currently available.
-- **NumExecutionNodes**  No content is currently available.
+- **NodeTypes** Types of execution nodes comprising the graphics adapter.
+- **NumExecutionNodes**  Number of execution nodes comprising the graphics adapter.
 - **NumNonVidPnTargets**  Number of display targets.
-- **NumPhysicalAdapters**  No content is currently available.
+- **NumPhysicalAdapters** Number of physical graphics adapters.
 - **NumVidPnSources**  The number of supported display output sources.
 - **NumVidPnTargets**  The number of supported display output targets.
 - **SharedSystemMemoryB**  The amount of system memory shared by GPU and CPU (in bytes).
@@ -1174,7 +1174,7 @@ The following fields are available:
 - **quarantineDuration**  The quarantine duration.
 - **quarantineThreshold**  The quarantine threshold.
 - **quorumArbitrationTimeout**  In the event of an arbitration event, this specifies the quorum timeout period.
-- **rdmaConnectionsForStorage**  No content is currently available.
+- **rdmaConnectionsForStorage**  This specifies the rdma connections for storage.
 - **resiliencyLevel**  Specifies the level of resiliency.
 - **resourceCounts**  Specifies the number of resources.
 - **resourceTypeCounts**  Specifies the number of resource types in the cluster.
@@ -1189,7 +1189,7 @@ The following fields are available:
 - **shutdownTimeoutMinutes**  Specifies the amount of time it takes to time out when shutting down.
 - **upNodeCount**  Specifies the number of nodes that are up (online).
 - **useClientAccessNetworksForCsv**  The cluster parameter: use client access networks for CSV.
-- **useRdmaForStorage**  No content is currently available.
+- **useRdmaForStorage**  The cluster parameter to use rdma for storage.
 - **vmIsolationTime**  The cluster parameter: VM isolation time.
 - **witnessDatabaseWriteTimeout**  Specifies the timeout period for writing to the quorum witness database.
 
@@ -1332,14 +1332,14 @@ The following fields are available:
 
 ### Microsoft.Windows.Analog.Spectrum.TelemetryHolographicSpaceCreated
 
-No content is currently available.
+This event indicates the state of Windows holographic scene. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
-- **AppSessionGuid**  No content is currently available.
-- **IsForCompositor**  No content is currently available.
-- **Source**  No content is currently available.
-- **WindowInstanceId**  No content is currently available.
+- **AppSessionGuid**  GUID made up of process ID and is used as a correlation vector for process instances in the telemetry backend.
+- **IsForCompositor**  True/False to indicate whether the holographic space is for compositor process.
+- **Source**  An enumeration indicating the source of the log.
+- **WindowInstanceId**  Unique value for each window instance.
 
 
 ### Microsoft.Windows.Holographic.Coordinator.HoloShellStateUpdated
@@ -1456,7 +1456,7 @@ The following fields are available:
 - **Publisher**  The Publisher of the application. Location pulled from depends on the 'Source' field.
 - **RootDirPath**  The path to the root directory where the program was installed.
 - **Source**  How the program was installed (for example, ARP, MSI, Appx).
-- **SparkId**  No content is currently available.
+- **SparkId**  Unique ID that represents a Win32 app installed from the Microsoft Store.
 - **StoreAppType**  A sub-classification for the type of Microsoft Store app, such as UWP or Win8StoreApp.
 - **Type**  One of ("Application", "Hotfix", "BOE", "Service", "Unknown"). Application indicates Win32 or Appx app, Hotfix indicates app updates (KBs), BOE indicates it's an app with no ARP or MSI entry, Service indicates that it is a service. Application and BOE are the ones most likely seen.
 - **Version**  The version number of the program.
@@ -1503,21 +1503,21 @@ The following fields are available:
 
 ### Microsoft.Windows.Kernel.Power.AbnormalShutdown
 
-No content is currently available.
+This event provides diagnostic information of the most recent abnormal shutdown.
 
 The following fields are available:
 
-- **BootEnvironment**  No content is currently available.
-- **BootStatValid**  No content is currently available.
-- **Bugcheck**  No content is currently available.
-- **CrashDump**  No content is currently available.
-- **CurrentBootId**  No content is currently available.
-- **FirmwareReset**  No content is currently available.
-- **LastShutdownBootId**  No content is currently available.
-- **LongPowerButtonHold**  No content is currently available.
-- **SystemStateTransition**  No content is currently available.
-- **Watchdog**  No content is currently available.
-- **WheaBootErrorCount**  No content is currently available.
+- **BootEnvironment**  Errors from boot environment.
+- **BootStatValid**  Status of bootstat file.
+- **Bugcheck**  Bugcheck information.
+- **CrashDump**  Crash dump information.
+- **CurrentBootId**  ID of this boot.
+- **FirmwareReset**  System reset by firmware.
+- **LastShutdownBootId**  BootID of last shutdown.
+- **LongPowerButtonHold**  Long power button hold information.
+- **SystemStateTransition**  State transition information.
+- **Watchdog**  Watchdog information.
+- **WheaBootErrorCount**  Whea boot error information.
 
 
 ### Microsoft.Windows.Kernel.Power.PreviousShutdownWasThermalShutdown
@@ -1528,7 +1528,7 @@ The following fields are available:
 
 - **temperature**  Contains the actual temperature measurement, in tenths of degrees Kelvin, for the area that exceeded the limit.
 - **thermalZone**  Contains an identifier that specifies which area it was that exceeded temperature limits.
-- **TotalUpTimeMs**  No content is currently available.
+- **TotalUpTimeMs** Contains the total system up time in milliseconds.
 
 
 ## Microsoft Edge events
@@ -1539,7 +1539,7 @@ This config event sends basic device connectivity and configuration information 
 
 The following fields are available:
 
-- **account_type**  No content is currently available.
+- **account_type**  A number representing the type of the signed in user account, where 0 indicates None, 1 indicates Microsoft Account, 2 indicates Azure Active Directory, 3 indicates On-Prem Active Directory and 4 indicates Azure Active Directory (Degraded). This field is currently only supported on mobile platforms and so the value is set to -1 on non-mobile platforms.
 - **app_sample_rate**  A number representing how often the client sends telemetry, expressed as a percentage. Low values indicate that said client sends more events and high values indicate that said client sends fewer events.
 - **app_version**  The internal Edge build version string, taken from the UMA metrics field system_profile.app_version.
 - **appConsentState**  Bit flags describing consent for data collection on the machine or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
@@ -1571,7 +1571,7 @@ This config event sends basic device connectivity and configuration information 
 
 The following fields are available:
 
-- **account_type**  No content is currently available.
+- **account_type**  A number representing the type of the signed in user account, where 0 indicates None, 1 indicates Microsoft Account, 2 indicates Azure Active Directory, 3 indicates On-Prem Active Directory and 4 indicates Azure Active Directory (Degraded). This field is currently only supported on mobile platforms and so the value is set to -1 on non-mobile platforms.
 - **app_sample_rate**  A number representing how often the client sends telemetry, expressed as a percentage. Low values indicate that said client sends more events and high values indicate that said client sends fewer events.
 - **app_version**  The internal Edge build version string, taken from the UMA metrics field system_profile.app_version.
 - **appConsentState**  Bit flags describing consent for data collection on the machine or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
@@ -1603,7 +1603,7 @@ This config event sends basic device connectivity and configuration information 
 
 The following fields are available:
 
-- **account_type**  No content is currently available.
+- **account_type**  Aria.7005b72804a64fa4b2138faab88f877b.Microsoft.WebBrowser.SystemInfo.Config
 - **app_sample_rate**  A number representing how often the client sends telemetry, expressed as a percentage. Low values indicate that said client sends more events and high values indicate that said client sends fewer events.
 - **app_version**  The internal Edge build version string, taken from the UMA metrics field system_profile.app_version.
 - **appConsentState**  Bit flags describing consent for data collection on the machine or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
@@ -1635,7 +1635,7 @@ This config event sends basic device connectivity and configuration information 
 
 The following fields are available:
 
-- **account_type**  No content is currently available.
+- **account_type**  A number representing the type of the signed in user account, where 0 indicates None, 1 indicates Microsoft Account, 2 indicates Azure Active Directory, 3 indicates On-Prem Active Directory and 4 indicates Azure Active Directory (Degraded). This field is currently only supported on mobile platforms and so the value is set to -1 on non-mobile platforms.
 - **app_sample_rate**  A number representing how often the client sends telemetry, expressed as a percentage. Low values indicate that said client sends more events and high values indicate that said client sends fewer events.
 - **app_version**  The internal Edge build version string, taken from the UMA metrics field system_profile.app_version.
 - **appConsentState**  Bit flags describing consent for data collection on the machine or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
@@ -1677,23 +1677,23 @@ The following fields are available:
 - **appCohortName**  A stable non-localized human-readable enum indicating which (if any) set of messages the app should display to the user. For example, an app with a cohort Name of 'beta' might display beta-specific branding to the user. Limited to ASCII characters 32 to 127 (inclusive) and a maximum length of 1024 characters. Default: ''.
 - **appConsentState**  Bit flags describing the diagnostic data disclosure and response flow where 1 indicates the affirmative and 0 indicates the negative or unspecified data. Bit 1 indicates consent was given, bit 2 indicates data originated from the download page, bit 18 indicates choice for sending data about how the browser is used, and bit 19 indicates choice for sending data about websites visited.
 - **appDayOfInstall**  The date-based counting equivalent of appInstallTimeDiffSec (the numeric calendar day that the app was installed on). This value is provided by the server in the response to the first request in the installation flow. The client MAY fuzz this value to the week granularity (e.g. send '0' for 0 through 6, '7' for 7 through 13, etc.). The first communication to the server should use a special value of '-1'. A value of '-2' indicates that this value is not known. Please see the wiki for additional information. Default: '-2'.
-- **appEdgePreviewDisenrollReason**  No content is currently available.
-- **appEdgePreviewPreviousValuesV2**  No content is currently available.
-- **appEdgePreviewState**  No content is currently available.
+- **appEdgePreviewDisenrollReason**  Reason why Preview was unenrolled.
+- **appEdgePreviewPreviousValuesV2**  Previous values of the Edge Preview.
+- **appEdgePreviewState**  Specifies if Edge is in the preview state.
 - **appExperiments**  A key/value list of experiment identifiers. Experiment labels are used to track membership in different experimental groups, and may be set at install or update time. The experiments string is formatted as a semicolon-delimited concatenation of experiment label strings. An experiment label string is an experiment Name, followed by the '=' character, followed by an experimental label value. For example: 'crdiff=got_bsdiff;optimized=O3'. The client should not transmit the expiration date of any experiments it has, even if the server previously specified a specific expiration date. Default: ''.
-- **appFirstFRESeenTime**  No content is currently available.
-- **appFirstFRESeenVersion**  No content is currently available.
-- **appInactivityBadgeApplied**  No content is currently available.
-- **appInactivityBadgeCleared**  No content is currently available.
-- **appInactivityBadgeDuration**  No content is currently available.
+- **appFirstFRESeenTime**  The earliest time the Edge First Run Experience was seen by any user on the device in Windows FILETIME units / 10. Default: undefined.
+- **appFirstFRESeenVersion**  The earliest Edge First Run Experience version that was seen by any user on the device (e.g. '1.2.3.4'). Default: undefined.
+- **appInactivityBadgeApplied**  Specifies that the inactivity badge has been applied.
+- **appInactivityBadgeCleared**  Specifies that the inactivity badge has been cleared.
+- **appInactivityBadgeDuration**  The duration of the inactivity badge.
 - **appInstallTime**  The product install time in seconds. '0' if unknown. Default: '-1'.
 - **appInstallTimeDiffSec**  The difference between the current time and the install date in seconds. '0' if unknown. Default: '-1'.
-- **appIsPinnedSystem**  No content is currently available.
+- **appIsPinnedSystem**  Specifies is the app is pinned.
 - **appLang**  The language of the product install, in IETF BCP 47 representation. Default: ''.
-- **appLastLaunchCount**  No content is currently available.
+- **appLastLaunchCount**  Number of times the app launched last.
 - **appLastLaunchTime**  The time when browser was last launched.
 - **appNextVersion**  The version of the app that the update flow to which this event belongs attempted to reach, regardless of the success or failure of the update operation. Please see the wiki for additional information. Default: '0.0.0.0'.
-- **appOOBEInstallTime**  No content is currently available.
+- **appOOBEInstallTime**  The time of first recorded successful OOBE Edge install in Windows FILETIME units / 10 (i.e. the install time of any fully completed OOBE install achieved before OOBE finishes), as recorded by setup.exe. Default: undefined.
 - **appPingEventAppSize**  The total number of bytes of all downloaded packages. Default: '0'.
 - **appPingEventDoneBeforeOOBEComplete**  Indicates whether the install or update was completed before Windows Out of the Box Experience ends. 1 means event completed before OOBE finishes; 0 means event was not completed before OOBE finishes; -1 means the field does not apply.
 - **appPingEventDownloadMetricsCdnAzureRefOriginShield**  Provides a unique reference string that identifies a request served by Azure Front Door. It's used to search access logs and is critical for troubleshooting. For example, Ref A: E172B39D19774147B0EFCC8E3E823D9D Ref B: BL2EDGE0215 Ref C: 2021-05-11T22:25:48Z.
@@ -1719,7 +1719,7 @@ The following fields are available:
 - **appPingEventPackageCacheResult**  Whether there is an existing package cached in the system to update or install. 1 means that there's a cache hit under the expected key, 2 means there's a cache hit under a different key, 0 means that there's a cache miss. -1 means the field does not apply.
 - **appPingEventSequenceId**  An id that uniquely identifies particular events within one requestId. Since a request can contain multiple ping events, this field is necessary to uniquely identify each possible event.
 - **appPingEventSourceUrlIndex**  For events representing a download, the position of the download URL in the list of URLs supplied by the server in a "urls" tag.
-- **appPingEventSystemUptimeTicks**  No content is currently available.
+- **appPingEventSystemUptimeTicks**  Number of ticks that the system has been up.
 - **appPingEventUpdateCheckTimeMs**  For events representing an entire update flow, the time elapsed between the start of the update check and the end of the update check, in milliseconds. Sent in events that have an event type of '2' and '3' only. Default: '0'.
 - **appReferralHash**  The hash of the referral code used to install the product. '0' if unknown. Default: '0'.
 - **appUpdateCheckIsRollbackAllowed**  Check for status showing whether or not rollback is allowed.
@@ -1727,8 +1727,8 @@ The following fields are available:
 - **appUpdateCheckTargetChannel**  Check for status showing the target release channel.
 - **appUpdateCheckTargetVersionPrefix**  A component-wise prefix of a version number, or a complete version number suffixed with the $ character. The server should not return an update instruction to a version number that does not match the prefix or complete version number. The prefix is interpreted a dotted-tuple that specifies the exactly-matching elements; it is not a lexical prefix (for example, '1.2.3' must match '1.2.3.4' but must not match '1.2.34'). Default: ''.
 - **appUpdateCheckTtToken**  An opaque access token that can be used to identify the requesting client as a member of a trusted-tester group. If non-empty, the request should be sent over SSL or another secure protocol. Default: ''.
-- **appUpdateCount**  No content is currently available.
-- **appUpdatesAllowedForMeteredNetworks**  No content is currently available.
+- **appUpdateCount** A running total of successful updates recorded by setup.exe. This is used for continuity checking of the Ping data spanning consecutive updates.
+- **appUpdatesAllowedForMeteredNetworks**  Specifies if the device can receive updates with on a metered network.
 - **appVersion**  The version of the product install. Please see the wiki for additional information. Default: '0.0.0.0'.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
 - **eventType**  A string indicating the type of the event. Please see the wiki for additional information.
@@ -1743,19 +1743,19 @@ The following fields are available:
 - **hwHasSsse3**  '1' if the client's hardware supports the SSSE3 instruction set. '0' if the client's hardware does not support the SSSE3 instruction set. '-1' if unknown. Default: '-1'.
 - **hwLogicalCpus**  Number of logical CPUs of the device.
 - **hwPhysmemory**  The physical memory available to the client, truncated down to the nearest gibibyte. '-1' if unknown. This value is intended to reflect the maximum theoretical storage capacity of the client, not including any hard drive or paging to a hard drive or peripheral. Default: '-1'.
-- **isCTADevice**  No content is currently available.
+- **isCTADevice**  Specifies if the device is CTA.
 - **isMsftDomainJoined**  '1' if the client is a member of a Microsoft domain. '0' otherwise. Default: '0'.
 - **oemProductManufacturer**  The device manufacturer name.
 - **oemProductName**  The product name of the device defined by device manufacturer.
 - **osArch**  The architecture of the operating system (e.g. 'x86', 'x64', 'arm'). '' if unknown. Default: ''.
-- **osIsDefaultNetworkConnectionMetered**  No content is currently available.
-- **osIsInLockdownMode**  No content is currently available.
-- **osIsWIP**  No content is currently available.
+- **osIsDefaultNetworkConnectionMetered**  States if the default network connection is metered.
+- **osIsInLockdownMode**  Is the OS in lockdown mode.
+- **osIsWIP**  Whether the OS is in preview.
 - **osPlatform**  The operating system family that the within which the Omaha client is running (e.g. 'win', 'mac', 'linux', 'ios', 'android'). '' if unknown. The operating system Name should be transmitted in lowercase with minimal formatting. Default: ''.
-- **osProductType**  No content is currently available.
+- **osProductType**  Type associated with the operating system.
 - **osServicePack**  The secondary version of the operating system. '' if unknown. Default: ''.
 - **osVersion**  The primary version of the operating system. '' if unknown. Default: ''.
-- **osWIPBranch**  No content is currently available.
+- **osWIPBranch**  WIP branch of the operating system.
 - **requestCheckPeriodSec**  The update interval in seconds. The value is read from the registry. Default: '-1'.
 - **requestDlpref**  A comma-separated list of values specifying the preferred download URL behavior. The first value is the highest priority, further values reflect secondary, tertiary, et cetera priorities. Legal values are '' (in which case the entire list must be empty, indicating unknown or no-preference) or 'cacheable' (the server should prioritize sending URLs that are easily cacheable). Default: ''.
 - **requestDomainJoined**  '1' if the machine is part of a managed enterprise domain. Otherwise '0'.
@@ -1791,7 +1791,7 @@ The following fields are available:
 
 - **migDiagSession->CString**  Indicates the phase of the update.
 - **objectCount**  Number of files being tracked for the corresponding phase of the update.
-- **sfInfo.Name**  No content is currently available.
+- **sfInfo.Name**  This indicates well know folder location path (Ex: PUBLIC_downloads etc.)
 
 
 ### Microsoft.Windows.MigrationCore.MigObjectCountDLUsr
@@ -1907,27 +1907,27 @@ The following fields are available:
 
 ### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Entered
 
-No content is currently available.
+This event sends data indicating the start of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
-- **SessionID**  No content is currently available.
-- **TargetAsId**  No content is currently available.
-- **windowInstanceId**  No content is currently available.
+- **SessionID**  Unique value for each attempt.
+- **TargetAsId**  The sequence number for the process.
+- **windowInstanceId**  Unique value for each window instance.
 
 
 ### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Leave
 
-No content is currently available.
+This event sends data indicating the end of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
-- **EventHistory**  No content is currently available.
-- **ExternalComponentState**  No content is currently available.
-- **LastEvent**  No content is currently available.
-- **SessionID**  No content is currently available.
-- **TargetAsId**  No content is currently available.
-- **windowInstanceId**  No content is currently available.
+- **EventHistory**  Unique number of event history.
+- **ExternalComponentState**  State of external component.
+- **LastEvent**  Unique number of last event.
+- **SessionID**  Unique value for each attempt.
+- **TargetAsId**  The sequence number for the process.
+- **windowInstanceId**  Unique value for each window instance.
 
 
 ### Microsoft.Windows.Security.NGC.KspSvc.NgcUserIdKeyFinalize
@@ -1986,28 +1986,28 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateFailed
 
-No content is currently available.
+Event that indicates that an attempt to apply secure boot updates failed
 
 The following fields are available:
 
-- **Action**  No content is currently available.
-- **hr**  No content is currently available.
-- **IsRejectedByFirmware**  No content is currently available.
-- **IsResealNeeded**  No content is currently available.
-- **RevokedBootmanager**  No content is currently available.
-- **SecureBootUpdateCaller**  No content is currently available.
-- **UpdateType**  No content is currently available.
-- **WillResealSucceed**  No content is currently available.
+- **Action**  Action string when error occured
+- **hr**  Error code in HRESULT
+- **IsRejectedByFirmware**  Bool value to indicate if firmware has rejected the update.
+- **IsResealNeeded**  BOOL value to indicate if TPM Reseal was needed
+- **RevokedBootmanager**  BOOL value to indicate if current bootmgr is revoked.
+- **SecureBootUpdateCaller**  Scenario in which function was called. Could be Update or Upgrade
+- **UpdateType**  Indicates if it's DB or DBX update
+- **WillResealSucceed**  Indicates if TPM reseal operation is expected to succeed
 
 
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
 
-No content is currently available.
+Event that indicates secure boot update has started.
 
 The following fields are available:
 
-- **AvailableUpdates**  No content is currently available.
-- **SecureBootUpdateCaller**  No content is currently available.
+- **AvailableUpdates**  Number of available secure boot updates.
+- **SecureBootUpdateCaller**  Enum value indicating if this is a servicing or an upgrade.
 
 
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateSucceeded
@@ -2164,34 +2164,34 @@ This event provides information about move or deletion of a file or a directory 
 
 The following fields are available:
 
-- **Mode**  No content is currently available.
+- **Mode**  The kind of monitoring mode enforced for the given path (this is one of a fixed set of strings).
 - **Path**  Path to the file or the directory which is being moved or deleted.
 - **Process**  Path to the process which is requesting the move or the deletion.
-- **SessionId**  No content is currently available.
+- **SessionId**   Identifier to correlate this component's telemetry with that of others.
 - **TargetPath**  (Optional) If the operation is a move, the target path to which the file or directory is being moved.
 
 
 ### Microsoft.Windows.Setup.WinSetupMon.TraceError
 
-No content is currently available.
+Provides details about error in the functioning of upgrade data safety monitoring filter driver.
 
 The following fields are available:
 
-- **Message**  No content is currently available.
-- **SessionId**  No content is currently available.
-- **Status**  No content is currently available.
+- **Message**  Text string describing the error condition.
+- **SessionId** Identifier to correlate this component's telemetry with that of others.
+- **Status**  	NTSTATUS code related to the error.
 
 
 ### Microsoft.Windows.Setup.WinSetupMon.TraceErrorVolume
 
-No content is currently available.
+Provides details about error in the functioning of upgrade data safety monitoring filter driver, related to a specific volume (drive).
 
 The following fields are available:
 
-- **Message**  No content is currently available.
-- **SessionId**  No content is currently available.
-- **Status**  No content is currently available.
-- **Volume**  No content is currently available.
+- **Message**  Text string describing the error condition.
+- **SessionId**  Identifier to correlate this component's telemetry with that of others.
+- **Status**  NTSTATUS code related to the error.
+- **Volume**  Path of the volume on which the error occurs
 
 
 ## Surface events
@@ -2226,16 +2226,16 @@ The following fields are available:
 - **BPMRsocBucketsMediumLowTemp_Values**  Time in temperature range 21°C-35°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
 - **BPMTotalEngagedMinutes**  Total time that BPM was engaged.
 - **BPMTotalEntryEvents**  Total number of times entering BPM.
-- **BPMv4CurrentlyEngaged**  No content is currently available.
-- **BPMv4ExitCriteria**  No content is currently available.
-- **BPMv4HvtCountA**  No content is currently available.
-- **BPMv4HvtCountB**  No content is currently available.
-- **BPMv4RsocBucketsHighTemp_Values**  No content is currently available.
-- **BPMv4RsocBucketsLowTemp_Values**  No content is currently available.
-- **BPMv4RsocBucketsMediumHighTemp_Values**  No content is currently available.
-- **BPMv4RsocBucketsMediumLowTemp_Values**  No content is currently available.
-- **BPMv4TotalEngagedMinutes**  No content is currently available.
-- **BPMv4TotalEntryEvents**  No content is currently available.
+- **BPMv4CurrentlyEngaged**  Instantaneous snapshot if BPM is engaged on device.
+- **BPMv4ExitCriteria**  What is the BPM exit criteria - 20%SOC or 50%SOC?.
+- **BPMv4HvtCountA**  Current HVT count for BPM counter A.
+- **BPMv4HvtCountB**  Current HVT count for BPM counter B.
+- **BPMv4RsocBucketsHighTemp_Values**  Time in temperature range 46°C -60°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMv4RsocBucketsLowTemp_Values**  Time in temperature range 0°C -20°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMv4RsocBucketsMediumHighTemp_Values**  Time in temperature range 36°C -45°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMv4RsocBucketsMediumLowTemp_Values**  Time in temperature range 21°C-35°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMv4TotalEngagedMinutes**  Total time that BPM was engaged.
+- **BPMv4TotalEntryEvents**  Total number of times entering BPM.
 - **ComponentId**  Component ID.
 - **FwVersion**  FW version that created this log.
 - **LogClass**  Log Class.
@@ -2254,7 +2254,7 @@ This event includes the hardware level data about battery performance. The data 
 
 The following fields are available:
 
-- **batteryPresent**  No content is currently available.
+- **batteryPresent**  Battery present on device.
 - **BPMKioskModeStartDateInSeconds**  First time Battery Limit was turned on.
 - **BPMKioskModeTotalEngagedMinutes**  Total time Battery Limit was on (SOC value at 50%).
 - **ComponentId**  Component ID.
@@ -2264,7 +2264,7 @@ The following fields are available:
 - **CTTMinSOC28day**  Rolling 28 day minimum SOC. Value set to 0 initially.
 - **CTTMinSOC3day**  Rolling 3 day minimum SOC. Value set to 0 initially.
 - **CTTMinSOC7day**  Rolling 7 day minimum SOC. Value set to 0 initially.
-- **CTTReduction**  No content is currently available.
+- **CTTReduction**  Current CTT reduction in mV	
 - **CTTStartDateInSeconds**  Start date from when device was starting to be used.
 - **currentAuthenticationState**  Current Authentication State.
 - **FwVersion**  FW version that created this log.
@@ -2470,18 +2470,18 @@ The following fields are available:
 
 ### Update360Telemetry.FellBackToDownloadingAllPackageFiles
 
-No content is currently available.
+This event indicates whether a failure occurred during Missing File List generation and is applicable to Quality Update downloads.
 
 The following fields are available:
 
-- **ErrorCode**  No content is currently available.
-- **FlightId**  No content is currently available.
-- **ObjectId**  No content is currently available.
-- **Package**  No content is currently available.
-- **RelatedCV**  No content is currently available.
-- **ScenarioId**  No content is currently available.
-- **SessionId**  No content is currently available.
-- **UpdateId**  No content is currently available.
+- **ErrorCode**  Error code returned during Missing File List generation.
+- **FlightId**  Unique ID for each flight.
+- **ObjectId**  Unique ID for each flight.
+- **Package**  Name of the package for which Missing File List generation failed and we fell back to downloading all package files.
+- **RelatedCV**  Correlation vector value generated from the latest USO scan.
+- **ScenarioId**  Indicates the update scenario.
+- **SessionId**  Unique value for each attempt (same value for initialize, download, install commit phases).
+- **UpdateId**  Unique ID for each Update.
 
 
 ### Update360Telemetry.UpdateAgentCommit
@@ -2649,13 +2649,13 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginGetFreeEntitlement
 
-No content is currently available.
+Tracks the beginning of the call to get a free app entitlement.
 
 The following fields are available:
 
-- **CampaignId**  No content is currently available.
-- **StoreId**  No content is currently available.
-- **UseDeviceId**  No content is currently available.
+- **CampaignId**  Marketing Campaign Identifier.
+- **StoreId**  App Store Catalog Id.
+- **UseDeviceId**  Boolean value to select whether the entitlement should be a device versus a user entitlement.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginInstall
@@ -2809,14 +2809,14 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.EndGetFreeEntitlement
 
-No content is currently available.
+Telemetry is fired at the end of the call to request an free app entitlement, which will make a server call to get the entitlement.
 
 The following fields are available:
 
-- **CampaignId**  No content is currently available.
-- **HResult**  No content is currently available.
-- **StoreId**  No content is currently available.
-- **UseDeviceId**  No content is currently available.
+- **CampaignId**  Campaign marketing Id.
+- **HResult**  Error result.
+- **StoreId**  Store Catalog Id of item requesting ownership.
+- **UseDeviceId**  Boolean value to select whether the entitlement should be a device versus a user entitlement.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.EndInstall
@@ -2934,12 +2934,12 @@ This event is sent at the beginning of an app install or update to help keep Win
 The following fields are available:
 
 - **CatalogId**  The name of the product catalog from which this app was chosen.
-- **ClientAppId**  No content is currently available.
+- **ClientAppId**  The identity of the app that initiated this operation.
 - **FulfillmentPluginId**  The ID of the plugin needed to install the package type of the product.
-- **InstalledPFuN**  No content is currently available.
+- **InstalledPFuN**  Package Full Name of the app that is installed and will be updated.
 - **PFN**  The Package Family Name of the app that is being installed or updated.
 - **PluginTelemetryData**  Diagnostic information specific to the package-type plug-in.
-- **PluginWorkCreationHr**  No content is currently available.
+- **PluginWorkCreationHr**  Resulting HResult error/success code from plugin work creation.	
 - **ProductId**  The product ID of the app that is being updated or installed.
 
 
@@ -3254,7 +3254,7 @@ The following fields are available:
 
 - **background**  Indicates whether the download is happening in the background.
 - **bytesRequested**  Number of bytes requested for the download.
-- **callerAppPackageName**  No content is currently available.
+- **callerAppPackageName**  The caller app package name.
 - **cdnUrl**  The URL of the source Content Distribution Network (CDN).
 - **costFlags**  A set of flags representing network cost.
 - **deviceProfile**  Identifies the usage or form factor (such as Desktop, Xbox, or VM).
@@ -3280,7 +3280,7 @@ The following fields are available:
 - **sessionID**  The ID for the file download session.
 - **setConfigs**  A JSON representation of the configurations that have been set, and their sources.
 - **updateID**  The ID of the update being downloaded.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  The version of the undocked update stack.
 
 
 ### Microsoft.OSG.DU.DeliveryOptClient.FailureCdnCommunication
@@ -3376,8 +3376,8 @@ The following fields are available:
 - **AppInstallState**  The application installation state.
 - **HRESULT**  The result code (HResult) of the install.
 - **PFN**  The package family name of the package being installed.
-- **updaterId**  No content is currently available.
-- **UusVersion**  No content is currently available.
+- **updaterId**  The Id of the updater.
+- **UusVersion**  The version of the UUS stack currently active.
 
 
 ### Microsoft.Windows.Update.Orchestrator.Client.EdgeUpdateResult
@@ -3388,7 +3388,7 @@ The following fields are available:
 
 - **ExitCode**  The exit code that was returned.
 - **HRESULT**  The result code (HResult) of the operation.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  The version of the UUS stack currently active.
 - **VelocityEnabled**  A flag that indicates if velocity is enabled.
 - **WorkCompleted**  A flag that indicates if work is completed.
 
@@ -3420,7 +3420,7 @@ The following fields are available:
 - **configuredPoliciescount**  Number of policies on the device.
 - **policiesNamevaluesource**  Policy name and source of policy (group policy, MDM or flight).
 - **updateInstalluxsetting**  Indicates whether a user has set policies via a user experience option.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  Active version of UUS.
 
 
 ### Microsoft.Windows.Update.Orchestrator.Worker.EulaAccepted
@@ -3429,11 +3429,11 @@ Indicates that EULA for an update has been accepted.
 
 The following fields are available:
 
-- **HRESULT**  No content is currently available.
+- **HRESULT**  Was the EULA acceptance successful.
 - **publisherIntent**  Publisher Intent id associated with the update.
 - **reason**  Reason for EULA acceptance.
 - **update**  Update for which EULA has been accepted.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  The version of the UUS stack currently active.
 
 
 ### Microsoft.Windows.Update.Orchestrator.Worker.OobeUpdateApproved
@@ -3446,7 +3446,7 @@ The following fields are available:
 - **provider**  The provider related to which the update is approved.
 - **publisherIntent**  The publisher intent of the Update.
 - **update**  Additional information about the Update.
-- **UusVersion**  No content is currently available.
+- **UusVersion**  The version of the UUS Stack currently active.
 
 
 ### Microsoft.Windows.Update.Orchestrator.Worker.SetIpuMode
@@ -3472,17 +3472,17 @@ The following fields are available:
 - **action**  The type of action being performed (Install or download etc.).
 - **connectivity**  Informs if the device is connected to network while this action is performed.
 - **freeDiskSpaceInMB**  Amount of free disk space.
-- **freeDiskSpaceInMBDelta**  No content is currently available.
+- **freeDiskSpaceInMBDelta**  Amount of free disk space.
 - **interactive**  Informs if this action is caused due to user interaction.
-- **nextAction**  No content is currently available.
+- **nextAction**  Next action to be performed.
 - **priority**  The CPU and IO priority this action is being performed on.
 - **provider**  The provider that is being invoked to perform this action (WU, Legacy UO Provider etc.).
-- **publisherIntent**  No content is currently available.
-- **scenario**  No content is currently available.
+- **publisherIntent**  ID for the metadata associated with the update.
+- **scenario**  The result of the action being performed.
 - **update**  Update related metadata including UpdateId.
 - **uptimeMinutes**  Duration USO for up for in the current boot session.
-- **uptimeMinutesDelta**  No content is currently available.
-- **UusVersion**  No content is currently available.
+- **uptimeMinutesDelta**  The change in device uptime while this action was performed.
+- **UusVersion**  The version of the UUS stack currently active.
 - **wilActivity**  Wil Activity related information.
 
 ### Microsoft.Windows.Update.SIHClient.CheckForUpdatesStarted
@@ -3916,24 +3916,24 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.WUClient.DownloadPaused
 
-No content is currently available.
+This event is fired when the Download stage is paused.
 
 The following fields are available:
 
-- **BundleId**  No content is currently available.
-- **CallerName**  No content is currently available.
-- **ClassificationId**  No content is currently available.
-- **DownloadPriority**  No content is currently available.
-- **EventType**  No content is currently available.
-- **FlightId**  No content is currently available.
-- **HandlerInfo**  No content is currently available.
-- **HandlerType**  No content is currently available.
-- **Props**  No content is currently available.
-- **RegulationResult**  No content is currently available.
-- **RelatedCV**  No content is currently available.
-- **ServiceGuid**  No content is currently available.
-- **UpdateId**  No content is currently available.
-- **UusVersion**  No content is currently available.
+- **BundleId**  Identifier associated with the specific content bundle; shouldn't be all zeros if the bundleID was found.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
+- **ClassificationId**  Classification identifier of the update content.
+- **DownloadPriority**  Indicates the priority of the download activity.
+- **EventType**  Indicates the purpose of the event - whether because scan started, succeeded, failed, etc.
+- **FlightId**  Secondary status code for certain scenarios where StatusCode wasn't specific enough.
+- **HandlerInfo**  Blob of Handler related information.
+- **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
+- **Props**  Commit Props {MergedUpdate}
+- **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
+- **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
+- **UpdateId**  Identifier associated with the specific piece of content.
+- **UusVersion**  The version of the Update Undocked Stack.
 
 
 ### Microsoft.Windows.Update.WUClient.DownloadQueued
@@ -4214,19 +4214,19 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.WUClientExt.UpdateMetadataIntegrityGeneral
 
-No content is currently available.
+Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack.
 
 The following fields are available:
 
-- **CallerName**  No content is currently available.
-- **EndpointUrl**  No content is currently available.
-- **ExtendedStatusCode**  No content is currently available.
-- **MetadataIntegrityMode**  No content is currently available.
-- **RawMode**  No content is currently available.
-- **ServiceGuid**  No content is currently available.
-- **SLSPrograms**  No content is currently available.
-- **StatusCode**  No content is currently available.
-- **UusVersion**  No content is currently available.
+- **CallerName**  Name of the application making the Windows Update Request. Used to identify context of the request.
+- **EndpointUrl**  Ensures Windows Updates are secure and complete. Event helps to identify whether update content has been tampered with and protects against man-in-the-middle attack.
+- **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode wasn't specific enough.
+- **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
+- **RawMode**  Raw unparsed mode string from the SLS response. May be null if not applicable.
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc)
+- **SLSPrograms**  A test program a machine may be opted in. Examples include "Canary" and "Insider Fast".
+- **StatusCode**  Result code of the event (success, cancellation, failure code HResult)
+- **UusVersion**  The version of the Update Undocked Stack
 
 
 ### Microsoft.Windows.Update.WUClientExt.UpdateMetadataIntegritySignature
@@ -4282,10 +4282,10 @@ The following fields are available:
 
 - **ModulePath**  Path of the undocked module.
 - **ModuleVersion**  Version of the undocked module.
-- **Props**  No content is currently available.
+- **Props**  A bitmask for flags associated with loading the undocked module.
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
 - **StatusCode**  Result of the undocked module loading operation.
-- **UusSessionId**  No content is currently available.
+- **UusSessionID**  Unique ID used to create the UUS session.
 - **UusVersion**  Active UUS version.
 
 
