@@ -2,7 +2,7 @@
 title: Remove App Control for Business policies
 description: Learn how to disable both signed and unsigned App Control for Business policies, within Windows and within the BIOS.
 ms.localizationpriority: medium
-ms.date: 11/04/2022
+ms.date: 09/11/2024
 ms.topic: how-to
 ---
 

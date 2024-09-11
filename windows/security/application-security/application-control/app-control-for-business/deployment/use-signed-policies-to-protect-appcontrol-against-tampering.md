@@ -3,7 +3,7 @@ title: Use signed policies to protect App Control for Business against tampering
 description: Signed App Control for Business policies give organizations the highest level of malware protection available in Windows 10 and Windows 11.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 11/04/2022
+ms.date: 09/11/2024
 ---
 
 # Use signed policies to protect App Control for Business against tampering

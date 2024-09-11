@@ -4,7 +4,7 @@ description: Application Control restricts which applications users are allowed 
 ms.localizationpriority: medium
 ms.collection:
 - tier3
-ms.date: 08/30/2023
+ms.date: 09/11/2024
 ms.topic: overview
 ---
 

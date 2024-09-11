@@ -3,7 +3,7 @@ title: Understanding AppLocker default rules
 description: This article for IT professional describes the set of rules that can be used to ensure that required Windows system files continue to run when the policy is applied.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/23/2023
+ms.date: 09/11/2024
 ---
 
 # Understanding AppLocker default rules
@@ -29,9 +29,9 @@ These permissions settings are applied to this folder for app compatibility. How
 | --- | --- |
 | [Executable rules in AppLocker](executable-rules-in-applocker.md) | This article describes the file formats and available default rules for the executable rule collection. |
 | [Windows Installer rules in AppLocker](windows-installer-rules-in-applocker.md) | This article describes the file formats and available default rules for the Windows Installer rule collection.|
-| [Script rules in AppLocker](script-rules-in-applocker.md) | This article describes the file formats and available default rules for the script rule collection.| 
-| [DLL rules in AppLocker](dll-rules-in-applocker.md) | This article describes the file formats and available default rules for the DLL rule collection.| 
-| [Packaged apps and packaged app installer rules in AppLocker](packaged-apps-and-packaged-app-installer-rules-in-applocker.md) | This article explains the AppLocker rule collection for packaged app installers and packaged apps.| 
+| [Script rules in AppLocker](script-rules-in-applocker.md) | This article describes the file formats and available default rules for the script rule collection.|
+| [DLL rules in AppLocker](dll-rules-in-applocker.md) | This article describes the file formats and available default rules for the DLL rule collection.|
+| [Packaged apps and packaged app installer rules in AppLocker](packaged-apps-and-packaged-app-installer-rules-in-applocker.md) | This article explains the AppLocker rule collection for packaged app installers and packaged apps.|
 
 ## Related articles
 

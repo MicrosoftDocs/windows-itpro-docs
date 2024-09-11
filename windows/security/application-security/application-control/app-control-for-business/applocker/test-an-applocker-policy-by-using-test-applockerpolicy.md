@@ -3,7 +3,7 @@ title: Test an AppLocker policy by using Test-AppLockerPolicy
 description: This article for IT professionals describes the steps to test an AppLocker policy prior to importing it into a Group Policy Object (GPO) or another computer.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Test an AppLocker policy by using Test-AppLockerPolicy

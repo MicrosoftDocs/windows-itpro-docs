@@ -6,7 +6,7 @@ ms.collection:
 - must-keep
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 01/03/2024
+ms.date: 09/11/2024
 ---
 
 # AppLocker

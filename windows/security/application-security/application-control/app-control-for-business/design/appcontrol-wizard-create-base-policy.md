@@ -3,7 +3,7 @@ title: App Control for Business Wizard Base Policy Creation
 description: Creating new base application control policies with the Microsoft Windows Defender Application (App Control) Wizard.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 06/07/2023
+ms.date: 09/11/2024
 ---
 
 # Creating a new Base Policy with the Wizard

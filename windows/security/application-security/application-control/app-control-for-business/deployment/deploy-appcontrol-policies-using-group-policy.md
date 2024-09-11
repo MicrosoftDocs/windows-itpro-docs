@@ -2,7 +2,7 @@
 title: Deploy App Control policies via Group Policy
 description: App Control for Business policies can easily be deployed and managed with Group Policy. Learn how by following this step-by-step guide.
 ms.localizationpriority: medium
-ms.date: 01/23/2023
+ms.date: 09/11/2024
 ms.topic: how-to
 ---
 

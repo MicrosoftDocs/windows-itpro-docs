@@ -3,7 +3,7 @@ title: Requirements for deploying AppLocker policies
 description: This deployment article for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Requirements for deploying AppLocker policies

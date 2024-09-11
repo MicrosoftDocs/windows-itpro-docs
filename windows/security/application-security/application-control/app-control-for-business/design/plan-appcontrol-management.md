@@ -2,7 +2,7 @@
 title: Plan for App Control policy management
 description: Learn about the decisions you need to make to establish the processes for managing and maintaining App Control for Business policies.
 ms.localizationpriority: medium
-ms.date: 11/22/2023
+ms.date: 09/11/2024
 ms.topic: conceptual
 ---
 

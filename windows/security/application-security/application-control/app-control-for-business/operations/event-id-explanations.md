@@ -2,7 +2,7 @@
 title: Understanding Application Control event IDs
 description: Learn what different App Control for Business event IDs signify.
 ms.localizationpriority: medium
-ms.date: 03/24/2023
+ms.date: 09/11/2024
 ms.topic: reference
 ---
 

@@ -3,7 +3,7 @@ title: Merge AppLocker policies manually
 description: This article for IT professionals describes the steps to manually merge AppLocker policies to update the Group Policy Object (GPO).
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Merge AppLocker policies manually

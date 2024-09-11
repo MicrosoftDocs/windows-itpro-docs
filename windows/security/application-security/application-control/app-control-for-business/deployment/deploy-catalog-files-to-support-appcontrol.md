@@ -3,7 +3,7 @@ title: Deploy catalog files to support App Control for Business
 description: Catalog files simplify running unsigned applications in the presence of an App Control for Business policy.
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.date: 11/30/2022
+ms.date: 09/11/2024
 ---
 
 # Deploy catalog files to support App Control for Business

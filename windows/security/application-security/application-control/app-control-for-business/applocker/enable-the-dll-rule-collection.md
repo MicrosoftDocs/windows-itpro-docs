@@ -3,7 +3,7 @@ title: Enable the DLL rule collection
 description: This article for IT professionals describes the steps to enable the DLL rule collection feature for AppLocker.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/21/2023
+ms.date: 09/11/2024
 ---
 
 # Enable the DLL rule collection

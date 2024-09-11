@@ -2,7 +2,7 @@
 title: Create App Control Deny Policy
 description: Explains how to create App Control deny policies
 ms.localizationpriority: medium
-ms.date: 12/31/2017
+ms.date: 09/11/2024
 ms.topic: how-to
 ---
 

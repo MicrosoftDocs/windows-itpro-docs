@@ -3,7 +3,7 @@ title: Plan for AppLocker policy management
 description: This article describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Plan for AppLocker policy management

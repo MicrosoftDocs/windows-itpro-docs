@@ -3,7 +3,7 @@ title: Export an AppLocker policy from a GPO
 description: This article for IT professionals describes the steps to export an AppLocker policy from a Group Policy Object (GPO) so that it can be modified.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/21/2023
+ms.date: 09/11/2024
 ---
 
 # Export an AppLocker policy from a GPO

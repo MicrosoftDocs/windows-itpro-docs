@@ -2,7 +2,7 @@
 title: Testing and Debugging AppId Tagging Policies
 description: Testing and Debugging AppId Tagging Policies to ensure your policies are deployed successfully.
 ms.localizationpriority: medium
-ms.date: 04/29/2022
+ms.date: 09/11/2024
 ms.topic: troubleshooting
 ---
 

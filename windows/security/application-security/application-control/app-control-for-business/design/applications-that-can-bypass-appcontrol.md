@@ -2,7 +2,7 @@
 title: Applications that can bypass App Control and how to block them
 description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
 ms.localizationpriority: medium
-ms.date: 06/14/2023
+ms.date: 09/11/2024
 ms.topic: reference
 ---
 

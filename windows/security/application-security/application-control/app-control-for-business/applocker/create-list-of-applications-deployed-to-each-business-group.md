@@ -3,7 +3,7 @@ title: Create a list of apps deployed to each business group
 description: This article describes the process of gathering app usage requirements from each business group to implement application control policies by using AppLocker.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Gathering app usage requirements

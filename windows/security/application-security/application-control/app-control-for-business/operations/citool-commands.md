@@ -2,7 +2,7 @@
 title: Managing CI policies and tokens with CiTool
 description: Learn how to use policy commands, token commands, and miscellaneous commands in CiTool
 ms.topic: reference
-ms.date: 10/02/2023
+ms.date: 09/11/2024
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---

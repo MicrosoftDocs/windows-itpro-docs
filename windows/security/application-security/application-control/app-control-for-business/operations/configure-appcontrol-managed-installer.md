@@ -2,7 +2,7 @@
 title: Managed installer and ISG technical reference and troubleshooting guide
 description: A technical reference and troubleshooting guide for managed installer and Intelligent Security Graph (ISG).
 ms.localizationpriority: medium
-ms.date: 11/11/2022
+ms.date: 09/11/2024
 ms.topic: troubleshooting
 ---
 

@@ -3,7 +3,7 @@ title: Working with AppLocker rules
 description: This article for IT professionals describes AppLocker rule types and how to work with them for your application control policies.
 ms.localizationpriority: medium
 msauthor: jsuther
-ms.date: 12/21/2023
+ms.date: 09/11/2024
 ms.topic: conceptual
 ---
 

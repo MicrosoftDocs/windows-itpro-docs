@@ -2,7 +2,7 @@
 title: Inbox App Control policies
 description: This article describes the inbox App Control policies that may be active on a device.
 ms.manager: jsuther
-ms.date: 03/10/2023
+ms.date: 09/11/2024
 ms.topic: conceptual
 ms.localizationpriority: medium
 ---

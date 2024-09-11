@@ -3,7 +3,7 @@ title: Monitor app usage with AppLocker
 description: This article for IT professionals describes how to monitor app usage when AppLocker policies are applied.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/19/2023
+ms.date: 09/11/2024
 ---
 
 # Monitor app usage with AppLocker

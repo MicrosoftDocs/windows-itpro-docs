@@ -3,7 +3,7 @@ title: AppLocker deployment guide
 description: This article for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # AppLocker deployment guide

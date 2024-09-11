@@ -3,7 +3,7 @@ title: Understand AppLocker rules and enforcement setting inheritance in Group P
 description: This article for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Understand AppLocker rules and enforcement setting inheritance in Group Policy

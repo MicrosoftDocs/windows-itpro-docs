@@ -2,7 +2,7 @@
 title: Managing and troubleshooting App Control for Business policies
 description: Gather information about how your deployed App Control for Business policies are behaving.
 ms.localizationpriority: medium
-ms.date: 03/30/2023
+ms.date: 09/11/2024
 ms.topic: how-to
 ---
 

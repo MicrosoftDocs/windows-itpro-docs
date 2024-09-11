@@ -2,7 +2,7 @@
 title: Policy creation for common App Control usage scenarios
 description: Develop a plan for deploying App Control for Business in your organization based on these common scenarios.
 ms.localizationpriority: medium
-ms.date: 04/05/2023
+ms.date: 09/11/2024
 ms.topic: conceptual
 ---
 

@@ -3,7 +3,7 @@ title: Create an App Control policy for fully managed devices
 description: App Control for Business restricts which applications users are allowed to run and the code that runs in system core.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 11/07/2022
+ms.date: 09/11/2024
 ---
 
 # Create an App Control policy for fully managed devices

@@ -3,7 +3,7 @@ title: App Control for Business Wizard Supplemental Policy Creation
 description: Creating supplemental application control policies with the App Control Wizard.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 06/07/2023
+ms.date: 09/11/2024
 ---
 
 # Creating a new Supplemental Policy with the Wizard

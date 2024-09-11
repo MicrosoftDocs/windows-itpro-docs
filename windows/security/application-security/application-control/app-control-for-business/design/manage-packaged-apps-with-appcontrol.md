@@ -2,7 +2,7 @@
 title: Manage packaged apps with App Control
 description: Packaged apps, also known as Universal Windows apps, allow you to control the entire app by using a single App Control for Business rule.
 ms.localizationpriority: medium
-ms.date: 03/01/2023
+ms.date: 09/11/2024
 ms.topic: how-to
 ---
 

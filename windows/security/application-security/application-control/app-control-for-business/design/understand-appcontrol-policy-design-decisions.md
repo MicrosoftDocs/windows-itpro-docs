@@ -2,7 +2,7 @@
 title: Understand App Control for Business policy design decisions
 description: Understand App Control for Business policy design decisions.
 ms.localizationpriority: medium
-ms.date: 02/08/2018
+ms.date: 09/11/2024
 ms.topic: conceptual
 ---
 

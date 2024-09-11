@@ -3,7 +3,7 @@ title: Configure the Application Identity service
 description: This article for IT professionals shows how to configure the Application Identity service to start automatically or manually.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Configure the Application Identity service

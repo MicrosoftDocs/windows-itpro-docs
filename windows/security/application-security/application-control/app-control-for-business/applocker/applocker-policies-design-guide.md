@@ -3,7 +3,7 @@ title: AppLocker design guide
 description: This article for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # AppLocker design guide

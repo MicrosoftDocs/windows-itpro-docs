@@ -3,7 +3,7 @@ title: Create a code signing cert for App Control for Business
 description: Learn how to set up a publicly issued code signing certificate, so you can sign catalog files or App Control policies internally.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/01/2022
+ms.date: 09/11/2024
 ---
 
 # Optional: Create a code signing cert for App Control for Business

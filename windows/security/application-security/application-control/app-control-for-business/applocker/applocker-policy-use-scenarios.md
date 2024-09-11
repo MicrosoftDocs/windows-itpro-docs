@@ -3,7 +3,7 @@ title: AppLocker policy use scenarios
 description: This article for the IT professional lists the various application control scenarios in which AppLocker policies can be effectively implemented.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/23/2023
+ms.date: 09/11/2024
 ---
 
 # AppLocker policy use scenarios

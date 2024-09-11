@@ -2,7 +2,7 @@
 title: Authorize reputable apps with the Intelligent Security Graph (ISG)
 description: Automatically authorize applications that Microsoft's ISG recognizes as having known good reputation.
 ms.localizationpriority: medium
-ms.date: 12/31/2017
+ms.date: 09/11/2024
 ms.topic: how-to
 ---
 

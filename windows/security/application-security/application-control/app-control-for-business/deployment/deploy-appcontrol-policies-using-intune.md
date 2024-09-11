@@ -2,7 +2,7 @@
 title: Deploy App Control policies using Mobile Device Management (MDM)
 description: You can use an MDM like Microsoft Intune to configure App Control for Business. Learn how with this step-by-step guide.
 ms.localizationpriority: medium
-ms.date: 08/30/2023
+ms.date: 09/11/2024
 ms.topic: how-to
 ---
 

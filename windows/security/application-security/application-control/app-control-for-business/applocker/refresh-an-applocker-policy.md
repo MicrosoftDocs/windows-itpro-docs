@@ -3,7 +3,7 @@ title: Refresh an AppLocker policy
 description: This article for IT professionals describes the steps to force an update for an AppLocker policy.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Refresh an AppLocker policy

@@ -1,7 +1,7 @@
 ---
 title: Deploy App Control for Business policies with Configuration Manager
 description: You can use Microsoft Configuration Manager to configure App Control for Business. Learn how with this step-by-step guide.
-ms.date: 06/27/2022
+ms.date: 09/11/2024
 ms.topic: how-to
 ms.localizationpriority: medium
 ---

@@ -2,7 +2,7 @@
 title: Allow apps deployed with an App Control managed installer
 description: Explains how to configure a custom Managed Installer.
 ms.localizationpriority: medium
-ms.date: 02/02/2023
+ms.date: 09/11/2024
 ms.topic: how-to
 ---
 

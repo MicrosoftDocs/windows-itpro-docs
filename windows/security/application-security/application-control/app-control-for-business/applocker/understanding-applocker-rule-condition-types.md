@@ -3,7 +3,7 @@ title: Understanding AppLocker rule condition types
 description: This article for the IT professional describes the three types of AppLocker rule conditions.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/23/2023
+ms.date: 09/11/2024
 ---
 
 # Understanding AppLocker rule condition types

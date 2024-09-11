@@ -3,7 +3,7 @@ title: Tools to use with AppLocker
 description: This article for the IT professional describes the tools available to create and administer AppLocker policies.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/23/2023
+ms.date: 09/11/2024
 ---
 
 # Tools to use with AppLocker

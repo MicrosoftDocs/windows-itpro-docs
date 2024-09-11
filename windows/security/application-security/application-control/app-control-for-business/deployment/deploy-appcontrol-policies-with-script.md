@@ -2,7 +2,7 @@
 title: Deploy App Control for Business policies using script
 description: Use scripts to deploy App Control for Business policies. Learn how with this step-by-step guide.
 ms.manager: jsuther
-ms.date: 01/23/2023
+ms.date: 09/11/2024
 ms.topic: how-to
 ms.localizationpriority: medium
 ---

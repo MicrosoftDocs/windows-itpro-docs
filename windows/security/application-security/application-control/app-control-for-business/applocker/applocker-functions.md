@@ -3,7 +3,7 @@ title: AppLocker functions
 description: This article for the IT professional lists the functions and security levels for AppLocker.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/23/2023
+ms.date: 09/11/2024
 ---
 
 # AppLocker functions

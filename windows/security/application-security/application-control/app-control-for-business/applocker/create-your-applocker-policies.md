@@ -3,7 +3,7 @@ title: Create Your AppLocker policies
 description: This overview article for the IT professional describes the steps to create an AppLocker policy and prepare it for deployment.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Create Your AppLocker policies

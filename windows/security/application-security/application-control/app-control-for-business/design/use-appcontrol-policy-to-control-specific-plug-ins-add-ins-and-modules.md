@@ -2,7 +2,7 @@
 title: Use an App Control for Business policy to control specific plug-ins, add-ins, and modules
 description: App Control policies can be used not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps.
 ms.localizationpriority: medium
-ms.date: 11/02/2022
+ms.date: 09/11/2024
 ms.topic: how-to
 ---
 

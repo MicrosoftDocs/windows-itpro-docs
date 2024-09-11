@@ -3,7 +3,7 @@ title: Export an AppLocker policy to an XML file
 description: This article for IT professionals describes the steps to export an AppLocker policy to an XML file for review or testing.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/21/2023
+ms.date: 09/11/2024
 ---
 
 # Export an AppLocker policy to an XML file

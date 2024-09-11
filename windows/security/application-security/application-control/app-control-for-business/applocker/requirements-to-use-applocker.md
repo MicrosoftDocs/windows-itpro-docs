@@ -3,7 +3,7 @@ title: Requirements to use AppLocker
 description: This article for the IT professional lists software requirements to use AppLocker on the supported Windows operating systems.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/23/2023
+ms.date: 09/11/2024
 ---
 
 # Requirements to use AppLocker

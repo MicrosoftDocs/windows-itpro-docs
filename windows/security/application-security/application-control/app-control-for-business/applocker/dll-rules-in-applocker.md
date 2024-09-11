@@ -3,7 +3,7 @@ title: DLL rules in AppLocker
 description: This article describes the file formats and available default rules for the DLL rule collection.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/23/2023
+ms.date: 09/11/2024
 ---
 
 # DLL rules in AppLocker

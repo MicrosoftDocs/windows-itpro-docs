@@ -2,7 +2,7 @@
 title: Designing, creating, managing, and troubleshooting App Control for Business AppId Tagging policies
 description: How to design, create, manage, and troubleshoot your App Control AppId Tagging policies
 ms.localizationpriority: medium
-ms.date: 04/27/2022
+ms.date: 09/11/2024
 ms.topic: conceptual
 ---
 

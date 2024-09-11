@@ -3,7 +3,7 @@ title: Understanding the path rule condition in AppLocker
 description: This article explains how to apply the AppLocker path rule condition and its advantages and disadvantages.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/23/2023
+ms.date: 09/11/2024
 ---
 
 # Understanding the path rule condition in AppLocker

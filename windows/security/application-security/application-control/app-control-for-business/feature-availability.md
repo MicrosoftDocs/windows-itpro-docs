@@ -2,7 +2,7 @@
 title: App Control for Business feature availability
 description: Compare App Control for Business and AppLocker feature availability.
 ms.localizationpriority: medium
-ms.date: 12/21/2023
+ms.date: 09/11/2024
 ms.topic: overview
 ---
 

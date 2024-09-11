@@ -3,7 +3,7 @@ title: Working with AppLocker policies
 description: This article for IT professionals provides links to procedural articles about creating, maintaining, and testing AppLocker policies.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/21/2023
+ms.date: 09/11/2024
 ---
 
 # Working with AppLocker policies

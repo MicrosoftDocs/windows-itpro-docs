@@ -2,7 +2,7 @@
 title: Enforce App Control for Business policies
 description: Learn how to switch an App Control policy from audit to enforced mode.
 ms.manager: jsuther
-ms.date: 04/22/2021
+ms.date: 09/11/2024
 ms.topic: how-to
 ms.localizationpriority: medium
 ---

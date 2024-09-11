@@ -3,7 +3,7 @@ title: Document your app list
 description: This planning article describes the app information that you should document when you create a list of apps for AppLocker policies.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Document your app list
@@ -14,7 +14,7 @@ This planning article describes the app information that you should document whe
 
 ### Apps
 
-Record the name of the app, its publisher information (if digitally signed), and its importance to the business. 
+Record the name of the app, its publisher information (if digitally signed), and its importance to the business.
 
 ### Installation path
 

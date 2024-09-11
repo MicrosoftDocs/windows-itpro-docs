@@ -2,7 +2,7 @@
 title: Query Application Control events with Advanced Hunting
 description: Learn how to query App Control for Business events across your entire organization by using Advanced Hunting.
 ms.localizationpriority: medium
-ms.date: 03/01/2022
+ms.date: 09/11/2024
 ms.topic: troubleshooting
 ---
 

@@ -2,7 +2,7 @@
 title: App Control Admin Tips & Known Issues
 description: App Control Known Issues
 ms.manager: jsuther
-ms.date: 04/15/2024
+ms.date: 09/11/2024
 ms.topic: troubleshooting
 ms.localizationpriority: medium
 ---

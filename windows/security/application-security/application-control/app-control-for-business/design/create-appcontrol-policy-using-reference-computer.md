@@ -2,7 +2,7 @@
 title: Create an App Control policy using a reference computer
 description: To create an App Control for Business policy that allows all code installed on a reference computer within your organization, follow this guide.
 ms.localizationpriority: medium
-ms.date: 08/08/2022
+ms.date: 09/11/2024
 ms.topic: how-to
 ---
 

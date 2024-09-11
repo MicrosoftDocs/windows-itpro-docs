@@ -3,7 +3,7 @@ title: Edit AppLocker rules
 description: This article for IT professionals describes the steps to edit a publisher rule, path rule, and file hash rule in AppLocker.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/21/2023
+ms.date: 09/11/2024
 ---
 
 # Edit AppLocker rules

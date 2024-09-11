@@ -2,7 +2,7 @@
 title: App Control debugging and troubleshooting guide
 description: Learn how to debug and troubleshoot app and script failures when using App Control
 ms.topic: how-to
-ms.date: 04/06/2023
+ms.date: 09/11/2024
 ---
 
 # App Control debugging and troubleshooting

@@ -3,7 +3,7 @@ title: Merge AppLocker policies by using Set-ApplockerPolicy
 description: This article for IT professionals describes the steps to merge AppLocker policies by using Windows PowerShell.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 09/11/2024
 ---
 
 # Merge AppLocker policies by using Set-ApplockerPolicy

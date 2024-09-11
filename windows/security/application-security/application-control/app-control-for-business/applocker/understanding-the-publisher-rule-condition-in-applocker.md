@@ -3,7 +3,7 @@ title: Understanding the publisher rule condition in AppLocker
 description: This article explains how to apply the AppLocker publisher rule condition and what controls are available.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 12/23/2023
+ms.date: 09/11/2024
 ---
 
 # Understanding the publisher rule condition in AppLocker
