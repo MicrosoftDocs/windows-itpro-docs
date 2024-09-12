@@ -283,31 +283,30 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.DatasourceBackupApplicationRestoreAdd
 
-No content is currently available.
+Represents the basic metadata about the interesting backed up applications to be restored on the system. This event describes whether the backed up applications are incompatible with upcoming Windows Feature updates. Microsoft uses this information to understand and address problems with computers receiving updates.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **AppraiserVersion**  No content is currently available.
-- **BackupLabel**  No content is currently available.
-- **CatalogSource**  No content is currently available.
-- **CreatePlaceholder**  No content is currently available.
-- **Name**  No content is currently available.
-- **ProgramId**  No content is currently available.
-- **SdbEntryGuid**  No content is currently available.
-- **SdbRestoreAction**  No content is currently available.
-
+- **AppraiserVersion**  The version of the appraiser file that is generating the events.
+- **BackupLabel**  Indicates compatibility information about the application found on the backup device.
+- **CatalogSource**  The type of application.
+- **CreatePlaceholder**  Represents the decision regarding if the application should be restored.
+- **Name**  Name of the application.
+- **ProgramId**  A hash of the Name, Version, Publisher, and Language of an application used to identify it.
+- **SdbEntryGuid**  Indicates the SDB entry that apply to this file.
+- **SdbRestoreAction**  NIndicates compatibility information about the application found on the backup device.
 
 ### Microsoft.Windows.Appraiser.General.DatasourceBackupApplicationRestoreStartSync
 
-No content is currently available.
+This event indicates that a new set of DatasourceBackupApplicationRestoreAdd events will be sent.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **AppraiserVersion**  No content is currently available.
+- **AppraiserVersion**  The version of the appraiser binary generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPassiveRemove
@@ -359,16 +358,16 @@ The following fields are available:
 
 ### Microsoft.Windows.Appraiser.General.RestoreContext
 
-No content is currently available.
+This event indicates the result of the restore appraisal.
 
 The following fields are available:
 
-- **AppraiserBranch**  No content is currently available.
-- **AppraiserVersion**  No content is currently available.
-- **Context**  No content is currently available.
-- **PCFP**  No content is currently available.
-- **Result**  No content is currently available.
-- **Time**  No content is currently available.
+- **AppraiserBranch**  The source branch in which the currently-running version of appraiser was built.
+- **AppraiserVersion**  The version of the appraiser binary generating the events.
+- **Context**  Indicates what mode appraiser is running in, this should be Restore.
+- **PCFP**  An ID for the system, calculated by hashing hardware identifiers.
+- **Result**  HRESULT indicating the result of the restore appraisal.
+- **Time**  The client time of the event.
 
 
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPopCntAdd
@@ -408,18 +407,17 @@ The following fields are available:
 - **XboxLiveDeviceId**  Retrieves the unique device ID of the console.
 - **XboxLiveSandboxId**  Retrieves the developer sandbox ID if the device is internal to Microsoft.
 
-
 ## Code Integrity events
 
 ### Microsoft.Windows.Security.CodeIntegrity.Driver.AggregatedBlock
 
-No content is currently available.
+AggregatedBlock is an event with non-PII details on drivers blocked by code integrity. Fires no more than once per 25 days per driver.
 
 The following fields are available:
 
-- **CertificateInfo**  No content is currently available.
-- **DriverInfo**  No content is currently available.
-- **EventVersion**  No content is currently available.
+- **CertificateInfo**  Non-PII details about the digital signature(s) and digital countersignatures on driver binary files which was blocked from loading.
+- **DriverInfo**  Non-PII details about the driver binary file and its digital signature(s) and digital countersignature.
+- **EventVersion**  The version of the schema used in the DriverInfo field.
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.AutoEnablementIsBlocked
@@ -518,16 +516,16 @@ This event tracks when Defender turns off Smart App Control via the Cloud.
 
 ### Microsoft.Windows.Security.CodeIntegrity.State.DefenderSwitchedNWOffIgnored
 
-No content is currently available.
+This event indicates that a request to switch Smart App Control off by Defender from the cloud was ignored as the device was still within the grace period after OOBE.
 
 The following fields are available:
 
-- **Count**  No content is currently available.
-- **CurrentTimeMax**  No content is currently available.
-- **CurrentTimeMin**  No content is currently available.
-- **NightsWatchDesktopIgnoreAutoOptOut**  No content is currently available.
-- **OOBECompleteTime**  No content is currently available.
-- **OOBESafetyTime**  No content is currently available.
+- **Count**  Count of events in the aggregation window.
+- **CurrentTimeMax**  Time of latest event.
+- **CurrentTimeMin**  Time of first event.
+- **NightsWatchDesktopIgnoreAutoOptOut**  Value of NightsWatchDesktopIgnoreAutoOptOut in registry.
+- **OOBECompleteTime**  Value of OOBECompleteTime in registry.
+- **OOBESafetyTime**  Start of timer set by Smart App Control if OOBECompleteTime was not set.
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.State.SwitchedNWOff
@@ -777,17 +775,16 @@ The following fields are available:
 
 ### CbsServicingProvider.CbsFodInventory
 
-No content is currently available.
+This event reports on the state of the current optional Windows content obtained from Windows Update.
 
 The following fields are available:
 
-- **capabilities**  No content is currently available.
-- **initiatedOffline**  No content is currently available.
-- **stackBuild**  No content is currently available.
-- **stackMajorVersion**  No content is currently available.
-- **stackMinorVersion**  No content is currently available.
-- **stackRevision**  No content is currently available.
-
+- **capabilities**  A bitmask with each position indicating if each type of optional Windows content is currently enabled.
+- **initiatedOffline**  A true or false value indicating if the inventory describes an offline WIM file.
+- **stackBuild**  The build number of the servicing stack.
+- **stackMajorVersion**  The major version number of the servicing stack.
+- **stackMinorVersion**  The minor version number of the servicing stack.
+- **stackRevision**  The revision number of the servicing stack.
 
 ### CbsServicingProvider.CbsLateAcquisition
 
@@ -823,15 +820,15 @@ The following fields are available:
 
 ### CbsServicingProvider.CbsPostponedReserveInstallDecision
 
-No content is currently available.
+This event reports on the scheduling of installs for Windows cumulative security updates.
 
 The following fields are available:
 
-- **hardReserveSize**  No content is currently available.
-- **hardReserveUsedSpace**  No content is currently available.
-- **postponed**  No content is currently available.
-- **userFreeSpace**  No content is currently available.
-- **usingReserves**  No content is currently available.
+- **hardReserveSize**  The size of the disk space reserve used to update Windows OS content.
+- **hardReserveUsedSpace**  The disk space currently in use in the reserve used to update Windows OS content.
+- **postponed**  A boolean indicating if updating processing has been delayed to shutdown due to low disk space.
+- **userFreeSpace**  The amount of free disk space available on the OS volume.
+- **usingReserves**  A boolean indicating whether disk space reserves are being used to install the update.
 
 
 ### CbsServicingProvider.CbsQualityUpdateInstall
@@ -1074,24 +1071,24 @@ The following fields are available:
 
 ### DxgKrnlTelemetry.GPUStartAdapter
 
-No content is currently available.
+This event records information about an attempt to start a graphics adapter.
 
 The following fields are available:
 
-- **DDIInterfaceVersion**  No content is currently available.
-- **DriverDate**  No content is currently available.
-- **DriverRank**  No content is currently available.
-- **DriverVersion**  No content is currently available.
-- **FailureReason**  No content is currently available.
-- **GPUDeviceID**  No content is currently available.
-- **GPURevisionID**  No content is currently available.
-- **GPUVendorID**  No content is currently available.
-- **IsSoftwareDevice**  No content is currently available.
-- **StartAdapterFailedSequenceId**  No content is currently available.
-- **Status**  No content is currently available.
-- **SubSystemID**  No content is currently available.
-- **SubVendorID**  No content is currently available.
-- **version**  No content is currently available.
+- **DDIInterfaceVersion**  Version of the display driver interface (DDI).
+- **DriverDate**  Date of the display driver.
+- **DriverRank**  Rank for the display driver.
+- **DriverVersion**  Version of the display driver.
+- **FailureReason**  Numeric value indicating the stage in which the startup attempt failed.
+- **GPUDeviceID**  Device identifier for the graphics adapter.
+- **GPURevisionID**  Revision identifier for the graphics adapter.
+- **GPUVendorID**  Vendor identifier for the graphics adapter.
+- **IsSoftwareDevice**  Boolean value indicating whether the graphics adapter is implemented in software only.
+- **StartAdapterFailedSequenceId**  Numeric value indicating the graphics adapter startup attempt count.
+- **Status**  Numeric value indicating the status of the graphics adapter startup attempt.
+- **SubSystemID**  Subsystem identifier for the graphics adapter.
+- **SubVendorID**  Subsystem vendor identifier for the graphics identifier.
+- **version**  Version of the schema for the event.
 
 
 ## Failover Clustering events
@@ -1441,13 +1438,13 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationKbStartSync
 
-No content is currently available.
+This event represents the basic metadata about an application updates (KBs) installed on the system. This event is used to understand the applications on a machine to determine if there will be compatibility issues when upgrading Windows.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
-- **InventoryVersion**  No content is currently available.
+- **InventoryVersion**  The version of the inventory components.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationRemove
@@ -1750,12 +1747,12 @@ The following fields are available:
 
 ### Aria.af397ef28e484961ba48646a5d38cf54.Microsoft.WebBrowser.Installer.EdgeUpdate.PingXml
 
-No content is currently available.
+The PingXml event sends detailed information pertaining to a specific instance of an update process in MicrosoftEdgeUpdate. This event contains Device Connectivity and Configuration, Product and Service Performance, and Software Setup and Inventory data. Each PingXml event can contain update logs from multiple different applications, and each application node in the XML payload can contain multiple different ping events. This event is sent whenever an update process occurs in the MicrosoftEdgeUpdate, regardless of the exit status. This event is used to track the reliability and performance of the MicrosoftEdgeUpdate process. The payload of this event is defined in the protocol definition header file.
 
 The following fields are available:
 
-- **EventInfo.Level**  No content is currently available.
-- **Xml**  No content is currently available.
+- **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
+- **Xml**  XML-encoded string representing the request payload of the ping event. The request payload includes data and metadata for four nodes: the request itself, the hardware of the device, the OS of the device, and each updated application. Each application node includes additional nodes for individual ping events.
 
 
 ## Migration events
@@ -1874,12 +1871,12 @@ The following fields are available:
 
 ### Microsoft.Windows.Analog.HolographicDriverClient.TelemetryUserPresenceChanged
 
-No content is currently available.
+This event sends data indicating the state detected by user presence sensor. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
-- **correlationGuid**  No content is currently available.
-- **isPresent**  No content is currently available.
+- **correlationGuid**  Unique correlation Guid Id.
+- **isPresent**  State detected by user presence sensor.
 
 
 ### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Entered
@@ -1909,57 +1906,57 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.NGC.KspSvc.NgcUserIdKeyFinalize
 
-No content is currently available.
+This event traces Windows Hello key creation finalize.
+
 
 The following fields are available:
 
-- **accountType**  No content is currently available.
-- **cacheType**  No content is currently available.
-- **finalizeStatus**  No content is currently available.
-- **gestureRequired**  No content is currently available.
-- **isIsoContainer**  No content is currently available.
-- **isVsm**  No content is currently available.
-- **keyAccountId**  No content is currently available.
-- **keyAlgId**  No content is currently available.
-- **keyDomain**  No content is currently available.
-- **keyImplType**  No content is currently available.
-- **keyTenant**  No content is currently available.
-- **keyType**  No content is currently available.
-- **signStatus**  No content is currently available.
-- **silentByCaller**  No content is currently available.
-- **silentByProperty**  No content is currently available.
+- **accountType**  The account type of the user.
+- **cacheType**  The cache type of the key.
+- **finalizeStatus**  Returned status code after the finalize operation.
+- **gestureRequired**  The operation requires a gesture.
+- **isIsoContainer**  Indicates if it's using IsoContainer.
+- **isVsm**  Indicates if Container is in Vsm.
+- **keyAccountId**  Key account ID.
+- **keyAlgId**  Key Algorithm ID.
+- **keyDomain**  Key domain name.
+- **keyImplType**  Key implementation type.
+- **keyTenant**  Key tenant name.
+- **keyType**  Key type.
+- **signStatus**  Returned status code after the finalize operation.
+- **silentByCaller**  Indicates whether the caller wanted to finalize silently.
+- **silentByProperty**  Indicates whether the key property specified to finalize silently.
 
 
 ### Microsoft.Windows.Security.NGC.KspSvc.NgcUserIdKeySignHash
 
-No content is currently available.
+This events traces Windows Hello key signing details.
 
 The following fields are available:
 
-- **accountType**  No content is currently available.
-- **cacheType**  No content is currently available.
-- **callerCmdLine**  No content is currently available.
-- **didPrompt**  No content is currently available.
-- **gestureRequired**  No content is currently available.
-- **isCacheWithTimedCounterEnabled**  No content is currently available.
-- **isCallerProcessQueryLimited**  No content is currently available.
-- **isUnlockTimeSet**  No content is currently available.
-- **keyAccountId**  No content is currently available.
-- **keyDomain**  No content is currently available.
-- **keyImplType**  No content is currently available.
-- **keyTenant**  No content is currently available.
-- **keyType**  No content is currently available.
-- **numSignatures**  No content is currently available.
-- **persistedInPinCache**  No content is currently available.
-- **protectionLevel**  No content is currently available.
-- **sessionGuid**  No content is currently available.
-- **signStatus**  No content is currently available.
-- **silentByCaller**  No content is currently available.
-- **silentByProperty**  No content is currently available.
-- **timeSinceUnlockMs**  No content is currently available.
-- **usedPinCache**  No content is currently available.
-- **validTicket**  No content is currently available.
-
+- **accountType**  The account type of the user.
+- **cacheType**  The cache type of the key.
+- **callerCmdLine**  Caller process command line string.
+- **didPrompt**  Whether a UI prompt was triggered.
+- **gestureRequired**  The operation requires a gesture.
+- **isCacheWithTimedCounterEnabled**  New caching mechanism is enabled.
+- **isCallerProcessQueryLimited**  Indicates if caller process failed to be opened with PROCESS_VM_READ privilege.
+- **isUnlockTimeSet**  We have a valid unlock time to use.
+- **keyAccountId**  Hashed key account ID.
+- **keyDomain**  Hashed key domain name.
+- **keyImplType**  The implementation type of the key.
+- **keyTenant**  Hashed key tenant name.
+- **keyType**  Key type.
+- **numSignatures**  Number of signatures made since logon or unlock.
+- **persistedInPinCache**  The PIN was persisted in the cache.
+- **protectionLevel**  Specifies whether the caller process is a PPL and at what level.
+- **sessionGuid**  Unique identifier for the current user session.
+- **signStatus**  Returned status code after the sign operation.
+- **silentByCaller**  Indicates whether the caller wanted to sign silently.
+- **silentByProperty**  Indicates whether the key property specified to sign silently.
+- **timeSinceUnlockMs**  Time since logon or unlock in milliseconds.
+- **usedPinCache**  The PIN cache was used to attempt to sign.
+- **validTicket**  The provided ticket does not match the default or invalid auth ticket.
 
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateFailed
 
@@ -1989,70 +1986,70 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateSucceeded
 
-No content is currently available.
+This event indicates if the Secure Boot Update succeded.
 
 The following fields are available:
 
-- **Action**  No content is currently available.
-- **IsRebootRequiredBeforeUpdate**  No content is currently available.
-- **IsResealNeeded**  No content is currently available.
-- **RevokedBootmanager**  No content is currently available.
-- **SecureBootUpdateCaller**  No content is currently available.
-- **UpdateType**  No content is currently available.
-- **WillResealSucceed**  No content is currently available.
+- **Action**  Indicates the stage for success.
+- **IsRebootRequiredBeforeUpdate**  Indicates if reboot is required for before re-attempting the update.
+- **IsResealNeeded**  Indicates if Bitlocker reseal is needed.
+- **RevokedBootmanager**  Indicates if there is a revoked bootmgr on the machine.
+- **SecureBootUpdateCaller**  Info about the caller of the update.
+- **UpdateType**  VariableMask like DB, DBX.
+- **WillResealSucceed**  Inform if reseal will succeed.
 
 
 ### Microsoft.Windows.Security.SBServicingCore.ApplySecureBootUpdateCompleted
 
-No content is currently available.
+This event logs when the installer completes Secureboot update.
 
 The following fields are available:
 
-- **Action**  No content is currently available.
-- **hr**  No content is currently available.
-- **IsResealNeeded**  No content is currently available.
-- **sbServicingFailureReason**  No content is currently available.
-- **SecureBootUpdateCaller**  No content is currently available.
-- **UpdateType**  No content is currently available.
-- **WillResealSucceed**  No content is currently available.
+- **Action**  String that tells us the failure stage if any.
+- **hr**  error code.
+- **IsResealNeeded**  Is bitlocker reseal was needed on this machine.
+- **sbServicingFailureReason**  Enum containing failure details.
+- **SecureBootUpdateCaller**  Caller of the upate like Secureboot AI, tpmtask or dbupdater.
+- **UpdateType**  Update type DB or DBX.
+- **WillResealSucceed**  If bitlocker reseal will succeed on this machine.
 
 
 ### Microsoft.Windows.Security.SBServicingCore.ApplySecureBootUpdateStarted
 
-No content is currently available.
+This events logs when Secureboot updating containing DB/DBX payload starts.
 
 The following fields are available:
 
-- **SecureBootUpdateCaller**  No content is currently available.
-- **UpdateType**  No content is currently available.
+- **SecureBootUpdateCaller**  Caller of the update like Secureboot AI, TPMTask or DBUpdater.
+- **UpdateType**  Update type like DB or DBX.
 
 
 ### Microsoft.Windows.Security.SBServicingCore.SBServicingCoreFunctionFailed
 
-No content is currently available.
+This events logs when some core function of Secureboot AI fails.
 
 The following fields are available:
 
-- **Action**  No content is currently available.
-- **Function**  No content is currently available.
-- **hr**  No content is currently available.
+- **Action**  stage at which the failure occured.
+- **Function**  name of the function where the failure occured.
+- **hr**  error code.
 
 
 ### Microsoft.Windows.Shell.CortanaSearch.WebView2ProcessFailed
 
-No content is currently available.
+This event tracks if the WebView2 process failed.
 
 The following fields are available:
 
-- **ExitCode**  No content is currently available.
-- **ProcessFailedKind**  No content is currently available.
-- **Reason**  No content is currently available.
-- **SessionId**  No content is currently available.
+- **ExitCode**  WebView2 exit code.
+- **ProcessFailedKind**  WebView2 process failure kind.
+- **Reason**  WebView2 process failure reason.
+- **SessionId**  WebView2 sessionId.
 
 
 ### Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.GetUserAccountState
 
-No content is currently available.
+This event keeps track of if the user's account is in a good state upon loading the Settings Accounts L1 page.
 
 The following fields are available:
 
@@ -2072,11 +2069,11 @@ The following fields are available:
 
 ### Microsoft.Windows.WinRE.Agent.CreateWinRePartitionFailed
 
-No content is currently available.
+This event emits failure of the Creation of the WinRE partition operation.
 
 The following fields are available:
 
-- **ErrorCode**  No content is currently available.
+- **ErrorCode**  Error code.
 
 
 ### Microsoft.Windows.WinRE.Agent.ExtendOsPartitionSucceed
@@ -2084,14 +2081,13 @@ The following fields are available:
 This event emits success for the extending OS Partition operation.
 
 
-
 ### Microsoft.Windows.WinRE.Agent.ShrinkOsPartitionFailed
 
-No content is currently available.
+This event captures OS partition shrink operation failures during the WinRE servicing.
 
 The following fields are available:
 
-- **HRESULT**  No content is currently available.
+- **HRESULT**  Error code.
 
 
 ### Microsoft.Windows.WinRE.Agent.WinreFormatPartition
@@ -2576,52 +2572,52 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginAcquireLicense
 
-No content is currently available.
+During App Installs and updates, a license is acquired to ensure the app/machine has an entitlement to the app.
 
 The following fields are available:
 
-- **AggregatedPackageFullNames**  No content is currently available.
-- **AttemptNumber**  The retry count for the install item.
-- **BundleId**  The Item bundle id.
-- **CategoryId**  The Item category Id.
+- **AggregatedPackageFullNames**  The name(s) of all packages to be downloaded and installed.
+- **AttemptNumber**  Total number of install attempts before this operation.
+- **BundleId**  The identity of the flight associated with this product.
+- **CategoryId**  The identity of the package(s) being installed.
 - **ClientAppId**  Client App Id (different in case of auto updates or interactive updates from the app).
-- **IsBundle**  No content is currently available.
-- **IsInteractive**  Was this call a result of user interaction.
-- **IsMandatory**  No content is currently available.
-- **IsRemediation**  Was the item a repair.
-- **IsRestore**  No content is currently available.
-- **IsUpdate**  Is it an update.
-- **ParentBundleId**  No content is currently available.
-- **PFN**  The Product Full Name.
-- **ProductId**  The Product Id.
-- **SystemAttemptNumber**  No content is currently available.
-- **UserAttemptNumber**  No content is currently available.
-- **WUContentId**  No content is currently available.
+- **IsBundle**  The identity of the app that initiated this operation.
+- **IsInteractive**  True if this operation was requested by a user.
+- **IsMandatory**  True if this is a mandatory update.
+- **IsRemediation**  True if this install is repairing a previous install.
+- **IsRestore**  True when automatically restoring a previously acquired product.
+- **IsUpdate**  True if this is a product update.
+- **ParentBundleId**  The Product ID of the parent if this product is part of a bundle.
+- **PFN**  Product Family Name of this product being installed.
+- **ProductId**  The Store Product ID for the product being installed.
+- **SystemAttemptNumber**  Total number of automatic attempts to install before cancellation.
+- **UserAttemptNumber**  Total number of user attempts to install before cancellation.
+- **WUContentId**  Licensing identity of this package.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginDownload
 
-No content is currently available.
+This event is fired during the app update or install process when actual bits are being downloaded, this particular event is fired at the beginning of the process to indicate a state change to "Downloading". StoreAgent events are needed to help keep Windows pre-installed 1st party apps up to date and secure such as the mail and calendar apps. App update failure can be unique across devices and without this data from every device we will not be able to track the success/failure and fix any future vulnerabilities related to these built in Windows Apps.
 
 The following fields are available:
 
-- **AggregatedPackageFullNames**  No content is currently available.
-- **AttemptNumber**  Number of retry attempts before it was cancelled.
-- **BundleId**  The Item bundle id.
-- **CategoryId**  The Item category Id.
-- **ClientAppId**  Client App Id (different in case of auto updates or interactive updates from the app).
-- **IsBundle**  No content is currently available.
-- **IsInteractive**  Was this call a result of user interaction.
-- **IsMandatory**  No content is currently available.
-- **IsRemediation**  Was the item a repair.
-- **IsRestore**  No content is currently available.
-- **IsUpdate**  Is it an update.
-- **ParentBundleId**  No content is currently available.
-- **PFN**  The Product Full Name.
-- **ProductId**  The Product Id.
-- **SystemAttemptNumber**  No content is currently available.
-- **UserAttemptNumber**  No content is currently available.
-- **WUContentId**  No content is currently available.
+- **AggregatedPackageFullNames**  The name(s) of all packages to be downloaded and installed.
+- **AttemptNumber**  Total number of install attempts before this operation.
+- **BundleId**  The identity of the flight associated with this product.
+- **CategoryId**  The identity of the package(s) being installed.
+- **ClientAppId**  The identity of the app that initiated this operation.
+- **IsBundle**  True if this is a bundle.
+- **IsInteractive**  True if this operation was requested by a user.
+- **IsMandatory**  True if this is a mandatory update.
+- **IsRemediation**  True if this install is repairing a previous install.
+- **IsRestore**  True when automatically restoring a previously acquired product.
+- **IsUpdate**  True if this is a product update.
+- **ParentBundleId**  The product ID of the parent if this product is part of a bundle.
+- **PFN**  Product Family Name of app being downloaded.
+- **ProductId**  The Store Product ID for the product being installed.
+- **SystemAttemptNumber**  Total number of automatic attempts to install before cancellation.
+- **UserAttemptNumber**  Total number of user attempts to install before cancellation.
+- **WUContentId**  NLicensing identity of this package.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginGetFreeEntitlement
@@ -2637,60 +2633,59 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginInstall
 
-No content is currently available.
+This event is fired near the end stage of a new app install or update after the bits have been downloaded. StoreAgent events are needed to help keep Windows pre-installed 1st party apps up to date and secure such as the mail and calendar apps. App update failure can be unique across devices and without this data from every device we will not be able to track the success/failure and fix any future vulnerabilities related to these built in Windows Apps.
 
 The following fields are available:
 
-- **AggregatedPackageFullNames**  No content is currently available.
-- **AttemptNumber**  Number of retry attempts before it was cancelled.
-- **BundleId**  The Item bundle id.
-- **CategoryId**  The Item category Id.
-- **ClientAppId**  Client App Id (different in case of auto updates or interactive updates from the app).
-- **IsBundle**  No content is currently available.
-- **IsInteractive**  Was this call a result of user interaction.
-- **IsMandatory**  No content is currently available.
-- **IsRemediation**  Was the item a repair.
-- **IsRestore**  No content is currently available.
-- **IsUpdate**  Is it an update.
-- **ParentBundleId**  No content is currently available.
-- **PFN**  The Product Full Name.
-- **ProductId**  The Product Id.
-- **SystemAttemptNumber**  No content is currently available.
-- **UserAttemptNumber**  No content is currently available.
-- **WUContentId**  No content is currently available.
-
+- **AggregatedPackageFullNames**  The name(s) of all packages to be downloaded and installed.
+- **AttemptNumber** Total number of install attempts before this operation.
+- **BundleId**  The identity of the flight associated with this product.
+- **CategoryId**  The identity of the package(s) being installed.
+- **ClientAppId**  The identity of the app that initiated this operation.
+- **IsBundle**  True if this is a bundle.
+- **IsInteractive**  True if this operation was requested by a user.
+- **IsMandatory**  True if this is a mandatory update.
+- **IsRemediation**  True if this install is repairing a previous install.
+- **IsRestore**  True when automatically restoring a previously acquired product.
+- **IsUpdate**  True if this is a product update.
+- **ParentBundleId**  The product ID of the parent if this product is part of a bundle.
+- **PFN**  The name(s) of the package(s) requested for install.
+- **ProductId**  The Store Product ID for the product being installed.
+- **SystemAttemptNumber**  Total number of automatic attempts to install.
+- **UserAttemptNumber**  Total number of user attempts to install.
+- **WUContentId**  Licensing identity of this package.
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BeginSearchUpdatePackages
 
-No content is currently available.
+This event is fired when looking for app updates.
 
 The following fields are available:
 
-- **AttemptNumber**  No content is currently available.
-- **BundleId**  No content is currently available.
-- **CategoryId**  No content is currently available.
-- **ClientAppId**  No content is currently available.
-- **IsBundle**  No content is currently available.
-- **IsInteractive**  No content is currently available.
-- **IsMandatory**  No content is currently available.
-- **IsRemediation**  No content is currently available.
-- **IsRestore**  No content is currently available.
-- **IsUpdate**  No content is currently available.
-- **ParentBundleId**  No content is currently available.
-- **PFN**  No content is currently available.
-- **ProductId**  No content is currently available.
-- **SystemAttemptNumber**  No content is currently available.
-- **UserAttemptNumber**  No content is currently available.
-- **WUContentId**  No content is currently available.
+- **AttemptNumber**  Total number of install attempts before this operation.
+- **BundleId**  The identity of the flight associated with this product.
+- **CategoryId**  The identity of the package(s) being installed.
+- **ClientAppId**  The identity of the app that initiated this operation.
+- **IsBundle**  True if this is a bundle.
+- **IsInteractive**  True if this operation was requested by a user.
+- **IsMandatory**  True if this is a mandatory update.
+- **IsRemediation**  True if this install is repairing a previous install.
+- **IsRestore**  True when automatically restoring a previously acquired product.
+- **IsUpdate**  True if this is a product update.
+- **ParentBundleId**  The product ID of the parent if this product is part of a bundle.
+- **PFN**  The name(s) of the package(s) requested for install.
+- **ProductId**  The Store Product ID for the product being installed.
+- **SystemAttemptNumber**  Total number of automatic attempts to install.
+- **UserAttemptNumber**  Total number of user attempts to install.
+- **WUContentId**  Licensing identity of this package.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.BlockLowPriorityWorkItems
 
-No content is currently available.
+This event is fired when the BlockLowPriorityWorkItems method is called, stopping the queue from installing LowPriority work items.
 
 The following fields are available:
 
-- **ClientId**  No content is currently available.
+- **ClientId**  Client ID of the caller.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.CancelInstallation
@@ -2935,12 +2930,12 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.InstallRequestReceived
 
-No content is currently available.
+This event is sent when a product install request is received by AppInstallManager.
 
 The following fields are available:
 
-- **ClientId**  No content is currently available.
-- **StoreId**  No content is currently available.
+- **ClientId**  Client ID of the caller.
+- **StoreId**  The Store ID for the product being installed.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.PauseInstallation
@@ -2973,44 +2968,44 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.QueueStuckError
 
-No content is currently available.
+This event indicates that the Install Queue is in a stuck state.
 
 The following fields are available:
 
-- **ItemLifetimeInSeconds**  No content is currently available.
-- **OpenSlots**  No content is currently available.
-- **PendingItems**  No content is currently available.
-- **QueueItems**  No content is currently available.
+- **ItemLifetimeInSeconds**  The amount of time elapsed since the item had been created in seconds at the time of the error.
+- **OpenSlots**  The number of open slots in the queue at the time of the error.
+- **PendingItems**  The number of pending items in the queue at the time of the error.
+- **QueueItems**  The number of items in the queue at the time of the error.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.RestoreDeviceMetrics
 
-No content is currently available.
+This event provides an informational summary of the apps returned from the restorable apps data store.
 
 The following fields are available:
 
-- **DeferredAppIds**  No content is currently available.
-- **DelayedAppIds**  No content is currently available.
-- **NumBackupApps**  No content is currently available.
-- **NumCompatibleApps**  No content is currently available.
-- **NumIncompatibleApps**  No content is currently available.
-- **NumProcessedBackupApps**  No content is currently available.
+- **DeferredAppIds**  The number of backed-up apps that will be auto-installed at an optimal time for the machine, determined by the policies of an Windows component called the Universal Orchestrator.
+- **DelayedAppIds**  The number of backed-up apps that will be auto-installed one hour after device setup.
+- **NumBackupApps**  The number of apps returned from the restorable apps data store.
+- **NumCompatibleApps**  The number of backed-up apps reported by compatibility service to be compatible.
+- **NumIncompatibleApps**  The number of backed-up apps reported by compatibility service to be incompatible.
+- **NumProcessedBackupApps**  The number of backed-up apps for which we have instructed AppRestore Service to create a placeholder.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.RestoreError
 
-No content is currently available.
+This event indicates a blocking error occurred during the restore compatibility check.
 
 The following fields are available:
 
-- **ErrorCode**  No content is currently available.
-- **ErrorLocation**  No content is currently available.
-- **ErrorMessage**  No content is currently available.
-- **ErrorMethod**  No content is currently available.
-- **ErrorName**  No content is currently available.
-- **ErrorType**  No content is currently available.
-- **LineNumber**  No content is currently available.
-- **Severity**  No content is currently available.
+- **ErrorCode**  The error code associated with the error.
+- **ErrorLocation**  The location of the error.
+- **ErrorMessage**  The message associated with the error.
+- **ErrorMethod**  The method the error occurred in.
+- **ErrorName**  The name of the error.
+- **ErrorType**  The type of the error.
+- **LineNumber**  The line number the error occurred on.
+- **Severity**  The severity level of the error.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.ResumeInstallation
@@ -3055,11 +3050,11 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.ScheduleWorkWithUO
 
-No content is currently available.
+This event is fired when we schedule installs and/or updates with UO.
 
 The following fields are available:
 
-- **ClientId**  No content is currently available.
+- **ClientId**  Client ID of the caller.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.SearchForUpdateOperationRequest
@@ -3092,11 +3087,11 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.UnblockLowPriorityWorkItems
 
-No content is currently available.
+This event is fired when the UnblockLowPriorityWorkItems method is called, changing the state of all LowPriority work items to working if AutoUpdateState is enabled.
 
 The following fields are available:
 
-- **ClientId**  No content is currently available.
+- **ClientId**  Client ID of the caller.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.UpdateAppOperationRequest
@@ -3286,17 +3281,17 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.Aggregator.UusCoreHealth.HealthAggregatorSummary
 
-No content is currently available.
+This event is a suummary of UUS health indicators.
 
 The following fields are available:
 
-- **Fallback**  No content is currently available.
-- **FlightId**  No content is currently available.
-- **IsStable**  No content is currently available.
-- **Lock**  No content is currently available.
-- **UpdateId**  No content is currently available.
-- **UusVersion**  No content is currently available.
-- **VersionActivationsSinceLastBoot**  No content is currently available.
+- **Fallback**  Failover information.
+- **FlightId**  Payload that is being sent.
+- **IsStable**  Boolean if the payload is in image.
+- **Lock**  Lock indentifier.
+- **UpdateId**  Update identifier.
+- **UusVersion**  Version of the undocked payload.
+- **VersionActivationsSinceLastBoot**  Number of activations since last reboot.
 
 
 ### Microsoft.Windows.Update.DeviceUpdateAgent.UpdateAgentInitialize
@@ -3319,29 +3314,29 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.Orchestrator.Client.AppUpdateInstallResult
 
-No content is currently available.
+This event reports installation result details of expedited apps.
 
 The following fields are available:
 
-- **Completed**  No content is currently available.
-- **DeploymentAttempted**  No content is currently available.
-- **DeploymentErrorCode**  No content is currently available.
-- **DeploymentExtendedErrorCode**  No content is currently available.
-- **InstallFailureReason**  No content is currently available.
-- **OperationStatus**  No content is currently available.
-- **Succeeded**  No content is currently available.
-- **updaterId**  No content is currently available.
-- **UusVersion**  No content is currently available.
-- **VelocityEnabled**  No content is currently available.
+- **Completed**  Whether the installation completed.
+- **DeploymentAttempted**  Whether the deployment was attempted.
+- **DeploymentErrorCode**  The error code resulting from the deployment attempt.
+- **DeploymentExtendedErrorCode**  The extended error code resulting from the deployment attempt.
+- **InstallFailureReason**  On failure, the InstallFailureReason reported.
+- **OperationStatus**  OperationStatus result reported by the installation attempt.
+- **Succeeded**  Whether the installation succeeded.
+- **updaterId**  The UpdaterId associated with this expedited app.
+- **UusVersion**  The version of the UUS stack currently active.
+- **VelocityEnabled**  Whether the velocity tag for the expedited app is enabled.
 
 
 ### Microsoft.Windows.Update.Orchestrator.Client.BizCriticalStoreAppInstallAlreadyRunning
 
-No content is currently available.
+This event indicates that another instance is currently attempting to install business critical store updates.
 
 The following fields are available:
 
-- **UusVersion**  No content is currently available.
+- **UusVersion**  The version of the UUS Stack currently active.
 
 
 ### Microsoft.Windows.Update.Orchestrator.Client.BizCriticalStoreAppInstallResult
@@ -3428,16 +3423,16 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.Orchestrator.Worker.SetIpuMode
 
-No content is currently available.
+This event indicates that a provider is setting the inplace upgrade mode.
 
 The following fields are available:
 
-- **flightId**  No content is currently available.
-- **mode**  No content is currently available.
-- **provider**  No content is currently available.
-- **reason**  No content is currently available.
-- **uniqueId**  No content is currently available.
-- **UusVersion**  No content is currently available.
+- **flightId**  Flight Identifier.
+- **mode**  The value being set.
+- **provider**  The provider that is getting the value.
+- **reason**  The reason the value is being set.
+- **uniqueId**  Update Identifier.
+- **UusVersion**  The version of the UUS Stack currently active.
 
 
 ### Microsoft.Windows.Update.Orchestrator.Worker.UpdateActionCritical
@@ -3464,50 +3459,50 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.SIHClient.CheckForUpdatesStarted
 
-No content is currently available.
+Scan event for Server Initiated Healing client.
 
 The following fields are available:
 
-- **CallerApplicationName**  No content is currently available.
-- **EventInstanceID**  No content is currently available.
-- **ServiceGuid**  No content is currently available.
-- **TargetMetadataVersion**  No content is currently available.
-- **UusVersion**  No content is currently available.
-- **WUDeviceID**  No content is currently available.
+- **CallerApplicationName**  Name of the application making the Windows Update Request. Used to identify context of the request.
+- **EventInstanceID**  A globally unique identifier for event instance.
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
+- **TargetMetadataVersion**  The detected version of the self healing engine that is currently downloading or downloaded.
+- **UusVersion**  UUS version.
+- **WUDeviceID**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
 
 
 ### Microsoft.Windows.Update.SIHClient.CheckForUpdatesSucceeded
 
-No content is currently available.
+Scan event for Server Initiated Healing client
 
 The following fields are available:
 
-- **ApplicableUpdateInfo**  No content is currently available.
-- **CachedEngineVersion**  No content is currently available.
-- **CallerApplicationName**  No content is currently available.
-- **EventInstanceID**  No content is currently available.
-- **ServiceGuid**  No content is currently available.
-- **StatusCode**  No content is currently available.
-- **TargetMetadataVersion**  No content is currently available.
-- **UusVersion**  No content is currently available.
-- **WUDeviceID**  No content is currently available.
+- **ApplicableUpdateInfo**  Metadata for the updates which were detected as applicable.
+- **CachedEngineVersion**  The engine DLL version that is being used.
+- **CallerApplicationName**  Name of the application making the Windows Update Request. Used to identify context of the request.
+- **EventInstanceID**  A globally unique identifier for event instance.
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
+- **StatusCode**  Launch event for Server Initiated Healing client.
+- **TargetMetadataVersion**  The detected version of the self healing engine that is currently downloading or downloaded.
+- **UusVersion**  Active UUS Version.
+- **WUDeviceID**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
 
 
 ### Microsoft.Windows.Update.SIHClient.DownloadSucceeded
 
-No content is currently available.
+Download process event for target update on SIH Client.
 
 The following fields are available:
 
-- **CachedEngineVersion**  No content is currently available.
-- **CallerApplicationName**  No content is currently available.
-- **DownloadType**  No content is currently available.
-- **EventInstanceID**  No content is currently available.
-- **ServiceGuid**  No content is currently available.
-- **TargetMetadataVersion**  No content is currently available.
-- **UpdateID**  No content is currently available.
-- **UusVersion**  No content is currently available.
-- **WUDeviceID**  No content is currently available.
+- **CachedEngineVersion**  Version of the Cache Engine.
+- **CallerApplicationName**  Name of application making the Windows Update request. Used to identify context of request.
+- **DownloadType**  Type of Download.
+- **EventInstanceID**  ID of the Event Instance being fired.
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
+- **TargetMetadataVersion**  Version of the Metadata which is being targeted for an update.
+- **UpdateID**  Identifier associated with the specific piece of content.
+- **UusVersion**  The version of the Update Undocked Stack.
+- **WUDeviceID**  Global Device ID utilized to identify Device.
 
 
 ### Microsoft.Windows.Update.SIHClient.TaskRunCompleted
@@ -3541,113 +3536,113 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.Undocked.Brain.ActiveVersionUpdated
 
-No content is currently available.
+This event gets fired when the active version of the Undocked Update Stack is being updated/
 
 The following fields are available:
 
-- **Fallback**  No content is currently available.
-- **FlightID**  No content is currently available.
-- **Lock**  No content is currently available.
-- **MinutesSinceInstall**  No content is currently available.
-- **Stable**  No content is currently available.
-- **UpdateID**  No content is currently available.
-- **VersionActive**  No content is currently available.
-- **VersionPrevious**  No content is currently available.
+- **Fallback**  Initiated Process.
+- **FlightID**  FlightID associated.
+- **Lock**  Lock Group Name.
+- **MinutesSinceInstall**  Time to complete process.
+- **Stable**  Is VersionActive from stable.
+- **UpdateID**  Update identifier.
+- **VersionActive**  The now active version of the UUS stack.
+- **VersionPrevious**  The previous active version of the UUS stack.
 
 
 ### Microsoft.Windows.Update.Undocked.Brain.FailoverVersionExcluded
 
-No content is currently available.
+This event indicates Failover tried to exclude an UUS Version.
 
 The following fields are available:
 
-- **AlreadyExcluded**  No content is currently available.
-- **Exception**  No content is currently available.
-- **ExclusionReason**  No content is currently available.
-- **Success**  No content is currently available.
-- **VerFailover**  No content is currently available.
+- **AlreadyExcluded**  Boolean.
+- **Exception**  The exception encountered during exclusion.
+- **ExclusionReason**  Reason for the exclusion.
+- **Success**  Success or failure indicator.
+- **VerFailover**  The actual UUS Version that failover was running for.
 
 
 ### Microsoft.Windows.Update.Undocked.UpdateAgent.DownloadRequest
 
-No content is currently available.
+Download request for undocked update agent
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
-- **flightId**  No content is currently available.
-- **rangeRequestState**  No content is currently available.
-- **relatedCV**  No content is currently available.
-- **result**  No content is currently available.
-- **sessionId**  No content is currently available.
-- **updateId**  No content is currently available.
-- **uusVersion**  No content is currently available.
+- **errorCode**  Error code.
+- **flightId**  FlightID of the package.
+- **rangeRequestState**  State of request for download range.
+- **relatedCV**  CV for telemetry mapping.
+- **result**  Result code.
+- **sessionId**  Logging identification.
+- **updateId**  Identifier for payload.
+- **uusVersion**  Version of the UUS stack being installed.
 
 
 ### Microsoft.Windows.Update.Undocked.UpdateAgent.Initialize
 
-No content is currently available.
+Initialization event of undocked update agent.
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
-- **flightId**  No content is currently available.
-- **flightMetadata**  No content is currently available.
-- **relatedCV**  No content is currently available.
-- **result**  No content is currently available.
-- **sessionData**  No content is currently available.
-- **sessionId**  No content is currently available.
-- **updateId**  No content is currently available.
-- **uusVersion**  No content is currently available.
+- **errorCode**  Error code.
+- **flightId**  FlightID of the package.
+- **flightMetadata**  Metadata.
+- **relatedCV**  CV for telemetry mapping.
+- **result**  Result code.
+- **sessionData**  Additional logging.
+- **sessionId**  Logging identification.
+- **updateId**  Identifier for payload.
+- **uusVersion**  Version of the UUS stack being installed.
 
 
 ### Microsoft.Windows.Update.Undocked.UpdateAgent.Install
 
-No content is currently available.
+Install event of undocked update agent.
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
-- **flightId**  No content is currently available.
-- **folderExists**  No content is currently available.
-- **packageNewer**  No content is currently available.
-- **relatedCV**  No content is currently available.
-- **result**  No content is currently available.
-- **retryCount**  No content is currently available.
-- **sessionId**  No content is currently available.
-- **updateId**  No content is currently available.
-- **uusVersion**  No content is currently available.
+- **errorCode**  Error code.
+- **flightId**  FlightID of the package.
+- **folderExists**  Boolean.
+- **packageNewer**  version of newer package.
+- **relatedCV**  CV for telemetry mapping.
+- **result**  Result code.
+- **retryCount**  result count.
+- **sessionId**  Logging identification.
+- **updateId**  Identifier for payload.
+- **uusVersion**  Version of the UUS stack being installed.
 
 
 ### Microsoft.Windows.Update.Undocked.UpdateAgent.ModeStart
 
-No content is currently available.
+Undocked update agent mode start event.
 
 The following fields are available:
 
-- **flightId**  No content is currently available.
-- **mode**  No content is currently available.
-- **relatedCV**  No content is currently available.
-- **sessionId**  No content is currently available.
-- **updateId**  No content is currently available.
-- **uusVersion**  No content is currently available.
+- **flightId**  FlightID of the package.
+- **mode**  Install or Download mode.
+- **relatedCV**  CV for telemetry mapping.
+- **sessionId**  Logging identification.
+- **updateId**  Identifier for payload.
+- **uusVersion**  Version of the UUS stack being installed.
 
 
 ### Microsoft.Windows.Update.Undocked.UpdateAgent.Payload
 
-No content is currently available.
+Payload event of undocked update agent.
 
 The following fields are available:
 
-- **errorCode**  No content is currently available.
-- **fileCount**  No content is currently available.
-- **flightId**  No content is currently available.
-- **mode**  No content is currently available.
-- **relatedCV**  No content is currently available.
-- **result**  No content is currently available.
-- **sessionId**  No content is currently available.
-- **updateId**  No content is currently available.
-- **uusVersion**  No content is currently available.
+- **errorCode**  Error code.
+- **fileCount**  Number of files to download.
+- **flightId**  FlightID of the package.
+- **mode**  Install or Download mode.
+- **relatedCV**  CV for telemetry mapping.
+- **result**  Result code.
+- **sessionId**  Logging identification.
+- **updateId**  Identifier for payload.
+- **uusVersion**  Version of the UUS stack being installed.
 
 
 ### Microsoft.Windows.Update.WUClient.CheckForUpdatesCanceled
@@ -3937,24 +3932,24 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.WUClient.DownloadResumed
 
-No content is currently available.
+This event is fired when the Download of content is continued from a pause state.
 
 The following fields are available:
 
-- **BundleId**  No content is currently available.
-- **CallerName**  No content is currently available.
-- **ClassificationId**  No content is currently available.
-- **DownloadPriority**  No content is currently available.
-- **EventType**  No content is currently available.
-- **FlightId**  No content is currently available.
-- **HandlerInfo**  No content is currently available.
-- **HandlerType**  No content is currently available.
-- **Props**  No content is currently available.
-- **RegulationResult**  No content is currently available.
-- **RelatedCV**  No content is currently available.
-- **ServiceGuid**  No content is currently available.
-- **UpdateId**  No content is currently available.
-- **UusVersion**  No content is currently available.
+- **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
+- **CallerName**  Name of application making the Windows Update request. Used to identify context of request.
+- **ClassificationId**  Classification identifier of the update content.
+- **DownloadPriority**  Indicates the priority of the download activity.
+- **EventType**  Indicates the purpose of the event - whether because scan started, succeeded, failed, etc.
+- **FlightId**  Secondary status code for certain scenarios where StatusCode was not specific enough.
+- **HandlerInfo**  Blob of Handler related information.
+- **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.).
+- **Props**  Commit Props (MergedUpdate)
+- **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
+- **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
+- **ServiceGuid**  Identifier for the service to which the software distribution client is connecting (Windows Update, Windows Store, etc).
+- **UpdateId**  Identifier associated with the specific piece of content.
+- **UusVersion**  The version of the Update Undocked Stack.
 
 
 ### Microsoft.Windows.Update.WUClient.InstallCanceled
