@@ -16,10 +16,11 @@ appliesto:
 # Updated Windows and Microsoft Copilot experience
 <!--8445848, 9294806-->
 
->**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
+>**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/topic/675708af-8c16-4675-afeb-85a5a476ccb0).
 
+## Enhanced data protection with enterprise data protection
 
-The Copilot experience on Windows is changing to enhance data security, privacy, compliance, and simplify the user experience, for users signed in with a Microsoft Entra work or school account. [Microsoft Copilot will offer enterprise data protection](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/updates-to-microsoft-copilot-to-bring-enterprise-data-protection/ba-p/4217152) at no additional cost and redirect users to a new simplified interface designed for work and education. [Enterprise data protection (EDP)](/copilot/microsoft-365/enterprise-data-protection) refers to controls and commitments, under the Data Protection Addendum and Product Terms, that apply to customer data for users of Copilot for Microsoft 365 and Microsoft Copilot. This means that security, privacy, compliance controls and commitments available for Copilot for Microsoft 365 will extend to Microsoft Copilot prompts and responses. Prompts and responses are protected by the same terms and commitments that are widely trusted by our customers - not only for Copilot for Microsoft 365, but also for emails in Exchange and files in SharePoint. This is an improvement on top of the previous commercial data protection (CDP) promise. For more information, see the [Microsoft Copilot updates and enterprise data protection FAQ](/copilot/edpfaq).
+The Copilot experience on Windows is changing to enhance data security, privacy, compliance, and simplify the user experience, for users signed in with a Microsoft Entra work or school account. [Microsoft Copilot will offer enterprise data protection](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/updates-to-microsoft-copilot-to-bring-enterprise-data-protection/ba-p/4217152) at no additional cost and redirect users to a new simplified interface designed for work and education. [Enterprise data protection (EDP)](/copilot/microsoft-365/enterprise-data-protection) refers to controls and commitments, under the Data Protection Addendum and Product Terms, that apply to customer data for users of Copilot for Microsoft 365 and Microsoft Copilot. This means that security, privacy, compliance controls and commitments available for Copilot for Microsoft 365 will extend to Microsoft Copilot prompts and responses. Prompts and responses are protected by the same terms and commitments that are widely trusted by our customers - not only for Copilot for Microsoft 365, but also for emails in Exchange and files in SharePoint. This is an improvement on top of the previous commercial data protection (CDP) promise. This update is rolling out now. For more information, see the [Microsoft Copilot updates and enterprise data protection FAQ](/copilot/edpfaq).
 
 To streamline the user experience, updates to the Copilot entry points in Windows are being made for users. **Copilot in Windows (preview) will be removed from Windows**. The experience will slightly vary depending on whether your organization has already opted into using Copilot in Windows (preview) or not. 
 
@@ -54,7 +55,7 @@ For users signing in to new PCs with work or school accounts, the following expe
 
 ## When will this happen?
 
-To ensure simple and consistent user experience, the updates to the Copilot experience with Enterprise Data Protection will be available during the optional nonsecurity update for Windows in the September 24, 2024, update for Windows 11 customers. This update will also be included in the October 8, 2024, security update for Windows 11 customers. Windows 10 rollout will follow in a month.
+To ensure simple and consistent user experience, the updates to the Copilot experience will be available during the optional nonsecurity update for Windows in the September 24, 2024, update for Windows 11 customers. This update will also be included in the October 8, 2024, security update for Windows 11 customers. Windows 10 rollout will follow in a month.
 
 ## Policy information
 
