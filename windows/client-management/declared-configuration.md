@@ -1,7 +1,7 @@
 ---
 title: Windows declared configuration protocol
 description: Learn more about using Windows declared configuration (WinDC) protocol for desired state management of Windows devices.
-ms.date: 08/16/2024
+ms.date: 09/12/2024
 ms.topic: overview
 ---
 
@@ -105,3 +105,28 @@ To identify, adjust or remove the refresh schedule, use the **RefreshInterval** 
       </SyncBody>
     </SyncML>
     ```
+
+## Troubleshooting
+
+If the processing of declared configuration document fails, the errors are logged to Windows event logs:
+
+- Admin events: `Application and Service Logs\Microsoft\Windows\DeviceManagement-Enterprise-Diagnostics-Provider\Admin`.
+- Operational events: `Application and Service Logs\Microsoft\Windows\DeviceManagement-Enterprise-Diagnostics-Provider\Operational`.
+
+### Common errors
+
+- If the `<LocURI>` uses **Device** scope, while DeclaredConfiguration document specifies **User** context, Admin event log shows an error message similar to:
+
+    `MDM ConfigurationManager: Command failure status. Configuration Source ID: (DAD70CC2-365B-450D-A8AB-2EB23F4300CC), Enrollment Name: (MicrosoftManagementPlatformCloud), Provider Name: (DeclaredConfiguration), Command Type: (SetValue: from Replace), CSP URI: (./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/DCA000B5-397D-40A1-AABF-40B25078A7F9/Document), Result: (The system cannot find the file specified.)`
+
+- If the Document ID doesn't match between the `<LocURI>` and inside DeclaredConfiguration document, Admin event log shows an error message similar to:
+
+    `MDM Declared Configuration: End document parsing from CSP: Document Id: (DCA000B5-397D-40A1-AABF-40B25078A7F91), Scenario: (MSFTVPN), Version: (A0), Enrollment Id: (DAD70CC2-365B-450D-A8AB-2EB23F4300CC), Current User: (S-1-5-21-3436249567-4017981746-3373817415-1001), Schema: (1.0), Download URL: (), Scope: (0x1), Enroll Type: (0x1A), File size: (0xDE2), CSP Count: (0x1), URI Count: (0xF), Action Requested: (0x0), Model: (0x1), Result:(0x8000FFFF) Catastrophic failure.`
+
+- Any typo in the OMA-URI results in a failure. In this example, `TrafficFilterList` is specified instead of `TrafficFilterLists`, and Admin event log shows an error message similar to:
+
+    `MDM ConfigurationManager: Command failure status. Configuraton Source ID: (DAD70CC2-365B-450D-A8AB-2EB23F4300CC), Enrollment Type: (MicrosoftManagementPlatformCloud), CSP Name: (vpnv2), Command Type: (Add: from Replace or Add), CSP URI: (./user/vendor/msft/vpnv2/Test_SonicWall/TrafficFilterLists), Result: (Unknown Win32 Error code: 0x86000002).`
+
+    There's also another warning message in operational channel:
+
+    `MDM Declared Configuration: Function (DeclaredConfigurationExtension_PolicyCSPConfigureGivenCurrentDoc) operation (ErrorAtDocLevel: one or more CSPs failed) failed with (Unknown Win32 Error code: 0x82d00007)`

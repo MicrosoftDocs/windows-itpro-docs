@@ -1,7 +1,7 @@
 ---
 title: Windows declared configuration discovery
 description: Learn more about configuring discovery for Windows declared configuration enrollment.
-ms.date: 08/16/2024
+ms.date: 09/12/2024
 ms.topic: how-to
 ---
 
@@ -21,7 +21,7 @@ This article outlines the schema structure for the HTTP request and response bod
 | `client-request-id: %s`          | No       | Request ID                        |
 | `Content-Type: application/json` | Yes      | HTTP Content-Type                 |
 
-### HTTP Request Body (JSON)
+### HTTP request body (JSON)
 
 | Field | Required | Description |
 |--|--|--|
@@ -32,7 +32,7 @@ This article outlines the schema structure for the HTTP request and response bod
 | `enrollmentType` | Entra joined: No <br>Entra registered: Yes | Enrollment type of the enrolled account. <br><br>Supported Values: <br>- `Device`: Indicates the parent enrollment type is Entra joined (DS response should specify "AuthPolicy": "Federated"). <br>- `User`: Indicates parent enrollment type is Entra registered (DS response should specify "AuthPolicy": "Certificate"). <br>- Legacy case (Entra joined only): If the `enrollmentType` parameter isn't included in the request body, the device should be treated as Entra joined. |
 | `osVersion` | Yes | OS version on the device. The DS can use the `osVersion` to determine if the client platform supports WinDC enrollment. Review [supported platforms](declared-configuration.md#supported-platforms) for details. |
 
-### HTTP DS Response Body (JSON)
+### HTTP DS response body (JSON)
 
 | Field                        | Required | Description                                                                                                                                |
 |------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------|

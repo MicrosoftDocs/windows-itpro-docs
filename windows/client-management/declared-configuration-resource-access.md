@@ -1,7 +1,7 @@
 ---
 title: Windows declared configuration resource access
 description: Learn more about configuring resource access using Windows declared Configuration.
-ms.date: 08/16/2024
+ms.date: 09/12/2024
 ms.topic: how-to
 ---
 
@@ -287,7 +287,7 @@ This example demonstrates how to use `<Delete>` to remove the configuration requ
 </SyncML>
 ```
 
-## Resource Ownership
+## Resource ownership
 
 MDM-managed resources, such as a VPN profile, are transferred/migrated to WinDC management when a WinDC document is sent to the device for the same resource. This resource stays under WinDC management until the WinDC document is [deleted](mdm/declaredconfiguration-csp.md#delete-a-windc-document) or [abandoned](mdm/declaredconfiguration-csp.md#abandon-a-windc-document). Otherwise, when MDM tries to manage the same resource via the legacy MDM channel using SyncML, it fails with error 0x86000031.
 

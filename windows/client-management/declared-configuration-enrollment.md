@@ -1,7 +1,7 @@
 ---
 title: Windows declared configuration enrollment
 description: Learn more about configuring enrollment for Windows declared configuration protocol.
-ms.date: 08/16/2024
+ms.date: 09/12/2024
 ms.topic: how-to
 ---
 

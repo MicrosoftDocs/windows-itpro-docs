@@ -1,7 +1,7 @@
 ---
 title: DeclaredConfiguration CSP
 description: Learn more about the DeclaredConfiguration CSP.
-ms.date: 08/16/2024
+ms.date: 09/12/2024
 ---
 
 <!-- Auto-Generated CSP Document -->

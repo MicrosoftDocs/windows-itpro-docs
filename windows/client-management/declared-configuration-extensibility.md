@@ -1,11 +1,11 @@
 ---
 title: Windows declared configuration extensibility
 description: Learn more about Windows declared configuration extensibility through native WMI providers.
-ms.date: 08/16/2024
+ms.date: 09/12/2024
 ms.topic: how-to
 ---
 
-# Declared configuration extensibility providers
+# Declared configuration extensibility
 
 The Windows declared configuration (WinDC) enrollment offers extensibility through native WMI providers. This feature instantiates and interfaces with a Windows Management Instrumentation (WMI) provider that implements a management infrastructure (MI) interface. The interface must implement GetTargetResource, TestTargetResource, and SetTargetResource methods, and can implement any number of string properties.
 
@@ -58,7 +58,7 @@ To create a native WMI provider, follow the steps outlined in [How to implement 
 5. Copy the generated files into the provider's project folder.
 6. Start the development process.
 
-## Example MI Provider
+## Example MI provider
 
 This example provides more details about each step to demonstrate how to implement a sample native resource named `MSFT_FileDirectoryConfiguration`.
 
