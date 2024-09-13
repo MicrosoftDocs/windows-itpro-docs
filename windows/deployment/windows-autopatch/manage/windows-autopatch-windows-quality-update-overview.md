@@ -62,7 +62,7 @@ The service level objective for each of these states is calculated as:
 
 Windows Autopatch schedules and deploys required Out of Band (OOB) updates released outside of the normal schedule.
 
-For the deployment rings that pass quality updates deferral date, the OOB release schedule is expedited and deployed on the same day. For the deployment rings that have deferral upcoming, OOBs is released as per the set deferral dates.
+For the deployment rings that pass quality updates deferral date, the OOB release schedule is expedited and deployed on the same day. For the deployment rings that have deferral upcoming, OOBs are released as per the set deferral dates.
 
 ## Pause and resume a release
 
