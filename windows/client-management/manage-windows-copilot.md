@@ -56,7 +56,13 @@ For users signing in to new PCs with work or school accounts, the following expe
 
 ## When will this happen?
 
-To ensure simple and consistent user experience, the updates to the Copilot experience will be available during the optional nonsecurity update for Windows in the September 24, 2024, update for Windows 11 customers. This update will also be included in the October 8, 2024, security update for Windows 11 customers. Windows 10 rollout will follow in a month.
+The update to Microsoft Copilot to offer enterprise data protection is rolling out now.
+
+The shift to the Microsoft 365 app as the entry point for Microsoft Copilot will align with the annual Windows 11 feature update release. Changes will be rolled out to managed PCs starting with the optional nonsecurity preview release on September 24, 2024, and following with the monthly security update release on October 8 for all supported versions of Windows 11. These changes will be applied to Windows 10 PCs the month after. This update is replacing the current Copilot in Windows experience.
+
+> [!IMPORTANT]
+> Want to get started? You can enable the Microsoft Copilot experience for your users now by using the [TurnOffWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot) policy and pin the Microsoft 365 app using the existing policies for Taskbar pinning.
+
 
 ## Policy information
 
