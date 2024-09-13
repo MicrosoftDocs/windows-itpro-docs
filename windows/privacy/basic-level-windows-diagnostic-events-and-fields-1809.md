@@ -2625,7 +2625,7 @@ Fires when the compatibility check completes. Gives the results from the check.
 The following fields are available:
 
 - **IsRecommended**  Denotes whether all compatibility checks have passed and, if so, returns true. Otherwise returns false.
-- **Issues**  If compatibility checks failed, provides bit indexed indicators of issues detected. Table located here: [Check results of HVCI default enablement](/windows-hardware/design/device-experiences/oem-hvci-enablement#check-results-of-hvci-default-enablement).
+- **Issues**  If compatibility checks failed, provides bit indexed indicators of issues detected. Table located here: [Check results of HVCI default enablement](/windows-hardware/design/device-experiences/oem-hvci-enablement#check-results-of-memory-integrity-default-enablement).
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.Enabled
