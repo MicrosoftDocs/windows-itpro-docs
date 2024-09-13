@@ -66,8 +66,7 @@ The shift to the Microsoft 365 app as the entry point for Microsoft Copilot will
 
 ## Policy information
 
-- Admins should configure the [pinning options](/copilot/microsoft-365/pin-copilot) to enable access to Microsoft Copilot within the Microsoft 365 app in the Microsoft 365 admin center. 
-- The Microsoft Copilot app can also be managed like all other business apps in the Microsoft Store with management tools like Microsoft Intune. 
+Admins should configure the [pinning options](/copilot/microsoft-365/pin-copilot) to enable access to Microsoft Copilot within the Microsoft 365 app in the Microsoft 365 admin center. 
 
 The following policy to manage Copilot in Windows (preview) will be removed in the future:
 
