@@ -69,6 +69,15 @@ Some of the features were released within the past year's continuous innovation 
 
 ### Feature1
 <!--max-->
+### Server Message Block (SMB) protocol changes
+
+The following changes were made for the SMB protocol: 
+
+- **SMB firewall rule changes**: The Windows Defender Firewall default behavior has changed. Previously, creating an SMB share automatically configured the firewall to enable the rules in the **File and Printer Sharing** group for the given firewall profiles. Now, Windows automatically configures the new **File and Printer Sharing (Restrictive)** group, which no longer contains inbound NetBIOS ports 137-139. For more information see [https://aka.ms/SMBfirewall](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-firewall-rule-changes-in-windows-insider/ba-p/3974496).
+- 
+
+
+For more information about SMB network security, see [Secure SMB Traffic in Windows Server](/windows-server/storage/file-server/smb-secure-traffic).
 
 ### Local Security Authority (LSA) protection enablement on upgrade
 
@@ -77,7 +86,7 @@ Some of the features were released within the past year's continuous innovation 
  
 ### Remote Mailslot protocol disabled by default
 
-[Remote Mailslot protocol](/openspecs/windows_protocols/ms-mail/47ac910f-1dec-4791-8486-9b3e8fd542da) was [deprecated](deprecated-features.md#deprecated-features) in November 2023 and is now disabled by default starting in Windows 11, version 24H2. For more information on Remote Mailslots, see [About Mailslots](/windows/win32/ipc/about-mailslots). 
+[Remote Mailslot protocol](/openspecs/windows_protocols/ms-mail/47ac910f-1dec-4791-8486-9b3e8fd542da) was [deprecated](deprecated-features.md#deprecated-features) in November 2023 and is now disabled by default starting in Windows 11, version 24H2. For more information on Remote Mailslots, see [About Mailslots](/windows/win32/ipc/about-mailslots).
 
 ### Local Administrator Password Solution (LAPS) improvements
 
@@ -120,7 +129,7 @@ Customers can now use App Control for Business (formerly called Windows Defender
 
 ### Wi-Fi 7 support
 <!--8850300-->
-Support  for Wi-Fi 7 was added when using capable access point and PCs. Wi-Fi 7, also known as IEEE 802.11be Extremely High Throughput (EHT) is the latest Wi-Fi technology that offers unprecedented speed, reliability, and efficiency for your wireless devices. For more information about Wi-Fi 7, see the [Wi-Fi Alliance announcement](https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-introduces-wi-fi-certified-7).
+Support  for Wi-Fi 7 was added for consumer access points. Wi-Fi 7, also known as IEEE 802.11be Extremely High Throughput (EHT) is the latest Wi-Fi technology that offers unprecedented speed, reliability, and efficiency for your wireless devices. For more information about Wi-Fi 7, see the [Wi-Fi Alliance announcement](https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-introduces-wi-fi-certified-7).
 
 ### Sudo for Windows
 
