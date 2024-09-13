@@ -1,7 +1,7 @@
 ---
 title: MixedReality Policy CSP
 description: Learn more about the MixedReality Area in Policy CSP.
-ms.date: 02/20/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1406,7 +1406,9 @@ This policy setting controls if it's required that the Start icon to be looked a
 
 <!-- SkipCalibrationDuringSetup-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy configures whether the device will take the user through the eye tracking calibration process during device setup and first time user setup. If this policy is enabled, the device won't show the eye tracking calibration process during device setup and first time user setup. Note that until the user goes through the calibration process, eye tracking won't work on the device. If an app requires eye tracking and the user hasn't gone through the calibration process, the user will be prompted to do so.
+This policy configures whether the device will take the user through the eye tracking calibration process during device setup and first time user setup.
+
+- If this policy is enabled, the device won't show the eye tracking calibration process during device setup and first time user setup. Note that until the user goes through the calibration process, eye tracking won't work on the device. If an app requires eye tracking and the user hasn't gone through the calibration process, the user will be prompted to do so.
 <!-- SkipCalibrationDuringSetup-Description-End -->
 
 <!-- SkipCalibrationDuringSetup-Editable-Begin -->
@@ -1457,7 +1459,9 @@ This policy configures whether the device will take the user through the eye tra
 
 <!-- SkipTrainingDuringSetup-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy configures whether the device will take the user through a training process during device setup and first time user setup. If this policy is enabled, the device won't show the training process during device setup and first time user setup. If the user wishes to go through that training process, the user can launch the Tips app.
+This policy configures whether the device will take the user through a training process during device setup and first time user setup.
+
+- If this policy is enabled, the device won't show the training process during device setup and first time user setup. If the user wishes to go through that training process, the user can launch the Tips app.
 <!-- SkipTrainingDuringSetup-Description-End -->
 
 <!-- SkipTrainingDuringSetup-Editable-Begin -->

@@ -1,7 +1,7 @@
 ---
 title: Browser Policy CSP
 description: Learn more about the Browser Area in Policy CSP.
-ms.date: 09/03/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1481,7 +1481,7 @@ Sideloading installs and runs unverified extensions in Microsoft Edge. With this
 
 If enabled or not configured, sideloading of unverified extensions in Microsoft Edge is allowed.
 
-If disabled, sideloading of unverified extensions in Microsoft Edge isn't allowed. Extensions can be installed only through Microsoft store, enterprise storefront (such as Company Portal) or PowerShell (using Add-AppxPackage). When disabled, this policy doesn't prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, in Group Policy Editor, enable Allows development of Windows Store apps and installing them from an integrated development environment (IDE), which is located at:
+If disabled, sideloading of unverified extensions in Microsoft Edge isn't allowed. Extensions can be installed only through Microsoft store (including a store for business), enterprise storefront (such as Company Portal) or PowerShell (using Add-AppxPackage). When disabled, this policy doesn't prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, in Group Policy Editor, enable Allows development of Windows Store apps and installing them from an integrated development environment (IDE), which is located at:
 
 Computer Configuration > Administrative Templates > Windows Components > App Package Deployment.
 
