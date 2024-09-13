@@ -25,7 +25,7 @@ Before Microsoft can manage your devices in Windows Autopatch, you must register
 
 See the following detailed workflow diagram. The diagram covers the Windows Autopatch device registration process:
 
-:::image type="content" source="../media/windows-autopatch-device-registration-workflow-diagram.png" alt-text="Detailed device registration workflow diagram" lightbox="../media/windows-autopatch-device-registration-workflow-diagram.png":::
+:::image type="content" source="../media/windows-autopatch-device-registration-workflow-diagram.png" alt-text="Diagram of the device registration workflow." lightbox="../media/windows-autopatch-device-registration-workflow-diagram.png":::
 
 | Step | Description |
 | ----- | ----- |
@@ -44,7 +44,7 @@ See the following detailed workflow diagram. The diagram covers the Windows Auto
 
 As described in **step #4** in the previous [Detailed device registration workflow diagram](#detailed-device-registration-workflow-diagram), the following diagram is a visual representation of the prerequisite construct for the Windows Autopatch device registration process. The prerequisite checks are sequentially performed.
 
-:::image type="content" source="../media/windows-autopatch-prerequisite-check-workflow-diagram.png" alt-text="Detailed prerequisite check workflow diagram" lightbox="../media/windows-autopatch-prerequisite-check-workflow-diagram.png":::
+:::image type="content" source="../media/windows-autopatch-prerequisite-check-workflow-diagram.png" alt-text="Diagram of the prerequisite check workflow." lightbox="../media/windows-autopatch-prerequisite-check-workflow-diagram.png":::
 
 ## Devices report
 
