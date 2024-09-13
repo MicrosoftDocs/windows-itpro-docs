@@ -37,10 +37,6 @@ items:
           href: upgrade/windows-upgrade-and-migration-considerations.md
         - name: Delivery Optimization for Windows updates
           href: do/waas-delivery-optimization.md?context=/windows/deployment/context/context
-        - name: Windows 10 deployment considerations
-          href: planning/windows-10-deployment-considerations.md
-        - name: Windows 10 infrastructure requirements
-          href: planning/windows-10-infrastructure-requirements.md
         - name: Windows compatibility cookbook
           href: /windows/compatibility/
     - name: Prepare
