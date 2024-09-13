@@ -91,7 +91,7 @@ Up to date devices are devices that meet all of the following prerequisites:
 | Sub status | Description |
 | ----- | ----- |
 | In Progress | Devices are currently installing the latest [quality update](../operate/windows-autopatch-groups-windows-quality-update-overview.md#release-schedule) or [feature update](../operate/windows-autopatch-groups-windows-feature-update-overview.md#default-release) deployed through the Windows Autopatch release schedule. |
-| Paused | Devices that are currently paused due to a Windows Autopatch or customer-initiated pause. For more information, see pausing and resuming a [Windows quality update](../operate/windows-autopatch-groups-windows-quality-update-overview.md#pause-and-resume-a-release) or [Windows feature update](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md#pause-and-resume-a-release). |
+| Paused | Devices that are currently paused due to a Windows Autopatch or customer-initiated pause. For more information, see pausing and resuming a [Windows quality update](../operate/windows-autopatch-groups-windows-quality-update-overview.md#pause-and-resume-a-release) or [Windows feature update](../operate/windows-autopatch-windows-feature-update-overview.md#pause-and-resume-a-release). |
 
 ### Not up to Date devices
 
