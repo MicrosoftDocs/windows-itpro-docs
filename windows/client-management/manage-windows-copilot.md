@@ -61,7 +61,7 @@ The update to Microsoft Copilot to offer enterprise data protection is rolling o
 The shift to the Microsoft 365 app as the entry point for Microsoft Copilot will align with the annual Windows 11 feature update release. Changes will be rolled out to managed PCs starting with the optional nonsecurity preview release on September 24, 2024, and following with the monthly security update release on October 8 for all supported versions of Windows 11. These changes will be applied to Windows 10 PCs the month after. This update is replacing the current Copilot in Windows experience.
 
 > [!IMPORTANT]
-> Want to get started? You can enable the Microsoft Copilot experience for your users now by using the [TurnOffWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot) policy and pin the Microsoft 365 app using the existing policies for Taskbar pinning.
+> Want to get started? You can enable the Microsoft Copilot experience for your users now by using the [TurnOffWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot) policy and pin the Microsoft 365 app using the existing policies for taskbar pinning.
 
 
 ## Policy information
