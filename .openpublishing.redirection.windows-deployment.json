@@ -1607,7 +1607,7 @@
     },
     {
       "source_path": "windows/deployment/windows-autopatch/manage/windows-autopatch-manage-windows-feature-update-releases.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-feature-update-overview",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-feature-update-overview",
       "redirect_document_id": false
     },
     {
@@ -1617,7 +1617,7 @@
     },
     {
       "source_path": "windows/deployment/update/deployment-service-prerequisites.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-prerequisites",
+      "redirect_url": "/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites",
       "redirect_document_id": false
     },
     {
@@ -1637,7 +1637,7 @@
     },
     {
       "source_path": "windows/deployment/update/deployment-service-troubleshoot.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-troubleshoot-programmatic-controls",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-troubleshoot-programmatic-controls",
       "redirect_document_id": false
     },
     {
