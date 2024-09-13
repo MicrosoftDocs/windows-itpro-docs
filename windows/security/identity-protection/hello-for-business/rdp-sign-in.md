@@ -15,7 +15,7 @@ This article describes two certificate deployment approaches, where authenticati
 - Using an Active Directory Certificate Services (AD CS) enrollment policy
 
 >[!IMPORTANT]
-> If you deploying the certificate using Microsoft Intune, and you have User Account Control configure to *Prompt for credentials on secure desktop* you won't be able to use the *run as* feature.
+> If you deploying the certificate using Microsoft Intune, and you have [User Account Control](../../application-security/application-control/user-account-control/index.md) configure to *Prompt for credentials on the secure desktop* you won't be able to use the *run as* feature.
 > In such scenario, when you try to execute an application with elevated privileges and choose the Windows Hello for Business credential, you'll receive the error message: **The username or password is incorrect**.
 
 > [!TIP]
