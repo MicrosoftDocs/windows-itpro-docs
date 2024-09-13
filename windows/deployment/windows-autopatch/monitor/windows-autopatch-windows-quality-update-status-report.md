@@ -80,5 +80,5 @@ The following options are available:
 | Search | Use to search by device name, Microsoft Entra device ID, or serial number |
 | Sort | Select the **column headings** to sort the report data in ascending and descending order. |
 | Export | Select **Export devices** at the top of the page to export data from this report into a CSV file. |
-| Filter | Select either the **Add filters** or at the top of the report to filter the results. |
+| Filter | Select **Add filters** or use the filters at the top of the report to filter the results. |
 | Columns | Select a column to add or remove the column from the report. |
