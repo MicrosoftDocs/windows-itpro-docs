@@ -117,7 +117,7 @@ Once migrated, there are several configuration tasks that you no longer need to 
 
 | Autopatch benefit | Configuration Manager | Windows Update for Business (WUfB) |
 | ----- | ----- | ----- |
-| Automated setup and on-going configuration of Windows Update policies | Manage and perform recurring tasks such as:<ul><li>Download updates</li><li>Distribute to distribution points</li><li>Target update collections</li></ul> | Manage "static" deployment ring policies |
+| Automated setup and ongoing configuration of Windows Update policies | Manage and perform recurring tasks such as:<ul><li>Download updates</li><li>Distribute to distribution points</li><li>Target update collections</li></ul> | Manage "static" deployment ring policies |
 | Automated management of deployment ring membership | Manually check collection membership and targets | Manage "static" deployment ring membership |
 | Maintain minimum Windows feature version and progressively move between servicing versions | Spend time developing, testing and rolling-out task sequence | Set up and deploy Windows feature update policies |
 | Service provides release management, signal monitoring, testing, and Windows Update deployment | Setup, target and monitor update test collections | Manage Test deployment rings and manually monitor update signals |
