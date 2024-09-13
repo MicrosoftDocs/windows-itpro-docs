@@ -39,7 +39,7 @@ productDirectory:
     - title: Windows 11 required diagnostic data
       imageSrc: /media/common/i_extend.svg
       summary: Learn more about basic Windows diagnostic data events and fields collected.
-      url: required-diagnostic-events-fields-windows-11-22H2.md
+      url: required-diagnostic-events-fields-windows-11-24H2.md
     - title: Windows 10 required diagnostic data
       imageSrc: /media/common/i_build.svg
       summary: See what changes Windows is making to align to the new data collection taxonomy
