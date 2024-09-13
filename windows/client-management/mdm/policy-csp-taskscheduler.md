@@ -1,7 +1,7 @@
 ---
 title: TaskScheduler Policy CSP
 description: Learn more about the TaskScheduler Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -30,7 +30,7 @@ ms.date: 01/18/2024
 
 <!-- EnableXboxGameSaveTask-Description-Begin -->
 <!-- Description-Source-DDF -->
-This setting determines whether the specific task is enabled (1) or disabled (0). Default: Enabled.
+This setting determines whether the specific task is enabled (1) or disabled (0).
 <!-- EnableXboxGameSaveTask-Description-End -->
 
 <!-- EnableXboxGameSaveTask-Editable-Begin -->
