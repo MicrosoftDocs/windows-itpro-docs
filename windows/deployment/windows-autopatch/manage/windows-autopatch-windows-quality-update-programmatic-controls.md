@@ -1,7 +1,7 @@
 ---
 title: Programmatic controls for expedited Windows quality updates
 titleSuffix: Windows Autopatch
-description: LUse programmatic controls to deploy expedited Windows quality updates to devices in your organization. 
+description: Use programmatic controls to deploy expedited Windows quality updates to devices in your organization. 
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
