@@ -2053,18 +2053,18 @@ This event keeps track of if the user's account is in a good state upon loading 
 
 The following fields are available:
 
-- **CassService**  No content is currently available.
-- **componentName**  No content is currently available.
-- **correlationVector**  No content is currently available.
-- **currentPageGroupId**  No content is currently available.
-- **currentPageId**  No content is currently available.
-- **experienceId**  No content is currently available.
-- **experienceVersion**  No content is currently available.
-- **isExperienceInbox**  No content is currently available.
-- **pageId**  No content is currently available.
-- **pageSessionId**  No content is currently available.
-- **processSessionId**  No content is currently available.
-- **state**  No content is currently available.
+- **CassService**  Version of the Cass service.
+- **componentName**  Name of the Settings component.
+- **correlationVector**  Identifier for correlating events.
+- **currentPageGroupId**  Identifier for the current page group.
+- **currentPageId**  Identifier for the current page.
+- **experienceId**  Identifier for the Settings experience.
+- **experienceVersion**  Version of the experience.
+- **isExperienceInbox**  Is the experience present by default (Comes with the system).
+- **pageId**  Identifier for the Setting page.
+- **pageSessionId**  Identifier for the page session.
+- **processSessionId**  Identifier for the process.
+- **state**  State that determines if the account has required backup proofs (eg. email and phone)
 
 
 ### Microsoft.Windows.WinRE.Agent.CreateWinRePartitionFailed
