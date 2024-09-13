@@ -1,7 +1,7 @@
 ---
 title: EnterpriseModernAppManagement CSP
 description: Learn more about the EnterpriseModernAppManagement CSP.
-ms.date: 09/03/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -384,8 +384,6 @@ This is a required node. The following list shows the supported deployment optio
 - LicenseUri="\\server\license.lic". Deploys an offline license. Available in 1607.
 - ValidateDependencies="1". This option is used at provisioning/staging time. If it's set to 1, deployment will perform the same dependency validation during staging that we would normally do at registration time, failing and rejecting the provision request if the dependencies aren't present. Available in the latest insider flight of 20H1.
 - ExcludeAppFromLayoutModification="1". Sets that the app will be provisioned on all devices and will be able to retain the apps provisioned without pinning them to start layout. Available in 1809.
-
-
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-Editable-End -->
 
 <!-- Device-AppInstallation-{PackageFamilyName}-HostedInstall-DFProperties-Begin -->
@@ -1018,8 +1016,6 @@ This is a required node. Query parameters:
 - Publisher - specifies the publisher of a particular package. If you specify this parameter, it returns the publisher if the value exists in the Publisher field.
 
   If you don't specify this value, then all publishers are returned.
-
-
 <!-- Device-AppManagement-AppInventoryQuery-Editable-End -->
 
 <!-- Device-AppManagement-AppInventoryQuery-DFProperties-Begin -->
@@ -5996,7 +5992,6 @@ Identifier for the entity that requested the license, such as the client who acq
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > The Microsoft Store for Business and Microsoft Store for Education are retired. For more information, see [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).
-
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-Editable-End -->
 
 <!-- User-AppLicenses-StoreLicenses-{LicenseID}-RequesterID-DFProperties-Begin -->

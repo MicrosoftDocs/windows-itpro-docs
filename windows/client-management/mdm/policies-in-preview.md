@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 08/07/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -164,7 +164,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [SystemCryptography_ForceStrongKeyProtection](policy-csp-localpoliciessecurityoptions.md#systemcryptography_forcestrongkeyprotection)
 - [SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems](policy-csp-localpoliciessecurityoptions.md#systemobjects_requirecaseinsensitivityfornonwindowssubsystems)
 - [SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects](policy-csp-localpoliciessecurityoptions.md#systemobjects_strengthendefaultpermissionsofinternalsystemobjects)
-- [UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators](policy-csp-localpoliciessecurityoptions.md#useraccountcontrol_behavioroftheelevationpromptforenhancedadministrators)
+- [UserAccountControl_BehaviorOfTheElevationPromptForAdministratorProtection](policy-csp-localpoliciessecurityoptions.md#useraccountcontrol_behavioroftheelevationpromptforadministratorprotection)
 - [UserAccountControl_TypeOfAdminApprovalMode](policy-csp-localpoliciessecurityoptions.md#useraccountcontrol_typeofadminapprovalmode)
 
 ## MixedReality
