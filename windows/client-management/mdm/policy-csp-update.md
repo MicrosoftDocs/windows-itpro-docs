@@ -1,7 +1,7 @@
 ---
 title: Update Policy CSP
 description: Learn more about the Update Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -4077,7 +4077,7 @@ Allows IT Admins to specify additional upgrade delays for up to 8 months. Suppor
 <!-- Description-Source-ADMX -->
 Enable this policy to not allow update deferral policies to cause scans against Windows Update.
 
-If this policy is disabled or not configured, then the Windows Update client may initiate automatic scans against Windows Update while update deferral policies are enabled.
+- If this policy is disabled or not configured, then the Windows Update client may initiate automatic scans against Windows Update while update deferral policies are enabled.
 
 > [!NOTE]
 > This policy applies only when the intranet Microsoft update service this computer is directed to is configured to support client-side targeting. If the "Specify intranet Microsoft update service location" policy is disabled or not configured, this policy has no effect.

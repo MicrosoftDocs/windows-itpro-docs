@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 08/07/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -32,7 +32,13 @@ ms.date: 08/07/2024
 
 <!-- DisableAIDataAnalysis-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to determine whether end users have the option to allow snapshots to be saved on their PCs. If disabled, end users will have a choice to save snapshots of their screen on their PC and then use Recall to find things they've seen. If the policy is enabled, end users won't be able to save snapshots on their PC. If the policy isn't configured, end users may or may not be able to save snapshots on their PC-depending on other policy configurations.
+This policy setting allows you to determine whether end users have the option to allow snapshots to be saved on their PCs.
+
+- If disabled, end users will have a choice to save snapshots of their screen on their PC and then use Recall to find things they've seen.
+
+- If the policy is enabled, end users won't be able to save snapshots on their PC.
+
+- If the policy isn't configured, end users may or may not be able to save snapshots on their PC-depending on other policy configurations.
 <!-- DisableAIDataAnalysis-Description-End -->
 
 <!-- DisableAIDataAnalysis-Editable-Begin -->
@@ -90,7 +96,11 @@ This policy setting allows you to determine whether end users have the option to
 
 <!-- DisableCocreator-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to control whether Cocreator functionality is disabled in the Windows Paint app. If this policy is enabled, Cocreator functionality won't be accessible in the Paint app. If this policy is disabled or not configured, users will be able to access Cocreator functionality.
+This policy setting allows you to control whether Cocreator functionality is disabled in the Windows Paint app.
+
+- If this policy is enabled, Cocreator functionality won't be accessible in the Paint app.
+
+- If this policy is disabled or not configured, users will be able to access Cocreator functionality.
 <!-- DisableCocreator-Description-End -->
 
 <!-- DisableCocreator-Editable-Begin -->
@@ -148,7 +158,11 @@ This policy setting allows you to control whether Cocreator functionality is dis
 
 <!-- DisableImageCreator-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy setting allows you to control whether Image Creator functionality is disabled in the Windows Paint app. If this policy is enabled, Image Creator functionality won't be accessible in the Paint app. If this policy is disabled or not configured, users will be able to access Image Creator functionality.
+This policy setting allows you to control whether Image Creator functionality is disabled in the Windows Paint app.
+
+- If this policy is enabled, Image Creator functionality won't be accessible in the Paint app.
+
+- If this policy is disabled or not configured, users will be able to access Image Creator functionality.
 <!-- DisableImageCreator-Description-End -->
 
 <!-- DisableImageCreator-Editable-Begin -->
