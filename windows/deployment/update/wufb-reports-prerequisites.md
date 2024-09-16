@@ -27,7 +27,7 @@ Before you begin the process of adding Windows Update for Business reports to yo
   - Devices can be [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 - Devices that are [Microsoft Entra registered](/azure/active-directory/devices/concept-azure-ad-register) only (workplace joined) aren't supported with Windows Update for Business reports.
 - The Log Analytics workspace must be in a [supported region](#log-analytics-regions).
-- Data in the **Driver update** tab of the [workbook](wufb-reports-workbook.md) is only available for devices that receive driver and firmware updates from the [Windows Update for Business deployment service](deployment-service-overview.md).
+- Data in the **Driver update** tab of the [workbook](wufb-reports-workbook.md) is only available for devices that receive driver and firmware updates from [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview).
 
 ## Permissions
 
