@@ -208,7 +208,7 @@ The following developer APIs were added or updated:
 
 - The [Power Grid Forecast API](/uwp/api/windows.devices.power.powergridforecast) was introduced. App developers can minimize environmental impact by shifting background workloads to times when renewable energy is available to the local grid. Forecast data isn't available globally and quality of data may vary by region.
 - Added an energy saver notification callback setting GUID to represent the new energy saver experience. Apps can subscribe to the energy saver status by passing the appropriate GUID to the PowerSettingRegisterNotification API and can implement different behaviors to optimize energy or performance depending on the current energy saver status. For more information, see [Power Setting GUIDs](/windows/win32/power/power-setting-guids)
-- Extended the [Effective Power Mode API](/windows/win32/api/powerbase/ne-powerbase-power-mode) to interpret the new energy saver levels when determining the returned effective power mode.
+- Extended the [Effective Power Mode API](/windows/win32/api/powersetting/ne-powersetting-effective_power_mode) to interpret the new energy saver levels when determining the returned effective power mode.
 
 ## Features removed in Windows 11, version 24H2
 
