@@ -142,4 +142,4 @@ The following services are part of the Windows Update for Business product famil
     - Report on devices with update compliance issues
     - Analyze and display your data in multiple ways
 
-- The [Windows Update for Business deployment service](deployment-service-overview.md) is a cloud service designed to work with your existing Windows Update for Business policies and Windows Update for Business reports. The deployment service provides additional control over the approval, scheduling, and safeguarding of updates delivered from Windows Update to managed devices.
+- [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) is a cloud service designed to work with your existing Windows Update for Business policies. Windows Autopatch provides additional control over the approval, scheduling, and safeguarding of updates delivered from Windows Update to managed devices.

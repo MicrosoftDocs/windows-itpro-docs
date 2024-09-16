@@ -1,12 +1,12 @@
 ---
-title: Deploy expedited updates
-titleSuffix: Windows Update for Business deployment service
-description: Learn how to use Windows Update for Business deployment service to deploy expedited updates to devices in your organization. 
+title: Programmatic controls for expedited Windows quality updates
+titleSuffix: Windows Autopatch
+description: Use programmatic controls to deploy expedited Windows quality updates to devices in your organization. 
 ms.service: windows-client
-ms.subservice: itpro-updates
-ms.topic: conceptual
-ms.author: mstewart
-author: mestew
+ms.subservice: autopatch
+ms.topic: how-to
+ms.author: tiaraquan
+author: tiaraquan
 manager: aaroncz
 ms.collection:
   - tier1
@@ -14,10 +14,10 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 04/05/2024
+ms.date: 09/16/2024
 ---
 
-# Deploy expedited updates with Windows Update for Business deployment service
+# Programmatic controls for expedited Windows quality updates
 <!--7512398-->
 
 In this article, you will:
@@ -32,7 +32,8 @@ In this article, you will:
 
 ## Prerequisites
 
-All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-prerequisites.md) must be met, including ensuring that the *Update Health Tools* is installed on the clients.
+All of the [Windows Autopatch prerequisites](../prepare/windows-autopatch-prerequisites.md) must be met, including ensuring that the *Update Health Tools* is installed on the clients.
+
 - The *Update Health Tools* are installed starting with [KB4023057](https://support.microsoft.com/kb/4023057). To confirm the presence of the Update Health Tools on a device, use one of the following methods:
   - Run a [readiness test for expedited updates](#readiness-test-for-expediting-updates)
   - Look for the folder **C:\Program Files\Microsoft Update Health Tools** or review *Add Remove Programs* for **Microsoft Update Health Tools**.
@@ -41,21 +42,21 @@ All of the [prerequisites for the Windows Update for Business deployment service
 ### Permissions
 
 <!--Using include for Graph Explorer permissions-->
-[!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-graph-explorer-permissions.md)]
+[!INCLUDE [Windows Autopatch permissions using Graph Explorer](../includes/windows-autopatch-graph-explorer-permissions.md)]
 
 ## Open Graph Explorer
 
 <!--Using include for Graph Explorer sign in-->
-[!INCLUDE [Graph Explorer sign in](./includes/wufb-deployment-graph-explorer.md)]
+[!INCLUDE [Graph Explorer sign in](../includes/windows-autopatch-graph-explorer.md)]
 
 ## Run queries to identify devices
 
 <!--Using include for Graph Explorer device queries-->
-[!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name-graph-explorer.md)]
+[!INCLUDE [Graph Explorer device queries](../includes/windows-autopatch-find-device-name-graph-explorer.md)]
 
 ## List catalog entries for expedited updates
 
-Each update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). You can query the catalog to find updates that can be expedited. The `id` returned is the **Catalog ID** and is used to create a deployment. The following query lists all security and nonsecurity<!--8891502--> quality updates that can be deployed as expedited updates by the deployment service. Using `$top=2` and ordering by `ReleaseDateTimeshows` displays the most recent updates that can be deployed as expedited.
+Each update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). You can query the catalog to find updates that can be expedited. The `id` returned is the **Catalog ID** and is used to create a deployment. The following query lists all security and nonsecurity<!--8891502--> quality updates that can be deployed as expedited updates by Windows Autopatch. Using `$top=2` and ordering by `ReleaseDateTimeshows` displays the most recent updates that can be deployed as expedited.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc&$top=2
@@ -98,14 +99,13 @@ The following truncated response displays a **Catalog ID** of  `e317aa8a0455ca60
 }
 ```
 
-The deployment service can display more information about updates that were released on or after January 2023. Using [product revision](/graph/api/resources/windowsupdates-productrevision) gives you additional information about the updates, such as the KB numbers, and the `MajorVersion.MinorVersion.BuildNumber.UpdateBuildRevision`. Windows 10 and 11 share the same major and minor versions, but have different build numbers. 
+Windows Autopatch can display more information about updates that were released on or after January 2023. Using [product revision](/graph/api/resources/windowsupdates-productrevision) gives you additional information about the updates, such as the KB numbers, and the `MajorVersion.MinorVersion.BuildNumber.UpdateBuildRevision`. Windows 10 and 11 share the same major and minor versions, but have different build numbers.
 <!--8092737-->
 Use the following to display the product revision information for the most recent quality update:
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions&$orderby=releaseDateTime desc&$top=1
 ```
-
 
 The following truncated response displays information about KB5029244 for Windows 10, version 22H2, and KB5029263 for Windows 11, version 22H2:
 
@@ -296,7 +296,6 @@ To verify the devices were added to the audience, run the following query using 
 
 To stop an expedited deployment, DELETE the deployment. Deleting the deployment will prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new approval will need to be created.
 
-
 The following example deletes the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
 
 ```msgraph-interactive
@@ -305,7 +304,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e
 
 ## Readiness test for expediting updates
 <!--8705528-->
-You can verify the readiness of clients to receive expedited updates by using [isReadinessTest](/graph/api/resources/windowsupdates-expeditesettings). Create a deployment that specifies  it's an expedite readiness test, then add members to the deployment audience. The service will check to see if the clients meet the prerequisites for expediting updates. The results of the test are displayed in the [Windows Update for Business reports workbook](wufb-reports-workbook.md#quality-updates-tab). Under the **Quality updates** tab, select the **Expedite status** tile, which opens a flyout with a **Readiness** tab with the readiness test results. 
+You can verify the readiness of clients to receive expedited updates by using [isReadinessTest](/graph/api/resources/windowsupdates-expeditesettings). Create a deployment that specifies  it's an expedite readiness test, then add members to the deployment audience. The service will check to see if the clients meet the prerequisites for expediting updates. The results of the test are displayed in the [Windows Update for Business reports workbook](/windows/deployment/update/wufb-reports-workbook#quality-updates-tab). Under the **Quality updates** tab, select the **Expedite status** tile, which opens a flyout with a **Readiness** tab with the readiness test results.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
@@ -330,7 +329,7 @@ content-type: application/json
 }
 ```
 
-The truncated response displays that **isReadinessTest** is set to `true` and gives you a **DeploymentID** of `de910e12-3456-7890-abcd-ef1234567890`. You can then [add members to the deployment audience](#add-members-to-the-deployment-audience) to have the service check that the devices meet the preresquites then review the results in the [Windows Update for Business reports workbook](wufb-reports-workbook.md#quality-updates-tab).
+The truncated response displays that **isReadinessTest** is set to `true` and gives you a **DeploymentID** of `de910e12-3456-7890-abcd-ef1234567890`. You can then [add members to the deployment audience](#add-members-to-the-deployment-audience) to have the service check that the devices meet the preresquites then review the results in the [Windows Update for Business reports workbook](/windows/deployment/update/wufb-reports-workbook#quality-updates-tab).
 
 ```json
         "expedite": {
@@ -347,4 +346,4 @@ The truncated response displays that **isReadinessTest** is set to `true` and gi
 ```
 
 <!--Using include for Update Health Tools log location-->
-[!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-update-health-tools-logs.md)]
+[!INCLUDE [Windows Autopatch Update Health Tools](../includes/windows-autopatch-update-health-tools-logs.md)]

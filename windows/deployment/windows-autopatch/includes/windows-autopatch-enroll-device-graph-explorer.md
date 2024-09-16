@@ -1,11 +1,11 @@
 ---
-author: mestew
-ms.author: mstewart
+author: tiaraquan
+ms.author: tiaraquan
 manager: aaroncz
-ms.subservice: itpro-updates
 ms.service: windows-client
+ms.subservice: autopatch
 ms.topic: include
-ms.date: 02/14/2023
+ms.date: 09/16/2024
 ms.localizationpriority: medium
 ---
 <!--This file is shared by deployment-service-drivers.md and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
