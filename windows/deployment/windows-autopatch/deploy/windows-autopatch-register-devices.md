@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description: This article details how to register devices in Autopatch.
-ms.date: 07/10/2024
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -17,29 +17,106 @@ ms.collection:
 
 # Register your devices
 
-Before Microsoft can manage your devices in Windows Autopatch, you must have devices registered with the service.
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-## Before you begin
+Before Microsoft can manage your devices in Windows Autopatch, you must register devices with the service. Make sure your devices meet the [device registration prerequisites](../deploy/windows-autopatch-device-registration-overview.md#prerequisites-for-device-registration).
 
-Windows Autopatch can take over software update management control of devices that meet software-based prerequisites as soon as an IT admin decides to have their tenant managed by the service. The Windows Autopatch software update management scope includes the following software update workloads:
+## Detailed device registration workflow diagram
 
-- [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md)
-- [Windows feature updates](../operate/windows-autopatch-groups-windows-feature-update-overview.md)
-- [Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)
-- [Microsoft Edge updates](../operate/windows-autopatch-edge.md)
-- [Microsoft Teams updates](../operate/windows-autopatch-teams.md)
+See the following detailed workflow diagram. The diagram covers the Windows Autopatch device registration process:
 
-### Windows Autopatch groups device registration
+:::image type="content" source="../media/windows-autopatch-device-registration-workflow-diagram.png" alt-text="Diagram of the device registration workflow." lightbox="../media/windows-autopatch-device-registration-workflow-diagram.png":::
 
-When you either create/edit a [Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups) or edit the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) to add or remove deployment rings, the device-based Microsoft Entra groups you use when setting up your deployment rings are scanned to see if devices need to be registered with the Windows Autopatch service.
+| Step | Description |
+| ----- | ----- |
+| **Step 1: Identify devices** | IT admin identifies devices to be managed by the Windows Autopatch service. |
+| **Step 2: Add devices** | IT admin identifies and adds devices, or nests other Microsoft Entra device groups into any Microsoft Entra group when you [create an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group) or imported (WUfB) policies. |
+| **Step 3: Discover devices** | The Windows Autopatch Discover Devices function discovers devices (hourly) that were previously added by the IT admin from Microsoft Entra groups used with Autopatch groups in **step #2**. The Microsoft Entra device ID is used by Windows Autopatch to query device attributes in both Microsoft Intune and Microsoft Entra ID when registering devices into its service.<ol><li>Once devices are discovered from the Microsoft Entra group, the same function gathers additional device attributes and saves it into its memory during the discovery operation. The following device attributes are gathered from Microsoft Entra ID in this step:</li><ol><li>**AzureADDeviceID**</li><li>**OperatingSystem**</li><li>**DisplayName (Device name)**</li><li>**AccountEnabled**</li><li>**RegistrationDateTime**</li><li>**ApproximateLastSignInDateTime**</li></ol><li>In this same step, the Windows Autopatch discover devices function calls another function, the device prerequisite check function. The device prerequisite check function evaluates software-based device-level prerequisites to comply with Windows Autopatch device readiness requirements before registration.</li></ol> |
+| **Step 4: Check prerequisites** | The Windows Autopatch prerequisite function makes an Intune Graph API call to sequentially validate device readiness attributes required for the registration process. For detailed information, see the [Detailed prerequisite check workflow diagram](#detailed-prerequisite-check-workflow-diagram) section. The service checks the following device readiness attributes, and/or prerequisites:<ol><li>**If the device is Intune-managed or not.**</li><ol><li>Windows Autopatch looks to see **if the Microsoft Entra device ID has an Intune device ID associated with it**.</li><ol><li>If **yes**, it means this device is enrolled into Intune.</li><li>If **not**, it means the device isn't enrolled into Intune, hence it can't be managed by the Windows Autopatch service.</li></ol><li>**If the device is not managed by Intune**, the Windows Autopatch service can't gather device attributes such as operating system version, Intune enrollment date, device name, and other attributes. When this happens, the Windows Autopatch service uses the Microsoft Entra device attributes gathered and saved to its memory in **step 3a**.</li><ol><li>Once it has the device attributes gathered from Microsoft Entra ID in **step 3a**, the device is flagged with the **Prerequisite failed** status, and the device's Autopatch readiness status appears as **Not registered** in the [**Devices report**](#devices-report). The IT admin can review the reasons the device wasn't registered into Windows Autopatch. The IT admin remediates these devices. In this case, the IT admin should check why the device wasn't enrolled into Intune.</li><li>A common reason is when the Microsoft Entra device ID is stale, it doesn't have an Intune device ID associated with it anymore. To remediate, [clean up any stale Microsoft Entra device records from your tenant](windows-autopatch-register-devices.md#clean-up-dual-state-of-hybrid-azure-ad-joined-and-azure-registered-devices-in-your-azure-ad-tenant).</li></ol><li>**If the device is managed by Intune**, the Windows Autopatch prerequisite check function continues to the next prerequisite check, which evaluates whether the device checked into Intune in the last 28 days.</li></ol><li>**If the device is a Windows device or not.**</li><ol><li>Windows Autopatch looks to see if the device is a Windows and corporate-owned device.</li><ol><li>**If yes**, it means this device can be registered with the service because it's a Windows corporate-owned device.</li><li>**If not**, it means the device is a non-Windows device, or it's a Windows device but it's a personal device.</li></ol></ol><li>**Windows Autopatch checks the Windows SKU family**. The SKU must be either:</li><ol><li>**Enterprise**</li><li>**Pro**</li><li>**Pro Workstation**</li></ol><li>**If the device meets the operating system requirements**, Windows Autopatch checks whether the device is either:</li><ol><li>**Only managed by Intune.**</li><ol><li>If the device is only managed by Intune, the device is marked as Passed all prerequisites.</li></ol><li>**Co-managed by both Configuration Manager and Intune.**</li><ol><li>If the device is co-managed by both Configuration Manager and Intune, an additional prerequisite check is evaluated to determine if the device satisfies the co-management-enabled workloads required by Windows Autopatch to manage devices in a co-managed state. The required co-management workloads evaluated in this step are:</li><ol><li>**Windows Updates Policies**</li><li>**Device Configuration**</li><li>**Office Click to Run**</li></ol><li>If Windows Autopatch determines that one of these workloads isn't enabled on the device, the service marks the device as **Prerequisite failed** and the device's Autopatch readiness status appears as **Not registered** in the **Devices report**.</li></ol></ol></ol>|
+| **Step 5: Calculate deployment ring assignment** | Once the device passes all prerequisites described in **step #4**, Windows Autopatch starts its deployment ring assignment calculation. The following logic is used to calculate the Windows Autopatch deployment ring assignment:<ol><li>If the Windows Autopatch tenant's existing managed device size is **≤ 200**, the deployment ring assignment is **First (5%)**, **Fast (15%)**, remaining devices go to the **Broad ring (80%)**.</li><li>If the Windows Autopatch tenant's existing managed device size is **>200**, the deployment ring assignment is **First (1%)**, **Fast (9%)**, remaining devices go to the **Broad ring (90%)**.</li></ol> |
+| **Step 6: Assign devices to a deployment ring group** | Once the deployment ring calculation is done, Windows Autopatch assigns devices to two deployment ring sets, the first one being the service-based deployment ring set represented by the following Microsoft Entra groups:<ol><li>**Modern Workplace Devices-Windows Autopatch-First**</li><ol><li>The Windows Autopatch device registration process doesn't automatically assign devices to the Test ring represented by the Microsoft Entra group (**Modern Workplace Devices-Windows Autopatch-Test**). It's important that you assign devices to the Test ring to validate the update deployments before the updates are deployed to a broader population of devices.</li></ol><li>**Modern Workplace Devices-Windows Autopatch-Fast**</li><li>**Modern Workplace Devices-Windows Autopatch-Broad**</li> |
+| **Step 7: Assign devices to a Microsoft Entra group** | Windows Autopatch also assigns devices to the following Microsoft Entra groups when certain conditions apply:<ol><li>**Modern Workplace Devices - All**</li><ol><li>This group has all devices managed by Windows Autopatch.</li></ol><li>**Modern Workplace Devices - Virtual Machine**</li><ol><li>This group has all **virtual devices** managed by Windows Autopatch.</li></ol> |
+| **Step 8: Post-device registration** | In post-device registration, three actions occur:<ol><li>Windows Autopatch adds devices to its managed database.</li><li>Flags devices as **Ready**. The device's Autopatch readiness status appears as **Registered** in the **Devices report**.</li><li>The Microsoft Entra device ID of the device successfully registered is added into the Microsoft Cloud Managed Desktop Extension's allowlist. Windows Autopatch installs the Microsoft Cloud Managed Desktop Extension agent once devices are registered, so the agent can communicate back to the Microsoft Cloud Managed Desktop Extension service.</li><ol><li>The agent is the **Modern Workplace - Autopatch Client setup** PowerShell script that was created during the Windows Autopatch tenant enrollment process. The script is executed once devices are successfully registered into the Windows Autopatch service.</li></ol> |
+| **Step 9: Review device registration status** | IT admins review the device's Autopatch readiness status. Devices are either **Registered** or **Not registered** in the **Devices report**.<ol><li>If the device was **successfully registered**, the device's Autopatch readiness status appears as **Registered** in the **Devices report**.</li><li>If **not**, the device's Autopatch readiness status appears as **Not registered** in the **Devices report**.</li></ol> |
+| **Step 10: End of registration workflow** | This is the end of the Windows Autopatch device registration workflow. |
 
-If devices aren't registered, Autopatch groups starts the device registration process by using your existing device-based Microsoft Entra groups instead of the Windows Autopatch Device Registration group.
+## Detailed prerequisite check workflow diagram
 
-For more information, see [create Custom Autopatch groups](../manage/windows-autopatch-manage-autopatch-groups.md#create-a-custom-autopatch-group) and [edit Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group) to register devices using the Autopatch groups device registration method.
+As described in **step #4** in the previous [Detailed device registration workflow diagram](#detailed-device-registration-workflow-diagram), the following diagram is a visual representation of the prerequisite construct for the Windows Autopatch device registration process. The prerequisite checks are sequentially performed.
 
-<a name='supported-scenarios-when-nesting-other-azure-ad-groups'></a>
+:::image type="content" source="../media/windows-autopatch-prerequisite-check-workflow-diagram.png" alt-text="Diagram of the prerequisite check workflow." lightbox="../media/windows-autopatch-prerequisite-check-workflow-diagram.png":::
 
-#### Supported scenarios when nesting other Microsoft Entra groups
+## Devices report
+
+Windows Autopatch has a device report that allows you to see:
+
+- Each registered devices readiness for the service
+- Update status
+- Policies that target each device
+
+### View the device report
+
+**To view the device report:**
+
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** in the left pane.
+1. Under Manage updates, select **Windows updates**.
+1. Select the **Monitor** tab, and then select **Autopatch devices**.
+
+Once a device is registered to the service, a readiness status is displayed. Each readiness status helps you to determine if there are any actions to take or if the device is ready for the service.
+
+#### Readiness statuses
+
+| Autopatch readiness status in the Devices report | Sub-status description |
+| --- | --- |
+| Registered |<ul><li>**Ready**: Devices successfully passed all prerequisite checks and successfully registered with Windows Autopatch. Additionally, Ready devices successfully passed all [post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md) and don't have any active alerts targeting them.</li><li>**Not ready**: These devices were successfully registered with Windows Autopatch. However, these devices:</li><ul><li>Failed to pass one or more [post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</li><li>Aren't ready to have one or more software update workloads managed by the service.</li><li>The device didn't communicate with Microsoft Intune in the last 28 days</li><li>The device has a conflict with policies or with Autopatch group membership</li></ul></ul> |
+| Not registered |<ul><li>**Autopatch group conflict**: The device has a conflict with Autopatch group membership</li><li>**Prerequisites failed**: The device failed to pass one or more [post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</li><li>**Excluded**: Devices with this status are removed from the Windows Autopatch service only. Microsoft assumes you manage these devices yourself in some capacity.</li></ul> |
+
+### View only excluded devices
+
+You can view the excluded devices in the Not registered tab to make it easier for you to bulk restore devices that were previously excluded from the Windows Autopatch service.
+
+**To view only excluded devices:**
+
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), navigate to **Windows Autopatch** > **Devices**.
+2. In the **Not registered** tab, select **Excluded** from the filter list. Leave all other filter options unselected.
+
+## Move devices in between deployment rings
+
+If you want to move devices to different deployment rings after Windows Autopatch's deployment ring assignment, you can repeat the following steps for one or more devices from the **Devices report**.
+
+> [!IMPORTANT]
+> **You can only move devices in between deployment rings within the same Autopatch group**. You can't move devices in between deployment rings across different Autopatch groups. If you try to select a device that belongs to one Autopatch group, and another device that belongs to a different Autopatch group, you'll receive the following error message on the top right corner of the Microsoft Intune portal: **An error occurred. Please select devices within the same Autopatch group**.
+
+**To move devices in between deployment rings:**
+
+> [!NOTE]
+> You can only move devices to other deployment rings when the device's Autopatch readiness status appears as **Registered** and the Update status is **Active**.
+
+1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** in the left pane.
+1. Under **Manage updates** section, select **Windows updates**.
+1. In the **Devices report**, select one or more devices you want to assign. All selected devices are assigned to the deployment ring you specify.
+1. Select **Device actions** from the menu.
+1. Select **Assign ring**. A fly-in opens.
+1. Use the dropdown menu to select the deployment ring to move devices to, and then select **Save**. The Ring assigned by column changes to **Pending**.
+1. When the assignment is complete, the **Ring assigned by** column changes to Admin (which indicates that you made the change) and the **Ring** column shows the new deployment ring assignment.
+
+> [!WARNING]
+> Moving devices between deployment rings through directly changing Microsoft Entra group membership isn't supported and might cause unintended configuration conflicts within the Windows Autopatch service. To avoid service interruption to devices, use the **Assign device to ring** action described previously to move devices between deployment rings.
+
+## Register devices into Autopatch groups
+
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
+
+An Autopatch group is a logical container or unit that groups several [Microsoft Entra groups](/entra/fundamentals/groups-view-azure-portal), and software update policies. For more information, see [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md).
+
+When you [create an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group) to add or remove deployment rings, the device-based Microsoft Entra groups you use when setting up your deployment rings, are scanned to see if devices need to be registered with the Windows Autopatch service.
+
+If devices aren't registered, Autopatch groups start the device registration process by using your existing device-based Microsoft Entra groups.
+
+- For more information, see [create an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group) to register devices into Autopatch groups.
+- For more information about moving devices between deployment rings, see [Move devices in between deployment rings](#move-devices-in-between-deployment-rings).
+
+### Supported scenarios when nesting other Microsoft Entra groups
 
 Windows Autopatch also supports the following Microsoft Entra nested group scenarios:
 
@@ -48,94 +125,7 @@ Microsoft Entra groups synced up from:
 - On-premises Active Directory groups (Windows Server AD)
 - [Configuration Manager collections](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_aadcollsync)
 
-> [!WARNING]
-> It isn't recommended to sync Configuration Manager collections straight to the **Windows Autopatch Device Registration** Microsoft Entra group. Use a different Microsoft Entra group when syncing Configuration Manager collections to Microsoft Entra groups then you can nest this or these groups into the **Windows Autopatch Device Registration** Microsoft Entra group.
-
-> [!IMPORTANT]
-> The **Windows Autopatch Device Registration** Microsoft Entra group only supports **one level** of Microsoft Entra nested groups.
-
-<a name='clean-up-dual-state-of-hybrid-azure-ad-joined-and-azure-registered-devices-in-your-azure-ad-tenant'></a>
-
-### Clean up dual state of Microsoft Entra hybrid joined and Azure registered devices in your Microsoft Entra tenant
-
-An [Microsoft Entra dual state](/azure/active-directory/devices/hybrid-azuread-join-plan#handling-devices-with-azure-ad-registered-state) occurs when a device is initially connected to Microsoft Entra ID as an [Microsoft Entra registered](/azure/active-directory/devices/concept-azure-ad-register) device. However, when you enable Microsoft Entra hybrid join, the same device is connected twice to Microsoft Entra ID but as a [Hybrid Microsoft Entra device](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
-
-In the dual state, you end up having two Microsoft Entra device records with different join types for the same device. In this case, the Hybrid Microsoft Entra device record takes precedence over the Microsoft Entra registered device record for any type of authentication in Microsoft Entra ID, which makes the Microsoft Entra registered device record stale.
-
-It's recommended to detect and clean up stale devices in Microsoft Entra ID before registering devices with Windows Autopatch, see [How To: Manage stale devices in Microsoft Entra ID](/azure/active-directory/devices/manage-stale-devices).
-
-> [!WARNING]
-> If you don't clean up stale devices in Microsoft Entra ID before registering devices with Windows Autopatch, you might end up seeing devices failing to meet the **Intune or Cloud-Attached (Device must be either Intune-managed or Co-managed)** pre-requisite check  in the **Not ready** tab because it's expected that these stale Microsoft Entra devices aren't enrolled into the Intune service anymore.
-
-## Prerequisites for device registration
-
-To be eligible for Windows Autopatch management, devices must meet a minimum set of required software-based prerequisites:
-
-- Windows 10 (1809+)/11 Enterprise or Professional editions (only x64 architecture).
-- Either [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Microsoft Entra joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid) (personal devices aren't supported).
-- Managed by Microsoft Intune.
-    - [Already enrolled into Microsoft Intune](/mem/intune/user-help/enroll-windows-10-device) and/or [Configuration Manager co-management](/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites#configuration-manager-co-management-requirements).
-        - Must switch the following Microsoft Configuration Manager [co-management workloads](/mem/configmgr/comanage/how-to-switch-workloads) to Microsoft Intune (either set to Pilot Intune or Intune):
-            - Windows updates policies
-            - Device configuration
-            - Office Click-to-run
-- Last Intune device check in completed within the last 28 days.
-
-> [!IMPORTANT]
-> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager operating system deployment capabilities to perform an in-place upgrade](/mem/configmgr/osd/deploy-use/upgrade-windows-to-the-latest-version) for Windows devices that are part of the LTSC.
-
-For more information, see [Windows Autopatch Prerequisites](../prepare/windows-autopatch-prerequisites.md).
-
-## About the Registered, Not ready and Not registered tabs
-
-> [!IMPORTANT]
-> Registered devices can appear in the Registered, Not ready, or Not registered tabs. When devices successfully register with the service, the devices are listed in the Registered tab. However, even if the device(s)is successfully registered, they can be part of Not ready tab. If devices fail to register, the devices are listed in the Not registered tab.
-
-Windows Autopatch has three tabs within its device blade. Each tab is designed to provide a different set of device readiness statuses so the IT admin knows where to go to monitor, and fix potential device health issues.
-
-| Device blade tab | Purpose | Expected device readiness status |
-| ----- | ----- | ----- |
-| Registered | The purpose of this tab is to show devices that were successfully registered with the Windows Autopatch service. | Active |
-| Not ready | The purpose of this tab is to help you identify and remediate devices that failed to pass one or more post-device registration readiness checks. Devices showing up in this tab were successfully registered with Windows Autopatch. However, these devices aren't ready to have one or more software update workloads managed by the service. | Readiness failed and/or Inactive |
-| Not registered | The purpose of this tab is to help you identify and remediate devices that don't meet one or more prerequisite checks to successfully register with the Windows Autopatch service. | Prerequisites failed |
-
-## Device readiness statuses
-
-The following are the possible device readiness statuses in Windows Autopatch:
-
-| Readiness status | Description | Device blade tab |
-| ----- | ----- | ----- |
-| Active | Devices with this status successfully passed all prerequisite checks and then successfully registered with Windows Autopatch. Additionally, devices with this status successfully passed all post-device registration readiness checks. |  Registered |
-| Readiness failed | Devices with this status haven't passed one or more post-device registration readiness checks. These devices aren't ready to have one or more software update workloads managed by Windows Autopatch. | Not ready |
-| Inactive | Devices with this status haven't communicated with Microsoft Intune in the last 28 days. | Not ready |
-| Prerequisites failed | Devices with this status haven't passed one or more prerequisite checks and haven't successfully registered with Windows Autopatch | Not registered |
-
-## Built-in roles required for device registration
-
-A role defines the set of permissions granted to users assigned to that role. You can use the **Intune Service Administrator** role to register devices.
-
-For more information, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
-
-If you want to assign less-privileged user accounts to perform specific tasks in the Windows Autopatch portal, such as register devices with the service, you can add these user accounts into one of the two Microsoft Entra groups created during the [tenant enrollment](../prepare/windows-autopatch-enroll-tenant.md) process:
-
-| Microsoft Entra group name | Discover devices | Modify columns | Refresh device list | Export to .CSV | Device actions |
-| ----- | ----- | ----- | ----- | ----- | ----- |
-| Modern Workplace Roles - Service Administrator | Yes | Yes | Yes | Yes | Yes |
-| Modern Workplace Roles - Service Reader | No | Yes | Yes | Yes | No |
-
-> [!TIP]
-> If you're adding less-privileged user accounts into the **Modern Workplace Roles - Service Administrator** Microsoft Entra group, it's recommended to add the same users as owners of the **Windows Autopatch Device Registration** Microsoft Entra group. Owners of the **Windows Autopatch Device Registration** Microsoft Entra group can add new devices as members of the group for registration purposes.<p>For more information, see [assign an owner of member of a group in Microsoft Entra ID](/azure/active-directory/privileged-identity-management/groups-assign-member-owner#assign-an-owner-or-member-of-a-group).</p>
-
-## Details about the device registration process
-
-Registering your devices with Windows Autopatch does the following:
-
-1. Makes a record of devices in the service.
-2. Assign devices to the [two deployment ring sets](../deploy/windows-autopatch-groups-overview.md#about-deployment-rings) and other groups required for software update management.
-
-For more information, see [Device registration overview](../deploy/windows-autopatch-device-registration-overview.md).
-
-### Windows Autopatch on Windows 365 Enterprise Workloads
+## Windows Autopatch on Windows 365 Enterprise Workloads
 
 Windows 365 Enterprise gives IT admins the option to register devices with the Windows Autopatch service as part of the Windows 365 provisioning policy creation. This option provides a seamless experience for admins and users to ensure your Cloud PCs are always up to date. When IT admins decide to manage their Windows 365 Cloud PCs with Windows Autopatch, the Windows 365 provisioning policy creation process calls Windows Autopatch device registration APIs to register devices on behalf of the IT admin.
 
@@ -148,22 +138,19 @@ Windows 365 Enterprise gives IT admins the option to register devices with the W
 1. Provide a policy name and select **Join Type**. For more information, see [Device join types](/windows-365/enterprise/identity-authentication#device-join-types).
 1. Select **Next**.
 1. Choose the desired image and select **Next**.
-1. Under the **Microsoft managed services** section, select **Windows Autopatch**. Then, select **Next**. If the *Windows Autopatch (preview) can't manage your Cloud PCs until a Global Admin has finished setting it up.* message appears, you must [enroll your tenant](../prepare/windows-autopatch-enroll-tenant.md) to continue.
+1. Under the **Microsoft managed services** section, select **Windows Autopatch**. Then, select **Next**. If the *Windows Autopatch (preview) can't manage your Cloud PCs until a Global Admin has finished setting it up.* message appears, you must [activate Windows Autopatch features](../prepare/windows-autopatch-feature-activation.md) to continue.
 1. Assign your policy accordingly and select **Next**.
-1. Select **Create**. Now your newly provisioned Windows 365 Enterprise Cloud PCs will automatically be enrolled and managed by Windows Autopatch.
+1. Select **Create**. Now your newly provisioned Windows 365 Enterprise Cloud PCs are automatically enrolled and managed by Windows Autopatch.
 
 For more information, see [Create a Windows 365 Provisioning Policy](/windows-365/enterprise/create-provisioning-policy).
 
-> [!IMPORTANT]
-> Starting in May 2023, Windows 365 Cloud PC devices are assigned to two deployment ring sets, the service-based and the software-based deployment rings. Additionally, once registered with Windows Autopatch, Windows 365 Cloud PC devices are automatically added to the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group). For more information, see [service-based versus software update-based deployment ring sets](../deploy/windows-autopatch-groups-overview.md#service-based-versus-software-update-based-deployment-rings).
-
-### Windows Autopatch on Azure Virtual Desktop workloads
+## Windows Autopatch on Azure Virtual Desktop workloads
 
 Windows Autopatch is available for your Azure Virtual Desktop workloads. Enterprise admins can provision their Azure Virtual Desktop workloads to be managed by Windows Autopatch using the existing device registration process.
 
-Windows Autopatch provides the same scope of service with virtual machines as it does with [physical devices](#windows-autopatch-groups-device-registration). However, Windows Autopatch defers any Azure Virtual Desktop specific support to [Azure support](#contact-support-for-device-registration-related-incidents), unless otherwise specified.
+Windows Autopatch provides the same scope of service with virtual machines as it does with [physical devices](../deploy/windows-autopatch-device-registration-overview.md). However, Windows Autopatch defers any Azure Virtual Desktop specific support to [Azure support](#contact-support-for-device-registration-related-incidents), unless otherwise specified.
 
-#### Prerequisites
+### Prerequisites
 
 Windows Autopatch for Azure Virtual Desktop follows the same [prerequisites](../prepare/windows-autopatch-prerequisites.md) as Windows Autopatch, and the [Azure Virtual Desktop prerequisites](/azure/virtual-desktop/prerequisites).
 
@@ -177,9 +164,9 @@ The following Azure Virtual Desktop features aren't supported:
 - Pooled non persistent virtual machines
 - Remote app streaming
 
-#### Deploy Autopatch on Azure Virtual Desktop
+### Deploy Autopatch on Azure Virtual Desktop
 
-Azure Virtual Desktop workloads can be registered into Windows Autopatch by using the same method as your [physical devices](#windows-autopatch-groups-device-registration).
+Azure Virtual Desktop workloads can be registered into Windows Autopatch by using the same method as your physical devices.
 
 For ease of deployment, we recommend nesting a dynamic device group in your Autopatch device registration group. The dynamic device group would target the **Name** prefix defined in your session host, but **exclude** any Multi-Session Session Hosts. For example:
 
@@ -187,13 +174,30 @@ For ease of deployment, we recommend nesting a dynamic device group in your Auto
 | ----- | ----- |
 | Windows Autopatch - Host Pool Session Hosts | <ul><li>`(device.displayName -contains "AP")`</li><li>`(device.deviceOSType -ne "Windows 10 Enterprise for Virtual Desktops")`</li></ul> |
 
+<a name='clean-up-dual-state-of-hybrid-azure-ad-joined-and-azure-registered-devices-in-your-azure-ad-tenant'></a>
+
+### Clean up dual state of Microsoft Entra hybrid joined and Azure registered devices in your Microsoft Entra tenant
+
+An [Microsoft Entra dual state](/entra/identity/devices/hybrid-join-plan#handling-devices-with-azure-ad-registered-state) occurs when a device is initially connected to Microsoft Entra ID as an [Microsoft Entra registered](/entra/identity/devices/concept-device-registration) device. However, when you enable Microsoft Entra hybrid join, the same device is connected twice to Microsoft Entra ID but as a [Hybrid Microsoft Entra device](/entra/identity/devices/concept-hybrid-join).
+
+In the dual state, you end up having two Microsoft Entra device records with different join types for the same device. In this case, the Hybrid Microsoft Entra device record takes precedence over the Microsoft Entra registered device record for any type of authentication in Microsoft Entra ID, which makes the Microsoft Entra registered device record stale.
+
+It's recommended to detect and clean up stale devices in Microsoft Entra ID before registering devices with Windows Autopatch, see [How To: Manage stale devices in Microsoft Entra ID](/entra/identity/devices/manage-stale-devices).
+
+> [!WARNING]
+> If you don't clean up stale devices in Microsoft Entra ID before registering devices with Windows Autopatch, you might end up seeing devices failing to meet the **Intune or Cloud-Attached (Device must be either Intune-managed or Co-managed)** pre-requisite check  in the **Not ready** tab because it's expected that these stale Microsoft Entra devices aren't enrolled into the Intune service anymore.
+
 ### Contact support for device registration-related incidents
+
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
 Support is available either through Windows 365, or the Windows Autopatch Service Engineering team for device registration-related incidents.
 
 - For Windows 365 support, see [Get support](/mem/get-support).
 - For Azure Virtual Desktop support, see [Get support](https://azure.microsoft.com/support/create-ticket/).
-- For Windows Autopatch support, see [Submit a support request](/windows/deployment/windows-autopatch/operate/windows-autopatch-support-request).
+- For Windows Autopatch support, see [Submit a support request](../manage/windows-autopatch-support-request.md).
+
+---
 
 ## Device management lifecycle scenarios
 
@@ -203,17 +207,17 @@ There's a few more device management lifecycle scenarios to consider when planni
 
 If a device was previously registered into the Windows Autopatch service, but it needs to be reimaged, you must run one of the device provisioning processes available in Microsoft Intune to reimage the device.
 
-The device will be rejoined to Microsoft Entra ID (either Hybrid or Microsoft Entra-only). Then, re-enrolled into Intune as well. No further action is required from you or the Windows Autopatch service, because the Microsoft Entra device ID record of that device remains the same.
+The device is rejoined to Microsoft Entra ID (either Hybrid or Microsoft Entra-only). Then, re-enrolled into Intune as well. No further action is required from you or the Windows Autopatch service, because the Microsoft Entra device ID record of that device remains the same.
 
 ### Device repair and hardware replacement
 
-If you need to repair a device that was previously registered into the Windows Autopatch service, by replacing the motherboard, non-removable network interface cards (NIC) or hard drive, you must re-register the device into the Windows Autopatch service, because a new hardware ID is generated when there are major hardware changes, such as:
+If you need to repair a device that was previously registered into the Windows Autopatch service, by replacing the motherboard, nonremovable network interface cards (NIC) or hard drive, you must re-register the device into the Windows Autopatch service, because a new hardware ID is generated when there are major hardware changes, such as:
 
 - SMBIOS UUID (motherboard)
-- MAC address (non-removable NICs)
+- MAC address (nonremovable NICs)
 - OS hard drive's serial, model, manufacturer information
 
 When one of these hardware changes occurs, Microsoft Entra ID creates a new device ID record for that device, even if it's technically the same device.
 
 > [!IMPORTANT]
-> If a new Microsoft Entra device ID is generated for a device that was previously registered into the Windows Autopatch service, even if it's technically same device, the new Microsoft Entra device ID must be added either through device direct membership or through nested Microsoft Entra dynamic/assigned group into the **Windows Autopatch Device Registration** Microsoft Entra group. This process guarantees that the newly generated Microsoft Entra device ID is registered with Windows Autopatch and that the device continues to have its software updates managed by the service.
+> If a new Microsoft Entra device ID is generated for a device that was previously registered into the Windows Autopatch service, even if it's technically same device, the new Microsoft Entra device ID must be added either through device direct membership or through nested Microsoft Entra dynamic/assigned group in the Windows Autopatch group experience. This process guarantees that the newly generated Microsoft Entra device ID is registered with Windows Autopatch and that the device continues to have its software updates managed by the service.

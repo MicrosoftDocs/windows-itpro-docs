@@ -1,7 +1,7 @@
 ---
 title: Feature update status report
 description: Provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
-ms.date: 07/08/2024
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -17,7 +17,9 @@ ms.collection:
 
 # Feature update status report
 
-The Feature update status report provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch. 
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
+
+The Feature update status report provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
 
 **To view the Feature update status report:**
 
@@ -50,7 +52,7 @@ The following information is available as optional columns in the Feature update
 | ----- | ----- |
 | Microsoft Entra device ID | The current Microsoft Entra ID recorded device ID for the device |
 | Serial number | The current Intune recorded serial number for the device |
-| Intune last check in time | The last time the device checked in to Intune |
+| Intune last check-in time | The last time the device checked in to Intune |
 | Service State | The Service State provided from Windows Update |
 | Service Substate | The Service Substate provided from Windows Update |
 | Client State | The Client State provided from Windows Update |
@@ -73,8 +75,8 @@ The following options are available:
 
 | Option | Description |
 | ----- | ----- |
-| Search | Use to search by device name, Microsoft Entra device ID or serial number |
+| Search | Use to search by device name, Microsoft Entra device ID, or serial number |
 | Sort | Select the **column headings** to sort the report data in ascending and descending order. |
 | Export | Select **Export devices** at the top of the page to export data from this report into a CSV file. |
-| Filter | Select either the **Add filters** or at the top of the report to filter the results. |
+| Filter | Select **Add filters** or use the filters at the top of the report to filter the results. |
 | Columns | Select a column to add or remove the column from the report. |

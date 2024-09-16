@@ -4,7 +4,7 @@ metadata:
   description: Answers to frequently asked questions about Windows Autopatch.
   ms.service: windows-client
   ms.topic: faq
-  ms.date: 07/08/2024
+  ms.date: 09/16/2024
   audience: itpro
   ms.localizationpriority: medium
   manager: aaroncz
@@ -16,72 +16,73 @@ title: Frequently Asked Questions about Windows Autopatch
 summary: This article answers frequently asked questions about Windows Autopatch.
 sections:
   - name: General
-    questions:
-      - question: What Windows versions are supported?
-        answer: |
-          Windows Autopatch works with all [supported versions of Windows 10 and Windows 11](/windows/release-health/supported-versions-windows-client) Enterprise and Professional editions.
+    questions: 
       - question: What is the difference between Windows Update for Business and Windows Autopatch?
         answer: |
-          Windows Autopatch is a service that removes the need for organizations to plan and operate the update process. Windows Autopatch moves the burden from your IT to Microsoft. Windows Autopatch uses [Windows Update for Business](/windows/deployment/update/deployment-service-overview) and other service components to update devices. Both are part of Windows Enterprise E3.
+          Windows Autopatch is a service that removes the need for organizations to plan and operate the update process. Windows Autopatch moves the burden from your IT to Microsoft. Windows Autopatch uses [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) and other service components to update devices. Both are part of [Windows Enterprise E3+ and F3](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
       - question: Is Windows 365 for Enterprise supported with Windows Autopatch?
         answer: |
           Windows Autopatch supports Windows 365 for Enterprise. Windows 365 for Business isn't supported.
-      - question: Does Windows Autopatch support Windows Education (A3/A5) or Windows Front Line Worker (F3) licensing?
-        answer: |
-          Autopatch isn't available for 'A'. Windows Autopatch supports some 'F' series licensing. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
       - question: Will Windows Autopatch support local domain join Windows 10?
         answer: |
-          Windows Autopatch doesn't support local (on-premises) domain join. Windows Autopatch supports [Hybrid AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or pure [Microsoft Entra join](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+          Windows Autopatch doesn't support local (on-premises) domain join. Windows Autopatch supports [Microsoft Hybrid Entra join](/entra/identity/devices/concept-hybrid-join) or [Microsoft Entra join](/entra/identity/devices/concept-directory-join). 
       - question: Will Windows Autopatch be available for state and local government customers?
         answer: |
           Windows Autopatch is available for all Windows E3 customers using Azure commercial cloud. However, Autopatch isn't currently supported for government cloud (GCC) customers. Although Windows 365 Enterprise is in the Azure Commercial cloud, when Windows 365 Enterprise is used with a GCC customer tenant, Autopatch is not supported.
-      - question: What if I enrolled into Windows Autopatch using the promo code? Will I still have access to the service?
-        answer: |
-          Yes. For those who used the promo code to access Windows Autopatch during public preview, you'll continue to have access to Windows Autopatch even when the promo code expires. There's no additional action you have to take to continue using Windows Autopatch.
   - name: Requirements
     questions:
+      - question: What are the licensing requirements for Windows Autopatch?
+        answer: |
+          Business Premium and A3+ licenses include:
+          - Microsoft 365 Business Premium (for more information on available licenses, see Microsoft 365 licensing)
+          - Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
+          - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
+          - Windows 10/11 Enterprise E3 or E5 VDA
+          To [activate all Windows Autopatch features](../overview/windows-autopatch-overview.md#features-and-capabilities), you must have Windows 10/11 Enterprise E3+ or F3 (included in Microsoft 365 F3, E3, or E5) licenses. [Feature activation](../prepare/windows-autopatch-feature-activation.md) is optional and at no additional cost to you when you have Windows 10/11 Enterprise E3+ or F3 licenses. For more information, see [Licenses and entitlements](../prepare/windows-autopatch-prerequisites.md#licenses-and-entitlements). The following licenses provide access to the Windows Autopatch features included in Business premium and A3+ licenses and its additional features after you activate Windows Autopatch features:
+          - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
+          - Windows 10/11 Enterprise E3 or E5 VDA
       - question: What are the prerequisites for Windows Autopatch?
         answer: |
-          - [Supported Windows 10/11 Enterprise and Professional edition versions](/windows/release-health/supported-versions-windows-client)
-          - [Azure Active Directory (Azure AD) Premium](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses)
-          - [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-          - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)
+          - [Microsoft Entra ID](/mem/configmgr/comanage/overview#microsoft-entra-id)(for co-management)
+          - [Microsoft Entra hybrid joined devices](/entra/identity/devices/concept-hybrid-join) or [Microsoft Entra joined devices](/entra/identity/devices/concept-directory-join)
+          - Microsoft Intune (include Configuration Manager 2010 or greater via co-management)
 
           Additional prerequisites for devices managed by Configuration Manager:
 
           - [Configuration Manager Co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements)
           - [A supported version of Configuration Manager](/mem/configmgr/core/servers/manage/updates#supported-versions)
           - [Switch workloads for device configuration, Windows Update and Microsoft 365 Apps from Configuration Manager to Intune](/mem/configmgr/comanage/how-to-switch-workloads) (minimum Pilot Intune. Pilot collection must contain the devices you want to register into Autopatch.)
-      - question: What are the licensing requirements for Windows Autopatch?
+      - question: What are the Intune permissions needed to operate Windows Autopatch?
         answer: |
-          - Windows Autopatch is included with Window 10/11 Enterprise E3 or higher (user-based only) or F3. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
-          - [Azure AD Premium](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses) (for co-management)
-          - [Microsoft Intune](/mem/intune/fundamentals/licenses) (includes Configuration Manager 2010 or greater via co-management)
+          You must use the Microsoft Entra Global Administrator role to activate Windows Autopatch features. For registering devices, managing update deployment and reporting tasks, use the Intune Service Administrator role. For more information, see [Built-in roles for device registration](../deploy/windows-autopatch-device-registration-overview.md#built-in-roles-required-for-device-registration).
       - question: Are there hardware requirements for Windows Autopatch?
         answer: |
           No, Windows Autopatch doesn't require any specific hardware. However, general hardware requirements for updates are still applicable. For example, to deliver Windows 11 to your Autopatch devices they must meet [specific hardware requirements](/windows/whats-new/windows-11-requirements). Windows devices must be supported by your hardware OEM.
   - name: Device registration
-    questions:
-      - question: Can Autopatch customers individually approve or deny devices?
+    questions: 
+      - question: Who can register devices into Windows Autopatch? 
         answer: |
-          No you can't individually approve or deny devices. Once a device is registered with Windows Autopatch, updates are rolled out to the devices according to its ring assignment. Individual device level control isn't supported.
+          You can only register devices into Windows Autopatch if you have E3+ or F3 licenses and have [activated Windows Autopatch features](../prepare/windows-autopatch-feature-activation.md). For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).
       - question: Does Autopatch on Windows 365 Cloud PCs have any feature difference from a physical device?
         answer: |
-          No, Windows 365 Enterprise Cloud PC's support all features of Windows Autopatch. For more information, see [Virtual devices](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#virtual-devices).
+          No, Windows 365 Enterprise Cloud PC's support all features of Windows Autopatch. For more information, see [Virtual devices](../deploy/windows-autopatch-register-devices.md#windows-autopatch-on-azure-virtual-desktop-workloads).
       - question: Do my Cloud PCs appear any differently in the Windows Autopatch admin center?
         answer: |
-          Cloud PC displays the model as the license type you've provisioned. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#windows-autopatch-on-windows-365-enterprise-workloads).
+          Cloud PC displays the model as the license type you've provisioned. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](../deploy/windows-autopatch-register-devices.md#windows-autopatch-on-windows-365-enterprise-workloads).
       - question: Can I run Autopatch on my Windows 365 Business Workloads?
         answer: |
-          No. Autopatch is only available on enterprise workloads. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#windows-autopatch-on-windows-365-enterprise-workloads).
+          No. Autopatch is only available on enterprise workloads. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](../deploy/windows-autopatch-register-devices.md#windows-autopatch-on-windows-365-enterprise-workloads).
       - question: Can you change the policies and configurations created by Windows Autopatch?
         answer: |
-          No. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service. For more information about policies and configurations, see [Changes made at tenant enrollment](/windows/deployment/windows-autopatch/references/windows-autopatch-changes-to-tenant).
+          No. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service. For more information about policies and configurations, see [Changes made at feature activation](../references/windows-autopatch-changes-made-at-feature-activation.md).
       - question: How can I represent our organizational structure with our own deployment cadence?
         answer: |
           [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md) helps you manage updates in a way that makes sense for your businesses. For more information, see [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) and [Manage Windows Autopatch groups](../manage/windows-autopatch-manage-autopatch-groups.md).
-  - name: Update management
+  - name: Manage updates
     questions:
+      - question: Who can manage updates with activated Windows Autopatch features?
+        answer: | 
+          This only applies if you have E3+ or F3 licenses and have activated Windows Autopatch features. For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).
       - question: What systems does Windows Autopatch update?
         answer: |
           - Windows 10/11 quality updates: Windows Autopatch manages all aspects of deployment rings.
@@ -91,43 +92,35 @@ sections:
           - Microsoft Teams: Windows Autopatch allows eligible devices to benefit from the standard automatic update channels and will provide support for issues with Teams updates.
       - question: What does Windows Autopatch do to ensure updates are done successfully?
         answer: |
-          For Windows quality and feature updates, updates are applied to devices in the Test ring first. The devices are evaluated, and then rolled out to the First, Fast then Broad rings. There's an evaluation period at each progression. This process is dependent on customer testing and verification of all updates during these rollout stages. The outcome is to ensure that registered devices are always up to date and disruption to business operations is minimized to free up your IT department from that ongoing task.
+          For Windows quality and feature updates, updates are applied to devices in a gradual manner. There's an evaluation period at each progression. This process is dependent on customer testing and verification of all updates during these rollout stages. The outcome is to ensure that registered devices are always up to date and disruption to business operations is minimized to free up your IT department from that ongoing task.
       - question: What happens if there's an issue with an update?
         answer: |
           Autopatch relies on the following capabilities to help resolve update issues:
-          - Pausing and resuming: For more information about pausing and resuming updates, see [pausing and resuming Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md#pause-and-resume-a-release).
-          - Rollback: For more information about Microsoft 365 Apps for enterprise, see [Update controls for Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls).
+          - Pausing and resuming: For more information about pausing and resuming updates, see [pausing and resuming Windows quality updates](../manage/windows-autopatch-windows-quality-update-overview.md#pause-and-resume-a-release).
+          - Rollback: For more information about Microsoft 365 Apps for enterprise, see [Update controls for Microsoft 365 Apps for enterprise](../manage/windows-autopatch-microsoft-365-apps-enterprise.md#microsoft-365-apps-for-enterprise-update-controls).
       - question: Can I permanently pause a Windows feature update deployment?
         answer: |
-          Yes. Windows Autopatch provides a [permanent pause of a feature update deployment](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md#pause-and-resume-a-release).
+          Yes. Windows Autopatch provides a [permanent pause of a feature update deployment](../manage/windows-autopatch-windows-feature-update-overview.md#pause-and-resume-a-release).
       - question: Will Windows quality updates be released more quickly after vulnerabilities are identified, or what is the regular cadence of updates?
         answer: |
-          For zero-day threats, Autopatch will have an [expedited release cadence](../operate/windows-autopatch-windows-quality-update-overview.md#expedited-releases). For normal updates Autopatch, uses a [regular release cadence](../operate/windows-autopatch-wqu-overview.md#windows-quality-update-releases) starting with devices in the Test ring and completing with general rollout to the Broad ring.
+          For zero-day threats, Autopatch will have an [Out of Band release](../manage/windows-autopatch-windows-quality-update-overview.md#out-of-band-releases). For normal updates Autopatch, uses a [regular release cadence](../manage/windows-autopatch-windows-quality-update-overview.md) starting with devices in the Test ring and completing with general rollout to the Broad ring.
       - question: Can customers configure when to move to the next ring or is it controlled by Windows Autopatch?
         answer: |
           The decision of when to move to the next ring is handled by Windows Autopatch; it isn't customer configurable.
-      - question: Can you customize the scheduling of an update rollout to only install on certain days and times?
-        answer: |
-          No, you can't customize update scheduling. However, you can specify [active hours](../manage/windows-autopatch-windows-quality-update-end-user-exp.md) to prevent users from updating during business hours.
       - question: Does Autopatch support include and exclude groups, or dynamic groups to define deployment ring membership?
         answer: |
-          Windows Autopatch doesn't support managing update deployment ring membership using your Microsoft Entra groups. For more information, see [Moving devices in between deployment rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-deployment-rings).
+          Windows Autopatch doesn't support managing update deployment ring membership using your Microsoft Entra groups. For more information, see [Move devices in between deployment rings](../deploy/windows-autopatch-register-devices.md#move-devices-in-between-deployment-rings).
       - question: Does Autopatch have two release cadences per update or are there two release cadences per-ring?
         answer: |
-          The release cadences are defined based on the update type. For example, a [regular cadence](../operate/windows-autopatch-windows-quality-update-overview.md) (for a Windows quality update would be a gradual rollout from the Test ring to the Broad ring over 14 days whereas an [expedited release](../operate/windows-autopatch-windows-quality-update-overview.md#expedited-releases) would roll out more rapidly.
+          The release cadences are defined based on the update type. For example, a [regular cadence](../manage/windows-autopatch-windows-quality-update-overview.md) (for a Windows quality update would be a gradual rollout from the Test ring to the Broad ring over 14 days whereas an [Out of Band release](../manage/windows-autopatch-windows-quality-update-overview.md#out-of-band-releases) would roll out more rapidly.
   - name: Support
     questions:
       - question: What support is available for customers who need help with onboarding to Windows Autopatch?
         answer: |
-          The FastTrack Center is the primary mode of support for customers who need assistance from Microsoft to meet the pre-requisites (such as Intune and Azure or Hybrid AD) for onboarding to Windows Autopatch. For more information, see [Microsoft FastTrack for Windows Autopatch](../operate/windows-autopatch-support-request.md#microsoft-fasttrack). When you've onboarded with Windows Autopatch, you can [submit a support request](../operate/windows-autopatch-support-request.md) with the Windows Autopatch Service Engineering Team.
+          The FastTrack Center is the primary mode of support for customers who need assistance from Microsoft to meet the pre-requisites (such as Intune and Azure or Hybrid AD) for onboarding to Windows Autopatch. For more information, see [Microsoft FastTrack for Windows Autopatch](../manage/windows-autopatch-support-request.md#microsoft-fasttrack). If you have [Windows Enterprise E3+ or E5 licenses](../overview/windows-autopatch-overview.md#windows-enterprise-e3-and-f3-licenses) and you've [activated Windows Autopatch features](../prepare/windows-autopatch-feature-activation.md), you can [submit a support request](../manage/windows-autopatch-support-request.md) with the Windows Autopatch Service Engineering Team.
       - question: Does Windows Autopatch Support Dual Scan for Windows Update?
         answer: |
           Dual Scan for Windows has been deprecated and replaced with the [scan source policy](/windows/deployment/update/wufb-wsus). Windows Autopatch supports the scan source policy if the Feature updates, and Windows quality updates workloads are configured for Windows update. If Feature and Windows updates are configured for WSUS, it could cause disruptions to the service and your release schedules.
-  - name: Other
-    questions:
-      - question: Are there Autopatch specific APIs or PowerShell scripts available?
-        answer: |
-          Programmatic access to Autopatch isn't currently available.
 additionalContent: |
   ## Additional Content
   [Provide feedback](https://go.microsoft.com/fwlink/?linkid=2195593) or start a discussion in our [Windows Autopatch Tech Community](https://aka.ms/Community/WindowsAutopatch)

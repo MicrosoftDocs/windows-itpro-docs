@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates overview
-description: This article explains how Windows feature updates are managed with Autopatch groups
-ms.date: 07/08/2024
+description: This article explains how Windows feature updates are managed
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -15,158 +15,129 @@ ms.collection:
   - tier1
 ---
 
-# Windows feature updates overview
+# Windows feature update
 
-Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization's IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation.
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-Windows feature updates consist of:
+Windows Autopatch provides tools to assist with the controlled roll out of annual Windows feature updates. These policies provide tools to allow version targeting, phased releases, and even Windows 10 to Windows 11 update options. For more information about how to configure feature update profiles, see [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates).
 
-- Keeping Windows devices protected against behavioral issues.
-- Providing new features to boost end-user productivity.
+## Multi-phase feature update
 
-Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date. You can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
+Multi-phase feature update allows you to create customizable feature update deployments using multiple phases for your [existing Autopatch groups](../manage/windows-autopatch-manage-autopatch-groups.md). These phased releases can be tailored to meet your organizational unique needs.
 
-## Service level objective
+### Release statuses
 
-Windows Autopatch's service level objective for Windows feature updates aims to keep **95%** of eligible devices on the targeted Windows OS version [currently serviced](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2) for its default and global releases maintained by the service, and custom releases created and managed by you.
+A release is made of one or more phases. The release status is based on the calculation and consolidation of each phase status.
 
-## Device eligibility criteria
+The release statuses are described in the following table:
 
-Windows Autopatch's device eligibility criteria for Windows feature updates aligns with [Windows Update for Business and Microsoft Intune's device eligibility criteria](/mem/intune/protect/windows-10-feature-updates#prerequisites).
+| Release status | Definition | Options |
+| ----- | ----- | ----- |
+| Scheduled | Release is scheduled and not all phases created its Windows feature update policies |<ul><li>Releases with the **Scheduled status** can't be canceled but can have its deployment cadence edited as not all phases created its Windows feature update policies.</li><li>Autopatch groups and its deployment rings that belong to a **Scheduled** release can't be assigned to another release.</li></ul> |
+| Active | All phases in the release are active. All phases reached their first deployment date, which created the Windows feature update policies. |<ul><li>Release can be paused but can't be edited or canceled since the Windows feature update policy was already created for its phases.</li><li>Autopatch groups and their deployment rings can be assigned to another release.</li></ul> |
+| Inactive | All the Autopatch groups within the release are assigned to a new release. As a result, the Windows feature update policies were unassigned from all phases from within the release. |<ul><li>Release can be viewed as a historical record.</li><li>Releases can't be deleted, edited, or canceled.</li></ul> |
+| Paused | All phases in the release are paused. The release remains paused until you resume it. | <ul><li>Releases with the Paused status can't be edited or canceled since the Windows feature update policy was already created for its phases.</li><li>Release can be resumed.</li></ul> |
+| Canceled | All phases in the release are canceled. | <ul><li>Releases with the Canceled status can't be edited or canceled since the Windows feature update policy wasn't created for its phases.</li><li>Canceled release can't be deleted.</li></ul> |
 
-> [!IMPORTANT]
-> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager operating system deployment capabilities to perform an in-place upgrade](/mem/configmgr/osd/deploy-use/upgrade-windows-to-the-latest-version) for Windows devices that are part of the LTSC.
+#### Phase statuses
 
-## Key benefits
-
-- Windows Autopatch makes it easier and less expensive for you to keep your Windows devices up to date. You can focus on running your core businesses while Windows Autopatch runs update management on your behalf.
-- You're in control of telling Windows Autopatch when your organization is ready to move to the next Windows OS version.
-	- Combined with custom releases, Autopatch Groups gives your organization great control and flexibility to help you plan your gradual rollout in a way that works for your organization.
-- Simplified end-user experience with rich controls for gradual rollouts, deployment cadence and speed.
-- No need to manually modify the default Windows feature update policies (default release) to be on the Windows OS version your organization is currently ready for.
-- Allows for scenarios where you can deploy a single release across several Autopatch groups and its deployment rings.
-
-## Key concepts
-
-- A release is made of one or more deployment phases and contains the required OS version to be gradually rolled out throughout its deployment phases.
-- A phase (deployment phase) is made of one or more Autopatch group deployment rings. A phase:
-    - Works as an additional layer of deployment cadence settings that can be defined by IT admins (only for Windows feature updates) on top of Autopatch group deployment rings (Windows update rings policies).
-    - Deploys Windows feature updates across one or more Autopatch groups.
-- There are three types of releases:
-    - Default
-    - Global
-    - Custom
-
-### Default release
-
-Windows Autopatch's default Windows feature update release is a service-driven release that enforces the minimum Windows OS version currently serviced by the Windows servicing channels for the deployment rings in the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group).
-
-> [!TIP]
-> Windows Autopatch allows you to [create custom Windows feature update releases](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md#create-a-custom-release).
-
-When devices are registered by manually adding them to the Windows Autopatch Device Registration Microsoft Entra ID assigned group, devices are assigned to deployment rings as part of the default Autopatch group. Each deployment ring has its own Windows feature update policy assigned to them. This is intended to minimize unexpected Windows OS upgrades once new devices register with the service.
-
-The policies:
-
-- Contain the minimum Windows 10 version currently serviced by the [Windows servicing channels](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2). The current minimum Windows OS version is **Windows 10 21H2**.
-- Set a bare minimum Windows OS version required by the service once devices are registered with the service.
-
-If the device is registered with Windows Autopatch, and the device is:
-
-- Below the service's currently targeted Windows feature update, that device will be automatically upgraded to the service's target version when the device meets the [device eligibility criteria](#device-eligibility-criteria).
-- On, or above the currently targeted Windows feature update version, there won't be any Windows OS upgrades available to that device.
-
-#### Policy configuration for the default release
-
-If your tenant is enrolled with Windows Autopatch, you can see the following default policies created by the service in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431):
-
-| Policy name | Phase mapping | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch - DSS Policy [Test] | Phase 1 | Windows 10 21H2 | Make update available as soon as possible | May 9, 2023  | N/A | N/A | June 11, 2024 |
-| Windows Autopatch - DSS Policy [First] | Phase 2 | Windows 10 21H2 | Make update available as soon as possible | May 16, 2023  | N/A | N/A | June 11, 2024 |
-| Windows Autopatch - DSS Policy [Fast] | Phase 3 | Windows 10 21H2 | Make update available as soon as possible | May 23, 2023  | N/A | N/A | June 11, 2024 |
-| Windows Autopatch - DSS Policy [Broad] | Phase 4 | Windows 10 21H2 | Make update available as soon as possible | May 30, 2023  | N/A | N/A | June 11, 2024 |
-
-> [!NOTE]
-> Gradual rollout settings aren't configured in the default Windows Update feature policy. If the date of the final group availability is changed to a past date, all remaining devices are offered the update as soon as possible. For more information, see [rollout options for Windows Updates in Microsoft Intune](/mem/intune/protect/windows-update-rollout-options#make-updates-available-gradually).
-
-### Global release
-
-Windows Autopatch's global Windows feature update release is a service-driven release. Like the [default release](#default-release), the Global release enforces the [minimum Windows OS version currently serviced by the Windows servicing channels](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2).
-
-There are two scenarios that the Global release is used:
-
-| Scenario | Description |
-| ----- | ----- |
-| Scenario #1 | You assign Microsoft Entra groups to be used with the deployment ring (Last) or you add additional deployment rings when you customize the [Default Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group).<p>A global Windows feature update policy is automatically assigned behind the scenes to the newly added deployment rings or when you assigned Microsoft Entra groups to the deployment ring (Last) in the Default Autopatch group.</p> |
-| Scenario #2 | You create new [Custom Autopatch groups](../manage/windows-autopatch-manage-autopatch-groups.md#create-a-custom-autopatch-group).<p>The global Windows feature policy is automatically assigned behind the scenes to all deployment rings as part of the Custom Autopatch groups you create.</p> |
-
-> [!NOTE]
-> Global releases don't show up in the Windows feature updates release management blade.
-
-#### Policy configuration values
-
-See the following table on how Windows Autopatch configures the values for its global Windows feature update policy. If your tenant is enrolled with Windows Autopatch, you can see the following default policies created by the service in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431):
-
-| Policy name | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch - Global DSS Policy [Test] | Windows 10 21H2 | Make update available as soon as possible | N/A  | N/A | N/A | June 11, 2024 |
-
-> [!NOTE]
-> Gradual rollout settings aren't configured in the default Windows Update feature policy. If the date of the final group availability is changed to be a past date, all remaining devices are offered the update as soon as possible. For more information, see [rollout options for Windows Updates in Microsoft Intune](/mem/intune/protect/windows-update-rollout-options#make-updates-available-gradually).
-
-### Differences between the default and global Windows feature update policies
+A phase is made of one or more [Autopatch group deployment rings](../deploy/windows-autopatch-groups-overview.md#autopatch-group-deployment-rings). Each phase reports its status to its release.
 
 > [!IMPORTANT]
-> Once you create a custom Windows feature update release, both the global and the default Windows feature update policies are unassigned from Autopatch group's deployment rings behind the scenes.
+> The determining factor that makes a phase status transition from **Scheduled** to **Active** is when the service automatically creates the Windows feature update policy for each Autopatch group deployment ring. Additionally, the phase status transition from **Active** to **Inactive** occurs when Windows feature update policies are unassigned from the Autopatch groups that belong to a phase. This can happen when an Autopatch group and its deployment rings are re-used as part of a new release.
 
-The differences in between the global and the default Windows feature update policy values are:
-
-| Default Windows feature update policy | Global Windows feature update policy |
+| Phase status | Definition |
 | ----- | ----- |
-| <ul><li>Set by default with the Default Autopatch group and assigned to Test, Ring1, Ring2, Ring3. The default policy isn't automatically assigned to the Last ring in the Default Autopatch group.</li><li>The Windows Autopatch service keeps its minimum Windows OS version updated following the recommendation of minimum Windows OS version [currently serviced by the Windows servicing channels](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2).</li></ul> | <ul><li>Set by default and assigned to all new deployment rings added as part of the Default Autopatch group customization.</li><li>Set by default and assigned to all deployment rings created as part of Custom Autopatch groups.</li></ul> |
+| Scheduled | The phase is scheduled but didn't reach its first deployment date yet. The Windows feature update policy wasn't created for the respective phase yet. |
+| Active | The first deployment date reached. The Windows feature update policy was created for the respective phase. |
+| Inactive | All Autopatch groups within the phase are reassigned to a new release. All Windows feature update policies were unassigned from the Autopatch groups. |
+| Paused | Phase is paused. You must resume the phase. |
+| Canceled | Phase is canceled. All Autopatch groups within the phase can be used with a new release. A phase that is canceled can't be deleted. |
 
-### Custom release
+#### Phase policy configuration
 
-A custom release is the release that you create to tell Windows Autopatch how you want the service to manage Windows OS upgrades on your behalf.
+For more information about Windows feature update policies that are created for phases within a release, see [Windows feature update policies](../manage/windows-autopatch-windows-feature-update-policies.md).
 
-Custom releases gives you flexibility to do Windows OS upgrades on your pace, but still relying on Windows Autopatch to give you insights of how your OS upgrades are going and additional deployment controls through the Windows feature updates release management experience.
+## Create a custom release
 
-When a custom release is created and assigned to Autopatch groups, either the default or global releases are unassigned to avoid feature update policy for Windows 10 and later conflicts.
+**To create a custom release:**
 
-For more information on how to create a custom release, see [Manage Windows feature update release](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md#create-a-custom-release).
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Select **Devices** from the left navigation menu.
+1. Under the **Manage updates** section, select **Windows updates**.
+1. In the **Windows updates** blade, select the **Feature updates** tab.
+1. Select **Create Autopatch multi-phase release**.
+1. In the **Basics** page:
+    1. Enter a **Name** for the custom release.
+    2. Select the **Version** to deploy.
+    3. Enter a **Description** for the custom release.
+    4. Select **Next**.
+1. In the **Autopatch groups** page, choose one or more existing Autopatch groups you want to include in the custom release, then select Next.
+1. You can't choose Autopatch groups that are already part of an existing custom release. Select **Autopatch groups assigned to other releases** to review existing assignments.
+1. In the Release phases page, review the number of autopopulated phases. You can Edit, Delete, and Add a phase based on your needs. Once you're ready, select **Next**. **Before you proceed to the next step**, all deployment rings must be assigned to a phase, and all phases must have deployment rings assigned.
+1. In the **Release schedule** page, choose **First deployment date**, and the number of **Gradual rollout groups**, then select **Next**. **You can only select the next day**, not the current day, as the first deployment date. The service creates feature update policy for Windows 10 and later twice a day at 4:00AM and 4:00PM (UTC) and can't guarantee that the release starts on the current day given the UTC variance across the globe.
+    1. The **Goal completion date** only applies to the [Deadline-driven deployment cadence type](../operate/windows-autopatch-groups-windows-update.md#deadline-driven). The Deadline-drive deployment cadence type can be specified when you configure the Windows Updates settings during the Autopatch group creation/editing flow.
+    2. Additionally, the formula for the goal completion date is `<First Deployment Date> + (<Number of gradual rollout groups> - 1) * Days in between groups (7) + Deadline for feature updates (5 days) + Grace Period (2 days)`.
+1. In the **Review + create** page, review all settings. Once you're ready, select **Create**.
 
-### About Windows Update rings policies
+> [!NOTE]
+> Custom releases can't be deleted from the Feature updates tab in the Windows updates blade. The custom release record serves as a historical record for auditing purposes when needed.
 
-Feature update policies work with Windows Update rings policies. Windows Update rings policies are created for each deployment ring for the [Default or a Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#key-concepts) based on the deployment settings you define. The policy name convention is `Windows Autopatch Update Policy - <Autopatch group name> - <Deployment group name>`.
+## Edit a custom release
 
-The following table details the default Windows Update rings policy values that affect either the default or custom Windows feature updates releases:
+> [!NOTE]
+> Only custom releases that have the **Scheduled** status can be edited. A release phase can only be edited prior to reaching its first deployment date. Additionally, you can only edit the deployment dates when editing a release.
 
-| Policy name | Microsoft Entra group assignment | Quality updates deferral in days | Feature updates deferral in days | Feature updates uninstall window in days | Deadline for quality updates in days | Deadline for feature updates in days | Grace period | Auto restart before deadline |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch Update Policy - default - Test | Windows Autopatch - Test | 0 | 0 | 30 | 0 | 5 | 0 | Yes |
-| Windows Autopatch Update Policy - default - Ring1 | Windows Autopatch - Ring1 | 1 | 0 | 30 | 2 | 5 |2 | Yes |
-| Windows Autopatch Update Policy - default - Ring2 | Windows Autopatch - Ring2 | 6 | 0 | 30 | 2 | 5 | 2 | Yes |
-| Windows Autopatch Update Policy - default - Ring3 | Windows Autopatch - Ring3 | 9 | 0 | 30 | 5 | 5 | 2 | Yes |
-| Windows Autopatch Update Policy - default - Last | Windows Autopatch - Last | 11 | 0 | 30 | 3 | 5 | 2 | Yes |
+**To edit a custom release:**
+
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Select **Devices** from the left navigation menu.
+1. Under the **Manage updates** section, select **Windows updates**.
+1. In the **Windows update** blade, select the **Feature updates** tab.
+1. In the **Feature updates** tab, select the **horizontal ellipses (…)** > Edit to customize your gradual rollout of your feature updates release, then select **Save**.
+    1. Only the release schedule can be customized when using the edit function. You can't add or remove Autopatch groups or modify the phase order when editing a release.
+1. Select **Review + Create**.
+1. Select **Apply** to save your changes.
+
+## Cancel a release
 
 > [!IMPORTANT]
-> When you create a custom Windows feature update release, new Windows feature update policies are:<ul><li>Created corresponding to the settings you defined while creating the release.</li><li>Assigned to the Autopatch group's deployment rings you select to be included in the release.</li></ul>
+> You can only cancel a release under the **Scheduled** status. You cannot cancel a release under the **Active**, **Inactive, or **Paused** statuses.
 
-## Common ways to manage releases
+**To cancel a release:**
 
-### Use case #1
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Select **Devices** from the left navigation menu.
+1. Under the **Manage updates** section, select **Windows updates**.
+1. In the **Windows updates** blade, select the **Feature updates** tab.
+1. In the **Feature updates** tab, select the **horizontal ellipses (…)** > **Cancel** to cancel your feature updates release.
+1. Select a reason for cancellation from the dropdown menu.
+1. Optional. Enter details about why you're pausing or resuming the selected update.
+1. Select **Cancel deployment** to save your changes.
 
-| Scenario | Solution |
-| ----- | ----- |
-| You're working as the IT admin at Contoso Ltd., and you need to gradually rollout of Windows 11's latest version to several business units across your organization. | Custom Windows feature update releases deliver OS upgrades horizontally, through phases, to one or more Autopatch groups.<br>Phases:<ul><li>Set your organization's deployment cadence.</li><li>Work like deployment rings on top of Autopatch group's deployment rings. Phases group one or more deployment rings across one or more Autopatch groups.</li></ul><br>See the following visual for a representation of Phases with custom releases. |
+## Pause and resume a release
 
-:::image type="content" source="../media/autopatch-groups-manage-feature-release-case-1.png" alt-text="Manage Windows feature update release use case one" lightbox="../media/autopatch-groups-manage-feature-release-case-1.png":::
+> [!IMPORTANT]
+> **Pausing or resuming an update can take up to eight hours to be applied to devices**. Windows Autopatch uses Microsoft Intune as its device management solution and that's the average frequency Windows devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates. For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
-### Use case #2
+**To pause and resume a release:**
 
-| Scenario | Solution |
-| ----- | ----- |
-| You're working as the IT admin at Contoso Ltd. and your organization isn't ready to upgrade its devices to either Windows 11 or the newest Windows 10 OS versions due to conflicting project priorities within your organization.<p>However, you want to keep Windows Autopatch managed devices supported and receiving monthly updates that are critical to security and the health of the Windows ecosystem.</p> | Default Windows feature update releases deliver the minimum Windows OS upgrade vertically to each Windows Autopatch group (either [Default](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) or [Custom](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups)). The Default Windows Autopatch group is pre-configured with the [default Windows feature update release](#default-release) and no additional configuration is required from IT admins as Autopatch manages the default release on your behalf.<p>If you decide to edit the default Windows Autopatch group to add additional deployment rings, these rings receive a [global Windows feature update policy](#global-release) set to offer the minimum Windows OS version [currently serviced](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2) to devices. Every custom Autopatch group you create gets a [global Windows feature update policy](#global-release) that enforces the minimum Windows OS version [currently serviced](/windows/release-health/release-information?msclkid=ee885719baa511ecb838e1a689da96d2).</p><p>See the following visual for a representation of default releases.</p>|
+> [!IMPORTANT]
+> **You can only pause an Autopatch group if you have Windows Enterprise E3+ or F3 licenses (included in Microsoft 365 F3, E3, or E5) licenses and have [activated Windows Autopatch features](../overview/windows-autopatch-overview.md#windows-enterprise-e3-and-f3-licenses).**<p>[Feature activation](../prepare/windows-autopatch-feature-activation.md) is optional and at no additional cost to you if you have Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5) licenses.</p><p>For more information, see [Licenses and entitlements](../prepare/windows-autopatch-prerequisites.md#licenses-and-entitlements). If you choose not to go through feature activation, you can still use the Windows Autopatch service for the features included in [Business premium and A3+ licenses](../overview/windows-autopatch-overview.md#business-premium-and-a3-licenses).</p>
 
-:::image type="content" source="../media/autopatch-groups-manage-feature-release-case-2.png" alt-text="Manage Windows feature update release use case two" lightbox="../media/autopatch-groups-manage-feature-release-case-2.png":::
+> [!NOTE]
+> If you pause an update, the specified release has the **Paused** status. The Windows Autopatch service can't overwrite IT admin's pause. You must select **Resume** to resume the update. [The **Paused by Service Pause** status **only** applies to Windows quality updates](../manage/windows-autopatch-windows-quality-update-overview.md#pause-and-resume-a-release). Windows Autopatch doesn't pause Windows feature updates on your behalf.
+
+1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Select **Devices** from the left navigation menu.
+1. Under the **Manage updates** section, select **Windows updates**.
+1. In the **Windows updates** blade, select the **Feature updates** tab.
+1. In the **Feature updates** tab, select the **horizontal ellipses (…)** > **Pause** or **Resume** to pause or resume your feature updates release.
+1. Select a reason from the dropdown menu.
+1. Optional. Enter details about why you're pausing or resuming the selected update.
+1. If you're resuming an update, you can select one or more deployment rings.
+1. Select **Pause deployment** or **Resume deployment** to save your changes.
+
+## Roll back a release
+
+Windows Autopatch doesn't support the rollback of Windows feature updates through its end-user experience flows.

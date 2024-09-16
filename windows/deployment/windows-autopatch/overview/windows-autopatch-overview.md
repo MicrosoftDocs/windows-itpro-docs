@@ -1,7 +1,7 @@
 ---
 title: What is Windows Autopatch?
 description: Details what the service is and shortcuts to articles.
-ms.date: 07/08/2024
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -30,43 +30,59 @@ Rather than maintaining complex digital infrastructure, businesses want to focus
 - **Onboard new services**: Windows Autopatch makes it easy to enroll and minimizes the time required from your IT Admins to get started.
 - **Minimize end user disruption**: Windows Autopatch releases updates in sequential deployment rings, and responding to reliability and compatibility signals, user disruptions due to updates are minimized.
 
-Windows Autopatch helps you minimize the involvement of your scarce IT resources in the planning and deployment of updates for Windows, Microsoft 365 Apps, Microsoft Edge or Teams. Windows Autopatch uses careful rollout sequences and communicates with you throughout the release, allowing your IT Admins can focus on other activities and tasks.
+Windows Autopatch helps you minimize the involvement of your scarce IT resources in the planning and deployment of updates for Windows, Microsoft 365 Apps, Microsoft Edge, or Teams. Windows Autopatch uses careful rollout sequences and communicates with you throughout the release, allowing your IT Admins can focus on other activities and tasks.
 
-## Update management
+## Features and capabilities
 
-The goal of Windows Autopatch is to deliver software updates to registered devices; the service frees up IT and minimizes disruptions to your end users. Once a device is registered with the service, Windows Autopatch takes on several areas of management:
+### Business Premium and A3+ licenses
 
-| Management area | Service level objective |
-| ----- | ----- |
-| [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) | Windows Autopatch aims to keep at least 95% of eligible devices on the latest Windows quality update 21 days after release. |
-| [Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md) | Windows Autopatch aims to keep at least 99% of eligible devices on a supported version of Windows so that they can continue receiving Windows feature updates. |
-| [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | Windows Autopatch aims to keep at least 90% of eligible devices on a supported version of the Monthly Enterprise Channel (MEC). |
-| [Microsoft Edge](../operate/windows-autopatch-edge.md) | Windows Autopatch configures eligible devices to benefit from Microsoft Edge's progressive rollouts on the Stable channel. |
-| [Microsoft Teams](../operate/windows-autopatch-teams.md) | Windows Autopatch allows eligible devices to benefit from the standard automatic update channel. |
+[!INCLUDE [windows-autopatch-applies-to-all-licenses](../includes/windows-autopatch-applies-to-all-licenses.md)]
 
-For each management area, there's a set of eligibility requirements that determine if the device receives that specific update. An example of an eligibility criteria is that the device must have access to the required network endpoints for the Windows update. It's your responsibility to ensure that devices are meeting eligibility requirements for each management area.
+The goal of Windows Autopatch is to deliver software updates to registered devices; the service frees up IT and minimizes disruptions to your end users. Once a device is registered with the service, features include:
 
-To determine if we're meeting our service level objectives, all eligible devices are labeled as either "Healthy" or "Unhealthy". Healthy devices are meeting the eligibility requirements for that management area and unhealthy devices aren't. If Windows Autopatch falls below any service level objective for a management area, an incident is raised. Then, we bring the service back into compliance.
+| Features included with Business Premium and A3+ licenses | Description |
+| --- | --- |
+| [Update rings](../manage/windows-autopatch-update-rings.md) | You can manage Update rings for Windows 10 and later devices with Windows Autopatch. For more information, see [Manage Update rings](../manage/windows-autopatch-update-rings.md). |
+| [Windows quality updates](../manage/windows-autopatch-windows-quality-update-overview.md) | With Windows Autopatch, you can manage Windows quality update profiles for Windows 10 and later devices. You can expedite a specific Windows quality update using targeted policies. |
+| [Windows feature updates](../manage/windows-autopatch-windows-feature-update-overview.md) | Windows Autopatch provides tools to assist with the controlled roll out of annual Windows feature updates. |
+| [Driver and firmware updates](../manage/windows-autopatch-manage-driver-and-firmware-updates.md) | You can manage and control your driver and firmware updates with Windows Autopatch.|
+| [Intune reports](/mem/intune/fundamentals/reports) | Use Intune reports to monitor the health and activity of endpoints in your organization.|
 
-Windows Autopatch monitors in-progress updates. Depending on the criticality of the update, the service may decide to expedite the update. If we detect an issue during release, we may pause or roll back the update. Since each management area has a different monitoring and update control capabilities, you review the documentation for each area to familiarize yourself with the service.
+### Windows Enterprise E3+ and F3 licenses
 
-## Messages
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-To stay informed of upcoming changes, including new and changed features, planned maintenance, or other important announcements, navigate to [Microsoft 365 admin center > Message center](https://admin.microsoft.com/adminportal/home#/MessageCenter).
+In addition to the features included in [Business Premium and A3+ licenses](#business-premium-and-a3-licenses), if you have Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5), you have access to all of Windows Autopatch features in your tenant when you [activate Windows Autopatch](../prepare/windows-autopatch-feature-activation.md). Windows Autopatch features include:
+
+| Features included in Windows Enterprise E3+ and F3 licenses | Description |
+| --- | --- |
+| [Autopatch groups](../deploy/windows-autopatch-groups-overview.md) | You can manage update deployment based on your audience.<p>An Autopatch group is a logical container or unit that groups several [Microsoft Entra groups](/entra/fundamentals/groups-view-azure-portal), and software update policies, such as [Update rings policy for Windows 10 and later](/mem/intune/protect/windows-10-update-rings) and [feature updates policy for Windows 10 and later policies](/mem/intune/protect/windows-10-feature-updates).</p><p>For more information about workloads supported by Autopatch groups, see [Software update workloads](../deploy/windows-autopatch-groups-overview.md#software-update-workloads).</p> |
+| [Windows quality updates](../manage/windows-autopatch-windows-quality-update-overview.md) | In addition to the [Business Premium and A3+ capabilities](#business-premium-and-a3-licenses), Windows Autopatch:<ul><li>Aims to keep at least 95% of [Up to Date devices](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices) on the latest quality update. For more information, see [Windows quality update Service Level Objective](../manage/windows-autopatch-windows-quality-update-overview.md#service-level-objective).</li></ul> |
+| [Multi-phase release policies with feature updates](../manage/windows-autopatch-windows-feature-update-overview.md#multi-phase-feature-update) | In addition to the [Business Premium and A3+ capabilities](#business-premium-and-a3-licenses), with Windows Autopatch, you can create customizable feature update deployments using multiple phases for your existing Autopatch groups. These phased releases can be tailored to meet your organizational unique needs.|
+| [Driver and firmware updates](../manage/windows-autopatch-manage-driver-and-firmware-updates.md) | In addition to the [Business Premium and A3+ capabilities](#business-premium-and-a3-licenses), with Windows Autopatch, you can:<ul><li>Choose to receive driver and firmware updates automatically, or self-manage the deployment</li><li>Control the flow of all drivers to an Autopatch group or rings within an Autopatch group</li><li>Control the flow of a specific driver or firmware across your entire tenant via approvals</li><li>Approve and deploy [other drivers and firmware](../manage/windows-autopatch-manage-driver-and-firmware-updates.md#other-drivers-and-firmware) that previously couldn’t be centrally managed</li></ul> |
+| [Microsoft 365 Apps for enterprise updates](../manage/windows-autopatch-microsoft-365-apps-enterprise.md) | Windows Autopatch aims to keep at least 90% of eligible devices on a supported version of the Monthly Enterprise Channel (MEC). |
+| [Microsoft Edge updates](../manage/windows-autopatch-edge.md) | Windows Autopatch configures eligible devices to benefit from Microsoft Edge's progressive rollouts on the Stable channel. |
+| [Microsoft Teams updates](../manage/windows-autopatch-teams.md) | Windows Autopatch allows eligible devices to benefit from the standard automatic update channel. |
+| Policy health |<ul><li>[Policy health and remediation](../monitor/windows-autopatch-policy-health-and-remediation.md)</li><ul><li>When Windows Autopatch detects policies in the tenant are either missing or modified that affects the service, Windows Autopatch raises alerts and detailed recommended actions to ensure healthy operation of the service.</li></ul></ul><ul><li>[Resolve policy conflicts](../monitor/windows-autopatch-resolve-policy-conflicts.md)</li><ul><li>o	When the Windows Autopatch service detects policies in the tenant that conflict with a setting in another Intune device policy, this conflict is displayed. With the Resolve policy conflicts feature, you can review the policies and their settings and manually resolve these conflicts.</li></ul><ul> |
+| Enhanced [Windows quality and feature update reports](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md) and [device alerts](../monitor/windows-autopatch-device-alerts.md) | Using Windows quality and feature update reports, you can monitor and remediate Windows Autopatch managed devices that are Not up to Date and resolve any device alerts to bring Windows Autopatch managed devices back into compliance. |
+| [Submit support requests](../manage/windows-autopatch-support-request.md) with the Windows Autopatch Service Engineering Team | When you activate additional Autopatch features, you can submit, manage, and edit support requests. |
+
+## Communications
+
+### [Business Premium and A3+](#tab/business-premium-a3-communications)
+
+To stay informed of new and changed features and other announcements, navigate to [Microsoft 365 admin center > Message center](https://admin.microsoft.com/adminportal/home#/MessageCenter).
+
+### [Windows Enterprise E3+ and F3](#tab/windows-enterprise-e3-f3-communications)
+
+To stay informed of upcoming changes, including new and changed features, planned maintenance, release and status communications, or other important announcements, navigate to [Microsoft 365 admin center > Message center](https://admin.microsoft.com/adminportal/home#/MessageCenter).
+
+---
 
 ## Accessibility
 
 Microsoft remains committed to the security of your data and the [accessibility](https://www.microsoft.com/trust-center/compliance/accessibility) of our services. For more information, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center) and the [Office Accessibility Center](https://support.office.com/article/ecab0fcf-d143-4fe8-a2ff-6cd596bddc6d).
 
-## Need more details?
-
-| Area | Description |
-| ----- | ----- |
-| Prepare | The following articles describe the mandatory steps to prepare and enroll your tenant into Windows Autopatch:<ul><li>[Prerequisites](../prepare/windows-autopatch-prerequisites.md)</li><li>[Configure your network](../prepare/windows-autopatch-configure-network.md)</li><li>[Enroll your tenant](../prepare/windows-autopatch-enroll-tenant.md)</li><li>[Fix issues found by the Readiness assessment tool](../prepare/windows-autopatch-fix-issues.md)</li><li>[Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md)</ul> |
-| Deploy | Once you've enrolled your tenant, this section instructs you to:<ul><li>[Add and verify admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><li>[Register your devices](../deploy/windows-autopatch-register-devices.md)</li><li>[Manage Windows Autopatch groups](../manage/windows-autopatch-manage-autopatch-groups.md)</li></ul> |
-| Operate | This section includes the following information about your day-to-day life with the service:<ul><li>[Update management](../operate/windows-autopatch-groups-update-management.md)</li><li>[Windows quality and feature update reports](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md)</li><li>[Maintain your Windows Autopatch environment](../operate/windows-autopatch-maintain-environment.md)</li><li>[Submit a support request](../operate/windows-autopatch-support-request.md)</li><li>[Exclude a device](../operate/windows-autopatch-exclude-device.md)</li></ul>
-| References | This section includes the following articles:<ul><li>[Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md)<li>[Windows update policies](../references/windows-autopatch-windows-update-unsupported-policies.md)</li><li>[Microsoft 365 Apps for enterprise update policies](../references/windows-autopatch-microsoft-365-policies.md)</li></ul> |
-
-### Have feedback or would like to start a discussion?
+## Have feedback or would like to start a discussion?
 
 You can [provide feedback](https://go.microsoft.com/fwlink/?linkid=2195593) or start a discussion in our [Windows Autopatch Tech Community](https://aka.ms/Community/WindowsAutopatch).
