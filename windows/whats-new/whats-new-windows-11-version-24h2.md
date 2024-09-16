@@ -80,11 +80,25 @@ The following changes were made for the SMB protocol:
 - **SMB over QUIC client disable**: Administrators can now [disable the SMB over QUIC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control#disable-smb-over-quic) for client with Group Policy and PowerShell. To disable SMB over QUIC using PowerShell, use `Set-SmbClientConfiguration -EnableSMBQUIC $false`. To disable SMB over QUIC using Group Policy, use the **Computer Configuration** > **Administrative Templates** > **Network** > **Lanman Workstation** > **Enable SMB over QUIC** policy.
 - **SMB over QUIC client connection auditing**: Successful [SMB over QUIC client connection events](/windows-server/storage/file-server/smb-over-quic#smb-over-quic-client-auditing) are now written to the event log to include the QUIC transport. You can view these events using Event Viewer under the following path:
    - **Applications and Services Logs** > **Microsoft** > **Windows** > **SMBClient** > **Connectivity**; Event ID = 30832.
-- **SMB dialect management**: The SMB server now supports controlling which [SMB 2 and 3 dialects](/windows-server/storage/file-server/manage-smb-dialects) it will negotiate. For more information about this change, see [https://aka.ms/SmbDialectManage](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-dialect-management-now-supported-in-windows-insider/ba-p/3916368).
+- **SMB dialect management**: The SMB server now supports controlling which [SMB 2 and 3 dialects](/windows-server/storage/file-server/manage-smb-dialects) it negotiates. For more information about this change, see [https://aka.ms/SmbDialectManage](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-dialect-management-now-supported-in-windows-insider/ba-p/3916368).
 - **SMB signing requirement changes**: In Windows 11, version 24H2 on the Pro, Education, and Enterprise editions, [SMB signing](/windows-server/storage/file-server/smb-signing) is now required by default for all connections. For more information about SMB signing being required by default, see [https://aka.ms/SMBSigningOBD](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-signing-required-by-default-in-windows-insider/ba-p/3831704).
 - **SMB client encryption**: SMB now supports [requiring encryption](/windows-server/storage/file-server/smb-security) on all outbound SMB client connections. With this new option, administrators can mandate that all destination servers use SMB 3 and encryption, and if missing those capabilities, the client won't connect. For more information about this change, see [https://aka.ms/SmbClientEncrypt](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-client-encryption-mandate-now-supported-in-windows-insider/ba-p/3964037).
-- **SMB signing and encryption auditing**: Administrators can now enable auditing of the SMB server and client for support of SMB signing and encryption. 
+- **SMB signing and encryption auditing**: Administrators can now [enable auditing](/windows-server/storage/file-server/smb-signing-overview#smb-signing-and-encryption-auditing) of the SMB server and client for support of SMB signing and encryption. To configure SMB client or server signing or encryption auditing using Group Policy, use the following policies:
+   - **Computer Configuration** > **Administrative Templates** > **Network** > **Lanman Workstation** > **Audit server does not support encryption**
+   - **Computer Configuration** > **Administrative Templates** > **Network** > **Lanman Workstation** > **Audit server does not support signing**
+   - **Computer Configuration** > **Administrative Templates** > **Network** > **Lanman Server** > **Audit client does not support encryption**
+   - **Computer Configuration** > **Administrative Templates** > **Network** > **Lanman Server** > **Audit client does not support signing**
 
+   To use PowerShell, run the following command in an elevated console:
+   - `Set-SmbClientConfiguration -AuditServerDoesNotSupportEncryption $true`
+   - `Set-SmbClientConfiguration -AuditServerDoesNotSupportSigning $true`
+   - `Set-SmbServerConfiguration -AuditClientDoesNotSupportEncryption $true`
+   - `Set-SmbServerConfiguration -AuditClientDoesNotSupportSigning $true`
+
+  You can view these events using Event Viewer under: 
+   - **Applications and Services Logs** > **Microsoft** > **Windows** > **SMBClient** > **Audit**; Event IDs = 31998, 31999
+   - **Applications and Services Logs** > **Microsoft** > **Windows** > **SMBServer** > **Audit**; Event IDs = 3021, 3022
+   
 For more information about SMB network security, see [Secure SMB Traffic in Windows Server](/windows-server/storage/file-server/smb-secure-traffic).
 
 ### Local Security Authority (LSA) protection enablement on upgrade
