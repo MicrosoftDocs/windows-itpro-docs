@@ -431,7 +431,7 @@ This policy setting determines whether Windows is allowed to download fonts and 
 
 - If you enable this policy setting, Windows periodically queries an online font provider to determine whether a new font catalog is available. Windows may also download font data if needed to format or render text.
 
-- If you disable this policy setting, Windows doesn't connect to an online font provider and only enumerates locally-installed fonts.
+- If you disable this policy setting, Windows doesn't connect to an online font provider and only enumerates locally installed fonts.
 
 - If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- AllowFontProviders-Description-End -->
@@ -569,7 +569,7 @@ Specifies whether to allow app access to the Location service. Most restricted v
 This policy is deprecated and will only work on Windows 10 version 1809. Setting this policy will have no effect for other supported versions of Windows.
 This policy setting configures a Microsoft Entra joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms at< https://go.microsoft.com/fwlink/?linkid=2185086>.
 For customers who enroll into the Microsoft Managed Desktop service, enabling this policy is required to allow Microsoft to process data for operational and analytic needs. See <https://go.microsoft.com/fwlink/?linkid=2184944> for more information.
-hen these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 This setting has no effect on devices unless they're properly enrolled in Microsoft Managed Desktop. If you disable this policy setting, devices may not appear in Microsoft Managed Desktop.
 <!-- AllowMicrosoftManagedDesktopProcessing-Description-End -->
 
@@ -888,7 +888,7 @@ To enable this behavior:
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
-If you disable or don't configure this policy setting, devices enrolled to the Windows Update for Business deployment service won't be able to take advantage of some deployment service features.
+If you disable or don't configure this policy setting, devices enrolled to Windows Autopatch won't be able to take advantage of some deployment service features.
 <!-- AllowWUfBCloudProcessing-Description-End -->
 
 <!-- AllowWUfBCloudProcessing-Editable-Begin -->
@@ -1739,7 +1739,7 @@ This policy setting controls whether Windows records attempts to connect with th
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Description-Begin -->
 <!-- Description-Source-DDF -->
-Diagnostic files created when a feedback is filed in the Feedback Hub app will always be saved locally. If this policy isn't present or set to false, users will be presented with the option to save locally. The default is to not save locally.
+Diagnostic files created when feedback is filed in the Feedback Hub app will always be saved locally. If this policy isn't present or set to false, users will be presented with the option to save locally. The default is to not save locally.
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Description-End -->
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Editable-Begin -->
@@ -1761,8 +1761,8 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | False. The Feedback Hub won't always save a local copy of diagnostics that may be created when a feedback is submitted. The user will have the option to do so. |
-| 1 | True. The Feedback Hub should always save a local copy of diagnostics that may be created when a feedback is submitted. |
+| 0 (Default) | False. The Feedback Hub won't always save a local copy of diagnostics that may be created when feedback is submitted. The user will have the option to do so. |
+| 1 | True. The Feedback Hub should always save a local copy of diagnostics that may be created when feedback is submitted. |
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-AllowedValues-End -->
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Examples-Begin -->

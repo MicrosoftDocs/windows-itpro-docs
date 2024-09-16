@@ -75,9 +75,9 @@ Compliance status
 
 |Value | Description |
 |---|---|
-| **Compliant** | The latest deployment from the Windows Update for Business deployment service is installed on the client |
-| **NotCompliant** |  The latest deployment from the Windows Update for Business deployment service isn't installed on the client|
-| **NotApplicable** | Client isn't part of any Windows Update for Business deployment service deployments |
+| **Compliant** | The latest deployment from Windows Autopatch is installed on the client |
+| **NotCompliant** |  The latest deployment from Windows Autopatch isn't installed on the client|
+| **NotApplicable** | Client isn't part of any Windows Autopatch deployments |
 
 ## OSServicingChannel
 
@@ -98,7 +98,7 @@ High-level service state OSServicingChannel
 
 |Value | Description |
 |---|---|
-| **Pending** | Windows Update for Business deployment service isn't targeting this update to this device because the update isn't ready. |
+| **Pending** | Windows Autopatch isn't targeting this update to this device because the update isn't ready. |
 | **Offering** | Service is offering the update to the device. The update is available for the device to get if it scans Windows Update. |
 | **OnHold** | Service is holding off on offering update to the device indefinitely. Until either the service or admin changes some condition, devices remain in this state. |
 | **Canceled** | Service canceled offering update to the device, and the device is confirmed to not be installing the update. |
@@ -207,9 +207,9 @@ Type of alert.
 
 |Value | Description |
 |---|---|
-| **ServiceUpdateAlert** | Alert is relevant to Windows Update for Business deployment service's offering of the content to the client. |
+| **ServiceUpdateAlert** | Alert is relevant to Windows Autopatch's offering of the content to the client. |
 | **ClientUpdateAlert** | Alert is relevant to client's ability to progress through the installation of the update content. |
-| **ServiceDeviceAlert** | Alert is relevant to device's status within Windows Update for Business deployment service |
+| **ServiceDeviceAlert** | Alert is relevant to device's status within Windows Autopatch |
 | **ClientDeviceAlert** | Alert is relevant to device's state |
 | **DeploymentAlert** | Alert is relevant to an entire deployment, or a significant number of devices in the deployment. |
 
