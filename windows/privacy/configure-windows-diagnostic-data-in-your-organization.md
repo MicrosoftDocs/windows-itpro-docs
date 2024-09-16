@@ -353,7 +353,6 @@ From a compliance standpoint, this change means that Microsoft will be the proce
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) outside of the EU and EFTA, to enable the processor configuration option, the organization must sign up for any of the following enterprise services, which rely on diagnostic data:
 
 - [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)
-- [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview)
 - [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
 - [Windows updates reports (in Microsoft Intune)](/mem/intune/protect/data-enable-windows-data#windows-data)
 
