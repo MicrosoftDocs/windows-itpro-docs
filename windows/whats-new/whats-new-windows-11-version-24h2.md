@@ -66,9 +66,6 @@ New features and enhancements were introduced to Windows 11, version 23H2 period
 
 Some of the features were released within the past year's continuous innovation updates and carry forward into the 24H2 annual feature update include:
 
-
-### Feature1
-<!--max-->
 ### Server Message Block (SMB) protocol changes
 
 The following changes were made for the SMB protocol: 
@@ -145,6 +142,16 @@ Windows protected print mode enables devices to print using only the Windows mod
 - Go to **Settings** > **Bluetooth & Devices** > **Printers & scanners**, then choose **Setup** under **Windows protected print mode**
 - Enable the **Configure Windows protected print** policy in Group Policy under **Computer Configuration** > **Administrative Templates** > **Printers**
 
+### SHA-3 support
+
+We are adding support for the SHA-3 family of hash functions and SHA-3 derived functions (SHAKE, cSHAKE, KMAC). The SHA-3 family of algorithms are the latest standardized hash functions by the National Institute of Standards and Technology (NIST). Support for these functions has been enabled through the Windows [CNG](/windows/win32/seccng/cng-portal) library.
+
+- **Supported SHA-3 hash functions**: SHA3-256, SHA3-384, SHA3-512 (SHA3-224 is not supported)
+
+- **Supported SHA-3 HMAC algorithms**: HMAC-SHA3-256, HMAC-SHA3-384, HMAC-SHA3-512
+
+- **Supported SHA-3 derived algorithms**: extendable-output functions (XOF) (SHAKE128, SHAKE256), customizable XOFs (cSHAKE128, cSHAKE256), and KMAC (KMAC128, KMAC256, KMACXOF128, KMACXOF256).
+
 ### App Control for Business
 <!--8223790-->
 Customers can now use App Control for Business (formerly called Windows Defender Application Control) and its next-generation capabilities to protect their digital estate from malicious code. With App Control for Business, IT teams can configure what runs in a business environment through Microsoft Intune or other MDMs in the admin console, including setting up Intune as a managed installer. For more information, see [Application Control for Windows](/windows/security/application-security/application-control/app-control-for-business/appcontrol).
@@ -152,6 +159,20 @@ Customers can now use App Control for Business (formerly called Windows Defender
 ### Wi-Fi 7 support
 <!--8850300-->
 Support  for Wi-Fi 7 was added for consumer access points. Wi-Fi 7, also known as IEEE 802.11be Extremely High Throughput (EHT) is the latest Wi-Fi technology that offers unprecedented speed, reliability, and efficiency for your wireless devices. For more information about Wi-Fi 7, see the [Wi-Fi Alliance announcement](https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-introduces-wi-fi-certified-7).
+
+### Bluetooth &#174; LE audio support for assistive devices
+
+Customers who use these assistive hearing devices are now able to directly pair, stream audio, take calls, and control audio presets when they use an LE Audio-compatible PC. Users who have Bluetooth LE Audio capable assistive hearing devices can determine if their PC is LE Audio-compatible, set up, and manage their devices via **Settings** > **Accessibility** > **Hearing devices**.  
+
+### Windows location improvements
+
+New controls were added to help manage which apps have access to the list of Wi-Fi networks around you. which could be used to determine your location.
+- You can view and modify which apps can access the list of Wi-Fi networks from **Settings** > **Privacy & security** > **Location**.
+- A new prompt appears the first time an app attempts to access your location or Wi-Fi information.
+   - The prompt also notifies when an app unexpectedly requests access to location services so that you can deny it.
+   - If you grant permission, apps that use location or Wi-Fi information now appear in **Recent activity** on the **Location** settings page, and the location icon will show in the taskbar while the app is in-use
+   - To hide these prompts when location has been turned off, turn off **Notify when apps request location** on the **Location** settings page.
+- Developers can use the [Changes to API behavior for Wi-Fi access and location](/windows/win32/nativewifi/wi-fi-access-location-changes) article to learn about API surfaces impacted by this change.
 
 ### Sudo for Windows
 
@@ -169,11 +190,6 @@ Remote Desktop Connection has the following improvements:
 - Improvements to the connection bar design
 
 
-### Bluetooth &#174; LE audio support for assistive devices
-
-Customers who use these assistive hearing devices are now able to directly pair, stream audio, take calls, and control audio presets when they use an LE Audio-compatible PC. Users who have Bluetooth LE Audio capable assistive hearing devices can determine if their PC is LE Audio-compatible, set up, and manage their devices via **Settings** > **Accessibility** > **Hearing devices**.  
-
-
 ### Additional features
 <!--notable UX items for IT pros from other updates-->
 
@@ -184,6 +200,15 @@ Customers who use these assistive hearing devices are now able to directly pair,
 - **OOBE improvement**: when you need to connect to a network and there's no Wi-Fi drivers, you're given an *Install drivers* option to install drivers that are already downloaded
 - **Registry Editor**: The Registry Editor supports limiting a search to the currently selected key and its descendants
 - **Task Manager**: The Task Manager settings page has [Mica material](/windows/apps/design/style/mica) and a redesigned icon 
+
+
+### Developer APIs
+
+The following developer APIs were added or updated:
+
+- The [Power Grid Forecast API](/uwp/api/windows.devices.power.powergridforecast) was introduced. App developers can minimize environmental impact by shifting background workloads to times when renewable energy is available to the local grid. Forecast data isn't available globally and quality of data may vary by region.
+- Added an energy saver notification callback setting GUID to represent the new energy saver experience. Apps can subscribe to the energy saver status by passing the appropriate GUID to the PowerSettingRegisterNotification API and can implement different behaviors to optimize energy or performance depending on the current energy saver status. For more information, see [Power Setting GUIDs](/windows/win32/power/power-setting-guids)
+- Extended the [Effective Power Mode API](/windows/win32/api/powerbase/ne-powerbase-power-mode) to interpret the new energy saver levels when determining the returned effective power mode.
 
 ## Features removed in Windows 11, version 24H2
 
