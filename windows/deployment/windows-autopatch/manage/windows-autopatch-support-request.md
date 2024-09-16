@@ -1,7 +1,7 @@
 ---
 title: Submit a support request
 description: Details how to contact the Windows Autopatch Service Engineering Team and submit support requests
-ms.date: 09/06/2023
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -17,6 +17,8 @@ ms.collection:
 
 # Submit a support request
 
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
+
 > [!IMPORTANT]
 > Make sure you've [added and verified your admin contacts](../deploy/windows-autopatch-admin-contacts.md). The Windows Autopatch Service Engineering Team will contact these individuals for assistance with remediating issues.
 
@@ -29,7 +31,7 @@ Support requests are triaged and responded to as they're received.
 1. Sign into the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant administration** menu.
 1. In the **Windows Autopatch** section, select **Support requests**.
 1. In the **Support requests** section, select **+ New support request**.
-1. Enter your question(s) and/or a description of the problem.
+1. Enter your questions and/or a description of the problem.
 1. Review all the information you provided for accuracy.
 1. When you're ready, select **Create**.
 
@@ -44,12 +46,12 @@ Depending on your support contract, the following severity options are available
 
 | Support contract | Severity options |
 | ----- | ----- |
-| Premier | Severity A, B or C |
-| Unified | Critical or non-critical |
+| Premier | Severity A, B, or C |
+| Unified | Critical or noncritical |
 
 ## Manage an active support request
 
-The primary contact for the support request will receive email notifications when a case is created, assigned to a service engineer to investigate, and mitigated. If, at any point, you have a question about the case, the best way to get in touch is to reply directly to one of those emails. If we have questions about your request or need more details, we'll email the primary contact listed on the support requests.
+The primary contact for the support request receives email notifications when a case is created, assigned to a service engineer to investigate, and mitigated. If, at any point, you have a question about the case, the best way to get in touch is to reply directly to one of those emails. If we have questions about your request or need more details, we email the primary contact listed on the support requests.
 
 ## View all your active support requests
 
@@ -75,7 +77,7 @@ You can edit support request details, for example, updating the primary case con
 1. Update the editable information, add attachments to the case, or add a note for the Windows Autopatch Service Engineering Team.
 1. Select **Save**.
 
-Once a support request is mitigated, it can no longer be edited. If a request has been mitigated for less than 24 hours, you'll see the option to reactivate instead of edit. Once reactivated, you can again edit the request.
+Once a support request is mitigated, it can no longer be edited. If a request was mitigated in less than 24 hours, you can reactivate instead of edit. Once reactivated, you can again edit the request.
 
 ## Microsoft FastTrack
 
@@ -83,4 +85,4 @@ Once a support request is mitigated, it can no longer be edited. If a request ha
 
 Customers who need help with Microsoft 365 workloads can sign in to [Microsoft FastTrack](https://fasttrack.microsoft.com/) with a valid Azure ID and submit a Request for Assistance.
 
- Contact your Microsoft account team if you need additional assistance.
+Contact your Microsoft account team if you need additional assistance.

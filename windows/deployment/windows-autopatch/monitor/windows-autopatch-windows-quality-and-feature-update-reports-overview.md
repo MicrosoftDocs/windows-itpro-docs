@@ -1,7 +1,7 @@
 ---
 title: Windows quality and feature update reports overview
 description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch.
-ms.date: 07/10/2024
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -16,6 +16,8 @@ ms.collection:
 ---
 
 # Windows quality and feature update reports overview
+
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
 ## Windows quality update reports
 
@@ -76,7 +78,7 @@ Each status has its own set of sub statuses to further describe the status.
 Up to date devices are devices that meet all of the following prerequisites:
 
 - [Prerequisites](../prepare/windows-autopatch-prerequisites.md)
-- [Prerequisites for device registration](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration)
+- [Prerequisites for device registration](../deploy/windows-autopatch-device-registration-overview.md#prerequisites-for-device-registration)
 - [Windows quality and feature update device readiness](../deploy/windows-autopatch-post-reg-readiness-checks.md)
 - [Post-device readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md)
 - Applied the current monthly cumulative updates
@@ -89,14 +91,14 @@ Up to date devices are devices that meet all of the following prerequisites:
 | Sub status | Description |
 | ----- | ----- |
 | In Progress | Devices are currently installing the latest [quality update](../operate/windows-autopatch-groups-windows-quality-update-overview.md#release-schedule) or [feature update](../operate/windows-autopatch-groups-windows-feature-update-overview.md#default-release) deployed through the Windows Autopatch release schedule. |
-| Paused | Devices that are currently paused due to a Windows Autopatch or customer-initiated Release management pause. For more information, see pausing and resuming a [Windows quality update](../operate/windows-autopatch-groups-windows-quality-update-overview.md#pause-and-resume-a-release) or [Windows feature update](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md#pause-and-resume-a-release). |
+| Paused | Devices that are currently paused due to a Windows Autopatch or customer-initiated pause. For more information, see pausing and resuming a [Windows quality update](../operate/windows-autopatch-groups-windows-quality-update-overview.md#pause-and-resume-a-release) or [Windows feature update](../operate/windows-autopatch-windows-feature-update-overview.md#pause-and-resume-a-release). |
 
 ### Not up to Date devices
 
 Not Up to Date means a device isn't up to date when the:
 
 - Quality or feature update is out of date, or the device is on the previous update.
-- The assigned update schedule has elapsed and the device still has not applied the current release.
+- The assigned update schedule elapsed and the device still didn't apply the current release.
 - Device has an [alert](../operate/windows-autopatch-device-alerts.md) resulting in an error and action must be taken.
 
 ### Not Ready devices

@@ -1,19 +1,19 @@
 ---
-author: mestew
-ms.author: mstewart
+author: tiaraquan
+ms.author: tiaraquan
 manager: aaroncz
-ms.subservice: itpro-updates
 ms.service: windows-client
+ms.subservice: autopatch
 ms.topic: include
-ms.date: 02/14/2023
+ms.date: 09/16/2024
 ms.localizationpriority: medium
 ---
-<!--This file is shared by deployment-service-drivers.md and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
+<!--This file is shared by windows-autopatch-driver-and-firmware-programmatic-controls.md, windows-autopatch-windows-feature-update-programmatic-controls.md articles. Headings may be driven by article context. 7512398 -->
 
-When a device no longer requires management, unenroll it from the deployment service. Just like [enrolling a device](#enroll-devices), specify either `driver` or `feature` as the value for the `updateCategory`. The device will no longer receive updates from the deployment service for the specified update category. Depending on the device's configuration, it may start to receive updates from Windows Update. For instance, if a device is still enrolled for feature updates, but it's unenrolled from drivers:
+When a device no longer requires management, unenroll it from Windows Autopatch. Just like [enrolling a device](#enroll-devices), specify either `driver` or `feature` as the value for the `updateCategory`. The device will no longer receive updates from Windows Autopatch for the specified update category. Depending on the device's configuration, it may start to receive updates from Windows Update. For instance, if a device is still enrolled for feature updates, but it's unenrolled from drivers:
 
 - Existing driver deployments from the service won't be offered to the device
-- The device continues to receive feature updates from the deployment service
+- The device continues to receive feature updates from Windows Autopatch
 - Drivers may start being installed from Windows Update depending on the device's configuration
 
 To unenroll a device, POST to [updatableAssets](/graph/api/resources/windowsupdates-updatableasset) using [unenrollAssets](/graph/api/windowsupdates-updatableasset-unenrollassets). In the request body, specify:
