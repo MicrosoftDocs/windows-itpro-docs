@@ -70,10 +70,10 @@ Some of the features were released within the past year's continuous innovation 
 
 The following changes were made for the SMB protocol: 
 
-- **SMB firewall rule changes**: The Windows Defender Firewall [default behavior has changed](/windows-server/storage/file-server/smb-secure-traffic#updated-firewall-rules-preview). Previously, creating an SMB share automatically configured the firewall to enable the rules in the **File and Printer Sharing** group for the given firewall profiles. Now, Windows automatically configures the new **File and Printer Sharing (Restrictive)** group, which no longer contains inbound NetBIOS ports 137-139. For more information about this change, see [https://aka.ms/SMBfirewall](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-firewall-rule-changes-in-windows-insider/ba-p/3974496).
+- **SMB firewall rule changes**: The Windows Firewall [default behavior has changed](/windows-server/storage/file-server/smb-secure-traffic#updated-firewall-rules-preview). Previously, creating an SMB share automatically configured the firewall to enable the rules in the **File and Printer Sharing** group for the given firewall profiles. Now, Windows automatically configures the new **File and Printer Sharing (Restrictive)** group, which no longer contains inbound NetBIOS ports 137-139. For more information about this change, see [https://aka.ms/SMBfirewall](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-firewall-rule-changes-in-windows-insider/ba-p/3974496).
 - **SMB NTLM blocking exception list**: The SMB client now supports [blocking NTLM](/windows-server/storage/file-server/smb-ntlm-blocking) for remote outbound connections. With this new option, administrators can intentionally block Windows from offering NTLM via SMB and specify exceptions for NTLM usage. For more information about this change, see [https://aka.ms/SmbNtlmBlock](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-ntlm-blocking-now-supported-in-windows-insider/ba-p/3916206).
 - **SMB alternative client and server ports**: The SMB client now supports connecting to an SMB server over TCP, QUIC, or RDMA using [alternative network ports](/windows-server/storage/file-server/smb-ports) to the hardcoded defaults. For more information about this change, see [https://aka.ms/SMBAlternativePorts](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-alternative-ports-now-supported-in-windows-insider/ba-p/3974509).
-- **SMB over QUIC client access control**: [SMB over QUIC](/windows-server/storage/file-server/smb-over-quic) now supports additional [access control options](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control) for clients. This improves the existing SMB over QUIC feature, which introduced an alternative to the TCP network transport, providing secure, reliable connectivity to edge file servers over untrusted networks like the Internet. For more information about this change, see [https://aka.ms/SmbOverQUICCAC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control). 
+- **SMB over QUIC client access control**: [SMB over QUIC](/windows-server/storage/file-server/smb-over-quic) now supports additional [access control options](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control) for clients. This change improves the existing SMB over QUIC feature, which introduced an alternative to the TCP network transport, providing secure, reliable connectivity to edge file servers over untrusted networks like the Internet. For more information about this change, see [https://aka.ms/SmbOverQUICCAC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control). 
 - **SMB over QUIC client disable**: Administrators can now [disable the SMB over QUIC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control#disable-smb-over-quic) for client with Group Policy and PowerShell. To disable SMB over QUIC using PowerShell, use `Set-SmbClientConfiguration -EnableSMBQUIC $false`. To disable SMB over QUIC using Group Policy, use the **Computer Configuration** > **Administrative Templates** > **Network** > **Lanman Workstation** > **Enable SMB over QUIC** policy.
 - **SMB over QUIC client connection auditing**: Successful [SMB over QUIC client connection events](/windows-server/storage/file-server/smb-over-quic#smb-over-quic-client-auditing) are now written to the event log to include the QUIC transport. You can view these events using Event Viewer under the following path:
    - **Applications and Services Logs** > **Microsoft** > **Windows** > **SMBClient** > **Connectivity**; Event ID = 30832.
@@ -100,7 +100,7 @@ For more information about SMB network security, see [Secure SMB Traffic in Wind
 
 ### Local Security Authority (LSA) protection enablement on upgrade
 
-[LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) helps protect against theft of secrets and credentials used for logon by preventing unauthorized code from running in the LSA process and by preventing dumping of process memory. Starting with this upgrade, an audit occurs for incompatibilities with LSA protection for a period of time. If incompatibilities aren't detected, LSA protection is automatically enabled. You can check and change the enablement state of LSA protection in the Windows Security application under the **Device Security** > **Core Isolation** page. I n the event log, LSA protection records whether programs are blocked from loading into LSA. If you would like to check if something was blocked, review the [logging](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#identify-plug-ins-and-drivers-that-lsassexe-fails-to-load).
+[LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) helps protect against theft of secrets and credentials used for logon by preventing unauthorized code from running in the LSA process and by preventing dumping of process memory. An audit occurs for incompatibilities with LSA protection for a period of time, starting with this upgrade. If incompatibilities aren't detected, LSA protection is automatically enabled. You can check and change the enablement state of LSA protection in the Windows Security application under the **Device Security** > **Core Isolation** page. In the event log, LSA protection records whether programs are blocked from loading into LSA. If you would like to check if something was blocked, review the [logging](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#identify-plug-ins-and-drivers-that-lsassexe-fails-to-load).
 
  
 ### Remote Mailslot protocol disabled by default
@@ -130,7 +130,7 @@ There's a new implementation of [GDI region](/windows/win32/gdi/regions) in `win
 
 ### Personal Data Encryption (PDE) for folders
 
-PDE for folders is a security feature where the contents of the known Windows folders (Documents, Desktop and Pictures) are protected using a user authenticated encryption mechanism. Windows Hello is the user authentication used to provide the keys for encrypting user data in the folders. PDE for folders can be [enabled from a policy in Intune](/mem/intune/protect/endpoint-security-disk-encryption-policy). IT admins can select the subset or all of the folders above and applying that policy to a group of users in their organization.
+PDE for folders is a security feature where the contents of the known Windows folders (Documents, Desktop and Pictures) are protected using a user authenticated encryption mechanism. Windows Hello is the user authentication used to provide the keys for encrypting user data in the folders. PDE for folders can be [enabled from a policy in Intune](/mem/intune/protect/endpoint-security-disk-encryption-policy). IT admins can select all of the folders, or a subset, then apply the policy to a group of users in their organization.
 PDE for Folders settings is available on Intune under **Endpoint Security** > **Disk encryption**. <!-- --- this page will be updated /mem/intune/protect/endpoint-security-disk-encryption-policy PDE folders is also in settings catalog as well -->
 
 For more information about PDE, see [PDE overview](/windows/security/operating-system-security/data-protection/personal-data-encryption)
@@ -144,9 +144,9 @@ Windows protected print mode enables devices to print using only the Windows mod
 
 ### SHA-3 support
 
-We are adding support for the SHA-3 family of hash functions and SHA-3 derived functions (SHAKE, cSHAKE, KMAC). The SHA-3 family of algorithms are the latest standardized hash functions by the National Institute of Standards and Technology (NIST). Support for these functions has been enabled through the Windows [CNG](/windows/win32/seccng/cng-portal) library.
+We are adding support for the SHA-3 family of hash functions and SHA-3 derived functions (SHAKE, cSHAKE, KMAC). The SHA-3 family of algorithms are the latest standardized hash functions by the National Institute of Standards and Technology (NIST). Support for these functions is enabled through the Windows [CNG](/windows/win32/seccng/cng-portal) library.
 
-- **Supported SHA-3 hash functions**: SHA3-256, SHA3-384, SHA3-512 (SHA3-224 is not supported)
+- **Supported SHA-3 hash functions**: SHA3-256, SHA3-384, SHA3-512 (SHA3-224 isn't supported)
 
 - **Supported SHA-3 HMAC algorithms**: HMAC-SHA3-256, HMAC-SHA3-384, HMAC-SHA3-512
 
@@ -154,7 +154,7 @@ We are adding support for the SHA-3 family of hash functions and SHA-3 derived f
 
 ### App Control for Business
 <!--8223790-->
-Customers can now use App Control for Business (formerly called Windows Defender Application Control) and its next-generation capabilities to protect their digital estate from malicious code. With App Control for Business, IT teams can configure what runs in a business environment through Microsoft Intune or other MDMs in the admin console, including setting up Intune as a managed installer. For more information, see [Application Control for Windows](/windows/security/application-security/application-control/app-control-for-business/appcontrol).
+Customers can now use App Control for Business (formerly called Windows Defender Application Control) and its next-generation capabilities to protect their digital property from malicious code. With App Control for Business, IT teams can configure what runs in a business environment through Microsoft Intune or other MDMs in the admin console, including setting up Intune as a managed installer. For more information, see [Application Control for Windows](/windows/security/application-security/application-control/app-control-for-business/appcontrol).
 
 ### Wi-Fi 7 support
 <!--8850300-->
@@ -166,11 +166,11 @@ Customers who use these assistive hearing devices are now able to directly pair,
 
 ### Windows location improvements
 
-New controls were added to help manage which apps have access to the list of Wi-Fi networks around you. which could be used to determine your location.
+New controls were added to help manage which apps have access to the list of Wi-Fi networks around you, which could be used to determine your location.
 - You can view and modify which apps can access the list of Wi-Fi networks from **Settings** > **Privacy & security** > **Location**.
 - A new prompt appears the first time an app attempts to access your location or Wi-Fi information.
    - The prompt also notifies when an app unexpectedly requests access to location services so that you can deny it.
-   - If you grant permission, apps that use location or Wi-Fi information now appear in **Recent activity** on the **Location** settings page, and the location icon will show in the taskbar while the app is in-use
+   - If you grant permission, apps that use location or Wi-Fi information now appear in **Recent activity** on the **Location** settings page, and the location icon is displayed in the taskbar while the app is in-use.
    - To hide these prompts when location has been turned off, turn off **Notify when apps request location** on the **Location** settings page.
 - Developers can use the [Changes to API behavior for Wi-Fi access and location](/windows/win32/nativewifi/wi-fi-access-location-changes) article to learn about API surfaces impacted by this change.
 
