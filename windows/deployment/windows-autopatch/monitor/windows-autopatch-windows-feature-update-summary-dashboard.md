@@ -1,7 +1,7 @@
 ---
 title: Windows feature update summary dashboard
 description: Provides a broader view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
-ms.date: 01/22/2024
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -16,6 +16,8 @@ ms.collection:
 ---
 
 # Windows feature update summary dashboard
+
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
 The Summary dashboard provides a broader view of the current Windows OS update status for all devices registered with Windows Autopatch.
 

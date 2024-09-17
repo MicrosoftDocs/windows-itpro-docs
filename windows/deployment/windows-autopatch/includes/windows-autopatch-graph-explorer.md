@@ -1,14 +1,14 @@
 ---
-author: mestew
-ms.author: mstewart
+author: tiaraquan
+ms.author: tiaraquan
 manager: aaroncz
-ms.subservice: itpro-updates
 ms.service: windows-client
+ms.subservice: autopatch
 ms.topic: include
-ms.date: 02/14/2023
+ms.date: 09/16/2024
 ms.localizationpriority: medium
 ---
-<!--This file is shared by deployment-service-drivers.md, deployment-service-expedited-updates.md, and the deployment-service-feature-updates.md articles. Headings may be driven by article context. 7512398 -->
+<!--This file is shared by windows-autopatch-driver-and-firmware-programmatic-controls.md, windows-autopatch-windows-quality-update-programmatic-controls.md, and the windows-autopatch-windows-feature-update-programmatic-controls.md articles. Headings may be driven by article context. 7512398 -->
 
 For this article, you'll use Graph Explorer to make requests to the [Microsoft Graph APIs](/graph/api/resources/adminwindowsupdates) to retrieve, add, delete, and update data. Graph Explorer is a developer tool that lets you learn about Microsoft Graph APIs. For more information about using Graph Explorer, see [Get started with Graph Explorer](/graph/graph-explorer/graph-explorer-overview).
 
@@ -21,8 +21,7 @@ For this article, you'll use Graph Explorer to make requests to the [Microsoft G
 1. You may need to enable the [`WindowsUpdates.ReadWrite.All` permission](/graph/permissions-reference#windows-updates-permissions) to use the queries in this article. To enable the permission:
     1. Select the **Modify permissions** tab in Graph Explorer.
     1. In the permissions dialog box, select the **WindowsUpdates.ReadWrite.All** permission then select **Consent**. You may need to sign in again to grant consent.
-    
-       :::image type="content" source="../media/7512398-wufbds-graph-modify-permission.png" alt-text="Screenshot of the modify permissions tab in Graph Explorer" lightbox="../media/7512398-wufbds-graph-modify-permission.png" :::
+       :::image type="content" source="../media/7512398-graph-modify-permission.png" alt-text="Screenshot of the modify permissions tab in Graph Explorer" lightbox="../media/7512398-graph-modify-permission.png" :::
 
 1. To make requests:
    1. Select either GET, POST, PUT, PATCH, or DELETE from the drop-down list for the HTTP method.

@@ -17,7 +17,7 @@ metadata:
     - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
     - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019, and later</a>
     - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>	
-  ms.date: 08/06/2024
+  ms.date: 09/10/2024
 title: Frequently Asked Questions about Delivery Optimization
 summary: |
   This article answers frequently asked questions about Delivery Optimization.
@@ -102,8 +102,6 @@ sections:
           **For Delivery Optimization metadata**:
 
           - `*.dl.delivery.mp.microsoft.com`
-
-          **For the payloads (optional)**:
 
           - `*.windowsupdate.com`
 

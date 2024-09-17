@@ -11492,12 +11492,12 @@
     },
     {
       "source_path": "windows/plan/windows-10-deployment-considerations.md",
-      "redirect_url": "/windows/deployment/planning/windows-10-deployment-considerations",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/planning/windows-10-deployment-considerations",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/plan/windows-10-enterprise-faq-itpro.md",
-      "redirect_url": "/windows/deployment/planning/windows-10-enterprise-faq-itpro",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/planning/windows-10-enterprise-faq-itpro",
       "redirect_document_id": false
     },
     {
@@ -11507,7 +11507,7 @@
     },
     {
       "source_path": "windows/plan/windows-10-infrastructure-requirements.md",
-      "redirect_url": "/windows/deployment/planning/windows-10-infrastructure-requirements",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/planning/windows-10-infrastructure-requirements",
       "redirect_document_id": false
     },
     {
