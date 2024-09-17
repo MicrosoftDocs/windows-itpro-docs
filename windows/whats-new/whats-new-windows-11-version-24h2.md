@@ -162,7 +162,7 @@ Support  for Wi-Fi 7 was added for consumer access points. Wi-Fi 7, also known a
 
 ### Bluetooth &#174; LE audio support for assistive devices
 
-Customers who use these assistive hearing devices are now able to directly pair, stream audio, take calls, and control audio presets when they use an LE Audio-compatible PC. Users who have Bluetooth LE Audio capable assistive hearing devices can determine if their PC is LE Audio-compatible, set up, and manage their devices via **Settings** > **Accessibility** > **Hearing devices**.  
+Customers who use these assistive hearing devices are now able to directly pair, stream audio, take calls, and control audio presets when they use an LE Audio-compatible PC. Users who have Bluetooth LE Audio capable assistive hearing devices can determine if their PC is LE Audio-compatible, set up, and manage their devices via **Settings** > **Accessibility** > **Hearing devices**. For more information, see [Using hearing devices with your Windows 11 PC](https://support.microsoft.com/topic/fcb566e7-13c3-491a-ad5b-8219b098d647).  
 
 ### Windows location improvements
 
