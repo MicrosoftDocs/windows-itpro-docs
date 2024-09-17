@@ -61,7 +61,7 @@ To apply the new policy on a domain-joined computer, either restart or run `gpup
 
 ### Use registry keys to enable memory integrity
 
-Set the following registry keys to enable memory integrity. These keys provide exactly the same set of configuration options provided by Group Policy.
+Set the following registry keys to enable memory integrity. These keys provide similar set of configuration options provided by Group Policy
 
 > [!IMPORTANT]
 >
@@ -95,7 +95,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualiza
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 ```
 
-**To enable VBS with Secure Boot and DMA (value 3)**
+**To enable VBS with Secure Boot and DMA protection (value 3)**
 
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
@@ -130,6 +130,13 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorE
 ```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 1 /f
 ```
+
+**To enable VBS (and memory integrity) in mandatory mode**
+
+```console
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Mandatory" /t REG_DWORD /d 1 /f
+```
+The "mandatory" setting <b>prevents</b> the OS loader to continue to boot in case the Hypervisor, Secure Kernel or one of their dependent modules fails to load. Special careful should be used before enabling this mode, since, as explained, in case of any failure of the virtualization modules, the system will refuse to boot and will display a Blue Screen of Dead (BSOD).
 
 **To gray out the memory integrity UI and display the message "This setting is managed by your administrator"**
 ```console
