@@ -123,4 +123,4 @@ Like Windows 10, Windows 11 Enterprise LTSC 2024 receives monthly quality update
 ## Related links
 
 - [Windows Enterprise LTSC](overview.md): A short description of the LTSC servicing channel with links to information about each release.
-- [Release History](Release-History.md)
+- [Release information](/windows/release-health/windows11-release-information)

@@ -29,6 +29,8 @@
   items:
   - name: Windows 10 Enterprise LTSC overview
     href: ltsc/overview.md
+  - name: What's new in Windows 11 Enterprise LTSC 2024
+    href: ltsc/whats-new-windows-11-2024.md      
   - name: What's new in Windows 10 Enterprise LTSC 2021
     href: ltsc/whats-new-windows-10-2021.md
   - name: What's new in Windows 10 Enterprise LTSC 2019
@@ -37,8 +39,6 @@
     href: ltsc/whats-new-windows-10-2016.md
   - name: What's new in Windows 10 Enterprise LTSC 2015
     href: ltsc/whats-new-windows-10-2015.md
-  - name: What's new in Windows 11 Enterprise LTSC 2024
-    href: ltsc/whats-new-windows-11-2024.md    
 - name: Windows commercial licensing overview
   href: windows-licensing.md
 - name: Deprecated and removed Windows features
