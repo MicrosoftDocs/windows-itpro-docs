@@ -15,7 +15,7 @@ appliesto:
 
 # What's new in Windows 11 Enterprise LTSC 2024
 
-This article lists new and updated features and content that is of interest to IT Pros for Windows 11 Enterprise LTSC 2024, compared to Windows 10 Enterprise LTSC 2021. For a brief description of the LTSC servicing channel and associated support, see [Windows Enterprise LTSC](overview.md).
+This article lists some of the new and updated features and content that is of interest to IT Pros for Windows 11 Enterprise LTSC 2024, compared to Windows 10 Enterprise LTSC 2021. For a brief description of the LTSC servicing channel and associated support, see [Windows Enterprise LTSC](overview.md). <!--8891336-->
 
 > [!NOTE]
 > Windows 11 Enterprise LTSC 2024 was first available on October 1, 2024. Features in Windows 11 Enterprise LTSC 2024 are equivalent to Windows 11, version 24H2.
@@ -53,7 +53,7 @@ The Windows 11 Enterprise LTSC 2024 release includes the cumulative enhancements
 
 ## Security
 
-The security and privacy features in Windows 11 are similar to Windows 10. Security for your devices starts with the hardware, and includes OS security, application security, and user & identity security. There are features available in the Windows OS to help in these areas. This section describes some of these features. Microsoft's [Edge Secured-core Program](/azure/certification/overview) provides recommended hardware with these features to ensure security out of the box.  For a more comprehensive view, including zero trust, see [Windows security](/windows/security/).
+The security and privacy features in Windows 11 are similar to Windows 10. Security for your devices starts with the hardware, and includes OS security, application security, and user & identity security. There are features available in the Windows OS to help in these areas. For a more comprehensive view, including zero trust, see [Windows security](/windows/security/).
 
 | Feature </br> [Release] | Description |
 | --- | --- |
@@ -76,7 +76,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 
 ## Servicing
 
-Like Windows 10, Windows 11 Enterprise LTSC 2024 receives monthly quality updates. Some updates are large, and use bandwidth. </br>
+
 
 | Feature </br> [Release] | Description |
 | --- | --- |
