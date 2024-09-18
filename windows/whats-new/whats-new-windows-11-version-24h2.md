@@ -68,16 +68,42 @@ Some of the features were released within the past year's continuous innovation 
 
 ### Server Message Block (SMB) protocol changes
 
-The following changes were made for the SMB protocol: 
+#### SMB firewall rule changes
 
-- **SMB firewall rule changes**: The Windows Firewall [default behavior has changed](/windows-server/storage/file-server/smb-secure-traffic#updated-firewall-rules-preview). Previously, creating an SMB share automatically configured the firewall to enable the rules in the **File and Printer Sharing** group for the given firewall profiles. Now, Windows automatically configures the new **File and Printer Sharing (Restrictive)** group, which no longer contains inbound NetBIOS ports 137-139. For more information about this change, see [https://aka.ms/SMBfirewall](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-firewall-rule-changes-in-windows-insider/ba-p/3974496).
-- **SMB NTLM blocking exception list**: The SMB client now supports [blocking NTLM](/windows-server/storage/file-server/smb-ntlm-blocking) for remote outbound connections. With this new option, administrators can intentionally block Windows from offering NTLM via SMB and specify exceptions for NTLM usage. For more information about this change, see [https://aka.ms/SmbNtlmBlock](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-ntlm-blocking-now-supported-in-windows-insider/ba-p/3916206).
-- **SMB alternative client and server ports**: The SMB client now supports connecting to an SMB server over TCP, QUIC, or RDMA using [alternative network ports](/windows-server/storage/file-server/smb-ports) to the hardcoded defaults. For more information about this change, see [https://aka.ms/SMBAlternativePorts](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-alternative-ports-now-supported-in-windows-insider/ba-p/3974509).
+The Windows Firewall [default behavior has changed](/windows-server/storage/file-server/smb-secure-traffic#updated-firewall-rules-preview). Previously, creating an SMB share automatically configured the firewall to enable the rules in the **File and Printer Sharing** group for the given firewall profiles. Now, Windows automatically configures the new **File and Printer Sharing (Restrictive)** group, which no longer contains inbound NetBIOS ports 137-139.
+
+This change enforces a higher degree of default of network security as well as bringing SMB firewall rules closer to the Windows Server **File Server** role behavior, which only opens the minimum ports needed to connect and manage sharing. Administrators can still configure the **File and Printer Sharing** group if necessary as well as modify this new firewall group, these are just default behaviors.
+
+For more information about this change, see [https://aka.ms/SMBfirewall](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-firewall-rule-changes-in-windows-insider/ba-p/3974496).
+
+#### SMB NTLM blocking exception list
+
+The SMB client now supports [blocking NTLM](/windows-server/storage/file-server/smb-ntlm-blocking) for remote outbound connections. With this new option, administrators can intentionally block Windows from offering NTLM via SMB and specify exceptions for NTLM usage. 
+
+An attacker who tricks a user or application into sending NTLM challenge responses to a malicious server will no longer receive any NTLM data and cannot brute force, crack, or pass hashes. This adds a new level of protection for enterprises without a requirement to entirely disable NTLM usage in the OS.
+
+For more information about this change, see [https://aka.ms/SmbNtlmBlock](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-ntlm-blocking-now-supported-in-windows-insider/ba-p/3916206).
+
+#### SMB alternative client and server ports
+
+The SMB client now supports connecting to an SMB server over TCP, QUIC, or RDMA using [alternative network ports](/windows-server/storage/file-server/smb-ports) to the hardcoded defaults. Windows Server doesn't support configuring alternative SMB server TCP ports, but some third parties do. This is part of a campaign to improve the security of Windows and Windows Server for the modern landscape.
+For more information about this change, see [https://aka.ms/SMBAlternativePorts](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-alternative-ports-now-supported-in-windows-insider/ba-p/3974509).
+
+#### SMB dialect management
+
+The SMB server now supports controlling which [SMB 2 and 3 dialects](/windows-server/storage/file-server/manage-smb-dialects) it negotiates.
+
+For more information about this change, see [https://aka.ms/SmbDialectManage](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-dialect-management-now-supported-in-windows-insider/ba-p/3916368).
+
+#### SMB over QUIC
+
 - **SMB over QUIC client access control**: [SMB over QUIC](/windows-server/storage/file-server/smb-over-quic) now supports additional [access control options](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control) for clients. This change improves the existing SMB over QUIC feature, which introduced an alternative to the TCP network transport, providing secure, reliable connectivity to edge file servers over untrusted networks like the Internet. For more information about this change, see [https://aka.ms/SmbOverQUICCAC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control). 
 - **SMB over QUIC client disable**: Administrators can now [disable the SMB over QUIC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control#disable-smb-over-quic) for client with Group Policy and PowerShell. To disable SMB over QUIC using PowerShell, use `Set-SmbClientConfiguration -EnableSMBQUIC $false`. To disable SMB over QUIC using Group Policy, use the **Computer Configuration** > **Administrative Templates** > **Network** > **Lanman Workstation** > **Enable SMB over QUIC** policy.
 - **SMB over QUIC client connection auditing**: Successful [SMB over QUIC client connection events](/windows-server/storage/file-server/smb-over-quic#smb-over-quic-client-auditing) are now written to the event log to include the QUIC transport. You can view these events using Event Viewer under the following path:
    - **Applications and Services Logs** > **Microsoft** > **Windows** > **SMBClient** > **Connectivity**; Event ID = 30832.
-- **SMB dialect management**: The SMB server now supports controlling which [SMB 2 and 3 dialects](/windows-server/storage/file-server/manage-smb-dialects) it negotiates. For more information about this change, see [https://aka.ms/SmbDialectManage](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-dialect-management-now-supported-in-windows-insider/ba-p/3916368).
+
+#### SMB signing and encryption
+
 - **SMB signing requirement changes**: In Windows 11, version 24H2 on the Pro, Education, and Enterprise editions, [SMB signing](/windows-server/storage/file-server/smb-signing) is now required by default for all connections. For more information about SMB signing being required by default, see [https://aka.ms/SMBSigningOBD](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-signing-required-by-default-in-windows-insider/ba-p/3831704).
 - **SMB client encryption**: SMB now supports [requiring encryption](/windows-server/storage/file-server/smb-security) on all outbound SMB client connections. With this new option, administrators can mandate that all destination servers use SMB 3 and encryption, and if missing those capabilities, the client won't connect. For more information about this change, see [https://aka.ms/SmbClientEncrypt](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-client-encryption-mandate-now-supported-in-windows-insider/ba-p/3964037).
 - **SMB signing and encryption auditing**: Administrators can now [enable auditing](/windows-server/storage/file-server/smb-signing-overview#smb-signing-and-encryption-auditing) of the SMB server and client for support of SMB signing and encryption. To configure SMB client or server signing or encryption auditing using Group Policy, use the following policies:
