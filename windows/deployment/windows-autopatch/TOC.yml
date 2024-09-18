@@ -6,12 +6,8 @@
       items:
         - name: What is Windows Autopatch?
           href: overview/windows-autopatch-overview.md
-        - name: Roles and responsibilities
-          href: overview/windows-autopatch-roles-responsibilities.md
         - name: Privacy
           href: overview/windows-autopatch-privacy.md
-        - name: Deployment guide
-          href: overview/windows-autopatch-deployment-guide.md
         - name: FAQ
           href: overview/windows-autopatch-faq.yml
     - name: Prepare
@@ -21,13 +17,9 @@
           href: prepare/windows-autopatch-prerequisites.md
         - name: Configure your network
           href: prepare/windows-autopatch-configure-network.md
-        - name: Enroll your tenant
+        - name: Start using Windows Autopatch
           href: prepare/windows-autopatch-feature-activation.md
           items:
-            - name: Fix issues found by the Readiness assessment tool
-              href: prepare/windows-autopatch-fix-issues.md
-            - name: Submit a tenant enrollment support request
-              href: prepare/windows-autopatch-enrollment-support-request.md
     - name: Deploy
       href: 
       items:
@@ -47,15 +39,24 @@
     - name: Manage
       href: 
       items:
-        - name: Manage Windows Autopatch groups
+        - name: Release schedule
+          href: manage/windows-autopatch-release-schedule.md
+        - name: Update rings
+          href: manage/windows-autopatch-update-rings.md
+        - name: Windows Autopatch groups
           href: manage/windows-autopatch-manage-autopatch-groups.md
-        - name: Customize Windows Update settings
-          href: manage/windows-autopatch-customize-windows-update-settings.md
+          items:
+            - name: Customize Windows Update settings
+              href: manage/windows-autopatch-customize-windows-update-settings.md
+            - name: Windows Autopatch group policies
+              href: manage/windows-autopatch-groups-policies.md
         - name: Windows feature updates
           href: manage/windows-autopatch-windows-feature-update-overview.md
           items:
-            - name: Manage Windows feature updates
-              href: manage/windows-autopatch-manage-windows-feature-update-releases.md
+            - name: Windows feature update policies
+              href: manage/windows-autopatch-windows-feature-update-policies.md
+            - name: Programmatic controls for Windows feature updates
+              href: manage/windows-autopatch-windows-feature-update-programmatic-controls.md
         - name: Windows quality updates
           href: manage/windows-autopatch-windows-quality-update-overview.md
           items:
@@ -65,8 +66,13 @@
               href: manage/windows-autopatch-windows-quality-update-communications.md
             - name: Windows quality update policies
               href: manage/windows-autopatch-windows-update-policies.md
-        - name: Manage driver and firmware updates
+            - name: Programmatic controls for expedited Windows quality updates
+              href: manage/windows-autopatch-windows-quality-update-programmatic-controls.md
+        - name: Driver and firmware updates
           href: manage/windows-autopatch-manage-driver-and-firmware-updates.md
+          items:
+            - name: Programmatic controls for driver and firmware updates
+              hreF: manage/windows-autopatch-driver-and-firmware-update-programmatic-controls.md
         - name: Microsoft 365 Apps for enterprise
           href: manage/windows-autopatch-microsoft-365-apps-enterprise.md
           items:
@@ -80,8 +86,10 @@
           href: manage/windows-autopatch-support-request.md
         - name: Exclude a device
           href: manage/windows-autopatch-exclude-device.md
-        - name: Unenroll your tenant
+        - name: Deactivate Windows Autopatch features
           href: manage/windows-autopatch-feature-deactivation.md
+        - name: Troubleshoot programmatic controls
+          href: manage/windows-autopatch-troubleshoot-programmatic-controls.md
     - name: Monitor
       href:
       items:
@@ -124,8 +132,8 @@
       items:
         - name: Conflicting configurations
           href: references/windows-autopatch-conflicting-configurations.md
-        - name: Changes made at tenant enrollment
-          href: references/windows-autopatch-changes-made-at-feature-activation.md
+        - name: Changes made at feature activation
+          href: references/windows-autopatch-changes-made-at-feature-activation.md 
     - name: What's new
       href:
       items: 
