@@ -27,7 +27,7 @@ items:
     items:
     - name: Using PowerShell scripting with the WMI Bridge Provider
       href: ../using-powershell-scripting-with-the-wmi-bridge-provider.md
-    - name: WMI providers supported in Windows 10
+    - name: WMI providers supported in Windows
       href: ../wmi-providers-supported-in-windows.md
   - name: Understanding ADMX policies
     href: ../understanding-admx-backed-policies.md
@@ -43,11 +43,21 @@ items:
       href: ../structure-of-oma-dm-provisioning-files.md
     - name: Server requirements for OMA DM
       href: ../server-requirements-windows-mdm.md
-  - name: Declared Configuration protocol
-    href: ../declared-configuration.md
+  - name: Declared Configuration
     items:
-    - name: Declared Configuration extensibility
+    - name: Protocol
+      expanded: true
+      items:
+        - name: Overview
+          href: ../declared-configuration.md
+        - name: Discovery
+          href: ../declared-configuration-discovery.md
+        - name: Enrollment
+          href: ../declared-configuration-enrollment.md
+    - name: Extensibility
       href: ../declared-configuration-extensibility.md
+    - name: Resource access
+      href: ../declared-configuration-resource-access.md
     - name: DeclaredConfiguration CSP
       href: declaredconfiguration-csp.md
     - name: DMClient CSP
@@ -377,7 +387,7 @@ items:
           href: policy-csp-authentication.md
         - name: Autoplay
           href: policy-csp-autoplay.md
-        - name: Bitlocker
+        - name: BitLocker
           href: policy-csp-bitlocker.md
         - name: BITS
           href: policy-csp-bits.md
