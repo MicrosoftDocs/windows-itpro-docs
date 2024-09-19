@@ -140,7 +140,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Mandatory" /t RE
 The **Mandatory** setting prevents the OS loader to continue to boot in case the Hypervisor, Secure Kernel or one of their dependent modules fails to load. 
 
 > [!IMPORTANT]
-> Special care should be used before enabling this mode, since, in case of any failure of the virtualization modules, the system will refuse to boot and will display a Blue Screen of Dead (BSOD).
+> Special care should be used before enabling this mode, since, in case of any failure of the virtualization modules, the system will refuse to boot.
 
 **To gray out the memory integrity UI and display the message "This setting is managed by your administrator"**
 ```console
