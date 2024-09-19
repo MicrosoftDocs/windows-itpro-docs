@@ -137,7 +137,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorE
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Mandatory" /t REG_DWORD /d 1 /f
 ```
 
-The **Mandatory** setting prevents the OS loader to continue to boot in case the Hypervisor, Secure Kernel or one of their dependent modules fails to load. 
+The **Mandatory** setting prevents the OS loader from continuing to boot in case the Hypervisor, Secure Kernel or one of their dependent modules fails to load.
 
 > [!IMPORTANT]
 > Special care should be used before enabling this mode, since, in case of any failure of the virtualization modules, the system will refuse to boot.
