@@ -3,7 +3,7 @@ title: Updated Windows and Microsoft Copilot experience
 description: Learn about changes to the Copilot in Windows experience for commercial environments and how to configure it for your organization.
 ms.topic: overview
 ms.subservice: windows-copilot
-ms.date: 09/16/2024
+ms.date: 09/18/2024
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -58,7 +58,7 @@ For users signing in to new PCs with work or school accounts, the following expe
 
 The update to Microsoft Copilot to offer enterprise data protection is rolling out now.
 
-The shift to the Microsoft 365 app as the entry point for Microsoft Copilot will align with the annual Windows 11 feature update release. Changes will be rolled out to managed PCs starting with the optional nonsecurity preview release on September 24, 2024, and following with the monthly security update release on October 8 for all supported versions of Windows 11. These changes will be applied to Windows 10 PCs the month after. This update is replacing the current Copilot in Windows experience.
+The shift to the Microsoft 365 app as the entry point for Microsoft Copilot is coming soon. Changes will be rolled out to managed PCs starting with the optional nonsecurity preview release on September 24, 2024, and following with the monthly security update release on October 8 for all supported versions of Windows 11. These changes will be applied to Windows 10 PCs the month after. This update is replacing the current Copilot in Windows experience.
 
 > [!IMPORTANT]
 > Want to get started? You can enable the Microsoft Copilot experience for your users now by using the [TurnOffWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot) policy and pin the Microsoft 365 app using the existing policies for taskbar pinning.
