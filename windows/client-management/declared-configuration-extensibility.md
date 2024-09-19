@@ -1,13 +1,13 @@
 ---
-title: Declared configuration extensibility
-description: Learn more about declared configuration extensibility through native WMI providers.
-ms.date: 07/08/2024
+title: Windows declared configuration extensibility
+description: Learn more about Windows declared configuration extensibility through native WMI providers.
+ms.date: 09/12/2024
 ms.topic: how-to
 ---
 
-# Declared configuration extensibility providers
+# Declared configuration extensibility
 
-The declared configuration enrollment, which supports the declared configuration client stack, offers extensibility through native WMI providers. This feature instantiates and interfaces with a Windows Management Instrumentation (WMI) provider that implements a management infrastructure (MI) interface. The interface must implement GetTargetResource, TestTargetResource, and SetTargetResource methods, and can implement any number of string properties.
+The Windows declared configuration (WinDC) enrollment offers extensibility through native WMI providers. This feature instantiates and interfaces with a Windows Management Instrumentation (WMI) provider that implements a management infrastructure (MI) interface. The interface must implement GetTargetResource, TestTargetResource, and SetTargetResource methods, and can implement any number of string properties.
 
 > [!NOTE]
 > Only string properties are currently supported by extensibility providers.
@@ -58,7 +58,7 @@ To create a native WMI provider, follow the steps outlined in [How to implement 
 5. Copy the generated files into the provider's project folder.
 6. Start the development process.
 
-## Example
+## Example MI provider
 
 This example provides more details about each step to demonstrate how to implement a sample native resource named `MSFT_FileDirectoryConfiguration`.
 
@@ -235,15 +235,180 @@ The `MSFT_FileDirectoryConfiguration_Invoke_GetTargetResource` function does the
 
 1. Clean up resources, for example, free allocated memory.
 
+## WinDC document
+
+> [!IMPORTANT]
+> The target of the scenario settings can only be device wide for extensibility. The CSP **scope** defined in `<LocURI>` and WinDC **context** must be `Device`.
+
+The value of the `Document` leaf node in the [DeclaredConfiguration CSP](mdm/declaredconfiguration-csp.md) is an XML document that describes the request. Here's a sample WinDC document with the configuration data specified for extensibility.
+
+```xml
+<DeclaredConfiguration schema="1.0" context="Device" id="27FEA311-68B9-4320-9FC4-296F6FDFAFE2" checksum="99925209110918B67FE962460137AA3440AFF4DB6ABBE15C8F499682457B9999" osdefinedscenario="MSFTExtensibilityMIProviderConfig">
+    <DSC namespace="root/Microsoft/Windows/DesiredStateConfiguration" className="MSFT_FileDirectoryConfiguration">
+        <Key name="DestinationPath">c:\data\test\bin\ut_extensibility.tmp</Key>
+        <Value name="Contents">TestFileContent1</Value>
+    </DSC>
+</DeclaredConfiguration>
+```
+
+Only supported values for `osdefinedscenario` can be used. Unsupported values result in an error message similar to `Invalid scenario name`.
+
+| osdefinedscenario                    | Description                                  |
+|--------------------------------------|----------------------------------------------|
+| MSFTExtensibilityMIProviderConfig    | Used to configure MI provider settings.      |
+| MSFTExtensibilityMIProviderInventory | Used to retrieve MI provider setting values. |
+
+Both `MSFTExtensibilityMIProviderConfig` and `MSFTExtensibilityMIProviderInventory` scenarios that require the same tags and attributes.
+
+- The `<DSC>` XML tag describes the targeted WMI provider expressed by a namespace and class name along with the values either to be applied to the device or queried by the MI provider.
+
+    This tag has the following attributes:
+
+    | Attribute | Description |
+    |--|--|
+    | `namespace` | Specifies the targeted MI provider namespace. |
+    | `classname` | The targeted MI provider. |
+
+- The `<Key>` XML tag describes the required parameter name and value. It only needs a value for configuration. The name is an attribute and the value is `<Key>` content.
+
+    This tag has the following attributes:
+
+    | Attribute | Description |
+    |--|--|
+    | `name` | Specifies the name of an MI provider parameter. |
+
+- The `<Value>` XML tag describes the optional parameter name and value. It only needs a value for configuration. The name is an attribute and the value is `<Value>` content.
+
+    This tag has the following attributes:
+
+    | Attribute | Description |
+    |--|--|
+    | `name` | Specifies the name of an MI provider parameter. |
+
+## SyncML examples
+
+The standard OMA-DM SyncML syntax is used to specify the DeclaredConfiguration CSP operations such as **Replace**, **Add**, and **Delete**. The payload of the SyncML's `<Data>` element must be XML-encoded. For this XML encoding, there are various online encoders that you can use. To avoid encoding the payload, you can use [CDATA Section](https://www.w3.org/TR/REC-xml/#sec-cdata-sect) as shown in the following SyncML examples.
+
+### Configuration request
+
+This example demonstrates how to send a configuration request using the `MSFT_FileDirectoryConfiguration` MI provider with the `MSFTExtensibilityMIProviderConfig` scenario.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML xmlns="SYNCML:SYNCML1.1">
+  <SyncBody>
+    <Replace>
+      <CmdID>14</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document</LocURI>
+        </Target>
+        <Data><![CDATA[
+            <DeclaredConfiguration schema="1.0" context="Device" id="27FEA311-68B9-4320-9FC4-296F6FDFAFE2" checksum="99925209110918B67FE962460137AA3440AFF4DB6ABBE15C8F499682457B9999" osdefinedscenario="MSFTExtensibilityMIProviderConfig">
+                <DSC namespace="root/Microsoft/Windows/DesiredStateConfiguration" className="MSFT_FileDirectoryConfiguration">
+                    <Key name="DestinationPath">c:\data\test\bin\ut_extensibility.tmp</Key>
+                    <Value name="Contents">TestFileContent1</Value>
+                </DSC>
+            </DeclaredConfiguration>
+        ]]></Data>
+      </Item>
+    </Replace>
+  </SyncBody>
+</SyncML>
+```
+
+### Inventory request
+
+This example demonstrates how to send an inventory request using the MSFT_FileDirectoryConfiguration MI provider with the MSFTExtensibilityMIProviderInventory scenario.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<SyncML xmlns="SYNCML:SYNCML1.1">
+  <SyncBody>
+    <Replace>
+      <CmdID>15</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents/12345678-1234-1234-1234-123456789012/Document</LocURI>
+        </Target>
+        <Data><![CDATA[
+            <DeclaredConfiguration schema="1.0" context="Device" id="12345678-1234-1234-1234-123456789012" checksum="1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF1234567890ABCDEF" osdefinedscenario="MSFTExtensibilityMIProviderInventory">
+                <DSC namespace="root/Microsoft/Windows/DesiredStateConfiguration" className="MSFT_FileDirectoryConfiguration">
+                    <Key name="DestinationPath">c:\data\test\bin\ut_extensibility.tmp</Key>
+                </DSC>
+            </DeclaredConfiguration>
+        ]]></Data>
+      </Item>
+    </Replace>
+  </SyncBody>
+</SyncML>
+```
+
+### Retrieve results
+
+This example retrieves the results of a configuration or inventory request:
+
+**Request**:
+
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.1">
+    <SyncBody>
+    <Get>
+        <CmdID>2</CmdID>
+        <Item>
+        <Meta>
+            <Format>chr</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Target>
+            <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Results/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document</LocURI>
+        </Target>
+        </Item>
+    </Get>
+    <Final />
+    </SyncBody>
+</SyncML>
+```
+
+**Response**:
+
+```xml
+<Status>
+    <CmdID>2</CmdID>
+    <MsgRef>1</MsgRef>
+    <CmdRef>2</CmdRef>
+    <Cmd>Get</Cmd>
+    <Data>200</Data>
+</Status>
+<Results>
+    <CmdID>3</CmdID>
+    <MsgRef>1</MsgRef>
+    <CmdRef>2</CmdRef>
+    <Item>
+        <Source>
+            <LocURI>./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Results/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document</LocURI>
+        </Source>
+        <Data>
+            <DeclaredConfigurationResult context="Device" schema="1.0" id="99988660-9080-3433-96e8-f32e85011999" osdefinedscenario="MSFTPolicies" checksum="99925209110918B67FE962460137AA3440AFF4DB6ABBE15C8F499682457B9999" result_checksum="EE4F1636201B0D39F71654427E420E625B9459EED17ACCEEE1AC9B358F4283FD" operation="Set" state="60">
+                <DSC namespace="root/Microsoft/Windows/DesiredStateConfiguration" className="MSFT_FileDirectoryConfiguration" status="200" state="60">
+                    <Key name="DestinationPath" />
+                    <Value name="Contents" />
+                </DSC>
+            </DeclaredConfigurationResult>
+        </Data>
+    </Item>
+</Results>
+```
+
 ## MI implementation references
 
-- [Introducing the management infrastructure (MI) API](/archive/blogs/wmi/introducing-new-management-infrastructure-mi-api)
-- [Implementing MI provider (1) - Overview](/archive/blogs/wmi/implementing-mi-provider-1-overview)
-- [Implementing MI provider (2) - Define schema](/archive/blogs/wmi/implementing-mi-provider-2-define-schema)
-- [Implementing MI provider (3) - Generate code](/archive/blogs/wmi/implementing-mi-provider-3-generate-code)
-- [Implementing MI provider (4) - Generate code (continue)](/archive/blogs/wmi/implementing-mi-provider-4-generate-code-continute)
-- [Implementing MI provider (5) - Implement](/archive/blogs/wmi/implementing-mi-provider-5-implement)
-- [Implementing MI provider (6) - Build, register, and debug](/archive/blogs/wmi/implementing-mi-provider-6-build-register-and-debug)
+- [Management infrastructure (MI) API](/archive/blogs/wmi/introducing-new-management-infrastructure-mi-api)
+- [MI provider (1) - Overview](/archive/blogs/wmi/implementing-mi-provider-1-overview)
+- [MI provider (2) - Define schema](/archive/blogs/wmi/implementing-mi-provider-2-define-schema)
+- [MI provider (3) - Generate code](/archive/blogs/wmi/implementing-mi-provider-3-generate-code)
+- [MI provider (4) - Generate code (continue)](/archive/blogs/wmi/implementing-mi-provider-4-generate-code-continute)
+- [MI provider (5) - Implement](/archive/blogs/wmi/implementing-mi-provider-5-implement)
+- [MI provider (6) - Build, register, and debug](/archive/blogs/wmi/implementing-mi-provider-6-build-register-and-debug)
 - [MI interfaces](/previous-versions/windows/desktop/wmi_v2/mi-interfaces)
 - [MI datatypes](/previous-versions/windows/desktop/wmi_v2/mi-datatypes)
 - [MI structures and unions](/previous-versions/windows/desktop/wmi_v2/mi-structures-and-unions)
