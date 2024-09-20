@@ -18,7 +18,9 @@ appliesto:
 
 # What's new in Windows 11, version 24H2
 <!--8631988-->
-Windows 11, version 24H2 is a feature update for Windows 11. It includes all features and fixes in previous cumulative updates to Windows 11, version 23H2. This article lists the new and updated features IT Pros should know.
+Windows 11, version 24H2 is a feature update for Windows 11. It includes all features and fixes in previous cumulative updates to Windows 11, version 23H2. This article lists the new and updated features IT Pros should know. 
+
+>**Looking for consumer information?** See [Windows 11 2024 update](https://support.microsoft.com/topic/93c5c27c-f96e-43c2-a08e-5812d92f220d#windowsupdate=26100).
 
 Windows 11, version 24H2 follows the [Windows 11 servicing timeline](/lifecycle/faq/windows#windows-11):
 
