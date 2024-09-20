@@ -29,7 +29,7 @@ Windows 11, version 24H2 follows the [Windows 11 servicing timeline](/lifecycle/
 
 <!--<isEnablementPackage> Devices updating from Windows 11, version 23H2 use an enablement package. Most the files for the 24H2 update already exist on Windows 11, version 23H2 devices that have a recent monthly security update installed. Many of the new features are already enabled on Windows 11, version 23H2 clients. However, some features are just in an inactive and dormant state because they are under [temporary enterprise feature control](temporary-enterprise-feature-control.md). These new features remain dormant until they're turned on through the enablement package, a small, quick-to-install switch that activates all of the Windows 11, version 24H2 features. -->
 
-Windows 11, version 24H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 24H2 update]( https://aka.ms/how-to-get-24H2). Review the [Windows 11, version 24H2 Windows IT Pro blog post](https://aka.ms/new-in-24H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
+Windows 11, version 24H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 24H2 update]( https://aka.ms/how-to-get-24H2). Review the [Windows 11, version 24H2 Windows IT Pro blog post](https://aka.ms/new-in-24H2) to discover information about available deployment resources such as the [Windows Assessment  and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
 
 
 To learn more about the status of the update rollout, known issues, and new information, see [Windows release health](/windows/release-health/).
@@ -58,7 +58,7 @@ Copilot+ PCs are a new class of Windows 11 AI PCs that are powered by a neural p
 
 - Live Captions allow you to translate audio and video content into English subtitles from 44 languages. For more information, see [Use live captions to better understand audio](https://support.microsoft.com/topic/b52da59c-14b8-4031-aeeb-f6a47e6055df).
 - Windows Studio Effects is the collective name of AI-powered video call and audio effects that are available on Copilot+ PCs and select Windows 11 devices with compatible NPUs. Windows Studio Effects automatically improves lighting and cancels noises during video calls. For more information, see [Windows Studio Effects](https://support.microsoft.com/topic/273c1fa8-2b3f-41b1-a587-7cc7a24b62d8).
-- Cocreator in Paint allows you to create amazing artwork with the help of AI. Enter a text prompt, start drawing in Paint, and Cocreator will generate artwork based on what you're drawing. For more information, see [Cocreator in Paint](https://support.microsoft.com/topic/53857513-e36c-472d-8d4a-adbcd14b2e54)
+- Cocreator in Paint allows you to create amazing artwork with the help of AI. Enter a text prompt, start drawing in Paint, and Cocreator generates artwork based on what you're drawing. For more information, see [Cocreator in Paint](https://support.microsoft.com/topic/53857513-e36c-472d-8d4a-adbcd14b2e54)
 - Auto Super Resolution (Auto SR) is the first AI-powered super resolution solution built into an operating system, making games automatically play smoother with higher resolution details. For more information, see [Automatic Super Resolution](https://support.microsoft.com/topic/5d6d95fa-cc02-4673-b62c-2c50f06385aa).
 - Image Creator and Restyle Image in the Microsoft Photos app lets you reimagine your photos or create new images with the assistance of AI. For more information, see [Microsoft Photos Restyle Image and Image Creator](https://support.microsoft.com/topic/6c352e99-d954-49c9-84cd-b7cacd018868).
 
@@ -165,7 +165,7 @@ Windows protected print mode enables devices to print using only the Windows mod
 
 ### SHA-3 support
 
-We are adding support for the SHA-3 family of hash functions and SHA-3 derived functions (SHAKE, cSHAKE, KMAC). The SHA-3 family of algorithms are the latest standardized hash functions by the National Institute of Standards and Technology (NIST). Support for these functions is enabled through the Windows [CNG](/windows/win32/seccng/cng-portal) library.
+Support for the SHA-3 family of hash functions and SHA-3 derived functions (SHAKE, cSHAKE, KMAC) was added. The SHA-3 family of algorithms are the latest standardized hash functions by the National Institute of Standards and Technology (NIST). Support for these functions is enabled through the Windows [CNG](/windows/win32/seccng/cng-portal) library.
 
 - **Supported SHA-3 hash functions**: SHA3-256, SHA3-384, SHA3-512 (SHA3-224 isn't supported)
 
@@ -203,7 +203,7 @@ Sudo for Windows is a new way for users to run elevated commands (as an administ
 - **With input disabled**: Runs the elevated process in the current window, but with the input handle closed. This means that the elevated process won't be able to receive input from the current console window.
 - **Inline**: Runs the elevated process in the current window and the process is able to receive input from the current console session. This mode is most similar to the sudo experience on other platforms.
 
-It is recommended that you review the security considerations for each mode here before [enabling the sudo command](/windows/sudo/#how-to-enable-sudo-for-windows) on your machine. For more information, see [Sudo for Windows](/windows/sudo/).
+It's recommended that you review the security considerations for each mode here before [enabling the sudo command](/windows/sudo/#how-to-enable-sudo-for-windows) on your machine. For more information, see [Sudo for Windows](/windows/sudo/).
 
 ### Enable optional updates
 <!--7991583-->
@@ -233,7 +233,7 @@ Remote Desktop Connection has the following improvements:
 
 The following developer APIs were added or updated:
 
-- The [Power Grid Forecast API](/uwp/api/windows.devices.power.powergridforecast) was introduced. App developers can minimize environmental impact by shifting background workloads to times when renewable energy is available to the local grid. Forecast data isn't available globally and quality of data may vary by region.
+- Introduced the [Power Grid Forecast API](/uwp/api/windows.devices.power.powergridforecast). App developers can minimize environmental impact by shifting background workloads to times when renewable energy is available to the local grid. Forecast data isn't available globally and quality of data may vary by region.
 - Added an energy saver notification callback setting GUID to represent the new energy saver experience. Apps can subscribe to the energy saver status by passing the appropriate GUID to the PowerSettingRegisterNotification API and can implement different behaviors to optimize energy or performance depending on the current energy saver status. For more information, see [Power Setting GUIDs](/windows/win32/power/power-setting-guids)
 - Extended the [Effective Power Mode API](/windows/win32/api/powersetting/ne-powersetting-effective_power_mode) to interpret the new energy saver levels when determining the returned effective power mode.
 
