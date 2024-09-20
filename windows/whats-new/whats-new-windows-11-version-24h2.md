@@ -25,7 +25,7 @@ Windows 11, version 24H2 follows the [Windows 11 servicing timeline](/lifecycle/
 - **Windows 11 Pro**: Serviced for 24 months from the release date.
 - **Windows 11 Enterprise**: Serviced for 36 months from the release date.
 
-Devices updating from Windows 11, version 23H2 use an enablement package. Most the files for the 24H2 update already exist on Windows 11, version 23H2 devices that have a recent monthly security update installed. Many of the new features are already enabled on Windows 11, version 23H2 clients. <!-- However, some features are just in an inactive and dormant state because they are under [temporary enterprise feature control](temporary-enterprise-feature-control.md). These new features remain dormant until they're turned on through the enablement package, a small, quick-to-install switch that activates all of the Windows 11, version 24H2 features. -->
+<!--<isEnablementPackage> Devices updating from Windows 11, version 23H2 use an enablement package. Most the files for the 24H2 update already exist on Windows 11, version 23H2 devices that have a recent monthly security update installed. Many of the new features are already enabled on Windows 11, version 23H2 clients. However, some features are just in an inactive and dormant state because they are under [temporary enterprise feature control](temporary-enterprise-feature-control.md). These new features remain dormant until they're turned on through the enablement package, a small, quick-to-install switch that activates all of the Windows 11, version 24H2 features. -->
 
 Windows 11, version 24H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 24H2 update]( https://aka.ms/how-to-get-24H2). Review the [Windows 11, version 24H2 Windows IT Pro blog post](https://aka.ms/new-in-24H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
 
@@ -52,12 +52,12 @@ With checkpoint cumulative updates, the update file level differentials are base
 
 ## Features exclusive to Copilot+ PCs in 24H2
 
-Copilot+ PCs are a new class of Windows 11 AI PCs that are powered by a neural processing unit (NPU) that can perform more than 40 trillion operations per second (TOPS). The following features are exclusive to Copilot+ PCs in Windows 11, version 24H2: 
+Copilot+ PCs are a new class of Windows 11 AI PCs that are powered by a neural processing unit (NPU) that can perform more than 40 trillion operations per second (TOPS). The following features are exclusive to [Copilot+ PCs](https://www.microsoft.com/windows/copilot-plus-pcs) in Windows 11, version 24H2: 
 
 - Live Captions allow you to translate audio and video content into English subtitles from 44 languages. For more information, see [Use live captions to better understand audio](https://support.microsoft.com/topic/b52da59c-14b8-4031-aeeb-f6a47e6055df).
 - Windows Studio Effects is the collective name of AI-powered video call and audio effects that are available on Copilot+ PCs and select Windows 11 devices with compatible NPUs. Windows Studio Effects automatically improves lighting and cancels noises during video calls. For more information, see [Windows Studio Effects](https://support.microsoft.com/topic/273c1fa8-2b3f-41b1-a587-7cc7a24b62d8).
 - Cocreator in Paint allows you to create amazing artwork with the help of AI. Enter a text prompt, start drawing in Paint, and Cocreator will generate artwork based on what you're drawing. For more information, see [Cocreator in Paint](https://support.microsoft.com/topic/53857513-e36c-472d-8d4a-adbcd14b2e54)
-- Auto super resolution (Auto SR) seamlessly integrates with Windows to automatically enhance the frame rates of existing games in real-time while also providing detailed visuals on screen. For more information, see [Automatic Super Resolution](https://support.microsoft.com/topic/5d6d95fa-cc02-4673-b62c-2c50f06385aa).
+- Auto Super Resolution (Auto SR) is the first AI-powered super resolution solution built into an operating system, making games automatically play smoother with higher resolution details. For more information, see [Automatic Super Resolution](https://support.microsoft.com/topic/5d6d95fa-cc02-4673-b62c-2c50f06385aa).
 - Image Creator and Restyle Image in the Microsoft Photos app lets you reimagine your photos or create new images with the assistance of AI. For more information, see [Microsoft Photos Restyle Image and Image Creator](https://support.microsoft.com/topic/6c352e99-d954-49c9-84cd-b7cacd018868).
 
 ## Features added to Windows 11 since version 23H2
@@ -86,19 +86,24 @@ For more information about this change, see [https://aka.ms/SmbNtlmBlock](https:
 
 #### SMB alternative client and server ports
 
-The SMB client now supports connecting to an SMB server over TCP, QUIC, or RDMA using [alternative network ports](/windows-server/storage/file-server/smb-ports) to the hardcoded defaults. Windows Server doesn't support configuring alternative SMB server TCP ports, but some third parties do. This is part of a campaign to improve the security of Windows and Windows Server for the modern landscape.
-For more information about this change, see [https://aka.ms/SMBAlternativePorts](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-alternative-ports-now-supported-in-windows-insider/ba-p/3974509).
+The SMB client now supports connecting to an SMB server over TCP, QUIC, or RDMA using [alternative network ports](/windows-server/storage/file-server/smb-ports) to the hardcoded defaults. However, you can only connect to alternative ports if the SMB server is configured to support listening on that port. Windows Server doesn't support configuring alternative SMB server TCP ports, but some third parties do. For more information about this change, see [https://aka.ms/SMBAlternativePorts](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-alternative-ports-now-supported-in-windows-insider/ba-p/3974509).
 
 #### SMB dialect management
 
-The SMB server now supports controlling which [SMB 2 and 3 dialects](/windows-server/storage/file-server/manage-smb-dialects) it negotiates.
+The SMB server now supports controlling which [SMB 2 and 3 dialects](/windows-server/storage/file-server/manage-smb-dialects) it negotiates. With this new option, an administrator can remove specific SMB protocols from use in the organization, blocking older, less secure, and less capable Windows devices and third parties from connecting. For example, admins can specify to only use SMB 3.1.1, the most secure dialect of the protocol.
 
 For more information about this change, see [https://aka.ms/SmbDialectManage](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-dialect-management-now-supported-in-windows-insider/ba-p/3916368).
 
 #### SMB over QUIC
 
-- **SMB over QUIC client access control**: [SMB over QUIC](/windows-server/storage/file-server/smb-over-quic) now supports additional [access control options](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control) for clients. This change improves the existing SMB over QUIC feature, which introduced an alternative to the TCP network transport, providing secure, reliable connectivity to edge file servers over untrusted networks like the Internet. For more information about this change, see [https://aka.ms/SmbOverQUICCAC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control). 
-- **SMB over QUIC client disable**: Administrators can now [disable the SMB over QUIC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control#disable-smb-over-quic) for client with Group Policy and PowerShell. To disable SMB over QUIC using PowerShell, use `Set-SmbClientConfiguration -EnableSMBQUIC $false`. To disable SMB over QUIC using Group Policy, use the **Computer Configuration** > **Administrative Templates** > **Network** > **Lanman Workstation** > **Enable SMB over QUIC** policy.
+##### SMB over QUIC client access control
+
+[SMB over QUIC](/windows-server/storage/file-server/smb-over-quic) now supports additional [access control options](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control) for clients. This change improves the existing SMB over QUIC feature, which introduced an alternative to the TCP network transport, providing secure, reliable connectivity to edge file servers over untrusted networks like the Internet. For more information about this change, see [https://aka.ms/SmbOverQUICCAC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control).
+
+##### SMB over QUIC client disable
+
+Administrators can now [disable the SMB over QUIC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control#disable-smb-over-quic) for client with Group Policy and PowerShell. To disable SMB over QUIC using PowerShell, use `Set-SmbClientConfiguration -EnableSMBQUIC $false`. To disable SMB over QUIC using Group Policy, use the **Computer Configuration** > **Administrative Templates** > **Network** > **Lanman Workstation** > **Enable SMB over QUIC** policy.
+
 - **SMB over QUIC client connection auditing**: Successful [SMB over QUIC client connection events](/windows-server/storage/file-server/smb-over-quic#smb-over-quic-client-auditing) are now written to the event log to include the QUIC transport. You can view these events using Event Viewer under the following path:
    - **Applications and Services Logs** > **Microsoft** > **Windows** > **SMBClient** > **Connectivity**; Event ID = 30832.
 
