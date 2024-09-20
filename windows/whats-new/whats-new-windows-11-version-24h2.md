@@ -197,7 +197,13 @@ New controls were added to help manage which apps have access to the list of Wi-
 
 ### Sudo for Windows
 
-Sudo for Windows is a new way for users to run elevated commands (as an administrator) directly from an unelevated console session. For more information, see [Sudo for Windows](/windows/sudo/).
+Sudo for Windows is a new way for users to run elevated commands (as an administrator) directly from an unelevated console session. The sudo command can be configured to run in three different modes:
+
+- **In a new window**: The elevated command runs in a new window. This mode is similar to the behavior of the `runas /user:admin` command.
+- **With input disabled**: Runs the elevated process in the current window, but with the input handle closed. This means that the elevated process won't be able to receive input from the current console window.
+- **Inline**: Runs the elevated process in the current window and the process is able to receive input from the current console session. This mode is most similar to the sudo experience on other platforms.
+
+It is recommended that you review the security considerations for each mode here before [enabling the sudo command](/windows/sudo/#how-to-enable-sudo-for-windows) on your machine. For more information, see [Sudo for Windows](/windows/sudo/).
 
 ### Enable optional updates
 <!--7991583-->
