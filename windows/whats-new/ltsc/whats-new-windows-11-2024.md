@@ -78,6 +78,8 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 | **Windows Local Admin Password Solution (LAPS)** </br> [24H2] | Windows Local Administrator Password Solution (Windows LAPS) is a Windows feature that automatically manages and backs up the password of a local administrator account on your Microsoft Entra joined or Windows Server Active Directory-joined devices. Windows LAPS is the successor for the now deprecated legacy Microsoft LAPS product. For more information, see [What is Windows LAPS?](/windows-server/identity/laps/laps-overview)|
 | **Local Security Authority (LSA) protection enablement** </br> [24H2]| An audit occurs for incompatibilities with [LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) for a period of time, starting with this upgrade. If incompatibilities aren't detected, LSA protection is automatically enabled. You can check and change the enablement state of LSA protection in the Windows Security application under the **Device Security** > **Core Isolation** page. In the event log, [LSA protection logs](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#identify-plug-ins-and-drivers-that-lsassexe-fails-to-load) whether programs are blocked from loading into LSA. |
 | **Rust in the Windows kernel** </br> [24H2] | There's a new implementation of [GDI region](/windows/win32/gdi/regions) in `win32kbase_rs.sys`. Since Rust offers advantages in reliability and security over traditional programs written in C/C++, you'll continue to see more use of it in the kernel. |
+| **SHA-3 support** </br> [24H2] | Support for the SHA-3 family of hash functions and SHA-3 derived functions (SHAKE, cSHAKE, KMAC) was added. The SHA-3 family of algorithms are the latest standardized hash functions by the National Institute of Standards and Technology (NIST). Support for these functions is enabled through the Windows [CNG](/windows/win32/seccng/cng-portal) library. | 
+
 
 ## Servicing
 
@@ -123,6 +125,8 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 | **Dev Drive** </br> [23H2] | Dev Drive is a new form of storage volume available to improve performance for key developer workloads. For more information, see [Set up a Dev Drive on Windows 11](/windows/dev-drive/) and [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310). |
 |  **High Efficiency Video Coding (HEVC) support**  </br> [22H2] | HEVC is designed to take advantage of hardware capabilities on some newer devices to support 4K and Ultra HD content. For devices that don't have hardware support for HEVC videos, software support is provided, but the playback experience might vary based on the video resolution and your devices performance. |
 | **Sudo for Windows** </br> [24H2] | Sudo for Windows is a new way for users to run elevated commands (as an administrator) directly from an unelevated console session. For more information, see [Sudo for Windows](/windows/sudo/). |
+| **Windows location improvements** </br> [24H2] | New controls were added to help manage which apps have access to the list of Wi-Fi networks around you, which could be used to determine your location. Users can view and modify which apps can access the list of Wi-Fi networks and manage notifications from **Settings** > **Privacy & security** > **Location**. | 
+
 
 
 ## Related links
