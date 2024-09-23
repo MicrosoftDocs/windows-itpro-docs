@@ -201,7 +201,7 @@ If a user signs in to a Windows experience or app on their device with their Mic
 
 Microsoft complies with applicable law regarding the collection, use, and retention of personal information, including its transfer across borders.
 
-Microsoft’s [Privacy Statement](https://www.microsoft.com/privacy/privacystatement#mainwherewestoreandprocessdatamodule) provides details on how we store and process personal data.
+The [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement#mainwherewestoreandprocessdatamodule) provides details on how we store and process personal data.
 
 ## 5. Related Windows product considerations
 
