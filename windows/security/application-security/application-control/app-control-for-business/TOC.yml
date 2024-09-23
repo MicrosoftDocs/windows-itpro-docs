@@ -10,7 +10,7 @@
       href: feature-availability.md
     - name: Virtualization-based protection of code integrity
       href: ../introduction-to-virtualization-based-security-and-appcontrol.md
-- name: App Control design guide
+- name: Design guide
   href: design/appcontrol-design-guide.md
   items:
     - name: Plan for App Control policy lifecycle management
@@ -72,7 +72,7 @@
               href: design/appcontrol-wizard-parsing-event-logs.md
             - name: Merging multiple App Control policies with the Wizard
               href: design/appcontrol-wizard-merging-policies.md
-- name: App Control deployment guide
+- name: Deployment guide
   href: deployment/appcontrol-deployment-guide.md
   items:
     - name: Deploy App Control policies with MDM
@@ -100,7 +100,7 @@
           href: deployment/create-code-signing-cert-for-appcontrol.md
     - name: Disable App Control policies
       href: deployment/disable-appcontrol-policies.md
-- name: App Control operational guide
+- name: Operational guide
   href: operations/appcontrol-operational-guide.md
   items:
     - name: App Control debugging and troubleshooting
@@ -119,7 +119,7 @@
       href: operations/citool-commands.md
     - name: Inbox App Control policies
       href: operations/inbox-appcontrol-policies.md
-- name: App Control AppId Tagging guide
+- name: AppId Tagging guide
   href: AppIdTagging/appcontrol-appid-tagging-guide.md
   items:
     - name: Creating AppId Tagging Policies
