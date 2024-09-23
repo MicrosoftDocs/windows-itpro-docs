@@ -1,8 +1,8 @@
 ---
-title: What's new in Windows 11 Enterprise LTSC 2024
+title: What's new in Windows 11 Enterprise long-term servicing channel (LTSC) 2024
 manager: aaroncz
 ms.author: mstewart
-description: New and updated IT Pro content about new features in Windows 11 Enterprise LTSC 2024.
+description: New and updated IT Pro content about new features in Windows 11 Enterprise long-term servicing channel (LTSC) 2024.
 ms.service: windows-client
 author: mestew
 ms.localizationpriority: high
@@ -15,7 +15,7 @@ appliesto:
 
 # What's new in Windows 11 Enterprise LTSC 2024
 
-This article lists some of the new and updated features and content that is of interest to IT Pros for Windows 11 Enterprise LTSC 2024, compared to Windows 10 Enterprise LTSC 2021. For a brief description of the LTSC servicing channel and associated support, see [Windows Enterprise LTSC](overview.md). <!--8891336-->
+This article lists some of the new and updated features and content that is of interest to IT Pros for Windows 11 Enterprise long-term servicing channel (LTSC) 2024, compared to Windows 10 Enterprise LTSC 2021. For a brief description of the LTSC servicing channel and associated support, see [Windows Enterprise LTSC](overview.md). <!--8891336-->
 
 > [!NOTE]
 > Windows 11 Enterprise LTSC 2024 was first available on October 1, 2024. Features in Windows 11 Enterprise LTSC 2024 are equivalent to Windows 11, version 24H2.
@@ -57,7 +57,7 @@ The Windows 11 Enterprise LTSC 2024 release includes the cumulative enhancements
 
 ## Security
 
-The security and privacy features in Windows 11 are similar to Windows 10. Security for your devices starts with the hardware, and includes OS security, application security, and user & identity security. There are features available in the Windows OS to help in these areas. For a more comprehensive view, including zero trust, see [Windows security](/windows/security/).
+The security and privacy features in Windows 11 are similar to Windows 10. Security for your devices starts with the hardware, and includes OS security, application security, and user & identity security. There are features available in the Windows OS to help in these areas. For a more comprehensive view, including Zero Trust, see [Windows security](/windows/security/).
 
 | Feature </br> [Release] | Description |
 | --- | --- |
@@ -80,7 +80,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 | **Windows Local Admin Password Solution (LAPS)** </br> [24H2] | Windows Local Administrator Password Solution (Windows LAPS) is a Windows feature that automatically manages and backs up the password of a local administrator account on your Microsoft Entra joined or Windows Server Active Directory-joined devices. Windows LAPS is the successor for the now deprecated legacy Microsoft LAPS product. For more information, see [What is Windows LAPS?](/windows-server/identity/laps/laps-overview)|
 | **Local Security Authority (LSA) protection enablement** </br> [24H2]| An audit occurs for incompatibilities with [LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) for a period of time, starting with this upgrade. If incompatibilities aren't detected, LSA protection is automatically enabled. You can check and change the enablement state of LSA protection in the Windows Security application under the **Device Security** > **Core Isolation** page. In the event log, [LSA protection logs](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#identify-plug-ins-and-drivers-that-lsassexe-fails-to-load) whether programs are blocked from loading into LSA. |
 | **Rust in the Windows kernel** </br> [24H2] | There's a new implementation of [GDI region](/windows/win32/gdi/regions) in `win32kbase_rs.sys`. Since Rust offers advantages in reliability and security over traditional programs written in C/C++, you'll continue to see more use of it in the kernel. |
-| **SHA-3 support** </br> [24H2] | Support for the SHA-3 family of hash functions and SHA-3 derived functions (SHAKE, cSHAKE, KMAC) was added. The SHA-3 family of algorithms are the latest standardized hash functions by the National Institute of Standards and Technology (NIST). Support for these functions is enabled through the Windows [CNG](/windows/win32/seccng/cng-portal) library. | 
+| **SHA-3 support** </br> [24H2] | Support for the SHA-3 family of hash functions and SHA-3 derived functions (SHAKE, cSHAKE, KMAC) was added. The SHA-3 family of algorithms is the latest standardized hash functions by the National Institute of Standards and Technology (NIST). Support for these functions is enabled through the Windows [CNG](/windows/win32/seccng/cng-portal) library. | 
 
 
 ## Servicing
@@ -91,7 +91,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 | **Windows Updates and Delivery optimization** </br> [21H2] | Delivery optimization helps reduce bandwidth consumption. It shares the work of downloading the update packages with multiple devices in your deployment. Windows 11 updates are smaller, as they only pull down source files that are different. You can create policies that configure delivery optimization settings. For example, set the maximum upload and download bandwidth, set caching sizes, and more. For more information, see:</br>&nbsp;&nbsp;• [Delivery Optimization for Windows updates](/windows/deployment/update/waas-delivery-optimization)</br>&nbsp;&nbsp;• [Installation & updates](https://support.microsoft.com/topic/2f9c1819-310d-48a7-ac12-25191269903c#PickTab=Windows_11)</br>&nbsp;&nbsp;• [Manage updates in Windows](https://support.microsoft.com/topic/643e9ea7-3cf6-7da6-a25c-95d4f7f099fe)|
 | **Control Windows Update notifications** </br> [22H2] | You can now block user notifications for Windows Updates during active hours. This setting is especially useful for organizations that want to prevent Windows Update notifications from occurring during business hours. For more information, see [Control restart notifications](/windows/deployment/update/waas-restart#control-restart-notifications).|
 | **Organization name in update notifications** |The organization name now appears in the Windows Update notifications when Windows clients are associated with a Microsoft Entra ID tenant. For more information, see [Display organization name in Windows Update notifications](/windows/deployment/update/waas-wu-settings#bkmk_display-name). |
-| **Checkpoint cumulative updates** </br> [24H2] | Windows quality updates are provided as cumulative updates throughout the life cycle of a Windows release.  Checkpoint cumulative updates introduce periodic baselines that reduce the size of future cumulative updates making the distribution of monthly quality updates more efficient.  For more information, see [https://aka.ms/CheckpointCumulativeUpdates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-windows-11-checkpoint-cumulative-updates/ba-p/4182552). |
+| **Checkpoint cumulative updates** </br> [24H2] | Windows quality updates are provided as cumulative updates throughout the life cycle of a Windows release. Checkpoint cumulative updates introduce periodic baselines that reduce the size of future cumulative updates making the distribution of monthly quality updates more efficient. For more information, see [https://aka.ms/CheckpointCumulativeUpdates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-windows-11-checkpoint-cumulative-updates/ba-p/4182552). |
 | **Windows protected print mode** </br> [24H2] | Windows protected print mode (WPP) enables a modern print stack which is designed to work exclusively with [Mopria certified printers](https://mopria.org/certified-products). For more information, see [What is Windows protected print mode (WPP)](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/a-new-modern-and-secure-print-experience-from-windows/ba-p/4002645) and [Windows Insider WPP announcement](https://blogs.windows.com/windows-insider/2023/12/13/announcing-windows-11-insider-preview-build-26016-canary-channel/). |
 
 ## Management
@@ -112,7 +112,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 
 | Feature </br> [Release] | Description |
 | --- | --- |
-| **Wi-Fi 7 consumer access points** </br> [24H2] | Support for Wi-Fi 7 consumer access points offers unprecedented speed, reliability, and efficiency for wireless devices.  For more information, see the Win-Fi 7 announcements from [Wi-Fi Alliance](https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7) and the [Windows Insider](https://blogs.windows.com/windows-insider/2024/02/22/announcing-windows-11-insider-preview-build-26063-canary-channel/). |
+| **Wi-Fi 7 consumer access points** </br> [24H2] | Support for Wi-Fi 7 consumer access points offers unprecedented speed, reliability, and efficiency for wireless devices.  For more information, see the Wi-Fi 7 announcements from [Wi-Fi Alliance](https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7) and the [Windows Insider](https://blogs.windows.com/windows-insider/2024/02/22/announcing-windows-11-insider-preview-build-26063-canary-channel/). |
 
 ## User Experience
 
