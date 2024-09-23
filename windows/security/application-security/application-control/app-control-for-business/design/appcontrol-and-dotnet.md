@@ -25,7 +25,7 @@ To mitigate any performance impact caused when the App Control EA isn't valid or
 Security researchers found that some .NET capabilities that allow apps to load libraries from external sources or generate new code at runtime can be used to circumvent App Control controls.
 To address this potential vulnerability, App Control includes an option called *Dynamic Code Security* that works with .NET to verify code loaded at runtime.
 
-When the Dynamic Code Security option is enabled, Application Control policy is applied to libraries that .NET loads from external sources. For example, any remote sources, such as the internet or a network share.
+When the Dynamic Code Security option is enabled, the App Control policy is applied to libraries that .NET loads from external sources. For example, any remote sources, such as the internet or a network share.
 
 > [!IMPORTANT]
 > .Net dynamic code security hardening is *turned on and enforced* if any App Control policy with UMCI enabled has set option **19 Enabled:Dynamic Code Security**. There is no audit mode for this feature. You should test your apps with this option set before turning it on across large numbers of devices.
