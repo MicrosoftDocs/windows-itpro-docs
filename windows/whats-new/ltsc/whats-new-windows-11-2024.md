@@ -43,6 +43,8 @@ The Windows 11 Enterprise LTSC 2024 release includes the cumulative enhancements
 | **Braille displays**  </br> [23H2] <!--7579823-->        | Braille displays work seamlessly and reliably across multiple screen readers, improving the end user experience. We also added support for new braille displays and new braille input and output languages in Narrator. For more information, see [Accessibility information for IT professionals](/windows/configuration/windows-accessibility-for-ITPros). |
 | **Narrator improvements**  </br> [23H2] <!--kb5019509--> | Scripting functionality was added to Narrator. Narrator includes more natural voices. For more information, see [Complete guide to Narrator](https://support.microsoft.com/topic/e4397a0d-ef4f-b386-d8ae-c172f109bdb1)<!--8138352, 8138357--> |
 | **Bluetooth &#174; LE audio support for assistive devices** </br> [24H2] | Windows has taken a significant step forward in accessibility by supporting the use of assistive hearing devices equipped with the latest Bluetooth &#174; Low Energy Audio technology. For more information, see [Using hearing devices with your Windows 11 PC](https://support.microsoft.com/topic/fcb566e7-13c3-491a-ad5b-8219b098d647). |
+|  **Remote Desktop Connection improvements** </br> [24H2] | The Remote Desktop Connection setup window (mstsc.exe) follows the text scaling settings under **Settings** > **Accessibility** > **Text size**. Remote Desktop Connection supports zoom options of 350, 400, 450, and 500% |
+
 
 ## Applications
 
@@ -126,7 +128,6 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 |  **High Efficiency Video Coding (HEVC) support**  </br> [22H2] | HEVC is designed to take advantage of hardware capabilities on some newer devices to support 4K and Ultra HD content. For devices that don't have hardware support for HEVC videos, software support is provided, but the playback experience might vary based on the video resolution and your devices performance. |
 | **Sudo for Windows** </br> [24H2] | Sudo for Windows is a new way for users to run elevated commands (as an administrator) directly from an unelevated console session. For more information, see [Sudo for Windows](/windows/sudo/). |
 | **Windows location improvements** </br> [24H2] | New controls were added to help manage which apps have access to the list of Wi-Fi networks around you, which could be used to determine your location. Users can view and modify which apps can access the list of Wi-Fi networks and manage notifications from **Settings** > **Privacy & security** > **Location**. | 
-
 
 
 ## Related links
