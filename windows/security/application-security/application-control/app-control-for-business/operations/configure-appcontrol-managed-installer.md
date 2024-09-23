@@ -12,7 +12,7 @@ ms.topic: troubleshooting
 
 ## Enabling managed installer and Intelligent Security Graph (ISG) logging events
 
-Refer to [Understanding Application Control Events](event-id-explanations.md#diagnostic-events-for-intelligent-security-graph-isg-and-managed-installer-mi) for information on enabling optional managed installer diagnostic events.
+Refer to [Understanding App Control Events](event-id-explanations.md#diagnostic-events-for-intelligent-security-graph-isg-and-managed-installer-mi) for information on enabling optional managed installer diagnostic events.
 
 ## Using fsutil to query extended attributes for Managed Installer (MI)
 

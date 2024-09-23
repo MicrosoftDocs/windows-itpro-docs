@@ -29,7 +29,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Using code signing to simplify application control
+          - text: Using code signing to simplify app control
             url: deployment/use-code-signing-for-better-control-and-protection.md
           - text: Applications that can bypass App Control and how to block them
             url: design/applications-that-can-bypass-appcontrol.md

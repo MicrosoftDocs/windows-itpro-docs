@@ -20,7 +20,7 @@ By default, script enforcement is enabled for all App Control policies unless th
 
 Validation for signed scripts is done using the [WinVerifyTrust API](/windows/win32/api/wintrust/nf-wintrust-winverifytrust). To pass validation, the signature root must be present in the trusted root store on the device and your App Control policy must allow it. This behavior is different from App Control validation for executable files, which doesn't require installation of the root certificate.
 
-App Control shares the *AppLocker - MSI and Script* event log for all script enforcement events. Whenever a script host asks App Control if a script should be allowed, an event is logged with the answer App Control returned to the script host. For more information on App Control script enforcement events, see [Understanding Application Control events](../operations/event-id-explanations.md#app-control-block-events-for-packaged-apps-msi-installers-scripts-and-com-objects).
+App Control shares the *AppLocker - MSI and Script* event log for all script enforcement events. Whenever a script host asks App Control if a script should be allowed, an event is logged with the answer App Control returned to the script host. For more information on App Control script enforcement events, see [Understanding App Control events](../operations/event-id-explanations.md#app-control-block-events-for-packaged-apps-msi-installers-scripts-and-com-objects).
 
 > [!NOTE]
 > When a script runs that is not allowed by policy, App Control raises an event indicating that the script was "blocked." However, the actual script enforcement behavior is handled by the script host and may not actually completely block the file from running.

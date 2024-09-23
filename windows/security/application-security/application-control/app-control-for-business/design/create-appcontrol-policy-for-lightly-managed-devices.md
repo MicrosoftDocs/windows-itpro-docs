@@ -10,14 +10,14 @@ ms.date: 09/11/2024
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-This section outlines the process to create an App Control for Business policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their App Control-managed devices as described in later articles.
+This section outlines the process to create an App Control for Business policy for **lightly managed devices** within an organization. Typically, organizations that are new to App Control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their App Control-managed devices as described in later articles.
 
 > [!NOTE]
 > Some of the App Control for Business options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's App Control policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-As in [App Control for Business deployment in different scenarios: types of devices](common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As in [App Control for Business deployment in different scenarios: types of devices](common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of App Control to prevent unwanted or unauthorized applications from running on their managed devices.
 
-**Alice Pena** is the IT team lead tasked with the rollout of App Control. Lamna currently has loose application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to application control and use different policies for different workloads.
+**Alice Pena** is the IT team lead tasked with the rollout of App Control. Lamna currently has loose application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to App Control and use different policies for different workloads.
 
 For most users and devices, Alice wants to create an initial policy that is as relaxed as possible in order to minimize user productivity impact, while still providing security value.
 

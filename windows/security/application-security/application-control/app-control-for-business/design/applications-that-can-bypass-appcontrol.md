@@ -87,7 +87,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 > [!NOTE]
 > This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered.
 
-Certain software applications may allow other code to run by design. Unless these applications are business critical, you should block them in your App Control policy. In addition, when an application version is upgraded to fix a security vulnerability or potential App Control bypass, add *deny* rules to your application control policies for that application's previous, less secure versions.
+Certain software applications may allow other code to run by design. Unless these applications are business critical, you should block them in your App Control policy. In addition, when an application version is upgraded to fix a security vulnerability or potential App Control bypass, add *deny* rules to your App Control policies for that application's previous, less secure versions.
 
 Microsoft recommends that you install the latest security updates. For example, updates help resolve several issues in PowerShell modules that allowed an attacker to bypass App Control. These modules can be blocked by their corresponding hashes.
 

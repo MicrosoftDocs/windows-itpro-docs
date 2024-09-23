@@ -1,12 +1,12 @@
 ---
-title: Query Application Control events with Advanced Hunting
+title: Query App Control events with Advanced Hunting
 description: Learn how to query App Control for Business events across your entire organization by using Advanced Hunting.
 ms.localizationpriority: medium
 ms.date: 09/11/2024
 ms.topic: troubleshooting
 ---
 
-# Querying Application Control events centrally using Advanced hunting
+# Querying App Control events centrally using Advanced hunting
 
 an App Control for Business policy logs events locally in Windows Event Viewer in either enforced or audit mode.
 While Event Viewer helps to see the impact on a single system, IT Pros want to gauge it across many systems.
@@ -20,7 +20,7 @@ This capability is supported beginning with Windows version 1607.
 
 | ActionType Name | ETW Source Event ID | Description |
 | - | - | - |
-| AppControlCodeIntegrityDriverRevoked | 3023 | The driver file under validation didn't meet the requirements to pass the application control policy. |
+| AppControlCodeIntegrityDriverRevoked | 3023 | The driver file under validation didn't meet the requirements to pass the App Control policy. |
 | AppControlCodeIntegrityImageRevoked | 3036 | The signed file under validation is signed by a code signing certificate that has been revoked by Microsoft or the certificate issuing authority. |
 | AppControlCodeIntegrityPolicyAudited | 3076 | This event is the main App Control for Business block event for audit mode policies. It indicates the file would have been blocked if the App Control policy was enforced. |
 | AppControlCodeIntegrityPolicyBlocked | 3077 | This event is the main App Control for Business block event for enforced policies. It indicates the file didn't pass your App Control policy and was blocked. |
@@ -39,11 +39,11 @@ This capability is supported beginning with Windows version 1607.
 | AppControlCodeIntegritySigningInformation | 3089 | Signing information event correlated with either a 3076 or 3077 event. One 3089 event is generated for each signature of a file. |
 | AppControlPolicyApplied | 8001 | Indicates the AppLocker policy was successfully applied to the computer. |
 
-Learn more about the [Understanding Application Control event IDs (Windows)](event-id-explanations.md)
+Learn more about the [Understanding App Control event IDs (Windows)](event-id-explanations.md)
 
-## Example Advanced Hunting Application Control Queries
+## Example Advanced Hunting App Control Queries
 
-Query Example 1: Query the application control action types summarized by type for past seven days
+Query Example 1: Query the App Control action types summarized by type for past seven days
 
 Here's a simple example query that shows all the App Control for Business events generated in the last seven days from machines being monitored by Microsoft Defender for Endpoint:
 

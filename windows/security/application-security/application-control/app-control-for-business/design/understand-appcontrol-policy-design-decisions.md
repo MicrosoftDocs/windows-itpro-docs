@@ -10,11 +10,11 @@ ms.topic: conceptual
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-This article is for the IT professional. It lists the design questions, possible answers, and ramifications for decisions made, when planning application control policies deployment using App Control for Business, within a Windows operating system environment.
+This article is for the IT professional. It lists the design questions, possible answers, and ramifications for decisions made, when planning App Control policies deployment using App Control for Business, within a Windows operating system environment.
 
-When you begin the design and planning process, you should consider the ramifications of your design choices. The resulting decisions will affect your policy deployment scheme and subsequent application control policy maintenance.
+When you begin the design and planning process, you should consider the ramifications of your design choices. The resulting decisions will affect your policy deployment scheme and subsequent App Control policy maintenance.
 
-You should consider using App Control for Business as part of your organization's application control policies if the following are true:
+You should consider using App Control for Business as part of your organization's App Control policies if the following are true:
 
 -   You have deployed or plan to deploy the supported versions of Windows in your organization.
 -   You need improved control over the access to your organization's applications and the data your users access.
@@ -43,7 +43,7 @@ Organizations with well-defined, centrally managed app management and deployment
 
 | Possible answers | Design considerations|
 | - | - |
-| All apps are centrally managed and deployed using endpoint management tools like [Microsoft Intune](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). | Organizations that centrally manage all apps are best-suited for application control. App Control for Business options like [managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) can make it easy to authorize apps that are deployed by the organization's app distribution management solution. |
+| All apps are centrally managed and deployed using endpoint management tools like [Microsoft Intune](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). | Organizations that centrally manage all apps are best-suited for App Control. App Control for Business options like [managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) can make it easy to authorize apps that are deployed by the organization's app distribution management solution. |
 | Some apps are centrally managed and deployed, but teams can install other apps for their members. | [Supplemental policies](deploy-multiple-appcontrol-policies.md) can be used to allow team-specific exceptions to your core organization-wide App Control for Business policy. Alternatively, teams can use managed installers to install their team-specific apps, or admin-only file path rules can be used to allow apps installed by admin users. |
 | Users and teams are free to download and install apps but the organization wants to restrict that right to prevalent and reputable apps only. | App Control for Business can integrate with Microsoft's [Intelligent Security Graph](use-appcontrol-with-intelligent-security-graph.md) (the same source of intelligence that powers Microsoft Defender Antivirus and Windows Defender SmartScreen) to allow only apps and binaries that have positive reputation. |
 | Users and teams are free to download and install apps without restriction. | App Control for Business policies can be deployed in audit mode to gain insight into the apps and binaries running in your organization without impacting user and team productivity.|
@@ -57,9 +57,9 @@ Traditional Win32 apps on Windows can run without being digitally signed. This p
 | All apps used in your organization must be signed. | Organizations that enforce [codesigning](../deployment/use-code-signing-for-better-control-and-protection.md) for all executable code are best-positioned to protect their Windows computers from malicious code execution. App Control for Business rules can be created to authorize apps and binaries from the organization's internal development teams and from trusted independent software vendors (ISV). |
 | Apps used in your organization don't need to meet any codesigning requirements. | Organizations can  [use built-in Windows tools](../deployment/deploy-catalog-files-to-support-appcontrol.md) to add organization-specific App Catalog signatures to existing apps as a part of the app deployment process, which can be used to authorize code execution. Solutions like Microsoft Intune offer multiple ways to distribute signed App Catalogs. |
 
-### Are there specific groups in your organization that need customized application control policies?
+### Are there specific groups in your organization that need customized App Control policies?
 
-Most business teams or departments have specific security requirements that pertain to data access and the applications used to access that data. Consider the scope of the project for each group and the group's priorities before you deploy application control policies for the entire organization. There's overhead in managing policies that might lead you to choose between broad, organization-wide policies and multiple team-specific policies.
+Most business teams or departments have specific security requirements that pertain to data access and the applications used to access that data. Consider the scope of the project for each group and the group's priorities before you deploy App Control policies for the entire organization. There's overhead in managing policies that might lead you to choose between broad, organization-wide policies and multiple team-specific policies.
 
 | Possible answers | Design considerations |
 | - | - |
@@ -72,7 +72,7 @@ The time and resources that are available to you to perform the research and ana
 
 | Possible answers | Design considerations |
 | - | - |
-| Yes | Invest the time to analyze your organization's application control requirements, and plan a complete deployment that uses rules that are constructed as possible.|
+| Yes | Invest the time to analyze your organization's App Control requirements, and plan a complete deployment that uses rules that are constructed as possible.|
 | No | Consider a focused and phased deployment for specific groups by using few rules. As you apply controls to applications in a specific group, learn from that deployment to plan your next deployment. Alternatively, you can create a policy with a broad trust profile to authorize as many apps as possible. |
 
 ### Does your organization have Help Desk support?

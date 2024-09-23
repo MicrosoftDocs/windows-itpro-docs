@@ -2,7 +2,7 @@
 title: Create your App Control for Business AppId Tagging Policies
 description: Create your App Control for Business AppId tagging policies for Windows devices.
 ms.localizationpriority: medium
-ms.date: 09/11/2024
+ms.date: 09/23/2024
 ms.topic: conceptual
 ---
 
@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 ## Create the policy using the App Control Wizard
 
-You can use the App Control for Business Wizard and the PowerShell commands to create an application control policy and convert it to an AppIdTagging policy. The App Control Wizard is available for download at the [App Control Wizard Installer site](https://aka.ms/wdacwizard). These PowerShell commands are only available on the supported platforms listed in [AppId Tagging Guide](appcontrol-appid-tagging-guide.md).
+You can use the App Control for Business Wizard and the PowerShell commands to create an App Control policy and convert it to an AppIdTagging policy. The App Control Wizard is available for download at the [App Control Wizard Installer site](https://aka.ms/wdacwizard). These PowerShell commands are only available on the supported platforms listed in [AppId Tagging Guide](appcontrol-appid-tagging-guide.md).
 
 1. Create a new base policy using the templates:
 

@@ -17,8 +17,8 @@ You now understand how to design and deploy your App Control for Business polici
 | Article | Description |
 | - | - |
 | [Debugging and troubleshooting](appcontrol-debugging-and-troubleshooting.md) | This article explains how to debug app and script failures with App Control. |
-| [Understanding Application Control event IDs](event-id-explanations.md) | This article explains the meaning of different App Control event IDs. |
-| [Understanding Application Control event tags](event-tag-explanations.md) | This article explains the meaning of different App Control event tags. |
+| [Understanding App Control event IDs](event-id-explanations.md) | This article explains the meaning of different App Control event IDs. |
+| [Understanding App Control event tags](event-tag-explanations.md) | This article explains the meaning of different App Control event tags. |
 | [Query App Control events with Advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) | This article covers how to view App Control events centrally from all systems that are connected to Microsoft Defender for Endpoint. |
 | [Admin Tips & Known Issues](known-issues.md) | This article describes some App Control Admin Tips & Known Issues. |
 | [Managed installer and ISG technical reference and troubleshooting guide](configure-appcontrol-managed-installer.md) | This article provides technical details and debugging steps for managed installer and ISG. |

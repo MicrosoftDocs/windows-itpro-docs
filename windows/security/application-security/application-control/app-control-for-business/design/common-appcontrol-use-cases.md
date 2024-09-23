@@ -29,7 +29,7 @@ Lamna Healthcare Company (Lamna) is a large healthcare provider operating in the
 
 Lamna uses [Microsoft Intune](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) in hybrid mode with both Configuration Manager and Intune. Although they use Microsoft Intune to deploy many applications, Lamna has always had relaxed application usage practices: individual teams and employees have been able to install and use any applications they deem necessary for their role on their own workstations. Lamna also recently started to use [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) for better endpoint detection and response.
 
-Recently, Lamna experienced a ransomware event that required an expensive recovery process and may have included data exfiltration by the unknown attacker. Part of the attack included installing and running malicious binaries that evaded detection by Lamna's antivirus solution but would have been blocked by an application control policy. In response, Lamna's executive board has authorized many new security IT responses, including tightening policies for application use and introducing application control.
+Recently, Lamna experienced a ransomware event that required an expensive recovery process and may have included data exfiltration by the unknown attacker. Part of the attack included installing and running malicious binaries that evaded detection by Lamna's antivirus solution but would have been blocked by an App Control policy. In response, Lamna's executive board has authorized many new security IT responses, including tightening policies for application use and introducing App Control.
 
 ## Up next
 

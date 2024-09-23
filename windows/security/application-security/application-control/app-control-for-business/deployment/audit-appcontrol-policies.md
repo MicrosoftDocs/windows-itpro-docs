@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-Running Application Control in audit mode lets you discover applications, binaries, and scripts that are missing from your App Control policy but should be included.
+Running App Control in audit mode lets you discover applications, binaries, and scripts that are missing from your App Control policy but should be included.
 
 While an App Control policy is running in audit mode, any binary that runs but would have been denied is logged in the **Applications and Services Logs\\Microsoft\\Windows\\CodeIntegrity\\Operational** event log. Script and MSI are logged in the **Applications and Services Logs\\Microsoft\\Windows\\AppLocker\\MSI and Script** event log. These events can be used to generate a new App Control policy that can be merged with the original Base policy or deployed as a separate Supplemental policy, if allowed.
 
@@ -23,7 +23,7 @@ To familiarize yourself with creating App Control rules from audit events, follo
 
 1. Install and run an application not allowed by the App Control policy but that you want to allow.
 
-2. Review the **CodeIntegrity - Operational** and **AppLocker - MSI and Script** event logs to confirm events, like those shown in Figure 1, are generated related to the application. For information about the types of events you should see, refer to [Understanding Application Control events](../operations/event-id-explanations.md).
+2. Review the **CodeIntegrity - Operational** and **AppLocker - MSI and Script** event logs to confirm events, like those shown in Figure 1, are generated related to the application. For information about the types of events you should see, refer to [Understanding App Control events](../operations/event-id-explanations.md).
 
    **Figure 1. Exceptions to the deployed App Control policy**
    ![Event showing exception to App Control policy.](../images/dg-fig23-exceptionstocode.png)

@@ -10,9 +10,9 @@ ms.topic: how-to
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-Application control can be difficult to implement in organizations that don't deploy and manage applications through an IT-managed system. In such environments, users can acquire the applications they want to use for work, making it hard to build an effective application control policy.
+App Control can be difficult to implement in organizations that don't deploy and manage applications through an IT-managed system. In such environments, users can acquire the applications they want to use for work, making it hard to build an effective App Control policy.
 
-To reduce end-user friction and helpdesk calls, you can set App Control for Business to automatically allow applications that Microsoft's Intelligent Security Graph (ISG) recognizes as having known good reputation. The ISG option helps organizations begin to implement application control even when the organization has limited control over their app ecosystem. To learn more about the ISG, see the Security section in [Major services and features in Microsoft Graph](/graph/overview-major-services).
+To reduce end-user friction and helpdesk calls, you can set App Control for Business to automatically allow applications that Microsoft's Intelligent Security Graph (ISG) recognizes as having known good reputation. The ISG option helps organizations begin to implement App Control even when the organization has limited control over their app ecosystem. To learn more about the ISG, see the Security section in [Major services and features in Microsoft Graph](/graph/overview-major-services).
 
 > [!WARNING]
 > Binaries that are critical to boot the system must be allowed using explicit rules in your App Control policy. Do not rely on the ISG to authorize these files.
@@ -93,4 +93,4 @@ Packaged apps aren't supported with the ISG and will need to be separately autho
 The ISG doesn't authorize kernel mode drivers. The App Control policy must have rules that allow the necessary drivers to run.
 
 > [!NOTE]
-> A rule that explicitly denies or allows a file will take precedence over that file's reputation data. Microsoft Intune's built-in App Control support includes the option to trust apps with good reputation via the ISG, but it has no option to add explicit allow or deny rules. In most cases, customers using application control will need to deploy a custom App Control policy (which can include the ISG option if desired) using [Intune's OMA-URI functionality](../deployment/deploy-appcontrol-policies-using-intune.md#deploy-app-control-policies-with-custom-oma-uri).
+> A rule that explicitly denies or allows a file will take precedence over that file's reputation data. Microsoft Intune's built-in App Control support includes the option to trust apps with good reputation via the ISG, but it has no option to add explicit allow or deny rules. In most cases, customers using App Control will need to deploy a custom App Control policy (which can include the ISG option if desired) using [Intune's OMA-URI functionality](../deployment/deploy-appcontrol-policies-using-intune.md#deploy-app-control-policies-with-custom-oma-uri).

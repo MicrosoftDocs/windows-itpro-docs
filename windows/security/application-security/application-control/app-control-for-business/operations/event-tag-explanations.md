@@ -1,12 +1,12 @@
 ---
-title: Understanding Application Control event tags
+title: Understanding App Control event tags
 description: Learn what different App Control for Business event tags signify.
 ms.localizationpriority: medium
 ms.date: 09/11/2024
 ms.topic: conceptual
 ---
 
-# Understanding Application Control event tags
+# Understanding App Control event tags
 
 App Control for Business events include many fields, which provide helpful troubleshooting information to figure out exactly what an event means. This article describes the values and meanings for a few useful event tags.
 
@@ -82,7 +82,7 @@ Represents why verification failed, or if it succeeded.
 
 ## Policy activation event Options
 
-The Application Control policy rule option values can be derived from the "Options" field in the Details section for successful [policy activation events](event-id-explanations.md#app-control-policy-activation-events). To parse the values, first convert the hex value to binary. To derive and parse these values, follow the below workflow.
+The App Control policy rule option values can be derived from the "Options" field in the Details section for successful [policy activation events](event-id-explanations.md#app-control-policy-activation-events). To parse the values, first convert the hex value to binary. To derive and parse these values, follow the below workflow.
 
 - Access Event Viewer.
 - Access the Code integrity 3099 event.

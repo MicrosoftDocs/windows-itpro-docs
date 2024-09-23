@@ -14,7 +14,7 @@ This article describes the decisions you need to make to establish the processes
 
 ## Policy XML lifecycle management
 
-The first step in implementing application control is to consider how your policies will be managed and maintained over time. Developing a process for managing App Control for Business policies helps ensure that App Control continues to effectively control how applications are allowed to run in your organization.
+The first step in implementing App Control is to consider how your policies will be managed and maintained over time. Developing a process for managing App Control for Business policies helps ensure that App Control continues to effectively control how applications are allowed to run in your organization.
 
 Most App Control for Business policies will evolve over time and proceed through a set of identifiable phases during their lifetime. Typically, these phases include:
 
@@ -68,9 +68,9 @@ Considerations include:
 If your organization has an established help desk support department in place, consider the following points when deploying App Control for Business policies:
 
 - What documentation does your support department require for new policy deployments?
-- What are the critical processes in each business group both in work flow and timing that will be affected by application control policies and how could they affect your support department's workload?
+- What are the critical processes in each business group both in work flow and timing that will be affected by App Control policies and how could they affect your support department's workload?
 - Who are the contacts in the support department?
-- How will the support department resolve application control issues between the end user and those resources who maintain the App Control for Business rules?
+- How will the support department resolve App Control issues between the end user and those resources who maintain the App Control for Business rules?
 
 ### End-user support
 

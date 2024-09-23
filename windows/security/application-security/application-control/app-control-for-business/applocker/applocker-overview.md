@@ -1,6 +1,6 @@
 ---
 title: AppLocker
-description: This article provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies.
+description: This article provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker policies.
 ms.collection:
 - tier3
 - must-keep
@@ -11,7 +11,7 @@ ms.date: 09/11/2024
 
 # AppLocker
 
-This article provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers. AppLocker is also used by some features of App Control for Business.
+This article provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers. AppLocker is also used by some features of App Control for Business.
 
 > [!NOTE]
 > AppLocker is a defense-in-depth security feature and not considered a defensible Windows [security feature](https://www.microsoft.com/msrc/windows-security-servicing-criteria). [App Control for Business](../appcontrol-and-applocker-overview.md) should be used when the goal is to provide robust protection against a threat and there are expected to be no by-design limitations that would prevent the security feature from achieving this goal.

@@ -27,11 +27,11 @@ AppLocker helps administrators control how users can access and use files, such 
 | [Edit an AppLocker policy](edit-an-applocker-policy.md) | This article for IT professionals describes the steps required to modify an AppLocker policy. |
 | [Test and update an AppLocker policy](test-and-update-an-applocker-policy.md) | This article discusses the steps required to test an AppLocker policy prior to deployment. |
 | [Deploy AppLocker policies by using the enforce rules setting](deploy-applocker-policies-by-using-the-enforce-rules-setting.md) | This article for IT professionals describes the steps to deploy AppLocker policies by using the enforcement setting method. |
-| [Use the AppLocker Windows PowerShell cmdlets](use-the-applocker-windows-powershell-cmdlets.md) | This article for IT professionals describes how each AppLocker Windows PowerShell cmdlet can help you administer your AppLocker application control policies. |
+| [Use the AppLocker Windows PowerShell cmdlets](use-the-applocker-windows-powershell-cmdlets.md) | This article for IT professionals describes how each AppLocker Windows PowerShell cmdlet can help you administer your AppLocker policies. |
 | [Optimize AppLocker performance](optimize-applocker-performance.md) | This article for IT professionals describes how to optimize AppLocker policy enforcement. |
 | [Monitor app usage with AppLocker](monitor-application-usage-with-applocker.md) | This article for IT professionals describes how to monitor app usage when AppLocker policies are applied. |
 | [Manage packaged apps with AppLocker](manage-packaged-apps-with-applocker.md) | This article for IT professionals describes concepts and lists procedures to help you manage Packaged apps with AppLocker as part of your overall application control strategy. |
-| [Working with AppLocker rules](working-with-applocker-rules.md) | This article for IT professionals describes AppLocker rule types and how to work with them for your application control policies. |
+| [Working with AppLocker rules](working-with-applocker-rules.md) | This article for IT professionals describes AppLocker rule types and how to work with them for your policies. |
 | [Working with AppLocker policies](working-with-applocker-policies.md) | This article for IT professionals provides links to procedural articles about creating, maintaining, and testing AppLocker policies. |
 
 ## Using the MMC snap-ins to administer AppLocker

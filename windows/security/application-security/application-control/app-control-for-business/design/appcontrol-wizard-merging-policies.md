@@ -1,6 +1,6 @@
 ---
 title: App Control for Business Wizard Policy Merging Operation
-description: Merging multiple policies into a single application control policy with the Microsoft App Control Wizard.
+description: Merging multiple policies into a single App Control policy with the App Control Wizard.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 09/11/2024

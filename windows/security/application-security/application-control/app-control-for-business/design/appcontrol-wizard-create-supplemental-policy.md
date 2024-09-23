@@ -1,6 +1,6 @@
 ---
 title: App Control for Business Wizard Supplemental Policy Creation
-description: Creating supplemental application control policies with the App Control Wizard.
+description: Creating supplemental App Control policies with the App Control Wizard.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 09/11/2024
@@ -12,7 +12,7 @@ ms.date: 09/11/2024
 
 Beginning in Windows 10 version 1903, App Control for Business supports the creation of multiple active policies on a device. One or more supplemental policies allow customers to expand a [App Control base policy](appcontrol-wizard-create-base-policy.md) to increase the circle of trust of the policy. A supplemental policy can expand only one base policy, but multiple supplementals can expand the same base policy. When supplemental policies are used, applications allowed by the base or any of its supplemental policies are allowed to run.
 
-Prerequisite information about application control can be accessed through the [App Control design guide](appcontrol-design-guide.md). This page outlines the steps to create a supplemental application control policy, configure the policy options, and the signer and file rules.
+Prerequisite information about App Control can be accessed through the [App Control design guide](appcontrol-design-guide.md). This page outlines the steps to create a supplemental App Control policy, configure the policy options, and the signer and file rules.
 
 ## Expanding a Base Policy
 
@@ -48,7 +48,7 @@ Supplemental policies can only configure three policy rules. The following table
 
 ## Creating custom file rules
 
-File rules in an application control policy specify the level at which applications are identified and trusted. File rules are the main mechanism for defining trust in the application control policy. Selecting **+ Custom Rules** opens the custom file rule conditions panel to create and customize targeted file rules for your policy. The Wizard supports four types of file rules:
+File rules in an App Control policy specify the level at which applications are identified and trusted. File rules are the main mechanism for defining trust in the App Control policy. Selecting **+ Custom Rules** opens the custom file rule conditions panel to create and customize targeted file rules for your policy. The Wizard supports four types of file rules:
 
 ### Publisher Rules
 

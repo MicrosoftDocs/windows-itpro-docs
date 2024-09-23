@@ -105,9 +105,9 @@
   items:
     - name: App Control debugging and troubleshooting
       href: operations/appcontrol-debugging-and-troubleshooting.md
-    - name: Understanding Application Control event IDs
+    - name: Understanding App Control event IDs
       href: operations/event-id-explanations.md
-    - name: Understanding Application Control event tags
+    - name: Understanding App Control event tags
       href: operations/event-tag-explanations.md
     - name: Query App Control events with Advanced hunting
       href: operations/querying-application-control-events-centrally-using-advanced-hunting.md

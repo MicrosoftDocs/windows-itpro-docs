@@ -1,6 +1,6 @@
 ---
 title: App Control for Business Wizard Base Policy Creation
-description: Creating new base application control policies with the Microsoft Windows Defender Application (App Control) Wizard.
+description: Creating new base App Control policies with the App Control Wizard.
 ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 09/11/2024
@@ -10,7 +10,7 @@ ms.date: 09/11/2024
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-When creating policies for use with App Control for Business, it's recommended to start with a template policy, and then add or remove rules to suit your application control scenario. For this reason, the App Control Wizard offers three template policies to start from and customize during the base policy creation workflow. Prerequisite information about application control can be accessed through the [App Control design guide](appcontrol-design-guide.md). This page outlines the steps to create a new application control policy from a template, configure the policy options, and the signer and file rules.
+When creating policies for use with App Control for Business, it's recommended to start with a template policy, and then add or remove rules to suit your App Control scenario. For this reason, the App Control Wizard offers three template policies to start from and customize during the base policy creation workflow. Prerequisite information about App Control can be accessed through the [App Control design guide](appcontrol-design-guide.md). This page outlines the steps to create a new App Control policy from a template, configure the policy options, and the signer and file rules.
 
 ## Template Base Policies
 
@@ -28,7 +28,7 @@ More information about the Default Windows Mode and Allow Microsoft Mode policie
 
 ![Selecting a base template for the policy.](../images/appcontrol-wizard-template-selection.png)
 
-Once the base template is selected, give the policy a name and choose where to save the application control policy on disk.
+Once the base template is selected, give the policy a name and choose where to save the App Control policy on disk.
 
 ## Configuring Policy Rules
 
@@ -74,7 +74,7 @@ Selecting the **+ Advanced Options** label shows another column of policy rules,
 
 ## Creating custom file rules
 
-[File rules](select-types-of-rules-to-create.md#app-control-for-business-file-rule-levels) in an application control policy specify the level at which applications are identified and trusted. File rules are the main mechanism for defining trust in the application control policy. Selecting **+ Custom Rules** opens the custom file rule conditions panel to create custom file rules for your policy. The Wizard supports four types of file rules:
+[File rules](select-types-of-rules-to-create.md#app-control-for-business-file-rule-levels) in an App Control policy specify the level at which applications are identified and trusted. File rules are the main mechanism for defining trust in the App Control policy. Selecting **+ Custom Rules** opens the custom file rule conditions panel to create custom file rules for your policy. The Wizard supports four types of file rules:
 
 ### Publisher Rules
 

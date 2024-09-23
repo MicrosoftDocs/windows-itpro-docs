@@ -18,7 +18,7 @@ You should now have one or more App Control for Business policies broadly deploy
 
 ## Convert App Control **base** policy from audit to enforced
 
-As described in [common App Control for Business deployment scenarios](../design/common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As described in [common App Control for Business deployment scenarios](../design/common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of App Control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead responsible for Lamna's App Control rollout.
 
