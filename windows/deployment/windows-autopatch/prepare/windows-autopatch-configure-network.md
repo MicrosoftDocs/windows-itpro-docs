@@ -1,7 +1,7 @@
 ---
 title: Configure your network
 description: This article details the network configurations needed for Windows Autopatch
-ms.date: 09/16/2024
+ms.date: 09/24/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -63,7 +63,7 @@ The following URLs must be on the allowed list of your proxy and firewall so tha
 
 | Microsoft service | URLs required on allowlist |
 | ----- | ----- |
-| Windows Autopatch | <ul><li>mmdcustomer.microsoft.com</li><li>mmdls.microsoft.com</li><li>logcollection.mmd.microsoft.com</li><li>support.mmd.microsoft.com</li></ul>|
+| Windows Autopatch | <ul><li>mmdcustomer.microsoft.com</li><li>mmdls.microsoft.com</li><li>logcollection.mmd.microsoft.com</li><li>support.mmd.microsoft.com</li><li>devicelistenerprod.microsoft.com</li><li>login.windows.net</li><li>payloadprod*.blob.core.windows.net</li></ul>|
 
 ## Delivery Optimization
 
