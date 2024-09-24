@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 09/16/2024
+ms.date: 09/24/2024
 ---
 
 # Programmatic controls for Windows feature updates
@@ -47,6 +47,11 @@ All of the [Windows Autopatch prerequisites](../prepare/windows-autopatch-prereq
 
 <!--Using include for Graph Explorer permissions-->
 [!INCLUDE [Windows Autopatch permissions using Graph Explorer](../includes/windows-autopatch-graph-explorer-permissions.md)]
+
+### Required endpoints
+
+<!--Using include for required Graph API endpoints-->
+[!INCLUDE [windows-autopatch-required-graph-api-endpoints](../includes/windows-autopatch-required-graph-api-endpoints.md)]
 
 ## Open Graph Explorer
 
