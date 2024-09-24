@@ -95,6 +95,17 @@ Alternatively, you can configure devices using the [Policy CSP][CSP-1] and [PDE 
 
 Once PDE is enabled, it isn't recommended to disable it. However if you need to disable PDE, you can do so using the following steps.
 
+### Disable PDE with a disk encryption policy
+
+To disable PDE devices using a [disk encryption policy](/mem/intune/protect/endpoint-security-disk-encryption-policy), go to **Endpoint security** > **Disk encryption** and select **Create policy**:
+
+- **Platform** > **Windows**
+- **Profile** > **Personal Data Encryption**
+
+Provide a name, and select **Next**. In the **Configuration settings** page, select **Disable Personal Data Encryption**.
+
+Assign the policy to a group that contains as members the devices or users that you want to configure.
+
 ### Disable PDE with a settings catalog policy in Intune
 
 [!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
