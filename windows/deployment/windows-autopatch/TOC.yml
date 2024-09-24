@@ -118,13 +118,8 @@
                   href: monitor/windows-autopatch-reliability-report.md
             - name: Windows feature and quality update device alerts
               href: monitor/windows-autopatch-device-alerts.md
-        - name: Policy health
-          href:
-          items:
-            - name: Policy health and remediation
-              href: monitor/windows-autopatch-policy-health-and-remediation.md
-            - name: Resolve policy conflicts
-              href: monitor/windows-autopatch-resolve-policy-conflicts.md
+        - name: Policy health and remediation
+          href: monitor/windows-autopatch-policy-health-and-remediation.md
         - name: Maintain the Windows Autopatch environment
           href: monitor/windows-autopatch-maintain-environment.md
     - name: References
