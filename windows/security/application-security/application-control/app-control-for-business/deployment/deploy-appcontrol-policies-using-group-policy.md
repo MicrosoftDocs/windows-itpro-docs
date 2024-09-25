@@ -33,7 +33,7 @@ To deploy and manage an App Control for Business policy with Group Policy:
    > [!NOTE]
    > You can use any OU name. Also, security group filtering is an option when you consider different ways of combining App Control policies (or keeping them separate), as discussed in [Plan for App Control for Business lifecycle policy management](../design/plan-appcontrol-management.md).
 
-   ![Group Policy Management, create a GPO.](../images/dg-fig24-creategpo.png)
+   :::image type="content" alt-text="Group Policy Management, create a GPO." source="../images/dg-fig24-creategpo.png":::
 
 3. Name the new GPO. You can choose any name.
 

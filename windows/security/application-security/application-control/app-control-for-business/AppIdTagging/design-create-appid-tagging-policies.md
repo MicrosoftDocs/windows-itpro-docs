@@ -25,7 +25,7 @@ You can use the App Control for Business Wizard and the PowerShell commands to c
 
 2. Set the following rule-options using the Wizard toggles:
 
-    ![Configuring the policy rule-options.](../images/appid-appcontrol-wizard-2.png)
+    :::image type="content" alt-text="Configuring the policy rule-options." source="../images/appid-appcontrol-wizard-2.png":::
 
 3. Create custom rules:
 
