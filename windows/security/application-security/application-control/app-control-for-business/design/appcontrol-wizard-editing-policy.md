@@ -37,7 +37,8 @@ The App Control Wizard makes deleting file rules from an existing policy quick a
 
 :::image type="content" alt-text="Removing file rule from policy during edit." source="../images/appcontrol-wizard-edit-remove-file-rule.png":::
 
-**Note:** removing a publisher rule will also remove the associated File Attribute rules. For instance, in the xml block below, removing ID_SIGNER_CONTOSO_PUBLISHER would also remove the rules ID_FILEATTRIB_LOB_APP_1 and ID_FILEATTRIB_LOB_APP_2.
+> [!NOTE]
+> Removing a publisher rule will also remove the associated File Attribute rules. For instance, in the xml block below, removing ID_SIGNER_CONTOSO_PUBLISHER would also remove the rules ID_FILEATTRIB_LOB_APP_1 and ID_FILEATTRIB_LOB_APP_2.
 
 ```xml
 <Signer ID="ID_SIGNER_CONTOSO_PUBLISHER" Name="Contoso LOB Publisher CA">
