@@ -32,7 +32,7 @@ In this section we review what an end user would see in the following three scen
 
 ### Typical update experience
 
-The Windows quality update is published and devices in the Broad ring have a deferral period of nine days. Devices wait nine days before downloading the latest quality update.
+The Windows quality update is published and devices in the Broad ring have a deferral period of seven days. Devices wait seven days before downloading the latest quality update.
 
 In the following example, the user:
 
