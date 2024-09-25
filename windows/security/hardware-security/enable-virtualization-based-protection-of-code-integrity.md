@@ -54,7 +54,9 @@ Use the **Virtualization Based Technology** > **Hypervisor Enforced Code Integri
 1. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.
 1. Double-click **Turn on Virtualization Based Security**.
 1. Select **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled without UEFI lock**. Only select **Enabled with UEFI lock** if you want to prevent memory integrity from being disabled remotely or by policy update. Once enabled with UEFI lock, you must have access to the UEFI BIOS menu to turn off Secure Boot if you want to turn off memory integrity.
+
    ![Enable memory integrity using Group Policy.](images/enable-hvci-gp.png)
+
 1. Select **Ok** to close the editor.
 
 To apply the new policy on a domain-joined computer, either restart or run `gpupdate /force` in an elevated Command Prompt.
