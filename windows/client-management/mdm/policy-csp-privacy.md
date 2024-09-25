@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy CSP
 description: Learn more about the Privacy Area in Policy CSP.
-ms.date: 06/28/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -155,9 +155,9 @@ Most restrictive value is `0` to not allow cross-device clipboard.
 <!-- Description-Source-ADMX -->
 This policy specifies whether users on the device have the option to enable online speech recognition services.
 
-If this policy is enabled or not configured, control is deferred to users, and users may choose whether to enable speech services via settings.
+- If this policy is enabled or not configured, control is deferred to users, and users may choose whether to enable speech services via settings.
 
-If this policy is disabled, speech services will be disabled, and users can't enable speech services via settings.
+- If this policy is disabled, speech services will be disabled, and users can't enable speech services via settings.
 <!-- AllowInputPersonalization-Description-End -->
 
 <!-- AllowInputPersonalization-Editable-Begin -->
@@ -300,9 +300,9 @@ This policy setting turns off the advertising ID, preventing apps from using the
 <!-- Description-Source-ADMX -->
 When logging into a new user account for the first time or after an upgrade in some scenarios, that user may be presented with a screen or series of screens that prompts the user to choose privacy settings for their account. Enable this policy to prevent this experience from launching.
 
-If this policy is enabled, the privacy experience won't launch for newly created user accounts or for accounts that would've been prompted to choose their privacy settings after an upgrade.
+- If this policy is enabled, the privacy experience won't launch for newly created user accounts or for accounts that would've been prompted to choose their privacy settings after an upgrade.
 
-If this policy is disabled or not configured, then the privacy experience may launch for newly created user accounts or for accounts that should be prompted to choose their privacy settings after an upgrade.
+- If this policy is disabled or not configured, then the privacy experience may launch for newly created user accounts or for accounts that should be prompted to choose their privacy settings after an upgrade.
 <!-- DisablePrivacyExperience-Description-End -->
 
 <!-- DisablePrivacyExperience-Editable-Begin -->

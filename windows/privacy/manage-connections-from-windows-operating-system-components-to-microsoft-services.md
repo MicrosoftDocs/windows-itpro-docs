@@ -1616,7 +1616,7 @@ You can disable Teredo by using Group Policy or by using the netsh.exe command. 
 ### <a href="" id="bkmk-wifisense"></a>23. Wi-Fi Sense
 
 > [!IMPORTANT]
-> Beginning with Windows 10, version 1803, Wi-Fi Sense is no longer available. The following section only applies to Windows 10, version 1709 and prior. Please see [Connecting to open Wi-Fi hotspots in Windows 10](https://privacy.microsoft.com/windows-10-open-wi-fi-hotspots) for more details.
+> Beginning with Windows 10, version 1803, Wi-Fi Sense is no longer available. The following section only applies to Windows 10, version 1709 and prior. Please see [Connecting to open Wi-Fi hotspots in Windows 10](https://support.microsoft.com/windows/bcec4e8b-00e7-4930-d3ff-5349a3e70037) for more details.
 
 Wi-Fi Sense automatically connects devices to known hotspots and to the wireless networks the person’s contacts have shared with them.
 

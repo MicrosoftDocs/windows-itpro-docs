@@ -27,7 +27,6 @@ Windows Update for Business reports is a cloud-based solution that provides info
 
 Some of the benefits of Windows Update for Business reports are:
 
-- Integration with [Windows Update for Business deployment service](deployment-service-overview.md) to enable per deployment reporting, monitoring, and troubleshooting.
 - Compatibility with [feature updates](/mem/intune/protect/windows-10-feature-updates) and [Expedite Windows quality updates](/mem/intune/protect/windows-10-expedite-updates) policies in Intune.
 - A new **Alerts** data type to assist you with identifying devices that encounter issues during the update process. Error code information is provided to help troubleshoot update issues.
 

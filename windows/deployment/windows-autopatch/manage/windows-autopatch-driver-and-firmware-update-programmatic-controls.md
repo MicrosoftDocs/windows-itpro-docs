@@ -1,12 +1,12 @@
 ---
-title: Deploy drivers and firmware updates
-titleSuffix: Windows Update for Business deployment service 
-description: Use Windows Update for Business deployment service to deploy driver and firmware updates to devices.
+title: Programmatic controls for drivers and firmware
+titleSuffix: Windows Autopatch 
+description: Use programmatic controls to deploy driver and firmware updates to devices.
 ms.service: windows-client
-ms.subservice: itpro-updates
-ms.topic: conceptual
-author: mestew
-ms.author: mstewart
+ms.subservice: autopatch
+ms.topic: how-to
+author: tiaraquan
+ms.author: tiaraquan
 manager: aaroncz
 ms.collection:
   - tier1
@@ -14,13 +14,13 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 06/22/2023
+ms.date: 09/24/2024
 ---
 
-# Deploy drivers and firmware updates with Windows Update for Business deployment service
+# Programmatic controls for drivers and firmware updates
 <!--7260403, 7512398-->
 
-The Windows Update for Business deployment service is used to approve and schedule software updates. The deployment service exposes its capabilities through the [Microsoft Graph API](/graph/use-the-api). You can call the API directly, through a [Graph SDK](/graph/sdks/sdks-overview), or integrate them with a management tool such as [Microsoft Intune](/mem/intune). 
+Windows Autopatch programmatic controls are used to approve and schedule software updates through the [Microsoft Graph API](/graph/use-the-api). You can call the API directly, through a [Graph SDK](/graph/sdks/sdks-overview), or integrate them with a management tool such as [Microsoft Intune](/mem/intune).
 
 This article uses [Graph Explorer](/graph/graph-explorer/graph-explorer-overview) to walk through the entire process of deploying a driver update to clients. In this article, you will:
 > [!div class="checklist"]
@@ -37,36 +37,41 @@ This article uses [Graph Explorer](/graph/graph-explorer/graph-explorer-overview
 
 ## Prerequisites
 
-All of the [prerequisites for the Windows Update for Business deployment service](deployment-service-prerequisites.md) must be met.
+All of the [Windows Autopatch prerequisites](../prepare/windows-autopatch-fix-issues.md) must be met.
 
 ### Permissions
 
 <!--Using include for Graph Explorer permissions-->
-[!INCLUDE [Windows Update for Business deployment service permissions using Graph Explorer](./includes/wufb-deployment-graph-explorer-permissions.md)]
+[!INCLUDE [Windows Autopath permissions using Graph Explorer](../includes/windows-autopatch-graph-explorer-permissions.md)]
+
+### Required endpoints
+
+<!--Using include for required Graph API endpoints-->
+[!INCLUDE [windows-autopatch-required-graph-api-endpoints](../includes/windows-autopatch-required-graph-api-endpoints.md)]
 
 ## Open Graph Explorer
 
 <!--Using include for Graph Explorer sign in-->
-[!INCLUDE [Graph Explorer sign in](./includes/wufb-deployment-graph-explorer.md)]
+[!INCLUDE [Graph Explorer sign in](../includes/windows-autopatch-graph-explorer.md)]
 
 ## Run queries to identify devices
 
 <!--Using include for Graph Explorer device queries-->
-[!INCLUDE [Graph Explorer device queries](./includes/wufb-deployment-find-device-name-graph-explorer.md)]
+[!INCLUDE [Graph Explorer device queries](../includes/windows-autopatch-find-device-name-graph-explorer.md)]
 
 ## Enroll devices
 
-When you enroll devices into driver management, the deployment service becomes the authority for driver updates coming from Windows Update. Devices don't receive drivers or firmware from Windows Update until a deployment is manually created or they're added to a driver update policy with approvals.
+When you enroll devices into driver management, Windows Autopatch becomes the authority for driver updates coming from Windows Update. Devices don't receive drivers or firmware from Windows Update until a deployment is manually created or they're added to a driver update policy with approvals.
 
 <!--Using include for enrolling devices using Graph Explorer-->
-[!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-enroll-device-graph-explorer.md)]
+[!INCLUDE [Graph Explorer enroll devices](../includes/windows-autopatch-enroll-device-graph-explorer.md)]
 
 ## Create a deployment audience and add audience members
 
 <!--Using include for creating deployment audiences and adding audience members using Graph Explorer-->
-[!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-audience-graph-explorer.md)]
+[!INCLUDE [Graph Explorer enroll devices](../includes/windows-autopatch-audience-graph-explorer.md)]
 
-Once a device has been enrolled and added to a deployment audience, the Windows Update for Business deployment service will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
+Once a device has been enrolled and added to a deployment audience, Windows Autopatch will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
 
 ## Create an update policy
 
@@ -74,7 +79,6 @@ Update policies define how content is deployed to a deployment audience. An [upd
 
 > [!IMPORTANT]
 > Any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings) configured for a [content approval](#approve-driver-content-for-deployment) will be combined with the existing update policy's deployment settings. If the content approval and update policy specify the same deployment setting, the setting from the content approval is used.
-
 
 ### Create a policy and define the settings later
 
@@ -115,6 +119,7 @@ content-type: application/json
 ### Specify settings during policy creation
 
 To create a policy with additional settings, in the request body:
+
   - Specify the **Audience ID** as `id`
   - Define any [deployment settings](/graph/api/resources/windowsupdates-deploymentsettings).
   - Add the `content-length` header to the request if a status code of 411 occurs. The value should be the length of the request body in bytes. For information on error codes, see [Microsoft Graph error responses and resource types](/graph/errors).
@@ -146,7 +151,6 @@ To create a policy with additional settings, in the request body:
      ]
    }
    ```
-
 
 ### Review and edit update policy settings
 
@@ -181,10 +185,9 @@ content-type: application/json
 }
 ```
 
-
 ## Review applicable driver content
 
-Once Windows Update for Business deployment service has scan results from devices, the applicability for driver and firmware updates can be displayed for a deployment audience. Each applicable update returns the following information:
+Once Windows Autopatch has scan results from devices, the applicability for driver and firmware updates can be displayed for a deployment audience. Each applicable update returns the following information:
 
 - An `id` for its [catalog entry](/graph/api/resources/windowsupdates-catalogentry)
 - The **Microsoft Entra ID** of the devices it's applicable to
@@ -197,6 +200,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/d
 ```
 
 The following truncated response displays:
+
   - An **Microsoft Entra ID** of `01234567-89ab-cdef-0123-456789abcdef`
   - The **Catalog ID** of `5d6dede684ba5c4a731d62d9c9c2a99db12c5e6015e9f8ad00f3e9387c7f399c`  
 
@@ -332,9 +336,9 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments?orderby=c
 ## Unenroll devices
 
 <!--Using include for removing device enrollment-->
-[!INCLUDE [Graph Explorer enroll devices](./includes/wufb-deployment-graph-unenroll.md)]
+[!INCLUDE [Graph Explorer unenroll devices](../includes/windows-autopatch-graph-unenroll.md)]
 
 ## Policy considerations for drivers
 
 <!--Using include for Policy considerations for drivers-->
-[!INCLUDE [Windows Update for Business deployment service driver policy considerations](./includes/wufb-deployment-driver-policy-considerations.md)]
+[!INCLUDE [Windows Autopatch driver policy considerations](../includes/windows-autopatch-driver-policy-considerations.md)]

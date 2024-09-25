@@ -25,7 +25,7 @@ Update Event that combines the latest client-based data with the latest service-
 |---|---|---|---|---|
 | **AzureADDeviceId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Microsoft Entra Device ID |
 | **AzureADTenantId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID |
-| **CatalogId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `b0f410599615e2ce15e6614ac3fc4ec62d80324020351e172edef89091a64f2f` | This field applies to drivers only. The Catalog ID of the update from Windows Update for Business deployment service. |
+| **CatalogId** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | No | `b0f410599615e2ce15e6614ac3fc4ec62d80324020351e172edef89091a64f2f` | This field applies to drivers only. The Catalog ID of the update from Windows Autopatch. |
 | **ClientState** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | Yes | `Installing` | This field applies to drivers only. Higher-level bucket of ClientSubstate. |
 | **ClientSubstate** | [string](/azure/data-explorer/kusto/query/scalar-data-types/string) | Yes | `DownloadStart` | Last-known state of this update relative to the device, from the client. |
 | **ClientSubstateRank** | [int](/azure/kusto/query/scalar-data-types/int) | No | `2300` | Ranking of client substates for sequential ordering in funnel-type views. The rankings between ServiceSubstate and ClientSubstate can be used together. |
