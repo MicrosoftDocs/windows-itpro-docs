@@ -53,13 +53,13 @@ To create rules from the App Control events in [MDE Advanced Hunting](../operati
 
 1. Navigate to the Advanced Hunting section within the MDE console and query the App Control events. **The Wizard requires the following fields** in the Advanced Hunting csv file export:
 
-   ```KQL
+   ```kusto
    | project-keep Timestamp, DeviceId, DeviceName, ActionType, FileName, FolderPath, SHA1, SHA256, IssuerName, IssuerTBSHash, PublisherName, PublisherTBSHash, AuthenticodeHash, PolicyId, PolicyName
    ```
 
    The following Advanced Hunting query is recommended:
 
-   ```KQL
+   ```kusto
    DeviceEvents
    // Take only App Control events
    | where ActionType startswith 'AppControlCodeIntegrity'

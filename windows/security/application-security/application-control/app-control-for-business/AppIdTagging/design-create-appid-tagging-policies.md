@@ -92,8 +92,8 @@ After creating your AppId Tagging policy in the above steps, you can deploy the 
 2. Optionally, deploy it for local testing:
 
     ```powershell
-        copy ".\{Policy ID}.cip" c:\windows\system32\codeintegrity\CiPolicies\Active\
-        ./RefreshPolicy.exe
+    copy ".\{Policy ID}.cip" c:\windows\system32\codeintegrity\CiPolicies\Active\
+    ./RefreshPolicy.exe
     ```
 
     RefreshPolicy.exe is available for download from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=102925).

@@ -76,13 +76,13 @@ MSI installer files are always detected as user writeable on Windows 10, and on 
 Installing .msi files directly from the internet to a computer protected by App Control fails.
 For example, this command fails:
 
-```console
+```cmd
 msiexec -i https://download.microsoft.com/download/2/E/3/2E3A1E42-8F50-4396-9E7E-76209EA4F429/Windows10_Version_1511_ADMX.msi
 ```
 
 As a workaround, download the MSI file and run it locally:
 
-```console
+```cmd
 msiexec -i c:\temp\Windows10_Version_1511_ADMX.msi
 ```
 

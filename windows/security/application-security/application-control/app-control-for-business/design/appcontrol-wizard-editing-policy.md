@@ -40,11 +40,11 @@ The App Control Wizard makes deleting file rules from an existing policy quick a
 **Note:** removing a publisher rule will also remove the associated File Attribute rules. For instance, in the xml block below, removing ID_SIGNER_CONTOSO_PUBLISHER would also remove the rules ID_FILEATTRIB_LOB_APP_1 and ID_FILEATTRIB_LOB_APP_2.
 
 ```xml
-    <Signer ID="ID_SIGNER_CONTOSO_PUBLISHER" Name="Contoso LOB Publisher CA">
-      <CertRoot Type="TBS" Value="0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF" />
-      <CertPublisher Value="Contoso IT Dept App Publisher" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_LOB_APP_1" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_LOB_APP_2" />
+<Signer ID="ID_SIGNER_CONTOSO_PUBLISHER" Name="Contoso LOB Publisher CA">
+  <CertRoot Type="TBS" Value="0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF" />
+  <CertPublisher Value="Contoso IT Dept App Publisher" />
+  <FileAttribRef RuleID="ID_FILEATTRIB_LOB_APP_1" />
+  <FileAttribRef RuleID="ID_FILEATTRIB_LOB_APP_2" />
 ```
 
 [comment]: <> (## Editing File Rules Coming soon!)
