@@ -136,7 +136,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 - [Release information](/windows/release-health/windows11-release-information)
 
 
-[21H1]: windows-11-overview.md
-[22H2]: whats-new-windows-11-version-22H2.md
-[23H2]: whats-new-windows-11-version-23H2.md
-<!--[24H2]: whats-new-windows-11-version-24H2.md -->
+[21H1]: ..\windows-11-overview.md
+[22H2]: ..\whats-new-windows-11-version-22H2.md
+[23H2]: ..\whats-new-windows-11-version-23h2.md 
+<!--[24H2]: ..\whats-new-windows-11-version-24H2.md -->
