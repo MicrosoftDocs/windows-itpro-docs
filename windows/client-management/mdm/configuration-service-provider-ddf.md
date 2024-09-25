@@ -13,7 +13,7 @@ This article lists the OMA DM device description framework (DDF) files for vario
 
 As of December 2022, DDF XML schema was updated to include additional information such as OS build applicability. DDF v2 XML files for Windows 10 and Windows 11 are combined, and provided in a single download:
 
-- [DDF v2 Files, September 2024](https://download.microsoft.com/download/b/e/7/be7f4a26-2621-4143-b11a-12f6d0ad7413/DDFv2Sept24.zip)
+- [DDF v2 Files, September 2024](https://download.microsoft.com/download/a/a/a/aaadc008-67d4-4dcd-b864-70c479baf7d6/DDFv2September24.zip)
 
 ## DDF v2 schema
 
