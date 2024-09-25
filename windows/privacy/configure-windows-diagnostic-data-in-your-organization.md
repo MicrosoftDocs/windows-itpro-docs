@@ -190,7 +190,7 @@ Required diagnostic data includes:
    - Operating system attributes, such as Windows edition and virtualization state
    - Storage attributes, such as number of drives, type, and size
 
-- Quality metrics that helps provide an understanding about how the Connected User Experiences and diagnostic data component is functioning, including % of uploaded events, dropped events, blocked events, and the last upload time.
+- Quality metrics that help provide an understanding about how the Connected User Experiences and diagnostic data component is functioning, including % of uploaded events, dropped events, blocked events, and the last upload time.
 
 - Quality-related information that helps Microsoft develop a basic understanding of how a device and its operating system are performing. Some examples are the device characteristics of a Connected Standby device, the number of crashes or hangs, and app state change details, such as how much processor time and memory were used, and the total uptime for an app.
 
