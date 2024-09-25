@@ -11,9 +11,9 @@ ms.date: 01/31/2024
 
 <!-- ApplicationControl-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Windows Defender Application Control (WDAC) policies can be managed from an MDM server, or locally by using PowerShell via the WMI Bridge through the ApplicationControl configuration service provider (CSP). The ApplicationControl CSP was added in Windows 10, version 1903. This CSP provides expanded diagnostic capabilities and support for [multiple policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for policy deployment (introduced in Windows 10, version 1709) without reboot. Unlike the [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently doesn't schedule a reboot.
+App Control for Business policies can be managed from an MDM server, or locally by using PowerShell via the WMI Bridge through the ApplicationControl configuration service provider (CSP). The ApplicationControl CSP was added in Windows 10, version 1903. This CSP provides expanded diagnostic capabilities and support for [multiple policies](/windows/security/application-security/application-control/app-control-for-business/design/deploy-multiple-appcontrol-policies) (introduced in Windows 10, version 1903). It also provides support for policy deployment (introduced in Windows 10, version 1709) without reboot. Unlike the [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently doesn't schedule a reboot.
 
-Existing Windows Defender Application Control (WDAC) policies deployed using the AppLocker CSP's CodeIntegrity node can now be deployed using the ApplicationControl CSP URI. Although WDAC policy deployment using the AppLocker CSP will continue to be supported, all new feature work will be done in the ApplicationControl CSP only.
+Existing App Control for Business policies deployed using the AppLocker CSP's CodeIntegrity node can now be deployed using the ApplicationControl CSP URI. Although App Control policy deployment using the AppLocker CSP will continue to be supported, all new feature work will be done in the ApplicationControl CSP only.
 <!-- ApplicationControl-Editable-End -->
 
 <!-- ApplicationControl-Tree-Begin -->
@@ -861,7 +861,7 @@ The following table provides the result of this policy based on different values
 
 ## Microsoft Intune Usage Guidance
 
-For customers using Intune standalone or hybrid management with Configuration Manager to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune).
+For customers using Intune standalone or hybrid management with Configuration Manager to deploy custom policies via the ApplicationControl CSP, refer to [Deploy App Control for Business policies by using Microsoft Intune](/windows/security/application-security/application-control/app-control-for-business/deployment/deploy-appcontrol-policies-using-intune).
 
 ## Generic MDM Server Usage Guidance
 
@@ -1014,7 +1014,7 @@ The ApplicationControl CSP can also be managed locally from PowerShell or via Co
 
 ### Setup for using the WMI Bridge
 
-1. Convert your WDAC policy to Base64.
+1. Convert your App Control policy to Base64.
 2. Open PowerShell in Local System context (through PSExec or something similar).
 3. Use WMI Interface:
 
