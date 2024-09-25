@@ -91,15 +91,15 @@ For the code signing certificate that you use to sign the catalog file, import i
 1. Initialize the variables to use. Replace the `$ExamplePath` and `$CatFileName` variables as needed:
 
    ```powershell
-    $ExamplePath=$env:userprofile+"\Desktop"
-    $CatFileName=$ExamplePath+"\LOBApp-Contoso.cat"
-    ```
+   $ExamplePath=$env:userprofile+"\Desktop"
+   $CatFileName=$ExamplePath+"\LOBApp-Contoso.cat"
+   ```
 
 2. Sign the catalog file with Signtool.exe:
 
    ```powershell
-    <path to signtool.exe> sign /n "ContosoSigningCert" /fd sha256 /v $CatFileName
-    ```
+   <path to signtool.exe> sign /n "ContosoSigningCert" /fd sha256 /v $CatFileName
+   ```
 
    > [!NOTE]
    > The `<Path to signtool.exe>` variable should be the full path to the Signtool.exe utility. `ContosoSigningCert` represents the subject name of the certificate that you use to sign the catalog file. This certificate should be imported to your personal certificate store on the computer on which you are attempting to sign the catalog file.
