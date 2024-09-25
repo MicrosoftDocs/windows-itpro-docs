@@ -93,12 +93,12 @@ If you want to move devices to different deployment rings after Windows Autopatc
 > You can only move devices to other deployment rings when the device's Autopatch readiness status appears as **Registered** and the Update status is **Active**.
 
 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** in the left pane.
-1. Under **Manage updates** section, select **Windows updates**.
+1. Under **Windows Autopatch** section, select **Devices**.
 1. In the **Devices report**, select one or more devices you want to assign. All selected devices are assigned to the deployment ring you specify.
 1. Select **Device actions** from the menu.
 1. Select **Assign ring**. A fly-in opens.
-1. Use the dropdown menu to select the deployment ring to move devices to, and then select **Save**. The Ring assigned by column changes to **Pending**.
-1. When the assignment is complete, the **Ring assigned by** column changes to Admin (which indicates that you made the change) and the **Ring** column shows the new deployment ring assignment.
+1. Use the dropdown menu to select the deployment ring to move devices to, and then select **Save**. The **Ring assigned by** column changes to **Pending**.
+1. When the assignment is complete, the **Ring assigned by** column changes to Admin (which indicates that you made the change), and the **Ring** column shows the new deployment ring assignment. The **Ring assigned by** column is only visible in the fly-in menu.
 
 > [!WARNING]
 > Moving devices between deployment rings through directly changing Microsoft Entra group membership isn't supported and might cause unintended configuration conflicts within the Windows Autopatch service. To avoid service interruption to devices, use the **Assign device to ring** action described previously to move devices between deployment rings.
