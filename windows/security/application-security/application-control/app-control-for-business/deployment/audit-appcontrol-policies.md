@@ -25,8 +25,8 @@ To familiarize yourself with creating App Control rules from audit events, follo
 
 2. Review the **CodeIntegrity - Operational** and **AppLocker - MSI and Script** event logs to confirm events, like those shown in Figure 1, are generated related to the application. For information about the types of events you should see, refer to [Understanding App Control events](../operations/event-id-explanations.md).
 
-   **Figure 1. Exceptions to the deployed App Control policy**
-   ![Event showing exception to App Control policy.](../images/dg-fig23-exceptionstocode.png)
+   **Figure 1. Exceptions to the deployed App Control policy**<br>
+   :::image type="content" alt-text="Event showing exception to App Control policy." source="../images/dg-fig23-exceptionstocode.png":::
 
 3. In an elevated PowerShell session, run the following commands to initialize variables used by this procedure. This procedure builds upon the **Lamna_FullyManagedClients_Audit.xml** policy introduced in [Create an App Control policy for fully managed devices](../design/create-appcontrol-policy-for-fully-managed-devices.md) and will produce a new policy called **EventsPolicy.xml**.
 

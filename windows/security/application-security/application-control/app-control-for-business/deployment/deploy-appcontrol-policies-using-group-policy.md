@@ -50,7 +50,7 @@ To deploy and manage an App Control for Business policy with Group Policy:
     > [!NOTE]
     > This policy file does not need to be copied to every computer. You can instead copy the App Control policies to a file share to which all computer accounts have access. Any policy selected here is converted to SIPolicy.p7b when it is deployed to the individual client computers.
 
-    ![Group Policy called Deploy App Control for Business.](../images/dg-fig26-enablecode.png)
+    :::image type="content" alt-text="Group Policy called Deploy App Control for Business." source="../images/dg-fig26-enablecode.png":::
 
     > [!NOTE]
     > You may have noticed that the GPO setting references a .p7b file, but the file extension and name of the policy binary do not matter. Regardless of what you name your policy binary, they are all converted to SIPolicy.p7b when applied to the client computers running Windows 10. If you are deploying different App Control policies to different sets of devices, you may want to give each of your App Control policies a friendly name and allow the system to convert the policy names for you to ensure that the policies are easily distinguishable when viewed in a share or any other central repository.

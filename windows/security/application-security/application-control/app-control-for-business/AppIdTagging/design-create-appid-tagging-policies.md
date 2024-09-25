@@ -18,7 +18,7 @@ You can use the App Control for Business Wizard and the PowerShell commands to c
 
     Start with the Policy Creator task and select Multiple Policy Format and Base Policy. Select the Base Template to use for the policy. The following example shows beginning with the [Default Windows Mode](../design/appcontrol-wizard-create-base-policy.md#template-base-policies) template and build on top of these rules.
 
-    ![Configuring the policy base and template.](../images/appid-appcontrol-wizard-1.png)
+    :::image type="content" alt-text="Configuring the policy base and template." source="../images/appid-appcontrol-wizard-1.png" lightbox="../images/appid-appcontrol-wizard-1.png":::
 
     > [!NOTE]
     > If your AppId Tagging Policy does build off the base templates or does not allow Windows in-box processes, you will notice significant performance regressions, especially during boot. For this reason, it is strongly recommended to build off the base templates. For more information on the issue, see the [AppId Tagging Known Issue](../operations/known-issues.md#slow-boot-and-performance-with-custom-policies).

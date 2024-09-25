@@ -17,4 +17,4 @@ Select the policies you wish to merge into one policy using the `+ Add Policy` b
 
 Lastly, select a filepath save location for the final merged policy using the `Browse` button. If a minimum of two policies are selected, and the save location is specified, select the `Next` button to build the policy.
 
-![Merging App Control policies into a final App Control policy.](../images/appcontrol-wizard-merge.png)
+:::image type="content" alt-text="Merging App Control policies into a final App Control policy." source="../images/appcontrol-wizard-merge.png":::
