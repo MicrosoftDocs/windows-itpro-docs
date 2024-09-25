@@ -78,7 +78,7 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 | **Product name** | Specifies the name of the product with which the binary ships. |
 | **Internal name** | Specifies the internal name of the binary. |
 
-![Custom file attributes rule.](../images/appcontrol-wizard-custom-file-attribute-rule.png)
+:::image type="content" alt-text="Custom file attributes rule." source="../images/appcontrol-wizard-custom-file-attribute-rule.png":::
 
 ### File Hash Rules
 
