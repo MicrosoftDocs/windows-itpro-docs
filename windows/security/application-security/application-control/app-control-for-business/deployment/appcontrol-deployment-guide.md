@@ -16,23 +16,23 @@ You should now have one or more App Control for Business policies ready to deplo
 
 Before you deploy your App Control policies, you must first convert the XML to its binary form. You can do this using the following PowerShell example. You must set the $AppControlPolicyXMLFile variable to point to your App Control policy XML file.
 
-   ```powershell
-    ## Update the path to your App Control policy XML
-    $AppControlPolicyXMLFile = $env:USERPROFILE + "\Desktop\MyAppControlPolicy.xml"
-    [xml]$AppControlPolicy = Get-Content -Path $AppControlPolicyXMLFile
-    if (($AppControlPolicy.SiPolicy.PolicyID) -ne $null) ## Multiple policy format (For Windows builds 1903+ only, including Server 2022)
-    {
-        $PolicyID = $AppControlPolicy.SiPolicy.PolicyID
-        $PolicyBinary = $PolicyID+".cip"
-    }
-    else ## Single policy format (Windows Server 2016 and 2019, and Windows 10 1809 LTSC)
-    {
-        $PolicyBinary = "SiPolicy.p7b"
-    }
+```powershell
+## Update the path to your App Control policy XML
+$AppControlPolicyXMLFile = $env:USERPROFILE + "\Desktop\MyAppControlPolicy.xml"
+[xml]$AppControlPolicy = Get-Content -Path $AppControlPolicyXMLFile
+if (($AppControlPolicy.SiPolicy.PolicyID) -ne $null) ## Multiple policy format (For Windows builds 1903+ only, including Server 2022)
+{
+    $PolicyID = $AppControlPolicy.SiPolicy.PolicyID
+    $PolicyBinary = $PolicyID+".cip"
+}
+else ## Single policy format (Windows Server 2016 and 2019, and Windows 10 1809 LTSC)
+{
+    $PolicyBinary = "SiPolicy.p7b"
+}
 
-    ## Binary file will be written to your desktop
-    ConvertFrom-CIPolicy -XmlFilePath $AppControlPolicyXMLFile -BinaryFilePath $env:USERPROFILE\Desktop\$PolicyBinary
-   ```
+## Binary file will be written to your desktop
+ConvertFrom-CIPolicy -XmlFilePath $AppControlPolicyXMLFile -BinaryFilePath $env:USERPROFILE\Desktop\$PolicyBinary
+```
 
 ## Plan your deployment
 

@@ -61,47 +61,47 @@ Alice follows these steps to complete this task:
 
 2. On the client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
 
-      ```powershell
-      $PolicyPath=$env:userprofile+"\Desktop\"
-      $PolicyName= "Lamna_FullyManagedClients_Audit"
-      $LamnaPolicy=$PolicyPath+$PolicyName+".xml"
-      $ConfigMgrPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
-      ```
+   ```powershell
+   $PolicyPath=$env:userprofile+"\Desktop\"
+   $PolicyName= "Lamna_FullyManagedClients_Audit"
+   $LamnaPolicy=$PolicyPath+$PolicyName+".xml"
+   $ConfigMgrPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
+   ```
 
 3. Copy the policy created by Configuration Manager to the desktop:
 
-      ```powershell
-      cp $ConfigMgrPolicy $LamnaPolicy
-      ```
+   ```powershell
+   cp $ConfigMgrPolicy $LamnaPolicy
+   ```
 
 4. Give the new policy a unique ID, descriptive name, and initial version number:
 
-      ```powershell
-      Set-CIPolicyIdInfo -FilePath $LamnaPolicy -PolicyName $PolicyName -ResetPolicyID
-      Set-CIPolicyVersion -FilePath $LamnaPolicy -Version "1.0.0.0"
-      ```
+   ```powershell
+   Set-CIPolicyIdInfo -FilePath $LamnaPolicy -PolicyName $PolicyName -ResetPolicyID
+   Set-CIPolicyVersion -FilePath $LamnaPolicy -Version "1.0.0.0"
+   ```
 
 5. Modify the copied policy to set policy rules:
 
-      ```powershell
-      Set-RuleOption -FilePath $LamnaPolicy -Option 3 # Audit Mode
-      Set-RuleOption -FilePath $LamnaPolicy -Option 6 # Unsigned Policy
-      Set-RuleOption -FilePath $LamnaPolicy -Option 9 # Advanced Boot Menu
-      Set-RuleOption -FilePath $LamnaPolicy -Option 12 # Enforce Store Apps
-      Set-RuleOption -FilePath $LamnaPolicy -Option 13 # Managed Installer
-      Set-RuleOption -FilePath $LamnaPolicy -Option 16 # No Reboot
-      Set-RuleOption -FilePath $LamnaPolicy -Option 17 # Allow Supplemental
-      Set-RuleOption -FilePath $LamnaPolicy -Option 19 # Dynamic Code Security
-      ```
+   ```powershell
+   Set-RuleOption -FilePath $LamnaPolicy -Option 3 # Audit Mode
+   Set-RuleOption -FilePath $LamnaPolicy -Option 6 # Unsigned Policy
+   Set-RuleOption -FilePath $LamnaPolicy -Option 9 # Advanced Boot Menu
+   Set-RuleOption -FilePath $LamnaPolicy -Option 12 # Enforce Store Apps
+   Set-RuleOption -FilePath $LamnaPolicy -Option 13 # Managed Installer
+   Set-RuleOption -FilePath $LamnaPolicy -Option 16 # No Reboot
+   Set-RuleOption -FilePath $LamnaPolicy -Option 17 # Allow Supplemental
+   Set-RuleOption -FilePath $LamnaPolicy -Option 19 # Dynamic Code Security
+   ```
 
 6. If appropriate, add more signer or file rules to further customize the policy for your organization.
 
 7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the App Control for Business policy to a binary format:
 
    ```powershell
-    [xml]$PolicyXML = Get-Content $LamnaPolicy
-    $LamnaPolicyBin = Join-Path $PolicyPath "$($PolicyXML.SiPolicy.PolicyID).cip"
-    ConvertFrom-CIPolicy $LamnaPolicy $LamnaPolicyBin
+   [xml]$PolicyXML = Get-Content $LamnaPolicy
+   $LamnaPolicyBin = Join-Path $PolicyPath "$($PolicyXML.SiPolicy.PolicyID).cip"
+   ConvertFrom-CIPolicy $LamnaPolicy $LamnaPolicyBin
    ```
 
 8. Upload your base policy XML and the associated binary to a source control solution such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
@@ -112,33 +112,40 @@ At this point, Alice now has an initial policy that is ready to deploy in audit 
 
 Alice has defined a policy for Lamna's fully managed devices that makes some trade-offs between security and manageability for apps. Some of the trade-offs include:
 
-- **Users with administrative access**<br>
-    Although applying to fewer users, Lamna still allows some IT staff to sign in to its fully managed devices as administrator. This privilege allows these users (or malware running with the user's privileges) to modify or remove altogether the App Control policy applied on the device. Additionally, administrators can configure any app they wish to operate as a managed installer that would allow them to gain persistent app authorization for whatever apps or binaries they wish.
+- **Users with administrative access**
 
-   Possible mitigations:
+  Although applying to fewer users, Lamna still allows some IT staff to sign in to its fully managed devices as administrator. This privilege allows these users (or malware running with the user's privileges) to modify or remove altogether the App Control policy applied on the device. Additionally, administrators can configure any app they wish to operate as a managed installer that would allow them to gain persistent app authorization for whatever apps or binaries they wish.
+
+  Possible mitigations:
   - Use signed App Control policies and UEFI BIOS access protection to prevent tampering of App Control policies.
   - Create and deploy signed catalog files as part of the app deployment process in order to remove the requirement for managed installer.
   - Use device attestation to detect the configuration state of App Control at boot time and use that information to condition access to sensitive corporate resources.
-- **Unsigned policies**<br>
-    Unsigned policies can be replaced or removed without consequence by any process running as administrator. Unsigned base policies that also enable supplemental policies can have their "circle-of-trust" altered by any unsigned supplemental policy.
 
-   Existing mitigations applied:
+- **Unsigned policies**
+
+  Unsigned policies can be replaced or removed without consequence by any process running as administrator. Unsigned base policies that also enable supplemental policies can have their "circle-of-trust" altered by any unsigned supplemental policy.
+
+  Existing mitigations applied:
   - Limit who can elevate to administrator on the device.
 
-   Possible mitigations:
+  Possible mitigations:
   - Use signed App Control policies and UEFI BIOS access protection to prevent tampering of App Control policies.
-- **Managed installer**<br>
-    See [security considerations with managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md#security-considerations-with-managed-installer)
 
-   Existing mitigations applied:
+- **Managed installer**
+
+  See [security considerations with managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md#security-considerations-with-managed-installer)
+
+  Existing mitigations applied:
   - Limit who can elevate to administrator on the device.
 
-   Possible mitigations:
+  Possible mitigations:
   - Create and deploy signed catalog files as part of the app deployment process in order to remove the requirement for managed installer.
-- **Supplemental policies**<br>
-    Supplemental policies are designed to relax the associated base policy. Additionally allowing unsigned policies allows any administrator process to expand the "circle-of-trust" defined by the base policy without restriction.
 
-   Possible mitigations:
+- **Supplemental policies**<br>
+
+  Supplemental policies are designed to relax the associated base policy. Additionally allowing unsigned policies allows any administrator process to expand the "circle-of-trust" defined by the base policy without restriction.
+
+  Possible mitigations:
   - Use signed App Control policies that allow authorized signed supplemental policies only.
   - Use a restrictive audit mode policy to audit app usage and augment vulnerability detection.
 

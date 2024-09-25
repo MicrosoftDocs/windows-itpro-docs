@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 
 # Querying App Control events centrally using Advanced hunting
 
-an App Control for Business policy logs events locally in Windows Event Viewer in either enforced or audit mode.
+An App Control for Business policy logs events locally in Windows Event Viewer in either enforced or audit mode.
 While Event Viewer helps to see the impact on a single system, IT Pros want to gauge it across many systems.
 
 In November 2018, we added functionality in Microsoft Defender for Endpoint that makes it easy to view App Control events centrally from all connected systems.
@@ -47,7 +47,7 @@ Query Example 1: Query the App Control action types summarized by type for past 
 
 Here's a simple example query that shows all the App Control for Business events generated in the last seven days from machines being monitored by Microsoft Defender for Endpoint:
 
-```
+```kusto
 DeviceEvents
 | where Timestamp > ago(7d) and
 ActionType startswith "AppControl"
@@ -64,7 +64,7 @@ The query results can be used for several important functions related to managin
 
 Query Example #2: Query to determine audit blocks in the past seven days
 
-```
+```kusto
 DeviceEvents
 | where ActionType startswith "AppControlExecutableAudited"
 | where Timestamp > ago(7d)

@@ -108,7 +108,7 @@ For the code signing certificate that you use to sign the catalog file, import i
 
 3. Verify the catalog file's digital signature. Right-click the catalog file, and then select **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 1.
 
-   ![Digital Signature list in file Properties.](../images/dg-fig12-verifysigning.png)
+   :::image type="content" alt-text="Digital Signature list in file Properties." source="../images/dg-fig12-verifysigning.png":::
 
    Figure 1. Verify that the signing certificate exists.
 
@@ -131,7 +131,7 @@ The following process walks you through the deployment of a signed catalog file 
    > [!NOTE]
    > You can use any OU name. Also, security group filtering is an option when you consider different ways of combining App Control policies.
 
-   ![Group Policy Management, create a GPO.](../images/dg-fig13-createnewgpo.png)
+   :::image type="content" alt-text="Group Policy Management, create a GPO." source="../images/dg-fig13-createnewgpo.png":::
 
    Figure 2. Create a new GPO.
 
@@ -141,7 +141,7 @@ The following process walks you through the deployment of a signed catalog file 
 
 5. Within the selected GPO, navigate to **Computer Configuration\\Preferences\\Windows Settings\\Files**. Right-click **Files**, point to **New**, and then select **File**, as shown in Figure 3.
 
-   ![Group Policy Management Editor, New File.](../images/dg-fig14-createnewfile.png)
+   :::image type="content" alt-text="Group Policy Management Editor, New File." source="../images/dg-fig14-createnewfile.png":::
 
    Figure 3. Create a new file.
 

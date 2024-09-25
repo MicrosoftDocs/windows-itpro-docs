@@ -43,7 +43,7 @@ To make a policy effectively inactive before removing it, you can first replace 
 Beginning with the Windows 11 2022 Update, you can remove App Control policies using CiTool.exe. From an elevated command window, run the following command. Be sure to replace the text *PolicyId GUID* with the actual PolicyId of the App Control policy you want to remove:
 
 ```powershell
-    CiTool.exe -rp "{PolicyId GUID}" -json
+CiTool.exe -rp "{PolicyId GUID}" -json
 ```
 
 Then restart the computer.

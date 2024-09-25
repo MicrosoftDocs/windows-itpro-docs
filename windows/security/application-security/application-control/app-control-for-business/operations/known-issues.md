@@ -50,7 +50,8 @@ When the App Control engine evaluates files against the active set of policies o
 
 Until you apply the Windows security update released on or after April 9, 2024, your device is limited to 32 active policies. If the maximum number of policies is exceeded, the device bluescreens referencing ci.dll with a bug check value of 0x0000003b. Consider this maximum policy count limit when planning your App Control policies. Any [Windows inbox policies](inbox-appcontrol-policies.md) that are active on the device also count towards this limit. To remove the maximum policy limit, install the Windows security update released on, or after, April 9, 2024 and then restart the device. Otherwise, reduce the number of policies on the device to remain below 32 policies.
 
-**Note:** The policy limit was not removed on Windows 11 21H2, and will remain limited to 32 policies.
+> [!NOTE]
+> The policy limit was not removed on Windows 11 21H2, and will remain limited to 32 policies.
 
 ### Audit mode policies can change the behavior for some apps or cause app crashes
 
@@ -76,13 +77,13 @@ MSI installer files are always detected as user writeable on Windows 10, and on 
 Installing .msi files directly from the internet to a computer protected by App Control fails.
 For example, this command fails:
 
-```console
+```cmd
 msiexec -i https://download.microsoft.com/download/2/E/3/2E3A1E42-8F50-4396-9E7E-76209EA4F429/Windows10_Version_1511_ADMX.msi
 ```
 
 As a workaround, download the MSI file and run it locally:
 
-```console
+```cmd
 msiexec -i c:\temp\Windows10_Version_1511_ADMX.msi
 ```
 

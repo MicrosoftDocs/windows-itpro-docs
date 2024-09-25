@@ -12,7 +12,7 @@ ms.date: 09/11/2024
 
 When you create policies for use with App Control for Business, start from an existing base policy and then add or remove rules to build your own custom policy. Windows includes several example policies that you can use. These example policies are provided "as-is". You should thoroughly test the policies you deploy using safe deployment methods.
 
-| **Example Base Policy** | **Description** | **Where it can be found** |
+| Example Base Policy | Description | Where it can be found |
 |-------------------------|---------------------------------------------------------------|--------|
 | **DefaultWindows_\*.xml** | This example policy is available in both audit and enforced mode. It includes rules to allow Windows, third-party hardware and software kernel drivers, and Windows Store apps. Used as the basis for the [Microsoft Intune product family](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune) policies. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies\DefaultWindows_\*.xml <br> %ProgramFiles%\WindowsApps\Microsoft.App Control.WDACWizard*\DefaultWindows_Audit.xml |
 | **AllowMicrosoft.xml** | This example policy includes the rules from DefaultWindows and adds rules to trust apps signed by the Microsoft product root certificate. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies\AllowMicrosoft.xml <br> %ProgramFiles%\WindowsApps\Microsoft.App Control.WDACWizard*\AllowMicrosoft.xml |

@@ -28,49 +28,49 @@ Configuration Manager doesn't remove policies once deployed. To stop enforcement
 
 1. Select **Asset and Compliance** > **Endpoint Protection** > **App Control for Business** > **Create Application Control Policy**
 
-    ![Create an App Control policy in Configuration Manager.](../images/memcm/memcm-create-appcontrol-policy.jpg)
+   :::image type="content" alt-text="Create an App Control policy in Configuration Manager." source="../images/memcm/memcm-create-appcontrol-policy.jpg":::
 
 2. Enter the name of the policy > **Next**
 3. Enable **Enforce a restart of devices so that this policy can be enforced for all processes**
 4. Select the mode that you want the policy to run (Enforcement enabled / Audit Only)
 5. Select **Next**
 
-    ![Create an enforced App Control policy in Configuration Manager.](../images/memcm/memcm-create-appcontrol-policy-2.jpg)
+   :::image type="content" alt-text="Create an enforced App Control policy in Configuration Manager." source="../images/memcm/memcm-create-appcontrol-policy-2.jpg":::
 
 6. Select **Add** to begin creating rules for trusted software
 
-    ![Create an App Control path rule in Configuration Manager.](../images/memcm/memcm-create-appcontrol-rule.jpg)
+   :::image type="content" alt-text="Create an App Control path rule in Configuration Manager." source="../images/memcm/memcm-create-appcontrol-rule.jpg":::
 
 7. Select **File** or **Folder** to create a path rule > **Browse**
 
-    ![Select a file or folder to create a path rule.](../images/memcm/memcm-create-appcontrol-rule-2.jpg)
+   :::image type="content" alt-text="Select a file or folder to create a path rule." source="../images/memcm/memcm-create-appcontrol-rule-2.jpg":::
 
 8. Select the executable or folder for your path rule > **OK**
 
-    ![Select the executable file or folder.](../images/memcm/memcm-create-appcontrol-rule-3.jpg)
+   :::image type="content" alt-text="Select the executable file or folder." source="../images/memcm/memcm-create-appcontrol-rule-3.jpg":::
 
 9. Select **OK** to add the rule to the table of trusted files or folder
 10. Select **Next** to navigate to the summary page > **Close**
 
-    ![Confirm the App Control path rule in Configuration Manager.](../images/memcm/memcm-confirm-appcontrol-rule.jpg)
+    :::image type="content" alt-text="Confirm the App Control path rule in Configuration Manager." source="../images/memcm/memcm-confirm-appcontrol-rule.jpg":::
 
 ### Deploy the App Control policy in Configuration Manager
 
 1. Right-click the newly created policy > **Deploy Application Control Policy**
 
-    ![Deploy App Control via Configuration Manager.](../images/memcm/memcm-deploy-appcontrol.jpg)
+   :::image type="content" alt-text="Deploy App Control via Configuration Manager." source="../images/memcm/memcm-deploy-appcontrol.jpg":::
 
 2. Select **Browse**
 
-    ![Select Browse.](../images/memcm/memcm-deploy-appcontrol-2.jpg)
+   :::image type="content" alt-text="Select Browse." source="../images/memcm/memcm-deploy-appcontrol-2.jpg":::
 
 3. Select the Device Collection you created earlier > **OK**
 
-    ![Select the device collection.](../images/memcm/memcm-deploy-appcontrol-3.jpg)
+   :::image type="content" alt-text="Select the device collection." source="../images/memcm/memcm-deploy-appcontrol-3.jpg":::
 
 4. Change the schedule > **OK**
 
-    ![Change the App Control deployment schedule.](../images/memcm/memcm-deploy-appcontrol-4.jpg)
+   :::image type="content" alt-text="Change the App Control deployment schedule." source="../images/memcm/memcm-deploy-appcontrol-4.jpg":::
 
 For more information on using Configuration Manager's native App Control policies, see [App Control for Business management with Configuration Manager](/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager).
 

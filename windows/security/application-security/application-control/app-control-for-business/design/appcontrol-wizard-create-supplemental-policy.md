@@ -22,11 +22,11 @@ Once the Supplemental Policy type is chosen on the New Policy page, policy name 
 
 If the base policy isn't configured for supplemental policies, the Wizard attempts to convert the policy to one that can be supplemented. Once successful, the Wizard shows a dialog demonstrating that the addition of the Allow Supplemental Policy rule was completed.
 
-![Wizard confirms modification of base policy.](../images/appcontrol-wizard-confirm-base-policy-modification.png)
+:::image type="content" alt-text="Wizard confirms modification of base policy." source="../images/appcontrol-wizard-confirm-base-policy-modification.png":::
 
 Policies that can't be supplemented, for instance another supplemental policy, are detected by the Wizard and show the following error. Only a base policy can be supplemented. More information on supplemental policies can be found on our [Multiple Policies article](deploy-multiple-appcontrol-policies.md).
 
-![Wizard detects a bad base policy.](../images/appcontrol-wizard-supplemental-not-base.png)
+:::image type="content" alt-text="Wizard detects a bad base policy." source="../images/appcontrol-wizard-supplemental-not-base.png":::
 
 ## Configuring Policy Rules
 
@@ -44,7 +44,7 @@ Supplemental policies can only configure three policy rules. The following table
 | **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Configuration Manager, that has been defined as a managed installer. |
 | **Disable Runtime FilePath Rule Protection** | This option disables the default runtime check that only allows FilePath rules for paths that are only writable by an administrator. |
 
-![Rule options UI for Windows Allowed mode.](../images/appcontrol-wizard-supplemental-policy-rule-options-UI.png)
+:::image type="content" alt-text="Rule options UI for Windows Allowed mode." source="../images/appcontrol-wizard-supplemental-policy-rule-options-UI.png":::
 
 ## Creating custom file rules
 

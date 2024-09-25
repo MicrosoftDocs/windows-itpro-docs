@@ -75,7 +75,7 @@ Now that the template is available to be issued, you must request one from the c
 
 4. In the **Request Certificate** list, select your newly created code signing certificate, and then select the blue text that requests additional information, as shown in Figure 4.
 
-    ![Request Certificates: more information required.](../images/dg-fig31-getmoreinfo.png)
+    :::image type="content" alt-text="Request Certificates: more information required." source="../images/dg-fig31-getmoreinfo.png":::
 
     Figure 4. Get more information for your code signing certificate
 
