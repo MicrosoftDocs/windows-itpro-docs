@@ -15,7 +15,7 @@ This article describes the App Control for Business policies that ship inbox wit
 
 ## Inbox App Control Policies
 
-| **Policy Name** | **Policy ID** | **Policy Type** | **Description** |
+| Policy Name | Policy ID | Policy Type | Description |
 |-----------|-----------|-----------|-----------|
 | **Microsoft Windows Driver Policy** | {d2bda982-ccf6-4344-ac5b-0b44427b6816} | Kernel-only Base policy | This policy blocks known [vulnerable or malicious kernel drivers](../design/microsoft-recommended-driver-block-rules.md). It's active by default on Windows 11 22H2, [Windows in S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85), [Windows 11 SE](/education/windows/windows-11-se-overview), and anywhere [memory integrity](https://support.microsoft.com/windows/core-isolation-e30ed737-17d8-42f3-a2a9-87521df09b78) (also known as hypervisor-protected code integrity (HVCI)) is on. Its policy binary file is found at `%windir%\System32\CodeIntegrity\driversipolicy.p7b` and in the EFI system partition at `<EFI System Partition>\Microsoft\Boot\driversipolicy.p7b`. |
 | **Windows10S_Lockdown_Policy_Supplementable** | {5951a96a-e0b5-4d3d-8fb8-3e5b61030784} | Base policy | This policy is active on devices running [Windows in S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85). Its policy binary file is found in the EFI system partition at `<EFI System Partition>\Microsoft\Boot\winsipolicy.p7b`. |
