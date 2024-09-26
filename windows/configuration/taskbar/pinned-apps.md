@@ -54,7 +54,7 @@ The following steps describe how to configure the taskbar pinned applications us
 > If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the `explorer.exe` process restarts. If your configuration pins an app and the user then unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration that allows users to make changes that will persist, apply your configuration by using CSP or GPO.
 
 > [!CAUTION]
-> The use of the `Import-StartLayout` Powershell cmdlet to provision the Taskbar layout is no longer supported in Windows 11. The only supported configuration in Windows 11 is to use a provisioning package.
+> The use of the `Import-StartLayout` PowerShell cmdlet to provision the Taskbar layout is no longer supported in Windows 11. The only supported configuration in Windows 11 is to use a provisioning package.
 ::: zone pivot="windows-10"
 
 >[!NOTE]
