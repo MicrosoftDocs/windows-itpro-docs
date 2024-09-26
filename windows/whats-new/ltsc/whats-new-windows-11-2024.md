@@ -156,7 +156,7 @@ The following [deprecated features](/windows/whats-new/deprecated-features) and 
 
 ## Related links
 
-- [Windows Enterprise LTSC](overview.md): A short description of the LTSC servicing channel with links to information about each release.
+- [Windows Enterprise LTSC overview](overview.md)
 - [Windows 11 requirements](/windows/whats-new/windows-11-requirements)
 - [Plan for Windows 11](/windows/whats-new/windows-11-plan)
 - [Prepare for Windows 11](/windows/whats-new/windows-11-prepare)
