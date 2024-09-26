@@ -19,7 +19,7 @@ See the following articles to learn more about the different areas of Windows th
 - [Controlled Folder Access](/microsoft-365/security/defender-endpoint/controlled-folders)
 - [Exploit Protection](/microsoft-365/security/defender-endpoint/exploit-protection)
 - [Microsoft Defender Application Guard](../application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview.md)
-- [Microsoft Defender Device Guard](../application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
+- [Microsoft Defender Device Guard](../application-security/application-control/introduction-to-virtualization-based-security-and-appcontrol.md)
 - [Microsoft Defender SmartScreen](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/)
 - [Network Protection](/microsoft-365/security/defender-endpoint/network-protection)
 - [Virtualization-Based Protection of Code Integrity](../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)

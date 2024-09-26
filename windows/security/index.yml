@@ -101,7 +101,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Windows Defender Application Control (WDAC)
+          - text: App Control for Business
             url: /windows/security/application-security/application-control/windows-defender-application-control/
           - text: User Account Control (UAC)
             url: /windows/security/application-security/application-control/user-account-control
