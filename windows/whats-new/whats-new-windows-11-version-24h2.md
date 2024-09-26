@@ -29,6 +29,8 @@ Windows 11, version 24H2 follows the [Windows 11 servicing timeline](/lifecycle/
 
 <!--<isEnablementPackage> Devices updating from Windows 11, version 23H2 use an enablement package. Most the files for the 24H2 update already exist on Windows 11, version 23H2 devices that have a recent monthly security update installed. Many of the new features are already enabled on Windows 11, version 23H2 clients. However, some features are just in an inactive and dormant state because they are under [temporary enterprise feature control](temporary-enterprise-feature-control.md). These new features remain dormant until they're turned on through the enablement package, a small, quick-to-install switch that activates all of the Windows 11, version 24H2 features. -->
 
+Devices must be running Windows 11, version 23H2 or 22H2 with the May 2024 nonsecurity preview update, or a later update, installed in order to update to version 24H2. Windows 11, version 24H2 is a full OS swap so it isn't available as an enablement package. Windows 10 devices can be upgraded to to Windows 11, version 24H2 using the same familiar processes, policies, and management solutions you used to originally deploy Windows 10.
+
 Windows 11, version 24H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 24H2 update]( https://aka.ms/how-to-get-24H2). Review the [Windows 11, version 24H2 Windows IT Pro blog post](https://aka.ms/new-in-24H2) to discover information about available deployment resources such as the [Windows Assessment  and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
 
 
