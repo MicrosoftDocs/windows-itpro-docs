@@ -83,7 +83,7 @@ If the Intune tenant-wide policy is enabled and configured to your needs, you on
 
 | Category | Setting name | Value |
 |--|--|--|
-| **Windows Hello for Business** | Use Passport For Work | true |
+| **Windows Hello for Business** | Use Windows Hello For Business | true |
 | **Windows Hello for Business** | Use Cloud Trust For On Prem Auth | Enabled |
 | **Windows Hello for Business** | Require Security Device | true |
 
