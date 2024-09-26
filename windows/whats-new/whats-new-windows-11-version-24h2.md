@@ -72,13 +72,20 @@ Some of the features were released within the past year's continuous innovation 
 
 ### Server Message Block (SMB) protocol changes
 
-#### SMB firewall rule changes
+#### SMB signing and encryption
 
-The Windows Firewall [default behavior has changed](/windows-server/storage/file-server/smb-secure-traffic#updated-firewall-rules-preview). Previously, creating an SMB share automatically configured the firewall to enable the rules in the **File and Printer Sharing** group for the given firewall profiles. Now, Windows automatically configures the new **File and Printer Sharing (Restrictive)** group, which no longer contains inbound NetBIOS ports 137-139.
+The following changes were made for SMB signing and encryption:
 
-This change enforces a higher degree of default of network security and brings SMB firewall rules closer to the Windows Server **File Server** role behavior, which only opens the minimum ports needed to connect and manage sharing. Administrators can still configure the **File and Printer Sharing** group if necessary as well as modify this new firewall group, these are just default behaviors.
+- **SMB signing requirement changes**: In Windows 11, version 24H2 on the Home, Pro, Education, and Enterprise editions, [SMB signing is now required](/windows-server/storage/file-server/smb-signing) by default for all connections. SMB signing ensures every message contains a signature generated using session key and cipher suite. The client puts a hash of the entire message into the signature field of the SMB header. If anyone changes the message itself later on the wire, the hash won't match and SMB knows that someone tampered with the data. It also confirms to sender and receiver that they are who they say they are, breaking relay attacks. For more information about SMB signing being required by default, see [https://aka.ms/SMBSigningOBD](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-signing-required-by-default-in-windows-insider/ba-p/3831704).
 
-For more information about this change, see [https://aka.ms/SMBfirewall](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-firewall-rule-changes-in-windows-insider/ba-p/3974496). For more information about SMB network security, see [Secure SMB Traffic in Windows Server](/windows-server/storage/file-server/smb-secure-traffic).
+- **SMB client encryption**: SMB now supports [requiring encryption](/windows-server/storage/file-server/configure-smb-client-require-encryption) on all outbound SMB client connections. Encryption of all outbound SMB client connections enforces the highest level of network security and brings management parity to SMB signing, which allows both client and server requirements. With this new option, administrators can mandate that all destination servers use SMB 3 and encryption, and if missing those capabilities, the client won't connect. For more information about this change, see [https://aka.ms/SmbClientEncrypt](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-client-encryption-mandate-now-supported-in-windows-insider/ba-p/3964037).
+
+- **SMB signing and encryption auditing**: Administrators can now [enable auditing](/windows-server/storage/file-server/smb-signing-overview#smb-signing-and-encryption-auditing) of the SMB server and client for support of SMB signing and encryption. This shows if a third-party client or server doesn't support SMB encryption or signing. The SMB signing and encryption auditing settings can be modified in Group Policy or through PowerShell. 
+
+#### SMB alternative client and server ports
+
+The SMB client now supports connecting to an SMB server over TCP, QUIC, or RDMA using [alternative network ports](/windows-server/storage/file-server/smb-ports) to the hardcoded defaults. However, you can only connect to alternative ports if the SMB server is configured to support listening on that port. Starting in [Windows Server Insider build 26040](https://techcommunity.microsoft.com/t5/windows-server-insiders/announcing-windows-server-preview-build-26040/m-p/4040858), the SMB server now supports listening on an alternative network port for SMB over QUIC. Windows Server doesn't support configuring alternative SMB server TCP ports, but some third parties do. For more information about this change, see [https://aka.ms/SMBAlternativePorts](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-alternative-ports-now-supported-in-windows-insider/ba-p/3974509).
+
 
 #### SMB NTLM blocking exception list
 
@@ -91,10 +98,6 @@ For more information about this change, see [https://aka.ms/SmbNtlmBlock](https:
 The SMB server now supports controlling which [SMB 2 and 3 dialects](/windows-server/storage/file-server/manage-smb-dialects) it negotiates. With this new option, an administrator can remove specific SMB protocols from use in the organization, blocking older, less secure, and less capable Windows devices and third parties from connecting. For example, admins can specify to only use SMB 3.1.1, the most secure dialect of the protocol.
 
 For more information about this change, see [https://aka.ms/SmbDialectManage](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-dialect-management-now-supported-in-windows-insider/ba-p/3916368).
-
-#### SMB alternative client and server ports
-
-The SMB client now supports connecting to an SMB server over TCP, QUIC, or RDMA using [alternative network ports](/windows-server/storage/file-server/smb-ports) to the hardcoded defaults. However, you can only connect to alternative ports if the SMB server is configured to support listening on that port. Windows Server doesn't support configuring alternative SMB server TCP ports, but some third parties do. For more information about this change, see [https://aka.ms/SMBAlternativePorts](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-alternative-ports-now-supported-in-windows-insider/ba-p/3974509).
 
 
 #### SMB over QUIC
@@ -109,17 +112,13 @@ Administrators now have more options for SMB over QUIC such as:
 
 For more information about these changes, see [https://aka.ms/SmbOverQUICCAC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control).
 
+#### SMB firewall rule changes
 
-#### SMB signing and encryption
+The Windows Firewall [default behavior has changed](/windows-server/storage/file-server/smb-secure-traffic#updated-firewall-rules-preview). Previously, creating an SMB share automatically configured the firewall to enable the rules in the **File and Printer Sharing** group for the given firewall profiles. Now, Windows automatically configures the new **File and Printer Sharing (Restrictive)** group, which no longer contains inbound NetBIOS ports 137-139.
 
-The following changes were made for SMB signing and encryption:
+This change enforces a higher degree of default of network security and brings SMB firewall rules closer to the Windows Server **File Server** role behavior, which only opens the minimum ports needed to connect and manage sharing. Administrators can still configure the **File and Printer Sharing** group if necessary as well as modify this new firewall group, these are just default behaviors.
 
-- **SMB signing requirement changes**: In Windows 11, version 24H2 on the Pro, Education, and Enterprise editions, [SMB signing is now required](/windows-server/storage/file-server/smb-signing) by default for all connections. SMB signing ensures every message contains a signature generated using session key and cipher suite. The client puts a hash of the entire message into the signature field of the SMB header. If anyone changes the message itself later on the wire, the hash won't match and SMB knows that someone tampered with the data. It also confirms to sender and receiver that they are who they say they are, breaking relay attacks. For more information about SMB signing being required by default, see [https://aka.ms/SMBSigningOBD](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-signing-required-by-default-in-windows-insider/ba-p/3831704).
-
-- **SMB client encryption**: SMB now supports [requiring encryption](/windows-server/storage/file-server/configure-smb-client-require-encryption) on all outbound SMB client connections. Encryption of all outbound SMB client connections enforces the highest level of network security and brings management parity to SMB signing, which allows both client and server requirements. With this new option, administrators can mandate that all destination servers use SMB 3 and encryption, and if missing those capabilities, the client won't connect. For more information about this change, see [https://aka.ms/SmbClientEncrypt](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-client-encryption-mandate-now-supported-in-windows-insider/ba-p/3964037).
-
-- **SMB signing and encryption auditing**: Administrators can now [enable auditing](/windows-server/storage/file-server/smb-signing-overview#smb-signing-and-encryption-auditing) of the SMB server and client for support of SMB signing and encryption. This shows if a third-party client or server doesn't support SMB encryption or signing. The SMB signing and encryption auditing settings can be modified in Group Policy or through PowerShell. 
-
+For more information about this change, see [https://aka.ms/SMBfirewall](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-firewall-rule-changes-in-windows-insider/ba-p/3974496). For more information about SMB network security, see [Secure SMB Traffic in Windows Server](/windows-server/storage/file-server/smb-secure-traffic).
 
 ### Local Security Authority (LSA) protection enablement on upgrade
 
