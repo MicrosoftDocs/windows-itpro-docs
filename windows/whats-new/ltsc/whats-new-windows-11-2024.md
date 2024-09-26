@@ -155,7 +155,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 
 ## Features Removed
 
-The following [deprecated features](/windows/whats-new/deprecated-features) and [removed features](/windows/whats-new/removed-features) are removed in Windows 11 Enterprise LTSC 2024:
+Each version of Windows client adds new features and functionality. Occasionally, [features and functionality are removed](/windows/whats-new/removed-features), often because a newer option was added. For a list of features no longer in active development that might be removed in a future release, see [deprecated features](/windows/whats-new/deprecated-features). The following features are removed in Windows 11 Enterprise LTSC 2024: 
 
 | Feature | Description |
 |---------|-------------|
