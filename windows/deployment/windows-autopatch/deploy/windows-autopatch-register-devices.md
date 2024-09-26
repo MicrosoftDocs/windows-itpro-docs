@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description: This article details how to register devices in Autopatch.
-ms.date: 09/16/2024
+ms.date: 09/26/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -66,7 +66,7 @@ Once a device is registered to the service, a readiness status is displayed. Eac
 
 #### Readiness statuses
 
-| Autopatch readiness status in the Devices report | Sub-status description |
+| Autopatch readiness status in the Devices report | Substatus description |
 | --- | --- |
 | Registered |<ul><li>**Ready**: Devices successfully passed all prerequisite checks and successfully registered with Windows Autopatch. Additionally, Ready devices successfully passed all [post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md) and don't have any active alerts targeting them.</li><li>**Not ready**: These devices were successfully registered with Windows Autopatch. However, these devices:</li><ul><li>Failed to pass one or more [post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</li><li>Aren't ready to have one or more software update workloads managed by the service.</li><li>The device didn't communicate with Microsoft Intune in the last 28 days</li><li>The device has a conflict with policies or with Autopatch group membership</li></ul></ul> |
 | Not registered |<ul><li>**Autopatch group conflict**: The device has a conflict with Autopatch group membership</li><li>**Prerequisites failed**: The device failed to pass one or more [post-device registration readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md).</li><li>**Excluded**: Devices with this status are removed from the Windows Autopatch service only. Microsoft assumes you manage these devices yourself in some capacity.</li></ul> |
@@ -82,7 +82,7 @@ You can view the excluded devices in the Not registered tab to make it easier fo
 
 ## Move devices in between deployment rings
 
-If you want to move devices to different deployment rings after Windows Autopatch's deployment ring assignment, you can repeat the following steps for one or more devices from the **Devices report**.
+If you want to move devices to different deployment rings after Windows Autopatch's deployment ring assignment, you can repeat the following steps for one or more devices.
 
 > [!IMPORTANT]
 > **You can only move devices in between deployment rings within the same Autopatch group**. You can't move devices in between deployment rings across different Autopatch groups. If you try to select a device that belongs to one Autopatch group, and another device that belongs to a different Autopatch group, you'll receive the following error message on the top right corner of the Microsoft Intune portal: **An error occurred. Please select devices within the same Autopatch group**.
@@ -93,15 +93,13 @@ If you want to move devices to different deployment rings after Windows Autopatc
 > You can only move devices to other deployment rings when the device's Autopatch readiness status appears as **Registered** and the Update status is **Active**.
 
 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** in the left pane.
-1. Under **Manage updates** section, select **Windows updates**.
-1. In the **Devices report**, select one or more devices you want to assign. All selected devices are assigned to the deployment ring you specify.
-1. Select **Device actions** from the menu.
-1. Select **Assign ring**. A fly-in opens.
-1. Use the dropdown menu to select the deployment ring to move devices to, and then select **Save**. The Ring assigned by column changes to **Pending**.
-1. When the assignment is complete, the **Ring assigned by** column changes to Admin (which indicates that you made the change) and the **Ring** column shows the new deployment ring assignment.
+1. Navigate to **Windows updates** > **Monitor** > **Autopatch devices**.
+1. Select one or more devices you want to assign and select **Assign ring**.
+1. Use the dropdown menu to select the deployment ring to move devices to, and then select **Save**. All selected devices are assigned to the deployment ring you specify. The "1 devices scheduled for assignment" notification appears.
+1. When the assignment is complete, the **Ring assigned by** column changes to Admin (which indicates that you made the change) and the **Ring** column shows the new deployment ring assignment. The **Ring assigned by** column is only visible in the fly-in menu.
 
 > [!WARNING]
-> Moving devices between deployment rings through directly changing Microsoft Entra group membership isn't supported and might cause unintended configuration conflicts within the Windows Autopatch service. To avoid service interruption to devices, use the **Assign device to ring** action described previously to move devices between deployment rings.
+> Moving devices between deployment rings through directly changing Microsoft Entra group membership isn't supported and might cause unintended configuration conflicts within the Windows Autopatch service. To avoid service interruption to devices, use the **Assign ring** action described previously to move devices between deployment rings.
 
 ## Register devices into Autopatch groups
 
@@ -211,7 +209,7 @@ The device is rejoined to Microsoft Entra ID (either Hybrid or Microsoft Entra-o
 
 ### Device repair and hardware replacement
 
-If you need to repair a device that was previously registered into the Windows Autopatch service, by replacing the motherboard, nonremovable network interface cards (NIC) or hard drive, you must re-register the device into the Windows Autopatch service, because a new hardware ID is generated when there are major hardware changes, such as:
+If you need to repair a device that was previously registered into the Windows Autopatch service, by replacing the motherboard, nonremovable network interface cards (NIC), or hard drive, you must re-register the device into the Windows Autopatch service, because a new hardware ID is generated when there are major hardware changes, such as:
 
 - SMBIOS UUID (motherboard)
 - MAC address (nonremovable NICs)
