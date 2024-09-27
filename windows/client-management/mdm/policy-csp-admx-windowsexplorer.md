@@ -1,7 +1,7 @@
 ---
 title: ADMX_WindowsExplorer Policy CSP
 description: Learn more about the ADMX_WindowsExplorer Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -472,7 +472,15 @@ You can specify a known folder using its known folder id or using its canonical 
 <!-- DisableMotWOnInsecurePathCopy-OmaUri-End -->
 
 <!-- DisableMotWOnInsecurePathCopy-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy setting determines the application of the Mark of the Web tag to files sourced from insecure locations.
+
+- If you enable this policy setting, files copied from unsecure sources won't be tagged with the Mark of the Web.
+
+- If you disable or don't configure this policy setting, files copied from unsecure sources will be tagged with the appropriate Mark of the Web.
+
+> [!NOTE]
+> Failure to tag files from unsecure sources with the Mark of the Web can expose users' computers to security risks.
 <!-- DisableMotWOnInsecurePathCopy-Description-End -->
 
 <!-- DisableMotWOnInsecurePathCopy-Editable-Begin -->
@@ -489,7 +497,6 @@ You can specify a known folder using its known folder id or using its canonical 
 <!-- DisableMotWOnInsecurePathCopy-DFProperties-End -->
 
 <!-- DisableMotWOnInsecurePathCopy-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -497,6 +504,11 @@ You can specify a known folder using its known folder id or using its canonical 
 | Name | Value |
 |:--|:--|
 | Name | DisableMotWOnInsecurePathCopy |
+| Friendly Name | Do not apply the Mark of the Web tag to files copied from insecure sources |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DisableMotWOnInsecurePathCopy |
 | ADMX File Name | WindowsExplorer.admx |
 <!-- DisableMotWOnInsecurePathCopy-AdmxBacked-End -->
 

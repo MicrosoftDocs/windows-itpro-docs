@@ -1,7 +1,7 @@
 ---
 title: WindowsLogon Policy CSP
 description: Learn more about the WindowsLogon Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -380,11 +380,11 @@ This policy setting allows you to control whether users see the first sign-in an
 
 <!-- EnableMPRNotifications-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls the configuration under which winlogon sends MPR notifications in the system.
+This policy controls whether the user's password is included in the content of MPR notifications sent by winlogon in the system.
 
-- If you enable this setting or don't configure it, winlogon sends MPR notifications if a credential manager is configured.
+- If you disable this setting or don't configure it, winlogon sends MPR notifications with empty password fields of the user's authentication info.
 
-- If you disable this setting, winlogon doesn't send MPR notifications.
+- If you enable this setting, winlogon sends MPR notifications containing the user's password in the authentication info.
 <!-- EnableMPRNotifications-Description-End -->
 
 <!-- EnableMPRNotifications-Editable-Begin -->
@@ -415,7 +415,7 @@ This policy controls the configuration under which winlogon sends MPR notificati
 | Name | Value |
 |:--|:--|
 | Name | EnableMPRNotifications |
-| Friendly Name | Enable MPR notifications for the system |
+| Friendly Name | Configure the transmission of the user's password in the content of MPR notifications sent by winlogon. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Logon Options |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |

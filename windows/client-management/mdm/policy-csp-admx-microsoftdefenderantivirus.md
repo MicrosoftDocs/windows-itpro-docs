@@ -1,7 +1,7 @@
 ---
 title: ADMX_MicrosoftDefenderAntivirus Policy CSP
 description: Learn more about the ADMX_MicrosoftDefenderAntivirus Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1523,11 +1523,13 @@ This policy setting defines the number of days items should be kept in the Quara
 
 <!-- RandomizeScheduleTaskTimes-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure the scheduled scan, and the scheduled security intelligence update, start time window in hours.
+This policy setting allows you to configure the randomization of the scheduled scan start time and the scheduled definition update start time.
 
-- If you disable or don't configure this setting, scheduled tasks will begin at a random time within 4 hours after the time specified in Task Scheduler.
+- If you enable or don't configure this policy setting, and didn't set a randomization window in the Configure scheduled task time randomization window setting , then randomization will be added between 0-4 hours.
 
-- If you enable this setting, you can widen, or narrow, this randomization period. Specify a randomization window of between 1 and 23 hours.
+- If you enable or don't configure this policy setting, and set a randomization window in the Configure scheduled task time randomization window setting, the configured randomization window will be used.
+
+- If you disable this policy setting, but configured the scheduled task time randomization window, randomization won't be done.
 <!-- RandomizeScheduleTaskTimes-Description-End -->
 
 <!-- RandomizeScheduleTaskTimes-Editable-Begin -->
@@ -3528,11 +3530,11 @@ This policy setting allows you to configure scanning mapped network drives.
 
 <!-- Scan_DisableScanningNetworkFiles-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure scanning for network files. It's recommended that you don't enable this setting.
+This policy setting allows the scanning of network files using on access protection. The default is enabled. Recommended to remain enabled in most cases.
 
-- If you enable this setting, network files will be scanned.
+- If you enable or don't configure this setting, network files will be scanned.
 
-- If you disable or don't configure this setting, network files won't be scanned.
+- If you disable this setting, network files won't be scanned.
 <!-- Scan_DisableScanningNetworkFiles-Description-End -->
 
 <!-- Scan_DisableScanningNetworkFiles-Editable-Begin -->
@@ -3556,7 +3558,7 @@ This policy setting allows you to configure scanning for network files. It's rec
 | Name | Value |
 |:--|:--|
 | Name | Scan_DisableScanningNetworkFiles |
-| Friendly Name | Scan network files |
+| Friendly Name | Configure scanning of network files |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |
@@ -5436,12 +5438,7 @@ Valid remediation action values are:
 <!-- UX_Configuration_CustomDefaultActionToastString-OmaUri-End -->
 
 <!-- UX_Configuration_CustomDefaultActionToastString-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy setting allows you to configure whether or not to display additional text to clients when they need to perform an action. The text displayed is a custom administrator-defined string. For example, the phone number to call the company help desk. The client interface will only display a maximum of 1024 characters. Longer strings will be truncated before display.
-
-- If you enable this setting, the additional text specified will be displayed.
-
-- If you disable or don't configure this setting, there will be no additional text displayed.
+<!-- Description-Source-Not-Found -->
 <!-- UX_Configuration_CustomDefaultActionToastString-Description-End -->
 
 <!-- UX_Configuration_CustomDefaultActionToastString-Editable-Begin -->
@@ -5458,6 +5455,7 @@ This policy setting allows you to configure whether or not to display additional
 <!-- UX_Configuration_CustomDefaultActionToastString-DFProperties-End -->
 
 <!-- UX_Configuration_CustomDefaultActionToastString-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -5465,10 +5463,6 @@ This policy setting allows you to configure whether or not to display additional
 | Name | Value |
 |:--|:--|
 | Name | UX_Configuration_CustomDefaultActionToastString |
-| Friendly Name | Display additional text to clients when they need to perform an action |
-| Location | Computer Configuration |
-| Path | Windows Components > Microsoft Defender Antivirus > Client Interface |
-| Registry Key Name | Software\Policies\Microsoft\Windows Defender\UX Configuration |
 | ADMX File Name | WindowsDefender.admx |
 <!-- UX_Configuration_CustomDefaultActionToastString-AdmxBacked-End -->
 

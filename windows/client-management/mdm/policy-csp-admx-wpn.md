@@ -1,7 +1,7 @@
 ---
 title: ADMX_WPN Policy CSP
 description: Learn more about the ADMX_WPN Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -254,7 +254,7 @@ No reboots or service restarts are required for this policy setting to take effe
 |:--|:--|
 | Name | NoToastNotification |
 | Friendly Name | Turn off toast notifications |
-| Location | User Configuration |
+| Location | Computer and User Configuration |
 | Path | Start Menu and Taskbar > Notifications |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |
 | Registry Value Name | NoToastApplicationNotification |
