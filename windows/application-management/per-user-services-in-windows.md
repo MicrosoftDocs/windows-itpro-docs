@@ -4,7 +4,7 @@ description: Learn about per-user services, how to change the template service s
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 12/22/2023
+ms.date: 10/01/2024
 ms.topic: how-to
 ms.service: windows-client
 ms.subservice: itpro-apps
@@ -99,7 +99,7 @@ $services = Get-Service
 foreach ( $service in $services ) {
   # For each specific service, check if the service type property includes the 64 bit using the bitwise AND operator (-band).
   # If the result equals the flag value, then the service is a per-user service.
-  if ( ( $service.ServiceType -band $flag ) -eq $flag ) { 
+  if ( ( $service.ServiceType -band $flag ) -eq $flag ) {
     # When a per-user service is found, then add that service object to the results array.
     $serviceList += $service
   }
