@@ -11,11 +11,10 @@ ms.date: 09/11/2024
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
 The App Control for Business Wizard makes editing and viewing App Control policies easier than the PowerShell cmdlets or manually. The Wizard currently supports the following editing capabilities:
-<ul>
-    <li><a href="#configuring-policy-rules">Configuring policy rules</a></li>
-    <li><a href="#adding-file-rules">Adding new allow or block file rules to existing policies</a></li>
-    <li><a href="#removing-file-rules">Removing allow or block file rules on existing policies</a></li>
-</ul>
+
+- Configuring policy rules
+- Adding new allow or block file rules to existing policies
+- Removing allow or block file rules on existing policies
 
 ## Configuring Policy Rules
 
@@ -48,11 +47,9 @@ The App Control Wizard makes deleting file rules from an existing policy quick a
   <FileAttribRef RuleID="ID_FILEATTRIB_LOB_APP_2" />
 ```
 
-[comment]: <> (## Editing File Rules Coming soon!)
-
 ### Policy Creation
 
-Once the policy is created, the new policy will be written to the same path as the in-edit policy. The new policy file name will have the policy version appended to the end of the file name. For instance, if the in-edit policy is saved at MyDocuments\BasePolicy.xml, after edit, the new policy will be saved at MyDocuments\BasePolicy_v10.0.0.1.xml.
+Once the policy is created, the new policy will be written to the same path as the in-edit policy. The new policy file name will have the policy version appended to the end of the file name. For instance, if the in-edit policy is saved at `MyDocuments\BasePolicy.xml`, after edit, the new policy will be saved at `MyDocuments\BasePolicy_v10.0.0.1.xml`.
 
 ## Up next
 
