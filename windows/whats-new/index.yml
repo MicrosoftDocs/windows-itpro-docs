@@ -61,7 +61,7 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
-          - text: Windows 10 Enterprise LTSC overview
+          - text: Windows Enterprise LTSC overview
             url: ltsc/overview.md
           - text: What's new in Windows 11 Enterprise LTSC 2024
             url: ltsc/whats-new-windows-11-2024.md                
