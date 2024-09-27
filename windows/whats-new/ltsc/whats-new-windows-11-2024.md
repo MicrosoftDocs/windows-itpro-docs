@@ -27,7 +27,7 @@ The Windows 11 Enterprise LTSC 2024 release includes the cumulative enhancements
 Windows 11 Enterprise LTSC 2024 was first available on October 1, 2024. Features in Windows 11 Enterprise LTSC 2024 are similar to Windows 11, version 24H2.The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools, such as in-box apps and Microsoft Store, that are designed for the general availability channel release of Windows might be limited.
 
 > [!IMPORTANT]
-> Windows 11 Enterprise LTSC 2024 has a 5 year lifecycle. ([IoT Enterprise LTSC](/windows/iot/iot-enterprise/whats-new/windows-iot-enterprise-ltsc) continues to have a [10 year lifecycle](/lifecycle/products/windows-11-iot-enterprise-ltsc-2024)). Windows 11 Enterprise LTSC follows the [Fixed Lifecycle Policy](/lifecycle/policies/fixed).
+> Windows 11 Enterprise LTSC 2024 has a 5 year lifecycle. ([IoT Enterprise LTSC](/windows/iot/iot-enterprise/whats-new/windows-iot-enterprise-ltsc) continues to have a [10 year lifecycle](/lifecycle/products/windows-11-iot-enterprise-ltsc-2024)). Windows 11 Enterprise LTSC 2024 follows the [Fixed Lifecycle Policy](/lifecycle/policies/fixed).
 
 <!--For more information about the lifecycle for this release, see [The next Windows 10 long-term servicing channel (LTSC) release](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-next-windows-10-long-term-servicing-channel-ltsc-release/ba-p/2147232). -->
 
