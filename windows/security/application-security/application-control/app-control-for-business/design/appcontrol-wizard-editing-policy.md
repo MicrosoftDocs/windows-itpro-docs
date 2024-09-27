@@ -11,15 +11,14 @@ ms.date: 09/11/2024
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
 The App Control for Business Wizard makes editing and viewing App Control policies easier than the PowerShell cmdlets or manually. The Wizard currently supports the following editing capabilities:
-<ul>
-    <li><a href="#configuring-policy-rules">Configuring policy rules</a></li>
-    <li><a href="#adding-file-rules">Adding new allow or block file rules to existing policies</a></li>
-    <li><a href="#removing-file-rules">Removing allow or block file rules on existing policies</a></li>
-</ul>
+
+- Configuring policy rules
+- Adding new allow or block file rules to existing policies
+- Removing allow or block file rules on existing policies
 
 ## Configuring Policy Rules
 
-The `Policy Rules` page will load with the in-edit policy rules configured per the set rules. Selecting the `+ Advanced Options` button will reveal the advanced policy rule options panel. This grouping of rules contains other policy rule options that are less common to most users. To edit any of the rules, flip the corresponding policy rule state.  For instance, to disable Audit Mode and enable Enforcement Mode in the figure below, the button beside the `Audit Mode` label needs only to be pressed. Once the policy rules are configured, select the Next button to continue the next stage of editing: [Adding File Rules](#adding-file-rules).
+The `Policy Rules` page loads with the in-edit policy rules configured per the set rules. Selecting the `+ Advanced Options` button reveals the advanced policy rule options panel. This grouping of rules contains other policy rule options that are less common to most users. To edit any of the rules, flip the corresponding policy rule state. For instance, to disable Audit Mode and enable Enforcement Mode in the figure below, the button beside the `Audit Mode` label needs only to be pressed. Once the policy rules are configured, select the Next button to continue the next stage of editing: [Adding File Rules](#adding-file-rules).
 
 ![Configuring the policy rules.](../images/appcontrol-wizard-edit-policy-rules.png)
 
@@ -29,11 +28,11 @@ A description of the policy rule is shown at the bottom of the page when the cur
 
 The App Control for Business Wizard allows users to add rules to their existing policy seamlessly. Previously, this rule-adding task would have involved creating a new policy with the new rules and merging it with the existing policy.
 
-Selecting the `+ Custom Rules` button will open the Custom Rules panel. For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](appcontrol-wizard-create-base-policy.md#creating-custom-file-rules).
+Selecting the `+ Custom Rules` button opens the Custom Rules panel. For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](appcontrol-wizard-create-base-policy.md#creating-custom-file-rules).
 
 ## Removing File Rules
 
-The App Control Wizard makes deleting file rules from an existing policy quick and easy. To remove any type of file rule: publisher rule, path rule, filename rule, or a hash rule, select the rule in the `Policy Signing Rules List` table on the left-hand side of the page. Selecting the rule will highlight the entire row. Once the row is highlighted, select the remove icon underneath the table. The Wizard will prompt for user confirmation before removing the file rule. Once removed, the rule will no longer appear in the policy or the table.
+The App Control Wizard makes deleting file rules from an existing policy quick and easy. To remove any type of file rule: publisher rule, path rule, filename rule, or a hash rule, select the rule in the `Policy Signing Rules List` table on the left-hand side of the page. Selecting the rule highlights the entire row. Once the row is highlighted, select the remove icon underneath the table. The Wizard prompts for user confirmation before removing the file rule. Once removed, the rule no longer appears in the policy or the table.
 
 :::image type="content" alt-text="Removing file rule from policy during edit." source="../images/appcontrol-wizard-edit-remove-file-rule.png":::
 
@@ -48,11 +47,9 @@ The App Control Wizard makes deleting file rules from an existing policy quick a
   <FileAttribRef RuleID="ID_FILEATTRIB_LOB_APP_2" />
 ```
 
-[comment]: <> (## Editing File Rules Coming soon!)
-
 ### Policy Creation
 
-Once the policy is created, the new policy will be written to the same path as the in-edit policy. The new policy file name will have the policy version appended to the end of the file name. For instance, if the in-edit policy is saved at MyDocuments\BasePolicy.xml, after edit, the new policy will be saved at MyDocuments\BasePolicy_v10.0.0.1.xml.
+Once the policy is created, the new policy is written to the same path as the in-edit policy. The new policy file name has the policy version appended to the end of the file name. For instance, if the in-edit policy is saved at `MyDocuments\BasePolicy.xml`, after edit, the new policy will be saved at `MyDocuments\BasePolicy_v10.0.0.1.xml`.
 
 ## Up next
 
