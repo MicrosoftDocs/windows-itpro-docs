@@ -25,11 +25,11 @@ highlightedContent:
     itemType: get-started
     url: /windows/whats-new/windows-11-overview
 
-  - title: Windows 11, version 23H2
+  - title: Windows 11, version 24H2
     itemType: whats-new
-    url: /windows/whats-new/whats-new-windows-11-version-23h2
+    url: /windows/whats-new/whats-new-windows-11-version-24h2
 
-  - title: Windows 11, version 23H2 group policy settings reference
+  - title: Windows 11, version 24H2 group policy settings reference
     itemType: download
     url: https://www.microsoft.com/download/details.aspx?id=105668
 
