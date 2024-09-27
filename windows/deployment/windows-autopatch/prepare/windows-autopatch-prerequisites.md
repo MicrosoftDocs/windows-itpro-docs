@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
 description: This article details the prerequisites needed for Windows Autopatch
-ms.date: 09/16/2024
+ms.date: 09/27/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: concept-article
@@ -18,6 +18,9 @@ ms.collection:
 # Prerequisites
 
 ## Licenses and entitlements
+
+> [!IMPORTANT]
+> Microsoft 365 Business Premium and Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5) do **not** have access to all Windows Autopatch features. For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).
 
 ### [Business Premium and A3+](#tab/business-premium-a3-entitlements)
 
@@ -41,7 +44,7 @@ For more information about specific service plans, see [Windows 10/11 Enterprise
 
 ### Feature entitlement
 
-For more information about feature entitlement, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).
+For more information about feature entitlement, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities). Features are accessed through the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 | Symbol | Meaning |
 | --- | --- |

@@ -1,7 +1,7 @@
 ---
 title: What is Windows Autopatch?
 description: Details what the service is and shortcuts to articles.
-ms.date: 09/16/2024
+ms.date: 09/27/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -16,6 +16,9 @@ ms.reviewer: hathind
 ---
 
 # What is Windows Autopatch?
+
+> [!IMPORTANT]
+> In September, Windows Update for Business deployment service unified under Windows Autopatch. Unification is going through a gradual rollout over the next several weeks. If your experience looks different from the documentation, you didn't receive the unified experience yet. Review [Prerequisites](../prepare/windows-autopatch-prerequisites.md) and [Features and capabilities](#features-and-capabilities) to understand licensing and feature entitlement.
 
 Windows Autopatch is a cloud service that automates Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams updates to improve security and productivity across your organization.
 
@@ -38,7 +41,7 @@ Windows Autopatch helps you minimize the involvement of your scarce IT resources
 
 [!INCLUDE [windows-autopatch-applies-to-all-licenses](../includes/windows-autopatch-applies-to-all-licenses.md)]
 
-The goal of Windows Autopatch is to deliver software updates to registered devices; the service frees up IT and minimizes disruptions to your end users. Once a device is registered with the service, features include:
+The goal of Windows Autopatch is to deliver software updates to registered devices; the service frees up IT and minimizes disruptions to your end users. Once a device is registered with the service, you have access to the following features through the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431):
 
 | Features included with Business Premium and A3+ licenses | Description |
 | --- | --- |
@@ -48,11 +51,14 @@ The goal of Windows Autopatch is to deliver software updates to registered devic
 | [Driver and firmware updates](../manage/windows-autopatch-manage-driver-and-firmware-updates.md) | You can manage and control your driver and firmware updates with Windows Autopatch.|
 | [Intune reports](/mem/intune/fundamentals/reports) | Use Intune reports to monitor the health and activity of endpoints in your organization.|
 
+> [!IMPORTANT]
+> Microsoft 365 Business Premium and Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5) do **not** have access to all Windows Autopatch features. For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).
+
 ### Windows Enterprise E3+ and F3 licenses
 
 [!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-In addition to the features included in [Business Premium and A3+ licenses](#business-premium-and-a3-licenses), if you have Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5), you have access to all of Windows Autopatch features in your tenant when you [activate Windows Autopatch](../prepare/windows-autopatch-feature-activation.md). Windows Autopatch features include:
+In addition to the features included in [Business Premium and A3+ licenses](#business-premium-and-a3-licenses), if you have Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5), you have access to all of Windows Autopatch features in your tenant. When you [activate Windows Autopatch](../prepare/windows-autopatch-feature-activation.md), you have access to the following features through the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431):
 
 | Features included in Windows Enterprise E3+ and F3 licenses | Description |
 | --- | --- |
