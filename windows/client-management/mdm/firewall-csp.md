@@ -1,7 +1,7 @@
 ---
 title: Firewall CSP
 description: Learn more about the Firewall CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -2221,7 +2221,7 @@ Specifies the friendly name of the firewall rule.
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Specifies one WDAC tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ""., and "_". A PolicyAppId and ServiceName can't be specified in the same rule.
+Specifies one App Control tag. This is a string that can contain any alphanumeric character and any of the characters ":", "/", ""., and "_". A PolicyAppId and ServiceName can't be specified in the same rule.
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Description-End -->
 
 <!-- Device-MdmStore-FirewallRules-{FirewallRuleName}-PolicyAppId-Editable-Begin -->

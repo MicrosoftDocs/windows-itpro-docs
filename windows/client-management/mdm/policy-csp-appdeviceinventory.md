@@ -1,7 +1,7 @@
 ---
 title: AppDeviceInventory Policy CSP
 description: Learn more about the AppDeviceInventory Area in Policy CSP.
-ms.date: 08/07/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -33,7 +33,12 @@ ms.date: 08/07/2024
 <!-- TurnOffAPISamping-OmaUri-End -->
 
 <!-- TurnOffAPISamping-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy controls the state of API Sampling. API Sampling monitors the sampled collection of application programming interfaces used during system runtime to help diagnose compatibility problems.
+
+- If you enable this policy, API Sampling won't be run.
+
+- If you disable or don't configure this policy, API Sampling will be turned on.
 <!-- TurnOffAPISamping-Description-End -->
 
 <!-- TurnOffAPISamping-Editable-Begin -->
@@ -50,7 +55,6 @@ ms.date: 08/07/2024
 <!-- TurnOffAPISamping-DFProperties-End -->
 
 <!-- TurnOffAPISamping-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -58,6 +62,11 @@ ms.date: 08/07/2024
 | Name | Value |
 |:--|:--|
 | Name | TurnOffAPISamping |
+| Friendly Name | Turn off API Sampling |
+| Location | Computer Configuration |
+| Path | Windows Components > App and Device Inventory |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppCompat |
+| Registry Value Name | DisableAPISamping |
 | ADMX File Name | AppDeviceInventory.admx |
 <!-- TurnOffAPISamping-AdmxBacked-End -->
 
@@ -83,7 +92,12 @@ ms.date: 08/07/2024
 <!-- TurnOffApplicationFootprint-OmaUri-End -->
 
 <!-- TurnOffApplicationFootprint-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy controls the state of Application Footprint. Application Footprint monitors the sampled collection of registry and file usage to help diagnose compatibility problems.
+
+- If you enable this policy, Application Footprint won't be run.
+
+- If you disable or don't configure this policy, Application Footprint will be turned on.
 <!-- TurnOffApplicationFootprint-Description-End -->
 
 <!-- TurnOffApplicationFootprint-Editable-Begin -->
@@ -100,7 +114,6 @@ ms.date: 08/07/2024
 <!-- TurnOffApplicationFootprint-DFProperties-End -->
 
 <!-- TurnOffApplicationFootprint-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -108,6 +121,11 @@ ms.date: 08/07/2024
 | Name | Value |
 |:--|:--|
 | Name | TurnOffApplicationFootprint |
+| Friendly Name | Turn off Application Footprint |
+| Location | Computer Configuration |
+| Path | Windows Components > App and Device Inventory |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppCompat |
+| Registry Value Name | DisableApplicationFootprint |
 | ADMX File Name | AppDeviceInventory.admx |
 <!-- TurnOffApplicationFootprint-AdmxBacked-End -->
 
@@ -133,7 +151,12 @@ ms.date: 08/07/2024
 <!-- TurnOffInstallTracing-OmaUri-End -->
 
 <!-- TurnOffInstallTracing-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy controls the state of Install Tracing. Install Tracing is a mechanism that tracks application installs to help diagnose compatibility problems.
+
+- If you enable this policy, Install Tracing won't be run.
+
+- If you disable or don't configure this policy, Install Tracing will be turned on.
 <!-- TurnOffInstallTracing-Description-End -->
 
 <!-- TurnOffInstallTracing-Editable-Begin -->
@@ -150,7 +173,6 @@ ms.date: 08/07/2024
 <!-- TurnOffInstallTracing-DFProperties-End -->
 
 <!-- TurnOffInstallTracing-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -158,6 +180,11 @@ ms.date: 08/07/2024
 | Name | Value |
 |:--|:--|
 | Name | TurnOffInstallTracing |
+| Friendly Name | Turn off Install Tracing |
+| Location | Computer Configuration |
+| Path | Windows Components > App and Device Inventory |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppCompat |
+| Registry Value Name | DisableInstallTracing |
 | ADMX File Name | AppDeviceInventory.admx |
 <!-- TurnOffInstallTracing-AdmxBacked-End -->
 
@@ -166,6 +193,65 @@ ms.date: 08/07/2024
 <!-- TurnOffInstallTracing-Examples-End -->
 
 <!-- TurnOffInstallTracing-End -->
+
+<!-- TurnOffWin32AppBackup-Begin -->
+## TurnOffWin32AppBackup
+
+<!-- TurnOffWin32AppBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- TurnOffWin32AppBackup-Applicability-End -->
+
+<!-- TurnOffWin32AppBackup-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppDeviceInventory/TurnOffWin32AppBackup
+```
+<!-- TurnOffWin32AppBackup-OmaUri-End -->
+
+<!-- TurnOffWin32AppBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy controls the state of the compatibility scan for backed up applications. The compatibility scan for backed up applications evaluates for compatibility problems in installed applications.
+
+- If you enable this policy, the compatibility scan for backed up applications won't be run.
+
+- If you disable or don't configure this policy, the compatibility scan for backed up applications will be run.
+<!-- TurnOffWin32AppBackup-Description-End -->
+
+<!-- TurnOffWin32AppBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffWin32AppBackup-Editable-End -->
+
+<!-- TurnOffWin32AppBackup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffWin32AppBackup-DFProperties-End -->
+
+<!-- TurnOffWin32AppBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TurnOffWin32AppBackup |
+| Friendly Name | Turn off compatibility scan for backed up applications |
+| Location | Computer Configuration |
+| Path | Windows Components > App and Device Inventory |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppCompat |
+| Registry Value Name | DisableWin32AppBackup |
+| ADMX File Name | AppDeviceInventory.admx |
+<!-- TurnOffWin32AppBackup-AdmxBacked-End -->
+
+<!-- TurnOffWin32AppBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffWin32AppBackup-Examples-End -->
+
+<!-- TurnOffWin32AppBackup-End -->
 
 <!-- AppDeviceInventory-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

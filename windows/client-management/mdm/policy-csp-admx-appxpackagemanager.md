@@ -1,7 +1,7 @@
 ---
 title: ADMX_AppxPackageManager Policy CSP
 description: Learn more about the ADMX_AppxPackageManager Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -32,7 +32,7 @@ ms.date: 08/06/2024
 
 <!-- AllowDeploymentInSpecialProfiles-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage the deployment of Windows Store apps when the user is signed in using a special profile. Special profiles are the following user profiles, where changes are discarded after the user signs off:
+This policy setting allows you to manage the deployment of packaged Microsoft Store apps when the user is signed in using a special profile. Special profiles are the following user profiles, where changes are discarded after the user signs off:
 
 Roaming user profiles to which the "Delete cached copies of roaming profiles" Group Policy setting applies.
 
@@ -42,9 +42,9 @@ Temporary user profiles, which are created when an error prevents the correct pr
 
 User profiles for the Guest account and members of the Guests group.
 
-- If you enable this policy setting, Group Policy allows deployment operations (adding, registering, staging, updating, or removing an app package) of Windows Store apps when using a special profile.
+- If you enable this policy setting, Group Policy allows deployment operations (adding, registering, staging, updating, or removing an app package) of packaged Microsoft Store apps when using a special profile.
 
-- If you disable or don't configure this policy setting, Group Policy blocks deployment operations of Windows Store apps when using a special profile.
+- If you disable or don't configure this policy setting, Group Policy blocks deployment operations of packaged Microsoft Store apps when using a special profile.
 <!-- AllowDeploymentInSpecialProfiles-Description-End -->
 
 <!-- AllowDeploymentInSpecialProfiles-Editable-Begin -->
