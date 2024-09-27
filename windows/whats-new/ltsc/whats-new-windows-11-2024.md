@@ -24,7 +24,7 @@ This article lists some of the new and updated features and content that is of i
 
 Windows 11 Enterprise LTSC 2024 builds on Windows 10 Enterprise LTSC 2021, adding premium features such as advanced protection against modern security threats and comprehensive device management, app management, and control capabilities. 
 
-The Windows 11 Enterprise LTSC 2024 release includes the cumulative enhancements provided in Windows 11 versions 21H2, 22H2, 23H2, and 24H2. Details about these enhancements are provided below. 
+The Windows 11 Enterprise LTSC 2024 release includes the cumulative enhancements provided in Windows 11 versions 21H2, 22H2, 23H2, and 24H2. Details about these enhancements are provided below.
 
 ## Lifecycle
 
