@@ -17,16 +17,14 @@ appliesto:
 
 This article lists some of the new and updated features and content that is of interest to IT Pros for Windows 11 Enterprise long-term servicing channel (LTSC) 2024, compared to Windows 10 Enterprise LTSC 2021. For a brief description of the LTSC servicing channel and associated support, see [Windows Enterprise LTSC](overview.md). <!--8891336-->
 
-> [!NOTE]
-> Windows 11 Enterprise LTSC 2024 was first available on October 1, 2024. Features in Windows 11 Enterprise LTSC 2024 are equivalent to Windows 11, version 24H2.
->
-> The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the general availability channel release of Windows might be limited.
 
 Windows 11 Enterprise LTSC 2024 builds on Windows 10 Enterprise LTSC 2021, adding premium features such as advanced protection against modern security threats and comprehensive device management, app management, and control capabilities. 
 
 The Windows 11 Enterprise LTSC 2024 release includes the cumulative enhancements provided in Windows 11 versions 21H2, 22H2, 23H2, and 24H2. Details about these enhancements are provided below.
 
 ## Lifecycle
+
+Windows 11 Enterprise LTSC 2024 was first available on October 1, 2024. Features in Windows 11 Enterprise LTSC 2024 are similar to Windows 11, version 24H2.The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools, such as in-box apps and Microsoft Store, that are designed for the general availability channel release of Windows might be limited.
 
 > [!IMPORTANT]
 > Windows 11 Enterprise LTSC 2024 has a 5 year lifecycle. ([IoT Enterprise LTSC](/windows/iot/iot-enterprise/whats-new/windows-iot-enterprise-ltsc) continues to have a [10 year lifecycle](/lifecycle/products/windows-11-iot-enterprise-ltsc-2024)). Windows 11 Enterprise LTSC follows the [Fixed Lifecycle Policy](/lifecycle/policies/fixed).
