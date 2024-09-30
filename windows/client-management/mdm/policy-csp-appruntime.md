@@ -1,7 +1,7 @@
 ---
 title: AppRuntime Policy CSP
 description: Learn more about the AppRuntime Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -32,9 +32,9 @@ ms.date: 01/18/2024
 
 <!-- AllowMicrosoftAccountsToBeOptional-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it.
+This policy setting lets you control whether Microsoft accounts are optional for packaged Microsoft Store apps that require an account to sign in. This policy only affects packaged Microsoft Store apps that support it.
 
-- If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead.
+- If you enable this policy setting, packaged Microsoft Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead.
 
 - If you disable or don't configure this policy setting, users will need to sign in with a Microsoft account.
 <!-- AllowMicrosoftAccountsToBeOptional-Description-End -->

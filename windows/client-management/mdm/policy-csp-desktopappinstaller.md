@@ -1,7 +1,7 @@
 ---
 title: DesktopAppInstaller Policy CSP
 description: Learn more about the DesktopAppInstaller Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -10,8 +10,6 @@ ms.date: 01/18/2024
 # Policy CSP - DesktopAppInstaller
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- DesktopAppInstaller-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -215,7 +213,14 @@ Users will still be able to execute the *winget* command. The default help will 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-OmaUri-End -->
 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy controls whether the [Windows Package Manager](/windows/package-manager/) will validate the Microsoft Store certificate hash matches to a known Microsoft Store certificate when initiating a connection to the Microsoft Store Source.
+
+- If you enable this policy, the [Windows Package Manager](/windows/package-manager/) will bypass the Microsoft Store certificate validation.
+
+- If you disable this policy, the [Windows Package Manager](/windows/package-manager/) will validate the Microsoft Store certificate used is valid and belongs to the Microsoft Store before communicating with the Microsoft Store source.
+
+- If you don't configure this policy, the [Windows Package Manager](/windows/package-manager/) administrator settings will be adhered to.
 <!-- EnableBypassCertificatePinningForMicrosoftStore-Description-End -->
 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-Editable-Begin -->
@@ -232,7 +237,6 @@ Users will still be able to execute the *winget* command. The default help will 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-DFProperties-End -->
 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -240,6 +244,11 @@ Users will still be able to execute the *winget* command. The default help will 
 | Name | Value |
 |:--|:--|
 | Name | EnableBypassCertificatePinningForMicrosoftStore |
+| Friendly Name | Enable App Installer Microsoft Store Source Certificate Validation Bypass |
+| Location | Computer Configuration |
+| Path | Windows Components > Desktop App Installer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppInstaller |
+| Registry Value Name | EnableBypassCertificatePinningForMicrosoftStore |
 | ADMX File Name | DesktopAppInstaller.admx |
 <!-- EnableBypassCertificatePinningForMicrosoftStore-AdmxBacked-End -->
 
@@ -445,7 +454,14 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 <!-- EnableLocalArchiveMalwareScanOverride-OmaUri-End -->
 
 <!-- EnableLocalArchiveMalwareScanOverride-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy controls the ability to override malware vulnerability scans when installing an archive file using a local manifest using the command line arguments.
+
+- If you enable this policy, users can override the malware scan when performing a local manifest install of an archive file.
+
+- If you disable this policy, users will be unable to override the malware scan of an archive file when installing using a local manifest.
+
+- If you don't configure this policy, the [Windows Package Manager](/windows/package-manager/) administrator settings will be adhered to.
 <!-- EnableLocalArchiveMalwareScanOverride-Description-End -->
 
 <!-- EnableLocalArchiveMalwareScanOverride-Editable-Begin -->
@@ -462,7 +478,6 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 <!-- EnableLocalArchiveMalwareScanOverride-DFProperties-End -->
 
 <!-- EnableLocalArchiveMalwareScanOverride-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -470,6 +485,11 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 | Name | Value |
 |:--|:--|
 | Name | EnableLocalArchiveMalwareScanOverride |
+| Friendly Name | Enable App Installer Local Archive Malware Scan Override |
+| Location | Computer Configuration |
+| Path | Windows Components > Desktop App Installer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppInstaller |
+| Registry Value Name | EnableLocalArchiveMalwareScanOverride |
 | ADMX File Name | DesktopAppInstaller.admx |
 <!-- EnableLocalArchiveMalwareScanOverride-AdmxBacked-End -->
 
@@ -618,9 +638,9 @@ This policy controls the Microsoft Store source included with the [Windows Packa
 <!-- Description-Source-ADMX -->
 This policy controls whether users can install packages from a website that's using the ms-appinstaller protocol.
 
-- If you enable or don't configure this setting, users will be able to install packages from websites that use this protocol.
+- If you enable this setting, users will be able to install packages from websites that use this protocol.
 
-- If you disable this setting, users won't be able to install packages from websites that use this protocol.
+- If you disable or don't configure this setting, users won't be able to install packages from websites that use this protocol.
 <!-- EnableMSAppInstallerProtocol-Description-End -->
 
 <!-- EnableMSAppInstallerProtocol-Editable-Begin -->
@@ -724,7 +744,7 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-Applicability-End -->
 
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-OmaUri-Begin -->
@@ -734,7 +754,14 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-OmaUri-End -->
 
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy determines if a user can perform an action using the [Windows Package Manager](/windows/package-manager/) through a command line interface (WinGet CLI, or WinGet PowerShell).
+
+If you disable this policy, users won't be able execute the [Windows Package Manager](/windows/package-manager/) CLI, and PowerShell cmdlets.
+
+If you enable, or don't configuring this policy, users will be able to execute the [Windows Package Manager](/windows/package-manager/) CLI commands, and PowerShell cmdlets. (Provided "Enable App Installer" policy isn't disabled).
+
+This policy doesn't override the "Enable App Installer" policy.
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-Description-End -->
 
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-Editable-Begin -->
@@ -751,7 +778,6 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-DFProperties-End -->
 
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -759,6 +785,11 @@ The settings are stored inside of a .json file on the user’s system. It may be
 | Name | Value |
 |:--|:--|
 | Name | EnableWindowsPackageManagerCommandLineInterfaces |
+| Friendly Name | Enable Windows Package Manager command line interfaces |
+| Location | Computer Configuration |
+| Path | Windows Components > Desktop App Installer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppInstaller |
+| Registry Value Name | EnableWindowsPackageManagerCommandLineInterfaces |
 | ADMX File Name | DesktopAppInstaller.admx |
 <!-- EnableWindowsPackageManagerCommandLineInterfaces-AdmxBacked-End -->
 
@@ -774,7 +805,7 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- EnableWindowsPackageManagerConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- EnableWindowsPackageManagerConfiguration-Applicability-End -->
 
 <!-- EnableWindowsPackageManagerConfiguration-OmaUri-Begin -->
@@ -784,7 +815,12 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- EnableWindowsPackageManagerConfiguration-OmaUri-End -->
 
 <!-- EnableWindowsPackageManagerConfiguration-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy controls whether the [Windows Package Manager](/windows/package-manager/) configuration feature can be used by users.
+
+- If you enable or don't configure this setting, users will be able to use the [Windows Package Manager](/windows/package-manager/) configuration feature.
+
+- If you disable this setting, users won't be able to use the [Windows Package Manager](/windows/package-manager/) configuration feature.
 <!-- EnableWindowsPackageManagerConfiguration-Description-End -->
 
 <!-- EnableWindowsPackageManagerConfiguration-Editable-Begin -->
@@ -801,7 +837,6 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- EnableWindowsPackageManagerConfiguration-DFProperties-End -->
 
 <!-- EnableWindowsPackageManagerConfiguration-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -809,6 +844,11 @@ The settings are stored inside of a .json file on the user’s system. It may be
 | Name | Value |
 |:--|:--|
 | Name | EnableWindowsPackageManagerConfiguration |
+| Friendly Name | Enable Windows Package Manager Configuration |
+| Location | Computer Configuration |
+| Path | Windows Components > Desktop App Installer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppInstaller |
+| Registry Value Name | EnableWindowsPackageManagerConfiguration |
 | ADMX File Name | DesktopAppInstaller.admx |
 <!-- EnableWindowsPackageManagerConfiguration-AdmxBacked-End -->
 
@@ -835,9 +875,9 @@ The settings are stored inside of a .json file on the user’s system. It may be
 
 <!-- SourceAutoUpdateInterval-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls the auto update interval for package-based sources.
+This policy controls the auto-update interval for package-based sources. The default source for [Windows Package Manager](/windows/package-manager/) is configured such that an index of the packages is cached on the local machine. The index is downloaded when a user invokes a command, and the interval has passed.
 
-- If you disable or don't configure this setting, the default interval or the value specified in settings will be used by the [Windows Package Manager](/windows/package-manager/).
+- If you disable or don't configure this setting, the default interval or the value specified in the [Windows Package Manager](/windows/package-manager/) settings will be used.
 
 - If you enable this setting, the number of minutes specified will be used by the [Windows Package Manager](/windows/package-manager/).
 <!-- SourceAutoUpdateInterval-Description-End -->
