@@ -1,7 +1,7 @@
 ---
 title: ADMX_Netlogon Policy CSP
 description: Learn more about the ADMX_Netlogon Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -420,6 +420,8 @@ Note that this policy setting doesn't affect NetBIOS-based discovery for DC loca
 - If you enable or don't configure this policy setting, the DC location algorithm doesn't use NetBIOS-based discovery as a fallback mechanism when DNS-based discovery fails. This is the default behavior.
 
 - If you disable this policy setting, the DC location algorithm can use NetBIOS-based discovery as a fallback mechanism when DNS based discovery fails.
+
+This setting has no effect unless the BlockNetbiosDiscovery setting is disabled. NetBIOS-based discovery is considered unsecure, has many limitations, and will be deprecated in a future release. For these reasons, NetBIOS-based discovery isn't recommended. See <https://aka.ms/dclocatornetbiosdeprecation> for more information.
 <!-- Netlogon_AvoidFallbackNetbiosDiscovery-Description-End -->
 
 <!-- Netlogon_AvoidFallbackNetbiosDiscovery-Editable-Begin -->

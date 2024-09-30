@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 09/11/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +21,7 @@ ms.date: 09/11/2024
 <!-- DisableAIDataAnalysis-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DisableAIDataAnalysis-Applicability-End -->
 
 <!-- DisableAIDataAnalysis-OmaUri-Begin -->
@@ -31,14 +31,12 @@ ms.date: 09/11/2024
 <!-- DisableAIDataAnalysis-OmaUri-End -->
 
 <!-- DisableAIDataAnalysis-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting allows you to determine whether end users have the option to allow snapshots to be saved on their PCs.
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control whether Windows saves snapshots of the screen and analyzes the user's activity on their device.
 
-- If disabled, end users will have a choice to save snapshots of their screen on their PC and then use Recall to find things they've seen.
+- If you enable this policy setting, Windows won't be able to save snapshots and users won't be able to search for or browse through their historical device activity using Recall.
 
-- If the policy is enabled, end users won't be able to save snapshots on their PC.
-
-- If the policy isn't configured, end users may or may not be able to save snapshots on their PC-depending on other policy configurations.
+- If you disable or don't configure this policy setting, Windows will save snapshots of the screen and users will be able to search for or browse through a timeline of their past activities using Recall.
 <!-- DisableAIDataAnalysis-Description-End -->
 
 <!-- DisableAIDataAnalysis-Editable-Begin -->
@@ -70,7 +68,12 @@ This policy setting allows you to determine whether end users have the option to
 | Name | Value |
 |:--|:--|
 | Name | DisableAIDataAnalysis |
-| Path | WindowsAI > AT > WindowsComponents > WindowsAI |
+| Friendly Name | Turn off Saving Snapshots for Windows |
+| Location | User Configuration |
+| Path | Windows Components > Windows AI |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\WindowsAI |
+| Registry Value Name | DisableAIDataAnalysis |
+| ADMX File Name | WindowsCopilot.admx |
 <!-- DisableAIDataAnalysis-GpMapping-End -->
 
 <!-- DisableAIDataAnalysis-Examples-Begin -->
@@ -202,6 +205,58 @@ This policy setting allows you to control whether Image Creator functionality is
 <!-- DisableImageCreator-Examples-End -->
 
 <!-- DisableImageCreator-End -->
+
+<!-- SetCopilotHardwareKey-Begin -->
+## SetCopilotHardwareKey
+
+<!-- SetCopilotHardwareKey-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- SetCopilotHardwareKey-Applicability-End -->
+
+<!-- SetCopilotHardwareKey-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/WindowsAI/SetCopilotHardwareKey
+```
+<!-- SetCopilotHardwareKey-OmaUri-End -->
+
+<!-- SetCopilotHardwareKey-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting determines which app opens when the user presses the Copilot key on their keyboard.
+
+- If the policy is enabled, the specified app will open when the user presses the Copilot key. Users can change the key assignment in Settings.
+
+- If the policy isn't configured, Copilot will open if it's available in that country or region.
+<!-- SetCopilotHardwareKey-Description-End -->
+
+<!-- SetCopilotHardwareKey-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetCopilotHardwareKey-Editable-End -->
+
+<!-- SetCopilotHardwareKey-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SetCopilotHardwareKey-DFProperties-End -->
+
+<!-- SetCopilotHardwareKey-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SetCopilotHardwareKey |
+| Path | WindowsCopilot > AT > WindowsComponents > WindowsCopilot |
+<!-- SetCopilotHardwareKey-GpMapping-End -->
+
+<!-- SetCopilotHardwareKey-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetCopilotHardwareKey-Examples-End -->
+
+<!-- SetCopilotHardwareKey-End -->
 
 <!-- TurnOffWindowsCopilot-Begin -->
 ## TurnOffWindowsCopilot

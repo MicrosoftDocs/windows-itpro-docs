@@ -1,7 +1,7 @@
 ---
 title: ADMX_DeviceGuard Policy CSP
 description: Learn more about the ADMX_DeviceGuard Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -34,7 +34,7 @@ ms.date: 08/06/2024
 
 <!-- ConfigCIPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Deploy Windows Defender Application Control.
+Deploy App Control for Business.
 
 This policy setting lets you deploy a Code Integrity Policy to a machine to control what's allowed to run on that machine.
 
@@ -69,7 +69,7 @@ If using a signed and protected policy then disabling this policy setting doesn'
 | Name | Value |
 |:--|:--|
 | Name | ConfigCIPolicy |
-| Friendly Name | Deploy Windows Defender Application Control |
+| Friendly Name | Deploy App Control for Business |
 | Location | Computer Configuration |
 | Path | System > Device Guard |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |

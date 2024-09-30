@@ -1,7 +1,7 @@
 ---
 title: Update Policy CSP
 description: Learn more about the Update Area in Policy CSP.
-ms.date: 09/11/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -9,18 +9,12 @@ ms.date: 09/11/2024
 <!-- Update-Begin -->
 # Policy CSP - Update
 
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
-
 <!-- Update-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Update-Editable-End -->
 
 Update CSP policies are listed below based on the group policy area:
 
-- [Windows Insider Preview](#windows-insider-preview)
-  - [AlwaysAutoRebootAtScheduledTimeMinutes](#alwaysautorebootatscheduledtimeminutes)
-  - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
-  - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
 - [Manage updates offered from Windows Update](#manage-updates-offered-from-windows-update)
   - [AllowNonMicrosoftSignedUpdate](#allownonmicrosoftsignedupdate)
   - [AllowOptionalContent](#allowoptionalcontent)
@@ -61,7 +55,8 @@ Update CSP policies are listed below based on the group policy area:
   - [ConfigureDeadlineForQualityUpdates](#configuredeadlineforqualityupdates)
   - [ConfigureDeadlineGracePeriod](#configuredeadlinegraceperiod)
   - [ConfigureDeadlineGracePeriodForFeatureUpdates](#configuredeadlinegraceperiodforfeatureupdates)
-  - [ConfigureDeadlineNoAutoReboot](#configuredeadlinenoautoreboot)
+  - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
+  - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
   - [ConfigureFeatureUpdateUninstallPeriod](#configurefeatureupdateuninstallperiod)
   - [NoUpdateNotificationsDuringActiveHours](#noupdatenotificationsduringactivehours)
   - [ScheduledInstallDay](#scheduledinstallday)
@@ -76,6 +71,7 @@ Update CSP policies are listed below based on the group policy area:
   - [SetEDURestart](#setedurestart)
   - [UpdateNotificationLevel](#updatenotificationlevel)
 - [Legacy Policies](#legacy-policies)
+  - [AlwaysAutoRebootAtScheduledTimeMinutes](#alwaysautorebootatscheduledtimeminutes)
   - [AutoRestartDeadlinePeriodInDays](#autorestartdeadlineperiodindays)
   - [AutoRestartDeadlinePeriodInDaysForFeatureUpdates](#autorestartdeadlineperiodindaysforfeatureupdates)
   - [AutoRestartNotificationSchedule](#autorestartnotificationschedule)
@@ -98,188 +94,6 @@ Update CSP policies are listed below based on the group policy area:
   - [ScheduleImminentRestartWarning](#scheduleimminentrestartwarning)
   - [ScheduleRestartWarning](#schedulerestartwarning)
   - [SetAutoRestartNotificationDisable](#setautorestartnotificationdisable)
-
-## Windows Insider Preview
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Begin -->
-### AlwaysAutoRebootAtScheduledTimeMinutes
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/AlwaysAutoRebootAtScheduledTimeMinutes
-```
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-Begin -->
-<!-- Description-Source-ADMX -->
-
-- If you enable this policy, a restart timer will always begin immediately after Windows Update installs important updates, instead of first notifying users on the login screen for at least two days.
-
-The restart timer can be configured to start with any value from 15 to 180 minutes. When the timer runs out, the restart will proceed even if the PC has signed-in users.
-
-- If you disable or don't configure this policy, Windows Update won't alter its restart behavior.
-
-If the "No auto-restart with logged-on users for scheduled automatic updates installations" policy is enabled, then this policy has no effect.
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[15-180]` |
-| Default Value  | 15 |
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | AlwaysAutoRebootAtScheduledTime |
-| Friendly Name | Always automatically restart at the scheduled time |
-| Element Name | work (minutes) |
-| Location | Computer Configuration |
-| Path | Windows Components > Windows Update > Manage end user experience |
-| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
-| ADMX File Name | WindowsUpdate.admx |
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
-### ConfigureDeadlineNoAutoRebootForFeatureUpdates
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates
-```
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired for feature updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForFeatureUpdates is configured.
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | ConfigureDeadlineNoAutoRebootForFeatureUpdates |
-| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
-| Element Name | ConfigureDeadlineNoAutoRebootForFeatureUpdates |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Begin -->
-### ConfigureDeadlineNoAutoRebootForQualityUpdates
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForQualityUpdates
-```
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired for quality updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates is configured.
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | ConfigureDeadlineNoAutoRebootForQualityUpdates |
-| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
-| Element Name | ConfigureDeadlineNoAutoRebootForQualityUpdates |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-End -->
 
 ## Manage updates offered from Windows Update
 
@@ -2518,8 +2332,8 @@ Number of days before feature updates are installed on devices automatically reg
 
 | Name | Value |
 |:--|:--|
-| Name | ComplianceDeadline |
-| Friendly Name | Specify deadlines for automatic updates and restarts |
+| Name | ComplianceDeadlineForFU |
+| Friendly Name | Specify deadline for automatic updates and restarts for feature update |
 | Element Name | Deadline (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
@@ -2578,7 +2392,7 @@ Number of days before quality updates are installed on devices automatically reg
 | Name | Value |
 |:--|:--|
 | Name | ComplianceDeadline |
-| Friendly Name | Specify deadlines for automatic updates and restarts |
+| Friendly Name | Specify deadline for automatic updates and restarts for quality update |
 | Element Name | Deadline (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
@@ -2633,7 +2447,7 @@ Minimum number of days from update installation until restarts occur automatical
 | Name | Value |
 |:--|:--|
 | Name | ComplianceDeadline |
-| Friendly Name | Specify deadlines for automatic updates and restarts |
+| Friendly Name | Specify deadline for automatic updates and restarts for quality update |
 | Element Name | Grace period (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
@@ -2687,8 +2501,8 @@ Minimum number of days from update installation until restarts occur automatical
 
 | Name | Value |
 |:--|:--|
-| Name | ComplianceDeadline |
-| Friendly Name | Specify deadlines for automatic updates and restarts |
+| Name | ComplianceDeadlineForFU |
+| Friendly Name | Specify deadline for automatic updates and restarts for feature update |
 | Element Name | Grace Period (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
@@ -2702,31 +2516,47 @@ Minimum number of days from update installation until restarts occur automatical
 
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-Begin -->
-### ConfigureDeadlineNoAutoReboot
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
+### ConfigureDeadlineNoAutoRebootForFeatureUpdates
 
-<!-- ConfigureDeadlineNoAutoReboot-Applicability-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
-<!-- ConfigureDeadlineNoAutoReboot-Applicability-End -->
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-OmaUri-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-Begin -->
 ```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoReboot
+./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates
 ```
-<!-- ConfigureDeadlineNoAutoReboot-OmaUri-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-Description-Begin -->
-<!-- Description-Source-DDF-Forced -->
-When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates or Update/ConfigureDeadlineForFeatureUpdates is configured.
-<!-- ConfigureDeadlineNoAutoReboot-Description-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy lets you specify the number of days before feature updates are installed on devices automatically, and a grace period after which required restarts occur automatically.
 
-<!-- ConfigureDeadlineNoAutoReboot-Editable-Begin -->
+Set deadlines for feature updates and quality updates to meet your compliance goals. Updates will be downloaded and installed as soon as they're offered and automatic restarts will be attempted outside of active hours. Once the deadline has passed, restarts will occur regardless of active hours, and users won't be able to reschedule. If the deadline is set to 0 days, the update will be installed immediately upon offering, but might not finish within the day due to device availability and network connectivity.
+
+Set a grace period for feature updates to guarantee users a minimum time to manage their restarts once updates are installed. Users will be able to schedule restarts during the grace period and Windows can still automatically restart outside of active hours if users choose not to schedule restarts. The grace period might not take effect if users already have more than the number of days set as grace period to manage their restart, based on deadline configurations.
+
+You can set the device to delay restarting until both the deadline and grace period have expired.
+
+If you disable or don't configure this policy, devices will get updates and will restart according to the default schedule.
+
+This policy will override the following policies:
+
+1. Specify deadline before auto restart for update installation
+1. Specify Engaged restart transition and notification schedule for updates.
+
+1. Always automatically restart at the scheduled time
+1. Configure Automatic Updates.
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoReboot-Editable-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-DFProperties-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
@@ -2734,36 +2564,115 @@ When enabled, devices won't automatically restart outside of active hours until 
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
-<!-- ConfigureDeadlineNoAutoReboot-DFProperties-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-AllowedValues-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-Begin -->
 **Allowed values**:
 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Disabled. |
 | 1 | Enabled. |
-<!-- ConfigureDeadlineNoAutoReboot-AllowedValues-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-GpMapping-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-Begin -->
 **Group policy mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | ComplianceDeadline |
-| Friendly Name | Specify deadlines for automatic updates and restarts |
+| Name | ComplianceDeadlineForFU |
+| Friendly Name | Specify deadline for automatic updates and restarts for feature update |
 | Element Name | Don't auto-restart until end of grace period. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
 | ADMX File Name | WindowsUpdate.admx |
-<!-- ConfigureDeadlineNoAutoReboot-GpMapping-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-Examples-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoReboot-Examples-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Begin -->
+### ConfigureDeadlineNoAutoRebootForQualityUpdates
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForQualityUpdates
+```
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy lets you specify the number of days before quality updates are installed on devices automatically, and a grace period after which required restarts occur automatically.
+
+Set deadlines for quality updates to meet your compliance goals. Updates will be downloaded and installed as soon as they're offered and automatic restarts will be attempted outside of active hours. Once the deadline has passed, restarts will occur regardless of active hours, and users won't be able to reschedule. If the deadline is set to 0 days, the update will be installed immediately upon offering, but might not finish within the day due to device availability and network connectivity.
+
+Set a grace period for quality updates to guarantee users a minimum time to manage their restarts once updates are installed. Users will be able to schedule restarts during the grace period and Windows can still automatically restart outside of active hours if users choose not to schedule restarts. The grace period might not take effect if users already have more than the number of days set as grace period to manage their restart, based on deadline configurations.
+
+You can set the device to delay restarting until both the deadline and grace period have expired.
+
+If you disable or don't configure this policy, devices will get updates and will restart according to the default schedule.
+
+This policy will override the following policies:
+
+1. Specify deadline before auto restart for update installation
+1. Specify Engaged restart transition and notification schedule for updates.
+
+1. Always automatically restart at the scheduled time
+1. Configure Automatic Updates.
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ComplianceDeadline |
+| Friendly Name | Specify deadline for automatic updates and restarts for quality update |
+| Element Name | Don't auto-restart until end of grace period. |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Manage end user experience |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-End -->
 
 <!-- ConfigureFeatureUpdateUninstallPeriod-Begin -->
 ### ConfigureFeatureUpdateUninstallPeriod
@@ -3646,6 +3555,68 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 <!-- UpdateNotificationLevel-End -->
 
 ## Legacy Policies
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Begin -->
+### AlwaysAutoRebootAtScheduledTimeMinutes
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AlwaysAutoRebootAtScheduledTimeMinutes
+```
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-Begin -->
+<!-- Description-Source-ADMX -->
+
+- If you enable this policy, a restart timer will always begin immediately after Windows Update installs important updates, instead of first notifying users on the login screen for at least two days.
+
+The restart timer can be configured to start with any value from 15 to 180 minutes. When the timer runs out, the restart will proceed even if the PC has signed-in users.
+
+- If you disable or don't configure this policy, Windows Update won't alter its restart behavior.
+
+If the "No auto-restart with logged-on users for scheduled automatic updates installations" policy is enabled, then this policy has no effect.
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[15-180]` |
+| Default Value  | 15 |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AlwaysAutoRebootAtScheduledTime |
+| Friendly Name | Always automatically restart at the scheduled time |
+| Element Name | work (minutes) |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Legacy Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-End -->
 
 <!-- AutoRestartDeadlinePeriodInDays-Begin -->
 ### AutoRestartDeadlinePeriodInDays

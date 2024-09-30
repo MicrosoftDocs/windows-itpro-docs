@@ -1,7 +1,7 @@
 ---
 title: ApplicationManagement Policy CSP
 description: Learn more about the ApplicationManagement Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -30,11 +30,11 @@ ms.date: 04/10/2024
 
 <!-- AllowAllTrustedApps-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage the installation of trusted line-of-business (LOB) or developer-signed Windows Store apps.
+This policy setting allows you to manage the installation of trusted line-of-business (LOB) or developer-signed packaged Microsoft Store apps.
 
-- If you enable this policy setting, you can install any LOB or developer-signed Windows Store app (which must be signed with a certificate chain that can be successfully validated by the local computer).
+- If you enable this policy setting, you can install any LOB or developer-signed packaged Microsoft Store app (which must be signed with a certificate chain that can be successfully validated by the local computer).
 
-- If you disable or don't configure this policy setting, you can't install LOB or developer-signed Windows Store apps.
+- If you disable or don't configure this policy setting, you can't install LOB or developer-signed packaged Microsoft Store apps.
 <!-- AllowAllTrustedApps-Description-End -->
 
 <!-- AllowAllTrustedApps-Editable-Begin -->
@@ -269,7 +269,7 @@ Allows or denies development of Microsoft Store applications and installing them
 | Name | Value |
 |:--|:--|
 | Name | AllowDevelopmentWithoutDevLicense |
-| Friendly Name | Allows development of Windows Store apps and installing them from an integrated development environment (IDE) |
+| Friendly Name | Allows development of packaged Microsoft Store apps and installing them from an integrated development environment (IDE) |
 | Location | Computer Configuration |
 | Path | Windows Components > App Package Deployment |
 | Registry Key Name | Software\Policies\Microsoft\Windows\Appx |

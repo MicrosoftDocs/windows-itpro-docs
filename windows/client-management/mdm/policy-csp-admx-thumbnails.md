@@ -1,7 +1,7 @@
 ---
 title: ADMX_Thumbnails Policy CSP
 description: Learn more about the ADMX_Thumbnails Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -95,11 +95,14 @@ File Explorer displays thumbnail images by default.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure how File Explorer displays thumbnail images or icons on network folders.
 
-File Explorer displays thumbnail images on network folders by default.
+File Explorer displays only icons and never displays thumbnail images on network folders by default.
 
-- If you enable this policy setting, File Explorer displays only icons and never displays thumbnail images on network folders.
+- If you disable this policy setting, File Explorer displays thumbnail images on network folders.
 
-- If you disable or don't configure this policy setting, File Explorer displays only thumbnail images on network folders.
+- If you enable or don't configure this policy setting, File Explorer displays only icons and never displays thumbnail images on network folders.
+
+> [!NOTE]
+> Allowing the use of thumbnail images from network folders can expose the users' computers to security risks.
 <!-- DisableThumbnailsOnNetworkFolders-Description-End -->
 
 <!-- DisableThumbnailsOnNetworkFolders-Editable-Begin -->
