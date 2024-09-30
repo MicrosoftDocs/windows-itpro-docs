@@ -1,7 +1,7 @@
 ---
 title: SmartScreen Policy CSP
 description: Learn more about the SmartScreen Area in Policy CSP.
-ms.date: 01/31/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -29,20 +29,11 @@ ms.date: 01/31/2024
 <!-- EnableAppInstallControl-OmaUri-End -->
 
 <!-- EnableAppInstallControl-Description-Begin -->
-<!-- Description-Source-ADMX -->
-App Install Control is a feature of Windows Defender SmartScreen that helps protect PCs by allowing users to install apps only from the Store. SmartScreen must be enabled for this feature to work properly.
+<!-- Description-Source-DDF-Forced -->
+Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
 
-- If you enable this setting, you must choose from the following behaviors:
-
-- Turn off app recommendations.
-
-- Show me app recommendations.
-
-- Warn me before installing apps from outside the Store.
-
-- Allow apps from Store only.
-
-- If you disable or don't configure this setting, users will be able to install apps from anywhere, including files downloaded from the Internet.
+> [!NOTE]
+> This policy will block installation only while the device is online. To block offline installation too, SmartScreen/PreventOverrideForFilesInShell and SmartScreen/EnableSmartScreenInShell policies should also be enabled. This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.
 <!-- EnableAppInstallControl-Description-End -->
 
 <!-- EnableAppInstallControl-Editable-Begin -->
@@ -110,23 +101,8 @@ App Install Control is a feature of Windows Defender SmartScreen that helps prot
 <!-- EnableSmartScreenInShell-OmaUri-End -->
 
 <!-- EnableSmartScreenInShell-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that don't appear to be suspicious.
-
-Some information is sent to Microsoft about files and programs run on PCs with this feature enabled.
-
-- If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:
-
-- Warn and prevent bypass
-- Warn.
-
-- If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs won't present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
-
-- If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen won't warn the user again for that app if the user tells SmartScreen to run the app.
-
-- If you disable this policy, SmartScreen will be turned off for all users. Users won't be warned if they try to run suspicious apps from the Internet.
-
-- If you don't configure this policy, SmartScreen will be enabled by default, but users may change their settings.
+<!-- Description-Source-DDF-Forced -->
+Allows IT Admins to configure SmartScreen for Windows.
 <!-- EnableSmartScreenInShell-Description-End -->
 
 <!-- EnableSmartScreenInShell-Editable-Begin -->
@@ -188,23 +164,8 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 <!-- PreventOverrideForFilesInShell-OmaUri-End -->
 
 <!-- PreventOverrideForFilesInShell-Description-Begin -->
-<!-- Description-Source-ADMX -->
-This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that don't appear to be suspicious.
-
-Some information is sent to Microsoft about files and programs run on PCs with this feature enabled.
-
-- If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:
-
-- Warn and prevent bypass
-- Warn.
-
-- If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs won't present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
-
-- If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen won't warn the user again for that app if the user tells SmartScreen to run the app.
-
-- If you disable this policy, SmartScreen will be turned off for all users. Users won't be warned if they try to run suspicious apps from the Internet.
-
-- If you don't configure this policy, SmartScreen will be enabled by default, but users may change their settings.
+<!-- Description-Source-DDF-Forced -->
+Allows IT Admins to control whether users can ignore SmartScreen warnings and run malicious files.
 <!-- PreventOverrideForFilesInShell-Description-End -->
 
 <!-- PreventOverrideForFilesInShell-Editable-Begin -->

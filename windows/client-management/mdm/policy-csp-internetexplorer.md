@@ -1,7 +1,7 @@
 ---
 title: InternetExplorer Policy CSP
 description: Learn more about the InternetExplorer Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1005,7 +1005,12 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowLegacyURLFields-OmaUri-End -->
 
 <!-- AllowLegacyURLFields-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy setting allows the use of some disabled functionality, such as WorkingDirectory field or pluggable protocol handling, in Internet Shortcut files.
+
+If you enable this policy, disabled functionality for Internet Shortcut files will be re-enabled.
+
+If you disable, or don't configure this policy, some functionality for Internet Shortcut files, such as WorkingDirectory field or pluggable protocol handling, will be disabled.
 <!-- AllowLegacyURLFields-Description-End -->
 
 <!-- AllowLegacyURLFields-Editable-Begin -->
@@ -1022,7 +1027,6 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowLegacyURLFields-DFProperties-End -->
 
 <!-- AllowLegacyURLFields-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -1030,6 +1034,11 @@ Note. It's recommended to configure template policy settings in one Group Policy
 | Name | Value |
 |:--|:--|
 | Name | AllowLegacyURLFields |
+| Friendly Name | Allow legacy functionality for Internet Shortcut files |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Internet Explorer\Main |
+| Registry Value Name | AllowLegacyURLFields |
 | ADMX File Name | inetres.admx |
 <!-- AllowLegacyURLFields-AdmxBacked-End -->
 
@@ -7923,13 +7932,11 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 <!-- JScriptReplacement-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies whether JScript or JScript9Legacy is loaded for MSHTML/WebOC/MSXML/Cscript based invocations.
+This policy setting specifies whether JScript or JScript9Legacy is loaded.
 
-- If you enable this policy setting, JScript9Legacy will be loaded in situations where JScript is instantiated.
+- If you enable this policy setting or not configured, JScript9Legacy will be loaded in situations where JScript is instantiated.
 
 - If you disable this policy, then JScript will be utilized.
-
-- If this policy is left unconfigured, then MSHTML will use JScript9Legacy and MSXML/Cscript will use JScript.
 <!-- JScriptReplacement-Description-End -->
 
 <!-- JScriptReplacement-Editable-Begin -->
@@ -7953,7 +7960,7 @@ This policy setting specifies whether JScript or JScript9Legacy is loaded for MS
 | Name | Value |
 |:--|:--|
 | Name | JScriptReplacement |
-| Friendly Name | Replace JScript by loading JScript9Legacy in place of JScript via MSHTML/WebOC. |
+| Friendly Name | Replace JScript by loading JScript9Legacy in place of JScript. |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer |
 | Registry Key Name | Software\Policies\Microsoft\Internet Explorer\Main |
@@ -13407,7 +13414,7 @@ If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode 
 
 If you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.
 
-For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
+For more information, see <https://go.microsoft.com/fwlink/?linkid=2220107>
 <!-- ResetZoomForDialogInIEMode-Description-End -->
 
 <!-- ResetZoomForDialogInIEMode-Editable-Begin -->
