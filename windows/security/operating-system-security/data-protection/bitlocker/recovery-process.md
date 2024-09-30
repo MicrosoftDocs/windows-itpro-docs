@@ -180,6 +180,9 @@ When a volume is unlocked using a recovery password:
 
 After the volume is unlocked, BitLocker behaves the same way, regardless of how the access was granted.
 
+> [!NOTE]
+> If you move an OS volume with a TPM protector to a different device and unlock it using a recovery protector, BitLocker will bind to the new TPM. Returning the volume to the original device will prompt for the recovery protector due to the TPM mismatch. Once unlocked using recovery protector again, the volume will re-bind to the original device.
+
 If a device experiences multiple recovery password events, an administrator should perform post-recovery analysis to determine the root cause of the recovery. Then, refresh the BitLocker platform validation to prevent entering a recovery password each time that the device starts up.
 
 ### Determine the root cause of the recovery
