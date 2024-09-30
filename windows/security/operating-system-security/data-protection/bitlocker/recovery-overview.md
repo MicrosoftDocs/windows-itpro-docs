@@ -21,6 +21,7 @@ The following list provides examples of common events that cause a device to ent
 - Docking or undocking a portable computer
 - Changes to the NTFS partition table on the disk
 - Changes to the boot manager
+- PXE booting, unless BitLocker uses the *Network Unlock* feature
 - Turning off, disabling, deactivating, or clearing the TPM
 - TPM self-test failure
 - Upgrading the motherboard to a new one with a new TPM

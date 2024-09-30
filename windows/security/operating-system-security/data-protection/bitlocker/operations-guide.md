@@ -462,6 +462,9 @@ From the **BitLocker Drive Encryption** Control Panel applet, select the OS driv
 
 ### Resume BitLocker
 
+> [!NOTE]
+> Resuming protection only works on devices that have accepted the Windows EULA.
+
 #### [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
