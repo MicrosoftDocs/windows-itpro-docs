@@ -1,15 +1,13 @@
 ---
 title: Experience Policy CSP
 description: Learn more about the Experience Area in Policy CSP.
-ms.date: 08/07/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Experience-Begin -->
 # Policy CSP - Experience
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Experience-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -484,7 +482,7 @@ Allow screen capture.
 <!-- AllowScreenRecorder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- AllowScreenRecorder-Applicability-End -->
 
 <!-- AllowScreenRecorder-OmaUri-Begin -->
@@ -494,7 +492,7 @@ Allow screen capture.
 <!-- AllowScreenRecorder-OmaUri-End -->
 
 <!-- AllowScreenRecorder-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to control whether screen recording functionality is available in the Windows Snipping Tool app.
 
 - If you disable this policy setting, screen recording functionality won't be accessible in the Windows Snipping Tool app.
@@ -531,7 +529,12 @@ This policy setting allows you to control whether screen recording functionality
 | Name | Value |
 |:--|:--|
 | Name | AllowScreenRecorder |
-| Path | Programs > AT > WindowsComponents > SnippingTool |
+| Friendly Name | Allow Screen Recorder |
+| Location | User Configuration |
+| Path | Windows Components > Snipping Tool |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\SnippingTool |
+| Registry Value Name | AllowScreenRecorder |
+| ADMX File Name | Programs.admx |
 <!-- AllowScreenRecorder-GpMapping-End -->
 
 <!-- AllowScreenRecorder-Examples-Begin -->
@@ -1681,7 +1684,7 @@ This policy setting lets you turn off cloud consumer account state content in al
 <!-- DisableTextTranslation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DisableTextTranslation-Applicability-End -->
 
 <!-- DisableTextTranslation-OmaUri-Begin -->
@@ -1887,7 +1890,7 @@ _**Turn syncing off by default but don’t disable**_
 <!-- EnableOrganizationalMessages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.4828] and later <br> ✅ Windows 11, version 22H2 with [KB5020044](https://support.microsoft.com/help/5020044) [10.0.22621.900] and later <br> ✅ Windows Insider Preview |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 22H2 with [KB5041582](https://support.microsoft.com/help/5041582) [10.0.19045.4842] and later <br> ✅ Windows 11, version 22H2 with [KB5020044](https://support.microsoft.com/help/5020044) [10.0.22621.900] and later <br> ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- EnableOrganizationalMessages-Applicability-End -->
 
 <!-- EnableOrganizationalMessages-OmaUri-Begin -->

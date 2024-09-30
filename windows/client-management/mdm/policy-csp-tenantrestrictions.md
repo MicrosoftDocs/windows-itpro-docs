@@ -1,7 +1,7 @@
 ---
 title: TenantRestrictions Policy CSP
 description: Learn more about the TenantRestrictions Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -41,9 +41,9 @@ When you enable this setting, compliant applications will be prevented from acce
 
 <https://go.microsoft.com/fwlink/?linkid=2148762>
 
-Before enabling firewall protection, ensure that a Windows Defender Application Control (WDAC) policy that correctly tags applications has been applied to the target devices. Enabling firewall protection without a corresponding WDAC policy will prevent all applications from reaching Microsoft endpoints. This firewall setting isn't supported on all versions of Windows - see the following link for more information.
+Before enabling firewall protection, ensure that an App Control for Business policy that correctly tags applications has been applied to the target devices. Enabling firewall protection without a corresponding App Control for Business policy will prevent all applications from reaching Microsoft endpoints. This firewall setting isn't supported on all versions of Windows - see the following link for more information.
 
-For details about setting up WDAC with tenant restrictions, see <https://go.microsoft.com/fwlink/?linkid=2155230>
+For details about setting up App Control with tenant restrictions, see <https://go.microsoft.com/fwlink/?linkid=2155230>
 <!-- ConfigureTenantRestrictions-Description-End -->
 
 <!-- ConfigureTenantRestrictions-Editable-Begin -->

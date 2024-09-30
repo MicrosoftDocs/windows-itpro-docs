@@ -1,7 +1,7 @@
 ---
 title: AppVirtualization Policy CSP
 description: Learn more about the AppVirtualization Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -33,6 +33,9 @@ ms.date: 01/18/2024
 <!-- AllowAppVClient-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature. Reboot is needed for disable to take effect.
+
+> [!NOTE]
+> Application Virtualization (App-V) will reach end-of-life April 2026. After that time, the App-V client will be excluded from new versions of the Windows operating system. See aka.ms/AppVDeprecation for more information.
 <!-- AllowAppVClient-Description-End -->
 
 <!-- AllowAppVClient-Editable-Begin -->
