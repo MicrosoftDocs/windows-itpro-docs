@@ -1,7 +1,7 @@
 ---
 title: Defender Policy CSP
 description: Learn more about the Defender Area in Policy CSP.
-ms.date: 06/28/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -745,7 +745,7 @@ This policy setting allows you to configure scheduled scans and on-demand (manua
 | Name | Value |
 |:--|:--|
 | Name | Scan_DisableScanningNetworkFiles |
-| Friendly Name | Scan network files |
+| Friendly Name | Configure scanning of network files |
 | Location | Computer Configuration |
 | Path | Windows Components > Microsoft Defender Antivirus > Scan |
 | Registry Key Name | Software\Policies\Microsoft\Windows Defender\Scan |

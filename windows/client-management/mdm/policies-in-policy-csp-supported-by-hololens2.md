@@ -137,7 +137,6 @@ ms.date: 02/03/2023
 - [Update/ConfigureDeadlineForFeatureUpdates](policy-csp-update.md#configuredeadlineforfeatureupdates) <sup>11</sup>
 - [Update/ConfigureDeadlineForQualityUpdates](policy-csp-update.md#configuredeadlineforqualityupdates) <sup>11</sup>
 - [Update/ConfigureDeadlineGracePeriod](policy-csp-update.md#configuredeadlinegraceperiod) <sup>11</sup>
-- [Update/ConfigureDeadlineNoAutoReboot](policy-csp-update.md#configuredeadlinenoautoreboot) <sup>11</sup>
 - [Update/DeferFeatureUpdatesPeriodInDays](policy-csp-update.md#deferfeatureupdatesperiodindays)
 - [Update/DeferQualityUpdatesPeriodInDays](policy-csp-update.md#deferqualityupdatesperiodindays)
 - [Update/ManagePreviewBuilds](policy-csp-update.md#managepreviewbuilds)

@@ -1,7 +1,7 @@
 ---
 title: DeviceLock Policy CSP
 description: Learn more about the DeviceLock Area in Policy CSP.
-ms.date: 08/05/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -10,8 +10,6 @@ ms.date: 08/05/2024
 # Policy CSP - DeviceLock
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- DeviceLock-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -25,7 +23,7 @@ ms.date: 08/05/2024
 <!-- AccountLockoutPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- AccountLockoutPolicy-Applicability-End -->
 
 <!-- AccountLockoutPolicy-OmaUri-Begin -->
@@ -64,7 +62,7 @@ Account lockout threshold - This security setting determines the number of faile
 <!-- AllowAdministratorLockout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- AllowAdministratorLockout-Applicability-End -->
 
 <!-- AllowAdministratorLockout-OmaUri-Begin -->
@@ -329,7 +327,7 @@ Determines the type of PIN or password required. This policy only applies if the
 <!-- ClearTextPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ClearTextPassword-Applicability-End -->
 
 <!-- ClearTextPassword-OmaUri-Begin -->
@@ -685,7 +683,7 @@ The number of authentication failures allowed before the device will be wiped. A
 <!-- MaximumPasswordAge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- MaximumPasswordAge-Applicability-End -->
 
 <!-- MaximumPasswordAge-OmaUri-Begin -->
@@ -1025,7 +1023,7 @@ This security setting determines the period of time (in days) that a password mu
 <!-- MinimumPasswordLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- MinimumPasswordLength-Applicability-End -->
 
 <!-- MinimumPasswordLength-OmaUri-Begin -->
@@ -1078,7 +1076,7 @@ This security setting determines the least number of characters that a password 
 <!-- MinimumPasswordLengthAudit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- MinimumPasswordLengthAudit-Applicability-End -->
 
 <!-- MinimumPasswordLengthAudit-OmaUri-Begin -->
@@ -1128,7 +1126,7 @@ This security setting determines the minimum password length for which password 
 <!-- PasswordComplexity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- PasswordComplexity-Applicability-End -->
 
 <!-- PasswordComplexity-OmaUri-Begin -->
@@ -1188,7 +1186,7 @@ Complexity requirements are enforced when passwords are changed or created.
 <!-- PasswordHistorySize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- PasswordHistorySize-Applicability-End -->
 
 <!-- PasswordHistorySize-OmaUri-Begin -->
@@ -1360,7 +1358,7 @@ If you enable this setting, users will no longer be able to modify slide show se
 <!-- RelaxMinimumPasswordLengthLimits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- RelaxMinimumPasswordLengthLimits-Applicability-End -->
 
 <!-- RelaxMinimumPasswordLengthLimits-OmaUri-Begin -->
