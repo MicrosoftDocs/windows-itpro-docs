@@ -13,7 +13,7 @@ jobs:
   stale:
     uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-Stale.yml@workflows-prod
     with:
-      RunDebug: true
+      RunDebug: false
       RepoVisibility: ${{ github.repository_visibility }}
     secrets:
       AccessToken: ${{ secrets.GITHUB_TOKEN }}
