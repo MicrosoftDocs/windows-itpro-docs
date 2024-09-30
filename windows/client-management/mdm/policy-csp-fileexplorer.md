@@ -1,7 +1,7 @@
 ---
 title: FileExplorer Policy CSP
 description: Learn more about the FileExplorer Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -138,7 +138,7 @@ When This PC location is restricted, give the user the option to enumerate and n
 
 <!-- DisableGraphRecentItems-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Turning off this setting will prevent File Explorer from requesting cloud file metadata and displaying it in the homepage and other views in File Explorer. Any insights and files available based on account activity will be stopped in views such as Recent, Recommended, Favorites, etc.
+Turning off this setting will prevent File Explorer from requesting cloud file metadata and displaying it in the homepage and other views in File Explorer. Any insights and files available based on account activity will be stopped in views such as Recent, Recommended, Favorites, Details pane, etc.
 <!-- DisableGraphRecentItems-Description-End -->
 
 <!-- DisableGraphRecentItems-Editable-Begin -->

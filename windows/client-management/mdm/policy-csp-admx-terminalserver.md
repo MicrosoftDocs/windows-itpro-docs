@@ -1,7 +1,7 @@
 ---
 title: ADMX_TerminalServer Policy CSP
 description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -3585,7 +3585,7 @@ This policy setting allows you to specify which protocols can be used for Remote
 
 - If you enable this policy setting, you must specify if you would like RDP to use UDP.
 
-You can select one of the following options: "Use both UDP and TCP", "Use only TCP" or "Use either UDP or TCP (default)".
+You can select one of the following options: "Use either UDP or TCP (default)" or "Use only TCP".
 
 If you select "Use either UDP or TCP" and the UDP connection is successful, most of the RDP traffic will use UDP.
 

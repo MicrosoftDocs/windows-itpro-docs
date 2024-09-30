@@ -1,7 +1,7 @@
 ---
 title: ADMX_ControlPanelDisplay Policy CSP
 description: Learn more about the ADMX_ControlPanelDisplay Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1351,7 +1351,7 @@ Specifies which theme file is applied to the computer the first time a user logs
 |:--|:--|
 | Name | CPL_Personalization_SetTheme |
 | Friendly Name | Load a specific theme |
-| Location | User Configuration |
+| Location | Computer and User Configuration |
 | Path | Control Panel > Personalization |
 | Registry Key Name | Software\Policies\Microsoft\Windows\Personalization |
 | ADMX File Name | ControlPanelDisplay.admx |

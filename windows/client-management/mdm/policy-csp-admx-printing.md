@@ -1,7 +1,7 @@
 ---
 title: ADMX_Printing Policy CSP
 description: Learn more about the ADMX_Printing Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -749,7 +749,7 @@ This preference allows you to change default printer management.
 
 <!-- MXDWUseLegacyOutputFormatMSXPS-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Microsoft XPS Document Writer (MXDW) generates OpenXPS (*.oxps) files by default in Windows 10, Windows 10 and Windows Server 2022.
+Microsoft XPS Document Writer (MXDW) generates OpenXPS (*.oxps) files by default in Windows 10, Windows 10 and Windows Server 2025.
 
 - If you enable this group policy setting, the default MXDW output format is the legacy Microsoft XPS (*.xps).
 
