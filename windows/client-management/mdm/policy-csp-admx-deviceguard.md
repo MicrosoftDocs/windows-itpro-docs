@@ -14,7 +14,7 @@ ms.date: 09/27/2024
 <!-- ADMX_DeviceGuard-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!WARNING]
-> Group Policy-based deployment of Windows Defender Application Control policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for [policy deployment](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+> Group Policy-based deployment of App Control for Business policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for [policy deployment](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 <!-- ADMX_DeviceGuard-Editable-End -->
 
 <!-- ConfigCIPolicy-Begin -->
