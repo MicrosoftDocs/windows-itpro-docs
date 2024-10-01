@@ -153,7 +153,7 @@ There's a new implementation of [GDI region](/windows/win32/gdi/regions) in `win
 ### Personal Data Encryption (PDE) for folders
 
 PDE for folders is a security feature where the contents of the known Windows folders (Documents, Desktop and Pictures) are protected using a user authenticated encryption mechanism. Windows Hello is the user authentication used to provide the keys for encrypting user data in the folders. PDE for folders can be [enabled from a policy in Intune](/mem/intune/protect/endpoint-security-disk-encryption-policy). IT admins can select all of the folders, or a subset, then apply the policy to a group of users in their organization.
-PDE for Folders settings is available on Intune under **Endpoint Security** > **Disk encryption**. <!-- --- this page will be updated /mem/intune/protect/endpoint-security-disk-encryption-policy PDE folders is also in settings catalog as well -->
+PDE for Folders settings is available on Intune under **Endpoint Security** > **Disk encryption**.
 
 For more information about PDE, see [PDE overview](/windows/security/operating-system-security/data-protection/personal-data-encryption)
 
