@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: reference
 ms.subservice: itpro-fundamentals
-ms.date: 03/11/2024
+ms.date: 08/23/2024
 ms.collection: 
   - highpri
   - tier1
@@ -38,6 +38,8 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Support removed |
 | ----------- | --------------------- | ------ |
+| WordPad <!--8254696, 8494641--> |  WordPad is removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. We recommend Microsoft Word for rich text documents like .doc and .rtf and Windows Notepad for plain text documents like .txt.  If you're a developer and need information about the affected binaries, see [Resources for deprecated features](deprecated-features-resources.md#wordpad). | October 1, 2024 |
+| Alljoyn <!--8396030-->| Microsoft's implementation of AllJoyn, which included the [Windows.Devices.AllJoyn API namespace](/uwp/api/windows.devices.alljoyn), a [Win32 API](/windows/win32/api/_alljoyn/), a [management configuration service provider (CSP)](/windows/client-management/mdm/alljoynmanagement-csp), and an [Alljoyn Router Service](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#alljoyn-router-service) is retired. [AllJoyn](https://openconnectivity.org/technology/reference-implementation/alljoyn/), sponsored by AllSeen Alliance, was an open source discovery and communication protocol for Internet of Things scenarios such as turning on/off lights or reading temperatures. AllSeen Alliance promoted the AllJoyn project from 2013 until 2016 when it merged with the Open Connectivity Foundation (OCF), the sponsors of [Iotivity.org](https://iotivity.org/), another protocol for Internet of Things scenarios. Customers should refer to the [Iotivity.org](https://iotivity.org/) website for alternatives such as [Iotivity Lite](https://github.com/iotivity/iotivity-lite) or [Iotivity](https://github.com/iotivity/iotivity). | October 1, 2024 |
 | Update Compliance | Update Compliance, a cloud-based service for the Windows client, is retired. This service has been replaced with [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), which provides reporting on client compliance with Microsoft updates from the Azure portal.<!--7748874--> | March 31, 2023 |
 | Store uploader tool <!--7297297-->| Support has been removed for the store uploader tool. This tool is included in the Windows SDK only. The endpoint for the tool has been removed from service and the files will be removed from the SDK in the next release. | November 2022 |
 | Internet Explorer 11 | The Internet Explorer 11 desktop application is [retired and out of support](https://aka.ms/IEJune15Blog) as of June 15, 2022 for certain versions of Windows 10. You can still access older, legacy sites that require Internet Explorer with Internet Explorer mode in Microsoft Edge. [Learn how](https://aka.ms/IEmodewebsite). The Internet Explorer 11 desktop application will progressively redirect to the faster, more secure Microsoft Edge browser, and will ultimately be disabled via Windows Update. [Disable IE today](/deployedge/edge-ie-disable-ie11). | June 15, 2022 |

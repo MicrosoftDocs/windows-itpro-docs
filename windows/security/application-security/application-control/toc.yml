@@ -1,10 +1,10 @@
 items:
 - name: Smart App Control
-  href: windows-defender-application-control/wdac.md
-- name: Windows Defender Application Control
-  href: windows-defender-application-control/wdac.md
-- name: Windows Defender Application Control and virtualization-based protection of code integrity
-  href: introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+  href: app-control-for-business/appcontrol.md
+- name: App Control for Business
+  href: app-control-for-business/appcontrol.md
+- name: App Control for Business and virtualization-based protection of code integrity
+  href: introduction-to-virtualization-based-security-and-appcontrol.md
 - name: User Account Control (UAC)
   items:
   - name: Overview
@@ -14,5 +14,4 @@ items:
   - name: UAC settings and configuration
     href: user-account-control/settings-and-configuration.md
 - name: Microsoft Vulnerable Driver Blocklist
-  href: windows-defender-application-control/design/microsoft-recommended-driver-block-rules.md
-  
+  href: app-control-for-business/design/microsoft-recommended-driver-block-rules.md

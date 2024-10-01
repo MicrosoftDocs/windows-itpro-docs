@@ -54,7 +54,9 @@ Use the **Virtualization Based Technology** > **Hypervisor Enforced Code Integri
 1. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.
 1. Double-click **Turn on Virtualization Based Security**.
 1. Select **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled without UEFI lock**. Only select **Enabled with UEFI lock** if you want to prevent memory integrity from being disabled remotely or by policy update. Once enabled with UEFI lock, you must have access to the UEFI BIOS menu to turn off Secure Boot if you want to turn off memory integrity.
+
    ![Enable memory integrity using Group Policy.](images/enable-hvci-gp.png)
+
 1. Select **Ok** to close the editor.
 
 To apply the new policy on a domain-joined computer, either restart or run `gpupdate /force` in an elevated Command Prompt.
@@ -73,7 +75,7 @@ Set the following registry keys to enable memory integrity. These keys provide s
 
 Recommended settings (to enable memory integrity without UEFI Lock):
 
-```console
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 0 /f
@@ -85,55 +87,55 @@ If you want to customize the preceding recommended settings, use the following r
 
 **To enable VBS only (no memory integrity)**
 
-```console
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS and require Secure boot only (value 1)**
 
-```console
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS with Secure Boot and DMA protection (value 3)**
 
-```console
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
 ```
 
 **To enable VBS without UEFI lock (value 0)**
 
-```console
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
 **To enable VBS with UEFI lock (value 1)**
 
-```console
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 1 /f
 ```
 
 **To enable memory integrity**
 
-```console
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 1 /f
 ```
 
 **To enable memory integrity without UEFI lock (value 0)**
 
-```console
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
 **To enable memory integrity with UEFI lock (value 1)**
 
-```console
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS (and memory integrity) in mandatory mode**
 
-```console
+```cmd
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Mandatory" /t REG_DWORD /d 1 /f
 ```
 
@@ -143,25 +145,25 @@ The **Mandatory** setting prevents the OS loader from continuing to boot in case
 > Special care should be used before enabling this mode, since, in case of any failure of the virtualization modules, the system will refuse to boot.
 
 **To gray out the memory integrity UI and display the message "This setting is managed by your administrator"**
-```console
+```cmd
 reg delete HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /f
 ```
 
 **To let memory integrity UI behave normally (Not grayed out)**
-```console
+```cmd
 reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity /v "WasEnabledBy" /t REG_DWORD /d 2 /f
 ```
 
-### Enable memory integrity using Windows Defender Application Control (WDAC)
+### Enable memory integrity using App Control for Business
 
-You can use WDAC policy to turn on memory integrity using any of the following techniques:
+You can use App Control policy to turn on memory integrity using any of the following techniques:
 
-1. Use the [WDAC Wizard](https://aka.ms/wdacwizard) to create or edit your WDAC policy and select the option **Hypervisor-protected Code Integrity** on the **Policy Rules** page of the Wizard.
+1. Use the [App Control Wizard](https://aka.ms/wdacwizard) to create or edit your App Control policy and select the option **Hypervisor-protected Code Integrity** on the **Policy Rules** page of the Wizard.
 2. Use the [Set-HVCIOptions](/powershell/module/configci/set-hvcioptions) PowerShell cmdlet.
-3. Edit your WDAC policy XML and modify the value set for the `<HVCIOptions>` element.
+3. Edit your App Control policy XML and modify the value set for the `<HVCIOptions>` element.
 
 > [!NOTE]
-> If your WDAC policy is set to turn memory integrity on, it will be turned on even if the policy is in audit mode.
+> If your App Control policy is set to turn memory integrity on, it will be turned on even if the policy is in audit mode.
 
 ### Validate enabled VBS and memory integrity features
 
@@ -269,7 +271,7 @@ Another method to determine the available and enabled VBS features is to run msi
     2. Then, boot to Windows RE on the affected computer, see [Windows RE Technical Reference](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference).
     3. After logging in to Windows RE, set the memory integrity registry key to off:
 
-        ```console
+        ```cmd
         reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f
         ```
 

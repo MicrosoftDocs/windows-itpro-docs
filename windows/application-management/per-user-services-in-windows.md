@@ -4,7 +4,7 @@ description: Learn about per-user services, how to change the template service s
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 12/22/2023
+ms.date: 10/01/2024
 ms.topic: how-to
 ms.service: windows-client
 ms.subservice: itpro-apps
@@ -99,7 +99,7 @@ $services = Get-Service
 foreach ( $service in $services ) {
   # For each specific service, check if the service type property includes the 64 bit using the bitwise AND operator (-band).
   # If the result equals the flag value, then the service is a per-user service.
-  if ( ( $service.ServiceType -band $flag ) -eq $flag ) { 
+  if ( ( $service.ServiceType -band $flag ) -eq $flag ) {
     # When a per-user service is found, then add that service object to the results array.
     $serviceList += $service
   }
@@ -229,14 +229,14 @@ If you can't use group policy preferences to manage the per-user services, you c
 
 1. The following example includes multiple commands that disable the specified Windows services by changing their **Start** value in the Windows Registry to `4`:
 
-```cmd
-REG.EXE ADD HKLM\System\CurrentControlSet\Services\CDPUserSvc /v Start /t REG_DWORD /d 4 /f
-REG.EXE ADD HKLM\System\CurrentControlSet\Services\OneSyncSvc /v Start /t REG_DWORD /d 4 /f
-REG.EXE ADD HKLM\System\CurrentControlSet\Services\PimIndexMaintenanceSvc /v Start /t REG_DWORD /d 4 /f
-REG.EXE ADD HKLM\System\CurrentControlSet\Services\UnistoreSvc /v Start /t REG_DWORD /d 4 /f
-REG.EXE ADD HKLM\System\CurrentControlSet\Services\UserDataSvc /v Start /t REG_DWORD /d 4 /f
-REG.EXE ADD HKLM\System\CurrentControlSet\Services\WpnUserService /v Start /t REG_DWORD /d 4 /f
-```
+    ```cmd
+    REG.EXE ADD HKLM\System\CurrentControlSet\Services\CDPUserSvc /v Start /t REG_DWORD /d 4 /f
+    REG.EXE ADD HKLM\System\CurrentControlSet\Services\OneSyncSvc /v Start /t REG_DWORD /d 4 /f
+    REG.EXE ADD HKLM\System\CurrentControlSet\Services\PimIndexMaintenanceSvc /v Start /t REG_DWORD /d 4 /f
+    REG.EXE ADD HKLM\System\CurrentControlSet\Services\UnistoreSvc /v Start /t REG_DWORD /d 4 /f
+    REG.EXE ADD HKLM\System\CurrentControlSet\Services\UserDataSvc /v Start /t REG_DWORD /d 4 /f
+    REG.EXE ADD HKLM\System\CurrentControlSet\Services\WpnUserService /v Start /t REG_DWORD /d 4 /f
+    ```
 
 #### Example 2: Use the Registry Editor user interface to edit the registry
 
@@ -248,7 +248,7 @@ REG.EXE ADD HKLM\System\CurrentControlSet\Services\WpnUserService /v Start /t RE
 
 1. Change the **Value data** to `4`.
 
-:::image type="content" source="media/regedit-change-service-startup-type.png" alt-text="Screenshot of the Registry Editor open to HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CDPSvc and highlighting the Start value set to 4.":::
+    :::image type="content" source="media/regedit-change-service-startup-type.png" alt-text="Screenshot of the Registry Editor open to HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CDPSvc and highlighting the Start value set to 4.":::
 
 #### Example 3: Prevent the creation of per-user services
 

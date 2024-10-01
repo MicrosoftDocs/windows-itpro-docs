@@ -105,7 +105,6 @@ For more information about implementing Credential Guard, see the following reso
 - [Security considerations for Original Equipment Manufacturers](/windows-hardware/design/device-experiences/oem-security-considerations)
 - [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337)
 
-
 ### AppLocker management
 
 AppLocker in Windows Enterprise can be managed by using Group Policy. Group Policy requires having AD DS and that the Windows Enterprise devices are joined to an AD DS domain. AppLocker rules can be created by using Group Policy. The AppLocker rules can then be targeted to the appropriate devices.

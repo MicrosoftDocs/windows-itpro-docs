@@ -15,7 +15,7 @@ metadata:
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
-  ms.date: 08/27/2024
+  ms.date: 10/01/2024
 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -25,13 +25,13 @@ highlightedContent:
     itemType: get-started
     url: /windows/whats-new/windows-11-overview
 
-  - title: Windows 11, version 23H2
+  - title: Windows 11, version 24H2
     itemType: whats-new
-    url: /windows/whats-new/whats-new-windows-11-version-23h2
+    url: /windows/whats-new/whats-new-windows-11-version-24h2
 
-  - title: Windows 11, version 23H2 group policy settings reference
+  - title: Windows 11, version 24H2 group policy settings reference
     itemType: download
-    url: https://www.microsoft.com/download/details.aspx?id=105668
+    url: https://www.microsoft.com/download/details.aspx?id=106255
 
   - title: Windows administrative tools
     itemType: concept
@@ -73,7 +73,7 @@ conceptualContent:
 
     - title: Privacy in Windows
       links:
-      - url: /windows/privacy/required-diagnostic-events-fields-windows-11-22h2
+      - url: /windows/privacy/required-diagnostic-events-fields-windows-11-24h2
         itemType: reference
         text: Windows 11 required diagnostic data
       - url: /windows/privacy/configure-windows-diagnostic-data-in-your-organization

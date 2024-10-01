@@ -8,7 +8,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 02/29/2024
+ms.date: 10/01/2024
 ms.topic: reference
 ms.collection: privacy-windows
 ---
@@ -28,6 +28,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
+- [Required diagnostic events and fields for Windows 11, version 24H2](required-diagnostic-events-fields-windows-11-24H2.md)
 - [Required diagnostic events and fields for Windows 11, version 21H2](required-windows-11-diagnostic-events-and-fields.md)
 - [Required diagnostic events and fields for Windows 10, versions 22H2 and 21H2](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
@@ -127,6 +128,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser binary generating the events.
+
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
 
@@ -780,6 +782,7 @@ The following fields are available:
 
 - **AppraiserVersion**  Appraiser version.
 
+
 ### Microsoft.Windows.Appraiser.General.SystemProcessorPrefetchWAdd
 
 This event sends data indicating whether the system supports the PrefetchW CPU requirement, to help keep Windows up to date.
@@ -1309,7 +1312,6 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
-
 ## Common data fields
 
 ### Ms.Device.DeviceInventoryChange
@@ -1725,7 +1727,7 @@ The following fields are available:
 
 ### Microsoft.Windows.HangReporting.AppHangEvent
 
-This event sends data about hangs for both native and managed applications, to help keep Windows up to date. It doesn't contain any Watson bucketing information. The bucketing information is recorded in a Windows Error Reporting (WER) event that is generated when the WER client reports the hang to the Watson service, and the WER event will contain the same ReportID (see field 13 of hang event, field 19 of WER event) as the hang event for the hang being reported. AppHang is reported only on PC devices. It handles classic Win32 hangs and is emitted only once per report. Some behaviors that may be perceived by a user as a hang are reported by app managers (e.g. PLM/RM/EM) as Watson Generics and will not produce AppHang events.
+This event sends data about hangs for both native and managed applications, to help keep Windows up to date. It doesn't contain any Watson bucketing information. The bucketing information is recorded in a Windows Error Reporting (WER) event that is generated when the WER client reports the hang to the Watson service, and the WER event will contain the same ReportID (see field 13 of hang event, field 19 of WER event) as the hang event for the hang being reported. AppHang is reported only on PC devices. It handles classic Win32 hangs and is emitted only once per report. Some behaviors that may be perceived by a user as a hang are reported by app managers (e.g. PLM/RM/EM) as Watson Generics and won't produce AppHang events.
 
 The following fields are available:
 
@@ -1750,31 +1752,6 @@ The following fields are available:
 
 
 ## Holographic events
-
-### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Entered
-
-This event sends data indicating the start of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **SessionID**  Unique value for each attempt.
-- **TargetAsId**  The sequence number for the process.
-- **windowInstanceId**  Unique value for each window instance.
-
-
-### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Leave
-
-This event sends data indicating the end of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **EventHistory**  Unique number of event history.
-- **ExternalComponentState**  State of external component.
-- **LastEvent**  Unique number of last event.
-- **SessionID**  Unique value for each attempt.
-- **TargetAsId**  The sequence number for the process.
-- **windowInstanceId**  Unique value for each window instance.
-
 
 ### Microsoft.Windows.Analog.Spectrum.TelemetryHolographicSpaceCreated
 
@@ -2247,6 +2224,22 @@ The following fields are available:
 - **requestUid**  A randomly-generated (uniformly distributed) GUID, corresponding to the Omaha user. Each request attempt SHOULD have (with high probability) a unique request id. Default: ''.
 
 
+### Microsoft.Edge.Crashpad.HangEvent
+
+This event sends simple Product and Service Performance data on a hanging/frozen Microsoft Edge browser process to help mitigate future instances of the hang.
+
+The following fields are available:
+
+- **app_name**  The name of the hanging process.
+- **app_session_guid**  Encodes the boot session, process, and process start time.
+- **app_version**  The version of the hanging process.
+- **client_id_hash**  Hash of the browser client id to help identify the installation.
+- **etag**  Identifier to help identify running browser experiments.
+- **hang_source**  Identifies how the hang was detected.
+- **process_type**  The type of the hanging browser process, for example, gpu-process, renderer, etc.
+- **stack_hash**  A hash of the hanging stack. Currently not used or set to zero.
+
+
 ## OneSettings events
 
 ### Microsoft.Windows.OneSettingsClient.Status
@@ -2273,105 +2266,29 @@ The following fields are available:
 
 ## Other events
 
-### Microsoft.Edge.Crashpad.HangEvent
+### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Entered
 
-This event sends simple Product and Service Performance data on a hanging/frozen Microsoft Edge browser process to help mitigate future instances of the hang.
-
-The following fields are available:
-
-- **app_name**  The name of the hanging process.
-- **app_session_guid**  Encodes the boot session, process, and process start time.
-- **app_version**  The version of the hanging process.
-- **client_id_hash**  Hash of the browser client id to help identify the installation.
-- **etag**  Identifier to help identify running browser experiments.
-- **hang_source**  Identifies how the hang was detected.
-- **process_type**  The type of the hanging browser process, for example, gpu-process, renderer, etc.
-- **stack_hash**  A hash of the hanging stack. Currently not used or set to zero.
-
-
-### Microsoft.Gaming.Critical.Error
-
-Common error event used by the Gaming Telemetry Library to provide centralized monitoring for critical errors logged by callers using the library.
+This event sends data indicating the start of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
-- **callStack**  List of active subroutines running during error occurrence.
-- **componentName**  Friendly name meant to represent what feature area this error should be attributed to. Used for aggregations and pivots of data.
-- **customAttributes**  List of custom attributes.
-- **errorCode**  Error code.
-- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
-- **featureName**  Friendly name meant to represent which feature this should be attributed to.
-- **identifier**  Error identifier.
-- **message**  Error message.
-- **properties**  List of properties attributed to the error.
+- **SessionID**  Unique value for each attempt.
+- **TargetAsId**  The sequence number for the process.
+- **windowInstanceId**  Unique value for each window instance.
 
-### Microsoft.Gaming.Critical.ProviderRegistered
 
-Indicates that a telemetry provider has been registered with the Gaming Telemetry Library.
+### Microsoft.Windows.Analog.HydrogenCompositor.ExclusiveMode_Leave
+
+This event sends data indicating the end of augmented reality application experience. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
-- **providerNamespace**  The telemetry Namespace for the registered provider.
-
-### Microsoft.Gaming.OOBE.HDDBackup
-
-This event describes whether an External HDD back up has been found.
-
-The following fields are available:
-
-- **backupVersion**  version number of backup.
-- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
-- **hasConsoleSettings**  Indicates whether the console settings stored.
-- **hasUserSettings**  Indicates whether the user settings stored.
-- **hasWirelessProfile**  Indicates whether the wireless profile stored.
-- **hddBackupFound**  Indicates whether hdd backup is found.
-- **osVersion**  Operating system version.
-
-### Microsoft.Gaming.OOBE.OobeComplete
-
-This event is triggered when OOBE activation is complete.
-
-The following fields are available:
-
-- **allowAutoUpdate**  Allows auto update.
-- **allowAutoUpdateApps**  Allows auto update for apps.
-- **appliedTransferToken**  Applied transfer token.
-- **connectionType**  Connection type.
-- **curSessionId**  Current session id.
-- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
-- **instantOn**  Instant on.
-- **moobeAcceptedState**  Moobe accepted state.
-- **phaseOneElapsedTimeMs**  Total elapsed time in milliseconds for phase 1.
-- **phaseOneVersion**  Version of phase 1.
-- **phaseTwoElapsedTimeMs**  Total elapsed time in milliseconds for phase 2.
-- **phaseTwoVersion**  Version of phase 2.
-- **systemUpdateRequired**  Indicates whether a system update required.
-- **totalElapsedTimeMs**  Total elapsed time in milliseconds of all phases.
-- **usedCloudBackup**  Indicates whether cloud backup is used.
-- **usedHDDBackup**  Indicates whether HDD backup is used.
-- **usedOffConsole**  Indicates whether off console is used.
-
-
-### Microsoft.Gaming.OOBE.SessionStarted
-
-This event is sent at the start of OOBE session.
-
-The following fields are available:
-
-- **customAttributes**  customAttributes.
-- **extendedData**  extendedData.
-
-### Microsoft.Surface.Mcu.Prod.CriticalLog
-
-Error information from Surface device firmware.
-
-The following fields are available:
-
-- **CrashLog**  MCU crash log
-- **criticalLogSize** Log size
-- **CUtility::GetTargetNameA(target)**  Product identifier.
-- **productId**  Product identifier
-- **uniqueId**  Correlation ID that can be used with Watson to get more details about the failure.
+- **EventHistory**  Unique number of event history.
+- **ExternalComponentState**  State of external component.
+- **LastEvent**  Unique number of last event.
+- **SessionID**  Unique value for each attempt.
+- **TargetAsId**  The sequence number for the process.
+- **windowInstanceId**  Unique value for each window instance.
 
 
 ### Microsoft.Windows.Defender.Engine.Maps.Heartbeat
@@ -2409,6 +2326,7 @@ The following fields are available:
 - **Action**  Action string indicating place of failure
 - **hr**  Return HRESULT code
 
+
 ### Microsoft.Windows.Security.SBServicing.ApplySecureBootUpdateStarted
 
 Event that indicates secure boot update has started.
@@ -2417,22 +2335,6 @@ The following fields are available:
 
 - **AvailableUpdates**  Number of available secure boot updates.
 - **SecureBootUpdateCaller**  Enum value indicating if this is a servicing or an upgrade.
-
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
-
-This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantStateDownloading**  True at the start Downloading.
-- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
-- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
-- **UpdateAssistantStateInstalling**  True at the start of Installing.
-- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 
 ### MicrosoftWindowsCodeIntegrityTraceLoggingProvider.CodeIntegrityHvciSysprepHvciAlreadyEnabled
@@ -2670,6 +2572,19 @@ The following fields are available:
 - **Ver**  Schema version.
 
 
+### Microsoft.Surface.Mcu.Prod.CriticalLog
+
+Error information from Surface device firmware.
+
+The following fields are available:
+
+- **CrashLog**  MCU crash log
+- **criticalLogSize** Log size
+- **CUtility::GetTargetNameA(target)**  Product identifier.
+- **productId**  Product identifier
+- **uniqueId**  Correlation ID that can be used with Watson to get more details about the failure.
+
+
 ### Microsoft.Surface.SystemReset.Prod.ResetCauseEventV2
 
 This event sends reason for SAM, PCH and SoC reset. The data collected with this event is used to keep Windows performing properly.
@@ -2708,6 +2623,24 @@ The following fields are available:
 - **RetryCount**  The number of attempted installations (retries), reported by the driver software key.
 - **Status**  The status returned to the PnP (Plug-and-Play) manager.
 - **UpdateAttempted**  Indicates if installation of the current update has been attempted before.
+
+
+## Update Assistant events
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
+
+This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantStateDownloading**  True at the start Downloading.
+- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
+- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
+- **UpdateAssistantStateInstalling**  True at the start of Installing.
+- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 
 ## Update events
@@ -3574,7 +3507,7 @@ The following fields are available:
 - **flightMetadata**  Contains the FlightId and the build being flighted.
 - **objectId**  Unique value for each Update Agent mode.
 - **relatedCV**  Correlation vector value generated from the latest USO scan.
-- **result**  Result of the initialize phase of the update. 0 = Succeeded, 1 = Failed, 2 = Cancelled, 3 = Blocked, 4 = BlockCancelled.
+- **result**  Result of the initialize phase of the update. 0 = Succeeded, 1 = Failed, 2 = Canceled, 3 = Blocked, 4 = BlockCancelled.
 - **scenarioId**  The scenario ID. Example: MobileUpdate, DesktopLanguagePack, DesktopFeatureOnDemand, or DesktopDriverUpdate.
 - **sessionData**  Contains instructions to update agent for processing FODs and DUICs (Null for other scenarios).
 - **sessionId**  Unique value for each Update Agent mode attempt.
@@ -3758,6 +3691,3 @@ The following fields are available:
 - **SessionId**  The UpdateAgent “SessionId” value.
 - **UpdateId**  Unique identifier for the Update.
 - **WuId**  Unique identifier for the Windows Update client.
-
-
-
