@@ -69,6 +69,8 @@ To configure active hours using Group Policy, go to **Computer Configuration\Adm
 
 ![Use Group Policy to configure active hours.](images/waas-active-hours-policy.png)
 
+Note:  The max active hours length for Windows 10 1607 and Windows Server 2016 is 12.  Later versions support max active hours length of 18
+
 ### Configuring active hours with MDM
 
 MDM uses the [Update/ActiveHoursStart and Update/ActiveHoursEnd](/windows/client-management/mdm/policy-configuration-service-provider#Update_ActiveHoursEnd)  and [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-configuration-service-provider#update-activehoursmaxrange) settings in the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) to configure active hours.
