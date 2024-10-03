@@ -42,12 +42,12 @@ These policies control the minimum target version of Windows that a device is me
 
 You can see the following default policies created by the service in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431):
 
-| Policy name | Phase mapping | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch - DSS Policy [Test] | Phase 1 | Windows 10 21H2 | Make update available as soon as possible | May 9, 2023  | N/A | N/A | June 11, 2024 |
-| Windows Autopatch - DSS Policy [First] | Phase 2 | Windows 10 21H2 | Make update available as soon as possible | May 16, 2023  | N/A | N/A | June 11, 2024 |
-| Windows Autopatch - DSS Policy [Fast] | Phase 3 | Windows 10 21H2 | Make update available as soon as possible | May 23, 2023  | N/A | N/A | June 11, 2024 |
-| Windows Autopatch - DSS Policy [Broad] | Phase 4 | Windows 10 21H2 | Make update available as soon as possible | May 30, 2023  | N/A | N/A | June 11, 2024 |
+| Policy name | Phase mapping | Feature update version | Rollout options | Support end date |
+| ----- | ----- | ----- | ----- | ----- |
+| Windows Autopatch - DSS Policy [Test] | Phase 1 | Windows 10 22H2 | Make update available as soon as possible | October 14, 2025 |
+| Windows Autopatch - DSS Policy [First] | Phase 2 | Windows 10 22H2 | Make update available as soon as possible | October 14, 2025 |
+| Windows Autopatch - DSS Policy [Fast] | Phase 3 | Windows 10 22H2 | Make update available as soon as possible | October 14, 2025 |
+| Windows Autopatch - DSS Policy [Broad] | Phase 4 | Windows 10 22H2 | Make update available as soon as possible | October 14, 2025 |
 
 > [!NOTE]
 > Gradual rollout settings aren't configured in the default Windows Update feature policy. If the date of the final group availability is changed to a past date, all remaining devices are offered the update as soon as possible. For more information, see [rollout options for Windows Updates in Microsoft Intune](/mem/intune/protect/windows-update-rollout-options#make-updates-available-gradually).
@@ -56,9 +56,9 @@ You can see the following default policies created by the service in the [Micros
 
 Windows Autopatch configures the values for its global Windows feature update policy. See the following default policies created by the service in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431):
 
-| Policy name | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch - Global DSS Policy [Test] | Windows 10 21H2 | Make update available as soon as possible | N/A  | N/A | N/A | June 11, 2024 |
+| Policy name | Feature update version | Rollout options | Support end date |
+| ----- | ----- | ----- | ----- |
+| Windows Autopatch - Global DSS Policy [Test] | Windows 10 22H2 | Make update available as soon as possible | October 14, 2025 |
 
 > [!NOTE]
 > Gradual rollout settings aren't configured in the default Windows Update feature policy. If the date of the final group availability is changed to be a past date, all remaining devices are offered the update as soon as possible. For more information, see [rollout options for Windows Updates in Microsoft Intune](/mem/intune/protect/windows-update-rollout-options#make-updates-available-gradually).
@@ -101,11 +101,11 @@ These policies can be viewed in the [Microsoft Intune admin center](https://go.m
 
 The following table is an example of the Windows feature update policies that were created for phases within a release:
 
-| Policy name | Feature update version | Rollout options | First deployment date| Final deployment date availability | Day between groups | Support end date |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch - DSS Policy - My feature update release - Phase 1  | Windows 10 21H2 | Make update available as soon as possible | April 24, 2023 | April 24, 2023 | N/A | June 11, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release - Phase 2  | Windows 10 21H2 | Make update available as soon as possible | June 26, 2023 | July 17, 2023 | 7 | June 11, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release - Phase 3 | Windows 10 21H2 | Make update available as soon as possible | July 24, 2023 | August 14, 2023 | 7 | June 11, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release - Phase 4  | Windows 10 21H2 | Make update available as soon as possible | August 28, 2023 | September 10, 2023 | 7 | June 11, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release - Phase 5  | Windows 10 21H2 | Make update available as soon as possible | September 25, 2023 | October 16, 2023 | 7 | June 11, 2024 |
+| Policy name | Feature update version | Rollout options| Day between groups | Support end date |
+| ----- | ----- | ----- | ----- | ----- |
+| Windows Autopatch - DSS Policy - My feature update release - Phase 1  | Windows 10 22H2 | Make update available as soon as possible| N/A | October 14, 2025 |
+| Windows Autopatch - DSS Policy - My feature update release - Phase 2  | Windows 10 22H2 | Make update available as soon as possible | 7 | October 14, 2025 |
+| Windows Autopatch - DSS Policy - My feature update release - Phase 3  | Windows 10 22H2 | Make update available as soon as possible | 7 | October 14, 2025 |
+| Windows Autopatch - DSS Policy - My feature update release - Phase 4  | Windows 10 22H2 | Make update available as soon as possible | 7 | October 14, 2025 |
+| Windows Autopatch - DSS Policy - My feature update release - Phase 5  | Windows 10 22H2 | Make update available as soon as possible | 7 | October 14, 2025 |
 
