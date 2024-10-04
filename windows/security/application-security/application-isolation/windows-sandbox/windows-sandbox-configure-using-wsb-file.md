@@ -87,7 +87,7 @@ An array of folders, each representing a location on the host machine that is sh
 ```xml
 <MappedFolders>
   <MappedFolder>
-    <HostFolder>absolute path to the host folder</HostFolder>
+    <HostFolder>absolute or relative path to the host folder</HostFolder>
     <SandboxFolder>absolute path to the sandbox folder</SandboxFolder>
     <ReadOnly>value</ReadOnly>
   </MappedFolder>
