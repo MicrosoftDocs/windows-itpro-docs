@@ -101,6 +101,12 @@
         "security-foundations/certification/**/*.md": "mike-grimm",
         "security-foundations/certification/**/*.yml": "mike-grimm"
       },
+      "feedback_system": {
+        "book/*.md": "none"
+      },
+      "hideEdit": {
+        "book/*.md": "true"
+      },
       "ms.author": {
         "application-security//**/*.md": "vinpa",
         "application-security//**/*.yml": "vinpa",
