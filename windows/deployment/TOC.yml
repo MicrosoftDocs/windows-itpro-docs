@@ -317,7 +317,7 @@ items:
           href: configure-a-pxe-server-to-load-windows-pe.md
         - name: Windows Deployment Services (WDS) boot.wim support
           href: wds-boot-support.md
-        - name: Windows ADK for Windows 10 scenarios for IT Pros
+        - name: Windows ADK for Windows scenarios for IT Pros
           href: windows-adk-scenarios-for-it-pros.md
         - name: User State Migration Tool (USMT) technical reference
           items:
