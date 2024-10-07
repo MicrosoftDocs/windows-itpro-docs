@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 12/14/2023
+ms.date: 10/07/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: whats-new
