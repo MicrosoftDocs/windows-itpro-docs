@@ -66,8 +66,8 @@ These variables can be used within sections in the **.xml** files with `context=
 |*CSIDL_DEFAULT_TEMPLATES*|Refers to the Templates folder inside `%DEFAULTUSERPROFILE%`.|
 |*CSIDL_DEFAULT_QUICKLAUNCH*|Refers to the Quick Launch folder inside `%DEFAULTUSERPROFILE%`.|
 |*CSIDL_FONTS*|A virtual folder containing fonts. A typical path is `C:\Windows\Fonts`.|
-|*CSIDL_PROGRAM_FILESX86*|The Program Files folder on 64-bit systems. A typical path is `C:\Program Files(86)`.|
-|*CSIDL_PROGRAM_FILES_COMMONX86*|A folder for components that are shared across applications on 64-bit systems. A typical path is `C:\Program Files(86)\Common`.|
+|*CSIDL_PROGRAM_FILESX86*|The Program Files folder on 64-bit systems. A typical path is `C:\Program Files (x86)`.|
+|*CSIDL_PROGRAM_FILES_COMMONX86*|A folder for components that are shared across applications on 64-bit systems. A typical path is `C:\Program Files (x86)\Common`.|
 |*CSIDL_PROGRAM_FILES*|The Program Files folder. A typical path is `C:\Program Files`.|
 |*CSIDL_PROGRAM_FILES_COMMON*|A folder for components that are shared across applications. A typical path is `C:\Program Files\Common`.|
 |*CSIDL_RESOURCES*|The file-system directory that contains resource data. A typical path is `C:\Windows\Resources`.|

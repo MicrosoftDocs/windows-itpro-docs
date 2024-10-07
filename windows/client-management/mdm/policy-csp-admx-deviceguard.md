@@ -1,7 +1,7 @@
 ---
 title: ADMX_DeviceGuard Policy CSP
 description: Learn more about the ADMX_DeviceGuard Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -14,7 +14,7 @@ ms.date: 08/06/2024
 <!-- ADMX_DeviceGuard-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!WARNING]
-> Group Policy-based deployment of Windows Defender Application Control policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for [policy deployment](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+> Group Policy-based deployment of App Control for Business policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for [policy deployment](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 <!-- ADMX_DeviceGuard-Editable-End -->
 
 <!-- ConfigCIPolicy-Begin -->
@@ -34,7 +34,7 @@ ms.date: 08/06/2024
 
 <!-- ConfigCIPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Deploy Windows Defender Application Control.
+Deploy App Control for Business.
 
 This policy setting lets you deploy a Code Integrity Policy to a machine to control what's allowed to run on that machine.
 
@@ -69,7 +69,7 @@ If using a signed and protected policy then disabling this policy setting doesn'
 | Name | Value |
 |:--|:--|
 | Name | ConfigCIPolicy |
-| Friendly Name | Deploy Windows Defender Application Control |
+| Friendly Name | Deploy App Control for Business |
 | Location | Computer Configuration |
 | Path | System > Device Guard |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |

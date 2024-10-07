@@ -1,7 +1,7 @@
 ---
 title: Resources for deprecated features in the Windows client
 description: Resources and details for deprecated features in the Windows client.
-ms.date: 08/12/2024
+ms.date: 08/14/2024
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -38,7 +38,7 @@ Negotiate's built-in fallback to NTLM is preserved to mitigate compatibility iss
 
 ## WordPad
 
-WordPad will be removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. As a result, Windows will no longer have a built-in, default RTF reader. We recommend Microsoft Word for rich text documents like .doc and .rtf and Notepad for plain text documents like .txt. The following binaries will be removed as a result of WordPad removal:
+WordPad is removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. As a result, Windows will no longer have a built-in, default RTF reader. We recommend Microsoft Word for rich text documents like .doc and .rtf and Notepad for plain text documents like .txt. The following binaries will be removed as a result of WordPad removal:
 
 - wordpad.exe
 - wordpadfilter.dll

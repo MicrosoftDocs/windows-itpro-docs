@@ -3,7 +3,7 @@ title: Get support for security baselines
 description: Find answers to frequently asked question on how to get support for baselines, the Security Compliance Toolkit (SCT), and related articles.
 ms.localizationpriority: medium
 ms.topic: conceptual
-ms.date: 07/10/2024
+ms.date: 10/01/2024
 ---
 
 # Get Support
@@ -47,6 +47,7 @@ No. SCM supported only SCAP 1.0, which wasn't updated as SCAP evolved. The new t
 
 | Name | Build | Baseline release date | Security tools |
 |--|--|--|--|
+| Windows 11 | [24H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-version-24h2-security-baseline/ba-p/4252801) <br> | October 2024<br> | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 | Windows 11 | [23H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-version-23h2-security-baseline/ba-p/3967618) <br> | October 2023<br> | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 | Windows 11 | [22H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-version-22h2-security-baseline/ba-p/3632520) <br> | September 2022<br> | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 | Windows 10 | [22H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-10-version-22h2-security-baseline/ba-p/3655724) <br> [21H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-windows-10-version-21h2/ba-p/3042703) <br> [20H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-and-windows-server/ba-p/1999393) <br> [1809](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-v1809-and-windows-server/ba-p/701082) <br> [1607](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016) <br>[1507](/archive/blogs/secguide/security-baseline-for-windows-10-v1507-build-10240-th1-ltsb-update) | October 2022<br>December 2021<br>December 2020<br>October 2018<br>October 2016 <br>January 2016 | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |

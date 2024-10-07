@@ -1,7 +1,7 @@
 ---
 title: Configure and enroll in Windows Hello for Business in hybrid certificate trust model
 description: Learn how to configure devices and enroll them in Windows Hello for Business in a hybrid certificate trust scenario.
-ms.date: 06/23/2024
+ms.date: 09/26/2024
 ms.topic: tutorial
 ---
 
@@ -73,7 +73,7 @@ If the Intune tenant-wide policy is enabled and configured to your needs, you ca
 
 | Category | Setting name | Value |
 |--|--|--|
-| **Windows Hello for Business** | Use Passport For Work | true |
+| **Windows Hello for Business** | Use Windows Hello For Business | true |
 | **Windows Hello for Business** | Use Certificate For On Prem Auth | Enabled |
 | **Windows Hello for Business** | Require Security Device | true |
 

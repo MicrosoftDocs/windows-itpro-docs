@@ -1,7 +1,7 @@
 ---
 title: EnterpriseModernAppManagement DDF file
 description: View the XML file containing the device description framework (DDF) for the EnterpriseModernAppManagement configuration service provider.
-ms.date: 09/03/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -2462,7 +2462,7 @@ The following XML file contains the device description framework (DDF) for the E
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>Category of license that is used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.</Description>
+              <Description>Category of license that is used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -2504,7 +2504,7 @@ The following XML file contains the device description framework (DDF) for the E
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>Identifier for the entity that requested the license, such as the client who acquired the license. Note that all licenses for a particular enterprise client can have the same RequesterID.</Description>
+              <Description>Identifier for the entity that requested the license, such as the client who acquired the license. For example, all licenses issued by the Store for Business for a particular enterprise client has the same RequesterID.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -5286,7 +5286,7 @@ The following XML file contains the device description framework (DDF) for the E
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>Category of license that is used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.</Description>
+              <Description>Category of license that is used to classify various license sources. Valid value: Unknown - unknown license category. Retail - license sold through retail channels, typically from the Microsoft Store. Enterprise - license sold through the enterprise sales channel, typically from the Store for Business. OEM - license issued to an OEM. Developer - developer license, typically installed during the app development or side-loading scenarios.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -5328,7 +5328,7 @@ The following XML file contains the device description framework (DDF) for the E
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>Identifier for the entity that requested the license, such as the client who acquired the license. Note that licenses issued for a particular enterprise client can have the same RequesterID.</Description>
+              <Description>Identifier for the entity that requested the license, such as the client who acquired the license. For example, all licenses issued by the Store for Business for a particular enterprise client has the same RequesterID.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
