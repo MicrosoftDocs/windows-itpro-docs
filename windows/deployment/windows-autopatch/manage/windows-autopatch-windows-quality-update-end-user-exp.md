@@ -1,7 +1,7 @@
 ---
 title: Windows quality update end user experience
 description: This article explains the Windows quality update end user experience
-ms.date: 09/16/2024
+ms.date: 10/07/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: conceptual
@@ -32,9 +32,7 @@ In this section we review what an end user would see in the following three scen
 
 ### Typical update experience
 
-The Windows quality update is published and devices in the Broad ring have a deferral period of nine days. Devices wait nine days before downloading the latest quality update.
-
-In the following example, the user:
+In the following example, the Windows quality update is published and devices in the Broad ring have a deferral period of seven days. Devices wait seven days before downloading the latest quality update.
 
 | Day | Description |
 | --- | --- |
@@ -46,7 +44,7 @@ In the following example, the user:
 
 ### Quality update deadline forces an update
 
-In the following example, the user:
+In the following example:
 
 | Day | Description |
 | --- | --- |
@@ -58,7 +56,7 @@ In the following example, the user:
 
 ### Quality update grace period
 
-In the following example, the user:
+In the following example:
 
 | Day | Description |
 | --- | --- |
