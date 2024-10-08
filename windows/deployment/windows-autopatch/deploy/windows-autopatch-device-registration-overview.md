@@ -41,7 +41,7 @@ The overall device registration process is as follows:
 :::image type="content" source="../media/windows-autopatch-device-registration-overview.png" alt-text="Overview of the device registration process" lightbox="../media/windows-autopatch-device-registration-overview.png":::
 
 1. IT admin reviews [Windows Autopatch device registration prerequisites](#prerequisites-for-device-registration) before registering devices with Windows Autopatch.
-2. IT admin identifies and adds devices or nests other Microsoft Entra device groups into any Microsoft Entra group used with an Autopatch group, imported (WUfB) policies, or direct membership to the **Modern Workplace Devices-Windows-Autopatch-X-groups**.
+2. IT admin identifies and adds devices, or nests other Microsoft Entra device groups into any Microsoft Entra group when you [create an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group) or imported (WUfB) policies.
 3. Windows Autopatch then:
     1. Performs device readiness prior registration (prerequisite checks).
     2. Calculates the deployment ring distribution.
