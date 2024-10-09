@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page
   ms.collection:
     - tier1
-  ms.date: 10/25/2023
+  ms.date: 10/07/2024
   ms.localizationpriority: medium
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -27,8 +27,8 @@ landingContent:
             url: configuration-service-provider-support.md
           - text: Device description framework (DDF) files
             url: configuration-service-provider-ddf.md
-          - text: BitLocker CSP
-            url: bitlocker-csp.md
+          - text: Contribute to CSP reference
+            url: contribute-csp-reference.md
           - text: Declared Configuration protocol
             url: ../declared-configuration.md
 
@@ -42,8 +42,8 @@ landingContent:
             url: policy-configuration-service-provider.md
           - text: Policy DDF file
             url: configuration-service-provider-ddf.md
-          - text: Policy CSP - Start
-            url: policy-csp-start.md
+          - text: Policy CSP - Defender
+            url: policy-csp-defender.md
           - text: Policy CSP - Update
             url: policy-csp-update.md
 
