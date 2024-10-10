@@ -2,7 +2,7 @@
 title: Windows 11 SE Overview
 description: Learn about Windows 11 SE, and the apps that are included with the operating system.
 ms.topic: overview
-ms.date: 01/09/2024
+ms.date: 10/10/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
@@ -96,9 +96,9 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `CKAuthenticator`                         | 3.6+              | `Win32`    | `ContentKeeper`                           |
 | `Class Policy`                            | 116.0.0           | `Win32`    | `Class Policy`                            |
 | `Classroom.cloud`                         | 1.40.0004         | `Win32`    | `NetSupport`                              |
-| `Clipchamp`                               | 2.5.2.            | `Store`  | `Microsoft`                               | 
+| `Clipchamp`                               | 2.5.2.            | `Store`  | `Microsoft`                               |
 | `CoGat Secure Browser`                    | 11.0.0.19         | `Win32`    | `Riverside Insights`                      |
-| `ColorVeil`                               | 4.0.0.175         | `Win32`    | `East-Tec`                                | 
+| `ColorVeil`                               | 4.0.0.175         | `Win32`    | `East-Tec`                                |
 | `ContentKeeper Cloud`                     | 9.01.45           | `Win32`    | `ContentKeeper Technologies`              |
 | `DigiExam`                                | 14.1.0            | `Win32`    | `Digiexam`                                |
 | `Digital Secure testing browser`          | 15.0.0            | `Win32`    | `Digiexam`                                |

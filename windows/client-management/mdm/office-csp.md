@@ -1,7 +1,7 @@
 ---
 title: Office CSP
 description: Learn more about the Office CSP.
-ms.date: 01/18/2024
+ms.date: 10/10/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -11,7 +11,7 @@ ms.date: 01/18/2024
 
 <!-- Office-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](/deployoffice/office-deployment-tool-configuration-options) and [How to assign Office 365 apps to Windows 10 devices with Microsoft Intune](/intune/apps-add-office365).
+The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](/deployoffice/office-deployment-tool-configuration-options) and [Add Microsoft 365 Apps to Windows devices with Microsoft Intune](/mem/intune/apps/apps-add-office365).
 <!-- Office-Editable-End -->
 
 <!-- Office-Tree-Begin -->
@@ -587,7 +587,7 @@ To get the current status of Office 365 on the device.
 | 17001      | ERROR_QUEUE_SCENARIO <br/>Failed to queue installation scenario in C2RClient                                                                                                                                                                                                                                                      | Failure |
 | 17002      | ERROR_COMPLETING_SCENARIO <br>Failed to complete the process. Possible reasons:<li>Installation canceled by user<li>Installation canceled by another installation<li>Out of disk space during installation <li>Unknown language ID                                                                                                | Failure |
 | 17003      | ERROR_ANOTHER_RUNNING_SCENARIO <br>Another scenario is running                                                                                                                                                                                                                                                                    | Failure |
-| 17004      | ERROR_COMPLETING_SCENARIO_NEED_CLEAN_UP<br>Possible reasons:<li>Unknown SKUs<li>Content does't exist on CDN<ul><li>Such as trying to install an unsupported LAP, like zh-sg<li>CDN issue that content is not available</li></ul><li>Signature check issue, such as failed the signature check for Office content<li>User canceled | Failure |
+| 17004      | ERROR_COMPLETING_SCENARIO_NEED_CLEAN_UP<br>Possible reasons:<li>Unknown SKUs<li>Content doesn't exist on CDN<ul><li>Such as trying to install an unsupported LAP, like zh-sg<li>CDN issue that content is not available</li></ul><li>Signature check issue, such as failed the signature check for Office content<li>User canceled | Failure |
 | 17005      | ERROR_SCENARIO_CANCELLED_AS_PLANNED                                                                                                                                                                                                                                                                                               | Failure |
 | 17006      | ERROR_SCENARIO_CANCELLED<br>Blocked update by running apps                                                                                                                                                                                                                                                                        | Failure |
 | 17007      | ERROR_REMOVE_INSTALLATION_NEEDED<br>The client is requesting client clean-up in a "Remove Installation" scenario                                                                                                                                                                                                                  | Failure |
