@@ -7,9 +7,9 @@ ms.topic: include
 
 ### Use Windows Hello for Business
 
-- If you enable this policy, the device provisions Windows Hello for Business using keys or certificates for all users
+- If you enable this policy, the device provisions Windows Hello for Business using PIN, Biometrics or certificates for all users
 - If you disable this policy setting, the device doesn't provision Windows Hello for Business for any user
-- If you don't configure this policy setting, users can provision Windows Hello for Business
+- If you don't configure this policy setting, users can't provision Windows Hello for Business
 
 Select the option *Don't start Windows Hello provisioning after sign-in* when you use a non-Microsoft solution to provision Windows Hello for Business:
 
