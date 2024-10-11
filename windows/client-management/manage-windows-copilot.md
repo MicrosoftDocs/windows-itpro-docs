@@ -18,6 +18,18 @@ appliesto:
 
 >**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/topic/675708af-8c16-4675-afeb-85a5a476ccb0).
 
+## Copilot in Windows compared to Microsoft 365 Copilot
+
+Copilot in Windows
+Integration: Built directly into the Windows 11 operating system.
+Functionality: Assists with a variety of tasks related to both PC settings and general productivity. For example, it can help you organize windows, adjust settings, write essays, and even assist with online shopping.
+Target Users: Primarily designed for individual home users.
+
+Microsoft 365 Copilot
+Integration: Embedded within Microsoft 365 applications like Word, Excel, PowerPoint, Outlook, and Teams.
+Functionality: Enhances productivity by generating text, summarizing emails, creating presentations, analyzing data, and more. It leverages AI to streamline workflows across different Microsoft 365 apps.
+Target Users: Aimed at enterprise professionals and businesses.
+
 ## Enhanced data protection with enterprise data protection
 
 The Copilot experience on Windows is changing to enhance data security, privacy, compliance, and simplify the user experience, for users signed in with a Microsoft Entra work or school account. [Microsoft Copilot will offer enterprise data protection](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/updates-to-microsoft-copilot-to-bring-enterprise-data-protection/ba-p/4217152) at no additional cost and redirect users to a new simplified interface designed for work and education. [Enterprise data protection (EDP)](/copilot/microsoft-365/enterprise-data-protection) refers to controls and commitments, under the Data Protection Addendum and Product Terms, that apply to customer data for users of Copilot for Microsoft 365 and Microsoft Copilot. This means that security, privacy, compliance controls and commitments available for Copilot for Microsoft 365 will extend to Microsoft Copilot prompts and responses. Prompts and responses are protected by the same terms and commitments that are widely trusted by our customers - not only for Copilot for Microsoft 365, but also for emails in Exchange and files in SharePoint. This is an improvement on top of the previous commercial data protection (CDP) promise. This update is rolling out now. For more information, see the [Microsoft Copilot updates and enterprise data protection FAQ](/copilot/edpfaq).
