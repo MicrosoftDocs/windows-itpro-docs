@@ -228,6 +228,11 @@ A value that can represent one or more folder locations in File Explorer. If not
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Access to all folder locations. |
+| 1 | Documents. |
+| 2 | Desktop. |
+| 4 | Pictures. |
+| 8 | Downloads. |
+| 12 | Pictures, Downloads. |
 | 13 | Documents, Pictures, Downloads. |
 | 15 | Desktop, Documents, Pictures, Downloads. |
 | 31 | Desktop, Documents, Pictures, Downloads, Network. |
