@@ -983,10 +983,10 @@ This user right determines which users are prevented from accessing a computer o
 
 <!-- DenyLocalLogOn-Description-Begin -->
 <!-- Description-Source-DDF -->
-This security setting determines which service accounts are prevented from registering a process as a service.
+This security setting determines which users are prevented from logging on at the computer. This policy setting supersedes the Allow log on locally policy setting if an account is subject to both policies.
 
 > [!NOTE]
-> This security setting doesn't apply to the System, Local Service, or Network Service accounts.
+> If you apply this security policy to the Everyone group, no one will be able to log on locally.
 <!-- DenyLocalLogOn-Description-End -->
 
 <!-- DenyLocalLogOn-Editable-Begin -->
@@ -1009,7 +1009,7 @@ This security setting determines which service accounts are prevented from regis
 
 | Name | Value |
 |:--|:--|
-| Name | Deny log on as a service |
+| Name | Deny log on locally |
 | Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
 <!-- DenyLocalLogOn-GpMapping-End -->
 
