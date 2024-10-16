@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/mem/configmgr/ > Microsoft Configuration Manager</a>
 - ✅ <a href=https://learn.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus > WSUS </a>
-ms.date: 04/22/2024
+ms.date: 10/01/2024
 ---
 
 # How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager
@@ -31,11 +31,13 @@ Due to these changes, the **Specify settings for optional component installation
 
 The introduction of the **Specify source service for specific classes of Windows Updates** ([SetPolicyDrivenUpdateSourceFor<UpdateClass\>](/windows/client-management/mdm/policy-csp-update#setpolicydrivenupdatesourceforfeatureupdates)) policy in Windows 10, version 2004 further complicated configuring settings for FoD and language pack content. 
 
-Starting in Windows 11, version 22H2, on-premises Unified Update Platform (UUP) updates were introduced. FoDs and language packs are available from WSUS again. It's no longer necessary to use the **Specify settings for optional component installation and component repair** policy for FoD and language pack content.  
+Starting in Windows 11, version 22H2, on-premises Unified Update Platform (UUP) updates were introduced. FoDs and language packs are available from WSUS again. It's no longer necessary to use the **Specify settings for optional component installation and component repair** policy for FoD and language pack content. This policy was modified starting in Windows 11, version 24H2 and the following options were removed:<!--8914508-->
+- Never attempt to download payload from Windows Update
+- Download repair content and optional features directly from Windows Update instead of Windows Server Update Services (WSUS)
 
 ## Version specific information for Features on Demand and language packs
 
-Windows 11, version 22H2, and later clients use on-premises Unified Update Platform (UUP) updates with WSUS and Microsoft Configuration Manager. These clients don't need to use **Specify settings for optional component installation and component repair** for FoDs and language packs since the content is available in WSUS due to on-premises UUP.
+Windows 11, version 22H2, and later clients use on-premises Unified Update Platform (UUP) updates with WSUS and Microsoft Configuration Manager. These clients don't need to use **Specify settings for optional component installation and component repair** for FoDs and language packs since the content is available in WSUS due to on-premises UUP. The policy was modified starting in Windows 11, version 24H2 to remove the unneeded options.<!--8914508--> 
 
 For Windows 10, version 2004 through Windows 11, version 21H2, clients can't download FoDs or language packs when **Specify settings for optional component installation and component repair** is set to Windows Update and **Specify source service for specific classes of Windows Updates** ([SetPolicyDrivenUpdateSourceFor<FeatureUpdates/QualityUpdates>](/windows/client-management/mdm/policy-csp-update#setpolicydrivenupdatesourceforfeatureupdates)) for either feature or quality updates is set to WSUS. If you need this content, you can set **Specify settings for optional component installation and component repair** to Windows Update and then either:
 - Change the source selection for feature and quality updates to Windows Update 

@@ -31,7 +31,7 @@ Alert for both client and service updates. Contains information that needs atten
 | **AlertType** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | Yes | `ClientUpdateAlert` | The type of alert such as ClientUpdateAlert or ServiceUpdateAlert. Indicates which fields are present. |
 | **AzureADDeviceId** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Microsoft Entra Device ID |
 | **AzureADTenantId** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Microsoft Entra tenant ID |
-| **CatalogId** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `b0f410599615e2ce15e6614ac3fc4ec62d80324020351e172edef89091a64f2f` | This field applies to drivers only. The Catalog ID of the update from Windows Update for Business deployment service. |
+| **CatalogId** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `b0f410599615e2ce15e6614ac3fc4ec62d80324020351e172edef89091a64f2f` | This field applies to drivers only. The Catalog ID of the update from Windows Autopatch. |
 | **ClientSubstate** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | Yes | `DownloadStart` | If the alert is from the client, the ClientSubstate at the time this alert was activated or updated, else empty. |
 | **ClientSubstateRank** |[int](/azure/kusto/query/scalar-data-types/int) | No | `2300` | Rank of ClientSubstate |
 | **DeploymentId** |[string](/azure/data-explorer/kusto/query/scalar-data-types/string)  | No | `cf1b12a3-3d84-4ce3-bc8e-de48459e252d` | The deployment this alert is relative to, if there's one. |

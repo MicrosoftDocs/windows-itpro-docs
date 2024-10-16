@@ -13,6 +13,8 @@
           href: diagnostic-data-viewer-powershell.md
     - name: Required Windows diagnostic data events and fields
       items: 
+        - name: Windows 11, version 24H2
+          href: required-diagnostic-events-fields-windows-11-24H2.md
         - name: Windows 11, versions 23H2 and 22H2
           href: required-diagnostic-events-fields-windows-11-22H2.md
         - name: Windows 11, version 21H2

@@ -1,7 +1,7 @@
 ---
 title: ADMX_Taskbar Policy CSP
 description: Learn more about the ADMX_Taskbar Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -69,7 +69,7 @@ A reboot is required for this policy setting to take effect.
 |:--|:--|
 | Name | DisableNotificationCenter |
 | Friendly Name | Remove Notifications and Action Center |
-| Location | User Configuration |
+| Location | Computer and User Configuration |
 | Path | Start Menu and Taskbar |
 | Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
 | Registry Value Name | DisableNotificationCenter |
@@ -748,11 +748,11 @@ This policy setting allows you to turn off automatic promotion of notification i
 
 <!-- ShowWindowsStoreAppsOnTaskbar-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows users to see Windows Store apps on the taskbar.
+This policy setting allows users to see packaged Microsoft Store apps on the taskbar.
 
-- If you enable this policy setting, users will see Windows Store apps on the taskbar.
+- If you enable this policy setting, users will see packaged Microsoft Store apps on the taskbar.
 
-- If you disable this policy setting, users won't see Windows Store apps on the taskbar.
+- If you disable this policy setting, users won't see packaged Microsoft Store apps on the taskbar.
 
 - If you don't configure this policy setting, the default setting for the user's device will be used, and the user can choose to change it.
 <!-- ShowWindowsStoreAppsOnTaskbar-Description-End -->
@@ -778,7 +778,7 @@ This policy setting allows users to see Windows Store apps on the taskbar.
 | Name | Value |
 |:--|:--|
 | Name | ShowWindowsStoreAppsOnTaskbar |
-| Friendly Name | Show Windows Store apps on the taskbar |
+| Friendly Name | Show packaged Microsoft Store apps on the taskbar |
 | Location | User Configuration |
 | Path | Start Menu and Taskbar |
 | Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |

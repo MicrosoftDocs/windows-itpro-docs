@@ -1,7 +1,7 @@
 ---
-title: policy health and remediation
+title: Policy health and remediation
 description: Describes what Autopatch does it detects policies in the tenant are either missing or modified to states that affect the service
-ms.date: 07/10/2024
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -17,12 +17,14 @@ ms.collection:
 
 # Policy health and remediation
 
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
+
 Windows Autopatch uses Microsoft Intune policies to set configurations and deliver the service. Windows Autopatch continuously monitors the policies and maintains all configurations related to the operation of the service.
 
 > [!IMPORTANT]
-> Don't change, edit, add to, or remove any of the Windows Autopatch policies or groups. Doing so can cause unintended configuration changes and impact the Windows Autopatch service. For more information about Windows Autopatch configurations, see [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md).
+> Don't change, edit, add to, or remove any of the Windows Autopatch policies or groups. Doing so can cause unintended configuration changes and impact the Windows Autopatch service. For more information about Windows Autopatch configurations, see [Changes made at feature activation](../references/windows-autopatch-changes-made-at-feature-activation.md).
 
-When Windows Autopatch detects policies in the tenant are either missing or modified that affects the service, Windows Autopatch will raise alerts and detailed recommended actions to ensure healthy operation of the service.
+When Windows Autopatch detects policies in the tenant are either missing or modified that affects the service, Windows Autopatch raises alerts and detailed recommended actions to ensure healthy operation of the service.
 
 IT admins must respond to the service-generated alerts to ensure that Autopatch services can be delivered, and devices remain eligible for the service.
 
@@ -39,13 +41,16 @@ With this feature, IT admins can:
 
 ## Check policy health
 
-Alerts are raised when deployment rings don't have the required policies and the settings that impact devices within the ring. The remediation actions from the displayed alerts are intended to keep the deployment rings in a healthy state. Devices in each ring may continue to report different states, including errors and conflicts. This occurs due to multiple policies targeted at the same device or other conditions on the device. Policy conflicts and other device errors aren't addressed by these alerts.
+Alerts are raised when deployment rings don't have the required policies and the settings that impact devices within the ring. The remediation actions from the displayed alerts are intended to keep the deployment rings in a healthy state. Devices in each ring might continue to report different states, including errors and conflicts. This occurs due to multiple policies targeted at the same device or other conditions on the device. Policy conflicts and other device errors aren't addressed by these alerts.
 
 ## Built-in roles required for remediation actions
 
 The minimum role required to restore configurations is **Intune Service Administrator**.
 
-## Restore device configuration policy
+## Restore Data collection, Office and/or Edge configuration policies
+
+> [!IMPORTANT]
+> For these policies, Windows Autopatch doesn't store the last known policy value, Autopatch restores the base policy values.
 
 **To initiate remediation action for device configuration alerts:**
 
@@ -56,33 +61,32 @@ The minimum role required to restore configurations is **Intune Service Administ
 1. If the **Change modified policy alert** appears, select this alert to launch the workflow.
 1. Select **Submit changes** to restore to service required values.
 
-There will be an alert for each policy that is missing or has deviated from the service defined values.
+There's an alert for each policy that is missing or deviated from the service defined values.
 
-## Restore Windows Update policies
+## Restore missing Windows Update policies
 
-**To initiate remediation actions for Windows quality update policies:**
+> [!IMPORTANT]
+> For Quality and Feature update policies, Autopatch restores the last known value of policy. For Driver update policies, Autopatch restores the base policy.
 
-1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Navigate to **Devices** > **Windows Autopatch** > **Release management** > **Release schedule** > **Windows quality updates** > **Status**.
-1. Select **Policy Error** to launch the Policy error workflow.
-1. Review the message:
-    1. If this is a missing policy error, select **Restore policy** to complete the workflow.
-    2. If this is a modified policy, select **Submit changes** to restore to service required values.
+**To initiate remediation actions for Windows Update policies (Quality, Feature or Driver updates):**
 
-**To initiate remediation actions for Windows feature update policies:**
+> [!NOTE]
+> By default, the service will auto-select all the policies.
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Navigate to **Devices** > **Windows Autopatch** > **Release management** > **Release schedule** > **Windows feature updates** > **Status**.
-1. Select **Policy Error** to launch the Policy error workflow.
-1. Review the message.
-    1. If this is a missing policy error, select **Restore policy** to complete the workflow.
-    2. If this is a modified policy, select **Submit changes** to restore to service required values.
+1. Navigate to **Tenant administration** > **Windows Autopatch** > **Autopatch groups** > **Policy health**.
+1. Select **Missing policy** to launch the Restore missing policy workflow.
+1. Review the message for the missing policy error. If more than once policy is present, select which policy you'd like to restore.
+1. Select **Restore policies** to complete the workflow.
+
+> [!NOTE]
+> You can also select on the associated Windows Autopatch group name for any Autopatch group that has a **Missing Policy** under the **Policy health** column. Doing so will lead you to the details page of that specific Autopatch group. Under the **Windows update settings** section, you'll see a banner that states "*There are missing update settings in this Autopatch group. Take action to resolve"*. Selecting this banner will take you to the same experience as mentioned in [Restore missing Windows Update policies](#restore-missing-windows-update-policies).
 
 ## Restore deployment groups
 
-Windows Autopatch will automatically restore any missing groups that are required by the service. When a missing deployment group is restored, and the policies are also missing, the policies be restored to the deployment groups.
+Windows Autopatch automatically restores any missing groups that are required by the service. When a missing deployment group is restored, and the policies are also missing, the policies be restored to the deployment groups.
 
-If policies are misconfigured or unassigned, admins must restore them. In the Release management blade, the service will raise a Policy error workflow that you must complete to repair Windows Update policies. All other policies must be restored from the Tenant administration blade.
+If policies are misconfigured or unassigned, admins must restore them. In the Autopatch groups blade, the service raises a missing policy workflow that you must complete to repair Windows Update policies. All other policies must be restored from the Tenant administration blade.
 
 Due to the asynchronous run of service detectors, it might take up to four (4) hours for this error to be displayed.
 
@@ -96,6 +100,6 @@ You can review audit logs in Intune to review the activities completed on the te
 **To review audit logs in Intune:**
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Tenant administration** > **Audit logs**.
+1. Select **Tenant administration** > **Audit logs**.
 
 The entries with enterprise application name, Modern Workplace Management, are the actions requested by Windows Autopatch.

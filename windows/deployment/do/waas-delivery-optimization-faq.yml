@@ -104,8 +104,6 @@ sections:
 
           - `*.dl.delivery.mp.microsoft.com`
 
-          **For the payloads (optional)**:
-
           - `*.windowsupdate.com`
 
           **For group peers across multiple NATs (Teredo)**:
