@@ -1,7 +1,7 @@
 ---
 title: Available Microsoft Defender SmartScreen settings
 description: A list of all available settings for Microsoft Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
-ms.date: 07/10/2024
+ms.date: 10/10/2024
 ms.topic: reference
 ---
 
@@ -9,7 +9,7 @@ ms.topic: reference
 
 Microsoft Defender SmartScreen works with Intune, Group Policy, and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Microsoft Defender SmartScreen, you can show users a warning page and let them continue to the site, or you can block the site entirely.
 
-See [Windows settings to protect devices using Intune](/intune/endpoint-protection-windows-10#windows-defender-smartscreen-settings) for the controls you can use in Intune.
+See [Windows settings to protect devices using Intune](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-smartscreen-settings) for the controls you can use in Intune.
 
 > [!NOTE]
 > For a list of settings available for Enhanced phishing protection, see [Enhanced phishing protection](enhanced-phishing-protection.md#configure-enhanced-phishing-protection-for-your-organization).

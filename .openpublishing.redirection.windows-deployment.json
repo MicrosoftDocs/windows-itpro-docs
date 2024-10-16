@@ -1596,6 +1596,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/windows-autopatch/prepare/windows-autopatch-fix-issues.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/prepare/windows-autopatch-feature-activation",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/windows-autopatch/prepare/windows-autopatch-enrollment-support-request.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/prepare/windows-autopatch-feature-activation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/manage/windows-autopatch-manage-windows-feature-update-releases.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-feature-update-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/deployment-service-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/deployment-service-prerequisites.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/deployment-service-feature-updates.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-feature-update-programmatic-controls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/deployment-service-expedited-updates.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-windows-quality-update-programmatic-controls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/deployment-service-drivers.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-driver-and-firmware-update-programmatic-controls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/deployment-service-troubleshoot.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/manage/windows-autopatch-troubleshoot-programmatic-controls",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/update/PSFxWhitepaper.md",
       "redirect_url": "/windows/deployment/update/forward-reverse-differentials",
       "redirect_document_id": false
@@ -1603,6 +1648,21 @@
     {
       "source_path": "windows/deployment/upgrade/windows-10-upgrade-paths.md",
       "redirect_url": "/windows/deployment/upgrade/windows-upgrade-paths",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-infrastructure-requirements.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/planning/windows-10-infrastructure-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-enterprise-faq-itpro.yml",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/planning/windows-10-enterprise-faq-itpro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-deployment-considerations.md",
+      "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/planning/windows-10-deployment-considerations",
       "redirect_document_id": false
     }
   ]

@@ -1,7 +1,7 @@
 ---
 title: ApplicationDefaults Policy CSP
 description: Learn more about the ApplicationDefaults Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -31,13 +31,12 @@ ms.date: 01/18/2024
 <!-- DefaultAssociationsConfiguration-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
 This policy allows an administrator to set default file type and protocol associations. When set, default associations will be applied on sign-in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc.xml). The file can be further edited by adding attributes to control how often associations are applied by the policy. The file then needs to be base64 encoded before being added to SyncML. If policy is enabled and the client machine is Microsoft Entra joined, the associations assigned in SyncML will be processed and default associations will be applied.
-
-> [!NOTE]
-> For this policy, MDM policy take precedence over group policies even when [MDMWinsOverGP](policy-csp-controlpolicyconflict.md#mdmwinsovergp) policy is not set.
 <!-- DefaultAssociationsConfiguration-Description-End -->
 
 <!-- DefaultAssociationsConfiguration-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> For this policy, MDM policy take precedence over group policies even when [MDMWinsOverGP](policy-csp-controlpolicyconflict.md#mdmwinsovergp) policy is not set.
 <!-- DefaultAssociationsConfiguration-Editable-End -->
 
 <!-- DefaultAssociationsConfiguration-DFProperties-Begin -->

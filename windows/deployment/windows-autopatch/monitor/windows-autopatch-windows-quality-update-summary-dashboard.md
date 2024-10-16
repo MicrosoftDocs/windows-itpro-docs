@@ -1,7 +1,7 @@
 ---
 title: Windows quality update summary dashboard
-description: Provides a summary view of the current update status for all devices enrolled into Windows Autopatch
-ms.date: 01/22/2024
+description: Provides a summary view of the current update status for all Windows Autopatch managed devices.
+ms.date: 09/16/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -17,7 +17,9 @@ ms.collection:
 
 # Windows quality update summary dashboard
 
-The Summary dashboard provides a summary view of the current update status for all devices enrolled into Windows Autopatch.
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
+
+The Summary dashboard provides a summary view of the current update status for all Windows Autopatch managed devices.
 
 **To view the current update status for all your enrolled devices:**
 

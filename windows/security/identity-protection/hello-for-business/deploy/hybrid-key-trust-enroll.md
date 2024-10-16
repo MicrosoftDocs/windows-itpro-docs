@@ -38,7 +38,7 @@ If the Intune tenant-wide policy is enabled and configured to your needs, you ca
 
 | Category | Setting name | Value |
 |--|--|--|
-| **Windows Hello for Business** | Use Passport For Work | true |
+| **Windows Hello for Business** | Use Windows Hello For Business | true |
 | **Windows Hello for Business** | Require Security Device | true |
 
 [!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]

@@ -34,7 +34,7 @@ For each app that you add to the package, configure the settings in the followin
 | Setting | Value | Description |
 |--|--|--|
 | ApplicationFile | `.appx` or `.appxbundle` | Set the value to the app file that you want to install on the device. Also enable the [AllowAllTrustedApps setting](wcd-policies.md#applicationmanagement) and add a root certificate or license file. |
-| DependencyAppxFiles | Any required frameworks | In Microsoft Store for Business, any dependencies for the app are listed in the **Required frameworks** section of the download page. |
+| DependencyAppxFiles | Any required frameworks | Typically, dependencies for the app are listed undere **Required frameworks**. |
 | DeploymentOptions | - None</br>-Force application shutdown: If this package, or any package that depends on this package is currently in use, then the processes associated with the package are forcibly shut down. The registration can continue. </br>- Development mode: Don't use. </br>- Install all resources: When you set this option, the app is instructed to skip resource applicability checks.</br>- Force target application shutdown: If this package is currently in use, the processes associated with the package are shut down forcibly so that registration can continue | Select a deployment option. |
 | LaunchAppAtLogin | - Don't launch app</br>- Launch app | Set the value for app behavior when a user signs in. |
 | OptionalPackageFiles | Additional files required by the package | Browse to, select, and add the optional package files. |

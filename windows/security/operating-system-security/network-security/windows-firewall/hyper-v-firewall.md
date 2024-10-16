@@ -1,8 +1,8 @@
 ---
-title: Hyper-V firewall 
+title: Hyper-V firewall
 description: Learn how to configure Hyper-V firewall rules and settings using PowerShell or Configuration Service Provider (CSP).
 ms.topic: how-to
-ms.date: 11/21/2023
+ms.date: 09/06/2024
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
@@ -21,18 +21,18 @@ This section describes the steps to manage Hyper-V firewall using PowerShell.
 
 ### Obtain the WSL GUID
 
-Hyper-V firewall rules are enabled per *VMCreatorId*. To obtain the VMCreatorId, use the cmdlet:  
+Hyper-V firewall rules are enabled per *VMCreatorId*. To obtain the VMCreatorId, use the cmdlet:
 
 ```powershell
-Get-NetFirewallHyperVVMCreator 
+Get-NetFirewallHyperVVMCreator
 ```
 
 The output contains a VmCreator object type, which has unique identifier `VMCreatorId` and `friendly name` properties. For example, the following output shows the properties of WSL:
 
 ```powershell
 PS C:\> Get-NetFirewallHyperVVMCreator
-VMCreatorId : {40E0AC32-46A5-438A-A0B2-2B479E8F2E90} 
-FriendlyName : WSL 
+VMCreatorId : {40E0AC32-46A5-438A-A0B2-2B479E8F2E90}
+FriendlyName : WSL
 ```
 
 > [!NOTE]
@@ -63,7 +63,7 @@ The output contains the following values:
 To configure Hyper-V firewall, use the [Set-NetFirewallHyperVVMSetting][PS-2] command. For example, the following command sets the default inbound connection to *Allow*:
 
 ```powershell
-Set-NetFirewallHyperVVMSetting -Name '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -DefaultInboundAction Allow 
+Set-NetFirewallHyperVVMSetting -Name '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -DefaultInboundAction Allow
 ```
 
 ### Firewall Rules
@@ -76,10 +76,10 @@ Get-NetFirewallHyperVRule -VMCreatorId '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}'
 
 To configure specific rules, use the [Set-NetFirewallHyperVRule][PS-4] cmdlet.
 
-For example, to create an inbound rule to allow TCP traffic to WSL on port 80, use the following command:  
+For example, to create an inbound rule to allow TCP traffic to WSL on port 80, use the following command:
 
 ```powershell
-New-NetFirewallHyperVRule -Name MyWebServer -DisplayName "My Web Server" -Direction Inbound -VMCreatorId '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -Protocol TCP -LocalPorts 80 
+New-NetFirewallHyperVRule -Name MyWebServer -DisplayName "My Web Server" -Direction Inbound -VMCreatorId '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -Protocol TCP -LocalPorts 80
 ```
 
 ### Target Hyper-V firewall rules and settings to specific profiles
@@ -95,7 +95,7 @@ The policy options are similar to the ones already described, but are applied to
 To view the settings per profile, use the following command:
 
 ```powershell
-Get-NetFirewallHyperVProfile -PolicyStore ActiveStore 
+Get-NetFirewallHyperVProfile -PolicyStore ActiveStore
 ```
 
 > [!NOTE]

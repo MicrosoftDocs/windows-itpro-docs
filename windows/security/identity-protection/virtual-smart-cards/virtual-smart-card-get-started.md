@@ -1,8 +1,8 @@
 ---
-title: Get Started with Virtual Smart Cards - Walkthrough Guide 
+title: Get Started with Virtual Smart Cards - Walkthrough Guide
 description: This topic for the IT professional describes how to set up a basic test environment for using TPM virtual smart cards.
 ms.topic: get-started
-ms.date: 11/06/2023
+ms.date: 09/06/2024
 ---
 
 # Get Started with Virtual Smart Cards: Walkthrough Guide
@@ -79,10 +79,11 @@ In this step, you create the virtual smart card on the client computer by using 
 
   `tpmvscmgr.exe create /name TestVSC /pin default /adminkey random /generate`
 
-  This creates a virtual smart card with the name **TestVSC**, omit the unlock key, and generate the file system on the card. The PIN is set to the default, 12345678. To be prompted for a PIN, instead of **/pin default** you can type **/pin prompt**.\
-  For more information about the Tpmvscmgr command-line tool, see [Use Virtual Smart Cards](virtual-smart-card-use-virtual-smart-cards.md) and [Tpmvscmgr](virtual-smart-card-tpmvscmgr.md).
+  This creates a virtual smart card with the name **TestVSC**, omit the unlock key, and generate the file system on the card. The PIN is set to the default, 12345678.
 
-1. Wait several seconds for the process to finish. Upon completion, Tpmvscmgr.exe provides you with the device instance ID for the TPM Virtual Smart Card. Store this ID for later reference because you need it to manage or remove the virtual smart card.
+1. Wait several seconds for the process to finish. Upon completion, Tpmvscmgr.exe provides you with the device instance ID for the TPM Virtual Smart Card. Store this ID for later reference because you need it to manage or remove the virtual smart card. To be prompted for a PIN, instead of **/pin default** you can type **/pin prompt**.
+
+For more information about the Tpmvscmgr command-line tool, see [Use Virtual Smart Cards](virtual-smart-card-use-virtual-smart-cards.md) and [Tpmvscmgr](virtual-smart-card-tpmvscmgr.md).
 
 ## Step 3: Enroll for the certificate on the TPM Virtual Smart Card
 

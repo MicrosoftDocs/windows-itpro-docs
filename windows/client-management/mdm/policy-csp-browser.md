@@ -1,7 +1,7 @@
 ---
 title: Browser Policy CSP
 description: Learn more about the Browser Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 09/11/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -3364,9 +3364,7 @@ You can define a list of extensions in Microsoft Edge that users cannot turn off
 Related Documents:
 
 - [Find a package family name (PFN) for per-app VPN](/mem/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
-- [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business)
 - [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy)
-- [Manage apps from the Microsoft Store for Business and Education with Configuration Manager](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
 - [Add a Windows line-of-business app to Microsoft Intune](/mem/intune/apps/lob-apps-windows)
 <!-- PreventTurningOffRequiredExtensions-Editable-End -->
 

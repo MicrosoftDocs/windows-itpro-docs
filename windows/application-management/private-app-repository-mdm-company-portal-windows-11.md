@@ -4,7 +4,7 @@ description: Use the Company Portal app in Windows 11 devices to access the priv
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 04/04/2023
+ms.date: 09/03/2023
 ms.topic: conceptual
 ms.service: windows-client
 ms.subservice: itpro-apps
@@ -104,4 +104,4 @@ If you use a third party or partner MDM provider, be sure to configure the setti
 
 ## Windows Package Manager
 
-If your organization creates its own apps, your app developers can use [Windows Package Manager](/windows/package-manager/) to deploy apps. For more information on Intune and Windows Package Manager, see [Evolving the Microsoft Store for Business and Education](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-the-microsoft-store-for-business-and-education/ba-p/2569423).
+If your organization creates its own apps, your app developers can use [Windows Package Manager](/windows/package-manager/) to deploy apps. For more information on Intune and Windows Package Manager, see [Evolving the Microsoft Store for Business and Education](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-the-microsoft-store-for-business-and-education/ba-p/2569423) and [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).

@@ -1,9 +1,9 @@
 ### YamlMime:FAQ
 metadata:
   title: Windows 11 SE Frequently Asked Questions (FAQ)
-  description: Use these frequently asked questions (FAQ) to learn important details about Windows 11 SE.   
+  description: Use these frequently asked questions (FAQ) to learn important details about Windows 11 SE.
   ms.topic: faq
-  ms.date: 01/16/2024
+  ms.date: 10/10/2024
   appliesto:
     - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 
@@ -30,7 +30,7 @@ sections:
           - Express yourself and celebrate accomplishments with the *emoji and GIF panel* and *Stickers*
   - name: Deployment
     questions:
-      - question: Can I load Windows 11 SE on any hardware? 
+      - question: Can I load Windows 11 SE on any hardware?
         answer: |
           Windows 11 SE is only available on devices that are built for education. To learn more, see [Windows 11 SE Overview](/education/windows/windows-11-se-overview).
       - question: Can I PXE boot a Windows SE device?

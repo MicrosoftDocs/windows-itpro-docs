@@ -1,15 +1,13 @@
 ---
 title: Search Policy CSP
 description: Learn more about the Search Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- Search-Begin -->
 # Policy CSP - Search
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Search-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -648,7 +646,7 @@ The most restrictive value is `0` to now allow automatic language detection.
 <!-- ConfigureSearchOnTaskbarMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ConfigureSearchOnTaskbarMode-Applicability-End -->
 
 <!-- ConfigureSearchOnTaskbarMode-OmaUri-Begin -->
@@ -930,13 +928,13 @@ This policy setting configures whether or not locations on removable drives can 
 
 <!-- DoNotUseWebResults-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to control whether or not Search can perform queries on the web, if web results are displayed in Search, and if search highlights are shown in the search box and in search home.
+This policy setting allows you to control whether or not Search can perform queries on the web, and if the web results are displayed in Search.
 
-- If you enable this policy setting, queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights won't be shown in the search box and in search home.
+- If you enable this policy setting, queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
 
-- If you disable this policy setting, queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
+- If you disable this policy setting, queries will be performed on the web and web results will be displayed when a user performs a query in Search.
 
-- If you don't configure this policy setting, a user can choose whether or not Search can perform queries on the web, and if the web results are displayed in Search, and if search highlights are shown in the search box and in search home.
+- If you don't configure this policy setting, a user can choose whether or not Search can perform queries on the web, and if the web results are displayed in Search.
 <!-- DoNotUseWebResults-Description-End -->
 
 <!-- DoNotUseWebResults-Editable-Begin -->

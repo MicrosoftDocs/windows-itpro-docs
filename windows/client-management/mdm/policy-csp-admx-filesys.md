@@ -1,7 +1,7 @@
 ---
 title: ADMX_FileSys Policy CSP
 description: Learn more about the ADMX_FileSys Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -260,7 +260,7 @@ Encrypting the page file prevents malicious users from reading data that has bee
 
 <!-- LongPathsEnabled-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Enabling Win32 long paths will allow manifested win32 applications and Windows Store applications to access paths beyond the normal 260 character limit. Enabling this setting will cause the long paths to be accessible within the process.
+Enabling Win32 long paths will allow manifested win32 applications and packaged Microsoft Store applications to access paths beyond the normal 260 character limit. Enabling this setting will cause the long paths to be accessible within the process.
 <!-- LongPathsEnabled-Description-End -->
 
 <!-- LongPathsEnabled-Editable-Begin -->
