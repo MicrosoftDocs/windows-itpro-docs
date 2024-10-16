@@ -14,7 +14,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 05/23/2024
+ms.date: 10/15/2024
 ---
 
 # Delivery Optimization reference
@@ -106,7 +106,7 @@ When Delivery Optimization client is configured to use peers and Microsoft Conne
 ##### Microsoft Connected Cache (MCC) delay fallback settings
 
 - [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use a cache server.
-- [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background  download that is allowed to use a cache server.
+- [Delay background download cache server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) allows you to delay the use of an HTTP source in a background  download that is allowed to use a cache server.
 
 **If both peer-to-peer and MCC are configured, the peer-to-peer delay settings will take precedence over the cache server delay settings.** This setting allows Delivery Optimization to discover peers first then recognize the fallback setting for the MCC cache server.
 
@@ -245,13 +245,13 @@ The default behaviors differ between Windows 10 and Windows 11. In Windows 10, t
 
 MDM Setting: **DODelayForegroundDownloadFromHttp**
 
-Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy isn't configured.**
+Starting in Windows 10, version 1803, allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. **By default, this policy isn't configured.**
 
 ### Delay background download from HTTP (in secs)
 
 MDM Setting: **DODelayBackgroundDownloadFromHttp**
 
-Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. The maximum value is 4294967295 seconds. **By default, this policy isn't configured.**
+Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. **By default, this policy isn't configured.**
 
 ### Delay foreground download cache server fallback (in secs)
 

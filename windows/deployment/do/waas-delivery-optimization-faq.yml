@@ -17,7 +17,7 @@ metadata:
     - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
     - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019, and later</a>
     - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>	
-  ms.date: 09/10/2024
+  ms.date: 10/15/2024
 title: Frequently Asked Questions about Delivery Optimization
 summary: |
   This article answers frequently asked questions about Delivery Optimization.
@@ -42,6 +42,7 @@ summary: |
    **Peer-to-peer related questions**: 
 
   - [How does Delivery Optimization determine which content is available for peering?](#how-does-delivery-optimization-determine-which-content-is-available-for-peering)
+  - [Where does Delivery Optimization get content from first?](#where-does-delivery-optimization-get-content-from-first)
   - [Does Delivery Optimization use multicast?](#does-delivery-optimization-use-multicast)
   - [How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?](#how-does-delivery-optimization-deal-with-congestion-on-the-router-from-peer-to-peer-activity-on-the-lan)
   - [How does Delivery Optimization handle VPNs?](#how-does-delivery-optimization-handle-vpns)
@@ -128,6 +129,11 @@ sections:
       - question: How does Delivery Optimization determine which content is available for peering?
         answer: |
           Delivery Optimization uses the cache content on the device to determine what's available for peering. For the upload source device, there's a limited number (4) of slots for cached content that's available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
+      - question: Where does Delivery Optimization get content from first?
+        answer: |
+          When Delivery Optimization client is configured to use peers and Microsoft Connected Cache (MCC), the client connects to both MCC and peers in parallel. There is no prioritization between the two. Once downloading starts in parallel, Delivery Optimization 
+          will taper off requests to the HTTP source (CDN or MCC) when the peer connections are able to reach the target download speed. For background downloads, Delivery Optimization will drop HTTP connections if peers are meeting the minimum QoS speed. To manage delaying the default behavior
+          there are a collection of policies that can be used. For more information, see [Delivery Optimization delay policies](waas-delivery-optimization-reference.md#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources).
       - question: Does Delivery Optimization use multicast?
         answer: |
          No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.    
