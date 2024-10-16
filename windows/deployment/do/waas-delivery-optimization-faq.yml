@@ -42,7 +42,7 @@ summary: |
    **Peer-to-peer related questions**: 
 
   - [How does Delivery Optimization determine which content is available for peering?](#how-does-delivery-optimization-determine-which-content-is-available-for-peering)
-  - [Where does Delivery Optimization get content from first?](#where-delivery-optimization-gets-content-from-first)
+  - [Where does Delivery Optimization get content from first?](#where-does-delivery-optimization-get-content-from-first)
   - [Does Delivery Optimization use multicast?](#does-delivery-optimization-use-multicast)
   - [How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?](#how-does-delivery-optimization-deal-with-congestion-on-the-router-from-peer-to-peer-activity-on-the-lan)
   - [How does Delivery Optimization handle VPNs?](#how-does-delivery-optimization-handle-vpns)
