@@ -132,7 +132,7 @@ sections:
       - question: Where does Delivery Optimization get content from first?
         answer: |
           When Delivery Optimization client is configured to use peers and Microsoft Connected Cache (MCC) the client connects to both MCC and peers in parallel. There is no prioritization between the two. Once downloading starts in parallel Delivery Optimization 
-          will taper off requests to the HTTP source (CDN or MCC) as and when the peer connections are able to reach the target download speed. For background downloads, we will drop HTTP connections if peers are meeting the minimum QoS speed. To manage delaying the default behavior
+          will taper off requests to the HTTP source (CDN or MCC) when the peer connections are able to reach the target download speed. For background downloads, Delivery Optimization will drop HTTP connections if peers are meeting the minimum QoS speed. To manage delaying the default behavior
           there are a collection of policies that can be used. For more information see [Delivery Optimization delay policies](waas-delivery-optimization-reference.md#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources).
       - question: Does Delivery Optimization use multicast?
         answer: |
