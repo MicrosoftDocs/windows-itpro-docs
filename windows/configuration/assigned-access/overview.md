@@ -298,35 +298,6 @@ To change the default time for Assigned Access to resume, add *IdleTimeOut* (DWO
 
 The Breakout Sequence of <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> is the default, but this sequence can be configured to be a different sequence of keys. The breakout sequence uses the format **modifiers + keys**. An example breakout sequence is <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>A</kbd>, where <kbd>CTRL</kbd> + <kbd>ALT</kbd> are the modifiers, and <kbd>A</kbd> is the key value. To learn more, see [Create an Assigned Access configuration XML file](configuration-file.md).
 
-### Keyboard shortcuts
-
-The following keyboard shortcuts are blocked for the user accounts with Assigned Access:
-
-| Keyboard shortcut                                    | Action                                                                                        |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd>  + <kbd>Esc</kbd> | Open Task Manager                                                                             |
-| <kbd>WIN</kbd> + <kbd>,</kbd> (comma)                | Temporarily peek at the desktop                                                               |
-| <kbd>WIN</kbd> + <kbd>A</kbd>                        | Open Action center                                                                            |
-| <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd>     | Display and hide the date and time on the desktop                                             |
-| <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd>    | Find computer objects in Active Directory                                                     |
-| <kbd>WIN</kbd> + <kbd>D</kbd>                        | Display and hide the desktop                                                                  |
-| <kbd>WIN</kbd> + <kbd>E</kbd>                        | Open File Explorer                                                                            |
-| <kbd>WIN</kbd> + <kbd>F</kbd>                        | Open Feedback Hub                                                                             |
-| <kbd>WIN</kbd> + <kbd>G</kbd>                        | Open Game bar when a game is open                                                             |
-| <kbd>WIN</kbd> + <kbd>I</kbd>                        | Open Settings                                                                                 |
-| <kbd>WIN</kbd> + <kbd>J</kbd>                        | Set focus to a Windows tip when one is available                                              |
-| <kbd>WIN</kbd> + <kbd>O</kbd>                        | Lock device orientation                                                                       |
-| <kbd>WIN</kbd> + <kbd>Q</kbd>                        | Open search                                                                                   |
-| <kbd>WIN</kbd> + <kbd>R</kbd>                        | Open the Run dialog box                                                                       |
-| <kbd>WIN</kbd> + <kbd>S</kbd>                        | Open search                                                                                   |
-| <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd>   | Open Cortana in listening mode                                                                |
-| <kbd>WIN</kbd> + <kbd>X</kbd>                        | Open the Quick Link menu                                                                      |
-| <kbd>LaunchApp1</kbd>                                | Open the app that is assigned to this key                                                     |
-| <kbd>LaunchApp2</kbd>                                | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
-| <kbd>LaunchMail</kbd>                                | Open the default mail client                                                                  |
-
-For information on how to customize keyboard shortcuts, see [Assigned Access recommendations](recommendations.md#keyboard-shortcuts).
-
 ## Remove Assigned Access
 
 Deleting the restricted user experience removes the policy settings associated with the users, but it can't revert all the configurations. For example, the Start menu configuration is maintained.
