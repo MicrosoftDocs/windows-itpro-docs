@@ -15,15 +15,17 @@ ms.topic: how-to
 There may come a time when you want to remove one or more App Control policies, or remove all App Control policies you've deployed. This article describes the various ways to remove App Control policies.
 
 > [!IMPORTANT]
-> **Signed App Control policy**
+> **Signed Base App Control policy**
 >
-> If the policy you are trying to remove is a signed App Control policy, you must first deploy a signed replacement policy that includes option **6 Enabled:Unsigned System Integrity Policy**.
+> If the base policy you are trying to remove is a signed App Control policy, you must first deploy a signed replacement policy that includes option **6 Enabled:Unsigned System Integrity Policy**.
 >
 > The replacement policy must have the same PolicyId as the one it's replacing and a version that's equal to or greater than the existing policy. The replacement policy must also include \<UpdatePolicySigners\>.
 >
 > To take effect, this policy must be signed with a certificate included in the \<UpdatePolicySigners\> section of the original policy you want to replace.
 >
 > You must then restart the computer so that the UEFI protection of the policy is deactivated. ***Failing to do so will result in a boot start failure.***
+>
+> Signed supplemental App Control policies can be removed in the same manner as unsigned policies, without the need to follow the aforementioned steps
 
 Before removing any policy, you must first disable the method used to deploy it (such as Group Policy or MDM). Otherwise, the policy may redeploy to the computer.
 
