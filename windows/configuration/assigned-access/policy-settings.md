@@ -112,3 +112,32 @@ The deny list is used to prevent the user from accessing the apps, which are cur
 1. The default rule is to allow all users to launch the desktop programs signed with *Microsoft Certificate* for the system to boot and function. The rule also allows the admin user group to launch all desktop programs.
 1. There's a predefined inbox desktop app deny list for the Assigned Access user account, which is updated based on the *desktop app allow list* that you defined in the Assigned Access configuration
 1. Enterprise-defined allowed desktop apps are added in the AppLocker allow list
+
+## Keyboard shortcuts
+
+The following keyboard shortcuts are blocked for the user accounts with Assigned Access:
+
+| Keyboard shortcut                                    | Action                                                                                        |
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd>  + <kbd>Esc</kbd> | Open Task Manager                                                                             |
+| <kbd>WIN</kbd> + <kbd>,</kbd> (comma)                | Temporarily peek at the desktop                                                               |
+| <kbd>WIN</kbd> + <kbd>A</kbd>                        | Open Action center                                                                            |
+| <kbd>WIN</kbd> + <kbd>Alt</kbd>  + <kbd> D</kbd>     | Display and hide the date and time on the desktop                                             |
+| <kbd>WIN</kbd> + <kbd>Ctrl</kbd>  + <kbd> F</kbd>    | Find computer objects in Active Directory                                                     |
+| <kbd>WIN</kbd> + <kbd>D</kbd>                        | Display and hide the desktop                                                                  |
+| <kbd>WIN</kbd> + <kbd>E</kbd>                        | Open File Explorer                                                                            |
+| <kbd>WIN</kbd> + <kbd>F</kbd>                        | Open Feedback Hub                                                                             |
+| <kbd>WIN</kbd> + <kbd>G</kbd>                        | Open Game bar when a game is open                                                             |
+| <kbd>WIN</kbd> + <kbd>I</kbd>                        | Open Settings                                                                                 |
+| <kbd>WIN</kbd> + <kbd>J</kbd>                        | Set focus to a Windows tip when one is available                                              |
+| <kbd>WIN</kbd> + <kbd>O</kbd>                        | Lock device orientation                                                                       |
+| <kbd>WIN</kbd> + <kbd>Q</kbd>                        | Open search                                                                                   |
+| <kbd>WIN</kbd> + <kbd>R</kbd>                        | Open the Run dialog box                                                                       |
+| <kbd>WIN</kbd> + <kbd>S</kbd>                        | Open search                                                                                   |
+| <kbd>WIN</kbd> + <kbd>Shift</kbd>  + <kbd> C</kbd>   | Open Cortana in listening mode                                                                |
+| <kbd>WIN</kbd> + <kbd>X</kbd>                        | Open the Quick Link menu                                                                      |
+| <kbd>LaunchApp1</kbd>                                | Open the app that is assigned to this key                                                     |
+| <kbd>LaunchApp2</kbd>                                | Open the app that is assigned to this key. On many Microsoft keyboards, the app is Calculator |
+| <kbd>LaunchMail</kbd>                                | Open the default mail client                                                                  |
+
+For information on how to customize keyboard shortcuts, see [Assigned Access recommendations](recommendations.md#keyboard-shortcuts).
