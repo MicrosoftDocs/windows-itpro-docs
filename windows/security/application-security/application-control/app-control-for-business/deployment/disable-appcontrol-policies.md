@@ -15,15 +15,17 @@ ms.topic: how-to
 There may come a time when you want to remove one or more App Control policies, or remove all App Control policies you've deployed. This article describes the various ways to remove App Control policies.
 
 > [!IMPORTANT]
-> **Signed App Control policy**
+> **Signed Base App Control policy**
 >
-> If the policy you are trying to remove is a signed App Control policy, you must first deploy a signed replacement policy that includes option **6 Enabled:Unsigned System Integrity Policy**.
+> If the base policy you are trying to remove is a signed App Control policy, you must first deploy a signed replacement policy that includes option **6 Enabled:Unsigned System Integrity Policy**.
 >
 > The replacement policy must have the same PolicyId as the one it's replacing and a version that's equal to or greater than the existing policy. The replacement policy must also include \<UpdatePolicySigners\>.
 >
 > To take effect, this policy must be signed with a certificate included in the \<UpdatePolicySigners\> section of the original policy you want to replace.
 >
 > You must then restart the computer so that the UEFI protection of the policy is deactivated. ***Failing to do so will result in a boot start failure.***
+>
+> Signed supplemental App Control policies can be removed in the same manner as unsigned policies, without the need to follow the aforementioned steps
 
 Before removing any policy, you must first disable the method used to deploy it (such as Group Policy or MDM). Otherwise, the policy may redeploy to the computer.
 
@@ -35,9 +37,6 @@ To make a policy effectively inactive before removing it, you can first replace 
 4. Allow all COM objects. See [Allow COM object registration in an App Control policy](../design/allow-com-object-registration-in-appcontrol-policy.md#examples);
 5. If applicable, remove option **0 Enabled:UMCI** to convert the policy to kernel mode only.
 
-> [!IMPORTANT]
-> After you remove a policy, restart the computer for it to take effect. You can't remove App Control policies without restarting the device.
-
 ### Remove App Control policies using CiTool.exe
 
 Beginning with the Windows 11 2022 Update, you can remove App Control policies using CiTool.exe. From an elevated command window, run the following command. Be sure to replace the text *PolicyId GUID* with the actual PolicyId of the App Control policy you want to remove:
@@ -46,7 +45,8 @@ Beginning with the Windows 11 2022 Update, you can remove App Control policies u
 CiTool.exe -rp "{PolicyId GUID}" -json
 ```
 
-Then restart the computer.
+> [!NOTE]
+> Beginning with the Windows 11 2024 update, unsigned policies can be removed using CiTool.exe without requiring a restart. In previous versions of Windows, however, a restart is required to complete the removal process.
 
 ### Remove App Control policies using MDM solutions like Intune
 
