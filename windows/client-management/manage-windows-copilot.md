@@ -16,7 +16,7 @@ appliesto:
 # Updated Windows and Microsoft Copilot experience
 <!--8445848, 9294806-->
 
->**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/topic/675708af-8c16-4675-afeb-85a5a476ccb0).
+>**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/topic/675708af-8c16-4675-afeb-85a5a476ccb0). **Looking for more information on Microsoft Copilot experiences?** See [Understanding the different Microsoft Copilot experiences](https://support.microsoft.com/topic/cfff4791-694a-4d90-9c9c-1eb3fb28e842).
 
 ## Enhanced data protection with enterprise data protection
 

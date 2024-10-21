@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 10/01/2024
+ms.date: 10/08/2024
 ms.collection: privacy-windows
 ms.topic: reference
 ---
@@ -19,6 +19,8 @@ ms.topic: reference
 
 - Windows 11, version 21H2
 
+> [!IMPORTANT]
+> This version of Windows 11 has reached its end of servicing date. For more information, see [Microsoft Product Lifecyle](/lifecycle/products).
 
 Required diagnostic data gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store.
 
@@ -1947,7 +1949,7 @@ Fires at the beginning and end of the HVCI auto-enablement process in sysprep.
 
 The following fields are available:
 
-- **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure.
+- **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating success or failure.
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciAlreadyEnabled
@@ -5187,7 +5189,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentMitigationSummary
 
-This event sends a summary of all the update agent mitigations available for an this update. The data collected with this event is used to help keep Windows secure and up to date.
+This event sends a summary of all the update agent mitigations available for an update. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5620,7 +5622,7 @@ The following fields are available:
 - **ReportId**  With Windows Update, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim.
 - **Setup360Extended**  Detailed information about the phase/action when the potential failure occurred.
 - **Setup360Mode**  The phase of Setup360. Example: Predownload, Install, Finalize, Rollback.
-- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used used to diagnose errors.
+- **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
 - **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
@@ -5667,7 +5669,7 @@ The following fields are available:
 - **pluginFailureCount**  The number of plugins that have failed.
 - **pluginsCount**  The number of plugins.
 - **qualityAssessmentImpact**  WaaS Assessment impact for quality updates.
-- **remediationSummary**  Result of each operation performed on a device to fix an invalid state or configuration that's preventing the device from getting updates. For example, if Windows Update service is turned off, the fix is to turn the it back on.
+- **remediationSummary**  Result of each operation performed on a device to fix an invalid state or configuration that's preventing the device from getting updates. For example, if Windows Update service is turned off, the fix is to turn it back on.
 - **usingBackupFeatureAssessment**  Relying on backup feature assessment.
 - **usingBackupQualityAssessment**  Relying on backup quality assessment.
 - **usingCachedFeatureAssessment**  WaaS Medic run didn't get OS build age from the network on the previous run.
@@ -5680,7 +5682,7 @@ The following fields are available:
 
 ### Microsoft.Windows.WERVertical.OSCrash
 
-This event sends binary data from the collected dump file whenever a bug check occurs, to help keep Windows up to date. The is the OneCore version of this event.
+This event sends binary data from the collected dump file whenever a bug check occurs, to help keep Windows up to date. This is the OneCore version of this event.
 
 The following fields are available:
 
@@ -6110,7 +6112,7 @@ The following fields are available:
 
 - **CatalogId**  The Store Catalog ID for the product being installed.
 - **ProductId**  The Store Product ID for the product being installed.
-- **SkuId**  Specfic edition of the app being updated.
+- **SkuId**  Specific edition of the app being updated.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.StateTransition

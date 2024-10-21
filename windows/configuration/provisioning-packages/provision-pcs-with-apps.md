@@ -12,7 +12,7 @@ You can install multiple Universal Windows Platform (UWP) apps and Windows deskt
 When you add an app in a Windows Configuration Designer wizard, the appropriate settings are displayed based on the app that you select. For instructions on adding an app using the advanced editor in Windows Configuration Designer, see [Add an app using advanced editor](#add-a-windows-desktop-application-using-advanced-editor).
 
 > [!IMPORTANT]
-> If you plan to use Intune to manage your devices, we recommend using Intune to install Microsoft 365 Apps for enterprise. Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to add Microsoft 365 Apps to Windows devices with Microsoft Intune.](/intune/apps-add-office365)
+> If you plan to use Intune to manage your devices, we recommend using Intune to install Microsoft 365 Apps for enterprise. Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to add Microsoft 365 Apps to Windows devices with Microsoft Intune.](/mem/intune/apps/apps-add-office365)
 
 ## Settings for UWP apps
 
