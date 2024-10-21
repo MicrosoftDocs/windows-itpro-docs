@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server</a>
-ms.date: 07/10/2024
+ms.date: 10/15/2024
 ---
 
 # Update Windows installation media with Dynamic Update
@@ -84,24 +84,24 @@ Properly updating the installation media involves many actions operating on seve
 
 This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding boot manager from WinPE to the new media (28).
 
-|Task                               |WinRE (winre.wim)  |Operating system (install.wim)  | WinPE (boot.wim) | New media |
-|-----------------------------------|-------------------|--------------------------------|------------------|-----------|
-|Add servicing stack Dynamic Update | 1                 | 9                              | 17               |           |
-|Add language pack                  | 2                 | 10                             | 18               |           |
-|Add localized optional packages    | 3                 |                                | 19               |           |
-|Add font support                   | 4                 |                                | 20               |           |
-|Add text-to-speech                 | 5                 |                                | 21               |           |
-|Update Lang.ini                    |                   |                                | 22               |           |
-|Add Features on Demand             |                   | 11                             |                  |           |
-|Add Safe OS Dynamic Update         | 6                 |                                |                  |           |
-|Add Setup Dynamic Update           |                   |                                |                  | 26        |
-|Add setup.exe from WinPE           |                   |                                |                  | 27        |
-|Add boot manager from WinPE        |                   |                                |                  | 28        |
-|Add latest cumulative update       |                   | 12                             | 23               |           |
-|Clean up the image                 | 7                 | 13                             | 24               |           |
-|Add Optional Components            |                   | 14                             |                  |           |
-|Add .NET and .NET cumulative updates |                 | 15                             |                  |           |
-|Export image                       | 8                 | 16                             | 25               |           |
+|Task                                       |WinRE (winre.wim)  |Operating system (install.wim)  | WinPE (boot.wim) | New media |
+|-------------------------------------------|-------------------|--------------------------------|------------------|-----------|
+|Add servicing stack Dynamic Update         | 1                 | 9                              | 17               |           |
+|Add language pack                          | 2                 | 10                             | 18               |           |
+|Add localized optional packages            | 3                 |                                | 19               |           |
+|Add font support                           | 4                 |                                | 20               |           |
+|Add text-to-speech                         | 5                 |                                | 21               |           |
+|Update Lang.ini                            |                   |                                | 22               |           |
+|Add Features on Demand                     |                   | 11                             |                  |           |
+|Add Safe OS Dynamic Update                 | 6                 |                                |                  |           |
+|Add Setup Dynamic Update                   |                   |                                |                  | 26        |
+|Add setup.exe and setuphost.exe from WinPE |                   |                                |                  | 27        |
+|Add boot manager from WinPE                |                   |                                |                  | 28        |
+|Add latest cumulative update               |                   | 12                             | 23               |           |
+|Clean up the image                         | 7                 | 13                             | 24               |           |
+|Add Optional Components                    |                   | 14                             |                  |           |
+|Add .NET and .NET cumulative updates       |                   | 15                             |                  |           |
+|Export image                               | 8                 | 16                             | 25               |           |
 
 > [!NOTE]
 > Starting in February 2021, the latest cumulative update and servicing stack update will be combined and distributed in the Microsoft Update Catalog as a new combined cumulative update. For Steps 1, 9, and 18 that require the servicing stack update for updating the installation media, you should use the combined cumulative update. For more information on the combined cumulative update, see [Servicing stack updates](./servicing-stack-updates.md).
@@ -434,7 +434,7 @@ Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sourc
 
 ### Update WinPE
 
-This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, it adds font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we'll save setup.exe for later use, to ensure this version matches the \sources\setup.exe version from the installation media. If these binaries aren't identical, Windows Setup will fail during installation. We'll also save the serviced boot manager files for later use in the script. Finally, the script cleans and exports Boot.wim, and copies it back to the new media.
+This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, it adds font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we'll save setup.exe and setuphost.exe for later use, to ensure these versions matches the \sources\setup.exe and \sources\setuphost.exe version from the installation media. If these binaries aren't identical, Windows Setup will fail during installation. We'll also save the serviced boot manager files for later use in the script. Finally, the script cleans and exports Boot.wim, and copies it back to the new media.
 
 ```powershell
 #
@@ -586,7 +586,7 @@ Move-Item -Path $WORKING_PATH"\boot2.wim" -Destination $MEDIA_NEW_PATH"\sources\
 
 ### Update remaining media files
 
-This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings in updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe and boot manager files using the previously saved versions from WinPE.
+This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings in updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe, setuphost.exe and boot manager files using the previously saved versions from WinPE.
 
 ```powershell
 #
