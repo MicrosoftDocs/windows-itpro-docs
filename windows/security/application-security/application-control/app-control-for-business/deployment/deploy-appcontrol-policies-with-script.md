@@ -16,13 +16,13 @@ This article describes how to deploy App Control for Business policies using scr
 You should now have one or more App Control policies converted into binary form. If not, follow the steps described in [Deploying App Control for Business policies](appcontrol-deployment-guide.md).
 
 > [!IMPORTANT]
-> Due to a known issue, you should always activate new **signed** App Control Base policies with a reboot on systems with [**memory integrity**](../../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md) enabled. Skip all steps below that use CiTool, RefreshPolicy.exe, or WMI to initiate a policy activation. Instead, copy the policy binary to the correct system32 and EFI locations and then activate the policy with a system restart.
+> Due to a known issue in Windows 11 updates earlier than 2024 (24H2), you should always activate new **signed** App Control Base policies with a reboot on systems with [**memory integrity**](../../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md) enabled. Skip all steps below that use CiTool, RefreshPolicy.exe, or WMI to initiate a policy activation. Instead, copy the policy binary to the correct system32 and EFI locations and then activate the policy with a system restart.
 >
 > This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
 
-## Deploying policies for Windows 11 22H2 and above
+## Deploying policies for Windows 11 22H2 and above, and Windows Server 2025 and above
 
-You can use the inbox [CiTool](../operations/citool-commands.md) to apply policies on Windows 11 22H2 with the following commands. Be sure to replace **&lt;Path to policy binary file to deploy&gt;** in the following example with the actual path to your App Control policy binary file.
+You can use the inbox [CiTool](../operations/citool-commands.md) to deploy signed and unsigned policies on Windows 11 22H2 and Windows Server 2025 with the following commands. Be sure to replace **&lt;Path to policy binary file to deploy&gt;** in the following example with the actual path to your App Control policy binary file.
 
 ```powershell
 # Policy binary files should be named as {GUID}.cip for multiple policy format files (where {GUID} = <PolicyId> from the Policy XML)
@@ -58,7 +58,7 @@ To use this procedure, download and distribute the [App Control policy refresh t
 
 ## Deploying policies for all other versions of Windows and Windows Server
 
-Use WMI to apply policies on all other versions of Windows and Windows Server.
+Use WMI to deploy policies on all other versions of Windows and Windows Server.
 
 1. Initialize the variables to be used by the script.
 
