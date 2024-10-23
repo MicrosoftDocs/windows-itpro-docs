@@ -81,10 +81,8 @@ If Windows Autopatch detects a significant issue with a release, we might decide
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** from the left navigation menu.
 1. Under the **Manage updates** section, select **Windows updates**.
-1. In the **Windows updates** blade, select the **Quality updates** tab.
-1. Select the Autopatch group or deployment ring that you want to pause or resume. Select either: **Pause** or **Resume**. Alternatively, you can select the **horizontal ellipses (...)** of the Autopatch group or deployment ring you want to pause or resume. Select, **Pause, or **Resume** from the dropdown menu.
-1. Optional. Enter the justification about why you're pausing or resuming the selected update.
-1. Optional. Select **This pause is related to Windows Update**. When you select this checkbox, you must provide information about how the pause is related to Windows Update.
+1. In the **Windows updates** blade, select the **Update rings** tab.
+1. Select the Autopatch group or deployment ring that you want to pause or resume. Select either: **Pause** or **Resume**. Alternatively, you can select the **horizontal ellipses (...)** of the Autopatch group or deployment ring you want to pause or resume. Select, **Pause**, or **Resume** from the dropdown menu.
 1. If you're resuming an update, you can select one or more Autopatch groups or deployment rings.
 1. Select **Pause or Resume deployment**.
 
